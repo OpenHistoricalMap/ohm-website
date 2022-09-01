@@ -914,7 +914,6 @@ id:
           commercial: Wilayah Komersial
           conservation: Konservasi
           construction: Konstruksi
-          farm: Pertanian
           farmland: Lahan Pertanian
           farmyard: Lahan Peternakan
           forest: Hutan
@@ -1435,8 +1434,6 @@ id:
     intro_2_create_account: Buat Akun
     hosting_partners_html: Hosting didukung oleh %{ucl}, %{fastly}, %{bytemark}, dan
       %{partners} lainnya.
-    partners_ucl: UCL
-    partners_bytemark: Hosting Bytemark
     partners_partners: mitra
     tou: Ketentuan Penggunaan
     osm_offline: Database OpenStreetMap saat ini sedang dimatikan karena sedang dilakukan
@@ -2123,15 +2120,6 @@ id:
         url: http://wiki.openstreetmap.org/
         title: Wiki OpenStreetMap
         description: Telusuri wiki untuk dokumentasi mendalam OpenStreetMap.
-    potlatch:
-      removed: Editor OpenStreetMap baku Anda ditetapkan menjadi Potlatch. Karena
-        Adobe Flash Player telah ditarik; Potlatch tidak lagi tersedia untuk digunakan
-        di penjelajah web.
-      desktop_html: Anda masih bisa menggunakan Potlatch dengan <a href="https://www.systemed.net/potlatch/">mengunduh
-        aplikasi desktop untuk Mac dan Windows</a>.
-      id_html: Selain itu, Anda bisa mengubah editor baku Anda menjadi iD, yang bisa
-        dijalankan di penjelajah web layaknya Potlatch dahulu kala. <a href="%{settings_url}">Ubah
-        preferensi Anda di sini</a>.
     sidebar:
       search_results: Hasil Pencarian
       close: Tutup

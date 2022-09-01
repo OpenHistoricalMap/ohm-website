@@ -545,7 +545,6 @@ az:
           commercial: Ticarət sahəsi
           conservation: Konservasiya ərazisi
           construction: Tikinti
-          farm: Ferma
           farmland: Kənd təsərrüfatı
           farmyard: Ferma həyəti
           forest: Meşə təsərrüfatı
@@ -826,7 +825,6 @@ az:
     edit_with: '%{editor} köməyi ilə dəyişdir'
     tag_line: Azad Viki Dünya Xəritəsi
     intro_2_create_account: İstifadəçi hesabı yarat
-    partners_bytemark: Bytemark Hosting
     partners_partners: partnyorlar
     help: Kömək
     copyright: Müəllif hüquqları və Lisenziyalar

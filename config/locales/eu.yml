@@ -829,7 +829,6 @@ eu:
           commercial: Merkataritza eremua
           conservation: Kontserbazioa
           construction: Eraikuntza
-          farm: Baserria
           farmland: Nekazari landa
           farmyard: Nekazari zelaia
           forest: Baso
@@ -1339,8 +1338,6 @@ eu:
       doako lizentzia irekiarekin erabiltzeko dagoena.
     intro_2_create_account: Erabiltzaile kontua sortu
     hosting_partners_html: '%{ucl}, %{bytemark} eta beste %{partners}-k babestua.'
-    partners_ucl: UCLa
-    partners_bytemark: Bytemark Ostatua
     partners_partners: bazkideak
     tou: Erabilera-baldintzak
     osm_offline: OpenStreetMap datu-basea orain konexiorik gabe dago funtsezko datu-basearen

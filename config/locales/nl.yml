@@ -1030,7 +1030,6 @@ nl:
           commercial: Commercieel gebied
           conservation: Natuurbehoud
           construction: In aanbouw
-          farm: Boerderij
           farmland: Akker
           farmyard: Boerenerf
           forest: Bos
@@ -1598,11 +1597,13 @@ nl:
     intro_text: OpenStreetMap is een kaart van de wereld, gemaakt door mensen zoals
       u en vrij te gebruiken onder een open licentie.
     intro_2_create_account: Maak een account aan
-    hosting_partners_html: Hosting wordt ondersteund door %{ucl}, %{fastly}, %{bytemark},
-      en andere %{partners}.
-    partners_ucl: het UCL VR Centre
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
+    hosting_partners_html: |-
+      <p>
+      <a href='https://greeninfo.org'>GreenInfo Network</a> is een organisatie zonder winstoogmerk voor het in kaart brengen van sociale doelen en communicatie, die non-profitorganisaties en overheidsinstellingen helpt sociale, milieu- en andere doelen te bereiken met gebruikmaking van een reeks hulpmiddelen, waaronder op de mens gerichte ontwerppraktijken, op samenwerking gebaseerde ontwikkeling, en op open source gebaseerde web- en geospatiale hulpmiddelen.
+      </p>
+      <p>
+      <a href='https://developmentseed.org/'>Development Seed</a> is een ingenieurs- en productbedrijf dat de toepassing van aardgegevens op onze grootste wereldwijde uitdagingen versnelt. Development Seed maakt gebruik van massale aardgegevens, cloud computing, geospatiale AI en weldoordachte productontwikkeling.
+      </p>
     partners_partners: partners
     tou: Gebruiksvoorwaarden
     osm_offline: De OpenStreetMap-database is momenteel niet beschikbaar wegens het
@@ -2002,8 +2003,8 @@ nl:
     about:
       next: Volgende
       copyright_html: <span>&copy;</span>OpenStreetMap-<br />bijdragers
-      used_by_html: '%{name} levert kaartgegevens aan duizenden websites, mobiele
-        apps en hardware-apparaten'
+      used_by_html: OpenHistoricalMap bewaart en toont in samenwerkingsverband kaartgegevens
+        over de hele geschiedenis van de wereld.
       lede_text: OpenStreetMap wordt gemaakt door een gemeenschap van mappers die
         gegevens over wegen, paden, cafés, treinstations en nog veel meer, over de
         hele wereld bijdragen en onderhouden.
@@ -2305,15 +2306,6 @@ nl:
         url: https://wiki.openstreetmap.org/
         title: OpenStreetMap Wiki
         description: In de wiki kijken voor diepgaande documentatie over OpenStreetMap.
-    potlatch:
-      removed: Uw standaard OpenStreetMap-bewerkingsprogramma staat ingesteld op Potlatch.
-        Omdat Adobe Flash Player niet meer bestaat, kan Potlatch niet langer gebruikt
-        worden in de webbrowser.
-      desktop_html: U kunt Potlatch nog gebruiken door <a href="https://www.systemed.net/potlatch/">de
-        toepassing voor Mac en Windows te downloaden</a>.
-      id_html: U kunt ook uw standaardeditor op iD zetten. Dat werkt in uw browser
-        zoals Potlatch dat vroeger deed. <a href="%{settings_url}">Wijzig hier uw
-        voorkeuren</a>.
     sidebar:
       search_results: Zoekresultaten
       close: Sluiten

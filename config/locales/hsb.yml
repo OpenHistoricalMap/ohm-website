@@ -919,7 +919,6 @@ hsb:
           commercial: přemysłownišćo
           conservation: přirodoškitne pasmo
           construction: twarnišćo
-          farm: statok
           farmland: rola
           farmyard: burski statok
           forest: lěs
@@ -1474,8 +1473,6 @@ hsb:
     intro_2_create_account: Załož wužiwarske konto
     hosting_partners_html: Hosting podpěruje je so wot %{ucl}, %{bytemark} a druhich
       %{partners}.
-    partners_ucl: UCL
-    partners_bytemark: Bytemark Hosting
     partners_partners: partnerow
     tou: Wužiwanske wuměnjenja
     osm_offline: Datowa banka OpenStreetMap je tuchwilu offline, dokelž so wažne hladanske

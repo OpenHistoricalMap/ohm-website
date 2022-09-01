@@ -1,0 +1,28 @@
+# Messages for Message documentation (Message documentation)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Robby
+---
+qqq:
+  helpers:
+    submit:
+      diary_comment:
+        create: '{{identical|Save}}'
+      diary_entry:
+        create: '{{identical|Publish}}'
+        update: '{{identical|Update}}'
+      trace:
+        create: '{{identical|Upload}}'
+  activerecord:
+    models:
+      country: '{{identical|Country}}'
+    attributes:
+      trace:
+        description: '{{identical|Description}}'
+  account:
+    deletions:
+      show:
+        cancel: '{{identical|Cancel}}'
+  javascripts:
+    close: '{{identical|Close}}'
+...

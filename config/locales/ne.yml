@@ -1,6 +1,7 @@
 # Messages for Nepali (नेपाली)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Bada Kaji
 # Author: Danieldegroot2
 # Author: Drjpoudel
 # Author: Haribanshi
@@ -603,7 +604,6 @@ ne:
           commercial: व्यवसायिक क्षेत्र
           conservation: संरक्षण
           construction: निर्माण
-          farm: खेती
           farmland: खेतीयोग्य जमिन
           farmyard: खेत
           forest: वन
@@ -639,6 +639,7 @@ ne:
           mine: खानी
           pipeline: पाइपरेखा
           tower: टावर
+          windmill: पवन मिल
           works: कारखाना
         military:
           barracks: सैनिक घर
@@ -803,6 +804,7 @@ ne:
       status: स्थिति
       states:
         open: खोल्नुहोस्
+        resolved: समाधान गरियो
     show:
       ignore: वेवास्ता गर्नुहाेस्
       new_reports: नयाँ प्रतिवेदनहरू
@@ -925,6 +927,7 @@ ne:
       flash changed: तपाईंको प्रवेश शब्द परिवर्तन गरिएको छ।
   profiles:
     edit:
+      cancel: रद्द गर्नुहोस्
       image: 'चित्र:'
       home location: 'गृह स्थान:'
       no home location: तपाईंले आफ्नो गृहस्थान प्रविष्ठ गर्नुभएको छैन।
@@ -957,6 +960,7 @@ ne:
       legal_babble:
         more_title_html: थप जान्नको लागि
         contributors_title_html: हाम्रा योगदान कर्ताहरू
+        contributors_at_html: ..
     index:
       permalink: स्थायी लिङ्क
       shortlink: छोटो लिङ्क
@@ -1043,6 +1047,7 @@ ne:
       get_directions: दिशानिर्देशन प्राप्त गर्नुहोस्
       from: बाट
       to: लाई
+      where_am_i: यो कहाँ छ?
       submit_text: जानुहोस्
     key:
       table:
@@ -1092,6 +1097,7 @@ ne:
     create:
       upload_trace: GPS Trace अपलोड गर्ने
     edit:
+      cancel: रद्द गर्नुहोस्
       title: ट्रेस सम्पादन गर्दै %{name}
       heading: ट्रेस सम्पादन गर्दै %{name}
       visibility_help: यसको मतलब के हो ?

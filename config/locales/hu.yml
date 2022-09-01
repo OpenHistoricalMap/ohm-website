@@ -319,6 +319,7 @@ hu:
         link text: mi ez?
       save changes button: Módosítások mentése
       make edits public button: Az összes szerkesztésem nyilvánossá tétele
+      delete_account: Fiók törlése…
     update:
       success_confirm_needed: Felhasználói információk sikeresen frissítve. Nézd meg
         az e-mailjeidet az új e-mail címedet megerősítő levélhez.
@@ -974,7 +975,6 @@ hu:
           commercial: Kereskedelmi terület
           conservation: Védett terület (elavult)
           construction: Építési terület
-          farm: Tanya
           farmland: Mezőgazdasági terület
           farmyard: Tanyaudvar
           forest: Telepített erdő
@@ -1539,9 +1539,6 @@ hu:
     intro_2_create_account: Felhasználói fiók létrehozása
     hosting_partners_html: 'Az üzemeltetés támogatói: %{ucl}, %{fastly}, %{bytemark},
       és további %{partners}.'
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: partnerek
     tou: Felhasználási feltételek
     osm_offline: Az OpenStreetMap-adatbázis jelenleg offline, miközben alapvető adatbázis-karbantartási
@@ -2035,22 +2032,14 @@ hu:
           <strong>Ausztria</strong>: adatokat tartalmaz a következő forrásból:
              <a href="https://data.wien.gv.at/">Bécs városa</a>
              <a href="https://creativecommons.org/licenses/by/3.0/at/deed.de">CC BY</a> licenc alatt.
-        contributors_au_html: '<strong>Ausztrália</strong>: A Commonwealth of Australia
-          által a <a href="https://creativecommons.org/licenses/by/4.0/">Creative
-          Commons Attribution 4.0 International licenc (CC BY 4.0)</a> alapján engedélyezett
-          <a href="https://geoscape.com.au/legal/data-copyright-and-disclaimer/">Geoscape
-          Australia</a> Administrative Boundaries &copy; (közigazgatási határok) felhasználásával
-          készült vagy azt tartalmazza.'
+        contributors_au_html: ..
         contributors_ca_html: |-
           <strong>Kanada</strong>: adatokat tartalmaz a következő forrásokból:
              GeoBase&reg;, GeoGratis (&copy; Department of Natural
              Resources Canada), CanVec (&copy; Department of Natural
              Resources Canada), and StatCan (Geography Division,
              Statistics Canada).
-        contributors_fi_html: "<strong>Finnország</strong>: Adatokat tartalmaz a következő
-          forrásokból: \nNational Land Survey of Finland's Topographic Database\nés
-          más adatforrások <a href=\"https://www.maanmittauslaitos.fi/en/opendata-licence-version1\"></a>NLSFI
-          licenc alatt."
+        contributors_fi_html: ..
         contributors_fr_html: '<strong>Franciaország</strong>: adatokat tartalmaz
           a következő forrásból: Direction Générale des Impôts.'
         contributors_nl_html: |-
@@ -2060,10 +2049,7 @@ hu:
           forrásból: <a href="https://data.linz.govt.nz/">LINZ Data Service</a>, újrafelhasználható
           <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> licenc
           szerint.'
-        contributors_si_html: '<strong>Szlovénia</strong>: Tartalmaz adatokat a <a
-          href="http://www.gu.gov.si/en/">Földmérési és Térképészeti Hatóságtól</a>
-          és a <a href="http://www.mkgp.gov.si/en/">Földművelési, Erdőgazdálkodási
-          és Élelmezésügyi Minisztériumtól</a> (nyilvános információk Szlovéniában).'
+        contributors_si_html: ..
         contributors_es_html: '<strong>Spanyolország</strong>: A Spanyol Nemzeti Geográfiai
           Intézet (<a href="http://www.ign.es/">IGN</a>) és Nemzeti Kartográfiai Rendszer
           (<a href="http://www.scne.es/">SCENE</a>) adataiból származtatott adatokat
@@ -2103,6 +2089,7 @@ hu:
       createnote: Új jegyzet
       license:
         copyright: Copyright OpenStreetMap és közreműködői, egy nyílt licenc alatt
+        project_url: https://openstreetmap.org
       remote_failed: A szerkesztés nem sikerült. Győződj meg róla, hogy a JOSM vagy
         a Merkaartor be van töltve, és a távirányító opció engedélyezve van
     edit:
@@ -2110,6 +2097,7 @@ hu:
       not_public_description_html: Nem szerkesztheted tovább a térképet, amíg nem
         teszed meg. Nyilvánossá teheted szerkesztéseidet a %{user_page}adról.
       user_page_link: felhasználói oldal
+      anon_edits_html: (%{link})
       anon_edits_link_text: Nézz utána, miért van ez.
       id_not_configured: Az iD nincs beállítva
       no_iframe_support: A böngésződ nem támogatja a HTML iframes-t, amely ehhez a
@@ -2196,7 +2184,7 @@ hu:
         description: A közösség által karbantartott útmutató kezdőknek.
       help:
         url: https://help.openstreetmap.org/
-        title: Segítségnyújtó fórum
+        title: help.openhistoricalmap.org
         description: Kérdezz vagy keress válaszokat az OpenStreetMap kérdések-és-válaszok
           lapján.
       mailing_lists:
@@ -2223,14 +2211,6 @@ hu:
         url: https://wiki.openstreetmap.org/wiki/Hu:Main_Page
         title: OpenStreetMap Wiki
         description: Böngészd a wikit mélyreható OpenStreetMap dokumentációért.
-    potlatch:
-      removed: Az alapértelmezett szerkesztőd a Potlatch. Mivel az Adobe Flash Playert
-        visszavonták, a Potlatch webböngészőben már nem futtatható.
-      desktop_html: A Potlatchot azonban továbbra is hasznáhatod, ha <a href="https://www.systemed.net/potlatch/">letöltöd
-        a Windowsos vagy Maces asztali alkalmazást</a>.
-      id_html: Alternatív megoldásként beállíthatod alapértelmezett szerkesztőként
-        az iD-t, amely a webböngészőben fut, mint hajdanán a Potlatch. <a href="%{settings_url}">Beállításaidat
-        itt módosíthatod</a>.
     sidebar:
       search_results: Keresés eredményei
       close: Bezár

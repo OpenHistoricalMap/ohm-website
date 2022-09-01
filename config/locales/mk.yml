@@ -211,6 +211,7 @@ mk:
         one: пред 1 година
         other: пред %{count} години
   printable_name:
+    with_id: '%{id}'
     with_version: '%{id}, вер. %{version}'
     with_name_html: '%{name} (%{id})'
   editor:
@@ -629,13 +630,14 @@ mk:
       title:
         latlon_html: <a href="https://openstreetmap.org/">Внатрешни</a> исходни ставки
         ca_postcode_html: Исход од <a href="https://geocoder.ca/">Geocoder.CA</a>
-        osm_nominatim_html: Исход од <a href="https://nominatim.openstreetmap.org/">OpenStreetMap
+        osm_nominatim_html: Исход од <a href="https://nominatim.openstreetmap.org/">OpenHistoricalMap
           Nominatim</a>
         geonames_html: Исход од <a href="http://www.geonames.org/">GeoNames</a>
         osm_nominatim_reverse_html: Исход од <a href="https://nominatim.openstreetmap.org/">OpenStreetMap
           Nominatim</a>
         geonames_reverse_html: Исход од <a href="http://www.geonames.org/">GeoNames</a>
     search_osm_nominatim:
+      prefix_format: '%{name}'
       prefix:
         aerialway:
           cable_car: Кабелски трамвај
@@ -974,7 +976,6 @@ mk:
           commercial: Стопанско подрачје
           conservation: Заштитено земјиште
           construction: Градилиште
-          farm: Фарма
           farmland: Земјоделско земјиште
           farmyard: Селски двор
           forest: Шума
@@ -1515,6 +1516,9 @@ mk:
       successful_report: Вашата пријава е успешно заведена
       provide_details: Наведете ги потребните подробности
   layouts:
+    project_name:
+      title: OpenHistoricalMap
+      h1: OpenHistoricalMap
     logo:
       alt_text: Лого на OpenStreetMap
     home: Оди на матичната местоположба
@@ -1539,19 +1543,26 @@ mk:
     intro_header: Добре дојдовте на OpenStreetMap!
     intro_text: OpenStreetMap е карта на светот создадена од луѓе како вас и се нуди
       за слободна употреба под отворена лиценца.
+    intro_1: OpenHistoricalMap е проект предвиден за складирање и приказ на картографски
+      податоци кои ја опфаќаат историјата на светот. Работата на неа е постојано во
+      тек и ќе испробуваме многу нови функции со тек на време. Ви препорачуваме и
+      вие да почнете да испробувате и да уредувате податоци.
     intro_2_create_account: Создајте корисничка сметка
-    hosting_partners_html: Вдомувањето е поддржано од %{ucl}, %{fastly}, %{bytemark}
-      и други %{partners}.
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: вдомителот „Bytemark“
+    partners_title: Партнери
+    hosting_partners_html: |-
+      <p>
+      <a href='https://greeninfo.org'>Мрежата GreenInfo</a> е непрофитна организација која се занимава со картографија и општење, и им помага на други непрофитни и владини агенции да постигнат општествени, еколошки и други. Тоа го прави користејќи низа алатки како човечки прилагодено осмислување, соработна разработка и семрежни и геопросторни алатки со отворен код.
+      </p>
+      <p>
+      <a href='https://developmentseed.org/'>Development Seed</a> е инженерско претпријатие кое ја забрзува применета на податоци за Земјата во борба со најголемите глобални предизвици. Development Seed се користи со огромно количество на вакви податоци, облачна информатика, геопросторна вештачка интелигенција и промислено осмислување на производи.
+      </p>
     partners_partners: партнери
     tou: Услови на употреба
     osm_offline: Базата на податоци на  OpenStreetMap моментално е исклучена додека
       работиме на неопходни одржувања.
     osm_read_only: Базата на податоци на OpenStreetMap моментално може само да се
       чита, додека ги извршиме неопходните одржувања.
-    donate: Поддржете ја OpenStreetMap со %{link} за Фондот за обнова на машинската
+    donate: Поддржете го OpenHistoricalMap со %{link} за Фондот за обнова на машинската
       опрема.
     help: Помош
     about: За нас
@@ -1934,8 +1945,8 @@ mk:
     about:
       next: Следно
       copyright_html: <span>&copy;</span>Учесници на<br>OpenStreetMap
-      used_by_html: '%{name} обезбедува картографски податоци на илјадници мрежни
-        места, мобилни прилози и сметачки уреди'
+      used_by_html: OpenHistoricalMap соработно складира и прикажува картографски
+        податоци кои ја опфаќаат историјата на светот.
       lede_text: |-
         OpenStreetMap ја гради заедница од учесници што придонесуваат со свои содржини и ги одржуваат податоците
         за патишта, патеки, кафеани, железнички станици и многу друго ширум светот.
@@ -2084,6 +2095,14 @@ mk:
           <strong>Велика Британија</strong>: Содржи податоци
           од Картографскиот завод на Обединетото Кралство&copy; Крунски авторски права и
           права на базата 2010-19 г.
+        contributors_cambridge-anr_html: Содржи податоци создадени од <a href="https://www.campop.geog.cam.ac.uk/research/projects/internationaloccupations/enchpopgos/france/">Групата
+          за историја на населението и општенствените структури при Кембричкиот универзитет</a>,
+          проект на <a href="https://anrcommunes.hypotheses.org/">ANR Communes</a>.
+        contributors_ned_html: Содржи податоци од разни податочни збирови од <a href="https://www.naturalearthdata.com/">Natural
+          Earth Data</a>.
+        contributors_newberry_html: Содржи податоци од <a href-"https://digital.newberry.org/ahcb/">Атласот
+          на историски окружни граници</a> од <a href="https://www.newberry.org/">Библиотеката
+          „Њубери“</a>.
         contributors_footer_1_html: |-
           Повеќе информации за овие и други извори искористени
           за подобрување на OpenStreetMap ќе најдете на страницата <a
@@ -2116,6 +2135,8 @@ mk:
       createnote: Додај белешка
       license:
         copyright: Авторски права OpenStreetMap и учесниците, под отворена лиценца
+        license_url: https://www.openstreetmap.org/copyright/mk
+        project_url: https://openstreetmap.org
       remote_failed: Уредувањето не успеа - проверете дали е вчитан JOSM или Merkaartor
         и дали е овозможено далечинското управување
     edit:
@@ -2125,6 +2146,7 @@ mk:
         %{user_page}.
       user_page_link: корисничка страница
       anon_edits_html: (%{link})
+      anon_edits_link: https://wiki.openstreetmap.org/wiki/Disabling_anonymous_edits
       anon_edits_link_text: Дознајте зошто ова е така.
       id_not_configured: Не му се зададени поставки на уредувачкиот програм „iD“
       no_iframe_support: Вашиот прелистувач не поддржува „иРамки“ (iframes) со HTML,
@@ -2213,16 +2235,20 @@ mk:
         description: Поставете прашање или побарајте во одговорите на порталот за
           прашања и одговори на OpenStreetMap.
       mailing_lists:
+        url: https://lists.openstreetmap.org/listinfo/historic
         title: Поштенски списоци
         description: Поставете прашање или разговарајте за интересни прашања на широк
           опсег на тематски и регионални поштенски списоци.
       forums:
+        url: https://forum.openhistoricalmap.org/
         title: Форуми
         description: Прашања и разговори за оние кои претпочитаат да општат со објави.
       irc:
+        url: https://slack.openstreetmap.us/
         title: IRC
         description: Разговор во живо на најразлични јазици и на многу теми.
       switch2osm:
+        url: https://discord.gg/openstreetmap
         title: Преод на OSM
         description: Помош за претпријатија и организации кои преоѓаат на  карти на
           OpenStreetMap и други услуги.
@@ -2235,15 +2261,6 @@ mk:
         url: https://wiki.openstreetmap.org/wiki/Mk:Main_Page
         title: Вики на OpenStreetMap
         description: Прелистајте ја подробната документација за OpenStreetMap на викито.
-    potlatch:
-      removed: Вашиот стандарден уредник на OpenStreetMap е наместен да биде Potlatch.
-        Поради укинувањето на Adobe Flash Player, Potlatch повеќе не е достапен за
-        употреба во прелистувач.
-      desktop_html: Сепак, можете да го користите Potlatch со <a href="https://www.systemed.net/potlatch/">преземајќи
-        го ова програмче за Mac и Windows</a>.
-      id_html: Во спротивно, ставете го уредникот iD како стандарден, кој работи на
-        прелистувачот како што тоа беше со Potlatch. <a href="%{settings_url}">Сменете
-        си ги корисничките нагодувања овде</a>.
     sidebar:
       search_results: Исход од пребарувањето
       close: Затвори
@@ -2337,10 +2354,8 @@ mk:
         on_html: На OpenStreetMap се ставаат најразчични <em>вистински и тековни</em>
           нешта — милиони објекти и згради, патишта и други поединости за местата.
           Можете да ставате сè што постои и што ве интересира.
-        off_html: Она што <em>нема</em> тука да го најдете се судови и вреднувања,
-          историски (повеќе непостоечки) градби, нагаѓања и податоци од извори заштитени
-          со авторски права. Не копирајте и прецртувајте карти од семрежјето или од
-          книги и атласи, освен ако немате посебна дозвола.
+        off_html: "Она што <em>нема</em> тука да го најдете се податоци како оцени
+          и податоци \nод извори заштитени со авторски права."
       basic_terms:
         title: Основни картографски поими
         paragraph_1_html: OpenStreetMap има свој жаргон. Еве некои корисни поими.
@@ -2967,6 +2982,8 @@ mk:
           one: Се наоѓате на една стапка од оваа точка
           other: Се наоѓате на %{count} стапки од оваа точка
       base:
+        historical: Историска
+        woodblock: Дрвен блок
         standard: Стандардна
         cyclosm: CyclOSM
         cycle_map: Велосипедска

@@ -994,7 +994,6 @@ da:
           commercial: Erhvervsområde
           conservation: Fredet
           construction: Byggeri
-          farm: Gård
           farmland: Landbrugsjord
           farmyard: Gårdsplads
           forest: Skov
@@ -1563,9 +1562,6 @@ da:
     intro_2_create_account: Opret en brugerkonto
     hosting_partners_html: Driften støttes af %{ucl}, %{fastly}, %{bytemark} og andre
       %{partners}.
-    partners_ucl: University College London
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: partnere
     tou: Vilkår for anvendelse
     osm_offline: OpenStreetMap-databasen er for øjeblikket offline på grund af nødvendig
@@ -2250,14 +2246,6 @@ da:
         url: https://wiki.openstreetmap.org/
         title: OpenStreetMap Wiki
         description: Gennemse wikien for dybdegående OSM dokumentation.
-    potlatch:
-      removed: Din foretrukne OpenStreetMap-editor er sat til Potlatch. Da Adobe Flash
-        Player er blevet trukket tilbage, er Potlatch ikke længere tilgængelig i browseren.
-      desktop_html: Du kan stadig bruge Potlatch ved at <a href="https://www.systemed.net/potlatch/">hente
-        applikationen til Mac og Windows</a>.
-      id_html: Alternativt kan du sætte iD som din foretrukne editor, denne afvikles
-        i din browser, ligesom Potlatch gjorde. <a href="%{settings_url}">Ændr dine
-        alternativer her</a>.
     sidebar:
       search_results: Søgeresultater
       close: Luk

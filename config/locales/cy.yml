@@ -660,7 +660,6 @@ cy:
           commercial: Ardal Fasnachol
           conservation: Cadwraeth
           construction: Adeiladwaith
-          farm: Fferm
           farmland: Tir Ffermio
           farmyard: Buarth Fferm
           forest: Coedwig
@@ -1044,7 +1043,6 @@ cy:
     intro_text: Mae OpenStreetMap yn fap o'r byd, wedi'i greu gan bobl fel chi ac
       sydd ar gael i'w ddefnyddio am ddim a dan drwydded rydd.
     intro_2_create_account: Creu cyfrif defnyddiwr
-    partners_bytemark: Bytemark Hosting
     partners_partners: Partneriaid
     osm_offline: Mae cronfa ddata OpenStreetMap all-lein ar hyn o bryd er mwyn gwaith
       cynnal a chadw hanfodol.

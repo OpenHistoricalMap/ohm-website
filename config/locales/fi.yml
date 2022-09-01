@@ -971,7 +971,6 @@ fi:
           commercial: Kaupallinen alue
           conservation: Suojeltu kohde
           construction: Rakennustyömaa
-          farm: Maatila
           farmland: Viljelysmaa
           farmyard: Maatilan piha
           forest: Talousmetsä
@@ -1527,9 +1526,6 @@ fi:
     intro_2_create_account: luomalla ensin käyttäjätunnuksen
     hosting_partners_html: Palvelinkapasiteettia meille tarjoaa %{ucl}, %{fastly},
       %{bytemark} ja muut %{partners}.
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: kumppanimme
     tou: Käyttöehdot
     osm_offline: OpenStreetMapin tietokanta ei toistaiseksi ole käytettävissä välttämättömien
@@ -2176,14 +2172,6 @@ fi:
         title: OpenStreetMap-wiki
         description: Tutustu syvällisemmin OpenStreetMapiin wikikirjastossa. Osittain
           englanninkielinen.
-    potlatch:
-      removed: OpenStreetMapin oletusmuokkausohjelmaksi on valittu Potlatch. Adoben
-        Flash Player -lisäosan tuki on päättynyt, minkä vuoksi Potlatch ei ole enää
-        saatavilla verkkoselaimessa.
-      desktop_html: Potlatchia voi yhä käyttää <a href="https://www.systemed.net/potlatch/">Mac-
-        ja PC-ohjelmalla</a>.
-      id_html: Vaihtoehtoisesti voit siirtyä iD-ohjelman käyttöön, joka toimii verkkoselaimessa.
-        <a href="%{settings_url}">Muuta käyttäjäasetuksiasi</a>.
     sidebar:
       search_results: Hakutulokset
       close: Sulje

@@ -963,7 +963,6 @@ el:
           commercial: Εμπορική περιοχή
           conservation: Διατήρηση
           construction: Κατασκευή
-          farm: Αγρόκτημα
           farmland: Γεωργική γη
           farmyard: Αγρόκτημα
           forest: Δάσος
@@ -1495,9 +1494,6 @@ el:
     intro_2_create_account: Δημιουργήστε ένα λογαριασμό χρήστη
     hosting_partners_html: Η φιλοξενία υποστηρίζεται από %{ucl}, %{fastly}, %{bytemark},
       και άλλους %{partners}.
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: συνεργάτες
     tou: Όροι χρήσης
     osm_offline: Η βάση δεδομένων του OpenStreetMap είναι προσωρινά εκτός λειτουργίας
@@ -2163,15 +2159,6 @@ el:
         url: https://wiki.openstreetmap.org/
         title: OpenStreetMap Wiki
         description: Περιηγηθείτε το wiki για επιμελής τεκμηρίωση του OpenStreetMap.
-    potlatch:
-      removed: Ο προεπιλεγμένος σας επεξεργαστής του OpenStreetMap έχει τεθεί ως Potlatch.
-        Επειδή το Adobe Flash Player έχει αποσυρθεί, ο Potlatch δεν είναι πια διαθέσιμος
-        για χρήση σε πρόγραμμα περιήγησης ιστού.
-      desktop_html: Μπορείτε να χρησιμοποιήσετε ακόμη το Potlatch <a href="https://www.systemed.net/potlatch/">κάνοντας
-        λήψη της εφαρμογής για Mac και Windows</a>.
-      id_html: Εναλλακτικά, μπορείτε να θέσετε ως προεπιλεγμένο σας επεξεργαστή τον
-        iD, ο οποίος τρέχει στο πρόγραμμα περιήγησης ιστού σας όπως έκανε ο Potlatch
-        έκανε παλαιότερα. <a href="%{settings_url}">Αλλάξτε την προτίμηση σας εδώ</a>.
     sidebar:
       search_results: Αποτελέσματα Αναζήτησης
       close: Κλείσιμο

@@ -223,6 +223,10 @@ vi:
       x_years:
         one: 1 năm trước
         other: '%{count} năm trước'
+  printable_name:
+    with_id: '%{id}'
+    with_version: '%{id}, v%{version}'
+    with_name_html: '%{name} (%{id})'
   editor:
     default: Mặc định (hiện là %{name})
     id:
@@ -401,6 +405,7 @@ vi:
         one: '%{count} thành viên'
         other: '%{count} thành viên'
     relation_member:
+      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} với vai trò %{role}'
       type:
         node: Nốt
@@ -950,7 +955,6 @@ vi:
           commercial: Khu vực Thương mại
           conservation: Bảo tồn
           construction: Công trường Xây dựng
-          farm: Trại
           farmland: Trại
           farmyard: Sân Trại
           forest: Rừng Trồng Cây
@@ -1441,6 +1445,9 @@ vi:
       successful_report: Lời báo cáo của bạn đã được gửi thành công
       provide_details: Vui lòng cung cấp các chi tiết được yêu cầu
   layouts:
+    project_name:
+      title: OpenHistoricalMap
+      h1: OpenHistoricalMap
     logo:
       alt_text: Biểu trưng OpenStreetMap
     home: Về Vị trí Nhà ở
@@ -1465,12 +1472,13 @@ vi:
     intro_header: Chào mừng đến với OpenStreetMap!
     intro_text: OpenStreetMap là bản đồ thế giới do những người như bạn xây dựng và
       cho phép sử dụng thoải mái theo một giấy phép nguồn mở.
+    intro_1: OpenHistoricalMap là dự án lưu trữ và trình bày dữ liệu về lịch sử thế
+      giới trên bản đồ. Chúng ta đang thử nghiệm nhiều ý niệm mới mẻ trong khi xây
+      dựng các chức năng của dự án. Hãy tìm hiểu thêm và đóng góp dữ liệu.
     intro_2_create_account: Mở tài khoản mới
+    partners_title: Nhà bảo trợ
     hosting_partners_html: Dịch vụ lưu trữ nhờ sự hỗ trợ của %{ucl}, %{fastly}, %{bytemark},
       và %{partners} khác.
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: các công ty bảo trợ
     tou: Điều khoản sử dụng
     osm_offline: Cơ sở dữ liệu OpenStreetMap đang ngoại tuyến trong lúc đang thực
@@ -1993,6 +2001,15 @@ vi:
           lưu.'
         contributors_gb_html: '<strong>Vương quốc Anh</strong>: Bao gồm dữ liệu Ordnance
           Survey © bản quyền Crown Copyright và quyền cơ sở dữ liệu 2010–19.'
+        contributors_cambridge-anr_html: Chứa dữ liệu do dự án <a href="https://anrcommunes.hypotheses.org/">ANR
+          Communes</a> của <a href="https://www.campop.geog.cam.ac.uk/research/projects/internationaloccupations/enchpopgos/france/">Nhóm
+          Cambridge vì Lịch sử Dân cư và Cấu trúc Xã hội</a> (<i>Cambridge Group for
+          the History of Population and Social Structures</i>) tạo ra.
+        contributors_ned_html: Chứa dữ liệu từ nhiều tập hợp dữ liệu của <a href="https://www.naturalearthdata.com/">Natural
+          Earth</a>.
+        contributors_newberry_html: Chứa dữ liệu từ <a href-"https://digital.newberry.org/ahcb/">Tập
+          bản đồ Biên giới Quận hạt Lịch sử</a> (<i>Atlas of Historical County Boundaries</i>)
+          của <a href="https://www.newberry.org/">Thư viện Newberry</a>.
         contributors_footer_1_html: |-
           Xem thêm chi tiết và các nguồn gốc khác dùng để cải tiến OpenStreetMap tại <a
           href="https://wiki.openstreetmap.org/wiki/Contributors?uselang=vi">trang Người đóng góp</a> trên OpenStreetMap Wiki.
@@ -2022,6 +2039,8 @@ vi:
       license:
         copyright: Bản quyền của OpenStreetMap và những người đóng góp, được phát
           hành theo giấy phép mở
+        license_url: https://openstreetmap.org/copyright
+        project_url: https://openstreetmap.org
       remote_failed: Thất bại mở trình vẽ – hãy chắc chắn rằng JOSM hoặc Markaartor
         đã khởi động và tùy chọn phần điều khiển từ xa được kích hoạt
     edit:
@@ -2029,6 +2048,8 @@ vi:
       not_public_description_html: Nếu không đưa ra công khai, bạn không còn được
         phép sửa đổi bản đồ. Bạn có thể đưa ra công khai tại %{user_page}.
       user_page_link: trang cá nhân
+      anon_edits_html: (%{link})
+      anon_edits_link: https://wiki.openstreetmap.org/wiki/Anonymous_edits?uselang=vi
       anon_edits_link_text: Tại sao vậy?
       id_not_configured: iD chưa được cấu hình
       no_iframe_support: Tính năng này cần trình duyệt hỗ trợ khung nội bộ (iframe)
@@ -2117,16 +2138,20 @@ vi:
         description: Hỏi hang hoặc tìm kiếm các câu trả lời tại trung tâm hỏi đáp
           của OpenStreetMap.
       mailing_lists:
+        url: https://lists.openstreetmap.org/listinfo/historic
         title: Danh sách thư
         description: Hỏi han hoặc thảo luận về các chuyện quan trọng trên nhiều danh
           sách thư được sắp xếp theo chủ đề hoặc khu vực.
       forums:
+        url: https://community.openstreetmap.org/
         title: Diễn đàn
         description: Hỏi han và thảo luận trong một giao diện bảng tin.
       irc:
+        url: https://slack.openstreetmap.us/
         title: IRC
         description: Trò chuyện tương tác trong nhiều ngôn ngữ về nhiều chủ đề.
       switch2osm:
+        url: https://discord.gg/openstreetmap
         title: switch2osm
         description: Trợ giúp cho những công ty và tổ chức muốn đổi qua các bản đồ
           và dịch vụ dựa trên OpenStreetMap.
@@ -2139,15 +2164,6 @@ vi:
         url: https://wiki.openstreetmap.org/wiki/Vi:Main_Page?uselang=vi
         title: Wiki OpenStreetMap
         description: Đọc tài liệu đầy đủ về OpenStreetMap trên wiki.
-    potlatch:
-      removed: Bạn đã đặt trình vẽ OpenStreetMap mặc định là Potlatch. Vì Adobe Flash
-        Player không còn được hỗ trợ, Potlatch không còn hoạt động trong trình duyệt
-        Web.
-      desktop_html: Bạn vẫn có thể sử dụng Potlatch bằng cách <a href="https://www.systemed.net/potlatch/">tải
-        về ứng dụng về máy tính để bàn Mac hoặc Windows</a>.
-      id_html: Thay thế, bạn có thể đổi trình vẽ mặc định thành iD, trình vẽ này vẫn
-        còn hoạt động trong trình duyệt Web của bạn giống như Potlatch trước đây.
-        <a href="%{settings_url}">Thay đổi tùy chọn của bạn tại đây</a>.
     sidebar:
       search_results: Kết quả Tìm kiếm
       close: Đóng
@@ -2643,6 +2659,8 @@ vi:
       activate_user: Kích hoạt Tài khoản Này
       deactivate_user: Vô hiệu hóa Tài khoản Này
       confirm_user: Xác nhận Người dùng Này
+      unconfirm_user: Bỏ Xác nhận Người dùng Này
+      unsuspend_user: Bỏ cấm Người dùng Này
       hide_user: Ẩn Tài khoản Này
       unhide_user: Hiện Tài khoản Này
       delete_user: Xóa Tài khoản Này
@@ -2868,6 +2886,8 @@ vi:
           one: Bạn đang cách địa điểm này trong vòng 1 bộ
           other: Bạn đang cách địa điểm này trong vòng %{count} bộ
       base:
+        historical: Lịch sử
+        woodblock: Mộc bản
         standard: Chuẩn
         cyclosm: CyclOSM
         cycle_map: Bản đồ Xe đạp

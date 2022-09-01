@@ -1024,7 +1024,6 @@ pt-BR:
           commercial: Área de Negócios
           conservation: Conservação
           construction: Área de Construção
-          farm: Lavoura
           farmland: Lavoura
           farmyard: Pátio de fazenda
           forest: Floresta Manejada
@@ -1596,9 +1595,6 @@ pt-BR:
     intro_2_create_account: Criar uma conta de usuário
     hosting_partners_html: O hospedagem é suportada por %{ucl}, %{fastly}, %{bytemark}
       e outros %{partners}.
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Hospedagem Bytemark
     partners_partners: parceiros
     tou: Termo de uso
     osm_offline: A base de dados do OpenStreetMap está fora do ar para manutenção.
@@ -2290,15 +2286,6 @@ pt-BR:
         title: OpenStreetMap Wiki
         description: Navegue no wiki para ver a documentação do OpenStreetMap com
           mais detalhes.
-    potlatch:
-      removed: Seu editor padrão do OpenStreetMap é definido como Potlatch. Como o
-        Adobe Flash Player foi retirado, o Potlatch não está mais disponível para
-        uso em um navegador da web.
-      desktop_html: Você ainda pode usar o Potlatch por <a href="https://www.systemed.net/potlatch/">baixando
-        o aplicativo de desktop para Mac e Windows</a>.
-      id_html: Alternativamente, você pode definir seu editor padrão para iD, que
-        é executado em seu navegador da Web como o Potlatch fazia anteriormente. <a
-        href="%{settings_url}">Altere suas preferências aqui</a>.
     sidebar:
       search_results: Resultados da busca
       close: Fechar

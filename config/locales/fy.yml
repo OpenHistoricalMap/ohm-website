@@ -962,7 +962,6 @@ fy:
           commercial: Kommersjeel gebiet
           conservation: Natuergebiet
           construction: Bouplak
-          farm: Boerepleats
           farmland: Boerelân
           farmyard: Boerehiem
           forest: Bosk
@@ -1530,11 +1529,9 @@ fy:
     intro_text: OpenStreetMap is in wrâldkaart makke troch minsken krekt as jo, en
       frij te brûken ûnder in iepen lisinsje.
     intro_2_create_account: Meitsje in akkount as meidogger
+    partners_title: Partners
     hosting_partners_html: It webstee is ûnderdak by %{ucl}, %{fastly}, %{bytemark}
       en oare %{partners}.
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: partners
     tou: Gebrûksbetingsten
     osm_offline: De OpenStreetMap-databank is op it stuit ôfline, wylst der it nedige
@@ -1927,8 +1924,8 @@ fy:
     about:
       next: Folgjende
       copyright_html: <span>&copy;</span>OpenStreetMap-<br>bydragers
-      used_by_html: '%{name} leveret kaartdata foar tûzenen websteeën, mobile apps
-        en kompjûterapparaten'
+      used_by_html: Yn gearwurking bewarret en jout OpenHistoricalMap kaartdata wer,
+        dwers troch de wrâldskiednis.
       lede_text: OpenStreetMap wurdt makke troch in mienskip fan kaartmakkers, dy't
         gegevens bydrage en ûnderhâlde oer diken, rûtes, kafees, spoarweistasjons
         en folle mear, oer de hiele wrâld.
@@ -2236,15 +2233,6 @@ fy:
         url: https://wiki.openstreetmap.org/
         title: OpenStreetMap-wiki
         description: De wiki trochsjen foar wiidweidige dokumintaasje oer OpenStreetMap.
-    potlatch:
-      removed: Jo standertbewurker foar OpenStreetMap is ynsteld op Potlatch. Om't
-        Adobe Flash Player weifallen is, is Potlatch net mear beskikber foar gebrûk
-        yn in webblêder.
-      desktop_html: Jo kinne Potlatch nog brûke troch <a href="https://www.systemed.net/potlatch/">it
-        kompjûterprogramma foar Mac as Windows yn te laden</a>.
-      id_html: As alternatyf kinne jo jo standertbewurker ynstelle op iD, dat yn jo
-        webblêder draait krekt as Potlatch foarhinne. <a href="%{settings_url}">Feroarje
-        hjir jo foarkarren</a>.
     sidebar:
       search_results: Sykresultaten
       close: Slute
@@ -2979,6 +2967,8 @@ fy:
           one: Jo sitte binnen ien foet fan dit punt
           other: Jo sitte binnen %{count} foet fan dit punt
       base:
+        historical: Histoarysk
+        woodblock: Blokdruk
         standard: Standert
         cyclosm: FytsOSM
         cycle_map: Fytskaart

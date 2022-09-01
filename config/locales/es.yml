@@ -1050,7 +1050,6 @@ es:
           commercial: Área comercial
           conservation: Espacio natural protegido
           construction: Construcción
-          farm: Granja
           farmland: Tierra de labranza
           farmyard: Corral
           forest: Bosque
@@ -1620,9 +1619,6 @@ es:
     intro_2_create_account: Crear una cuenta de usuario
     hosting_partners_html: El alojamiento es apoyado por %{ucl}, %{fastly}, %{bytemark},
       y otros %{partners}.
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: socios
     tou: Términos de uso
     osm_offline: La base de datos de OpenStreetMap no está disponible en estos momentos
@@ -2312,15 +2308,6 @@ es:
         url: https://wiki.openstreetmap.org/wiki/ES:Main_Page
         title: Wiki de OpenStreetMap
         description: Explora la wiki para obtener documentación detallada de OpenStreetMap.
-    potlatch:
-      removed: El editor de OpenStreetMap predeterminado se establece como Potlatch.
-        Dado que Adobe Flash Player se ha retirado, Potlatch ya no está disponible
-        para su uso en un navegador web.
-      desktop_html: Aún puede utilizarse Potlatch mediante la <a href="https://www.systemed.net/potlatch/">descarga
-        de la aplicación de escritorio para Mac y Windows</a>.
-      id_html: Alternativamente, puede poner su editor predeterminado a iD, el que
-        se ejecuta en su navegador como hizo Potlatch anteriormente. <a href="%{settings_url}">Cambie
-        sus preferencias aquí</a>.
     sidebar:
       search_results: Resultados de la búsqueda
       close: Cerrar

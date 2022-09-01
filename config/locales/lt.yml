@@ -558,7 +558,6 @@ lt:
       failed: Atsiprašome, nepavyko pridėti naudotojo %{name} į draugų sąrašą.
       already_a_friend: Jūs jau draugaujate su %{name}.
     remove_friend:
-      heading: Nebedraugauti su naudotoju „%{user}“?
       button: Nebedraugauti
       success: '%{name} pašalintas iš jūsų draugų sąrašo.'
       not_a_friend: '%{name} nėra jūsų draugas.'
@@ -823,7 +822,6 @@ lt:
           commercial: Komercinis plotas
           conservation: Apsaugos zona
           construction: Statyba
-          farm: Ūkis
           farmland: Fermos žemės
           farmyard: Ferma
           forest: Miškas
@@ -1265,8 +1263,6 @@ lt:
     intro_2_create_account: sukurti naudotojo paskyrą
     hosting_partners_html: Hostinimo paslaugas teikia %{ucl}, %{fastly}, %{bytemark}
       ir kiti %{partners}.
-    partners_ucl: UCL
-    partners_bytemark: Bytemark serveris
     partners_partners: partneriai
     tou: Naudojimo sąlygos
     osm_offline: Šiuo metu OpenStreetMap duomenų bazė išjungta, nes vykdomi svarbūs

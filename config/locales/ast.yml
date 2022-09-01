@@ -11,181 +11,8 @@
 # Author: Xuacu
 ---
 ast:
-  time:
-    formats:
-      friendly: '%e de %B de %Y a les %H:%M'
-  helpers:
-    submit:
-      diary_comment:
-        create: Guardar
-      diary_entry:
-        create: Espublizar
-        update: Anovar
-      issue_comment:
-        create: Amestar comentariu
-      message:
-        create: Unviar
-      client_application:
-        create: Rexistrar
-        update: Anovar
-      redaction:
-        create: Crear redaición
-        update: Guardar redaición
-      trace:
-        create: Xubir
-        update: Guardar cambeos
-      user_block:
-        create: Crear un bloquéu
-        update: Anovar el bloquéu
-  activerecord:
-    errors:
-      messages:
-        invalid_email_address: nun paez que sía una dirección de corréu electrónicu
-          válida.
-        email_address_not_routable: nun ye enrutable
-    models:
-      acl: Llista de Control d'Accesu
-      changeset: Conxuntu de cambeos
-      changeset_tag: Etiqueta del conxuntu de cambeos
-      country: País
-      diary_comment: Comentariu del diariu
-      diary_entry: Entrada del diariu
-      friend: Amigu
-      issue: Problema
-      language: Llingua
-      message: Mensaxe
-      node: Nuedu
-      node_tag: Etiqueta del nuedu
-      notifier: Avisador
-      old_node: Nuedu antiguu
-      old_node_tag: Etiqueta del nuedu antiguu
-      old_relation: Rellación antigua
-      old_relation_member: Miembru de la rellación antigua
-      old_relation_tag: Etiqueta de la rellación antigua
-      old_way: Vía antigua
-      old_way_node: Nuedu de via antigua
-      old_way_tag: Etiqueta de vía antigua
-      relation: Rellación
-      relation_member: Miembru de la rellación
-      relation_tag: Etiqueta de la rellación
-      report: Informe
-      session: Sesión
-      trace: Traza
-      tracepoint: Puntu de traza
-      tracetag: Etiqueta de traza
-      user: Usuariu
-      user_preference: Preferencia d'usuariu
-      user_token: Pase d'usuariu
-      way: Vía
-      way_node: Nuedu de vía
-      way_tag: Etiqueta de vía
-    attributes:
-      client_application:
-        callback_url: URL de retornu
-        support_url: URL d'encontu
-      diary_comment:
-        body: Cuerpu
-      diary_entry:
-        user: Usuariu
-        title: Asuntu
-        latitude: Llatitú
-        longitude: Llonxitú
-        language: Llingua
-      friend:
-        user: Usuariu
-        friend: Amigu
-      trace:
-        user: Usuariu
-        visible: Visible
-        name: Nome del ficheru
-        size: Tamañu
-        latitude: Llatitú
-        longitude: Llonxitú
-        public: Públicu
-        description: Descripción
-        gpx_file: Xubir un ficheru GPX
-        visibility: Visibilidá
-        tagstring: Etiquetes
-      message:
-        sender: Remitente
-        title: Asuntu
-        body: Cuerpu
-        recipient: Destinatariu
-      redaction:
-        title: Títulu
-        description: Descripción
-      report:
-        details: Por favor, apurre más detalles sobro'l problema (obligatoriu).
-      user:
-        email: Corréu
-        new_email: Nueva direición de corréu electrónicu
-        active: Activu
-        display_name: Nome a amosar
-        description: Descripción
-        home_lat: Llatitú
-        home_lon: Llonxitú
-        languages: Llingües preferíes
-        pass_crypt: Contraseña
-    help:
-      trace:
-        tagstring: llendáu con comes
-      user_block:
-        needs_view: ¿Tien de coneutase l'usuariu enantes de que se desanicie esti
-          bloquéu?
-      user:
-        new_email: (nunca s'amuesa en público)
-  datetime:
-    distance_in_words_ago:
-      about_x_hours:
-        one: hai como 1 hora
-        other: hai como %{count} hores
-      about_x_months:
-        one: hai como 1 mes
-        other: hai como %{count} meses
-      about_x_years:
-        one: hai como 1 añu
-        other: hai como %{count} años
-      almost_x_years:
-        one: fai casi 1 añu
-        other: fai casi %{count} años
-      half_a_minute: va mediu minutu
-      less_than_x_seconds:
-        one: fai menos de 1 segundu
-        other: fai menos de %{count} segundos
-      less_than_x_minutes:
-        one: fai menos de 1 minutu
-        other: fai menos de %{count} minutos
-      over_x_years:
-        one: fai más de 1 añu
-        other: fai más de %{count} años
-      x_seconds:
-        one: fai 1 segundu
-        other: fai %{count} segundos
-      x_minutes:
-        one: fai 1 minutu
-        other: fai %{count} minutos
-      x_days:
-        one: ayeri
-        other: fai %{count} díes
-      x_months:
-        one: fai 1 mes
-        other: fai %{count} meses
-      x_years:
-        one: fai 1 añu
-        other: fai %{count} años
-  editor:
-    default: Predetermináu (anguaño %{name})
-    id:
-      name: iD
-      description: iD (editor nel navegador)
-    remote:
-      name: Control remotu
-      description: Control remotu (JOSM, Potlatch, Merkaartor)
   auth:
     providers:
-      none: Nengunu
-      openid: OpenID
-      google: Google
       facebook: Facebook
       windowslive: Windows Live
       github: GitHub
@@ -780,7 +607,6 @@ ast:
           commercial: Área de negocios
           conservation: Conservación
           construction: Construcción
-          farm: Granxa
           farmland: Tierra de llabranza
           farmyard: Antoxana
           forest: Área forestal
@@ -1258,8 +1084,6 @@ ast:
     intro_2_create_account: Crear una cuenta d'usuariu
     hosting_partners_html: L'agospiamientu tien l'encontu de %{ucl}, %{bytemark},  y
       otros %{partners}.
-    partners_ucl: UCL
-    partners_bytemark: Bytemark Hosting
     partners_partners: asociaos
     tou: Condiciones d'usu
     osm_offline: La base de datos d'OpenStreetMap anguaño ta desconectada mentanto

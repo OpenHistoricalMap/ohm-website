@@ -991,7 +991,6 @@ is:
           commercial: Verslunarsvæði
           conservation: Verndarsvæði
           construction: Bygging
-          farm: Býli
           farmland: Ræktarland
           farmyard: Hlað
           forest: Skógur
@@ -1562,9 +1561,6 @@ is:
     intro_2_create_account: Búa til notandaaðgang
     hosting_partners_html: Vefhýsing er studd af %{ucl},%{fastly}, %{bytemark} og
       öðrum %{partners}.
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: samstarfsaðilum
     tou: Notkunarskilmálar
     osm_offline: OpenStreetMap gagnagrunnurinn er niðri vegna viðhalds.
@@ -2273,10 +2269,6 @@ is:
         title: Wiki-vefur OpenStreetMap
         description: Vafraðu um wiki/kvikuna til að sjá greinargóðar leiðbeiningar
           varðandi OpenStreetMap.
-    potlatch:
-      removed: Sjálfgefinn OpenStreetMap ritstjóri er stilltur sem Potlatch. Þar sem
-        Adobe Flash Player er ekki til lengur, er Potlatch ekki lengur hægt að nota
-        í vafra.
     sidebar:
       search_results: Leitarniðurstöður
       close: Loka

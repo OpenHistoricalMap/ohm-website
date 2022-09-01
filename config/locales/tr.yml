@@ -1025,7 +1025,6 @@ tr:
           commercial: Ticari ve Hizmet Alanı
           conservation: Koruma
           construction: İnşaat
-          farm: Çiftlik
           farmland: Tarım arazisi
           farmyard: Çiftlik avlusu
           forest: Orman
@@ -1595,9 +1594,6 @@ tr:
     intro_2_create_account: hesap oluşturunuz
     hosting_partners_html: Barındırma hizmeti; %{ucl}, %{fastly}, %{bytemark} ve diğer
       %{partners} tarafından desteklenmektedir.
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: ortaklar
     tou: Kullanım Şartları
     osm_offline: OpenStreetMap veritabanı bakım çalışmaları yürütüldüğü için veritabanı
@@ -2299,15 +2295,6 @@ tr:
         url: https://wiki.openstreetmap.org/
         title: OpenStreetMap Viki
         description: Ayrıntılı OpenStreetMap belgeleri için wiki'ye göz atın.
-    potlatch:
-      removed: Varsayılan OpenStreetMap düzenleyiciniz Potlatch olarak ayarlanmıştır.
-        Adobe Flash Player geri çekildiğinden, Potlatch artık bir web tarayıcısında
-        kullanılamaz.
-      desktop_html: Potlatch'ı <a href="https://www.systemed.net/potlatch/">Mac ve
-        Windows için masaüstü uygulamasını indirerek</a> kullanmaya devam edebilirsiniz.
-      id_html: Alternatif olarak, varsayılan düzenleyicinizi, daha önce Potlatch'ın
-        yaptığı gibi web tarayıcınızda çalışan kimliği ayarlayabilirsiniz. <a href="%{settings_url}">Tercihlerinizi
-        buradan değiştirin</a>.
     sidebar:
       search_results: Arama Sonuçları
       close: Kapat

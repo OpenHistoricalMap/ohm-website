@@ -1002,7 +1002,6 @@ ca:
           commercial: Zona comercial
           conservation: Conservació
           construction: Construcció
-          farm: Granja
           farmland: Terres de conreu
           farmyard: Corral
           forest: Bosc
@@ -1572,9 +1571,6 @@ ca:
     intro_2_create_account: Crea un compte d’usuari
     hosting_partners_html: L'allotjament és a càrrec de %{ucl}, %{fastly}, %{bytemark}
       i d'altres %{partners}.
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: socis
     tou: Condicions d’ús
     osm_offline: La base de dades OpenStreetMap és fora de línia mentre es fan les
@@ -2254,15 +2250,6 @@ ca:
         url: https://wiki.openstreetmap.org/
         title: Wiki d'OpenStreetMap
         description: Navegueu per la wiki per a trobar documentació detallada d'OpenStreetMap.
-    potlatch:
-      removed: El vostre editor d'OpenStreetMap per defecte és el Potlatch. Atès que
-        s'ha discontinuat l'Adobe Flash Player, el Potlach deixarà d'estar disponible
-        des del navegador web.
-      desktop_html: Encara podeu usar Potlatch <a href="https://www.systemed.net/potlatch/">descarregant
-        l'aplicació d'escriptori per Mac o Windows</a>.
-      id_html: Alternativament, podeu establir iD com al vostre editor per defecte,
-        el qual s'executa en el vostre navegador de web com Potlatch feia anteriorment.
-        <a href="%{settings_url}">Canvieu aquí les vostres preferències</a>.
     sidebar:
       search_results: Resultats de la cerca
       close: Tanca

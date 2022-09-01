@@ -970,7 +970,6 @@ ia:
           commercial: Area commercial
           conservation: Conservation
           construction: Construction
-          farm: Ferma
           farmland: Terra arabile
           farmyard: Corte de ferma
           forest: Foreste
@@ -1538,11 +1537,13 @@ ia:
     intro_text: OpenStreetMap es un carta del mundo, create per gente como tu e libere
       de usar sub un licentia aperte.
     intro_2_create_account: Crea un conto de usator
-    hosting_partners_html: Le allogiamento web es supportate per %{ucl}, %{fastly},
-      %{bytemark} e altere %{partners}.
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
+    hosting_partners_html: |-
+      <p>
+      <a href='https://greeninfo.org'>GreenInfo Network</a> es un organisation caritabile de cartographia e communication sin scopo lucrative que adjuta organisationes sin scopo lucrative e agentias governamental a attinger objectivos social, ambiental e alteres, usante un gamma de utensiles, includite practicas de designo centrate sur le humano, disveloppamento collaborative, e utensiles Web e geospatial in codice-fonte aperte.
+      </p>
+      <p>
+      <a href='https://developmentseed.org/'>Development Seed</a> es un compania de ingenieria e de productos que accelera le application de datos terrestre a nostre plus grande defias mundial. Development Seed emplea datos terrestre massive, le computation in nube, le intelligentia artificial geospatial, e le principios de disveloppamento prudente.
+      </p>
     partners_partners: partners
     tou: Conditiones de uso
     osm_offline: Le base de datos de OpenStreetMap non es disponibile al momento debite
@@ -1940,8 +1941,8 @@ ia:
     about:
       next: Sequente
       copyright_html: <span>&copy;</span>Contributores de<br>OpenStreetMap
-      used_by_html: '%{name} forni datos cartographic a milles de sitos web, applicationes
-        mobile e dispositivos physic'
+      used_by_html: OpenHistoricalMap immagazina e monstra de maniera collaborative
+        datos cartographic de tote le historia del mundo.
       lede_text: OpenStreetMap es construite per un communitate de cartographos que
         contribue e mantene datos sur stratas, sentieros, cafés, stationes ferroviari
         e multo plus, in tote le mundo.
@@ -2231,15 +2232,6 @@ ia:
         url: http://wiki.openstreetmap.org/
         title: Wiki OpenStreetMap
         description: Percurre le wiki pro le documentation in detalio de OpenStreetMap.
-    potlatch:
-      removed: Tu ha le editor predefinite de OpenStreetMap fixate como Potlatch.
-        Post que Adobe Flash ha essite retirate, Potlatch non plus pote esser usate
-        in un navigator web.
-      desktop_html: Tu pote totevia usar Potlatch si tu <a href="https://www.systemed.net/potlatch/">discarga
-        le application scriptorio pro Mac o Windows</a>.
-      id_html: Alternativemente, tu pote fixar le editor predefinite a iD, le qual
-        functiona in tu navigator web como Potlatch lo faceva antea. <a href="%{settings_url}">Cambia
-        hic tu preferentias</a>.
     sidebar:
       search_results: Resultatos del recerca
       close: Clauder

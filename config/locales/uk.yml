@@ -1049,7 +1049,6 @@ uk:
           commercial: Торгівельно-офісна територія
           conservation: Заповідник
           construction: Будівництво
-          farm: Ферма
           farmland: Рілля
           farmyard: Територія ферми
           forest: Ліс
@@ -1624,9 +1623,6 @@ uk:
     intro_2_create_account: Створіть обліковий запис
     hosting_partners_html: Хостинг підтримується %{ucl}, %{fastly}, %{bytemark} та
       іншими %{partners}.
-    partners_ucl: UCL
-    partners_fastly: Швидко
-    partners_bytemark: Bytemark Hosting
     partners_partners: партнерами
     tou: Умови використання
     osm_offline: База даних OpenStreetMap в даний момент недоступна, бо саме проводиться
@@ -2304,14 +2300,6 @@ uk:
         url: http://wiki.openstreetmap.org/
         title: OpenStreetMap Wiki
         description: Перегляньте вікі щоб отримати докладу документацію OpenStreetMap.
-    potlatch:
-      removed: Вашим типовим редактором зазначено Potlatch. Через припинення роботи
-        Adobe Flash Player він більше не доступний для використання у вебоглядачі.
-      desktop_html: Ви можете використовувати Potlatch <a href="https://www.systemed.net/potlatch/">завантаживши</a>
-        його у вигляді застосунку для Mac чи Windows.
-      id_html: Або ж ви можете встановити типовим редактором iD, який працює у вебоглядачі,
-        так само як до цього працював Potlatch. <a href="%{settings_url}">Змініть
-        свої налаштування тут</a>.
     sidebar:
       search_results: Результати пошуку
       close: Закрити

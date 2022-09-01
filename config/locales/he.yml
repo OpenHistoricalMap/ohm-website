@@ -1019,7 +1019,6 @@ he:
           commercial: אזור מסחרי
           conservation: אזור לשימור
           construction: אזור בנייה
-          farm: חווה
           farmland: שטח חקלאי
           farmyard: חצר חקלאית
           forest: יער
@@ -1586,9 +1585,6 @@ he:
     intro_2_create_account: נא ליצור חשבון משתמש
     hosting_partners_html: האירוח בתמיכת %{ucl}, %{fastly}, %{bytemark}, ו%{partners}
       נוספים.
-    partners_ucl: UCL
-    partners_fastly: פאסטלי
-    partners_bytemark: בייטמארק הוסטינג
     partners_partners: שותפים
     tou: תנאי שימוש
     osm_offline: מסד הנתונים של אתר OpenStreetMap אינו מקוון כעת בשל עבודות תחזוקה
@@ -2248,13 +2244,6 @@ he:
         url: https://wiki.openstreetmap.org/
         title: הוויקי של OpenStreetMap
         description: לעיין בוויקי לתיעוד מעמיק על OpenStreetMap.
-    potlatch:
-      removed: עורך הOpenStreetMap ברירת המחדל שלך מוגדר כPotlatch. בגלל שנגן הפלאש
-        של אדובי כבר לא נתמך, Potlatch כבר לא זמין בדפדפן.
-      desktop_html: ניתן עדיין להשתמש בPotlatch על ידי <a href="https://www.systemed.net/potlatch/">הורדת
-        יישום שולחן העבודה ל-Windows או ל-Mac</a>.
-      id_html: לחלופין, ניתן להגדיר את עורך בררת המחדל שלך ל־iD, שמופעל בדפדפן כמו
-        ש־Potlach עשה בעבר. <a href="%{settings_url}">ניתן לשנות את ההעדפות שלך כאן</a>.
     sidebar:
       search_results: תוצאות החיפוש
       close: לסגירה

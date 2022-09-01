@@ -1020,7 +1020,6 @@ sv:
           commercial: Kommersiellt område
           conservation: Naturskyddsområde
           construction: Byggarbetsplats
-          farm: Bondgård
           farmland: Jordbruksmark
           farmyard: Gårdsplan
           forest: Skog
@@ -1589,9 +1588,6 @@ sv:
       och fri att använda under en öppen licens.
     intro_2_create_account: Skapa ett användarkonto
     hosting_partners_html: Drivs via %{ucl}, %{fastly}, %{bytemark} och andra %{partners}.
-    partners_ucl: University College London
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: partners
     tou: Användarvillkor
     osm_offline: OpenStreetMap-databasen är inte tillgänglig just nu, då nödvändigt
@@ -2284,15 +2280,6 @@ sv:
         url: https://wiki.openstreetmap.org/
         title: OpenStreetMaps wiki
         description: Sök i wikin för ingående dokumentation av OpenStreetMap.
-    potlatch:
-      removed: Din standardredigerare på OpenStreetMat är Potlatch. På grund av att
-        Adobe Flash Player har dragits tillbaka, kan inte Potlatch längre användas
-        i webbläsaren.
-      desktop_html: Du kan fortfarande använda Potlatch genom att <a href="https://www.systemed.net/potlatch/">ladda
-        ner datorapplikationen för Mac och Windows</a>.
-      id_html: Eller så kan du ange din standardredigerare som iD, vilket kör din
-        webbläsare som Potlatch tidigare gjort. <a href="%{settings_url}">Ändra dina
-        alternativ här</a>.
     sidebar:
       search_results: Sökresultat
       close: Stäng

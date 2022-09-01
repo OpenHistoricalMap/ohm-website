@@ -494,7 +494,6 @@ sco:
           commercial: Commercial Aurie
           conservation: Conservation
           construction: Construction
-          farm: Ferm
           farmland: Fermlaund
           farmyard: Fermyard
           forest: Forest
@@ -800,8 +799,6 @@ sco:
     intro_text: OpenStreetMap is a cairt o the warld, creatit bi fowk lik ye an free
       tae uise unner an open license.
     intro_2_create_account: Create a uiser accoont
-    partners_ucl: the UCL VR Centre
-    partners_bytemark: Bytemark Hosting
     partners_partners: pairtners
     osm_offline: The OpenStreetMap database is currently offline while essential database
       maintenance wirk is carried oot.

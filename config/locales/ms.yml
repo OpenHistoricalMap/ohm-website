@@ -737,7 +737,6 @@ ms:
           commercial: Kawasan Perdagangan
           conservation: Pemuliharaan
           construction: Pembinaan
-          farm: Ladang
           farmland: Tanah Ladang
           farmyard: Laman Ladang
           forest: Hutan
@@ -1132,8 +1131,6 @@ ms:
     intro_text: OpenStreetMap ialah peta dunia yang diwujudkan oleh insan seperti
       anda, dan bebas digunakan dengan berlandaskan lesen terbuka.
     intro_2_create_account: Buka akaun pengguna
-    partners_ucl: Pusat VR UCL
-    partners_bytemark: Bytemark Hosting
     partners_partners: rakan-rakan kongsi
     tou: Syarat-Syarat Penggunaan
     osm_offline: Pangkalan data OpenStreetMap kini diputuskan sambungannya sementara

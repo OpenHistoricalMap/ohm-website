@@ -953,7 +953,6 @@ gl:
           commercial: Zona de oficinas
           conservation: Conservación
           construction: Terreo en construción
-          farm: Granxa
           farmland: Terra de labranza
           farmyard: Curral
           forest: Bosque
@@ -1521,9 +1520,6 @@ gl:
     intro_2_create_account: Cree unha conta de usuario
     hosting_partners_html: O aloxamento é fornecido por %{ucl}, %{bytemark} e outros
       %{partners}.
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: socios
     tou: Termos de uso
     osm_offline: A base de datos do OpenStreetMap atópase desconectada mentres realizamos
@@ -2221,15 +2217,6 @@ gl:
         url: https://wiki.openstreetmap.org/
         title: Wiki do OpenStreetMap
         description: Na wiki atopará documentación detallada do OpenStreetMap.
-    potlatch:
-      removed: O teu editor predeterminado do OpenStreetMap é o Potlatch. Debido a
-        que o Adobe Flash Player xa non é compatíbel, Potlatch xa non está dispoñíbel
-        para o seu uso nun navegador web.
-      desktop_html: Aínda podes empregar o Potlatch <a href="https://www.systemed.net/potlatch/">baixando
-        a aplicación de escritorio para Mac e Windows</a>.
-      id_html: Alternativamente, podes poñer como o teu editor predeterminado o iD,
-        así será executado no teu navegador web como antes facía o Potlatch. <a href="%{settings_url}">Muda
-        a túa configuración de usuario aquí</a>.
     sidebar:
       search_results: Resultados da procura
       close: Pechar

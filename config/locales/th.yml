@@ -780,7 +780,6 @@ th:
           commercial: พื้นที่พาณิชยกรรม
           conservation: พื้นที่อนุรักษ์
           construction: พื้นที่ก่อสร้าง
-          farm: ไร่นา
           farmland: ไร่นา
           farmyard: ลานไร่นา
           forest: ป่า
@@ -1250,8 +1249,6 @@ th:
     intro_2_create_account: สร้างบัญชีผู้ใช้ใหม่
     hosting_partners_html: การโฮสต์ได้รับการสนับสนุนโดย %{ucl}, %{bytemark}, และ%{partners}อื่น
       ๆ
-    partners_ucl: ยูซีแอล (วิทยาลัยอุดมศึกษาลอนดอน)
-    partners_bytemark: ไบต์มาร์กโฮสติง
     partners_partners: องค์กรพันธมิตร
     tou: ข้อกำหนดการใช้งาน
     osm_offline: ฐานข้อมูลของ OpenStreetMap กำลังออฟไลน์เพื่อให้สามารถดำเนินการบำรุงรักษาตามปกติได้

@@ -1089,8 +1089,6 @@ et:
     intro_2_create_account: loo oma konto
     hosting_partners_html: Majutust toetavad %{ucl}, %{fastly}, %{bytemark} ja teised
       %{partners}.
-    partners_ucl: UCL
-    partners_bytemark: Bytemark Hosting
     partners_partners: partnerid
     osm_offline: OpenStreetMapi andmebaas ei ole hetkel juurdepääsetav sest teostatakse
       vajalikke hooldustöid.

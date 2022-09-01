@@ -976,7 +976,6 @@ te:
           commercial: వాణిజ్య ప్రదేశం
           conservation: సంరక్షణ
           construction: నిర్మాణం
-          farm: పొలం
           farmland: పంటపొలం
           farmyard: పెరటి పొలం
           forest: అడవి
@@ -1287,7 +1286,6 @@ te:
           funeral_directors: ఖనన కర్మల స్థానం
           furniture: ఫర్నిచర్
           garden_centre: తోట దుకాణం
-          gas: గ్యాసు దుకాణం
           general: జనరల్ దుకాణం
           gift: బహుమతుల దుకాణం
           greengrocer: కూరగాయల దుకాణం
@@ -1540,9 +1538,6 @@ te:
     intro_2_create_account: వాడుకరి ఖాతాను సృష్టించుకోండి
     hosting_partners_html: '%{ucl}, %{fastly}, %{bytemark}, ఇతర %{partners} హోస్టింగుకు
       మద్దతు నిస్తున్నారు.'
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: భాగస్వాములు
     tou: వాడుక నియమాలు
     osm_offline: OpenStreetMap డేటాబేసులో అత్యావశ్యకమైన నిర్వహణ పనులు జరుగుతున్నందున
@@ -2082,12 +2077,6 @@ te:
         url: https://wiki.openstreetmap.org/
         title: OpenStreetMap వికీ
         description: లోతైన OpenStreetMap డాక్యుమెంటేషను కోసం వికీలో శోధించండి
-    potlatch:
-      desktop_html: మీరు <a href="https://www.systemed.net/potlatch/">మాక్, విండోస్
-        ల్లో పనిచేసే డెస్క్‌టాప్ అనువర్తనాన్ని దించుకుని</a> Potlatch వాడుకోవచ్చు.
-      id_html: లేదా, మీ డీఫాల్టు ఎడిటరుగా iD ను పెట్టుకోవచ్చు. గతంలో Potlatch పనిచేసిన
-        విధం గానే ఇది కూడా బ్రౌజరులో పనిచేస్తుంది. <a href="%{settings_url}">మీ అభీష్టాలను
-        ఇక్కడ మార్చుకోండి</a>.
     sidebar:
       search_results: అన్వేషణ ఫలితాలు
       close: మూసివేయి

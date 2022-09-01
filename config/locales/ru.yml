@@ -1072,7 +1072,6 @@ ru:
           commercial: Офисная территория
           conservation: Заповедник
           construction: Стройка
-          farm: Ферма
           farmland: Сельхозугодья
           farmyard: Сельхоздворы
           forest: Лесное хозяйство
@@ -1599,8 +1598,6 @@ ru:
     intro_2_create_account: Создайте учётную запись
     hosting_partners_html: Хостинг поддерживается %{ucl}, %{fastly}, %{bytemark} и
       другими %{partners}.
-    partners_ucl: UCL
-    partners_bytemark: Bytemark Hosting
     partners_partners: партнёрами
     tou: Условия использования
     osm_offline: База данных OpenStreetMap в данный момент не доступна, так как проводится
@@ -2289,15 +2286,6 @@ ru:
         url: https://wiki.openstreetmap.org/wiki/RU:Заглавная_страница
         title: OpenStreetMap Вики
         description: Посмотреть вики с подробной документацией по OpenStreetMap.
-    potlatch:
-      removed: Ваш редактор OpenStreetMap по умолчанию - Potlach. Поскольку поддержка
-        Adobe Flash Player была приостановлена, Potlatch больше не доступен для использования
-        в веб-браузере.
-      desktop_html: Вы всё еще можете использовать Potlatch, <a href="https://www.systemed.net/potlatch/">загрузив
-        приложение для Mac и Windows</a>.
-      id_html: В качестве альтернативы вы можете установить в качестве редактора по
-        умолчанию iD, который запускается в вашем веб-браузере, как раньше это делал
-        Potlatch. <a href="%{settings_url}">Измените свои настройки здесь</a>.
     sidebar:
       search_results: Результаты поиска
       close: Закрыть

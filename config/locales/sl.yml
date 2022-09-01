@@ -862,7 +862,6 @@ sl:
           commercial: Poslovna cona
           conservation: Zaščiteno področje
           construction: Gradbišče
-          farm: Kmetija
           farmland: Kmetijsko zemljišče
           farmyard: Kmetija
           forest: Gozd
@@ -1287,8 +1286,6 @@ sl:
       vi, brezplačen za uporabo z odprto licenco.
     intro_2_create_account: Ustvarite uporabniški račun
     hosting_partners_html: Gostovanje omogočajo %{ucl}, %{bytemark} in drugi %{partners}.
-    partners_ucl: UCL
-    partners_bytemark: Bytemark Hosting
     partners_partners: partnerji
     tou: Pogoji uporabe
     osm_offline: Baza OpenStreetMap zaradi izvajanja nujnih vzdrževalnih del trenutno

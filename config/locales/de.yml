@@ -71,7 +71,6 @@
 # Author: Predatorix
 # Author: Purodha
 # Author: RacoonyRE
-# Author: Raymond
 # Author: Reneman
 # Author: Schmackes
 # Author: Simon04
@@ -1054,7 +1053,6 @@ de:
           commercial: Gewerbegebiet
           conservation: Naturschutzgebiet
           construction: Baustelle
-          farm: Bauernhof
           farmland: Acker
           farmyard: landwirtschaftliche Betriebsfläche
           forest: Wald
@@ -1628,9 +1626,6 @@ de:
     intro_2_create_account: Erstelle ein Benutzerkonto
     hosting_partners_html: Das Hosting wird von %{ucl}, %{fastly}, %{bytemark} und
       anderen %{partners} unterstützt.
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: Partnern
     tou: Nutzungsbedingungen
     osm_offline: Die OpenStreetMap-Datenbank ist im Moment wegen wichtiger Wartungsarbeiten
@@ -2340,15 +2335,6 @@ de:
         url: https://wiki.openstreetmap.org/
         title: OpenStreetMap Wiki
         description: Durchsuche das Wiki für eine ausführliche OSM-Dokumentation.
-    potlatch:
-      removed: Deine Standard OpenStreetMap Editor ist Potlatch. Da die Entwicklung
-        des Adobe Flash Player eingestellt wurde, ist Potlatch nicht mehr für die
-        Nutzung im Browser verfügbar.
-      desktop_html: Wenn du Potlatch weiternutzen möchtest kannst du die Desktopanwendung
-        für Mac und Windows <a href="https://www.systemed.net/potlatch/">hier Herunterladen</a>.
-      id_html: Alternativ kannst du deinen Standardeditor auf iD einstellen, der in
-        deinem Webbrowser wie zuvor Potlatch ausgeführt wird. <a href="%{settings_url}">Änder
-        hier deine Benutzereinstellungen</a>.
     sidebar:
       search_results: Suchergebnisse
       close: Schließen
@@ -2358,7 +2344,7 @@ de:
       get_directions_title: Routenberechnung zwischen zwei Orten
       from: Von
       to: Nach
-      where_am_i: Wo ist dies?
+      where_am_i: Wo ist das?
       where_am_i_title: Die momentane Position mit der Suchmaschine anzeigen
       submit_text: Los
       reverse_directions_text: Richtungen umkehren
@@ -2595,8 +2581,8 @@ de:
   application:
     permission_denied: Du hast keine Berechtigung, um auf diese Aktion zuzugreifen.
     require_cookies:
-      cookies_needed: Es scheint als hättest du Cookies ausgeschaltet. Bitte aktiviere
-        Cookies, bevor du fortfährst.
+      cookies_needed: Anscheinend hast du Cookies deaktiviert. Bitte aktiviere Cookies
+        in deinem Browser, bevor du fortfährst.
     require_admin:
       not_an_admin: Du musst ein Administrator sein, um diese Aktion auszuführen.
     setup_user_auth:
@@ -2916,8 +2902,8 @@ de:
     grant:
       title: Bestätige Rollenzuordnung
       heading: Bestätige Rollenzuordnung
-      are_you_sure: Bist du sicher, dass du Nutzer „%{name}“ der Rolle „%{role}“ zuordnen
-        möchtest?
+      are_you_sure: Bist du sicher, dass du Benutzer „%{name}“ die Rolle „%{role}“
+        zuordnen möchtest?
       confirm: Bestätigen
       fail: Der Nutzer „%{name}“ konnte der Rolle „%{role}“ nicht zugeordnet werden.
         Bitte überprüfe, ob es sich um einen gültigen Benutzer und eine gültige Rolle
@@ -2962,7 +2948,7 @@ de:
     create:
       try_contacting: Bitte nimm Kontakt mit dem Benutzer auf und gib ihm eine angemessene
         Zeit zum Antworden, bevor du ihn sperrst.
-      try_waiting: Bitte gib dem Benutzer einen angemessenen Zeitraum zu antworten
+      try_waiting: Bitte gib dem Benutzer eine angemessene Zeit, um zu antworten,
         bevor du ihn sperrst.
       flash: Benutzer %{name} wurde gesperrt.
     update:

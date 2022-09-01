@@ -823,7 +823,6 @@ sr:
           commercial: Пословна зона
           conservation: Заштићено земљиште
           construction: Градилиште
-          farm: Фарма
           farmland: Обрадиво земљиште
           farmyard: Сеоско имање
           forest: Шума
@@ -1262,8 +1261,6 @@ sr:
     intro_text: OpenStreetMap је мапа света коју су направили људи попут вас. Слободна
       је за коришћење под отвореном лиценцом.
     intro_2_create_account: Отворите кориснички налог
-    partners_ucl: UCL
-    partners_bytemark: хостинг Bytemark
     partners_partners: партнери
     tou: Услови коришћења
     osm_offline: База OpenStreetMap-а је тренутно недоступна док се не заврше неопходни

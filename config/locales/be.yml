@@ -793,7 +793,6 @@ be:
           commercial: Камерцыйная зона
           conservation: Запаведнік
           construction: Будаўніцтва
-          farm: Ферма
           farmland: Сельскагаспадарчыя землі
           farmyard: Двор фермы
           forest: Лес
@@ -1266,8 +1265,6 @@ be:
       для выкарыстання на ўмовах адкрытай ліцэнзіі.
     intro_2_create_account: Стварыць рахунак удзельніка
     hosting_partners_html: Хостынг падтрымліваецца %{ucl}, %{bytemark}, і іншымі %{partners}.
-    partners_ucl: UCL
-    partners_bytemark: Bytemark Hosting
     partners_partners: партнёрамi
     tou: Умовы карыстання
     osm_offline: База дадзеных OpenStreetMap зараз па-за сецівам, таму што праходзіць

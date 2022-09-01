@@ -917,7 +917,6 @@ lb:
           commercial: Commercëgebitt
           conservation: Naturschutzgebitt
           construction: Chantier
-          farm: Bauerenhaff
           farmland: Akerland
           farmyard: Bauerenhaff
           forest: Bësch
@@ -1484,9 +1483,6 @@ lb:
     intro_2_create_account: E Benotzerkont uleeën
     hosting_partners_html: Den Hosting gëtt vun %{ucl}, %{fastly}, %{bytemark} an
       anere(n) %{partners} ënnerstëtzt.
-    partners_ucl: '''''University College'''' zu London'
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: Partneren
     tou: Benotzungs-Bedéngungen
     osm_offline: D'OpenStreetMap Datebank ass elo net disponibel well dru geschafft
@@ -2023,10 +2019,6 @@ lb:
       wiki:
         url: https://wiki.openstreetmap.org/
         title: OpenStreetMap Wiki
-    potlatch:
-      id_html: Alternativ kanns du däi Standardediteur op iD astellen, deen an dengem
-        Webbrowser wéi virdru Potlach ausgeféiert gëtt. <a href="%{settings_url}">Änner
-        hei deng Benotzerastellungen</a>.
     sidebar:
       search_results: Resultater vum Sichen
       close: Zoumaachen

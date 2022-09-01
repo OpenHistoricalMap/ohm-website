@@ -1011,7 +1011,6 @@ zh-CN:
           commercial: 商业区
           conservation: 保护区
           construction: 工地
-          farm: 农场
           farmland: 农田
           farmyard: 农家庭院
           forest: 森林
@@ -1579,9 +1578,6 @@ zh-CN:
     intro_text: OpenStreetMap 是一个世界地图，由像您一样的人们所构筑，可依据开放许可协议自由使用。
     intro_2_create_account: 创建用户账户
     hosting_partners_html: 主机由%{ucl}、%{fastly}、%{bytemark}，以及其他%{partners}所支持。
-    partners_ucl: 伦敦大学学院
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark主机
     partners_partners: 合作伙伴
     tou: 使用条款
     osm_offline: 由于正在进行基本的数据库维护工作，OpenStreetMap 数据库目前处于脱机状态。
@@ -2118,10 +2114,6 @@ zh-CN:
         url: https://wiki.openstreetmap.org/
         title: OpenStreetMap Wiki
         description: 浏览 wiki 深入了解 OpenStreetMap 文档。
-    potlatch:
-      removed: 您的默认OpenStreetMap编辑器设置为Potlatch。由于Adobe Flash Player已停止支持，因此Potlatch不再可在Web浏览器中使用。
-      desktop_html: 您仍然可以通过<a href="https://www.systemed.net/potlatch/">下载适用于Mac和Windows的桌面应用程序</a>来使用Potlatch。
-      id_html: 或者，你可以设定你的默认编辑者为iD，他会想Potlatch之前一样运营你的网络浏览器。<a href="%{settings_url}">在这更改你的偏好</a>。
     sidebar:
       search_results: 搜索结果
       close: 关闭

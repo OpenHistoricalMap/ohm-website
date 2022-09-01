@@ -1027,7 +1027,6 @@ it:
           commercial: Zona di uffici
           conservation: Conservazione
           construction: Costruzione
-          farm: Fattoria
           farmland: Terreno agricolo
           farmyard: Aia
           forest: Foresta
@@ -1597,9 +1596,6 @@ it:
     intro_2_create_account: Crea un account utente
     hosting_partners_html: L'hosting è supportato da %{ucl}, %{fastly}, %{bytemark},
       e da altri %{partners}.
-    partners_ucl: UCL
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: partner
     tou: Condizioni d'uso
     osm_offline: Il database di OpenStreetMap è al momento non in linea per permettere
@@ -2294,15 +2290,6 @@ it:
         url: https://wiki.openstreetmap.org/
         title: Wiki OpenStreetMap
         description: Sfoglia il wiki per la documentazione approfondita di OpenStreetMap.
-    potlatch:
-      removed: Il tuo editor predefinito di OpenStreetMap è impostato su Potlatch.
-        Dato che Adobe Flash Player è stato ritirato, Potlatch non è più disponibile
-        per essere usato in un browser web.
-      desktop_html: Puoi ancora utilizzare Potlatch <a href="https://www.systemed.net/potlatch/">scaricando
-        l'applicazione desktop per Mac e Windows</a>.
-      id_html: In alternativa, puoi impostare l'editor predefinito su iD che funziona
-        in un browser web come un tempo faceva Potlatch. <a href="%{settings_url}">Modifica
-        le tue preferenze qui</a>.
     sidebar:
       search_results: Risultati della ricerca
       close: Chiudi
@@ -2387,7 +2374,7 @@ it:
           bicycle_parking: Parcheggio per biciclette
           toilets: Bagni pubblici
     welcome:
-      title: Benvenuto!
+      title: Benvenuto/a!
       introduction_html: Benvenuti in OpenStreetMap, la mappa del mondo libera e modificabile.
         Ora che ti sei registrato, sei pronto a iniziare ad editare la mappa. Ecco
         una guida rapida con le cose più importanti che dovresti sapere.

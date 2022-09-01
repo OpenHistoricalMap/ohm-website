@@ -983,7 +983,6 @@ eo:
           commercial: Oficeja tereno
           conservation: Natur-konservejo
           construction: Konstruejo
-          farm: Farmejo
           farmland: Agrokultura tereno
           farmyard: Farmkorto
           forest: Kultiv-arbaro
@@ -1549,9 +1548,6 @@ eo:
     intro_2_create_account: Krei konton
     hosting_partners_html: Retgastigo estas subtenata de %{ucl}, %{fastly}, %{bytemark}
       kaj aliaj %{partners}.
-    partners_ucl: University College London
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: kunlaborantoj
     tou: Uzkondiĉoj
     osm_offline: La OpenStreetMap-datumbazo estas nuntempe nealireabla pro necesaj
@@ -2201,15 +2197,6 @@ eo:
         url: https://wiki.openstreetmap.org/wiki/Eo:Main_Page
         title: OpenStreetMap-vikio
         description: Esploru la vikion por akiri detalan dokumentaron pri OpenStreetMap.
-    potlatch:
-      removed: Via implicita OpenStreetMap‑reaktilo estas Potlatch. Pro la fakto,
-        ke Adobe Flash Player estis eksigita, la redaktilo Potlatch ne estas plu uzebla
-        per retfoliumilo.
-      desktop_html: La redaktilo Potlatch plue estos uzebla kiel <a href="https://www.systemed.net/potlatch/">labortabla
-        aplikaĵo por Mac kaj Windows</a>.
-      id_html: Aliokaze, vi povas ŝanĝi vian implicitan redaktilon al iD, kiu laboras
-        ene via retfoliumilo (kiel Potlatch antaŭe). <a href="%{settings_url}">Alklaku
-        tien ĉi por ŝanĝi preferojn.</a>
     sidebar:
       search_results: Serĉrezultoj
       close: Fermi

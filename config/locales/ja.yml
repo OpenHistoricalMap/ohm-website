@@ -62,7 +62,7 @@ ja:
       blog: '%Y年%B%e日'
   helpers:
     file:
-      prompt: ファイルを選択
+      prompt: 'ファイルを選ぶ:'
     submit:
       diary_comment:
         create: 保存
@@ -115,7 +115,7 @@ ja:
       old_way: 古いウェイ
       old_way_node: 古いウェイのノード
       old_way_tag: 古いウェイのタグ
-      relation: リレーション
+      relation: 関係
       relation_member: リレーションのメンバー
       relation_tag: リレーションのタグ
       report: 報告
@@ -154,13 +154,13 @@ ja:
         name: 名前
         redirect_uri: URIのリダイレクト
         confidential: 機密アプリケーション？
-        scopes: 権限
+        scopes: 許可
       friend:
         user: 利用者
         friend: 友達
       trace:
         user: 利用者
-        visible: 可視
+        visible: 閲覧可能
         name: ファイル名
         size: サイズ
         latitude: 緯度
@@ -186,7 +186,7 @@ ja:
         auth_uid: 認証 ID
         email: メール
         email_confirmation: メールアドレスの確認
-        new_email: 新しいメール アドレス
+        new_email: '新しいメールアドレス:'
         active: アクティブ
         display_name: 表示名
         description: プロフィールの説明
@@ -302,7 +302,7 @@ ja:
     edit:
       title: アカウントの編集
       my settings: 設定
-      current email address: 現在のメール アドレス
+      current email address: 現在のメールアドレス
       external auth: 外部認証
       openid:
         link: https://wiki.openstreetmap.org/wiki/JA:OpenID?uselang=ja
@@ -361,7 +361,7 @@ ja:
     location: '場所:'
     changeset:
       title: '変更セット: %{id}'
-      belongs_to: 著者
+      belongs_to: 作者
       node: ノード (%{count})
       node_paginated: ノード (%{x}-%{y} / %{count})
       way: ウェイ (%{count}件)
@@ -402,7 +402,7 @@ ja:
       type:
         node: ノード
         way: ウェイ
-        relation: リレーション
+        relation: 関係
     containing_relation:
       entry_html: リレーション %{relation_name}
       entry_role_html: リレーション %{relation_name} (%{relation_role} として)
@@ -421,7 +421,7 @@ ja:
       type:
         node: ノード
         way: ウェイ
-        relation: リレーション
+        relation: 関係
         changeset: 変更セット
         note: メモ
     redacted:
@@ -471,8 +471,8 @@ ja:
   changesets:
     changeset_paging_nav:
       showing_page: '%{page}ページ'
-      next: 次 »
-      previous: « 前
+      next: 次 →
+      previous: 前へ
     changeset:
       anonymous: 匿名
       no_edits: (編集がありません)
@@ -494,7 +494,7 @@ ja:
       no_more: 変更セットはこれ以上ありません。
       no_more_area: この領域には変更セットはこれ以上ありません。
       no_more_user: この利用者による変更セットはこれ以上ありません。
-      load_more: 続きを読み込む
+      load_more: さらに読み込む
     timeout:
       sorry: 申し訳ありませんが、要求した変更セットの一覧は時間がかかりすぎたため取得できませんでした。
   changeset_comments:
@@ -553,7 +553,7 @@ ja:
     show:
       title: '%{user}さんの日記 | %{title}'
       user_title: '%{user}さんの日記'
-      leave_a_comment: コメントを書いてください
+      leave_a_comment: コメントを残す
       login_to_leave_a_comment_html: コメントを書くには%{login_link}してください
       login: ログイン
     no_such_entry:
@@ -581,7 +581,7 @@ ja:
       confirm: 確認
       report: このコメントを報告
     location:
-      location: '位置:'
+      location: '場所:'
       view: 表示
       edit: 編集
     feed:
@@ -715,7 +715,7 @@ ja:
           internet_cafe: インターネットカフェ
           kindergarten: 幼稚園
           language_school: 語学学校
-          library: 図書館
+          library: ライブラリ
           loading_dock: 貨物積み下ろし場
           love_hotel: ラブホテル
           marketplace: 市場
@@ -971,7 +971,6 @@ ja:
           commercial: オフィス地域
           conservation: 保全
           construction: 工事中
-          farm: 農場
           farmland: 農地
           farmyard: 農場
           forest: 森林
@@ -1123,7 +1122,7 @@ ja:
           mud: 泥
           peak: 山頂
           peninsula: 半島
-          point: 点
+          point: ポイント
           reef: 砂州
           ridge: 海嶺
           rock: 岩場
@@ -1271,7 +1270,7 @@ ja:
           estate_agent: 不動産代理店
           fabric: 生地屋
           farm: 農産物店
-          fashion: ファッション ショップ
+          fashion: ファッションショップ
           fishing: 釣具店
           florist: 花屋
           food: 食品販売店
@@ -1354,7 +1353,7 @@ ja:
           camp_site: キャンプ場
           caravan_site: オートキャンプ場
           chalet: 別荘
-          gallery: 美術館
+          gallery: ギャラリー
           guest_house: 民宿
           hostel: ホステル
           hotel: ホテル
@@ -1379,7 +1378,7 @@ ja:
           ditch: 溝
           dock: 埠頭
           drain: 排水溝
-          lock: 岩場
+          lock: ロック
           lock_gate: 水門
           mooring: 係留所
           rapids: 急流
@@ -1500,7 +1499,7 @@ ja:
           vandal_label: このユーザは破壊者である
           other_label: その他
         note:
-          spam_label: この注記はスパムである
+          spam_label: このノートはスパムです
           personal_label: この注記は個人情報を含む
           abusive_label: この注記は荒らしである
           other_label: その他
@@ -1516,7 +1515,7 @@ ja:
     logout: ログアウト
     log_in: ログイン
     log_in_tooltip: 自分のアカウントでログイン
-    sign_up: ユーザー登録
+    sign_up: サインアップ
     start_mapping: マッピングを開始
     sign_up_tooltip: 編集のためのアカウントを作成
     edit: 編集
@@ -1535,9 +1534,6 @@ ja:
     intro_text: OpenStreetMap は、あなたのような人々が作成した世界地図であり、オープン ライセンスの下で自由に利用できます。
     intro_2_create_account: 新しい利用者アカウントを作成
     hosting_partners_html: ホスティングは、%{ucl}、%{fastly}、%{bytemark}、およびその他の%{partners}によってサポートされています。
-    partners_ucl: UCL
-    partners_fastly: すばやく
-    partners_bytemark: バイトマーク ホスティング
     partners_partners: パートナー
     tou: 利用規約
     osm_offline: OpenStreetMap のデータベースはメンテナンスのため一時的に停止しています。
@@ -1553,8 +1549,8 @@ ja:
     foundation_title: OpenStreetMap 財団
     make_a_donation:
       title: 金銭を寄贈して OpenStreetMap を支援
-      text: 寄付
-    learn_more: 詳細
+      text: 寄付をする
+    learn_more: もっと詳しく
     more: その他
   user_mailer:
     diary_comment_notification:
@@ -1743,15 +1739,15 @@ ja:
     lost_password:
       title: パスワードを忘れた
       heading: パスワードを忘れた場合はこちら
-      email address: 'メール アドレス:'
-      new password button: パスワードを再設定
+      email address: 'メールアドレス:'
+      new password button: パスワードをリセット
       help_text: ユーザー登録に使用したメール アドレスを入力してください。そのアドレス宛に、パスワードを再設定するためのリンクをお送りします。
       notice email on way: すみません。紛失してしまいました :-( しかし、メールをお送りしたので、すぐにリセットできるでしょう。
       notice email cannot find: 申し訳ありませんが、このメール アドレスは見つかりません。
     reset_password:
-      title: パスワードの再設定
+      title: パスワードをリセット
       heading: '%{user} のパスワードのリセット'
-      reset: パスワードを初期化
+      reset: パスワードをリセット
       flash changed: あなたのパスワードは変更されました。
       flash token bad: キーワードが見つかりません。URL を確認してください。
   preferences:
@@ -1823,7 +1819,7 @@ ja:
           alt: Google OpenID を使用してログイン
         facebook:
           title: Facebook を使用してログイン
-          alt: Facebook アカウントを使用してログイン
+          alt: Facebookアカウントでログイン
         windowslive:
           title: Windows Live を使用してログイン
           alt: Windows Live アカウントを使用してログイン
@@ -1984,7 +1980,7 @@ ja:
     edit:
       not_public: あなたの編集結果を公開できません。
       not_public_description_html: このようなことをしない限り、あなたは地図を編集できません。あなたは%{user_page}から編集内容を公開できます。
-      user_page_link: ユーザーページ
+      user_page_link: 利用者ページ
       anon_edits_link_text: なぜこれれが事例なのかを見る。
       id_not_configured: iDが設定されていません。
       no_iframe_support: あなたのブラウザーは、この機能に必須の HTML iframe に未対応です。
@@ -2018,7 +2014,7 @@ ja:
           title: 他の情報源
           description: OpenStreetMap ウィキに記載されている追加の情報源
       options: オプション
-      format: ファイル形式
+      format: フォーマット
       scale: 縮尺
       max: 最大
       image_size: 画像サイズ
@@ -2081,13 +2077,6 @@ ja:
         url: https://wiki.openstreetmap.org/
         title: OpenStreetMap Wiki
         description: 詳細な OpenStreetMap の説明が書かれたウィキを参照します。
-    potlatch:
-      removed: お使いの OpenStreetMap エディタは既定では Potlatch が選択されています。 Adobe Flash Player
-        の撤退により、 Potlatch is はウェブブラウザ上で利用できなくなりました。
-      desktop_html: 現在も Potlatch の利用は可能で、ダウンロードリンク<a href="https://www.systemed.net/potlatch/">でデスクトップ版を
-        Mac 用と Windows 用を入手できます</a>。
-      id_html: 代替手段として、以前の Potlatch のようにウェブブラウザで使うエディターなら、既定のエディターを iD に設定する方法があります。<a
-        href="%{settings_url}">個人設定の変更はこちら</a>。
     sidebar:
       search_results: 検索結果
       close: 閉じる
@@ -2130,9 +2119,9 @@ ja:
           - 空港誘導路
           apron:
           - 空港ビル
-          - 空港ターミナル
+          - ターミナル
           admin: 行政境界
-          forest: 森
+          forest: 森林
           wood: 森林
           golf: ゴルフ場
           park: 公園
@@ -2395,7 +2384,7 @@ ja:
         OAuth 要求を行うには、アプリケーションを登録する必要があります。'
       new: 新規アプリケーションの登録
       name: 名前
-      permissions: 権限
+      permissions: 許可
     application:
       edit: 編集
       delete: 削除
@@ -2411,13 +2400,13 @@ ja:
       client_id: クライアント ID
       client_secret: クライアントシークレット
       client_secret_warning: この秘密は必ず保存してください。 - 二度とアクセスできなくなります。
-      permissions: 権限
+      permissions: 許可
       redirect_uris: URIのリダイレクト
     not_found:
       sorry: 申し訳ありませんが、そのアプリケーションは見つかりませんでした。
   oauth2_authorizations:
     new:
-      title: 認証が必要
+      title: 認証が必要です
       introduction: '%{application}が以下の権限でアカウントにアクセスすることを許可しますか？'
       authorize: 許可
       deny: 拒否
@@ -2429,7 +2418,7 @@ ja:
     index:
       title: 認証を許可したアプリケーション
       application: アプリケーション
-      permissions: 権限
+      permissions: 許可
       no_applications_html: ％{oauth2}アプリケーションをまだ承認していません。
     application:
       revoke: アクセスを取り消す
@@ -2501,7 +2490,7 @@ ja:
       blocks on me: 自分に与えられたブロック
       blocks by me: 自分が実行したブロック
       edit_profile: プロフィールを編集
-      send message: メッセージを送信
+      send message: メッセージの送信
       diary: 日記
       edits: 編集
       traces: トレース
@@ -2513,7 +2502,7 @@ ja:
       ct undecided: 未決定
       ct declined: 拒否
       latest edit: '最終編集 %{ago}:'
-      email address: 'メール アドレス:'
+      email address: 'メールアドレス:'
       created from: '作成日:'
       status: '状態:'
       spam score: 'スパム評価:'
@@ -2540,14 +2529,14 @@ ja:
       unhide_user: このユーザーを再表示
       delete_user: この利用者を削除
       confirm: 確認
-      report: この利用者を通報
+      report: この利用者を報告
     set_home:
       flash success: ホーム地点を保存しました。
     go_public:
       flash success: あなたの編集はすべて公開され、あなたは編集できるようになりました。
     index:
       title: 利用者
-      heading: ユーザー
+      heading: 利用者
       showing:
         one: '%{page} ページ (%{items} 件中 %{first_item} 件目)'
         other: '%{page} ページ (%{items} 件中 %{first_item}-%{last_item} 件目)'
@@ -2575,7 +2564,7 @@ ja:
       no_authorization_code: 認証コードがありません
       unknown_signature_algorithm: 署名アルゴリズムが不明です
       invalid_scope: 無効な範囲
-      unknown_error: 認証に失敗
+      unknown_error: 認証失敗
     auth_association:
       heading: あなたのIDはまだOpenStreetMapアカウントと関連付けが済んでいません。
       option_1: OpenStreetMapを初めてお使いの方は、以下のフォームを使用して新しいアカウントを作成してください。
@@ -2617,7 +2606,7 @@ ja:
       heading_html: '%{name} のブロックの編集'
       period: ユーザーが今からどれくらいの間、APIからブロックされるか。
       show: このブロックを閲覧
-      back: すべてのブロックを閲覧
+      back: すべてのブロックを表示
     filter:
       block_expired: このブロック期間は既に終了しており、変更できません。
       block_period: ブロック期間はドロップダウンリストから一つ選択してください。
@@ -2672,7 +2661,7 @@ ja:
       heading_html: '%{block_by} が %{block_on} をブロックしました'
       created: 作成：
       duration: 期間：
-      status: 状態：
+      status: '状態:'
       show: 表示
       edit: 編集
       revoke: 取り消す!
@@ -2683,24 +2672,24 @@ ja:
       needs_view: ブロックを解除するには、利用者はログインし直す必要があります。
     block:
       not_revoked: (取り消されていません)
-      show: 表示する
+      show: 表示
       edit: 編集
       revoke: 取り消す!
     blocks:
       display_name: ブロックされている利用者
       creator_name: 作成者
-      reason: ブロックされた理由
+      reason: ブロックの理由
       status: 状態
       revoker_name: 取り消し者
       showing_page: ページ %{page}
       next: 次へ »
-      previous: « 前へ
+      previous: 前へ
   notes:
     index:
       title: '%{user} さんが投稿またはコメントしたメモ'
       heading: '%{user}さんのメモ'
       subheading_html: '%{user}さんが投稿またはコメントしたメモ'
-      no_notes: メモなし
+      no_notes: ノートはありません
       id: ID
       creator: 作成者
       description: 説明
@@ -2783,7 +2772,7 @@ ja:
       show:
         comment: コメント
         subscribe: 購読
-        unsubscribe: 購読停止
+        unsubscribe: 購読解除
         hide_comment: 非表示
         unhide_comment: 非表示を解除
     notes:
@@ -2793,7 +2782,7 @@ ja:
         add: メモを追加
       show:
         anonymous_warning: このメモはIP利用者によるコメントも含んでいるため、個別に確認してください。
-        hide: 隠す
+        hide: 非表示にする
         resolve: 解決
         reactivate: 再有効化
         comment_and_resolve: コメント & 解決
@@ -2917,7 +2906,7 @@ ja:
     create:
       flash: 改訂を作成しました。
     update:
-      flash: 変更を保存しました。
+      flash: 変更内容を保存しました。
     destroy:
       not_empty: 改訂が空ではありません。破壊する前に、この改訂に属するすべてのバージョンを再改訂してください。
       flash: 改訂を破壊しました。

@@ -896,7 +896,6 @@ af:
           commercial: Handelsgebied
           conservation: Natuurbewaring
           construction: In aanbou
-          farm: Plaas
           farmland: Landbougrond
           farmyard: Plaaswerf
           forest: Woud
@@ -1424,8 +1423,6 @@ af:
     intro_text: OpenStreetMap is wêreldkaart deur gewone mense geskep. Die gebruik
       daarvan is gratis en val onder 'n oop-lisensie.
     intro_2_create_account: Skep 'n gebruikerrekening
-    partners_fastly: Fastly
-    partners_bytemark: Bytemark Hosting
     partners_partners: vennote
     tou: Gebruiksvoorwaardes
     osm_offline: Die OpenStreetMap-databasis is tans vanlyn terwyl noodsaaklike onderhoud

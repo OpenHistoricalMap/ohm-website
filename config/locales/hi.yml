@@ -148,6 +148,8 @@ hi:
         active: सक्रिय
         display_name: प्रदर्शन नाम
         description: वर्णन
+        home_lat: अक्षांश
+        home_lon: देशान्तर
         languages: पसंदीदा भाषाएं
         pass_crypt: पासवर्ड
         pass_crypt_confirmation: पासवर्ड कन्फर्म करें
@@ -763,7 +765,6 @@ hi:
         landuse:
           cemetery: क़ब्रिस्तान
           construction: निर्माण
-          farm: खेत
           farmland: खेत
           forest: जंगल
           grass: घास

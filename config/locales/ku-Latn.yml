@@ -937,7 +937,6 @@ ku-Latn:
           commercial: Cihê Xizmetên Ticarî
           conservation: Erdên Muhafezekirî
           construction: Înşaet
-          farm: Zevî
           farmland: Zevî
           farmyard: Hewşa Çiftligê
           forest: Daristan
@@ -1499,8 +1498,6 @@ ku-Latn:
     intro_2_create_account: Ji xwe re hesabekî çêbike
     hosting_partners_html: Xizmeta hewandinê tê piştgirîkirin ji aliyê %{ucl}, %{bytemark},
       û %{partners} din ve.
-    partners_ucl: University College London
-    partners_bytemark: Bytemark Hosting
     partners_partners: şirîkên me
     tou: Mercên Bikaranînê
     osm_offline: Databasa OpenStreetMapê vê gavê offline e ji ber ku niha xebatên
@@ -2193,15 +2190,6 @@ ku-Latn:
         url: https://wiki.openstreetmap.org/
         title: Wîkiya OpenStreetMapê
         description: Ji bo belgeyên OpenStreetMapyê yên bi berfirehî binêrin wîkiyê.
-    potlatch:
-      removed: Edîtora te ya OpenStreetMapê ya standard wek Potlatch hate bijartin.
-        Ji ber ku Adobe Flash Player vekişiya, Potlatch êdî di gerokeke webê de ne
-        berdest e.
-      desktop_html: Tu hê jî dikarî Potlatchê bi kar bînî bi <a href="https://www.systemed.net/potlatch/">daxistina
-        sepana sermaseyê yên ji Mac û Windowsê</a>.
-      id_html: Wek alternatîv, tu dikarî edîtora xwe ya standard bikî iD ku ew di
-        geroka te ya webê de wekî şixula Potlatchê dixebite. <a href="%{settings_url}">Ji
-        vir mîhengên xwe yên bikarhêneriyê biguherîne</a>.
     sidebar:
       search_results: Encamên lêgerînê
       close: Bigire
