@@ -612,8 +612,9 @@ he:
       comment_link: הערות לרשומה הזאת
       reply_link: שליחת תגובה למחבר
       comment_count:
-        zero: אין תגובות
         one: תגובה אחת
+        two: '%{count} תגובות'
+        many: '%{count} תגובות'
         other: '%{count} תגובות'
       edit_link: עריכת רשומה זו
       hide_link: הסתרת רשומה זו
@@ -1477,6 +1478,8 @@ he:
       link_to_reports: הצגת דיווחים
       reports_count:
         one: דיווח אחד
+        two: '%{count} דיווחים'
+        many: '%{count} דיווחים'
         other: '%{count} דיווחים'
       reported_item: פריט שדווח
       states:
@@ -1490,8 +1493,9 @@ he:
     show:
       title: '%{status} סוגיה #%{issue_id}'
       reports:
-        zero: אין דיווחים
         one: דיווח אחד
+        two: '%{count} דיווחים'
+        many: '%{count} דיווחים'
         other: '%{count} דיווחים'
       report_created_at: דיווח ראשון ב־%{datetime}
       last_resolved_at: נפתר לאחרונה ב־%{datetime}
@@ -1582,9 +1586,19 @@ he:
     intro_header: ברוכים הבאים ל־OpenStreetMap!
     intro_text: OpenStreetMap היא מפה של העולם, שנוצרת על־ידי אנשים כמוך, וחופשית
       לשימוש תחת רישיון פתוח.
+    intro_1: OpenHistoricalMap הוא מיזם שנועד לאחסן ולהציג נתוני מפה לאורך ההיסטוריה
+      של העולם. זו עבודה מתמשכת, אנחנו נשחק עם הרבה תכונות חדשות בזמן שנפעיל את הזמנים
+      באתר. אנו ממליצים לך להתחיל לשחק וגם לערוך נתונים.
     intro_2_create_account: נא ליצור חשבון משתמש
-    hosting_partners_html: האירוח בתמיכת %{ucl}, %{fastly}, %{bytemark}, ו%{partners}
-      נוספים.
+    partners_title: שותפים
+    hosting_partners_html: "<p>\n<a href='https://greeninfo.org'>GreenInfo Network</a>
+      הוא מוסד ללא כוונת רווח למען מיפוי ותקשורת לתועלת הציבור, המסייע לעמותות ולסוכנויות
+      ממשלתיות להשיג מטרות חברתיות, סביבתיות, ואחרות תוך שימוש במגוון כלים, כולל שיטות
+      עיצוב ממוקדות־אדם, פיתוח שיתופי וכלים אינטרנטיים וגאו־מרחביים בקוד פתוח. \n</p>\n<p>\n<a
+      href='https://developmentseed.org/'>Development Seed</a> היא חברת הנדסה ומוצרים
+      שמאיצה את היישום של נתוני כדור הארץ לאתגרים הגלובליים הגדולים ביותר שלנו. Development
+      Seed ממנפת נתונים מסיביים של כדור הארץ, מחשוב ענן, בינה מלאכותית גאו־מרחבית
+      ופיתוח מוצרים מתחשב.\n</p>"
     partners_partners: שותפים
     tou: תנאי שימוש
     osm_offline: מסד הנתונים של אתר OpenStreetMap אינו מקוון כעת בשל עבודות תחזוקה
@@ -1764,9 +1778,13 @@ he:
       messages: יש לך %{new_messages} ועוד %{old_messages}
       new_messages:
         one: הודעה חדשה אחת
+        two: '%{count} הודעות חדשות'
+        many: '%{count} הודעות חדשות'
         other: '%{count} הודעות חדשות'
       old_messages:
         one: הודעה ישנה אחת
+        two: '%{count} הודעות ישנות'
+        many: '%{count} הודעות ישנות'
         other: '%{count} הודעות ישנות'
       from: מאת
       subject: נושא
@@ -1797,6 +1815,8 @@ he:
       my_outbox: תיבת הדואר היוצא שלי
       messages:
         one: יש לך הודעה אחת שנשלחה
+        two: יש לך %{count} הודעות שנשלחו
+        many: יש לך %{count} הודעות שנשלחו
         other: יש לך %{count} הודעות שנשלחו
       to: אל
       subject: נושא
@@ -1954,8 +1974,8 @@ he:
     about:
       next: הבא
       copyright_html: <span>&copy;</span>תורמי<br>OpenStreetMap
-      used_by_html: '%{name} מספקת נתוני מפות לאלפי אתרי אינטרנט, יישומים ומכשירים
-        שונים'
+      used_by_html: OpenHistoricalMap מאחסנת ומציגה באופן שיתופי נתוני מפה לאורך ההיסטוריה
+        של העולם.
       lede_text: את OpenStreetMap בונה קהילת ממפים שתורמים ומתחזקים נתונים על דרכים,
         שבילים, בתי־קפה, תחנות רכבת ועוד הרבה יותר, מסביב לעולם.
       local_knowledge_title: ידע מקומי
@@ -2098,6 +2118,14 @@ he:
           <strong>הממלכה המאוחדת</strong>: מכיל נתוני סקר מדידות
           &copy; זכויות הכתר וזכויות מסדי נתונים
           2010–2019.
+        contributors_cambridge-anr_html: מכיל נתונים שנוצרו על־ידי פרויקט <a href="https://anrcommunes.hypotheses.org/">ANR
+          Communes</a> של <a href="https://www.campop.geog.cam.ac.uk/research/projects/internationaloccupations/enchpopgos/france/">קבוצת
+          קיימברידג' להיסטוריה של אוכלוסייה ומבנים חברתיים</a>.
+        contributors_ned_html: מכיל נתונים ממערכי נתונים שונים של <a href="https://www.naturalearthdata.com/">Natural
+          Earth Data</a>.
+        contributors_newberry_html: מכיל נתונים מ<a href-"https://digital.newberry.org/ahcb/">האטלס
+          של גבולות המחוז ההיסטוריים</a> של <a href="https://www.newberry.org/">ספריית
+          ניוברי</a>.
         contributors_footer_1_html: |-
           למידע נוסף על מקורות אלה ואחרים ששימשו
           לשיפור OpenStreetMap, נא לראות את <a
@@ -2391,8 +2419,14 @@ he:
       upload_failed: העלאת ה־GPX נכשלה. אחד המנהלים קיבל הודעה על השגיאה. נא לנסות
         שוב.
       traces_waiting:
-        other: יש לך מסלול שמחכה להעלאה. נא לשקול לחכות עד סיום העלאתו לפני העלאת
-          מסלולים נוספים, כדי לא לחסום את התור למשתמשים אחרים.
+        one: יש לך מסלול שמחכה להעלאה. נא לשקול לחכות עד סיום העלאתו לפני העלאת מסלולים
+          נוספים, כדי לא לחסום את התור למשתמשים אחרים.
+        two: יש לך %{count} מסלולים שמחכים להעלאה. נא לשקול לחכות עד סיום העלאתם לפני
+          העלאת מסלולים נוספים, כדי לא לחסום את התור למשתמשים אחרים.
+        many: יש לך %{count} מסלולים שמחכים להעלאה. נא לשקול לחכות עד סיום העלאתם
+          לפני העלאת מסלולים נוספים, כדי לא לחסום את התור למשתמשים אחרים.
+        other: יש לך %{count} מסלולים שמחכים להעלאה. נא לשקול לחכות עד סיום העלאתם
+          לפני העלאת מסלולים נוספים, כדי לא לחסום את התור למשתמשים אחרים.
     edit:
       cancel: ביטול
       title: עריכת מסלול %{name}
@@ -2431,6 +2465,8 @@ he:
       pending: בהמתנה
       count_points:
         one: נקודה
+        two: '%{count} נקודות'
+        many: '%{count} נקודות'
         other: '%{count} נקודות'
       more: עוד
       trace_details: הצגת פרטי מסלול
@@ -2468,8 +2504,10 @@ he:
       title: מסלולי GPS של OpenStreetMap
     description:
       description_with_count:
-        one: קובץ GPS עם נקודה אחת מאת %{user}
-        other: קובץ GPS עם %{count} נקודות מאת %{user}
+        one: קובץ GPX עם נקודה אחת מאת %{user}
+        two: קובצי GPX עם %{count} נקודות מאת %{user}
+        many: קובצי GPX עם %{count} נקודות מאת %{user}
+        other: קובצי GPX עם %{count} נקודות מאת %{user}
       description_without_count: קובץ GPS מאת %{user}
   application:
     permission_denied: אין לך הרשאה לגשת לפעולה הזאת
@@ -2737,7 +2775,9 @@ he:
       heading: משתמשים
       showing:
         one: דף %{page} (%{first_item} מתוך %{items})
-        other: דף %{page} (%{first_item}–%{last_item} מתוך %{items})
+        two: דף %{page} (%{first_item}-%{last_item} מתוך %{items})
+        many: דף %{page} (%{first_item}-%{last_item} מתוך %{items})
+        other: דף %{page} (%{first_item}-%{last_item} מתוך %{items})
       summary_html: '%{name} נוצר מכתובת %{ip_address} ב־%{date}'
       summary_no_ip_html: '%{name} נוצר ב־%{date}'
       confirm: אישור משתמשים נבחרים
@@ -2844,6 +2884,8 @@ he:
           other: '%{count} שעות'
         days:
           one: יום אחד
+          two: יומיים
+          many: '%{count} ימים'
           other: '%{count} ימים'
         weeks:
           one: שבוע אחד
@@ -2952,6 +2994,8 @@ he:
           many: המרחק שלך הוא בטווח של %{count} רגליים מנקודה זו
           other: המרחק שלך הוא בטווח של %{count} רגליים מנקודה זו
       base:
+        historical: היסטורית
+        woodblock: חתיכת עץ
         standard: תקני
         cyclosm: CyclOSM
         cycle_map: מפת אופניים

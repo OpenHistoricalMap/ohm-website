@@ -8,6 +8,7 @@
 # Author: Dittaeva
 # Author: EvenT
 # Author: Event
+# Author: Gabriel Kielland
 # Author: Gustavf
 # Author: Haakon K
 # Author: Hansfn
@@ -1272,7 +1273,8 @@ nb:
       last_updated_time_user_html: <abbr title='%{title}'>%{time}</abbr> av %{user}
       link_to_reports: Se på rapporter
       reports_count:
-        other: 1 rapport
+        one: 1 rapport
+        other: '%{count} rapporter'
       reported_item: Rapportert element
       states:
         ignored: Sett bort fra

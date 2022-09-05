@@ -1542,7 +1542,7 @@ sv:
           other_label: Övrigt
         diary_comment:
           spam_label: Denna dagbokskommentar är/innehåller spam
-          offensive_label: Denna dagbokskommentar är oanständig/offensiv
+          offensive_label: Denna dagbokskommentar är oanständig/stötande
           threat_label: Denna dagbokskommentar innehåller ett hot
           other_label: Övrigt
         user:
@@ -1984,8 +1984,7 @@ sv:
     about:
       next: Nästa
       copyright_html: <span>&copy;</span>OpenStreetMaps<br>bidragsgivare
-      used_by_html: '%{name} förser tusentals webbsidor, mobilappar, appar och fysiska
-        apparater med kartdata'
+      used_by_html: OpenHistoricalMap lagrar och visar kartdata genom världshistorien
       lede_text: OpenStreetMap är byggt av en gemenskap av kartografer som bidrar
         och underhåller data om vägar, stigar, caféer, järnvägsstationer och mycket
         mer, över hela världen.
@@ -2692,11 +2691,11 @@ sv:
       heading_ct: 'Användarvillkor:'
       read and accept with tou: Läs villkoren för bidragsgivare och användning, markera
         båda kryssrutor när du är klar och klicka på fortsätt.
-      contributor_terms_explain: Denna avtal beskriver villkoren för dina existerande
-        och framtida bidrag.
+      contributor_terms_explain: Detta avtal beskriver villkoren för dina befintliga
+        och kommande bidrag.
       read_ct: Jag har läst och samtycken med de ovanstående villkor för deltagare
       tou_explain_html: Dessa %{tou_link} beskriver villkoren för hur denna hemsida
-        och andra infrastrukturer från OSMF får användas. Klicka på länken, läs och
+        och annan infrastruktur från OSMF får användas. Klicka på länken, läs och
         godkänn villkoren.
       read_tou: Jag har läst och samtycker med användarvillkoren.
       consider_pd: Utöver ovan nämnda avtal, anser jag att mina bidrag är inom allmän

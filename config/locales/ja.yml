@@ -212,10 +212,8 @@ ja:
   datetime:
     distance_in_words_ago:
       about_x_hours:
-        one: 約1時間前
         other: 約%{count}時間前
       about_x_months:
-        one: 約1ヶ月前
         other: 約%{count}ヶ月前
       about_x_years:
         one: 約1年前
@@ -225,7 +223,6 @@ ja:
         other: ほぼ%{count}年前
       half_a_minute: 30秒前
       less_than_x_seconds:
-        one: 1秒以内
         other: '%{count}秒以内'
       less_than_x_minutes:
         one: 1分以内
@@ -234,7 +231,6 @@ ja:
         one: 1年以上前
         other: '%{count}年以上前'
       x_seconds:
-        one: 1秒前
         other: '%{count}秒前'
       x_minutes:
         one: 1分前
@@ -243,10 +239,8 @@ ja:
         one: 1日前
         other: '%{count}日前'
       x_months:
-        one: 1ヶ月前
         other: '%{count}ヶ月前'
       x_years:
-        one: 1年前
         other: '%{count}年前'
   printable_name:
     with_version: '%{id}、第%{version}版'
@@ -353,7 +347,6 @@ ja:
       one: 1件のリレーション
       other: '%{count}件のリレーション'
     part_of_ways:
-      one: 1件のウェイ
       other: '%{count}件のウェイ'
     download_xml: XMLをダウンロード
     view_history: 履歴を表示
@@ -2538,7 +2531,6 @@ ja:
       title: 利用者
       heading: 利用者
       showing:
-        one: '%{page} ページ (%{items} 件中 %{first_item} 件目)'
         other: '%{page} ページ (%{items} 件中 %{first_item}-%{last_item} 件目)'
       summary_html: '%{name} は %{ip_address}から%{date}に作成されました。'
       summary_no_ip_html: '%{name} は%{date}に作成されました。'
@@ -2637,7 +2629,6 @@ ja:
       block_duration:
         hours: '%{count}時間'
         days:
-          one: 1日
           other: '%{count}日'
         weeks:
           one: 1週間

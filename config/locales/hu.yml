@@ -17,6 +17,7 @@
 # Author: Hanna Tardos
 # Author: Kempelen
 # Author: Leiric
+# Author: Lois131
 # Author: Macofe
 # Author: MeskoBalazs
 # Author: Misibacsi
@@ -3059,7 +3060,7 @@ hu:
         onramp_left: Hajtson rá a bal oldali rámpára
         endofroad_left_without_exit: 'Az út végén forduljon balre, erre: %{name}'
         merge_left_without_exit: 'Forduljon balra, erre: %{name}'
-        fork_left_without_exit: 'Az elágazásnál forduljon balra, erre: %{name}'
+        fork_left_without_exit: 'Az elágazásnál fordulj balra, erre: %{name}'
         slight_left_without_exit: Enhén balra %{name}
         via_point_without_exit: (ponton keresztül)
         follow_without_exit: Kövesse %{name}

@@ -56,7 +56,8 @@ tr:
     dir: ltr
   time:
     formats:
-      friendly: '%e %B %Y saat %H:%M'
+      friendly: '%e %B %Y saat %H.%M'
+      blog: '%e %B %Y'
   helpers:
     file:
       prompt: Dosya seç
@@ -101,8 +102,8 @@ tr:
       issue: Sorun
       language: Dil
       message: Mesaj
-      node: Düğüm
-      node_tag: Düğüm Etiketi
+      node: Nokta
+      node_tag: Nokta Etiketi
       notifier: Bildiren
       old_node: Eski Nokta
       old_node_tag: Eski Nokta Etiketi
@@ -252,6 +253,10 @@ tr:
       x_years:
         one: 1 yıl önce
         other: '%{count} yıl önce'
+  printable_name:
+    with_id: '%{id}'
+    with_version: '%{id}, v%{version}'
+    with_name_html: '%{name} (%{id})'
   editor:
     default: Varsayılan (şu anda %{name})
     id:
@@ -416,7 +421,8 @@ tr:
       history_title_html: 'Yol geçmişi: %{name}'
       nodes: Noktalar
       nodes_count:
-        other: '%{count} düğüm'
+        one: 1 nokta
+        other: '%{count} nokta'
       also_part_of_html:
         one: yol parçası %{related_ways}
         other: yol parçası %{related_ways}
@@ -687,6 +693,7 @@ tr:
           Nominatim</a> sonuçları
         geonames_reverse_html: <a href="http://www.geonames.org/">GeoNames</a> sonuçları
     search_osm_nominatim:
+      prefix_format: '%{name}'
       prefix:
         aerialway:
           cable_car: Teleferik
@@ -1567,6 +1574,9 @@ tr:
       successful_report: Raporunuz başarıyla kaydedildi
       provide_details: Lütfen gerekli bilgileri sağlayın
   layouts:
+    project_name:
+      title: OpenHistoricalMap
+      h1: OpenHistoricalMap
     logo:
       alt_text: OpenStreetMap logosu
     home: Kendi Konumuna Git
@@ -1591,9 +1601,19 @@ tr:
     intro_header: OpenStreetMap'e hoş geldiniz!
     intro_text: OpenStreetMap; senin gibi kişiler tarafından oluşturulan, kullanımı
       serbest ve açık lisans altında olan bir dünya haritasıdır.
+    intro_1: OpenHistoricalMap, dünya tarihi boyunca harita verilerini depolamak ve
+      görüntülemek için tasarlanmış bir projedir. Bu, şu anda devam eden bir çalışmadır
+      ve siteyi zaman içinde ilerlettikçe birçok yeni özellik ekleyeceğiz. Sizleri
+      de projeyi kullanmayı ve verileri düzenlemeye başlamayı öneririz.
     intro_2_create_account: hesap oluşturunuz
-    hosting_partners_html: Barındırma hizmeti; %{ucl}, %{fastly}, %{bytemark} ve diğer
-      %{partners} tarafından desteklenmektedir.
+    partners_title: Ortaklar
+    hosting_partners_html: |-
+      <p>
+      <a href='https://greeninfo.org'>GreenInfo Network</a>; kâr amacı gütmeyen bir sosyal-iyi haritalama ve iletişim organizasyonudur. Kâr amacı gütmeyen kuruluşların ve devlet kurumlarının, insan merkezli tasarım uygulamaları, işbirlikçi geliştirme ve açık kaynaklı web ve coğrafi araçlar dahil olmak üzere bir dizi aracı kullanarak sosyal, çevresel ve diğer hedeflere ulaşmasına yardımcı olur.
+      </p>
+      <p>
+      <a href='https://developmentseed.org/'>Development Seed</a>, en büyük küresel zorluklarımıza dünya verilerinin uygulanmasını hızlandıran bir mühendislik ve ürün şirketidir. Development Seed, devasa dünya verilerinden, bulut bilişimden, jeo-uzamsal yapay zekadan ve düşünceli ürün geliştirmeden yararlanır.
+      </p>
     partners_partners: ortaklar
     tou: Kullanım Şartları
     osm_offline: OpenStreetMap veritabanı bakım çalışmaları yürütüldüğü için veritabanı
@@ -1993,8 +2013,8 @@ tr:
     about:
       next: İleri
       copyright_html: <span>&copy;</span>OpenStreetMap<br>katkıda bulunanları
-      used_by_html: '%{name}; binlerce web sitesi, mobil uygulama ve donanım cihazı
-        için harita verisi sağlar.'
+      used_by_html: OpenHistoricalMap, dünya tarihi boyunca harita verilerini işbirliği
+        içinde depolar ve görüntüler.
       lede_text: OpenStreetMap; tüm dünyada yollar, patikalar, kafeler, tren istasyonları
         ve çok daha fazlası hakkında veri sağlayan ve bunları koruyan bir haritacılar
         topluluğu tarafından oluşturulmuştur.
@@ -2139,6 +2159,14 @@ tr:
           <strong>Birleşik Krallık</strong>: Contains Ordnance
           Anket verileri & kopya; Crown telif hakkı ve veritabanı hakkı
           2010-19.
+        contributors_cambridge-anr_html: <a href="https://www.campop.geog.cam.ac.uk/research/projects/internationaloccupations/enchpopgos/france/">Nüfus
+          ve Sosyal Yapıların Tarihi için Cambridge Grubu</a> <a href="https://anrcommunes.hypotheses.org/">ANR
+          Komünleri</a> projesi tarafından oluşturulan veriler içerir.
+        contributors_ned_html: Çeşitli <a href="https://www.naturalearthdata.com/"Natural
+          Earth Data</a> veri kümelerinden veriler içerir.
+        contributors_newberry_html: <a href="https://www.newberry.org/">Newberry Library</a>'nin
+          <a href-"https://digital.newberry.org/ahcb/">Tarihsel İlçe Sınırları Atlası</a>'ndan
+          veriler içerir.
         contributors_footer_1_html: |-
           OpenStreetMap'in geliştirilmesine yardımcı olmak için
           bu ve diğer kaynaklar hakkında daha ayrıntılı bilgi almak için,
@@ -2174,6 +2202,8 @@ tr:
       createnote: Bir not ekle
       license:
         copyright: Telif Hakkı OpenStreetMap ve katılımcılar, açık lisans altında
+        license_url: https://openstreetmap.org/copyright
+        project_url: https://openstreetmap.org
       remote_failed: Düzenleme başarısız - JOSM veya Merkaartor'un yüklendiğinden
         ve uzaktan kontrol seçeneğinin etkinleştirildiğinden emin olun.
     edit:
@@ -2182,6 +2212,7 @@ tr:
         Düzenlemelerinizi, %{user_page} sayfasından herkese açık olarak ayarlayabilirsiniz
       user_page_link: kullanıcı sayfası
       anon_edits_html: (%{link})
+      anon_edits_link: https://wiki.openstreetmap.org/wiki/Tr:Anonymous_edits
       anon_edits_link_text: Durumun neden böyle olduğunu öğrenin.
       id_not_configured: iD yapılandırılmamış
       no_iframe_support: Bu özelliği görüntülemek için gerekli olan HTML iframe tarayıcınız
@@ -2272,17 +2303,21 @@ tr:
         description: Bir soru sor veya OpenStreetMap'in soru-ve-cevap sitesinde yanıtları
           ara.
       mailing_lists:
+        url: https://lists.openstreetmap.org/listinfo/historic
         title: E-Posta Listeleri
         description: Oldukça geniş yerel veya bölgesel e-posta listelerinde soru sorabilir
           veya ilginç konuları tartışabilirsiniz.
       forums:
+        url: https://forum.openhistoricalmap.org/
         title: Forumlar
         description: Duyuru panosu tarzındaki arayüzleri tercih edenler için sorular
           ve tartışmalar.
       irc:
+        url: https://slack.openstreetmap.us/
         title: IRC
         description: Birçok dilde ve birçok konuda interaktif sohbet.
       switch2osm:
+        url: https://discord.gg/openstreetmap
         title: switch2osm
         description: OpenStreetMap tabanlı haritalara ve diğer hizmetlere geçiş yapan
           şirketler ve kuruluşlar için yardım.
@@ -2462,6 +2497,7 @@ tr:
       title: '%{name} izi düzenleniyor'
       heading: '%{name} izi düzenleniyor'
       visibility_help: bu ne demek?
+      visibility_help_url: https://wiki.openstreetmap.org/wiki/Tr:Visibility_of_GPS_traces
     update:
       updated: İzleme güncellendi
     trace_optionals:
@@ -2639,6 +2675,7 @@ tr:
       no_applications_html: '%{oauth2} standardını bizimle kullanmak için kaydettirmek
         istediğiniz bir uygulamanız var mı? Bu hizmete OAuth isteklerinde bulunabilmesi
         için uygulamanızı kaydetmeniz gerekir.'
+      oauth_2: OAuth 2
       new: Yeni uygulama kaydet
       name: Ad
       permissions: İzinler
@@ -3021,6 +3058,8 @@ tr:
           one: Bu noktanın bir adım içindesiniz
           other: Bu noktanın %{count} adım içindesiniz
       base:
+        historical: Tarihi
+        woodblock: Ahşap blok
         standard: Standart
         cyclosm: CyclOSM
         cycle_map: Bisiklet Haritası
