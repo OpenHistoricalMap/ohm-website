@@ -1953,23 +1953,22 @@ fy:
         witten oer de mienskip, besjoch dan de <a href='%{diary_path}'>deiboeken fan
         meidoggers</a> ensfh."
       open_data_title: Iepen data
-      open_data_html: |-
-        OpenStreetMap is <i>iepen data</i>: it stiet jo frij it foar elts doel te brûken,
-        salang't jo OpenStreetMap en syn bydragers mar neame. At jo de data
-        op in beskate manier feroarje of ferwurkje, meie jo it resultaat inkeld
-        ûnder deselde lisinsje ferspriede. Sjoch de <a href='%{copyright_path}'>Auteursrjochte- en
-        lisinsjeside</a> foar ynformaasje.
+      open_data_html: "OpenHistoricalMap is <i>iepen data</i>: it stiet jo frij it
+        foar elts doel te brûken\nûnder de betingsten fan 'e data dy't jo ferwurkje.
+        OpenHistoricalMap jout lisinsje-\nen referinsjeferplichtings op objektnivo
+        (at dy der binne). Taskriuwing of referearjen oan\nOpenHistoricalMap foar
+        it tapassen fan dy data wurdt wurdearre, mar is net ferplichte. \nAt jo de
+        data op in beskate manier feroarje of ferwurkje, meie jo it resultaat inkeld
+        \nûnder deselde lisinsje ferspriede. Sjoch de <a href='%{copyright_path}'>Auteursrjochte-
+        en\nlisinsjeside</a> foar ynformaasje."
       legal_title: Juridysk
-      legal_1_html: |-
-        Dit webstee en in protte oare besibbe tsjinsten, wurde formeel beheard troch de
-        <a href='https://osmfoundation.org/'>OpenStreetMap-stifting</a> (OSMF)
-        út namme fan 'e mienskip. It gebrûk fan alle OSMF-behearde tsjinsten falt ûnder
-        ús <a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">Gebrûksbetingsten</a>, <a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">Belied foar Akseptabel Gebrûk</a> en ús <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">Privacybelied</a>.
+      legal_1_html: "Dit webstee en in protte oare besibbe tsjinsten, wurde formeel
+        beheard troch it\ntige ynformele OpenHistoricalMap-kollektyf \nút namme fan
+        'e mienskip."
       legal_2_html: |-
-        Nim graach <a href='https://osmfoundation.org/Contact'>kontakt op mei de OSMF</a>
+        Nim graach kontakt op mei it OHM-tiim op <a href='mailto:historic@opensteetmap.org'>historic@opensteetmap.org</a>
         at jo lisinsje-, auteursrjochte- as oare juridyske fragen hawwe.
         <br>
-        OpenStreetMap, it fergrutglês-logo en 'State of the Map' binne <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">registrearre hannelsmerken fan 'e OSMF</a>.
       partners_title: Partners
     copyright:
       foreign:

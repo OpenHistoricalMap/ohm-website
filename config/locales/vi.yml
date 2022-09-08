@@ -224,7 +224,6 @@ vi:
         one: 1 năm trước
         other: '%{count} năm trước'
   printable_name:
-    with_id: '%{id}'
     with_version: '%{id}, v%{version}'
     with_name_html: '%{name} (%{id})'
   editor:
@@ -2039,8 +2038,6 @@ vi:
       license:
         copyright: Bản quyền của OpenStreetMap và những người đóng góp, được phát
           hành theo giấy phép mở
-        license_url: https://openstreetmap.org/copyright
-        project_url: https://openstreetmap.org
       remote_failed: Thất bại mở trình vẽ – hãy chắc chắn rằng JOSM hoặc Markaartor
         đã khởi động và tùy chọn phần điều khiển từ xa được kích hoạt
     edit:
@@ -2049,7 +2046,6 @@ vi:
         phép sửa đổi bản đồ. Bạn có thể đưa ra công khai tại %{user_page}.
       user_page_link: trang cá nhân
       anon_edits_html: (%{link})
-      anon_edits_link: https://wiki.openstreetmap.org/wiki/Anonymous_edits?uselang=vi
       anon_edits_link_text: Tại sao vậy?
       id_not_configured: iD chưa được cấu hình
       no_iframe_support: Tính năng này cần trình duyệt hỗ trợ khung nội bộ (iframe)
@@ -2138,20 +2134,16 @@ vi:
         description: Hỏi hang hoặc tìm kiếm các câu trả lời tại trung tâm hỏi đáp
           của OpenStreetMap.
       mailing_lists:
-        url: https://lists.openstreetmap.org/listinfo/historic
         title: Danh sách thư
         description: Hỏi han hoặc thảo luận về các chuyện quan trọng trên nhiều danh
           sách thư được sắp xếp theo chủ đề hoặc khu vực.
       forums:
-        url: https://community.openstreetmap.org/
         title: Diễn đàn
         description: Hỏi han và thảo luận trong một giao diện bảng tin.
       irc:
-        url: https://slack.openstreetmap.us/
         title: IRC
         description: Trò chuyện tương tác trong nhiều ngôn ngữ về nhiều chủ đề.
       switch2osm:
-        url: https://discord.gg/openstreetmap
         title: switch2osm
         description: Trợ giúp cho những công ty và tổ chức muốn đổi qua các bản đồ
           và dịch vụ dựa trên OpenStreetMap.

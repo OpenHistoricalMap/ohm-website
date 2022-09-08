@@ -291,7 +291,6 @@ fr:
         one: l’année dernière
         other: il y a %{count} ans
   printable_name:
-    with_id: '%{id}'
     with_version: '%{id}, v%{version}'
     with_name_html: '%{name} (%{id})'
   editor:
@@ -2081,12 +2080,11 @@ fr:
         le résultat que \nsous la même licence. Voir la page <a href=\"%{copyright_path}\">Droits
         d’auteur et licence</a> pour plus de détails."
       legal_title: Informations juridiques
-      legal_1_html: "Ce site et de nombreux autres services connexes sont officiellement
-        exploités par le collectif \ntrès informel OpenHistoricalMap au nom de la
-        communauté."
-      legal_2_html: |-
-        Veuillez contacter l’équipe OHM à <a href="mailto:historic@opensteetmap.org">historic@opensteetmap.org</a> si vous avez des questions sur les licences, les droits d’auteur ou d’autres questions juridiques.
-        <br>
+      legal_1_html: Ce site et de nombreux autres services connexes sont officiellement
+        exploités par le collectif très informel OpenHistoricalMap au nom de la communauté.
+      legal_2_html: Veuillez contacter l’équipe OHM à <a href="mailto:historic@opensteetmap.org">historic@opensteetmap.org</a>
+        si vous avez des questions sur les licences, les droits d’auteur ou d’autres
+        questions juridiques.<br>
       partners_title: Partenaires
     copyright:
       foreign:
@@ -2103,15 +2101,15 @@ fr:
         mapping_link: commencer à contribuer
       legal_babble:
         title_html: Droits d’auteur et licence
-        intro_1_html: "<b>OpenHistoricalMap (OHM)</b> offre une cartographie historique
-          et des données associées, \nfournies par les contributeurs sous les licences
+        intro_1_html: <b>OpenHistoricalMap (OHM)</b> offre une cartographie historique
+          et des données associées, fournies par les contributeurs sous les licences
           au niveau de l’objet. Les contributeurs sont fortement encouragés à fournir
-          des données en utilisant la licence <a href=\"https://creativecommons.org/share-your-work/public-domain/cc0/\">CC0</a>,
+          des données en utilisant la licence <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">CC0</a>,
           mais dans l’intérêt de la protection des droits des créateurs de données
           historiques, tels que les universitaires, d’autres licences ouvertes, telles
           que toute combinaison de CC, BY, SA et NC sont également prises en charge.
           Vous assumez la responsabilité de comprendre les termes des licences incluses
-          dans les données que vous copiez, distribuez, transmettez et adaptez."
+          dans les données que vous copiez, distribuez, transmettez et adaptez.
         intro_2_html: |-
           Vous êtes libre de copier, distribuer, transmettre et adapter nos données, tant que vous respectez les termes des données que vous copiez, distribuez ou adaptez.
           Si vous modifiez ou développez les données de ce site, vous ne pouvez distribuer le résultat que selon les termes des licences des objets de données sous-jacents.
@@ -2187,8 +2185,6 @@ fr:
       license:
         copyright: Copyright OpenHistoricalMap et contributeurs, sous une licence
           libre
-        license_url: https://openstreetmap.org/copyright
-        project_url: https://help.openstreetmap.org/
       remote_failed: Échec de la modification — vérifiez que l’éditeur externe JOSM
         ou Merkaartor est ouvert et que l’option de contrôle à distance de l’application
         est activée.
@@ -2199,7 +2195,6 @@ fr:
         publiques à partir de votre %{user_page}.
       user_page_link: page utilisateur
       anon_edits_html: (%{link})
-      anon_edits_link: https://wiki.openstreetmap.org/wiki/Disabling_anonymous_edits
       anon_edits_link_text: Trouvez pourquoi ici.
       id_not_configured: iD n’a pas été configuré
       no_iframe_support: Votre navigateur ne prend pas en charge les « iframes HTML »,
@@ -2300,22 +2295,18 @@ fr:
         description: Poser une question ou chercher des réponses sur le site de questions-et-réponses
           d’OpenStreetMap.
       mailing_lists:
-        url: https://lists.openstreetmap.org/listinfo/historic
         title: Liste de diffusion d’OHM
         description: Posez une question ou discutez de sujets intéressants sur la
           liste de diffusion d’OHM — inscrivez-vous sur le lien ci-dessus.
       forums:
-        url: https://forum.openhistoricalmap.org/
         title: Forums
         description: Des questions et des discussions pour ceux qui préfèrent une
           interface sous forme de tableau d’affichage.
       irc:
-        url: https://slack.openstreetmap.us/
         title: Slack
         description: Clavardage interactif OHM sur le canal « #openhistoricalmap »,
           avec l’aimable autorisation d’OSM-US.
       switch2osm:
-        url: https://discord.gg/openstreetmap
         title: Discord
         description: Rejoignez le canal « #openhistoricalmap » pour discuter librement
           d’OHM, grâce à des utilisateurs enthousiastes d’OHM.

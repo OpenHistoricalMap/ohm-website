@@ -211,7 +211,6 @@ mk:
         one: пред 1 година
         other: пред %{count} години
   printable_name:
-    with_id: '%{id}'
     with_version: '%{id}, вер. %{version}'
     with_name_html: '%{name} (%{id})'
   editor:
@@ -2135,8 +2134,6 @@ mk:
       createnote: Додај белешка
       license:
         copyright: Авторски права OpenStreetMap и учесниците, под отворена лиценца
-        license_url: https://www.openstreetmap.org/copyright/mk
-        project_url: https://openstreetmap.org
       remote_failed: Уредувањето не успеа - проверете дали е вчитан JOSM или Merkaartor
         и дали е овозможено далечинското управување
     edit:
@@ -2146,7 +2143,6 @@ mk:
         %{user_page}.
       user_page_link: корисничка страница
       anon_edits_html: (%{link})
-      anon_edits_link: https://wiki.openstreetmap.org/wiki/Disabling_anonymous_edits
       anon_edits_link_text: Дознајте зошто ова е така.
       id_not_configured: Не му се зададени поставки на уредувачкиот програм „iD“
       no_iframe_support: Вашиот прелистувач не поддржува „иРамки“ (iframes) со HTML,
@@ -2235,20 +2231,16 @@ mk:
         description: Поставете прашање или побарајте во одговорите на порталот за
           прашања и одговори на OpenStreetMap.
       mailing_lists:
-        url: https://lists.openstreetmap.org/listinfo/historic
         title: Поштенски списоци
         description: Поставете прашање или разговарајте за интересни прашања на широк
           опсег на тематски и регионални поштенски списоци.
       forums:
-        url: https://forum.openhistoricalmap.org/
         title: Форуми
         description: Прашања и разговори за оние кои претпочитаат да општат со објави.
       irc:
-        url: https://slack.openstreetmap.us/
         title: IRC
         description: Разговор во живо на најразлични јазици и на многу теми.
       switch2osm:
-        url: https://discord.gg/openstreetmap
         title: Преод на OSM
         description: Помош за претпријатија и организации кои преоѓаат на  карти на
           OpenStreetMap и други услуги.

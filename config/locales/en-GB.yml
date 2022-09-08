@@ -204,7 +204,6 @@ en-GB:
         one: 1 year ago
         other: '%{count} years ago'
   printable_name:
-    with_id: '%{id}'
     with_version: '%{id}, v%{version}'
     with_name_html: '%{name} (%{id})'
   editor:
@@ -2069,8 +2068,6 @@ en-GB:
       createnote: Add a note
       license:
         copyright: Copyright OpenHistoricalMap and contributors, under an open license
-        license_url: https://openstreetmap.org/copyright
-        project_url: https://openstreetmap.org
       remote_failed: Editing failed - make sure JOSM or Merkaartor is loaded and the
         remote control option is enabled
     edit:
@@ -2079,7 +2076,6 @@ en-GB:
         You can set your edits as public from your %{user_page}.
       user_page_link: user page
       anon_edits_html: (%{link})
-      anon_edits_link: https://wiki.openstreetmap.org/wiki/Disabling_anonymous_edits
       anon_edits_link_text: Find out why this is the case.
       id_not_configured: iD has not been configured
       no_iframe_support: Your browser doesn't support HTML iframes, which are necessary
@@ -2175,22 +2171,18 @@ en-GB:
         description: Ask a question or look up answers on OSM's question-and-answer
           site.
       mailing_lists:
-        url: https://lists.openstreetmap.org/listinfo/historic
         title: OHM Mailing List
         description: Ask a question or discuss interesting matters on the OHM mailing
           list - sign up at the link above.
       forums:
-        url: https://forum.openhistoricalmap.org/
         title: Forums
         description: Questions and discussions for those that prefer a bulletin board
           style interface.
       irc:
-        url: https://slack.openstreetmap.us/
         title: Slack
         description: Interactive OHM chat on the openhistoricalmap channel, courtesy
           of OSM-US.
       switch2osm:
-        url: https://discord.gg/openstreetmap
         title: Discord
         description: Join the OpenHistoricalMap channel for free-flowing chat about
           OHM, courtesy of some enthusiastic OHM users.

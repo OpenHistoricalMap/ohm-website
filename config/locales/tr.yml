@@ -254,7 +254,6 @@ tr:
         one: 1 yıl önce
         other: '%{count} yıl önce'
   printable_name:
-    with_id: '%{id}'
     with_version: '%{id}, v%{version}'
     with_name_html: '%{name} (%{id})'
   editor:
@@ -2202,8 +2201,6 @@ tr:
       createnote: Bir not ekle
       license:
         copyright: Telif Hakkı OpenStreetMap ve katılımcılar, açık lisans altında
-        license_url: https://openstreetmap.org/copyright
-        project_url: https://openstreetmap.org
       remote_failed: Düzenleme başarısız - JOSM veya Merkaartor'un yüklendiğinden
         ve uzaktan kontrol seçeneğinin etkinleştirildiğinden emin olun.
     edit:
@@ -2212,7 +2209,6 @@ tr:
         Düzenlemelerinizi, %{user_page} sayfasından herkese açık olarak ayarlayabilirsiniz
       user_page_link: kullanıcı sayfası
       anon_edits_html: (%{link})
-      anon_edits_link: https://wiki.openstreetmap.org/wiki/Tr:Anonymous_edits
       anon_edits_link_text: Durumun neden böyle olduğunu öğrenin.
       id_not_configured: iD yapılandırılmamış
       no_iframe_support: Bu özelliği görüntülemek için gerekli olan HTML iframe tarayıcınız
@@ -2303,21 +2299,17 @@ tr:
         description: Bir soru sor veya OpenStreetMap'in soru-ve-cevap sitesinde yanıtları
           ara.
       mailing_lists:
-        url: https://lists.openstreetmap.org/listinfo/historic
         title: E-Posta Listeleri
         description: Oldukça geniş yerel veya bölgesel e-posta listelerinde soru sorabilir
           veya ilginç konuları tartışabilirsiniz.
       forums:
-        url: https://forum.openhistoricalmap.org/
         title: Forumlar
         description: Duyuru panosu tarzındaki arayüzleri tercih edenler için sorular
           ve tartışmalar.
       irc:
-        url: https://slack.openstreetmap.us/
         title: IRC
         description: Birçok dilde ve birçok konuda interaktif sohbet.
       switch2osm:
-        url: https://discord.gg/openstreetmap
         title: switch2osm
         description: OpenStreetMap tabanlı haritalara ve diğer hizmetlere geçiş yapan
           şirketler ve kuruluşlar için yardım.

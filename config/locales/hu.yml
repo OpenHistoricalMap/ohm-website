@@ -2090,7 +2090,6 @@ hu:
       createnote: Új jegyzet
       license:
         copyright: Copyright OpenStreetMap és közreműködői, egy nyílt licenc alatt
-        project_url: https://openstreetmap.org
       remote_failed: A szerkesztés nem sikerült. Győződj meg róla, hogy a JOSM vagy
         a Merkaartor be van töltve, és a távirányító opció engedélyezve van
     edit:
