@@ -1596,9 +1596,6 @@ de:
       successful_report: Deine Meldung wurde erfolgreich registriert
       provide_details: Bitte die erforderlichen Einzelheiten angeben
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: OpenStreetMap
     logo:
       alt_text: OpenStreetMap Logo
     home: Gehe zum Heimatstandort

@@ -1443,9 +1443,6 @@ hsb:
       successful_report: Twoja rozprawa je so wuspěšnje registrowała
       provide_details: Prošu zapodaj trěbne podrobnosće
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: OpenStreetMap
     logo:
       alt_text: OpenStreetMap logo
     home: K domjacemu stejnišću

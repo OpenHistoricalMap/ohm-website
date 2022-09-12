@@ -210,7 +210,6 @@ te:
         one: 1 సంవత్సరం క్రితం
         other: '%{count} సంవత్సరాల క్రితం'
   printable_name:
-    with_version: '%{id}, v%{version}'
     with_name_html: '%{name} (%{id})'
   editor:
     default: అప్రమేయం (ప్రస్తుతం %{name})
@@ -346,8 +345,6 @@ te:
     view_history: చరిత్రను చూడండి
     view_details: వివరాలను చూడండి
     location: 'ప్రాంతం:'
-    common_details:
-      coordinates_html: '%{latitude}, %{longitude}'
     changeset:
       title: 'మార్పులసమితి: %{id}'
       belongs_to: రచయిత
@@ -388,7 +385,6 @@ te:
         one: 1 సభ్యుడు/సభ్యురాలు
         other: '%{count} సభ్యులు'
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name}, %{role} లాగా'
       type:
         node: బుడిపె
@@ -460,7 +456,6 @@ te:
         పునరుజ్జీవింపజేసారు
       hidden_by_html: <abbr title='%{exact_time}'>%{when}</abbr> %{user} దాచారు
       report: ఈ గమనికపై ఫిర్యాదు చెయ్యండి
-      coordinates_html: '%{latitude}, %{longitude}'
     query:
       title: క్వెరీ విశేషాలు
       introduction: సమీపం లోని అంశాలను చూసేందుకు మ్యాపుపై నొక్కండి.
@@ -584,7 +579,6 @@ te:
       location: 'ప్రాంతం:'
       view: చూడండి
       edit: మార్చు
-      coordinates: '%{latitude}; %{longitude}'
     feed:
       user:
         title: '%{user} చేర్చిన OpenStreetMap డైరీ పద్దులు'
@@ -638,7 +632,6 @@ te:
         geonames_reverse_html: <a href="http://www.geonames.org/">GeoNames</a> నుండి
           ఫలితాలు
     search_osm_nominatim:
-      prefix_format: '%{name}'
       prefix:
         aerialway:
           cable_car: కేబుల్ కారు
@@ -1982,7 +1975,6 @@ te:
       createnote: ఓ నోట్‍ను చేర్చండి
     edit:
       user_page_link: వాడుకరి పేజీ
-      anon_edits_html: (%{link})
       anon_edits_link_text: ఇది ఇలా ఎందుకుందో తెలుసుకోండి.
       no_iframe_support: మీ బ్రౌజరులో HTML iframes కు మద్దతు లేదు. ఈ అంశం పనిచేసేందుకు
         అది అవసరం.

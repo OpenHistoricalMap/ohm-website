@@ -387,8 +387,6 @@ cs:
     view_history: Zobrazit historii
     view_details: Zobrazit detaily
     location: 'Pozice:'
-    common_details:
-      coordinates_html: '%{latitude}, %{longitude}'
     changeset:
       title: 'Sada změn: %{id}'
       belongs_to: Autor
@@ -504,7 +502,6 @@ cs:
         anonym
       hidden_by_html: Skryl <abbr title='%{exact_time}'>%{when}</abbr> uživatel %{user}
       report: Nahlásit tuto poznámku
-      coordinates_html: '%{latitude}, %{longitude}'
     query:
       title: Průzkum prvků
       introduction: Pro nalezení okolních prvků klikněte na mapu.
@@ -631,7 +628,6 @@ cs:
       location: 'Místo:'
       view: Zobrazit
       edit: Upravit
-      coordinates: '%{latitude}; %{longitude}'
     feed:
       user:
         title: Záznamy v OpenStreetMap deníku uživatele %{user}

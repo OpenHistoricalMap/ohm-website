@@ -290,8 +290,6 @@ bn:
     view_history: ইতিহাস দেখুন
     view_details: বিস্তারিত দেখুন
     location: 'অবস্থান:'
-    common_details:
-      coordinates_html: '%{latitude}, %{longitude}'
     changeset:
       title: 'পরিবর্তনধার্য: %{id}'
       belongs_to: লেখক
@@ -403,7 +401,6 @@ bn:
         পুনঃসক্রিয়কৃত
       hidden_by_html: '%{user} কর্তৃক <abbr title=''%{exact_time}''>%{when}</abbr>
         লুক্কায়িত'
-      coordinates_html: '%{latitude}, %{longitude}'
     query:
       title: বৈশিষ্ট্য অনুসন্ধান করুন
       introduction: নিকটবর্তী বৈশিষ্ট্য খুঁজে পেতে মানচিত্রে ক্লিক করুন।
@@ -515,7 +512,6 @@ bn:
       location: 'অবস্থান:'
       view: দেখুন
       edit: সম্পাদনা
-      coordinates: '%{latitude}; %{longitude}'
     feed:
       user:
         title: ওপেনস্ট্রিটম্যাপে %{user}-এর দিনলিপির ভুক্তি

@@ -391,8 +391,6 @@ zh-CN:
     view_history: 查看历史
     view_details: 查看详情
     location: 位置：
-    common_details:
-      coordinates_html: '%{latitude}, %{longitude}'
     changeset:
       title: 变更集：%{id}
       belongs_to: 作者
@@ -433,7 +431,6 @@ zh-CN:
         one: 1 member
         other: '%{count} 位成员'
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} 作为%{role}'
       type:
         node: 节点
@@ -498,7 +495,6 @@ zh-CN:
       reopened_by_anonymous_html: 匿名用户重新激活于<abbr title='%{exact_time}'>%{when}</abbr>
       hidden_by_html: '%{user}隐藏于<abbr title=''%{exact_time}''>%{when}</abbr>'
       report: 举报此注记
-      coordinates_html: '%{latitude}, %{longitude}'
     query:
       title: 查询要素
       introduction: 点击地图以查找附近要素。
@@ -620,7 +616,6 @@ zh-CN:
       location: 位置：
       view: 查看
       edit: 编辑
-      coordinates: '%{latitude}; %{longitude}'
     feed:
       user:
         title: '%{user} 的 OpenStreetMap 日记文章'
@@ -672,7 +667,6 @@ zh-CN:
         geonames_reverse_html: 来自 <a href="http://www.geonames.org/">GeoNames</a>
           的结果
     search_osm_nominatim:
-      prefix_format: '%{name}'
       prefix:
         aerialway:
           cable_car: 缆车
@@ -1550,9 +1544,6 @@ zh-CN:
       successful_report: 您的举报已成功提交
       provide_details: 请提供所需详情
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: OpenStreetMap
     logo:
       alt_text: OpenStreetMap 标志
     home: 返回家位置
@@ -2020,7 +2011,6 @@ zh-CN:
       not_public: 您尚未公开您的编辑。
       not_public_description_html: 您将无法再编辑此地图，直到您做到如上所述。您可以通过您的%{user_page}公开您的编辑。
       user_page_link: 用户页面
-      anon_edits_html: (%{link})
       anon_edits_link_text: 了解为什么这很重要。
       id_not_configured: iD 尚未配置
       no_iframe_support: 您的浏览器不支持 HTML 嵌入式框架，这是此功能所需要的。

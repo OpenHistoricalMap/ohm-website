@@ -274,7 +274,6 @@ uk:
         many: '%{count} років тому'
         other: ""
   printable_name:
-    with_version: '%{id}, v%{version}'
     with_name_html: '%{name} (%{id})'
   editor:
     default: Типовий (зараз %{name})
@@ -416,8 +415,6 @@ uk:
     view_history: Перегляд історії
     view_details: Поточна інформація
     location: 'Координати:'
-    common_details:
-      coordinates_html: '%{latitude}, %{longitude}'
     changeset:
       title: 'Набір змін: %{id}'
       belongs_to: Автор
@@ -533,7 +530,6 @@ uk:
       reopened_by_anonymous_html: Відновлено анонімом <abbr title='%{exact_time}'>%{when}</abbr>
       hidden_by_html: Приховано %{user} <abbr title='%{exact_time}'>%{when}</abbr>
       report: Поскаржитися на цю нотатку
-      coordinates_html: '%{latitude}, %{longitude}'
     query:
       title: Отримати об’єкти
       introduction: Клацніть на мапі, щоб отримати дані про об’єкти поруч.
@@ -660,7 +656,6 @@ uk:
       location: 'Місце:'
       view: Переглянути
       edit: Змінити
-      coordinates: '%{latitude}; %{longitude}'
     feed:
       user:
         title: Записи щоденника OpenStreetMap %{user}

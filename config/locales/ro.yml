@@ -223,7 +223,6 @@ ro:
         one: acum 1 an
         other: cu %{count} ani în urmă
   printable_name:
-    with_version: '%{id}, v%{version}'
     with_name_html: '%{name} (%{id})'
   editor:
     default: Implicit (în prezent %{name})
@@ -334,8 +333,6 @@ ro:
     view_history: Vezi istoric
     view_details: Vezi detalii
     location: 'Amplasament:'
-    common_details:
-      coordinates_html: '%{latitude}, %{longitude}'
     changeset:
       title: 'Set de modificări: %{id}'
       belongs_to: Autor
@@ -380,7 +377,6 @@ ro:
         few: '%{count} membri'
         other: ""
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} ca %{role}'
       type:
         node: Nod
@@ -449,7 +445,6 @@ ro:
       reopened_by_anonymous_html: Reactivat de anonim <abbr title='%{exact_time}'>%{when}</abbr>
       hidden_by_html: Ascunsă de %{user} <abbr title='%{exact_time}'>%{when}</abbr>
       report: Raportează această notă
-      coordinates_html: '%{latitude}, %{longitude}'
     query:
       title: Interogări ale funcțiilor
       introduction: Dați clic pe hartă pentru a găsi obiectivele din apropiere.
@@ -575,7 +570,6 @@ ro:
       location: 'Localizare:'
       view: Vizualizează
       edit: Modifică
-      coordinates: '%{latitude}; %{longitude}'
     feed:
       user:
         title: Înregistrări în jurnalul OpenStreetMap pentru %{user}
@@ -625,7 +619,6 @@ ro:
           Nominatim</a>
         geonames_reverse_html: Rezultate de la <a href="http://www.geonames.org/">GeoNames</a>
     search_osm_nominatim:
-      prefix_format: '%{name}'
       prefix:
         aerialway:
           cable_car: Tramvai tras de cablu

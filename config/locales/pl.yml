@@ -428,8 +428,6 @@ pl:
     view_history: Wyświetl historię
     view_details: Wyświetl szczegóły
     location: 'Położenie:'
-    common_details:
-      coordinates_html: '%{latitude}, %{longitude}'
     changeset:
       title: 'Zestaw zmian: %{id}'
       belongs_to: Autor
@@ -476,7 +474,6 @@ pl:
         many: '%{count} członów'
         other: '%{count} członu'
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} jako %{role}'
       type:
         node: Węzeł
@@ -545,7 +542,6 @@ pl:
       reopened_by_anonymous_html: Ponownie aktywowana anonimowo <abbr title='%{exact_time}'>%{when}</abbr>
       hidden_by_html: Ukryte przez %{user} <abbr title='%{exact_time}'>%{when}</abbr>
       report: Zgłoś tę uwagę
-      coordinates_html: '%{latitude}, %{longitude}'
     query:
       title: Dane obiektów
       introduction: Kliknij na mapie, by wyszukać pobliskie obiekty.
@@ -671,7 +667,6 @@ pl:
       location: 'Położenie:'
       view: Podgląd
       edit: Edytuj
-      coordinates: '%{latitude}; %{longitude}'
     feed:
       user:
         title: Wpisy użytkownika %{user}
@@ -723,7 +718,6 @@ pl:
           Nominatim</a>
         geonames_reverse_html: Wyniki z <a href="http://www.geonames.org/">GeoNames</a>
     search_osm_nominatim:
-      prefix_format: '%{name}'
       prefix:
         aerialway:
           cable_car: Kolej linowa
@@ -1605,9 +1599,6 @@ pl:
       successful_report: Twoje zgłoszenie zostało pomyślnie zarejestrowane
       provide_details: Podaj, proszę, wymagane sczegóły
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: OpenStreetMap
     logo:
       alt_text: Logo OpenStreetMap
     home: Przejdź do położenia domu
@@ -2199,7 +2190,6 @@ pl:
       not_public_description_html: W tym trybie nie można już zmieniać mapy. Można
         zmienić je na publiczne na %{user_page}.
       user_page_link: stronie użytkownika
-      anon_edits_html: (%{link})
       anon_edits_link_text: Tu dowiesz się dlaczego.
       id_not_configured: iD nie został skonfigurowany
       no_iframe_support: Używana przeglądarka nie obsługuje HTML iframes, które są

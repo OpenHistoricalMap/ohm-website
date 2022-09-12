@@ -116,8 +116,6 @@ sq:
         tagstring: ndarë me presje
       user:
         new_email: (asnjëherë nuk është publikuar)
-  printable_name:
-    with_version: '%{id}, v%{version}'
   editor:
     default: E parazgjedhur (aktualisht %{name})
     id:
@@ -213,7 +211,6 @@ sq:
       history_title_html: 'Historiku i lidhjes: %{name}'
       members: Anëtarët
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} është si %{role}'
       type:
         node: Nyje
@@ -427,7 +424,6 @@ sq:
           Nominatim</a>
         geonames_reverse_html: Rezultate nga <a href="http://www.geonames.org/">GeoNames</a>
     search_osm_nominatim:
-      prefix_format: '%{name}'
       prefix:
         aerialway:
           cable_car: Teleferiku
@@ -944,9 +940,6 @@ sq:
     create:
       provide_details: Ju lutemi paraqitni detajet e kërkuara
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: OpenStreetMap
     logo:
       alt_text: Logoja e OpenStreetMap
     logout: Çidentifikohu
@@ -1216,7 +1209,6 @@ sq:
           garancion, apo\n  pranon çfarëdo anekse."
     edit:
       user_page_link: '{{GENDER:{{ROOTPAGENAME}}|faqja e përdoruesit|faqja e përdorueses}}'
-      anon_edits_html: (%{link})
     export:
       title: Eksporto
       area_to_export: Zona për tu eksportuar

@@ -177,8 +177,6 @@ nn:
       x_years:
         one: 1 år sidan
         other: '%{count} år sidan'
-  printable_name:
-    with_version: '%{id}, v%{version}'
   editor:
     default: Standard (noverande %{name})
     id:
@@ -299,7 +297,6 @@ nn:
     relation:
       members: Medlemmar
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} som %{role}'
       type:
         node: Punkt
@@ -509,7 +506,6 @@ nn:
           Nominatim</a>
         geonames_reverse_html: Resultat frå <a href="http://www.geonames.org/">GeoNames</a>
     search_osm_nominatim:
-      prefix_format: '%{name}'
       prefix:
         aerialway:
           cable_car: Kabelbane
@@ -1027,9 +1023,6 @@ nn:
           spam_label: Denne merknaden er søppel
           abusive_label: Denne merknaden er støytande
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: OpenStreetMap
     logo:
       alt_text: OpenStreetMap-logo
     home: heim
@@ -1437,7 +1430,6 @@ nn:
       not_public_description_html: Du kan ikkje lenger redigere kartet om du ikkje
         gjer det. Du kan gjere redigeringane dine offentlege frå din %{user_page}.
       user_page_link: brukarside
-      anon_edits_html: (%{link})
       anon_edits_link_text: Finn ut kvifor dette er tilfellet.
       id_not_configured: iD er ikkje konfigurert
       no_iframe_support: Nettlesaren din støttar ikkje HTML iframes som er naudsynt

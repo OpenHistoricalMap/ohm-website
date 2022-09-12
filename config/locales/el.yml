@@ -239,8 +239,6 @@ el:
       x_years:
         one: ένα χρόνο πριν
         other: '%{count} χρόνια πριν'
-  printable_name:
-    with_version: '%{id}, v%{version}'
   editor:
     default: Προεπιλογή (τώρα είναι %{name})
     id:
@@ -423,7 +421,6 @@ el:
         one: 1 μέλος
         other: '%{count} μέλη'
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} ως %{role}'
       type:
         node: Κόμβος
@@ -670,7 +667,6 @@ el:
           Nominatim</a>
         geonames_reverse_html: Αποτελέσματα από το <a href="http://www.geonames.org/">GeoNames</a>
     search_osm_nominatim:
-      prefix_format: '%{name}'
       prefix:
         aerialway:
           cable_car: Τελεφερίκ
@@ -1464,9 +1460,6 @@ el:
       successful_report: Η αναφορά σας έχει καταγραφεί επιτυχώς
       provide_details: Παρακαλούμε δώστε τις απαιτούμενες λεπτομέρειες
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: OpenStreetMap
     logo:
       alt_text: Λογότυπο OpenStreetMap
     home: Μετάβαση στο Σπίτι

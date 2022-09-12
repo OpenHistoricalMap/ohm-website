@@ -397,8 +397,6 @@ it:
     view_history: Visualizza cronologia
     view_details: Vedi dettagli
     location: 'Posizione:'
-    common_details:
-      coordinates_html: '%{latitude}, %{longitude}'
     changeset:
       title: 'Gruppo di modifiche: %{id}'
       belongs_to: Autore
@@ -509,7 +507,6 @@ it:
       reopened_by_anonymous_html: Riattivata da anonimo <abbr title='%{exact_time}'>%{when}</abbr>
       hidden_by_html: Nascosta da %{user} <abbr title='%{exact_time}'>%{when}</abbr>
       report: Segnala questa nota
-      coordinates_html: '%{latitude}, %{longitude}'
     query:
       title: Ricerca di elementi
       introduction: Clicca sulla cartina per disponibilità nei pressi.
@@ -637,7 +634,6 @@ it:
       location: 'Luogo:'
       view: Visualizza
       edit: Modifica
-      coordinates: '%{latitude}; %{longitude}'
     feed:
       user:
         title: Voci del diario di OpenStreetMap per %{user}

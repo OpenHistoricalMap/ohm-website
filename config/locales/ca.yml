@@ -247,8 +247,6 @@ ca:
         other: fa %{count} mesos
       x_years:
         other: un=fa 1 any
-  printable_name:
-    with_version: '%{id}, v%{version}'
   editor:
     default: Predeterminat (actualment %{name})
     id:
@@ -1541,9 +1539,6 @@ ca:
       successful_report: S’ha registrat la vostra denúncia correctament
       provide_details: Proporcioneu els detalls demanats
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: OpenStreetMap
     logo:
       alt_text: Logotip de l'OpenStreetMap
     home: Ves a la ubicació d'inici

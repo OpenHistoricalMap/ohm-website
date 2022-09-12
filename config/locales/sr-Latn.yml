@@ -174,7 +174,6 @@ sr-Latn:
         title: Skup izmena %{id}
         title_comment: Skup izmena %{id} – %{comment}
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} kao %{role}'
       type:
         node: Čvor
@@ -339,7 +338,6 @@ sr-Latn:
         geonames_html: Rezultati iz <a href="http://www.geonames.org/">Geografskih
           imena</a>
     search_osm_nominatim:
-      prefix_format: '%{name}'
       prefix:
         aeroway:
           aerodrome: Aerodrom
@@ -765,9 +763,6 @@ sr-Latn:
       no_results: Nema rezultata
       more_results: Više rezultata
   layouts:
-    project_name:
-      title: Openstritmap
-      h1: Openstritmap
     logo:
       alt_text: Logotip Openstritmapa
     home: dom
@@ -1089,7 +1084,6 @@ sr-Latn:
       not_public_description_html: Ne možete uređivati mapu sve dok to ne uradite.
         Možete podesiti da vaše izmene budu javne s %{user_page}.
       user_page_link: korisničke stranice
-      anon_edits_html: (%{link})
       anon_edits_link_text: Saznajte zašto je to slučaj.
       no_iframe_support: Vaš pregledač ne podržava HTML iframes, a oni su potrebni
         za ovu mogućnost.

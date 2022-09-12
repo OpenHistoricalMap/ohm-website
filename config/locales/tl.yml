@@ -179,8 +179,6 @@ tl:
       x_years:
         one: 1 taon ang nakaraan
         other: '%{count} mga taon ang nakaraan'
-  printable_name:
-    with_version: '%{id}, v%{version}'
   editor:
     default: Likas na pagtatakda (kasalukuyang %{name})
     id:
@@ -325,7 +323,6 @@ tl:
       title_html: 'Kaugnayan: %{name}'
       members: Mga kasapi
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} bilang %{role}'
       type:
         node: Buko
@@ -548,7 +545,6 @@ tl:
           ng OpenStreetMap</a>
         geonames_reverse_html: Mga kinalabasan mula sa <a href="http://www.geonames.org/">GeoNames</a>
     search_osm_nominatim:
-      prefix_format: '%{name}'
       prefix:
         aeroway:
           aerodrome: Himpilan ng eroplano
@@ -1146,9 +1142,6 @@ tl:
     create:
       provide_details: Mangyaring ibigay ang mga kinakailangang detalye
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: OpenStreetMap
     logo:
       alt_text: Logo ng OpenStreetMap
     home: Pumunta sa kinalalagayan ng tahanan
@@ -1638,7 +1631,6 @@ tl:
         lamang kung gagawin mo. Maitatakda mo ang iyong mga pamamatnugot bilang pangmadla
         magmula sa iyong %{user_page}.
       user_page_link: pahina ng tagagamit
-      anon_edits_html: (%{link})
       anon_edits_link_text: Alamin kung bakit ganito ang katayuan.
       no_iframe_support: Hindi tinatangkilik ng pantingin-tingin mo ang mga iframe
         ng HTML, na kailangan para sa tampok na ito.

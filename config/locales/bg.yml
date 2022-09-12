@@ -276,8 +276,6 @@ bg:
     view_history: Показване на историята
     view_details: Показване на детайли
     location: 'Местоположение:'
-    common_details:
-      coordinates_html: '%{latitude}, %{longitude}'
     changeset:
       title: 'Списък с промени: %{id}'
       belongs_to: Автор
@@ -375,7 +373,6 @@ bg:
       reopened_by_anonymous_html: Повторно отворена от анонимен <abbr title='%{exact_time}'>%{when}</abbr>
       hidden_by_html: Скрита от %{user} <abbr title='%{exact_time}'>%{when}</abbr>
       report: Докладване на бележката
-      coordinates_html: '%{latitude}, %{longitude}'
     query:
       title: Търсене на обекти
       introduction: Щракнете върху картата, за да търсите обекти в близост.
@@ -490,7 +487,6 @@ bg:
       location: 'Местоположение:'
       view: Преглеждане
       edit: Променяне
-      coordinates: '%{latitude}; %{longitude}'
     feed:
       user:
         title: OpenStreetMap дневник записи за %{user}

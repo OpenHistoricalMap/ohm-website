@@ -357,8 +357,6 @@ is:
     view_history: Skoða feril
     view_details: Skoða nánar
     location: 'Staðsetning:'
-    common_details:
-      coordinates_html: '%{latitude}, %{longitude}'
     changeset:
       title: 'Breytingasett: %{id}'
       belongs_to: Höfundur
@@ -401,7 +399,6 @@ is:
         one: 1 meðlimur
         other: '%{count} meðlimir'
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} sem „%{role}“'
       type:
         node: Hnútur
@@ -473,7 +470,6 @@ is:
       reopened_by_anonymous_html: Endurvirkjað af nafnlausum notanda fyrir <abbr title='%{exact_time}'>%{when}</abbr>
       hidden_by_html: Falið af %{user} <abbr title='%{exact_time}'> %{when}</abbr>
       report: Tilkynna þennan minnispunkt
-      coordinates_html: '%{latitude}, %{longitude}'
     query:
       title: Rannsaka fitjur
       introduction: Smelltu á kortið til að finna fitjur í nágrenninu.
@@ -600,7 +596,6 @@ is:
       location: 'Staðsetning:'
       view: Skoða
       edit: Breyta
-      coordinates: '%{latitude}; %{longitude}'
     feed:
       user:
         title: OpenStreetMap bloggfærslur eftir %{user}
@@ -1531,9 +1526,6 @@ is:
       successful_report: Það tókst að skrá skýrsluna þína
       provide_details: Tilgreindu öll nauðsynleg atriði
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: OpenStreetMap
     logo:
       alt_text: OpenStreetMap merkið
     home: Fara heim
@@ -2156,7 +2148,6 @@ is:
       not_public_description_html: Þú getur ekki lengur gert breytingar nema þær séu
         merktar opinberar, þú getur breytt þeim stillingum á %{user_page}.
       user_page_link: notandasíðunni þinni
-      anon_edits_html: (%{link})
       anon_edits_link_text: Finndu út afhverju.
       id_not_configured: Það er ekki búið að setja upp auðkenni
       no_iframe_support: Því miður styður vafrinn þinn ekki HTML-iframes, sem er nauðsynlegt
@@ -2435,7 +2426,6 @@ is:
       title: Breyti ferlinum %{name}
       heading: Breyti ferlinum %{name}
       visibility_help: hvað þýðir þetta?
-      visibility_help_url: https://wiki.openstreetmap.org/wiki/Visibility_of_GPS_traces
     update:
       updated: Ferill uppfærður
     trace_optionals:

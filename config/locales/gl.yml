@@ -218,7 +218,6 @@ gl:
         one: hai un ano
         other: hai %{count} anos
   printable_name:
-    with_version: '%{id}, v%{version}'
     with_name_html: '%{name} (%{id})'
   editor:
     default: Predeterminado (actualmente, %{name})
@@ -327,8 +326,6 @@ gl:
     view_history: Ollar o historial
     view_details: Ollar os detalles
     location: 'Localización:'
-    common_details:
-      coordinates_html: '%{latitude}, %{longitude}'
     changeset:
       title: 'Conxunto de modificacións: %{id}'
       belongs_to: Autor
@@ -371,7 +368,6 @@ gl:
         one: 1 membro
         other: '%{count} membros'
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} como %{role}'
       type:
         node: Nó
@@ -438,7 +434,6 @@ gl:
       reopened_by_anonymous_html: Reactivado por un anónimo <abbr title='%{exact_time}'>%{when}</abbr>
       hidden_by_html: Agochado por %{user} <abbr title='%{exact_time}'>%{when}</abbr>
       report: Denunciar esta nota
-      coordinates_html: '%{latitude}, %{longitude}'
     query:
       title: Consultar os elementos
       introduction: Prema no mapa para atopar elementos preto daquí.
@@ -567,7 +562,6 @@ gl:
       location: 'Localización:'
       view: Ollar
       edit: Editar
-      coordinates: '%{latitude}; %{longitude}'
     feed:
       user:
         title: Entradas no diario do OpenStreetMap de %{user}
@@ -615,7 +609,6 @@ gl:
           Nominatim</a>
         geonames_reverse_html: Resultados dende <a href="http://www.geonames.org/">GeoNames</a>
     search_osm_nominatim:
-      prefix_format: '%{name}'
       prefix:
         aerialway:
           cable_car: Teleférico
@@ -1490,9 +1483,6 @@ gl:
       successful_report: A túa denuncia rexistrouse con éxito
       provide_details: Por favor, achega os detalles que se che solicitan.
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: OpenStreetMap
     logo:
       alt_text: Logotipo do OpenStreetMap
     home: Ir á localización inicial
@@ -2102,7 +2092,6 @@ gl:
       not_public_description_html: Non podes editar o mapa a menos que o queiras facer.
         Podes estabelecer as túas edicións coma públicas dende a túa %{user_page}.
       user_page_link: páxina de usuario
-      anon_edits_html: (%{link})
       anon_edits_link_text: Descobra velaquí o motivo.
       id_not_configured: O iD non está configurado
       no_iframe_support: O teu navegador non soporta os iframes HTML, necesarios para
@@ -2381,7 +2370,6 @@ gl:
       title: Editando a pista "%{name}"
       heading: Editando a pista "%{name}"
       visibility_help: que significa isto?
-      visibility_help_url: https://wiki.openstreetmap.org/wiki/Visibility_of_GPS_traces
     update:
       updated: Pista actualizada
     trace_optionals:

@@ -31,6 +31,7 @@
 # Author: Mohammad ebz
 # Author: Mojtabakd
 # Author: Movyn
+# Author: Mskf1383
 # Author: Nbi
 # Author: Omidh
 # Author: Pirehelokan
@@ -60,7 +61,7 @@ fa:
         create: انتشار
         update: روزآمدسازی
       issue_comment:
-        create: نظر دهید
+        create: افزودن نظر
       message:
         create: ارسال
       client_application:
@@ -416,7 +417,6 @@ fa:
         one: 1 عضو
         other: '%{count} عضو'
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} با نقش %{role}'
       type:
         node: گره
@@ -1473,9 +1473,6 @@ fa:
       successful_report: گزارشتان با موفقیت ثبت شد
       provide_details: لطفاً جزئیات لازم را ارائه دهید
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: اوپن‌استریت‌مپ
     logo:
       alt_text: لوگوی OpenStreetMap
     home: رفتن به محل خانه
@@ -2093,7 +2090,6 @@ fa:
         کار را انجام دهید. در %{user_page} خود می‌توانید ویرایش‌هایتان را به‌عنوان
         عمومی تنظیم کنید.
       user_page_link: صفحهٔ کاربری
-      anon_edits_html: (%{link})
       anon_edits_link_text: بفهمید چرا این‌طور است.
       id_not_configured: iD پیکربندی نشده است
       no_iframe_support: مرورگر شما فریم‌های HTML را، که برای این ویژگی لازم است،
@@ -2376,7 +2372,7 @@ fa:
       title: در حال دیدن رد %{name}
       heading: در حال دیدن رد %{name}
       pending: در انتظار
-      filename: 'نام فایل:'
+      filename: 'نام پرونده:'
       download: بارگیری
       uploaded: 'تاریخ بارگذاری:'
       points: 'نقاط:'

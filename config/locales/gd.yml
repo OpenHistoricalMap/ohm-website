@@ -120,7 +120,6 @@ gd:
       user:
         new_email: (na seall gu poblach idir)
   printable_name:
-    with_version: '%{id}, v%{version}'
     with_name_html: '%{name} (%{id})'
   editor:
     default: Bun-roghainn (%{name} an-dràsta)
@@ -253,7 +252,6 @@ gd:
       history_title_html: 'Eachdraidh na dàimh: %{name}'
       members: Buill
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} ''na %{role}'
       type:
         node: Nòd
@@ -483,7 +481,6 @@ gd:
           Nominatim</a>
         geonames_reverse_html: Toraidhean o <a href="http://www.geonames.org/">GeoNames</a>
     search_osm_nominatim:
-      prefix_format: '%{name}'
       prefix:
         aerialway:
           cable_car: Carbad-càbaill
@@ -975,9 +972,6 @@ gd:
       no_results: Cha deach toradh a lorg
       more_results: Barrachd toraidhean
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: OpenStreetMap
     logo:
       alt_text: Suaicheantas OpenStreetMap
     home: Rach gun ionad dachaigh
@@ -1472,7 +1466,6 @@ gd:
         mus dèan thu seo. 'S urrainn dhut na dheasaicheas tu a dhèanamh poblach air
         %{user_page} agad.
       user_page_link: duilleag a' chleachdaiche
-      anon_edits_html: (%{link})
       anon_edits_link_text: Faigh a-mach carson
       id_not_configured: Cha deach iD a rèiteachadh
       no_iframe_support: Cha toir am brabhsair agad taic ri HTML iframes a tha riatanach

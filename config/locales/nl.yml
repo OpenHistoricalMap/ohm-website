@@ -1600,7 +1600,13 @@ nl:
       in uitvoering; we voegen tijdsgebonden functionaliteit aan de site toe en daarbij
       zijn we met allerlei dingen aan het experimenteren. Wij nodigen je uit om ook
       te gaan experimenteren en gegevens te bewerken.
+    intro_1: OpenHistoricalMap is een project dat is ontworpen om kaartgegevens over
+      de hele wereldgeschiedenis op te slaan en weer te geven. Dit is een werk in
+      uitvoering; we voegen tijdsgebonden functionaliteit aan de site toe en daarbij
+      zijn we met allerlei dingen aan het experimenteren. Wij nodigen je uit om ook
+      te gaan experimenteren en gegevens te bewerken.
     intro_2_create_account: Maak een account aan
+    partners_title: Partners
     hosting_partners_html: |-
       <p>
       <a href='https://greeninfo.org'>GreenInfo Network</a> is een organisatie zonder winstoogmerk voor het in kaart brengen van sociale doelen en communicatie, die non-profitorganisaties en overheidsinstellingen helpt sociale, milieu- en andere doelen te bereiken met gebruikmaking van een reeks hulpmiddelen, waaronder op de mens gerichte ontwerppraktijken, op samenwerking gebaseerde ontwikkeling, en op open source gebaseerde web- en geospatiale hulpmiddelen.
@@ -2102,6 +2108,15 @@ nl:
         contributors_es_html: ..
         contributors_za_html: ..
         contributors_gb_html: ..
+        contributors_cambridge-anr_html: Bevat gegevens die zijn gemaakt door het
+          project <a href="https://anrcommunes.hypotheses.org/">ANR Communes</a> van
+          <a href="https://www.campop.geog.cam.ac.uk/research/projects/internationaloccupations/enchpopgos/france/">De
+          Cambridge-groep voor de geschiedenis van bevolking en maatschappelijke structuren</a>.
+        contributors_ned_html: Bevat gegevens uit verschillende datasets van <a href="https://www.naturalearthdata.com/">Natural
+          Earth Data</a>.
+        contributors_newberry_html: Bevat gegevens uit de <a href-"https://digital.newberry.org/ahcb/">Atlas
+          van historische graafschapsgrenzen</a> van de <a href="https://www.newberry.org/">Newberry
+          Library</a> .
         contributors_footer_1_html: |-
           Voor meer informatie over deze en andere bronnen die zijn gebruikt om OpenHistoricalMap te helpen verbeteren, kijkt u op de <a
           href="https://wiki.openstreetmap.org/wiki/Open_Historical_Map/OHM_Contributors">pagina Bijdragers</a> op de wiki van OpenHistoricalMap.
@@ -2980,6 +2995,8 @@ nl:
           one: U bevindt zich binnen één voet van dit punt
           other: U bevindt zich binnen %{count} voet van dit punt
       base:
+        historical: Historisch
+        woodblock: Houten blok
         standard: Standaard
         cyclosm: CyclOSM
         cycle_map: Fietskaart

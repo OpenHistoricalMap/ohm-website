@@ -249,7 +249,6 @@ sv:
         one: 1 år sedan
         other: '%{count} år sedan'
   printable_name:
-    with_version: '%{id}, v%{version}'
     with_name_html: '%{name} (%{id})'
   editor:
     default: Standard (för närvarande %{name})
@@ -387,8 +386,6 @@ sv:
     view_history: Visa historik
     view_details: Visa detaljer
     location: 'Plats:'
-    common_details:
-      coordinates_html: '%{latitude}, %{longitude}'
     changeset:
       title: 'Ändringsuppsättning: %{id}'
       belongs_to: Författare
@@ -431,7 +428,6 @@ sv:
         one: 1 medlem
         other: '%{count} medlemmar'
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} som %{role}'
       type:
         node: Nod
@@ -501,7 +497,6 @@ sv:
         title='%{exact_time}'>%{when}</abbr>
       hidden_by_html: Doldes av %{user} <abbr title='%{exact_time}'>för %{when}</abbr>
       report: Rapportera denna anteckning
-      coordinates_html: '%{latitude}, %{longitude}'
     query:
       title: Undersök kartobjekt
       introduction: Klicka på kartan för att hitta funktioner i närheten.
@@ -629,7 +624,6 @@ sv:
       location: 'Plats:'
       view: Visa
       edit: Redigera
-      coordinates: '%{latitude}; %{longitude}'
     feed:
       user:
         title: OpenStreetMap-dagboksinlägg för %{user}
@@ -681,7 +675,6 @@ sv:
           Nominatim</a>
         geonames_reverse_html: Resultat från <a href="http://www.geonames.org/">GeoNames</a>
     search_osm_nominatim:
-      prefix_format: '%{name}'
       prefix:
         aerialway:
           cable_car: Linbana
@@ -1560,8 +1553,6 @@ sv:
       successful_report: Din rapport har registrerats
       provide_details: Ange de nödvändiga detaljerna
   layouts:
-    project_name:
-      title: OpenStreetMap
     logo:
       alt_text: OpenStreetMaps logotyp
     home: Gå till hemposition
@@ -2166,7 +2157,6 @@ sv:
       not_public_description_html: Du kan inte längre redigera kartan om du inte gör
         det. Du kan göra dina redigeringar offentliga från din %{user_page}.
       user_page_link: användarsida
-      anon_edits_html: (%{link})
       anon_edits_link_text: Ta reda på varför det är så.
       id_not_configured: iD har inte konfigurerats
       no_iframe_support: Din webbläsare stöder inte HTML iframes, vilken är nödvändig
@@ -2441,7 +2431,6 @@ sv:
       title: Redigerar GPS-spår %{name}
       heading: Redigerar GPS-spår %{name}
       visibility_help: vad betyder detta?
-      visibility_help_url: https://wiki.openstreetmap.org/wiki/Visibility_of_GPS_traces
     update:
       updated: GPS-spår uppdaterades
     trace_optionals:

@@ -593,7 +593,6 @@ eo:
       location: 'Pozicio:'
       view: Montri
       edit: Redakti
-      coordinates: '%{latitude}; %{longitude}'
     feed:
       user:
         title: OpenStreetMap taglibraj afiŝoj de %{user}

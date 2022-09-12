@@ -1391,8 +1391,6 @@ ko:
       successful_report: 보고서가 성공적으로 등록되었습니다
       provide_details: 필수 상세 정보를 지정해 주십시오
   layouts:
-    project_name:
-      title: 오픈스트리트맵
     logo:
       alt_text: OpenStreetMap 로고
     home: 현재 위치로 가기

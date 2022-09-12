@@ -118,7 +118,6 @@ ne:
       trace:
         tagstring: अल्पविरामले छुट्याएको
   printable_name:
-    with_version: '%{id}, v%{version}'
     with_name_html: '%{name} (%{id})'
   editor:
     default: पूर्वस्थापित(अहिलेको %{name})
@@ -1205,7 +1204,7 @@ ne:
     revoke:
       title: भूमिका फिर्ता निश्चित गर्ने
       heading: भूमिका फिर्ता निश्चित गर्ने
-      are_you_sure: तपाईँ  भूमिका `%{role}' , `%{name} प्रोगकर्ताबाट फिर्ता लिने कुरामा
+      are_you_sure: तपाईं भूमिका `%{role}' , `%{name} प्रोगकर्ताबाट फिर्ता लिने कुरामा
         निश्चित हुनुहुन्छ'?
       confirm: निश्चित गर्ने
       fail: भूमिका `%{role}' ,`%{name}'बाट फिर्ता लिन सकिएन । प्रोगकर्ता नाम र भूमिका

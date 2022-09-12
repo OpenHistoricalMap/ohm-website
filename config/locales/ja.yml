@@ -1500,8 +1500,6 @@ ja:
       successful_report: レポートは正常に登録完了しました
       provide_details: 必要な詳細を記入してください
   layouts:
-    project_name:
-      title: OpenStreetMap
     logo:
       alt_text: OpenStreetMap ロゴ
     home: ホーム地点に移動

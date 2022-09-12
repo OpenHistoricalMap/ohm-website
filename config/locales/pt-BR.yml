@@ -256,7 +256,6 @@ pt-BR:
         one: 1 ano atrás
         other: '%{count} anos atrás'
   printable_name:
-    with_version: '%{id}, v%{version}'
     with_name_html: '%{name} (%{id})'
   editor:
     default: Padrão (atualmente %{name})
@@ -395,8 +394,6 @@ pt-BR:
     view_history: Ver histórico
     view_details: Ver detalhes
     location: 'Localização:'
-    common_details:
-      coordinates_html: '%{latitude}, %{longitude}'
     changeset:
       title: 'Conjunto de alterações: %{id}'
       belongs_to: Autor
@@ -439,7 +436,6 @@ pt-BR:
         one: 1 membro
         other: '%{count} membros'
     relation_member:
-      entry_html: '%{type} %{name}'
       entry_role_html: '%{type} %{name} como %{role}'
       type:
         node: Ponto
@@ -506,7 +502,6 @@ pt-BR:
       reopened_by_anonymous_html: Reaberto por um usuário anônimo <abbr title='%{exact_time}'>%{when}</abbr>
       hidden_by_html: Ocultado por %{user} <abbr title='%{exact_time}'>%{when}</abbr>
       report: Denunciar esta nota
-      coordinates_html: '%{latitude}, %{longitude}'
     query:
       title: Consultar elementos
       introduction: Clique no mapa para achar elementos próximos
@@ -632,7 +627,6 @@ pt-BR:
       location: 'Local:'
       view: Exibir
       edit: Editar
-      coordinates: '%{latitude}; %{longitude}'
     feed:
       user:
         title: Publicações do diário do OpenStreetMap de %{user}
@@ -685,7 +679,6 @@ pt-BR:
           Nominatim</a>
         geonames_reverse_html: Resultados do <a href="http://www.geonames.org/">GeoNames</a>
     search_osm_nominatim:
-      prefix_format: '%{name}'
       prefix:
         aerialway:
           cable_car: Teleférico
@@ -1565,9 +1558,6 @@ pt-BR:
       successful_report: Sua denúncia foi registrada com sucesso
       provide_details: Por favor, forneça os detalhes necessários
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: OpenStreetMap
     logo:
       alt_text: Logotipo do OpenStreetMap
     home: Ir para o seu local principal
@@ -2171,7 +2161,6 @@ pt-BR:
       not_public_description_html: Você não pode editar o mapa até que você configure
         suas edições para serem públicas, o que pode fazer na sua %{user_page}.
       user_page_link: página de usuário
-      anon_edits_html: (%{link})
       anon_edits_link_text: Descubra se é esse o seu caso.
       id_not_configured: iD não foi configurado
       no_iframe_support: Seu navegador não suporta iframes HTML, que são necessários

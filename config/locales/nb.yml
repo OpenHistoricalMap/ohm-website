@@ -594,7 +594,6 @@ nb:
           Nominatim</a>
         geonames_reverse_html: Resultater fra <a href="http://www.geonames.org/">GeoNames</a>
     search_osm_nominatim:
-      prefix_format: '%{name}'
       prefix:
         aerialway:
           cable_car: Kabelbane
@@ -1354,9 +1353,6 @@ nb:
       successful_report: Din rapport har blitt vellykket registrert
       provide_details: Vær vennlig å angi de påkrevde detaljer
   layouts:
-    project_name:
-      title: OpenStreetMap
-      h1: OpenStreetMap
     logo:
       alt_text: OpenStreetMap-logo
     home: Gå til din brukers hjemmeadresse
