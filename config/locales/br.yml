@@ -231,7 +231,7 @@ br:
         other: '%{count} miz zo'
       x_years:
         one: bloaz zo
-        two: '%{count} vloaz ''zo'
+        two: "%{count} vloaz 'zo"
         few: '%{count} bloaz zo'
         many: '%{count} bloaz zo'
         other: '%{count} bloaz zo'
@@ -338,7 +338,7 @@ br:
     download_xml: Pellgargañ XML
     view_history: Gwelet an istor
     view_details: ↓Gwelet ar munudoù
-    location: 'Lec''hiadur:'
+    location: "Lec'hiadur:"
     changeset:
       title: 'Hollad cheñchamantoù: %{id}'
       belongs_to: Aozer
@@ -392,7 +392,7 @@ br:
       entry_role_html: Darempred %{relation_name} (evel %{relation_role})
     not_found:
       title: N'eo ket bet kavet
-      sorry: 'Ho tigarez, n''heller ket kavout %{type} #%{id}.'
+      sorry: "Ho tigarez, n'heller ket kavout %{type} #%{id}."
       type:
         node: skoulm
         way: hent
@@ -516,7 +516,7 @@ br:
       edit_your_profile: Aozañ ho profil
       my friends: Ma mignoned
       no friends: N'hoc'h eus ouzhpennet mignon ebet c'hoazh.
-      nearby users: 'Implijerien all tost deoc''h :'
+      nearby users: "Implijerien all tost deoc'h :"
       no nearby users: N'eus implijer ebet all en ardremez c'hoazh.
       friends_changesets: Strolladoù kemmoù graet gant mignoned
       friends_diaries: Enmonedoù deizlevr ar vignoned
@@ -576,7 +576,7 @@ br:
       confirm: Kadarnaat
       report: Signaliñ an evezhiadenn-mañ
     location:
-      location: 'Lec''hiadur:'
+      location: "Lec'hiadur:"
       view: Diskwel
       edit: Aozañ
       coordinates: '%{latitude} ; %{longitude}'
@@ -609,7 +609,7 @@ br:
       heading: Lemel %{user} eus ar vignoned ?
       button: Lemel eus ar vignoned
       success: '%{name} zo bet lamet eus ho mignoned.'
-      not_a_friend: '%{name} n''eo ket unan eus ho mignoned.'
+      not_a_friend: "%{name} n'eo ket unan eus ho mignoned."
   geocoder:
     search:
       title:
@@ -1431,7 +1431,7 @@ br:
       title_html: Danevell %{link}
       missing_params: N'haller ket krouiñ un danevell nevez
       disclaimer:
-        intro: 'A-raok kas ho tanevell da habaskaerien al lec''hienn, bezit sur e:'
+        intro: "A-raok kas ho tanevell da habaskaerien al lec'hienn, bezit sur e:"
         not_just_mistake: Sur oc'h n'eo ket ar gudenn-se ur fazi hepken.
         unable_to_fix: N'oc'h ket gouest da renkañ ar gudenn hoc'h-unan pe gant skoazell
           izili ho kumuniezh
@@ -1498,10 +1498,10 @@ br:
     partners_bytemark: ↓Herberc'hiañ Bytemark
     partners_partners: Kevelourien
     tou: Termenoù implijout
-    osm_offline: Ezlinenn eo diaz roadennoù OpenHistoricalMap evit bremañ e-pad ma pleder
-      gant ul labour kempenn bras.
-    osm_read_only: Diaz roadennoù OpenHistoricalMap zo da lenn hepken evit bremañ evit
-      bremañ abalamour da labourioù kempenn bras.
+    osm_offline: Ezlinenn eo diaz roadennoù OpenHistoricalMap evit bremañ e-pad ma
+      pleder gant ul labour kempenn bras.
+    osm_read_only: Diaz roadennoù OpenHistoricalMap zo da lenn hepken evit bremañ
+      evit bremañ abalamour da labourioù kempenn bras.
     donate: Skoazellit OpenHistoricalMap dre %{link} d'an Hardware Upgrade Fund.
     help: Skoazell
     about: Diwar-benn
@@ -1518,30 +1518,30 @@ br:
     more: Muioc'h
   user_mailer:
     diary_comment_notification:
-      subject: '[OpenHistoricalMap] %{user} en deus lezet un addispleg war hoc''h enmoned
-        en deizlevr'
+      subject: "[OpenHistoricalMap] %{user} en deus lezet un addispleg war hoc'h enmoned\
+        \ en deizlevr"
       hi: Demat %{to_user},
-      header: '%{from_user} en deus lezet un addispleg war hoc''h enmoned nevez e
-        deizlevr OpenHistoricalMap gant an danvez %{subject} :'
+      header: "%{from_user} en deus lezet un addispleg war hoc'h enmoned nevez e deizlevr\
+        \ OpenHistoricalMap gant an danvez %{subject} :"
       footer: Gallout a rit ivez lenn an addispleg war %{readurl}, lezel addisplegoù
         war %{commenturl} pe respont war %{replyurl}
     message_notification:
       subject: '[OpenHistoricalMap] %{message_title}'
       hi: Demat %{to_user},
-      header: '%{from_user} en deus kaset deoc''h ur gemennadenn dre OpenHistoricalMap
-        gant an danvez %{subject} :'
+      header: "%{from_user} en deus kaset deoc'h ur gemennadenn dre OpenHistoricalMap\
+        \ gant an danvez %{subject} :"
       footer_html: Gallout a rit ivez lenn ar gemennadenn e %{readurl} ha respont
         e %{replyurl}
     friendship_notification:
       hi: Demat dit %{to_user},
-      subject: '[OpenHistoricalMap] %{user} en deus hoc''h ouzhpennet evel mignon'
-      had_added_you: '%{user} en deus hoc''h ouzhpennet evel mignon war OpenHistoricalMap.'
+      subject: "[OpenHistoricalMap] %{user} en deus hoc'h ouzhpennet evel mignon"
+      had_added_you: "%{user} en deus hoc'h ouzhpennet evel mignon war OpenHistoricalMap."
       see_their_profile: 'Gallout a rit gwelet o frofil amañ : %{userurl}.'
       befriend_them: 'Gallout a rit o ouzhpennañ e-touez ho mignoned amañ : %{befriendurl}.'
     gpx_failure:
       hi: Demat %{to_user},
-      failed_to_import: 'n''en deus ket gallet bezañ enporzhiet. Setu amañ ar fazi
-        :'
+      failed_to_import: "n'en deus ket gallet bezañ enporzhiet. Setu amañ ar fazi\
+        \ :"
       subject: '[OpenHistoricalMap] fazi e-pad an enporzhiadur GPX'
     gpx_success:
       hi: Demat %{to_user},
@@ -1554,13 +1554,13 @@ br:
       subject: '[OpenHistoricalMap] Degemer mat en OpenHistoricalMap'
       greeting: Demat !
       created: Unan bennak (c'hwi, emichañs) a zo o paouez krouiñ ur gont war %{site_url}.
-      confirm: 'A-raok ober forzh petra hon eus ezhomm da wiriañ hag-eñ ez eo ganeoc''h-c''hwi
-        ez eo bet kaset ar goulenn-mañ ; m''emañ kont evel-se, klikit war al liamm
-        a-is da gadarnaat ho kont :'
+      confirm: "A-raok ober forzh petra hon eus ezhomm da wiriañ hag-eñ ez eo ganeoc'h-c'hwi\
+        \ ez eo bet kaset ar goulenn-mañ ; m'emañ kont evel-se, klikit war al liamm\
+        \ a-is da gadarnaat ho kont :"
       welcome: Goude m'ho po kadarnaet ho kont, e roimp un nebeud titouroù ouzhpenn
         deoc'h evit kregiñ ganti.
     email_confirm:
-      subject: '[OpenHistoricalMap] Kadarnaat ho chomlec''h postel'
+      subject: "[OpenHistoricalMap] Kadarnaat ho chomlec'h postel"
       greeting: Demat,
       hopefully_you: Unan bennak (c'hwi moarvat) a garfe cheñch e chomlec'h postel
         eus %{server_url} da %{new_address}.
@@ -1577,46 +1577,46 @@ br:
       anonymous: Un implijer dizanv
       greeting: Demat,
       commented:
-        subject_own: '[OpenHistoricalMap] %{commenter} en deus addispleget unan eus ho
-          notennoù'
-        subject_other: '[OpenHistoricalMap] %{commenter} en deus addispleget un notenn
-          a sell ouzhoc''h'
+        subject_own: '[OpenHistoricalMap] %{commenter} en deus addispleget unan eus
+          ho notennoù'
+        subject_other: "[OpenHistoricalMap] %{commenter} en deus addispleget un notenn\
+          \ a sell ouzhoc'h"
         your_note: '%{commenter} en deus lezet un addispleg war unan eus ho notennoù
           kartenn tost da %{place}.'
-        commented_note: '%{commenter} en deus lezet un addispleg war ur gartenn hoc''h
-          eus addispleget. Emañ an notenn tost da %{place}.'
+        commented_note: "%{commenter} en deus lezet un addispleg war ur gartenn hoc'h\
+          \ eus addispleget. Emañ an notenn tost da %{place}."
       closed:
-        subject_own: '[OpenHistoricalMap] %{commenter} en deus diskoulmet unan eus ho
-          notennoù'
-        subject_other: '[OpenHistoricalMap] %{commenter} en deus diskoulmet un notenn
-          a sell ouzhoc''h'
+        subject_own: '[OpenHistoricalMap] %{commenter} en deus diskoulmet unan eus
+          ho notennoù'
+        subject_other: "[OpenHistoricalMap] %{commenter} en deus diskoulmet un notenn\
+          \ a sell ouzhoc'h"
         your_note: '%{commenter} en deus diskoulmet unan eus ho notennoù kartenn tost
           da %{place}.'
-        commented_note: '%{commenter} en deus diskoulmet un notenn war ur gartenn
-          hoc''h eus addispleget. Emañ an notenn tost da %{place}.'
+        commented_note: "%{commenter} en deus diskoulmet un notenn war ur gartenn\
+          \ hoc'h eus addispleget. Emañ an notenn tost da %{place}."
       reopened:
-        subject_own: '[OpenHistoricalMap] %{commenter} en deus adweredekaet unan eus ho
-          notennoù'
-        subject_other: '[OpenHistoricalMap] %{commenter} en deus adweredekaet un notenn
-          a sell ouzhoc''h'
+        subject_own: '[OpenHistoricalMap] %{commenter} en deus adweredekaet unan eus
+          ho notennoù'
+        subject_other: "[OpenHistoricalMap] %{commenter} en deus adweredekaet un notenn\
+          \ a sell ouzhoc'h"
         your_note: '%{commenter} en deus adweredekaet unan eus ho notennoù kartenn
           tost da %{place}.'
-        commented_note: '%{commenter} en deus adweredekaet un notenn war ur gartenn
-          hoc''h eus addispleget. Emañ an notenn tost da %{place}.'
+        commented_note: "%{commenter} en deus adweredekaet un notenn war ur gartenn\
+          \ hoc'h eus addispleget. Emañ an notenn tost da %{place}."
       details: Munudoù ouzhpenn diwar-benn an notenn a c'hall bezañ kavet e %{url}.
     changeset_comment_notification:
       hi: Demat %{to_user},
       greeting: Demat,
       commented:
-        subject_own: '[OpenHistoricalMap] %{commenter} en deus addispleget unan eus ho
-          kemmoù'
-        subject_other: '[OpenHistoricalMap] %{commenter} en deus addispleget unan eus
-          ho notennoù a sell ouzhoc''h'
-        your_changeset: '%{commenter} en deus skrivet un evezhiadenn d''an/ar %{time}
-          war unan eus ho hollad cheñchamantoù'
-        commented_changeset: '%{commenter} en deus skrivet un evezhiadenn d''an/ar
-          %{time} war un hollad cheñchamantoù emaoc''h o sellet outañ hag a zo bet
-          krouet gant %{changeset_author}'
+        subject_own: '[OpenHistoricalMap] %{commenter} en deus addispleget unan eus
+          ho kemmoù'
+        subject_other: "[OpenHistoricalMap] %{commenter} en deus addispleget unan\
+          \ eus ho notennoù a sell ouzhoc'h"
+        your_changeset: "%{commenter} en deus skrivet un evezhiadenn d'an/ar %{time}\
+          \ war unan eus ho hollad cheñchamantoù"
+        commented_changeset: "%{commenter} en deus skrivet un evezhiadenn d'an/ar\
+          \ %{time} war un hollad cheñchamantoù emaoc'h o sellet outañ hag a zo bet\
+          \ krouet gant %{changeset_author}"
         partial_changeset_with_comment: gant an addispleg '%{changeset_comment}'
         partial_changeset_without_comment: Hep evezhiadenn
       details: Muioc'h a ditouroù war an holl cheñchamantoù e %{url}.
@@ -1651,7 +1651,7 @@ br:
       title: Boest resev
       my_inbox: Ma boest resev
       my_outbox: Ma boest kas
-      messages: '%{new_messages} ha %{old_messages} zo evidoc''h'
+      messages: "%{new_messages} ha %{old_messages} zo evidoc'h"
       new_messages:
         one: '%{count} gemennadenn nevez'
         other: '%{count} kemennadenn nevez'
@@ -1724,7 +1724,7 @@ br:
     lost_password:
       title: Ger-tremen kollet
       heading: Ankouaet hoc'h eus ho ker-tremen ?
-      email address: 'Chomlec''h postel :'
+      email address: "Chomlec'h postel :"
       new password button: Adderaouekaat ar ger-tremen
       help_text: Ebarzhit ar chomlec'h postel ho poa implijet evit en em enskrivañ,
         kaset e vo deoc'h ul liamm a c'hallot implijout evit adderaouekaat ho ker-tremen.
@@ -1777,15 +1777,15 @@ br:
     new:
       title: Kevreañ
       heading: Kevreañ
-      email or username: 'Chomlec''h postel pe anv implijer :'
+      email or username: "Chomlec'h postel pe anv implijer :"
       password: 'Ger-tremen :'
       openid_html: '%{logo} OpenID :'
       remember: Derc'hel soñj ac'hanon
       lost password link: Ankouaet ho ker-tremen ganeoc'h ?
       login_button: Kevreañ
       register now: En em enskrivañ bremañ
-      with username: 'Ur gont OpenHistoricalMap hoc''h eus dija ? Digorit un dalc''h en
-        ur verkañ hoc''h anv implijer hag ho ker-tremen :'
+      with username: "Ur gont OpenHistoricalMap hoc'h eus dija ? Digorit un dalc'h\
+        \ en ur verkañ hoc'h anv implijer hag ho ker-tremen :"
       with external: 'Mod all, implijit un tredeour evit kevreañ :'
       new to osm: Nevez war OpenHistoricalMap ?
       to make changes: Evit kemmañ roadennoù OpenHistoricalMap e rankit kaout ur gont.
@@ -1852,24 +1852,24 @@ br:
       copyright_html: <span>&copy;</span>OpenHistoricalMap<br>kenlabourerien
       used_by_html: Pourchas a ra %{name} roadennoù kartennaouiñ da viliadoù a lec'hiennoù
         web, arloadoù hezoug hag ardivinkoù
-      lede_text: Savet eo OpenHistoricalMap gant ur gumuniezh gartennerien a-youl vat
-        a genlabour hag a gempenn roadennoù diwar-benn hentoù, gwenodennoù, kafedioù,
+      lede_text: Savet eo OpenHistoricalMap gant ur gumuniezh gartennerien a-youl
+        vat a genlabour hag a gempenn roadennoù diwar-benn hentoù, gwenodennoù, kafedioù,
         tiez-gar, ha muioc'h c'hoazh, er bed a-bezh.
       local_knowledge_title: Gouiziegezh lec'hel
-      local_knowledge_html: OpenHistoricalMap a laka ar pouez war an anaoudegezh eus an
-        dachenn. Implijout a ra ar genlabourerien skeudennoù tapet diwar nij, mekanikoù
+      local_knowledge_html: OpenHistoricalMap a laka ar pouez war an anaoudegezh eus
+        an dachenn. Implijout a ra ar genlabourerien skeudennoù tapet diwar nij, mekanikoù
         GPS ha kartennoù klasel abalamour da wiriañ ez eo reizh ha hizivaet OSM.
       community_driven_title: Renet gant ar gumuniezh
       community_driven_html: |-
         Liesseurt hag entanet eo kumuniezh OpenHistoricalMap. O kreskiñ emañ bemdez. E-mesk hor c'henlabourerien ez eus kartennourien entanet, tud a-vicher eus ar GIS, ijinourien hag a laka servijerien OSM da vont en-dro, denegourien hag a sav kartennoù eus an takadoù gwastet gant gwallreuzioù ha kalz re all.
         Evit gouzout hiroc'h diwar-benn ar gumuniezh, sellit ouzh <a href='http://blogs.openstreetmap.org/'>blogoù OpenHistoricalMap</a>, <a href='%{diary_path}'>deizlevrioù an implijerien</a>,<a href='http://blogs.openstreetmap.org/'>blogoù ar gumuniezh</a>, hag lec'hienn web <a href='http://www.osmfoundation.org
       open_data_title: Roadennoù digor
-      open_data_html: 'OpenHistoricalMap zo <i>open data</i>: gallout a rit implijout
-        anezhañ evit forzh pseeurt pal keit ha ma roit kred da OpenHistoricalMap ha d''ar
-        re a labour warnañ. Ma cheñchit ar roadennoù pe ma harpit warno e doareoù
-        zo, e c''hallit skignañ an disoc''h dindan ar memes aotre-implij hepken. Sellit
-        ouzh <a href=''%{copyright_path}''>Aotre-eilañ ha pajenn an aotre-implij</a>
-        evit gouzout hiroc''h.'
+      open_data_html: "OpenHistoricalMap zo <i>open data</i>: gallout a rit implijout\
+        \ anezhañ evit forzh pseeurt pal keit ha ma roit kred da OpenHistoricalMap\
+        \ ha d'ar re a labour warnañ. Ma cheñchit ar roadennoù pe ma harpit warno\
+        \ e doareoù zo, e c'hallit skignañ an disoc'h dindan ar memes aotre-implij\
+        \ hepken. Sellit ouzh <a href='%{copyright_path}'>Aotre-eilañ ha pajenn an\
+        \ aotre-implij</a> evit gouzout hiroc'h."
       legal_title: Lezennel
       legal_1_html: |-
         Al lec'hienn-mañ ha kalz servijoù liammet ouzhpenn a vez operataet gant <a href='https://osmfoundation.org/'>Diazezadur OpenHistoricalMap</a> (OSMF)
@@ -1894,14 +1894,15 @@ br:
         intro_1_html: |-
           OpenHistoricalMap <sup><a href="#trademarks">&reg;</a></sup>  zo <i>dindan un aotre-implijout digor</i>, href "htpps : //Open Data
           Commons Open Database License</a> (ODbL)gant <sup><a href="https://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF).
-        intro_2_html: "Dieub oc'h da eilañ, da skignañ, da gas ha da azasaat hor c'hartennoù
-          hag hor roadennoù, gant ma root kred da OpenHistoricalMap ha d'e genlabourerien.
-          Ma kemmit pe ma implijit hor c'hartennoù pe hor roadennoù e labourioù all,ne
-          c'hallit ket skignañ ar re-se dindan un aotre-implijout all. En \n<a href=\"https://opendatacommons.org/licenses/odbl/1.0/\">legal\ncode</a>
-          e kavot munudoù ho kwirioù hag ho teverioù."
-        intro_3_1_html: "Emañ tammoù hor c'hartennoù hag hon teulioù dindan an aotre-implijout
-          <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">Creative \nCommons
-          Attribution-ShareAlike 2.0</a> license (CC-BY-SA)."
+        intro_2_html: "Dieub oc'h da eilañ, da skignañ, da gas ha da azasaat hor c'hartennoù\
+          \ hag hor roadennoù, gant ma root kred da OpenHistoricalMap ha d'e genlabourerien.\
+          \ Ma kemmit pe ma implijit hor c'hartennoù pe hor roadennoù e labourioù\
+          \ all,ne c'hallit ket skignañ ar re-se dindan un aotre-implijout all. En\
+          \ \n<a href=\"https://opendatacommons.org/licenses/odbl/1.0/\">legal\ncode</a>\
+          \ e kavot munudoù ho kwirioù hag ho teverioù."
+        intro_3_1_html: "Emañ tammoù hor c'hartennoù hag hon teulioù dindan an aotre-implijout\
+          \ <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">Creative \n\
+          Commons Attribution-ShareAlike 2.0</a> license (CC-BY-SA)."
         credit_title_html: Penaos reiñ kred da OpenHistoricalMap
         credit_1_html: Goulenn a reomp diganeoc'h lakaat en ho kred ar meneg &ldquo;&copy;
           kenlabourerien OpenHistoricalMap&rdquo;.
@@ -1915,9 +1916,6 @@ br:
             www.openstreetmap.org (marteze en ur astenn
             &lsquo;OpenHistoricalMap&rsquo; ar chomlec'h klok) ha da
             www.creativecommons.org.
-        credit_4_html: |-
-          Evit ur gartenn elektronek a c'haller merdeiñ enni e tlefe ar c'hred dont war wel e korn ar gartenn.
-          Da skouer :
         attribution_example:
           alt: Skouer eus penaos deverkañ OpenHistoricalMap war ur bajenn web
           title: Skouer deverkadur
@@ -1925,60 +1923,16 @@ br:
         more_1_html: Ma fell deoc'h kaout muioc'h a ditouroù diwar-benn adimplij hor
           roadennoù, lennit  <a href="https://osmfoundation.org/Licence"> Licence
           OSMF Licence page</a> hag ar gumuniezh <a
-        more_2_html: "Daoust da OpenHistoricalMap bezañ un hollad roadennoù digor, n'omp
-          ket evit pourchas un API digoust evit an dredeourien.\n   Sellit ouzh hor
-          <a href=\"https://operations.osmfoundation.org/policies/api/\"></a> reolennoù
-          evit implijout an API</a>, \n  Sellit ouzh hor <a href=\"https://operations.osmfoundation<a
-          href=\"https://operations.osmfoundation.org/policies/tiles/\">reolennoù
-          evit implijout an teolennoù</a>, ha\n<a href=\"https://operations.osmfoundation.org/policies/nominatim/\">reolennoù
-          evit implijout Nominatin</a>"
         contributors_title_html: Hor c'henlabourerien
         contributors_intro_html: 'Miliadoù a hiniennoù a labour ganimp. Ebarzhiñ a
           reomp ivez roadennoù digor eus ajañsoù kartennañ hag eus mamennoù all, hag
           en o zouez :'
-        contributors_at_html: |-
-          <strong>Aostria</strong> : Ennañ roadennoù eus
-          <a href="https://data.wien.gv.at/">Stadt Wien</a> (dindan
-          <a href="https://creativecommons.org/licenses/by/3.0/at/deed.de">CC BY</a>.</li>
-          <a href="https://creativecommons.org/licenses/by/3.0/at/deed.de">CC BY</a>),
-          <a href="https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm">Land Vorarlberg</a> ha
-          Land Tirol (dindan <a href="http://www.tirol.gv.at/applikationen/e-government/data/nutzungsbedingungen/">CC-BY AT gant enkemmadoù</a>).
-        contributors_au_html: |-
-          <strong>Australia</strong>: Ennañ ar roadennoù diwar-benn an bannlevioù
-             diazezet war roadennoù Australian Bureau of Statistics.
-        contributors_ca_html: |-
-          <strong>Kanada</strong> : Ennañ roadennoù eus
-             GeoBase&reg;, GeoGratis (&copy; Department of Natural
-             Resources Canada), CanVec (&copy; Department of Natural
-             Resources Canada), ha StatCan (Geography Division,
-             Statistics Canada).
-        contributors_fi_html: |-
-          <strong>Finland</strong>: Ennañ ez eus roadennoù eus diaz roadennoù Ensellerezh Broadel Tiriad hag holladoù roadennoù all, dindan an
-          <a href="https://www.maanmittauslaitos.fi/en/NLS_opendata_licence_version1_20120501">aotre-implij NLSFI</a>.
-        contributors_fr_html: '<strong>Frañs</strong> : Ennañ roadennoù eus Renerezh
-          Hollek an Tailhoù.'
-        contributors_nl_html: |-
-          <strong>Netherlands</strong> : Contains &copy; AND data, 2007
-            (<a href="https://www.and.com">www.and.com</a>)
-        contributors_nz_html: |-
-          <strong>Zeland-Nevez</strong> : Ennañ roadennoù eus
-             <a href="https://data.linz.govt.nz/">servij roadennoù LINZ</a> hag evit adimplijout, dindan aotre <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
-        contributors_si_html: |-
-          <Strong>Slovenia</strong>: zo enni roadennoù eus <a href="http://www.gu.gov.si/en/">Aotrouniezh steuñvidigezh ha Kartografiezh </a> hag eus <a href="http://www.mkgp.gov.si/en/">Ministrerezh al Labour-douar, ar C'hoadeier hag  ar Boued</a>
-          (titouroù foran eus Slovenia)
-        contributors_za_html: |-
-          <strong>Afrika ar Su</strong> : Ennañ roadennoù eus
-          <a href="http://www.ngi.gov.za/">Chief Directorate:
-          National Geo-Spatial Information</a>, State copyright reserved.
-        contributors_gb_html: |-
-          <strong>Rouantelezh-Unanet</strong> : Ennañ roadennoù eus Ordnance
-          Survey data &copy; Crown copyright and database right 2010-19.
         contributors_footer_1_html: |-
           ↓Evit muioc'h a vunudoù diwar-benn ar re-se, hag ar mammennoù all a zo bet implijet da sikour da wellaat OpenHistoricalMap, sellit ouzh ar <a
           href="https://wiki.openstreetmap.org/wiki/Contributors">Bajenn Skoazellerien</a> e Wiki OpenHistoricalMap.
-        contributors_footer_2_html: Enlakaat roadennoù e OpenHistoricalMap ne empleg ket
-          ez aprou ar bourchaserien orin a endalc'had OpenHistoricalMap, na ne bourchasont,
-          na ne waratomp pe na ne zegemeront ne vern pe atebegezh e vefe.
+        contributors_footer_2_html: Enlakaat roadennoù e OpenHistoricalMap ne empleg
+          ket ez aprou ar bourchaserien orin a endalc'had OpenHistoricalMap, na ne
+          bourchasont, na ne waratomp pe na ne zegemeront ne vern pe atebegezh e vefe.
         infringement_title_html: Terriñ ar gwir-eilañ
         infringement_1_html: |-
           Degas a reomp da soñj da genlabourerien OSM ne zleont morse lakaat roadennoù a zeu
@@ -1991,8 +1945,8 @@ br:
           enlinenn</a>.
         trademarks_title_html: <span id="merkoù"></span>Merkoù
         trademarks_1_html: Openstreet, al logo brasaer ha State of the Map zo merkoù
-          marilhet gant OpenHistoricalMap Foundation. M'ho pez goulennoù da sevel diwar-benn
-          implij ar merkoù-se, sellit ouzh <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">Trademark
+          marilhet gant OpenHistoricalMap Foundation. M'ho pez goulennoù da sevel
+          diwar-benn implij ar merkoù-se, sellit ouzh <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">Trademark
           Policy</a>, mar plij.
     index:
       js_1: Pe emaoc'h oc'h implijout ur merdeer ha ne skor ket JavaScript, pe hoc'h
@@ -2002,8 +1956,8 @@ br:
       shortlink: Liamm berr
       createnote: Ouzhpennañ un notenn
       license:
-        copyright: Gwir-eilañ gant OpenHistoricalMap hag ar genlabourerien, dindan un
-          aotre-implijout digor
+        copyright: Gwir-eilañ gant OpenHistoricalMap hag ar genlabourerien, dindan
+          un aotre-implijout digor
       remote_failed: C'hwitet eo ar c'hemm - gwiriit hag-eñ eo karget JOSM or Merkaartor
         ha gweredekaet an dibarzh kontroll a-bell
     edit:
@@ -2026,15 +1980,15 @@ br:
       map_image: Skeudenn gartenn (diskouez ur gwiskad boutin)
       embeddable_html: HTML enkorfadus
       licence: Aotre-implijout
-      export_details_html: Roadennoù OpenHistoricalMap zo dindan an aotre-implijout <a
-        href="https://opendatacommons.org/licenses/odbl/1.0/">Open Data Commons Open
-        Database License</a> (ODbL).
+      export_details_html: Roadennoù OpenHistoricalMap zo dindan an aotre-implijout
+        <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open Data Commons
+        Open Database License</a> (ODbL).
       too_large:
-        advice: 'Ma c''hwit an ezporzhiadur amañ a-us, implijit unan eus an elfennoù
-          amañ dindan :'
-        body: 'Re vras eo an takad-mañ evit bezañ ezporzhiet evel roadennoù XML OpenHistoricalMap.
-          Zoumit, mar plij, pe diuzit un takad bihanoc''h pe immplijit unan eus an
-          tarzhioù-mañ evit pellgargañ roadennoù a-yoc''h :'
+        advice: "Ma c'hwit an ezporzhiadur amañ a-us, implijit unan eus an elfennoù\
+          \ amañ dindan :"
+        body: "Re vras eo an takad-mañ evit bezañ ezporzhiet evel roadennoù XML OpenHistoricalMap.\
+          \ Zoumit, mar plij, pe diuzit un takad bihanoc'h pe immplijit unan eus an\
+          \ tarzhioù-mañ evit pellgargañ roadennoù a-yoc'h :"
         planet:
           title: Planedenn OSM
           description: Eilennoù hizivaet ingal eus diaz roadennoù klok OpenHistoricalMap
@@ -2072,7 +2026,8 @@ br:
           title: Mont er gumuniezh-mañ
           explanation_html: M'ho peus merzet ez eus ur gudenn gant roadennoù hor c'hartennoù,
             da skouer un hent diank pe ho chomlec'h, an doare d'ober gwellañ eo mont
-            d'ar gumuniezh OpenHistoricalMap hag ouzhpennañ pe dresañ ar roadennoù hoc'h-unan.
+            d'ar gumuniezh OpenHistoricalMap hag ouzhpennañ pe dresañ ar roadennoù
+            hoc'h-unan.
         add_a_note:
           instructions_html: |-
             Klikit war <a class='icon note'></a> pe war ar memes arlun war ar gartenn.
@@ -2085,9 +2040,9 @@ br:
           OSMF</a> a zere.
     help:
       title: Tapout sikour
-      introduction: OpenHistoricalMap zo gantañ meur a zoare da c'houzout hiroc'h diwar-benn
-        ar raktres, d'ober goulennoù ha da respont da c'houlennoù, ha da gendivizout
-        ha da deuliaduriñ sujedoù ar c'hartennoù.
+      introduction: OpenHistoricalMap zo gantañ meur a zoare da c'houzout hiroc'h
+        diwar-benn ar raktres, d'ober goulennoù ha da respont da c'houlennoù, ha da
+        gendivizout ha da deuliaduriñ sujedoù ar c'hartennoù.
       welcome:
         url: /welcome
         title: Degemer mat e OSM
@@ -2120,8 +2075,8 @@ br:
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Evit an aozadurioù
-        description: Gant un aoazadur a ra tresoù evit OpenHistoricalMap ? Kavit ar pezh
-          ho peus ezhomm da c'houzout en tapis degemer.
+        description: Gant un aoazadur a ra tresoù evit OpenHistoricalMap ? Kavit ar
+          pezh ho peus ezhomm da c'houzout en tapis degemer.
       wiki:
         url: http://wiki.openstreetmap.org/
         title: Wiki OpenHistoricalMap
@@ -2212,9 +2167,10 @@ br:
           toilets: Privezioù
     welcome:
       title: Deuet-mat oc'h !
-      introduction_html: Degemer mat en OpenHistoricalMap, ar gartenn digoust eus ar bed
-        hag a c'haller aozañ. Kevreet oc'h bremañ ha prest oc'h da gregiñ da gartennaouiñ.
-        Setu amañ un nebeud displegadennoù diwar-benn an traoù pouezusañ da c'houzout.
+      introduction_html: Degemer mat en OpenHistoricalMap, ar gartenn digoust eus
+        ar bed hag a c'haller aozañ. Kevreet oc'h bremañ ha prest oc'h da gregiñ da
+        gartennaouiñ. Setu amañ un nebeud displegadennoù diwar-benn an traoù pouezusañ
+        da c'houzout.
       whats_on_the_map:
         title: Petra zo war ar gartenn
         on_html: |-
@@ -2227,8 +2183,8 @@ br:
           enlinenn pe war baper.
       basic_terms:
         title: Geriaoueg diazez ar c'hartennaouiñ
-        paragraph_1_html: E luc'haj dezhañ e-unan en deus OpenHistoricalMap. Setu amañ
-          un nebeud gerioù-alc'hwez a c'hallo talvezout deoc'h.
+        paragraph_1_html: E luc'haj dezhañ e-unan en deus OpenHistoricalMap. Setu
+          amañ un nebeud gerioù-alc'hwez a c'hallo talvezout deoc'h.
         editor_html: Un <strong>aozer</strong> zo ur programm pe ul lec'hienn web
           a c'hallit implijout da aozañ ar gartenn.
         node_html: Ur <strong>skoulm</strong> zo ur poent war ar gartenn, evel ur
@@ -2239,9 +2195,9 @@ br:
           pe un hent, evel anv ur preti pe an tizh bevennet war un hent.
       rules:
         title: Reolennoù !
-        paragraph_1_html: OpenHistoricalMap en deus un nebeud reolennoù furmel, met gortoz
-          a reomp ma vo kemeret perzh gant an holl berzhidi ha ma vo darempredoù gant
-          ar gumuniezh. Ma vezit e-sell d'ober traoù all estreget ober cheñchamantoù
+        paragraph_1_html: OpenHistoricalMap en deus un nebeud reolennoù furmel, met
+          gortoz a reomp ma vo kemeret perzh gant an holl berzhidi ha ma vo darempredoù
+          gant ar gumuniezh. Ma vezit e-sell d'ober traoù all estreget ober cheñchamantoù
           gant an dorn, lennit ha heuilhit ar sturiadoù, mar plij, e <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'></a>An
           ezporzhiadurioù</> ha<a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'></a>
           Ar c'hemmoù emgefre>/a>.
@@ -2305,7 +2261,7 @@ br:
       coordinates_html: '%{latitude} ; %{longitude}'
       map: kartenn
       edit: aozañ
-      owner: 'Perc''henn :'
+      owner: "Perc'henn :"
       description: 'Deskrivadur :'
       tags: 'Tikedennoù :'
       none: Hini ebet
@@ -2372,8 +2328,9 @@ br:
     require_admin:
       not_an_admin: Ret eo deoc'h bezañ merour evit kas an ober-mañ da benn.
     setup_user_auth:
-      blocked_zero_hour: Ur gemennadenn vallus zo war lec'hienn OpenHistoricalMap evidoc'h.
-        Ret eo deoc'h lenn ar gemennadenn-se a-raok gallout enrollañ ho kemmoù.
+      blocked_zero_hour: Ur gemennadenn vallus zo war lec'hienn OpenHistoricalMap
+        evidoc'h. Ret eo deoc'h lenn ar gemennadenn-se a-raok gallout enrollañ ho
+        kemmoù.
       blocked: Stanket eo bet ho moned d'an API. Kevreit ouzh an etrefas web evit
         gouzout hiroc'h.
       need_to_see_terms: Evit ar mare n'oc'h ket aotreet da vont war an API ken. Kevreit
@@ -2421,7 +2378,7 @@ br:
       title: Aozañ hoc'h arload
     show:
       title: Munudoù OAuth evit %{app_name}
-      key: 'Alc''hwez implijer :'
+      key: "Alc'hwez implijer :"
       secret: 'Sekred an implijer :'
       url: 'URL ar jedouer reked :'
       access_url: 'URL ar jedouer moned :'
@@ -2430,11 +2387,11 @@ br:
       edit: Aozañ ar munudoù
       delete: Diverkañ an arval
       confirm: Ha sur oc'h ?
-      requests: 'O c''houlenn an aotreoù-mañ digant an implijer :'
+      requests: "O c'houlenn an aotreoù-mañ digant an implijer :"
     index:
       title: Ma munudoù OAuth
       my_tokens: Ma arloadoù aotreet
-      list_tokens: 'Ar jedoueroù-mañ zo bet skignet d''an arloadoù en hoc''h anv :'
+      list_tokens: "Ar jedoueroù-mañ zo bet skignet d'an arloadoù en hoc'h anv :"
       application: Anv an arload
       issued_at: Kaset da
       revoke: Disteuler !
@@ -2443,7 +2400,7 @@ br:
         ar standard %{oauth} ganimp ? Ret eo deoc'h marilhañ hoc'h arload web a-raok
         dezhi ober rekedoù d'ar servij-mañ.
       oauth: OAuth
-      registered_apps: 'Marilhet eo an arloadoù arvalien-mañ ganeoc''h :'
+      registered_apps: "Marilhet eo an arloadoù arvalien-mañ ganeoc'h :"
       register_new: Marilhañ hoc'h arload
     form:
       requests: 'Goulenn an aotreoù-mañ digant an implijer :'
@@ -2505,8 +2462,8 @@ br:
         html: |-
           <p>E kemm gant kartennoù all, OpenHistoricalMap zo krouet penn-da-benn gant tud eveldoc'h. Forzh piv a c'hall dresañ, hizivaat, pellgargañ hag implijout anezhi.</p>
           <p>Lakait hoc'h anv evit kregiñ da genlabourat. Kas a raimp ur postel deoc'h da gadarnaat ho kont.</p>
-      email address: 'Chomlec''h postel :'
-      confirm email address: 'Kadarnaat ar chomlec''h postel :'
+      email address: "Chomlec'h postel :"
+      confirm email address: "Kadarnaat ar chomlec'h postel :"
       display name: 'Anv diskwelet :'
       display name description: Emañ hoc'h anv implijer a-wel d'an holl. Se a c'hallit
         cheñch diwezhatoc'h en ho penndibaboù.
@@ -2536,7 +2493,7 @@ br:
       decline: Nac'h
       you need to accept or decline: Lennit da gentañ Termenoù ar berzhidi nevez ha
         goude-se nac'hit pe asantit evit gallout kenderc'hel.
-      legale_select: 'Mar plij diuzit ar vro e lec''h m''emaoc''h o chom :'
+      legale_select: "Mar plij diuzit ar vro e lec'h m'emaoc'h o chom :"
       legale_names:
         france: Bro-C'hall
         italy: Italia
@@ -2573,11 +2530,11 @@ br:
       remove as friend: Lemel eus ar vignoned
       add as friend: Ouzhpennañ d'ar vignoned
       mapper since: 'Kartennour abaoe :'
-      ct status: 'Diferadennoù ar c''henlabourer :'
+      ct status: "Diferadennoù ar c'henlabourer :"
       ct undecided: En entremar
       ct declined: Nac'het
       latest edit: 'Kemm diwezhañ (%{ago}) :'
-      email address: 'Chomlec''h postel :'
+      email address: "Chomlec'h postel :"
       created from: 'Krouet diwar :'
       status: 'Statud :'
       spam score: 'Notenn evit ar strob :'
@@ -2615,8 +2572,8 @@ br:
       showing:
         one: Pajenn %{page} (%{first_item} diwar %{items})
         other: Pajenn %{page} (%{first_item}-%{last_item} diwar %{items})
-      summary_html: '%{name} krouet eus %{ip_address} d''an %{date}'
-      summary_no_ip_html: '%{name} krouet d''an %{date}'
+      summary_html: "%{name} krouet eus %{ip_address} d'an %{date}"
+      summary_no_ip_html: "%{name} krouet d'an %{date}"
       confirm: Kadarnaat an implijerien diuzet
       hide: Kuzhat an implijerien diuzet
       empty: N'eo bet kavet implijer klotaus ebet !
@@ -2639,8 +2596,8 @@ br:
       invalid_scope: Astenn dianav
     auth_association:
       heading: N'eo ket kevredet ho ID ouzh ur gont OpenHistoricalMap.
-      option_1: Ma'z oc'h un den nevez en OpenHistoricalMap, krouit ur gont nevez, mar
-        plij, war-bouez ar furmskrid amañ dindan.
+      option_1: Ma'z oc'h un den nevez en OpenHistoricalMap, krouit ur gont nevez,
+        mar plij, war-bouez ar furmskrid amañ dindan.
       option_2: M'ho pez ur gont dija e c'hallit kevreañ outi en ur implijout hoc'h
         anv implijer hag ho ker-tremen, ha goude-se kevrediñ ho kont gant hoc'h ID
         en ho tibaboù implijer.
@@ -2753,11 +2710,11 @@ br:
     blocks_on:
       title: Stankadurioù evit %{name}
       heading_html: Roll ar stankadurioù evit %{name}
-      empty: '%{name} n''eo ket bet stanket c''hoazh.'
+      empty: "%{name} n'eo ket bet stanket c'hoazh."
     blocks_by:
       title: Stankadurioù gant %{name}
       heading_html: Roll ar stankadurioù gant %{name}
-      empty: '%{name} n''en deus graet stankadur ebet c''hoazh.'
+      empty: "%{name} n'en deus graet stankadur ebet c'hoazh."
     show:
       title: '%{block_on} stanket gant %{block_by}'
       heading_html: '%{block_on} stanket gant %{block_by}'
@@ -2913,7 +2870,7 @@ br:
       distance: Hed
       errors:
         no_route: Ne c'haller ket kavout un hent etre an daou lec'h-mañ.
-        no_place: 'Ho tigarez, ne c''haller ket kavout al lec''h-mañ : %{place}.'
+        no_place: "Ho tigarez, ne c'haller ket kavout al lec'h-mañ : %{place}."
       instructions:
         continue_without_exit: Kenderc'hel war%{name}
         slight_right_without_exit: Troit un tammig a-zehoù war %{name}

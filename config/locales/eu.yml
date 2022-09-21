@@ -256,14 +256,14 @@ eu:
     closed: Itxita
     created_html: <abbr title='%{title}'>Duela %{time}</abbr> sortua
     closed_html: <abbr title='%{title}'>Duela %{time}</abbr> itxia
-    created_by_html: '%{user} erabiltzaileak <abbr title=''%{title}''> duela %{time}
-      sortua'
-    deleted_by_html: '%{user} erabiltzaileak <abbr title=''%{title}''> duela %{time}
-      ezabatua'
-    edited_by_html: '%{user} erabiltzaileak <abbr title=''%{title}''> duela %{time}
-      aldatua'
-    closed_by_html: '%{user} erabiltzaileak <abbr title=''%{title}''> duela %{time}
-      itxia'
+    created_by_html: "%{user} erabiltzaileak <abbr title='%{title}'> duela %{time}\
+      \ sortua"
+    deleted_by_html: "%{user} erabiltzaileak <abbr title='%{title}'> duela %{time}\
+      \ ezabatua"
+    edited_by_html: "%{user} erabiltzaileak <abbr title='%{title}'> duela %{time}\
+      \ aldatua"
+    closed_by_html: "%{user} erabiltzaileak <abbr title='%{title}'> duela %{time}\
+      \ itxia"
     version: Bertsioa
     in_changeset: Aldaketak
     anonymous: anonimoa
@@ -283,9 +283,9 @@ eu:
       relation: Erlazioak (%{count})
       relation_paginated: Erlazioak (%{x}-%{y} %{count}-tik)
       comment: Iruzkinak (%{count})
-      hidden_commented_by_html: '%{user} erabiltzaileak egindako iruzkin ezkutua duela
-        <abbr title=''%{exact_time}''>%{when}</abbr>'
-      commented_by_html: '%{user} erabiltzaileak egindako iruzkina duela <abbr title=''%{exact_time}''>%{when}</abbr>'
+      hidden_commented_by_html: "%{user} erabiltzaileak egindako iruzkin ezkutua duela\
+        \ <abbr title='%{exact_time}'>%{when}</abbr>"
+      commented_by_html: "%{user} erabiltzaileak egindako iruzkina duela <abbr title='%{exact_time}'>%{when}</abbr>"
       changesetxml: Aldaketaren XML kodea
       osmchangexml: osmChange XML kodea
       feed:
@@ -365,22 +365,22 @@ eu:
       open_title: 'Konpondugabeko #%{note_name} oharra'
       closed_title: 'Konpondutako #%{note_name} oharra'
       hidden_title: 'Ezkutatuko #%{note_name} oharra'
-      opened_by_html: '%{user} erabiltzaileak duela <abbr title=''%{exact_time}''>%{when}</abbr>
-        sortua'
+      opened_by_html: "%{user} erabiltzaileak duela <abbr title='%{exact_time}'>%{when}</abbr>\
+        \ sortua"
       opened_by_anonymous_html: Erabiltzaile ezezagun batek duela <abbr title='%{exact_time}'>%{when}</abbr>
         sortua
-      commented_by_html: '%{user} erabiltzaileak duela <abbr title=''%{exact_time}''>%{when}</abbr>
-        egindako iruzkina'
+      commented_by_html: "%{user} erabiltzaileak duela <abbr title='%{exact_time}'>%{when}</abbr>\
+        \ egindako iruzkina"
       commented_by_anonymous_html: Erabiltzaile ezezagun batek duela <abbr title='%{exact_time}'>%{when}
         </abbr> egindako iruzkina
-      closed_by_html: '%{user} erabiltzaileak duela <abbr title=''%{exact_time}''>%{when}
-        </abbr> konpondua'
+      closed_by_html: "%{user} erabiltzaileak duela <abbr title='%{exact_time}'>%{when}\
+        \ </abbr> konpondua"
       closed_by_anonymous_html: Erabiltzaile ezezagun batek duela <abbr title='%{exact_time}'>%{when}
         </abbr> konpondua
-      reopened_by_html: '%{user} erabiltzaileak duela <abbr title=''%{exact_time}''>%{when}
-        </abbr> berraktibatua'
+      reopened_by_html: "%{user} erabiltzaileak duela <abbr title='%{exact_time}'>%{when}\
+        \ </abbr> berraktibatua"
       reopened_by_anonymous_html: Ezezagun batek berraktibatua duela <abbr title='%{exact_time}'>%{when}</abbr>
-      hidden_by_html: '%{user} erabiltzaileak ezkutatua duela <abbr title=''%{exact_time}''>%{when}</abbr>'
+      hidden_by_html: "%{user} erabiltzaileak ezkutatua duela <abbr title='%{exact_time}'>%{when}</abbr>"
       report: Reportatu ohar hau
     query:
       title: Eskaeraren ezaugarriak
@@ -504,14 +504,16 @@ eu:
     feed:
       user:
         title: '%{user} erabiltzailearentzako OpenHistoricalMap eguneroko sarrerak'
-        description: '%{user} erabiltzailearen azkeneko OpenHistoricalMap eguneroko sarrerak'
+        description: '%{user} erabiltzailearen azkeneko OpenHistoricalMap eguneroko
+          sarrerak'
       language:
         title: '%{language_name} hizkuntzan egindako OpenHistoricalMap eguneroko sarrerak'
-        description: '%{language_name} hizkuntzan OpenHistoricalMap erabiltzaileek azkenaldian
-          egindako eguneroko sarrerak'
+        description: '%{language_name} hizkuntzan OpenHistoricalMap erabiltzaileek
+          azkenaldian egindako eguneroko sarrerak'
       all:
         title: OpenHistoricalMap eguneroko sarrerak
-        description: OpenHistoricalMap erabiltzaileek azkenaldian egindako eguneroko sarrerak
+        description: OpenHistoricalMap erabiltzaileek azkenaldian egindako eguneroko
+          sarrerak
     comments:
       post: Argitaratu
       when: Noiz
@@ -1335,20 +1337,20 @@ eu:
     edit_with: '%{editor}rekin editatu'
     tag_line: Doako Wiki Mundu Mapa
     intro_header: Ongi etorri OpenHistoricalMap-era!
-    intro_text: OpenHistoricalMap munduko mapa da, zu bezalako jendeak sortutakoa eta
-      doako lizentzia irekiarekin erabiltzeko dagoena.
+    intro_text: OpenHistoricalMap munduko mapa da, zu bezalako jendeak sortutakoa
+      eta doako lizentzia irekiarekin erabiltzeko dagoena.
     intro_2_create_account: Erabiltzaile kontua sortu
     hosting_partners_html: '%{ucl}, %{bytemark} eta beste %{partners}-k babestua.'
     partners_ucl: UCLa
     partners_bytemark: Bytemark Ostatua
     partners_partners: bazkideak
     tou: Erabilera-baldintzak
-    osm_offline: OpenHistoricalMap datu-basea orain konexiorik gabe dago funtsezko datu-basearen
-      mantentze lanak burutzen diren bitartean.
+    osm_offline: OpenHistoricalMap datu-basea orain konexiorik gabe dago funtsezko
+      datu-basearen mantentze lanak burutzen diren bitartean.
     osm_read_only: OpenHistoricalMap datu-basea irakurtzeko soilik moduan dago, oinarrizko
       datu-basearen mantentze lanak egiten diren bitartean.
-    donate: OpenHistoricalMap lagundu, Hardware Berritze Funtsaren bidez %{link}-n klik
-      eginez.
+    donate: OpenHistoricalMap lagundu, Hardware Berritze Funtsaren bidez %{link}-n
+      klik eginez.
     help: Laguntza
     about: Honi buruz
     copyright: Egile-eskubideak
@@ -1364,7 +1366,8 @@ eu:
     more: Gehiago
   user_mailer:
     diary_comment_notification:
-      subject: '[OpenHistoricalMap] %{user} eguneroko sarrera batean iruzkina utzi du'
+      subject: '[OpenHistoricalMap] %{user} eguneroko sarrera batean iruzkina utzi
+        du'
       hi: Kaixo %{to_user},
       header: '%{from_user}k OpenHistoricalMap eguneroko sarrera batean iruzkina utzi
         du %{subject} gaiaren barnean:'
@@ -1425,8 +1428,8 @@ eu:
           oharrean. Oharra %{place}tik hurbil dago.'
       closed:
         subject_own: '[OpenHistoricalMap] %{commenter} zure ohar bat ebatzi du'
-        subject_other: '[OpenHistoricalMap] %{commenter} intereskoa duzun ohar bat ebatzi
-          du'
+        subject_other: '[OpenHistoricalMap] %{commenter} intereskoa duzun ohar bat
+          ebatzi du'
         your_note: '%{commenter} %{place}tik hurbil dagoen zure mapa oharra ebatzi
           du'
         commented_note: '%{commenter} zuk komentatu duzun mapa ohar bat ebatzi du.
@@ -1434,8 +1437,8 @@ eu:
       reopened:
         subject_own: '[OpenHistoricalMap] %{commenter} zure oharretako bat berraktibatu
           egin du'
-        subject_other: '[OpenHistoricalMap] %{commenter} zure interesekoa den ohar bar
-          berraktibatu egin du'
+        subject_other: '[OpenHistoricalMap] %{commenter} zure interesekoa den ohar
+          bar berraktibatu egin du'
         your_note: '%{commenter} %{place}tik hurbil dagoen zure mapa oharra berraktibatu
           egin du.'
         commented_note: '%{commenter} zuk komentatu duzun mapa oharra berraktibatu
@@ -1445,14 +1448,14 @@ eu:
       hi: Kaixo %{to_user},
       greeting: Kaixo,
       commented:
-        subject_own: '[OpenHistoricalMap] %{commenter} zure aldaketa batean iruzkina utzi
-          du'
-        subject_other: '[OpenHistoricalMap] %{commenter} zuk interesa duzun aldaketa batean
-          iruzkina utzi du'
+        subject_own: '[OpenHistoricalMap] %{commenter} zure aldaketa batean iruzkina
+          utzi du'
+        subject_other: '[OpenHistoricalMap] %{commenter} zuk interesa duzun aldaketa
+          batean iruzkina utzi du'
         your_changeset: '%{commenter} iruzkina utzi du %{time}n egin zenuen aldaketan'
         commented_changeset: '%{commenter}k iruzkin bat utzi du %{changeset_author}ek
           duela %{time}n sortutako ikusten ari zaren mapa aldaketan.'
-        partial_changeset_with_comment: '''%{changeset_comment}'' iruzkinarekin'
+        partial_changeset_with_comment: "'%{changeset_comment}' iruzkinarekin"
         partial_changeset_without_comment: iruzkinik gabe
       details: Aldaketari buruzko xehetasun gehiago %{url}n aurki daitezke.
       unsubscribe: Aldaketaren aldaketa eguneratzeak ezeztatzeko, bisitatu %{url}
@@ -1529,9 +1532,9 @@ eu:
         jarri %{people_mapping_nearby_link} batzuekin?
       people_mapping_nearby: kartografiatzen ari diren hurbileko pertsonak
     reply:
-      wrong_user: '''%{user}'' bezala saioa hasi duzu baina erantzuteko eskatu duzun
-        mezua ez da erabiltzaile horri bidali. Hasi saioa erabiltzaile zuzenarekin
-        erantzuteko.'
+      wrong_user: "'%{user}' bezala saioa hasi duzu baina erantzuteko eskatu duzun\
+        \ mezua ez da erabiltzaile horri bidali. Hasi saioa erabiltzaile zuzenarekin\
+        \ erantzuteko."
     show:
       title: Irakurri mezua
       from: Igorlea
@@ -1542,9 +1545,9 @@ eu:
       destroy_button: Ezabatu
       back: Atzera
       to: Hartzailea
-      wrong_user: '''%{user}'' bezala saioa hasi duzu baina irakurtzeko eskatu duzun
-        mezua ez da erabiltzaile horri bidali edo berak ez du bidali. Hasi saioa erabiltzaile
-        zuzenarekin irakurtzeko.'
+      wrong_user: "'%{user}' bezala saioa hasi duzu baina irakurtzeko eskatu duzun\
+        \ mezua ez da erabiltzaile horri bidali edo berak ez du bidali. Hasi saioa\
+        \ erabiltzaile zuzenarekin irakurtzeko."
     sent_message_summary:
       destroy_button: Ezabatu
     mark:
@@ -1661,24 +1664,24 @@ eu:
     about:
       next: Hurrengoa
       copyright_html: <span>&copy;</span>OpenHistoricalMap<br>kolaboratzaileak
-      used_by_html: 'OpenHistoricalMap-k eskuliburuen mapak milaka web gune, mugikorretako aplikazio
-        eta hardware gailuetan ahalbidetzen ditu'
-      lede_text: OpenHistoricalMap mundu osoan zehar errepideak, bideak, kafetegiak, tren
-        geltokiak eta askoz gehiago mapatzaileen komunitate batek eskeinitako datuen
-        eta haien mantentzearen laguntzaz eraiki ditu.
+      used_by_html: OpenHistoricalMap-k eskuliburuen mapak milaka web gune, mugikorretako
+        aplikazio eta hardware gailuetan ahalbidetzen ditu
+      lede_text: OpenHistoricalMap mundu osoan zehar errepideak, bideak, kafetegiak,
+        tren geltokiak eta askoz gehiago mapatzaileen komunitate batek eskeinitako
+        datuen eta haien mantentzearen laguntzaz eraiki ditu.
       local_knowledge_title: Tokiko Ezagutza
-      local_knowledge_html: OpenHistoricalMap tokiko ezagutzak azpimarratzen ditu. Laguntzaileek
-        aireko irudiak erabiltzen dituzte, GPS gailuak eta teknologia baxuko eremuko
-        mapak OSMrako egiaztapen zehatza eta eguneratua egiteko.
+      local_knowledge_html: OpenHistoricalMap tokiko ezagutzak azpimarratzen ditu.
+        Laguntzaileek aireko irudiak erabiltzen dituzte, GPS gailuak eta teknologia
+        baxuko eremuko mapak OSMrako egiaztapen zehatza eta eguneratua egiteko.
       community_driven_title: Komunitatearen Ahotsa
-      community_driven_html: "OpenHistoricalMap komunitatea anitza eta sutsua da, egunero
-        haziz doa.\nGure laguntzaileen artean daude, mapazaleak, GIS arloko profesionalak,
-        \nOSM zerbitzariak exekutatzen dituzten ingeniariak, hondamendiek kaltetutako
-        eremuak mapatzen dituzten boluntarioak,\neta askoz gehiagok.\nKomunitateari
-        buruz gehiago jakiteko, ikus <a href='https://blog.openstreetmap.org'>OpenHistoricalMap
-        bloga</a>,\n<a href='%{diary_path}'>erabiltzaileen egunerokoak</a>,\n<a href='http://blogs.openstreetmap.org/'>komunitate
-        blogak</a> eta <a href='http://www.osmfoundation.org/'>OSM Fundazioaren</a>
-        webgunea."
+      community_driven_html: "OpenHistoricalMap komunitatea anitza eta sutsua da,\
+        \ egunero haziz doa.\nGure laguntzaileen artean daude, mapazaleak, GIS arloko\
+        \ profesionalak, \nOSM zerbitzariak exekutatzen dituzten ingeniariak, hondamendiek\
+        \ kaltetutako eremuak mapatzen dituzten boluntarioak,\neta askoz gehiagok.\n\
+        Komunitateari buruz gehiago jakiteko, ikus <a href='https://blog.openstreetmap.org'>OpenHistoricalMap\
+        \ bloga</a>,\n<a href='%{diary_path}'>erabiltzaileen egunerokoak</a>,\n<a\
+        \ href='http://blogs.openstreetmap.org/'>komunitate blogak</a> eta <a href='http://www.osmfoundation.org/'>OSM\
+        \ Fundazioaren</a> webgunea."
       open_data_title: Datu Irekiak
       open_data_html: |-
         OpenHistoricalMap <i> datu irekiak </i> ditu: edozein gauzarako erabil dezakezu betiere OpenHistoricalMap-ek eta bere kolaboratzaileek aipatzen badituzu. Moduren batean datuen gainean edukia eraikiz, emaitza bakarrik banatu ahal izango duzu lizentzia beraren azpian. Ikusi <a href='%{copyright_path}'> Copyright eta
@@ -1721,20 +1724,17 @@ eu:
           Gure mapa fitxen kartografia, eta gure dokumentazioa, <a href="http://creativecommons.org/licenses/by-sa/2.0/"> Creative
           Commons Attribution-ShareAlike 2.0 </a> lizentziapean eskaintzen dira (CC BY-SA).
         credit_title_html: OpenHistoricalMap nola kreditatu
-        credit_1_html: '&ldquo;&copy; OpenHistoricalMap contributors&rdquo; kreditua erabiltzeko
-          eskatzen dizugu.'
-        credit_2_1_html: "Halaber, argi utzi behar duzu datuak Open azpian erabilgarri
-          dauden\nDatu-basearen lizentziapean, eta gure mapa fitxak erabiltzen badituzu,
-          kartografia CC BY-SA lizentziatu daramala. Horretarako \n<a href=\"http://www.openstreetmap.org/copyright\">
-          copyright-orri honetan egin dezakezu</a>.\nBestela, eta behar izanez gero,
-          OSM banatzen ari zarenean\ndatu-inprimakian, izen-abizenak eta baimenak
-          zuzenean lotu ditzakezu. Loturak posibleak ez diren komunikabideetan\n(adibidez,
-          inprimatutako lanak), gomendatzen dizugu\nzure irakurleei openstreetmap.org
-          (agian hedapenean)\n'OpenHistoricalMap' helbide honetaraino), opendatacommons.org
-          helbidera, eta\ndagokionean, creativecommons.org-era zuzentzea."
-        credit_4_html: |-
-          Mapa elektroniko bateragarrientzat, kredituak maparen izkinan agertu behar dira.
-          Adibidez:
+        credit_1_html: '&ldquo;&copy; OpenHistoricalMap contributors&rdquo; kreditua
+          erabiltzeko eskatzen dizugu.'
+        credit_2_1_html: "Halaber, argi utzi behar duzu datuak Open azpian erabilgarri\
+          \ dauden\nDatu-basearen lizentziapean, eta gure mapa fitxak erabiltzen badituzu,\
+          \ kartografia CC BY-SA lizentziatu daramala. Horretarako \n<a href=\"http://www.openstreetmap.org/copyright\"\
+          > copyright-orri honetan egin dezakezu</a>.\nBestela, eta behar izanez gero,\
+          \ OSM banatzen ari zarenean\ndatu-inprimakian, izen-abizenak eta baimenak\
+          \ zuzenean lotu ditzakezu. Loturak posibleak ez diren komunikabideetan\n\
+          (adibidez, inprimatutako lanak), gomendatzen dizugu\nzure irakurleei openstreetmap.org\
+          \ (agian hedapenean)\n'OpenHistoricalMap' helbide honetaraino), opendatacommons.org\
+          \ helbidera, eta\ndagokionean, creativecommons.org-era zuzentzea."
         attribution_example:
           alt: Web-orri batean OpenHistoricalMap nola esleitu erakusteko adibidea
           title: Eskuduntza adibidea
@@ -1742,54 +1742,10 @@ eu:
         more_1_html: |-
           Irakurri gehiago gure datuak erabiltzeari buruz, eta nola gu kreditatu, hemen:<a
           href="http://osmfoundation.org/Licence">OSMF Licence page</a>.
-        more_2_html: |-
-          OpenHistoricalMap datuak irekita dauden arren, ezin dugu eman
-          aplikazio libreko maparen APIa hirugarrenentzat.
-          Ikusi gure <a href="https://operations.osmfoundation.org/policies/api/"> API erabileraren gidalerroak </a>,
-          <a href="https://operations.osmfoundation.org/policies/tiles/"> Tile erabileraren gidalerroak </a>
-          eta <a href="https://operations.osmfoundation.org/policies/nominatim/"> Nominatim Erabilera-gidalerroak aztertzeko</a>.
         contributors_title_html: Gure kolaboratzaileak
         contributors_intro_html: |-
           Gure laguntzaileen taldea milaka pertsonek osatzen dute. Horrez gain, nazio mailan aginte publikoko lizentziak
           dituzten mapak eta beste iturri batzuk eskeintzen ditugu, besteak beste:
-        contributors_at_html: |-
-          <strong>Austria</strong>: Honako iturrietatik ateratako datuak ditu:
-          <a href="http://data.wien.gv.at/">Stadt Wien</a> (<a href="http://creativecommons.org/licenses/by/3.0/at/deed.de">CC BY</a> lizentziapean),
-          <a href="http://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm">Land Vorarlberg</a> eta
-          Land Tirol (<a href="http://www.tirol.gv.at/applikationen/e-government/data/nutzungsbedingungen/">CC BY AT zuzenketekin</a> lizentziapean).
-        contributors_ca_html: |-
-          <strong>Canada</strong>: Datuak
-          GeoBase&reg;, GeoGratis (&copy; Department of Natural
-          Resources Canada), CanVec (&copy; Department of Natural
-          Resources Canada), eta StatCan (Geography Division,
-          Statistics Canada) biltegietatik hartzen ditu.
-        contributors_fi_html: |-
-          <strong>Finland</strong>: Datuak hemendik hartzen ditu: Finlandiako topografia datu-baseko inkesta nazionala
-          eta beste datubase batzuk, honen azpian:
-          <a href="http://www.maanmittauslaitos.fi/en/NLS_open_data_licence_version1_20120501">NLSFI License</a>.
-        contributors_fr_html: '<strong>Frantzia</strong>: Direction Générale des Impôts-etik
-          ateratako datuak ditu.'
-        contributors_nl_html: |-
-          <strong>Herbehereak</strong>: Contains &copy; AND data, 2007
-          (<a href="http://www.and.com">www.and.com</a>)
-        contributors_nz_html: '<strong>Zeelanda Berria</strong>: <a href="https://data.linz.govt.nz/">LINZ
-          datu zerbitzuko</a> datuak biltzen ditu, <a href="https://creativecommons.org/licenses/by/4.0/">CC
-          BY 4.0</a> lizentziaren arabera berrerabili daitezkeenak.'
-        contributors_si_html: |-
-          <strong>Eslovenia</strong>: datuak biltzen ditu
-          <a href="http://www.gu.gov.si/en/"> Burutzea eta Mapping Agintaritzatik </a> eta
-          <a href="http://www.mkgp.gov.si/en/"> Nekazaritza, Basogintza eta Elikadura Ministeriotik</a>
-          (Esloveniako informazio publikoa).
-        contributors_es_html: |-
-          <strong>Espainia</strong>: Espainiako Institutu Geografiko Nazionaletik (<a href="http://www.ign.es/">IGN</a>) eta
-          Sistema Kartografiko Nazionaletik (<a href="http://www.scne.es/">SCNE</a>) jasotako datuak daude, berrerabiltzeko baimendua <a href="https://creativecommons.org/licenses/by/4.0/deed.eu">CC BY 4.0</a> lizentziapean.
-        contributors_za_html: |-
-          <strong> Hego Afrika </strong>:
-          <a href="http://www.ngi.gov.za/"> Zuzendaritza Nagusia datuen jatorria:
-          Geo-Lurralde Informazio Nazionala </a>, Estatuko copyright erreserbatuta.
-        contributors_gb_html: |-
-          <strong>Erresuma Batua</strong>: Ordnance
-          Inkestaren datuak eta kopiak biltzen ditu; Crown copyright eta datu-basearen eskubidea 2010-19.
         contributors_footer_1_html: |-
           OpenHistoricalMap hobetzen laguntzeko lagundu dutenen xehetasun gehiago eta erabilitako beste iturri batzuk ezagutzeko, mesedez OpenStreetMap Wikian ikusi <a
           href="http://wiki.openstreetmap.org/wiki/Contributors">Contributors
@@ -1847,8 +1803,8 @@ eu:
       too_large:
         advice: 'Goiko esportazioak kale egiten badu, behean zerrendatutako iturrietako
           bat erabiltzea kontuan hartu mesedez:'
-        body: Area hau oso handia da OpenHistoricalMap XML datu bezala esportatzeko. Zooma
-          handitu edo eremu txikiagoa hautatu edo behean zerrendatutako iturrietako
+        body: Area hau oso handia da OpenHistoricalMap XML datu bezala esportatzeko.
+          Zooma handitu edo eremu txikiagoa hautatu edo behean zerrendatutako iturrietako
           bat erabili datuak bulkatze-deskargak egiteko mesedez.
         planet:
           title: OSM Planeta
@@ -1906,8 +1862,8 @@ eu:
       welcome:
         url: /welcome
         title: Ongi etorri OSMra
-        description: OpenHistoricalMap-en oinarrizkoak betetzen dituen gida azkar honekin
-          hasi.
+        description: OpenHistoricalMap-en oinarrizkoak betetzen dituen gida azkar
+          honekin hasi.
       beginners_guide:
         url: http://wiki.openstreetmap.org/wiki/Eu:Beginners%27_guide
         title: Hasiberrientzako gida
@@ -2177,8 +2133,8 @@ eu:
     require_admin:
       not_an_admin: Ekintza hori burutzeko administratzaile izan behar duzu.
     setup_user_auth:
-      blocked_zero_hour: OpenHistoricalMap webguneko premiazko mezu bat duzu. Zure aldaketak
-        gorde ahal izango dituzu mezua irakurri eta gero.
+      blocked_zero_hour: OpenHistoricalMap webguneko premiazko mezu bat duzu. Zure
+        aldaketak gorde ahal izango dituzu mezua irakurri eta gero.
       blocked: Zure APIrako sarbidea blokeatu egin da. Mesedez hasi ezazu saioa web-interfazean,
         gehiago jakiteko.
       need_to_see_terms: Zure APIrako sarbidea eten da aldi baterako. Hasi saioa web-interfazean,
@@ -2400,7 +2356,7 @@ eu:
         zure IDarekin zure erabiltzaileen ezarpenekin.
   user_role:
     filter:
-      not_a_role: '''%{role}'' katea ez da baliozko rola.'
+      not_a_role: "'%{role}' katea ez da baliozko rola."
       already_has_role: Erabiltzaileak %{role} rola dauka jadanik.
       doesnt_have_role: Erabiltzaileak ez dauka %{role} rolik.
       not_revoke_admin_current_user: Ezin da administratzaile rola uneko erabiltzaileari
@@ -2592,9 +2548,9 @@ eu:
         intro: Akats bat edo zerbait falta zaizula ikusi duzu? Utzi beste mapa editatzaileek
           jakin dezaten, beraz konpon dezakegun. Mugitu markatzailea posizio egokira
           eta idatzi ohar bat arazoa azaltzeko.
-        advice: "Zure oharra publikoa da eta mapa eguneratzeko erabili daiteke. Horregatik,
-          ez sartu informazio pertsonala edo \ncopyright-dun mapei edo direktorio
-          zerrendei buruzko informaziorik."
+        advice: "Zure oharra publikoa da eta mapa eguneratzeko erabili daiteke. Horregatik,\
+          \ ez sartu informazio pertsonala edo \ncopyright-dun mapei edo direktorio\
+          \ zerrendei buruzko informaziorik."
         add: Gehitu oharra
       show:
         anonymous_warning: Ohar honek independenteak izan behar diren erabiltzaile
@@ -2686,16 +2642,16 @@ eu:
         unnamed: izenik gabe
         courtesy: Helbideak %{link}-ren adeitasunez.
         exit_counts:
-          first: "1."
-          second: "2."
-          third: "3."
-          fourth: "4."
-          fifth: "5."
-          sixth: "6."
-          seventh: "7."
-          eighth: "8."
-          ninth: "9."
-          tenth: "10."
+          first: '1.'
+          second: '2.'
+          third: '3.'
+          fourth: '4.'
+          fifth: '5.'
+          sixth: '6.'
+          seventh: '7.'
+          eighth: '8.'
+          ninth: '9.'
+          tenth: '10.'
       time: Denbora
     query:
       node: Nodo

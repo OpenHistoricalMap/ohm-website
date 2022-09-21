@@ -278,7 +278,7 @@ diq:
       title: 'Not: %{id}'
       new_note: Nota Newi
       description: Şınasnayış
-      hidden_by_html: '%{user} <abbr title=''%{exact_time}''>%{when}</abbr> bınımnê'
+      hidden_by_html: "%{user} <abbr title='%{exact_time}'>%{when}</abbr> bınımnê"
       report: Nê noti rapor ke
     query:
       title: Xısusiyetan bıasne

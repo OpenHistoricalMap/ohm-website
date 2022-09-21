@@ -254,8 +254,8 @@ ia:
         title: Deler mi conto
         warning: Attention! Le deletion de un conto es definitive e irreversibile.
         delete_account: Deler conto
-        delete_introduction: 'Tu pote deler tu conto OpenHistoricalMap con le button sequente.
-          Nota ben que:'
+        delete_introduction: 'Tu pote deler tu conto OpenHistoricalMap con le button
+          sequente. Nota ben que:'
         delete_profile: Tu information de profilo, includente tu avatar, description
           e domicilio, essera removite.
         delete_display_name: Tu nomine a monstrar essera removite e potera esser reusate
@@ -498,8 +498,8 @@ ia:
         %{author}
     index:
       title_all: Discussion sur un gruppo de modificationes in OpenHistoricalMap
-      title_particular: Discussion sur le gruppo de modificationes OpenHistoricalMap №
-        %{changeset_id}
+      title_particular: Discussion sur le gruppo de modificationes OpenHistoricalMap
+        № %{changeset_id}
     timeout:
       sorry: Le lista de commentos sur gruppos de modificationes que tu requestava
         tardava troppo de tempore pro esser recuperate.
@@ -587,7 +587,8 @@ ia:
         description: Entratas recente de diario de OpenHistoricalMap de %{user}
       language:
         title: Entratas de diario de OpenHistoricalMap in %{language_name}
-        description: Entratas de diario recente de usatores de OpenHistoricalMap in %{language_name}
+        description: Entratas de diario recente de usatores de OpenHistoricalMap in
+          %{language_name}
       all:
         title: Entratas de diario de OpenHistoricalMap
         description: Entratas recente de diario de usatores de OpenHistoricalMap
@@ -1535,8 +1536,8 @@ ia:
     edit_with: Modificar con %{editor}
     tag_line: Le wiki-carta libere del mundo
     intro_header: Benvenite a OpenHistoricalMap!
-    intro_text: OpenHistoricalMap es un carta del mundo, create per gente como tu e libere
-      de usar sub un licentia aperte.
+    intro_text: OpenHistoricalMap es un carta del mundo, create per gente como tu
+      e libere de usar sub un licentia aperte.
     intro_2_create_account: Crea un conto de usator
     hosting_partners_html: Le allogiamento web es supportate per %{ucl}, %{fastly},
       %{bytemark} e altere %{partners}.
@@ -1545,10 +1546,10 @@ ia:
     partners_bytemark: Bytemark Hosting
     partners_partners: partners
     tou: Conditiones de uso
-    osm_offline: Le base de datos de OpenHistoricalMap non es disponibile al momento debite
-      a operationes de mantenentia essential.
-    osm_read_only: Le base de datos de OpenHistoricalMap es al momento in modo de solmente
-      lectura durante le execution de mantenentia essential.
+    osm_offline: Le base de datos de OpenHistoricalMap non es disponibile al momento
+      debite a operationes de mantenentia essential.
+    osm_read_only: Le base de datos de OpenHistoricalMap es al momento in modo de
+      solmente lectura durante le execution de mantenentia essential.
     donate: Supporta OpenHistoricalMap per %{link} al Fundo de Actualisation de Hardware.
     help: Adjuta
     about: A proposito
@@ -1578,10 +1579,10 @@ ia:
     message_notification:
       subject: '[OpenHistoricalMap] %{message_title}'
       hi: Salute %{to_user},
-      header: '%{from_user} te ha inviate un message per OpenHistoricalMap con le subjecto
-        %{subject}:'
-      header_html: '%{from_user} te ha inviate un message per OpenHistoricalMap con le
+      header: '%{from_user} te ha inviate un message per OpenHistoricalMap con le
         subjecto %{subject}:'
+      header_html: '%{from_user} te ha inviate un message per OpenHistoricalMap con
+        le subjecto %{subject}:'
       footer: Tu pote etiam leger le message sur %{readurl} e tu pote inviar un message
         al autor sur %{replyurl}
       footer_html: Tu pote etiam leger le message a %{readurl} e tu pote inviar un
@@ -1642,8 +1643,8 @@ ia:
       greeting: Salute,
       commented:
         subject_own: '[OpenHistoricalMap] %{commenter} ha commentate un de tu notas'
-        subject_other: '[OpenHistoricalMap] %{commenter} ha commentate un nota que te
-          interessa'
+        subject_other: '[OpenHistoricalMap] %{commenter} ha commentate un nota que
+          te interessa'
         your_note: '%{commenter} ha lassate un commento sur un de tu notas de carta
           in le vicinitate de %{place}.'
         your_note_html: '%{commenter} ha lassate un commento sur un de tu notas de
@@ -1654,7 +1655,8 @@ ia:
           que tu ha commentate. Le nota es in le vicinitate de %{place}.'
       closed:
         subject_own: '[OpenHistoricalMap] %{commenter} ha resolvite un de tu notas'
-        subject_other: '[OpenHistoricalMap] %{commenter} ha resolvite un nota que te interessa'
+        subject_other: '[OpenHistoricalMap] %{commenter} ha resolvite un nota que
+          te interessa'
         your_note: '%{commenter} ha resolvite un de tu notas de carta in le vicinitate
           de %{place}.'
         your_note_html: '%{commenter} ha resolvite un de tu notas de carta in le vicinitate
@@ -1665,7 +1667,8 @@ ia:
           commentate. Le nota es in le vicinitate de %{place}.'
       reopened:
         subject_own: '[OpenHistoricalMap] %{commenter} ha reactivate un de tu notas'
-        subject_other: '[OpenHistoricalMap] %{commenter} ha reactivate un nota de tu interesse'
+        subject_other: '[OpenHistoricalMap] %{commenter} ha reactivate un nota de
+          tu interesse'
         your_note: '%{commenter} ha reactivate un de tu notas de carta in le vicinitate
           de %{place}.'
         your_note_html: '%{commenter} ha reactivate un de tu notas de carta in le
@@ -1682,8 +1685,8 @@ ia:
       commented:
         subject_own: '[OpenHistoricalMap] %{commenter} ha commentate un de tu gruppos
           de modificationes'
-        subject_other: '[OpenHistoricalMap] %{commenter} ha commentate un gruppo de modificationes
-          que te interessa'
+        subject_other: '[OpenHistoricalMap] %{commenter} ha commentate un gruppo de
+          modificationes que te interessa'
         your_changeset: '%{commenter} ha commentate a %{time} un de tu gruppos de
           modificationes'
         your_changeset_html: '%{commenter} ha commentate a %{time} un de tu gruppos
@@ -1877,8 +1880,8 @@ ia:
         con tu nomine de usator e contrasigno:'
       with external: 'Alternativemente, usa un tertio pro aperir session:'
       new to osm: Nove a OpenHistoricalMap?
-      to make changes: Pro facer modificationes in le datos de OpenHistoricalMap, es necessari
-        haber un conto.
+      to make changes: Pro facer modificationes in le datos de OpenHistoricalMap,
+        es necessari haber un conto.
       create account minute: Crea un conto. Isto dura solmente un minuta.
       no account: Non ha un conto?
       account not active: Pardono, tu conto non es ancora active.<br />Per favor clicca
@@ -1940,10 +1943,10 @@ ia:
     about:
       next: Sequente
       copyright_html: <span>&copy;</span>Contributores de<br>OpenHistoricalMap
-      used_by_html: 'OpenHistoricalMap forni datos cartographic a milles de sitos web, applicationes
-        mobile e dispositivos physic'
-      lede_text: OpenHistoricalMap es construite per un communitate de cartographos que
-        contribue e mantene datos sur stratas, sentieros, cafés, stationes ferroviari
+      used_by_html: OpenHistoricalMap forni datos cartographic a milles de sitos web,
+        applicationes mobile e dispositivos physic
+      lede_text: OpenHistoricalMap es construite per un communitate de cartographos
+        que contribue e mantene datos sur stratas, sentieros, cafés, stationes ferroviari
         e multo plus, in tote le mundo.
       local_knowledge_title: Cognoscentia local
       local_knowledge_html: |-
@@ -1963,17 +1966,18 @@ ia:
         OpenHistoricalMap es constituite per <i>datos aperte</i>: tu es libere de usar lo pro qualcunque scopo a condition que tu da credito a OpenHistoricalMap e su contributores. Si tu altera o extende le datos in certe manieras, tu pote distribuer le resultato solmente sub le mesme licentia. Vide le pagina <a href='%{copyright_path}'>Copyright e
         Licentia</a> pro detalios.
       legal_title: Juridic
-      legal_1_html: "Iste sito e multe altere servicios associate es formalmente gerite
-        per le  \n<a href=\"https://osmfoundation.org/\">Fundation OpenHistoricalMap</a>
-        (OSMF) \nin nomine del communitate. Le uso de tote le servicios gerite per
-        OSMF es subjecte a nostre <a href=\"https://wiki.osmfoundation.org/wiki/Terms_of_Use\">conditiones
-        de uso</a>, a nostre <a href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\">\npoliticas
-        de uso acceptabile</a> e a nostre <a href=\"http://wiki.osmfoundation.org/wiki/Privacy_Policy\">politica
-        de confidentialitate</a>."
-      legal_2_html: "<a href=\"https://osmfoundation.org/Contact\">Contacta OSMF</a>
-        \nsi vos ha questiones sur licentias, derectos de autor o altere themas juridic.\n<br>\nOpenHistoricalMap,
-        le logotypo de lupa e \"State of the Map\" es <a href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\">marcas
-        commercial registrate del OSMF</a>."
+      legal_1_html: "Iste sito e multe altere servicios associate es formalmente gerite\
+        \ per le  \n<a href=\"https://osmfoundation.org/\">Fundation OpenHistoricalMap</a>\
+        \ (OSMF) \nin nomine del communitate. Le uso de tote le servicios gerite per\
+        \ OSMF es subjecte a nostre <a href=\"https://wiki.osmfoundation.org/wiki/Terms_of_Use\"\
+        >conditiones de uso</a>, a nostre <a href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\"\
+        >\npoliticas de uso acceptabile</a> e a nostre <a href=\"http://wiki.osmfoundation.org/wiki/Privacy_Policy\"\
+        >politica de confidentialitate</a>."
+      legal_2_html: "<a href=\"https://osmfoundation.org/Contact\">Contacta OSMF</a>\
+        \ \nsi vos ha questiones sur licentias, derectos de autor o altere themas\
+        \ juridic.\n<br>\nOpenHistoricalMap, le logotypo de lupa e \"State of the\
+        \ Map\" es <a href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\"\
+        >marcas commercial registrate del OSMF</a>."
       partners_title: Partners
     copyright:
       foreign:
@@ -2009,12 +2013,6 @@ ia:
         credit_2_1_html: |-
           Vos debe etiam indicar clarmente que le datos es disponibile sub Open Database License. Vos pote facer isto con un ligamine a <a href="https://www.openstreetmap.org/copyright">iste pagina de copyright</a>.
           Alternativemente, e obligatorimente si vos distribue OSM in forma de datos, vos pote mentionar le licentia(s) e ligar directemente a illo(s). Si vos usa un medio de communication in le qual le ligamines non es possibile (p.ex. un obra imprimite), nos suggere que vos dirige vostre lectores a openstreetmap.org (forsan per inserer iste adresse complete in loco del parola &lsquo;OpenHistoricalMap&rsquo;) e a opendatacommons.org.
-        credit_3_1_html: Le tegulas de carta in le &ldquo;stilo standard&rdquo sur
-          www.openstreetmap.org es un obra producite per le Fundation OpenHistoricalMap
-          usante datos de OpenHistoricalMap sub le licentia Open Database. Pro usar iste
-          stilo de carta, le mesme attribution es requirite como pro le datos cartographic.
-        credit_4_html: 'Pro un carta electronic navigabile, le recognoscentia debe
-          apparer in le angulo del carta. Per exemplo:'
         attribution_example:
           alt: Exemplo de como recognoscer OpenHistoricalMap in un pagina web
           title: Exemplo de recognoscentia
@@ -2022,61 +2020,10 @@ ia:
         more_1_html: Lege plus sur le uso de nostre datos, e sur como citar correctemente
           lor fonte, in le <a href="https://osmfoundation.org/Licence">pagina de licentia
           OSMF</a>.
-        more_2_html: |-
-          Ben que OpenHistoricalMap es datos aperte, nos non pote fornir un API cartographic gratuite pro tertios. Vide nostre <a href="https://operations.osmfoundation.org/policies/api/">politica pro le uso del API</a>,
-          <a href="https://operations.osmfoundation.org/policies/tiles">politica pro le uso de tegulas</a>
-          e <a href="https://operations.osmfoundation.org/policies/nominatim">politica pro le uso de Nominatim</a>.
         contributors_title_html: Nostre contributores
         contributors_intro_html: 'Nostre contributores es milles de personas. Nos
           include anque le datos sub licentia aperte de agentias cartographic national
           e de altere fontes, inter le quales:'
-        contributors_at_html: '<strong>Austria</strong>: Contine datos ab le <a href="https://data.wien.gv.at/">Citate
-          de Vienna</a> licentiate sub <a href="https://creativecommons.org/licenses/by/3.0/at/deed.de">CC
-          BY</a>, <a href="https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm">Land
-          Vorarlberg</a> e Land Tirol (sub <a href="https://www.tirol.gv.at/applikationen/e-government/data/nutzungsbedingungen/">CC
-          BY AT con emendamentos</a>).'
-        contributors_au_html: '<strong>Australia</strong>: Incorpora o disveloppate
-          usante Limites Administrative &copy; <a href="https://geoscape.com.au/legal/data-copyright-and-disclaimer/">Geoscape
-          Australia</a> publicate per le Commonwealth de Australia sub licentia <a
-          href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution
-          4.0 International (CC BY 4.0)</a>.'
-        contributors_ca_html: |-
-          <strong>Canada</strong>: Contine datos ab
-             GeoBase&reg;, GeoGratis (&copy; Department of Natural
-             Resources Canada), CanVec (&copy; Department of Natural
-             Resources Canada), e StatCan (Geography Division,
-             Statistics Canada).
-        contributors_fi_html: '<strong>Finlandia</strong>: Contine datos ab le base
-          de datos topographic del Inspection National del Territorio de Finlandia
-          e de altere insimules de datos, sub le <a href="https://www.maanmittauslaitos.fi/en/opendata-licence-version1">licentia
-          NLSFI</a>.'
-        contributors_fr_html: |-
-          <strong>Francia</strong>: Contine datos fornite per le
-             Direction Générale des Impôts.
-        contributors_nl_html: '<strong>Nederlandia</strong>: Contine datos &copy;
-          AND, 2007 (<a href="https://www.and.com">www.and.com</a>)'
-        contributors_nz_html: '<strong>Nove Zelandia</strong>: Contine datos proveniente
-          de <a href="https://data.linz.govt.nz/">LINZ Data Service</a> e licentiate
-          pro re-uso sub <a href="https://creativecommons.org/licenses/by/4.0/">CC
-          BY 4.0</a>.'
-        contributors_si_html: |-
-          <strong>Slovenia</strong>: Contine datos ab le
-          <a href="http://www.gu.gov.si/en/">Surveying and Mapping Authority</a> e del
-          <a href="http://www.mkgp.gov.si/en/">Ministerio del Agricultura, Silvicultura e Alimento</a>
-          (information public de Slovenia).
-        contributors_es_html: '<strong>Espania</strong>: Contine datos proveniente
-          del Instituto Geographic National (<a href="http://www.ign.es/">IGN</a>)
-          e del Systema Cartographic National (<a href="http://www.scne.es/">SCNE</a>),
-          licentiate pro su reutilisation sub <a href="https://creativecommons.org/licenses/by/4.0/">CC
-          BY 4.0</a>.'
-        contributors_za_html: |-
-          <strong>Africa del Sud</strong>: Contine datos proveniente del
-             <a href="http://www.ngi.gov.za/">Chief Directorate:
-             National Geo-Spatial Information</a>, copyright del Stato reservate.
-        contributors_gb_html: |-
-          <strong>Regno Unite</strong>: Contine datos de Ordnance
-             Survey &copy; copyright del Corona e derecto de base de datos
-             2010-19.
         contributors_footer_1_html: |-
           Pro ulterior detalios de iste e altere fontes que ha essite usate
           pro adjutar a meliorar OpenHistoricalMap, vide le <a
@@ -2097,9 +2044,9 @@ ia:
           de remotion</a> o submitte un plancto immediate usante nostre <a href="https://dmca.openstreetmap.org/">formulario
           in linea</a>.
         trademarks_title_html: <span id="trademarks"></span>Marcas commercial
-        trademarks_1_html: OpenHistoricalMap, le logotypo con le lupa e "State of the
-          Map" es marcas registrate del Fundation OpenHistoricalMap. Si vos ha questiones
-          sur le uso de iste marcas, vide nostre <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">politica
+        trademarks_1_html: OpenHistoricalMap, le logotypo con le lupa e "State of
+          the Map" es marcas registrate del Fundation OpenHistoricalMap. Si vos ha
+          questiones sur le uso de iste marcas, vide nostre <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">politica
           sur le marcas registrate</a>.
     index:
       js_1: O tu usa un navigator que non supporta JavaScript, o tu ha disactivate
@@ -2190,9 +2137,9 @@ ia:
           de labor OSMF</a> appropriate.
     help:
       title: Obtener adjuta
-      introduction: OpenHistoricalMap ha plure ressources pro apprender a cognoscer le
-        projecto, pro poner e responder a questiones e pro discuter e documentar le
-        subjectos de cartographia in collaboration con alteres.
+      introduction: OpenHistoricalMap ha plure ressources pro apprender a cognoscer
+        le projecto, pro poner e responder a questiones e pro discuter e documentar
+        le subjectos de cartographia in collaboration con alteres.
       welcome:
         url: /welcome
         title: Benvenite a OpenHistoricalMap
@@ -2339,8 +2286,8 @@ ia:
           special!
       basic_terms:
         title: Vocabulario de base pro le cartographia
-        paragraph_1_html: OpenHistoricalMap ha un jargon proprie. Ecce alcun parolas clave
-          que te essera utile.
+        paragraph_1_html: OpenHistoricalMap ha un jargon proprie. Ecce alcun parolas
+          clave que te essera utile.
         editor_html: Un <strong>editor</strong> es un programma o sito web que tu
           pote usar pro modificar le carta.
         node_html: Un <strong>nodo</strong> es un puncto sur le carta, como un restaurante
@@ -2352,10 +2299,10 @@ ia:
           un strata.
       rules:
         title: Regulas!
-        paragraph_1_html: OpenHistoricalMap ha poc regulas formal, ma nos expecta que
-          tote le participantes collabora e communica con le communitate. Si vos considera
-          un activitate altere que modification per mano, lege e seque le directivas
-          sur le <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>importation</a>
+        paragraph_1_html: OpenHistoricalMap ha poc regulas formal, ma nos expecta
+          que tote le participantes collabora e communica con le communitate. Si vos
+          considera un activitate altere que modification per mano, lege e seque le
+          directivas sur le <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>importation</a>
           e sur le <a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>modification
           automatisate</a>.
       questions:
@@ -3036,7 +2983,7 @@ ia:
       distance: Distantia
       errors:
         no_route: Nulle route ha essite trovate inter iste duo locos.
-        no_place: '''%{place}'' non poteva esser trovate.'
+        no_place: "'%{place}' non poteva esser trovate."
       instructions:
         continue_without_exit: Continuar sur %{name}
         slight_right_without_exit: Girar legiermente a dextra verso %{name}

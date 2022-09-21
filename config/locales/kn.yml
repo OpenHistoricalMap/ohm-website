@@ -181,7 +181,7 @@ kn:
     created_by_html: ಸೃಷ್ಟಿಸಲಾಗಿದೆ <abbr title='%{title}'>%{time}</abbr> by %{user}
     deleted_by_html: ಅಳಿಸಲಾಗಿದೆ <abbr title='%{title}'>%{time}</abbr> ಇವರಿಂದ %{user}
     edited_by_html: ತಿದ್ದಲಾಗಿದೆ <abbr title='%{title}'>%{time}</abbr> ಇವರಿಂದ %{user}
-    closed_by_html: '%{user} ರವರಿಂದ <abbr title=''%{title}''>%{time}</abbr> ಮುಚ್ಚಲಾಗಿದೆ'
+    closed_by_html: "%{user} ರವರಿಂದ <abbr title='%{title}'>%{time}</abbr> ಮುಚ್ಚಲಾಗಿದೆ"
     version: ಆವೃತ್ತಿ
     in_changeset: ಬದಲಾವಣೆಗಳು
     anonymous: ಅನಾಮಧೇಯ

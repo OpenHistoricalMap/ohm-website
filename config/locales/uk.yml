@@ -216,63 +216,63 @@ uk:
         one: '%{count} годину тому'
         few: '%{count} години тому'
         many: '%{count} годин тому'
-        other: ""
+        other: ''
       about_x_months:
         one: '%{count} місяць тому'
         few: '%{count} місяці тому'
         many: '%{count} місяців тому'
-        other: ""
+        other: ''
       about_x_years:
         one: '%{count} рік тому'
         few: '%{count} роки тому'
         many: '%{count} років тому'
-        other: ""
+        other: ''
       almost_x_years:
         one: майже %{count} рік тому
         few: майже %{count} роки тому
         many: майже %{count} років тому
-        other: ""
+        other: ''
       half_a_minute: пів хвилини тому
       less_than_x_seconds:
         one: менше ніж секунду тому
         few: менше ніж %{count} секунди тому
         many: менше ніж %{count} секунд тому
-        other: ""
+        other: ''
       less_than_x_minutes:
         one: менше ніж %{count} хвилину тому
         few: менше ніж %{count} хвилини тому
         many: менше ніж %{count} хвилин тому
-        other: ""
+        other: ''
       over_x_years:
         one: більше ніж %{count} рік тому
         few: більше ніж %{count} роки тому
         many: більше ніж %{count} років тому
-        other: ""
+        other: ''
       x_seconds:
         one: '%{count} секунду тому'
         few: '%{count} секунди тому'
         many: '%{count} секунд тому'
-        other: ""
+        other: ''
       x_minutes:
         one: '%{count} хвилину тому'
         few: '%{count} хвилини тому'
         many: '%{count} хвилин тому'
-        other: ""
+        other: ''
       x_days:
         one: '%{count} день тому'
         few: '%{count} дні тому'
         many: '%{count} днів тому'
-        other: ""
+        other: ''
       x_months:
         one: '%{count} місяць тому'
         few: '%{count} місяці тому'
         many: '%{count} місяців тому'
-        other: ""
+        other: ''
       x_years:
         one: '%{count} рік тому'
         few: '%{count} роки тому'
         many: '%{count} років тому'
-        other: ""
+        other: ''
   printable_name:
     with_version: '%{id}, v%{version}'
     with_name_html: '%{name} (%{id})'
@@ -406,12 +406,12 @@ uk:
       one: '%{count} зв’язок'
       few: '%{count} зв’язки'
       many: '%{count} зв’язків'
-      other: ""
+      other: ''
     part_of_ways:
       one: '%{count} лінії'
       few: '%{count} ліній'
       many: '%{count} ліній'
-      other: ""
+      other: ''
     download_xml: Завантажити XML
     view_history: Перегляд історії
     view_details: Поточна інформація
@@ -450,7 +450,7 @@ uk:
         one: '%{count} точка'
         few: '%{count} точки'
         many: '%{count} точок'
-        other: ""
+        other: ''
       also_part_of_html:
         one: також є частиною лінії %{related_ways}
         other: також є частиною ліній %{related_ways}
@@ -462,7 +462,7 @@ uk:
         one: '%{count} член'
         few: '%{count} члени'
         many: '%{count} членів'
-        other: ""
+        other: ''
     relation_member:
       entry_role_html: '%{type} %{name} як %{role}'
       type:
@@ -525,7 +525,7 @@ uk:
       hidden_title: 'Прихована нотатка #%{note_name}'
       opened_by_html: Створено %{user} <abbr title='%{exact_time}'>%{when}</abbr>
       opened_by_anonymous_html: Створено анонімом <abbr title='%{exact_time}'>%{when}</abbr>
-      commented_by_html: '%{user} залишив(ла) коментар <abbr title=''%{exact_time}''>%{when}</abbr>'
+      commented_by_html: "%{user} залишив(ла) коментар <abbr title='%{exact_time}'>%{when}</abbr>"
       commented_by_anonymous_html: Прокоментовано анонімом <abbr title='%{exact_time}'>%{when}</abbr>
       closed_by_html: Розв’язано %{user} <abbr title='%{exact_time}'>%{when}</abbr>
       closed_by_anonymous_html: Розв’язано анонімом <abbr title='%{exact_time}'>%{when}</abbr>
@@ -1512,7 +1512,7 @@ uk:
         one: '%{count} Скарга'
         few: '%{count} Скарги'
         many: '%{count} Скарг'
-        other: ""
+        other: ''
       reported_item: Оскаржено
       states:
         ignored: Проігноровано
@@ -1619,8 +1619,8 @@ uk:
     edit_with: Редагувати – %{editor}
     tag_line: Вільна Вікі-мапа Світу
     intro_header: Ласкаво просимо до OpenHistoricalMap!
-    intro_text: OpenHistoricalMap — мапа світу, створена такими ж людьми, як і ви, для
-      вільного використання під відкритою ліцензією.
+    intro_text: OpenHistoricalMap — мапа світу, створена такими ж людьми, як і ви,
+      для вільного використання під відкритою ліцензією.
     intro_2_create_account: Створіть обліковий запис
     hosting_partners_html: Хостинг підтримується %{ucl}, %{fastly}, %{bytemark} та
       іншими %{partners}.
@@ -1631,8 +1631,8 @@ uk:
     tou: Умови використання
     osm_offline: База даних OpenHistoricalMap в даний момент недоступна, бо саме проводиться
       необхідне технічне обслуговування.
-    osm_read_only: База даних OpenHistoricalMap в даний момент доступна тільки для читання,
-      тому що проводиться необхідне технічне обслуговування.
+    osm_read_only: База даних OpenHistoricalMap в даний момент доступна тільки для
+      читання, тому що проводиться необхідне технічне обслуговування.
     donate: Підтримайте OpenHistoricalMap зробивши %{link} до Фонду оновлення обладнання.
     help: Довідка
     about: Про проєкт
@@ -1651,8 +1651,8 @@ uk:
     diary_comment_notification:
       subject: '[OpenHistoricalMap] %{user} залишив коментар у вашому щоденнику'
       hi: Привіт, %{to_user},
-      header: '%{from_user} прокоментував ваш допис у щоденнику у OpenHistoricalMap з
-        темою %{subject}:'
+      header: '%{from_user} прокоментував ваш допис у щоденнику у OpenHistoricalMap
+        з темою %{subject}:'
       header_html: '%{from_user} прокоментував допис %{subject} в щоденнику OpenHistoricalMap'
       footer: Ви можете також прочитати коментар — %{readurl}, залишити свій — %{commenturl}
         або відповісти — %{replyurl}
@@ -1724,8 +1724,10 @@ uk:
       anonymous: Анонімний учасник
       greeting: Привіт,
       commented:
-        subject_own: '[OpenHistoricalMap] %{commenter} прокоментував одну з ваших нотаток'
-        subject_other: '[OpenHistoricalMap] %{commenter} прокоментував цікаву вам нотатку'
+        subject_own: '[OpenHistoricalMap] %{commenter} прокоментував одну з ваших
+          нотаток'
+        subject_other: '[OpenHistoricalMap] %{commenter} прокоментував цікаву вам
+          нотатку'
         your_note: '%{commenter} залишив коментар до однієї з ваших нотаток на мапі
           біля %{place}.'
         your_note_html: '%{commenter} залишив коментар до однієї з ваших нотаток на
@@ -1736,8 +1738,8 @@ uk:
           вами нотаток, що знаходиться біля %{place}.'
       closed:
         subject_own: '[OpenHistoricalMap] %{commenter} опрацював одну з ваших нотаток'
-        subject_other: '[OpenHistoricalMap] %{commenter} розв’язав нотатку до якої ви
-          виявили зацікавленість'
+        subject_other: '[OpenHistoricalMap] %{commenter} розв’язав нотатку до якої
+          ви виявили зацікавленість'
         your_note: '%{commenter} опрацював одну з ваших нотаток на мапі біля %{place}.'
         your_note_html: '%{commenter} опрацював одну з ваших нотаток на мапі біля
           %{place}.'
@@ -1747,8 +1749,8 @@ uk:
           що знаходиться біля %{place}.'
       reopened:
         subject_own: '[OpenHistoricalMap] %{commenter} поновив одну з ваших нотаток'
-        subject_other: '[OpenHistoricalMap] %{commenter} поновив  нотатку до якої ви виявили
-          зацікавленість'
+        subject_other: '[OpenHistoricalMap] %{commenter} поновив  нотатку до якої
+          ви виявили зацікавленість'
         your_note: '%{commenter} поновив одну з ваших нотаток на мапі біля %{place}.'
         your_note_html: '%{commenter} поновив одну з ваших нотаток на мапі біля %{place}.'
         commented_note: '%{commenter} поновив нотатку, прокоментовану вами, що знаходиться
@@ -1761,10 +1763,10 @@ uk:
       hi: Привіт %{to_user},
       greeting: Привіт,
       commented:
-        subject_own: '[OpenHistoricalMap] %{commenter} прокоментував один з ваших наборів
-          змін'
-        subject_other: '[OpenHistoricalMap] %{commenter} прокоментував набір змін, до
-          якого ви залишали свій коментар'
+        subject_own: '[OpenHistoricalMap] %{commenter} прокоментував один з ваших
+          наборів змін'
+        subject_other: '[OpenHistoricalMap] %{commenter} прокоментував набір змін,
+          до якого ви залишали свій коментар'
         your_changeset: '%{commenter} залишив коментар о %{time} до одного з ваших
           наборів змін'
         your_changeset_html: '%{commenter} залишив коментар %{time} до одного з ваших
@@ -1822,12 +1824,12 @@ uk:
         one: '%{count} нове повідомлення'
         few: '%{count} нових повідомлення'
         many: '%{count} нових повідомлень'
-        other: ""
+        other: ''
       old_messages:
         one: '%{count} старе повідомлення'
         few: '%{count} старих повідомлення'
         many: '%{count} старих повідомлень'
-        other: ""
+        other: ''
       from: Від
       subject: Тема
       date: Дата
@@ -1861,7 +1863,7 @@ uk:
         one: У вас %{count} надіслане повідомлення
         few: У вас %{count} надісланих повідомлення
         many: У вас %{count} надісланих повідомлень
-        other: ""
+        other: ''
       to: Кому
       subject: Тема
       date: Дата
@@ -1958,12 +1960,12 @@ uk:
       lost password link: Забули пароль?
       login_button: Увійти
       register now: Зареєструйтеся зараз
-      with username: 'Вже є обліковий запис OpenHistoricalMap? Будь ласка, введіть ваш
-        логін та пароль:'
+      with username: 'Вже є обліковий запис OpenHistoricalMap? Будь ласка, введіть
+        ваш логін та пароль:'
       with external: 'Або використовуйте, облікові записи з інших ресурсів:'
       new to osm: Вперше на OpenHistoricalMap?
-      to make changes: Щоб вносити зміни до даних OpenHistoricalMap, ви повинні мати обліковий
-        запис.
+      to make changes: Щоб вносити зміни до даних OpenHistoricalMap, ви повинні мати
+        обліковий запис.
       create account minute: Створити обліковий запис. Це займе всього хвилину.
       no account: Не маєте облікового запису?
       account not active: Вибачте, ваш обліковий запис ще не активовано. <br /> Щоб
@@ -2026,8 +2028,8 @@ uk:
     about:
       next: Далі
       copyright_html: <span>&copy;</span>Учасники<br>OpenHistoricalMap
-      used_by_html: 'OpenHistoricalMap надає картографічні дані для тисяч вебсайтів, мобільних
-        застосунків та різних пристроїв'
+      used_by_html: OpenHistoricalMap надає картографічні дані для тисяч вебсайтів,
+        мобільних застосунків та різних пристроїв
       lede_text: OpenHistoricalMap створений спільнотою маперів, які вносять і підтримують
         дані про дороги, стежки, кав’ярні, вокзали і багато чого іншого по всьому
         світу.
@@ -2045,17 +2047,17 @@ uk:
         OpenHistoricalMap — це <i>відкриті дані</i>: Ви можете вільно використовувати їх для будь-яких цілей доти, поки посилаєтесь OpenHistoricalMap та його учасників. Якщо Ви змінюєте дані або на основі даних будуєте певним чином власні, Ви можете розповсюджувати результат лише під тією самою ліцензією. Дивіться сторінку <a href='%{copyright_path}'>«Авторські права і
         ліцензії»</a>, щоб отримати докладну інформацію.
       legal_title: Правова інформація
-      legal_1_html: "Цей сайт та багато інших повʼязаних сервісів офіційно керуються
-        \n<a href='https://osmfoundation.org/'>OpenHistoricalMap Foundation</a> (OSMF)
-        \nвід імені спільноти. Використання усіх сервісів, підконтрольних OSMF, здійснюється
-        на основі <a href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\">\nПравил
-        щодо прийнятного використання</a> та нашій <a href=\"https://wiki.osmfoundation.org/wiki/Privacy_Policy\">Політиці
-        конфіденційності</a>."
-      legal_2_html: "Будь ласка, <a href='https://osmfoundation.org/Contact'>звʼяжіться
-        з OSMF</a>, \nякщо у Вас є питання чи проблеми щодо ліцензування, авторських
-        прав та інших юридичних питань.\n<br>\nЛоготип OpenStreepMap та State of the
-        Map є <a href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\">зареєстрованими
-        торговими марками OSMF</a>."
+      legal_1_html: "Цей сайт та багато інших повʼязаних сервісів офіційно керуються\
+        \ \n<a href='https://osmfoundation.org/'>OpenHistoricalMap Foundation</a>\
+        \ (OSMF) \nвід імені спільноти. Використання усіх сервісів, підконтрольних\
+        \ OSMF, здійснюється на основі <a href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\"\
+        >\nПравил щодо прийнятного використання</a> та нашій <a href=\"https://wiki.osmfoundation.org/wiki/Privacy_Policy\"\
+        >Політиці конфіденційності</a>."
+      legal_2_html: "Будь ласка, <a href='https://osmfoundation.org/Contact'>звʼяжіться\
+        \ з OSMF</a>, \nякщо у Вас є питання чи проблеми щодо ліцензування, авторських\
+        \ прав та інших юридичних питань.\n<br>\nЛоготип OpenStreepMap та State of\
+        \ the Map є <a href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\"\
+        >зареєстрованими торговими марками OSMF</a>."
       partners_title: Партнери
     copyright:
       foreign:
@@ -2077,12 +2079,12 @@ uk:
           href="http://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF) на
           умовах Ліцензії <a href="http://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database License</a> (ODbL).
         intro_2_html: Ви можете вільно копіювати, поширювати, передавати й змінювати
-          наші дані, посилаючись при цьому на OpenHistoricalMap та спільноту. Якщо ви
-          змінюєте наші дані чи створюєте на їх основі свої, ви повинні розповсюджувати
+          наші дані, посилаючись при цьому на OpenHistoricalMap та спільноту. Якщо
+          ви змінюєте наші дані чи створюєте на їх основі свої, ви повинні розповсюджувати
           результати під такою ж Ліцензією. Повний <a href="http://opendatacommons.org/licenses/odbl/1.0/">чинний
           текст</a> Ліцензії пояснює ваші права та обов’язки.
-        intro_3_1_html: "Наша документація поширюється на умовах <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">Ліцензії
-          Creative \nCommons Attribution-ShareAlike 2.0</a> (CC-BY-SA)."
+        intro_3_1_html: "Наша документація поширюється на умовах <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\"\
+          >Ліцензії Creative \nCommons Attribution-ShareAlike 2.0</a> (CC-BY-SA)."
         credit_title_html: Як посилатись на OpenHistoricalMap
         credit_1_html: Ми вимагаємо, щоб ви зазначали &ldquo;&copy; OpenHistoricalMap
           contributors&rdquo; або &ldquo;&copy;Учасники OpenHistoricalMap&rdquo;.
@@ -2095,14 +2097,6 @@ uk:
           посилань неможливе (наприклад друковані матеріали), ми пропонуємо посилатися
           безпосередньо на www.openstreetmap.org (або розширено "www.openstreetmap.org,
           OpenHistoricalMap") та на opendatacommons.org.
-        credit_3_1_html: |-
-          Плитки мапи в & ldquo; стандартному стилі & rdquo; на www.openstreetmap.org є
-          Виконана робота OpenHistoricalMap Foundation з використанням даних OpenHistoricalMap
-          під Ліцензією відкритих баз даних. При використанні цього стилю мапи така сама атрибуція
-          необхідні для даних мапи.
-        credit_4_html: |-
-          Для мап, що використовуються в електронному вигляді, посилання на їх джерело повинне знаходитись у кутку мапи.
-          Наприклад:
         attribution_example:
           alt: Приклад того, як треба посилатись на OpenHistoricalMap на веб-сторінці
           title: Приклад зазначення авторства
@@ -2111,66 +2105,25 @@ uk:
           посилатися на нас як на джерело, на <a href="http://osmfoundation.org/Licence">сторінці
           ліцензії OSMF</a> та у <a href="http://wiki.openstreetmap.org/wiki/Uk:Legal_FAQ">відповідях
           спільноти щодо правових питань</a>.
-        more_2_html: Хоча дані OpenHistoricalMap  є відкритими, ми не в змозі надавати
-          безкоштовний API для сторонніх користувачів. Ознайомтесь із нашими <a href="https://operations.osmfoundation.org/policies/api/">Правилами
-          використання API</a>, <a href="https://operations.osmfoundation.org/policies/tiles/">Правилами
-          використання тайлів мап</a> та <a href="https://operations.osmfoundation.org/policies/nominatim/">Правилами
-          використання сервісу Nominatim</a>.
         contributors_title_html: Наші учасники
         contributors_intro_html: 'Нашими учасниками є тисячі людей. Наші дані також
           містять дані від національних картографічних агенцій, які розповсюджуються
           на умовах відкритих ліцензій, серед них:'
-        contributors_at_html: |-
-          <strong>Австрія</strong>: дані від
-             <a href="https://data.wien.gv.at/">Stadt Wien</a> (на умовах ліцензії
-             <a href="https://creativecommons.org/licenses/by/3.0/at/deed.de">CC BY</a>), <a href="https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm">Land Vorarlberg</a> та Земля Тіроль (на умовах <a href="https://www.tirol.gv.at/applikationen/e-government/data/nutzungsbedingungen/">CC-BY AT з виправленнями</a>).
-        contributors_au_html: |-
-          <strong>Австралія</strong>: Включено або розроблено за допомогою адміністративних кордонів &copy;
-          <a href="https://geoscape.com.au/legal/data-copyright-and-disclaimer/">Geoscape Australia</a>, ліцензованих Австралійською Співдружністю за міжнародною
-          <a href="https://creativecommons.org/licenses/by/4.0/">ліцензією Creative Commons Attribution 4.0 (CC BY 4.0)</a>.
-        contributors_ca_html: '<strong>Канада</strong>: дані від GeoBase&reg;, GeoGratis
-          (&copy; Департамент природних ресурсів Канади), CanVec (&copy; Департамент
-          природних ресурсів Канади), та StatCan (Відділ Географії, Статистичне відомство
-          Канади).'
-        contributors_fi_html: |-
-          <strong>Фінляндія</strong>: містить дані з топографічної бази даних Національної земельної служби Фінляндії та інші набори даних на умовах ліцензії
-          <a href="http://www.maanmittauslaitos.fi/en/NLS_open_data_licence_version1_20120501">NLSFI</a>.
-        contributors_fr_html: '<strong>Франція</strong>: Дані отримані від Direction
-          Générale des Impôts (Генеральне управління з оподаткування).'
-        contributors_nl_html: "<strong>Нідерланди</strong>: Дані від &copy; AND, 2007
-          \n  (<a href=\"http://www.and.com\">www.and.com</a>)"
-        contributors_nz_html: '<strong>Нова Зеландія</strong>: Містить дані з <a href="https://data.linz.govt.nz/">LINZ
-          Data Service</a>, які ліцензовано на умовах Ліцензії <a href="https://creativecommons.org/licenses/by/4.0/">CC
-          BY 4.0</a>'
-        contributors_si_html: '<strong>Словенія</strong>: містить дані <a href="http://www.gu.gov.si/en/">Управління
-          Геодезії і картографії</a> та <a href="http://www.mkgp.gov.si/en/">Міністерства
-          сільського і лісового господарства та продовольства</a> (публічна інформація
-          Словенії).'
-        contributors_es_html: |-
-          <strong>Іспанія</strong>: Містить дані отримані від
-          Spanish National Geographic Institute (<a href="http://www.ign.es/">IGN</a>) та
-          National Cartographic System (<a href="http://www.scne.es/">SCNE</a>)
-          ліцензованих для повторного використання на умовах Ліцензії  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
-        contributors_za_html: "<strong>Південна Африка</strong>: Містить дані з \n
-          \ <a href=\"http://www.ngi.gov.za/\">Chief Directorate:\n  National Geo-Spatial
-          Information</a>, State copyright reserved."
-        contributors_gb_html: '<strong>Сполучене Королівство Великобританії</strong>:
-          дані Ordnance Survey &copy; Crown copyright and database right 2012.'
         contributors_footer_1_html: Щоб отримати більш докладну інформацію про ці
           та інші джерела, що були використані для покращення мапи OpenHistoricalMap,
           будь ласка, перегляньте сторінку <a href="http://wiki.openstreetmap.org/wiki/Contributors">Учасники</a>
           OpenHistoricalMap Вікі.
-        contributors_footer_2_html: Включення даних до OpenHistoricalMap не означає, що
-          постачальник цих даних якимось чином підтримує OpenHistoricalMap, надає які-небудь
-          гарантії чи бере на себе якусь  відповідальність.
+        contributors_footer_2_html: Включення даних до OpenHistoricalMap не означає,
+          що постачальник цих даних якимось чином підтримує OpenHistoricalMap, надає
+          які-небудь гарантії чи бере на себе якусь  відповідальність.
         infringement_title_html: Порушення авторських прав
         infringement_1_html: Члени спільноти OSM повинні завжди пам’ятати про те,
           що забороняється додавати дані з будь-яких захищених авторським правом джерел
           (наприклад, з Google Maps чи з друкованих мап) без отримання попереднього
           дозволу правовласників.
         infringement_2_html: Якщо ви вважаєте, що захищений авторським правом матеріал
-          був недоречно доданий до бази даних OpenHistoricalMap або до цього сайту, ознайомтесь
-          з нашим <a href="https://wiki.osmfoundation.org/wiki/Takedown_procedure">порядком
+          був недоречно доданий до бази даних OpenHistoricalMap або до цього сайту,
+          ознайомтесь з нашим <a href="https://wiki.osmfoundation.org/wiki/Takedown_procedure">порядком
           з вилучення таких даних</a> або скористайтесь безпосередньо <a href="https://dmca.openstreetmap.org/">сторінкою
           для онлайн звернень</a>.
         trademarks_title_html: <span id="trademarks"></span>Торгові марки
@@ -2185,8 +2138,8 @@ uk:
       shortlink: Кор.посил.
       createnote: Додати нотатку
       license:
-        copyright: Авторські права за OpenHistoricalMap та його учасниками на умовах відкритої
-          ліцензії
+        copyright: Авторські права за OpenHistoricalMap та його учасниками на умовах
+          відкритої ліцензії
       remote_failed: Редагування не вдалося — переконайтеся, що JOSM або Merkaartor
         завантажений та втулок дистанційного керування увімкнений.
     edit:
@@ -2251,7 +2204,8 @@ uk:
           title: Приєднатися до спільноти
           explanation_html: Якщо ви помітили, неточності в наших мапографічних даних,
             наприклад відсутня дорога або ваша адреса, найкращий спосіб це виправити —
-            приєднатись до спільноти OpenHistoricalMap і додати або виправити дані самостійно.
+            приєднатись до спільноти OpenHistoricalMap і додати або виправити дані
+            самостійно.
         add_a_note:
           instructions_html: |-
             Просто натисніть <a class='icon note'></a> або подібну піктограму на мапі.
@@ -2264,9 +2218,9 @@ uk:
           <a href='http://wiki.osmfoundation.org/wiki/Working_Groups'>робочою групою OSMF</a>.
     help:
       title: Отримання довідки
-      introduction: OpenHistoricalMap має різні ресурси для отримання інформації про проєкт,
-        щоб поставити питання та отримати відповідь, для спільного обговорення і створення
-        документації з мапінгу.
+      introduction: OpenHistoricalMap має різні ресурси для отримання інформації про
+        проєкт, щоб поставити питання та отримати відповідь, для спільного обговорення
+        і створення документації з мапінгу.
       welcome:
         url: /welcome
         title: Ласкаво просимо до OSM
@@ -2298,8 +2252,8 @@ uk:
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Для установ та організацій
-        description: Ваша установа має намір почати працювати з OpenHistoricalMap? Дізнайтесь
-          про необхідні речі на Welcome Mat.
+        description: Ваша установа має намір почати працювати з OpenHistoricalMap?
+          Дізнайтесь про необхідні речі на Welcome Mat.
       wiki:
         url: http://wiki.openstreetmap.org/
         title: OpenStreetMap Wiki
@@ -2398,16 +2352,16 @@ uk:
           toilets: Туалети
     welcome:
       title: Ласкаво просимо!
-      introduction_html: Ласкаво просимо до OpenHistoricalMap, вільної мапи світу, покращувати
-        яку може кожен. Тепер, коли ви увійшли, все готово для початку редагування.
-        Ось короткий посібник з інформацією про найважливіші речі, про які ви повинні
-        знати.
+      introduction_html: Ласкаво просимо до OpenHistoricalMap, вільної мапи світу,
+        покращувати яку може кожен. Тепер, коли ви увійшли, все готово для початку
+        редагування. Ось короткий посібник з інформацією про найважливіші речі, про
+        які ви повинні знати.
       whats_on_the_map:
         title: Що на мапі
-        on_html: На мапі OpenHistoricalMap розташовані об’єкти, які <em>існують в поточний
-          момент</em> — тобто, це мільйони будинків, доріг та інших елементів місцевості.
-          Ви можете наносити на мапу будь-які об’єкти навколишнього світу, цікаві
-          для вас.
+        on_html: На мапі OpenHistoricalMap розташовані об’єкти, які <em>існують в
+          поточний момент</em> — тобто, це мільйони будинків, доріг та інших елементів
+          місцевості. Ви можете наносити на мапу будь-які об’єкти навколишнього світу,
+          цікаві для вас.
         off_html: Мапа <em>не</em> включає суб’єктивні дані на кшталт оцінок, історичних
           або гіпотетичних характеристик та дані з джерел, які захищені авторським
           правом. Якщо ви не маєте спеціального дозволу, не копіюйте з паперових мап
@@ -2426,12 +2380,12 @@ uk:
           ресторану або обмеження швидкості на дорозі.
       rules:
         title: Правила!
-        paragraph_1_html: "В OpenHistoricalMap є кілька формальних правил, крім того,
-          ми сподіваємось, що всі учасники співпрацюватимуть зі спільнотою. Якщо ви
-          плануєте заходи, окрім ручного внесення даних, будь ласка, прочитайте та
-          дотримуйтесь наступних настанов з \n<a href='httpи://wiki.openstreetmap.org/wiki/Uk:Import/Guidelines'>Імпорту
-          даних</a> та  \n<a href='https://wiki.openstreetmap.org/wiki/Uk:Automated_Edits_code_of_conduct'>Автоматизованого
-          редагування</a>."
+        paragraph_1_html: "В OpenHistoricalMap є кілька формальних правил, крім того,\
+          \ ми сподіваємось, що всі учасники співпрацюватимуть зі спільнотою. Якщо\
+          \ ви плануєте заходи, окрім ручного внесення даних, будь ласка, прочитайте\
+          \ та дотримуйтесь наступних настанов з \n<a href='httpи://wiki.openstreetmap.org/wiki/Uk:Import/Guidelines'>Імпорту\
+          \ даних</a> та  \n<a href='https://wiki.openstreetmap.org/wiki/Uk:Automated_Edits_code_of_conduct'>Автоматизованого\
+          \ редагування</a>."
       questions:
         title: Є питання?
         paragraph_1_html: |-
@@ -2477,7 +2431,7 @@ uk:
         many: '%{count} ваших треків очікують завантаження на сервер. Будь ласка,
           дочекайтесь завершення їх завантаження перед завантаженням на сервер інших
           треків, що дозволить іншим учасникам також надіслати свої треки.'
-        other: ""
+        other: ''
     edit:
       cancel: Скасувати
       title: Редагування треку %{name}
@@ -2518,7 +2472,7 @@ uk:
         one: '%{count} точка'
         few: '%{count} точки'
         many: '%{count} точок'
-        other: ""
+        other: ''
       more: більше
       trace_details: Показати дані треку
       view_map: Перегляд мапи
@@ -2559,7 +2513,7 @@ uk:
         one: Файл GPX з %{count} точкою від %{user}
         few: Файл GPX з %{count} точками від %{user}
         many: Файл GPX з %{count} точками від %{user}
-        other: ""
+        other: ''
       description_without_count: GPX файл від %{user}
   application:
     permission_denied: Вибачте, у вас недостатньо прав для виконання цієї дії.
@@ -2853,10 +2807,10 @@ uk:
       title: Обліковий запис призупинено
       heading: Обліковий запис призупинено
       support: служби підтримки
-      body_html: " <p>\n    На жаль, ваш обліковий запис було автоматично призупинено
-        через підозрілу діяльність. \n </p>\n <p>\n    Це рішення буде розглянуто
-        найближчим часом адміністратором, або ви можете звернутись до %{webmaster},
-        якщо ви бажаєте обговорити цей випадок.\n </p>"
+      body_html: " <p>\n    На жаль, ваш обліковий запис було автоматично призупинено\
+        \ через підозрілу діяльність. \n </p>\n <p>\n    Це рішення буде розглянуто\
+        \ найближчим часом адміністратором, або ви можете звернутись до %{webmaster},\
+        \ якщо ви бажаєте обговорити цей випадок.\n </p>"
     auth_failure:
       connection_failed: Збій з’єднання з постачальником послуг автентифікації
       invalid_credentials: Недійсні облікові дані для автентифікації
@@ -2866,8 +2820,8 @@ uk:
       unknown_error: Помилка автентифікації
     auth_association:
       heading: Ваш ID ще не пов'язаний з обліковим записом OpenHistoricalMap.
-      option_1: Якщо ви вперше в OpenHistoricalMap – створіть новий обліковий запис, використовуючи
-        форму нижче.
+      option_1: Якщо ви вперше в OpenHistoricalMap – створіть новий обліковий запис,
+        використовуючи форму нижче.
       option_2: Якщо у вас вже є обліковий запис, то ви можете увійти до нього, використовуючи
         своє прізвисько та пароль, а потім звʼязати обліковий запис із вашим ID у
         налаштуваннях.
@@ -2951,27 +2905,27 @@ uk:
           one: '%{count} година'
           few: '%{count} години'
           many: '%{count} годин'
-          other: ""
+          other: ''
         days:
           one: 1 день
           few: '%{count} дні'
           many: '%{count} днів'
-          other: ""
+          other: ''
         weeks:
           one: 1 тиждень
           few: '%{count} тижні'
           many: '%{count} тижнів'
-          other: ""
+          other: ''
         months:
           one: '%{count} місяць'
           few: '%{count} місяці'
           many: '%{count} місяців'
-          other: ""
+          other: ''
         years:
           one: '%{count} рік'
           few: '%{count} роки'
           many: '%{count} років'
-          other: ""
+          other: ''
     blocks_on:
       title: Блокування для %{name}
       heading_html: Перелік блокувань учасника %{name}
@@ -3058,12 +3012,12 @@ uk:
           one: Ви перебуваєте за один метр від цієї точки
           few: Ви перебуваєте за %{count} метри від цієї точки
           many: Ви перебуваєте за %{count} метрів від цієї точки
-          other: ""
+          other: ''
         feetPopup:
           one: Ви перебуваєте за %{count} фут від цієї точки
           few: Ви перебуваєте за %{count} фути від цієї точки
           many: Ви перебуваєте за %{count} футів від цієї точки
-          other: ""
+          other: ''
       base:
         standard: Стандартний
         cyclosm: ЦиклОСМ

@@ -721,20 +721,20 @@ sc:
   user_mailer:
     diary_comment_notification:
       hi: Salude %{to_user},
-      header: '%{from_user} at cummentadu s''intrada cuotidiana de OpenHistoricalMap cun
-        su tema %{subject}:'
+      header: "%{from_user} at cummentadu s'intrada cuotidiana de OpenHistoricalMap\
+        \ cun su tema %{subject}:"
       footer: Podes lèghere su cummentu fintzas in %{readurl} e cummentare in %{commenturl}
         o rispònnere in %{replyurl}
     message_notification:
       hi: Salude %{to_user},
-      header: '%{from_user} at imbiadu unu messàgiu a traessu de OpenHistoricalMap cun
-        su tema %{subject}:'
+      header: '%{from_user} at imbiadu unu messàgiu a traessu de OpenHistoricalMap
+        cun su tema %{subject}:'
       footer_html: Podes lèghere su messàgiu fintzas in %{readurl} e podes rispònnere
         in %{replyurl}
     friendship_notification:
       hi: Salude %{to_user},
-      subject: '[OpenHistoricalMap] %{user} t''at annànghidu a sa lista de amigos'
-      had_added_you: '%{user} t''at annantu comente a amigu in OpenHistoricalMap.'
+      subject: "[OpenHistoricalMap] %{user} t'at annànghidu a sa lista de amigos"
+      had_added_you: "%{user} t'at annantu comente a amigu in OpenHistoricalMap."
       see_their_profile: Podes bìdere su profilu suo in %{userurl}.
       befriend_them: Lu/a podes fintzas annànghere comente a amigu/a in %{befriendurl}.
     gpx_failure:
@@ -749,11 +749,11 @@ sc:
       greeting: Salude!
       created: Calicunu (isperamus tue matessi) at creadu commo·commo unu contu a
         %{site_url}.
-      confirm: 'Primu de totu, depimus cunfirmare chi custa petitzione de creatzione
-        de contu est bostra; si l''est, incarcades subra su ligàmene imbeniente pro
-        la cunfirmare:'
+      confirm: "Primu de totu, depimus cunfirmare chi custa petitzione de creatzione\
+        \ de contu est bostra; si l'est, incarcades subra su ligàmene imbeniente pro\
+        \ la cunfirmare:"
     email_confirm:
-      subject: '[OpenHistoricalMap] Cunfirma s''indiritzu de posta'
+      subject: "[OpenHistoricalMap] Cunfirma s'indiritzu de posta"
       greeting: Salude,
       hopefully_you: Calicunu (isperamus tue matessi) cheret cambiare s'indiritzu
         eletrònicu tuo dae %{server_url} cun %{new_address}.

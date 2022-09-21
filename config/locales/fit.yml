@@ -433,11 +433,12 @@ fit:
     feed:
       user:
         title: Käyttäjän %{user} OpenHistoricalMap-päiväkirjamerkinnät
-        description: Tuoreimmat OpenHistoricalMapin päiväkirjamerkinnät käyttäjältä %{user}
+        description: Tuoreimmat OpenHistoricalMapin päiväkirjamerkinnät käyttäjältä
+          %{user}
       language:
         title: OpenHistoricalMap-päiväkirjamerkinnät kielellä %{language_name}
-        description: Viimisimmät päiväkirjamerkinnät OpenHistoricalMapin käyttäjiltä kielellä
-          %{language_name}
+        description: Viimisimmät päiväkirjamerkinnät OpenHistoricalMapin käyttäjiltä
+          kielellä %{language_name}
       all:
         title: OpenHistoricalMap-päiväkirjamerkinnät
         description: Verekset OpenHistoricalMapin käyttäjitten päiväkirjamerkinnät
@@ -800,22 +801,23 @@ fit:
         <a href='https://blogs.openstreetmap.org/'>yhteisöblogeja</a> ja
         <a href='https://www.osmfoundation.org/'>OSM-säätiön</a> verkkosivua.
       open_data_title: Avvoin taatta
-      open_data_html: 'OpenHistoricalMap oon <i>avointa taattaa</i>: palvelua saa käyttää
-        vapaasti mihin tahansa, kunhan OpenHistoricalMap tekijöineen mainitaan. Jos palvelua
-        kehitetään tai muuunnellaan, sitä saa levittää eteenpäin vain samala lisensillä.
-        Lisätietoja oon <a href=''%{copyright_path}''>Tekijänoikeus ja lisensi</a>
-        -sivula.'
+      open_data_html: "OpenHistoricalMap oon <i>avointa taattaa</i>: palvelua saa\
+        \ käyttää vapaasti mihin tahansa, kunhan OpenHistoricalMap tekijöineen mainitaan.\
+        \ Jos palvelua kehitetään tai muuunnellaan, sitä saa levittää eteenpäin vain\
+        \ samala lisensillä. Lisätietoja oon <a href='%{copyright_path}'>Tekijänoikeus\
+        \ ja lisensi</a> -sivula."
       legal_title: Lakitekninen jako
-      legal_1_html: "Tämä ja monet muut OSM-sivustot ovat muodollisesti <a href='https://osmfoundation.org/'>OpenHistoricalMap-säätiön</a>
-        (OSMF) hallinnoimia OSM-yhteisön puolesta. Kaikkien näiden sivustojen käythöön
-        sovelletaan <a href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\">\nsallitun
-        käytön käytäntöjä</a>, <a href=\"https://wiki.osmfoundation.org/wiki/Terms_of_Use\">käyttöehtoja</a>
-        ja <a href=\"https://wiki.osmfoundation.org/wiki/Privacy_Policy\">tietosuojakäytäntöä</a>
-        (molemmat sisällöt saatavilla vain englanniksi).\n<br> \n<a href='https://osmfoundation.org/Contact'>Ota
-        yhteys OSMF:ään</a> lisensointi-, tekijänoikeus- ja muissa lakiteknisissä
-        kysymyksissä.\n<br>\nNimi OpenHistoricalMap, suurennuslasilogo ja slogan State
-        of the Map ovat <a href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\">säätiön
-        rekisteröimiä tavaramerkkejä</a>."
+      legal_1_html: "Tämä ja monet muut OSM-sivustot ovat muodollisesti <a href='https://osmfoundation.org/'>OpenHistoricalMap-säätiön</a>\
+        \ (OSMF) hallinnoimia OSM-yhteisön puolesta. Kaikkien näiden sivustojen käythöön\
+        \ sovelletaan <a href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\"\
+        >\nsallitun käytön käytäntöjä</a>, <a href=\"https://wiki.osmfoundation.org/wiki/Terms_of_Use\"\
+        >käyttöehtoja</a> ja <a href=\"https://wiki.osmfoundation.org/wiki/Privacy_Policy\"\
+        >tietosuojakäytäntöä</a> (molemmat sisällöt saatavilla vain englanniksi).\n\
+        <br> \n<a href='https://osmfoundation.org/Contact'>Ota yhteys OSMF:ään</a>\
+        \ lisensointi-, tekijänoikeus- ja muissa lakiteknisissä kysymyksissä.\n<br>\n\
+        Nimi OpenHistoricalMap, suurennuslasilogo ja slogan State of the Map ovat\
+        \ <a href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\">säätiön\
+        \ rekisteröimiä tavaramerkkejä</a>."
       partners_title: Kumppanit
     copyright:
       foreign:
@@ -836,26 +838,25 @@ fit:
           OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> oon <i>avointa taattaa</i>, jonka <a
           href="https://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF) oon lisensoinut <a
           href="https://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database -lisensillä</a> (ODbL).
-        intro_2_html: "OpenHistoricalMapin karttoja ja tietoja voi kopioida, levittää,
-          välittää ja mukauttaa, \nkunhan OpenHistoricalMap ja sen tekijät mainitaan.
-          Jos karttoja tai tietoja muutethaan tai kehitethään, niitä saa levithää
-          vain samalla lisensilä.\n<a href=\"https://opendatacommons.org/licenses/odbl/1.0/\">Lakitekstissä</a>
-          mainitaan levittäjän oikeudet ja velvollisuudet."
+        intro_2_html: "OpenHistoricalMapin karttoja ja tietoja voi kopioida, levittää,\
+          \ välittää ja mukauttaa, \nkunhan OpenHistoricalMap ja sen tekijät mainitaan.\
+          \ Jos karttoja tai tietoja muutethaan tai kehitethään, niitä saa levithää\
+          \ vain samalla lisensilä.\n<a href=\"https://opendatacommons.org/licenses/odbl/1.0/\"\
+          >Lakitekstissä</a> mainitaan levittäjän oikeudet ja velvollisuudet."
         intro_3_1_html: |-
           Kartta-aineisto ja dokumentaatio oon lisensoitu <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.fi">Creative
           Commons Nimeä-Jaa samoin 2.0</a> -lisensillä (CC-BY-SA).
         credit_title_html: OpenHistoricalMapin mainitseminen
         credit_1_html: OpenHistoricalMapin sisältöä levitettäessä oon mainittava teksti
-          &quot;&copy; OpenHistoricalMapin tekijät&quot; tai sen engelskankielinen vastine
-          &quot;&copy; OpenHistoricalMap contributors&quot;.
-        credit_2_1_html: "Levittäjän tulee tehdä selväksi, ette aineisto oon saatavilla
-          Open Database -lisensillä\nja kartta-aineisto CC-BY-SA-lisensillä. Tämä
-          voidaan tehdä sijoittamalla sivule länkki\n<a href=\"https://www.openstreetmap.org/copyright\">tälle
-          tekijänoikeussivule</a>. \nJos länkkien käyttö ei ole mahollista (esimerkiksi
-          paperille printattu aineisto),\nsuosittelemme ohjaamaan lukijat atresseihin
-          www.openstreetmap.org, opendatacommons.org ja tarvittaessa myös creativecommons.org."
-        credit_4_html: 'Sivustolle upotetun interaktiivisen karttaikkunan tulee sisältää
-          tekijän nimi kartan alaosassa:'
+          &quot;&copy; OpenHistoricalMapin tekijät&quot; tai sen engelskankielinen
+          vastine &quot;&copy; OpenHistoricalMap contributors&quot;.
+        credit_2_1_html: "Levittäjän tulee tehdä selväksi, ette aineisto oon saatavilla\
+          \ Open Database -lisensillä\nja kartta-aineisto CC-BY-SA-lisensillä. Tämä\
+          \ voidaan tehdä sijoittamalla sivule länkki\n<a href=\"https://www.openstreetmap.org/copyright\"\
+          >tälle tekijänoikeussivule</a>. \nJos länkkien käyttö ei ole mahollista\
+          \ (esimerkiksi paperille printattu aineisto),\nsuosittelemme ohjaamaan lukijat\
+          \ atresseihin www.openstreetmap.org, opendatacommons.org ja tarvittaessa\
+          \ myös creativecommons.org."
         attribution_example:
           alt: Esimerkki siitä, miten nimetä OpenHistoricalMap nettisivula
           title: Nimeämisesimerkki
@@ -1037,14 +1038,14 @@ fit:
         exit_counts:
           first: ensimmäisestä
           second: toisesta
-          third: "3."
-          fourth: "4."
-          fifth: "5."
-          sixth: "6."
-          seventh: "7."
-          eighth: "8."
-          ninth: "9."
-          tenth: "10."
+          third: '3.'
+          fourth: '4.'
+          fifth: '5.'
+          sixth: '6.'
+          seventh: '7.'
+          eighth: '8.'
+          ninth: '9.'
+          tenth: '10.'
       time: Matka-aika
     query:
       node: Piste

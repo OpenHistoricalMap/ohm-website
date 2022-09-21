@@ -1283,8 +1283,8 @@ sl:
     edit_with: Za urejanje uporabi %{editor}
     tag_line: Prost wiki zemljevid sveta
     intro_header: Dobrodošli na OpenHistoricalMap!
-    intro_text: OpenHistoricalMap je zemljevid sveta, ki ga ustvarjajo ljudje kot ste
-      vi, brezplačen za uporabo z odprto licenco.
+    intro_text: OpenHistoricalMap je zemljevid sveta, ki ga ustvarjajo ljudje kot
+      ste vi, brezplačen za uporabo z odprto licenco.
     intro_2_create_account: Ustvarite uporabniški račun
     hosting_partners_html: Gostovanje omogočajo %{ucl}, %{bytemark} in drugi %{partners}.
     partners_ucl: UCL
@@ -1293,8 +1293,8 @@ sl:
     tou: Pogoji uporabe
     osm_offline: Baza OpenHistoricalMap zaradi izvajanja nujnih vzdrževalnih del trenutno
       ni dostopna.
-    osm_read_only: Baza OpenHistoricalMap je zaradi izvajanja nujnih vzdrževalnih del
-      trenutno dostopna le za branje.
+    osm_read_only: Baza OpenHistoricalMap je zaradi izvajanja nujnih vzdrževalnih
+      del trenutno dostopna le za branje.
     donate: Podprite OpenHistoricalMap z %{link} v fond za nadgradnjo strojne opreme.
     help: Pomoč
     about: O projektu
@@ -1364,16 +1364,19 @@ sl:
       anonymous: Brezimni uporabnik
       greeting: Živijo,
       commented:
-        subject_own: '[OpenHistoricalMap] %{commenter} je komentiral eno izmed vaših opomb'
-        subject_other: '[OpenHistoricalMap] %{commenter} je komentiral opombo, ki vas
-          zanima'
+        subject_own: '[OpenHistoricalMap] %{commenter} je komentiral eno izmed vaših
+          opomb'
+        subject_other: '[OpenHistoricalMap] %{commenter} je komentiral opombo, ki
+          vas zanima'
         your_note: '%{commenter} je pustil/-a komentar za opombo na zemljevidu v bližini
           %{place}.'
         commented_note: '%{commenter} je pustil/-a komentar za opombo na zemljevidu,
           ki ste jo vi komentirali. Opomba je v bližini %{place}.'
       closed:
-        subject_own: '[OpenHistoricalMap] %{commenter} je rešil/-a eno izmed vaših opomb'
-        subject_other: '[OpenHistoricalMap] %{commenter} je rešil/-a opombo, ki vas zanima'
+        subject_own: '[OpenHistoricalMap] %{commenter} je rešil/-a eno izmed vaših
+          opomb'
+        subject_other: '[OpenHistoricalMap] %{commenter} je rešil/-a opombo, ki vas
+          zanima'
         your_note: '%{commenter} je rešil/-a eno vaših opomb na zemljevidu v bližini
           %{place}.'
         commented_note: '%{commenter} je rešil/-a opombo na zemljevidu, ki ste jo
@@ -1566,8 +1569,8 @@ sl:
         uporabniškim imenom in geslom:'
       with external: 'Lahko pa uporabite prijavo tretje osebe:'
       new to osm: Ste novi na OpenHistoricalMap?
-      to make changes: Če želite spreminjati podatke na OpenHistoricalMap, morate imeti
-        račun.
+      to make changes: Če želite spreminjati podatke na OpenHistoricalMap, morate
+        imeti račun.
       create account minute: Naredite si račun. To vam bo vzelo le minuto.
       no account: Še nimate uporabniškega računa?
       account not active: Oprostite, vaš uporabniški račun še ni aktiven.<br />Za
@@ -1649,24 +1652,20 @@ sl:
         mapping_link: začnete kartirati
       legal_babble:
         title_html: Avtorske pravice in licenca
-        intro_1_html: OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> so <i>prosti
-          podatki</i> z dovoljenjem <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open
+        intro_1_html: OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup>
+          so <i>prosti podatki</i> z dovoljenjem <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open
           Data Commons Open Database License</a> (ODbL) <a href="https://osmfoundation.org/">Fundacije
           OpenHistoricalMap</a> (OSMF).
-        intro_2_html: "Naše podatke lahko prosto kopirate, razširjate, prenašate\nin
-          prilagajate dokler kot vir navedete OpenHistoricalMap in \nsodelavce. Če podatke
-          spremenite ali obogatite jih lahko\nrazširjate le pod enakimi licenčnimi
-          pogoji. Polno\n<a href=\"https://opendatacommons.org/licenses/odbl/1.0/\">besedilo\nlicence</a>
-          opisuje vaše pravice in obveznosti."
+        intro_2_html: "Naše podatke lahko prosto kopirate, razširjate, prenašate\n\
+          in prilagajate dokler kot vir navedete OpenHistoricalMap in \nsodelavce.\
+          \ Če podatke spremenite ali obogatite jih lahko\nrazširjate le pod enakimi\
+          \ licenčnimi pogoji. Polno\n<a href=\"https://opendatacommons.org/licenses/odbl/1.0/\"\
+          >besedilo\nlicence</a> opisuje vaše pravice in obveznosti."
         intro_3_1_html: Kartografija v obliki slik zemljevida in naša dokumentacija
           sta na voljo pod pogoji <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.sl">Priznanje
           avtorstva-Deljenje pod enakimi pogoji 2.0</a> license (CC BY-SA).
         credit_title_html: Kako pripisati zasluge projektu OpenHistoricalMap
         contributors_title_html: Naši sodelavci
-        contributors_si_html: |-
-          <strong>Slovenija</strong>: Vsebuje javne podatke
-          <a href="http://www.gu.gov.si">Geodetske uprave Republike Slovenije</a> in
-          <a href="http://www.mkgp.gov.si">Ministrstva za kmetijstvo, gozdarstvo in prehrano</a>.
         contributors_footer_1_html: |-
           Za več podrobnosti o teh in drugih virih, ki so bili uporabljeni kot pripomočki pri izboljševanju OpenHistoricalMap, si prosimo oglejte <a
           href="https://wiki.openstreetmap.org/wiki/Contributors">stran sodelujočih</a> na wikiju OpenHistoricalMap.
@@ -1705,9 +1704,9 @@ sl:
         Data Commons Open Database License</a> (ODbL).
       too_large:
         advice: 'Če zgornji izvoz spodleti, uporabite enega od spodnjih virov:'
-        body: 'To področje je preveliko za izvoz v XML OpenHistoricalMap. Prosimo, da
-          se približate ali izberete manjše področje ali pa da uporabite enega od
-          naslednjih virov za obsežen prenos podatkov:'
+        body: 'To področje je preveliko za izvoz v XML OpenHistoricalMap. Prosimo,
+          da se približate ali izberete manjše področje ali pa da uporabite enega
+          od naslednjih virov za obsežen prenos podatkov:'
         planet:
           title: Planet OSM
           description: Redno posodabljane kopije celotne podatkovne zbirke OpenHistoricalMap
@@ -1759,8 +1758,8 @@ sl:
       help:
         url: https://help.openstreetmap.org/
         title: Forum za pomoč
-        description: Zastavite vprašanje ali poiščete odgovore v OpenHistoricalMap zbirki
-          vprašanj in odgovorov.
+        description: Zastavite vprašanje ali poiščete odgovore v OpenHistoricalMap
+          zbirki vprašanj in odgovorov.
       mailing_lists:
         title: Poštni seznami
         description: Zastavi vprašanje ali razpravljaj o zanimivih temah na številnih
@@ -1900,10 +1899,10 @@ sl:
         paragraph_1_html: Če si želite popraviti kakšno majhno napako in nimate časa
           za prijavo oziroma za spoznati kaj več o urejanju, lahko enostavneje le
           dodati opombo.
-        paragraph_2_html: 'Samo pojdite na <a href=''%{map_url}''>zemljevid</a> in
-          kliknite ikono opombe: <span class=''icon note''></span>. Tako boste na
-          zemljevid dodali oznako, ki jo lahko premaknete z vlečenjem. Dodajte vašo
-          opombo in nato kliknite Shrani. Drugi kartografi bodo to preiskali.'
+        paragraph_2_html: "Samo pojdite na <a href='%{map_url}'>zemljevid</a> in kliknite\
+          \ ikono opombe: <span class='icon note'></span>. Tako boste na zemljevid\
+          \ dodali oznako, ki jo lahko premaknete z vlečenjem. Dodajte vašo opombo\
+          \ in nato kliknite Shrani. Drugi kartografi bodo to preiskali."
   traces:
     visibility:
       private: Zasebna (v skupni rabi kot anonimna, neurejene točke)
@@ -2529,16 +2528,16 @@ sl:
         unnamed: neimenovano
         courtesy: Navodila prispeva %{link}
         exit_counts:
-          first: "1."
-          second: "2."
-          third: "3."
-          fourth: "4."
-          fifth: "5."
-          sixth: "6."
-          seventh: "7."
-          eighth: "8."
-          ninth: "9."
-          tenth: "10."
+          first: '1.'
+          second: '2.'
+          third: '3.'
+          fourth: '4.'
+          fifth: '5.'
+          sixth: '6.'
+          seventh: '7.'
+          eighth: '8.'
+          ninth: '9.'
+          tenth: '10.'
       time: Čas
     query:
       node: Vozlišče

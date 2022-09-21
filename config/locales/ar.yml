@@ -333,7 +333,7 @@ ar:
     no_comment: (لا تعليق)
     part_of: جزء من
     part_of_ways:
-      zero: ""
+      zero: ''
       one: طريق واحد
       two: طريقين
       few: '%{count} طرق'
@@ -1530,8 +1530,8 @@ ar:
         %{people_mapping_nearby_link}؟
       people_mapping_nearby: مخططون في جواري
     reply:
-      wrong_user: "\uFEFFأنت مسجل للدخول باسم '%{user}' ولكن الرسالة التي طلبت الرد
-        عليها لم تكن مرسلة لذلك المستخدم؛ يُرجَى تسجيل الدخول كمستخدم صحيح للرد."
+      wrong_user: "\uFEFFأنت مسجل للدخول باسم '%{user}' ولكن الرسالة التي طلبت الرد\
+        \ عليها لم تكن مرسلة لذلك المستخدم؛ يُرجَى تسجيل الدخول كمستخدم صحيح للرد."
     show:
       title: اقرأ الرسالة
       from: من
@@ -1542,8 +1542,8 @@ ar:
       destroy_button: احذف
       back: رجوع
       to: إلى
-      wrong_user: "\uFEFFأنت مسجل للدخول باسم '%{user}' ولكن الرسالة التي طلبت قراءتها
-        لم تكن من أو إلى ذلك المستخدم؛ يُرجَى تسجيل الدخول كمستخدم صحيح للرد."
+      wrong_user: "\uFEFFأنت مسجل للدخول باسم '%{user}' ولكن الرسالة التي طلبت قراءتها\
+        \ لم تكن من أو إلى ذلك المستخدم؛ يُرجَى تسجيل الدخول كمستخدم صحيح للرد."
     sent_message_summary:
       destroy_button: حذف
     mark:
@@ -1662,8 +1662,8 @@ ar:
     about:
       next: التالي
       copyright_html: <span>&copy;</span>OpenHistoricalMap<br>contributors
-      used_by_html: 'OpenHistoricalMap تدعم البيانات على آلالاف من مواقع الويب وتطبيقات الجوّال
-        والأجهزة'
+      used_by_html: OpenHistoricalMap تدعم البيانات على آلالاف من مواقع الويب وتطبيقات
+        الجوّال والأجهزة
       lede_text: تم بناء خريطة الشارع المفتوحة من قبل مجتمع من مصممي الخرائط، وتساهم
         وتحافظ على البيانات حول الطرق والممرات والمقاهي ومحطات السكك الحديدية، وأكثر
         من ذلك بكثير، في جميع أنحاء العالم.
@@ -1673,20 +1673,20 @@ ar:
         الصور الجوية وأجهزة GPS والخرائط الميدانية ذات التقنية المنخفضة للتحقق من ذلك خريطة الشارع المفتوحة
         دقيقة وحديثة.
       community_driven_title: نابعة من المجتمع المحلي
-      community_driven_html: "مجتمع خريطة الشارع المفتوحة متنوع ومتحمس وينمو كل يوم،
-        \nيشمل المساهمون لدينا مصممي خرائط متحمسون، ومهنيي نظم المعلومات الجغرافية،
-        والمهندسون \nالذين يديرون خوادم خريطة الشارع المفتوحة، والمساعدات الإنسانية
-        للمناطق المتضررة من الكوارث،\nوغيرها الكثير،\nلمعرفة المزيد حول المجتمع; راجع
-        \n<a href='https://blog.openstreetmap.org'>مدونة خريطة الشارع المفتوحة</a>،\nو<a
-        href='%{diary_path}'> يوميات المستخدم</a>،\nو<a href='https://blogs.openstreetmap.org/'>مدونات
-        المجتمع</a>،\nوموقع the <a href='https://www.osmfoundation.org/'>مؤسسة خريطة
-        الشارع المفتوحة</a>."
+      community_driven_html: "مجتمع خريطة الشارع المفتوحة متنوع ومتحمس وينمو كل يوم،\
+        \ \nيشمل المساهمون لدينا مصممي خرائط متحمسون، ومهنيي نظم المعلومات الجغرافية،\
+        \ والمهندسون \nالذين يديرون خوادم خريطة الشارع المفتوحة، والمساعدات الإنسانية\
+        \ للمناطق المتضررة من الكوارث،\nوغيرها الكثير،\nلمعرفة المزيد حول المجتمع;\
+        \ راجع \n<a href='https://blog.openstreetmap.org'>مدونة خريطة الشارع المفتوحة</a>،\n\
+        و<a href='%{diary_path}'> يوميات المستخدم</a>،\nو<a href='https://blogs.openstreetmap.org/'>مدونات\
+        \ المجتمع</a>،\nوموقع the <a href='https://www.osmfoundation.org/'>مؤسسة خريطة\
+        \ الشارع المفتوحة</a>."
       open_data_title: البيانات المفتوحة
-      open_data_html: "خريطة الشارع المفتوحة <i>بيانات مفتوحة</i>: أنت حر في استخدامها
-        لأي غرض\nطالما أنك تقوم بإحالة خريطة الشارع المفتوحة والمساهمين فيها، إذا
-        عدلت أو \nبنيت على البيانات بطرق معينة، فلا يجوز لك توزيع النتيجة إلا \nتحت
-        نفس الترخيص، راجع <a href='%{copyright_path}'>صفحة حقوق\nالطبع والنشر والترخيص</a>
-        للتفاصيل."
+      open_data_html: "خريطة الشارع المفتوحة <i>بيانات مفتوحة</i>: أنت حر في استخدامها\
+        \ لأي غرض\nطالما أنك تقوم بإحالة خريطة الشارع المفتوحة والمساهمين فيها، إذا\
+        \ عدلت أو \nبنيت على البيانات بطرق معينة، فلا يجوز لك توزيع النتيجة إلا \n\
+        تحت نفس الترخيص، راجع <a href='%{copyright_path}'>صفحة حقوق\nالطبع والنشر\
+        \ والترخيص</a> للتفاصيل."
       legal_title: قانوني
       legal_1_html: |-
         يتم تشغيل هذا الموقع والعديد من الخدمات الأخرى ذات الصلة رسميا بواسطة
@@ -1719,10 +1719,10 @@ ar:
           OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup>  عبارة عن <i> بيانات مفتوحة</i>، ومرخصة تحت <a
           href="https://opendatacommons.org/licenses/odbl/">رخصة قاعدة بيانات حرة</a> (ODbL)
           بواسطة <a href="https://osmfoundation.org/">مؤسسة خريطة الشارع المفتوحة</a> (OSMF).
-        intro_2_html: "أنت حر في نسخ، وتوزيع، ونقل وتطويع بياناتنا، \nطالما أنك تقيد
-          خريطة الشارع المفتوحة\nوالمساهمين فيها، إذا عدلت أو بنيت على بياناتنا، \nفلا
-          يحق لك توزيع النتيجة إلا تحت نفس الترخيص، و\n<a href=\"https://opendatacommons.org/licenses/odbl/1.0/\">الكود
-          القانوني</a> الكامل يشرح حقوقك ومسؤولياتك."
+        intro_2_html: "أنت حر في نسخ، وتوزيع، ونقل وتطويع بياناتنا، \nطالما أنك تقيد\
+          \ خريطة الشارع المفتوحة\nوالمساهمين فيها، إذا عدلت أو بنيت على بياناتنا،\
+          \ \nفلا يحق لك توزيع النتيجة إلا تحت نفس الترخيص، و\n<a href=\"https://opendatacommons.org/licenses/odbl/1.0/\"\
+          >الكود القانوني</a> الكامل يشرح حقوقك ومسؤولياتك."
         intro_3_1_html: |-
           يتم  ترخيص رسم الخرائط في بلاط خرائطنا، ووثائقنا
           بموجب ترخيص <a href="https://creativecommons.org/licenses/by-sa/2.0/">رخصة المشاع الإبداعي: النسبة-الترخيص بالمثل 2.0</a> (CC BY-SA).
@@ -1730,17 +1730,15 @@ ar:
         credit_1_html: |-
           نطلب منك استخدام الائتمان &ldquo;&copy; OpenHistoricalMap
           contributors&rdquo;.
-        credit_2_1_html: "يجب أيضا أن توضح أن البيانات متوفرة بموجب ترخيص\nقاعدة البيانات
-          المفتوحة، وفي حالة استخدام بلاط خرائطنا، يتم \nترخيص رسم الخرائط كـCC BY-SA،
-          يمكنك القيام بذلك عن طريق الربط بـ\n<a href=\"https://www.openstreetmap.org/copyright\">صفحة
-          حقوق الطبع والنشر هذه</a>.\nبدلا من ذلك، وكشرط إذا كنت تقوم بتوزيع خريطة
-          الشارع المفتوحة في \nنموذج بيانات، فيمكنك التسمية والربط مباشرةً إلى الترخيص(التراخيص).
-          في وسائل الإعلام\nحيث الروابط غير ممكنة (مثل الأعمال المطبوعة)، نقترح عليك
-          \nتوجيه القراء إلى openstreetmap.org (ربما عن طريق توسيع \n'OpenHistoricalMap'
-          إلى هذا العنوان الكامل)، وإلى opendatacommons.org، \nوإذا كان ذلك مناسبا،
-          إلى creativecommons.org."
-        credit_4_html: 'للحصول على الخريطة الإلكترونية للتصفح; يجب أن يظهر الائتمان
-          في زاوية من الخريطة، مثلا:'
+        credit_2_1_html: "يجب أيضا أن توضح أن البيانات متوفرة بموجب ترخيص\nقاعدة البيانات\
+          \ المفتوحة، وفي حالة استخدام بلاط خرائطنا، يتم \nترخيص رسم الخرائط كـCC\
+          \ BY-SA، يمكنك القيام بذلك عن طريق الربط بـ\n<a href=\"https://www.openstreetmap.org/copyright\"\
+          >صفحة حقوق الطبع والنشر هذه</a>.\nبدلا من ذلك، وكشرط إذا كنت تقوم بتوزيع\
+          \ خريطة الشارع المفتوحة في \nنموذج بيانات، فيمكنك التسمية والربط مباشرةً\
+          \ إلى الترخيص(التراخيص). في وسائل الإعلام\nحيث الروابط غير ممكنة (مثل الأعمال\
+          \ المطبوعة)، نقترح عليك \nتوجيه القراء إلى openstreetmap.org (ربما عن طريق\
+          \ توسيع \n'OpenHistoricalMap' إلى هذا العنوان الكامل)، وإلى opendatacommons.org،\
+          \ \nوإذا كان ذلك مناسبا، إلى creativecommons.org."
         attribution_example:
           alt: مثال على كيفية إسناد خريطة الشارع المفتوحة على صفحة ويب
           title: مثال الإسناد
@@ -1748,66 +1746,9 @@ ar:
         more_1_html: |-
           اقرأ المزيد حول استخدام بياناتنا ، وكيفية اعتمادنا ، على <a
           href = "https://osmfoundation.org/Licence"> صفحة ترخيص OSMF </a>
-        more_2_html: "على الرغم من أن خريطة الشارع المفتوحة عبارة عن بيانات مفتوحة،
-          إلا أنه لا يمكننا توفير \nواجهة برمجة تطبيقات خريطة حرة للأطراف الثالثة،
-          \nراجع <a href=\"https://operations.osmfoundation.org/policies/api/\">سياسة
-          استخدام واجهة برمجة التطبيقات</a>،\nو<a href=\"https://operations.osmfoundation.org/policies/tiles/\">سياسة
-          استخدام البلاط</a>،\nو<a href=\"https://operations.osmfoundation.org/policies/nominatim/\">سياسة
-          الاستخدام حسب الاسم</a> لدينا."
         contributors_title_html: المساهمين
-        contributors_intro_html: "مساهمونا هم آلاف الأفراد، نوفر أيضا \nبيانات مرخصة
-          بشكلٍ مفتوح من وكالات الخرائط الوطنية \nوغيرها من المصادر، من بينها:"
-        contributors_at_html: |-
-          <strong> النمسا </ strong>: يحتوي على بيانات من
-          <a href="https://data.wien.gv.at/"> Stadt Wien </a> (under
-          <a href="https://creativecommons.org/licenses/by/3.0/at/deed.de"> CC BY </a>) ،
-          <a href="https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm"> Land Vorarlberg </a> and
-          Land Tirol (ضمن <a href="https://www.tirol.gv.at/applikationen/e-government/data/nutzungsbedingungen/"> CC BY AT مع التعديلات </a>).
-        contributors_au_html: |-
-          <strong>أستراليا</strong>: تحتوي على البيانات المستمدة من
-          <a href="https://www.psma.com.au/psma-data-copyright-and-disclaimer">PSMA Australia Limited</a>
-          المرخصة بواسطة كومنولث أستراليا تحت
-          <a href="https://creativecommons.org/licenses/by/4.0/">رخصة المشاع الإبداعي: النسبة-الترخيص بالمثل 4.0</a>.
-        contributors_ca_html: |-
-          <strong> كندا </ strong>: يحتوي على بيانات من
-          GeoBase & reg ؛، GeoGratis (& copy؛ Department of Natural
-          موارد كندا) ، CanVec (& نسخ ؛ قسم الطبيعية
-          الموارد الكندية) ، و StatCan (قسم الجغرافيا ،
-          إحصائيات كندا).
-        contributors_fi_html: |-
-          <strong> فنلندا </ strong>: تحتوي على بيانات من
-          مسح الأراضي الوطني لقاعدة بيانات طبوغرافية فنلندا
-          ومجموعات البيانات الأخرى ، تحت
-          <a href="https://www.maanmittauslaitos.fi/en/opendata-licence-version1"> ترخيص NLSFI </a>.
-        contributors_fr_html: |-
-          <strong> فرنسا </ strong>: تحتوي على بيانات مصدرها
-          الاتجاه العام لمقاطعة Impôts.
-        contributors_nl_html: |-
-          <strong> هولندا </ strong>: تحتوي على & نسخ؛ والبيانات ، 2007
-          (<a href="https://www.and.com"> www.and.com </a>)
-        contributors_nz_html: |-
-          <strong> نيوزيلندا </ strong>: يحتوي على بيانات مصدرها
-          <a href="https://data.linz.govt.nz/"> LINZ Data Service </a> و
-          مرخص لإعادة استخدامها تحت
-          <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a>.
-        contributors_si_html: |-
-          <strong> سلوفينيا </ strong>: تحتوي على بيانات من
-          <a href="http://www.gu.gov.si/en/"> Authority Survey and Mapping Authority </a> and
-          <a href="http://www.mkgp.gov.si/en/"> وزارة الزراعة والغابات والأغذية </a>
-          (معلومات عامة من سلوفينيا).
-        contributors_es_html: |-
-          <strong>es </strong>: تحتوي على بيانات مصدرها
-          المعهد الجغرافي الوطني الإسباني (<a href="http://www.ign.es/">IGN</a>) و
-          النظام الوطني لرسم الخرائط (<a href="http://www.scne.es/">SCNE</a>)
-          مرخصة لإعادة الاستخدام بموجب <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
-        contributors_za_html: |-
-          <strong> جنوب إفريقيا </ strong>: يحتوي على بيانات مصدرها
-          <a href="http://www.ngi.gov.za/"> المديرية العامة:
-          National Geo-Spatial Information </a>، State copyright reserved.
-        contributors_gb_html: |-
-          <strong>المملكة المتحدة</ strong>: تحتوي على
-          بيانات مسح الأجهزة الحربية وحقوق تأليف ونشر التاج وقاعدة البيانات الحقوق
-          2010-19.
+        contributors_intro_html: "مساهمونا هم آلاف الأفراد، نوفر أيضا \nبيانات مرخصة\
+          \ بشكلٍ مفتوح من وكالات الخرائط الوطنية \nوغيرها من المصادر، من بينها:"
         contributors_footer_1_html: |-
           لمزيد من التفاصيل عن هذه ، وغيرها من المصادر التي تم استخدامها
           للمساعدة في تحسين OpenHistoricalMap ، يرجى الاطلاع على <a
@@ -1829,9 +1770,9 @@ ar:
           الإجراء </a> أو الملف مباشرة في موقعنا
           <a href="https://dmca.openstreetmap.org/"> صفحة الإيداع عبر الإنترنت </a>.
         trademarks_title_html: <span id="trademarks"></span>علامات تجارية
-        trademarks_1_html: OpenHistoricalMap ، وشعار العدسة المكبرة وحالة الخريطة هي علامات
-          تجارية مسجلة لمؤسسة OpenHistoricalMap. إذا كانت لديك أسئلة حول استخدامك للعلامات
-          ، فيرجى الاطلاع على <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">
+        trademarks_1_html: OpenHistoricalMap ، وشعار العدسة المكبرة وحالة الخريطة
+          هي علامات تجارية مسجلة لمؤسسة OpenHistoricalMap. إذا كانت لديك أسئلة حول
+          استخدامك للعلامات ، فيرجى الاطلاع على <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">
           سياسة العلامات التجارية </a>.
     index:
       js_1: إما أنك تستخدم متصفحا لا يدعم جافا سكريبت، أو أنك عطلت استعمال جافا سكريبت.
@@ -1913,15 +1854,15 @@ ar:
             عن طريق السحب، أضف رسالتك، ثم انقر على "حفظ"، وسيتحرى مصممو الخرائط الآخرين.
       other_concerns:
         title: اهتمامات أخرى
-        explanation_html: "إذا كانت لديك مخاوف بشأن كيفية استخدام بياناتنا أو حول
-          محتوياتها، فالرجاء الرجوع إلى \n<a href='/copyright'>صفحة حقوق الطبع والنشر
-          لدينا</a> لمزيد من المعلومات القانونية، أو الاتصال\n<a href='https://wiki.osmfoundation.org/wiki/Working_Groups'>بمجموعة
-          عمل مؤسسة خريطة الشارع المفتوحة</a>."
+        explanation_html: "إذا كانت لديك مخاوف بشأن كيفية استخدام بياناتنا أو حول\
+          \ محتوياتها، فالرجاء الرجوع إلى \n<a href='/copyright'>صفحة حقوق الطبع والنشر\
+          \ لدينا</a> لمزيد من المعلومات القانونية، أو الاتصال\n<a href='https://wiki.osmfoundation.org/wiki/Working_Groups'>بمجموعة\
+          \ عمل مؤسسة خريطة الشارع المفتوحة</a>."
     help:
       title: الحصول على مساعدة
-      introduction: "يحتوي خريطة الشارع المفتوحة على العديد من الموارد للتعلم حول
-        المشروع، وطرح الأسئلة والإجابة عليها، \nومناقشة مواضيع التخطيط وتوثيقها بشكل
-        تعاوني."
+      introduction: "يحتوي خريطة الشارع المفتوحة على العديد من الموارد للتعلم حول\
+        \ المشروع، وطرح الأسئلة والإجابة عليها، \nومناقشة مواضيع التخطيط وتوثيقها\
+        \ بشكل تعاوني."
       welcome:
         url: أهلا بك.
         title: مرحبًا بك في خريطة الشارع المفتوحة
@@ -2043,9 +1984,9 @@ ar:
           toilets: مرحاض
     welcome:
       title: مرحبا!
-      introduction_html: مرحبًا بك في OpenHistoricalMap ، خريطة حرة وقابلة للتعديل بواسطة
-        العالم. الآن بعد أن سجلت، أنت جاهز للبدء في رسم الخرائط، وإليك دليل سريع مع
-        الأشياء الأكثر أهمية تحتاج إلى معرفتها.
+      introduction_html: مرحبًا بك في OpenHistoricalMap ، خريطة حرة وقابلة للتعديل
+        بواسطة العالم. الآن بعد أن سجلت، أنت جاهز للبدء في رسم الخرائط، وإليك دليل
+        سريع مع الأشياء الأكثر أهمية تحتاج إلى معرفتها.
       whats_on_the_map:
         title: ما على الخريطة
         on_html: |-
@@ -2078,11 +2019,11 @@ ar:
           <a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'> التعديلات التلقائية </a>.
       questions:
         title: هل هناك أسئلة؟
-        paragraph_1_html: "تحتوي خريطة الشارع المفتوحة على العديد من الموارد للتعلم
-          حول المشروع، وطرح \nالأسئلة والإجابة عليها، ومناقشة مواضيع التخطيط وتوثيقها
-          بشكل تعاوني،\n<a href='%{help_url}'>احصل على المساعدة هنا</a>، مع منظمة
-          تضع خططا لخريطة الشارع المفتوحة؟ <a href='https://welcome.openstreetmap.org/'>تحقق
-          من سجادة الترحيب</a>."
+        paragraph_1_html: "تحتوي خريطة الشارع المفتوحة على العديد من الموارد للتعلم\
+          \ حول المشروع، وطرح \nالأسئلة والإجابة عليها، ومناقشة مواضيع التخطيط وتوثيقها\
+          \ بشكل تعاوني،\n<a href='%{help_url}'>احصل على المساعدة هنا</a>، مع منظمة\
+          \ تضع خططا لخريطة الشارع المفتوحة؟ <a href='https://welcome.openstreetmap.org/'>تحقق\
+          \ من سجادة الترحيب</a>."
       start_mapping: ابدأ التخطيط
       add_a_note:
         title: لا وقت للتعديل؟ أضف ملاحظة!
@@ -2414,10 +2355,10 @@ ar:
     suspended:
       title: حساب معلق
       heading: حساب معلق
-      body_html: "<p style=\";text-align:right;direction:rtl\">\n عذرًا، تم تعليق
-        حسابك تلقائيًا بسبب  نشاط مشبوه. \n</p>\n<p style=\";text-align:right;direction:rtl\">\nسيراجع
-        مسؤول هذا القرار عما قريب، أو  يمكنك الاتصال بالمسؤول\nعن الموقع (%{webmaster})
-        إذا كنت ترغب في مناقشة هذا الأمر. \n</p>"
+      body_html: "<p style=\";text-align:right;direction:rtl\">\n عذرًا، تم تعليق\
+        \ حسابك تلقائيًا بسبب  نشاط مشبوه. \n</p>\n<p style=\";text-align:right;direction:rtl\"\
+        >\nسيراجع مسؤول هذا القرار عما قريب، أو  يمكنك الاتصال بالمسؤول\nعن الموقع\
+        \ (%{webmaster}) إذا كنت ترغب في مناقشة هذا الأمر. \n</p>"
     auth_failure:
       connection_failed: فشل الاتصال بموفر المصادقة
       invalid_credentials: بيانات اعتماد المصادقة غير صالحة
@@ -2429,9 +2370,9 @@ ar:
       option_1: |-
         إذا كنت جديدا في خريطة الشارع المفتوح، الرجاء إنشاء حساب جديد
         باستخدام النموذج أدناه.
-      option_2: "إذا كان لديك حساب بالفعل، فيمكنك تسجيل الدخول إلى حسابك \nباستخدام
-        اسم المستخدم وكلمة المرور الخاصة بك، ثم ربط الحساب \nبمعرفك في إعدادات المستخدم
-        الخاصة بك."
+      option_2: "إذا كان لديك حساب بالفعل، فيمكنك تسجيل الدخول إلى حسابك \nباستخدام\
+        \ اسم المستخدم وكلمة المرور الخاصة بك، ثم ربط الحساب \nبمعرفك في إعدادات المستخدم\
+        \ الخاصة بك."
   user_role:
     filter:
       not_a_role: السلسلة `%{role}' ليست دور صالح.

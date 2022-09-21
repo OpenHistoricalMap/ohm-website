@@ -131,7 +131,7 @@ af:
         title: Titel
         description: Beskrywing
       report:
-        category: 'Kies ''n rede vir u verslag:'
+        category: "Kies 'n rede vir u verslag:"
         details: Verskaf asseblief meer besonderhede oor die probleem (verlang).
       user:
         auth_provider: Verifikasie verskaffer
@@ -177,7 +177,7 @@ af:
       almost_x_years:
         one: byna 1 jaar gelede
         other: byna %{count} jaar gelede
-      half_a_minute: '''n halwe minuut gelede'
+      half_a_minute: "'n halwe minuut gelede"
       less_than_x_seconds:
         one: minder as 1 sekonde gelede
         other: minder as %{count} sekondes gelede
@@ -232,9 +232,9 @@ af:
         reopened_at_by_html: '%{when} deur %{user} geheraktiveer'
       rss:
         title: OpenHistoricalMap-notas
-        description_area: '''N lys met notas, gerapporteer, opmerkings of geslote
-          in u omgewing [(%{min_lat}|%{min_lon})--(%{max_lat}|%{max_lon})]'
-        description_item: '''N RSS-voer vir nota %{id}'
+        description_area: "'N lys met notas, gerapporteer, opmerkings of geslote in\
+          \ u omgewing [(%{min_lat}|%{min_lon})--(%{max_lat}|%{max_lon})]"
+        description_item: "'N RSS-voer vir nota %{id}"
         opened: nuwe nota (naby %{place})
         commented: nuwe opmerking (naby %{place})
         closed: geslote nota (naby %{place})
@@ -525,7 +525,8 @@ af:
         description: Onlangse OpenHistoricalMap-dagboekinskrywings van %{user}
       language:
         title: OpenHistoricalMap dagboekinskrywings in %{language_name}
-        description: Onlangse dagboekinskrywings van OpenHistoricalMap-gebruikers in %{language_name}
+        description: Onlangse dagboekinskrywings van OpenHistoricalMap-gebruikers
+          in %{language_name}
       all:
         title: OpenHistoricalMap-dagboekinskrywings
         description: Onlangse dagboekinskrywings van OpenHistoricalMap-gebruikers
@@ -1428,12 +1429,12 @@ af:
     partners_bytemark: Bytemark Hosting
     partners_partners: vennote
     tou: Gebruiksvoorwaardes
-    osm_offline: Die OpenHistoricalMap-databasis is tans vanlyn terwyl noodsaaklike onderhoud
-      gedoen word.
-    osm_read_only: Die OpenHistoricalMap-databasis kan tans slegs gelees word terwyl noodsaaklike
+    osm_offline: Die OpenHistoricalMap-databasis is tans vanlyn terwyl noodsaaklike
       onderhoud gedoen word.
-    donate: Ondersteun OpenHistoricalMap deur aan die Fonds vir hardwareopgradering te
-      %{link}.
+    osm_read_only: Die OpenHistoricalMap-databasis kan tans slegs gelees word terwyl
+      noodsaaklike onderhoud gedoen word.
+    donate: Ondersteun OpenHistoricalMap deur aan die Fonds vir hardwareopgradering
+      te %{link}.
     help: Hulp
     about: Aangaande
     copyright: Kopiereg
@@ -1448,7 +1449,8 @@ af:
     more: Meer
   user_mailer:
     diary_comment_notification:
-      subject: '[OpenHistoricalMap] %{user} het kommentaar op ''n dagboekinskrywing gelewer'
+      subject: "[OpenHistoricalMap] %{user} het kommentaar op 'n dagboekinskrywing\
+        \ gelewer"
       hi: Hallo %{to_user},
       header: '%{from_user} het kommentaar op die OpenHistoricalMap-dagboekinskrywing
         met die tema %{subject} gelewer:'
@@ -1457,7 +1459,7 @@ af:
       hi: Hallo %{to_user},
     friendship_notification:
       hi: Hallo %{to_user},
-      subject: '[OpenHistoricalMap] %{user} het u as ''n vriend bygevoeg'
+      subject: "[OpenHistoricalMap] %{user} het u as 'n vriend bygevoeg"
     gpx_failure:
       hi: Hallo %{to_user},
     gpx_success:
@@ -1478,7 +1480,7 @@ af:
       greeting: Hallo,
       click_the_link: As dit u is, klik die onderstaande skakel om u wagwoord te herstel.
     note_comment_notification:
-      anonymous: '''n Anonieme gebruiker'
+      anonymous: "'n Anonieme gebruiker"
       greeting: Hallo,
     changeset_comment_notification:
       hi: Hallo %{to_user},
@@ -1665,8 +1667,8 @@ af:
       legal_babble:
         title_html: Kopiereg en lisensie
         intro_2_html: Dit staan u vry om ons data te kopieer, versprei, versend of
-          aan te pas, mits u erkenning aan OpenHistoricalMap en die bydraers gee. Indien
-          u ons data wysig of daarop voortbou, mag u dit slegs in gevolge dieselfde
+          aan te pas, mits u erkenning aan OpenHistoricalMap en die bydraers gee.
+          Indien u ons data wysig of daarop voortbou, mag u dit slegs in gevolge dieselfde
           lisensie versprei. Die volledige <a href="http://opendatacommons.org/licenses/odbl/1.0/">regsteks</a>
           verduidelik u regte en verantwoordelikhede.
         credit_title_html: Hoe om na OpenHistoricalMap te verwys

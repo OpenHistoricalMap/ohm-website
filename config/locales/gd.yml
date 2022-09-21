@@ -182,7 +182,7 @@ gd:
           nuair a thèid thu 'nad deasaiche poblach.</li><li>Cha ghabh an gnìomh seo
           a neo-dhèanamh agus bidh gach cleachdaiche ùr poblach o thùs o seo a-mach.</li></ul>
       contributor terms:
-        heading: 'Teirmichean a'' chom-pàirtiche:'
+        heading: "Teirmichean a' chom-pàirtiche:"
         agreed: Dh'aontaich thu ri teirmichean ùra a' chom-pàirtiche.
         not yet agreed: Cha do dh'aontaich thu ri teirmichean ùra a' chom-pàirtiche
           fhathast.
@@ -214,7 +214,7 @@ gd:
     in_changeset: Seata atharraichean
     anonymous: gun ainm
     no_comment: (gun bheachd)
-    part_of: '''Na phàirt de'
+    part_of: "'Na phàirt de"
     download_xml: Luchdaich a-nuas XML
     view_history: Seall an eachdraidh
     view_details: Seall am mion-fhiosrachadh
@@ -254,7 +254,7 @@ gd:
       members: Buill
     relation_member:
       entry_html: '%{type} %{name}'
-      entry_role_html: '%{type} %{name} ''na %{role}'
+      entry_role_html: "%{type} %{name} 'na %{role}"
       type:
         node: Nòd
         way: Slighe
@@ -289,11 +289,11 @@ gd:
         way: dhen t-slighe seo
         relation: dhen dàimh seo
     start_rjs:
-      feature_warning: '''S dòcha gum fàs am brabhsair agad slaodach no cha mhòr nach
-        dèan e dad tuilleadh on a tha thu a'' luchdadh %{num_features} gleus(an).
-        A bheil thu cinnteach gu bheil thu airson an dàta seo a shealltainn?'
+      feature_warning: "'S dòcha gum fàs am brabhsair agad slaodach no cha mhòr nach\
+        \ dèan e dad tuilleadh on a tha thu a' luchdadh %{num_features} gleus(an).\
+        \ A bheil thu cinnteach gu bheil thu airson an dàta seo a shealltainn?"
       load_data: Luchdaich an dàta
-      loading: '''Ga luchdadh...'
+      loading: "'Ga luchdadh..."
     tag_details:
       tags: Tagaichean
       wiki_link:
@@ -364,8 +364,8 @@ gd:
         fhaighinn.
   changeset_comments:
     comment:
-      comment: Beachd ùr air seata atharraichean OpenHistoricalMap %{changeset_id} le
-        %{author}
+      comment: Beachd ùr air seata atharraichean OpenHistoricalMap %{changeset_id}
+        le %{author}
       commented_at_by_html: Air ùrachadh o chionn %{when} le %{user}
     index:
       title_all: Deasbaireachd air seataichean atharraichean OpenHistoricalMap
@@ -444,11 +444,12 @@ gd:
     feed:
       user:
         title: Clàran san leabhar-latha OpenHistoricalMap aig %{user}
-        description: Clàran san leabhar-latha OpenHistoricalMap aig %{user} o chionn goirid
+        description: Clàran san leabhar-latha OpenHistoricalMap aig %{user} o chionn
+          goirid
       language:
         title: Clàran san leabhar-latha OpenHistoricalMap sa chànan %{language_name}
-        description: Clàran leabhair-latha le cleachdaichean OpenHistoricalMap sa chànan
-          %{language_name} o chionn goirid
+        description: Clàran leabhair-latha le cleachdaichean OpenHistoricalMap sa
+          chànan %{language_name} o chionn goirid
       all:
         title: Clàran san leabhar-latha OpenHistoricalMap
         description: Clàran leabhair-latha le cleachdaichean OpenHistoricalMap o chionn
@@ -1000,16 +1001,16 @@ gd:
     edit_with: Deasaich le %{editor}
     tag_line: Mapa uicidh saor an t-saoghail
     intro_header: Fàilte gu OpenHistoricalMap!
-    intro_text: '''S e mapa an t-saoghail a tha san OpenHistoricalMap a chaidh a chruthachadh
-      le daoine mar thu fhèin ''s a tha saor fo cheadachas fhosgailte.'
+    intro_text: "'S e mapa an t-saoghail a tha san OpenHistoricalMap a chaidh a chruthachadh\
+      \ le daoine mar thu fhèin 's a tha saor fo cheadachas fhosgailte."
     intro_2_create_account: Cruthaich cunntas cleachdaiche
     partners_ucl: UCL VR Centre
     partners_bytemark: Bytemark Hosting
     partners_partners: com-pàirtichean eile
-    osm_offline: Tha an stòr-dàta aig OpenHistoricalMap far loidhńe an-dràsta on a tha
-      sinn a' dèanamh obair-charaidh riatanach air.
-    osm_read_only: Tha an stòr-dàta aig OpenHistoricalMap sa mhodh leughaidh a-mhàin an-dràsta
-      on a tha sinn a' dèanamh obair-charaidh riatanach air.
+    osm_offline: Tha an stòr-dàta aig OpenHistoricalMap far loidhńe an-dràsta on a
+      tha sinn a' dèanamh obair-charaidh riatanach air.
+    osm_read_only: Tha an stòr-dàta aig OpenHistoricalMap sa mhodh leughaidh a-mhàin
+      an-dràsta on a tha sinn a' dèanamh obair-charaidh riatanach air.
     donate: Cuir taic ri OpenHistoricalMap agus %{link} a chum àrdachadh a' bhathair-chruaidh.
     help: Cobhair
     about: Mu dhèidhinn
@@ -1030,26 +1031,26 @@ gd:
       hi: Shin thu, %{to_user},
       header: 'Thug %{from_user} seachad beachd air innteart leabhar-latha OpenHistoricalMap
         a rinn thu o chionn goirid air a bheil an cuspair “%{subject}”:'
-      footer: '''S urrainn dhut am beachd a leughadh air %{readurl} cuideachd agus
-        beachd agad fhèin a chur ris air %{commenturl} no freagairt a sgrìobhadh air
-        %{replyurl}'
+      footer: "'S urrainn dhut am beachd a leughadh air %{readurl} cuideachd agus\
+        \ beachd agad fhèin a chur ris air %{commenturl} no freagairt a sgrìobhadh\
+        \ air %{replyurl}"
     message_notification:
       hi: Shin thu, %{to_user},
-      header: 'Chuir %{from_user} teachdaireachd thugad slighe OpenHistoricalMap air a
-        bheil an cuspair "%{subject}":'
-      footer_html: '''S urrainn dhut an teachdaireachd a leughadh air %{readurl} cuideachd
-        agus freagairt a sgrìobhadh air %{replyurl}'
+      header: 'Chuir %{from_user} teachdaireachd thugad slighe OpenHistoricalMap air
+        a bheil an cuspair "%{subject}":'
+      footer_html: "'S urrainn dhut an teachdaireachd a leughadh air %{readurl} cuideachd\
+        \ agus freagairt a sgrìobhadh air %{replyurl}"
     friendship_notification:
-      subject: '[OpenHistoricalMap] Chuir %{user} ''na charaid ris thu'
-      had_added_you: '[OpenHistoricalMap] Chuir %{user} ''na charaid ris thu air OpenHistoricalMap.'
-      see_their_profile: '''S urrainn dhut a'' phròifil aig an neach ud a shealltainn
-        air %{userurl}.'
-      befriend_them: '''S urrainn dhut an neach ud a a chur ''nad caraid ris air %{befriendurl}
-        cuideachd.'
+      subject: "[OpenHistoricalMap] Chuir %{user} 'na charaid ris thu"
+      had_added_you: "[OpenHistoricalMap] Chuir %{user} 'na charaid ris thu air OpenHistoricalMap."
+      see_their_profile: "'S urrainn dhut a' phròifil aig an neach ud a shealltainn\
+        \ air %{userurl}."
+      befriend_them: "'S urrainn dhut an neach ud a a chur 'nad caraid ris air %{befriendurl}\
+        \ cuideachd."
     gpx_failure:
-      failed_to_import: 'ion-phortachadh. Seo a'' mhearachd:'
+      failed_to_import: "ion-phortachadh. Seo a' mhearachd:"
       import_failures_url: http://wiki.openstreetmap.org/wiki/GPX_Import_Failures
-      subject: '[OpenHistoricalMap] Dh''fhàillig le ion-phortadh GPX'
+      subject: "[OpenHistoricalMap] Dh'fhàillig le ion-phortadh GPX"
     gpx_success:
       loaded_successfully: gun deach am faidhle GPX agad a luchdachadh gu soirbheachail
         le %{trace_points} a-mach às an uiread de %{possible_points} p(h)uing(ean)
@@ -1060,9 +1061,9 @@ gd:
       greeting: Shin thu!
       created: Tha cuideigin (an dòchas gur e tusa a bh' ann) air cunntas a chruthachadh
         air %{site_url}.
-      confirm: 'Mus dèan sinn dad sam bith eile, feumaidh sinn dearbhadh gun d'' fhuair
-        sinn an t-iarrtas seo uat fhèin, mar sin mas e tusa a bh'' ann, briog air
-        a'' cheangal gu h-ìosal gus an cunntas agad a dhearbhadh:'
+      confirm: "Mus dèan sinn dad sam bith eile, feumaidh sinn dearbhadh gun d' fhuair\
+        \ sinn an t-iarrtas seo uat fhèin, mar sin mas e tusa a bh' ann, briog air\
+        \ a' cheangal gu h-ìosal gus an cunntas agad a dhearbhadh:"
       welcome: Nuair a bhios tu air an cunntas agad a dhearbhadh, bheir sinn barrachd
         fiosrachaidh dhut ach am bi e nas fhasa dhut tòiseachadh.
     email_confirm:
@@ -1087,26 +1088,26 @@ gd:
         subject_own: '[OpenHistoricalMap] Thug %{commenter} beachd air nòta agad'
         subject_other: '[OpenHistoricalMap] Thug %{commenter} beachd air nòta sa bheil
           ùidh agad'
-        your_note: '[OpenHistoricalMap] Thug %{commenter} beachd air nòta mapa agad faisg
-          air %{place}.'
-        commented_note: '[OpenHistoricalMap] Thug %{commenter} beachd air nòta mapa a
-          thug thu fhèin beachd air. Tha an nòta faisg air %{place}.'
+        your_note: '[OpenHistoricalMap] Thug %{commenter} beachd air nòta mapa agad
+          faisg air %{place}.'
+        commented_note: '[OpenHistoricalMap] Thug %{commenter} beachd air nòta mapa
+          a thug thu fhèin beachd air. Tha an nòta faisg air %{place}.'
       closed:
-        subject_own: '[OpenHistoricalMap] Dh''fhuasgail %{commenter} nòta agad'
-        subject_other: '[OpenHistoricalMap] Dh''fhuasgail %{commenter} nòta sa bheil ùidh
-          agad'
-        your_note: '[OpenHistoricalMap] Dh''fhuasgail %{commenter} nòta mapa agad faisg
-          air %{place}.'
-        commented_note: '[OpenHistoricalMap] Dh''fhuasgail %{commenter} nòta mapa a thug
-          thu beachd air. Tha an nòta faisg air %{place}.'
+        subject_own: "[OpenHistoricalMap] Dh'fhuasgail %{commenter} nòta agad"
+        subject_other: "[OpenHistoricalMap] Dh'fhuasgail %{commenter} nòta sa bheil\
+          \ ùidh agad"
+        your_note: "[OpenHistoricalMap] Dh'fhuasgail %{commenter} nòta mapa agad faisg\
+          \ air %{place}."
+        commented_note: "[OpenHistoricalMap] Dh'fhuasgail %{commenter} nòta mapa a\
+          \ thug thu beachd air. Tha an nòta faisg air %{place}."
       reopened:
         subject_own: '[OpenHistoricalMap] Ghnìomhaich %{commenter} nòta agad às ùr'
-        subject_other: '[OpenHistoricalMap] Ghnìomhaich %{commenter} nòta sa bheil ùidh
-          agad às ùr'
-        your_note: '[OpenHistoricalMap] Ghnìomhaich %{commenter} nòta mapa agad às ùr
-          a tha faisg air %{place}.'
-        commented_note: '[OpenHistoricalMap] Ghnìomhaich %{commenter} nòta mapa às ùr
-          a thug thu beachd air. Tha an nòta faisg air %{place}.'
+        subject_other: '[OpenHistoricalMap] Ghnìomhaich %{commenter} nòta sa bheil
+          ùidh agad às ùr'
+        your_note: '[OpenHistoricalMap] Ghnìomhaich %{commenter} nòta mapa agad às
+          ùr a tha faisg air %{place}.'
+        commented_note: '[OpenHistoricalMap] Ghnìomhaich %{commenter} nòta mapa às
+          ùr a thug thu beachd air. Tha an nòta faisg air %{place}.'
       details: Gheibh thu barrachd fiosrachaidh air an nòta air %{url}.
     changeset_comment_notification:
       hi: Shin thu, %{to_user},
@@ -1118,9 +1119,9 @@ gd:
           sa bheil ùidh agad'
         your_changeset: '[OpenHistoricalMap] Thug %{commenter} beachd air seata atharraichean
           agad a chaidh cruthachadh %{time}'
-        commented_changeset: '[OpenHistoricalMap] Thug %{commenter} beachd air seata atharraichean
-          mapa air a bheil thu a'' cumail sùil agus a chaidh cruthachadh le %{changeset_author}
-          %{time}'
+        commented_changeset: "[OpenHistoricalMap] Thug %{commenter} beachd air seata\
+          \ atharraichean mapa air a bheil thu a' cumail sùil agus a chaidh cruthachadh\
+          \ le %{changeset_author} %{time}"
         partial_changeset_with_comment: leis a' bheachd '%{changeset_comment}'
         partial_changeset_without_comment: gun bheachd
       details: Gheibh thu barrachd fiosrachaidh air an seata atharraichean air %{url}.
@@ -1246,7 +1247,7 @@ gd:
       delete image: Thoir an dealbh làithreach air falbh
       replace image: Cuir dealbh an àite an fhir làithrich
       image size hint: (bidh dealbhan ceàrnach a bhios 100x100 no nas motha as fhearr)
-      home location: 'Far a bheil thu a'' fuireach:'
+      home location: "Far a bheil thu a' fuireach:"
       no home location: Cha do dh'innis thu far a bheil thu a' fuireach.
       update home location on click: A bheil thu airson ùrachadh far a bheil thu a'
         fuireach le briogadh air a' mhapa?
@@ -1261,8 +1262,8 @@ gd:
       lost password link: Na chaill thu am facal-faire agad?
       login_button: Clàraich a-steach
       register now: Clàraich an-dràsta
-      with username: 'A bheil cunntas OpenHistoricalMap agad mar-thà? Clàraich a-steach
-        leis an ainm-chleachdaiche ''s an fhacal-fhaire agad:'
+      with username: "A bheil cunntas OpenHistoricalMap agad mar-thà? Clàraich a-steach\
+        \ leis an ainm-chleachdaiche 's an fhacal-fhaire agad:"
       with external: 'No cleachd treas-phàrtaidh airson clàradh a-steach:'
       new to osm: A bheil OpenHistoricalMap ùr dhut?
       to make changes: Feumaidh cunntas a bhith agad mus atharraich thu dàta OpenHistoricalMap.
@@ -1316,9 +1317,9 @@ gd:
         a bheir dàta dhuinn mu rathaidean, slighean cafaidhean, stèiseanan-rèile agus
         mòran a bharrachd air feadh an t-saoghail agus a nì obair-càraidh air.
       local_knowledge_title: Eòlas ionadail
-      local_knowledge_html: '''S ann gu bheil eòlas ionadail air aire OpenHistoricalMap.
-        cleachdaich na co-thabhartaichean dealbhan adhair, uidheaman GPS agus mapaichean-làraich
-        bun-theicneolach airson dearbhadh gu bheil OSM ceart agus làithreach.'
+      local_knowledge_html: "'S ann gu bheil eòlas ionadail air aire OpenHistoricalMap.\
+        \ cleachdaich na co-thabhartaichean dealbhan adhair, uidheaman GPS agus mapaichean-làraich\
+        \ bun-theicneolach airson dearbhadh gu bheil OSM ceart agus làithreach."
       community_driven_title: Fo smachd na coimhearsnachd
       community_driven_html: |-
         Tha coimhearsnachd OpenHistoricalMap measgaichte, dealasach agus a' fàs gach latha. Gabhaidh na co-thabhartaichean againn a-steach luchd-mapa saor-thoileach, luchd shiostaman fiosrachaidh chruinn-eòlaich proifeiseanta, innleadairean a ruitheas na frithealaichean aig OSM, luchd taic dhaonnachdach a nì mapaichean air raointean fo dhunaidh agus mòran a bharrachd.
@@ -1346,10 +1347,10 @@ gd:
         mapping_link: tòiseachadh air an obair-mhapa
       legal_babble:
         title_html: Còir-lethbhreac agus ceadachas
-        intro_1_html: '''S e <i>dàta fosgailte</i> a tha san OpenHistoricalMap<sup><a
-          href="#trademarks">&reg;</a></sup> fo cheadachas <a href="http://opendatacommons.org/licenses/odbl/">Open
-          Data Commons Open Database License</a> (ODbL) le <a href="http://osmfoundation.org/">Fonndas
-          OpenHistoricalMap</a> (OSMF).'
+        intro_1_html: "'S e <i>dàta fosgailte</i> a tha san OpenHistoricalMap<sup><a\
+          \ href=\"#trademarks\">&reg;</a></sup> fo cheadachas <a href=\"http://opendatacommons.org/licenses/odbl/\"\
+          >Open Data Commons Open Database License</a> (ODbL) le <a href=\"http://osmfoundation.org/\"\
+          >Fonndas OpenHistoricalMap</a> (OSMF)."
         intro_2_html: |-
           Faodaidh tu lethbhreacan a dhèanamh dhen dàta againn, a sgaoileadh,
           a thar-chur agus atharrachadh gu saor, cho fad 's a bheir thu urram
@@ -1379,66 +1380,20 @@ gd:
           openstreetmap.org (dh'fhaoidte gun leudaich thu 'OpenHistoricalMap' leis
           an t-seòladh shlàn seo), gu opendatacommons.org agus ma tha seo iomchaidh gu
           creativecommons.org.
-        credit_4_html: |-
-          airson mapa leatronaigeach a ghabhas rùrachadh, bu chòir dhan urram a nochdadh air
-          oisean a' mhapa. Mar eisimpleir:
         attribution_example:
-          alt: Ball-eisimpleir air mar a bheir thu urram dha OpenHistoricalMap air duilleag-lìn
+          alt: Ball-eisimpleir air mar a bheir thu urram dha OpenHistoricalMap air
+            duilleag-lìn
           title: Ball-eisimpleir air urram
         more_title_html: Barrachd fiosrachaidh
         more_1_html: |-
           Leugh barrachd air mar a chleachdas tu an dàta againn agus mar a
           bheir thu urram dhuinn air <a href="http://osmfoundation.org/Licence">duilleag a' cheadachais OSMF</a> agus <a href="http://wiki.openstreetmap.org/wiki/Legal_FAQ">CÀBHA laghail</a> sa choimhearsnachd.
-        more_2_html: |-
-          Ged as e dàta saor a tha san OpenHistoricalMap, chan urrainn dhuinn API mapa an-asgaidh a thoirt do threas-phàrtaidhean.
-          Faic <a href="https://operations.osmfoundation.org/policies/api/">poileasaidh cleachdadh an API</a>,
-          <a href="https://operations.osmfoundation.org/policies/tiles/">poileasaidh cleachdadh nan leacagan</a>
-          agus <a href="https://operations.osmfoundation.org/policies/nominatim/">poileasaidh cleachdadh Nominatim</a> againn.
         contributors_title_html: Na co-thabhartaicheean againn
         contributors_intro_html: |-
           'S e mìltean de dhaoine a tha sna co-thabhartaichean againn.
           Gabhaidh sinn a-steach dàta fo cheadachas fosgailte aig buidhnean
           mapachaidh nàiseanta agus tùsan eile, agus tha an fheadhainn a leanas
           'nam measg:
-        contributors_at_html: |-
-          <strong>An Ostair</strong>: Gabhaidh seo a-steach dàta o
-          <a href="http://data.wien.gv.at/">Stadt Wien</a> (fo cheadachas
-          <a href="http://creativecommons.org/licenses/by/3.0/at/deed.de">CC BY</a>),
-          <a href="http://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm">Land Vorarlberg</a> agus
-          Land Tirol (fo cheadachas <a href="http://www.tirol.gv.at/applikationen/e-government/data/nutzungsbedingungen/">CC BY AT le atharraichean</a>).
-        contributors_ca_html: |-
-          <strong>Canada</strong>: Gabhaidh seo a-steach dàta o
-          GeoBase&reg;, GeoGratis (&copy; Department of Natural
-          Resources Canada), CanVec (&copy; Department of Natural
-          Resources Canada), agus StatCan (Geography Division,
-          Statistics Canada).
-        contributors_fi_html: |-
-          <strong>An Fhionnlann</strong>: Gabhaidh seo a-steach dàta on
-          National Land Survey of Finland's Topographic Database
-          agud seataichean-dàta eile fo cheadachas
-          <a href="http://www.maanmittauslaitos.fi/en/NLS_open_data_licence_version1_20120501">NLSFI License</a>.
-        contributors_fr_html: |-
-          <strong>An Fhraing</strong>: Gabhaidh seo a-steach dàta o
-          Direction Générale des Impôts.
-        contributors_nl_html: |-
-          <strong>Na Tìrean Ìsle</strong>: Gabhaidh seo a-steach dàta o &copy; AND, 2007
-          (<a href="http://www.and.com">www.and.com</a>)
-        contributors_nz_html: |-
-          <strong>Sealann Nuadh</strong>: Gabhaidh seo a-steach dàta o
-          Land Information New Zealand. Còir-lethbhreac a' Chrùin glèidhte.
-        contributors_si_html: |-
-          <strong>An t-Slòbhain</strong>: Gabhaidh seo a-steach dàta o
-          <a href="http://www.gu.gov.si/en/">Ùghdarras Suirbhidheadh agus Mapachaidh</a> agus
-          <a href="http://www.mkgp.gov.si/en/">Ministreachd an Àiteachais, na Coilltearachd agus a' Bhidhe</a>
-          (fiosrachadh poblach na Slòbhaine).
-        contributors_za_html: |-
-          <strong>Afraga a Deas</strong>: Gabhaidh seo a-steach dàta o
-          <a href="http://www.ngi.gov.za/">Chief Directorate:
-          National Geo-Spatial Information</a>, coir-lethbhreac na Stàite glèidhte.
-        contributors_gb_html: |-
-          <strong>An Rìoghachd Aonaichte</strong>: Gabhaidh seo a-steach dàta Ordnance
-          Survey &copy; còir-lethbhreac a' Chrùin agus dlighe stòir-dàta
-          2010-12.
         contributors_footer_1_html: |-
           Airson barrachd fiosrachaidh air an fheadhainn seo agus air barrachd
           thùsan a chaidh a chleachdadh a chum piseachadh OpenHistoricalMap, thoir
@@ -1465,8 +1420,8 @@ gd:
       shortlink: Ceangal goirid
       createnote: cuir nòta ris
       license:
-        copyright: Còir-lethbhreac OpenHistoricalMap agus na co-thabhartaichean aige fo
-          cheadachas fosgailte
+        copyright: Còir-lethbhreac OpenHistoricalMap agus na co-thabhartaichean aige
+          fo cheadachas fosgailte
       remote_failed: Dh'fhàillig leis an deasachadh - dèan cinnteach gun deach JOSM
         no Merkaartor a luchdadh agus gu bheil gleus an t-smachd chèin an comas
     edit:
@@ -1492,8 +1447,8 @@ gd:
       export_details_html: Tha OpenHistoricalMap fo cheadachas <a href="http://opendatacommons.org/licenses/odbl/1.0/">Open
         Data Commons Open Database License</a> (ODbL).
       too_large:
-        advice: 'Ma dh''fhàilligeas leis an às-phortadh gu h-àrd, feuch an cleachd
-          thu aon dhe na tùsan gu h-ìosal:'
+        advice: "Ma dh'fhàilligeas leis an às-phortadh gu h-àrd, feuch an cleachd\
+          \ thu aon dhe na tùsan gu h-ìosal:"
         body: Tha an raon seo ro mhòr ach an gabhadh às-phortadh 'na dhàta XML OpenHistoricalMap.
           Feuch an sùm thu a-steach no gun tagh thu raon nas lugha no gun cleachd
           thu aon dhe na tùsan gu h-ìosal airson tomad de dhàta a luchdadh a-nuas.
@@ -1536,8 +1491,8 @@ gd:
           title: Gabh pàirt sa choimhearsnachd
           explanation_html: Ma mhothaicheas tu duilgheadas leis an dàta mapa againn,
             can bu bheil rathad no an seòladh agad a dhìth, nach fhaigh thu ballrachd
-            sa choimhearsnachd OpenHistoricalMap ach an càraich no an cuir thu fhèin an
-            dàta ris. \
+            sa choimhearsnachd OpenHistoricalMap ach an càraich no an cuir thu fhèin
+            an dàta ris. \
         add_a_note:
           instructions_html: Cha leig thu leas ach briogadh air <a class='icon note'></a>
             no air an aon ìomhaigheag ann an sealladh a' mhapa. Cuiridh seo comharra
@@ -1546,16 +1501,16 @@ gd:
             eile sgrùdadh air.
       other_concerns:
         title: Cùisean eile
-        explanation_html: "Ma tha rud sam bith eile a' cur dragh ort a thaobh na susbainte
-          no mar a tha an dàta againn 'ga chleachdadh, tadhail air\n<a href='/copyright'>duilleag
-          na còrach-lethbhreac</a> againn airson barrachd fiosrachaidh laghail no
-          cuir fios gun \n<a href='http://wiki.osmfoundation.org/wiki/Working_Groups'>bhuidheann
-          obrach OSMF</a> iomchaidh.  \\"
+        explanation_html: "Ma tha rud sam bith eile a' cur dragh ort a thaobh na susbainte\
+          \ no mar a tha an dàta againn 'ga chleachdadh, tadhail air\n<a href='/copyright'>duilleag\
+          \ na còrach-lethbhreac</a> againn airson barrachd fiosrachaidh laghail no\
+          \ cuir fios gun \n<a href='http://wiki.osmfoundation.org/wiki/Working_Groups'>bhuidheann\
+          \ obrach OSMF</a> iomchaidh.  \\"
     help:
       title: A' faighinn cobhair
-      introduction: Tha iomadh goireas aig OpenHistoricalMap gus faighinn a-mach mun phròiseact,
-        ceistean a chur 's a fhreagairt agus deasbad a dhèanamh is cuspairean mun
-        mhapa a chlàradh còmhla.
+      introduction: Tha iomadh goireas aig OpenHistoricalMap gus faighinn a-mach mun
+        phròiseact, ceistean a chur 's a fhreagairt agus deasbad a dhèanamh is cuspairean
+        mun mhapa a chlàradh còmhla.
       welcome:
         url: /welcome
         title: Fàilte gu OSM
@@ -1670,22 +1625,22 @@ gd:
         on_html: |-
           'S e àite a tha san OpenHistoricalMap gus mapa a dhèanamh de nithean a tha an dà chuid <em>fìos is làithreach</em> -
           gabhaidh seo a-steach milleanan de thogalaichean, rathaidean agus fiosrachadh eile mu àiteachan. 'S urrainn dhut feart sam bith an t-saoghail fhìrinnich sa bheil ùidh agad a chur ris a' mhapa.
-        off_html: '''S ann <em>nach gabh e a-steach</em> dàta mu bheachdan a leithid
-          rangachaidhean, feartan eachdraidheil no baralach no dàta o thùsan fo chòir-lethbhreac.
-          Mur eil cead soilleir agad, na dèan lethbhreac o mhapaichean air loidhne
-          no air pàipear.'
+        off_html: "'S ann <em>nach gabh e a-steach</em> dàta mu bheachdan a leithid\
+          \ rangachaidhean, feartan eachdraidheil no baralach no dàta o thùsan fo\
+          \ chòir-lethbhreac. Mur eil cead soilleir agad, na dèan lethbhreac o mhapaichean\
+          \ air loidhne no air pàipear."
       basic_terms:
         title: Teirmichean bunasach airson na h-obrach-mapa
-        paragraph_1_html: Tha cainnt shònraichte air OpenHistoricalMap. Seo facal no dhà
-          cudromach a bhios feumail dhut.
-        editor_html: '''S e prògram no làrach-lìn a tha ann an <strong>deasaiche</strong>
-          as urrainn dhut cleachdadh gus am mapa a dheasachadh.'
-        node_html: '''S e puing air a'' mhapa a tha ann an <strong>nòd</strong>, can
-          taigh-bìdh no craobh.'
-        way_html: '''S e loidhne no raon a tha ann an <strong>slighe</strong>, can
-          rathad, loch no togalach.'
-        tag_html: '''S e beagan dàta mu nòd no slighe a tha ann an <strong>taga</strong>,
-          can ainm taighe-bhìdh no crìoch astair rathaid.'
+        paragraph_1_html: Tha cainnt shònraichte air OpenHistoricalMap. Seo facal
+          no dhà cudromach a bhios feumail dhut.
+        editor_html: "'S e prògram no làrach-lìn a tha ann an <strong>deasaiche</strong>\
+          \ as urrainn dhut cleachdadh gus am mapa a dheasachadh."
+        node_html: "'S e puing air a' mhapa a tha ann an <strong>nòd</strong>, can\
+          \ taigh-bìdh no craobh."
+        way_html: "'S e loidhne no raon a tha ann an <strong>slighe</strong>, can\
+          \ rathad, loch no togalach."
+        tag_html: "'S e beagan dàta mu nòd no slighe a tha ann an <strong>taga</strong>,\
+          \ can ainm taighe-bhìdh no crìoch astair rathaid."
       rules:
         title: Riaghailtean!
       questions:
@@ -1817,7 +1772,7 @@ gd:
         agad, %{user}. Thoir sùil a bheil thu airson 's gum bi na comasan a leanas
         air an aplacaid. 'S urrainn dhut an t-uiread dhiubh a thogras tu a thaghadh,
         ge b' e mòr no beag.
-      allow_to: 'Faodaidh aplacaid a'' chliant:'
+      allow_to: "Faodaidh aplacaid a' chliant:"
       allow_read_prefs: roghainnean a' chleachdaiche agad a leughadh.
       allow_write_prefs: roghainnean a' chleachdaiche agad atharrachadh.
       allow_write_diary: clàran leabhair-latha a chruthachadh, beachdan a thoirt agus
@@ -1830,7 +1785,7 @@ gd:
     authorize_success:
       title: Chaidh gabhail ri iarrtas a' chead
       allowed_html: Thug thu cead dha dh'aplacaid %{app_name} an cunntas agad inntrigeadh.
-      verification: '''S e %{code} a tha sa chòd dearbhaidh.'
+      verification: "'S e %{code} a tha sa chòd dearbhaidh."
     authorize_failure:
       title: Chaidh iarrtas a' chead a dhiùltadh
       denied: Dhiùlt thu gun inntrigeadh aplacaid %{app_name} an cunntas agad.
@@ -1844,11 +1799,11 @@ gd:
       title: Deasaich an aplacaid agad
     show:
       title: Fiosrachadh OAuth airson %{app_name}
-      key: 'Iuchair a'' chleachdaiche:'
-      secret: 'Rùn a'' chleachdaiche:'
+      key: "Iuchair a' chleachdaiche:"
+      secret: "Rùn a' chleachdaiche:"
       url: 'URL tòcan an iarrtais:'
       access_url: 'URL tòcan an inntrigidh:'
-      authorize_url: 'URL a'' chead:'
+      authorize_url: "URL a' chead:"
       support_notice: Ciridh sinn taic ri soidhneadh HMAC-SHA1 (a mholamaid) agus
         RSA-SHA1.
       edit: Deasaich am fiosrachadh
@@ -1858,8 +1813,8 @@ gd:
     index:
       title: Am fiosrachadh OAuth agad
       my_tokens: Na h-aplacaidean agam air a bheil cead
-      list_tokens: 'Chaidh na tòcanan seo a thoirt seachad dha dh''aplacaidean às
-        do leth:'
+      list_tokens: "Chaidh na tòcanan seo a thoirt seachad dha dh'aplacaidean às do\
+        \ leth:"
       application: Ainm na h-aplacaid
       issued_at: Air a thoirt seachad
       revoke: Cùl-ghairm!
@@ -1952,7 +1907,7 @@ gd:
       remove as friend: Thoir an càirdeas air falbh
       add as friend: Cuir caraid ris
       mapper since: 'Ris an obair-mhapa o:'
-      ct status: 'Teirmichean a'' chom-pàirtiche:'
+      ct status: "Teirmichean a' chom-pàirtiche:"
       ct undecided: Gun taghadh
       ct declined: Gun gabhail riutha
       latest edit: 'An deasachadh mu dheireadh %{ago}:'
@@ -1963,8 +1918,8 @@ gd:
       description: Tuairisgeul
       user location: Far a bheil an cleachdaiche
       role:
-        administrator: '''S e rianaire a tha sa chleachdaiche seo'
-        moderator: '''S e maor a tha sa chleachdaiche seo'
+        administrator: "'S e rianaire a tha sa chleachdaiche seo"
+        moderator: "'S e maor a tha sa chleachdaiche seo"
         grant:
           administrator: Thoir seachad inntrigeadh rianaire
           moderator: Thoir seachad inntrigeadh maoir
@@ -2111,7 +2066,7 @@ gd:
       edit: Deasaich
       revoke: Cùl-ghairm!
       confirm: A bheil thu cinnteach?
-      reason: 'Adhbhar a'' bhacaidh:'
+      reason: "Adhbhar a' bhacaidh:"
       back: Seall a h-uile bacadh
       revoker: 'Cùl-ghairm le:'
       needs_view: Feumaidh an cleachdaiche clàradh a-steach mus dèid am bacadh seo
@@ -2241,7 +2196,7 @@ gd:
       way: Slighe
       relation: Dàimh
       nothing_found: Cha deach feart a lorg
-      error: 'Mearachd a'' conaltradh le %{server}: %{error}'
+      error: "Mearachd a' conaltradh le %{server}: %{error}"
       timeout: Dh'fhalbh an ùine air a' chonaltradh le %{server}
   redactions:
     edit:

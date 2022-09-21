@@ -251,8 +251,8 @@ fy:
         warning: Warskôging! It wiskproses fan in akkount is definityf, en kin net
           weromdraaid wurde.
         delete_account: Akkount wiskje
-        delete_introduction: 'Jo kinne jo OpenHistoricalMap-akkount wiskje mei de knop
-          hjirûnder. Tink om ''e neikommende saken:'
+        delete_introduction: "Jo kinne jo OpenHistoricalMap-akkount wiskje mei de\
+          \ knop hjirûnder. Tink om 'e neikommende saken:"
         delete_profile: Jo profylynformaasje, befetsjend jo meidoggerplaatsje, beskriuwing
           en fêste lokaasje, wurdt fuortsmiten.
         delete_display_name: Jo werjûne namme wurdt fuortsmiten, en kin op 'e nij
@@ -506,8 +506,8 @@ fy:
       friend: Freon
     show:
       title: Myn oersjochpaniel
-      no_home_location_html: '%{edit_profile_link} en stel jo fêste lokaasje yn, om
-        meidoggers yn ''e omkriten te sjen.'
+      no_home_location_html: "%{edit_profile_link} en stel jo fêste lokaasje yn, om\
+        \ meidoggers yn 'e omkriten te sjen."
       edit_your_profile: Bewurkje jo profyl
       my friends: Myn freonen
       no friends: Jo hawwe noch gjin freonen tafoege.
@@ -579,7 +579,8 @@ fy:
         description: Nije OpenHistoricalMap-deiboekstikken fan %{user}
       language:
         title: OpenHistoricalMap Deiboekstikken yn it %{language_name}
-        description: Nije deiboekstikken fan meidoggers oan OpenHistoricalMap yn it %{language_name}
+        description: Nije deiboekstikken fan meidoggers oan OpenHistoricalMap yn it
+          %{language_name}
       all:
         title: OpenHistoricalMap Deiboekstikken
         description: Nije deiboekstikken fan meidoggers oan OpenHistoricalMap
@@ -1471,8 +1472,8 @@ fy:
       title_html: '%{link} melde'
       missing_params: Kin gjin nije melding oanmeitsje
       disclaimer:
-        intro: 'Foar''t jo melding dogge by it websteetafersjoch, moat it neikommende
-          fêststean:'
+        intro: "Foar't jo melding dogge by it websteetafersjoch, moat it neikommende\
+          \ fêststean:"
         not_just_mistake: Jo binne der wis fan dat it probleem net gewoan in fersin
           is
         unable_to_fix: Jo binne net by steat en ferhelp it probleem sels, of mei help
@@ -1527,8 +1528,8 @@ fy:
     edit_with: Bewurkje mei %{editor}
     tag_line: De frije wiki-wrâldkaart
     intro_header: Wolkom by OpenHistoricalMap!
-    intro_text: OpenHistoricalMap is in wrâldkaart makke troch minsken krekt as jo, en
-      frij te brûken ûnder in iepen lisinsje.
+    intro_text: OpenHistoricalMap is in wrâldkaart makke troch minsken krekt as jo,
+      en frij te brûken ûnder in iepen lisinsje.
     intro_2_create_account: Meitsje in akkount as meidogger
     hosting_partners_html: It webstee is ûnderdak by %{ucl}, %{fastly}, %{bytemark}
       en oare %{partners}.
@@ -1537,8 +1538,8 @@ fy:
     partners_bytemark: Bytemark Hosting
     partners_partners: partners
     tou: Gebrûksbetingsten
-    osm_offline: De OpenHistoricalMap-databank is op it stuit ôfline, wylst der it nedige
-      ûnderhâldswurk útfierd wurdt.
+    osm_offline: De OpenHistoricalMap-databank is op it stuit ôfline, wylst der it
+      nedige ûnderhâldswurk útfierd wurdt.
     osm_read_only: De OpenHistoricalMap-databank is op it stuit allinnich yn lêsmodus,
       wylst der it nedige ûnderhâldswurk útfierd wurdt.
     donate: Stypje OpenHistoricalMap en %{link} oan it Fernijingsfûns foar Kompjûtersystemen.
@@ -1559,10 +1560,10 @@ fy:
     diary_comment_notification:
       subject: '[OpenHistoricalMap] %{user} hat op in deiboekstik reägearre'
       hi: Goeie %{to_user},
-      header: '%{from_user} hat reägearre op it OpenHistoricalMap-deiboekstik mei as ûnderwerp
-        %{subject}:'
-      header_html: '%{from_user} hat reägearre op it OpenHistoricalMap-deiboekstik mei
+      header: '%{from_user} hat reägearre op it OpenHistoricalMap-deiboekstik mei
         as ûnderwerp %{subject}:'
+      header_html: '%{from_user} hat reägearre op it OpenHistoricalMap-deiboekstik
+        mei as ûnderwerp %{subject}:'
       footer: Jo kinne de reäksje ek lêze op %{readurl} en reägearje op %{commenturl},
         of de reägearder in berjocht stjoere op %{replyurl}
       footer_html: Jo kinne de reäksje ek lêze op %{readurl} en reägearje op %{commenturl},
@@ -1570,10 +1571,10 @@ fy:
     message_notification:
       subject: '[OpenHistoricalMap] %{message_title}'
       hi: Goeie %{to_user},
-      header: '%{from_user} hat jo in berjocht stjoerd op OpenHistoricalMap mei as ûnderwerp
-        %{subject}:'
-      header_html: '%{from_user} hat jo in berjocht stjoerd op OpenHistoricalMap mei as
+      header: '%{from_user} hat jo in berjocht stjoerd op OpenHistoricalMap mei as
         ûnderwerp %{subject}:'
+      header_html: '%{from_user} hat jo in berjocht stjoerd op OpenHistoricalMap mei
+        as ûnderwerp %{subject}:'
       footer: Jo kinne it berjocht ek lêze op %{readurl} en de ôfstjoerder in berjocht
         werom jaan op %{replyurl}
       footer_html: Jo kinne it berjocht ek lêze op %{readurl} en de ôfstjoerder in
@@ -1608,9 +1609,9 @@ fy:
       subject: '[OpenHistoricalMap] Wolkom by OpenHistoricalMap'
       greeting: Goeie dêrsa!
       created: Immen (hooplik jo) hat sakrekt in akkount oanmakke op %{site_url}.
-      confirm: 'Foar''t wy wat dogge, moatte we befêstige hawwe dat it fersyk fan
-        jo kaam. Dus at dat sa is, klik dan op ''e keppeling hjirûnder en befêstigje
-        jo akkount:'
+      confirm: "Foar't wy wat dogge, moatte we befêstige hawwe dat it fersyk fan jo\
+        \ kaam. Dus at dat sa is, klik dan op 'e keppeling hjirûnder en befêstigje\
+        \ jo akkount:"
       welcome: Nei de befêstiging fan jo akkount, sille wy jo mear ynformaasje jaan
         en help jo op 'e gleed.
     email_confirm:
@@ -1631,39 +1632,40 @@ fy:
       anonymous: In anonime meidogger
       greeting: Goeie,
       commented:
-        subject_own: '[OpenHistoricalMap] %{commenter} hat op ien fan jo notysjes reägearre'
-        subject_other: '[OpenHistoricalMap] %{commenter} hat op in notysje dêr''t jo belang
-          yn stelle reägearre'
+        subject_own: '[OpenHistoricalMap] %{commenter} hat op ien fan jo notysjes
+          reägearre'
+        subject_other: "[OpenHistoricalMap] %{commenter} hat op in notysje dêr't jo\
+          \ belang yn stelle reägearre"
         your_note: '%{commenter} hat in reäksje efterlitten by ien fan jo kaartnotysjes
           fuortby %{place}.'
         your_note_html: '%{commenter} hat in reäksje efterlitten by ien fan jo kaartnotysjes
           fuortby %{place}.'
-        commented_note: '%{commenter} hat in reäksje efterlitten by in kaartnotysje
-          dêr''t jo op reägearre hawwe. De notysje is fuortby %{place}.'
-        commented_note_html: '%{commenter} hat in reäksje efterlitten by in kaartnotysje
-          dêr''t jo op reägearre hawwe. De notysje is fuortby %{place}.'
+        commented_note: "%{commenter} hat in reäksje efterlitten by in kaartnotysje\
+          \ dêr't jo op reägearre hawwe. De notysje is fuortby %{place}."
+        commented_note_html: "%{commenter} hat in reäksje efterlitten by in kaartnotysje\
+          \ dêr't jo op reägearre hawwe. De notysje is fuortby %{place}."
       closed:
         subject_own: '[OpenHistoricalMap] %{commenter} hat ien fan jo notysjes oplost'
-        subject_other: '[OpenHistoricalMap] %{commenter} hat in notysje dêr''t jo belang
-          yn stelle oplost'
+        subject_other: "[OpenHistoricalMap] %{commenter} hat in notysje dêr't jo belang\
+          \ yn stelle oplost"
         your_note: '%{commenter} hat ien fan jo kaartnotysjes fuortby %{place} oplost.'
         your_note_html: '%{commenter} hat ien fan jo kaartnotysjes fuortby %{place}
           oplost.'
-        commented_note: '%{commenter} hat in kaartnotysje dêr''t jo op reägearre hawwe
-          oplost. De notysje is fuortby %{place}.'
-        commented_note_html: '%{commenter} hat in kaartnotysje dêr''t jo op reägearre
-          hawwe oplost. De notysje is fuortby %{place}.'
+        commented_note: "%{commenter} hat in kaartnotysje dêr't jo op reägearre hawwe\
+          \ oplost. De notysje is fuortby %{place}."
+        commented_note_html: "%{commenter} hat in kaartnotysje dêr't jo op reägearre\
+          \ hawwe oplost. De notysje is fuortby %{place}."
       reopened:
         subject_own: '[OpenHistoricalMap] %{commenter} hat ien fan jo notysjes weraktivearre'
-        subject_other: '[OpenHistoricalMap] %{commenter} hat in notysje dêr''t jo belang
-          yn stelle weraktivearre'
+        subject_other: "[OpenHistoricalMap] %{commenter} hat in notysje dêr't jo belang\
+          \ yn stelle weraktivearre"
         your_note: '%{commenter} hat ien fan jo kaartnotysjes fuortby %{place} weraktivearre.'
         your_note_html: '%{commenter} hat ien fan jo kaartnotysjes fuortby %{place}
           weraktivearre.'
-        commented_note: '%{commenter} hat in kaartnotysje dêr''t jo op reägearre hawwe
-          weraktivearre. De notysje is fuortby %{place}.'
-        commented_note_html: '%{commenter} hat in kaartnotysje dêr''t jo op reägearre
-          hawwe weraktivearre. De notysje is fuortby %{place}.'
+        commented_note: "%{commenter} hat in kaartnotysje dêr't jo op reägearre hawwe\
+          \ weraktivearre. De notysje is fuortby %{place}."
+        commented_note_html: "%{commenter} hat in kaartnotysje dêr't jo op reägearre\
+          \ hawwe weraktivearre. De notysje is fuortby %{place}."
       details: Fierdere gegevens oer de notysje fine jo op %{url}.
       details_html: Fierdere gegevens oer de notysje fine jo op %{url}.
     changeset_comment_notification:
@@ -1672,18 +1674,18 @@ fy:
       commented:
         subject_own: '[OpenHistoricalMap] %{commenter} hat op ien fan jo wizigingssets
           reägearre'
-        subject_other: '[OpenHistoricalMap] %{commenter} hat op in wizigingsset dêr''t
-          jo belang yn stelle reägearre'
+        subject_other: "[OpenHistoricalMap] %{commenter} hat op in wizigingsset dêr't\
+          \ jo belang yn stelle reägearre"
         your_changeset: '%{commenter} hat op %{time} in reäksje efterlitten by ien
           fan jo wizigingssets'
         your_changeset_html: '%{commenter} hat op %{time} in reäksje efterlitten by
           ien fan jo wizigingssets'
-        commented_changeset: '%{commenter} hat op %{time} in reäksje efterlitten by
-          in wizigingsset dy''t jo folgje, makke troch %{changeset_author}'
-        commented_changeset_html: '%{commenter} hat op %{time} in reäksje efterlitten
-          by in wizigingsset dy''t jo folgje, makke troch %{changeset_author}'
-        partial_changeset_with_comment: 'mei as beskriuwing: ''%{changeset_comment}'''
-        partial_changeset_with_comment_html: 'mei as beskriuwing: ''%{changeset_comment}'''
+        commented_changeset: "%{commenter} hat op %{time} in reäksje efterlitten by\
+          \ in wizigingsset dy't jo folgje, makke troch %{changeset_author}"
+        commented_changeset_html: "%{commenter} hat op %{time} in reäksje efterlitten\
+          \ by in wizigingsset dy't jo folgje, makke troch %{changeset_author}"
+        partial_changeset_with_comment: "mei as beskriuwing: '%{changeset_comment}'"
+        partial_changeset_with_comment_html: "mei as beskriuwing: '%{changeset_comment}'"
         partial_changeset_without_comment: sûnder beskriuwing.
       details: Fierdere gegevens oer de wizigingsset fine jo op %{url}.
       details_html: Fierdere gegevens oer de wizigingsset fine jo op %{url}.
@@ -1861,12 +1863,12 @@ fy:
       lost password link: Jo wachtwurd kwyt?
       login_button: Oanmelde
       register now: No ynskriuwe
-      with username: 'Hawwe jo al in OpenHistoricalMap-akkount? Meld jo oan mei jo meidochnamme
-        en wachtwurd:'
+      with username: 'Hawwe jo al in OpenHistoricalMap-akkount? Meld jo oan mei jo
+        meidochnamme en wachtwurd:'
       with external: 'Brûk oars in treddepartij en meld jo oan:'
       new to osm: Nij op OpenHistoricalMap?
-      to make changes: Jo moatte in akkount hawwe om OpenHistoricalMap-data feroarje te
-        kinnen.
+      to make changes: Jo moatte in akkount hawwe om OpenHistoricalMap-data feroarje
+        te kinnen.
       create account minute: Meitsje in akkount. It duorret mar in minútsje.
       no account: Hawwe jo gjin akkount?
       account not active: Spitich, jo akkount is noch net aktyf.<br />Brûk de keppeling
@@ -1927,10 +1929,10 @@ fy:
     about:
       next: Folgjende
       copyright_html: <span>&copy;</span>OpenHistoricalMap-<br>bydragers
-      used_by_html: 'OpenHistoricalMap leveret kaartdata foar tûzenen websteeën, mobile apps
-        en kompjûterapparaten'
-      lede_text: OpenHistoricalMap wurdt makke troch in mienskip fan kaartmakkers, dy't
-        gegevens bydrage en ûnderhâlde oer diken, rûtes, kafees, spoarweistasjons
+      used_by_html: OpenHistoricalMap leveret kaartdata foar tûzenen websteeën, mobile
+        apps en kompjûterapparaten
+      lede_text: OpenHistoricalMap wurdt makke troch in mienskip fan kaartmakkers,
+        dy't gegevens bydrage en ûnderhâlde oer diken, rûtes, kafees, spoarweistasjons
         en folle mear, oer de hiele wrâld.
       local_knowledge_title: Lokale kennis
       local_knowledge_html: |-
@@ -2009,13 +2011,6 @@ fy:
           dêr't keppelings net mooglik binne (bgl. printwurk) suggerearje wy dat jo
           jo lêzers trochferwize nei openstreetmap.org (faaks troch
           'OpenHistoricalMap' út te skriuwen as dat adres) en nei opendatacommons.org.
-        credit_3_1_html: |-
-          De kaartstikken yn 'e &ldquo;standertfoarmjouwing&rdquo; op www.openstreetmap.org binne in
-          troch de OpenHistoricalMap-stifting fuortbrocht wurk, mei gebrûk fan OpenHistoricalMap-data
-          ûnder de Iepen Databank-lisinsje. At jo dy kaartfoarmjouwing brûke, is deselde taskriuwing
-          fereaske as foar de kaartdata.
-        credit_4_html: 'Foar in trochklikbere digitale kaart, moat de nammefermelding
-          yn ''e hoeke fan ''e kaart stean. Bygelyks:'
         attribution_example:
           alt: Foarbyld fan hoe't OpenHistoricalMap op in webside neamd wurdt
           title: Foarbyld nammefermelding
@@ -2023,68 +2018,11 @@ fy:
         more_1_html: |-
           Lês mear oer it brûken fan ús data, en hoe't wy fermeld wurde moatte, op 'e <a
           href="https://osmfoundation.org/Licence">Lisinsjeside fan 'e OSMF</a>.
-        more_2_html: |-
-          Hoewol't OpenHistoricalMap iepen data is, kinne wy net
-          fergees in kaart-API foar tredden leverje.
-          Sjoch ús <a href="https://operations.osmfoundation.org/policies/api/">API-gebrûksbelied</a>,
-          <a href="https://operations.osmfoundation.org/policies/tiles/">Gebrûksbelied foar Kaartstikken</a>
-          en <a href="https://operations.osmfoundation.org/policies/nominatim/">Gebrûksbelied fan Nominatim</a>.
         contributors_title_html: Us bydragers
         contributors_intro_html: |-
           Us bydragers binne tûzenen yndividuën. Wy nimme ek
           data mei iepen lisinsjes op fan nasjonale kaartagintskippen
           en oare boarnen, dêrûnder:
-        contributors_at_html: |-
-          <strong>Eastenryk</strong>: Befettet data fan
-          <a href="https://data.wien.gv.at/">Stadt Wien</a> (ûnder
-          <a href="https://creativecommons.org/licenses/by/3.0/at/deed.de">CC BY</a>),
-          <a href="https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm">Land Vorarlberg</a> en
-          Land Tirol (ûnder <a href="https://www.tirol.gv.at/applikationen/e-government/data/nutzungsbedingungen/">CC BY AT mei amendeminten</a>).
-        contributors_au_html: |-
-          <strong>Austraalje</strong>: Omfettet of ûntwikkele mei Administrative Boundaries &copy;
-          <a href="https://geoscape.com.au/legal/data-copyright-and-disclaimer/">Geoscape Austraalje</a>
-          troch it Mienebêst fan Austraalje beskikber steld ûnder de lisinsje
-          <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Nammefermelding 4.0 Ynternasjonaal (CC BY 4.0)</a>.
-        contributors_ca_html: |-
-          <strong>Kanada</strong>: Befettet data fan
-          GeoBase&reg;, GeoGratis (&copy; Departemint fan Natuerlike
-          Helpboarnen Kanada), CanVec (&copy; Departemint fan Natuerlike
-          Helpboarnen Kanada), en StatCan (Geografy-difyzje,
-          Statistiken Kanada).
-        contributors_fi_html: |-
-          <strong>Finlân</strong>: Befettet data út 'e
-          Topografyske Databank en oare datasets fan 'e
-          Nasjonale Lânmjitting fan Finlân, ûnder de
-          <a href="https://www.maanmittauslaitos.fi/en/opendata-licence-version1">NLSFI-lisinsje</a>.
-        contributors_fr_html: |-
-          <strong>Frankryk</strong>: Befettet data mei as boarne
-          Direction Générale des Impôts.
-        contributors_nl_html: |-
-          <strong>Nederlân</strong>: Befettet &copy; AND data, 2007
-          (<a href="https://www.and.com">www.and.com</a>)
-        contributors_nz_html: |-
-          <strong>Nij-Seelân</strong>: Befettet data mei as boarne de
-          <a href="https://data.linz.govt.nz/">LINZ Data Service</a> en
-          werbrûkber ûnder de lisinsje
-          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
-        contributors_si_html: |-
-          <strong>Sloveenje</strong>: Befettet data fan 'e
-          <a href="http://www.gu.gov.si/en/">Lânmjittings- en Kartearringsautoriteit</a> en it
-          <a href="http://www.mkgp.gov.si/en/">Ministearje fan Lânbou, Boskbou en Fiedsel</a>
-          (iepenbiere ynformaasje fan Sloveenje).
-        contributors_es_html: |-
-          <strong>Spanje</strong>: Befettet data mei as boarne it
-          Spaansk Nasjonaal Geografysk Ynstitút (<a href="http://www.ign.es/">IGN</a>) en it
-          Nasjonaal Kartografysk Systeem (<a href="http://www.scne.es/">SCNE</a>)
-          werbrûkber ûnder de lisinsje <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
-        contributors_za_html: |-
-          <strong>Súd-Afrika</strong>: Befettet data mei as boarne
-          <a href="http://www.ngi.gov.za/">Chief Directorate:
-          National Geo-Spatial Information</a>, Steatsauteursrjochten foarbeholden.
-        contributors_gb_html: |-
-          <strong>Feriene Keninkryk</strong>: Befettet data fan Ordnance
-          Survey &copy; Auteurs- en databankrjochten fan 'e Kroan
-          2010-19.
         contributors_footer_1_html: |-
           Besjoch de <a
           href="https://wiki.openstreetmap.org/wiki/Contributors">Bydragers-side</a>
@@ -2106,9 +2044,9 @@ fy:
           of tsjinje it drekst yn op ús
           <a href="https://dmca.openstreetmap.org/">side mei in webformulier</a>.
         trademarks_title_html: <span id="trademarks"></span>Hannelsmerken
-        trademarks_1_html: OpenHistoricalMap, it fergrutglês-logo en 'State of the Map'
-          binne registrearre hannelsmerken fan 'e OpenHistoricalMap-stifting. At jo fragen
-          hawwe oer jo gebrûk fan 'e merken, besjoch dan ús <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">Hannelsmerkebelied</a>.
+        trademarks_1_html: OpenHistoricalMap, it fergrutglês-logo en 'State of the
+          Map' binne registrearre hannelsmerken fan 'e OpenHistoricalMap-stifting.
+          At jo fragen hawwe oer jo gebrûk fan 'e merken, besjoch dan ús <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">Hannelsmerkebelied</a>.
     index:
       js_1: Jo brûke ôf in webblêder dy't gjin JavaScript stipet, ôf jo hawwe JavaScript
         útskeakele.
@@ -2117,7 +2055,8 @@ fy:
       shortlink: Lytse kepp.
       createnote: Notysje taheakje
       license:
-        copyright: Auteursrjochten OpenHistoricalMap en bydragers, ûnder in iepen lisinsje
+        copyright: Auteursrjochten OpenHistoricalMap en bydragers, ûnder in iepen
+          lisinsje
       remote_failed: Bewurkjen mislearre - soargje dat JOSM of Merkaartor laden is,
         en de ôfstânsbetsjinningsopsje ynskeakele
     edit:
@@ -2144,8 +2083,8 @@ fy:
         advice: |-
           At it eksportearjen boppe net slagget, besykje
           dan ris ien fan 'e neikommende boarnen:
-        body: Dit gebiet is te grut foar eksport as OpenHistoricalMap-XML-data. Zoom yn
-          of selektearje in lytser gebiet. Brûk oars ien fan 'e boarnen dy't hjirûnder
+        body: Dit gebiet is te grut foar eksport as OpenHistoricalMap-XML-data. Zoom
+          yn of selektearje in lytser gebiet. Brûk oars ien fan 'e boarnen dy't hjirûnder
           steane foar it ynladen fan bulkdata.
         planet:
           title: Planet OSM
@@ -2230,16 +2169,16 @@ fy:
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Foar organisaasjes
-        description: Mei in organisaasje plannen meitsje foar OpenHistoricalMap? Fyn wat
-          jo witte wolle op 'e Wolkom-matte.
+        description: Mei in organisaasje plannen meitsje foar OpenHistoricalMap? Fyn
+          wat jo witte wolle op 'e Wolkom-matte.
       wiki:
         url: https://wiki.openstreetmap.org/
         title: OpenStreetMap-wiki
         description: De wiki trochsjen foar wiidweidige dokumintaasje oer OpenHistoricalMap.
     potlatch:
-      removed: Jo standertbewurker foar OpenHistoricalMap is ynsteld op Potlatch. Om't
-        Adobe Flash Player weifallen is, is Potlatch net mear beskikber foar gebrûk
-        yn in webblêder.
+      removed: Jo standertbewurker foar OpenHistoricalMap is ynsteld op Potlatch.
+        Om't Adobe Flash Player weifallen is, is Potlatch net mear beskikber foar
+        gebrûk yn in webblêder.
       desktop_html: Jo kinne Potlatch nog brûke troch <a href="https://www.systemed.net/potlatch/">it
         kompjûterprogramma foar Mac as Windows yn te laden</a>.
       id_html: As alternatyf kinne jo jo standertbewurker ynstelle op iD, dat yn jo
@@ -2559,7 +2498,7 @@ fy:
       edit: Gegevens bewurkje
       delete: Kliïnt wiskje
       confirm: Seker witte?
-      requests: 'Freget de neikommende rjochten fan ''e meidogger:'
+      requests: "Freget de neikommende rjochten fan 'e meidogger:"
     index:
       title: Myn OAuth-gegevens
       my_tokens: Myn autorisearre applikaasjes
@@ -2575,7 +2514,7 @@ fy:
       registered_apps: 'Jo hawwe de neikommende kliïnt-applikaasjes registrearre:'
       register_new: Jo applikaasje registrearje
     form:
-      requests: 'Freegje de neikommende rjochten fan ''e meidogger:'
+      requests: "Freegje de neikommende rjochten fan 'e meidogger:"
     not_found:
       sorry: Spitich, mar %{type} koe net fûn wurde.
     create:

@@ -124,10 +124,10 @@ my:
     closed: ပိတ်လိုက်သည်
     created_html: <abbr title='%{title}'>%{time} အကြာက</abbr> ဖန်တီးခဲ့သည်
     closed_html: <abbr title='%{title}'>%{time} အကြာက</abbr> ပိတ်သိမ်းခဲ့သည်
-    created_by_html: '%{user} မှ <abbr title=''%{title}''>%{time} အကြာက</abbr> ဖန်တီးခဲ့သည်'
-    deleted_by_html: '%{user} မှ <abbr title=''%{title}''>%{time} အကြာက</abbr> ဖျက်ပစ်ခဲ့သည်'
-    edited_by_html: '%{user} မှ <abbr title=''%{title}''>%{time} အကြာက</abbr> ပြင်ဆင်ခဲ့သည်'
-    closed_by_html: '%{user} မှ <abbr title=''%{title}''>%{time} အကြာက</abbr> ပိတ်သိမ်းခဲ့သည်'
+    created_by_html: "%{user} မှ <abbr title='%{title}'>%{time} အကြာက</abbr> ဖန်တီးခဲ့သည်"
+    deleted_by_html: "%{user} မှ <abbr title='%{title}'>%{time} အကြာက</abbr> ဖျက်ပစ်ခဲ့သည်"
+    edited_by_html: "%{user} မှ <abbr title='%{title}'>%{time} အကြာက</abbr> ပြင်ဆင်ခဲ့သည်"
+    closed_by_html: "%{user} မှ <abbr title='%{title}'>%{time} အကြာက</abbr> ပိတ်သိမ်းခဲ့သည်"
     version: ဗားရှင်း
     anonymous: အမည်မသိ
     no_comment: (မှတ်ချက် မရှိ)

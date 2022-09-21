@@ -264,8 +264,8 @@ is:
         title: Eyði Aðgangi
         warning: Viðvörun! Eyðing aðgangs er óbreytanlegt, og ekki hægt að afturkalla.
         delete_account: Eyði Aðgangi
-        delete_introduction: 'Þú getur eytt OpenHistoricalMap aðgangin þínum með því að
-          nota takkann hér að neðan. Vinsamlegast athugaðu eftirfarandi upplýsingar:'
+        delete_introduction: 'Þú getur eytt OpenHistoricalMap aðgangin þínum með því
+          að nota takkann hér að neðan. Vinsamlegast athugaðu eftirfarandi upplýsingar:'
         delete_profile: Notenduupplýsingarnar þínar, þar á meðal notandaútlit, lýsing
           og heimastaðsetning verða fjarlægðar.
         delete_display_name: Sýningarnafnið þitt verður fjarlægt, og get verið notuð
@@ -338,10 +338,10 @@ is:
     closed: Lokað
     created_html: Bjó til <abbr title='%{title}'>%{time}</abbr>
     closed_html: Lokaði <abbr title='%{title}'> %{time}</abbr>
-    created_by_html: '%{user} bjó til <abbr title=''%{title}''> %{time}</abbr>'
-    deleted_by_html: '%{user} eyddi <abbr title=''%{title}''> %{time}</abbr>'
-    edited_by_html: '%{user} breytti <abbr title=''%{title}''> %{time}</abbr>'
-    closed_by_html: '%{user} lokaði <abbr title=''%{title}''> %{time}</abbr>'
+    created_by_html: "%{user} bjó til <abbr title='%{title}'> %{time}</abbr>"
+    deleted_by_html: "%{user} eyddi <abbr title='%{title}'> %{time}</abbr>"
+    edited_by_html: "%{user} breytti <abbr title='%{title}'> %{time}</abbr>"
+    closed_by_html: "%{user} lokaði <abbr title='%{title}'> %{time}</abbr>"
     version: Útgáfa
     in_changeset: Breytingasett
     anonymous: nafnlaus
@@ -1599,9 +1599,10 @@ is:
     message_notification:
       subject: '[OpenHistoricalMap] %{message_title}'
       hi: Hæ %{to_user},
-      header: '%{from_user} hefur send þér skilaboð á OpenHistoricalMap með titlinum „%{subject}“:'
-      header_html: '%{from_user} hefur sent eitt skilaboð gegnum OpenHistoricalMap með
-        efninu %{subject}:'
+      header: '%{from_user} hefur send þér skilaboð á OpenHistoricalMap með titlinum
+        „%{subject}“:'
+      header_html: '%{from_user} hefur sent eitt skilaboð gegnum OpenHistoricalMap
+        með efninu %{subject}:'
       footer: Þú getur einnig lesið skilaboðin á %{readurl} og sent skilaboð til höfundarins
         á %{replyurl}
       footer_html: Þú getur einnig lesið skilaboðin á %{readurl} og sent skilaboð
@@ -1662,8 +1663,8 @@ is:
       commented:
         subject_own: '[OpenHistoricalMap] %{commenter} hefur gert athugasemd við einn
           af minnispunktunum þínum'
-        subject_other: '[OpenHistoricalMap@] %{commenter} hefur gert athugasemd við minnispunkt
-          sem þú hefur áhuga á'
+        subject_other: '[OpenHistoricalMap@] %{commenter} hefur gert athugasemd við
+          minnispunkt sem þú hefur áhuga á'
         your_note: '%{commenter} hefur sett athugasemd við einn af minnispunktunum
           þínum nálægt %{place}.'
         your_note_html: '%{commenter} hefur sett athugasemd við einn af minnispunktunum
@@ -1675,8 +1676,8 @@ is:
       closed:
         subject_own: '[OpenHistoricalMap] %{commenter} hefur leyst einn af minnispunktunum
           þínum'
-        subject_other: '[OpenHistoricalMap@] %{commenter} hefur leyst minnispunkt sem
-          þú hefur áhuga á'
+        subject_other: '[OpenHistoricalMap@] %{commenter} hefur leyst minnispunkt
+          sem þú hefur áhuga á'
         your_note: '%{commenter} hefur leyst einn af minnispunktunum þínum nálægt
           %{place}.'
         your_note_html: '%{commenter} hefur leyst einn af minnispunktunum þínum nálægt
@@ -1686,8 +1687,8 @@ is:
         commented_note_html: '%{commenter} hefur leyst minnispunkt á korti sem þú
           hefur gert athugasemd við. Minnispunkturinn er nálægt %{place}.'
       reopened:
-        subject_own: '[OpenHistoricalMap] %{commenter} hefur endurvirkjað einn af minnispunktunum
-          þínum'
+        subject_own: '[OpenHistoricalMap] %{commenter} hefur endurvirkjað einn af
+          minnispunktunum þínum'
         subject_other: '[OpenHistoricalMap@] %{commenter} hefur endurvirkjað minnispunkt
           sem þú hefur áhuga á'
         your_note: '%{commenter} hefur endurvirkjað einn af minnispunktunum þínum
@@ -1706,8 +1707,8 @@ is:
       commented:
         subject_own: '[OpenHistoricalMap] %{commenter} hefur gert athugasemd við eitt
           af breytingasettunum þínum'
-        subject_other: '[OpenHistoricalMap@] %{commenter} hefur gert athugasemd við breytingasett
-          sem þú hefur áhuga á'
+        subject_other: '[OpenHistoricalMap@] %{commenter} hefur gert athugasemd við
+          breytingasett sem þú hefur áhuga á'
         your_changeset: '%{commenter} hefur sett athugasemd við eitt af breytingasettunum
           þínum sem búið var til %{time}'
         your_changeset_html: '%{commenter} hefur sett athugasemd við eitt af breytingasettunum
@@ -1892,12 +1893,12 @@ is:
       lost password link: Gleymdirðu lykilorðinu þínu?
       login_button: Innskrá
       register now: Skrá þig núna
-      with username: 'Ertu þegar með OpenHistoricalMap-aðgang? Skráðu þig inn með notandanafni
-        og lykilorði:'
+      with username: 'Ertu þegar með OpenHistoricalMap-aðgang? Skráðu þig inn með
+        notandanafni og lykilorði:'
       with external: 'Þú getur líka notað utanaðkomandi þjónustur til innskráningar:'
       new to osm: Nýr í OpenHistoricalMap?
-      to make changes: Til að gera breytingar í OpenHistoricalMap verðurðu að vera með
-        notandaaðgang.
+      to make changes: Til að gera breytingar í OpenHistoricalMap verðurðu að vera
+        með notandaaðgang.
       create account minute: Stofnaðu aðgang. Það tekur eina mínútu.
       no account: Ertu ekki með aðgang?
       account not active: Þessi reikningur er ekki virkur.<br />Vinsamlegast smelltu
@@ -1959,11 +1960,11 @@ is:
     about:
       next: Næsta
       copyright_html: <span>&copy;</span>Þátttakendur í<br>OpenHistoricalMap<br>verkefninu
-      used_by_html: 'OpenHistoricalMap veitir kortagögn á þúsundum vefsvæða, símaforritum og
-        tækjum'
-      lede_text: OpenHistoricalMap er byggt upp af heilu samfélagi kortagerðarfólks sem
-        leggur inn og viðheldur gögnum um vegi, stíga, kaffihús, járnbrautir og margt,
-        margt fleira, út um víða veröld.
+      used_by_html: OpenHistoricalMap veitir kortagögn á þúsundum vefsvæða, símaforritum
+        og tækjum
+      lede_text: OpenHistoricalMap er byggt upp af heilu samfélagi kortagerðarfólks
+        sem leggur inn og viðheldur gögnum um vegi, stíga, kaffihús, járnbrautir og
+        margt, margt fleira, út um víða veröld.
       local_knowledge_title: Staðbundin þekking
       local_knowledge_html: |-
         OpenHistoricalMap leggur áherslu á staðbundna þekkingu. Þátttakendurnir nota
@@ -1988,18 +1989,18 @@ is:
         með sömu notkunarskilmálum. Skoðaðu síðuna um <a href='%{copyright_path}'>höfundarrétt og
         notkunarleyfi</a> til að sjá ítarlegri upplýsingar varðandi þetta.
       legal_title: Lagalegur fyrirvari
-      legal_1_html: "Þetta vefsvæði ásamt mörgum tengdum þjónustum er formlega rekið
-        af\n<a href='https://osmfoundation.org/'>OpenHistoricalMap Foundation</a> (OSMF)
-        \nfyrir hönd samfélagsins. Notkun allrar þjónustu á vegum OSMF fellur undir
-        \n<a href=\"https://wiki.osmfoundation.org/wiki/Terms_of_Use\">notkunarskilmála
-        okkar</a>, <a href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\">ásættanlega
-        notkunarskilmála</a> og einnig <a href=\"https://wiki.osmfoundation.org/wiki/Privacy_Policy\">persónuverndarstefnu
-        okkar</a>."
-      legal_2_html: "Endilega <a href='https://osmfoundation.org/Contact'>hafðu samband
-        við OSMF</a> \nef þú ert með spurningar eða beiðnir varðandi notkunarleyfi,
-        höfundarrétt eða önnur lögfræðileg málefni.\n<br>\nOpenHistoricalMap, táknmerkið
-        með stækkunarglerinu og ástand kortsins eru <a href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\">skrásett
-        vörumerki OSMF</a>."
+      legal_1_html: "Þetta vefsvæði ásamt mörgum tengdum þjónustum er formlega rekið\
+        \ af\n<a href='https://osmfoundation.org/'>OpenHistoricalMap Foundation</a>\
+        \ (OSMF) \nfyrir hönd samfélagsins. Notkun allrar þjónustu á vegum OSMF fellur\
+        \ undir \n<a href=\"https://wiki.osmfoundation.org/wiki/Terms_of_Use\">notkunarskilmála\
+        \ okkar</a>, <a href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\"\
+        >ásættanlega notkunarskilmála</a> og einnig <a href=\"https://wiki.osmfoundation.org/wiki/Privacy_Policy\"\
+        >persónuverndarstefnu okkar</a>."
+      legal_2_html: "Endilega <a href='https://osmfoundation.org/Contact'>hafðu samband\
+        \ við OSMF</a> \nef þú ert með spurningar eða beiðnir varðandi notkunarleyfi,\
+        \ höfundarrétt eða önnur lögfræðileg málefni.\n<br>\nOpenHistoricalMap, táknmerkið\
+        \ með stækkunarglerinu og ástand kortsins eru <a href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\"\
+        >skrásett vörumerki OSMF</a>."
       partners_title: Samstarfsaðilar
     copyright:
       foreign:
@@ -2030,29 +2031,23 @@ is:
           sama leyfi.
           <a href="https://opendatacommons.org/licenses/odbl/1.0/">Leyfistextinn</a>
           útskýrir réttindi þín og skyldur.
-        intro_3_1_html: "Hjálparskjölin okkar eru gefin út með \n<a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">Creative\nCommons
-          Attribution-ShareAlike 2.0</a> notkunarleyfi (CC BY-SA 2.0)."
+        intro_3_1_html: "Hjálparskjölin okkar eru gefin út með \n<a href=\"https://creativecommons.org/licenses/by-sa/2.0/\"\
+          >Creative\nCommons Attribution-ShareAlike 2.0</a> notkunarleyfi (CC BY-SA\
+          \ 2.0)."
         credit_title_html: Hvernig á að vísa til OpenHistoricalMap
         credit_1_html: |-
           Við gerum kröfu um að þú notir tilvísunina &ldquo;&copy; Þátttakendur í
           OpenHistoricalMap verkefninu&rdquo;.
-        credit_2_1_html: "Þú þarft líka að taka skýrt fram að gögnin séu tiltæk með
-          Open\nDatabase notkunarleyfi, og ef verið sé að nota kortaflísar frá okkur,
-          að kortagögnin \nséu með CC BY-SA notkunarleyfi. Þú getur gert það með því
-          að tengja\ná <a href=\"https://www.openstreetmap.org/copyright\">þessa höfundarréttarsíðu</a>.\nAnnars,
-          og þess er krafist ef þú ert að dreifa OSM á einhverju\ngagnaformi, geturðu
-          talið upp og tengt beint á leyfishafana. Í miðlum\nþar sem tenglar eru varla
-          mögulegir (t.d. prentuðum verkum), stingum við upp á að\nþú beinir lesendum
-          á openstreetmap.org (mögulega að tengja\n'OpenHistoricalMap' við fullt vistfang
-          þessarar síðu), á opendatacommons.org, og\nef slíkt á við, á creativecommons.org."
-        credit_3_1_html: "Kortatíglarnir í &ldquo;staðlaða stílnum&rdquo; á www.openstreetmap.org
-          eru \nunnir af OpenHistoricalMap Foundation með OpenHistoricalMap-gögnum \nsem bera
-          Open Database notkunarleyfi. Ef þú ert að nota þessar kortaflísar skaltu
-          nota \neftirfarandi tilvísun: \n&ldquo;Grunnkort og gögn frá OpenHistoricalMap
-          og OpenHistoricalMap Foundation&rdquo;. \\"
-        credit_4_html: |-
-          Á flettanlegum rafrænum landakortum ætti tilvísunin að birtast í horni kortsins.
-          Til dæmis:
+        credit_2_1_html: "Þú þarft líka að taka skýrt fram að gögnin séu tiltæk með\
+          \ Open\nDatabase notkunarleyfi, og ef verið sé að nota kortaflísar frá okkur,\
+          \ að kortagögnin \nséu með CC BY-SA notkunarleyfi. Þú getur gert það með\
+          \ því að tengja\ná <a href=\"https://www.openstreetmap.org/copyright\">þessa\
+          \ höfundarréttarsíðu</a>.\nAnnars, og þess er krafist ef þú ert að dreifa\
+          \ OSM á einhverju\ngagnaformi, geturðu talið upp og tengt beint á leyfishafana.\
+          \ Í miðlum\nþar sem tenglar eru varla mögulegir (t.d. prentuðum verkum),\
+          \ stingum við upp á að\nþú beinir lesendum á openstreetmap.org (mögulega\
+          \ að tengja\n'OpenHistoricalMap' við fullt vistfang þessarar síðu), á opendatacommons.org,\
+          \ og\nef slíkt á við, á creativecommons.org."
         attribution_example:
           alt: Dæmi um hvernig eigi að vísa til OpenHistoricalMap á vefsíðu
           title: Dæmi um tilvísun
@@ -2060,66 +2055,11 @@ is:
         more_1_html: |-
           Lestu meira um notkun á gögnunum okkar og hvernig eigi að vísa til okkar á síðunni <a
           href="https://osmfoundation.org/Licence">OSMF notkunarleyfi</a>.
-        more_2_html: |-
-          Þó OpenHistoricalMap snúist um opin gögn, getum við ekki
-          séð utanaðkomandi aðilum fyrir ókeypis API-kortaþjónustu.
-          Skoðaðu síðurnar um <a href="https://operations.osmfoundation.org/policies/api/">notkun á API-forritsviðmóti</a>,
-          <a href="https://operations.osmfoundation.org/policies/tiles/">notkun á kortaflísum</a>
-          and <a href="https://operations.osmfoundation.org/policies/nominatim/">notkun á OSM-Nominatim</a>.
         contributors_title_html: Þeir sem hafa komið með framlög
         contributors_intro_html: |-
           Framlög hafa komið frá mörgum þúsundum einstaklinga. Við erum líka
           með gögn með opnum notkunarleyfum frá þjóðlegum landupplýsingastofnunum
           auk annarra opinberra aðila, meðal annars:
-        contributors_at_html: |-
-          <strong>Austurríki</strong>: Inniheldur gögn frá
-          <a href="https://data.wien.gv.at/">Stadt Wien</a> (með
-          <a href="https://creativecommons.org/licenses/by/3.0/at/deed.de">CC BY</a>),
-          <a href="https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm">Land Vorarlberg</a> og
-          Land Tirol (under <a href="https://www.tirol.gv.at/applikationen/e-government/data/nutzungsbedingungen/">CC BY AT með viðaukum</a>).
-        contributors_au_html: |-
-          <strong>Ástralía</strong>: Inniheldur gögn frá
-          <a href="https://www.psma.com.au/psma-data-copyright-and-disclaimer">PSMA Australia Limited</a>
-          sem gert er aðgengilegt af Commonwealth of Australia með
-          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> notkunarleyfi.
-        contributors_ca_html: |-
-          <strong>Kanada</strong>: Inniheldur gögn frá
-          GeoBase&reg;, GeoGratis (&copy; Department of Natural
-          Resources Canada), CanVec (&copy; Department of Natural
-          Resources Canada), og StatCan (Geography Division,
-          Statistics Canada).
-        contributors_fi_html: |-
-          <strong>Finnland</strong>: Inniheldur gögn frá
-          landupplýsingagagnagrunni Landmælinga Finnlands
-          auk annarra gagnasafna, með
-          <a href="https://www.maanmittauslaitos.fi/en/opendata-licence-version1">NLSFI notkunarleyfi</a>.
-        contributors_fr_html: |-
-          <strong>Frakkland</strong>: Inniheldur afleidd gögn frá
-          Direction Générale des Impôts (Skattstjóraembættið).
-        contributors_nl_html: |-
-          <strong>Holland</strong>: Inniheldur AND-gögn &copy;, 2007
-          (<a href="https://www.and.com">www.and.com</a>)
-        contributors_nz_html: |-
-          <strong>Nýja-Sjáland</strong>: Inniheldur gögn með uppruna frá
-          <a href="https://data.linz.govt.nz/">LINZ Data Service</a> og er með notkunarleyfi til endurnýtingar fyrir <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
-        contributors_si_html: |-
-          <strong>Slóvenía</strong>: Inniheldur gögn frá
-          <a href="http://www.gu.gov.si/en/">landmælinga og kortagerðaryfirvöldum</a> og
-          <a href="http://www.mkgp.gov.si/en/">ráðuneyti landbúnaðar, skógnýtingar og matvæla</a>
-          (opinberar upplýsingar í Slóveníu).
-        contributors_es_html: |-
-          <strong>Spánn</strong>: Inniheldur landmælinga- og kortagerðargögn frá
-          Spænsku landfræðistofnuninni (<a href="http://www.ign.es/">IGN</a>) og
-          úr Spænska kortagerðarkerfinu (<a href="http://www.scne.es/">SCNE</a>)
-          sem leyfilegt er að endurnýta með <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> notkunarleyfi.
-        contributors_za_html: |-
-          <strong>Suður-Afríka</strong>: Inniheldur gögn frá
-          <a href="http://www.ngi.gov.za/">Chief Directorate:
-          National Geo-Spatial Information</a>, höfundarréttur suðurafríska ríkisins (state copyright) áskilinn.
-        contributors_gb_html: |-
-          <strong>Bretland</strong>: Inniheldur landmælinga-
-          og kortagerðargögn með &copy; Crown Copyright höfundarrétti auk réttinda varðandi gagnasafn
-          2010-19.
         contributors_footer_1_html: |-
           Til að skoða nánari upplýsingar um þetta, auk annarra gagna sem notuð hafa verið
           til að bæta OpenHistoricalMap, skoðaðu þá síðuna <a
@@ -2225,11 +2165,11 @@ is:
             með því að draga það. Bættu við skilaboðunum þínum, smelltu síðan á að vista, og annað kortagerðarfólk mun væntanlega rannsaka málið.
       other_concerns:
         title: Önnur íhugunarefni
-        explanation_html: "Ef þú ert að velta fyrir þér hvernig gögnin okkar eru notuð
-          eða einhverju varðandi efni þeirra, geturðu skoðað\n<a href='/copyright'>síðuna
-          varðandi höfundarrétt</a> varðandi nánari lagaskýringar, eða haft samband
-          við viðeigandi \n<a href='https://wiki.osmfoundation.org/wiki/Working_Groups'>OSMF
-          vinnuhóp</a>.  \\"
+        explanation_html: "Ef þú ert að velta fyrir þér hvernig gögnin okkar eru notuð\
+          \ eða einhverju varðandi efni þeirra, geturðu skoðað\n<a href='/copyright'>síðuna\
+          \ varðandi höfundarrétt</a> varðandi nánari lagaskýringar, eða haft samband\
+          \ við viðeigandi \n<a href='https://wiki.osmfoundation.org/wiki/Working_Groups'>OSMF\
+          \ vinnuhóp</a>.  \\"
     help:
       title: Til að fá hjálp
       introduction: |-
@@ -2274,9 +2214,9 @@ is:
         description: Vafraðu um wiki/kvikuna til að sjá greinargóðar leiðbeiningar
           varðandi OpenHistoricalMap.
     potlatch:
-      removed: Sjálfgefinn OpenHistoricalMap ritstjóri er stilltur sem Potlatch. Þar sem
-        Adobe Flash Player er ekki til lengur, er Potlatch ekki lengur hægt að nota
-        í vafra.
+      removed: Sjálfgefinn OpenHistoricalMap ritstjóri er stilltur sem Potlatch. Þar
+        sem Adobe Flash Player er ekki til lengur, er Potlatch ekki lengur hægt að
+        nota í vafra.
     sidebar:
       search_results: Leitarniðurstöður
       close: Loka
@@ -2391,12 +2331,12 @@ is:
           nafn á veitingastað eða hraðatakmörk á vegi.
       rules:
         title: Reglur!
-        paragraph_1_html: "OpenHistoricalMap er með fáar formlegar reglur en við væntum
-          þess og gerum kröfu um\nað allir þáttakendur starfi með og eigi samskipti
-          við OSM-samfélagið. Ef þú ert að íhuga aðgerðir\naðrar en handvirkar breytingar,
-          ættirðu að lesa og fylgja leiðbeiningunum á síðunum \n<a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>Innflutningur</a>
-          og \n<a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>Sjálfvirkar
-          breytingar</a>."
+        paragraph_1_html: "OpenHistoricalMap er með fáar formlegar reglur en við væntum\
+          \ þess og gerum kröfu um\nað allir þáttakendur starfi með og eigi samskipti\
+          \ við OSM-samfélagið. Ef þú ert að íhuga aðgerðir\naðrar en handvirkar breytingar,\
+          \ ættirðu að lesa og fylgja leiðbeiningunum á síðunum \n<a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>Innflutningur</a>\
+          \ og \n<a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>Sjálfvirkar\
+          \ breytingar</a>."
       questions:
         title: Einhverjar spurningar?
         paragraph_1_html: |-
@@ -2522,8 +2462,8 @@ is:
     require_admin:
       not_an_admin: Þú þarft að vera möppudýr til að framkvæma þessa aðgerð.
     setup_user_auth:
-      blocked_zero_hour: Þú átt áríðandi skilaboð á OpenHistoricalMap vefsvæðinu. Þú verður
-        að lesa þessi skilaboð áður en þú getur vistað neinar breytingar.
+      blocked_zero_hour: Þú átt áríðandi skilaboð á OpenHistoricalMap vefsvæðinu.
+        Þú verður að lesa þessi skilaboð áður en þú getur vistað neinar breytingar.
       blocked: Aðgangur þinn að API-forritunarviðmótinu hefur verið bannaður. Skráðu
         þig inn í vefviðmótið fyrir frekari upplýsingar.
       need_to_see_terms: Aðgangur þinn að API-forritunarviðmótinu hefur verið frystur
@@ -2536,9 +2476,9 @@ is:
     authorize:
       title: Auðkenndu aðgang að notandaaðganginum þínum
       request_access_html: Forritið %{app_name} hefur óskað eftir að fá aðgang að
-        OpenHistoricalMap í gegnum notandaaðganginn þinn, %{user}. Merktu við hvað eiginleika
-        þú vilt gefa forritinu leyfi fyrir. Hægt er að haka við hvaða eiginleika sem
-        er.
+        OpenHistoricalMap í gegnum notandaaðganginn þinn, %{user}. Merktu við hvað
+        eiginleika þú vilt gefa forritinu leyfi fyrir. Hægt er að haka við hvaða eiginleika
+        sem er.
       allow_to: 'Leyfa forritinu að:'
       allow_read_prefs: lesa notandastillingarnar þínar.
       allow_write_prefs: breyta notandastillingunum þínum.
@@ -2786,10 +2726,10 @@ is:
       title: Aðgangur frystur
       heading: Aðgangur frystur
       support: Aðstoð
-      body_html: "<p>\nÞví miður, notandaaðgangurinn þinn hefur verið frystur vegna
-        grunsamlegrar \nvirkni.\n</p>\n<p>\nÞessi ákvörðun verður endurskoðuð af stjórnanda
-        stuttu eftir, þú mátt hafa samband við <a href=\"%{webmaster}\">vefstjóra</a>
-        ef þú \nvilt ræða þetta mál.\n</p>"
+      body_html: "<p>\nÞví miður, notandaaðgangurinn þinn hefur verið frystur vegna\
+        \ grunsamlegrar \nvirkni.\n</p>\n<p>\nÞessi ákvörðun verður endurskoðuð af\
+        \ stjórnanda stuttu eftir, þú mátt hafa samband við <a href=\"%{webmaster}\"\
+        >vefstjóra</a> ef þú \nvilt ræða þetta mál.\n</p>"
     auth_failure:
       connection_failed: Tenging við auðkenningarþjónustu mistókst
       invalid_credentials: Ógild auðkenni sannvottunar
@@ -3126,16 +3066,16 @@ is:
         unnamed: ónefnd gata
         courtesy: Leiðarlýsing í boði %{link}
         exit_counts:
-          first: "1."
-          second: "2."
-          third: "3."
-          fourth: "4."
-          fifth: "5."
-          sixth: "6."
-          seventh: "7."
-          eighth: "8."
-          ninth: "9."
-          tenth: "10."
+          first: '1.'
+          second: '2.'
+          third: '3.'
+          fourth: '4.'
+          fifth: '5.'
+          sixth: '6.'
+          seventh: '7.'
+          eighth: '8.'
+          ninth: '9.'
+          tenth: '10.'
       time: Tími
     query:
       node: Hnútur

@@ -1283,8 +1283,8 @@ th:
       hi: เรียนคุณ %{to_user},
       header: 'ผู้ใช้ %{from_user} ส่งข้อความหาท่านผ่านทาง OpenHistoricalMap โดยมีหัวเรื่อง
         %{subject}:'
-      header_html: 'ผู้ใช้ %{from_user} ส่งข้อความหาท่านผ่านทาง OpenHistoricalMap โดยมีหัวเรื่อง
-        %{subject}:'
+      header_html: 'ผู้ใช้ %{from_user} ส่งข้อความหาท่านผ่านทาง OpenHistoricalMap
+        โดยมีหัวเรื่อง %{subject}:'
       footer_html: ท่านสามารถอ่านข้อความที่ลิงก์ %{readurl} และถ้าต้องการสามารถตอบกลับที่ลิงก์
         %{replyurl}
     friendship_notification:
@@ -1534,7 +1534,8 @@ th:
       copyright_html: |2-
 
         <span>&copy;ผู้มีส่วนร่วม </span>OpenHistoricalMap<br>
-      used_by_html: 'OpenHistoricalMap ให้ข้อมูลแผนที่แก่เว็บไซต์ แอปพลิเคชั่นมือถือ และอุปกรณ์นับพัน'
+      used_by_html: OpenHistoricalMap ให้ข้อมูลแผนที่แก่เว็บไซต์ แอปพลิเคชั่นมือถือ
+        และอุปกรณ์นับพัน
       lede_text: OpenHistoricalMap เป็นโครงการซึ่งสร้างสรรค์ขึ้นจากชุมชนของผู้ใช้และผู้สนใจ
         ที่ได้ทำการสำรวจ ปรับปรุง แบ่งปันข้อมูลแผนที่ถนน ทางหลวง ทางเดินป่า, รวมถึงสถานที่ที่น่าสนใจอย่าง
         ร้านกาแฟ สถานีรถไฟ และอื่นๆ อีกมากมาย จากทั่วทุกมุมโลก
@@ -1547,8 +1548,8 @@ th:
       community_driven_html: ชุมชนผู้ใช้ OpenHistoricalMap เติบโตขึ้นมาจากกลุ่มคนที่หลากหลาย
         ร่วมสร้างสรรค์จากทั้งนักทำแผนที่สมัครเล่น, ผู้เชี่ยวชาญระบบภูมิสารสนเทศ, วิศวกรดูแลเซิร์ฟเวอร์,
         อาสาสมัครบรรเทาสาธารณภัย และสาขาอาชีพอื่นๆ อีกมากมาย, เรียนรู้เพิ่มเติมเกี่ยวกับชุมชนของเราได้จาก<a
-        href='https://blog.openstreetmap.org'>บล็อกทางการของ OpenHistoricalMap</a>, รวม<a
-        href='%{diary_path}'>บันทึก</a>และ<a href='https://blogs.openstreetmap.org/'>บล็อกของผู้ใช้</a>ทั่วสารทิศ,
+        href='https://blog.openstreetmap.org'>บล็อกทางการของ OpenHistoricalMap</a>,
+        รวม<a href='%{diary_path}'>บันทึก</a>และ<a href='https://blogs.openstreetmap.org/'>บล็อกของผู้ใช้</a>ทั่วสารทิศ,
         และที่เว็บไซต์ของ<a href='https://www.osmfoundation.org/'>มูลนิธิ OpenHistoricalMap</a>
       open_data_title: ข้อมูลเปิดเผย
       open_data_html: |-
@@ -1557,18 +1558,20 @@ th:
         หรือกระทำการให้เกิดสิ่งอื่นใดใหม่ขึ้นต่องานที่มีนี้ ท่านสามารถแจกจ่ายได้แต่เพียงภายใต้สัญญาอนุญาตเดิม โปรดดู
          <a href='%{copyright_path}'>หน้าลิขสิทธิ์และสัญญาอนุญาต</a> ถ้าต้องการรายละเอียดเพิ่ม
       legal_title: ข้อกำหนดทางกฎหมาย
-      legal_1_html: "เว็บไซต์และบริการที่เกี่ยวข้องนี้ดำเนินการและบำรุงรักษาอย่างเป็นทางการโดย\n<a
-        href='https://osmfoundation.org/'>มูลนิธิ OpenHistoricalMap</a> (OSMF) \nในนามสมาชิกทุกคน
-        การใช้บริการที่ดำเนินการโดย OSMF จะต้องอยู่ภายใต้<a href=\"https://wiki.osmfoundation.org/wiki/Terms_of_Use\">ข้อกำหนดการใช้งาน</a>
-        <a href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\">\nเงื่อนไขการใช้งานที่ยอมรับได้</a>
-        และ<a href=\"https://wiki.osmfoundation.org/wiki/Privacy_Policy\">นโยบายความเป็นส่วนตัว</a>\n<br>
-        \nโปรด<a href='https://osmfoundation.org/Contact'>ติดต่อ OSMF</a> \nหากคุณมีข้อสงสัยเกี่ยวกับสัญญาอนุญาต
-        ลิขสิทธิ์ คำถามกฎหมาย และประเด็นอื่น ๆ ที่เกี่ยวข้อง"
-      legal_2_html: "โปรด<a href='https://osmfoundation.org/Contact'>ติดต่อ OSMF</a>
-        \nหากคุณมีข้อสงสัยเกี่ยวกับสัญญาอนุญาต ลิขสิทธิ์ คำถามกฎหมาย และประเด็นอื่น
-        ๆ ที่เกี่ยวข้อง\n<br>\nOpenHistoricalMap, โลโก้แว่นขยาย และ State of the Map เป็น<a
-        href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\">เครื่องหมายการค้าที่ลงทะเบียนของ
-        OSMF</a>"
+      legal_1_html: "เว็บไซต์และบริการที่เกี่ยวข้องนี้ดำเนินการและบำรุงรักษาอย่างเป็นทางการโดย\n\
+        <a href='https://osmfoundation.org/'>มูลนิธิ OpenHistoricalMap</a> (OSMF)\
+        \ \nในนามสมาชิกทุกคน การใช้บริการที่ดำเนินการโดย OSMF จะต้องอยู่ภายใต้<a href=\"\
+        https://wiki.osmfoundation.org/wiki/Terms_of_Use\">ข้อกำหนดการใช้งาน</a> <a\
+        \ href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\">\nเงื่อนไขการใช้งานที่ยอมรับได้</a>\
+        \ และ<a href=\"https://wiki.osmfoundation.org/wiki/Privacy_Policy\">นโยบายความเป็นส่วนตัว</a>\n\
+        <br> \nโปรด<a href='https://osmfoundation.org/Contact'>ติดต่อ OSMF</a> \n\
+        หากคุณมีข้อสงสัยเกี่ยวกับสัญญาอนุญาต ลิขสิทธิ์ คำถามกฎหมาย และประเด็นอื่น\
+        \ ๆ ที่เกี่ยวข้อง"
+      legal_2_html: "โปรด<a href='https://osmfoundation.org/Contact'>ติดต่อ OSMF</a>\
+        \ \nหากคุณมีข้อสงสัยเกี่ยวกับสัญญาอนุญาต ลิขสิทธิ์ คำถามกฎหมาย และประเด็นอื่น\
+        \ ๆ ที่เกี่ยวข้อง\n<br>\nOpenHistoricalMap, โลโก้แว่นขยาย และ State of the\
+        \ Map เป็น<a href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\"\
+        >เครื่องหมายการค้าที่ลงทะเบียนของ OSMF</a>"
       partners_title: องค์กรพันธมิตร
     copyright:
       foreign:
@@ -1589,11 +1592,12 @@ th:
           href="https://opendatacommons.org/licenses/odbl/">Open Data
           Commons Open Database License</a> (ODbL) โดย<a
           href="https://osmfoundation.org/">มูลนิธิ OpenHistoricalMap</a> (OSMF).
-        intro_2_html: "ท่านสามารถทำสำเนา แจกจ่าย แพร่ภาพ และปรับใช้ข้อมูลของเรา\nตราบเท่าที่ได้ระบุชื่อ
-          OpenHistoricalMap ตลอดจนผู้ร่วมจัดทำไว้ในคำขอบคุณหรือที่มา\nถ้าท่านปรับแก้ไขหรือสร้างสรรค์งานใหม่โดยใช้ข้อมูลของเราเป็นพื้น
-          ท่านสามารถ\nแจกจ่ายผลลัพธ์ที่ได้ภายใต้สัญญาอนุญาตเดียวกันเท่านั้น โปรดดู
-          <a href=\"https://opendatacommons.org/licenses/odbl/1.0/\">ข้อกำหนดทางกฎหมาย</a>
-          \nซึ่งจะอธิบายสิทธิและหน้าที่ที่ท่านพึงมี"
+        intro_2_html: "ท่านสามารถทำสำเนา แจกจ่าย แพร่ภาพ และปรับใช้ข้อมูลของเรา\n\
+          ตราบเท่าที่ได้ระบุชื่อ OpenHistoricalMap ตลอดจนผู้ร่วมจัดทำไว้ในคำขอบคุณหรือที่มา\n\
+          ถ้าท่านปรับแก้ไขหรือสร้างสรรค์งานใหม่โดยใช้ข้อมูลของเราเป็นพื้น ท่านสามารถ\n\
+          แจกจ่ายผลลัพธ์ที่ได้ภายใต้สัญญาอนุญาตเดียวกันเท่านั้น โปรดดู <a href=\"\
+          https://opendatacommons.org/licenses/odbl/1.0/\">ข้อกำหนดทางกฎหมาย</a> \n\
+          ซึ่งจะอธิบายสิทธิและหน้าที่ที่ท่านพึงมี"
         intro_3_1_html: เอกสารประกอบนี้อยู่ภายใต้สัญญาอนุญาต <a href="https://creativecommons.org/licenses/by-sa/2.0/">Creative
           Commons Attribution-ShareAlike 2.0</a> (CC BY-SA 2.0)
         credit_title_html: วิธีการแสดงที่มาหรือคำขอบคุณ OpenHistoricalMap
@@ -1608,7 +1612,6 @@ th:
           นอกจากนี้ (จำเป็นหากท่านจ่ายแจกข้อมูล OSM) ท่านสามารถลิงก์ไปยังสัญญาอนุญาตโดยตรง
           ในสื่ออย่างอื่น อาทิ สิ่งพิมพ์ ซึ่งไม่สามารถลิงก์ข้อมูลได้แนะนำให้ระบุเพียง openstreetmap.org
           และ/หรือ opendatacommons.org และ/หรือ creativecommons.org
-        credit_4_html: สำหรับแผนที่อิเล็กทรอนิกส์ที่ค้นได้ รายชื่อผู้มีส่วนร่วมควรปรากฏที่มุมของแผนที่
         attribution_example:
           alt: ตัวอย่างการอ้างอิง OpenHistoricalMap บนหน้าเว็บ
           title: ตัวอย่างการอ้างอิง
@@ -1616,66 +1619,10 @@ th:
         more_1_html: |-
           อ่านเพิ่มเติมเกี่ยวกับการใช้ข้อมูลของเรา ตลอดจนการอ้างอิงเราได้ที่ <a
           href="https://osmfoundation.org/Licence">หน้าสัญญาอนุญาต OSMF</a>
-        more_2_html: |-
-          ถึงแม้ว่า OpenHistoricalMap จะเป็นข้อมูลแบบเปิด เราก็ไม่สามารถมอบ API แผนที่แบบไม่คิดค่าใช้จ่ายให้แก่บุคคลที่สามได้
-          ดูที่<a href="https://operations.osmfoundation.org/policies/api/">นโยบายการใช้ API</a>
-          <a href="https://operations.osmfoundation.org/policies/tiles/">นโยบายการใช้ไทล์</a>
-          และ<a href="https://operations.osmfoundation.org/policies/nominatim/">นโยบายการใช้ Nominatim</a> ของเรา
         contributors_title_html: ผู้ร่วมสร้างสรรค์ของเรา
         contributors_intro_html: |-
           ผู้มีส่วนร่วมของเราคือบุคคลนับพัน เรายังมีข้อมูลที่ใช้สัญญาอนุญาตแบบเปิดเผย
           จากตัวแทนการทำแผนที่ของชาติต่าง ๆ และแหล่งข้อมูลอื่น ๆ ต่อไปนี้:
-        contributors_at_html: |-
-          <strong>ออสเตรีย</strong>: มีข้อมูลจาก
-          <a href="https://data.wien.gv.at/">Stadt Wien</a> (under
-          <a href="https://creativecommons.org/licenses/by/3.0/at/deed.de">CC BY</a>),
-          <a href="https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm">Land Vorarlberg</a> และ
-          Land Tirol (under <a href="https://www.tirol.gv.at/applikationen/e-government/data/nutzungsbedingungen/">CC BY AT with amendments</a>).
-        contributors_au_html: |-
-          <strong>ออสเตรเลีย</strong>: มีข้อมูลที่มาจาก
-          <a href="https://www.psma.com.au/psma-data-copyright-and-disclaimer">PSMA Australia Limited</a>
-          ซึ่งได้รับอนุญาตโดย Commonwealth of Australia ภายใต้
-          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
-        contributors_ca_html: |-
-          <strong>แคนาดา</strong>: มีข้อมูลจาก
-          GeoBase&reg;, GeoGratis (&copy; Department of Natural
-          Resources Canada), CanVec (&copy; Department of Natural
-          Resources Canada) และ StatCan (Geography Division,
-          Statistics Canada)
-        contributors_fi_html: |-
-          <strong>ฟินแลนด์</strong>: มีข้อมูลจาก
-          ฐานข้อมูลการสำรวจภูมิศาสตร์แห่งชาติฟินแลนด์และฐานข้อมูลอื่น
-          อนุญาตให้ใช้ตาม
-          <a href="https://www.maanmittauslaitos.fi/en/opendata-licence-version1">สัญญาอนุญาต NLSFI</a>.
-        contributors_fr_html: |-
-          <strong>ฝรั่งเศส</strong>: มีข้อมูลจากอธิบดีกรมภาษี (
-          Direction Générale des Impôts)
-        contributors_nl_html: |-
-          <strong>เนเธอร์แลนด์</strong>: Contains &copy; AND data, 2007
-          (<a href="https://www.and.com">www.and.com</a>)
-        contributors_nz_html: |-
-          <strong>นิวซีแลนด์</strong>: มีข้อมูลที่มาจาก
-          <a href="https://data.linz.govt.nz/">LINZ Data Service</a> และ
-          ได้รับอนุญาตให้ใช้ซ้ำได้ภายใต้
-          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
-        contributors_si_html: |-
-          <strong>สโลวีเนีย</strong>: มีข้อมูลที่มาจาก
-          <a href="http://www.gu.gov.si/en/">Surveying and Mapping Authority</a> และ
-          <a href="http://www.mkgp.gov.si/en/">Ministry of Agriculture, Forestry and Food</a>
-          (ข้อมูลสาธารณะของสโลวีเนีย)
-        contributors_es_html: |-
-          <strong>สเปน</strong>: มีข้อมูลที่มาจาก
-          Spanish National Geographic Institute (<a href="http://www.ign.es/">IGN</a>) และ
-          National Cartographic System (<a href="http://www.scne.es/">SCNE</a>)
-          ซึ่งได้รับอนุญาตให้ใช้ซ้ำภายใต้ <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
-        contributors_za_html: |-
-          <strong>แอฟริกาใต้</strong>: มีข้อมูลที่มาจาก
-          <a href="http://www.ngi.gov.za/">Chief Directorate:
-          National Geo-Spatial Information</a>, State copyright reserved.
-        contributors_gb_html: |-
-          <strong>สหราชอาณาจักร</strong>: มีข้อมูลจากกองแผนที่ Ordnance
-          Survey data &copy; ลิขสิทธิ์ราชการและสิทธิ์แห่งฐานข้อมูล
-          2010-19
         contributors_footer_1_html: |-
           สำหรับรายละเอียดเพิ่มเติมเกี่ยวกับแหล่งข้อมูลเหล่านี้ และแหล่งข้อมูลอื่น ๆ
           ที่ใช้เพื่อช่วยปรับปรุง OpenHistoricalMap โปรดดูที่<a
@@ -1896,8 +1843,8 @@ th:
         title: อย่าลืมกติกา!
       questions:
         title: มีคำถามอีกหรือไม่?
-        paragraph_1_html: "OpenHistoricalMap มีสื่อสำหรับค้นคว้า สอบถาม ตอบคำถาม \nสนทนาหัวข้อต่างๆ
-          ตลอดจนอภิปรายและจัดทำวิธีการสร้างแผนที่\nซึ่งคุณจะ<a href='%{help_url}'>หาความช่วยเหลือได้ที่นี่</a>"
+        paragraph_1_html: "OpenHistoricalMap มีสื่อสำหรับค้นคว้า สอบถาม ตอบคำถาม \n\
+          สนทนาหัวข้อต่างๆ ตลอดจนอภิปรายและจัดทำวิธีการสร้างแผนที่\nซึ่งคุณจะ<a href='%{help_url}'>หาความช่วยเหลือได้ที่นี่</a>"
       start_mapping: เริ่มการทำแผนที่
       add_a_note:
         title: ไม่มีเวลาแก้ไขใช่ไหม? ใส่หมายเหตุไว้แทนได้!
@@ -2175,8 +2122,8 @@ th:
     auth_association:
       heading: บัญชีภายนอกของท่านยังมิได้ต่อเชื่อมกับบัญชี OpenHistoricalMap
       option_1: ถ้าท่านเป็นผู้ใช้ OpenHistoricalMap ใหม่ โปรดใช้แบบฟอร์มข้างล่างสร้างบัญชีผู้ใช้
-      option_2: "ถ้าท่านมีบัญชีผู้ใช้แล้ว สามารถเข้าสู่ระบบโดยใช้ชื่อผู้ใช้ รหัสผ่าน
-        \nแล้วผูกโยงบัญชีกับบัญชีภายนอกในหน้าการตั้งค่าา"
+      option_2: "ถ้าท่านมีบัญชีผู้ใช้แล้ว สามารถเข้าสู่ระบบโดยใช้ชื่อผู้ใช้ รหัสผ่าน\
+        \ \nแล้วผูกโยงบัญชีกับบัญชีภายนอกในหน้าการตั้งค่าา"
   user_role:
     filter:
       not_a_role: ข้อความ `%{role}' ไม่ใช่สถานะผู้ใช้งานที่ถูกต้อง

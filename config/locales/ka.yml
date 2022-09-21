@@ -794,7 +794,8 @@ ka:
     more: მეტი
   user_mailer:
     diary_comment_notification:
-      subject: '[OpenHistoricalMap]-ის მომხმარებელმა %{user} თქვენს დღიურში დატოვა კომენტარი'
+      subject: '[OpenHistoricalMap]-ის მომხმარებელმა %{user} თქვენს დღიურში დატოვა
+        კომენტარი'
       hi: გამარჯობა %{to_user},
     message_notification:
       hi: გამარჯობა %{to_user},

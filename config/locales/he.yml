@@ -306,12 +306,12 @@ he:
         title: למחוק את החשבון
         warning: אזהרה! תהליך מחיקת החשבון הוא סופי ובלתי־הפיך.
         delete_account: מחיקת חשבון
-        delete_introduction: 'באפשרותך למחוק את חשבון ה־OpenHistoricalMap שלך על־ידי לחיצה
-          על הכפתור שלמטה. שים לב לפרטים הבאים:'
+        delete_introduction: 'באפשרותך למחוק את חשבון ה־OpenHistoricalMap שלך על־ידי
+          לחיצה על הכפתור שלמטה. שים לב לפרטים הבאים:'
         delete_profile: מידע הפרופיל שלך, כולל התמונה, התיאור, ומיקום הבית שלך יוסרו.
         delete_display_name: שם התצוגה שלך יוסר, וניתן יהיה להשתמש בו בחשבונות אחרים.
-        retain_caveats: 'אבל חלק מהמידע עליך יישמר ב־OpenHistoricalMap, אפילו אחרי מחיקת
-          חשבונך:'
+        retain_caveats: 'אבל חלק מהמידע עליך יישמר ב־OpenHistoricalMap, אפילו אחרי
+          מחיקת חשבונך:'
         retain_edits: העריכות שלך לבסיס הנתונים של המפה, אם קיימות, יישמרו.
         retain_traces: ההקלטות (traces) שהעליתם, יישמרו.
         retain_diary_entries: יומן הכניסות ויומן התגובות שלך, אם קיימים, יישמרו, אך
@@ -1593,8 +1593,8 @@ he:
     tou: תנאי שימוש
     osm_offline: מסד הנתונים של אתר OpenHistoricalMap אינו מקוון כעת בשל עבודות תחזוקה
       המבוצעות בו.
-    osm_read_only: מסד הנתונים של אתר OpenHistoricalMap נתון כעת במצב קריאה בלבד בשל עבודות
-      תחזוקה המבוצעות בו.
+    osm_read_only: מסד הנתונים של אתר OpenHistoricalMap נתון כעת במצב קריאה בלבד בשל
+      עבודות תחזוקה המבוצעות בו.
     donate: תִמכו ב־OpenHistoricalMap על־ידי %{link} לקרן לשדרוג החומרה.
     help: עזרה
     about: אודות
@@ -1611,7 +1611,8 @@ he:
     more: עוד
   user_mailer:
     diary_comment_notification:
-      subject: '[אופן סטריט מאפ OpenHistoricalMap] תגובה מאת %{user} נוספה לרשומת יומן'
+      subject: '[אופן סטריט מאפ OpenHistoricalMap] תגובה מאת %{user} נוספה לרשומת
+        יומן'
       hi: שלום %{to_user},
       header: '%{from_user} הגיב לרשומת היומן ב־OpenHistoricalMap עם הנושא %{subject}:'
       header_html: '%{from_user} הגיב לרשומת היומן ב־OpenHistoricalMap עם הנושא %{subject}:'
@@ -1679,8 +1680,8 @@ he:
       commented:
         subject_own: '[OpenHistoricalMap] התקבלה תגובה מאת %{commenter} על אחת מההערות
           שלך'
-        subject_other: '[OpenHistoricalMap] התקבלה תגובה מאת %{commenter} על הערה שהתעניינת
-          בה'
+        subject_other: '[OpenHistoricalMap] התקבלה תגובה מאת %{commenter} על הערה
+          שהתעניינת בה'
         your_note: התקבלה תגובה מאת %{commenter} על אחת מהערות המפה שלך ליד %{place}
         your_note_html: התקבלה תגובה מאת %{commenter} על אחת מהערות המפה שלך ליד %{place}
         commented_note: התקלבה תגובה מאת %{commenter} על הערה על מפה שהגבת עליה. הערה
@@ -1698,7 +1699,8 @@ he:
           %{place}.'
       reopened:
         subject_own: ‫[OpenHistoricalMap] אחת ההערות שלך הופעלה מחדש ע״י %{commenter}
-        subject_other: '[OpenHistoricalMap] הערה שמעניינת אותך הופעלה מחדש על־ידי %{commenter}'
+        subject_other: '[OpenHistoricalMap] הערה שמעניינת אותך הופעלה מחדש על־ידי
+          %{commenter}'
         your_note: הערה שהוספת ליד %{place} הופעלה מחדש על־ידי %{commenter}.
         your_note_html: '%{commenter} הפעיל מחדש הערת מפה שהוספת ליד %{place}.'
         commented_note: הערה במפה שהגבת עליה הופעלה מחדש על־ידי %{commenter}. ההערה
@@ -1711,10 +1713,10 @@ he:
       hi: שלום %{to_user},
       greeting: שלום,
       commented:
-        subject_own: ‫[OpenHistoricalMap] קיבלת הערה מאת %{commenter} על אחת מערכות השינויים
-          שלך
-        subject_other: '[OpenHistoricalMap] המשתמש %{commenter} העיר על אחת מערכות השינויים
-          שהתעניינת בהן'
+        subject_own: ‫[OpenHistoricalMap] קיבלת הערה מאת %{commenter} על אחת מערכות
+          השינויים שלך
+        subject_other: '[OpenHistoricalMap] המשתמש %{commenter} העיר על אחת מערכות
+          השינויים שהתעניינת בהן'
         your_changeset: קיבלת הערה מהמשתמש %{commenter} על את מערכות השינויים שיצרת
           ב־%{time}
         your_changeset_html: המשתמש %{commenter} הוסיף הערה ב־%{time} על אחת מערכות
@@ -1958,10 +1960,10 @@ he:
     about:
       next: הבא
       copyright_html: <span>&copy;</span>תורמי<br>OpenHistoricalMap
-      used_by_html: 'OpenHistoricalMap מספקת נתוני מפות לאלפי אתרי אינטרנט, יישומים ומכשירים
-        שונים'
-      lede_text: את OpenHistoricalMap בונה קהילת ממפים שתורמים ומתחזקים נתונים על דרכים,
-        שבילים, בתי־קפה, תחנות רכבת ועוד הרבה יותר, מסביב לעולם.
+      used_by_html: OpenHistoricalMap מספקת נתוני מפות לאלפי אתרי אינטרנט, יישומים
+        ומכשירים שונים
+      lede_text: את OpenHistoricalMap בונה קהילת ממפים שתורמים ומתחזקים נתונים על
+        דרכים, שבילים, בתי־קפה, תחנות רכבת ועוד הרבה יותר, מסביב לעולם.
       local_knowledge_title: ידע מקומי
       local_knowledge_html: |-
         OpenHistoricalMap מדגישה ידע מקומי. התורמים משתמשים
@@ -2035,12 +2037,6 @@ he:
           להפנות את הקוראים שלך אל openstreetmap.org (אולי על־ידי הרחבת
           „OpenHistoricalMap” ככתובת מלאה), אל opendatacommons.org, ואם
           זה מתאים, אל creativecommons.org.
-        credit_3_1_html: "אריחי המפה ב&ldquo;סגנון הרגיל&rdquo; ב־www.openstreetmap.org
-          הן תוצרת שהופקה על ידי \nעמותת OpenHistoricalMap באמצעות הנתונים של OpenHistoricalMap
-          \nתחת רישיון מסד הנתונים הפתוח (Open Database License). בעת שימוש\nבסגנון
-          המפה הזה, אות הייחוס\nנדרש כמו לנתוני המפה."
-        credit_4_html: 'בשביל מפה אלקטרונית שאפשר לעיין בה, הייחוס צריך להופיע בפינת
-          המפה. למשל:'
         attribution_example:
           alt: דוגמה לצורה הנכונה לתת ייחוס ל־OpenHistoricalMap באתר האינטרנט
           title: דוגמה לייחוס
@@ -2048,60 +2044,11 @@ he:
         more_1_html: |-
           קִראו עוד על שימוש בנתונים שלנו ועל דרכים לייחס אלינו יצירות נגזרות ב<a
           href="http://osmfoundation.org/Licence">דף רישיון OSMF</a>.
-        more_2_html: |-
-          אף־על־פי ש־OpenHistoricalMap הוא מיזם נתונים פתוחים, איננו יכולים לספק
-          API מפות בחינם לכל צד שלישי.
-          ר׳ את דפי המדיניות שלנו: <a href="https://operations.osmfoundation.org/policies/api/">המדיניות השימוש ב־API</a>,
-          <a href="https://operations.osmfoundation.org/policies/tiles/">מדיניות השימוש באריחים</a>
-          ו<a href="https://operations.osmfoundation.org/policies/nominatim/">מדיניות השימוש בנומינטים</a>.
         contributors_title_html: התורמים שלנו
         contributors_intro_html: |-
           התורמים שלנו הם אלפי אנשים. אנו גם כוללים
           נתונים ברישיון פתוח מסוכנויות מיפוי לאומות
           וממקורות אחרים, בהם:
-        contributors_at_html: |-
-          <strong>אוסטריה</strong>: מכיל נתונים
-          מ<a href="https://data.wien.gv.at/">עיריית וינה</a> לפי תנאי
-          <a href="https://creativecommons.org/licenses/by/3.0/at/deed.de">CC BY</a>,
-          מ<a href="https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm">מדינת פורארלברג</a>
-          וממדינת טירול (לפי <a href="https://www.tirol.gv.at/applikationen/e-government/data/nutzungsbedingungen/">CC-BY AT עם תיקונים</a>).
-        contributors_au_html: |-
-          <strong>אוסטרליה</strong>: מכיל או מפותח באמצעות Administrative Boundaries &copy;
-          <a href="https://geoscape.com.au/legal/data-copyright-and-disclaimer/">Geoscape Australia</a>
-          ברישיון שניתן על־ידי חבר העמים האוסטרלי לפי תנאי
-          <a href="https://creativecommons.org/licenses/by/4.0/">רישיון קריאייטיב קומונז ייחוס 4.0 בין־לאומי (CC BY 4.0)</a>.
-        contributors_ca_html: |-
-          <strong>קנדה</strong>: מכיל נתונים
-          מ־GeoBase&reg;&rlm;, GeoGratis&rlm; (&copy;&rlm; Department of Natural
-          Resources Canada)&rlm;, CanVec&rlm; (&copy;&rlm; Department of Natural
-          Resources Canada), ו־StatCan&rlm; (Geography Division,
-          Statistics Canada).
-        contributors_fi_html: |-
-          <strong>פינלנד</strong>: מכיל מידע ממסד נתונים טופוגרפיים של פינלנד וממקורות מידע אחרים, תחת
-          <a href="https://www.maanmittauslaitos.fi/en/opendata-licence-version1">רישיון NLSFI</a>.
-        contributors_fr_html: |-
-          <strong>צרפת</strong>: מכיל נתונים שהגיעו במקור
-          ממנהלת המסים הכללית (Direction Générale des Impôts).
-        contributors_nl_html: |-
-          <strong>הולנד</strong>: מכיל &copy; נתונים מ־ AND&rlm;, 2007
-          (<a href="https://www.and.com">www.and.com</a>)
-        contributors_nz_html: סתם
-        contributors_si_html: |-
-          <strong>סלובניה</strong>: מכיל נתונים מ<a href="http://www.gu.gov.si/en/">הרשות למדידת־קרקעות ולמיפוי</a> ומ<a href="http://www.mkgp.gov.si/en/">משרד החקלאות, היערנות והמזון</a>
-          (מידע ציבורי של סלובניה).
-        contributors_es_html: |-
-          <strong>ספרד</strong>: מכיל נתונים שסופקו על ידי
-          המכון הגאוגרפי הלאומי של ספרד (<a href="http://www.ign.es/">IGN</a>) ועל ידי
-          מערכת המיפוי הלאומית (<a href="http://www.scne.es/">SCNE</a>)
-          שמותר להשתמש בהן תחת תנאי <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
-        contributors_za_html: |-
-          <strong>דרום אפריקה</strong>: מכיל נתונים שהגיעו
-          מ־<a href="http://www.ngi.gov.za/">מִנהל כללי:
-          מידע גאו־מרחבי לאומי</a>, זכות יוצרים ממלכתית שמורה.
-        contributors_gb_html: |-
-          <strong>הממלכה המאוחדת</strong>: מכיל נתוני סקר מדידות
-          &copy; זכויות הכתר וזכויות מסדי נתונים
-          2010–2019.
         contributors_footer_1_html: |-
           למידע נוסף על מקורות אלה ואחרים ששימשו
           לשיפור OpenHistoricalMap, נא לראות את <a
@@ -2123,9 +2070,9 @@ he:
           ההסרה</a> שלנו או כתבו תלונה ישירות
           <a href="https://dmca.openstreetmap.org/">בדף התלונות המקוון שלנו</a>.
         trademarks_title_html: <span id="trademarks"></span>סימנים מסחריים
-        trademarks_1_html: OpenHistoricalMap, סמל הזכוכית המגדלת ו־State of the Map הם
-          סימנים מסחריים של קרן OpenHistoricalMap. אם יש לך שאלות על השימוש שלך בסימנים,
-          ר' את <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">מדיניות
+        trademarks_1_html: OpenHistoricalMap, סמל הזכוכית המגדלת ו־State of the Map
+          הם סימנים מסחריים של קרן OpenHistoricalMap. אם יש לך שאלות על השימוש שלך
+          בסימנים, ר' את <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">מדיניות
           הסימנים המסחריים שלנו</a>.
     index:
       js_1: הדפדפן שבו אתה משתמש אינו תומך ב־JavaScript, או שכיבית את השימוש ב־JavaScript.
@@ -2134,7 +2081,8 @@ he:
       shortlink: קישור מקוצר
       createnote: הוספת הערה
       license:
-        copyright: 'זכויות היוצרים: מיזם OpenHistoricalMap ותורמיו, בכפוף לרישיון פתוח'
+        copyright: 'זכויות היוצרים: מיזם OpenHistoricalMap ותורמיו, בכפוף לרישיון
+          פתוח'
       remote_failed: העריכה נכשלה – נא לוודא כי JOSM או Merkaartor נטענו ושאפשרות
         השליטה מקחור מופעלת
     edit:
@@ -2242,15 +2190,15 @@ he:
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: לארגונים
-        description: הארגון שלך מתכנן תכניות על OpenHistoricalMap? כל המידע הנחוץ לך נמצא
-          במחצלת הכניסה.
+        description: הארגון שלך מתכנן תכניות על OpenHistoricalMap? כל המידע הנחוץ
+          לך נמצא במחצלת הכניסה.
       wiki:
         url: https://wiki.openstreetmap.org/
         title: הוויקי של OpenHistoricalMap
         description: לעיין בוויקי לתיעוד מעמיק על OpenHistoricalMap.
     potlatch:
-      removed: עורך הOpenHistoricalMap ברירת המחדל שלך מוגדר כPotlatch. בגלל שנגן הפלאש
-        של אדובי כבר לא נתמך, Potlatch כבר לא זמין בדפדפן.
+      removed: עורך הOpenHistoricalMap ברירת המחדל שלך מוגדר כPotlatch. בגלל שנגן
+        הפלאש של אדובי כבר לא נתמך, Potlatch כבר לא זמין בדפדפן.
       desktop_html: ניתן עדיין להשתמש בPotlatch על ידי <a href="https://www.systemed.net/potlatch/">הורדת
         יישום שולחן העבודה ל-Windows או ל-Mac</a>.
       id_html: לחלופין, ניתן להגדיר את עורך בררת המחדל שלך ל־iD, שמופעל בדפדפן כמו
@@ -2340,21 +2288,21 @@ he:
           toilets: שירותים
     welcome:
       title: ברוך בואך!
-      introduction_html: ברוך בואך ל־OpenHistoricalMap, מפה חופשית של העולם, שאפשר לערוך.
-        עכשיו שנרשמת, הכול מוכן ואפשר להתחיל לצייר מפות. הנה מדריך קצת שייתן לך את
-        הדברים החשובים שכדאי לך לדעת.
+      introduction_html: ברוך בואך ל־OpenHistoricalMap, מפה חופשית של העולם, שאפשר
+        לערוך. עכשיו שנרשמת, הכול מוכן ואפשר להתחיל לצייר מפות. הנה מדריך קצת שייתן
+        לך את הדברים החשובים שכדאי לך לדעת.
       whats_on_the_map:
         title: מה על המפה
-        on_html: OpenHistoricalMap הוא מקום למיפוי דברים אמתיים ונוכחיים – הוא מכיל מיליוני
-          מבנים, דרכים ופרטים אחרים על מקומות. אפשר למפות כל ישות מהעולם האמתי שמעניין
-          אותך.
+        on_html: OpenHistoricalMap הוא מקום למיפוי דברים אמתיים ונוכחיים – הוא מכיל
+          מיליוני מבנים, דרכים ופרטים אחרים על מקומות. אפשר למפות כל ישות מהעולם האמתי
+          שמעניין אותך.
         off_html: מה שאין פה זה מידע דעתני כמו דירוגים, מקומות היסטוריים או היפותטיים
           ונתונים ומקורות שמוגבלים בזכויות יוצרים. אנו דורשים ממך לא להוסיף  מידע
           ממפות מקוונות או מודפסות אלא אם יש לך אישור מיוחד לכך.
       basic_terms:
         title: מונחים בסיסיים למיפוי
-        paragraph_1_html: למיזם OpenHistoricalMap יש עגה משלו. הנה מספר מילות מפתח שיהיו
-          שימושיות.
+        paragraph_1_html: למיזם OpenHistoricalMap יש עגה משלו. הנה מספר מילות מפתח
+          שיהיו שימושיות.
         editor_html: <strong>עורך</strong> הוא תכנה או אתר לעריכת המפה.
         node_html: <strong>נקודה</strong> מייצגת מיקום נקודתי, כגון מסעדה אחת או עץ
           אחד.
@@ -2363,9 +2311,9 @@ he:
           או מגבלת מהירות בדרך.
       rules:
         title: חוקים!
-        paragraph_1_html: ל־OpenHistoricalMap יש מעט חוקים פורמליים, אבל אנחנו מצפים מכל
-          המשתתפים לשתף פעולה ולתקשר עם הקהילה. אם אתם שוקלים לבצע פעולות כלשהן מלבד
-          עריכה ידנית, אנא קראו את המדריכים על <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>יבוא</a>
+        paragraph_1_html: ל־OpenHistoricalMap יש מעט חוקים פורמליים, אבל אנחנו מצפים
+          מכל המשתתפים לשתף פעולה ולתקשר עם הקהילה. אם אתם שוקלים לבצע פעולות כלשהן
+          מלבד עריכה ידנית, אנא קראו את המדריכים על <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>יבוא</a>
           ועל <a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>עריכות
           אוטומטיות</a>.
       questions:
@@ -2379,9 +2327,9 @@ he:
         title: אין לך זמן לערוך? אפשר להוסיף הערה!
         paragraph_1_html: אם רק רצית לתקן משהו קטן ואין לך זמן להירשם וללמוד איך לערוך,
           קל להוסיף הערה.
-        paragraph_2_html: 'צריך פשוט ללכת אל <a href=''%{map_url}''>המפה</a> וללחוץ
-          על סמל ההערה: <span class=''icon note''></span>. זה יוסיף למפה סמן, שאפשר
-          לגרור. אחרי הוספת ההערה יש ללחוץ על שמירה וממפים אחרים יבדקו את זה.'
+        paragraph_2_html: "צריך פשוט ללכת אל <a href='%{map_url}'>המפה</a> וללחוץ\
+          \ על סמל ההערה: <span class='icon note'></span>. זה יוסיף למפה סמן, שאפשר\
+          \ לגרור. אחרי הוספת ההערה יש ללחוץ על שמירה וממפים אחרים יבדקו את זה."
   traces:
     visibility:
       private: פרטי (משותף רק כאלמוני, נקודות לא ממוינות)
@@ -2490,8 +2438,8 @@ he:
     require_admin:
       not_an_admin: עליך להחזיק בהרשאות ניהול כדי לבצע את הפעולה הזאת.
     setup_user_auth:
-      blocked_zero_hour: יש לך מסר דחוף באתר OpenHistoricalMap. עליך לקרוא את ההודעה לפני
-        שמירת העריכות שלך.
+      blocked_zero_hour: יש לך מסר דחוף באתר OpenHistoricalMap. עליך לקרוא את ההודעה
+        לפני שמירת העריכות שלך.
       blocked: גישתך ל־API נחסמה. נא להיכנס לממשק הווב למידע נוסף.
       need_to_see_terms: גישתך ל־API מושעית זמנית. נא להיכנס לאתר כדי לצפות בתנאי
         התרומה. אין צורך לקבל אותם, אבל חובה להציג אותם.
@@ -2776,8 +2724,8 @@ he:
       unknown_error: האימות נכשל
     auth_association:
       heading: המזהה שלך עדיין אינו משויך לחשבון לחשבון OpenHistoricalMap.
-      option_1: אם התחלת רק עכשיו עם OpenHistoricalMap, נא ליצור חשבון חדש באמצעות הטופס
-        להלן.
+      option_1: אם התחלת רק עכשיו עם OpenHistoricalMap, נא ליצור חשבון חדש באמצעות
+        הטופס להלן.
       option_2: אם כבר יש לך חשבון, אפשר להיכנס לחשבון שלך באמצעות שם המשתמש והסיסמה
         שלך ואז לשייך את החשבון שלך למזהה מהגדרות המשתמש שלך.
   user_role:

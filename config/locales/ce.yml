@@ -415,8 +415,8 @@ ce:
         description: ТӀаьххьара дневникийн дӀайаздарш OpenHistoricalMap цуна %{user}
       language:
         title: Дневникийн дӀайаздарш OpenHistoricalMap тӀе %{language_name}
-        description: OpenHistoricalMap декъашхойн тӀехьарлера дневникийн дӀайаздарш %{language_name}
-          чуьра
+        description: OpenHistoricalMap декъашхойн тӀехьарлера дневникийн дӀайаздарш
+          %{language_name} чуьра
       all:
         title: Дневникан дӀайаздарш OpenHistoricalMap
         description: OpenHistoricalMap декъашхойн тӀаьххьарлера дӀайаздарш

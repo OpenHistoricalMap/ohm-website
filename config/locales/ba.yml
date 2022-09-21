@@ -290,8 +290,8 @@ ba:
       relation: Мөнәсәбәттәр (%{count})
       relation_paginated: Мөнәсәбәттәр (%{x}-%{y} %{count}нан)
       comment: Комментарийҙар (%{count})
-      hidden_commented_by_html: ' %{user} <abbr title=''%{exact_time}''>%{when}тан
-        йәшерен комментарий, кирегә</abbr>'
+      hidden_commented_by_html: " %{user} <abbr title='%{exact_time}'>%{when}тан йәшерен\
+        \ комментарий, кирегә</abbr>"
       commented_by_html: Ҡулланыусы комментарийы %{user} <abbr title='%{exact_time}'>%{when}
         кирегә</abbr>
       changesetxml: Төҙәтеүҙәр пакетының XML-ы
@@ -523,7 +523,8 @@ ba:
         description: '%{user}  OpenHistoricalMap көндәлек яҙмаһының һуңғыһы'
       language:
         title: '%{language_name} OpenHistoricalMap көндәлек яҙмаһы'
-        description: OpenHistoricalMap ҡулланыусыларының %{language_name}тағы һуңғы яҙмалары
+        description: OpenHistoricalMap ҡулланыусыларының %{language_name}тағы һуңғы
+          яҙмалары
       all:
         title: OpenHistoricalMap көндәлек яҙмаһы
         description: OpenHistoricalMap ҡулланысыларының һуңғы көндәлек яҙмалары

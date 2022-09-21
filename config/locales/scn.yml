@@ -410,8 +410,8 @@ scn:
       commented_at_by_html: Aggiurnatu %{when} fa di %{user}
     index:
       title_all: Discussioni supra ô gruppu di canciamenti d'OpenHistoricalMap
-      title_particular: 'Discussioni supra ô gruppu di canciamenti d''OpenHistoricalMap
-        #%{changeset_id}'
+      title_particular: "Discussioni supra ô gruppu di canciamenti d'OpenHistoricalMap\
+        \ #%{changeset_id}"
   dashboards:
     contact:
       km away: luntanu %{count} km
@@ -461,7 +461,7 @@ scn:
       login: trasi
     no_such_entry:
       title: Nudda vuci dû diariu currispunni
-      heading: 'Nudda vuci cu l''id: %{id}'
+      heading: "Nudda vuci cu l'id: %{id}"
       body: Purtroppu nun c'è nudda vuci dû diariu o puru cummentu chi havi l'id %{id}.
         Pi favuri cuntrolla chi scrivisti bonu; o puru pò èssiri chi lu culligamentu
         chi cliccasti è sbagghiatu.
@@ -1075,16 +1075,16 @@ scn:
     edit_with: Cancia cu %{editor}
     tag_line: La cartina-wiki dû munnu lìbbira
     intro_header: Bimminuti nta OpenHistoricalMap!
-    intro_text: OpenHistoricalMap è na cartina dû munnu, criata di genti comu a tìa e
-      lìbbira a adupirari secunnu na licenza graputa.
+    intro_text: OpenHistoricalMap è na cartina dû munnu, criata di genti comu a tìa
+      e lìbbira a adupirari secunnu na licenza graputa.
     intro_2_create_account: Crea un cuntu d'utenti
     partners_ucl: UCL
     partners_bytemark: Bytemark Hosting
     partners_partners: cullabburatura
-    osm_offline: La basi di dati d'OpenHistoricalMap comu a ora nun è n lìnia pirchì si
-      stannu facennu travagghî di manutinzioni funnamintali.
-    osm_read_only: La basi di dati d'OpenHistoricalMap comu a ora è ntâ mudalità di sula
-      littura pirchì si stannu facennu travagghî di manutinzioni funnamintali.
+    osm_offline: La basi di dati d'OpenHistoricalMap comu a ora nun è n lìnia pirchì
+      si stannu facennu travagghî di manutinzioni funnamintali.
+    osm_read_only: La basi di dati d'OpenHistoricalMap comu a ora è ntâ mudalità di
+      sula littura pirchì si stannu facennu travagghî di manutinzioni funnamintali.
     donate: Susteni a OpenHistoricalMap %{link} ô funnu pi l'aggiurnamentu di l'hardware.
     help: Guida
     about: Nfurmazzioni
@@ -1110,23 +1110,23 @@ scn:
     message_notification:
       subject: '[OpenHistoricalMap] %{message_title}'
       hi: Salutamu %{to_user},
-      header: '%{from_user} ti mannau pi menzu d''OpenHistoricalMap nu missaggiu cu l''oggettu
-        %{subject}:'
-      header_html: '%{from_user} ti mannau pi menzu d''OpenHistoricalMap nu missaggiu
-        cu l''oggettu %{subject}:'
+      header: "%{from_user} ti mannau pi menzu d'OpenHistoricalMap nu missaggiu cu\
+        \ l'oggettu %{subject}:"
+      header_html: "%{from_user} ti mannau pi menzu d'OpenHistoricalMap nu missaggiu\
+        \ cu l'oggettu %{subject}:"
       footer_html: Poi lèggiri lu missaggiu macari nta %{readurl} e ci poi arrispùnniri
         di %{replyurl}
     friendship_notification:
       hi: Salutamu %{to_user},
-      subject: '[OpenHistoricalMap] %{user} t''agghiuncìu comu amicu'
-      had_added_you: '%{user} t''agghiuncìu comu amicu nta OpenHistoricalMap.'
+      subject: "[OpenHistoricalMap] %{user} t'agghiuncìu comu amicu"
+      had_added_you: "%{user} t'agghiuncìu comu amicu nta OpenHistoricalMap."
       see_their_profile: Poi taliari lu sò prufilu nta %{userurl}.
       see_their_profile_html: Poi taliari lu sò prufilu nta %{userurl}.
       befriend_them: Lu poi macari agghiùnciri comu amicu nta %{befriendurl}.
       befriend_them_html: Lu poi macari agghiùnciri comu amicu nta %{befriendurl}.
     gpx_failure:
       hi: Salutamu %{to_user},
-      failed_to_import: 'nun arriniscìu a èssiri mpurtatu. Ccà c''è l''erruri:'
+      failed_to_import: "nun arriniscìu a èssiri mpurtatu. Ccà c'è l'erruri:"
       subject: '[OpenHistoricalMap] Mpurtazzioni GPX nun arrinisciuta'
     gpx_success:
       hi: Salutamu %{to_user},
@@ -1137,9 +1137,9 @@ scn:
       subject: '[OpenHistoricalMap] Bimminutu nta OpenHistoricalMap'
       greeting: A tìa!
       created: Quarchidunu (spiramu chi fusti tu) criau ora ora un cuntu nta %{site_url}.
-      confirm: 'Avanti chi facemu zocchegghiè, n''aggiuva la cunferma chi st''addumannata
-        vinni di tìa; pi chistu, si li cosi stannu accussì, pi favuri clicca lu culligamentu
-        ccassutta pi cunfirmari lu tò cuntu:'
+      confirm: "Avanti chi facemu zocchegghiè, n'aggiuva la cunferma chi st'addumannata\
+        \ vinni di tìa; pi chistu, si li cosi stannu accussì, pi favuri clicca lu\
+        \ culligamentu ccassutta pi cunfirmari lu tò cuntu:"
       welcome: Lu forti chi cunfirmasti lu tò cuntu, ti furnemu àutri nfurmazzioni
         pi spigàriti comu s'accumenza.
     email_confirm:
@@ -1150,7 +1150,7 @@ scn:
       click_the_link: Si fusti tu, pi favuri clicca lu culligamentu ccassutta pi cunfirmari
         stu canciamentu.
     lost_password:
-      subject: '[OpenHistoricalMap] Addumannata d''azziramentu dâ palora d''òrdini'
+      subject: "[OpenHistoricalMap] Addumannata d'azziramentu dâ palora d'òrdini"
       greeting: Salutamu,
       hopefully_you: Quarchidunu (spiramu chi fusti tu) addumannau d'azzirari la palora
         d'òrdini dû cuntu d'openstreetmap.org assuciatu a stu nnirizzu di posta elittrònica.
@@ -1160,39 +1160,40 @@ scn:
       anonymous: N’utenti anònimu
       greeting: Salutamu,
       commented:
-        subject_own: '[OpenHistoricalMap] %{commenter} lassau nu cummentu nta una dî tò
-          noti'
-        subject_other: '[OpenHistoricalMap] %{commenter} lassau nu cummentu nta una dî
-          noti chi ti ntirèssanu'
-        your_note: '%{commenter} lassau nu cummentu supra a una dî tò noti dâ cartina
-          chi s''attrova vicinu a %{place}.'
-        commented_note: '%{commenter} lassau nu cummentu supra a na nota dâ cartina
-          unni tu cummintasti macari. La nota s''attrova vicinu a %{place}.'
+        subject_own: '[OpenHistoricalMap] %{commenter} lassau nu cummentu nta una
+          dî tò noti'
+        subject_other: '[OpenHistoricalMap] %{commenter} lassau nu cummentu nta una
+          dî noti chi ti ntirèssanu'
+        your_note: "%{commenter} lassau nu cummentu supra a una dî tò noti dâ cartina\
+          \ chi s'attrova vicinu a %{place}."
+        commented_note: "%{commenter} lassau nu cummentu supra a na nota dâ cartina\
+          \ unni tu cummintasti macari. La nota s'attrova vicinu a %{place}."
       closed:
         subject_own: '[OpenHistoricalMap] %{commenter} arrisurvìu una dî tò noti'
-        subject_other: '[OpenHistoricalMap] %{commenter} arrisurvìu una dî noti chi ti
-          ntirèssanu'
-        your_note: '%{commenter} arrisurvìu una dî tò noti chi s''attrova vicinu a
-          %{place}.'
-        commented_note: '%{commenter} arrisurvìu na nota dâ cartina unni tu cummintasti.
-          La nota s''attrova vicinu a %{place}.'
+        subject_other: '[OpenHistoricalMap] %{commenter} arrisurvìu una dî noti chi
+          ti ntirèssanu'
+        your_note: "%{commenter} arrisurvìu una dî tò noti chi s'attrova vicinu a\
+          \ %{place}."
+        commented_note: "%{commenter} arrisurvìu na nota dâ cartina unni tu cummintasti.\
+          \ La nota s'attrova vicinu a %{place}."
       reopened:
-        subject_own: '[OpenHistoricalMap] %{commenter} attivau n''àutra vota una dî tò
-          noti'
-        subject_other: '[OpenHistoricalMap] %{commenter} attivau n''àutra vota una dî
-          noti chi ti ntirèssanu'
-        your_note: '%{commenter} attivau n''àutra vota una dî tò noti dâ cartina chi
-          s''attrova vicinu a %{place}.'
-        commented_note: '%{commenter} attivau n''àutra vota na nota dâ cartina unni
-          tu cummintasti. La nota s''attrova vicinu a %{place}.'
+        subject_own: "[OpenHistoricalMap] %{commenter} attivau n'àutra vota una dî\
+          \ tò noti"
+        subject_other: "[OpenHistoricalMap] %{commenter} attivau n'àutra vota una\
+          \ dî noti chi ti ntirèssanu"
+        your_note: "%{commenter} attivau n'àutra vota una dî tò noti dâ cartina chi\
+          \ s'attrova vicinu a %{place}."
+        commented_note: "%{commenter} attivau n'àutra vota na nota dâ cartina unni\
+          \ tu cummintasti. La nota s'attrova vicinu a %{place}."
       details: Poi attruvari àutri dittagghî di sta nota nta %{url}.
     changeset_comment_notification:
       hi: Salutamu %{to_user},
       greeting: Salutamu,
       commented:
-        subject_own: '[OpenHistoricalMap] %{commenter} cummintau unu dî tò gruppa di canciamenti'
-        subject_other: '[OpenHistoricalMap] %{commenter} cummintau unu dî gruppa di canciamenti
-          chi ti ntirèssanu'
+        subject_own: '[OpenHistoricalMap] %{commenter} cummintau unu dî tò gruppa
+          di canciamenti'
+        subject_other: '[OpenHistoricalMap] %{commenter} cummintau unu dî gruppa di
+          canciamenti chi ti ntirèssanu'
         your_changeset: '%{commenter} lassau nu cummentu nta unu dî tò gruppa di canciamenti
           criatu lu %{time}'
         commented_changeset: '%{commenter} lassau nu cummentu ntôn gruppu di canciamenti
@@ -1345,18 +1346,18 @@ scn:
       title: Trasi
       heading: Trasi
       email or username: 'Nnirizzu di posta elittrònica o nomu utenti:'
-      password: 'Palora d''òrdini:'
+      password: "Palora d'òrdini:"
       openid_html: '%{logo} OpenID:'
       remember: Arricòrdati di mìa
       lost password link: Pirdisti la tò palora d'òrdini?
       login_button: Trasi
       register now: Scrìviti ora
-      with username: 'Già hai un cuntu d''OpenHistoricalMap? Pi favuri trasi cû tò nomu
-        utenti e palora d''òrdini:'
+      with username: "Già hai un cuntu d'OpenHistoricalMap? Pi favuri trasi cû tò\
+        \ nomu utenti e palora d'òrdini:"
       with external: 'O puru, trasi pi menzu di na terza parti:'
       new to osm: Sî novu nta OpenHistoricalMap?
-      to make changes: Pi fari canciamenti ntê dati d'OpenHistoricalMap, prima hai a aviri
-        un cuntu.
+      to make changes: Pi fari canciamenti ntê dati d'OpenHistoricalMap, prima hai
+        a aviri un cuntu.
       create account minute: Crea un cuntu. Ci voli sulu un minutu.
       no account: Nun hai un cuntu?
       account not active: Purtroppu lu tò cuntu ancora nun è attivatu.<br />P'attivàrilu,
@@ -1413,8 +1414,8 @@ scn:
     about:
       next: Appressu
       copyright_html: <span>&copy;</span>Li cuntribbutura<br>d'OpenHistoricalMap
-      used_by_html: 'OpenHistoricalMap furnisci li dati giogràfici a migghiara di siti web,
-        applicazzioni mòbbili e apparecchi hardware'
+      used_by_html: OpenHistoricalMap furnisci li dati giogràfici a migghiara di siti
+        web, applicazzioni mòbbili e apparecchi hardware
       lede_text: |-
         OpenHistoricalMap veni custruutu di na cumunità di mappatura chi cuntribbuìscinu e mantèninu dati
         c'arriguàrdanu strati, trazzeri, bar, stazzioni dî treni, e tanti àutri cosi, nta tuttu lu munnu.
@@ -1430,18 +1431,18 @@ scn:
         Pi sapiri cchiossai a prupòsitu dâ cumunità, talìa <a href='%{diary_path}'>li diari di l'utenti</a>,
         <a href='http://blogs.openstreetmap.org/'>li blog dâ cumunità</a>, e lu situ dâ <a href='http://www.osmfoundation.org/'>Funnazzioni OSM</a>.
       open_data_title: Dati graputi
-      open_data_html: 'OpenHistoricalMap è fattu di <i>dati graputi</i>: sî lìbbiru d''adupiràrili
-        pi quali mutivu voi voi, finattantu chi duni l''attribbuzzioni a OpenHistoricalMap
-        e li sò cuntribbutura. Si canci li dati o l''adòpiri comu puntu di partenza,
-        lu travagghiu chi nni risurta lu poi distribbuiri sulu sutta â stissa licenza.
-        Talìa la <a href=''%{copyright_path}''>pàggina dû drittu d''auturi e dâ licenza</a>
-        pî dittagghî.'
+      open_data_html: "OpenHistoricalMap è fattu di <i>dati graputi</i>: sî lìbbiru\
+        \ d'adupiràrili pi quali mutivu voi voi, finattantu chi duni l'attribbuzzioni\
+        \ a OpenHistoricalMap e li sò cuntribbutura. Si canci li dati o l'adòpiri\
+        \ comu puntu di partenza, lu travagghiu chi nni risurta lu poi distribbuiri\
+        \ sulu sutta â stissa licenza. Talìa la <a href='%{copyright_path}'>pàggina\
+        \ dû drittu d'auturi e dâ licenza</a> pî dittagghî."
       legal_title: Noti ligali
-      legal_1_html: "Stu situ e tanti àutri sirvizzî assuciati sunnu gistuti dâ  \n<a
-        href='http://osmfoundation.org/'>Funnazzioni OpenHistoricalMap</a> (OSMF) \npi
-        cuntu dâ cumunità.\n<br> \nVi prigamu di <a href='http://osmfoundation.org/Contact'>cuntattari
-        l'OSMF</a> \nsi aviti addumannati o àutri prubblemi a prupòsitu di licenza,
-        drittu d'auturi o àutri quistioni ligali."
+      legal_1_html: "Stu situ e tanti àutri sirvizzî assuciati sunnu gistuti dâ  \n\
+        <a href='http://osmfoundation.org/'>Funnazzioni OpenHistoricalMap</a> (OSMF)\
+        \ \npi cuntu dâ cumunità.\n<br> \nVi prigamu di <a href='http://osmfoundation.org/Contact'>cuntattari\
+        \ l'OSMF</a> \nsi aviti addumannati o àutri prubblemi a prupòsitu di licenza,\
+        \ drittu d'auturi o àutri quistioni ligali."
       partners_title: Cullabburatura
     copyright:
       foreign:
@@ -1472,20 +1473,17 @@ scn:
         credit_title_html: Comu s'attribbuisci a OpenHistoricalMap
         credit_1_html: Addumannamu chi s'usa l'attribbuzzioni &laquo;&copy; li cuntribbutura
           d'OpenHistoricalMap&raquo;.
-        credit_2_1_html: "S'havi a rènniri chiaru ca li dati sunnu misi a dispusizzioni
-          sutta dâ Open\nDatabase License, e si s’adòpiranu li mattunelli dâ nostra
-          cartina, chi la cartugrafìa è sutta dâ licenza CC BY-SA. Sta cosa si pò
-          fari mittennu nu culligamentu a \n<a href=\"http://www.openstreetmap.org/copyright\">sta
-          pàggina dû drittu d'auturi</a>.\nComu altirnativa, e obbligatoriamenti quannu
-          si diffunni OSM sutta forma di dati, si ponnu mintuari li licenzi pi nomu
-          e cûn culligamentu direttu chi porta unni iddi. Nta ddi menzi unni li culligamenti
-          nun sunnu pussìbbili (p'esempiu ntâ carta stampata), suggiremu di mannari
-          li littura direttamenti unni openstreetmap.org (macari espannennu \n‘OpenHistoricalMap’
-          a stu nnirizzu cumpletu), unni opendatacommons.org, e, quann'è oppurtunu,
-          unni\n creativecommons.org."
-        credit_4_html: |-
-          Nta na cartina elittrònica navigàbbili, l’attribbuzzioni avissi a spuntari nta l'àngulu dâ cartina.
-          P'esempiu:
+        credit_2_1_html: "S'havi a rènniri chiaru ca li dati sunnu misi a dispusizzioni\
+          \ sutta dâ Open\nDatabase License, e si s’adòpiranu li mattunelli dâ nostra\
+          \ cartina, chi la cartugrafìa è sutta dâ licenza CC BY-SA. Sta cosa si pò\
+          \ fari mittennu nu culligamentu a \n<a href=\"http://www.openstreetmap.org/copyright\"\
+          >sta pàggina dû drittu d'auturi</a>.\nComu altirnativa, e obbligatoriamenti\
+          \ quannu si diffunni OSM sutta forma di dati, si ponnu mintuari li licenzi\
+          \ pi nomu e cûn culligamentu direttu chi porta unni iddi. Nta ddi menzi\
+          \ unni li culligamenti nun sunnu pussìbbili (p'esempiu ntâ carta stampata),\
+          \ suggiremu di mannari li littura direttamenti unni openstreetmap.org (macari\
+          \ espannennu \n‘OpenHistoricalMap’ a stu nnirizzu cumpletu), unni opendatacommons.org,\
+          \ e, quann'è oppurtunu, unni\n creativecommons.org."
         attribution_example:
           alt: Esempiu di comu s'attribbuisci a OpenHistoricalMap nta na pàggina web
           title: Esempiu d'attribbuzzioni
@@ -1494,64 +1492,27 @@ scn:
           Attrova àutri nfurmazzioni a prupòsitu di comu s'adòpiranu li nostri dati, e comu ni si duna attribbuzzioni, ntâ <a
           href="http://osmfoundation.org/Licence">pàggina dâ licenza di l'OSMF</a> e ntê <a
           href="http://wiki.openstreetmap.org/wiki/Legal_FAQ">addumannati friquenti ligali</a> gistuti dâ cumunità.
-        more_2_html: "Macari si OpenHistoricalMap è fattu di dati graputi, nun putemu
-          furniri n'API cartugràfica gratùita ê sviluppatura di terza parti.\nTalìa
-          la nostra <a href=\"http://wiki.openstreetmap.org/wiki/API_usage_policy\">Pulìtica
-          pi l'utilizzu di l'API</a>, \nla <a href=\"http://wiki.openstreetmap.org/wiki/Tile_usage_policy\">Pulìtica
-          pi l'utilizzu dî mattunelli</a>\n e la <a href=\"http://wiki.openstreetmap.org/wiki/Nominatim#Usage_Policy\">Pulìtica
-          pi l'utilizzu di Nominatim</a>."
         contributors_title_html: Li nostri cuntribbutura
-        contributors_intro_html: 'Li nostri cuntribbutura sunnu migghiara di genti.
-          Pigghiamu macari dati cu licenza graputa furnuti di l''agginzìi cartugràfichi
-          nazziunali e d''àutri fonti, tra dî quali:'
-        contributors_at_html: "<strong>Austria</strong>: Cunteni dati dâ\n<a href=\"http://data.wien.gv.at/\">Stadt
-          Wien</a> (sutta a \n<a href=\"http://creativecommons.org/licenses/by/3.0/at/deed.de\">CC
-          BY</a>),\n<a href=\"http://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm\">Land
-          Vorarlberg</a> e\nLand Tirol (sutta a <a href=\"http://www.tirol.gv.at/applikationen/e-government/data/nutzungsbedingungen/\">CC
-          BY AT cu canciamenti</a>)."
-        contributors_ca_html: "<strong>Canadà</strong>: Cunteni dati di \nGeoBase&reg;,
-          GeoGratis (&copy; Department of Natural\nResources Canada), CanVec (&copy;
-          Department of Natural\nResources Canada), e StatCan (Geography Division,\nStatistics
-          Canada)."
-        contributors_fi_html: "<strong>Finlannia</strong>: Cunteni dati dâ Basi di
-          Dati Topugràfica dû National Land Survey dâ Finlannia e d'àutri nzemi di
-          dati, sutta â \n<a href=\"http://www.maanmittauslaitos.fi/en/NLS_open_data_licence_version1_20120501\">Licenza
-          NLSFI</a>."
-        contributors_fr_html: "<strong>Francia</strong>: Cunteni dati furnuti dâ \nDirection
-          Générale des Impôts."
-        contributors_nl_html: |-
-          <strong>Paisi Vasci</strong>: Cunteni dati &copy; AND, 2007
-          (<a href="http://www.and.com">www.and.com</a>)
-        contributors_nz_html: "<strong>Nova Zilanna</strong>: Cunteni dati furnuti
-          dâ \nLand Information New Zealand. Crown Copyright reserved."
-        contributors_si_html: "<strong>Sluvenia</strong>: Counteni dati dâ \n<a href=\"http://www.gu.gov.si/en/\">Surveying
-          and Mapping Authority</a> e dû\n<a href=\"http://www.mkgp.gov.si/en/\">Ministeru
-          di l’Agricultura, dî Furesti e di l’Alimintazzioni</a>\n(nfurmazzioni pùbblichi
-          dâ Sluvenia)."
-        contributors_za_html: "<strong>Àfrica dû Sud</strong>: Cunteni dati dû \n<a
-          href=\"http://www.ngi.gov.za/\">Chief Directorate:\nNational Geo-Spatial
-          Information</a>, State copyright reserved."
-        contributors_gb_html: |-
-          <strong>Regnu Unitu</strong>: Cunteni dati di l’Ordnance
-          Survey &copy; Crown copyright and database right
-          2010-12.
+        contributors_intro_html: "Li nostri cuntribbutura sunnu migghiara di genti.\
+          \ Pigghiamu macari dati cu licenza graputa furnuti di l'agginzìi cartugràfichi\
+          \ nazziunali e d'àutri fonti, tra dî quali:"
         contributors_footer_1_html: |-
           Pi canùsciri àutri dittagghî supra a chisti e àutri fonti chi foru adupirati pi migghiurari OpenHistoricalMap, poi taliari <a
           href="http://wiki.openstreetmap.org/wiki/Contributors">la pàggina dî cuntribbutura</a> supra â wiki di OpenHistoricalMap.
-        contributors_footer_2_html: La nclusioni dî dati nta OpenHistoricalMap nun ìmplica
-          ca lu sò furnituri origginali susteni OpenHistoricalMap, furnisci na quarchi
-          garanzìa, o accetta na quarchi rispunzabbilità.
+        contributors_footer_2_html: La nclusioni dî dati nta OpenHistoricalMap nun
+          ìmplica ca lu sò furnituri origginali susteni OpenHistoricalMap, furnisci
+          na quarchi garanzìa, o accetta na quarchi rispunzabbilità.
         infringement_title_html: Viulazzioni dû drittu d’auturi
         infringement_1_html: Ê cuntribbutura d'OSM s'arricorda di nun agghiùnciri
           mai dati chi vèninu di fonti prutetti dû drittu d'auturi (ad esempiu Google
           Maps o puru li carti stampati) senza aviri n'auturizzazzioni splìcita dû
           titulari dû drittu d'auturi.
-        infringement_2_html: "Si penzi chi fu junciutu di manera nun dèbbita matiriali
-          prutettu dû drittu d'auturi o ntâ basi di dati di OpenHistoricalMap o puru nta
-          stu situ, pi favuri fai rifirimentu â nostra\n <a href=\"http://www.osmfoundation.org/wiki/License/Takedown_procedure\">prucidura
-          di cancillazzioni</a> o puru signalinilu direttamenti pi menzu dû nostru
-          \n<a href=\"https://dmca.openstreetmap.org/\">mòdulu di signalazzioni n
-          lìnia</a>."
+        infringement_2_html: "Si penzi chi fu junciutu di manera nun dèbbita matiriali\
+          \ prutettu dû drittu d'auturi o ntâ basi di dati di OpenHistoricalMap o\
+          \ puru nta stu situ, pi favuri fai rifirimentu â nostra\n <a href=\"http://www.osmfoundation.org/wiki/License/Takedown_procedure\"\
+          >prucidura di cancillazzioni</a> o puru signalinilu direttamenti pi menzu\
+          \ dû nostru \n<a href=\"https://dmca.openstreetmap.org/\">mòdulu di signalazzioni\
+          \ n lìnia</a>."
         trademarks_title_html: <span id="trademarks"></span>Marchi riggistrati
         trademarks_1_html: OpenHistoricalMap e lu logu dâ lenti di ngrannimentu sunnu
           marchi riggistrati dâ Funnazzioni OpenHistoricalMap. Si hai quarchi addumannata
@@ -1567,8 +1528,8 @@ scn:
       license:
         copyright: Copyright OpenHistoricalMap e li sò cuntribbutura, sutta a na licenza
           graputa
-      remote_failed: 'Lu canciamentu nun arriniscìu: assicùrati chi JOSM o Merkaartor
-        sunnu graputi e hannu l''opzioni telecumannu attivata'
+      remote_failed: "Lu canciamentu nun arriniscìu: assicùrati chi JOSM o Merkaartor\
+        \ sunnu graputi e hannu l'opzioni telecumannu attivata"
     edit:
       not_public: Nun mpustasti li tò canciamenti p'èssiri pùbblici.
       not_public_description_html: Nun poi canciari cchiù la cartina nfinu a quannu
@@ -1597,8 +1558,8 @@ scn:
           massizzu di dati adòpira una dî fonti ccassutta.
         planet:
           title: Pianeta OSM
-          description: Copî dâ basi di dati cumpreta di OpenHistoricalMap ca vèninu aggiurnati
-            rigularmenti
+          description: Copî dâ basi di dati cumpreta di OpenHistoricalMap ca vèninu
+            aggiurnati rigularmenti
         overpass:
           title: API Overpass
           description: Scàrrica stu riquatru dûn mirror dâ basi di dati d'OpenHistoricalMap
@@ -1632,8 +1593,8 @@ scn:
           title: Tràsiri ntâ cumunità
           explanation_html: Si t'addunasti chi c'è quarchi prubblema ntê dati dâ nostra
             cartina, p'esempiu c'ammanca na strata o puru ca lu tò nnirizzu è sbagghiatu,
-            la megghiu cosa di fari è di scrivìriti ntâ cumunità d'OpenHistoricalMap e
-            d'agghiùnciri o cunzari li dati tu stissu.
+            la megghiu cosa di fari è di scrivìriti ntâ cumunità d'OpenHistoricalMap
+            e d'agghiùnciri o cunzari li dati tu stissu.
         add_a_note:
           instructions_html: |-
             Abbasta chi clicchi <a class='icon note'></a> o puru la stissa cona ntâ carta.
@@ -1641,11 +1602,11 @@ scn:
             S'agghiunci nu propiu missaggiu, appoi si clicca «sarva», e l'àutri mappatura talìanu la situazzioni.
       other_concerns:
         title: Àutri dubbî
-        explanation_html: "Si hai dubbî a prupòsitu di comu vèninu adupirati li nostri
-          dati, o a prupòsitu dî cuntinuti, pi favuri cunzurta la nostra \n<a href='/copyright'>pàggina
-          dû drittu d'auturi</a> p'aviri àutri nfurmazzioni ligali, o puru cuntatta
-          lu \n<a href='http://wiki.osmfoundation.org/wiki/Working_Groups'>gruppu
-          di travagghiu OSMF</a> apprupiatu."
+        explanation_html: "Si hai dubbî a prupòsitu di comu vèninu adupirati li nostri\
+          \ dati, o a prupòsitu dî cuntinuti, pi favuri cunzurta la nostra \n<a href='/copyright'>pàggina\
+          \ dû drittu d'auturi</a> p'aviri àutri nfurmazzioni ligali, o puru cuntatta\
+          \ lu \n<a href='http://wiki.osmfoundation.org/wiki/Working_Groups'>gruppu\
+          \ di travagghiu OSMF</a> apprupiatu."
     help:
       title: Attruvari aiutu
       introduction: |-
@@ -1777,8 +1738,8 @@ scn:
           hai n'auturizzazzioni spiciali, nun cupiari mai di mappi n lìnia o di carta.
       basic_terms:
         title: Tèrmini funnamintali dâ mappatura
-        paragraph_1_html: OpenHistoricalMap havi nu sò linguaggiu particulari. Ccà ci
-          sù na para di palori chi ti ponnu aggiuvari.
+        paragraph_1_html: OpenHistoricalMap havi nu sò linguaggiu particulari. Ccà
+          ci sù na para di palori chi ti ponnu aggiuvari.
         editor_html: N'<strong>editor</strong> è nu prugramma o nu situ web chi poi
           adupirari pi fari canciamenti ntâ cartina.
         node_html: Un <strong>gruppu</strong> è nu puntu sìngulu supra â cartina,
@@ -1790,13 +1751,13 @@ scn:
           p'esempiu lu nomu dûn ristoranti o lu lìmiti di vilucità di na strata.
       rules:
         title: Règuli!
-        paragraph_1_html: "OpenHistoricalMap havi picca règuli furmali, pirò n'aspittamu
-          chi tutti li participanti cullàbburanu e cumùnicanu câ cumunità. Si stai
-          pigghiannu a cunziddirazzioni di canciari la carta di quarchi manera àutra
-          rispettu a fàrilu a manu, pi favuri leggi e rispetta li lìnii guida ca poi
-          attruvari nta\n<a href='http://wiki.openstreetmap.org/wiki/Import/Guidelines'>Mpurtazzioni</a>
-          e \n<a href='http://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>Canciamenti
-          autumatizzati</a>."
+        paragraph_1_html: "OpenHistoricalMap havi picca règuli furmali, pirò n'aspittamu\
+          \ chi tutti li participanti cullàbburanu e cumùnicanu câ cumunità. Si stai\
+          \ pigghiannu a cunziddirazzioni di canciari la carta di quarchi manera àutra\
+          \ rispettu a fàrilu a manu, pi favuri leggi e rispetta li lìnii guida ca\
+          \ poi attruvari nta\n<a href='http://wiki.openstreetmap.org/wiki/Import/Guidelines'>Mpurtazzioni</a>\
+          \ e \n<a href='http://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>Canciamenti\
+          \ autumatizzati</a>."
       questions:
         title: Hai dumanni?
         paragraph_1_html: |-
@@ -1926,7 +1887,7 @@ scn:
       request_access_html: L'applicazzioni %{app_name} addumanna l'accessu ô tò cuntu,
         %{user}. Pi favuri cuntrolla si ti piaci chi l'applicazzioni havi accessu
         a sti funziunalità. Poi scègghiri chiddi chi voi, a tò piaciri.
-      allow_to: 'Duna a l''applicazzioni clienti lu pirmissu di:'
+      allow_to: "Duna a l'applicazzioni clienti lu pirmissu di:"
       allow_read_prefs: lèggiri li mpustazzioni d'utenti.
       allow_write_prefs: canciari li mpustazzioni d'utenti.
       allow_write_diary: criari vuci dû diariu e cummenti, e fari amici.
@@ -1961,17 +1922,17 @@ scn:
       key: 'Consumer Key:'
       secret: 'Consumer Secret:'
       url: 'URL pû Request Token:'
-      access_url: 'URL pi l''Access Token:'
-      authorize_url: 'URL d''auturizzazzioni:'
+      access_url: "URL pi l'Access Token:"
+      authorize_url: "URL d'auturizzazzioni:"
       support_notice: Suppurtamu li firmi HMAC-SHA1 (cunzigghiati) e RSA-SHA1.
       edit: Cancia li dittagghî
       delete: Cancella stu clienti
       confirm: Sî sicuru?
-      requests: 'Addumanna a l''utenti sti pirmissi:'
+      requests: "Addumanna a l'utenti sti pirmissi:"
     index:
       title: Li mè dittagghî OAuth
       my_tokens: Li mè applicazzioni auturizzati
-      list_tokens: 'A l''applicazzioni foru assignati sti lassa-passari a nomu tò:'
+      list_tokens: "A l'applicazzioni foru assignati sti lassa-passari a nomu tò:"
       application: Nomu di l'applicazzioni
       issued_at: Cuncidutu n data
       revoke: Rèvuca!
@@ -1980,10 +1941,10 @@ scn:
         adupirannu lu standard %{oauth}? La tò applicazzioni web s'havi a riggistrari
         prima chi poi fari addumannati OAuth unni stu sirvizziu.
       oauth: OAuth
-      registered_apps: 'Hai riggistrati st''applicazzioni clienti:'
+      registered_apps: "Hai riggistrati st'applicazzioni clienti:"
       register_new: Riggistra la tò applicazzioni
     form:
-      requests: 'Addumanna a l''utenti sti pirmissi:'
+      requests: "Addumanna a l'utenti sti pirmissi:"
     not_found:
       sorry: Purtroppu ddu %{type} nun si potti attruvari.
     create:

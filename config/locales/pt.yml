@@ -321,10 +321,12 @@ pt:
     feed:
       user:
         title: Entradas no diário de editores OpenHistoricalMap de %{user}
-        description: Entradas recentes no diário de editores OpenHistoricalMap de %{user}
+        description: Entradas recentes no diário de editores OpenHistoricalMap de
+          %{user}
       language:
         title: Entradas no diário de editores OpenHistoricalMap em %{language_name}
-        description: Entradas recentes no diário de editores OpenHistoricalMap em %{language_name}
+        description: Entradas recentes no diário de editores OpenHistoricalMap em
+          %{language_name}
       all:
         title: Entradas no diário de editores do OpenHistoricalMap
         description: Entradas recentes no diário de editores do OpenHistoricalMap
@@ -905,8 +907,8 @@ pt:
     edit_with: Editar com %{editor}
     tag_line: O Mapa Mundial Livre e Editável
     intro_header: Bem vindo ao OpenHistoricalMap!
-    intro_text: O OpenHistoricalMap é um mapa do mundo, criado por pessoas como você e
-      de uso livre sob uma licença aberta.
+    intro_text: O OpenHistoricalMap é um mapa do mundo, criado por pessoas como você
+      e de uso livre sob uma licença aberta.
     intro_2_create_account: Crie uma conta de utilizador
     partners_html: O alojamento é suportado por %{ucl}, %{ic}, %{bytemark} e outros
       %{partners}.
@@ -916,8 +918,8 @@ pt:
     partners_partners: parceiros
     osm_offline: A base de dados do OpenHistoricalMap não está disponível neste momento
       enquanto decorrerem trabalhos de manutenção.
-    osm_read_only: A base de dados do OpenHistoricalMap encontra-se neste momento no modo
-      de leitura, enquanto decorrerem trabalhos de manutenção.
+    osm_read_only: A base de dados do OpenHistoricalMap encontra-se neste momento
+      no modo de leitura, enquanto decorrerem trabalhos de manutenção.
     donate: Apoie o OpenHistoricalMap %{link} para o Fundo de Atualização do Hardware.
     help: Ajuda
     about: Sobre Nós
@@ -976,7 +978,8 @@ pt:
         Num mapa eletrónico navegável, os créditos devem aparecer num canto do mapa.
         Por exemplo (em inglês):
       attribution_example:
-        alt: Exemplo de como indicar os créditos do OpenHistoricalMap numa página web
+        alt: Exemplo de como indicar os créditos do OpenHistoricalMap numa página
+          web
         title: Exemplo de atribuição
       more_title_html: Saber mais
       more_1_html: Leia mais informações sobre a utilização dos nossos dados e como
@@ -989,8 +992,8 @@ pt:
         de Utilização de Telas</a> (em inglês) e <a href="http://wiki.openstreetmap.org/wiki/Nominatim#Usage_Policy">Política
         de Utilização do Nominatim</a> (em inglês).
       contributors_title_html: Os nossos contribuidores
-      contributors_intro_html: 'Os contribuidores do OpenHistoricalMap são milhares. Também
-        são utilizados dados de agências cartográficas nacionais e outras fontes,
+      contributors_intro_html: 'Os contribuidores do OpenHistoricalMap são milhares.
+        Também são utilizados dados de agências cartográficas nacionais e outras fontes,
         entre elas:'
       contributors_at_html: '<strong>Áustria</strong>: Contém dados de <a href="http://data.wien.gv.at/">Stadt
         Wien</a> (sob a licença <a href="http://creativecommons.org/licenses/by/3.0/at/deed.de">CC
@@ -1001,9 +1004,10 @@ pt:
         GeoGratis (&copy; Department of Natural Resources Canada), CanVec (&copy;
         Department of Natural Resources Canada), e StatCan (Geography Division, Statistics
         Canada).'
-      contributors_fi_html: "<strong>Finlândia</strong>: Contem dados do \nNational
-        Land Survey da Finland´s Topographic Database \nassim como de outras bases
-        de dados, sob a licença <a href=\"http://www.maanmittauslaitos.fi/en/NLS_open_data_licence_version1_20120501\">NLSFI</a>."
+      contributors_fi_html: "<strong>Finlândia</strong>: Contem dados do \nNational\
+        \ Land Survey da Finland´s Topographic Database \nassim como de outras bases\
+        \ de dados, sob a licença <a href=\"http://www.maanmittauslaitos.fi/en/NLS_open_data_licence_version1_20120501\"\
+        >NLSFI</a>."
       contributors_fr_html: '<strong>França</strong>: Contém dados provenientes da
         Direction Générale des Impôts.'
       contributors_nl_html: '<strong>Países Baixos</strong>: Contém dados &copy; AND,
@@ -1018,12 +1022,12 @@ pt:
       contributors_footer_1_html: Para mais informações sobre estas e outras fontes
         utilizadas para melhorar o OpenHistoricalMap, consulte a <a href="http://wiki.openstreetmap.org/wiki/Contributors">página
         de contribuidores</a> (em inglês) na wiki do OpenHistoricalMap.
-      contributors_footer_2_html: '  A inclusão de dados no OpenHistoricalMap não implica
-        que o fornecedor de dados originais apoie o OpenHistoricalMap, forneça qualquer
-        garantia, ou aceite algum tipo de responsabilidade.'
+      contributors_footer_2_html: '  A inclusão de dados no OpenHistoricalMap não
+        implica que o fornecedor de dados originais apoie o OpenHistoricalMap, forneça
+        qualquer garantia, ou aceite algum tipo de responsabilidade.'
       infringement_title_html: Violação de direitos de autor
-      infringement_1_html: É relembrado aos contribuidores do OpenHistoricalMap para nunca
-        adicionarem dados de fontes protegidas por direitos de autor (por exemplo
+      infringement_1_html: É relembrado aos contribuidores do OpenHistoricalMap para
+        nunca adicionarem dados de fontes protegidas por direitos de autor (por exemplo
         o Google Maps ou mapas comerciais impressos) sem permissão explícita dos detentores
         dos direitos de autor.
       infringement_2_html: Se acredita que foi adicionado material protegido por direitos
@@ -1033,9 +1037,9 @@ pt:
         no <a href="http://dmca.openstreetmap.org/">formulário</a> (em inglês).
   welcome_page:
     title: Bem-vindo !
-    introduction_html: Bem-vindo ao OpenHistoricalMap, o mapa livre e editável do mundo.
-      Agora como estás inscrito, estás também pronto para mapear. Aqui um guia rápido
-      com as coisas mais importantes que precisas de saber.
+    introduction_html: Bem-vindo ao OpenHistoricalMap, o mapa livre e editável do
+      mundo. Agora como estás inscrito, estás também pronto para mapear. Aqui um guia
+      rápido com as coisas mais importantes que precisas de saber.
     whats_on_the_map:
       title: O que está no Mapa
       on_html: OpenHistoricalMap é um lugar para mapear as coisas que são ambos <em>real
@@ -1078,8 +1082,8 @@ pt:
         title: Junte-se à comunidade
         explanation_html: Se você reparou num problema com os dados do nosso mapa,
           como por exemplo uma estrada ou o seu adereço em falta, a melhor maneira
-          de proceder é juntando-se à comunidade do OpenHistoricalMap e adicionando ou
-          reparando os dados por si mesmo.
+          de proceder é juntando-se à comunidade do OpenHistoricalMap e adicionando
+          ou reparando os dados por si mesmo.
       add_a_note:
         instructions_html: |-
           Apenas clique em <a class='icon note'></a> ou no mesmo ícone na interface do mapa.
@@ -1092,8 +1096,8 @@ pt:
         de trabalho OSMF</a> apropriado.
   help_page:
     title: Obter Ajuda
-    introduction: O OpenHistoricalMap tem vários recursos para saber mais sobre o projeto,
-      perguntar e responder a questões, e colaborativamente discutir e documentar
+    introduction: O OpenHistoricalMap tem vários recursos para saber mais sobre o
+      projeto, perguntar e responder a questões, e colaborativamente discutir e documentar
       vários tópicos sobre o mapa.
     welcome:
       url: /welcome
@@ -1113,9 +1117,9 @@ pt:
     copyright_html: <span>&copy;</span>Colaboradores<br>do OpenHistoricalMap
     used_by: O %{name} fornece dados a centenas de sítios na internet, aplicações
       de telemóveis e outros dispositivos
-    lede_text: O OpenHistoricalMap é desenvolvido por uma comunidade voluntária de mapeadores
-      que contribuem e mantêm atualizados os dados sobre estradas, trilhos, cafés,
-      estações ferroviárias e muito mais por todo o mundo.
+    lede_text: O OpenHistoricalMap é desenvolvido por uma comunidade voluntária de
+      mapeadores que contribuem e mantêm atualizados os dados sobre estradas, trilhos,
+      cafés, estações ferroviárias e muito mais por todo o mundo.
     local_knowledge_title: Conhecimento Local
     local_knowledge_html: O OpenHistoricalMap valoriza o conhecimento local. Os colaboradores
       utilizam fotografias aéreas, dispositivos GPS, e mapas do terreno para verificar
@@ -1147,8 +1151,8 @@ pt:
         ou responder em %{replyurl}
     message_notification:
       hi: Olá %{to_user},
-      header: '%{from_user} enviou-lhe uma mensagem através do OpenHistoricalMap com o
-        assunto %{subject}:'
+      header: '%{from_user} enviou-lhe uma mensagem através do OpenHistoricalMap com
+        o assunto %{subject}:'
       footer_html: Também pode ler a mensagem em %{readurl} e pode responder em %{replyurl}
     friend_notification:
       subject: '[OpenHistoricalMap] %{user} adicionou-o como amigo'
@@ -1190,8 +1194,8 @@ pt:
         confirmar o pedido.
     email_confirm_html:
       greeting: Olá,
-      hopefully_you: Foi feito um pedido no site do OpenHistoricalMap para alterar o endereço
-        de e-mail da sua conta de %{server_url} para %{new_address}.
+      hopefully_you: Foi feito um pedido no site do OpenHistoricalMap para alterar
+        o endereço de e-mail da sua conta de %{server_url} para %{new_address}.
       click_the_link: Se foi você que fez o pedido, clique na ligação seguinte para
         confirmar a alteração.
     lost_password:
@@ -1212,25 +1216,25 @@ pt:
       anonymous: Um utilizador anónimo
       greeting: Olá,
       commented:
-        subject_own: '[OpenHistoricalMap] %{commenter} deixou um comentário num erro do
-          mapa que você reportou'
-        subject_other: '[OpenHistoricalMap] %{commenter} deixou um comentário num erro
+        subject_own: '[OpenHistoricalMap] %{commenter} deixou um comentário num erro
           do mapa que você reportou'
+        subject_other: '[OpenHistoricalMap] %{commenter} deixou um comentário num
+          erro do mapa que você reportou'
         your_note: '%{commenter} deixou um comentário num erro do mapa que você reportou
           perto de %{place}.'
         commented_note: '%{commenter} deixou um comentário num erro do mapa no mapa
           que você reportou. O erro reportado encontra-se perto de %{place}.'
       closed:
-        subject_own: '[OpenHistoricalMap] %{commenter} resolveu um erro do mapa que você
-          reportou'
-        subject_other: '[OpenHistoricalMap] %{commenter} resolveu um erro no mapa que
-          você está interessado'
+        subject_own: '[OpenHistoricalMap] %{commenter} resolveu um erro do mapa que
+          você reportou'
+        subject_other: '[OpenHistoricalMap] %{commenter} resolveu um erro no mapa
+          que você está interessado'
         your_note: '%{commenter} resolveu um erro do mapa perto de %{place}.'
         commented_note: '%{commenter} resolveu um erro do mapa que você comentou.
           O erro do mapa encontra-se perto de %{place}.'
       reopened:
-        subject_own: '[OpenHistoricalMap] %{commenter} reabriu um dos erros no mapa reportados
-          por si'
+        subject_own: '[OpenHistoricalMap] %{commenter} reabriu um dos erros no mapa
+          reportados por si'
         subject_other: '[OpenHistoricalMap] %{commenter} reabriu um dos erros no mapa
           em que você está interessado'
         your_note: '%{commenter} reabriu um erro no mapa reportado por si perto de
@@ -1487,9 +1491,9 @@ pt:
           para terminar a inclusão do trilho enviado, de modo a não bloquear a fila
           para outros utilizadores.
         other: Tem %{count} trilhos GPS na fila para serem colocados na base de dados
-          do OpenHistoricalMap. Por favor, antes de enviar mais trilhos aguarde um pouco
-          para terminar a inclusão dos trilhos enviados, de modo a não bloquear a
-          fila para outros utilizadores.
+          do OpenHistoricalMap. Por favor, antes de enviar mais trilhos aguarde um
+          pouco para terminar a inclusão dos trilhos enviados, de modo a não bloquear
+          a fila para outros utilizadores.
     trace_optionals:
       tags: Etiquetas
     view:
@@ -1664,8 +1668,8 @@ pt:
       lost password link: Perdeu a sua palavra-passe?
       login_button: Entrar
       register now: Criar conta agora
-      with username: 'Já tem uma conta no OpenHistoricalMap? Por favor introduza o nome
-        de utilizador e a palavra-passe:'
+      with username: 'Já tem uma conta no OpenHistoricalMap? Por favor introduza o
+        nome de utilizador e a palavra-passe:'
       with openid: 'Como alternativa, utilize o seu OpenID para entrar na conta:'
       new to osm: É a primeira vez que está no OpenHistoricalMap?
       to make changes: Para editar no OpenHistoricalMap, é necessário ter uma conta.
@@ -1881,9 +1885,9 @@ pt:
         heading: Edição pública
         text: Neste momento as suas edições são anónimas e as outras pessoas não lhe
           podem enviar mensagens nem ver onde se encontra. Para mostrar as suas edições
-          e permitir que o contactem através do OpenHistoricalMap, clique na ligação seguinte.
-          <b>Desde a migração 0.6 da API, apenas utilizadores com edições públicas
-          podem editar dados do mapa</b>. (<a href="http://wiki.openstreetmap.org/wiki/Anonymous_edits">mais
+          e permitir que o contactem através do OpenHistoricalMap, clique na ligação
+          seguinte. <b>Desde a migração 0.6 da API, apenas utilizadores com edições
+          públicas podem editar dados do mapa</b>. (<a href="http://wiki.openstreetmap.org/wiki/Anonymous_edits">mais
           informações</a>).<ul><li>Ao tornar as suas edições públicas o seu endereço
           de email não será revelado.</li><li>Esta ação não pode ser revertida e todos
           os novos utilizadores têm as edições disponibilizadas publicamente.</li></ul>

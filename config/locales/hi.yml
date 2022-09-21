@@ -267,14 +267,13 @@ hi:
     closed: बंद किया गया
     created_html: <abbr title='%{title}'>%{time}</abbr> बनाया गया
     closed_html: <abbr title='%{title}'>%{time}</abbr> बंद किया गया
-    created_by_html: '%{user} द्वारा <abbr title=''%{title}''>%{time}</abbr> खोला
-      गया'
-    deleted_by_html: '%{user} द्वारा <abbr title=''%{title}''>%{time}</abbr> को बंद
-      किया गया'
-    edited_by_html: '%{user} द्वारा <abbr title=''%{title}''>%{time}</abbr> को सम्पादित
-      किया गया'
-    closed_by_html: '%{user} द्वारा <abbr title=''%{title}''>%{time}</abbr> को बंद
-      किया गया'
+    created_by_html: "%{user} द्वारा <abbr title='%{title}'>%{time}</abbr> खोला गया"
+    deleted_by_html: "%{user} द्वारा <abbr title='%{title}'>%{time}</abbr> को बंद\
+      \ किया गया"
+    edited_by_html: "%{user} द्वारा <abbr title='%{title}'>%{time}</abbr> को सम्पादित\
+      \ किया गया"
+    closed_by_html: "%{user} द्वारा <abbr title='%{title}'>%{time}</abbr> को बंद किया\
+      \ गया"
     version: संस्करण
     in_changeset: Changeset
     anonymous: अनामक
@@ -300,8 +299,8 @@ hi:
       relation: सम्बन्ध (%{count})
       relation_paginated: सम्बन्ध (%{count} के %{x}-%{y})
       comment: जवाब (%{count})
-      hidden_commented_by_html: '%{user} से कमेंट छिपाया गया <abbr title=''%{exact_time}''>%{when}</abbr>'
-      commented_by_html: '%{user} से कमेंट <abbr title=''%{exact_time}''>%{when}</abbr>'
+      hidden_commented_by_html: "%{user} से कमेंट छिपाया गया <abbr title='%{exact_time}'>%{when}</abbr>"
+      commented_by_html: "%{user} से कमेंट <abbr title='%{exact_time}'>%{when}</abbr>"
       changesetxml: Changeset XML
       osmchangexml: osmChange XML
       feed:
@@ -389,12 +388,12 @@ hi:
       open_title: 'अनसुलझा नोट #%{note_name}'
       closed_title: 'सुलझा नोट #%{note_name}'
       hidden_title: 'छिपाया नोट #%{note_name}'
-      opened_by_html: '%{user} द्वारा <abbr title=''%{exact_time}''>%{when}</abbr>
-        बनाया गया'
+      opened_by_html: "%{user} द्वारा <abbr title='%{exact_time}'>%{when}</abbr> बनाया\
+        \ गया"
       opened_by_anonymous_html: गुमनाम द्वारा <abbr title='%{exact_time}'>%{when}</abbr>
         बनाया गया
-      commented_by_html: '%{user} से <abbr title=''%{exact_time}''>%{when}</abbr>
-        का कमेंट'
+      commented_by_html: "%{user} से <abbr title='%{exact_time}'>%{when}</abbr> का\
+        \ कमेंट"
       commented_by_anonymous_html: गुमनाम से <abbr title='%{exact_time}'>%{when}</abbr>
         का कमेंट
       closed_by_html: <abbr title='%{exact_time}'>%{when}</abbr> %{user} द्वारा सुलझाया
@@ -482,7 +481,7 @@ hi:
       marker_text: डायरी एंट्री का स्थान
     show:
       title: '%{user} की डायरी | %{title}'
-      user_title: '%{user}''s की डायरी'
+      user_title: "%{user}'s की डायरी"
       leave_a_comment: अपने विचार व्यक्त करें
       login_to_leave_a_comment_html: सत्रारंभ यहाँ %{login_link}, एक टिप्पणी लिखिने
         के लिए
@@ -938,8 +937,8 @@ hi:
       subject: '[OpenHistoricalMap] %{user} ने एक दैनिकी पर प्रतिक्रिया दी'
     friendship_notification:
       subject: '[OpenHistoricalMap] %{user} ने आपको अपने दोस्तों में शामिल किया है'
-      had_added_you: '%{user} ने आपको OpenHistoricalMap पर अपने दोस्तों में शामिल किया
-        है।'
+      had_added_you: '%{user} ने आपको OpenHistoricalMap पर अपने दोस्तों में शामिल
+        किया है।'
     note_comment_notification:
       greeting: नमस्कार,
   messages:
