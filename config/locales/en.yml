@@ -2156,7 +2156,7 @@ en:
       welcome:
         url: /welcome
         title: Welcome to OHM
-        description: Start with this quick guide covering OpenHistoricaltMap basics.
+        description: Start with this quick guide covering OpenHistoricalMap basics.
       beginners_guide:
         url: https://wiki.openstreetmap.org/wiki/Open_Historical_Map/OHM_Basics
         title: OHM Basics
