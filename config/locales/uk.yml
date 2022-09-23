@@ -726,8 +726,6 @@ uk:
         aeroway:
           aerodrome: Аеродром
           airstrip: Злітно-посадкова смуга
-          apron: Перон
-          gate: Вихід на посадку
           hangar: Ангар
           helipad: Вертолітний майданчик
           holding_position: Місце зупинки
@@ -736,7 +734,6 @@ uk:
           runway: Злітна смуга
           taxilane: Руліжна доріжка на пероні
           taxiway: Руліжна доріжка
-          terminal: Термінал
           windsock: Вітровказ
         amenity:
           animal_boarding: Готель для тварин
@@ -782,10 +779,6 @@ uk:
           fire_station: Пожежна станція
           food_court: Фуд-корт
           fountain: Фонтан
-          fuel: Пальне
-          gambling: Азартні ігри
-          grave_yard: Цвинтар
-          grit_bin: Контейнер з гравієм
           hospital: Шпиталь
           hunting_stand: Мисливська вежа
           ice_cream: Морозиво
@@ -1047,8 +1040,6 @@ uk:
           brownfield: Територія очищена під нову забудову
           cemetery: Кладовище
           commercial: Торгівельно-офісна територія
-          conservation: Заповідник
-          construction: Будівництво
           farm: Ферма
           farmland: Рілля
           farmyard: Територія ферми
@@ -1070,7 +1061,6 @@ uk:
           reservoir: Водосховище
           reservoir_watershed: Водозбірна площа водосховища
           residential: Житловий квартал
-          retail: Роздрібна торгівля
           village_green: Сільський майдан
           vineyard: Виноградник
           "yes": Землекористування
@@ -1344,7 +1334,6 @@ uk:
           deli: Делікатеси
           department_store: Універмаг
           discount: Уцінені товари
-          doityourself: Зроби сам
           dry_cleaning: Хімчистка
           e-cigarette: Магазин електронних сигарет
           electronics: Магазин електроніки
@@ -1370,7 +1359,6 @@ uk:
           health_food: Магазин здорової їжі
           hearing_aids: Слухові апарати
           herbalist: Магазин трав
-          hifi: Аудіо-техніка
           houseware: Магазин посуду
           ice_cream: Магазин морозива
           interior_decoration: Внутрішнє оздоблення
@@ -1430,7 +1418,6 @@ uk:
           artwork: Мистецтво
           attraction: Цікаві місця
           bed_and_breakfast: Ліжко та сніданок
-          cabin: Хатинка
           camp_pitch: Кемпінг
           camp_site: Турбаза
           caravan_site: Майданчик для трейлерів
@@ -1619,11 +1606,7 @@ uk:
     edit_with: Редагувати – %{editor}
     tag_line: Вільна Вікі-мапа Світу
     intro_header: Ласкаво просимо до OpenHistoricalMap!
-    intro_text: OpenHistoricalMap — мапа світу, створена такими ж людьми, як і ви,
-      для вільного використання під відкритою ліцензією.
     intro_2_create_account: Створіть обліковий запис
-    hosting_partners_html: Хостинг підтримується %{ucl}, %{fastly}, %{bytemark} та
-      іншими %{partners}.
     partners_ucl: UCL
     partners_fastly: Швидко
     partners_bytemark: Bytemark Hosting
@@ -2028,36 +2011,10 @@ uk:
     about:
       next: Далі
       copyright_html: <span>&copy;</span>Учасники<br>OpenHistoricalMap
-      used_by_html: OpenHistoricalMap надає картографічні дані для тисяч вебсайтів,
-        мобільних застосунків та різних пристроїв
-      lede_text: OpenHistoricalMap створений спільнотою маперів, які вносять і підтримують
-        дані про дороги, стежки, кав’ярні, вокзали і багато чого іншого по всьому
-        світу.
       local_knowledge_title: Знання місцевості
-      local_knowledge_html: OpenHistoricalMap надає виразності місцевим даним. Мапери
-        використовують аерофотознімки, GPS пристрої та прості створені на місцевості
-        схеми для перевірки точності та актуальності даних OSM.
       community_driven_title: Керується спільнотою
-      community_driven_html: |-
-        Спільнота OpenHistoricalMap — різноманітна, затята і щоденно зростаюча. Серед учасників спільноти є мапери ентузіасти, фахівці ГІС, інженери що підтримують роботу серверів OSM, фахівці, які із гуманістичних причин, допомагають в створені мап для районів, постраждалих від стихійного лиха, і багато інших.
-        Щоб дізнатися більше про спільноту, подивіться <a href='%{diary_path}'>щоденники учасників</a>
-        <a href='http://blogs.openstreetmap.org/'>блоги спільноти</a> і сайт <a href='http://www.osmfoundation.org/'>фундації OSM</a>.
       open_data_title: Відкриті дані
-      open_data_html: |-
-        OpenHistoricalMap — це <i>відкриті дані</i>: Ви можете вільно використовувати їх для будь-яких цілей доти, поки посилаєтесь OpenHistoricalMap та його учасників. Якщо Ви змінюєте дані або на основі даних будуєте певним чином власні, Ви можете розповсюджувати результат лише під тією самою ліцензією. Дивіться сторінку <a href='%{copyright_path}'>«Авторські права і
-        ліцензії»</a>, щоб отримати докладну інформацію.
       legal_title: Правова інформація
-      legal_1_html: "Цей сайт та багато інших повʼязаних сервісів офіційно керуються\
-        \ \n<a href='https://osmfoundation.org/'>OpenHistoricalMap Foundation</a>\
-        \ (OSMF) \nвід імені спільноти. Використання усіх сервісів, підконтрольних\
-        \ OSMF, здійснюється на основі <a href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\"\
-        >\nПравил щодо прийнятного використання</a> та нашій <a href=\"https://wiki.osmfoundation.org/wiki/Privacy_Policy\"\
-        >Політиці конфіденційності</a>."
-      legal_2_html: "Будь ласка, <a href='https://osmfoundation.org/Contact'>звʼяжіться\
-        \ з OSMF</a>, \nякщо у Вас є питання чи проблеми щодо ліцензування, авторських\
-        \ прав та інших юридичних питань.\n<br>\nЛоготип OpenStreepMap та State of\
-        \ the Map є <a href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\"\
-        >зареєстрованими торговими марками OSMF</a>."
       partners_title: Партнери
     copyright:
       foreign:
@@ -2073,64 +2030,14 @@ uk:
         native_link: української версії
         mapping_link: почати мапити
       legal_babble:
-        title_html: Авторські права та ліцензування
-        intro_1_html: |-
-          Дані OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> є <i>відкритими даними</i>, що ліцензуються <a
-          href="http://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF) на
-          умовах Ліцензії <a href="http://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database License</a> (ODbL).
-        intro_2_html: Ви можете вільно копіювати, поширювати, передавати й змінювати
-          наші дані, посилаючись при цьому на OpenHistoricalMap та спільноту. Якщо
-          ви змінюєте наші дані чи створюєте на їх основі свої, ви повинні розповсюджувати
-          результати під такою ж Ліцензією. Повний <a href="http://opendatacommons.org/licenses/odbl/1.0/">чинний
-          текст</a> Ліцензії пояснює ваші права та обов’язки.
-        intro_3_1_html: "Наша документація поширюється на умовах <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\"\
-          >Ліцензії Creative \nCommons Attribution-ShareAlike 2.0</a> (CC-BY-SA)."
-        credit_title_html: Як посилатись на OpenHistoricalMap
-        credit_1_html: Ми вимагаємо, щоб ви зазначали &ldquo;&copy; OpenHistoricalMap
-          contributors&rdquo; або &ldquo;&copy;Учасники OpenHistoricalMap&rdquo;.
-        credit_2_1_html: Ви повинні також чітко вказувати, що дані доступні на умовах
-          ліцензії Open  Database License. Ви можете зробити це, навівши посилання
-          на <a href="http://www.openstreetmap.org/copyright">цю сторінку з роз’ясненням
-          ліцензійних вимог</a>. Або ж, для виконання наших вимог під час розповсюдження
-          даних OSM, ви можете безпосередньо вказувати назву ліцензії(й) та посилання
-          на її(їх) текст. Якщо ви користуєтесь носіями, де використання гіпертекстових
-          посилань неможливе (наприклад друковані матеріали), ми пропонуємо посилатися
-          безпосередньо на www.openstreetmap.org (або розширено "www.openstreetmap.org,
-          OpenHistoricalMap") та на opendatacommons.org.
         attribution_example:
-          alt: Приклад того, як треба посилатись на OpenHistoricalMap на веб-сторінці
           title: Приклад зазначення авторства
         more_title_html: Дізнатися більше
-        more_1_html: Дізнайтеся більше про використання наших даних та про те, як
-          посилатися на нас як на джерело, на <a href="http://osmfoundation.org/Licence">сторінці
-          ліцензії OSMF</a> та у <a href="http://wiki.openstreetmap.org/wiki/Uk:Legal_FAQ">відповідях
-          спільноти щодо правових питань</a>.
-        contributors_title_html: Наші учасники
-        contributors_intro_html: 'Нашими учасниками є тисячі людей. Наші дані також
-          містять дані від національних картографічних агенцій, які розповсюджуються
-          на умовах відкритих ліцензій, серед них:'
-        contributors_footer_1_html: Щоб отримати більш докладну інформацію про ці
-          та інші джерела, що були використані для покращення мапи OpenHistoricalMap,
-          будь ласка, перегляньте сторінку <a href="http://wiki.openstreetmap.org/wiki/Contributors">Учасники</a>
-          OpenHistoricalMap Вікі.
-        contributors_footer_2_html: Включення даних до OpenHistoricalMap не означає,
-          що постачальник цих даних якимось чином підтримує OpenHistoricalMap, надає
-          які-небудь гарантії чи бере на себе якусь  відповідальність.
         infringement_title_html: Порушення авторських прав
         infringement_1_html: Члени спільноти OSM повинні завжди пам’ятати про те,
           що забороняється додавати дані з будь-яких захищених авторським правом джерел
           (наприклад, з Google Maps чи з друкованих мап) без отримання попереднього
           дозволу правовласників.
-        infringement_2_html: Якщо ви вважаєте, що захищений авторським правом матеріал
-          був недоречно доданий до бази даних OpenHistoricalMap або до цього сайту,
-          ознайомтесь з нашим <a href="https://wiki.osmfoundation.org/wiki/Takedown_procedure">порядком
-          з вилучення таких даних</a> або скористайтесь безпосередньо <a href="https://dmca.openstreetmap.org/">сторінкою
-          для онлайн звернень</a>.
-        trademarks_title_html: <span id="trademarks"></span>Торгові марки
-        trademarks_1_html: OpenHistoricalMap і логотип з лупою є зареєстрованими торговими
-          марками OpenHistoricalMap Foundation. Якщо у Вас є запитання щодо використання
-          Вами цих марок. будь ласка, надсилайте свої запитання до <a href="http://wiki.osmfoundation.org/wiki/Licensing_Working_Group">Licence
-          Working Group</a>.
     index:
       js_1: Ви користуєтесь оглядачем, в якому не підтримується або відключений JavaScript.
       js_2: OpenHistoricalMap використовує JavaScript для мапи.
@@ -2160,8 +2067,6 @@ uk:
       map_image: Зображення мапи (показує стандартний шар)
       embeddable_html: Вбудований HTML
       licence: Ліцензія
-      export_details_html: Дані OpenHistoricalMap ліцензуються на умовах <a href="http://opendatacommons.org/licenses/odbl/1.0/">Ліцензії
-        Open Data Commons Open Database License</a> (ODbL).
       too_large:
         advice: 'Якщо даний експорт не вдався, по можливості використайте одне з перелічених
           джерел:'
@@ -2223,41 +2128,25 @@ uk:
         і створення документації з мапінгу.
       welcome:
         url: /welcome
-        title: Ласкаво просимо до OSM
-        description: Розпочніть з цього короткого посібника, що охоплює основи OpenHistoricalMap.
-      beginners_guide:
-        url: http://wiki.openstreetmap.org/wiki/Uk:Beginners%27_guide
-        title: Посібник новачка
-        description: Посібник для новачків від спільноти.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Попросити про допомогу
         description: Поставте запитання або знайдіть відповіді на сайті питань-відповідей
           OpenHistoricalMap.
-      mailing_lists:
-        title: Списки розсилки
-        description: Поставте запитання або обговоріть цікаві речі у широкому виборі
-          тематичних або регіональних списків розсилки.
+      mailing_lists: {}
       forums:
         title: Форуми
         description: Запитання та обговорення для тих, хто віддає перевагу інтерфейсу
           дошки обговорень.
-      irc:
-        title: IRC
-        description: Інтерактивний чат багатьма мовами на багато тем.
-      switch2osm:
-        title: switch2osm
-        description: Допомога компаніям та організаціям, які переходять на мапи та
-          інші послуги OpenHistoricalMap.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Для установ та організацій
         description: Ваша установа має намір почати працювати з OpenHistoricalMap?
           Дізнайтесь про необхідні речі на Welcome Mat.
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: OpenStreetMap Wiki
-        description: Перегляньте вікі щоб отримати докладу документацію OpenHistoricalMap.
+      wiki: {}
     potlatch:
       removed: Вашим типовим редактором зазначено Potlatch. Через припинення роботи
         Adobe Flash Player він більше не доступний для використання у вебоглядачі.
@@ -2352,24 +2241,10 @@ uk:
           toilets: Туалети
     welcome:
       title: Ласкаво просимо!
-      introduction_html: Ласкаво просимо до OpenHistoricalMap, вільної мапи світу,
-        покращувати яку може кожен. Тепер, коли ви увійшли, все готово для початку
-        редагування. Ось короткий посібник з інформацією про найважливіші речі, про
-        які ви повинні знати.
       whats_on_the_map:
         title: Що на мапі
-        on_html: На мапі OpenHistoricalMap розташовані об’єкти, які <em>існують в
-          поточний момент</em> — тобто, це мільйони будинків, доріг та інших елементів
-          місцевості. Ви можете наносити на мапу будь-які об’єкти навколишнього світу,
-          цікаві для вас.
-        off_html: Мапа <em>не</em> включає суб’єктивні дані на кшталт оцінок, історичних
-          або гіпотетичних характеристик та дані з джерел, які захищені авторським
-          правом. Якщо ви не маєте спеціального дозволу, не копіюйте з паперових мап
-          або з мап в інтернеті.
       basic_terms:
         title: Основні Терміни
-        paragraph_1_html: OpenHistoricalMap має власну термінологію. Ось кілька важливих
-          слів, які можуть знадобитися.
         editor_html: <strong>Редактор</strong> — це програма або веб-сайт, який можна
           використовувати для редагування мапи.
         node_html: <strong>Точка</strong> — це позначка на мапі, на кшталт  ресторану
@@ -2380,17 +2255,8 @@ uk:
           ресторану або обмеження швидкості на дорозі.
       rules:
         title: Правила!
-        paragraph_1_html: "В OpenHistoricalMap є кілька формальних правил, крім того,\
-          \ ми сподіваємось, що всі учасники співпрацюватимуть зі спільнотою. Якщо\
-          \ ви плануєте заходи, окрім ручного внесення даних, будь ласка, прочитайте\
-          \ та дотримуйтесь наступних настанов з \n<a href='httpи://wiki.openstreetmap.org/wiki/Uk:Import/Guidelines'>Імпорту\
-          \ даних</a> та  \n<a href='https://wiki.openstreetmap.org/wiki/Uk:Automated_Edits_code_of_conduct'>Автоматизованого\
-          \ редагування</a>."
       questions:
         title: Є питання?
-        paragraph_1_html: |-
-          OpenHistoricalMap має різні ресурси для отримання інформації про проєкт, щоб поставити питання та отримати відповідь, для спільного обговорення і створення документації з картографування.
-          <a href='%{help_url}'>Отримайте допомогу тут</a>. Ваша установа має намір почати працювати з OpenHistoricalMap? <a href='https://welcome.openstreetmap.org/'>Відвідайте Welcome Mat.</a>
       start_mapping: Розпочати мапити
       add_a_note:
         title: Немає часу, щоб виправити мапу? Додайте нотатку!
@@ -3032,7 +2898,6 @@ uk:
         gps: Публічні GPS-треки
         overlays: Увімкніть наступні шари для пошуку і усунення помилок на мапі
         title: Шари
-      copyright: © <a href='%{copyright_url}'>Учасники OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Зробити внесок</a>
       terms: <a href='%{terms_url}' target='_blank'>Умови використання Вебсайту та
         API</a>

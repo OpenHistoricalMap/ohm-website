@@ -595,8 +595,6 @@ lb:
         aeroway:
           aerodrome: Fluchhafen
           airstrip: Startbunn
-          apron: Fluchvirfeld
-          gate: Paart
           hangar: Hangar
           helipad: Helikopterlandeplaz
           holding_position: Haltestell
@@ -605,7 +603,6 @@ lb:
           runway: Start- a Landepist
           taxilane: Taxispur
           taxiway: Rullbunn
-          terminal: Terminal
           windsock: Wandsak
         amenity:
           animal_boarding: Déierepensioun
@@ -651,10 +648,6 @@ lb:
           fire_station: Pompjeeën
           food_court: Iesshaff
           fountain: Sprangbur
-          fuel: Benzin
-          gambling: Glécksspill
-          grave_yard: Kiirfecht
-          grit_bin: Streeguttbehälter
           hospital: Klinik
           hunting_stand: Héichstand
           ice_cream: Glace
@@ -915,8 +908,6 @@ lb:
           brownfield: Braachland
           cemetery: Kierfecht
           commercial: Commercëgebitt
-          conservation: Naturschutzgebitt
-          construction: Chantier
           farm: Bauerenhaff
           farmland: Akerland
           farmyard: Bauerenhaff
@@ -938,7 +929,6 @@ lb:
           reservoir: Reservoir
           reservoir_watershed: Waasseranzuchsgebitt
           residential: Wunngéigend
-          retail: Eenzelhandel
           village_green: Duerfwiss
           vineyard: Wéngert
           "yes": Buedemnotzung
@@ -1209,7 +1199,6 @@ lb:
           deli: Feikaschtbuttek
           department_store: Kafhaus
           discount: Diskontbuttek
-          doityourself: Baumaart
           dry_cleaning: Botzerei
           e-cigarette: Geschäft fir E-Zigaretten
           electronics: Elektronikgeschäft
@@ -1235,7 +1224,6 @@ lb:
           health_food: Naturkaschtbuttek
           hearing_aids: Hörapparat
           herbalist: Kraiderhandel
-          hifi: Elektroshop
           houseware: Houswuerebuttek
           ice_cream: Glacëbuttek
           interior_decoration: Bannenausstattung
@@ -1294,7 +1282,6 @@ lb:
           artwork: Konschtwierk
           attraction: Attraktioun
           bed_and_breakfast: Bed and Breakfast
-          cabin: Hütt
           camp_pitch: Campingplaz
           camp_site: Camping
           caravan_site: Wunnmobil-Stellplaz
@@ -1479,11 +1466,7 @@ lb:
     edit_with: Ännere mat %{editor}
     tag_line: D'fräi Wiki-Weltkaart
     intro_header: Wëllkomm bei OpenHistoricalMap!
-    intro_text: OpenHistoricalMap ass eng Kaart vun der Welt, déi vu Leit wéi Iech
-      gemaach gouf an déi fräi ënner enger oppener Lizenz benotzt ka ginn.
     intro_2_create_account: E Benotzerkont uleeën
-    hosting_partners_html: Den Hosting gëtt vun %{ucl}, %{fastly}, %{bytemark} an
-      anere(n) %{partners} ënnerstëtzt.
     partners_ucl: "''University College'' zu London"
     partners_fastly: Fastly
     partners_bytemark: Bytemark Hosting
@@ -1880,30 +1863,10 @@ lb:
     about:
       next: Weider
       copyright_html: <span>&copy;</span>OpenHistoricalMap<br>Matwierkend
-      used_by_html: OpenHistoricalMap stellt Kaartendonnéeë fir dausende vu Websäiten,
-        Appen an anere Geräter zur Verfügung
-      lede_text: OpenHistoricalMap gëtt vun enger Panoplie vu Mapperen erstallt, déi
-        Donnéeën zu Weeër, Gebaier an allerlee Weiderem weltwäit erfaassen a fleegen.
       local_knowledge_title: Lokaalt Wëssen
-      local_knowledge_html: OpenHistoricalMap leet Wäert op lokaalt Wëssen. Auteure
-        benotze Loftbiller, GPS-Geräter a Feldkaarte fir d'Verifizéierung, sou dass
-        OSM korrekt an aktuell ass.
       community_driven_title: Communautéitsbedriwwen
-      community_driven_html: |-
-        D'OpenHistoricalMap-Communautéit ass villfälteg, leidenschaftlech a wiisst deeglech. Eis Matwierkend si begeeschtert Mapper, GIS-Profien, Ingenieuren, déi d'OSM-Servere bedreiwen a vill méi.
-        Fir méi iwwer d'Communautéit z'erfueren, lies eisen <a href='https://blog.openstreetmap.org'>OpenHistoricalMap-Blog</a>,
-        d'<a href='%{diary_path}'>Benotzertagebicher</a>,
-        <a href='https://blogs.openstreetmap.org/'>Community-Bloggen</a> an d'Websäit vun der <a href='https://www.osmfoundation.org/'>OSM-Foundatioun</a>.
       open_data_title: Open Data
-      open_data_html: "OpenHistoricalMap ass „<i>Open Data</i>“: Du kanns et fir jiddwer Zweck\
-        \ verwenden, soulaangs du OpenHistoricalMap a seng Matwierkend erwääns. Falls\
-        \ du déi Donnéeën ofänners oder op bestëmmt Aart abaus, däerfs du d'Ergebnis\
-        \ nëmmen ënner der nämmlechter Lizenz verbreeden. Kuck d'<a href='%{copyright_path}'>Auteursrechts-\
-        \ a Lizenzsäit</a> fir Eenzelheeten."
       legal_title: Rechtlech Hiweiser
-      legal_1_html: |-
-        Dës Websäit a vill domat an Zesummenhang stoend Déngschter gi vun der <a href='https://osmfoundation.org/'>OpenHistoricalMap Foundation</a> (OSMF) fir d'OSM-Communautéit bedriwwen. D'Benotze vun allen OSMF-bedriwwenen Déngschter gëtt duerch eis „<a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">Acceptable Use Policies</a>“
-        an eis <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">Dateschutzrichtlinn</a> gereegelt.
       partners_title: Partneren
     copyright:
       foreign:
@@ -1916,20 +1879,8 @@ lb:
         native_link: lëtzebuergesch Versioun
         mapping_link: mat dem Kaartéieren ufänken
       legal_babble:
-        title_html: Copyright a Lizenz
-        credit_title_html: Wéi et op d'Urhiewerschaft vun OpenHistoricalMap hinzeweise
-          gëllt
-        credit_1_html: Mir verlaangen d'Verwendung vum Hiweis „&copy; OpenHistoricalMap-Matwierkend“.
         more_title_html: Fir méi ze wëssen
-        contributors_title_html: Eis Matwierkend
-        contributors_intro_html: 'Eis Matwierkend sinn dausende vun eenzele Mënschen.
-          Mir bezéien och oppe lizenzéiert Donnéeë vu nationale Kaartenagenturen an
-          anere Quellen an, dorënner:'
         infringement_title_html: Copyright-Verletzung
-        trademarks_title_html: <span id="trademarks"></span>Markenzeechen
-        trademarks_1_html: OpenHistoricalMap, de Luppelogo a „State of the Map“ sinn
-          agedroe Wouerzeeche vun der OpenHistoricalMap Foundation. Falls du Froen
-          iwwer d'Verwendung vu Marken hues, lies wannechgelift eis <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy"><Markerichtlinn</a>.
     index:
       js_1: Dir hutt entweder e Browser dee JavaScript net ënnerstëtzt oder Dir hutt
         JavaScript desaktivéiert.
@@ -1989,26 +1940,19 @@ lb:
       title: Hëllef kréien
       welcome:
         url: /welcome
-        title: Wëllkomm bei OpenHistoricalMap
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Beginners%27_guide
-        title: Guide fir nei Benotzer
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Hëllefs-Forum
         description: Stellt eng Fro oder kuckt no Äntwerten um OpenHistoricalMap-Site
           mat de Froen an Äntwerten.
-      mailing_lists:
-        title: Mailing-Lëschten
+      mailing_lists: {}
       forums:
         title: Forumen
-      irc:
-        title: IRC
+      irc: {}
       welcomemat:
         title: Fir Organisatiounen
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: OpenStreetMap Wiki
+      wiki: {}
     potlatch:
       id_html: Alternativ kanns du däi Standardediteur op iD astellen, deen an dengem
         Webbrowser wéi virdru Potlach ausgeféiert gëtt. <a href="%{settings_url}">Änner
@@ -2455,7 +2399,6 @@ lb:
         gps: Ëffentlech GPS Spueren
         overlays: Overlayë fir d’Feelersich aktivéieren
         title: Niveauen
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMap-Matwierkend</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Maacht een Don</a>
       terms: <a href='%{terms_url}' target='_blank'>Notzungskonditioune vun der Websäit
         an der API</a>

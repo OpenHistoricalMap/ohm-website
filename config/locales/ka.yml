@@ -330,10 +330,8 @@ ka:
           station: საბაგირო გზის სადგური
         aeroway:
           aerodrome: აეროდრომი
-          gate: გასასვლელი
           helipad: ვერტმფრენის დასაჯდომი
           runway: ასაფრენ-დასაფრენი ბილიკი
-          terminal: ტერმინალი
         amenity:
           animal_shelter: ცხოველთა თავშესაფარი
           arts_centre: ხელოვნების ცენტრი
@@ -371,8 +369,6 @@ ka:
           ferry_terminal: ბორანის სადგური
           fire_station: სახანძრო განყოფილება
           fountain: შადრევანი
-          fuel: საწვავი
-          grave_yard: საფლავი
           hospital: საავადმყოფო
           hunting_stand: სანადირო კოშკურა
           ice_cream: ნაყინი
@@ -519,8 +515,6 @@ ka:
           brownfield: მიტოვებული ადგილი
           cemetery: სასაფლაო
           commercial: კომერციული ტერიტორია
-          conservation: კონსერვაცია
-          construction: მშენებლობა
           farm: ფერმა
           farmland: სავარგული
           forest: ტყე
@@ -538,7 +532,6 @@ ka:
           recreation_ground: რეკრეაციული ზონა
           reservoir: წყალსაცავი
           residential: საცხოვრებელი ტერიტორია
-          retail: სავაჭრო ტერიტორია
           village_green: მწვანე სოფელი
           vineyard: ვენახი
           "yes": მიწათსარგებლობა
@@ -929,8 +922,7 @@ ka:
         title: ამ გვერდის შესახებ
         native_link: ქართული ვერსია
         mapping_link: კარტოგრაფირების დაწყება
-      legal_babble:
-        title_html: საავტორო უფლებები და ლიცენზია
+      legal_babble: {}
     index:
       permalink: მუდმივი ბმული
       shortlink: მოკლე ბმული

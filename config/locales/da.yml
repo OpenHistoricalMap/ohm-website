@@ -671,8 +671,6 @@ da:
         aeroway:
           aerodrome: Flyveplads
           airstrip: Landingsbane
-          apron: Forstykke
-          gate: Gate
           hangar: Hangar
           helipad: Helikopterplads
           holding_position: Venteposition
@@ -681,7 +679,6 @@ da:
           runway: Landingsbane
           taxilane: Taxibane
           taxiway: Rullevej
-          terminal: Terminal
           windsock: Vindpose
         amenity:
           animal_boarding: Dyrepension
@@ -727,10 +724,6 @@ da:
           fire_station: Brandstation
           food_court: Food Court
           fountain: Springvand
-          fuel: Benzinstation
-          gambling: Spil
-          grave_yard: Kirkegård
-          grit_bin: Saltkasse
           hospital: Sygehus
           hunting_stand: Jagtplatform
           ice_cream: Is
@@ -992,8 +985,6 @@ da:
           brownfield: Tidligere industriområde
           cemetery: Begravelsesplads
           commercial: Erhvervsområde
-          conservation: Fredet
-          construction: Byggeri
           farm: Gård
           farmland: Landbrugsjord
           farmyard: Gårdsplads
@@ -1015,7 +1006,6 @@ da:
           reservoir: Reservoir
           reservoir_watershed: Vandreservoir
           residential: Boligområde
-          retail: Detailhandel
           village_green: Forte
           vineyard: Vingård
           "yes": Arealanvendelse
@@ -1289,7 +1279,6 @@ da:
           deli: Delikatessebutik
           department_store: Varehus
           discount: Tilbudsbutik
-          doityourself: Gør-det-selv
           dry_cleaning: Renseri
           e-cigarette: E-cigaret-forhandler
           electronics: Elektronikforretning
@@ -1315,7 +1304,6 @@ da:
           health_food: Helskostforetning
           hearing_aids: Høreapparater
           herbalist: Urteforretning
-          hifi: Hi-Fi
           houseware: Køkkenudstyr
           ice_cream: Isbutik
           interior_decoration: Indretning
@@ -1375,7 +1363,6 @@ da:
           artwork: Kunst
           attraction: Seværdighed
           bed_and_breakfast: Bed and Breakfast
-          cabin: Hytte
           camp_pitch: Teltplads
           camp_site: Lejrplads
           caravan_site: Campingplads
@@ -1558,11 +1545,7 @@ da:
     edit_with: Redigér med %{editor}
     tag_line: Det frie Wiki-verdenskort
     intro_header: Velkommen til OpenHistoricalMap!
-    intro_text: OpenHistoricalMap er et kort over verden, skabt af folk som dig og
-      gratis at bruge under en åben licens.
     intro_2_create_account: Opret en brugerkonto
-    hosting_partners_html: Driften støttes af %{ucl}, %{fastly}, %{bytemark} og andre
-      %{partners}.
     partners_ucl: University College London
     partners_fastly: Fastly
     partners_bytemark: Bytemark Hosting
@@ -1959,38 +1942,10 @@ da:
     about:
       next: Næste
       copyright_html: <span>&copy;</span>OpenHistoricalMap<br>bidragsydere
-      used_by_html: OpenHistoricalMap leverer kortdata til tusindvis af websteder,
-        mobile apps og hardware-enheder
-      lede_text: OpenHistoricalMap er bygget af et fællesskab af kortlæggere, der
-        bidrager og vedligeholder data om veje, stier, caféer, jernbanestationer og
-        meget mere, over hele verden.
       local_knowledge_title: Lokal viden
-      local_knowledge_html: OpenHistoricalMap lægger vægt på lokal viden. Bidragsydere
-        bruger luftfotografier, GPS-enheder og lavteknologiske feltkort til at kontrollere
-        at OSM er præcist og ajourført.
       community_driven_title: Drevet af fællesskabet
-      community_driven_html: "OpenHistoricalMap-fællesskabet er alsidigt, passioneret,\
-        \ og vokser hver dag.\nVores bidragsydere omfatter entusiastiske kortlæggere,\
-        \ GIS-fagfolk, ingeniører der\ndriver OSM-servere, humanister der kortlægger\
-        \ katastroferamte områder,\nog mange flere.\nLær mere om fællesskabet ved\
-        \ at se nærmere på\n<a href='https://blog.openstreetmap.org'>OpenHistoricalMap-bloggen</a>,\
-        \ \n<a href='%{diary_path}'>brugerblogs</a>,\n<a href='https://blogs.openstreetmap.org/'>fællesskabsblogs</a>,\
-        \ og\n <a href='https://www.osmfoundation.org/'>hjemmesiden for OSM Foundation</a>."
       open_data_title: Åbne Data
-      open_data_html: |-
-        OpenHistoricalMap er <i>åbne data</i>: du må bruge dem til ethvert formål,
-        så længe du nævner OpenHistoricalMap og dets bidragsydere. Hvis du ændrer eller
-        bygger oven på data på bestemte måder, må du kun distribuere resultatet under
-        den samme licens. Se siden om <a href='%{copyright_path}'>ophavsret og licens</a> for detaljer.
       legal_title: Juridisk
-      legal_1_html: |-
-        Dette websted og mange andre relaterede tjenester er formelt drevet af
-        <a href="https://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF) på vegne af fællesskabet. Brug af samtlige OSMF-drevne tjenester er underlagt vores <a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">Brugsvilkår, <a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">Politikker for acceptabel brug</a> og vores <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">Privatlivs-poltik</a>.
-      legal_2_html: "Du bedes <a href=\"https://osmfoundation.org/Contact\">kontakte\
-        \ OSMF</a> \nhvis du har spørgsmål om licensering, ophavsret eller andre juridiske\
-        \ spørgsmål og problemstillinger.\n<br>\nOpenHistoricalMap, forstørrelsesglas-logoet\
-        \ og \"State of the Map\" er <a href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\"\
-        >varemærker registreret af OSMF</a>."
       partners_title: Partnere
     copyright:
       foreign:
@@ -2006,64 +1961,14 @@ da:
         native_link: den danske udgave
         mapping_link: begynde kortlægningen
       legal_babble:
-        title_html: Ophavsret og licens
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> er <i>åbne data</i>, licenseret under <a
-          href="https://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> (ODbL) af <a
-          href="https://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF).
-        intro_2_html: "Du kan frit kopiere, distribuere, overføre og tilpasse vores\
-          \ data, \nså længe du angiver OpenHistoricalMap og dets\nbidragsydere som\
-          \ kilde. Hvis du ændrer eller bygger på vores\ndata, må du kun distribuere\
-          \ resultatet under den samme licens. Den\nfulde <a\nhref=\"https://opendatacommons.org/licenses/odbl/1.0/\"\
-          >juridiske tekst</a>\nforklarer dine rettigheder og pligter."
-        intro_3_1_html: Vores dokumentation er licenseret under <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.da">Creative
-          Commons Kreditering-Deling på samme vilkår 2.0</a> (CC BY-SA 2.0).
-        credit_title_html: Kildeangivelse og OpenHistoricalMap
-        credit_1_html: Vi kræver at din kildeangivelse mindst består af &ldquo;&copy;
-          OpenHistoricalMap-bidragsydere&rdquo;.
-        credit_2_1_html: "Du skal også gøre det klart, at dataene er tilgængelige\
-          \ under Open \nDatabase License. Du kan gøre dette ved at linke til\n<a\
-          \ href=\"https://www.openstreetmap.org/copyright\">denne side om ophavsret</a>.\
-          \ \nAlternativt, og som et krav, hvis du distribuerer OSM som\n rådata,\
-          \ kan du nævne licenserne og linke direkte til licensteksterne. I medier\n\
-          \ hvor hyperlinks ikke er mulige (f.eks. trykte værker), foreslår vi, at\
-          \ du\n henviser dine læsere til openstreetmap.org (måske ved at udvide\n\
-          'OpenHistoricalMap' i kildeangivelsen til denne fuld adresse) og opendatacommons.org."
         attribution_example:
-          alt: Eksempel på hvordan man angiver OpenHistoricalMap som kilde for en
-            webside
           title: Eksempel på kildeangivelse
         more_title_html: Læs mere
-        more_1_html: |-
-          Læs mere om brug af vores data, og hvordan du krediterer os, på <a
-          href="https://osmfoundation.org/Licence">OSMF Licens-siden</a>.
-        contributors_title_html: Vores bidragsydere
-        contributors_intro_html: |-
-          Vores bidragsydere er tusinder af individer. Vi medtager også
-          åbent licenseret data fra nationale kortlægningsagenturer
-          og andre kilder, blandt dem:
-        contributors_footer_1_html: |-
-          For yderligere oplysninger om disse og andre kilder, der er blevet brugt for at hjælpe med at forbedre OpenHistoricalMap, se venligst <a
-          href="https://wiki.openstreetmap.org/wiki/Contributors">siden med bidragsydere</a> på OpenStreetMap Wiki.
-        contributors_footer_2_html: |-
-          Optagelse af data i OpenHistoricalMap indebærer ikke at den oprindelige
-          dataudbyder siger god for OpenHistoricalMap, giver nogen garanti eller
-          accepterer nogen form for erstatningspligt.
         infringement_title_html: Krænkelse af ophavsretten
         infringement_1_html: |-
           OSM-bidragsydere bliver mindet om aldrig at tilføje data fra nogen
           ophavsretligt beskyttede kilder (f.eks. Google Maps eller trykte kort) uden
           eksplicit tilladelse fra ophavsret-indehaverne.
-        infringement_2_html: |-
-          Hvis du mener, at ophavsretligt beskyttet materiale uberettiget er
-           føjet til OpenHistoricalMap databasen eller dette websted, bedes du følge
-           vores <a hrefs="http://www.osmfoundation.org/wiki/License/Takedown_procedure">procedure til fjernelse a materiale</a> eller udfyld formular direkte på vores
-          <a href="https://dmca.openstreetmap.org/">on-line side</a>.
-        trademarks_title_html: <span id="trademarks"></span>Varemærker
-        trademarks_1_html: OpenHistoricalMap, forstørrelsesglas-logoet og "State of
-          the Map" er registrerede varemærker til OpenHistoricalMap Foundation. Hvis
-          du har spørgsmål om din brug af mærkerne, så se <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">Varemærkepolitikken</a>.
     index:
       js_1: Du bruger enten en browser som ikke understøtter Javascript, eller du
         har deaktiveret Javascript.
@@ -2094,8 +1999,6 @@ da:
       map_image: Kort billede (viser standard lag)
       embeddable_html: HTML der kan indlejres
       licence: Licens
-      export_details_html: OpenHistoricalMaps data er licenseret under <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a> (ODbL).
       too_large:
         advice: 'Hvis ovenstående eksport mislykkes, kan du overveje at bruge en af
           de kilder, der er anført nedenfor:'
@@ -2158,42 +2061,25 @@ da:
         omkring kortlægning.
       welcome:
         url: /welcome
-        title: Velkommen til OpenHistoricalMap
-        description: Start med denne hurtige guide der dækker det grundlæggende i
-          OpenHistoricalMap.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Da:Beginners%27_guide
-        title: Hjælp for nybegyndere
-        description: Hjælp for nybegyndere, som vedligeholdes af fællesskabet.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Hjælpeforum
         description: Stil et spørgsmål eller find et svar på OpenHistoricalMap's spørgsmål
           og svar side.
-      mailing_lists:
-        title: Mailinglister
-        description: Stil et spørgsmål eller diskuter interessante spørgsmål på en
-          bred vifte af tematiske eller regionale mailinglister.
+      mailing_lists: {}
       forums:
         title: Fora
         description: Spørgsmål og diskussioner for dem, der foretrækker et opslagstavlelignende
           interface.
-      irc:
-        title: IRC
-        description: Interaktiv chat på mange forskellige sprog, og om mange emner.
-      switch2osm:
-        title: switch2osm
-        description: Hjælp til virksomheder og organisationer, der skifter til OpenHistoricalMap
-          baserede kort og andre tjenester.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Til organisationer
         description: Er du del af en organisation der har planer med OpenHistoricalMap?
           Find ud af hvad du har brug for at vide på velkomstsiden.
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: OpenStreetMap Wiki
-        description: Gennemse wikien for dybdegående OSM dokumentation.
+      wiki: {}
     potlatch:
       removed: Din foretrukne OpenHistoricalMap-editor er sat til Potlatch. Da Adobe
         Flash Player er blevet trukket tilbage, er Potlatch ikke længere tilgængelig
@@ -2288,25 +2174,10 @@ da:
           toilets: Toiletter
     welcome:
       title: Velkommen!
-      introduction_html: Velkommen til OpenHistoricalMap, det frie brugerredigerede
-        verdenskort. Nu hvor du er oprettet som bruger er du klar til at tilføje og
-        ændre kortinformationer. Her er en guide med de vigtigste informationer til
-        at komme hurtigt i gang.
       whats_on_the_map:
         title: Hvad kortet indholder
-        on_html: |-
-          OpenHistoricalMap indeholder elementer, der <em>konkret og aktuelt</em> findes -
-          f.eks. millioner af bygninger, veje og andre detaljer om steder. Du kan kortlægge
-          enhver detalje fra den virkelige verden som du interesserer dig for.
-        off_html: |-
-          Kortet indeholder <em>ikke</em> subjektive informationer (f.eks. anmeldelser), ting
-          der ikke længere eksisterer, fiktive ting og ophavsretsligt beskyttede data fra andre
-          kort. Kopier aldrig nogen som helst information fra andre online- eller papirkort
-          med mindre der forelægger en særlig tilladelse.
       basic_terms:
         title: Grundlæggende begreber
-        paragraph_1_html: Her er nogen få begreber som er nyttige at forstå for at
-          bidrage til OpenHistoricalMap.
         editor_html: En <strong>editor</strong> er et program eller en hjemmeside
           der kan bruges til at redigere kortet.
         node_html: Et <strong>"punkt"</strong> er et sted på kortet, f.eks. en enkelt
@@ -2318,17 +2189,8 @@ da:
           på en vej.
       rules:
         title: Regler!
-        paragraph_1_html: |-
-          OpenHistoricalMap har få formelle regler, men vi forventer, at alle deltagere vil samarbejde
-          med, og kommunikere med fællesskabet. Hvis du overvejer
-          andre aktiviteter end manuel redigering af en side, skal du læse og følge retningslinjerne på
-          <a href="https://wiki.openstreetmap.org/wiki/Import/Guidelines">Import</a> og
-          <a href="https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct">Automatiserede Redigeringer</a>.
       questions:
         title: Spørgsmål?
-        paragraph_1_html: |-
-          OpenHistoricalMap har adskillige ressourcer der kan hjælpe dig med at lære mere om projektet, stille og svare på spørgsmål samt diskutere og dokumentere emner inden for kortlægning.
-          <a href='%{help_url}'>Få hjælp her</a>. Er du del af en organisation der har planer med OpenHistoricalMap? <a href='https://welcome.openstreetmap.org/'>Se mere på  velkomstsiden.</a>.
       start_mapping: Editér kortet
       add_a_note:
         title: Ikke tid til redigering? Tilføj en bemærkning!
@@ -2944,7 +2806,6 @@ da:
         gps: Offentlige GPS-spor
         overlays: Aktiver overlejringer til fejlfinding af kortet
         title: Lag
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMap-bidragsydere</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Giv et bidrag</a>
       terms: <a href='%{terms_url}' target='_blank'>Hjemmeside og API-vilkår</a>
       cyclosm: Flise-stil af <a href='%{cyclosm_url}' target='_blank'>CyclOSM</a>

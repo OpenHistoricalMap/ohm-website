@@ -594,13 +594,10 @@ sl:
         aeroway:
           aerodrome: Letališče
           airstrip: Vzletna steza
-          apron: Letališka ploščad
-          gate: Vrata
           hangar: Hangar
           helipad: Heliodrom
           runway: Vzletna steza
           taxiway: Vozna steza
-          terminal: Terminal
         amenity:
           animal_shelter: Zavetišče za živali
           arts_centre: Umetnostni center
@@ -641,9 +638,6 @@ sl:
           fire_station: Gasilska postaja
           food_court: Prehrambeni prostor
           fountain: Vodomet
-          fuel: Bencinska črpalka
-          gambling: Igre na srečo
-          grave_yard: Pokopališče
           hospital: Bolnišnica
           hunting_stand: Lovska preža
           ice_cream: Sladoled
@@ -860,8 +854,6 @@ sl:
           brownfield: Gradbišče
           cemetery: Pokopališče
           commercial: Poslovna cona
-          conservation: Zaščiteno področje
-          construction: Gradbišče
           farm: Kmetija
           farmland: Kmetijsko zemljišče
           farmyard: Kmetija
@@ -881,7 +873,6 @@ sl:
           reservoir: Zbiralnik
           reservoir_watershed: Vodno zajetje
           residential: Stanovanjsko področje
-          retail: Trgovine
           village_green: Zelenica
           vineyard: Vinograd
           "yes": Raba tal
@@ -1101,7 +1092,6 @@ sl:
           deli: Delikatesna trgovina
           department_store: Trgovska hiša
           discount: Outlet
-          doityourself: Orodjarna
           dry_cleaning: Čistilnica
           e-cigarette: Trgovina z e-cigaretami
           electronics: Trgovina z elektroniko
@@ -1122,7 +1112,6 @@ sl:
           hardware: Železnina
           health_food: Trgovina z zdravo prehrano
           hearing_aids: Slušni aparati
-          hifi: Trgovina z avdio opremo
           jewelry: Draguljarna
           kiosk: Kiosk prodajalna
           laundry: Pralnica
@@ -1164,7 +1153,6 @@ sl:
           artwork: Umetnina
           attraction: Zanimivost
           bed_and_breakfast: Nočitev z zajtrkom
-          cabin: Nočitev
           camp_site: Kamp
           caravan_site: Kamp
           chalet: Počitniška hišica
@@ -1283,10 +1271,7 @@ sl:
     edit_with: Za urejanje uporabi %{editor}
     tag_line: Prost wiki zemljevid sveta
     intro_header: Dobrodošli na OpenHistoricalMap!
-    intro_text: OpenHistoricalMap je zemljevid sveta, ki ga ustvarjajo ljudje kot
-      ste vi, brezplačen za uporabo z odprto licenco.
     intro_2_create_account: Ustvarite uporabniški račun
-    hosting_partners_html: Gostovanje omogočajo %{ucl}, %{bytemark} in drugi %{partners}.
     partners_ucl: UCL
     partners_bytemark: Bytemark Hosting
     partners_partners: partnerji
@@ -1631,9 +1616,6 @@ sl:
     about:
       next: Naslednji
       copyright_html: <span>&copy;</span>OpenHistoricalMap<br> sodelavci
-      lede_text: |-
-        OpenHistoricalMap ustvarja skupnost kartografov z vsega sveta, ki prispevajo in vzdržujejo
-        podatke o cestah, poteh, kavarnah, postajah in ostalem.
       local_knowledge_title: Krajevno znanje
       community_driven_title: Urejeno od skupnosti
       legal_title: Legalno
@@ -1651,26 +1633,7 @@ sl:
         native_link: Slovensko verzijo
         mapping_link: začnete kartirati
       legal_babble:
-        title_html: Avtorske pravice in licenca
-        intro_1_html: OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup>
-          so <i>prosti podatki</i> z dovoljenjem <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open
-          Data Commons Open Database License</a> (ODbL) <a href="https://osmfoundation.org/">Fundacije
-          OpenHistoricalMap</a> (OSMF).
-        intro_2_html: "Naše podatke lahko prosto kopirate, razširjate, prenašate\n\
-          in prilagajate dokler kot vir navedete OpenHistoricalMap in \nsodelavce.\
-          \ Če podatke spremenite ali obogatite jih lahko\nrazširjate le pod enakimi\
-          \ licenčnimi pogoji. Polno\n<a href=\"https://opendatacommons.org/licenses/odbl/1.0/\"\
-          >besedilo\nlicence</a> opisuje vaše pravice in obveznosti."
-        intro_3_1_html: Kartografija v obliki slik zemljevida in naša dokumentacija
-          sta na voljo pod pogoji <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.sl">Priznanje
-          avtorstva-Deljenje pod enakimi pogoji 2.0</a> license (CC BY-SA).
-        credit_title_html: Kako pripisati zasluge projektu OpenHistoricalMap
-        contributors_title_html: Naši sodelavci
-        contributors_footer_1_html: |-
-          Za več podrobnosti o teh in drugih virih, ki so bili uporabljeni kot pripomočki pri izboljševanju OpenHistoricalMap, si prosimo oglejte <a
-          href="https://wiki.openstreetmap.org/wiki/Contributors">stran sodelujočih</a> na wikiju OpenHistoricalMap.
         infringement_title_html: Kršitev avtorskih pravic
-        trademarks_title_html: <span id="trademarks"></span>Blagovne znamke
     index:
       js_1: Bodisi uporabljate brskalnik, ki ne podpira Javascript-a, ali pa je izvajanje
         Javascript-a onemogočeno.
@@ -1700,8 +1663,6 @@ sl:
       map_image: Slika zemljevida (prikaže standardni izris)
       embeddable_html: HTML za vključitev na spletno stran
       licence: Licenca
-      export_details_html: OpenHistoricalMap podatki imajo dovoljenje <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a> (ODbL).
       too_large:
         advice: 'Če zgornji izvoz spodleti, uporabite enega od spodnjih virov:'
         body: 'To področje je preveliko za izvoz v XML OpenHistoricalMap. Prosimo,
@@ -1748,35 +1709,21 @@ sl:
       introduction: OpenHistoricalMap ima več virov za učenje o projektu, postavljanje
         vprašanj in odgovarjanje nanja, sodelovanje v pogovorih in dokumentiranje
         kartografskih tem.
-      welcome:
-        title: Dobrodošli v OpenHistoricalMap (OSM)
-        description: Začnite s tem hitrim vodičem, ki zajema osnove OpenHistoricalMap.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Sl:Beginners%27_guide
-        title: Vodnik za začetnike
-        description: Vodnik za začetnike, ki ga vzdržuje skupnost.
+      welcome: {}
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Forum za pomoč
         description: Zastavite vprašanje ali poiščete odgovore v OpenHistoricalMap
           zbirki vprašanj in odgovorov.
-      mailing_lists:
-        title: Poštni seznami
-        description: Zastavi vprašanje ali razpravljaj o zanimivih temah na številnih
-          poštnih seznamih.
+      mailing_lists: {}
       forums:
         title: Forumi
-      irc:
-        title: IRC
-        description: Interaktivni klepet v mnogo različnih jezikih in o mnogo temah.
-      switch2osm:
-        title: switch2osm
+      irc: {}
+      switch2osm: {}
       welcomemat:
         title: Za organizacije
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: Wiki OpenHistoricalMap
-        description: Prebrskajte wiki za poglobljeno dokumentacijo OSM.
+      wiki: {}
     sidebar:
       search_results: Iskalni zadetki
       close: Zapri
@@ -1862,22 +1809,10 @@ sl:
           toilets: Stranišče
     welcome:
       title: Dobrodošli!
-      introduction_html: Dobrodošli na OpenHistoricalMap, brezplačni zemljevid sveta,
-        ki ga je mogoče tudi urejati. Zdaj, ko ste vpisani, ste pripravljeni za začetek
-        kartiranja. Tu dobite hitri vodnik z najbolj pomembnimi stvarmi, ki jih morate
-        vedeti.
       whats_on_the_map:
         title: Kaj je na zemljevidu
-        on_html: OpenHistoricalMap je kraj za kartiranje stvari, ki so bodisi <em>resnične
-          kot trenutne</em> - vključuje milijone stavb, cest in druge podatke o krajih.
-          Lahko kartirate katerikoli resnično značilnost, ki je za vas zanimiva.
-        off_html: To, kar <em>ne</em> vključuje mnenjskih podatkov kot so ocene, zgodovinske
-          ali hipotetične značilnosti in podatke iz avtorsko zaščitenih virov. Razen
-          če nimate posebnega dovoljenja, ne kopirajte iz spletnih ali tiskanih zemljevidov.
       basic_terms:
         title: Osnovni pogoji za kartiranje
-        paragraph_1_html: OpenHistoricalMap ima tudi svoj žargon. Tukaj je nekaj ključnih
-          besed, ki vam bodo prišle prav.
         editor_html: <strong>Urejevalnik</strong> je program ali spletna stran, ki
           jo lahko uporabite za urejanje zemljevida.
         node_html: <strong>Vozlišče</strong> je točka na zemljevidu, kot npr. restavracija
@@ -1890,9 +1825,6 @@ sl:
         title: Pravila!
       questions:
         title: Imate kakšno vprašanja?
-        paragraph_1_html: |-
-          OpenHistoricalMap ima več virov za učenje o projektu, zastavljanje in odgovarjanje na vprašanja, sodelovalno razpravljanje in dokumentiranje tem o kartiranju.
-          <a href='%{help_url}'>Poiščite pomoč tukaj</a>.
       start_mapping: Začnite kartirati
       add_a_note:
         title: Nimate časa za urejanje? Dodajte opombo!
@@ -2409,7 +2341,6 @@ sl:
         gps: Javne sledi GPS
         overlays: Omogočite prekrivke za odpravljanje težav na zemljevidu
         title: Plasti
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMap sodelavci</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Denarni prispevki</a>
     site:
       edit_tooltip: Urejanje zemljevida

@@ -443,10 +443,8 @@ ce:
           cable_car: Муьшан некъ
         aeroway:
           aerodrome: Аэродром
-          apron: Перрон
           hangar: Ангар
           helipad: Беркеманийн майда
-          terminal: Терминал
         amenity:
           atm: Банкомат
           bank: Банк
@@ -478,9 +476,6 @@ ce:
           fire_station: ЦӀеяйаран станци
           food_court: Ресторанан цӀа
           fountain: Фонтан
-          fuel: Йагорг йоттар
-          gambling: Ловза цӀа
-          grave_yard: ДӀабухку меттиг
           hospital: Госпиталь
           library: Библиотека
           marketplace: Базар
@@ -586,8 +581,6 @@ ce:
           basin: Бассейн
           cemetery: Кешнаш
           commercial: Офисан меттиг
-          conservation: Лардойла
-          construction: ГӀишлош йар
           farm: Ферма
           garages: Гаражаш
           grass: Буц
@@ -600,7 +593,6 @@ ce:
           railway: Аьчкан некъ
           recreation_ground: СадоӀу некъ
           reservoir: Хи латтийла
-          retail: Мах бен территори
         leisure:
           marina: Йист
           miniature_golf: Минигольф
@@ -695,7 +687,6 @@ ce:
         railway:
           monorail: Монорельс
         shop:
-          hifi: Аудио/видео аппаратурийн туька
           houseware: ПхьегӀийн туька
           interior_decoration: Интерьер кечйар
           music: Музыкийн туька
@@ -706,7 +697,6 @@ ce:
           alpine_hut: Альпийн цӀа
           apartment: Апартаменташ
           attraction: Сийлахь меттиг
-          cabin: ЛаппагӀа
           camp_site: Лагерь
           zoo: Зоопарк
       types:
@@ -863,8 +853,6 @@ ce:
       map_image: Картан сурт (гайта стандартан гӀатт)
       embeddable_html: Нисйан луш йолу HTML
       licence: Лицензи
-      export_details_html: Хаамаш OpenHistoricalMap лело мега <a href="http://opendatacommons.org/licenses/odbl/1.0/">лицензица
-        Open Data Commons Open Database License</a> (ODbL).
       too_large:
         planet:
           title: Планета OSM
@@ -897,8 +885,7 @@ ce:
       title: Нисдар схьаэцар
       welcome:
         url: /welcome
-      irc:
-        title: IRC
+      irc: {}
     sidebar:
       close: ДӀачӀагӀа
     search:
@@ -1046,7 +1033,6 @@ ce:
         notes: Билгалонаш
         data: Картан хаамаш
         title: Чкъор
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMap декъашхой</a>
     site:
       edit_tooltip: Нисде карта
       edit_disabled_tooltip: Хийцамашбан гергадаладе карта

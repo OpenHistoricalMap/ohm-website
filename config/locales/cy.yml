@@ -452,15 +452,12 @@ cy:
         aeroway:
           aerodrome: Maesawyr
           airstrip: Llain Codi
-          apron: Ffedog
-          gate: Giat
           hangar: Hangar
           helipad: Pad Hofrennydd
           holding_position: Man aros
           parking_position: Lle Parcio
           runway: Rhedfa Awyr
           taxiway: Safle tacsi
-          terminal: Terfynell
         amenity:
           animal_shelter: Cysgod Anifeiliaid
           arts_centre: Canolfan Grefftau
@@ -500,10 +497,6 @@ cy:
           fire_station: Gorsaf Dân
           food_court: Cwrt Fwydydd
           fountain: Ffynnon
-          fuel: Tanwydd
-          gambling: Gamblo
-          grave_yard: Mynwent
-          grit_bin: Bin Gro Mân
           hospital: Ysbyty
           hunting_stand: Llwyfan Hela
           ice_cream: Hufen Iâ
@@ -658,8 +651,6 @@ cy:
           brownfield: Browndir
           cemetery: Mynwent
           commercial: Ardal Fasnachol
-          conservation: Cadwraeth
-          construction: Adeiladwaith
           farm: Fferm
           farmland: Tir Ffermio
           farmyard: Buarth Fferm
@@ -679,7 +670,6 @@ cy:
           reservoir: Cronfa Ddŵr
           reservoir_watershed: Gwahanfa Ddŵr
           residential: Ardal Breswyl
-          retail: Adwerthu
           village_green: Llain Pentref
           vineyard: Gwinllan
           "yes": Defnydd Tir
@@ -888,7 +878,6 @@ cy:
           deli: Deli
           department_store: Siop Adrannol
           discount: Siop Ddisgownt
-          doityourself: DIY
           dry_cleaning: Sychlanhau
           electronics: Siop Electroneg
           estate_agent: Gwerthwr Tai
@@ -905,7 +894,6 @@ cy:
           grocery: Siop y Groser
           hairdresser: Siop Drin Gwallt
           hardware: Siop Nwyddau Metel
-          hifi: Sain
           houseware: Siop Offer Tŷ
           interior_decoration: Addurniadau'r Cartref
           jewelry: Siop Gemwaith
@@ -946,7 +934,6 @@ cy:
           artwork: Gwaith Celf
           attraction: Atyniad
           bed_and_breakfast: Gweldy a Brecwast
-          cabin: Caban
           camp_site: Man Gwersylla
           caravan_site: Parc Carafanau
           chalet: Chalet
@@ -1041,8 +1028,6 @@ cy:
     edit_with: Golygu gyda %{editor}
     tag_line: Y Map Wici Rhydd o'r Byd
     intro_header: Croeso i OpenHistoricalMap!
-    intro_text: Mae OpenHistoricalMap yn fap o'r byd, wedi'i greu gan bobl fel chi
-      ac sydd ar gael i'w ddefnyddio am ddim a dan drwydded rydd.
     intro_2_create_account: Creu cyfrif defnyddiwr
     partners_bytemark: Bytemark Hosting
     partners_partners: Partneriaid
@@ -1204,20 +1189,9 @@ cy:
         native_link: Cymraeg
         mapping_link: dechrau mapio
       legal_babble:
-        title_html: Hawlfraint a Thrwydded
-        intro_1_html: |-
-          Mae OpenHistoricalMap yn <i>data agored</i>, dan drwydded <a
-          href="http://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> (ODbL).
-        intro_3_1_html: |-
-          Trwyddedir ein dofenaeth ar drwydded
-          <a href="https://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons Attribution-ShareAlike 2.0</a> (CC BY-SA 2.0).
-        credit_title_html: Sut i gydnabod OpenHistoricalMap
         attribution_example:
           title: Enghraifft o gydnabyddiaeth
         more_title_html: Darganfod rhagor
-        contributors_title_html: Ein cyfrannwyr
         infringement_title_html: Torrwyd yr hawlfraint
     index:
       shortlink: Dolen Fyr
@@ -1237,8 +1211,6 @@ cy:
       map_image: Delwedd y Map (dangoser yr haen safonol)
       embeddable_html: Mewnosod HTML
       licence: Trwydded
-      export_details_html: Trwyddedir OpenHistoricalMap ar drwydded <a href="http://opendatacommons.org/licenses/odbl/1.0/">Comin
-        Data Agored (Open Data Commons Open Database License)</a> (ODbL).
       too_large:
         advice: "Os yw'r allforio'n methu, ystyriwch un o'r canlynol:"
         other:
@@ -1267,15 +1239,11 @@ cy:
       title: Cael Cymorth
       welcome:
         url: /croeso
-        title: Croeso i OpenHistoricalMap
-      beginners_guide:
-        title: Llawlyfr Dechreuwyr
-        description: Canllaw'r gymuned i ddechreuwyr
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Fforwm Cymorth
-      mailing_lists:
-        title: Rhestr Gohebiaeth
+      mailing_lists: {}
       forums:
         title: Fforymau
     sidebar:
@@ -1567,7 +1535,6 @@ cy:
         notes: Nodiadau Map
         data: Data Map
         title: Haenau
-      copyright: © <a href='%{copyright_url}'>cyfranwyr OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Rhoi Cyfraniad</a>
     site:
       edit_tooltip: Golygu'r map

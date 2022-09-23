@@ -242,7 +242,6 @@ sc:
           parking_position: Positzione parchègiu
           runway: Pista
           taxiway: Carrera de furriada
-          terminal: Terminale
         amenity:
           animal_shelter: Imbaru pro animales
           atm: Isportellu automàticu
@@ -277,10 +276,6 @@ sc:
           fire_station: Pompieres
           food_court: Corte de màndigu (Food court)
           fountain: Funtana
-          fuel: Carburante
-          gambling: Giogu de arriscu
-          grave_yard: Campusantu
-          grit_bin: Cassione de arena
           hospital: Ispidale
           hunting_stand: Posta de cassa
           ice_cream: Geladeria
@@ -418,8 +413,6 @@ sc:
           basin: Batzinu
           cemetery: Campusantu
           commercial: Zona Cummertziale
-          conservation: Cunservatzione
-          construction: Fraigada
           farm: Fatoria
           farmland: Terras de coltivu
           farmyard: Corrale
@@ -436,7 +429,6 @@ sc:
           recreation_ground: Zona de recreu
           reservoir: Batzinu
           residential: Àrea residentziale
-          retail: Bèndida
           village_green: Àrea birde comune de sa bidda
           vineyard: Bìngia
           "yes": Impreu de su terrinu
@@ -612,7 +604,6 @@ sc:
           copyshop: Copisteria
           deli: Gastronomia
           department_store: Supermercadu
-          doityourself: Butega de bricolatge
           dry_cleaning: Sabunadura "a sicu"
           electronics: Butega de eletrònica
           estate_agent: Butega immobiliare
@@ -649,7 +640,6 @@ sc:
           artwork: Òpera de arte
           attraction: Atratzione
           bed_and_breakfast: Bed and Breakfast
-          cabin: Cabina
           camp_site: Campègiu
           caravan_site: Campeggio pro roulotte
           gallery: Galleria

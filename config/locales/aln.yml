@@ -334,8 +334,6 @@ aln:
           ferry_terminal: Terminali i Trageteve
           fire_station: Zjarrëfiksat
           fountain: Burim
-          fuel: Lëndë djegëse
-          grave_yard: Varrezë
           hospital: Spital
           hunting_stand: Gjuetia Stand
           ice_cream: Akullore
@@ -445,8 +443,6 @@ aln:
           brownfield: Brownfield Toka
           cemetery: Varrezë
           commercial: Zona Tregtare
-          conservation: Ruajtjen e
-          construction: Ndërtim
           farm: Fermë
           farmland: Bujqësore
           farmyard: Oborr ferme
@@ -463,7 +459,6 @@ aln:
           recreation_ground: Zbavitje Ground
           reservoir: Rezervuar
           residential: Zonë Rezidenciale
-          retail: Me pakicë
           village_green: Fshati Green
           vineyard: Vresht
         leisure:
@@ -584,7 +579,6 @@ aln:
           cosmetics: Kozmetikë Shop
           department_store: Departamenti Shitore
           discount: artikuj zbritje dyqan
-          doityourself: Për ta bërë vetë
           dry_cleaning: Pastrimi kimik
           electronics: Elektronikë Shop
           estate_agent: agjent immobile
@@ -601,7 +595,6 @@ aln:
           grocery: Dyqan ushqimore
           hairdresser: Floktar
           hardware: dyqan mjet
-          hifi: dyqan hi-fi
           jewelry: Bizhuteri Shop
           kiosk: kiosk
           laundry: Lavanderi
@@ -628,7 +621,6 @@ aln:
           artwork: Puna artistike
           attraction: Qef
           bed_and_breakfast: Bujtin dhe Mengjes
-          cabin: Kabine
           camp_site: Ven per kamping
           caravan_site: Karavan i faqes
           chalet: Shpi
@@ -860,55 +852,7 @@ aln:
         native_link: Gegë verzion
         mapping_link: fillo hartografimin
       legal_babble:
-        title_html: Copyright
-        intro_1_html: |-
-          OpenHistoricalMap is <i>open data</i>, licensed under the <a
-          href="http://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> (ODbL).
-        intro_2_html: |-
-          Ju jeni të lirë ta kopjoni, shpërndani, përcjell dhe përshtatur hartat tona
-            dhe të dhënat, për aq kohë sa ju e kreditit OpenHistoricalMap e saj
-            kontribuesve. Nëse ju ndryshoni ose me ndërtimin e hartave tona ose të dhëna, ju
-            mund të shpërndani rezultat vetëm në bazë të licencës të njëjtën.
-            <Plotë një
-            href = "http://creativecommons.org/licenses/by-sa/2.0/legalcode"> ligjore
-            <Kod / a> shpjegon të drejtat tuaja dhe të përgjegjësive.
-        credit_title_html: Si të kreditit OpenHistoricalMap
-        credit_1_html: |-
-          Nëse jeni duke përdorur harta imazhe OpenHistoricalMap, ne kërkojmë që
-            kreditit tuaj lexon të paktën "© OpenHistoricalMap
-            kontribuesit, CC BY-SA ". Nëse jeni duke përdorur të dhëna vetëm në hartë,
-            ne kerkojme "Organizimi i të dhënave © kontribuesit OpenHistoricalMap,
-            CC BY-SA ".
-        credit_2_1_html: |-
-          Ku të jetë e mundur, duhet të jetë OpenHistoricalMap hyperlinked në <a
-            href = "http://www.openstreetmap.org/"> http://www.openstreetmap.org/ </ a>
-            dhe CC BY-SA për <a
-            href = "http://creativecommons.org/licenses/by-sa/2.0/"> http://creativecommons.org/licenses/by-sa/2.0/ </ a>. Nëse
-            ju jeni duke përdorur një të mesme, ku lidhjet nuk janë të mundshme (p.sh. një
-            shtypura punë), ne ju sugjerojmë lexuesit tuaj të drejtpërdrejtë të
-            www.openstreetmap.org (ndoshta duke zgjeruar
-            'OpenHistoricalMap' në këtë adresë të plotë) dhe të
-            www.creativecommons.org.
         more_title_html: Gjetja më shumë
-        more_1_html: |-
-          Lexo më shumë lidhje me përdorimin e të dhënave tona në <a
-            href = "http://wiki.openstreetmap.org/wiki/Legal_FAQ"> Ligjore
-            FAQ </ a>.
-        contributors_title_html: kontribuesit tona
-        contributors_intro_html: |-
-          licencë CC BY-SA jonë kërkon që ju të "japin origjinal
-            Author kredi të arsyeshme për të mesëm ose të thotë Ti je
-            shfrytëzuar ". Individuale mappers OSM nuk kërkojnë një
-            kreditit mbi dhe më lart që të "OpenHistoricalMap
-            kontribuesit ", por kur të dhënat nga një hartës kombëtare
-            agjenci ose burim kryesor ka qenë i përfshirë në
-            OpenHistoricalMap, ai mund të jetë e arsyeshme për kredi nga ana e tyre direkt
-            riprodhimin e kreditit e tyre apo duke i lidhur me të në këtë faqe.
-        contributors_footer_2_html: |2-
-            Përfshirja e të dhënave në OpenHistoricalMap nuk do të thotë që origjinal
-            dhënave miraton ofrues OpenHistoricalMap, ofron çdo garanci ose
-            pranon ndonjë përgjegjësi.
     index:
       js_1: Ju jeni duke përdorur ndonjë shfletues që nuk e përkrah JavaScript, ose
         i keni çativizuar JavaScript.
@@ -929,8 +873,6 @@ aln:
       osm_xml_data: OpenHistoricalMap XML të dhana
       embeddable_html: HTML e trupzueshme
       licence: Licensa
-      export_details_html: T'dhanat e OpenHistoricalMap jan te licensume nën <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative
-        Commons Attribution-ShareAlike 2.0 license</a>.
       too_large:
         body: Kjo zonë është shum e madhe që të eksportohet si XML në OpenHistoricalMap.
           Të lutna afroje ma ngat ose mere një zonë ma të vogel.

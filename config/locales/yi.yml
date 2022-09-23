@@ -133,8 +133,7 @@ yi:
       short_url: קורץ URL
       center_marker: צענטרירן מאפע אויף מארקירונג
       view_larger_map: באקוקן גרעסערע מאפע
-    map:
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMap בײַשטײַערער</a>
+    map: {}
     context:
       show_address: ווײַזן אדרעס
 ...

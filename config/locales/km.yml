@@ -310,10 +310,6 @@ km:
           fire_station: ស្ថានីយ៍អគ្គីភ័យ
           food_court: អាហារដ្ឋាន
           fountain: ទឹកផុស
-          fuel: ឥន្ធនៈ
-          gambling: បនល្បែង
-          grave_yard: វាលផ្នូរខ្មោច
-          grit_bin: ធុងអំបិល
           hospital: មន្ទីរពេទ្យ
           hunting_stand: ខ្ទមអ្នកប្រមាញ់
           ice_cream: ហាងការ៉េម
@@ -426,8 +422,6 @@ km:
           "yes": ស្ថានីយ៍ប្រវត្តិសាស្ត្រ
         landuse:
           commercial: តំបន់ពាណិជ្ជកម្ម
-          conservation: តំបន់អភិរក្ស
-          construction: តំបន់កំពុងសាងសង់
           farm: កសិដ្ឋាន​
           farmland: ដីកសិដ្ឋាន
           farmyard: វាលកសិដ្ឋាន
@@ -441,7 +435,6 @@ km:
           recreation_ground: ទីលានកំសាន្ត
           reservoir: បឹងស្តុកទឹក
           residential: តំបន់លំនៅដ្ឋាន
-          retail: ហាងលក់រាយ
           vineyard: ចំការទំពាំងបាយជូរ
         leisure:
           beach_resort: ឆ្នេរកំសាន្ត

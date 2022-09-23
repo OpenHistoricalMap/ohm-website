@@ -702,8 +702,6 @@ tr:
         aeroway:
           aerodrome: Havaalanı
           airstrip: Uçuş Pisti
-          apron: Apron
-          gate: Kapı
           hangar: Hangar
           helipad: Helikopter Pisti
           holding_position: Tespit Mevzii
@@ -712,7 +710,6 @@ tr:
           runway: Uçak Pisti
           taxilane: Taksi Şeridi
           taxiway: Taksi Yolu
-          terminal: Terminal
           windsock: Rüzgâr Hortumu
         amenity:
           animal_boarding: Hayvan Binişi
@@ -758,10 +755,6 @@ tr:
           fire_station: İtfaiye
           food_court: Yiyecek Reyonu
           fountain: Çeşme
-          fuel: Petrol Ofisi
-          gambling: Kumarhane
-          grave_yard: Mezarlık
-          grit_bin: Kum Kovası
           hospital: Hastane
           hunting_stand: Avcılık Standı
           ice_cream: Dondurma
@@ -1023,8 +1016,6 @@ tr:
           brownfield: Çıplak Arazi
           cemetery: Mezarlık
           commercial: Ticari ve Hizmet Alanı
-          conservation: Koruma
-          construction: İnşaat
           farm: Çiftlik
           farmland: Tarım arazisi
           farmyard: Çiftlik avlusu
@@ -1046,7 +1037,6 @@ tr:
           reservoir: Baraj Gölü
           reservoir_watershed: Akarsu Havzası
           residential: Yerleşim Bölgesi
-          retail: Esnaf
           village_green: Yeşil Alan
           vineyard: Bağ
           "yes": Arazi kullanımı
@@ -1320,7 +1310,6 @@ tr:
           deli: Şarküteri
           department_store: Mağaza
           discount: İndirimli Ürünler Mağazası
-          doityourself: Kendin Yap
           dry_cleaning: Kuru Temizleme
           e-cigarette: E-Sigara Dükkanı
           electronics: Elektronik Mağazası
@@ -1346,7 +1335,6 @@ tr:
           health_food: Sağlıklı Yiyecek Mağazası
           hearing_aids: İşitme Cihazları
           herbalist: Bitki Uzmanı
-          hifi: Hi-Fi
           houseware: Ev Eşyaları Mağazası
           ice_cream: Dondurma Dükkanı
           interior_decoration: İç Dekorasyon
@@ -1406,7 +1394,6 @@ tr:
           artwork: Sanat eseri
           attraction: Gezelim görelim yeri
           bed_and_breakfast: Oda Kahvaltı
-          cabin: Dam
           camp_pitch: Kamp Alanı
           camp_site: Kamp yeri
           caravan_site: Karavan yeri
@@ -1590,11 +1577,7 @@ tr:
     edit_with: '%{editor} kullanarak düzenle'
     tag_line: Özgür Viki Dünya Haritası
     intro_header: OpenHistoricalMap'e hoş geldiniz!
-    intro_text: OpenHistoricalMap; senin gibi kişiler tarafından oluşturulan, kullanımı
-      serbest ve açık lisans altında olan bir dünya haritasıdır.
     intro_2_create_account: hesap oluşturunuz
-    hosting_partners_html: Barındırma hizmeti; %{ucl}, %{fastly}, %{bytemark} ve diğer
-      %{partners} tarafından desteklenmektedir.
     partners_ucl: UCL
     partners_fastly: Fastly
     partners_bytemark: Bytemark Hosting
@@ -1998,42 +1981,10 @@ tr:
     about:
       next: İleri
       copyright_html: <span>&copy;</span>OpenHistoricalMap<br>katkıda bulunanları
-      used_by_html: OpenHistoricalMap; binlerce web sitesi, mobil uygulama ve donanım
-        cihazı için harita verisi sağlar.
-      lede_text: OpenHistoricalMap; tüm dünyada yollar, patikalar, kafeler, tren istasyonları
-        ve çok daha fazlası hakkında veri sağlayan ve bunları koruyan bir haritacılar
-        topluluğu tarafından oluşturulmuştur.
       local_knowledge_title: Yerel Bilgi
-      local_knowledge_html: |-
-        OpenHistoricalMap, piyasa bilgisi üzerinde durmaktadır. Katkıda bulunanlar,
-        OSM'nin doğru ve güncel olduğunu doğrulamak için havadan görüntüler, GPS cihazları ve düşük teknoloji alan haritaları kullanmaktadır.
       community_driven_title: Katılım Kaynaklı
-      community_driven_html: |-
-        OpenHistoricalMap'ın topluluğu çeşitli ve tutkuludur ayrıca her geçen gün büyümektedir.
-        Katkıda bulunanların arasında hevesli haritacılar, CBS uzmanları, OSM sunucularını çalıştıran mühendisler, felaketten etkilenen alanlar için haritalama yapan yardımsever kişiler
-        ve çok daha fazlası yer alıyor.
-        Çok daha fazlası için
-        <a href='https://blog.openstreetmap.org'>OpenHistoricalMap Blog</a>,
-        <a href='%{diary_path}'>kullanıcı günlükleri</a>,
-        <a href='https://blogs.openstreetmap.org/'>topluluk blogları</a>, ve
-        <a href='https://www.osmfoundation.org/'>OSM Foundation</a> websitesine bakınız.
       open_data_title: Açık Veri
-      open_data_html: |-
-        OpenHistoricalMap, <i>açık veridir</i>: OpenHistoricalMap ve katkıda bulunan
-        kişilere referans verdiğiniz sürece OpenHistoricalMap herhangi bir amaç için kullanabilirsiniz.
-        Verileri belirli şekillerde değiştirir veya üzerine inşa ederseniz, sonucu yalnızca aynı lisansla dağıtabilirsiniz. Ayrıntılı bilgi için <a href='%{copyright_path}'>Telif hakkı ve
-        Lisans sayfasına</a> bakın.
       legal_title: Yasal
-      legal_1_html: |-
-        Bu site ve diğer birçok ilgili hizmet resmi olarak
-        <a href='https://osmfoundation.org/'>OpenHistoricalMap Vakfı</a> (OSMF)
-        topluluk adına. OSMF tarafından işletilen tüm hizmetlerin kullanımı <a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">Kullanım Şartlarımıza</a> tabidir, <a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">
-        Kabul Edilebilir Kullanım Politikaları</a> ve bizim <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">Gizlilik Politikamız</a>.
-      legal_2_html: |-
-        Lütfen <a href='https://osmfoundation.org/Contact'>OSMF ile iletişime geçin</a>
-        lisanslama, telif hakkı veya diğer yasal sorularınız varsa.
-        <br>
-        OpenHistoricalMap, büyüteç logosu ve Harita Durumu, <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">OSMF'nin tescilli ticari markalarıdır</a>.
       partners_title: Ortaklar
     copyright:
       foreign:
@@ -2050,73 +2001,15 @@ tr:
         native_link: Türkçe sürümü
         mapping_link: harita çizmeye başla
       legal_babble:
-        title_html: Telif Hakkı ve Lisans
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup>,  <a
-          href="https://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF) tarafından oluşturulan <a
-          href="https://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> (ODbL) ile lisanslandırılmıştır.
-        intro_2_html: |-
-          OpenHistoricalMap'e ve katkıda bulunanlarına değindiğiniz
-          sürece verilerimizi kopyalamak, dağıtmak, iletmek
-          ve uyarlamakta serbestsiniz.
-          Verilerimizi değiştirir veya geliştirirseniz
-          sonucu sadece aynı lisans altında dağıtabilirsiniz.
-          Tüm <a href="https://opendatacommons.org/licenses/odbl/1.0/">yasal kod</a>, haklarınızı ve sorumluluklarınızı açıklamaktadır.
-        intro_3_1_html: |-
-          Belgelerimiz
-          <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.tr">Creative Commons Atıf-BenzerPaylaşım 2.0</a>
-          lisansı (CC BY-SA 2.0) ile lisanslanmıştır.
-        credit_title_html: OpenHistoricalMap'e nasıl atıfta bulunulur
-        credit_1_html: |-
-          Atıf için şu şekilde yazmak gerekir: &ldquo;&copy; OpenHistoricalMap
-          katılımcıları&rdquo;.
-        credit_2_1_html: |-
-          Ayrıca, verilerin Açık Veritabanı Lisansı (Open Database License) altında ve haritalarımızdaki karoları kullanıyorsanız haritacılığımızın CC BY-SA ile lisanslandırıldığını açıkça belirtmelisiniz. Bunu, <a href="https://www.openstreetmap.org/copyright">bu telif hakkı sayfasına</a> bağlantı vererek gerçekleştirebilirsiniz.
-          Alternatif ve bir gereksinim olarak OSM'yi  bir veri formunda dağıtıyorsanız direkt olarak lisansları adlandırabilir
-          veya doğrudan lisanslara bağlayabilirsiniz. Bağlantıların
-          mümkün olmadığı ortamlarda (örneğin basılı işler)
-          okuyucularınızı openstreetmap.org'a, opendatacommons.org'a
-          ve varsa creativecommons.org'a yönlendirmenizi
-          öneriyoruz.
         attribution_example:
-          alt: Web sayfasıında OpenHistoricalMap atıf etmek için bir örnek
           title: Atıf örneği
         more_title_html: Daha fazlasını öğrenin
-        more_1_html: |-
-          Verilerimizi kullanma ve bizi nasıl referans verebileceğiniz hakkında daha fazla bilgi için <a
-          href="https://osmfoundation.org/Licence">OSMF Lisans sayfasına</a> bakınız.
-        contributors_title_html: Katkıda Bulunanlar
-        contributors_intro_html: |-
-          Binlerce kişi projemize katkıda bulunmaktadır. Ulusal
-          haritalama ajanslarından ve diğer kaynaklardan
-          açık-lisanslı veriler de içeriyoruz:
-        contributors_footer_1_html: |-
-          OpenHistoricalMap'in geliştirilmesine yardımcı olmak için
-          bu ve diğer kaynaklar hakkında daha ayrıntılı bilgi almak için,
-          OpenStreetMap Wiki üzerinden <a
-          href="https://wiki.openstreetmap.org/wiki/Contributors">Katkıda bulunan kullanıcılar sayfasına</a> lütfen bakınız.
-        contributors_footer_2_html: |-
-          Verilerin OpenHistoricalMap'e dahil edilmesi, orijinal
-          veri sağlayıcının OpenHistoricalMap'i onayladığını,
-          herhangi bir garanti verdiğini ya da
-          herhangi bir yükümlülüğü kabul ettiğini ima etmez.
         infringement_title_html: Telif hakkı ihlali
         infringement_1_html: |-
           OSM'ye katkıda bulunanların telif hakkı sahiplerinin
           açık izni olmadan telif hakkıyla korunan kaynaklardan
           (ör. Google Haritalar veya basılı haritalar) hiçbir zaman
           veri eklememeleri hatırlatılır.
-        infringement_2_html: |-
-          Telif hakkıyla korunan materyalin
-          OpenHistoricalMap veritabanına veya bu siteye
-          yanlışlıkla eklendiğine inanıyorsanız <a href="https://wiki.osmfoundation.org/wiki/Takedown_procedure">kaldırma prosedürü</a> sayfasına başvurun veya
-          doğrudan <a href="https://dmca.openstreetmap.org/">çevrimiçi dosyalama sayfamızda</a> kayda geçirin.
-        trademarks_title_html: <span id="trademarks"></span>Ticari Markalar
-        trademarks_1_html: OpenHistoricalMap, büyüteç logosu ve State of the Map;
-          OpenHistoricalMap Foundation'ın tescilli ticari markalarıdır. Markaların
-          kullanımı ile ilgili sorularınız varsa lütfen sorularınızı <a href="https://wiki.osmfoundation.org/wiki/Licensing_Working_Group">Lisans
-          Çalışma Grubu</a>'na gönderiniz
     index:
       js_1: JavaScript desteklemeyen bir tarayıcı kullanıyorsunuz ya da JavaScript
         devre dışı bırakılmış.
@@ -2147,8 +2040,6 @@ tr:
       map_image: Harita (varsayılan katmanı gösterir)
       embeddable_html: Gömülebilir HTML
       licence: Lisans
-      export_details_html: OpenHistoricalMap verileri, <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a>  (ODbL) altında lisanslanmıştır.
       too_large:
         advice: 'Yukarıdaki dışa aktarma işlemi başarısız olursa lütfen aşağıda listelenen
           kaynaklardan birini kullanmayı düşünün:'
@@ -2211,42 +2102,25 @@ tr:
         ve haritalama konularını ortaklaşa tartışmak ve belgelemek için çeşitli kaynaklara sahiptir.
       welcome:
         url: /welcome
-        title: OpenHistoricalMap'e hoş geldiniz!
-        description: OpenHistoricalMap temellerini öğrenmek için kısa bir kılavuz
-          ile başla.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Tr:Beginners%27_guide
-        title: Yeni Başlayanlar Kılavuzu
-        description: Topluluk, yeni başlayanlar için rehberlik yapmaktadır.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Yardım Forumu
         description: Bir soru sor veya OpenHistoricalMap'in soru-ve-cevap sitesinde
           yanıtları ara.
-      mailing_lists:
-        title: E-Posta Listeleri
-        description: Oldukça geniş yerel veya bölgesel e-posta listelerinde soru sorabilir
-          veya ilginç konuları tartışabilirsiniz.
+      mailing_lists: {}
       forums:
         title: Forumlar
         description: Duyuru panosu tarzındaki arayüzleri tercih edenler için sorular
           ve tartışmalar.
-      irc:
-        title: IRC
-        description: Birçok dilde ve birçok konuda interaktif sohbet.
-      switch2osm:
-        title: switch2osm
-        description: OpenHistoricalMap tabanlı haritalara ve diğer hizmetlere geçiş
-          yapan şirketler ve kuruluşlar için yardım.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Organizasyonlar için
         description: OpenHistoricalMap için plan yapan bir organizasyon var mı? Hoş
           Geldiniz sayfasında bilmeniz gerekenleri bulun.
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: OpenHistoricalMap Viki
-        description: Ayrıntılı OpenHistoricalMap belgeleri için wiki'ye göz atın.
+      wiki: {}
     potlatch:
       removed: Varsayılan OpenHistoricalMap düzenleyiciniz Potlatch olarak ayarlanmıştır.
         Adobe Flash Player geri çekildiğinden, Potlatch artık bir web tarayıcısında
@@ -2341,21 +2215,10 @@ tr:
           toilets: Tuvaletler
     welcome:
       title: Hoş geldiniz!
-      introduction_html: Dünyanın düzenlenebilir ve ücretsiz haritası OpenHistoricalMap'e
-        hoş geldiniz. Şu an kaydoldunuz ve bütün haritalama işlemlerine başlamanız
-        için her şey hazır. İşte bilmeniz gereken en önemli şeylerin hızlı bir kılavuzu.
       whats_on_the_map:
         title: Haritada ne bulunur
-        on_html: OpenHistoricalMap, <em>gerçek ve güncel</em> şeyleri haritalamak
-          için bir yerdir. Bu milyonlarca binaları, yolları ve yerler hakkında diğer
-          ayrıntıları içerir. İlgini çeken her türlü gerçek dünya özelliklerini haritalayabilirsin.
-        off_html: Neyi <em>içermez?</em> Önyargılı veriler gibi değerlendirmeler,
-          tarihî ya da farazi özellikler ve telif hakkı olan kaynaklardan gelen verileri
-          <em>içermez.</em> Özel izniniz yoksa, çevrimiçi ya da kâğıt haritaları kopyalamayın.
       basic_terms:
         title: Haritacılığın temel terimleri
-        paragraph_1_html: OpenHistoricalMap'in kendine ait bazı argoları vardır. İşte
-          kullanışlı gelecek birkaç anahtar kelime.
         editor_html: <strong>Düzenleyici</strong> haritayı düzenlemek için kullanabileceğiniz
           bir program ya da web sayfasıdır.
         node_html: <strong>Düğüm</strong>, haritadaki bir noktadır. Bu bir restoran
@@ -2366,21 +2229,8 @@ tr:
           Bu bir restoranın ismi ya da yolun hız sınırı olabilir.
       rules:
         title: Kuralları!
-        paragraph_1_html: |-
-          OpenHistoricalMap'in resmi kuralları yoktur ancak tüm katılımcıların
-          toplulukla işbirliği yapmasını ve iletişim kurmasını bekleriz.
-          Elle düzenleme dışında herhangi bir faaliyet düşünüyorsanız,
-          lütfen yönergeleri okuyun ve uygulayın:
-          <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>İçe aktarma</a> ve
-          <a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>Otomatik Düzenlemeler</a>
       questions:
         title: Sorularınız var mı?
-        paragraph_1_html: OpenHistoricalMap, proje hakkında bilgiler içeren, soru
-          sormak ve soruları cevaplamak için ve işbirliği halinde tartışma yapılan
-          ve haritalama konularını belgelemek için çeşitli kaynaklara sahiptir. <a
-          href='%{help_url}'>Buradan yardım alın</a>. OpenHistoricalMap için plan
-          yapan bir organizasyon var mı? <a href='https://welcome.openstreetmap.org/'>Hoş
-          geldin sayfasına bakınız</a>
       start_mapping: Harita Çizmeye Başla
       add_a_note:
         title: Düzenlemek için vaktin yok mu? O zaman bir not ekle!
@@ -2996,7 +2846,6 @@ tr:
         gps: Herkese açık GPS izleri
         overlays: Haritanın sorununu gidermek için katmanları etkinleştir
         title: Katmanlar
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMap katkıda bulunanları</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Bağış Yapın</a>
       terms: <a href='%{terms_url}' target='_blank'>Web sitesi ve API şartları</a>
       cyclosm: Kare stili sahibi <a href='%{osmfrance_url}' target='_blank'>OpenStreetMap

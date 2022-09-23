@@ -554,15 +554,12 @@ th:
         aeroway:
           aerodrome: ลานบิน
           airstrip: ลานบินขนาดเล็ก
-          apron: ลานจอดเครื่องบิน
-          gate: ประตูขึ้นเครื่อง
           hangar: โรงเก็บเครื่องบิน
           helipad: ลานจอดเฮลิคอปเตอร์
           holding_position: ตำแหน่งยึด
           parking_position: ตำแหน่งจอด
           runway: ทางวิ่งเครื่องบิน
           taxiway: ทางขับเครื่องบิน
-          terminal: อาคารผู้โดยสาร
         amenity:
           animal_shelter: สถานสงเคราะห์สัตว์
           arts_centre: ศูนย์ศิลปะ
@@ -602,10 +599,6 @@ th:
           fire_station: สถานีดับเพลิง
           food_court: ศูนย์อาหาร
           fountain: น้ำพุ
-          fuel: สถานีบริการเชื้อเพลิง
-          gambling: การพนัน
-          grave_yard: สุสาน
-          grit_bin: ถังเกลือโรยถนน
           hospital: โรงพยาบาล
           hunting_stand: บังไพรล่าสัตว์
           ice_cream: ร้านไอศกรีม
@@ -778,8 +771,6 @@ th:
           brownfield: พื้นที่อุตสาหกรรมเดิม
           cemetery: สุสาน
           commercial: พื้นที่พาณิชยกรรม
-          conservation: พื้นที่อนุรักษ์
-          construction: พื้นที่ก่อสร้าง
           farm: ไร่นา
           farmland: ไร่นา
           farmyard: ลานไร่นา
@@ -799,7 +790,6 @@ th:
           reservoir: อ่างเก็บน้ำ
           reservoir_watershed: สันปันน้ำ
           residential: เขตที่พักอาศัย
-          retail: พื้นที่ร้านค้า
           village_green: ลานหญ้าในเขตหมู่บ้าน
           vineyard: ไร่องุ่น
           "yes": การใช้ประโยชน์ที่ดิน
@@ -1009,7 +999,6 @@ th:
           deli: ร้านขายอาหารพิเศษ
           department_store: ห้างสรรพสินค้า
           discount: ร้านสินค้าลดราคา
-          doityourself: ร้านอุปกรณ์ช่างประจำบ้าน
           dry_cleaning: ร้านซักแห้ง
           electronics: ร้านเครื่องไฟฟ้า
           estate_agent: บริษัทอสังหาริมทรัพย์
@@ -1026,7 +1015,6 @@ th:
           grocery: ร้านชำ
           hairdresser: ร้านทำผม
           hardware: ร้านวัสดุก่อสร้าง
-          hifi: เครื่องเสียง
           houseware: ร้านขายเครื่องใช้ในบ้าน
           interior_decoration: ร้านขายเครื่องตกแต่งภายใน
           jewelry: ร้านเครื่องประดับ
@@ -1070,7 +1058,6 @@ th:
           artwork: งานศิลปะ
           attraction: แหล่งท่องเที่ยว
           bed_and_breakfast: เรือนพักพร้อมอาหาร
-          cabin: กระท่อม
           camp_site: ลานตั้งค่าย
           caravan_site: ลานจอดรถบ้าน
           chalet: กระท่อมพักผ่อน/ชาเลต์
@@ -1246,10 +1233,7 @@ th:
     edit_with: แก้ไขด้วย %{editor}
     tag_line: แผนที่โลกวิกิ ใช้งานได้ไม่เสียค่าใช้จ่าย
     intro_header: ยินดีต้อนรับสู่ OpenHistoricalMap!
-    intro_text: OpenHistoricalMap เป็นแผนที่โลกที่สร้างโดยผู้คนเช่นท่าน และใช้งานได้ไม่เสียค่าใช้จ่ายภายใต้สัญญาอนุญาตแบบเปิด
     intro_2_create_account: สร้างบัญชีผู้ใช้ใหม่
-    hosting_partners_html: การโฮสต์ได้รับการสนับสนุนโดย %{ucl}, %{bytemark}, และ%{partners}อื่น
-      ๆ
     partners_ucl: ยูซีแอล (วิทยาลัยอุดมศึกษาลอนดอน)
     partners_bytemark: ไบต์มาร์กโฮสติง
     partners_partners: องค์กรพันธมิตร
@@ -1534,44 +1518,10 @@ th:
       copyright_html: |2-
 
         <span>&copy;ผู้มีส่วนร่วม </span>OpenHistoricalMap<br>
-      used_by_html: OpenHistoricalMap ให้ข้อมูลแผนที่แก่เว็บไซต์ แอปพลิเคชั่นมือถือ
-        และอุปกรณ์นับพัน
-      lede_text: OpenHistoricalMap เป็นโครงการซึ่งสร้างสรรค์ขึ้นจากชุมชนของผู้ใช้และผู้สนใจ
-        ที่ได้ทำการสำรวจ ปรับปรุง แบ่งปันข้อมูลแผนที่ถนน ทางหลวง ทางเดินป่า, รวมถึงสถานที่ที่น่าสนใจอย่าง
-        ร้านกาแฟ สถานีรถไฟ และอื่นๆ อีกมากมาย จากทั่วทุกมุมโลก
       local_knowledge_title: ความรู้จากท้องถิ่น
-      local_knowledge_html: OpenHistoricalMap มุ่งเน้นส่งเสริมการใช้และเผยแพร่ความรู้จากคนท้องถิ่น
-        โดยนักทำแผนที่ในท้องถิ่นสามารถใช้ทั้งภาพถ่ายดาวเทียม อุปกรณ์ระบุตำแหน่งจีพีเอส
-        หรือแม้แต่ผังกระดาษ เพื่อเดินสำรวจ เพิ่มเติม และปรับปรุงข้อมูลแผนที่ OpenHistoricalMap
-        ให้ละเอียด ถูกต้อง ทันสมัยอยู่เสมอได้ด้วยตนเอง ทุกที่ ทุกเวลา
       community_driven_title: ผลักดันโดยชุมชน
-      community_driven_html: ชุมชนผู้ใช้ OpenHistoricalMap เติบโตขึ้นมาจากกลุ่มคนที่หลากหลาย
-        ร่วมสร้างสรรค์จากทั้งนักทำแผนที่สมัครเล่น, ผู้เชี่ยวชาญระบบภูมิสารสนเทศ, วิศวกรดูแลเซิร์ฟเวอร์,
-        อาสาสมัครบรรเทาสาธารณภัย และสาขาอาชีพอื่นๆ อีกมากมาย, เรียนรู้เพิ่มเติมเกี่ยวกับชุมชนของเราได้จาก<a
-        href='https://blog.openstreetmap.org'>บล็อกทางการของ OpenHistoricalMap</a>,
-        รวม<a href='%{diary_path}'>บันทึก</a>และ<a href='https://blogs.openstreetmap.org/'>บล็อกของผู้ใช้</a>ทั่วสารทิศ,
-        และที่เว็บไซต์ของ<a href='https://www.osmfoundation.org/'>มูลนิธิ OpenHistoricalMap</a>
       open_data_title: ข้อมูลเปิดเผย
-      open_data_html: |-
-        OpenHistoricalMap อนุญาตให้ใช้ตามหลักเกณฑ์<i>ข้อมูลเปิดเผย</i> โดยจะนำไปใช้ในวัตถุประสงค์อื่นใดก็ได้
-        แต่ต้องแสดงที่มาหรือให้คำขอบคุณต่อ OpenHistoricalMap ตลอดจนผู้ร่วมสร้างสรรค์ ถ้าท่านปรับแก้ สร้างสรรค์
-        หรือกระทำการให้เกิดสิ่งอื่นใดใหม่ขึ้นต่องานที่มีนี้ ท่านสามารถแจกจ่ายได้แต่เพียงภายใต้สัญญาอนุญาตเดิม โปรดดู
-         <a href='%{copyright_path}'>หน้าลิขสิทธิ์และสัญญาอนุญาต</a> ถ้าต้องการรายละเอียดเพิ่ม
       legal_title: ข้อกำหนดทางกฎหมาย
-      legal_1_html: "เว็บไซต์และบริการที่เกี่ยวข้องนี้ดำเนินการและบำรุงรักษาอย่างเป็นทางการโดย\n\
-        <a href='https://osmfoundation.org/'>มูลนิธิ OpenHistoricalMap</a> (OSMF)\
-        \ \nในนามสมาชิกทุกคน การใช้บริการที่ดำเนินการโดย OSMF จะต้องอยู่ภายใต้<a href=\"\
-        https://wiki.osmfoundation.org/wiki/Terms_of_Use\">ข้อกำหนดการใช้งาน</a> <a\
-        \ href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\">\nเงื่อนไขการใช้งานที่ยอมรับได้</a>\
-        \ และ<a href=\"https://wiki.osmfoundation.org/wiki/Privacy_Policy\">นโยบายความเป็นส่วนตัว</a>\n\
-        <br> \nโปรด<a href='https://osmfoundation.org/Contact'>ติดต่อ OSMF</a> \n\
-        หากคุณมีข้อสงสัยเกี่ยวกับสัญญาอนุญาต ลิขสิทธิ์ คำถามกฎหมาย และประเด็นอื่น\
-        \ ๆ ที่เกี่ยวข้อง"
-      legal_2_html: "โปรด<a href='https://osmfoundation.org/Contact'>ติดต่อ OSMF</a>\
-        \ \nหากคุณมีข้อสงสัยเกี่ยวกับสัญญาอนุญาต ลิขสิทธิ์ คำถามกฎหมาย และประเด็นอื่น\
-        \ ๆ ที่เกี่ยวข้อง\n<br>\nOpenHistoricalMap, โลโก้แว่นขยาย และ State of the\
-        \ Map เป็น<a href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\"\
-        >เครื่องหมายการค้าที่ลงทะเบียนของ OSMF</a>"
       partners_title: องค์กรพันธมิตร
     copyright:
       foreign:
@@ -1586,63 +1536,14 @@ th:
         native_link: รุ่นภาษาTHIS_LANGUAGE_NAME_HERE
         mapping_link: เริ่มการทำแผนที่
       legal_babble:
-        title_html: ลิขสิทธิ์และสัญญาอนุญาต
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> เป็น<i>ข้อมูลเปิดให้ใช้งาน</i> และอนุญาตให้ใช้งานภายใต้สัญญาอนุญาต <a
-          href="https://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> (ODbL) โดย<a
-          href="https://osmfoundation.org/">มูลนิธิ OpenHistoricalMap</a> (OSMF).
-        intro_2_html: "ท่านสามารถทำสำเนา แจกจ่าย แพร่ภาพ และปรับใช้ข้อมูลของเรา\n\
-          ตราบเท่าที่ได้ระบุชื่อ OpenHistoricalMap ตลอดจนผู้ร่วมจัดทำไว้ในคำขอบคุณหรือที่มา\n\
-          ถ้าท่านปรับแก้ไขหรือสร้างสรรค์งานใหม่โดยใช้ข้อมูลของเราเป็นพื้น ท่านสามารถ\n\
-          แจกจ่ายผลลัพธ์ที่ได้ภายใต้สัญญาอนุญาตเดียวกันเท่านั้น โปรดดู <a href=\"\
-          https://opendatacommons.org/licenses/odbl/1.0/\">ข้อกำหนดทางกฎหมาย</a> \n\
-          ซึ่งจะอธิบายสิทธิและหน้าที่ที่ท่านพึงมี"
-        intro_3_1_html: เอกสารประกอบนี้อยู่ภายใต้สัญญาอนุญาต <a href="https://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons Attribution-ShareAlike 2.0</a> (CC BY-SA 2.0)
-        credit_title_html: วิธีการแสดงที่มาหรือคำขอบคุณ OpenHistoricalMap
-        credit_1_html: |-
-          เราจำเป็นต้องให้ท่านแสดงที่มาหรือคำขอบคุณแก่ &ldquo;&copy; ผู้ร่วมสร้างสรรค์ OpenHistoricalMap
-          &rdquo;.
-        credit_2_1_html: |-
-          ท่านจะต้องระบุให้ชัดเจนเจาะจงว่าข้อมูลอนุญาตให้ใช้ตามสัญญาอนุญาต Open
-          Database License และถ้ามีการนำรูปแผนที่ไปใช้ รูปนั้นอนุญาตให้ใช้ตามสัญญาอนุญาต
-           CC BY-SA ในการนี้อาจจะลิงก์ไปยังหน้า
-          <a href="https://www.openstreetmap.org/copyright">ข้อมูลลิขสิทธิ์</a>
-          นอกจากนี้ (จำเป็นหากท่านจ่ายแจกข้อมูล OSM) ท่านสามารถลิงก์ไปยังสัญญาอนุญาตโดยตรง
-          ในสื่ออย่างอื่น อาทิ สิ่งพิมพ์ ซึ่งไม่สามารถลิงก์ข้อมูลได้แนะนำให้ระบุเพียง openstreetmap.org
-          และ/หรือ opendatacommons.org และ/หรือ creativecommons.org
         attribution_example:
-          alt: ตัวอย่างการอ้างอิง OpenHistoricalMap บนหน้าเว็บ
           title: ตัวอย่างการอ้างอิง
         more_title_html: ค้นหาเพิ่มเติม
-        more_1_html: |-
-          อ่านเพิ่มเติมเกี่ยวกับการใช้ข้อมูลของเรา ตลอดจนการอ้างอิงเราได้ที่ <a
-          href="https://osmfoundation.org/Licence">หน้าสัญญาอนุญาต OSMF</a>
-        contributors_title_html: ผู้ร่วมสร้างสรรค์ของเรา
-        contributors_intro_html: |-
-          ผู้มีส่วนร่วมของเราคือบุคคลนับพัน เรายังมีข้อมูลที่ใช้สัญญาอนุญาตแบบเปิดเผย
-          จากตัวแทนการทำแผนที่ของชาติต่าง ๆ และแหล่งข้อมูลอื่น ๆ ต่อไปนี้:
-        contributors_footer_1_html: |-
-          สำหรับรายละเอียดเพิ่มเติมเกี่ยวกับแหล่งข้อมูลเหล่านี้ และแหล่งข้อมูลอื่น ๆ
-          ที่ใช้เพื่อช่วยปรับปรุง OpenHistoricalMap โปรดดูที่<a
-          href="https://wiki.openstreetmap.org/wiki/Contributors">หน้า
-          ผู้มีส่วนร่วม</a>บน OpenStreetMap Wiki
-        contributors_footer_2_html: |-
-          การรวมข้อมูลใน OpenHistoricalMap ไม่ได้หมายความว่าผู้ให้บริการข้อมูลดั้งเดิม
-          จะรับรอง OpenHistoricalMap รับประกัน หรือรับผิดชอบใด ๆ
         infringement_title_html: การละเมิดลิขสิทธิ์
         infringement_1_html: |-
           ผู้มีส่วนร่วม OSM จะถูกเตือนไม่ให้เพิ่มข้อมูลจากแหล่งข้อมูลที่มีลิขสิทธิ์
           (เช่น Google Maps หรือแผนที่แบบพิมพ์) โดยไม่ได้รับอนุญาตอย่าง
           ชัดเจนจากเจ้าของลิขสิทธิ์
-        infringement_2_html: |-
-          หากท่านเชื่อว่าข้อมูลละเมิดลิขสิทธิ์ปรากฏในเว็บไซต์นี้หรือในฐานข้อมูล OpenHistoricalMap โปรดดู <a href="https://www.osmfoundation.org/wiki/License/Takedown_procedure">ขั้นตอนการลบข้อมูลละเมิดลิขสิทธิ์</a> หรือแจ้งได้ที่
-          <a href="https://dmca.openstreetmap.org/">หน้ารับแจ้งการละเมิดข้อมูลลิขสิทธิ์</a>
-        trademarks_title_html: <span id="trademarks"></span>เครื่องหมายการค้า
-        trademarks_1_html: OpenHistoricalMap, State of the Map, และตราสัญลักษณ์แว่นขยาย
-          เป็นเครื่องหมายการค้าจดทะเบียนของมูลนิธิ OpenHistoricalMap, หากคุณมีข้อสงสัยเกี่ยวกับการใช้ชื่อและตราสัญลักษณ์ของเรา
-          สามารถตรวจสอบรายละเอียดได้ที่หน้า<a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">นโยบายเครื่องหมายการค้า</a>
     index:
       js_1: ท่านกำลังใช้เบราว์เซอร์ที่ไม่รองรับจาวาสคริปต์ หรือท่านปิดใช้งานจาวาสคริปต์
       js_2: OpenHistoricalMap ใช้จาวาสคริปต์ในการแสดงแผนที่
@@ -1670,9 +1571,6 @@ th:
       map_image: ภาพแผนที่ (แสดงชั้นภาพมาตรฐาน)
       embeddable_html: HTML ฝังตัวได้
       licence: สัญญาอนุญาต
-      export_details_html: บรรดาข้อมูลที่ปรากฏในเว็บไซต์ OpenHistoricalMap อนุญาตให้ใช้ภายใต้<a
-        href="https://opendatacommons.org/licenses/odbl/1.0/">สัญญาอนุญาต Open Data
-        Commons Open Database</a> (ODbL).
       too_large:
         advice: 'ถ้าการส่งออกข้างต้นล้มเหลว โปรดพิจารณาใช้แหล่งข้อมูลตามที่ระบุด้านล่างนี้:'
         body: พื้นที่ใหญ่เกินกว่าที่จะส่งออกเป็นข้อมูล XML ของ OpenHistoricalMap โปรดขยายเข้าหรือเลือกพื้นที่ที่เล็กลง
@@ -1721,17 +1619,12 @@ th:
           </a>
     help:
       title: ขอรับความช่วยเหลือ
-      welcome:
-        title: ยินดีต้อนรับสู่ OpenHistoricalMap
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Th:Beginners%27_guide
-        title: คำแนะนำสำหรับผู้เริ่มต้น
-      mailing_lists:
-        title: รายการอีเมลรับข่าวสาร
+      welcome: {}
+      beginners_guide: {}
+      mailing_lists: {}
       forums:
         title: กระดานสนทนา
-      irc:
-        title: ไออาร์ซี
+      irc: {}
     sidebar:
       search_results: ผลการค้นหา
       close: ปิด
@@ -1816,22 +1709,10 @@ th:
           toilets: ห้องน้ำสาธารณะ
     welcome:
       title: ยินดีต้อนรับ!
-      introduction_html: 'ยินดิต้อนรับสู่ OpenHistoricalMap, แผนที่โลกแบบเสรีที่ทุกคนสามารถแก้ไขได้
-        ซึ่งตอนนี้คุณได้ลงทะเบียนมาแล้ว ก่อนจะไปลุยกัน ด้านล่างมีสิ่งสำคัญที่คุณควรจะรู้ไว้ตลอดการทำแผนที่ของคุณ:'
       whats_on_the_map:
         title: บนแผนที่ควรมีอะไร
-        on_html: OpenHistoricalMap เป็นที่ที่คุณบันทึกสิ่งที่<em>มีอยู่จริงบนพื้นโลก</em>
-          และ<em>มีอยู่ในปัจจุบัน</em> - เช่นตึก หรือถนนที่คุณแห็นอยู่ดาษดื่นทั่วไป
-          รวมทั้งรายละเอียดเกี่ยวกับร้านรวงต่างๆ หรือข้อมูลอื่นๆ ที่เห็นได้ของสถานที่เหล่านั้น,
-          โดยคุณจะทำแผนที่โครงสร้างอะไรที่คุณเห็นอยู่บนพื้นดินก็ได้ แล้วแต่ความสนใจของคุณเอง
-        off_html: แต่ที่นี่จะ<em>ไม่รับ</em>ข้อมูลที่มาจากข้อคิดเห็น เช่นคะแนนเรตติ้ง
-          สถานที่ที่เคยมีอยู่แต่ในอดีต (ปัจจุบันไม่มีแล้ว) รวมทั้งสถานที่ที่คาดว่าจะมีในอนาคต,
-          และจะไม่รับข้อมูลจากแหล่งที่มีลิขสิทธิ์อื่นๆ, ฉะนั้นอย่าได้คัดลอกข้อมูลจากแผนที่ออนไลน์หรือแผนที่กระดาษมาใส่
-          (เว้นแต่คุณได้รับอนุญาตจากเจ้าของลิขสิทธิ์แล้ว)
       basic_terms:
         title: คำศัพท์พื้นฐานในการทำแผนที่
-        paragraph_1_html: 'เมื่อคุณเข้ามาทำแผนที่ใน OpenHistoricalMap, คุณจะพบกับศัพท์เฉพาะหลายคำ
-          ซึ่งความหมายจะอธิบายไว้เบื้องต้นที่ด้านล่างนี้:'
         editor_html: <strong>ตัวแก้ไข</strong> หมายถึงโปรแกรม หรือเว็บไซต์ ที่คุณใช้แก้ไขข้อมูลแผนที่
         node_html: <strong>หมุด</strong> จะเป็นจุดหนึ่งจุดบนแผนที่, เช่น ร้านอาหารที่ตั้งเดี่ยวๆ
           หรือต้นไม้
@@ -1843,8 +1724,6 @@ th:
         title: อย่าลืมกติกา!
       questions:
         title: มีคำถามอีกหรือไม่?
-        paragraph_1_html: "OpenHistoricalMap มีสื่อสำหรับค้นคว้า สอบถาม ตอบคำถาม \n\
-          สนทนาหัวข้อต่างๆ ตลอดจนอภิปรายและจัดทำวิธีการสร้างแผนที่\nซึ่งคุณจะ<a href='%{help_url}'>หาความช่วยเหลือได้ที่นี่</a>"
       start_mapping: เริ่มการทำแผนที่
       add_a_note:
         title: ไม่มีเวลาแก้ไขใช่ไหม? ใส่หมายเหตุไว้แทนได้!

@@ -583,8 +583,6 @@ af:
         aeroway:
           aerodrome: Vliegveld
           airstrip: Landingstrook
-          apron: Laaiblad
-          gate: Hek
           hangar: Loods
           helipad: Helikopterplatform
           holding_position: Hou posisie
@@ -593,7 +591,6 @@ af:
           runway: Aanloopbaan
           taxilane: Taxibaan
           taxiway: Rybaan
-          terminal: Terminaal
           windsock: Windkous
         amenity:
           animal_boarding: Dierehotel
@@ -639,10 +636,6 @@ af:
           fire_station: Brandweerstasie
           food_court: Kosgebied
           fountain: Fontein
-          fuel: Brandstof
-          gambling: Dobbelary
-          grave_yard: Begraafplaas
-          grit_bin: Grit bin
           hospital: Hospitaal
           hunting_stand: Jagtoring
           ice_cream: Roomys
@@ -895,8 +888,6 @@ af:
           basin: Kom
           cemetery: Begraafplaas
           commercial: Handelsgebied
-          conservation: Natuurbewaring
-          construction: In aanbou
           farm: Plaas
           farmland: Landbougrond
           farmyard: Plaaswerf
@@ -915,7 +906,6 @@ af:
           recreation_ground: Ontspanningsterrein
           reservoir: Reservoir
           residential: Woongebied
-          retail: Kleinhandel
           village_green: Braak
           vineyard: Wingerd
           "yes": Landgebruik
@@ -1167,7 +1157,6 @@ af:
           deli: Deli
           department_store: Afdelingswinkel
           discount: Afslagwinkel
-          doityourself: Doen-Dit-Self-winkel
           dry_cleaning: Droogskoonmaker
           electronics: Elektronikawinkel
           erotic: Erotiese winkel
@@ -1191,7 +1180,6 @@ af:
           hardware: Hardewarewinkel
           health_food: Gesondheidswinkel
           hearing_aids: Gehoortoestelle
-          hifi: Hoëtrou
           houseware: Huisraadwinkel
           ice_cream: Roomyswinkel
           interior_decoration: Binnenshuise versiering
@@ -1243,7 +1231,6 @@ af:
           artwork: Kunswerk
           attraction: Trekpleister
           bed_and_breakfast: Bed en Ontbyt
-          cabin: Hut
           camp_site: Kampterrein
           caravan_site: Karavaanpark
           chalet: Chalet
@@ -1422,8 +1409,6 @@ af:
     edit_with: Redigeer met %{editor}
     tag_line: Die Vrye Wiki-Wêreldkaart
     intro_header: Welkom by OpenHistoricalMap!
-    intro_text: OpenHistoricalMap is wêreldkaart deur gewone mense geskep. Die gebruik
-      daarvan is gratis en val onder 'n oop-lisensie.
     intro_2_create_account: Skep 'n gebruikerrekening
     partners_fastly: Fastly
     partners_bytemark: Bytemark Hosting
@@ -1665,14 +1650,6 @@ af:
         native_link: Afrikaanse weergawe
         mapping_link: begin karteer
       legal_babble:
-        title_html: Kopiereg en lisensie
-        intro_2_html: Dit staan u vry om ons data te kopieer, versprei, versend of
-          aan te pas, mits u erkenning aan OpenHistoricalMap en die bydraers gee.
-          Indien u ons data wysig of daarop voortbou, mag u dit slegs in gevolge dieselfde
-          lisensie versprei. Die volledige <a href="http://opendatacommons.org/licenses/odbl/1.0/">regsteks</a>
-          verduidelik u regte en verantwoordelikhede.
-        credit_title_html: Hoe om na OpenHistoricalMap te verwys
-        contributors_title_html: Ons bydraers
         infringement_title_html: Kopieregoortreding
     index:
       permalink: Perma-skakel
@@ -1690,8 +1667,6 @@ af:
       map_image: Kaartbeeld (wys standaardlaag)
       embeddable_html: Versteekbare HTML-kode
       licence: Lisensie
-      export_details_html: OpenHistoricalMap se data word ingevolge die <a href="http://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a> (ODbL) gelisensieer.
       too_large:
         advice: 'As die uitvoering hierbo misluk, oorweeg gerus een van die volgende
           bronne:'
@@ -1723,25 +1698,18 @@ af:
     help:
       welcome:
         url: /welcome
-        title: Welkom by OpenHistoricalMap
-      beginners_guide:
-        title: Gids vir beginners
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Help Forum
-      mailing_lists:
-        title: Poslyste
+      mailing_lists: {}
       forums:
         title: Forums
-      irc:
-        title: IRC
-      switch2osm:
-        title: switch2osm
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: OpenStreetMap-wiki
+      wiki: {}
     sidebar:
       search_results: Soekuitslae
       close: Sluit
@@ -1825,8 +1793,6 @@ af:
       title: Welkom!
       basic_terms:
         title: Grondliggende terme vir kartering
-        paragraph_1_html: OpenHistoricalMap bevat 'n gedeelte van ons eie vakbegrippe.
-          Hier is 'n paar wat handig te pas sal kom.
       rules:
         title: Reëls!
       questions:

@@ -619,8 +619,6 @@ oc:
         aeroway:
           aerodrome: Aerodròm
           airstrip: Pista d’aterrissatge
-          apron: Airau d’estacionament
-          gate: Pòrta
           hangar: Cobèrt
           helipad: Elipòrt
           holding_position: Posicion d’espèra
@@ -629,7 +627,6 @@ oc:
           runway: Pista
           taxilane: Via de taxi
           taxiway: Via de manòbra
-          terminal: Terminal
           windsock: Manega de vent
         amenity:
           animal_boarding: Pension per animaus
@@ -675,10 +672,6 @@ oc:
           fire_station: Casèrna de pompièrs
           food_court: Airal de restauracion
           fountain: Font
-          fuel: Carburant
-          gambling: Jòcs d'azard
-          grave_yard: Cementèri
-          grit_bin: Caissa de sau
           hospital: Espital
           hunting_stand: Taulièr de tir
           ice_cream: Glacet
@@ -937,8 +930,6 @@ oc:
           brownfield: Terren rasat, ermàs
           cemetery: Cementèri
           commercial: Zòna terciària
-          conservation: Zòna protegida
-          construction: Construccion
           farm: Zòna agricòla
           farmland: Terrens agricòls
           farmyard: Bastissas agricòlas
@@ -960,7 +951,6 @@ oc:
           reservoir: Sèrva
           reservoir_watershed: Bacin versant de sèrva
           residential: Zòna residenciala
-          retail: Zòna comerciala
           village_green: Zòna publica erborada
           vineyard: Vinha
           "yes": Usatge del terren
@@ -1228,7 +1218,6 @@ oc:
           deli: Tractaire
           department_store: Grand magazin
           discount: Magazin discount
-          doityourself: Botiga de bricolatge
           dry_cleaning: Netejatge a sec
           e-cigarette: Botiga de cigaretas electronicas
           electronics: Magazin d'electronica
@@ -1253,7 +1242,6 @@ oc:
           health_food: Botiga d'alimentacion naturala
           hearing_aids: Aparelhs auditius
           herbalist: Erboristeria
-          hifi: Magazin Hi-Fi
           houseware: Venda d’articles per l'ostau
           ice_cream: Glacier
           interior_decoration: Decoracion d'interior
@@ -1313,7 +1301,6 @@ oc:
           artwork: Òbra d'art
           attraction: Atraccion
           bed_and_breakfast: Aubèrga d’oste
-          cabin: Cabanon
           camp_pitch: Terren de campatge
           camp_site: Campatge
           caravan_site: Site de caravana
@@ -1496,11 +1483,7 @@ oc:
     edit_with: Modificar amb %{editor}
     tag_line: La mapa cooperativa liura
     intro_header: Benvenguda dins OpenHistoricalMap !
-    intro_text: OpenHistoricalMap es una mapa del mond, creada per de personas coma
-      vos e liura d’utilizacion jos licéncia liura.
     intro_2_create_account: Creatz un compte d'utilizaire
-    hosting_partners_html: L'aubergament es pres en carga per %{ucl}, %{fastly}, %{bytemark},
-      e d'autres %{partners}.
     partners_ucl: UCL
     partners_fastly: Fastly
     partners_bytemark: Albergament Bytemark
@@ -1810,36 +1793,10 @@ oc:
     about:
       next: Seguent
       copyright_html: <span>&copy;</span>Contributors<br /> d’OpenHistoricalMap
-      used_by_html: OpenHistoricalMap provesís de donadas cartograficas sus de milierats
-        de sites web, aplicacions mobilas e aparelhs
-      lede_text: OpenHistoricalMap es bastit per una comunautat de cartografes benevòls
-        que contribuisson e mantenon las donadas de las rotas, caminòls, cafès, estacions
-        ferroviàrias e plan mai encara, pertot dins lo mond.
       local_knowledge_title: Coneissença locala
-      local_knowledge_html: OpenHistoricalMap valoriza la coneissença locala. Lei
-        contribuïdors usan d'imatges aerians, de dispositius GPS, e de mapas de bassa
-        tecnologia per fins de verificar que OSM es precís e es actualizat.
       community_driven_title: Menat per la comunautat
-      community_driven_html: "La comunautat d’OpenHistoricalMap es divèrsa, passionada\
-        \ e grossís cada jorn. Nòstres contributors incluisson de cartografes entosiastes,\
-        \ de professionals del GIS, d'ingenhiaires que menan los servidors OSM, d'umanitaris\
-        \ que cartografian las zònas devastadas per una catastròfa e plan mai encara.\n\
-        Per ne saber mai sus la comunautat, consultatz los \n<a href='%{diary_path}'>annuaris\
-        \ d’utilizaires</a>, \n<a href='https://blogs.openstreetmap.org/'>los blogs\
-        \ comunautaris</a> e lo site web de la <a href='https://www.osmfoundation.org/'>Fondacion\
-        \ OSM</a>."
       open_data_title: Donadas liuras
-      open_data_html: "OpenHistoricalMap son de <i>donadas liuras</i>: siatz liures\
-        \ de n'usar per quina intencion que siegue, cada còp que donatz credit a OpenHistoricalMap\
-        \ e sei contribuïdors. Se modificatz o bastissètz sus lei donadas en quauqua\
-        \ maniera concreta, podètz distribuir lo resultat solament sota la meteissa\
-        \ licéncia. Ligètz la <a href=\"%{copyright_path}\">pagina de copyright e\
-        \ de licéncia</a> per mai de detalhs."
       legal_title: Juridic
-      legal_2_html: |-
-        <a href="https://osmfoundation.org/Contact">Contacta</a> amb lo OSMF s'avètz de dobtes a prepaus de la  licéncia,  dei drechs de còpia o autras questions legalas.
-
-        OpenHistoricalMap, Lo logo e Estat de la Mapa son de <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">marcas enregistradas de la OSMF</a>.<br><br><br><br>
       partners_title: Partenaris
     copyright:
       foreign:
@@ -1855,46 +1812,10 @@ oc:
         native_link: version occitana
         mapping_link: començar a contribuir
       legal_babble:
-        title_html: Copyright e Licéncia
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> es un ensemble de <i>donadas dobèrtas</i>, disponiblas jos licéncia liura <a
-          href="https://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database License</a> (ODbL) alprèp de la <a
-          href="https://osmfoundation.org/">Fondacion OpenHistoricalMap</a> (OSMF).
-        intro_2_html: |2-
-           Sètz liure de copiar, distribuir, transmetre e adaptar nòstras donadas,
-            a condicion que creditetz OpenHistoricalMap e sos
-            contributors. Se modificatz o utilizatz nòstras donadas dins d’autras òbras derivadas,
-            las podètz distribuir sonque jos la meteissa licéncia. Lo
-            <a href="https://opendatacommons.org/licenses/odbl/1.0/">tèxte
-            legal</a> complet detalha vòstres dreits e responsabilitats.
-        intro_3_1_html: Nòstres carrèus de rendut cartografics, e tanben de nòstra
-          documentacion, son disponibles jos la licéncia <a href="https://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons paternitat – partiment a l’identic 2.0</a> (CC-BY-SA).
-        credit_title_html: Cossí creditar OpenHistoricalMap
-        credit_1_html: Demandam que vòstre crèdit compòrta la mencion « © los contributors
-          d’OpenHistoricalMap ».
-        credit_2_1_html: Vos fau tanben botar en evidéncia que lei donadas son disponiblas
-          sota licéncia de basa de donadas dubèrtas e, s'utilizatz nòstrei mapas,
-          que la cartografia a licéncia CC-BY-SA. Podètz o far en ligant <a href="http://www.openstreetmap.org/copyright">aquela
-          pagina de copyright</a>. De maniera alternativa, mai coma requisit obligatòri
-          se distribuissètz OSM en forma de donadas en brut, podètz citar e ligar
-          directament a la licéncia. Dins lo cas d'utilizar de supòrts que lei ligams
-          de hipertext i son pas possibles (per exemple, òbras estampadas), vos suggerissèm
-          d'adreiçar lei lectors a openstreetmap.org (En indicant benlèu l'adreiça
-          completa de OpenHistoricalMap), a opendatacommons.org E, se s'escau, a creativecommons.org.
         attribution_example:
-          alt: Exemple d'atribucion OpenHistoricalMap sus una pagina internet
           title: Exemple d'atribucion
         more_title_html: Per trobar mai d’informacions
-        more_1_html: |-
-          Per obténer mai d’informacions sus cossí reütilizar nòstras donadas e nos creditar, legissètz la <a
-          href="https://osmfoundation.org/Licence">FAQ legala</a>.
-        contributors_title_html: Nòstres contributors
-        contributors_intro_html: "Nòstres collaboradors son de miliers de personas.\
-          \ Comprenèm tanben de donadas amb licéncia dobèrta deis agéncias publicas\
-          \ de cartografia e d'autrei fònts, entre elei:"
         infringement_title_html: Violacion dels dreits d'autor
-        trademarks_title_html: <span id="marcas"></span>Marcas
     index:
       js_1: JavaScript es pas pres en carga pel navigador qu'utilizatz, o alara l’avètz
         desactivat.
@@ -1919,9 +1840,6 @@ oc:
       map_image: Imatge de mapa (aficha un calc normal)
       embeddable_html: HTML incorporable.
       licence: Licéncia
-      export_details_html: Las donadas d’OpenHistoricalMap son publicadas jos la <a
-        href="https://opendatacommons.org/licenses/odbl/1.0/">licéncia Open Data Commons
-        ­– Basa de donadas Dobèrta</a> (ODbL).
       too_large:
         advice: 'Se l’expòrt çaisús fracassa, envisatjatz l’utilizacion d’una de las
           fonts listadas çaijòs :'
@@ -1978,40 +1896,23 @@ oc:
         en collaboracion amb d’autres e documentar los subjèctes de cartografia.
       welcome:
         url: /welcome
-        title: Benvenguda dins OpenHistoricalMap !
-        description: Començar amb aqueste guida rapid que cobrís las basas d'OpenHistoricalMap.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/FR:Guide_du_d%C3%A9butant
-        title: Guida per debutants
-        description: Guida pels debutants mantengut per la comunautat.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: 'Fòrum d’ajuda : help.openstreetmap.org'
         description: Pausar una question o cercar de respònsas sus lo site questions-e-respònsas
           d'OSM.
-      mailing_lists:
-        title: Listas de difusion
-        description: Pausar una question o discutir de questions interessantas sus
-          un larg ventalh de tematicas o de listas de difusion regionalas.
+      mailing_lists: {}
       forums:
         title: Forums
         description: De questions e de discussions per los que preferisson una interfàcia
           jos la forma de tablèu d’afichatge.
-      irc:
-        title: IRC
-        description: Discussion interactiva dins de fòrça lengas diferentas e sus
-          fòrça subjèctes.
-      switch2osm:
-        title: switch2osm
-        description: Ajuda per entrepresas e organizacions que vènon a la mapa e autres
-          servicis basats sus OpenHistoricalMap.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://wiki.openstreetmap.org/wiki/OC:Pagina_principala
         title: Per d'organizacions
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: Wiki OpenHistoricalMap
-        description: Percorrètz lo wiki per la documentacion aprigondida d’OSM
+      wiki: {}
     sidebar:
       search_results: Resultats de la recèrca
       close: Tampar
@@ -2097,19 +1998,10 @@ oc:
           toilets: Comuns
     welcome:
       title: Benvenguda !
-      introduction_html: Vos donam la benvenguda a OpenHistoricalMap, la mapa liura
-        e editabla dau mond. Ara que vos siatz enregistrats, siatz lèsts per començar
-        a editar la mapa. I a aicí una guida rapida amb lei causas pus importantas
-        de saber
       whats_on_the_map:
         title: Çò qu'i a sus la mapa
-        on_html: |-
-          OpenHistoricalMap servís a cartografiar de causas a l'encòp <em>vertadièras e actualas</em>
-          - inclutz de milions de bastiments, de rotas, e d'autres detalhs de luòcs. Podètz cartografiar quin element vertadièr del mond que que vos interèsse.
       basic_terms:
         title: Vocabulari de basa de cartografia
-        paragraph_1_html: OpenHistoricalMap a son pròpri girgon. Aquí qualques mots
-          claus que vos seràn utiles.
         editor_html: Un <strong>editor</strong> es un programa o site web que vos
           permet d'editar la mapa.
         node_html: Un <strong>nosèl</strong> es un punt sus la mapa, coma un restaurant
@@ -2124,9 +2016,6 @@ oc:
         title: Règlas !
       questions:
         title: De questions ?
-        paragraph_1_html: |-
-          OpenHistoricalMap a mantunei ressorsas per aprene lo projècte, per pausar e respòndre a de questions, e per discutir en collaboracion amb d’autres e documentar lei subjèctes de cartografia.
-          <a href='%{help_url}'>Trobatz d’ajuda aicí</a>.
       start_mapping: Començar de cartografiar
       add_a_note:
         title: Pas lo temps d'editar ? Apodètz una nòta !
@@ -2584,7 +2473,6 @@ oc:
         gps: Traças GPS publicas
         overlays: Autorizar las superposicions per reparar la mapa
         title: Jaças
-      copyright: © <a href='%{copyright_url}'>Contributors d'OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Far un don</a>
     site:
       edit_tooltip: Modificar la mapa

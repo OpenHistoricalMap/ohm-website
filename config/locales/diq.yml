@@ -381,8 +381,6 @@ diq:
         aeroway:
           aerodrome: Hewaherun
           airstrip: Pistê perayışi
-          apron: Apron
-          gate: Keyber
           hangar: Hangar
           helipad: Hruna Helikopteri
           holding_position: Pozisyonê tesbiti
@@ -390,7 +388,6 @@ diq:
           runway: Pista teyera
           taxilane: Taxilane
           taxiway: Raya Texsiyan
-          terminal: Terminal
           windsock: Loğavay
         amenity:
           animal_shelter: Kozıkê heywanan
@@ -431,9 +428,6 @@ diq:
           fire_station: Itfaiye
           food_court: Kerwanseray
           fountain: Fıskiye
-          fuel: Petrol
-          gambling: Kumarxane
-          grave_yard: Mezla ser
           hospital: Nêweşxane
           hunting_stand: Standê Seydwanan
           ice_cream: Dondırme
@@ -589,8 +583,6 @@ diq:
           brownfield: Erdo bece
           cemetery: Mezlaser
           commercial: Cayê Ticareti u Xızmeti
-          conservation: Qısekerdış
-          construction: İnşaat
           farm: Cıtinin
           farmland: Erdê Ziraati
           farmyard: İsiga çıfligi
@@ -610,7 +602,6 @@ diq:
           reservoir: Dola Beraci
           reservoir_watershed: Merga awer
           residential: Heruna Cıwiyayışi
-          retail: Esnaf
           village_green: Cayo kıho
           vineyard: Rez
           "yes": Karıyayışa erdi

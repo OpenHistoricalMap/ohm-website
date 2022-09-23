@@ -484,15 +484,12 @@ fit:
         aeroway:
           aerodrome: Lentokenttä
           airstrip: Kiitorata
-          apron: Asemataso
-          gate: Portti
           hangar: Hangaari
           helipad: Helikopterikenttä
           holding_position: Odotuspaikka
           parking_position: Parkkialue
           runway: Kiitorata
           taxiway: Rullaustie
-          terminal: Terminaali
         amenity:
           animal_shelter: Eläinsuoja
           arts_centre: Taidekeskus
@@ -786,38 +783,10 @@ fit:
     about:
       next: Seuraava
       copyright_html: <span>&copy;</span>OpenHistoricalMapin<br>tekijät
-      used_by_html: Tuhannet verkkosivustot, mupiilisovellukset ja laitteistot käyttävät
-        %{name}-karttaa
-      lede_text: OpenHistoricalMapia rakentavat vapaaehtoiset yhteisön jäsenet, jotka
-        tuottavat ja ylläpitävät karttatietoja teistä, rautateistä, kahviloista, rautatieasemista
-        ja monista muista kohteista kaikkialla maailmassa.
       local_knowledge_title: Paikallistuntemus
-      local_knowledge_html: OpenHistoricalMapissa korostuu paikallistuntemus. Kartoittajat
-        käyttävät ilmakuvia, GPS-paikantamia ja jalkautumista pitääkseen OpenHistoricalMap-kartan
-        ajan tasalla.
       community_driven_title: Yhteisön voima
-      community_driven_html: |-
-        OpenHistoricalMap-yhteisö oon monipuolinen, intohimoinen ja kasvaa joka päivä. Yhteisöön kuuluu harrastajakartoittajia, GIS-ammattilaisia, järjestelmää ylläpitäviä insinöörejä, humanitaarisia auttajia, jotka kartoittavat katastrofin kärsineitä alueita sekä monia muita. Lisätietoja föreeninkistä saa lukemalla <a href='https://blog.openstreetmap.org'>OpenHistoricalMap-blogia</a>, <a href='%{diary_path}'>käyttäjitten päiväkirjoja</a>,
-        <a href='https://blogs.openstreetmap.org/'>yhteisöblogeja</a> ja
-        <a href='https://www.osmfoundation.org/'>OSM-säätiön</a> verkkosivua.
       open_data_title: Avvoin taatta
-      open_data_html: "OpenHistoricalMap oon <i>avointa taattaa</i>: palvelua saa\
-        \ käyttää vapaasti mihin tahansa, kunhan OpenHistoricalMap tekijöineen mainitaan.\
-        \ Jos palvelua kehitetään tai muuunnellaan, sitä saa levittää eteenpäin vain\
-        \ samala lisensillä. Lisätietoja oon <a href='%{copyright_path}'>Tekijänoikeus\
-        \ ja lisensi</a> -sivula."
       legal_title: Lakitekninen jako
-      legal_1_html: "Tämä ja monet muut OSM-sivustot ovat muodollisesti <a href='https://osmfoundation.org/'>OpenHistoricalMap-säätiön</a>\
-        \ (OSMF) hallinnoimia OSM-yhteisön puolesta. Kaikkien näiden sivustojen käythöön\
-        \ sovelletaan <a href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\"\
-        >\nsallitun käytön käytäntöjä</a>, <a href=\"https://wiki.osmfoundation.org/wiki/Terms_of_Use\"\
-        >käyttöehtoja</a> ja <a href=\"https://wiki.osmfoundation.org/wiki/Privacy_Policy\"\
-        >tietosuojakäytäntöä</a> (molemmat sisällöt saatavilla vain englanniksi).\n\
-        <br> \n<a href='https://osmfoundation.org/Contact'>Ota yhteys OSMF:ään</a>\
-        \ lisensointi-, tekijänoikeus- ja muissa lakiteknisissä kysymyksissä.\n<br>\n\
-        Nimi OpenHistoricalMap, suurennuslasilogo ja slogan State of the Map ovat\
-        \ <a href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\">säätiön\
-        \ rekisteröimiä tavaramerkkejä</a>."
       partners_title: Kumppanit
     copyright:
       foreign:
@@ -833,35 +802,9 @@ fit:
         native_link: meänkielinen versuuni
         mapping_link: aloittaa kartoituksen
       legal_babble:
-        title_html: Tekijänoikeus ja lisensi
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> oon <i>avointa taattaa</i>, jonka <a
-          href="https://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF) oon lisensoinut <a
-          href="https://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database -lisensillä</a> (ODbL).
-        intro_2_html: "OpenHistoricalMapin karttoja ja tietoja voi kopioida, levittää,\
-          \ välittää ja mukauttaa, \nkunhan OpenHistoricalMap ja sen tekijät mainitaan.\
-          \ Jos karttoja tai tietoja muutethaan tai kehitethään, niitä saa levithää\
-          \ vain samalla lisensilä.\n<a href=\"https://opendatacommons.org/licenses/odbl/1.0/\"\
-          >Lakitekstissä</a> mainitaan levittäjän oikeudet ja velvollisuudet."
-        intro_3_1_html: |-
-          Kartta-aineisto ja dokumentaatio oon lisensoitu <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.fi">Creative
-          Commons Nimeä-Jaa samoin 2.0</a> -lisensillä (CC-BY-SA).
-        credit_title_html: OpenHistoricalMapin mainitseminen
-        credit_1_html: OpenHistoricalMapin sisältöä levitettäessä oon mainittava teksti
-          &quot;&copy; OpenHistoricalMapin tekijät&quot; tai sen engelskankielinen
-          vastine &quot;&copy; OpenHistoricalMap contributors&quot;.
-        credit_2_1_html: "Levittäjän tulee tehdä selväksi, ette aineisto oon saatavilla\
-          \ Open Database -lisensillä\nja kartta-aineisto CC-BY-SA-lisensillä. Tämä\
-          \ voidaan tehdä sijoittamalla sivule länkki\n<a href=\"https://www.openstreetmap.org/copyright\"\
-          >tälle tekijänoikeussivule</a>. \nJos länkkien käyttö ei ole mahollista\
-          \ (esimerkiksi paperille printattu aineisto),\nsuosittelemme ohjaamaan lukijat\
-          \ atresseihin www.openstreetmap.org, opendatacommons.org ja tarvittaessa\
-          \ myös creativecommons.org."
         attribution_example:
-          alt: Esimerkki siitä, miten nimetä OpenHistoricalMap nettisivula
           title: Nimeämisesimerkki
         more_title_html: Lisätietoja
-        contributors_title_html: Meän tekijät
     index:
       permalink: Ikunen länkki
       shortlink: Lyhylänkki
@@ -903,16 +846,13 @@ fit:
     help:
       welcome:
         url: /welcome
-        title: Tervetuloa OpenHistoricalMaphiin
       help:
         url: https://help.openstreetmap.org/
         title: Apufoorumi
       forums:
         title: Foorumi
-      irc:
-        title: IRC
-      wiki:
-        title: OpenHistoricalMap wiki
+      irc: {}
+      wiki: {}
     sidebar:
       search_results: Hakuresyltaatit
       close: Sulje

@@ -553,8 +553,7 @@ fur:
         geonames_reverse_html: Risultâts di <a href="http://www.geonames.org/">GeoNames</a>
     search_osm_nominatim:
       prefix:
-        aeroway:
-          terminal: Terminâl
+        aeroway: {}
         amenity:
           arts_centre: Centri pes arts
           atm: Bancomat
@@ -584,7 +583,6 @@ fur:
           ferry_terminal: Terminâl traghets
           fire_station: Stazion dai pompîrs
           fountain: Fontane
-          fuel: Stazion di riforniment
           hospital: Ospedâl
           ice_cream: Gjelato
           kindergarten: Scuelute
@@ -706,7 +704,6 @@ fur:
         landuse:
           cemetery: Simiteri
           commercial: Zone comerciâl
-          construction: In costruzion
           farmland: Cjamps
           forest: Bosc
           grass: Prât
@@ -717,7 +714,6 @@ fur:
           quarry: Gjave
           railway: Ferade
           residential: Zone residenziâl
-          retail: Buteghis
           vineyard: Vigne
         leisure:
           common: Comugnâi (UK)
@@ -922,11 +918,7 @@ fur:
     edit_with: Cambie cun %{editor}
     tag_line: Il WikiMapeMont libar
     intro_header: Benvignût in OpenHistoricalMap!
-    intro_text: OpenHistoricalMap e je une mape dal mont, creade di int come te e
-      di ûs libar sot di une licence vierte.
     intro_2_create_account: Cree il to profîl utent
-    hosting_partners_html: L'hosting al è sostignût di %{ucl}, %{fastly}, %{bytemark}
-      e altris %{partners}.
     partners_ucl: UCL
     partners_fastly: Fastly
     partners_bytemark: Bytemark Hosting
@@ -1192,11 +1184,9 @@ fur:
         title: Informazions su cheste pagjine
         mapping_link: scomence a mapâ
       legal_babble:
-        title_html: Copyright e licence
         attribution_example:
           title: Esempli di atribuzion
         more_title_html: Par savênt di plui
-        contributors_title_html: Nestris colaboradôrs
     index:
       js_1: Tu stâs doprant un sgarfadôr che nol supuarte JavaScript o ben JavaScript
         al è stât disativât.
@@ -1224,9 +1214,6 @@ fur:
       format_to_export: Formât di espuartâ
       osm_xml_data: Dâts XML di OpenHistoricalMap
       licence: Licence
-      export_details_html: I dâts di OpenHistoricalMap a son dâts fûr sot de licence
-        <a href="http://opendatacommons.org/licenses/odbl/1.0/">Open Data Commons
-        Open Database License</a> (ODbL).
       too_large:
         body: Cheste aree e je masse grande par espuartâle come dâts XML di OpenHistoricalMap.
           Par plasê incrès il zoom, sielç une aree plui piçule o dopre une des sorzints
@@ -1260,21 +1247,16 @@ fur:
       title: Cemût vê un jutori
       welcome:
         url: /welcome
-        title: Benvignûts in OpenHistoricalMap
-      beginners_guide:
-        title: Guide pai principiants
+      beginners_guide: {}
       help:
         title: Forum di jutori
       forums:
         title: Forums
-      irc:
-        title: IRC
+      irc: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Pe organizazions
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: OpenStreetMap Wiki
+      wiki: {}
     sidebar:
       search_results: Risultâts de ricercje
       close: Siere
@@ -1729,7 +1711,6 @@ fur:
         gps: Percors GPS publics
         overlays: Ative i nivei utii par risolvi i problemis de mape
         title: Nivei
-      copyright: © <a href='%{copyright_url}'>Colaboradôrs di OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Fâs une donazion</a>
       terms: <a href='%{terms_url}' target='_blank'>Sît web e tiermins di ûs des APIs</a>
     site:

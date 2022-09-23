@@ -739,8 +739,6 @@ pl:
         aeroway:
           aerodrome: Lotnisko
           airstrip: Pas startowy
-          apron: Płyta postojowa
-          gate: Bramka
           hangar: Hangar
           helipad: Lądowisko dla helikopterów
           holding_position: Punkt oczekiwania
@@ -749,7 +747,6 @@ pl:
           runway: Pas startowy
           taxilane: Droga na lotnisku
           taxiway: Droga kołowania
-          terminal: Terminal
           windsock: Wiatrowskaz
         amenity:
           animal_boarding: Hotel dla zwierząt
@@ -795,10 +792,6 @@ pl:
           fire_station: Remiza strażacka
           food_court: Współdzielone miejsce do spożywania posiłków
           fountain: Fontanna
-          fuel: Stacja paliw
-          gambling: Salon pachinko/bingo
-          grave_yard: Cmentarz przykościelny
-          grit_bin: Pojemnik na piasek
           hospital: Szpital
           hunting_stand: Ambona myśliwska
           ice_cream: Lodziarnia
@@ -1060,8 +1053,6 @@ pl:
           brownfield: Grunty poprzemysłowe
           cemetery: Cmentarz
           commercial: Obszar handlowo-usługowy
-          conservation: Rezerwat
-          construction: Teren budowy
           farm: Farma
           farmland: Grunty orne
           farmyard: Podwórze gospodarskie
@@ -1083,7 +1074,6 @@ pl:
           reservoir: Sztuczny zbiornik wodny
           reservoir_watershed: Zbiornik wodny
           residential: Zabudowa mieszkaniowa
-          retail: Teren handlu detalicznego
           village_green: Nawsie
           vineyard: Winnica
           "yes": Zagospodarowanie terenu
@@ -1357,7 +1347,6 @@ pl:
           deli: Delikatesy
           department_store: Dom towarowy
           discount: Sklep z produktami po obniżce
-          doityourself: Market budowlany
           dry_cleaning: Pralnia chemiczna
           e-cigarette: Sklep z e-papierosami
           electronics: Sklep z elektroniką/RTV/AGD
@@ -1383,7 +1372,6 @@ pl:
           health_food: Sklep ze zdrową żywnością
           hearing_aids: Sklep z aparatami słuchowymi
           herbalist: Sklep zielarski
-          hifi: Sklep ze sprzętem hi-fi
           houseware: Sklep z małymi artykułami gospodarstwa domowego
           ice_cream: Sklep z lodami
           interior_decoration: Sklep z dekoracją wnętrz
@@ -1443,7 +1431,6 @@ pl:
           artwork: Dzieło sztuki
           attraction: Atrakcja turystyczna
           bed_and_breakfast: Bed and breakfast
-          cabin: Domek letniskowy
           camp_pitch: Miejsce na kempingu
           camp_site: Kemping
           caravan_site: Miejsce na przyczepę kempingową
@@ -1631,11 +1618,7 @@ pl:
     edit_with: Edytuj w %{editor}
     tag_line: Wolna wikimapa świata
     intro_header: Witamy w OpenHistoricalMap!
-    intro_text: OpenHistoricalMap to mapa świata, stworzona przez ludzi, takich jak
-      ty, i z możliwością użycia pod otwartą licencją.
     intro_2_create_account: Utwórz konto
-    hosting_partners_html: Hosting obsługuje %{ucl}, %{fastly}, %{bytemark}, a także
-      %{partners}.
     partners_ucl: University College London
     partners_fastly: Fastly
     partners_bytemark: Hosting Bytemark
@@ -2039,36 +2022,10 @@ pl:
     about:
       next: Dalej
       copyright_html: <span>&copy;</span>Autorzy<br>OpenHistoricalMap
-      used_by_html: OpenHistoricalMap dostarcza dane mapowe tysiącom stron internetowych,
-        aplikacji oraz urządzeń
-      lede_text: OpenHistoricalMap jest tworzony przez społeczność dodającą dane o
-        drogach, ścieżkach, kawiarniach, dworcach i wielu innych, na całym świecie.
       local_knowledge_title: Wiedza lokalna
-      local_knowledge_html: OpenHistoricalMap wyróżnia wiedzę lokalną. Autorzy używają
-        zdjęć satelitarnych, lotniczych, nawigacji GPS i zwykłych map, aby zweryfikować,
-        czy dane w OSM są dokładne i aktualne.
       community_driven_title: Zarządzany przez społeczność
-      community_driven_html: |-
-        Społeczność OpenHistoricalMap jest różnorodna, zaangażowana i każdego dnia coraz większa. Wśród edytujących mapę są amatorscy kartografowie, specjaliści GIS, inżynierowie odpowiadający za pracę serwerów OSM, osoby tworzące mapy obszarów dotkniętych skutkami klęski żywiołowej potrzebne służbom ratunkowym oraz wielu innych ludzi.
-        Aby dowiedzieć się więcej na temat wspólnoty, odwiedź
-        <a href='https://blog.openstreetmap.org'>Blog OpenHistoricalMap</a>,
-        <a href='%{diary_path}'>blogi użytkowników</a>,
-        <a href='https://blogs.openstreetmap.org/'>blogi społeczności</a> oraz
-        <a href='http://openstreetmap.org.pl'>stronę OSM Polska</a>.
       open_data_title: Otwarte dane
-      open_data_html: "OpenHistoricalMap to <i>otwarte dane</i>: możesz używać ich,\
-        \ jak tylko chcesz pod warunkiem, że dodasz, że pochodzą one z  OpenHistoricalMap\
-        \ i jego autorów. Jeśli zmienisz lub stworzysz coś na podstawie tych danych,\
-        \ możesz je dystrybuować, ale tylko na tej samej licencji. Szczegółowe informacje\
-        \ na stronie <a href='%{copyright_path}'>Prawa autorskie i licencja</a>."
       legal_title: Pytania prawne
-      legal_1_html: |-
-        Ta strona internetowa i inne powiązane usługi prowadzone są oficjalnie przez <a href="https://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF) w imieniu społeczności. Korzystanie ze wszystkich usług OSMF jest regulowane przez <a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">Warunki użytkowania</a>, <a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">
-        Politykę użytkowania</a> i naszą <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">Politykę prywatności</a>.
-      legal_2_html: |-
-        Jeśli masz pytania dotyczące licencji, praw autorskich lub innych kwestii prawnych, <a href='https://osmfoundation.org/Contact'>skontaktuj się z OSMF</a>.
-        <br>
-        OpenHistoricalMap, logo z lupą oraz State of the Map są <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">zarejestrowanymi znakami towarowymi OSMF</a>.
       partners_title: Partnerzy
     copyright:
       foreign:
@@ -2084,60 +2041,14 @@ pl:
         native_link: wersji po polsku
         mapping_link: rozpocząć tworzenie mapy
       legal_babble:
-        title_html: Prawa autorskie i&nbsp;licencja
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">®</a></sup> to projekt <i>open data</i>, rozpowszechniany na licencji <a href="https://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database License</a> (ODbL) przez <a
-          href="https://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF).
-        intro_2_html: Możesz swobodnie kopiować, rozpowszechniać, przekazywać innym
-          i dostosowywać nasze dane, pod warunkiem podania OpenHistoricalMap i jego
-          autorów jako źródła. Jeśli zmienisz, przekształcisz lub wykorzystasz nasze
-          dane, wynik swojej pracy możesz rozpowszechniać tylko na podstawie tej samej
-          licencji. <a href="https://opendatacommons.org/licenses/odbl/1.0/">Pełny
-          tekst licencji</a> dokładnie opisuje twoje prawa i obowiązki.
-        intro_3_1_html: Nasza dokumentacja rozpowszechniana jest na warunkach licencji
-          <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.pl">Uznanie
-          autorstwa na tych samych warunkach 2.0</a> (CC BY-SA 2.0).
-        credit_title_html: Jak określić pochodzenie danych
-        credit_1_html: Wymagamy podania źródła w postaci „&copy; autorzy OpenHistoricalMap”.
-        credit_2_1_html: Musisz także jasno zaznaczyć, że dane dostępne są na licencji
-          Open Database License. Możesz to zrobić przez podlinkowanie <a href="https://www.openstreetmap.org/copyright">tej
-          strony licencyjnej</a>. W przypadku rozpowszechniania OSM w formie danych
-          możesz podać nazwy licencji i umieścić do nich bezpośredni link. Jeśli niemożliwe
-          jest umieszczenie linków (np. mapy papierowe), sugerujemy pokierowanie czytelników
-          na stronę openstreetmap.org (lub OpenHistoricalMap.org) i opendatacommons.org.
         attribution_example:
-          alt: Przykład, jak przypisywać OpenHistoricalMap na stronie internetowej
           title: Przykład uznania autorstwa
         more_title_html: Dowiedz się więcej
-        more_1_html: |-
-          Dowiedz się więcej o korzystaniu z naszych danych i o tym, jak określić nas jako źródło, z którego pochodzą dane na <a
-          href="https://osmfoundation.org/License">stronie OSMF License</a>.
-        contributors_title_html: Współtwórcy
-        contributors_intro_html: 'Autorami są tysiące osób. Uwzględniamy również licencjonowane
-          dane na otwartej zasadzie z krajowych agencji kartograficznych i innych
-          źródeł, wśród nich:'
-        contributors_footer_1_html: |-
-          Szczegóły tych i innych źródeł, które zostały wykorzystane,
-          aby udoskonalić OpenHistoricalMap, są dostępne na stronie
-          <a href="https://wiki.openstreetmap.org/wiki/Contributors">Contributors (en)</a>.
-        contributors_footer_2_html: Włączenie danych do OpenHistoricalMap nie musi
-          oznaczać, że udostępniający je podmiot popiera OpenHistoricalMap, udziela
-          jakiejkolwiek gwarancji lub ponosi jakąkolwiek odpowiedzialność.
         infringement_title_html: Naruszenia praw autorskich
         infringement_1_html: Autorzy OpenHistoricalMap powinni pamiętać, aby nigdy
           nie dodawać danych z żadnych źródeł chronionych prawami autorskimi (jak
           np. Google Maps i&nbsp;większość map drukowanych) bez wyraźnego pozwolenia
           właściciela praw autorskich.
-        infringement_2_html: Jeśli uważasz, że materiał chroniony prawem autorskim
-          został niewłaściwie dodany do bazy OpenHistoricalMap, zajrzyj pod adres
-          naszej <a href="https://wiki.osmfoundation.org/wiki/Takedown_procedure">procedury
-          usuwania danych</a> lub <a href="https://dmca.openstreetmap.org/">wypełnij
-          formularz on-line</a>.
-        trademarks_title_html: <span id="trademarks"></span>Znaki towarowe
-        trademarks_1_html: OpenHistoricalMap, logo z lupą oraz nazwa State of the
-          Map są zarejestrowanymi znakami towarowymi Fundacji OpenHistoricalMap. Jeśli
-          masz pytania dotyczące ich używania, prześlij swoje pytania do <a href="https://wiki.osmfoundation.org/wiki/Licensing_Working_Group">grupy
-          roboczej ds. licencji</a>.
     index:
       js_1: Twoja przeglądarka internetowa nie obsługuje JavaScriptu bądź też masz
         wyłączoną jego obsługę.
@@ -2169,8 +2080,6 @@ pl:
       map_image: Obraz mapy (standardowa warstwa)
       embeddable_html: Kod HTML do osadzenia
       licence: Licencja
-      export_details_html: Dane OpenHistoricalMap udostępnione są na licencji <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a> (ODbL).
       too_large:
         advice: 'Jeśli eksportowanie się nie uda, proszę rozważyć użycie jednego z
           podanych zasobów:'
@@ -2235,41 +2144,24 @@ pl:
         tematów związanych z mapowaniem.
       welcome:
         url: /welcome
-        title: Witamy w OpenHistoricalMap
-        description: Zacznij od tego krótkiego przewodnika, obejmującego podstawy
-          OpenHistoricalMap.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Pl:Przewodnik_dla_pocz%C4%85tkuj%C4%85cych
-        title: Podręcznik dla początkujących
-        description: Podręcznik dla początkujących tworzony przez społeczność.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Strona Pomocy OpenHistoricalMap
         description: Zadaj pytanie lub odszukaj odpowiedzi na stronie pytań i odpowiedzi
           OpenHistoricalMap.
-      mailing_lists:
-        title: Listy dyskusyjne
-        description: Zadaj pytanie lub przedyskutuj interesujący temat niezależnie
-          od wybranego tematu lub lokalizacji.
+      mailing_lists: {}
       forums:
         title: Forum
         description: Pytania, dyskusje w formie internetowego forum dyskusyjnego.
-      irc:
-        title: IRC
-        description: Interaktywny czat w różnych językach i na różne tematy.
-      switch2osm:
-        title: switch2osm
-        description: Pomoc firmom i organizacjom w przejściu do mapy OpenHistoricalMap
-          i inne usługi.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Dla organizacji
         description: Jesteś z organizacji mającej plany wobec OpenHistoricalMap? Niezbędne
           informacje znajdziesz na stronie powitalnej.
-      wiki:
-        url: https://wiki.openstreetmap.org/wiki/Pl:Main_Page
-        title: Wiki OpenHistoricalMap
-        description: Zapoznaj się z wiki, aby uzyskać szczegółową dokumentację OpenHistoricalMap.
+      wiki: {}
     potlatch:
       removed: Twój domyślny edytor OpenHistoricalMap to Potlatch. Ponieważ Adobe
         Flash Player został wycofany, Potlatch nie jest już dostępny w przeglądarce.
@@ -2362,22 +2254,10 @@ pl:
           toilets: Toalety
     welcome:
       title: Witamy!
-      introduction_html: Witamy w OpenHistoricalMap, wolnej mapie świata. Teraz, gdy
-        masz już konto, możesz przystąpić do mapowania. Oto krótki przewodnik z najważniejszymi
-        rzeczami, o których musisz wiedzieć.
       whats_on_the_map:
         title: Co jest na mapie
-        on_html: OpeenStreetMap jest miejscem mapowania rzeczy, które są zarówno <em>prawdziwe
-          jak i aktualne</em> – zawiera miliony budynków, dróg i innych szczegółów
-          dotyczących miejsc. Można mapować wszystkie elementy rzeczywistego świata,
-          które cię interesują.
-        off_html: Nie wprowadzamy obiektów nieistniejących, hipotetycznych oraz danych
-          ze źródeł objętych prawami autorskimi. Jeśli nie masz zgody, nie kopiuj
-          z innych map (zarówno map papierowych, jak i online).
       basic_terms:
         title: Podstawowe zasady mapowania
-        paragraph_1_html: OpenHistoricalMap ma własny slang. Oto kilka słów, które
-          ci się przydadzą.
         editor_html: <strong>Edytor</strong> to program lub strona, która pozwala
           na edycję mapy.
         node_html: <strong>Węzeł</strong> to punkt na mapie, np. latarnia lub drzewo.
@@ -2387,20 +2267,8 @@ pl:
           np. nazwa restauracji lub ograniczenie prędkości na drodze.
       rules:
         title: Zasady!
-        paragraph_1_html: W OpenHistoricalMap jest kilka formalnych zasad, ale oczekujemy,
-          że wszyscy uczestnicy będą współpracować i komunikować się ze społecznością.
-          Jeśli planujesz jakieś działania inne niż same edycje manualne, proszę przeczytaj
-          i dostosuj się do zaleceń dotyczących <a href="https://wiki.openstreetmap.org/wiki/Import/Guidelines">importów</a>
-          oraz <a href="https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct">zautomatyzowanych
-          edycji</a>.
       questions:
         title: Czy masz jakieś pytania?
-        paragraph_1_html: OpenHistoricalMap ma wiele zasobów pomocnych w poznawaniu
-          projektu, pozwalających na zadawanie pytań i otrzymywanie na nie odpowiedzi
-          oraz na dyskutowanie i dokumentowanie tematów związanych z mapowaniem. <a
-          href='%{help_url}'>Tutaj uzyskasz pomoc</a>. Jesteś z organizacji mającej
-          plany wobec OpenHistoricalMap? <a href='https://welcome.openstreetmap.org/'>Wejdź
-          na stronę powitalną</a>.
       start_mapping: Rozpocznij mapowanie
       add_a_note:
         title: Nie masz czasu na edycję? Dodaj uwagę!
@@ -3033,7 +2901,6 @@ pl:
         gps: Publiczne ślady GPS
         overlays: Nakładki do rozwiązywania problemów na mapie
         title: Warstwy
-      copyright: © <a href='%{copyright_url}'>autorzy OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Przekaż darowiznę</a>
       terms: <a href='%{terms_url}' target='_blank'>Warunki użytkowania</a>
       cyclosm: "Styl kafelków <a href='%{cyclosm_url}' target='_blank'>CyclOSM</a>.\

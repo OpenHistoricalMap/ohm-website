@@ -182,8 +182,6 @@ nds:
           ferry_terminal: Fährterminal
           fire_station: Füürwehr
           fountain: Fontään
-          fuel: Tanksteed
-          grave_yard: Karkhoff
           hospital: Krankenhuus
           hunting_stand: Hoogstand
           ice_cream: Iesladen
@@ -365,7 +363,6 @@ nds:
         tourism:
           alpine_hut: Barghütt
           artwork: Kunst
-          cabin: Hütt
           guest_house: Gasthuus
           hostel: Jöögdharbarg
           hotel: Hotel

@@ -640,8 +640,6 @@ fy:
         aeroway:
           aerodrome: Fleanfjild
           airstrip: Lâningsstripe
-          apron: Platfoarm
-          gate: Gate
           hangar: Hangaar
           helipad: Helyhaven
           holding_position: Wachtposysje
@@ -650,7 +648,6 @@ fy:
           runway: Start-/lâningsbaan
           taxilane: Taksystripe
           taxiway: Taksybaan
-          terminal: Passazjiershal
           windsock: Wynsek
         amenity:
           animal_boarding: Bistepinsjon
@@ -696,10 +693,6 @@ fy:
           fire_station: Brânwacht
           food_court: Itenshal
           fountain: Fontein
-          fuel: Brânstof
-          gambling: Kânsspul
-          grave_yard: Begraafplak
-          grit_bin: Struibak
           hospital: Sikehûs
           hunting_stand: Jachttoer
           ice_cream: Iisko
@@ -961,8 +954,6 @@ fy:
           brownfield: Braaklân
           cemetery: Begraafplak
           commercial: Kommersjeel gebiet
-          conservation: Natuergebiet
-          construction: Bouplak
           farm: Boerepleats
           farmland: Boerelân
           farmyard: Boerehiem
@@ -984,7 +975,6 @@ fy:
           reservoir: Opslachmar
           reservoir_watershed: Wetterwingebiet
           residential: Wengebiet
-          retail: Lytshannel
           village_green: Brink
           vineyard: Wyngerd
           "yes": Grûngebrûk
@@ -1258,7 +1248,6 @@ fy:
           deli: Delikatessen
           department_store: Warehûs
           discount: Priisfjochter
-          doityourself: Doch-it-sels
           dry_cleaning: Stomerij
           e-cigarette: E-sigarettewinkel
           electronics: Elektroanikasaak
@@ -1284,7 +1273,6 @@ fy:
           health_food: Reformwinkel
           hearing_aids: Harktastellen
           herbalist: Krûdeminger
-          hifi: Hifi
           houseware: Húshâldwinkel
           ice_cream: Iiskosaak
           interior_decoration: Ynterieurynrjochting
@@ -1344,7 +1332,6 @@ fy:
           artwork: Keunstwurk
           attraction: Attraksje
           bed_and_breakfast: Bêd en brochje
-          cabin: Blokhutte
           camp_pitch: Kampearplak
           camp_site: Kampearterrein
           caravan_site: Kampearweinterrein
@@ -1528,11 +1515,7 @@ fy:
     edit_with: Bewurkje mei %{editor}
     tag_line: De frije wiki-wrâldkaart
     intro_header: Wolkom by OpenHistoricalMap!
-    intro_text: OpenHistoricalMap is in wrâldkaart makke troch minsken krekt as jo,
-      en frij te brûken ûnder in iepen lisinsje.
     intro_2_create_account: Meitsje in akkount as meidogger
-    hosting_partners_html: It webstee is ûnderdak by %{ucl}, %{fastly}, %{bytemark}
-      en oare %{partners}.
     partners_ucl: UCL
     partners_fastly: Fastly
     partners_bytemark: Bytemark Hosting
@@ -1929,44 +1912,10 @@ fy:
     about:
       next: Folgjende
       copyright_html: <span>&copy;</span>OpenHistoricalMap-<br>bydragers
-      used_by_html: OpenHistoricalMap leveret kaartdata foar tûzenen websteeën, mobile
-        apps en kompjûterapparaten
-      lede_text: OpenHistoricalMap wurdt makke troch in mienskip fan kaartmakkers,
-        dy't gegevens bydrage en ûnderhâlde oer diken, rûtes, kafees, spoarweistasjons
-        en folle mear, oer de hiele wrâld.
       local_knowledge_title: Lokale kennis
-      local_knowledge_html: |-
-        OpenHistoricalMap leit de klam op lokale kennis. De bydragers brûke
-        loftbylden, GPS-apparaten en leech-technyske fjildkaarten, om te bewissigjen dat OSM akkuraat en by de tiid is.
       community_driven_title: Dreaun troch de mienskip
-      community_driven_html: |-
-        De OpenHistoricalMap-mienskip is alsidich, pasjonearre, en groeit mei de dei.
-        Under ús bydragers sitte entûsjaste kaartmakkers, GIS-fakminsken, technisy
-        dy't de OSM-tsjinners beheare, helpferlieners dy't rampgebieten yn kaart bringe,
-        en in soad oaren.
-        Om mear te witten oer de mienskip, besjoch dan it
-        <a href='https://blog.openstreetmap.org'>OpenHistoricalMap-bloch</a>,
-        <a href='%{diary_path}'>deiboeken fan meidoggers</a>,
-        <a href='https://blogs.openstreetmap.org/'>mienskipsblochs</a>, en
-        it webstee fan 'e <a href='https://www.osmfoundation.org/'>OSM-stifting</a>.
       open_data_title: Iepen data
-      open_data_html: |-
-        OpenHistoricalMap is <i>iepen data</i>: it stiet jo frij it foar elts doel te brûken,
-        salang't jo OpenHistoricalMap en syn bydragers mar neame. At jo de data
-        op in beskate manier feroarje of ferwurkje, meie jo it resultaat inkeld
-        ûnder deselde lisinsje ferspriede. Sjoch de <a href='%{copyright_path}'>Auteursrjochte- en
-        lisinsjeside</a> foar ynformaasje.
       legal_title: Juridysk
-      legal_1_html: |-
-        Dit webstee en in protte oare besibbe tsjinsten, wurde formeel beheard troch de
-        <a href='https://osmfoundation.org/'>OpenHistoricalMap-stifting</a> (OSMF)
-        út namme fan 'e mienskip. It gebrûk fan alle OSMF-behearde tsjinsten falt ûnder
-        ús <a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">Gebrûksbetingsten</a>, <a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">Belied foar Akseptabel Gebrûk</a> en ús <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">Privacybelied</a>.
-      legal_2_html: |-
-        Nim graach <a href='https://osmfoundation.org/Contact'>kontakt op mei de OSMF</a>
-        at jo lisinsje-, auteursrjochte- as oare juridyske fragen hawwe.
-        <br>
-        OpenHistoricalMap, it fergrutglês-logo en 'State of the Map' binne <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">registrearre hannelsmerken fan 'e OSMF</a>.
       partners_title: Partners
     copyright:
       foreign:
@@ -1982,71 +1931,14 @@ fy:
         native_link: Frysktalige ferzje
         mapping_link: mei kaartmeitsjen úteinsette
       legal_babble:
-        title_html: Auteursrjochten en lisinsje
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> is <i>iepen data</i>, en troch de  <a
-          href="https://osmfoundation.org/">OpenHistoricalMap-stifting</a> (OSMF) beskikber steld ûnder de <a
-          href="https://opendatacommons.org/licenses/odbl/">Iepen
-          Databank-lisinsje</a> (ODbL) fan Open Data Commons.
-        intro_2_html: |-
-          It stiet jo frij ús data te kopiearjen, te fersprieden, út te stjoeren en oan te passen,
-          salang't jo OpenHistoricalMap en syn
-          bydragers mar neame. At jo ús data feroarje of ferwurkje, meie jo
-          it resultaat inkeld ûnder deselde lisinsje ferspriede. De
-          folsleine <a href="https://opendatacommons.org/licenses/odbl/1.0/">juridyske
-          tekst</a> jout in útlis oer jo rjochten en plichten.
-        intro_3_1_html: |-
-          Us dokumintaasje is beskikber ûnder de lisinsje
-          <a href="https://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons Nammefermelding-Lyk diele 2.0</a> (CC BY-SA 2.0).
-        credit_title_html: Hoe moat OpenHistoricalMap neamd wurde
-        credit_1_html: Wy fereaskje dat jo de fermelding &ldquo;&copy; OpenHistoricalMap-bydragers&rdquo;
-          brûke.
-        credit_2_1_html: |-
-          Jo moatte ek dúdlik meitsje dat de data beskikber is ûnder de Iepen
-          Databank-lisinsje. Jo kinne dat dwaan mei in keppeling nei
-          <a href="https://www.openstreetmap.org/copyright">dizze auteursrjochteside</a>.
-          As alternatyf, en as eask at jo OSM yn
-          datafoarm ferspriede, kinne jo de lisinsje(s) streekrjocht neame en keppelje. Yn media
-          dêr't keppelings net mooglik binne (bgl. printwurk) suggerearje wy dat jo
-          jo lêzers trochferwize nei openstreetmap.org (faaks troch
-          'OpenHistoricalMap' út te skriuwen as dat adres) en nei opendatacommons.org.
         attribution_example:
-          alt: Foarbyld fan hoe't OpenHistoricalMap op in webside neamd wurdt
           title: Foarbyld nammefermelding
         more_title_html: Mear te witten komme
-        more_1_html: |-
-          Lês mear oer it brûken fan ús data, en hoe't wy fermeld wurde moatte, op 'e <a
-          href="https://osmfoundation.org/Licence">Lisinsjeside fan 'e OSMF</a>.
-        contributors_title_html: Us bydragers
-        contributors_intro_html: |-
-          Us bydragers binne tûzenen yndividuën. Wy nimme ek
-          data mei iepen lisinsjes op fan nasjonale kaartagintskippen
-          en oare boarnen, dêrûnder:
-        contributors_footer_1_html: |-
-          Besjoch de <a
-          href="https://wiki.openstreetmap.org/wiki/Contributors">Bydragers-side</a>
-          op 'e OpenStreetMap-wiki foar fierdere ynformaasje oer dizze, en oare boarnen dy't brûkt binne
-          om OpenHistoricalMap foarút te helpen.
-        contributors_footer_2_html: |-
-          It opnimmen fan data yn OpenHistoricalMap betsjut net dat de oanbieder fan 'e oarspronklike
-          data efter OpenHistoricalMap stiet, ien of oare garânsje jout, of
-          oanspraaklikens oanfurdiget.
         infringement_title_html: Skeining fan auteursrjochten
         infringement_1_html: |-
           OSM-bydragers wurde derop wiisd nea data ta te heakjen fan
           boarnen mei auteursrjochten (bgl. Google Maps as printe kaarten) sûnder
           de útdruklike tastimming fan 'e auteursrjochthawwers.
-        infringement_2_html: |-
-          At jo miene dat der materiaal mei auteursrjochten ûnrjochtlik
-          oan 'e OpenHistoricalMap-databank of dit webstee taheakke is, rieplachtsje dêrfoar
-          ús <a href="https://wiki.osmfoundation.org/wiki/Takedown_procedure">wiskproseduere</a>,
-          of tsjinje it drekst yn op ús
-          <a href="https://dmca.openstreetmap.org/">side mei in webformulier</a>.
-        trademarks_title_html: <span id="trademarks"></span>Hannelsmerken
-        trademarks_1_html: OpenHistoricalMap, it fergrutglês-logo en 'State of the
-          Map' binne registrearre hannelsmerken fan 'e OpenHistoricalMap-stifting.
-          At jo fragen hawwe oer jo gebrûk fan 'e merken, besjoch dan ús <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">Hannelsmerkebelied</a>.
     index:
       js_1: Jo brûke ôf in webblêder dy't gjin JavaScript stipet, ôf jo hawwe JavaScript
         útskeakele.
@@ -2077,8 +1969,6 @@ fy:
       map_image: Kaartôfbylding (toant standertlaach)
       embeddable_html: Ynbou-HTML
       licence: Lisinsje
-      export_details_html: OpenHistoricalMap-data is beskikber ûnder de <a href="https://opendatacommons.org/licenses/odbl/1.0/">Iepen
-        Databank-lisinsje</a> (ODbL) fan Open Data Commons.
       too_large:
         advice: |-
           At it eksportearjen boppe net slagget, besykje
@@ -2141,40 +2031,24 @@ fy:
         en yn gearwurking bepraten en fêstlizzen fan kartearringssaken.
       welcome:
         url: /welcome
-        title: Wolkom by OpenHistoricalMap
-        description: Begjin mei dizze koarte útlis oer OpenHistoricalMap-basisdingen.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Beginners%27_guide
-        title: Paadwizer foar begjinners
-        description: Troch de mienskip byholden paadwizer foar begjinners.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Help-foarum
         description: Stel in fraach of besjoch antwurden op OpenHistoricalMaps fraach-en-antwurdside.
-      mailing_lists:
-        title: Mailinglisten
-        description: Stel in fraach of bepraat nijsgjirrige saken op útienrinnende
-          tematyske as regionale mailinglisten.
+      mailing_lists: {}
       forums:
         title: Foarums
         description: Fragen en oerlis foar dejingen dy't leaver yn pripboerd-styl
           wurkje.
-      irc:
-        title: IRC
-        description: Ynteraktyf tsjetten yn ferskate talen en op alderlei mêd.
-      switch2osm:
-        title: switch2osm
-        description: Help foar bedriuwen en organisaasjes dy't oergeane op kaarten
-          en oare tsjinsten fan OpenHistoricalMap.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Foar organisaasjes
         description: Mei in organisaasje plannen meitsje foar OpenHistoricalMap? Fyn
           wat jo witte wolle op 'e Wolkom-matte.
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: OpenStreetMap-wiki
-        description: De wiki trochsjen foar wiidweidige dokumintaasje oer OpenHistoricalMap.
+      wiki: {}
     potlatch:
       removed: Jo standertbewurker foar OpenHistoricalMap is ynsteld op Potlatch.
         Om't Adobe Flash Player weifallen is, is Potlatch net mear beskikber foar
@@ -2269,24 +2143,10 @@ fy:
           toilets: Húskes
     welcome:
       title: Wolkom!
-      introduction_html: |-
-        Wolkom by OpenHistoricalMap, de frije en bewurkbere wrâldkaart. No't jo ynskreaun binne,
-        binne jo hielendal klear foar jo earste bewurking. Hjir is in koarte útlis mei de wichtichste
-        dingen dy't jo witte moatte.
       whats_on_the_map:
         title: Wat stiet der op 'e kaart
-        on_html: |-
-          OpenHistoricalMap is in plak foar it ynkaartsjen fan dingen dy't <em>konkreet én aktueel</em> binne -
-          it befettet miljoenen gebouwen, diken en oare bysûnderheden oer plakken. Jo kinne
-          alle besteande skaaimerken dy't jo nijsgjirrich talykje op 'e kaart sette.
-        off_html: |-
-          Wat it <em>net</em> befettet is subjektive data lykas beoardielings, histoaryske as
-          ûnderstelde skaaimerken, en data út boarnen mei auteursrjocht.
-          Kopiearje net fan digitale as papieren kaarten sûnder spesjale tastimming dêrta.
       basic_terms:
         title: Basisbegripen foar it kaartmeitsjen
-        paragraph_1_html: OpenHistoricalMap hat in eigen taaltsje. Hjir binne in pear
-          kaaiwurden dy't fan pas komme sille.
         editor_html: In <strong>bewurker</strong> is in programma of webstee dat jo
           brûke kinne om 'e kaart te bewurkjen.
         node_html: In <strong>punt</strong> is in plak op 'e kaart, lykas in inkel
@@ -2297,18 +2157,8 @@ fy:
           lykas in restaurantnamme of de maksimum faasje fan in strjitte.
       rules:
         title: Regels!
-        paragraph_1_html: |-
-          OpenHistoricalMap hat net folle formele regels, mar wy ferwachtsje fan alle dielnimmers dat hja gearwurkje
-          en kommunisearje mei de mienskip. At jo faaks
-          wat oars dwaan wolle as mei de hân bewurkjen, lês en folgje dan de rjochtlinen foar
-          <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>Ymports</a> en
-          <a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>Automatisearre bewurkings</a>.
       questions:
         title: Noch fragen?
-        paragraph_1_html: |-
-          OpenHistoricalMap hat ferskate middels om oer it projekt te learen, foar it stellen en beäntwurdzjen
-          fan fragen, en yn gearwurking bepraten en fêstlizzen fan kartearringssaken.
-          <a href='%{help_url}'>Krij hjir help</a>. Mei in organisaasje plannen meitsje foar OpenHistoricalMap? <a href='https://welcome.openstreetmap.org/'>Besjoch de Wolkom-matte</a>.
       start_mapping: Set útein mei kaartmeitsjen
       add_a_note:
         title: Gjin tiid te bewurkjen? Meitsje in notysje!
@@ -2931,7 +2781,6 @@ fy:
         gps: Iepenbiere GPS-trajekten
         overlays: Boppelagen ynskeakelje ta oplossing fan kaartproblemen
         title: Lagen
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMap-bydragers</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Donaasje jaan</a>
       terms: <a href='%{terms_url}' target='_blank'>Webstee- en API-betingsten</a>
       cyclosm: Foarmjouwing troch <a href='%{cyclosm_url}' target='_blank'>CyclOSM</a>

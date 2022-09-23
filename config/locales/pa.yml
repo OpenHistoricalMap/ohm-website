@@ -283,12 +283,9 @@ pa:
       prefix:
         aeroway:
           aerodrome: ਏਰੋਡਰੋਮ
-          apron: ਐਪਰਨ
-          gate: ਦਰਵਾਜ਼ਾ
           helipad: ਹੈਲੀਪੈਡ
           runway: ਉਡਾਣ-ਪੱਟੀ
           taxiway: ਟੈਕਸੀਵੇਅ
-          terminal: ਟਰਮੀਨਲ
         amenity:
           arts_centre: ਕਲਾ ਕੇਂਦਰ
           atm: ਏ੦ਟੀ੦ਐੱਮ
@@ -327,9 +324,6 @@ pa:
           fire_station: ਅੱਗ-ਬੁਝਾਊ ਸਟੇਸ਼ਨ
           food_court: ਖਾਣਾ ਦਰਬਾਰ
           fountain: ਫ਼ੁਹਾਰਾ
-          fuel: ਤੇਲ
-          gambling: ਜੂਆ
-          grave_yard: ਕਬਰਿਸਤਾਨ
           hospital: ਹਸਪਤਾਲ
           hunting_stand: ਸ਼ਿਕਾਰ ਸਟੈਂਡ
           ice_cream: ਆਈਸ ਕਰੀਮ
@@ -463,8 +457,6 @@ pa:
           basin: ਹੌਜ਼ੀ
           cemetery: ਸ਼ਮਸ਼ਾਨ
           commercial: ਵਪਾਰਕ ਖੇਤਰ
-          conservation: ਰੱਖ
-          construction: ਉਸਾਰੀ
           farm: ਖੇਤ
           farmland: ਖੇਤ ਭੂਮੀ
           farmyard: ਫਾਰਮਯਾਰਡ
@@ -480,7 +472,6 @@ pa:
           recreation_ground: ਮਨੋਰੰਜਨ ਮੈਦਾਨ
           reservoir: ਸਰੋਵਰ
           residential: ਰਿਹਾਇਸ਼ੀ ਇਲਾਕਾ
-          retail: ਪਰਚੂਨ
           village_green: ਪੇਂਡੂ ਹਰਿਆਵਲ
           vineyard: ਅੰਗੂਰਾਂ ਦਾ ਬਾਗ਼
         leisure:
@@ -629,7 +620,6 @@ pa:
           deli: ਡੇਲੀ
           department_store: ਡਿਪਾਰਟਮੈਂਟ ਸਟੋਰ
           discount: ਛੋਟ ਵਾਲੀਆਂ ਚੀਜ਼ਾਂ ਦੀ ਦੁਕਾਨ
-          doityourself: ਆਪ ਕਰੋ
           dry_cleaning: ਡਰਾਈ ਕਲੀਨਰ
           electronics: ਬਿਜਲਾਣੂ ਦੁਕਾਨ
           estate_agent: ਇਸਟੇਟ ਏਜੰਟ
@@ -645,7 +635,6 @@ pa:
           grocery: ਰਾਸ਼ਨ ਦੀ ਹੱਟੀ
           hairdresser: ਵਾਲ ਤਿਆਰ ਕਰਨ ਵਾਲਾ
           hardware: ਹਾਰਡਵੇਅਰ ਸਟੋਰ
-          hifi: ਹਾਈ-ਫ਼ਾਈ
           jewelry: ਗਹਿਣਿਆਂ ਦੀ ਦੁਕਾਨ
           kiosk: ਖੋਖਾ
           laundry: ਧੋਬੀਘਾਟ
@@ -673,7 +662,6 @@ pa:
           artwork: ਕਾਰੀਗਰੀ
           attraction: ਖਿੱਚ
           bed_and_breakfast: ਮੰਜਾ ਤੇ ਨਾਸ਼ਤਾ
-          cabin: ਕੈਬਿਨ
           camp_site: ਛਾਉਣੀ
           caravan_site: ਕਾਫ਼ਲਾ ਟਿਕਾਣਾ
           chalet: ਲੱਕੜ ਦਾ ਘਰ
@@ -873,9 +861,7 @@ pa:
         native_link: ਪੰਜਾਬੀ ਵਰਜਨ
         mapping_link: ਨਕਸ਼ਾਬੰਦੀ ਸ਼ੁਰੂ ਕਰੋ
       legal_babble:
-        title_html: ਨਕਲ-ਹੱਕ ਤੇ ਲਾਇਸੰਸ
         more_title_html: ਹੋਰ ਜਾਣਕਾਰੀ ਲੱਭਣ ਵਾਸਤੇ
-        contributors_title_html: ਸਾਡੇ ਯੋਗਦਾਨੀ
     index:
       permalink: ਪੱਕੀ ਕੜੀ
       shortlink: ਛੋਟੀ ਕੜੀ
@@ -915,19 +901,14 @@ pa:
       title: ਮਦਦ ਲੈਣੀ
       welcome:
         url: /ਜੀ ਆਇਆਂ ਨੂੰ
-        title: ਓ.ਐੱਸ.ਐੱਮ. 'ਤੇ ਜੀ ਆਇਆਂ ਨੂੰ
-      beginners_guide:
-        title: ਸ਼ੁਰੂਆਤੀ ਗਾਈਡ
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: help.openstreetmap.org
       forums:
         title: ਮੰਚ
-      irc:
-        title: ਆਈ.ਆਰ.ਸੀ
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: wiki.openstreetmap.org
+      irc: {}
+      wiki: {}
     sidebar:
       search_results: ਖੋਜ ਨਤੀਜੇ
       close: ਬੰਦ ਕਰੋ

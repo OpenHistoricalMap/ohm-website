@@ -1,5 +1,6 @@
 #!python3
 """
+Refer to https://github.com/OpenHistoricalMap/issues/issues/442
 Strip specific keys entries from all of the .yml files in a directory.
 Specify the directory on command line.
 Recommended to use a Python virtual env,.
@@ -9,7 +10,7 @@ python3 -m venv .
 source ./bin/activate
 python3 -m pip install ruamel.yaml
 
-python3 ./strip_locale_files.py ./locales
+python3 ./prune_locale_files_all.py ./locales
 """
 
 from ruamel.yaml import YAML
@@ -20,6 +21,7 @@ import re
 try:
     folder = sys.argv[1]
     filestoparse = glob.glob(f"{folder}/*.yml")
+    filestoparse.sort()
     if not filestoparse:
         raise ValueError
 except IndexError:

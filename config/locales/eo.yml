@@ -660,8 +660,6 @@ eo:
         aeroway:
           aerodrome: Aerodromo
           airstrip: Provizora aerodromo
-          apron: Aviadil-parkumejo
-          gate: Pordego
           hangar: Hangaro
           helipad: Surteriĝejo helikoptera
           holding_position: Haltejo antaŭ aŭtokur-strato
@@ -670,7 +668,6 @@ eo:
           runway: Avia dromo
           taxilane: Aŭtokur-strateto
           taxiway: Aŭtokur-strato
-          terminal: Flugstacio
           windsock: Ventmontrilo (maniko)
         amenity:
           animal_boarding: Hotelo por hejmbestoj
@@ -716,10 +713,6 @@ eo:
           fire_station: Fajrobrigadejo
           food_court: Manĝobazaro
           fountain: Fontano
-          fuel: Benzinejo
-          gambling: Hazardludejo
-          grave_yard: Tombejo ĉirkaŭpreĝeja
-          grit_bin: Ujo kun sablo kaj salo
           hospital: Malsanulejo
           hunting_stand: Altembusko ĉasada
           ice_cream: Glaciaĵejo
@@ -981,8 +974,6 @@ eo:
           brownfield: Antaŭ-konstruejo (post-malkonstruado)
           cemetery: Tombejo
           commercial: Oficeja tereno
-          conservation: Natur-konservejo
-          construction: Konstruejo
           farm: Farmejo
           farmland: Agrokultura tereno
           farmyard: Farmkorto
@@ -1004,7 +995,6 @@ eo:
           reservoir: Lago artefarita
           reservoir_watershed: Baseno artefarita
           residential: Privatdoma tereno
-          retail: Komercejo
           village_green: Verda tereno
           vineyard: Vinberĝardeno
           "yes": Utilkampo
@@ -1278,7 +1268,6 @@ eo:
           deli: Delikataĵ-vendejo
           department_store: Ĉiovendejo
           discount: Vendejo kun rabatitaj artikoloj
-          doityourself: Memfaradil-vendejo
           dry_cleaning: Vestaĵ-lavejo (nepolara solvilo)
           e-cigarette: Elektronik-cigareda vendejo
           electronics: Elektronik-vendejo
@@ -1304,7 +1293,6 @@ eo:
           health_food: Sanig-manĝaĵa vendejo
           hearing_aids: Aŭd-helpila vendejo
           herbalist: Herba vendejo
-          hifi: Altfidel-son-vendejo
           houseware: Mastrum-aparata vendejo
           ice_cream: Glaciaĵa vendejo
           interior_decoration: Ensembl-vendejo
@@ -1364,7 +1352,6 @@ eo:
           artwork: Artverko
           attraction: Vidindaĵo
           bed_and_breakfast: Pensiono 'tranokti k matenmanĝi'
-          cabin: Kabano
           camp_pitch: Loko por kampadveturilo/tendo
           camp_site: Kampadejo
           caravan_site: Kampadveturil-parkumejo
@@ -1544,11 +1531,7 @@ eo:
     edit_with: Redakti per %{editor}
     tag_line: La libera viki-mondmapo
     intro_header: Bonvenon al OpenHistoricalMap!
-    intro_text: OpenHistoricalMap estas mapo de la mondo, kreata de homoj kiel vi,
-      kaj libere uzebla laŭ malferma permesilo.
     intro_2_create_account: Krei konton
-    hosting_partners_html: Retgastigo estas subtenata de %{ucl}, %{fastly}, %{bytemark}
-      kaj aliaj %{partners}.
     partners_ucl: University College London
     partners_fastly: Fastly
     partners_bytemark: Bytemark Hosting
@@ -1934,36 +1917,10 @@ eo:
     about:
       next: Sekva
       copyright_html: <span>&copy;</span>kontribuintoj de<br>OpenHistoricalMap
-      used_by_html: OpenHistoricalMap liveras map-datumojn por miloj da retejoj, poŝtelefonaj
-        aplikaĵoj kaj aparatoj
-      lede_text: OpenHistoricalMap estas kreata de komunumo de mapigistoj kiuj aldonas
-        kaj prizorgas datumojn pri vojoj, kursoj, kafejoj, stacidomoj kaj pli da aliaj,
-        en la tuta mondo.
       local_knowledge_title: Loka scio
-      local_knowledge_html: OpenHistoricalMap emfazas lokan scion. Kontribuantoj uzas
-        aerfotojn, GPS-aparatojn kaj normajn mapojn por verigi ĉu datumoj de OSM estas
-        akurataj kaj ĝisdatigaj.
       community_driven_title: Kondukata de komunumo
-      community_driven_html: |-
-        La komunumo de OpenHistoricalMap estas diversa, pasia kaj kreskas tagon post tago. Inter niaj kontribuantoj estas ŝatantoj de mapoj, profesiuloj de GIS, inĝenieroj prizorgantaj OSM-servilojn, helpistoj kiuj mapigas areojn tuŝitajn de katastrofoj kaj multaj aliaj. Por ekscii pli pri la komunumo, vidu <a href='https://blog.openstreetmap.org'>taglibron OpenHistoricalMap</a>, <a href='%{diary_path}'>taglibrojn de uzantoj</a>,
-        <a href='https://blogs.openstreetmap.org/'>komunumajn taglibrojn</a> kaj la retpaĝon de la <a href='https://www.osmfoundation.org/'>Fondaĵo OSM</a>.
       open_data_title: Malfermaj datumoj
-      open_data_html: "OpenHistoricalMap estas <i>malfermaj datumoj</i>: vi povas\
-        \ uzi ĝin kiamaniere vi volas laŭ la kondiĉo, ke vi atribuos aŭtorecon al\
-        \ OpenHistoricalMap kaj ĝiaj kontribuintoj. Se vi modifos aŭ uzos niajn datumojn,\
-        \ vi povos distribui la verkon nur laŭ la sama permesilo. Legu la <a href='%{copyright_path}'>paĝon\
-        \ pri aŭtorrajto kaj permesilo</a> por pli da detaloj."
       legal_title: Leĝaj demandoj
-      legal_1_html: Tiu ĉi retejo kaj aliaj servoj estas formale administrataj de
-        la <a href="https://osmfoundation.org/">Fondaĵo OpenHistoricalMap</a> (OSMF)
-        komisie de la komunumo. Uzado de ĉiuj OSMF‑servoj estas regulata per niaj
-        <a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">kondiĉoj de uzado</a>,
-        <a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">politiko
-        de akceptata uzo</a>, kaj nia <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">politiko
-        de privateco</a>.
-      legal_2_html: |-
-        <a href="https://osmfoundation.org/Contact">Kontaktu kun OSMF</a>, se vi havas iun demandon pri permesilo, aŭtorrajto aŭ leĝo.<br>
-        OpenHistoricalMap, la bildsimbolo de lupeo kaj “State of the Map” estas <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">registritaj varmarkoj de OSMF</a>.
       partners_title: Kunlaborantoj
     copyright:
       foreign:
@@ -1978,61 +1935,13 @@ eo:
         native_link: Esperanta versio
         mapping_link: ekigi mapigadon
       legal_babble:
-        title_html: Aŭtorrajto kaj permesilo
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> estas projekto de <i>malfermaj datumoj</i> eldonita laŭ la permesilo <a
-          href="https://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> (ODbL) de la  <a
-          href="http://osmfoundation.org/">Fondaĵo OpenHistoricalMap</a> (OSMF).
-        intro_2_html: Vi rajtas kopii, disdoni, transdoni kaj modifi niajn datumojn,
-          nur se vi atribuos aŭtorecon al OpenHistoricalMap kaj ĝiaj kontribuintoj.
-          Se vi modifos aŭ uzos niajn datumojn, vi povos distribui la verkon laŭ la
-          sama permesilo. La plena <a href="https://opendatacommons.org/licenses/odbl/1.0/">interkonsento
-          de uzado</a> klarigas viajn rajtojn kaj devojn.
-        intro_3_1_html: Nia dokumentaro estas eldonita laŭ la permesilo <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.eo">Krea
-          Komunaĵo Atribuite-Samkondiĉe 2.0</a> (CC BY-SA 2.0).
-        credit_title_html: Kiel atribui aŭtorecon
-        credit_1_html: 'Ni postulas, ke vi markos: “&copy; kontribuintoj de OpenHistoricalMap”'
-        credit_2_1_html: Vi ankaŭ devas klarigi, ke datumoj estas disponeblaj laŭ
-          la permesilo Open Database License, kaj kartografio de map-kaheloj laŭ la
-          permesilo CC BY-SA. Vi povas indiki tion per fari ligilon al <a href="https://www.openstreetmap.org/copyright">tiu
-          ĉi paĝo pri permesilo</a>. Alimaniere, se vi distribuas OSM en datuma formo,
-          vi povas mencii nomo(j)n kaj ligilo(j)n al la permesilo(j). Se ne estas
-          eble meti ligilojn (ekz. en paperaj mapoj), ni sugestas direkti viajn legantojn
-          al openstreetmap.org (eble meti plenan retadreson), al opendatacommons.org
-          kaj (se necesas) al creativecommons.org.
         attribution_example:
-          alt: Ekzemplo kiel atribui OpenHistoricalMap sur retpaĝo
           title: Ekzemplo de aŭtorec-atribuado
         more_title_html: Pliaj informoj
-        more_1_html: |-
-          Pliaj informoj pri uzado de niaj datumoj kaj pri kiel atribui aŭtorecon troviĝas sur la <a
-          href="https://osmfoundation.org/Licence">retpaĝo pri permesilo OSMF</a>.
-        contributors_title_html: Kunlaborantoj
-        contributors_intro_html: 'Niaj kunlaborantoj estas miloj da homoj. Ni ankaŭ
-          inkludas datumoj laŭ malferma permesilo el landaj kartografiaj organizaĵoj
-          kaj el aliaj fontoj, inter ili:'
-        contributors_footer_1_html: Pliaj informoj pri la menciitaj kaj pri aliaj
-          fontoj uzitaj por plibonigi OpenHistoricalMap estas disponeblaj sur la <a
-          href="https://wiki.openstreetmap.org/wiki/Contributors">paĝo pri kontribuintoj</a>
-          en la OpenHistoricalMap-vikio.
-        contributors_footer_2_html: Inkludo de datumoj en OpenHistoricalMap ne indikas,
-          ke la provizanto de datumoj apogas OpenHistoricalMap, garantias por iu aŭ
-          respondumas por iu.
         infringement_title_html: Rompo de aŭtorrajtoj
         infringement_1_html: OSM-kunlaborantoj memoru, por ke neniam aldonu datumojn
           el iuj ajn fontoj protektataj de aŭtorrajtoj (ekz. Google Maps aŭ paperaj
           mapoj) sen klara permeso de posedanto de aŭtorrajtoj.
-        infringement_2_html: Se ve pensas, ke datumoj protektataj per aŭtorrajtoj
-          estas misaldonitaj al OpenHistoricalMap-datumbazo aŭ al tiu ĉi retejo, legu
-          la <a href="https://wiki.osmfoundation.org/wiki/Takedown_procedure">proceduron
-          de forigo de datumoj</a> (en la angla) aŭ plenigu la <a href="https://dmca.openstreetmap.org/">enretan
-          formularon</a>.
-        trademarks_title_html: <span id="trademarks"></span>Registritaj markoj
-        trademarks_1_html: OpenHistoricalMap, la bildsimbolo de lupeo kaj la nomo
-          “State of the Map” estas registritaj markoj de la Fondaĵo OpenHistoricalMap.
-          Se vi havas iujn demandojn pri uzado de niaj markoj, legu nian <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">politikon
-          pri varmarkoj</a>.
     index:
       js_1: Vi aŭ uzas foliumilon, kiu ne subtenas Ĝavoskripton, aŭ vi havas ĝin malaktivan.
       js_2: OpensStreetMap uzas Ĝavoskripton por montri ŝoveblan mapon.
@@ -2062,9 +1971,6 @@ eo:
       map_image: Bildo de mapo (norma tavolo)
       embeddable_html: Enkorpigebla HTML
       licence: Permesilo
-      export_details_html: OpenHistoricalMap-datumoj estas disponeblaj laŭ la permesilo
-        <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open Data Commons
-        Open Database License</a> (ODbL).
       too_large:
         advice: 'Se la elportado malsukcesis, bonvolu uzi unu el jenaj fontoj:'
         body: La elektita areo estas tro granda por esti elportita kiel XML-datumojn
@@ -2122,40 +2028,24 @@ eo:
         por demandi pri ion ajn kaj kune diskuti kaj dokumenti pri mapigado.
       welcome:
         url: /welcome
-        title: Bonvenon al OpenHistoricalMap
-        description: Komencu ekde ĉi tiu manlibreto ampleksanta fundamentojn de OpenHistoricalMap.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Beginners%27_guide
-        title: Manlibro por komencantoj
-        description: Manlibro por komencantoj kreata de la komunumo (en la angla).
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Helpa forumo
         description: Demandu aŭ serĉu respondojn ĉe retpaĝo de demandoj-kaj-respondoj
           pri OpenHistoricalMap.
-      mailing_lists:
-        title: Dissendolistoj
-        description: Demandu aŭ diskutu pri interesaj temoj en multaj pritemaj aŭ
-          regionaj dissendolistoj.
+      mailing_lists: {}
       forums:
         title: Forumoj
         description: Demandoj kaj diskutoj por tiuj, kiuj preferas kutimaj diskutforumoj.
-      irc:
-        title: IRC
-        description: Interaga babilejo en multaj diversaj lingvoj kaj pri multaj temoj.
-      switch2osm:
-        title: switch2osm
-        description: Helpi al firmaoj kaj organizaĵoj transiĝi al mapoj kaj aliaj
-          servoj de OpenHistoricalMap.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Por organizaĵoj
         description: Ĉu via organizaĵo planas kunlabori kun OpenHistoricalMap? Trovu
           ĉiujn necesajn informojn ĉe nia Welcome Mat.
-      wiki:
-        url: https://wiki.openstreetmap.org/wiki/Eo:Main_Page
-        title: OpenHistoricalMap-vikio
-        description: Esploru la vikion por akiri detalan dokumentaron pri OpenHistoricalMap.
+      wiki: {}
     potlatch:
       removed: Via implicita OpenHistoricalMap‑reaktilo estas Potlatch. Pro la fakto,
         ke Adobe Flash Player estis eksigita, la redaktilo Potlatch ne estas plu uzebla
@@ -2250,22 +2140,10 @@ eo:
           toilets: Necesejo
     welcome:
       title: Bonvenon!
-      introduction_html: Bonvenon al OpenHistoricalMap, la libera kaj redaktebla mapo
-        de la mondo. Nun kiam vi registriĝis, vi povas ekigi mapigadon. Jen estas
-        mallonga manlibreto kun la plej gravaj aĵoj kiuj vi povas scii.
       whats_on_the_map:
         title: Kio estas sur la mapo
-        on_html: OpenHistoricalMap estas loko por mapigi objektojn, kiuj estas <em>kaj
-          realaj kaj aktualaj</em> - tiu estas milionoj da konstruaĵoj, vojoj kaj
-          aliaj detalaĵoj pri lokoj. Vi povas mapigi ĉiujn elementojn de reala mondo
-          kiuj interesas vin.
-        off_html: Ni <em>ne povas</em> inkludi personajn taksojn, eksajn aŭ malcertajn
-          objektojn, kaj datumoj de kopirajtataj fontoj. Escepte se vi estas permesita,
-          ne kopiu datumoj el aliaj interretaj aŭ paperaj mapoj.
       basic_terms:
         title: Fundamentaj terminoj pri mapigado
-        paragraph_1_html: OpenHistoricalMap havas sian propran ĵargonon. Jen estas
-          kelkaj utilaj vorotoj.
         editor_html: <strong>Redaktilo</strong> estas programo aŭ retpaĝo, kiun vi
           povas uzi por modifi mapon.
         node_html: <strong>Nodo</strong> (ang. «node») estas punkto sur la mapo, kiel
@@ -2276,19 +2154,8 @@ eo:
           nodon aŭ linion, kiel nomo de restoracio aŭ rapidlimo de vojo.
       rules:
         title: Reguloj!
-        paragraph_1_html: "OpenHistoricalMap havas malmultajn formalajn regulojn,\
-          \ tamen ni esperas, ke ĉiuj kunlaboros kaj interparolos en la komunumo.\
-          \ Se vi planas iujn agadojn aliajn ol permanajn redaktojn, bonvolu legi\
-          \ la sekvajn rekomendojn pri <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>enportoj</a>\
-          \ kaj \n<a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>aŭtomataj\
-          \ redaktoj</a>."
       questions:
         title: Iaj demandoj?
-        paragraph_1_html: OpenHistoricalMap havas plurajn ejojn por lerni pri la projekto,
-          por demandi pri ion ajn kaj kune diskuti kaj dokumenti pri mapigado. <a
-          href='%{help_url}'>Alklaku por ricevi helpon</a>. Ĉu via organizaĵo planas
-          kunlabori kun OpenHistoricalMap? Trovu pliajn informojn ĉe nia <a href='https://welcome.openstreetmap.org/'>Welcome
-          Mat</a>.
       start_mapping: Ekigi mapigadon
       add_a_note:
         title: Ĉu mankas al vi tempo por redakti? Aldonu rimarkon!
@@ -2897,7 +2764,6 @@ eo:
         gps: Publikaj GPS-spuroj
         overlays: Aktivigu surtavolojn por solvi problemojn kun la mapo
         title: Tavoloj
-      copyright: © <a href='%{copyright_url}'>kontribuintoj de OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Donaci</a>
       terms: <a href='%{terms_url}' target='_blank'>Kondiĉoj pri Retejo kaj API</a>
       cyclosm: Stilo de kaheloj de <a href='%{cyclosm_url}' target='_blank'>CyclOSM</a>,

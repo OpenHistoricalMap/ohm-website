@@ -233,11 +233,9 @@ kk-cyrl:
         aeroway:
           aerodrome: Әуеайлақ
           airstrip: Жеңіл ұшаққа арналған ҰҚЖ
-          apron: Перрон
           hangar: Ангар
           helipad: Тікұшақ алаңы
           runway: Ұшу-қону жолағы
-          terminal: Терминал
         amenity:
           arts_centre: Өнер орталығы
           atm: Банкомат
@@ -392,8 +390,6 @@ kk-cyrl:
           "yes": Қиылыс
         landuse:
           cemetery: Зират
-          conservation: Қорық
-          construction: Құрылыс
           farm: Ферма
           forest: Орман шаруашылығы
           garages: Гараждар
@@ -733,18 +729,14 @@ kk-cyrl:
       image_size: 'Сурет өлшемі:'
       export_button: Экспорттау
     help:
-      welcome:
-        title: OpenHistoricalMap-ке қош келдіңіз
+      welcome: {}
       forums:
         title: Форумдар
-      irc:
-        title: IRC
-      switch2osm:
-        title: switch2osm
+      irc: {}
+      switch2osm: {}
       welcomemat:
         title: Ұйымдар үшін
-      wiki:
-        title: OpenHistoricalMap Уики
+      wiki: {}
     sidebar:
       search_results: Іздеу нәтижелері
       close: Жабу

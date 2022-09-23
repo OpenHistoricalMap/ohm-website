@@ -358,15 +358,12 @@ az:
       prefix:
         aeroway:
           aerodrome: Aerodrom
-          apron: Perron
-          gate: Enmə zonasına çıxış
           hangar: Anqar
           helipad: Vertalyot meydançası
           holding_position: Gözləmə yeri
           parking_position: Parkinq yeri
           runway: Uçuş-enmə zolağı
           taxiway: Sürmə yolu
-          terminal: Terminal
         amenity:
           arts_centre: İncəsənət mərkəzi
           atm: Bankomat
@@ -403,9 +400,6 @@ az:
           fire_station: Yanğın söndürmə Stansiyası
           food_court: Açıq havada Yeməkxana
           fountain: Fontan
-          fuel: Yanacaq doldurma
-          gambling: Oyun evi
-          grave_yard: Qəbirsanlıq
           hospital: Qospital
           hunting_stand: Ov stendi
           ice_cream: Dondurma
@@ -543,8 +537,6 @@ az:
           brownfield: Tərk edilmiş ərazi
           cemetery: Məzarlıq
           commercial: Ticarət sahəsi
-          conservation: Konservasiya ərazisi
-          construction: Tikinti
           farm: Ferma
           farmland: Kənd təsərrüfatı
           farmyard: Ferma həyəti
@@ -564,7 +556,6 @@ az:
           reservoir: Su anbarı
           reservoir_watershed: Suayrıcı su anbarı
           residential: Yaşayış sahəsi
-          retail: Ticarət ərazisi
           village_green: Yaşıllıq kənd
           vineyard: Üzümlük
         leisure:
@@ -710,7 +701,6 @@ az:
           cosmetics: Kosmetika Dükanı
           department_store: Universam
           discount: Endirimli mallar dükanı
-          doityourself: Özün düzəlt
           dry_cleaning: Quru təmizləmə
           electronics: Elektronika dükanı
           estate_agent: Əmlak agenti
@@ -727,7 +717,6 @@ az:
           grocery: Baqqal Dükanı
           hairdresser: Saç ustası
           hardware: Məişət Alətləri Dükanı
-          hifi: Audio və Video avadanlıqları dükanı
           jewelry: Zərgərlik dükanı
           kiosk: Kiosk
           laundry: Camaşırxana
@@ -756,7 +745,6 @@ az:
           artwork: İncəsənət əsərləri dükanı
           attraction: Attraksion
           bed_and_breakfast: Gecələmə və səhər yeməyi yeri
-          cabin: Daxma
           camp_site: Düşərgə
           caravan_site: Təkərli evlər üçün dayanacaq
           chalet: Kənd evi
@@ -962,17 +950,9 @@ az:
         native_link: azərbaycan versiyası
         mapping_link: kartoqrafiyalaşdırmağa başla
       legal_babble:
-        title_html: Müəllif hüquqları və Lisenziyalar
-        intro_1_html: |-
-          OpenHistoricalMap <a
-          href="http://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> (ODbL) lisenziyası üzrə istifadə olunan <i>açıq məlumatlardan</i> ibarətdir.
-        credit_title_html: OpenHistoricalMap-ə Necə istinad etmək olar
         attribution_example:
-          alt: Nümunə üçün, veb-səhifədən OpenHistoricalMap-ə necə istinad vermək
           title: Müəllifin göstərilməsinin nümunəsi
         more_title_html: Daha ətraflı öyrən
-        contributors_title_html: Kimlər bizim layihəyə töhfə verir
         infringement_title_html: Müəllif hüquqlarının pozulması
     index:
       shortlink: Qısa keçid
@@ -999,8 +979,7 @@ az:
       paste_html: Veb sayta quraşdırmaq üçün HTML kod
       export_button: İxrac etmək
     help:
-      beginners_guide:
-        url: http://wiki.openstreetmap.org/wiki/Az:Beginners%27_guide
+      beginners_guide: {}
     sidebar:
       search_results: Axtarış Nəticələri
       close: Bağla

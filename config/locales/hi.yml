@@ -568,8 +568,6 @@ hi:
         aeroway:
           aerodrome: हवाई अड्डा
           airstrip: हवाई पट्टी
-          apron: ऐप्रन
-          gate: गेट
           hangar: हैंगर
           helipad: हेलिपैड
           holding_position: होल्डिंग की जगह
@@ -578,7 +576,6 @@ hi:
           runway: रनवे
           taxilane: टैक्सी-लेन
           taxiway: टैक्सी का रास्ता
-          terminal: टर्मिनल
           windsock: विंडसॉक
         amenity:
           animal_boarding: जानवरों की जगह
@@ -624,10 +621,6 @@ hi:
           fire_station: अग्निशमन केन्द्र
           food_court: आहार गृह
           fountain: फंव्वारा
-          fuel: ईंधन
-          gambling: जुआ
-          grave_yard: कब्रिस्तान
-          grit_bin: ग्रिट बिन
           hospital: अस्पताल
           hunting_stand: शिकार की जगह
           ice_cream: आईसक्रीम
@@ -761,7 +754,6 @@ hi:
           "yes": ऐतिहासिक स्थल
         landuse:
           cemetery: क़ब्रिस्तान
-          construction: निर्माण
           farm: खेत
           farmland: खेत
           forest: जंगल
@@ -771,7 +763,6 @@ hi:
           mine: खान
           reservoir: जलाशय
           residential: आवासिक क्षेत्र
-          retail: व्यापार
         leisure:
           fitness_centre: जिम
           garden: बाग
@@ -965,8 +956,7 @@ hi:
     about:
       partners_title: हमारे साथी
     copyright:
-      legal_babble:
-        contributors_title_html: हमारे योगदानकर्ता
+      legal_babble: {}
     export:
       area_to_export: क्षेत्र निर्यात करने के लिए
       manually_select: कृपया, आप एक अलग क्षेत्र चुनिए
@@ -980,9 +970,7 @@ hi:
     help:
       forums:
         title: मंच
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: ओपनस्ट्रीटमैप विकि
+      wiki: {}
     key:
       table:
         entry:

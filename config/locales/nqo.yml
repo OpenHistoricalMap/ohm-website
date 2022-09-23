@@ -547,7 +547,6 @@ nqo:
           cable_car: ߘߎ߲ߞߎߟߎ߲
           chair_lift: ߥߎߟߊߛߌ߯ߝߋ߲
         aeroway:
-          gate: ߘߏ߲߬ߘߊ
           hangar: ߜߕߊ
           helipad: ߛߊ߲ߡߊߘߊ߲
           holding_position: ߛߊ߲ߡߊߘߊ߲߫ ߦߙߐ
@@ -556,7 +555,6 @@ nqo:
           runway: ߓߏ߬ߙߌ߬ ߛߌߟߊ
           taxilane: ߛߌߟߊ߫ ߡߊߡߌ߬ߘߊ߬ߣߍ߲ ߠߎ߬ ߞߐ߲߰ߛߏ ߛߙߊ߬ߕߊ ߦߋ߫
           taxiway: ߥߊߛߌߥߊߟߌ߫ ߛߌߟߊ
-          terminal: ߟߊ߬ߓߊ߲
         amenity:
           animal_boarding: ߓߌߦߊ߲߫ ߠߊߦߟߍ߫ ߦߌߟߊ
           arts_centre: ߞߎ߬ߛߊ߲߬ߧߊ ߕߊ߲ߓߊ߲
@@ -587,9 +585,6 @@ nqo:
           embassy: ߟߊ߬ߛߌ߰ߘߊ
           fire_station: ߕߊ߫ ߟߊߛߟߊ ߟߎ߬
           fountain: ߕߋ߲߬ߞߋ
-          fuel: ߖߋ߬ߣߌ߲߬ߕߊ
-          gambling: ߣߊ߲߬ߞߊ߬ߡߎ߲߬ߣߊ߲ߞߊߡߎ߲
-          grave_yard: ߞߊߓߙߎߟߏ
           hospital: ߘߊ߲ߘߊߛߏ
           ice_cream: ߣߍߣߍߞߓߊ
           internet_cafe: ߓߟߐߟߐ߫ ߞߊߝߋ
@@ -843,7 +838,6 @@ nqo:
           craft: ߓߟߏߟߊߓߊ߯ߙߟߊ ߟߎ߬ ߡߊߛߐ߫ ߝߎ߲ߞߎ߲
           curtain: ߥߊ߲߬ߥߊ߲߬ ߝߎ߲ߞߎ߲
           department_store: ߡߣߐ߬ߓߏ߲߬ ߓߊ
-          doityourself: ߞߵߊ߬ ߞߴߌ ߖߘߍ߬ߦߋ߫
           e-cigarette: ߢߎߡߍߙߋ߲߫ ߛߙߊߡߟߋߞߋ ߝߎ߲ߞߎ߲
           electronics: ߢߎߡߍߙߋ߲߫ ߝߎ߲ߞߎ߲
           erotic: ߋߙߏߕߌߞ ߝߎ߲ߞߎ߲
@@ -889,7 +883,6 @@ nqo:
           wine: ߖߊ߬ߓߌ߬ߙߋ߲߬ ߘߟߐ ߝߎ߲ߞߎ߲
           "yes": ߝߎ߲ߞߎ߲
         tourism:
-          cabin: ߓߎ߭
           camp_site: ߞߎ߲ߝߊ߲ߓߐ߫ ߞߣߍ
           hostel: ߖߌ߬ߦߊ߬ߓߏ߲
           hotel: ߖߌ߬ߦߊ߬ߓߏ߲
@@ -1015,8 +1008,6 @@ nqo:
     edit_with: ߊ߬ ߡߊߦߟߍ߬ߡߊ߲߫ %{editor} ߘߌ߫
     tag_line: ߥߞߌ ߛߙߊ߬ߓߊߟߌ ߘߎߢߊ߫ ߔߊ߬ߔߘߊ
     intro_header: ߌ ߣߌ߫ ߛߣߍ߫ ߏߔߌ߲߫ ߛߕߑߙߌߕ ߡߊߔ ߞߊ߲߬߹
-    intro_text: ߏߔߌ߲߫ ߛߕߑߙߌߕ ߡߊߔ ߦߋ߫ ߘߎߢߊ߫ ߔߊ߬ߔߘߊ ߟߋ߬ ߘߌ߫߸ ߡߍ߲ ߛߌ߲ߘߌߣߍ߲߫ ߦߋ߫ ߡߐ߱ ߟߎ߬
-      ߓߟߏ߫ ߦߏ߫ ߌߟߋ߸ ߊ߬ ߟߊߓߊ߯ߙߊ ߦߋ߫ ߛߙߊ߬ߓߊߟߌ ߟߋ߬ ߘߌ߫ ߟߊ߬ߘߤߊ߬ߟߌ߫ ߘߊߦߟߍ߬ߣߍ߲ ߞߘߐ߫.
     intro_2_create_account: ߖߊ߬ߕߋ߬ߘߊ ߘߏ߫ ߘߊߦߟߍ߬
     partners_ucl: UCL
     partners_fastly: ߝߊߛߕߑߟߋ߫
@@ -1357,12 +1348,6 @@ nqo:
     about:
       next: ߢߍߕߊ
       copyright_html: <span>&copy;</span>ߏߔߌ߲߫ ߛߑߕߙߌߕ ߡߊߔ<br>ߓߟߏߓߌߟߊߢߐ߲߯ߞߊ߲ ߠߎ߬
-      used_by_html: OpenHistoricalMap ߓߘߊ߫ ߡߊߔ ߘߕߊ ߡߊߛߐ߫ ߓߟߐߟߐ߫ ߞߍߦߙߐ ߥߊ߯ ߦߙߌߞߊ ߟߊ߫.
-        ߜߋߟߋ߲ߜߋߟߋ߲ ߟߥߊ߬ߟߌ߬ߟߊ߲ ߣߌ߫ ߞߍߟߊ߲߫ ߛߎ߲ߝߘߍߡߊ ߟߎ߬
-      lede_text: "ߏߔߌ߲ߛߑߕߙߌߕߑߡߊߔ ߟߊߘߊ߲ߣߍ߲߫ ߦߋ߫ ߔߊ߬ߔߘߊ߬ߦߊ߬ߟߊ ߘߍ߬ߘߊ ߟߎ߬ ߟߋ߬ ߓߟߏ߫ ߡߍ߲\
-        \ ߠߎ߬ ߦߋ߫ ߡߊ߬ߜߍ߲ ߞߍ߫ ߟߊ߫ ߓߟߏߡߟߊߞߏ ߘߐ߫߸ ߊ߬ ߣߌ߫ ߞߵߊ߬ ߘߊߘߐߓߍ߲߬. \nߞߊ߬ ߓߍ߲߬ ߛߌߟߊ\
-        \ ߟߎ߬ ߡߊ߬߸ ߜߋ߬ߙߋ ߟߎ߬ ߡߊ߬߸ ߞߊߝߋ ߟߎ߬ ߡߊ߬߸ ߣߍ߰ߛߌߟߊ ߟߐ߬ߦߙߐ ߟߎ߬ ߡߊ߬߸ ߊ߬ ߣߌ߫ ߝߋ߲߫\
-        \ ߜߘߍ߫ ߛߌߦߊߡߊ߲߫ ߠߎ߫ ߘߎߢߊ߫ ߝߊ߲߭ ߓߍ߯ ߝߍ߬."
       local_knowledge_title: ߕߌ߲߬ߞߎߘߎ߲ ߡߊ߬ߟߐ߲߬ߠߌ߲
       community_driven_title: ߘߍ߬ߘߊ ߟߊ߬ߓߏ߬ߙߌ߬ߟߌ
       open_data_title: ߓߟߏߡߟߊ߫ ߘߊߦߟߍ߬ߣߍ߲
@@ -1376,10 +1361,7 @@ nqo:
         native_link: ߒߞߏ_ߕߐ߮_ߦߋ߫_ߦߊ߲߬ ߟߦߍ߬ߡߊ߲߬ߠߌ߲
         mapping_link: ߔߊ߬ߔߘߊ߬ߦߊ߬ߟߌ ߘߊߡߌ߬ߣߊ߫
       legal_babble:
-        title_html: ߓߊߦߟߍߡߊ߲ ߤߊߞߍ ߣߌ߫ ߕߌ߰ߦߊ
-        credit_title_html: ߟߊߒߣߦߊ ߦߋ߫ ߛߐ߬ߘߐ߲߬ ߠߊ߫ ߏߔߌ߲ߛߑߕߙߌߕߑߡߊߔ ߟߊ߫ ߘߌ߬
         more_title_html: ߛߌߦߊߡߊ߲߫ ߜߘߍ߫ ߟߎ߫ ߢߌߣߌ߲ ߦߴߌ ߘߐ߫
-        contributors_title_html: ߊ߲ ߠߊ߫ ߓߟߏߡߊߜߍ߲ ߠߎ߬
     index:
       permalink: ߛߘߌ߬ߜߋ߲߬ ߓߟߏߕߍ߰ߓߊߟߌ
       shortlink: ߛߘߌ߬ߜߋ߲߬ ߛߎߘߎ߲
@@ -1431,27 +1413,19 @@ nqo:
         ߣߝߊ߬ߢߐ߲߰ߦߊ ߣߌ߫ ߔߊ߬ߔߘߊ߬ߦߊ߬ߟߌ ߞߎ߲߬ߕߐ߮ ߟߎ߬ ߘߐ߬ߛߙߋ߬ߦߊ߬ߟߌ ߟߎ߬ ߘߐ߫.
       welcome:
         url: /welcome
-        title: ߌ ߣߌ߫ ߛߣߍ߫ ߏߔߌ߲߫ ߛߕߑߙߌߕ ߡߊߔ ߞߊ߲߬߹
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Beginners%27_guide
-        title: ߘߊߡߌߣߊߟߌߟߊ ߟߎ߬ ߢߍߡߌߘߊ
-        description: ߘߍ߬ߘߊ ߦߋ߫ ߢߍߡߌߘߊ ߘߏ߫ ߘߐߓߍ߲߬ ߠߊ߫ ߘߊߡߌߣߊߟߌߟߊ ߟߎ߬ ߦߋ߫.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: ߘߍ߬ߡߍ߲߬ߠߌ߲ ߟߐ߯ߓߊߟߐ
         description: ߢߌ߬ߣߌ߲߬ߞߊ߬ߟߌ ߘߏ߫ ߞߍ߫ ߤߊߡߊ߲ߕߍ߫ ߞߊ߬ ߖߋ߬ߓߌ ߘߏ߫ ߟߎ߫ ߡߊߝߟߍ߫ ߏߔߌ߲ߛߑߕߙߌߕߑߡߊߔ
           ߢߌ߬ߣߌ߲߬ߞߊ߬ߟߌ-ߣߴߊ߬-ߖߋ߬ߓߌ ߞߍߦߙߐ ߞߊ߲߬.
-      mailing_lists:
-        title: ߢߎߡߍߙߋ߲ߦߊߟߌ ߛߙߍߘߍ ߟߎ߬
+      mailing_lists: {}
       forums:
         title: ߟߐ߯ߓߊߟߐ
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: ߛߌ߲߬ߝߏ߲߬ߘߊ ߢߍ߫
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: ߏߔߌ߲ߛߑߕߙߌߕߑߡߊߔ ߥߞߌ
-        description: ߥߞߌ ߛߏ߲߯ߓߊ߫ ߏߔߌ߲ߛߑߕߙߌߕߑߡߊߔ ߘߐ߬ߛߙߋ߬ߦߊ߬ߟߌ߬ ߘߐߘߎ߲߰ߧߊ߬ߣߍ߲߬ ߞߏ߫ ߘߐ߫
+      wiki: {}
     sidebar:
       search_results: ߞߐߝߟߌ ߟߎ߬ ߢߌߣߌ߲߫
       close: ߊ߬ ߘߊߕߎ߲߯

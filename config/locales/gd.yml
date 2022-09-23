@@ -494,12 +494,9 @@ gd:
           station: Stèisean trama-adhair
         aeroway:
           aerodrome: Raon-adhair
-          apron: Aparan
-          gate: Geata
           helipad: Port-heileacoptair
           runway: Raon-laighe
           taxiway: Raon-cuairteachaidh
-          terminal: Tèirmineal
         amenity:
           animal_shelter: Fasgadh bheathaichean
           arts_centre: Ionad ealain
@@ -539,9 +536,6 @@ gd:
           fire_station: Stèisean-smàlaidh
           food_court: Talla bìdh
           fountain: Fuaran
-          fuel: Connadh
-          gambling: Cearrachas
-          grave_yard: Cladh
           hospital: Ospadal
           hunting_stand: Stannd seilge
           ice_cream: Reòiteagan
@@ -685,8 +679,6 @@ gd:
           brownfield: Fearann fàs
           cemetery: Cladh
           commercial: Raon malairt
-          conservation: Raon-glèidhteachais
-          construction: Làrach togail
           farm: Tuathanas
           farmland: Achaidhean
           farmyard: Clobhsa
@@ -706,7 +698,6 @@ gd:
           reservoir: Loch-tasgaidh
           reservoir_watershed: Amar-tasgaidh
           residential: Raon-còmhnaidh
-          retail: Bhuitean
           village_green: Rèidhlean
           vineyard: Fìon-lios
           "yes": Cleachdadh-fearainn
@@ -876,7 +867,6 @@ gd:
           deli: Delicatessen
           department_store: Mòr-bhùth
           discount: Bùth nithean saora
-          doityourself: Bùth leasachadh dachaigh
           dry_cleaning: Tioram-ghlanadh
           electronics: Bùth leactronachd
           estate_agent: Ceannaiche-seilbhe
@@ -893,7 +883,6 @@ gd:
           grocery: Gròsair
           hairdresser: Gruagaire
           hardware: Bùth leasachadh dachaigh
-          hifi: HiFi
           jewelry: Bùth usgaran
           kiosk: Cìtheasg
           laundry: Taigh-nigheachain
@@ -924,7 +913,6 @@ gd:
           artwork: Obair-ealain
           attraction: Àite inntinneach
           bed_and_breakfast: Leabaidh is lìte
-          cabin: Ceabain
           camp_site: Làrach campachaidh
           caravan_site: Làrach charabhanaichean
           chalet: Chalet
@@ -1001,8 +989,6 @@ gd:
     edit_with: Deasaich le %{editor}
     tag_line: Mapa uicidh saor an t-saoghail
     intro_header: Fàilte gu OpenHistoricalMap!
-    intro_text: "'S e mapa an t-saoghail a tha san OpenHistoricalMap a chaidh a chruthachadh\
-      \ le daoine mar thu fhèin 's a tha saor fo cheadachas fhosgailte."
     intro_2_create_account: Cruthaich cunntas cleachdaiche
     partners_ucl: UCL VR Centre
     partners_bytemark: Bytemark Hosting
@@ -1311,25 +1297,9 @@ gd:
     about:
       next: Air adhart
       copyright_html: <span>&copy;</span>Co-thabhartaichean<br>OpenHistoricalMap
-      used_by_html: Bheir %{name} dàta mapa dha mhìltean de làraichean-lìn, aplacaidean
-        inneil-làimhe agus uidheaman bathair-chruaidh
-      lede_text: Tha OpenHistoricalMap 'ga thogail le coimhearsnachd de luchd-mapachaidh
-        a bheir dàta dhuinn mu rathaidean, slighean cafaidhean, stèiseanan-rèile agus
-        mòran a bharrachd air feadh an t-saoghail agus a nì obair-càraidh air.
       local_knowledge_title: Eòlas ionadail
-      local_knowledge_html: "'S ann gu bheil eòlas ionadail air aire OpenHistoricalMap.\
-        \ cleachdaich na co-thabhartaichean dealbhan adhair, uidheaman GPS agus mapaichean-làraich\
-        \ bun-theicneolach airson dearbhadh gu bheil OSM ceart agus làithreach."
       community_driven_title: Fo smachd na coimhearsnachd
-      community_driven_html: |-
-        Tha coimhearsnachd OpenHistoricalMap measgaichte, dealasach agus a' fàs gach latha. Gabhaidh na co-thabhartaichean againn a-steach luchd-mapa saor-thoileach, luchd shiostaman fiosrachaidh chruinn-eòlaich proifeiseanta, innleadairean a ruitheas na frithealaichean aig OSM, luchd taic dhaonnachdach a nì mapaichean air raointean fo dhunaidh agus mòran a bharrachd.
-        Airson barrachd fiosrachaidh mun choimhearsnachd, tadhail air <a href='%{diary_path}'>leabhraichean-latha</a>,
-        <a href='http://blogs.openstreetmap.org/'>blogaichean na coimhearsnachd</a> agus
-        làrach-lìn an <a href='http://www.osmfoundation.org/'>Fhonndais OSM</a>.
       open_data_title: Dàta fosgailte
-      open_data_html: |-
-        'S e <i>dàta fosgailte</i> a tha san OpenHistoricalMap: faodaidh tu a chleachdadh a chum adhbhair sam bith cho fad 's a bheir thu urram air OpenHistoricalMap agus na co-thabhartaichean aige. Ma nì thu atharrachadh air an dàta againn no ma thogas tu rudeigin eile leis, faodaidh tu
-        an toradh a sgaoileadh fon aon cheadachas. Thoir sùil air <a href='%{copyright_path}'>Duilleag na còrach-lethbhreac agus a' cheadachais</a> airson barrachd fiosrachaidh.
       legal_title: Nòtaichean laghail
       partners_title: Com-pàirtichean
     copyright:
@@ -1346,72 +1316,14 @@ gd:
         native_link: tionndadh sa Ghàidhlig
         mapping_link: tòiseachadh air an obair-mhapa
       legal_babble:
-        title_html: Còir-lethbhreac agus ceadachas
-        intro_1_html: "'S e <i>dàta fosgailte</i> a tha san OpenHistoricalMap<sup><a\
-          \ href=\"#trademarks\">&reg;</a></sup> fo cheadachas <a href=\"http://opendatacommons.org/licenses/odbl/\"\
-          >Open Data Commons Open Database License</a> (ODbL) le <a href=\"http://osmfoundation.org/\"\
-          >Fonndas OpenHistoricalMap</a> (OSMF)."
-        intro_2_html: |-
-          Faodaidh tu lethbhreacan a dhèanamh dhen dàta againn, a sgaoileadh,
-          a thar-chur agus atharrachadh gu saor, cho fad 's a bheir thu urram
-          dha OpenHistoricalMap agus a cho-thabhartaichean. Ma nì thu atharrachadh
-          air an dàta againn no ma thogas tu rudeigin eile leis, faodaidh tu
-          an toradh a sgaoileadh fon aon cheadachas. Mìnichidh an
-          <a href="http://opendatacommons.org/licenses/odbl/1.0/">còd laghail</a>
-          slàn dè na còirichean agus na dleastanasan a tha agad.
-        intro_3_1_html: |-
-          Tha am mapachadh sna leacan mapa againn agus an docamaideadh againn
-          fo cheadachas <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons Attribution-ShareAlike 2.0</a> license (CC BY-SA).
-        credit_title_html: Mar a bheir thu urram dha OpenHistoricalMap
-        credit_1_html: |-
-          Tha e riatanach gun chleachd thu &ldquo;&copy; OpenHistoricalMap
-          contributors&rdquo; mar urram.
-        credit_2_1_html: |-
-          Feumaidh tu mìneachadh gu soilleir cuideachd gu bheil an dàta ri fhaighinn
-          fo cheadachas Open Database License, agus ma chleachdas tu na leacan mapa
-          againn gu bheil am mapachadh fo cheadachas CC BY-SA. Faodaidh tu seo
-          a dhèanamh le ceangal gun
-          <a href="http://www.openstreetmap.org/copyright">duilleag na còrach-lethbhreac seo</a>.
-          Mar roghainn eile agus gu riatanach ma sgaoileas tu OSM 'na dhàta,
-          's urrainn dhut an ceadachas/na ceadachasan ainmeachadh agus ceangal dìreach
-          a dhèanamh dhaibh. Ann am meadhanan far nach gabh ceangal a dhèanamh (can
-          stuthan clò-bhuailte), mholamaid gun stiùirich thu an luchd-leughaidh gu
-          openstreetmap.org (dh'fhaoidte gun leudaich thu 'OpenHistoricalMap' leis
-          an t-seòladh shlàn seo), gu opendatacommons.org agus ma tha seo iomchaidh gu
-          creativecommons.org.
         attribution_example:
-          alt: Ball-eisimpleir air mar a bheir thu urram dha OpenHistoricalMap air
-            duilleag-lìn
           title: Ball-eisimpleir air urram
         more_title_html: Barrachd fiosrachaidh
-        more_1_html: |-
-          Leugh barrachd air mar a chleachdas tu an dàta againn agus mar a
-          bheir thu urram dhuinn air <a href="http://osmfoundation.org/Licence">duilleag a' cheadachais OSMF</a> agus <a href="http://wiki.openstreetmap.org/wiki/Legal_FAQ">CÀBHA laghail</a> sa choimhearsnachd.
-        contributors_title_html: Na co-thabhartaicheean againn
-        contributors_intro_html: |-
-          'S e mìltean de dhaoine a tha sna co-thabhartaichean againn.
-          Gabhaidh sinn a-steach dàta fo cheadachas fosgailte aig buidhnean
-          mapachaidh nàiseanta agus tùsan eile, agus tha an fheadhainn a leanas
-          'nam measg:
-        contributors_footer_1_html: |-
-          Airson barrachd fiosrachaidh air an fheadhainn seo agus air barrachd
-          thùsan a chaidh a chleachdadh a chum piseachadh OpenHistoricalMap, thoir
-          sùil air <a href="http://wiki.openstreetmap.org/wiki/Contributors">Duilleag nan co-thabhartaichean</a>
-          air uicidh OpenHistoricalMap.
-        contributors_footer_2_html: Ma thèid dàta a ghabhail a-steach ann an OpenHistoricalMap,
-          chan eil e fillte a-staigh gun do chuir an solaraiche dàta tùsail aonta
-          ri OpenHistoricalMap, gun toireadh e barantas sam bith seachad no gum biodh
-          e fo fhiachanas sam bith.
         infringement_title_html: Briseadh a-steach air còraichean-lethbhreac
         infringement_1_html: Tha sinn a' cur an cuimhne nan co-thabhartaichean OSM
           nach cuir iad dàta o thùs fo chòir-lethbhreac ri OSM (can Google Maps no
           mapaichean clò-bhuailte) idir ach ma fhuair iad cead soilleir o shealbhadairean
           na còrach-lethbhreac.
-        infringement_2_html: |-
-          Ma tha thu dhen bheachd gun deach stuth fo chòir-lethbhreac a chur ri stòr-dàta OpenHistoricalMap no an làrach-lìn seo ann an dòigh nach eil iomchaidh, thoir sùil air a' <a href="http://www.osmfoundation.org/wiki/License/Takedown_procedure">mhodh toirt air falbh</a> againn no faidhlich e gu dìreach air an
-          <a href="https://dmca.openstreetmap.org/">duilleag faidhlidh air loidhne</a> againn.
-        trademarks_title_html: <span id="trademarks"></span>Comharran-malairt
     index:
       js_1: Tha thu a' chleachdadh brabhsair nach cuir taic ri JavaScript no chuir
         thu JavaScript à comas.
@@ -1444,8 +1356,6 @@ gd:
       map_image: Dealbh a' mhapa (seallaidh seo a' bhreath stannardach)
       embeddable_html: HTML a ghabhas leabachadh
       licence: Ceadachas
-      export_details_html: Tha OpenHistoricalMap fo cheadachas <a href="http://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a> (ODbL).
       too_large:
         advice: "Ma dh'fhàilligeas leis an às-phortadh gu h-àrd, feuch an cleachd\
           \ thu aon dhe na tùsan gu h-ìosal:"
@@ -1513,26 +1423,15 @@ gd:
         mun mhapa a chlàradh còmhla.
       welcome:
         url: /welcome
-        title: Fàilte gu OSM
-        description: Faigh toiseach tòiseachaidh air OpenHistoricalMap leis an stiùireadh
-          luath seo.
-      beginners_guide:
-        url: http://wiki.openstreetmap.org/wiki/Beginners%27_guide
-        title: Treòir an luchd-tòiseachaidh
-        description: Treòir leis a’ choimhearsnachd do luchd-tòiseachaidh
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: help.openstreetmap.org
         description: Faighnich ceist no rùraich na freagairtean air làrach nan ceistean
           àbhaisteach aig OSM.
-      mailing_lists:
-        title: Liostaichean-puist
-      switch2osm:
-        title: switch2osm
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: wiki.openstreetmap.org
-        description: Brabhsaich san uicidh airson docamaideadh mionaideach air OSM.
+      mailing_lists: {}
+      switch2osm: {}
+      wiki: {}
     sidebar:
       search_results: Toraidhean luirg
       close: Dùin
@@ -1617,22 +1516,10 @@ gd:
           toilets: Taighean-beaga
     welcome:
       title: Fàilte!
-      introduction_html: Fàilte gu OpenHistoricalMap, mapa saor an t-saoghail a ghabhas
-        deasachadh. Nise on a tha thu air clàradh, tha thu ullamh gus tòiseachadh
-        air an obair-mhapa. Seo treòir luath a bheir eòlas dhut air na rudan as cudromaiche.
       whats_on_the_map:
         title: Na tha air a' mhapa
-        on_html: |-
-          'S e àite a tha san OpenHistoricalMap gus mapa a dhèanamh de nithean a tha an dà chuid <em>fìos is làithreach</em> -
-          gabhaidh seo a-steach milleanan de thogalaichean, rathaidean agus fiosrachadh eile mu àiteachan. 'S urrainn dhut feart sam bith an t-saoghail fhìrinnich sa bheil ùidh agad a chur ris a' mhapa.
-        off_html: "'S ann <em>nach gabh e a-steach</em> dàta mu bheachdan a leithid\
-          \ rangachaidhean, feartan eachdraidheil no baralach no dàta o thùsan fo\
-          \ chòir-lethbhreac. Mur eil cead soilleir agad, na dèan lethbhreac o mhapaichean\
-          \ air loidhne no air pàipear."
       basic_terms:
         title: Teirmichean bunasach airson na h-obrach-mapa
-        paragraph_1_html: Tha cainnt shònraichte air OpenHistoricalMap. Seo facal
-          no dhà cudromach a bhios feumail dhut.
         editor_html: "'S e prògram no làrach-lìn a tha ann an <strong>deasaiche</strong>\
           \ as urrainn dhut cleachdadh gus am mapa a dheasachadh."
         node_html: "'S e puing air a' mhapa a tha ann an <strong>nòd</strong>, can\
@@ -1645,9 +1532,6 @@ gd:
         title: Riaghailtean!
       questions:
         title: A bheil ceist sam bith agad?
-        paragraph_1_html: |-
-          Tha iomadh goireas aig OpenHistoricalMap gus faighinn a-mach mun phròiseact, ceistean a chur 's a fhreagairt agus deasbad a dhèanamh is cuspairean mun mhapa a chlàradh còmhla.
-          <a href='%{help_url}'>Faigh cobhair an-seo</a>.
       start_mapping: Tòisich air an obair-mhapa
       add_a_note:
         title: Nach eil ùine agad airson deasachadh? Cuir nòta ris!
@@ -2137,7 +2021,6 @@ gd:
         overlays: Cuir tar-chòmhdachaidhean an comas gus duilgheadasan leis a' mhapa
           fhuasgladh
         title: Breathan
-      copyright: © <a href='%{copyright_url}'>Co-thabhartaichean OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Thoir tìodhlac
         dhuinn</a>
     site:

@@ -583,8 +583,6 @@ ba:
         aeroway:
           aerodrome: Аэродром
           airstrip: Осоу-ултырыу һыҙаты
-          apron: Перрон
-          gate: Ҡапҡа (аэропорт)
           hangar: Ангар
           helipad: Вертолет майҙансығы
           holding_position: Көтөү урыны
@@ -593,7 +591,6 @@ ba:
           runway: Осоу-ултырыу юлы
           taxilane: Такси юлы
           taxiway: Рулләү юлы
-          terminal: Терминал
           windsock: Виндсок
         amenity:
           animal_boarding: Хайуандар өсөн интернат
@@ -639,10 +636,6 @@ ba:
           fire_station: Янғын һүндереү һағы
           food_court: Ресторан ихатаһы
           fountain: Фонтан
-          fuel: Заправка
-          gambling: Уйын йорто
-          grave_yard: Зыярат
-          grit_bin: Грит Бин
           hospital: Госпиталь
           hunting_stand: Һунарсы вышкаһы
           ice_cream: Туңдырма
@@ -896,8 +889,6 @@ ba:
           brownfield: Төҙөлөш өсөн таҙартыу
           cemetery: Ҡәберлек
           commercial: Һатыу итеү яланы
-          conservation: Заповедник
-          construction: Төҙөлөш
           farm: Ферма
           farmland: Ауыл хужалығы ерҙәре
           farmyard: Ауыл хужалығы ихаталары
@@ -918,7 +909,6 @@ ba:
           reservoir: Һыу һаҡлағыс
           reservoir_watershed: Һыу һаҡлағыстың һыу айырсаһы
           residential: Йәшәү районы
-          retail: Һатыу итеү биләмәһе
           village_green: Йәшел ауыл
           vineyard: Йөҙөм баҡсаһы
           "yes": Ерҙе ҡулланыу

@@ -625,15 +625,12 @@ ar:
         aeroway:
           aerodrome: المطار
           airstrip: مهبط طائرات
-          apron: موقف طائرات
-          gate: البوابة
           hangar: حظيرة طائرات
           helipad: منصة مروحية
           holding_position: موقع الهبوط
           parking_position: موقف سيارات
           runway: مدرج إقلاع
           taxiway: مدرج المناورات
-          terminal: صالة مطار
         amenity:
           animal_shelter: مأوى للحيوانات
           arts_centre: مركز فني/ثقافي
@@ -675,10 +672,6 @@ ar:
           fire_station: محطة إطفاء
           food_court: مطعم وجبات سريعة
           fountain: نافورة
-          fuel: وقود
-          gambling: مقامرة
-          grave_yard: مقبرة
-          grit_bin: سلة حصى
           hospital: مستشفى
           hunting_stand: مربط للصيد
           ice_cream: مثلجات
@@ -868,8 +861,6 @@ ar:
           brownfield: أرض مخلفات
           cemetery: مقبرة
           commercial: منطقة تجارية
-          conservation: محمية طبيعية
-          construction: ورشة بناء
           farm: مزرعة
           farmland: أرض زراعية
           farmyard: فناء مزرعة
@@ -889,7 +880,6 @@ ar:
           reservoir: خزان
           reservoir_watershed: خزان مستجمعات المياه
           residential: منطقة سكنية
-          retail: بيع بالتجزئة
           village_green: أرض خضراء
           vineyard: حقل عنب
           "yes": استخدام الأرض
@@ -1103,7 +1093,6 @@ ar:
           deli: دكان أطعمة شهية
           department_store: متجر متعدد الأقسام
           discount: محل عناصر خصم
-          doityourself: براعة منزلية
           dry_cleaning: تنظيف جاف
           electronics: متجر إلكترونيات
           estate_agent: وكيل عقاري
@@ -1120,7 +1109,6 @@ ar:
           grocery: بقالة
           hairdresser: حلاق
           hardware: متجر عتاد
-          hifi: متجر هاي فاي
           houseware: متجر أدوات منزلية
           interior_decoration: ديكور داخلي
           jewelry: متجر مجوهرات
@@ -1164,7 +1152,6 @@ ar:
           artwork: عمل فني
           attraction: معلم سياحي
           bed_and_breakfast: سرير وفطار
-          cabin: حُجرة أو مقصورة
           camp_site: موقع تخييم
           caravan_site: موقع قافلة
           chalet: شاليه
@@ -1344,11 +1331,7 @@ ar:
     edit_with: حرر باستعمال %{editor}
     tag_line: ويكي خريطة العالم الحرة
     intro_header: مرحبا بكم في خريطة الشارع المفتوحة!
-    intro_text: خريطة الشارع المفتوحة هي خريطة العالم، أُنشِئت بواسطة أشخاص مثلك وحرة
-      الاستخدام برخصة مفتوحة.
     intro_2_create_account: أنشئ حساب مستخدم
-    hosting_partners_html: يتم دعم الاستضافة بواسطة %{ucl} و%{fastly} و%{bytemark}
-      و%{partners} آخرين.
     partners_ucl: UCL
     partners_bytemark: استضافة Bytemark
     partners_partners: الشركاء
@@ -1662,43 +1645,10 @@ ar:
     about:
       next: التالي
       copyright_html: <span>&copy;</span>OpenHistoricalMap<br>contributors
-      used_by_html: OpenHistoricalMap تدعم البيانات على آلالاف من مواقع الويب وتطبيقات
-        الجوّال والأجهزة
-      lede_text: تم بناء خريطة الشارع المفتوحة من قبل مجتمع من مصممي الخرائط، وتساهم
-        وتحافظ على البيانات حول الطرق والممرات والمقاهي ومحطات السكك الحديدية، وأكثر
-        من ذلك بكثير، في جميع أنحاء العالم.
       local_knowledge_title: المعرفة المحلية
-      local_knowledge_html: |-
-        خريطة الشارع المفتوحة يؤكد على المعرفة المحلية، يستخدم المساهمون
-        الصور الجوية وأجهزة GPS والخرائط الميدانية ذات التقنية المنخفضة للتحقق من ذلك خريطة الشارع المفتوحة
-        دقيقة وحديثة.
       community_driven_title: نابعة من المجتمع المحلي
-      community_driven_html: "مجتمع خريطة الشارع المفتوحة متنوع ومتحمس وينمو كل يوم،\
-        \ \nيشمل المساهمون لدينا مصممي خرائط متحمسون، ومهنيي نظم المعلومات الجغرافية،\
-        \ والمهندسون \nالذين يديرون خوادم خريطة الشارع المفتوحة، والمساعدات الإنسانية\
-        \ للمناطق المتضررة من الكوارث،\nوغيرها الكثير،\nلمعرفة المزيد حول المجتمع;\
-        \ راجع \n<a href='https://blog.openstreetmap.org'>مدونة خريطة الشارع المفتوحة</a>،\n\
-        و<a href='%{diary_path}'> يوميات المستخدم</a>،\nو<a href='https://blogs.openstreetmap.org/'>مدونات\
-        \ المجتمع</a>،\nوموقع the <a href='https://www.osmfoundation.org/'>مؤسسة خريطة\
-        \ الشارع المفتوحة</a>."
       open_data_title: البيانات المفتوحة
-      open_data_html: "خريطة الشارع المفتوحة <i>بيانات مفتوحة</i>: أنت حر في استخدامها\
-        \ لأي غرض\nطالما أنك تقوم بإحالة خريطة الشارع المفتوحة والمساهمين فيها، إذا\
-        \ عدلت أو \nبنيت على البيانات بطرق معينة، فلا يجوز لك توزيع النتيجة إلا \n\
-        تحت نفس الترخيص، راجع <a href='%{copyright_path}'>صفحة حقوق\nالطبع والنشر\
-        \ والترخيص</a> للتفاصيل."
       legal_title: قانوني
-      legal_1_html: |-
-        يتم تشغيل هذا الموقع والعديد من الخدمات الأخرى ذات الصلة رسميا بواسطة
-        <a href='https://osmfoundation.org/'>مؤسسة خريطة الشارع المفتوحة</a> (OSMF)
-        نيابة عن المجتمع، يخضع استخدام جميع الخدمات التي تديرها مخشم
-        <a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">لشروط الاستخدام</a>، و<a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">
-        Acceptable Use Policies</a> <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">سياسة الخصوصية</a> الخاصة بنا.
-      legal_2_html: |-
-        يُرجَى <a href='https://osmfoundation.org/Contact'>الاتصال بمخشم</a>
-        if you have licensing, copyright or other legal questions.
-        <br>
-        خريطة الشارع المفتوحة وشعار العدسة المكبرة وحالة الخريطة هي <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">علامات تجارية مسجلة لمخشم</a>.
       partners_title: الشركاء
     copyright:
       foreign:
@@ -1714,66 +1664,14 @@ ar:
         native_link: النسخة العربية
         mapping_link: ابدأ التخطيط
       legal_babble:
-        title_html: حقوق النشر والترخيص
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup>  عبارة عن <i> بيانات مفتوحة</i>، ومرخصة تحت <a
-          href="https://opendatacommons.org/licenses/odbl/">رخصة قاعدة بيانات حرة</a> (ODbL)
-          بواسطة <a href="https://osmfoundation.org/">مؤسسة خريطة الشارع المفتوحة</a> (OSMF).
-        intro_2_html: "أنت حر في نسخ، وتوزيع، ونقل وتطويع بياناتنا، \nطالما أنك تقيد\
-          \ خريطة الشارع المفتوحة\nوالمساهمين فيها، إذا عدلت أو بنيت على بياناتنا،\
-          \ \nفلا يحق لك توزيع النتيجة إلا تحت نفس الترخيص، و\n<a href=\"https://opendatacommons.org/licenses/odbl/1.0/\"\
-          >الكود القانوني</a> الكامل يشرح حقوقك ومسؤولياتك."
-        intro_3_1_html: |-
-          يتم  ترخيص رسم الخرائط في بلاط خرائطنا، ووثائقنا
-          بموجب ترخيص <a href="https://creativecommons.org/licenses/by-sa/2.0/">رخصة المشاع الإبداعي: النسبة-الترخيص بالمثل 2.0</a> (CC BY-SA).
-        credit_title_html: كيفية النسبة لخريطة الشارع المفتوحة
-        credit_1_html: |-
-          نطلب منك استخدام الائتمان &ldquo;&copy; OpenHistoricalMap
-          contributors&rdquo;.
-        credit_2_1_html: "يجب أيضا أن توضح أن البيانات متوفرة بموجب ترخيص\nقاعدة البيانات\
-          \ المفتوحة، وفي حالة استخدام بلاط خرائطنا، يتم \nترخيص رسم الخرائط كـCC\
-          \ BY-SA، يمكنك القيام بذلك عن طريق الربط بـ\n<a href=\"https://www.openstreetmap.org/copyright\"\
-          >صفحة حقوق الطبع والنشر هذه</a>.\nبدلا من ذلك، وكشرط إذا كنت تقوم بتوزيع\
-          \ خريطة الشارع المفتوحة في \nنموذج بيانات، فيمكنك التسمية والربط مباشرةً\
-          \ إلى الترخيص(التراخيص). في وسائل الإعلام\nحيث الروابط غير ممكنة (مثل الأعمال\
-          \ المطبوعة)، نقترح عليك \nتوجيه القراء إلى openstreetmap.org (ربما عن طريق\
-          \ توسيع \n'OpenHistoricalMap' إلى هذا العنوان الكامل)، وإلى opendatacommons.org،\
-          \ \nوإذا كان ذلك مناسبا، إلى creativecommons.org."
         attribution_example:
-          alt: مثال على كيفية إسناد خريطة الشارع المفتوحة على صفحة ويب
           title: مثال الإسناد
         more_title_html: معرفة المزيد
-        more_1_html: |-
-          اقرأ المزيد حول استخدام بياناتنا ، وكيفية اعتمادنا ، على <a
-          href = "https://osmfoundation.org/Licence"> صفحة ترخيص OSMF </a>
-        contributors_title_html: المساهمين
-        contributors_intro_html: "مساهمونا هم آلاف الأفراد، نوفر أيضا \nبيانات مرخصة\
-          \ بشكلٍ مفتوح من وكالات الخرائط الوطنية \nوغيرها من المصادر، من بينها:"
-        contributors_footer_1_html: |-
-          لمزيد من التفاصيل عن هذه ، وغيرها من المصادر التي تم استخدامها
-          للمساعدة في تحسين OpenHistoricalMap ، يرجى الاطلاع على <a
-          أ href = "https://wiki.openstreetmap.org/wiki/Contributors"> المساهمون
-          الصفحة </a> على OpenStreetMap Wiki.
-        contributors_footer_2_html: |-
-          إدراج البيانات في OpenHistoricalMap لا يعني أن الأصلي
-          مزود البيانات يؤيد OpenHistoricalMap ، يوفر أي ضمان ، أو
-          يقبل أي مسؤولية.
         infringement_title_html: انتهاك حقوق الملكية
         infringement_1_html: |-
           يتم تذكير المساهمين OSM لا لإضافة البيانات من أي
           المصادر المحمية بحقوق الطبع والنشر (مثل خرائط Google أو الخرائط المطبوعة) بدون
           إذن صريح من أصحاب حقوق النشر.
-        infringement_2_html: |-
-          إذا كنت تعتقد أن المواد المحمية بحقوق الطبع والنشر غير ملائمة
-          إضافة إلى قاعدة بيانات OpenHistoricalMap أو هذا الموقع ، يرجى الرجوع
-          إلى <a href="https://www.osmfoundation.org/wiki/License/Takedown_procedure"> إزالة الموقع
-          الإجراء </a> أو الملف مباشرة في موقعنا
-          <a href="https://dmca.openstreetmap.org/"> صفحة الإيداع عبر الإنترنت </a>.
-        trademarks_title_html: <span id="trademarks"></span>علامات تجارية
-        trademarks_1_html: OpenHistoricalMap ، وشعار العدسة المكبرة وحالة الخريطة
-          هي علامات تجارية مسجلة لمؤسسة OpenHistoricalMap. إذا كانت لديك أسئلة حول
-          استخدامك للعلامات ، فيرجى الاطلاع على <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">
-          سياسة العلامات التجارية </a>.
     index:
       js_1: إما أنك تستخدم متصفحا لا يدعم جافا سكريبت، أو أنك عطلت استعمال جافا سكريبت.
       js_2: خريطة الشارع المفتوحة تستخدم جافا سكريبت لخريطتها المنزلقة.
@@ -1803,8 +1701,6 @@ ar:
       map_image: صورة الخريطة (عرض الطبقة الإفتراضية)
       embeddable_html: HTML مضمن
       licence: الرخصة
-      export_details_html: بيانات خريطة الشارع المفتوحة مرخصة تحت <a href="https://opendatacommons.org/licenses/odbl/1.0/">رخصة
-        قاعدة بيانات حرة</a>.
       too_large:
         advice: 'إذا فشل التصدير أعلاه، فكِّر من فضلك باستخدام أحد المصادر الموضَّحة
           أدناه:'
@@ -1865,40 +1761,24 @@ ar:
         \ بشكل تعاوني."
       welcome:
         url: أهلا بك.
-        title: مرحبًا بك في خريطة الشارع المفتوحة
-        description: ابدأ مع هذا الدليل السريع تغطية أساسيات خريطة الشارع المفتوحة.
-      beginners_guide:
-        url: http://wiki.openstreetmap.org/wiki/Ar:Beginners%27_guide
-        title: دليل المبتدئين
-        description: دليل من المجتمع للمبتدئين.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: منتدى المساعدة
         description: اطرح سؤالاً أو ابحث عن إجابات في قسم أسئلة وأجوبة الخاص بموقع
           خريطة الشارع المفتوحة
-      mailing_lists:
-        title: القوائم البريدية
-        description: طرح سؤال أو مناقشة المسائل المثيرة للاهتمام بشأن مجموعة واسعة
-          من القوائم البريدية الموضعية أو الإقليمية.
+      mailing_lists: {}
       forums:
         title: المنتديات
         description: أسئلة ومناقشات لأولئك الذين يفضلون واجهة نمط لوحة الإعلانات.
-      irc:
-        title: آي آر سي
-        description: دردشة تفاعلية بالعديد من اللغات المختلفة، وحول العديد من المواضيع.
-      switch2osm:
-        title: switch2osm
-        description: مساعدة للشركات والمؤسسات في التحول إلى خرائط خريطة الشارع المفتوحة
-          الموجودة وغيرها من الخدمات.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: للمنظمات
         description: مع منظمة تضع خططا لخريطة الشارع المفتوحة؟ اعثر على ما تريد معرفته
           في سجادة الترحيب.
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: ويكي خريطة الشارع المفتوحة
-        description: تصفح ويكي خريطة الشارع المفتوحة لمعلوماتٍ أكثر تعمقًا.
+      wiki: {}
     sidebar:
       search_results: نتائج البحث
       close: أغلق
@@ -1984,23 +1864,10 @@ ar:
           toilets: مرحاض
     welcome:
       title: مرحبا!
-      introduction_html: مرحبًا بك في OpenHistoricalMap ، خريطة حرة وقابلة للتعديل
-        بواسطة العالم. الآن بعد أن سجلت، أنت جاهز للبدء في رسم الخرائط، وإليك دليل
-        سريع مع الأشياء الأكثر أهمية تحتاج إلى معرفتها.
       whats_on_the_map:
         title: ما على الخريطة
-        on_html: |-
-          OpenHistoricalMap هو مكان لرسم خرائط الأشياء <em> الحقيقية والحالية </ em> -
-          ويشمل الملايين من المباني والطرق وتفاصيل أخرى عن الأماكن. يمكنك الخريطة
-          مهما كانت ميزات العالم الحقيقي مثيرة للاهتمام بالنسبة لك.
-        off_html: |-
-          ما لا تتضمنه <em> لا </ em> هو بيانات برأيه مثل التصنيفات أو التاريخ أو
-          ميزات افتراضية وبيانات من مصادر محمية بحقوق الطبع والنشر. ما لم يكن لديك خاصة
-          إذن ، لا تنسخ من الخرائط عبر الإنترنت أو الورقية.
       basic_terms:
         title: شروط أساسية لرسم الخرائط
-        paragraph_1_html: خريطة الشارع المفتوحة لديها بعض اللغات الخاصة بها، وفيما
-          يلي بعض الكلمات الرئيسية التي سوف تأتي في متناول اليدين.
         editor_html: <strong>محرر</strong> هو برنامج أو موقع يمكنك استخدامه لتعديل
           الخريطة.
         node_html: <strong>عقدة</strong> هي نقطة على الخريطة، مثل مطعم واحد أو شجرة
@@ -2011,19 +1878,8 @@ ar:
           اسم أحد المطاعم أو الحد الأقصى للسرعة على الطريق.
       rules:
         title: قواعد!
-        paragraph_1_html: |-
-          يحتوي OpenHistoricalMap على بعض القواعد الرسمية ولكننا نتوقع أن يتعاون جميع المشاركين
-          مع المجتمع والتواصل معه. إذا كنت تفكر
-          أي أنشطة بخلاف التحرير باليد ، يرجى قراءة الإرشادات واتباعها
-          <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'> الواردات </a> و
-          <a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'> التعديلات التلقائية </a>.
       questions:
         title: هل هناك أسئلة؟
-        paragraph_1_html: "تحتوي خريطة الشارع المفتوحة على العديد من الموارد للتعلم\
-          \ حول المشروع، وطرح \nالأسئلة والإجابة عليها، ومناقشة مواضيع التخطيط وتوثيقها\
-          \ بشكل تعاوني،\n<a href='%{help_url}'>احصل على المساعدة هنا</a>، مع منظمة\
-          \ تضع خططا لخريطة الشارع المفتوحة؟ <a href='https://welcome.openstreetmap.org/'>تحقق\
-          \ من سجادة الترحيب</a>."
       start_mapping: ابدأ التخطيط
       add_a_note:
         title: لا وقت للتعديل؟ أضف ملاحظة!
@@ -2566,7 +2422,6 @@ ar:
         gps: آثار جي بي أس العمومية
         overlays: تمكين طبقات لاستكشاف الخريطة
         title: الطَبقات
-      copyright: © <a href='%{copyright_url}'>مساهمو خريطة الشارع المفتوحة</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>تقديم تبرع</a>
       terms: <a href='%{terms_url}' target='_blank'> مصطلحات الموقع و API</a>
       cyclosm: نمط البلاط بواسطة <a href='%{cyclosm_url}' target='_blank'></a> المستضاف

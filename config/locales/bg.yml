@@ -538,14 +538,11 @@ bg:
           t-bar: Седалков лифт
         aeroway:
           aerodrome: Летище
-          apron: Перон
-          gate: Врата
           hangar: Хангар
           helipad: Вертолетна площадка
           runway: Писта
           taxilane: Таксилента
           taxiway: Път за рулиране
-          terminal: Терминал
         amenity:
           animal_shelter: Приют за животни
           arts_centre: Център на изкуствата
@@ -586,9 +583,6 @@ bg:
           ferry_terminal: Фериботен терминал
           fire_station: Пожарна станция
           fountain: Фонтан
-          fuel: Гориво
-          gambling: Хазартни игри
-          grave_yard: Гробище
           hospital: Болница
           hunting_stand: Ловна стоянка
           ice_cream: Сладолед
@@ -788,8 +782,6 @@ bg:
           brownfield: Замърсена земя
           cemetery: Гробище
           commercial: Търговска зона
-          conservation: Резерват
-          construction: Строителство
           farm: Ферма
           farmland: Обработваема земя
           farmyard: Стопански двор
@@ -995,7 +987,6 @@ bg:
           curtain: Магазин за завеси
           deli: Деликатесен магазин
           department_store: Универсален магазин
-          doityourself: Направи сам
           dry_cleaning: Химическо чистене
           e-cigarette: Магазин е-цигари
           electronics: Магазин за електроника
@@ -1017,7 +1008,6 @@ bg:
           hairdresser: Фризьорски салон
           hardware: Железария
           health_food: Магазин Здравословна храна
-          hifi: Аудиосистеми
           houseware: Домашни потреби
           ice_cream: Магазин за Сладолед
           jewelry: Бижутериен магазин
@@ -1059,7 +1049,6 @@ bg:
           apartment: Ваканционен апартамент
           artwork: Произведениe на изкуството
           attraction: Атракция
-          cabin: Кабина
           camp_site: Лагер
           caravan_site: Къмпинг
           chalet: Бунгало
@@ -1217,11 +1206,7 @@ bg:
     edit_with: Променяне с %{editor}
     tag_line: Свободна Wiki-карта на света
     intro_header: Добре дошли в OpenHistoricalMap!
-    intro_text: OpenHistoricalMap е карта на света създадена от хора като вас, за
-      свободно ползване и под отворен лиценз.
     intro_2_create_account: Създаване на сметка
-    hosting_partners_html: Хостингът се поддържа от %{ucl}, %{fastly}, %{bytemark}
-      и други %{partners}.
     partners_ucl: UCL
     partners_bytemark: Bytemark
     partners_partners: партньори
@@ -1487,8 +1472,6 @@ bg:
     about:
       next: Напред
       copyright_html: <span>&copy;</span>сътрудници на<br>OpenHistoricalMap
-      used_by_html: OpenHistoricalMap осигурява картографски данни на хиляди страници,
-        мобилни приложения и устройства
       local_knowledge_title: Местно познание
       open_data_title: Отворени данни
       legal_title: Правни въпроси
@@ -1507,16 +1490,8 @@ bg:
         native_link: българската версия
         mapping_link: картографирате
       legal_babble:
-        title_html: Авторски права и лиценз
-        credit_title_html: Как да кредитирате OpenHistoricalMap
         more_title_html: Открийте повече
-        contributors_title_html: Нашите сътрудници
         infringement_title_html: Нарушаване на авторските права
-        trademarks_title_html: <span id="trademarks"></span>Търговски марки
-        trademarks_1_html: OpenHistoricalMap и логото с лупата са регистрирани търговски
-          марки на фондация OpenHistoricalMap. Ако имате въпроси относно използването
-          на тези знаци, моля изпратете Вашите въпроси на <a href="http://wiki.osmfoundation.org/wiki/Licensing_Working_Group">работната
-          група по лиценза</a>.
     index:
       js_2: OpenHistoricalMap използва JavaScript за своята статична карта.
       permalink: Постоянна връзка
@@ -1570,28 +1545,21 @@ bg:
       title: Получаване на помощ
       welcome:
         url: /welcome
-        title: Добре дошли в OpenHistoricalMap
-      beginners_guide:
-        title: Наръчник за начинаещи
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Форум за поддръжка
-      mailing_lists:
-        title: Пощенски списъци
+      mailing_lists: {}
       forums:
         title: Форуми
-      irc:
-        title: IRC
-      switch2osm:
-        title: switch2osm
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: За организации
         description: Вие сте от организация, която иска да работи с OpenHistoricalMap?
           Ще получите необходимата информация на началната страница.
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: Уики на OpenHistoricalMap
+      wiki: {}
     sidebar:
       search_results: Резултати от търсенето
       close: Затваряне
@@ -2017,7 +1985,6 @@ bg:
         gps: Публични следи от GPS
         overlays: Слоеве за отстраняване на грешки
         title: Слоеве
-      copyright: © <a href='%{copyright_url}'>Сътрудници на OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Направете дарение</a>
       terms: <a href='%{terms_url}' target='_blank'>Условия на страницата и API</a>
     site:

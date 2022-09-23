@@ -661,8 +661,6 @@ vi:
         aeroway:
           aerodrome: Sân bay
           airstrip: Bãi hạ cánh
-          apron: Sân Đậu Máy bay
-          gate: Cổng
           hangar: Nhà Máy bay
           helipad: Sân bay Trực thăng
           holding_position: Chỗ Dừng Máy bay
@@ -671,7 +669,6 @@ vi:
           runway: Đường băng
           taxilane: Làn Đường lăn
           taxiway: Đường lăn
-          terminal: Nhà ga Sân bay
           windsock: Ống gió
         amenity:
           animal_boarding: Vườn bách thú
@@ -717,10 +714,6 @@ vi:
           fire_station: Trạm Cứu hỏa
           food_court: Khu Ẩm thực
           fountain: Vòi nước
-          fuel: Cây xăng
-          gambling: Xe Cáp treo Lớn
-          grave_yard: Nghĩa địa
-          grit_bin: Thùng Muối
           hospital: Bệnh viện
           hunting_stand: Ghế Dựng để Săn bắn
           ice_cream: Tiệm Kem
@@ -949,8 +942,6 @@ vi:
           brownfield: Cánh đồng Nâu
           cemetery: Nghĩa địa
           commercial: Khu vực Thương mại
-          conservation: Bảo tồn
-          construction: Công trường Xây dựng
           farm: Trại
           farmland: Trại
           farmyard: Sân Trại
@@ -971,7 +962,6 @@ vi:
           reservoir: Bể nước
           reservoir_watershed: Lưu vực Hồ Nhân tạo
           residential: Khu vực Nhà ở
-          retail: Khu vực Buôn bán
           village_green: Sân Làng
           vineyard: Vườn Nho
           "yes": Sử dụng đất
@@ -1208,7 +1198,6 @@ vi:
           deli: Deli
           department_store: Cửa hàng Bách hóa
           discount: Cửa hàng Giảm giá
-          doityourself: Tiệm Ngũ kim
           dry_cleaning: Hấp tẩy
           e-cigarette: Tiệm Thuốc lá Điện tử
           electronics: Tiệm Thiết bị Điện tử
@@ -1227,7 +1216,6 @@ vi:
           hairdresser: Tiệm Làm tóc
           hardware: Tiệm Ngũ kim
           herbalist: Tiệm Dược thảo
-          hifi: Cửa hàng Hi-fi
           houseware: Cửa hàng gia dụng
           ice_cream: Tiệm Kem
           interior_decoration: Trang trí Nội thất
@@ -1283,7 +1271,6 @@ vi:
           artwork: Tác phẩm Nghệ thuật
           attraction: Nơi Du lịch
           bed_and_breakfast: Nhà trọ
-          cabin: Túp lều
           camp_site: Nơi Cắm trại
           caravan_site: Bãi Đậu Nhà lưu động
           chalet: Nhà ván
@@ -1464,11 +1451,7 @@ vi:
     edit_with: Sửa đổi dùng %{editor}
     tag_line: Bản đồ Thế giới trên Wiki Mở
     intro_header: Chào mừng đến với OpenHistoricalMap!
-    intro_text: OpenHistoricalMap là bản đồ thế giới do những người như bạn xây dựng
-      và cho phép sử dụng thoải mái theo một giấy phép nguồn mở.
     intro_2_create_account: Mở tài khoản mới
-    hosting_partners_html: Dịch vụ lưu trữ nhờ sự hỗ trợ của %{ucl}, %{fastly}, %{bytemark},
-      và %{partners} khác.
     partners_ucl: UCL
     partners_fastly: Fastly
     partners_bytemark: Bytemark Hosting
@@ -1857,40 +1840,10 @@ vi:
     about:
       next: Tiếp
       copyright_html: <span>&copy;</span>những người<br>đóng góp vào<br>OpenHistoricalMap
-      used_by_html: OpenHistoricalMap cung cấp dữ liệu bản đồ cho hàng ngàn trang
-        Web, ứng dụng di động, và thiết bị phần cứng
-      lede_text: OpenHistoricalMap được xây dựng bởi cộng đồng những người đóng góp
-        và bảo quản dữ liệu về đường sá, tòa nhà, quán cà phê, nhà ga, và đủ mọi thứ
-        ở khắp thế giới.
       local_knowledge_title: Kiến thức Địa phương
-      local_knowledge_html: OpenHistoricalMap chú trọng vào kiến thức địa phương.
-        Những người đóng góp sử dụng hình ảnh từ không trung, các thiết bị GPS, và
-        các bản đồ phác thảo trên giấy để làm cho OSM chính xác và đúng thời.
       community_driven_title: Căn cứ vào Cộng động
-      community_driven_html: |-
-        Cộng đồng của OpenHistoricalMap gồm đủ loại người nhiệt tình và càng ngày càng phát triển.
-        Cộng đồng gồm những người tình nguyện vẽ bản đồ, các chuyên gia GIS, các kỹ sư bảo quản các máy chủ OSM. Chúng ta vẽ bản đồ quê hưởng, những nơi du lịch, những nơi bị thiên tai (để hỗ trợ cơ quan nhân đạo), và nhiều hơn nữa.
-        Để tìm hiểu thêm về cộng đồng này, hãy đọc <a href='https://blog.openstreetmap.org'>Blog OpenHistoricalMap</a>, các <a href='%{diary_path}'>nhật ký của người dùng</a>,
-        <a href='https://blogs.openstreetmap.org/'>blog của cộng đồng</a>, và trang chủ <a href='https://www.osmfoundation.org/'>Quỹ OSM</a>.
       open_data_title: Dữ liệu Mở
-      open_data_html: "OpenHistoricalMap là <i>dữ liệu mở</i>: bạn được tự do sử dụng\
-        \ nó cho bất cứ mục đích nào, miễn là bạn ghi công OpenHistoricalMap và những\
-        \ người đóng góp vào nó. Nếu bạn tạo ra một tác phẩm thay đổi dữ liệu hoặc\
-        \ dựa trên dữ liệu theo một số cách nhất định, bạn chỉ được phép phân phối\
-        \ tác phẩm kết quả dưới cùng giấy phép này. Hãy xem chi tiết tại <a href='%{copyright_path}'>trang\
-        \ Bản quyền và Giấy phép</a>."
       legal_title: Pháp luật
-      legal_1_html: Trang Web này và nhiều dịch vụ có liên quan được hoạt động chính
-        thức bởi <a href='https://osmfoundation.org/?uselang=vi'>Quỹ OpenHistoricalMap</a>
-        (OSMF) thay mặt cho cộng đồng. Việc sử dụng các dịch vụ do OSMF hoạt động
-        phải tuân theo <a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use?uselang=vi">các
-        Điều khoản Sử dụng</a>, <a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy?uselang=vi">các
-        Quy định Sử dụng Hợp lý</a> and our <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy?uselang=vi">Quy
-        định về Quyền Riêng tư</a> của chúng tôi.
-      legal_2_html: |-
-        Xin vui lòng <a href='https://osmfoundation.org/Contact?uselang=vi'>liên lạc với OSMF</a> nếu bạn có thắc mắc về giấy phép, bản quyền, hoặc thắc mắc khác về pháp luật.
-        <br>
-        OpenHistoricalMap, biểu trưng kính lúp, và State of the Map đều là <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy?uselang=vi">nhãn hiệu đăng ký của Quỹ OSM</a>.
       partners_title: Nhà bảo trợ
     copyright:
       foreign:
@@ -1905,65 +1858,13 @@ vi:
         native_link: bản dịch tiếng Việt
         mapping_link: bắt đầu vẽ bản đồ
       legal_babble:
-        title_html: Bản quyền và Giấy phép
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> là <i>dữ liệu mở</i> được phát hành theo <a
-          href="https://opendatacommons.org/licenses/odbl/">Giấy phép Cơ sở dữ liệu Mở của Open Data
-          Commons</a> (ODbL) bởi <a href="https://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF).
-        intro_2_html: Bạn được tự do sao chép, phân phối, truyền, và tạo ra các tác
-          phẩm phái sinh từ các dữ liệu của chúng ta, miễn là bạn ghi công OpenHistoricalMap
-          và những người đóng góp vào nó. Nếu bạn sửa đổi hoặc tạo sản phẩm dựa trên
-          các dữ liệu của chúng tôi, bạn chỉ được phép phân phối kết quả theo cùng
-          giấy phép. <a href="https://opendatacommons.org/licenses/odbl/1.0/">Mã pháp
-          lý</a> đầy đủ giải thích các quyền và trách nhiệm của bạn.
-        intro_3_1_html: "Tài liệu của chúng tôi được phát hành theo giấy phép <a href=\"\
-          https://creativecommons.org/licenses/by-sa/2.0/deed.vi\">Creative \nCommons\
-          \ Ghi công–Chia sẻ tương tự 2.0</a> (CC BY-SA)."
-        credit_title_html: Cách ghi công OpenHistoricalMap
-        credit_1_html: Chúng tôi bắt bạn phải sử dụng lời ghi công “© những người
-          đóng góp vào OpenHistoricalMap”.
-        credit_2_1_html: Bạn cũng phải giải thích rõ rằng dữ liệu được phát hành theo
-          Giấy phép Cơ sở dữ liệu Mở, và, nếu bạn đang sử dung các hình ảnh bản đồ
-          của chúng tôi, rằng các hình ảnh này được phát hành theo giấy phép CC BY-SA.
-          Bạn có thể thỏa mãn điều này bằng cách đặt liên kết đến <a href="https://www.openstreetmap.org/copyright">trang
-          bản quyền này</a>. Nếu bạn đang phân phối nguyên dữ liệu của OSM hoặc không
-          muốn đặt liên kết đến trang bản quyền của OSM, bạn có thể nói đến và đặt
-          liên kết trực tiếp đến (các) giấy phép. Nếu bạn đang sử dụng phương tiện
-          không cho phép đặt liên kết, chẳng hạn trong tác phẩm in giấy, chúng tôi
-          gợi ý chỉ các độc giả đến openstreetmap.org (có lẽ bằng cách mở rộng “OpenHistoricalMap”
-          trở thành địa chỉ đầy đủ này), đến opendatacommons.org, và nếu hợp lý, đến
-          creativecommons.org.
         attribution_example:
-          alt: Ví dụ ghi công OpenHistoricalMap trên một trang Web
           title: Ví dụ ghi công
         more_title_html: Tìm hiểu thêm
-        more_1_html: Hãy đọc thêm chi tiết về việc sử dụng dữ liệu của chúng tôi và
-          cách ghi công chúng tôi tại <a href="https://osmfoundation.org/Licence">trang
-          giấy phép Quỹ OSM</a>.
-        contributors_title_html: Những người đóng góp vào đây
-        contributors_intro_html: 'Dự án này nhờ công sức đóng góp của hàng ngàn cá
-          nhân và cũng bao gồm các dữ liệu có giấy phép mở từ các cơ quan khảo sát
-          quốc gia và những nguồn gốc khác, chẳng hạn:'
-        contributors_footer_1_html: |-
-          Xem thêm chi tiết và các nguồn gốc khác dùng để cải tiến OpenHistoricalMap tại <a
-          href="https://wiki.openstreetmap.org/wiki/Contributors?uselang=vi">trang Người đóng góp</a> trên OpenStreetMap Wiki.
-        contributors_footer_2_html: '  Việc bao gồm dữ liệu trong OpenHistoricalMap
-          không ngụ ý rằng nhà cung cấp dữ liệu đầu tiên ủng hộ OpenHistoricalMap,
-          biện hộ sự chính xác của nó, hoặc nhận trách nhiệm pháp lý nào.'
         infringement_title_html: Vi phạm bản quyền
         infringement_1_html: Những người đóng góp vào OSM được khuyên không bao giờ
           bổ sung dữ liệu từ những nguồn có bản quyền (chẳng hạn Bản đồ Google hoặc
           các bản đồ trên giấy) trước khi các nhà giữ bản quyền cho phép rõ ràng.
-        infringement_2_html: Nếu bạn tin rằng tài liệu có bản quyền đã được bổ sung
-          vào cơ sở dữ liệu OpenHistoricalMap hoặc trang này một cách không thích
-          đáng, xin vui lòng tham khảo <a href="https://www.osmfoundation.org/wiki/License/Takedown_procedure?uselang=vi">quá
-          trình <i>takedown</i></a> hoặc nộp đơn trực tiếp tại <a href="https://dmca.openstreetmap.org/">trang
-          khiếu nại trực tuyến</a> của chúng tôi.
-        trademarks_title_html: <span id="trademarks"></span>Nhãn hiệu
-        trademarks_1_html: OpenHistoricalMap, biểu trưng kính lúp, và State of the
-          Map đều là nhãn hiệu đăng ký của Quỹ OpenHistoricalMap. Nếu bạn có thắc
-          mắc về cách sử dụng các nhãn hiệu này, xin vui lòng tham khảo <a href="http://wiki.osmfoundation.org/wiki/Trademark_Policy?uselang=vi">Quy
-          định về nhãn hiệu</a> của chúng tôi.
     index:
       js_1: Hoặc trình duyệt của bạn không hỗ trợ JavaScript, hoặc bạn đã tắt JavaScript.
       js_2: OpenHistoricalMap sử dụng JavaScript cho chức năng bản đồ trơn.
@@ -1993,8 +1894,6 @@ vi:
       map_image: Hình Bản đồ (Lớp Chuẩn)
       embeddable_html: HTML để Nhúng
       licence: Giấy phép
-      export_details_html: Dữ liệu OpenHistoricalMap được phép sử dụng theo <a href="https://opendatacommons.org/licenses/odbl/1.0/">Giấy
-        phép Cơ sở dữ liệu Mở Open Data Commons</a> (ODbL).
       too_large:
         advice: 'Nếu việc xuất dữ liệu ở trên bị thất bại, hãy nghĩ đến việc sử dụng
           một trong những nguồn bên dưới:'
@@ -2056,40 +1955,24 @@ vi:
         án, hỏi đáp, và cộng tác soạn thảo tài liệu về các đề tài bản đồ.
       welcome:
         url: /welcome
-        title: Chào mừng đến OpenHistoricalMap
-        description: Bắt đầu với cẩm nang các điều cơ bản OpenHistoricalMap.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Vi:Beginners%27_guide
-        title: Hướng dẫn Bắt đầu
-        description: Hướng dẫn bắt đầu do cộng đồng biên tập.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Diễn đàn Trợ giúp
         description: Hỏi hang hoặc tìm kiếm các câu trả lời tại trung tâm hỏi đáp
           của OpenHistoricalMap.
-      mailing_lists:
-        title: Danh sách thư
-        description: Hỏi han hoặc thảo luận về các chuyện quan trọng trên nhiều danh
-          sách thư được sắp xếp theo chủ đề hoặc khu vực.
+      mailing_lists: {}
       forums:
         title: Diễn đàn
         description: Hỏi han và thảo luận trong một giao diện bảng tin.
-      irc:
-        title: IRC
-        description: Trò chuyện tương tác trong nhiều ngôn ngữ về nhiều chủ đề.
-      switch2osm:
-        title: switch2osm
-        description: Trợ giúp cho những công ty và tổ chức muốn đổi qua các bản đồ
-          và dịch vụ dựa trên OpenHistoricalMap.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Dành cho các tổ chức
         description: Tổ chức của bạn có tính tương tác với OpenHistoricalMap? Tìm
           hiểu thêm trong “Thảm Trước Cửa”.
-      wiki:
-        url: https://wiki.openstreetmap.org/wiki/Vi:Main_Page?uselang=vi
-        title: Wiki OpenHistoricalMap
-        description: Đọc tài liệu đầy đủ về OpenHistoricalMap trên wiki.
+      wiki: {}
     potlatch:
       removed: Bạn đã đặt trình vẽ OpenHistoricalMap mặc định là Potlatch. Vì Adobe
         Flash Player không còn được hỗ trợ, Potlatch không còn hoạt động trong trình
@@ -2184,24 +2067,10 @@ vi:
           toilets: Vệ sinh
     welcome:
       title: Hoan nghênh!
-      introduction_html: Chào mừng bạn đã đến OpenHistoricalMap, bản đồ thế giới có
-        dữ liệu mở được xây dựng bởi những người như bạn. Bây giờ bạn đã mở tài khoản
-        thì hãy cùng góp sức vẽ bản đồ. Đây là những căn bản cần biết để bắt đầu đóng
-        góp.
       whats_on_the_map:
         title: Mục đích của Bản đồ
-        on_html: OpenHistoricalMap là bản đồ chứa bất cứ những gì <em>hiện tại có
-          thật</em> – nó chứa biết bao tòa nhà, con đường, cửa hàng, cơ sở hạ tầng,
-          cây cối… đủ mọi thứ. Mời bạn bổ sung bất cứ những gì thu hút sự quan tâm
-          của bạn.
-        off_html: Nó <em>không</em> chứa các ý kiến như bài đánh giá, những gì không
-          hoặc không còn tồn tại, hoặc thông tin từ các nguồn giữ bản quyền. Bạn phải
-          xin phép của nhà giữ bản quyền mới được sao chép từ bản đồ giấy hay bản
-          đồ trực tuyến khác.
       basic_terms:
         title: Thuật ngữ Cơ bản
-        paragraph_1_html: 'Đây là những thuật ngữ thường gặp khi sử dụng và đóng góp
-          vào OpenHistoricalMap:'
         editor_html: <strong>Trình vẽ</strong> là một ứng dụng hoặc trang Web cho
           phép sửa đổi bản đồ.
         node_html: <strong>Nốt</strong> là một địa điểm trên bản đồ, thí dụ một nhà
@@ -2212,17 +2081,8 @@ vi:
           tên của một nhà hàng hoặc tốc độ tối đa của một con đường.
       rules:
         title: Quy định!
-        paragraph_1_html: "OpenHistoricalMap có ít quy định chính thức, nhưng chúng\
-          \ ta mong muốn tất cả mọi người tham gia mà cộng tác và giao thiệp với cộng\
-          \ đồng. Nếu bạn tính hoạt động ngoài việc sửa đổi thủ công, xin vui lòng\
-          \ đọc và tuân theo các hướng dẫn về việc <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines?uselang=vi'>nhập</a>\
-          \ và \n<a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct?uselang=vi'>tự\
-          \ động sửa đổi</a>."
       questions:
         title: Có thắc mắc?
-        paragraph_1_html: |-
-          OpenHistoricalMap có nhiều tài nguyên để cho bạn tìm hiểu về dự án, hỏi đáp, và cộng tác soạn thảo tài liệu về các đề tài bản đồ.
-          <a href='%{help_url}'>Nhận trợ giúp tại đây</a>. Nếu bạn thuộc về một tổ chức đang lập kế hoạch về OpenHistoricalMap, <a href='https://welcome.openstreetmap.org/'>hãy xem phần Thảm cửa Chào mừng</a>.
       start_mapping: Bắt đầu Đóng góp
       add_a_note:
         title: Không có Thì giờ Sửa đổi? Thêm một Ghi chú!
@@ -2833,7 +2693,6 @@ vi:
         gps: Tuyến đường GPS Công khai
         overlays: Bật lớp phủ để gỡ lỗi trên bản đồ
         title: Lớp
-      copyright: © <a href='%{copyright_url}'>những người đóng góp vào OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Quyên góp</a>
       terms: <a href='%{terms_url}' target='_blank'>Điều khoản trang Web và API</a>
       cyclosm: Kiểu hình ảnh bản đồ <a href='%{cyclosm_url}' target='_blank'>CyclOSM</a>

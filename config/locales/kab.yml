@@ -531,14 +531,11 @@ kab:
         aeroway:
           aerodrome: Anafag
           airstrip: Tazribt n tarussi
-          apron: Tamnaḍt n usseɣser
-          gate: Tabburt
           helipad: Anafag n ukuptir
           holding_position: Ideg n taganit
           parking_position: Amḍiq n aniɣsur
           runway: Tafuɣalt
           taxiway: Abrid n tkeṛṛust n unafag
-          terminal: Anemdu
         amenity:
           animal_shelter: Aglat n yiɣarsiwen
           arts_centre: Almus aẓuṛan
@@ -578,10 +575,6 @@ kab:
           fire_station: Taqcelt  n isexsayen
           food_court: Tamnaḍt n wučči
           fountain: Tala
-          fuel: Aserɣu
-          gambling: Uraren yidrimen
-          grave_yard: Tajebbant
-          grit_bin: Asenduq n tasent
           hospital: Asegnaf
           hunting_stand: Tanefsart n uselfeɣ
           ice_cream: Tamagrist
@@ -774,7 +767,6 @@ kab:
           gift: Taḥanut n isefan
           greengrocer: Ameznuz n lxeḍra
           hairdresser: Aḥeffaf
-          hifi: Taḥanut Hi-Fi
           interior_decoration: Azewweq n daxel
           jewelry: Taḥanut n sdaq
           lottery: Loto
@@ -841,8 +833,6 @@ kab:
     edit_with: Ẓreg s %{editor}
     tag_line: Takarḍa n uwiki ilelli n umaḍal
     intro_header: Anṣuf ar OpenHistoricalMap!
-    intro_text: OpenHistoricalMap d takarḍa n umadal, rnna-tt yemdanen am kečč d tilellit
-      i useqdec ddaw n turagt tilellit.
     intro_2_create_account: Rnu amiḍan n useqdac
     partners_ucl: UCL
     partners_bytemark: Tanezduɣt n Bytemark
@@ -1083,16 +1073,9 @@ kab:
         native_link: Tasuqilt s teqbaylit
         mapping_link: Bdu attekki
       legal_babble:
-        title_html: Izerfan n umeskar d turagt
-        intro_1_html: |-
-          OpenHistoricalMap d tagrumma n <i>isefka yeldin</i>, yellan ddaw n turagt <a
-          href="http://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database License</a> (ODbL).
-        credit_title_html: Amek ara ternuḍ asmad i OpenHistoricalMap
         attribution_example:
-          alt: Amedɣa ɣef wamek ara tettekkiḍ di OpenHistoricalMap s usebter web
           title: Amedya n uttekki
         more_title_html: Akken ad tafeḍ ugar n telɣut
-        contributors_title_html: Iwiziwen-nneɣ
     index:
       permalink: Aseɣwen yezgan
       shortlink: Aseɣwen awezlan
@@ -1108,8 +1091,6 @@ kab:
       map_image: Tugna n tkarḍa (ad tesken akalku n tegnut)
       embeddable_html: HTML yettwaslaɣen
       licence: Turagt
-      export_details_html: Isefka n OpenHistoricalMap ffɣen-d ddaw n <a href="http://opendatacommons.org/licenses/odbl/1.0/">Turaft
-        Open Data Commons Open Database</a> (ODbL).
       too_large:
         advice: 'Ma yella asifed ddaw-a yeɣli, seqdec ma ulac aɣilif tiɣbula yettwabedren
           ddaw-a:'
@@ -1158,27 +1139,17 @@ kab:
         neɣ ad teɣreḍ tasemlit ɣef isental n tira n tkarḍiwin d iseqdacen nniḍen.
       welcome:
         url: /welcome
-        title: Anɣuf ar OSM
-        description: Bdu s uminir-agi arurad yettmeslayen ɣef udasil n OpenHistoricalMap.
-      beginners_guide:
-        url: http://wiki.openstreetmap.org/wiki/Beginners%27_guide
-        title: Amnir n ulemad
-        description: Aminir i yinelmaden imaynuten i t-xeddem tmezdagnut.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: help.openstreetmap.org
         description: Steqsi neɣ nadi tiririyin deg usmel akked isteqsiyen n OSM.
-      mailing_lists:
-        title: Tabraṭṭ n tnezwit
+      mailing_lists: {}
       forums:
         title: Inmagaren
-      irc:
-        title: IRC
-      switch2osm:
-        title: switch2osm
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: wiki.openstreetmap.org
+      irc: {}
+      switch2osm: {}
+      wiki: {}
     sidebar:
       search_results: Igmad n unadi
       close: Mdel
@@ -1206,9 +1177,6 @@ kab:
         title: Ilugan!
       questions:
         title: Asteqsi?
-        paragraph_1_html: |-
-          OpenHistoricalMap tsumur ddeqs n tiɣbula ara t-issineḍ ad tesxedmeḍ deg usenfaṛ, akken ad testeqsiḍ neɣ ad t-muddeḍ tiririt, udiɣ ad tmeslayeḍ neɣ ad teɣreḍ tasemlit ɣef isental n tira n tkarḍiwin d iseqdacen nniḍen.
-          <a href='%{help_url}'>Wali afus dagi</a>.
   traces:
     new:
       help: Tallelt
@@ -1480,7 +1448,6 @@ kab:
     map:
       locate:
         title: Sken adig-iw
-      copyright: © <a href='%{copyright_url}'>Iwiziwen n OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Mudd tawsa</a>
     site:
       edit_tooltip: Ẓreg takarḍa

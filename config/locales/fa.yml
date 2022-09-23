@@ -680,8 +680,6 @@ fa:
         aeroway:
           aerodrome: فرودگاه هواپیما
           airstrip: پایگاه هوایی
-          apron: پیشگاه
-          gate: ورودی
           hangar: آشیانه هواپیما
           helipad: محل فرود هلی کوپتر
           holding_position: انتظارگاه ورود
@@ -689,7 +687,6 @@ fa:
           parking_position: موقعیت پارک‌کردن
           runway: باند فرودگاه
           taxiway: خزش‌راه
-          terminal: پایانه
           windsock: بادنمای کیسه‌ای
         amenity:
           animal_boarding: محل تحویل حیوانات
@@ -735,10 +732,6 @@ fa:
           fire_station: آتش‌نشانی
           food_court: پذيرايي
           fountain: فواره
-          fuel: پمپ بنزین
-          gambling: قمار
-          grave_yard: محوطهٔ گورستان
-          grit_bin: گریت‌بین
           hospital: بیمارستان
           hunting_stand: شکارگاه
           ice_cream: بستنی فروشی
@@ -984,8 +977,6 @@ fa:
           brownfield: زمین قهوه‌ای
           cemetery: قبرستان
           commercial: منطقهٔ تجاری
-          conservation: حفاظت شده
-          construction: در دست ساخت
           farm: مزرعه
           farmland: زمین های کشاورزی
           farmyard: محوطه مزرعه
@@ -1007,7 +998,6 @@ fa:
           reservoir: مخزن
           reservoir_watershed: آبخیزداری مخزن
           residential: منطقهٔ مسکونی
-          retail: خرده‌فروشی
           village_green: روستای سبز
           vineyard: تاکستان
           "yes": کاربری زمین
@@ -1242,7 +1232,6 @@ fa:
           deli: اغذیه فروشی
           department_store: فروشگاه بزرگ
           discount: اقلام تخفیف فروشگاه
-          doityourself: خودتان انجامش دهید
           dry_cleaning: تمیز کننده خشک
           e-cigarette: فروشگاه سیگار الکترونیک
           electronics: فروشگاه الکترونیکی
@@ -1263,7 +1252,6 @@ fa:
           hairdresser: سلمانی
           hardware: فروشگاه سخت افزار
           herbalist: عطاری
-          hifi: Hi-Fi
           houseware: فروشگاه لوازم خانگی
           ice_cream: بستنی‌فروشی
           interior_decoration: دکوراسیون داخلی
@@ -1315,7 +1303,6 @@ fa:
           artwork: آثار هنری
           attraction: جاذبه
           bed_and_breakfast: تخت‌خواب و صبحانه
-          cabin: کابین
           camp_site: محل اردوگاه
           caravan_site: مکان خودرو کاروان
           chalet: کلبه ییلاقی
@@ -1499,11 +1486,7 @@ fa:
     edit_with: ویرایش با %{editor}
     tag_line: نقشهٔ ویکی‌گونه و آزاد جهان
     intro_header: به OpenHistoricalMap خوش آمدید!
-    intro_text: OpenHistoricalMap نقشه‌ای از جهان است که افرادی مانند شما آن را ساخته‌اند
-      و آزادید آن را تحت پروانه‌ای آزاد استفاده کنید.
     intro_2_create_account: ساخت حساب کاربری
-    hosting_partners_html: میزبانی وب را %{ucl}،‏ %{fastly}،‏ %{bytemark} و سایر %{partners}
-      پشتیبانی می‌کنند.
     partners_ucl: UCL
     partners_bytemark: Bytemark Hosting
     partners_partners: شرکای تجاری
@@ -1918,42 +1901,10 @@ fa:
     about:
       next: بعدی
       copyright_html: <span>&copy;</span>مشارکت‌کنندگان<br>OpenHistoricalMap
-      used_by_html: OpenHistoricalMap برای هزاران وبسایت، برنامهٔ موبایل و دستگاه
-        سخت‌افزاری دادهٔ نقشه فراهم می‌کند.
-      lede_text: OpenHistoricalMap را جامعه‌ای از نقشه‌کشان ساخته‌اند که در ایجاد
-        و نگهداری داده‌های مربوط به جاده‌ها، مسیرهای تریل، کافه‌ها، ایستگاه‌های راه‌آهن
-        و بسیاری موارد دیگر در سرتاسر جهان نقش ایفا می‌کنند.
       local_knowledge_title: دانش محلی
-      local_knowledge_html: OpenHistoricalMap بر  دانش محلی تأکید دارد. مشارکت‌کنندگان
-        با استفاده از تصاویر هوایی، دستگاه‌های GPS و نقشه‌های میدانی با فناوری سطح
-        پایین، درستی و روزآمدی OSM را می‌سنجند.
       community_driven_title: حرکت جامعه‌محور
-      community_driven_html: |-
-        جامعهٔ OpenHistoricalMap متنوع، پرشور و هر روز در حال رشد است.
-        افراد بسیاری در این پروژه با ما همکاری می‌کنند؛ شامل نقشه‌کشان علاقه‌مند، متخصصان GIS، مهندسانی که سرورهای OSM را بر پا می‌دارند، بشردوستانی که مناطق فاجعه‌زده را نقشه‌کشی می‌کنند و بسیاری دیگر.
-        برای آنکه از جامعه بیشتر بدانید، ببینید:
-        <a href='https://blog.openstreetmap.org'>وبلاگ OSM</a>،
-        <a href='%{diary_path}'>روزنوشت‌های کاربران</a>،
-        <a href='https://blogs.openstreetmap.org/'>وبلاگ‌های جامعه</a> و
-        وبسایت <a href='https://www.osmfoundation.org/'>بنیاد OSM</a>.
       open_data_title: دادهٔ آزاد
-      open_data_html: "OpenHistoricalMap <i>دادهٔ آزاد</i> است: آزادید آن را در هر\
-        \ کاری استفاده کنید تا وقتی که از OpenHistoricalMap و مشارکت‌کنندگان آن یاد\
-        \ کنید. اگر داده‌ها را به‌شکلی تغییر دهید یا بر اساس آن‌ها چیزی بسازید، باید\
-        \ نتایج را تحت همین پروانه توزیع کنید. برای جزئیات بیشتر <a href='%{copyright_path}'>صفحهٔ\
-        \ حق‌نشر و پروانه</a> را ببینید."
       legal_title: قانونی
-      legal_1_html: |-
-        این سایت و خدمات فراوان دیگری که به آن وابسته‌اند به‌طور رسمی و به‌نمایندگی از جامعه تحت رهبری <a href='https://osmfoundation.org/'>بنیاد OpenHistoricalMap</a> ‏(OSMF) دایر است. استفاده از همهٔ خدماتی که تحت رهبری OSMF قرار دارد منوط به پذیرش <a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">
-        سیاست استفادهٔ قابل‌قبول</a>، <a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">شرایط استفاده</a> و <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">سیاست حریم خصوصی</a> ماست.
-        <br>
-        اگر در رابطه با پروانه، حق‌نشر یا سایر موارد قانونی سؤالی دارید لطفاً <a href='https://osmfoundation.org/Contact'>با OSMF تماس بگیرید</a>.
-        <br>
-        OpenHistoricalMap،‏ نشان‌وارهٔ ذره‌بین‌دار و State of the Map <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">نشان‌های تجاری ثبت‌شده و متعلق به بنیاد OpenHistoricalMap</a> هستند.
-      legal_2_html: |-
-        اگر دربارهٔ پروانه، حق‌نشر یا سایر مسائل حقوقی پرسشی دارید لطفاً <a href='https://osmfoundation.org/Contact'>با OSMF تماس بگیرید</a>.
-        <br>
-        OpenHistoricalMap، نشان‌وارهٔ ذره‌بین‌دار و State of the Map <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">نشان‌های تجاری متعلق به OSMF</a> هستند.
       partners_title: شرکای تجاری
     copyright:
       foreign:
@@ -1969,65 +1920,13 @@ fa:
         native_link: نسخهٔ فارسی
         mapping_link: شروع به نقشه‌کشی
       legal_babble:
-        title_html: حق‌نشر و پروانه
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup>  <i><abbr title="Open Data"></abbr>دادهٔ باز</i> است و از سوی  <a
-          href="https://osmfoundation.org/">بنیاد OpenHistoricalMap</a> ‏(OSMF) تحت پروانهٔ <a
-          href="https://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> ‏(ODbL) قرار دارد.
-        intro_2_html: تا زمانی که از OpenHistoricalMap و مشارکت‌کنندگان آن یاد کنید،
-          برای کپی‌برداری، توزیع، انتقال و اقتباس (از) داده‌های ما آزاد هستید. اگر
-          داده‌های ما را تغییر دهید یا بر پایهٔ آن‌ها تولید کنید، باید نتایج را فقط
-          تحت همان مجوز توزیع کنید. نسخهٔ کامل <a href="http://opendatacommons.org/licenses/odbl/1.0/">بایدونبایدهای
-          قانونی</a> حقوق و وظایف شما را توضیح می‌دهد.
-        intro_3_1_html: |-
-          مستندات ما تحت پروانهٔ <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons Attribution-ShareAlike 2.0</a> (CC BY-SA 2.0) است.
-        credit_title_html: چگونه از OpenHistoricalMap یاد کنیم
-        credit_1_html: |-
-          بایسته است که این‌گونه از ما یاد کنید:
-          &ldquo;&copy;مشارکت‌کنندگان OpenHistoricalMap&rdquo;.
-        credit_2_1_html: همچنین باید روشن کنید که داده‌ها تحت پروانهٔ پایگاه‌دادهٔ
-          باز (Open Database License) قرار دارند و اگر کاشی‌های نقشهٔ ما را استفاده
-          کردید باید به‌روشنی بیان کنید که نقشه‌نگاری‌ها تحت پروانهٔ CC BY-SA است.
-          این کار را با پیونددادن به <a href="https://www.openstreetmap.org/copyright">
-          این صفحهٔ حق‌نشر</a> انجام دهید. به‌عنوان جایگزین، می‌توانید با نام و پیوند
-          مستقیماً به پروانه(ها) ارجاع بدهید (اگر OSM را در قالب داده توزیع می‌کنید
-          انجام این کار ضروری است). در رسانه‌هایی که درج پیوند ممکن نیست ( مثلاً کارهای
-          چاپی)، توصیه می‌کنیم که خوانندگان خود را به  openstreetmap.org (شاید با
-          گسترش OpenHistoricalMap به این نشانی کامل)، به opendatacommons.org و در
-          صورت تناسب به creativecommons.org هدایت کنید.
         attribution_example:
-          alt: مثالی از شیوهٔ انتساب به OpenHistoricalMap در صفحهٔ وبی.
           title: مثال انتساب
         more_title_html: کسب اطلاعات بیشتر
-        more_1_html: برای اطلاعات بیشتر دربارهٔ استفاده از داده‌های ما و چگونگی یادکرد
-          ما <a href="https://osmfoundation.org/Licence">صفحهٔ پروانهٔ بنیاد OSM</a>
-          را بخوانید.
-        contributors_title_html: همکاران ما
-        contributors_intro_html: 'مشارکت‌کنندگانی که با ما همکاری می‌کنند هزاران شخص
-          هستند. داده‌هایی با پروانهٔ آزاد از سازمان‌های نقشه‌برداری ملی و دیگر منابع
-          را نیز در کنار آن‌ها داریم، از جمله:'
-        contributors_footer_1_html: |-
-          برای اطلاعات بیشتر درباره این‌ها و سایر منابعی که برای پیشرفت اوپن‌استریت‌مپ استفاده شده، لطفاً <a
-          href="https://wiki.openstreetmap.org/wiki/Contributors">صفحهٔ مشارکت‌کنندگان</a> را در ویکی ببینید.
-        contributors_footer_2_html: ورود داده در OpenHistoricalMap به این معنی نیست
-          که فراهم‌کنندهٔ اصلی داده OpenHistoricalMap را تأیید می‌کند، ضمانتی می‌دهد،
-          یا مسئولیتی می‌پذیرد.
         infringement_title_html: نقض حق‌نشر
         infringement_1_html: به مشارکت‌کنندگان OSM یادآوری شده است که هرگز از منابع
           دارای حق‌نشر داده اضافه نکنند (مثلاً نقشه‌های گوگل یا نقشه‌های چاپی)، مگر
           با اجازهٔ صریح و آشکار از صاحبان حق‌نشر.
-        infringement_2_html: اگر بر این باورید که دادهٔ مشمول حق‌نشر به‌طور نامناسبی
-          به پایگاه‌دادهٔ OpenHistoricalMap  یا به این وبسایت افزوده شده، لطفاً به
-          <a href="https://wiki.osmfoundation.org/wiki/Takedown_procedure">روندنامهٔ
-          حذف</a> مراجعه کنید یا دادخواست خود را مستقیماً در <a href="https://dmca.openstreetmap.org/">صفحهٔ
-          دادخواهی برخط</a> تسلیم کنید.
-        trademarks_title_html: <span id="trademarks"></span>نشان‌های تجاری
-        trademarks_1_html: OpenHistoricalMap،‏ نشان‌وارهٔ ذره‌بین‌دار و State of the
-          Map نشان‌های تجاری ثبت‌شده و متعلق به بنیاد OpenHistoricalMap هستند. برای
-          یافتن پاسخ پرسش‌های خود دربارهٔ استفاده از این نشان‌ها، لطفاً <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">سیاست‌نامهٔ
-          نشان تجاری</a> را ببینید.
     index:
       js_1: شما در حال استفاده از مرورگری هستید که جاوااسکریپت را پشتیبانی نمی‌کند،
         یا جاوااسکریپت را غیرفعال کرده‌اید.
@@ -2060,8 +1959,6 @@ fa:
       map_image: تصویر نقشه (لایهٔ استاندارد را نشان می‌دهد)
       embeddable_html: HTML توکار
       licence: پروانه
-      export_details_html: دادهٔ OpenHistoricalMap تحت <a href="https://opendatacommons.org/licenses/odbl/1.0/">پروانهٔ
-        دادهٔ همگانی باز، پایگاه‌دادهٔ باز</a> (ODbL) قرار دارد.
       too_large:
         advice: 'اگر برون‌برد بالا ناموفق بود، لطفاً یکی از منابع زیر را استفاده کنید:'
         body: این محدوده برای برون‌برد در قالب OpenHistoricalMap XML خیلی بزرگ است.
@@ -2121,40 +2018,23 @@ fa:
         بحث و همفکری دربارهٔ موضوعات نقشه‌کشی و ثبت آن‌ها منابع زیادی وجود دارد.
       welcome:
         url: /welcome
-        title: به اوپن‌استریت‌مپ خوش آمدید
-        description: از این راهنمای ساده و سریع که دربرگیرندهٔ مبانی OpenHistoricalMap
-          است آغاز کنید.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Fa:Beginners%27_guide
-        title: راهنمای مبتدیان
-        description: راهنمایی برای تازه‌واردان که اعضای جامعه آماده کرده‌اند.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: انجمن کمک
         description: در سایت پرسش‌وپاسخ OSM سؤال بپرسید یا بین پاسخ‌ها بگردید.
-      mailing_lists:
-        title: فهرست‌های پستی
-        description: در فهرست‌های پستی متنوعِ موضوعی یا منطقه‌ای سوال بپرسید یا دربارهٔ
-          چیزهای جالب گفت‌وگو کنید.
+      mailing_lists: {}
       forums:
         title: انجمن‌ها
         description: محل پرسش و بحث برای کسانی که رابط سبک انجمن را ترجیح می‌دهند.
-      irc:
-        title: IRC
-        description: گپ به زبان‌های مختلف و دربارهٔ موضوعات گوناگون.
-      switch2osm:
-        title: کوچ به OSM
-        description: راهنمای شرکت‌ها و سازمان‌هایی که می‌خواهند به نقشه و سایر خدمات
-          مبتنی بر OpenHistoricalMap مهاجرت کنند.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: برای سازمان‌ها
         description: در سازمان خود طرحی دربارهٔ OpenHistoricalMap دارید؟ صفحهٔ خوش‌آمدگویی
           را ببینید.
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: ویکی OpenHistoricalMap
-        description: مستندات پرجزئیات را در ویکی OpenHistoricalMap مرور کنید.
+      wiki: {}
     sidebar:
       search_results: نتایج جستجو
       close: بستن
@@ -2240,24 +2120,10 @@ fa:
           toilets: سرویس های بهداشتی
     welcome:
       title: خوش آمدید!
-      introduction_html: به OpenHistoricalMap، نقشهٔ آزاد و قابل‌ویرایش جهان، خوش
-        آمدید. اکنون که ثبت‌نامتان کامل شده، می‌توانید یکراست نقشه‌کشی را آغاز کنید.
-        در ادامه، راهنمای کوتاهی دربارهٔ مهمترین چیزهایی که به دانستنشان نیاز دارید،
-        آمده است.
       whats_on_the_map:
         title: چیزهایی که روی نقشه می‌آید
-        on_html: در OpenHistoricalMap چیزهایی را نقشه‌کشی می‌کنیم که <em>هم واقعی
-          و هم موجود</em> باشند که شامل میلیون‌ها ساختمان، جاده و سایر جزئیات دربارهٔ
-          مکان‌هاست. شما می‌توانید هر عارضه‌ای از دنیای واقعی که برایتان جالب است
-          را نقشه‌کشی کنید.
-        off_html: چیزهایی که در نقشه <em>نمی‌آید</em> عبارت‌اند از دادهٔ سلیقه‌ای
-          مانند رتبه‌بندی‌ها، عارضه‌های تاریخی یا فرضی و داده‌ای که از منابع دارای
-          حق‌نشر به‌دست می‌آوریم. از نقشه‌های آنلاین یا کاغذی کپی نکنید، مگر اینکه
-          اجازهٔ ویژه برای این کار داشته باشید.
       basic_terms:
         title: اصطلاحات پایهٔ نقشه‌کشی
-        paragraph_1_html: OpenHistoricalMap اصطلاحات ویژهٔ خودش را دارد. در اینجا
-          چند کلیدواژهٔ مفید ذکر شده است.
         editor_html: <strong>ویرایشگر</strong> یا <strong>editor</strong> نرم‌افزار
           یا وبسایتی است که با استفاده از آن نقشه را ویرایش می‌کنید.
         node_html: <strong>گره</strong> یا <strong>node</strong> نقطه‌ای روی نقشه
@@ -2269,19 +2135,8 @@ fa:
           هم می‌گویند.
       rules:
         title: قوانین!
-        paragraph_1_html: قوانین رسمی OpenHistoricalMap تنها چند مورد است، اما از
-          همهٔ مشارکت‌کنندگان انتظار داریم با جامعه همکاری کنند و ارتباط داشته باشند.
-          اگر می‌خواهید هرگونه فعالیتی به غیر از ویرایش دستی انجام دهید، لطفاً رهنمودهای
-          مربوط به <a href='http://wiki.openstreetmap.org/wiki/Import/Guidelines'>درون‌برد
-          (Import)</a> و <a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>ویرایش‌های
-          خودکار</a> را بخوانید و از آن‌ها پیروی کنید.
       questions:
         title: سؤالی دارید؟
-        paragraph_1_html: در پروژهٔ OpenHistoricalMap برای آموختن، پرسیدن و پاسخ‌دادنِ
-          سوالات، بحث و همفکری دربارهٔ موضوعات نقشه‌کشی و ثبت آن‌ها منابع زیادی وجود
-          دارد. <a href='%{help_url}'>از اینجا کمک بگیرید</a>. در سازمان خود طرحی
-          دربارهٔ OpenHistoricalMap دارید؟ <a href='https://welcome.openstreetmap.org/'>صفحهٔ
-          خوش‌آمدگویی را ببینید</a>.
       start_mapping: نقشه‌کشی را آغاز کنید
       add_a_note:
         title: زمانی برای ویرایش ندارید؟ یادداشت اضافه کنید!
@@ -2882,7 +2737,6 @@ fa:
         gps: ردهای GPS عمومی
         overlays: برای اشکال‌زدایی از نقشه رولایه‌ها را فعال کنید
         title: لایه‌ها
-      copyright: © <a href='%{copyright_url}'>مشارکت‌کنندگان OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>کمک مالی</a>
       terms: <a href='%{terms_url}' target='_blank'>شرایط وبسایت و API</a>
       cyclosm: سبک کاشی‌ها از <a href='%{cyclosm_url}' target='_blank'>CyclOSM</a>

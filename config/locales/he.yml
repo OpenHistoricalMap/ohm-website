@@ -696,8 +696,6 @@ he:
         aeroway:
           aerodrome: שדה תעופה
           airstrip: מִנחת
-          apron: רחבת חניית מטוסים
-          gate: שער
           hangar: מוסך מטוסים
           helipad: מנחת מסוקים
           holding_position: מיקום החזקה
@@ -706,7 +704,6 @@ he:
           runway: מסלול המראה
           taxilane: נתיב הסעה
           taxiway: מסלול הסעה
-          terminal: מסוף
           windsock: שרוול רוח
         amenity:
           animal_boarding: פנסיון לחיות
@@ -752,10 +749,6 @@ he:
           fire_station: תחנת כיבוי אש
           food_court: מתחם מזון מהיר
           fountain: מזרקה
-          fuel: דלק
-          gambling: הימורים
-          grave_yard: בית קברות
-          grit_bin: ארגז חול לכביש
           hospital: בית חולים
           hunting_stand: עמדת ציידים
           ice_cream: גלידה
@@ -1017,8 +1010,6 @@ he:
           brownfield: אזור תעשייה נטוש
           cemetery: בית קברות
           commercial: אזור מסחרי
-          conservation: אזור לשימור
-          construction: אזור בנייה
           farm: חווה
           farmland: שטח חקלאי
           farmyard: חצר חקלאית
@@ -1040,7 +1031,6 @@ he:
           reservoir: מאגר
           reservoir_watershed: אגן ניקוז של מאגר
           residential: אזור מגורים
-          retail: איזור מסחרי
           village_green: כיכר הכפר
           vineyard: כרם
           "yes": שימוש בקרקע
@@ -1314,7 +1304,6 @@ he:
           deli: מעדנייה
           department_store: כלבו
           discount: חנות מוזלת
-          doityourself: חנות עשה־זאת־בעצמך
           dry_cleaning: ניקוי יבש
           e-cigarette: חנות לסיגריות אלקטרוניות
           electronics: חנות אלקטרוניקה
@@ -1340,7 +1329,6 @@ he:
           health_food: חנות מזון בריאות
           hearing_aids: עזרי שמיעה
           herbalist: חנות טבע
-          hifi: ציוד מוזיקה
           houseware: חנות כלי בית
           ice_cream: חנות גלידה
           interior_decoration: עיצוב פנים
@@ -1400,7 +1388,6 @@ he:
           artwork: מיצג אומנותי
           attraction: מוקד עניין
           bed_and_breakfast: לינה וארוחת בוקר
-          cabin: בקתה
           camp_pitch: חלקה לקמפינג
           camp_site: חניון לילה
           caravan_site: חניון קרוואנים
@@ -1581,11 +1568,7 @@ he:
     edit_with: לעריכה עם %{editor}
     tag_line: מפת עולם חופשית בשיטת הוויקי
     intro_header: ברוכים הבאים ל־OpenHistoricalMap!
-    intro_text: OpenHistoricalMap היא מפה של העולם, שנוצרת על־ידי אנשים כמוך, וחופשית
-      לשימוש תחת רישיון פתוח.
     intro_2_create_account: נא ליצור חשבון משתמש
-    hosting_partners_html: האירוח בתמיכת %{ucl}, %{fastly}, %{bytemark}, ו%{partners}
-      נוספים.
     partners_ucl: UCL
     partners_fastly: פאסטלי
     partners_bytemark: בייטמארק הוסטינג
@@ -1960,39 +1943,10 @@ he:
     about:
       next: הבא
       copyright_html: <span>&copy;</span>תורמי<br>OpenHistoricalMap
-      used_by_html: OpenHistoricalMap מספקת נתוני מפות לאלפי אתרי אינטרנט, יישומים
-        ומכשירים שונים
-      lede_text: את OpenHistoricalMap בונה קהילת ממפים שתורמים ומתחזקים נתונים על
-        דרכים, שבילים, בתי־קפה, תחנות רכבת ועוד הרבה יותר, מסביב לעולם.
       local_knowledge_title: ידע מקומי
-      local_knowledge_html: |-
-        OpenHistoricalMap מדגישה ידע מקומי. התורמים משתמשים
-        בתמונות מהאוויר, מכשירי GPS, ומפות שדה „לואו־טק” כדי לוודא ש־OSM
-        מדויקת ומעודכנת.
       community_driven_title: מונהג על־ידי הקהילה
-      community_driven_html: |-
-        קהילת OpenHistoricalMap מגוונת, בעלת תשוקה, וגדלה מיום ליום.
-        בקרב התורמים שלנו יש ממפים נלהבים, מקצועני מערכות מידע גאוגרפיות (GIS), מהנדסים
-        שמריצים את שרתי OSM, פעילי סיוע הומניטרי שממפים אזורי מוכי־אסון,
-        ורבים אחרים.
-        למידע נוסף על הקהילה, ר׳ את <a href='https://blog.openstreetmap.org'>OpenHistoricalMap Blog</a>, <a href='%{diary_path}'>יומני משתמשים</a>, <a href='https://blogs.openstreetmap.org/'>יומני קהילה</a>, ואתר <a href='https://www.osmfoundation.org/'>OSM Foundation</a>.
       open_data_title: נתונים פתוחים
-      open_data_html: |-
-        OpenHistoricalMap היא <strong>נתונים פתוחים</strong>: יש לך הופש להשתמש בה לכל מטרה,
-        כל עוד ניתן ייחוס ל־OpenHistoricalMap ולתורמיה. מותר לשנות את הנתונים
-        ולבנות על גביהם דברים מסוימים, אך יש להפיץ את התוצאות של זה
-        לפי התנאים של אותו הרישיון. ר' את <a href='%{copyright_path}'>דף הרישיון וזכויות היוצרים</a> לפרטים נוספים.
       legal_title: משפטי
-      legal_1_html: |-
-        האתר הזה ושירותים רבים אחרים מופעלים על־ידי <a href='https://osmfoundation.org/'>קרן OpenHistoricalMap</a>&rlm; (OSMF) בשם הקהילה. השימוש בכל השירותים במפעילה OSMF כפוף
-        ל<a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">תנאי השימוש</a>, לרבות <a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">
-        מדיניות השימוש הקביל</a> שלנו
-        ול־<a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">מדיניות הפרטיות</a> שלנו.
-      legal_2_html: |-
-        נא <a href='https://osmfoundation.org/Contact'>ליצור קשר עם OSMF</a>
-        אם יש לך שאלות על רישוי, זכויות יוצרים או שאלות משפטיות אחרות.
-        <br>
-        OpenHistoricalMap, סמל הזכוכית המגדלת, ו־State of the Map הם <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">סימנים מסחריים רשומים של קרן OSM</a>.
       partners_title: שותפים
     copyright:
       foreign:
@@ -2007,73 +1961,14 @@ he:
         native_link: גרסה עברית
         mapping_link: להתחיל למפות
       legal_babble:
-        title_html: זכויות יוצרים ורישיון
-        intro_1_html: |-
-          מיזם OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> הוא <i>נתונים פתוחים</i>, שמתפרסמים לפי רישיון <a
-          href="https://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database</a>  (ר״ת ODbL) על־ידי <a
-          href="https://osmfoundation.org/">OpenHistoricalMap Foundation</a> (ר״ת OSMF).
-        intro_2_html: |-
-          אתם חופשיים להעתיק, להפיץ, לשדר ולהתאים את הנתונים שלנו,
-          כל עוד אתם נותנים ייחוס ל־OpenHistoricalMap
-          ולתורמים למיזם. אם אתם משנים את הנתונים או את המפות שלנו או מסתמכים עליהם כדי ליצור משהו חדש,
-          מותר לכם להפיץ את התוצאות רק לפי תנאי אותו הרישיון.
-          <a href="https://opendatacommons.org/licenses/odbl/1.0/">המסמך
-          המשפטי</a> המלא מסביר את זכויותיכם ואת תחומי האחריות שלכם.
-        intro_3_1_html: |-
-          התיעוד שלנו מוגש בכפוף
-          לרישיון <a href="https://creativecommons.org/licenses/by-sa/2.0/">קריאייטיב
-          קומונז ייחוס–שיתוף־זהה 2.0</a> license (בקיצור  CC-BY-SA 2.0).
-        credit_title_html: איך לתת ייחוס ל־OpenHistoricalMap
-        credit_1_html: אנו דורשים ייחוס אל „&copy; תורמי OpenHistoricalMap”.
-        credit_2_1_html: |-
-          כמו־כן, חובתך להבהיר שהנתונים זמינים בכפוף לרישיון למסדי
-          נתונים פתוחים, ואם נעשה שימוש באריחי המפה שלנו, שהמיפוי כפופות
-          לרישיון CC-BY-SA. באפשרותך לעשות זאת באמצעות קישור אל
-          <a href="https://www.openstreetmap.org/copyright">דף זכויות היוצירם</a>.
-          לחלופין, וזו חובתך בעת הפצת OSM בצורת
-          נתונים, באפשרותך לציין את השמות ולקשר ישירות אל הרישיון או הרישיונות. באמצעי תקשורת
-          שלא ניתן להשתמש בהם בקישורים (למשל בדפוס), אני ממליצים
-          להפנות את הקוראים שלך אל openstreetmap.org (אולי על־ידי הרחבת
-          „OpenHistoricalMap” ככתובת מלאה), אל opendatacommons.org, ואם
-          זה מתאים, אל creativecommons.org.
         attribution_example:
-          alt: דוגמה לצורה הנכונה לתת ייחוס ל־OpenHistoricalMap באתר האינטרנט
           title: דוגמה לייחוס
         more_title_html: איך למצוא מידע נוסף
-        more_1_html: |-
-          קִראו עוד על שימוש בנתונים שלנו ועל דרכים לייחס אלינו יצירות נגזרות ב<a
-          href="http://osmfoundation.org/Licence">דף רישיון OSMF</a>.
-        contributors_title_html: התורמים שלנו
-        contributors_intro_html: |-
-          התורמים שלנו הם אלפי אנשים. אנו גם כוללים
-          נתונים ברישיון פתוח מסוכנויות מיפוי לאומות
-          וממקורות אחרים, בהם:
-        contributors_footer_1_html: |-
-          למידע נוסף על מקורות אלה ואחרים ששימשו
-          לשיפור OpenHistoricalMap, נא לראות את <a
-          href="https://wiki.openstreetmap.org/wiki/Contributors">דף
-          התורמים</a> בוויקי של OpenHistoricalMap.
-        contributors_footer_2_html: |-
-          הכללה של נתונים ב־OpenHistoricalMap אינה אומרת שהספק המקורי
-          של הנתוהים תומך ב־OpenHistoricalMap, לוקח על עצמו אחריות כלשהי, או
-          מקבל חבות כלשהי.
         infringement_title_html: הפרת זכויות יוצרים
         infringement_1_html: |-
           אנו מזכירים לתורמים ל־OSM לעולם לא להוסיף נתונים משום מקור
           שמוגבל בזכויות יוצרים (למשל מפות גוגל או מפות מודפסות) ללא
           אישור מפורש מבעלי הזכויות.
-        infringement_2_html: |-
-          אם נראה לך שחומר שמוגבל בזכויות יוצרים נוסף באופן לא הולם
-          אל מסד הנתונים של OpenHistoricalMap או אל האתר הזה, נא לפנות
-          אל <a href="https://wiki.osmfoundation.org/wiki/Takedown_procedure">נוהל
-          ההסרה</a> שלנו או כתבו תלונה ישירות
-          <a href="https://dmca.openstreetmap.org/">בדף התלונות המקוון שלנו</a>.
-        trademarks_title_html: <span id="trademarks"></span>סימנים מסחריים
-        trademarks_1_html: OpenHistoricalMap, סמל הזכוכית המגדלת ו־State of the Map
-          הם סימנים מסחריים של קרן OpenHistoricalMap. אם יש לך שאלות על השימוש שלך
-          בסימנים, ר' את <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">מדיניות
-          הסימנים המסחריים שלנו</a>.
     index:
       js_1: הדפדפן שבו אתה משתמש אינו תומך ב־JavaScript, או שכיבית את השימוש ב־JavaScript.
       js_2: אתר OpenHistoricalMap משתמש ב־JavaScript למפה המחליקה.
@@ -2103,8 +1998,6 @@ he:
       map_image: תמונת מפה (תצוגת שכבה תקנית)
       embeddable_html: HTML שניתן להטמעה
       licence: רישיון
-      export_details_html: המידע ב־OpenHistoricalMap מוגש בכפוף ל<a href="href="https://opendatacommons.org/licenses/odbl/1.0/">רישיון
-        Open Data Commons לנתונים פתוחים</a> (ODbL).
       too_large:
         advice: 'אם הייבוא הנ״ל נכשל, נא לנסות להשתמש באחד המקורות להלן:'
         body: 'האזור גדול מכדי שאפשר יהיה לייצא אותו בתור נתוני XML של OpenHistoricalMap.
@@ -2164,38 +2057,23 @@ he:
         ולדיון ותיעוד שיתופי של נושאי מיפוי.
       welcome:
         url: /welcome
-        title: ברוך בואך ל־OSM
-        description: תחילת היכרות בעזרת מדריך מהיר שסוקר את היסודות של OpenHistoricalMap.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/He:Beginners%27_guide
-        title: המדריך למתחילים
-        description: מדריך בתחזוקת הקהילה למתחילים.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: פורום העזרה
         description: לשאול שאלה או לחפש תשובות באתר השאלות והתשובות של OpenHistoricalMap.
-      mailing_lists:
-        title: רשימות תפוצה
-        description: לשאול שאלה או לדון בדברים מעניינים ברשימות תפוצה נושאים ואזוריות
-          רבות.
+      mailing_lists: {}
       forums:
         title: פורומים
         description: שאלות ודיונים לאנשים שמעדיפים ממשק בסגנון פורום.
-      irc:
-        title: IRC
-        description: שיחה אינטראקטיבית בשפות שונות רבות ובנושאים רבים.
-      switch2osm:
-        title: switch2osm
-        description: עזרה לחברות וארגונים שעוברים למפות ושירותים אחרים של OpenHistoricalMap.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: לארגונים
         description: הארגון שלך מתכנן תכניות על OpenHistoricalMap? כל המידע הנחוץ
           לך נמצא במחצלת הכניסה.
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: הוויקי של OpenHistoricalMap
-        description: לעיין בוויקי לתיעוד מעמיק על OpenHistoricalMap.
+      wiki: {}
     potlatch:
       removed: עורך הOpenHistoricalMap ברירת המחדל שלך מוגדר כPotlatch. בגלל שנגן
         הפלאש של אדובי כבר לא נתמך, Potlatch כבר לא זמין בדפדפן.
@@ -2288,21 +2166,10 @@ he:
           toilets: שירותים
     welcome:
       title: ברוך בואך!
-      introduction_html: ברוך בואך ל־OpenHistoricalMap, מפה חופשית של העולם, שאפשר
-        לערוך. עכשיו שנרשמת, הכול מוכן ואפשר להתחיל לצייר מפות. הנה מדריך קצת שייתן
-        לך את הדברים החשובים שכדאי לך לדעת.
       whats_on_the_map:
         title: מה על המפה
-        on_html: OpenHistoricalMap הוא מקום למיפוי דברים אמתיים ונוכחיים – הוא מכיל
-          מיליוני מבנים, דרכים ופרטים אחרים על מקומות. אפשר למפות כל ישות מהעולם האמתי
-          שמעניין אותך.
-        off_html: מה שאין פה זה מידע דעתני כמו דירוגים, מקומות היסטוריים או היפותטיים
-          ונתונים ומקורות שמוגבלים בזכויות יוצרים. אנו דורשים ממך לא להוסיף  מידע
-          ממפות מקוונות או מודפסות אלא אם יש לך אישור מיוחד לכך.
       basic_terms:
         title: מונחים בסיסיים למיפוי
-        paragraph_1_html: למיזם OpenHistoricalMap יש עגה משלו. הנה מספר מילות מפתח
-          שיהיו שימושיות.
         editor_html: <strong>עורך</strong> הוא תכנה או אתר לעריכת המפה.
         node_html: <strong>נקודה</strong> מייצגת מיקום נקודתי, כגון מסעדה אחת או עץ
           אחד.
@@ -2311,17 +2178,8 @@ he:
           או מגבלת מהירות בדרך.
       rules:
         title: חוקים!
-        paragraph_1_html: ל־OpenHistoricalMap יש מעט חוקים פורמליים, אבל אנחנו מצפים
-          מכל המשתתפים לשתף פעולה ולתקשר עם הקהילה. אם אתם שוקלים לבצע פעולות כלשהן
-          מלבד עריכה ידנית, אנא קראו את המדריכים על <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>יבוא</a>
-          ועל <a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>עריכות
-          אוטומטיות</a>.
       questions:
         title: יש שאלות?
-        paragraph_1_html: |-
-          ב־OpenHistoricalMap יש מספר משאבים ללימוד על המיזם, לשאלות ותשובות,
-          ולדיון ותיעוד שיתופי של נושאי מיפוי.
-          <a href='%{help_url}'>מקום לקבל עזרה</a>. יש לך מעורבות בארגון שעושה תכניות על OpenHistoricalMap? מזמינים אותך לפגוש את מחצלת הכניסה</a>.
       start_mapping: להתחיל למפות
       add_a_note:
         title: אין לך זמן לערוך? אפשר להוסיף הערה!
@@ -2924,7 +2782,6 @@ he:
         gps: מסלולי GPS ציבוריים
         overlays: הפעלת שכבות לפתרון תקלות במפה
         title: שכבות
-      copyright: © <a href='%{copyright_url}'>מתנדבי OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>לתרום</a>
       terms: <a href='%{terms_url}' target='_blank'>תנאי אתר ו־API</a>
       cyclosm: האריחים סוגננו על ידי <a href='%{cyclosm_url}' target='_blank'>CyclOSM</a>

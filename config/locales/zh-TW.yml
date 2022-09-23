@@ -657,8 +657,6 @@ zh-TW:
         aeroway:
           aerodrome: 機場
           airstrip: 飛機跑道
-          apron: 停機坪
-          gate: 登機口
           hangar: 機棚
           helipad: 直升機停機坪
           holding_position: 等待位置
@@ -667,7 +665,6 @@ zh-TW:
           runway: 跑道
           taxilane: 滑行道
           taxiway: 滑行道
-          terminal: 航廈
           windsock: 布製風標
         amenity:
           animal_boarding: 動物寄宿
@@ -713,10 +710,6 @@ zh-TW:
           fire_station: 消防隊
           food_court: 美食廣場
           fountain: 噴泉
-          fuel: 燃料
-          gambling: 博弈店
-          grave_yard: 墓園
-          grit_bin: 砂箱
           hospital: 醫院
           hunting_stand: 狩獵站
           ice_cream: 冰淇淋
@@ -978,8 +971,6 @@ zh-TW:
           brownfield: 低污染再利用地
           cemetery: 墓地
           commercial: 商業區
-          conservation: 保留區
-          construction: 建造中區域
           farm: 農業用地
           farmland: 農地
           farmyard: 農舍
@@ -1001,7 +992,6 @@ zh-TW:
           reservoir: 蓄水設施
           reservoir_watershed: 蓄水設施集水區
           residential: 住宅區
-          retail: 零售區
           village_green: 社區綠地
           vineyard: 葡萄園
           "yes": 土地利用
@@ -1275,7 +1265,6 @@ zh-TW:
           deli: 高級食品店
           department_store: 百貨商店
           discount: 特價商品店
-          doityourself: DIY 用品店
           dry_cleaning: 乾洗
           e-cigarette: 電子菸店
           electronics: 電子材料行
@@ -1301,7 +1290,6 @@ zh-TW:
           health_food: 保健食品店
           hearing_aids: 助聽器
           herbalist: 藥草供應商
-          hifi: 音響店
           houseware: 生活用品店
           ice_cream: 冰淇淋店
           interior_decoration: 室內裝潢
@@ -1361,7 +1349,6 @@ zh-TW:
           artwork: 美工
           attraction: 景點
           bed_and_breakfast: 家庭旅館
-          cabin: 小木屋
           camp_pitch: 營地
           camp_site: 營地
           caravan_site: RV 宿營區
@@ -1545,9 +1532,7 @@ zh-TW:
     edit_with: 以 %{editor} 編輯
     tag_line: 自由的 Wiki 世界地圖
     intro_header: 歡迎來到 OpenHistoricalMap！
-    intro_text: OpenHistoricalMap 是一幅世界地圖，由像您這樣的人們所建立，在開放授權下可以自由使用。
     intro_2_create_account: 建立使用者帳號
-    hosting_partners_html: 由%{ucl}、%{fastly}、%{bytemark}，和其他%{partners}支援託管。
     partners_ucl: 倫敦大學學院
     partners_fastly: Fastly
     partners_bytemark: Bytemark 主機代管
@@ -1885,30 +1870,10 @@ zh-TW:
     about:
       next: 下一頁
       copyright_html: <span>&copy;</span>OpenHistoricalMap<br>貢獻者
-      used_by_html: OpenHistoricalMap 為數以千計的網站、行動應用程式和硬體提供地圖資料
-      lede_text: OpenHistoricalMap 是由製圖者社群所建立，他們提供及不斷更新包括有關世界各地的道路、路徑、咖啡館、火車站等等的資料。
       local_knowledge_title: 地方知識
-      local_knowledge_html: |-
-        OpenHistoricalMap 強調地方知識。貢獻者們使用
-        航照圖、GPS 裝置與低技術的實地考察製圖，來檢驗 OSM
-        是準確而且最新的。
       community_driven_title: 社群推動
-      community_driven_html: |-
-        OpenHistoricalMap 的社群多元化、懷有熱情，而且日益壯大。我們的貢獻者包括地圖製作愛好者，地理訊息系統的專業人員，提供 OSM 伺服器的工程師，為受災害影響區域製圖的人道主義志願人士，以及其他各界人士。
-        想進一步了解這個社群，請參閱<a href='https://blog.openstreetmap.org'> OpenHistoricalMap 部落格</a>、<a href='%{diary_path}'>使用者日記</a>、
-        <a href='https://blogs.openstreetmap.org/'>社群部落格</a>，以及<a href='https://www.osmfoundation.org/'> OSM 基金會</a> 網站。
       open_data_title: 開放資料
-      open_data_html: OpenHistoricalMap 是<i>開放資料</i>的：您可以自由地使用作任何用途，前提是您須標明作者為 OpenHistoricalMap
-        及其貢獻者。若您在我們的資料上作修改或以之透過某些方式衍生其他資料，則只可依相同授權條款散佈有關成果。詳情請參閱<a href='%{copyright_path}'>版權及授權條款頁面</a>。
       legal_title: 法律資訊
-      legal_1_html: 本站以及許多相關的服務正式由<a href='https://osmfoundation.org/'> OpenHistoricalMap
-        基金會</a>（OSMF）代表社群所營運。所有使用的 OSMF 運行服務皆符合我們的<a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">使用條款</a>、<a
-        href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">可接受使用方針</a>、和<a
-        href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">隱私政策</a>。
-      legal_2_html: |-
-        若您有任何授權、版權或其他法律諮詢，請<a href='https://osmfoundation.org/Contact'>聯絡 OSMF </a>。
-        <br>
-        OpenHistoricalMap、放大鏡標誌，和地圖狀態是<a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy"> OSMF 的註冊商標</a>。
       partners_title: 合作夥伴
     copyright:
       foreign:
@@ -1921,45 +1886,12 @@ zh-TW:
         native_link: 繁體中文版
         mapping_link: 開始製圖
       legal_babble:
-        title_html: 版權與授權條款
-        intro_1_html: OpenHistoricalMap 為<i>開放資料</i>，以<a href="https://osmfoundation.org/">
-          OpenHistoricalMap 基金會</a>（OSMF）採用的<a href="https://opendatacommons.org/licenses/odbl/">
-          Open Data Commons 開放資料庫授權條款</a>（ODbL）授權。
-        intro_2_html: |-
-          您可以自由地複製、散布、傳輸及修改我們的資料，前提是您須標明作者為 OpenHistoricalMap 及其貢獻者。若您在我們的資料上作修改或據之衍生其他資料
-          ，則只可依相同授權條款散佈有關成果。授權的<a href="https://opendatacommons.org/licenses/odbl/1.0/">法律原文</a>詳述您的權責。
-        intro_3_1_html: 我們的文件以<a href="https://creativecommons.org/licenses/by-sa/2.0/deed.zh_TW">創用
-          CC 姓名標示-相同方式分享（CC BY-SA 2.0版）</a>條款授權。
-        credit_title_html: 如何標明作者是 OpenHistoricalMap
-        credit_1_html: 我們要求您以&ldquo;&copy; OpenHistoricalMap 貢獻者&rdquo;標明作者。
-        credit_2_1_html: 您亦須清晰註明，有關資料可透過開放資料庫授權條款取得。若使用我們的影像塊，則須註明其製圖法是按 CC-BY-SA
-          授權。您可以透過連結至<a href="https://www.openstreetmap.org/copyright">此版權頁</a>以作註明。您亦可以指明並直接連結至授權內容
-          (但若您要以資料形式發布 OSM，這是必要條件) 。在無法作出連結的媒體 (如印刷品) ，我們建議你引導你的讀者至 openstreetmap.org
-          (如註明 OpenHistoricalMap 的完整網址) 、opendatacommons.org，及 (如相關的話) creativecommons.org。
         attribution_example:
-          alt: 如何在網頁上署名 OpenHistoricalMap 的例子
           title: 署名的例子
         more_title_html: 尋找更多
-        more_1_html: |-
-          在<a
-          href="https://osmfoundation.org/Licence"> OSMF 授權條款頁面</a>可閱讀更多關於使用我們的資料，以及如何標明我們是作者的資料。
-        contributors_title_html: 我們的貢獻者
-        contributors_intro_html: 我們的貢獻者為成千上萬的人。我們也收納了從國家測繪機構及其他來源等取得的開放版權資料，其中包括：
-        contributors_footer_1_html: |-
-          若需要進一步詳情，以及其他曾用以協助改進
-           OpenHistoricalMap 的資料來源，請參閱 OpenStreetMap Wiki 上的<a
-          href="https://wiki.openstreetmap.org/wiki/Contributors">貢獻者
-          頁面</a>。
-        contributors_footer_2_html: OpenHistoricalMap 收錄一項資料，並不意味原本的資料提供者認可 OpenHistoricalMap、提供任何保證或承擔任何法律責任。
         infringement_title_html: 侵犯版權
         infringement_1_html: OSM 的貢獻者會被提醒，絕不要在沒有版權所有人的明確淮許下，加入來自任何有版權的來源的資料 (如 Google
           地圖或印刷地圖)。
-        infringement_2_html: 如果你認為有含有著作權的材料被不恰當地加入到 OpenHistoricalMap 資料庫或此網站，請參考我們的<a
-          href="https://wiki.osmfoundation.org/wiki/Takedown_procedure">撤除程序</a>或直接在我們的<a
-          href="https://dmca.openstreetmap.org/">線上申報頁面</a>提出。
-        trademarks_title_html: <span id="trademarks"></span>商標
-        trademarks_1_html: OpenHistoricalMap、放大鏡標誌和 OpenHistoricalMap 研討會是 OpenHistoricalMap
-          基金會的註冊商標。如果你對於使用這些商標有疑問的話，請查看我們的<a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">商標方針</a>。
     index:
       js_1: 您使用不支援 JavaScript 的瀏覽器，或者停用了 JavaScript。
       js_2: OpenHistoricalMap 使用 JavaScript 讓地圖更平順。
@@ -1986,8 +1918,6 @@ zh-TW:
       map_image: 地圖影像 (顯示標準圖層)
       embeddable_html: 內嵌式 HTML
       licence: 授權
-      export_details_html: OpenHistoricalMap 的資料採用 <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons 開放資料庫授權條款</a>（ODbL）授權。
       too_large:
         advice: 若以上匯出失敗，請考慮使用下列來源：
         body: 這個區域太大，無法匯出 OpenHistoricalMap XML 資料。請放大或選擇一個較小的區域，或使用下列大量資料下載源：
@@ -2039,36 +1969,22 @@ zh-TW:
       introduction: OpenHistoricalMap 有一些資源，可用於學習本專案、提出和回答問題，以及討論和紀錄與製作地圖相關的話題。
       welcome:
         url: /welcome
-        title: 歡迎來到開放街圖
-        description: 這個快速指南涵蓋了開放街圖的基礎知識。
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Zh-hant:Beginners%27_guide
-        title: 新手指南
-        description: 社群維護的新手指南
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: 協助論壇
         description: 在開放街圖的問答網站提出問題或搜尋答案。
-      mailing_lists:
-        title: 郵件論壇
-        description: 在不同主題或是地區的郵件論壇問問題或是討論有趣的事物。
+      mailing_lists: {}
       forums:
         title: 論壇
         description: 給習慣論壇型式的地方問問題和討論
-      irc:
-        title: IRC
-        description: 使用各種不同語言在各種主題聊天互動。
-      switch2osm:
-        title: switch2osm
-        description: 協助公司與組織改用 OpenHistoricalMap 為基礎的地圖與相關服務。
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: 對於組織
         description: 想要以組織來對 OpenHistoricalMap 製作計劃嗎？請在 Welcome Mat 查找您所需要的事項。
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: 開放街圖 Wiki
-        description: 瀏覽 wiki，取得詳盡的開放街圖文件。
+      wiki: {}
     potlatch:
       removed: 您預設的開放街圖編輯器是設定成 Potlatch。因為 Adobe Flash Player 已終止維護，Potlatch 已不在網路瀏覽器上可用。
       desktop_html: 您仍可以透過<a href="https://www.systemed.net/potlatch/">下載適用於 Mac 與
@@ -2159,31 +2075,18 @@ zh-TW:
           toilets: 廁所
     welcome:
       title: 歡迎！
-      introduction_html: 歡迎來到 OpenHistoricalMap，自由和可編輯的世界地圖。您目前已經登入，可以開始繪製地圖。這裡有一份您須知道最重要事項的快速指南。
       whats_on_the_map:
         title: 地圖上有什麼
-        on_html: |-
-          OpenHistoricalMap 是一個為<em>真實且現存</em>物件繪製地圖的地方 -
-          它包含數以百萬計的建築物、道路以及關於位置其他詳細資料。您可以
-          在地圖上畫出任何現實世界中令您感興趣的地理特徵。
-        off_html: 然而它<em>不包含</em>一些例如評分的主觀意見資料、歷史或假設性的地理特徵，以及有版權的來源資料。除非你獲特別許可，不要抄襲網上或印刷的地圖。
       basic_terms:
         title: 繪製地圖的基本術語
-        paragraph_1_html: OpenHistoricalMap 有自己的術語。以下是一些常用的關鍵詞。
         editor_html: <strong>編輯器</strong>是你可以用於編輯地圖的程序或網站。
         node_html: <strong>節點</strong>是地圖上的一個點，例如一間餐廳或一棵樹。
         way_html: <strong>路徑</strong>是一條線或一個區域，例如一條道路、一條溪、一個湖或一棟建築物。
         tag_html: <strong>標籤</strong>是關於節點或路徑的簡要資料，例如餐廳的名字或道路的速度限制。
       rules:
         title: 規則！
-        paragraph_1_html: OpenHistoricalMap 沒有多少正式規則，除了所有參與者都得與社群合作和溝通。如果你有想過用人工以外的方式參與的話，請先熟讀和遵循<a
-          href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>匯入</a>以及<a
-          href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>自動化編輯</a>守則。
       questions:
         title: 有任何問題嗎？
-        paragraph_1_html: OpenHistoricalMap 有一些資源，可用於學習本專案、提出和回答問題，以及討論和紀錄與製作地圖相關的話題。
-          <a href='%{help_url}'>按此取得說明</a>。想要以組織來對 OpenHistoricalMap 製作計劃嗎？請查看 <a
-          href='https://welcome.openstreetmap.org/'>Welcome Mat</a>。
       start_mapping: 開始製圖
       add_a_note:
         title: 沒有時間編輯嗎？可加入註記！
@@ -2741,7 +2644,6 @@ zh-TW:
         gps: 公開GPS軌跡
         overlays: 開啟覆蓋層，以為地圖解決問題
         title: 圖層
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMap 貢獻者</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>來捐款吧</a>
       terms: <a href='%{terms_url}' target='_blank'>網站與 API 項目</a>
       cyclosm: <a href='%{cyclosm_url}' target='_blank'>CyclOSM</a> 影像塊樣式，由 <a href='%{osmfrance_url}'
