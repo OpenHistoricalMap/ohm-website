@@ -683,13 +683,10 @@ sk:
           station: Lanovková stanica
         aeroway:
           aerodrome: Aerodróm
-          apron: Letisková parkovacia plocha
-          gate: Brána (gate)
           hangar: Hangár
           helipad: Heliport
           runway: Vzletová a pristávacia dráha
           taxiway: Pojazdová dráha
-          terminal: Terminál
           windsock: Veterný rukáv
         amenity:
           animal_shelter: Útulok pre zvieratá
@@ -729,10 +726,6 @@ sk:
           fire_station: Požiarna stanica
           food_court: Food court
           fountain: Fontána
-          fuel: Benzínová pumpa
-          gambling: Hazardné hry
-          grave_yard: Cintorín
-          grit_bin: Nádoba na štrk
           hospital: Nemocnica
           hunting_stand: Poľovnícky posed
           ice_cream: Zmrzlina
@@ -967,8 +960,6 @@ sk:
           brownfield: Opustená priemyselná oblasť (brownfield)
           cemetery: Cintorín
           commercial: Obchodná štvrť
-          conservation: Chránené územie
-          construction: Stavba
           farm: Farma
           farmland: Poľnohospodárska pôda
           farmyard: Dvor
@@ -989,7 +980,6 @@ sk:
           reservoir: Zásobník na vodu
           reservoir_watershed: Povodie nádrže
           residential: Obytná oblasť
-          retail: Obchodná zóna
           village_green: Verejná zeleň
           vineyard: Vinica
           "yes": Využitie krajiny
@@ -1235,7 +1225,6 @@ sk:
           deli: Lahôdky
           department_store: Obchodný dom
           discount: Diskontná predajňa
-          doityourself: Urob si sám
           dry_cleaning: Chemická čistiareň
           electronics: Elektro
           erotic: Erotický obchod
@@ -1254,7 +1243,6 @@ sk:
           hairdresser: Kaderníctvo,holičstvo
           hardware: Železiarstvo
           hearing_aids: Načúvacie prístroje
-          hifi: Hi-Fi
           houseware: Domáce potreby
           ice_cream: Zmrzlina
           jewelry: Zlatníctvo
@@ -1297,7 +1285,6 @@ sk:
           artwork: Umelecké dielo
           attraction: Atrakcia
           bed_and_breakfast: Nocľah a raňajky
-          cabin: Malá chata
           camp_site: Kemping
           caravan_site: Autokemping
           chalet: Veľká chata
@@ -1442,11 +1429,7 @@ sk:
     edit_with: Upraviť pomocou %{editor}
     tag_line: Slobodná wiki-mapa sveta
     intro_header: Vitajte v OpenHistoricalMap!
-    intro_text: OpenHistoricalMap je mapa sveta, vytvorené ľuďmi ako vy, voľne využiteľná
-      pod slobodnou licenciou.
     intro_2_create_account: Založte si konto
-    hosting_partners_html: Hosting podporuje %{ucl}, %{fastly}, %{bytemark} a ďalší
-      %{partners}.
     partners_ucl: UCL
     partners_fastly: Fastly
     partners_bytemark: Bytemark Hosting
@@ -1816,41 +1799,10 @@ sk:
     about:
       next: Ďalej
       copyright_html: <span>&copy;</span>prispievatelia<br>OpenHistoricalMap
-      used_by_html: OpenHistoricalMap poskytuje mapové dáta pre tisícky webových stránok,
-        mobilných aplikácií a hardvérových zariadení
-      lede_text: OpenHistoricalMap tvorí komunita používateľov, ktorí pridávajú a
-        udržiavajú údaje o cestách, turistických trasách, kaviarňach, železničných
-        staniciach a mnohých ďalších miestach na celom svete.
       local_knowledge_title: Miestna znalosť
-      local_knowledge_html: OpenHistoricalMap kladie dôraz na miestnu znalosť. Prispievatelia
-        využívajú letecké snímky, GPS prístroje a klasické mapy, aby overili, že OSM
-        sú presné a aktuálne.
       community_driven_title: Riadené komunitou
-      community_driven_html: "Komunita OpenHistoricalMap je rozmanitá, zanietená a\
-        \ každý deň sa rozrastá. Medzi našimi prispievateľmi nájdete amatérskych mapovačov,\
-        \ profesionálov z oblasti GIS, technikov spravujúcich servery OSM, humanitárnych\
-        \ pracovníkov mapujúcich oblasti zasiahnuté nešťastím a mnohých ďalších. \n\
-        Ak sa chcete o komunite dozvedieť viac, prelistujte si <a href='https://blog.openstreetmap.org'>blog\
-        \ OpenHistoricalMap</a>, <a href='%{diary_path}'>denníky používateľov</a>,\
-        \ <a href='https://blogs.openstreetmap.org/'>komunitné blogy</a> a webovú\
-        \ stránku <a href='https://www.osmfoundation.org/'>nadácie OSM Foundation</a>."
       open_data_title: Otvorené dáta
-      open_data_html: "OpenHistoricalMap znamenajú <i>otvorené dáta</i>: môžete ich\
-        \ používať na ľubovoľný účel, pokiaľ uvediete ako autora OpenHistoricalMap\
-        \ a jeho prispievateľov. Ak dáta meníte alebo ich určitými spôsobmi rozširujete,\
-        \ výsledok môžete šíriť len pod rovnakou licenciou. Podrobnosti nájdete na\
-        \ stránke <a href='%{copyright_path}'>Copyright</a>."
       legal_title: Právne informácie
-      legal_1_html: Tento web a mnoho ďalších súvisiacich služieb za komunitu oficiálne
-        prevádzkuje <a href='https://osmfoundation.org/'>OpenHistoricalMap Foundation</a>
-        (OSMF). Použitie všetkých služieb prevádzkovaných OSMF podlieha našim <a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">Podmienkam
-        použitia</a>, <a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">Pravidlám
-        prijateľného použitia</a> a našim <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">Pravidlám
-        ochrany osobných údajov</a>.
-      legal_2_html: |-
-        Ak máte otázky týkajúce sa licencovania, autorských práv alebo iných právnych záležitostí, <a href='https://osmfoundation.org/Contact'>kontaktujte, prosím, OSMF</a>.
-        <br>
-        OpenHistoricalMap, logo s lupou a State of the Map sú <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">registrované ochranné známky OSMF</a>.
       partners_title: Partneri
     copyright:
       foreign:
@@ -1866,54 +1818,13 @@ sk:
         native_link: slovenskú verziu
         mapping_link: začať mapovať
       legal_babble:
-        title_html: Autorské práva a licencia
-        intro_1_html: OpenHistoricalMap sú <em>slobodné dáta</em>, ponúkané za podmienok
-          licencie <a href="http://opendatacommons.org/licenses/odbl/">Open Data Commons
-          Open Database License</a> (ODbL).
-        intro_2_html: '  Môžete kopírovať, distribuovať, oznamovať verejnosti a upravovať
-          naše dáta, pokiaľ ako zdroj uvediete „<em>OpenHistoricalMap a jeho prispievatelia</em>“.
-          Ak naše mapy alebo dáta budete upravovať alebo ich použijete vo svojom diele,
-          musíte výsledné dielo šíriť pod rovnakou licenciou. Vaše práva a povinnosti
-          sú vysvetlené v <a href="http://opendatacommons.org/licenses/odbl/">plnom
-          znení licenčnej zmluvy</a>.'
-        intro_3_1_html: Naša dokumentácia je zverejnená pod licenciou <a href="https://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons Uveďte autora – Zachovajte licenciu 2.0</a> (CC BY-SA 2.0).
-        credit_title_html: Ako uvádzať OpenHistoricalMap
-        credit_1_html: Vyžadujeme uviesť „<em>© Prispievatelia OpenHistoricalMap</em>“.
-        credit_2_1_html: |-
-          Musíte tiež zdôrazniť, že údaje sú dostupné pod licenciou Open Database Licence, a pokiaľ používate naše mapové dlaždice, že ich kartografický obsah je licencovaný pod CC-BY-SA. Uvedené môžete splniť hypertextovým odkazom na <a href="http://www.openstreetmap.org/copyright">tuto stránku</a>.
-
-          Alternatívne môžete (a ak šírite OSM v dátovej forme, tak musíte) vymenovať licencie a uviesť hypertextové odkazy priamo na ne. Pri médiách, kde hypertextové odkazy nie sú možné (napr. tlačené diela), odporúčame, aby ste nasmerovali čitateľov na openstreetmap.org (napríklad rozšírením slova 'OpenHistoricalMap' na túto plnú adresu), na opendatacommons.org a na creativecommons.org (ak je to relevenantné).
         attribution_example:
-          alt: Príklad, ako uvádzať autorstvo OpenHistoricalMap na webovej stránke
           title: Príklad uvedenia autorstva
         more_title_html: Ďalšie informácie
-        more_1_html: O používaní našich dát a spôsobe citovania, sa môžete dočítať
-          viac v našich <a href="http://wiki.openstreetmap.org/wiki/Legal_FAQ">Často
-          kladených právnych otázkach</a>.
-        contributors_title_html: Naši prispievatelia
-        contributors_intro_html: 'Naši prispievatelia sú tisícky jednotlivcov. Máme
-          aj dáta so slobodnou licenciou od národných geografických inštitúcií či
-          iných zdrojov, medzi nimi:'
-        contributors_footer_1_html: |-
-          Podrobnosti o týchto a ďalších zdrojoch, ktoré boli použité pre vylepšenie OpenHistoricalMap, nájdete na <a
-          href="http://wiki.openstreetmap.org/wiki/Contributors">stránke Contributors</a> na OpenHistoricalMap wiki.
-        contributors_footer_2_html: '  Zahrnutie dát do OpenHistoricalMap neznamená,
-          že pôvodný poskytovateľ dát podporuje OpenHistoricalMap, ponúka akúkoľvek
-          záruku, alebo prijíma akúkoľvek zodpovednosť.'
         infringement_title_html: Porušenie autorských práv
         infringement_1_html: Prispievateľom OSM pripomíname, že by nikdy nemali pridávať
           dáta zo zdrojov chránených autorským právom (napr. Google Maps či tlačené
           mapy) bez výslovného súhlasu držiteľov práv.
-        infringement_2_html: Ak sa domnievate, že materiál podliehajúci autorským
-          právam bol neoprávnene pridaný do databázy OpenHistoricalMap alebo na tieto
-          stránky, prosíme vás, aby ste si pozreli náš <a href="https://wiki.osmfoundation.org/wiki/Takedown_procedure">postup
-          odstraňovania</a> alebo podajte žiadosť priamo na <a href="https://dmca.openstreetmap.org/">stránke
-          pre podávanie sťažností</a>.
-        trademarks_1_html: OpenHistoricalMap, logo s lupou a State of the Map sú registrované
-          ochranné známky OpenHistoricalMap Foundation. Ak máte otázky týkajúce sa
-          používania týchto známok, zašlite ich <a href="https://wiki.osmfoundation.org/wiki/Licensing_Working_Group">pracovnej
-          skupine pre licencovanie</a>.
     index:
       js_1: Používate prehliadač bez podpory JavaScriptu, alebo máte JavaScript vypnutý.
       js_2: OpenHistoricalMap používa pre interaktívnu mapu JavaScript.
@@ -1943,9 +1854,6 @@ sk:
       map_image: Obrázok (obsahuje štandardné vrstvy)
       embeddable_html: Vložiteľné HTML
       licence: Licencia
-      export_details_html: Údaje OpenHistoricalMap sú k dispozícii pod licenciou <a
-        href="http://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database
-        License</a> (ODbL).
       too_large:
         advice: 'Ak tento export zlyhá, zvážte použitie niektorého z nasledovných
           zdrojov:'
@@ -1996,39 +1904,23 @@ sk:
         témy týkajúce sa mapovania.
       welcome:
         url: /welcome
-        title: Vitajte v OpenHistoricalMap
-        description: Začnite týmto rýchlym sprievodcom popisujúcim základy OpenHistoricalMap.
-      beginners_guide:
-        url: http://wiki.openstreetmap.org/wiki/Sk:Beginners%27_guide
-        title: Sprievodca pre začiatočníkov
-        description: Komunitou spravovaná príručka pre začiatočníkov.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Fórum pomoci
         description: Spýtajte sa otázku alebo vyhľadajte odpovede na stránke otázok
           a odpovedí OpenHistoricalMap.
-      mailing_lists:
-        title: E-mailové konferencie
-        description: Spýtajte sa otázku alebo diskutuje zaujímavé témy v tematických
-          alebo regionálnych emailových diskusných skupinách.
+      mailing_lists: {}
       forums:
         title: Fóra
-      irc:
-        title: IRC
-        description: Interaktívna diskusia v rôznych jazykoch na mnohé témy.
-      switch2osm:
-        title: switch2osm
-        description: Pomoc pre firmy a organizácie prechádzajúce na mapy alebo iné
-          služby založené na OpenHistoricalMap.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Pre organizácie
         description: Ste v organizácii, ktorá má planý s OpenHistoricalMap? Nájdite
           čo potrebujete v uvítacom sprievodcovi.
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: OpenStreetMap Wiki
-        description: Podrobnú dokumentáciu OpenHistoricalMap nájdete na wiki.
+      wiki: {}
     potlatch:
       desktop_html: Ešte stále môžete používať Potlatch <a href="https://www.systemed.net/potlatch/">stiahnutím
         aplikácie pre Mac a Windows</a>.
@@ -2117,21 +2009,10 @@ sk:
           toilets: WC
     welcome:
       title: Vitajte!
-      introduction_html: Vitajte na OpenHistoricalMap, slobodnej a upravovateľnej
-        mape sveta. Teraz, keď ste zaregistrovaný, môžete začať mapovať. Tu je stručný
-        prehľad najdôležitejších, ktoré potrebujete vedieť.
       whats_on_the_map:
         title: Čo patrí do mapy
-        on_html: OpenHistoricalMap je miesto pre mapovanie vecí, ktoré sú zároveň
-          <em>reálne aj aktuálne</em> - obsahuje milióny budov, ciest a ďalšie podrobnosti
-          o miestach. Môžete mapovať čokoľvek, čo vás zaujíma.
-        off_html: Čo <em>nezahŕňa</em> sú názory ako hodnotenia, historické či hypotetické
-          objekty a údaje zo zdrojov chránených autorským právom. Pokiaľ nemáte špeciálne
-          oprávnenie, nekopírujte z online nebo papierových máp.
       basic_terms:
         title: Základné pojmy pre mapovanie
-        paragraph_1_html: OpenHistoricalMap má svoj vlastný žargón. Tu je niekoľko
-          kľúčových slov, ktoré vám prídu vhod.
         editor_html: <strong>Editor</strong> je program alebo webovej stránky pomocou
           ktorej upravujete mapu.
         node_html: <Strong>Uzol</strong> je bod na mape, napr. jedna reštaurácia alebo
@@ -2142,17 +2023,8 @@ sk:
           názov reštaurácie alebo najvyššia povolená rýchlosť na ceste.
       rules:
         title: Pravidlá!
-        paragraph_1_html: OpenHistoricalMap má iba zopár formálnych pravidiel, ale
-          od všetkých účastníkov sa očakáva, že budú spolupracovať a komunikovať s
-          komunitou. Ak premýšľate nad akoukoľvek inou činnosťou než manuálna editácia,
-          prečítajte si, prosím, a dodržiavajte pokyny na stránkach <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>Importy</a>
-          a <a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>Automatizované
-          editácie</a>.
       questions:
         title: Akékoľvek otázky?
-        paragraph_1_html: |-
-          OpenHistoricalMap ponúka niekoľko zdrojov, kde je možné získať informácie o projekte, spýtať sa rôzne otázky a spoločne diskutovať a dokumentovať témy týkajúce sa mapovania.
-          <a href='%{help_url}'>Tu získajte pomoc</a>. Ste organizácia, ktorá má plány s OpenHistoricalMap? <a href='https://welcome.openstreetmap.org/'>Pozrite sa na sprievodcu privítaním</a>.
       start_mapping: Začať mapovať
       add_a_note:
         title: Nie je čas upravovať? Pridajte poznámku!
@@ -2694,7 +2566,6 @@ sk:
         gps: Verejné GPS stopy
         overlays: Zapnúť vrstvy pre ladenie mapy
         title: Vrstvy
-      copyright: © <a href='%{copyright_url}'>prispievatelia OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Venujte dar</a>
     site:
       edit_tooltip: Upraviť mapu

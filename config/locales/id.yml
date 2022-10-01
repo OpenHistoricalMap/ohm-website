@@ -643,14 +643,11 @@ id:
         aeroway:
           aerodrome: Lapangan Terbang
           airstrip: Landasan
-          apron: Landasan Pesawat
-          gate: Gerbang
           hangar: Hanggar
           helipad: Helipad
           parking_position: Posisi Parkir
           runway: Landasan pacu
           taxiway: Landas hubung
-          terminal: Terminal
         amenity:
           animal_shelter: Tempat Perlindungan Hewan
           arts_centre: Pusat Kesenian
@@ -693,9 +690,6 @@ id:
           fire_station: Stasiun Pemadam Kebakaran
           food_court: Tempat Makan
           fountain: Air Mancur
-          fuel: Stasiun Pengisian Bahan Bakar
-          gambling: Perjudian
-          grave_yard: Kuburan
           hospital: Rumah Sakit
           hunting_stand: Pos Berburu
           ice_cream: Es Krim
@@ -912,8 +906,6 @@ id:
           brownfield: Lahan industri
           cemetery: Pemakaman
           commercial: Wilayah Komersial
-          conservation: Konservasi
-          construction: Konstruksi
           farm: Pertanian
           farmland: Lahan Pertanian
           farmyard: Lahan Peternakan
@@ -933,7 +925,6 @@ id:
           reservoir: Wilayah Serapan (Reservoir)
           reservoir_watershed: DAS reservoir
           residential: Wilayah Permukiman
-          retail: Wilayah Perdagangan
           village_green: Desa Hijau
           vineyard: Kebun anggur
           "yes": Lahan Guna
@@ -1175,7 +1166,6 @@ id:
           deli: Siap saji
           department_store: Toko serba ada
           discount: Toko Barang Obral
-          doityourself: Toko Perkakas
           dry_cleaning: Dry Cleaning
           electronics: Toko Elektronik
           estate_agent: Agen Properti
@@ -1196,7 +1186,6 @@ id:
           hardware: Toko Perangkat Keras
           hearing_aids: Alat Bantu Dengar
           herbalist: Herbalis
-          hifi: Hi-Fi
           houseware: Toko Peralatan Rumah Tangga
           ice_cream: Toko Es Krim
           interior_decoration: Dekorasi Rumah
@@ -1252,7 +1241,6 @@ id:
           artwork: Karya Seni
           attraction: Atraksi
           bed_and_breakfast: Penginapan untuk Tidur dan Sarapan
-          cabin: Kabin
           camp_site: Perkemahan
           caravan_site: Tempat Karavan
           chalet: Vila
@@ -1430,11 +1418,7 @@ id:
     edit_with: Edit menggunakan %{editor}
     tag_line: Peta Dunia Wiki Gratis
     intro_header: Selamat datang di OpenHistoricalMap!
-    intro_text: OpenHistoricalMap adalah peta dunia, diciptakan oleh orang-orang seperti
-      Anda dan bebas untuk digunakan di bawah lisensi terbuka.
     intro_2_create_account: Buat Akun
-    hosting_partners_html: Hosting didukung oleh %{ucl}, %{fastly}, %{bytemark}, dan
-      %{partners} lainnya.
     partners_ucl: UCL
     partners_bytemark: Hosting Bytemark
     partners_partners: mitra
@@ -1829,38 +1813,10 @@ id:
     about:
       next: Berikutnya
       copyright_html: <span>&copy;</span>Kontributor<br>OpenHistoricalMap
-      used_by_html: Kekuatan %{name} menyediakan peta data untuk ribuan situs web,
-        aplikasi seluler, dan perangkat keras
-      lede_text: "OpenHistoricalMap dibangun oleh komunitas pembuat peta yang berkontribusi\
-        \ dan memelihara data \ntentang jalan, jalur, kafe, stasiun kereta api, dan\
-        \ masih banyak lagi, di seluruh dunia."
       local_knowledge_title: Pengetahuan Lokal
-      local_knowledge_html: "OpenHistoricalMap menekankan pengetahuan lokal. Kontributor\
-        \ menggunakan \ncitra udara, perangkat GPS, dan peta lapangan berteknologi\
-        \ rendah untuk memverifikasi bahwa OSM akurat dan termutakhir."
       community_driven_title: Berbasis Masyarakat
-      community_driven_html: |-
-        Komunitas OpenHistoricalMap sangat beragam, rajin berkontribusi, dan semakin besar setiap harinya.
-        Kontributor kami terdiri dari penggemar peta, pegiat SIG, teknisi
-        yang mengurus server OSM, relawan yang memetakan kawasan terdampak bencana,
-        dan lain-lain.
-        Untuk mengetahui lebih lanjut, baca <a href='%{diary_path}'>catatan harian pengguna</a>,
-        <a href='http://blogs.openstreetmap.org/'>blog komunitas</a>, dan situs web <a href='http://www.osmfoundation.org/'>OSM Foundation</a>.
       open_data_title: Data Terbuka
-      open_data_html: "OpenHistoricalMap adalah <i>data terbuka</i>: Anda bebas untuk\
-        \ menggunakannya untuk tujuan apapun selama Anda memberi penghargaan pada\
-        \ OpenHistoricalMap dan kontributornya. Jika Anda mengubah atau membangun\
-        \ dari data dengan cara tertentu, Anda dapat menyebarkan hasilnya hanya di\
-        \ bawah lisensi yang sama. Lihat <a href='%{copyright_path}'>halaman Hak Cipta\
-        \ dan Lisensi</a> untuk perinciannya."
       legal_title: Legal
-      legal_1_html: |-
-        Situs ini dan layanan terkait lainnya dioperasikan secara resmi oleh <a href='https://osmfoundation.org/'>OpenHistoricalMap Foundation</a> (OSMF) atas nama komunitas. Menggunakan semua layanan yang dioperasikan oleh OSMF tunduk kepada <a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">Syarat Penggunaan</a>, <a href="https:://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">
-        Kebijakan Penggunaan Diterima</a> dan <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">Kebijakan Privasi</a> kami.
-      legal_2_html: |-
-        Silakan <a href='https://osmfoundation.org/Contact'>menghubungi OSMF</a> jika Anda punya pertanyaan seputar lisensi, hak cipta, atau isu dan pertanyaan hukum lainnya.
-        <br>
-        OpenHistoricalMap, logo kaca pembesar dan Peta adalah <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">merek dagang terdaftar OSMF</a>.
       partners_title: Rekan
     copyright:
       foreign:
@@ -1876,65 +1832,13 @@ id:
         native_link: versi bahasa Indonesia
         mapping_link: memulai pemetaan
       legal_babble:
-        title_html: Hak Cipta & Lisensi
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> adalah <i>data terbuka</i>, berlisensi di bawah <a
-          href="http://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> (ODbL) oleh  <a
-          href="http://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF).
-        intro_2_html: |-
-          Anda dibebaskan untuk menyalin, menyalurkan, mentransfer dan mengadaptasi data kami,
-          selama Anda menyertakan OpenHistoricalMap dan kontributornya. Jika Anda mengubah atau membangun
-          data kami, Anda harus menyalurkan hasilnya dalam lisensi yang sama.
-          <a href="http://opendatacommons.org/licenses/odbl/1.0/">Kode legal</a> berisi penjelasan hak dan kewajiban Anda.
-        intro_3_1_html: |-
-          Dokumentasi kami dilisensikan di bawah <a href="https://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons Attribution-ShareAlike 2.0</a> lisensi (CC BY-SA 2.0).
-        credit_title_html: Cara memberikan kredit pada OpenHistoricalMap
-        credit_1_html: Kami mewajibkan Anda untuk menggunakan kredit &ldquo;&copy;
-          Kontributor OpenHistoricalMap&rdquo;.
-        credit_2_1_html: Anda juga harus memperjelas bahwa data tersedia di bawah
-          Lisensi Database Terbuka, dan jika menggunakan tiles peta kami, kartografi
-          berlisensi sebagai CC-BY-SA. Anda dapat melakukannya dengan menghubungkan
-          ke <a href="http://www.openstreetmap.org/copyright">halaman hak cipta</a>.
-          Alternatifnya, dan sebagai sebuah persyaratan jika Anda mendistribusikan
-          OSM dalam bentuk data, Anda dapat menamakan dan menghubungkannya langsung
-          pada lisensinya. Pada media yang tidak memungkinkan tautan (misalnya hasil
-          cetak), kami menyarankan Anda untuk mengarahkan pembaca Anda pada openstreetmap.org
-          (mungkin dengan memperluas halaman 'OpenHistoricalMap' secara penuh), untuk
-          opendatacommons.org, dan jika relevan, untuk creativecommons.org.
         attribution_example:
-          alt: Contoh tentang bagaimana memberikan atribusi untuk OpenHistoricalMap
-            pada halaman web
           title: Contoh atribusi
         more_title_html: Mengetahui lebih lanjut
-        more_1_html: |-
-          Baca lebih lanjut tentang pemakaian data kami, dan cara memberi kami kredit, di <a
-          href="http://osmfoundation.org/License">halaman lisensi OSMF</a> dan <a href="http://wiki.openstreetmap.org/wiki/Legal_FAQ">Pertanyaan Legal yang sering diajukan (FAQ)</a> komunitas.
-        contributors_title_html: Kontributor kami
-        contributors_intro_html: 'Kontributor kami terdiri dari ribuan orang. Kami
-          juga memasukkan data dengan lisensi terbuka yang didapat dari badan-badan
-          pemetaan nasional dan sumber lainnya, diantaranya:'
-        contributors_footer_1_html: |-
-          Untuk rincian lebih lanjut, dan sumber-sumber lainnya yang telah digunakan untuk meningkatkan OpenHistoricalMap, silakan lihat <a
-          href="http://wiki.openstreetmap.org/wiki/Contributors">halaman Kontributor</a> pada Wiki OpenHistoricalMap.
-        contributors_footer_2_html: Dimasukkannya data dalam OpenHistoricalMap tidak
-          berarti bahwa penyedia data yang asli mendukung OpenHistoricalMap, menyediakan
-          jaminan, atau menerima tanggung jawab apapun.
         infringement_title_html: Pelanggaran hak cipta
         infringement_1_html: Kontributor OSM diingatkan untuk tidak menambahkan data
           dari sumber yang memiliki hak cipta sendiri (misalnya, Google Maps atau
           peta cetak) tanpa izin eksplisit dari pemegang hak cipta.
-        infringement_2_html: |-
-          Jika Anda percaya bahwa materi berhak cipta telah tidak tepat
-           ditambahkan ke OpenHistoricalMap database atau situs ini, silakan lihat <a href="https://wiki.osmfoundation.org/wiki/License/Takedown_procedure">prosedur takedown</a> kami atau kirimkan file langsung pada
-          <a href="https://dmca.openstreetmap.org/">pengajuan halaman on-line</a>.
-        trademarks_title_html: <span id="trademarks"></span>Merek dagang
-        trademarks_1_html: OpenHistoricalMap, logo lup, dan State of the Map adalah
-          merek dagang terdaftar dari OpenHistoricalMap Foundation. Jika Anda memiliki
-          pertanyaan tentang penggunaan merek tersebut, silakan kirim pertanyaan Anda
-          ke <a href="http://wiki.osmfoundation.org/wiki/Licensing_Working_Group">Licence
-          Working Group</a>.
     index:
       js_1: Anda menggunakan browser yang tidak mendukung JavaScript, atau Anda telah
         menonaktifkan JavaScript.
@@ -1964,8 +1868,6 @@ id:
       map_image: Gambar Peta (menunjukkan layer standar)
       embeddable_html: HTML yang terkait
       licence: Lisensi
-      export_details_html: Data OpenHistoricalMap memiliki lisensi <a href="http://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a> (ODbL).
       too_large:
         advice: 'Jika ekspor di atas gagal, silakan pertimbangkan untuk menggunakan
           satu dari sumber yang tercantum di bawah ini:'
@@ -2029,42 +1931,25 @@ id:
         \ dan mendokumentasikan topik pemetaan."
       welcome:
         url: /welcome
-        title: Selamat datang di OpenHistoricalMap
-        description: Mulailah dengan panduan cepat meliputi dasar-dasar OpenHistoricalMap.
-      beginners_guide:
-        url: http://wiki.openstreetmap.org/wiki/Panduan%27_pemula
-        title: Pedoman Pemula
-        description: Panduan yang ditunjang komunitas bagi pemula.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Forum Bantuan
         description: Ajukan pertanyaan atau mencari jawaban di situs tanya-jawab OpenHistoricalMap
           ini.
-      mailing_lists:
-        title: Daftar Alamat
-        description: Bertanya atau berdiskusi hal-hal menarik dalam daftar alamat
-          menurut berbagai topik dan daerah.
+      mailing_lists: {}
       forums:
         title: Forum
         description: Pertanyaan dan diskusi bagi mereka yang lebih menyukai antarmuka
           bergaya papan pengumuman.
-      irc:
-        title: IRC
-        description: Obrolan interaktif dalam berbagai bahasa mengenai bermacam-macam
-          topik.
-      switch2osm:
-        title: switch2osm
-        description: Bantuan untuk perusahaan dan organisasi yang beralih ke peta
-          dan layanan lain berbasis OpenHistoricalMap.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Untuk Lembaga-lembaga
         description: Bersama sebuah organisasi sedang membuat rencana untuk OpenHistoricalMap?
           Temukan apa yang Anda perlu tahu di Keset Selamat Datang.
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: Wiki OpenHistoricalMap
-        description: Telusuri wiki untuk dokumentasi mendalam OpenHistoricalMap.
+      wiki: {}
     potlatch:
       removed: Editor OpenHistoricalMap baku Anda ditetapkan menjadi Potlatch. Karena
         Adobe Flash Player telah ditarik; Potlatch tidak lagi tersedia untuk digunakan
@@ -2159,23 +2044,10 @@ id:
           toilets: Toilet
     welcome:
       title: Selamat datang!
-      introduction_html: Selamat datang di OpenHistoricalMap, peta dunia gratis dan
-        dapat disunting. Kini setelah Anda mendaftar, Anda sudah siap untuk memulai
-        pemetaan. Berikut ini adalah panduan cepat dengan hal-hal terpenting yang
-        perlu Anda ketahui.
       whats_on_the_map:
         title: Apa yang ada di Peta
-        on_html: OpenHistoricalMap adalah tempat untuk memetakan hal-hal, baik <em>nyata
-          dan saat ini</em> - ini mencakup jutaan bangunan, jalan, dan rincian lainnya
-          tentang tempat-tempat. Anda dapat memetakan fitur dunia-nyata apapun yang
-          menarik untuk Anda.
-        off_html: Apa yang <em>tidak</em> termasuk adalah data pendapat seperti peringkat,
-          fitur sejarah atau hipotesis, dan data dari sumber berhak cipta. Kecuali
-          Anda mempunyai izin khusus, jangan menyalin dari peta online atau kertas.
       basic_terms:
         title: Istilah-Istilah Dasar untuk Pemetaan
-        paragraph_1_html: OpenHistoricalMap memiliki beberapa istilah tersendiri.
-          Berikut ini beberapa kata kunci yang dapat digunakan.
         editor_html: <strong>Editor</strong> adalah sebuah program atau situs web
           yang dapat Anda gunakan untuk menyunting peta.
         node_html: Sebuah <strong>node</strong> adalah sebuah titik pada peta, seperti
@@ -2186,19 +2058,8 @@ id:
           \ atau jalan, seperti \nnama restoran atau batas kecepatan jalan"
       rules:
         title: Aturan!
-        paragraph_1_html: OpenHistoricalMap memiliki sedikit aturan formal tetapi
-          kami mengharapkan semua pesertanya untuk bekerja sama dan berkomunikasi
-          dalam komunitas. Jika Anda memikirkan aktivitas selain menyunting secara
-          langsung, mohon baca dan ikuti panduan pada<a href='http://wiki.openstreetmap.org/wiki/Import/Guidelines'>Impor</a>
-          dan <a href='http://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>Penyuntingan
-          otomatis</a>.
       questions:
         title: Ada pertanyaan?
-        paragraph_1_html: "OpenHistoricalMap memiliki beberapa sumber daya untuk belajar\
-          \ tentang proyek, bertanya dan menjawab \npertanyaan, dan bersama-sama mendiskusikan\
-          \ dan mendokumentasikan topik pemetaan.\n<a href='%{help_url}'>Dapatkan\
-          \ bantuan di sini</a>. Bersama sebuah organisasi membuat rencana untuk OpenHistoricalMap?\
-          \ <a href='https://welcome.openstreetmap.org/'>Lihatlah Keset Selamat Datang</a>."
       start_mapping: Mulai pemetaan
       add_a_note:
         title: Keberatan menyunting? Tambahkan catatan!
@@ -2772,7 +2633,6 @@ id:
         gps: Jejak GPS Umum
         overlays: Mengaktifkan overlay untuk penyelesaian masalah peta
         title: Lapisan
-      copyright: © <a href='%{copyright_url}'>Kontributor OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Beri Sumbangan</a>
       terms: <a href='%{terms_url}' target='_blank'>Ketentuan Situs Web dan API</a>
     site:

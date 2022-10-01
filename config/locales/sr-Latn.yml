@@ -343,12 +343,9 @@ sr-Latn:
       prefix:
         aeroway:
           aerodrome: Aerodrom
-          apron: Rampa
-          gate: Kapija
           helipad: Heliodrom
           runway: Pista
           taxiway: Rulna staza
-          terminal: Terminal
         amenity:
           arts_centre: Umetnički centar
           atm: Bankomat
@@ -384,8 +381,6 @@ sr-Latn:
           fire_station: Vatrogasna stanica
           food_court: Štandovi za brzu hranu
           fountain: Fontana
-          fuel: Benzinska pumpa
-          grave_yard: Groblje
           hospital: Bolnica
           hunting_stand: Lovački dom
           ice_cream: Prodavnica sladoleda
@@ -512,8 +507,6 @@ sr-Latn:
           brownfield: Zemljište za prenamenu
           cemetery: Groblje
           commercial: Poslovno područje
-          conservation: Zaštićeno područje
-          construction: Gradilište
           farm: Farma
           farmland: Polje
           farmyard: Farma
@@ -533,7 +526,6 @@ sr-Latn:
           reservoir: Rezervoar
           reservoir_watershed: Akumulaciona vododelnica
           residential: Stambeno područje
-          retail: Maloprodaja
           village_green: Seosko polje
           vineyard: Vinograd
         leisure:
@@ -680,7 +672,6 @@ sr-Latn:
           cosmetics: Kozmetičarska radnja
           department_store: Robna kuća
           discount: Diskont
-          doityourself: Uradi sam
           dry_cleaning: Hemijsko čišćenje
           electronics: Elektronska oprema
           estate_agent: Agent za nekretnine
@@ -697,7 +688,6 @@ sr-Latn:
           grocery: Bakalnica
           hairdresser: Frizerski salon
           hardware: Gvožđara
-          hifi: Muzička oprema
           jewelry: Zlatara
           kiosk: Kiosk
           laundry: Perionica rublja
@@ -724,7 +714,6 @@ sr-Latn:
           artwork: Galerija
           attraction: Atrakcija
           bed_and_breakfast: Polupansion
-          cabin: Koliba
           camp_site: Kamp
           caravan_site: Kamp-prikolice
           chalet: Planinska koliba
@@ -994,56 +983,7 @@ sr-Latn:
         native_link: srpsko izdanje
         mapping_link: počnite s mapiranjem
       legal_babble:
-        title_html: Autorska prava i licenca
-        intro_1_html: |-
-          OpenHistoricalMap is <i>open data</i>, licensed under the <a
-          href="http://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> (ODbL).
-        intro_2_html: |2-
-            Možete da umnožavate, delite, prenosite i prilagođavate
-            naše mape i podatke, sve dok imenujete Openstritmap i njene
-            urednike. Ako želite da menjate i dograđujete naše podatke,
-            možete ih deliti samo pod istom licencom.
-            Ceo <a href="http://creativecommons.org/licenses/by-sa/2.0/legalcode">
-            tekst ugovora</a> objašnjava vam vaša prava i odgovornosti.
-        credit_title_html: Kako da imenujete Openstritmap
-        credit_1_html: |2-
-            Ako koristite naše slike mapa, tražimo da zasluge sadrže
-            bar &ldquo;&copy; Doprinosioci
-            Openstritmapa, CC BY-SA&rdquo;. Ako koristite samo podatke mapa,
-            navedite &ldquo;Kartografski podaci &copy; Doprinosioci Openstritmapa,
-            CC BY-SA&rdquo;.
-        credit_2_1_html: |2-
-            Gde je moguće, Openstritmap bi trebalo da vodi do adrese <a
-            href="http://www.openstreetmap.org/">http://www.openstreetmap.org/</a>
-            i CC BY-SA do <a
-            href="http://creativecommons.org/licenses/by-sa/2.0/">http://creativecommons.org/licenses/by-sa/2.0/</a>.
-            Ako koristite medijum u kom se veze ne mogu postaviti
-            (npr. štampani rad), predlažemo da usmerite vaše
-            čitaoce na www.openstreetmap.org (po mogućstvu
-            proširavanjem &lsquo;Openstritmapa&rsquo; na celu adresu)
-            i na www.creativecommons.org.
         more_title_html: Saznajte više
-        more_1_html: |2-
-            Pročitajte više o korišćenju naših podataka na <a
-            href="http://wiki.openstreetmap.org/wiki/Legal_FAQ">ČPP</a>.
-        contributors_title_html: Naši saradnici
-        contributors_intro_html: |2-
-            Naša licenca CC BY-SA zahteva od vas da &ldquo;morate
-            navesti ime izvornog autora ili davaoca licence&rdquo;.
-            Pojedinačni kartografi ne zahtevaju isticanje zasluga osim
-            &ldquo;Openstritmap doprinosioca&rdquo;, ali kada podaci
-            pripadaju nacionalnoj geografskoj agenciji ili drugom
-            većem izvoru koji je uključen u Openstritmap, razumno je
-            navesti izvor ili ostaviti hipervezu do njega.
-        contributors_footer_1_html: |-
-          Više informacija o ovim i drugim izvorima korišćenim
-          za poboljšavanje Openstritmapa možete naći na stranici <a
-          href="http://wiki.openstreetmap.org/wiki/Contributors">Doprinosioci</a> na našem vikiju.
-        contributors_footer_2_html: |2-
-            Uključivanje podataka u Openstritmap ne podrazumeva da izvorni
-            vlasnik podataka prihvata Openstritmap, obezbeđuje bilo kakvu
-            garanciju ili prihvata odgovornost.
     index:
       js_1: Koristite pregledač koji ne podržava javaskript ili ste ga onemogućili.
       js_2: Openstritmap koristi javaskript za prikazivanje mapa.
@@ -1068,8 +1008,6 @@ sr-Latn:
       map_image: Slika mape (prikazuje standardni sloj)
       embeddable_html: Ugradivi HTML kod
       licence: Licenca
-      export_details_html: Podaci Openstritmapa su dostupni pod licencom <a href="http://creativecommons.org/licenses/by-sa/2.0/deed.sr">Krijejtiv
-        komons Autorstvo-Deliti pod istim uslovima 2.0</a>.
       too_large:
         body: Ovo područje je preveliko da bi bilo izvezeno u formatu XML. Uvećajte
           prikaz ili izaberite manju površinu.

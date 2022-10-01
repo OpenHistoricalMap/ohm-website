@@ -369,12 +369,9 @@ mr:
           station: रज्जुमार्ग स्थानक
         aeroway:
           aerodrome: विमानतळ
-          apron: भरणतळ
-          gate: द्वार
           helipad: हेलिपॅड
           runway: धावपट्टी
           taxiway: विमानखेचमार्ग
-          terminal: अग्र
         amenity:
           arts_centre: कलाकेंद्र
           atm: एटीएम
@@ -410,8 +407,6 @@ mr:
           fire_station: अग्निशमन केंद्र
           food_court: भोजन आवार
           fountain: कारंजे
-          fuel: इंधन
-          grave_yard: दफनभूमी
           hospital: रुग्णालय
           hunting_stand: मचाण
           ice_cream: आईसक्रिम
@@ -522,8 +517,6 @@ mr:
           basin: खोरे
           cemetery: दफनभूमी
           commercial: वाणिज्यिक क्षेत्र
-          conservation: संधारण
-          construction: बांधकाम
           farm: मळा
           farmland: शेतजमीन
           farmyard: शेतमैदान
@@ -542,7 +535,6 @@ mr:
           reservoir: जलाशय
           reservoir_watershed: जलाशयाचे पाणलोट क्षेत्र
           residential: निवासी क्षेत्र
-          retail: विक्री
           village_green: गावहिरवळ
           vineyard: द्राक्षमळा
         leisure:
@@ -691,7 +683,6 @@ mr:
           cosmetics: सौंदर्यप्रसाधनांचे दुकान
           department_store: एकछत्री भांडार
           discount: सवलतवस्तू दुकान
-          doityourself: स्वतः करा
           dry_cleaning: ड्रायक्लिनींग
           electronics: ईलेक्ट्रॉनिक्स दुकान
           estate_agent: स्थावर अभिकर्ता
@@ -737,7 +728,6 @@ mr:
           artwork: कलाकृति
           attraction: आकर्षण
           bed_and_breakfast: निद्रा व अल्पाहार
-          cabin: चौकी
           camp_site: पडाव स्थळ
           caravan_site: काफिला स्थळ
           guest_house: अतिथिभवन
@@ -807,8 +797,6 @@ mr:
     edit_with: '%{editor} वापरून संपादन करा'
     tag_line: मुक्त विकि जागतिक नकाशा
     intro_header: ओपनस्ट्रीटमॅपवर स्वागत आहे!
-    intro_text: ओपनस्ट्रीटमॅप हा जगाचा नकाशा आहे, जो आपल्यासारख्या लोकांनी तयार केला
-      आहे, व जो खुल्या परवान्यांतर्गत वापरास मुक्त आहे.
     intro_2_create_account: सदस्यखाते तयार करा
     partners_ucl: UCL VR सेंटर
     partners_bytemark: बाईटमार्क होस्टिंग
@@ -992,13 +980,7 @@ mr:
         native_link: मराठी आवृत्ती
         mapping_link: नकाशा आरेखन
       legal_babble:
-        title_html: प्रताधिकार व परवाना
-        credit_title_html: ओपनस्ट्रीटमॅपला श्रेय कसे द्यावे
         more_title_html: अधिक शोध
-        contributors_title_html: आमचे योगदाते
-        contributors_intro_html: 'आमचे योगदानकर्ते हे हजारोंच्या संख्येतील व्यक्ति
-          आहेत.आम्ही मुक्त परवान्यांतर्गत असलेला डाटा हा राष्ट्रीय नकाशा संस्थेंकडून
-          व त्यातील इतर स्रोतांतून घेऊन त्याचा अंतर्भाव करतो:'
         infringement_title_html: प्रताधिकार भंग
     index:
       js_1: आपण जावास्क्रीप्ट चालवू न शकणारा न्याहाळक वापरत आहात, किंवा जावास्क्रीप्ट
@@ -1024,8 +1006,6 @@ mr:
       map_image: नकाशा चित्र (प्रमाणित स्तर दाखविते)
       embeddable_html: अंतःस्थापन करण्याजोगी HTML
       licence: परवाना
-      export_details_html: ओपनस्ट्रीटमॅप डाटा हा <a href="http://opendatacommons.org/licenses/odbl/1.0/">
-        परवान्यांतर्गत आहे.ओपन डाटा कॉमन्स ओपन डाटाबेस परवाना</a> (ODbL).
       too_large:
         advice: 'जर वरील निर्यात करण्यास अपयश आले, तर कृपया खालील स्रोत वापरण्याचा
           विचार करा :'
@@ -1070,16 +1050,12 @@ mr:
       title: साहाय्य मिळविणे
       welcome:
         url: /welcome
-        title: ओएसएम वर स्वागत आहे
       help:
         url: https://help.openstreetmap.org/
         title: help.openstreetmap.org
         description: OSMच्या प्रश्नोत्तरासाठीच्या संकेतस्थळावर प्रश्न विचारा किंवा
           उत्तरे शोधा.
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: wiki.openstreetmap.org
-        description: सखोल OSM प्रलेखनासाठी विकी वाचा.
+      wiki: {}
     sidebar:
       search_results: शोध निकाल
       close: बंद करा
@@ -1156,8 +1132,6 @@ mr:
         title: नकाशावर काय आहे
       basic_terms:
         title: नकाशा आरेखनासाठीच्या मूलभूत संज्ञा
-        paragraph_1_html: ओपनस्ट्रीटमॅपची स्वतःची एक बोली आहे. हे काही प्रमुख शब्द
-          आहेत जे कामी येतील.
         editor_html: <strong>संपादक</strong> हा एक संगणक अनुप्रयोग किंवा संकेतस्थळ
           आहे, जे वापरून आपण नकाशाचे संपादन करू शकता.
         node_html: <strong>गाठ</strong> म्हणजे नकाशावरील एक बिंदू, जसे की एक उपाहारगृह
@@ -1326,7 +1300,6 @@ mr:
         notes: नकाशावरील टीपा
         data: नकाशावरील माहिती
         title: स्तर
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMap योगदानकर्ते</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>देणगी द्या</a>
     site:
       edit_tooltip: नकाशा संपादा

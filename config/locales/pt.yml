@@ -409,12 +409,9 @@ pt:
           station: Estação de elevador de esqui
         aeroway:
           aerodrome: Aeródromo
-          apron: Plataforma de estacionamento
-          gate: Portão
           helipad: Heliponto
           runway: Pista de Aterragem e Descolagem
           taxiway: Pista de taxiamento
-          terminal: Terminal
         amenity:
           arts_centre: Centro Artístico
           atm: Multibanco
@@ -453,8 +450,6 @@ pt:
           fire_station: Quartel de Bombeiros
           food_court: Praça de Alimentação
           fountain: Fonte
-          fuel: Combustível
-          grave_yard: Cemitério
           gym: Centro de Fitness / Ginásio
           health_centre: Centro de Saúde
           hospital: Hospital
@@ -584,8 +579,6 @@ pt:
           brownfield: Campo industrial contaminado
           cemetery: Cemitério
           commercial: Zona de Escritórios
-          conservation: Conservação
-          construction: Construção
           farm: Quinta
           farmland: Quinta
           farmyard: Edifícios Agrícolas
@@ -605,7 +598,6 @@ pt:
           reservoir: Reservatório
           reservoir_watershed: Bacia Hidrográfica do Reservatório
           residential: Zona Residencial
-          retail: Zona de Retalhos
           road: Área da Estrada
           village_green: Espaço Verde Urbano
           vineyard: Vinha
@@ -763,7 +755,6 @@ pt:
           deli: Charcutaria
           department_store: Loja de Departamento / Grande Armazém
           discount: Loja de Descontos
-          doityourself: Bricolage
           dry_cleaning: Limpeza a Seco
           electronics: Loja de Electrónica
           estate_agent: Imobiliária
@@ -782,7 +773,6 @@ pt:
           grocery: Mercearia
           hairdresser: Cabeleireiro(a)
           hardware: Loja de Ferragens
-          hifi: Hi-Fi
           insurance: Seguros
           jewelry: Joalharia
           kiosk: Quiosque
@@ -817,7 +807,6 @@ pt:
           artwork: Obra de arte
           attraction: Atracção
           bed_and_breakfast: Cama com pequeno-almoço incluído
-          cabin: Cabana
           camp_site: Parque de campismo
           caravan_site: Parque de caravanas
           chalet: Chalé
@@ -907,8 +896,6 @@ pt:
     edit_with: Editar com %{editor}
     tag_line: O Mapa Mundial Livre e Editável
     intro_header: Bem vindo ao OpenHistoricalMap!
-    intro_text: O OpenHistoricalMap é um mapa do mundo, criado por pessoas como você
-      e de uso livre sob uma licença aberta.
     intro_2_create_account: Crie uma conta de utilizador
     partners_html: O alojamento é suportado por %{ucl}, %{ic}, %{bytemark} e outros
       %{partners}.
@@ -2193,7 +2180,6 @@ pt:
         data: Dados técnicos do mapa
         overlays: Ativar sobreposições para solucionar problemas do mapa
         title: Camadas
-      copyright: © <a href='%{copyright_url}'>Colaboradores do OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Fazer um donativo</a>
     site:
       edit_tooltip: Editar o mapa

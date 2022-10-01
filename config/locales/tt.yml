@@ -247,12 +247,9 @@ tt:
       prefix:
         aeroway:
           aerodrome: Аэродром
-          apron: Перрон
-          gate: Утыруга чыгу
           hangar: Ангар
           helipad: Боралак мәйданчыгы
           runway: Очып менү-төшү юлы
-          terminal: Терминал
         amenity:
           arts_centre: Сәнгать йорты
           atm: Банкомат
@@ -282,7 +279,6 @@ tt:
           embassy: Илчелек
           ferry_terminal: Паром станциясе
           fountain: Фонтан
-          grave_yard: Күмелү урыны
           hospital: Хәстәханә
           hunting_stand: Аучы каланчасы
           ice_cream: Туңдырма
@@ -387,7 +383,6 @@ tt:
         landuse:
           basin: Бассейн
           cemetery: Зират
-          construction: Төзелеш
           farm: Ферма
           forest: Урман хуҗалыгы
           garages: Гаражлар

@@ -334,8 +334,6 @@ ta:
           fire_station: தீயணைப்பு நிலையம்
           food_court: உணவுச்சாலை
           fountain: நீரூற்று
-          fuel: எரிபொருள்
-          grave_yard: இடுகாடு
           hospital: மருத்துவமனை
           ice_cream: ஐஸ் கிரீம்
           kindergarten: சிறு குழந்தைகளுக்கு உரிய (விளையாட்டு முறை) கல்வி கூடம்
@@ -435,7 +433,6 @@ ta:
           "yes": சந்திப்பு
         landuse:
           commercial: வணிக பகுதி
-          construction: கட்டுமானம்
           farm: பண்ணை
           farmland: பண்ணை நிலம்
           forest: வனம்
@@ -446,7 +443,6 @@ ta:
           railway: தொடர்வண்டி பாதை
           reservoir: நீர்த்தேக்கம்
           residential: குடியிருப்பு பகுதி
-          retail: சில்லறை
         leisure:
           beach_resort: கடற்கரை தங்குமிடம்
           common: பொதுவான நிலம்

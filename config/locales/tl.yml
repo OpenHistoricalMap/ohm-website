@@ -552,12 +552,9 @@ tl:
       prefix:
         aeroway:
           aerodrome: Himpilan ng eroplano
-          apron: Tapis pangkusina
-          gate: Tarangkahan
           helipad: Lapagan at Lunsaran ng Helikopter
           runway: Patakbuhan at Daanan
           taxiway: Daanan ng Taksi
-          terminal: Terminal
         amenity:
           animal_shelter: Kanlungan ng hayop
           arts_centre: Lunduyan ng Sining
@@ -597,9 +594,6 @@ tl:
           fire_station: Himpilan ng Bumbero
           food_court: Korte ng Pagkain
           fountain: Bukal
-          fuel: Panggatong
-          gambling: Pagsusugal
-          grave_yard: Sementeryo
           hospital: Ospital
           hunting_stand: Pook-tayuan na Pangpangangaso
           ice_cream: Sorbetes
@@ -770,8 +764,6 @@ tl:
           brownfield: Lupain ng Kayumangging Bukirin
           cemetery: Libingan
           commercial: Pook na Pangkalakalan
-          conservation: Lupaing Iniligtas
-          construction: Konstruksyon
           farm: Bukid
           farmland: Lupaing Sakahan
           farmyard: Bakuran ng Bahay sa Bukid
@@ -791,7 +783,6 @@ tl:
           reservoir: Tinggalan ng Tubig
           reservoir_watershed: Lunas na Imbakan ng Tubig
           residential: Pook na Panirahan
-          retail: Tingi
           village_green: Nayong Lunti
           vineyard: Ubasan
         leisure:
@@ -973,7 +964,6 @@ tl:
           curtain: Tindahan ng Kurtina
           department_store: Tindahang Kagawaran
           discount: Tindahan ng mga Bagay na may Bawas-Presyo
-          doityourself: Gawin ng Sarili Mo
           dry_cleaning: Paglilinis na Tuyo
           e-cigarette: Tindahan ng Sigarilyong Elektroniko
           electronics: Tindahan ng Elektroniks
@@ -994,7 +984,6 @@ tl:
           grocery: Tindahan ng Groserya
           hairdresser: Tagapag-ayos ng Buhok
           hardware: Tindahan ng Hardwer
-          hifi: Hi-Fi
           jewelry: Tindahan ng Alahas
           kiosk: Tindahan ng Kubol
           laundry: Labahan
@@ -1034,7 +1023,6 @@ tl:
           artwork: Likhang Sining
           attraction: Pang-akit
           bed_and_breakfast: Kama at Almusal
-          cabin: Dampa
           camp_site: Pook ng Kampo
           caravan_site: Lugar ng Karabana
           chalet: Kubo ng Pastol
@@ -1172,11 +1160,7 @@ tl:
     edit_with: Mamatnugot sa pamamagitan ng %{editor}
     tag_line: Ang Malayang Mapa sa Daigdig ng Wiki
     intro_header: Maligayang pagdating sa OpenHistoricalMap!
-    intro_text: Ang OpenHistoricalMap ay isang mapa ng mundo na nilikha ng mga taong
-      katulad mo at malayang gamitin sa ilalim ng isang bukas na lisensya.
     intro_2_create_account: Lumikha ng isang akawnt ng tagagamit
-    hosting_partners_html: Ang pagpapasinaya ay sinusuportahan ng %{ucl}, %{fastly},
-      %{bytemark}, at iba pang %{partners}.
     partners_ucl: UCL
     partners_fastly: Fastly
     partners_bytemark: Bytemark Hosting
@@ -1484,26 +1468,8 @@ tl:
     about:
       next: Kasunod
       copyright_html: <span>&copy;</span>Mga tagapag-ambag<br>ng OpenHistoricalMap
-      used_by_html: Ang %{name} ay nagbibigay ng dato ng mapa para sa libu-libong
-        mga website, mga mobile na app, at aparatong hardware
-      lede_text: Ang OpenHistoricalMap ay nilikha ng isang komunidad ng mga nagmamapa
-        na nag-aambag at nagpapanatili ng dato tungkol sa mga kalsada, mga daanan,
-        mga kapihan, mga istasyon ng tren, at iba pa, sa buong mundo.
       local_knowledge_title: Kaalamang Lokal
-      community_driven_html: |-
-        Ang komunidad ng OpenHistoricalMap ay iba-iba, masigasig, at lumalaki araw-araw. Ang aming mga tagapag-ambag ay binubuo ng mga tagahanga ng mapa, mga propesyonal ng GIS, mga inhinyero na nagpapatakbo sa mga server ng OSM, mga boluntaryo sa pagmamapa ng mga lugar na apektado ng kalamidad, at higit pa.
-        Upang matuto nang higit pa, tignan ang mga <a href='%{diary_path}'>talaarawan ng mga tagagamit</a>, <a href='http://blogs.openstreetmap.org/'>mga blog ng komunidad</a>, at ang websayt ng <a href='http://www.osmfoundation.org/'>OSM Foundation</a>.
       open_data_title: Bukas na Dato
-      open_data_html: "Ang OpenHistoricalMap ay <i>bukas na datos</i>: malaya kang\
-        \ gamitin ito para sa anumang layunin hangga't nagbigay ka ng kredito sa OpenHistoricalMap\
-        \ at ang mga tagapag-ambag nito. Kung babaguhin mo o binuo mula sa data sa\
-        \ ilang mga paraan, maaari mong ipamahagi ang mga resulta sa ilalim lamang\
-        \ ng parehong lisensya. Tingnan ang <a href='%{copyright_path}'>pahina ng\
-        \ Karapatan sa Paglalathala at Lisensiya</a> para sa mga detalye."
-      legal_1_html: |-
-        Ang site na ito at maraming iba pang mga kaugnay na serbisyo ay opisyal na pinatatakbo ng <a href='http://osmfoundation.org/'>OpenHistoricalMap Foundation</a> (OSMF) sa ngalan ng komunidad. Ang paggamit ng lahat ng mga serbisyo na pinatatakbo ng OSMF ay napapailalim sa aming <a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">Pagtatakda sa Paggamit</a>, <a href="https://wiki.osmfoundation.org/wiki/Acceptable_Use_Policy">Mga Patakaran sa Katanggap-tanggap na Paggamit</a> at <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">Patakaran sa Pagkapribado</a>.
-        <br>
-        Mangyaring <a href='http://osmfoundation.org/Contact'>makipag-ugnay sa OSMF</a> kung mayroon kang mga katanungan tungkol sa paglilisensya, karapatang-ari, o iba pang mga legal na isyu at katanungan.
       partners_title: Mga Kawaksi
     copyright:
       foreign:
@@ -1520,65 +1486,14 @@ tl:
         native_link: Bersyon ng Tagalog
         mapping_link: simulan ang pagmamapa
       legal_babble:
-        title_html: Karapatan sa Paglalathala at Lisensiya
-        intro_1_html: |-
-          Ang OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> ay <i>bukas na datos</i>, nakalisensiya sa ilalim ng lisensiyang <a
-          href="http://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> (ODbL) ng <a href="http://osmfoundation.org/">OpenHistoricalMap Foundation</a> o OSMF.
-        intro_2_html: Malaya mong makokopya, maipapamahagi, maipahahatid at mahahalaw
-          ang aming mga dato, basta't babanggitin mo ang OpenHistoricalMap at ang
-          mga tagapag-ambag nito. Kapag binago mo o nagbuo sa pamamagitan ng aming
-          mga dato, maaari mong ipamahagi ang resulta sa ilalim lamang ng katulad
-          na lisensiya. Ipinapaliwanag ng buong <a href="https://opendatacommons.org/licenses/odbl/1.0/">kodigong
-          pambatas</a> ang mga karapatan at mga pananagutan mo.
-        intro_3_1_html: |-
-          Ang aming dokumentasyon ay lisensyado sa ilalim ng <a
-          href="https://creativecommons.org/licenses/by-sa/2.0/">lisensiyang Creative
-          Commons Attribution-ShareAlike 2.0</a> (CC BY-SA 2.0).
-        credit_title_html: Paano babanggitin ang OpenHistoricalMap
-        credit_1_html: "Kinakailangan namin na gamitin ang kredito na &ldquo;&copy;\
-          \ mga tagapag-ambag ng \nOpenHistoricalMap&rdquo;."
-        credit_2_1_html: "Kung saan maaari, dapat na ikawing nang labis (lagyan ng\
-          \ hyperlink) ang OpenHistoricalMap\nna papunta sa <a\nhref=\"http://www.openstreetmap.org/\"\
-          >http://www.openstreetmap.org/</a>\nat CC BY-SA sa <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\"\
-          >http://creativecommons.org/licenses/by-sa/2.0/</a>. Kung\ngumagamit ka\
-          \ ng isang midyum o kasangkapan kung saan hindi maaari ang mga kawing (iyong\
-          \ isang\nakdang nakalimbag), iminumungkahi namin na ituro ang mga mambabasa\
-          \ mo sa \nwww.openstreetmap.org (marahil sa pamamagitan ng pagpapalawak\
-          \ ng &lsquo;OpenHistoricalMap&rsquo;\nupang maging tumuturo sa buong tirahan\
-          \ na ito) at sa www.creativecommons.org."
         attribution_example:
           title: Halimbawa ng Atribusyon
         more_title_html: Ang pagtuklas ng mas marami pang iba
-        more_1_html: |-
-          Magbasa ng mas marami pa hinggil sa paggamit ng dato namin at kung paano kaming banggitin sa <a
-          href="https://osmfoundation.org/Licence">pahina ng Lisensya ng OSMF</a>.
-        contributors_title_html: Mga tagapag-ambag namin
-        contributors_intro_html: 'Ang aming mga tagapag-ambag ay libu-libong mga tao.
-          Isinasama rin namin ang mga datos na may bukas na lisensya mula sa mga pambansang
-          ahensya ng pagmamapa at iba pang mga mapagkukunan, kabilang sa mga ito ay:'
-        contributors_footer_1_html: "Para sa karagdagang mga detalye ng mga ito, at\
-          \ iba pang pinanggalingan na ginamit upang mapainam ang OpenHistoricalMap,\
-          \ paki tingnan ang <a\nhref=\"https://wiki.openstreetmap.org/wiki/Contributors\"\
-          >Pahina ng \ntagapag-ambag</a> na nasa OpenStreetMap Wiki ."
-        contributors_footer_2_html: Ang pagsasama ng dato sa loob ng OpenHistoricalMap
-          ay hindi nagpapahiwatig na ang orihinal na tagapagbigay ng dato ay tumatangkilik
-          sa OpenHistoricalMap, nagbibigay ng anumang garantiya, o tumatanggap ng
-          anumang pananagutan.
         infringement_title_html: Paglabag sa karapatang-sipi
         infringement_1_html: Ang mga tagapag-ambag ng OSM ay pinaalalahanan na huwag
           magdagdag ng datos mula sa anumang mapagkukunan na may karapatang-sipi na
           nakalaan (halimbawa, Google Maps o naka-print na mga mapa) nang walang pahintulot
           mula sa mga may hawak ng karapatang-sipi.
-        infringement_2_html: |-
-          Kung naniniwala ka na may mga bagay na may karapatang-sipi ay idinagdag sa hindi angkop na pamamaraan sa kalipunan ng dato ng OpenHistoricalMap o sa site na ito, tignan ang <a href="https://wiki.osmfoundation.org/wiki/Takedown_procedure">pamamaraan sa takedown</a> o direktang magpadala sa aming
-          <a href="https://dmca.openstreetmap.org/">on-line filing page</a>.
-        trademarks_title_html: Mga Markang Pagkakakilanlan
-        trademarks_1_html: Ang OpenHistoricalMap, ang logo na may salaming pampalaki
-          at State of the Map ay mga rehistradong markang pagkakakilanlan ng OpenHistoricalMap
-          Foundation. Kung may tanong tungkol sa paggamit ng mga marka, tignan ang
-          ating <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">Patakaran
-          sa Markang Pagkakakilanlan</a>.
     index:
       js_1: Maaaring gumagamit ka ng isang pantingin-tingin na hindi tumatangkilik
         ng JavaScript, o hindi mo pinagagana ang JavaScript.
@@ -1611,9 +1526,6 @@ tl:
       map_image: Larawan ng Mapa (nagpapakita ng patong na saligan)
       embeddable_html: Maibabaong HTML
       licence: Lisensiya
-      export_details_html: Ang dato ng OpenHistoricalMap ay may lisensiyang nasa ilalim
-        ng <a href="http://opendatacommons.org/licenses/odbl/1.0">lisensiyang Open
-        Data Commons Open Database License (ODbL)</a>.
       too_large:
         body: Masyadong malaki ang lugar na ito upang mailuwas bilang Dato ng XML
           ng OpenHistoricalMap. Mangyaring lumapit o pumili ng isang mas maliit na
@@ -1654,21 +1566,15 @@ tl:
     help:
       welcome:
         url: /welcome
-        title: Maligayang pagdating sa OpenHistoricalMap!
-      beginners_guide:
-        url: http://wiki.openstreetmap.org/wiki/Beginners%27_guide
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
-      irc:
-        title: IRC
-      switch2osm:
-        title: switch2osm
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Para sa mga Organisasyon
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: OpenStreetMap Wiki
+      wiki: {}
     sidebar:
       search_results: Mga Resulta ng Paghahanap
       close: Isara
@@ -2234,7 +2140,6 @@ tl:
         opnvkarte: ÖPNVKarte (mapa ng pampublikong sasakyan)
       layers:
         data: Dato ng Mapa
-      copyright: © <a href='%{copyright_url}'>Mga tagapag-ambag ng OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Gumawa ng Donasyon</a>
       terms: <a href='%{terms_url}' target='_blank'>Mga tuntunin sa website at API</a>
     site:

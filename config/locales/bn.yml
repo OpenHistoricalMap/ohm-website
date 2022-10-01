@@ -560,14 +560,11 @@ bn:
           station: বিমানপথ স্টেশন
         aeroway:
           aerodrome: বিমানশালা
-          apron: বর্হিবাস
-          gate: প্রবেশপথ
           hangar: বিমান রাখার স্থান
           helipad: হেলিপ্যাড
           parking_position: পার্কিং-এর স্থান
           runway: রানওয়ে
           taxiway: ট্যাক্সিওয়ে
-          terminal: টার্মিনাল
         amenity:
           animal_shelter: পশুদের আশ্রয়স্থল
           arts_centre: শিল্পকলা কেন্দ্র
@@ -609,9 +606,6 @@ bn:
           fire_station: অগ্নি নির্বাপন কেন্দ্র
           food_court: খাবার দোকান
           fountain: ঝরনা
-          fuel: জ্বালানি
-          gambling: জুয়াখেলার আড্ডা
-          grave_yard: কবরস্থান
           hospital: হাসপাতাল
           hunting_stand: শিকারশালা
           ice_cream: আইসক্রিম
@@ -798,7 +792,6 @@ bn:
           basin: অববাহিকা
           cemetery: কবরস্থান
           commercial: বানিজ্যিক এলাকা
-          construction: নির্মাণকার্য
           farm: খামার
           farmland: কৃষিজমি
           farmyard: গোলাবাড়ির উঠোন
@@ -818,7 +811,6 @@ bn:
           reservoir: জলাধার
           reservoir_watershed: জলাধারের বিভাগরেখা
           residential: আবাসিক এলাকা
-          retail: খুচরা
           village_green: হরিত গ্রাম
           vineyard: আঙুর খেত
           "yes": ব্যবহার্য ভূমি
@@ -1003,7 +995,6 @@ bn:
           deli: যন্ত্রাংশ
           department_store: ডিপার্টমেন্টাল স্টোর
           discount: সস্তা সামগ্রীর দোকান
-          doityourself: নিজে-করো
           dry_cleaning: কাপড় ধোয়ার দোকান
           electronics: বৈদ্যুতিক জিনিসের দোকান
           estate_agent: এস্টেট এজেন্ট
@@ -1021,7 +1012,6 @@ bn:
           hairdresser: নাপিত
           hardware: যন্ত্রাংশের দোকান
           hearing_aids: শ্রবণসহায়ক যন্ত্র
-          hifi: হাই-ফাই
           jewelry: গহনার দোকান
           kitchen: রান্নাঘরের দোকান
           laundry: ধোপার দোকান
@@ -1057,7 +1047,6 @@ bn:
           "yes": দোকান
         tourism:
           attraction: আকর্ষণ
-          cabin: কেবিন
           camp_site: ক্যাম্পের স্থল
           caravan_site: ক্যারাভ্যানের স্থল
           gallery: গ্যালারি
@@ -1170,8 +1159,6 @@ bn:
     edit_with: '%{editor} দিয়ে সম্পাদনা করুন'
     tag_line: মুক্ত উইকি বিশ্ব মানচিত্র
     intro_header: ওপেনস্ট্রিটম্যাপে স্বাগতম!
-    intro_text: ওপেনস্ট্রিটম্যাপ বিশ্বের একটি মানচিত্র; যা আপনার মতো মানুষের দ্বারা
-      নির্মিত এবং এটি মুক্ত লাইসেন্সের অধীনে বিনামূল্যে ব্যবহারযোগ্য।
     intro_2_create_account: একটি ব্যবহারকারী অ্যাকাউন্ট তৈরি করুন
     partners_ucl: UCL
     partners_partners: সহযোগীগণ
@@ -1390,11 +1377,6 @@ bn:
     about:
       next: পরবর্তী
       copyright_html: <span>&copy;</span>ওপেনস্ট্রিটম্যাপ<br>অবদানকারী
-      used_by_html: OpenHistoricalMap হাজার হাজার ওয়েবসাইট, মোবাইল অ্যাপ্লিকেশন এবং
-        হার্ডওয়্যার ডিভাইসের জন্য মানচিত্রের উপাত্ত সরবরাহ করে
-      lede_text: ওপেনস্ট্রিটম্যাপ মানচিত্রাঙ্কনকারীদের একটি সম্প্রদায় দ্বারা নির্মিত
-        যা সারা বিশ্বের রাস্তা, গমনপথ, ক্যাফে, রেলস্টেশন এবং আরও অনেক কিছু সম্পর্কিত
-        উপাত্ত যোগ ও রক্ষণাবেক্ষণ করে।
       local_knowledge_title: স্থানীয় অভিজ্ঞতা
       community_driven_title: সম্প্রদায় চালক
       open_data_title: মুক্ত তথ্য
@@ -1412,24 +1394,10 @@ bn:
         native_link: THIS_LANGUAGE_NAME_HERE সংস্করণ
         mapping_link: মানচিত্রকরণ শুরু করুন
       legal_babble:
-        title_html: কপিরাইট ও লাইসেন্স
-        intro_1_html: |-
-          ওপেনস্ট্রিটম্যাপ<sup><a href="#trademarks">&reg;</a></sup> একটি <i>মুক্ত উপাত্ত</i> যা <a
-          href="https://osmfoundation.org/">ওপেনস্ট্রিটম্যাপ ফাউন্ডেশন কর্তৃক</a> (OSMF) <a
-          href="https://opendatacommons.org/licenses/odbl/">মুক্ত উপাত্ত কমন্স মুক্ত তথ্যভিত লাইসেন্সের</a> (ODbL) আওতায় লাইসেন্সকৃত।
-        intro_3_1_html: আমাদের নথিপত্র <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.bn">ক্রিয়েটিভ
-          কমন্স অ্যাট্রিবিউশন-শেয়ারএলাইক ২.০</a> (সিসি বাই-এসএ ২.০) লাইসেন্সের অধীনে
-          লাইসেন্সকৃত।
-        credit_title_html: ওপেনস্ট্রিটম্যাপকে কীভাবে কৃতিত্ব দিবেন
         attribution_example:
           title: আরোপণ উদাহরণ
         more_title_html: আরও খুঁজা হচ্ছে
-        more_1_html: |-
-          আমাদের উপাত্ত ব্যবহার, ও আমাদেরকে কৃতিত্ব প্রদানের পদ্ধতি সম্পর্কে জানতে <a
-          href="http://osmfoundation.org/Licence">OSMF লাইসেন্সের পাতা</a> দেখুন।
-        contributors_title_html: আমাদের অবদানকারীগণ
         infringement_title_html: কপিরাইট লঙ্ঘন
-        trademarks_title_html: <span id="trademarks"></span>ট্রেডমার্ক
     index:
       js_1: আপনি এমন একটি ব্রাউজার ব্যবহার করছেন যা জাভাস্ক্রিপ্ট সমর্থন করে না অথবা
         আপনি জাভাস্ক্রিপ্ট অক্ষম করেছেন।
@@ -1447,8 +1415,6 @@ bn:
       map_image: মানচিত্র ছবি (মান্য স্তর দেখাও)
       embeddable_html: অভ্যন্তরীণ HTML
       licence: লাইসেন্স
-      export_details_html: ওপেনস্ট্রিটম্যাপের সমস্ত উপাত্ত <a href="https://opendatacommons.org/licenses/odbl/1.0/">ওপেন
-        ডাটা কমন্স ওপেন ডাটাবেস লাইসেন্সের</a> (ODbL) আওতায় প্রকাশিত।
       too_large:
         advice: 'যদি উপরের রপ্তানি ব্যর্থ হয়, দয়া করে নীচে তালিকাভুক্ত উৎসের কোন
           একটি ব্যবহারের জন্য বিবেচনা করুন:'
@@ -1486,25 +1452,17 @@ bn:
       title: সাহায্য পান
       welcome:
         url: /স্বাগতম
-        title: ওপেনস্ট্রিটম্যাপে স্বাগতম
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Beginners%27_guide
-        title: আরম্ভকারী সহায়িকা
-        description: নতুনদের জন্য সম্প্রদায় পরিচালিত নির্দেশিকা।
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: সাহায্য ফোরাম
-      mailing_lists:
-        title: মেইলিং তালিকা
+      mailing_lists: {}
       forums:
         title: ফোরাম
-      irc:
-        title: আইআরসি
+      irc: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: ওপেনস্ট্রিটম্যাপ উইকি
+      wiki: {}
     sidebar:
       search_results: অনুসন্ধানের ফলাফল
       close: বন্ধ

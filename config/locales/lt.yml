@@ -585,14 +585,11 @@ lt:
           station: Lyno stotis
         aeroway:
           aerodrome: Aerodromas
-          apron: Oro uosto aikštelė
-          gate: Vartai
           hangar: Angaras
           helipad: Sraigtasparnių aikštelė
           parking_position: Stovėjimo Pozicija
           runway: Pakilimo takas
           taxiway: Riedėjimo takas
-          terminal: Terminalas
         amenity:
           animal_shelter: Gyvūnų prieglauda
           arts_centre: Menų centras
@@ -635,10 +632,6 @@ lt:
           fire_station: Gaisrinė
           food_court: Savitarnos kavinė
           fountain: Fontanas
-          fuel: Degalinė
-          gambling: Lošimas
-          grave_yard: Kapinės
-          grit_bin: Smėlio dėžė
           hospital: Ligoninė
           hunting_stand: Medžiotojų bokštelis
           ice_cream: Ledai
@@ -822,8 +815,6 @@ lt:
           brownfield: Apleista teritorija
           cemetery: Kapinės
           commercial: Komercinis plotas
-          conservation: Apsaugos zona
-          construction: Statyba
           farm: Ūkis
           farmland: Fermos žemės
           farmyard: Ferma
@@ -843,7 +834,6 @@ lt:
           reservoir: Rezervuaras
           reservoir_watershed: Vandens rezervuaras
           residential: Gyvenamasis rajonas
-          retail: Mažmeninė prekyba
           village_green: Gyvenvietės žalioji zona
           vineyard: Vynuogynas
           "yes": Žemėnauda
@@ -1037,7 +1027,6 @@ lt:
           deli: Gastronomas
           department_store: Universalinė parduotuvė
           discount: Nukainotų prekių parduotuvė
-          doityourself: Pasidaryk pats
           dry_cleaning: Sausasis valymas
           electronics: Elektronikos parduotuvė
           estate_agent: Nekilnojamojo turto agentas
@@ -1054,7 +1043,6 @@ lt:
           grocery: Gastronomas
           hairdresser: Kirpykla
           hardware: Aparatūros parduotuvė
-          hifi: Hi-Fi
           interior_decoration: Interjero Dekoracija
           jewelry: Juvelyrikos parduotuvė
           kiosk: Kioskas
@@ -1092,7 +1080,6 @@ lt:
           artwork: Meno dirbiniai
           attraction: Lankytina vieta
           bed_and_breakfast: Nakvynės namai (viešbutis)
-          cabin: Kabina
           camp_site: Stovyklavietė
           caravan_site: Kemperių aikštelė
           chalet: Trobelė
@@ -1261,11 +1248,7 @@ lt:
     edit_with: Redaguoti su %{editor}
     tag_line: Atviras wiki žemėlapis
     intro_header: Sveiki atvykę į OpenHistoricalMap!
-    intro_text: OpenHistoricalMap yra pasaulio žemėlapis, kuriamas žmonių, tokių kaip
-      jūs. Jis atviras ir laisvas - naudojamas pagal atvirą licenciją.
     intro_2_create_account: sukurti naudotojo paskyrą
-    hosting_partners_html: Hostinimo paslaugas teikia %{ucl}, %{fastly}, %{bytemark}
-      ir kiti %{partners}.
     partners_ucl: UCL
     partners_bytemark: Bytemark serveris
     partners_partners: partneriai
@@ -1578,36 +1561,10 @@ lt:
     about:
       next: Kitas
       copyright_html: <span>&copy;</span>OpenHistoricalMap<br>talkininkai
-      used_by_html: OpenHistoricalMap pateikia žemėlapio duomenis tūkstančiams interneto
-        puslapių, mobilių aplikacijų ir techninės įrangos įrenginių
-      lede_text: OpenHistoricalMap kuria bendruomenė žymėtojų, kuriančių ir prižiūrinčių
-        kelių, takų, kavinių, stočių ir kitokius pasaulio duomenis.
       local_knowledge_title: Vietinės žinios
-      local_knowledge_html: OpenHistoricalMap išskiria vietines žinias. Talkininkai
-        naudoja orotofoto nuotraukas, GPS įrenginius ir paprastus lauko žemėlapius,
-        tikrindami, kad OSM duomenys yra teisingi ir aktualūs.
       community_driven_title: Bendruomenės vystomas
-      community_driven_html: OpenHistoricalMap bendruomenė yra įvairi, aistringa ir
-        auganti kiekvieną dieną. Tarp mūsų talkininkų yra žymėtojai entuziastai, GIS
-        profesionalai, OSM stotis prižiūrintys inžinieriai, žmonės žymintys nelaimių
-        vietas ir daug kitų. Norėdami daugiau sužinoti apie bendruomenę, skaitykite
-        <a href='%{diary_path}'>naudotojų dienoraščius</a>, <a href='http://blogs.openstreetmap.org/'>bendruomenės
-        dienoraščius</a> ir <a href='http://www.osmfoundation.org/'>OSM fondo</a>
-        svetainę.
       open_data_title: Atviri duomenys
-      open_data_html: "OpenHistoricalMap yra <i>atviri duomenys</i>: jūs galite laisvai\
-        \ juos naudoti bet kokiems tikslams, tol kol nepamirštate paminėti OpenHistoricalMap\
-        \ ir jo talkininkus. Jei keičiate arba pildote duomenis, galite rezultatą\
-        \ teikti tik su tokia pačia licencija. Daugiau informacijos rasite <a href='%{copyright_path}'>Teisės\
-        \ ir licencija</a>."
       legal_title: Teisės
-      legal_1_html: "Šis puslapis ir daugelis kitų susijusių paslaugų yra formaliai\
-        \ valdomi \n<a href='https://osmfoundation.org/'>OpenHistoricalMap fondo</a>\
-        \ (OSMF) \nbendruomenės vardu. Visų OSMF valdomų paslaugų naudojimas turi\
-        \ <a href=\"https://wiki.osmfoundation.org/wiki/Terms_of_Use\">naudojimo sąlygas</a>,\
-        \ <a href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\">\n\
-        Priimtino naudojimo politiką</a> ir mūsų <a href=\"https://wiki.osmfoundation.org/wiki/Privacy_Policy\"\
-        >privatumo politiką</a>."
       partners_title: Partneriai
     copyright:
       foreign:
@@ -1623,64 +1580,13 @@ lt:
         native_link: Lietuviška versija
         mapping_link: pradėti žymėjimą
       legal_babble:
-        title_html: Autorinės teisės ir licencija
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> yra <i>laisvai prieinamas</i>, licencijuotas <a
-          href="http://osmfoundation.org/">OpenHistoricalMap fondo</a> (OSMF) pagal <a
-          href="http://opendatacommons.org/licenses/odbl/">„Open Data
-          Commons Open Database License“</a> (ODbL).
-        intro_2_html: |-
-          Jūs galite laisvai platinti ir pritaikyti mūsų duomenis tol, kol paminite OpenHistoricalMap ir jo kūrėjus. Jei naudodamiesi mūsų duomenimis sukursite savo duomenis, jūsų duomenys irgi turi būti licencijuoti pagal tą pačią licenziją.
-          <a href="http://opendatacommons.org/licenses/odbl/1.0/">Pilnas teisinis aprašymas</a> paaiškins jūsų teises ir atsakomybes.
-        intro_3_1_html: |-
-          Mūsų dokumentacija yra licencijuoti pagal <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons Attribution-ShareAlike 2.0</a> licenciją (CC-BY-SA).
-        credit_title_html: Kaip paminėti OpenHistoricalMap
-        credit_1_html: |-
-          Mes reikalaujame, kad jūs parašytumėte "© OpenHistoricalMap
-           autoriai ".
-        credit_2_1_html: Jūs turite aiškiai parodyti, kad duomenys yra laisvai prieinami
-          pagal Open Database licenciją, o jei naudojate mūsų žemėlapio kaladėles,
-          tai kartografijos licencija yra CC-BY-SA. Tai padaryti galite pridėdami
-          nuorodą į <a href="http://www.openstreetmap.org/copyright">šį autorinių
-          teisių puslapį</a>. Kita vertus, ir kaip reikalavimas, jei platinate OSM
-          duomenų forma, jūs galite nurodyti licencijos pavadinimą ir pridėti nuorodą
-          į ją. Sklaidos priemonėse, kur nuorodos pateikti neįmanoma (pvz. spausdintuose
-          darbuose), mes siūlome jūsų skaitytojus nukreipti į openstreetmap.org (ko
-          gero išplečiant „OpenHistoricalMap“ iki pilno adreso), į opendatacommons.org
-          ir, jei tinka, į creativecommons.org.
         attribution_example:
-          alt: Pavyzdys kaip galima priskirti paskyrimus OpenHistoricalMap svetainėje
           title: Priskyrimo pavyzdys
         more_title_html: Papildoma informacija
-        more_1_html: |-
-          Daugiau informacijos apie mūsų duomenų naudojimą bei kaip paminėti prie jo prisidėjusius rasite <a
-          href="http://osmfoundation.org/Licence">OSMF licencijavimo puslapyje</a> ir bendruomenės <a href="http://wiki.openstreetmap.org/wiki/Legal_FAQ">teisiniame DUK</a>.
-        contributors_title_html: Mūsų autoriai
-        contributors_intro_html: Mūsų autoriai yra tūkstančiai įvairių žmonių. Taip
-          pat įtrauktas ir laisvai prieinamas turinys iš valstybinių kartografijos
-          agentūrų bei įvairių kitų šaltinių.
-        contributors_footer_1_html: Norėdami daugiau sužinoti apie šiuos ir kitus
-          šaltinius, kurie buvo naudojami tobulinant OpenHistoricalMap, peržiūrėkite
-          <a href="http://wiki.openstreetmap.org/wiki/Contributors">vystytojų puslapį</a>
-          OpenHistoricalMap wiki.
-        contributors_footer_2_html: Duomenų įtraukimas į OpenHistoricalMap nereiškia,
-          kad originalių duomenų tiekėjas remia OpenHistoricalMap. Nenumatomos jokios
-          garantijos ir neprisiimama jokia atsakomybė.
         infringement_title_html: Autorių teisių pažeidimas
         infringement_1_html: OSM pildytojai primenami niekada nesinaudoti autorių
           teisėmis apsaugotų šaltinių (pvz. Google Maps ar spausdintų žemėlapių) be
           leidimo naudoti.
-        infringement_2_html: Jei manote, kad autorių teisių saugomi darbai buvo netinkamai
-          panaudoti pildant OpenHistoricalMap duomenų bazę, įskaitant ir šią svetainę,
-          susipažinkite su mūsų <a href="http://wiki.osmfoundation.org/wiki/License/Takedown_procedure">duomenų
-          pašalinimo procedūra</a> arba užpildykite <a href="https://dmca.openstreetmap.org/">užpildykite
-          internetinę formą</a>.
-        trademarks_title_html: <span id="trademarks"></span>Prekių ženklai
-        trademarks_1_html: OpenHistoricalMap, lupos logotipas ir „State of the Map“
-          yra registruoti OpenHistoricalMap fondo prekių ženklai. Jei turite klausimų
-          apie šių ženklų naudojimą, siųskite savo klausimus <a href="http://wiki.osmfoundation.org/wiki/Licensing_Working_Group">Licencijavimo
-          darbinei grupei</a>.
     index:
       js_1: Jūs arba naudojate naršyklę, nepalaikančią JavaScript, arba išjungėte
         JavaScript palaikymą.
@@ -1711,8 +1617,6 @@ lt:
       map_image: Žemėlapio vaizdas (rodo standartinį sluoksnį)
       embeddable_html: Pritaikomas HTML
       licence: Licencija
-      export_details_html: OpenHistoricalMap duomenų licencija - <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a> (ODbL).
       too_large:
         advice: 'Jei aukščiau pateiktas eksportas nepavyko, pabandykite vieną iš žemiau
           išvardintų šaltinių:'
@@ -1775,39 +1679,23 @@ lt:
         užduoti klausimus, diskutuoti ir dokumentuoti žymėjimo temas.
       welcome:
         url: /welcome
-        title: Sveiki atvykę į OpenHistoricalMap
-        description: Pradėkite šiuo greitu vadovu apie OpenHistoricalMap pagrindus.
-      beginners_guide:
-        url: http://wiki.openstreetmap.org/wiki/Lt:Beginners%27_guide
-        title: Pradedančiojo vadovas
-        description: Bendruomenės palaikomas vadovas pradedantiesiems.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Pagalbos forumas
         description: Užduokite klausimą arba ieškokite atsakymų OpenHistoricalMap
           klausimų-ir-atsakymų svetainėje.
-      mailing_lists:
-        title: El. pašto grupės
-        description: Užduokite klausimą ar diskutuokite apie įdomius dalykus daugelyje
-          teminių ar regioninių el. pašto grupių.
+      mailing_lists: {}
       forums:
         title: Forumai
         description: Klausimai ir diskusijos tiems, kas teikia pirmenybę el. skelbimų
           lentos stiliaus sąsajai.
-      irc:
-        title: IRC
-        description: Interaktyvūs pokalbiai daugeliu kalbų, daugeliu temų.
-      switch2osm:
-        title: switch2osm
-        description: Pagalba kompanijoms ir organizacijoms pereinant į OpenHistoricalMap
-          paremtus žemėlapius ir kitas paslaugas.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Organizacijoms
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: OpenStreetMap Wiki
-        description: Daugiau detalios informacijos apie OpenHistoricalMap rasite wiki.
+      wiki: {}
     sidebar:
       search_results: Paieškos rezultatai
       close: Uždaryti
@@ -1893,22 +1781,10 @@ lt:
           toilets: Tualetai
     welcome:
       title: Sveiki atvykę!
-      introduction_html: Sveikiname prisijungus prie OpenHistoricalMap - laisvo ir
-        redaguojamo pasaulio žemėlapio. Dabar, kai prisijungėte, galite pradėti žymėti.
-        Čia trumpa instrukcija su svarbiausiais dalykais, kuriuos turėtumėte žinoti.
       whats_on_the_map:
         title: Kas yra žemėlapyje
-        on_html: OpenHistoricalMap žymimi objektai, kurie yra <em>tikri ir dabartiniai</em>
-          - tai milijonai pastatų, kelių ir kitos vietovių informacijos. Galite žymėti
-          bet kokius jus dominančius realaus pasaulio objektus.
-        off_html: Kas tikrai <em>netinka</em>, tai subjektyvūs duomenys, tokie kaip
-          įvertinimai, istoriniai arba hipotetiniai objektai, taipogi duomenys iš
-          autorinių teisių saugomų duomenų šaltinių. Jei negavote specialaus leidimo
-          - nekopijuokite iš internetinių ar popierinių žemėlapių.
       basic_terms:
         title: Pagrindiniai žymėjimo terminai
-        paragraph_1_html: OpenHistoricalMap turi savo žodyną. Čia keli pagrindiniai
-          naudojami terminai/žodžiai.
         editor_html: <strong>Rengyklė</strong> - tai programa arba svetainė su kuria
           galite redaguoti žemėlapį.
         node_html: <strong>node/taškas</strong> - taškas žemėlapyje, pavyzdžiui vienas
@@ -1919,17 +1795,8 @@ lt:
           restorano pavadinimas arba kelio greičio apribojimas.
       rules:
         title: Taisyklės!
-        paragraph_1_html: "OpenHistoricalMap turi nedaug formalių taisyklių, bet mes\
-          \ tikimės, kad visi dalyviai\nbendradarbiaus ir bendraus su bendruomene.\
-          \ Jei svarstote bet kokius\nveiksmus, išskyrus rankinį redagavimą, perskaitykite\
-          \ ir laikykitės rekomendacijų apie\n<a href='http://wiki.openstreetmap.org/wiki/Import/Guidelines'>importus</a>\
-          \ ir \n<a href='http://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>automatizuotą\
-          \ redagavimą</a>."
       questions:
         title: Turite klausimų?
-        paragraph_1_html: |-
-          Yra kelios vietos, kur galima rasti informacijos apie OpenHistoricalMap, užduoti klausimus, diskutuoti ir dokumentuoti žymėjimo klausimus.
-          <a href='%{help_url}'>Pagalbą rasite čia</a>. Organizacija turi planų su OpenHistoricalMap? <a href='https://welcome.openstreetmap.org/'>Perskaitykite įžanginę informaciją</a>.
       start_mapping: Pradėti žymėti
       add_a_note:
         title: Neturite laiko redaguoti? Pridėkite pastabą!
@@ -2440,7 +2307,6 @@ lt:
         gps: Vieši GPS pėdsakai
         overlays: Įjungti papildomus sluoksnius problemų pranešimui
         title: Sluoksniai
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMap talkininkai</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Paremkite</a>
       terms: <a href='%{terms_url}' target='_blank'>Svetainės ir API sąlygos</a>
     site:

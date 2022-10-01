@@ -104,7 +104,6 @@ ksh:
           grocery: ne Fooderlaade
           hairdresser: ne Frisör
           hardware: en Lade för Ieserkrohm
-          hifi: ne HiFi-Laade
           jewelry: ne Jold- un Selverschmitt
           kiosk: e Büüdsche
           laundry: en Wäscherei
@@ -130,7 +129,6 @@ ksh:
           alpine_hut: en Bärschhött
           artwork: e Kunswärk
           bed_and_breakfast: e „Zemmer met Fröhschtök“ udder Prevaatpangsjuhn
-          cabin: en Hött
           camp_site: ene Kämpengplaz
           caravan_site: ene Plaz för Wohnwaare
           chalet: en Feriehött
@@ -265,26 +263,19 @@ ksh:
         english_link: em Änglesche Ojinaal
       native:
         title: Övver di Sigg heh
-      legal_babble:
-        trademarks_1_html: |2-
-
-          <i lang="en" xml:lang="en" dir="ltr" title="An openly licensed map of the world being created by volunteers using local knowledge, GPS tracks and donated sources">OpenHistoricalMap</i>, dat Loro met dä Luhp, un <i lang="en" xml:lang="en" dir="ltr" title="„Zohschtand vun de Kaate“">State of the Map</i> sin Wahrezeijsche vun de <i lang="en" xml:lang="en" dir="ltr" title="An openly licensed map of the world being created by volunteers using local knowledge, GPS tracks and donated sources">OpenHistoricalMap</i>-Schtefftong. Wä Frohre drövver hät, schrihv di aan de <a href="http://wiki.osmfoundation.org/wiki/Licensing_Working_Group">Ärbejdsjropp vun de Lezänze</a>.
+      legal_babble: {}
     edit:
       anon_edits_link_text: Fengk eruß, woröm dadd esu es.
     export:
       osm_xml_data: <i lang="en">OpenHistoricalMap</i> sing <i lang="en">XML</i> Daate
       options: Ennschtällonge
     help:
-      beginners_guide:
-        title: Aanleidong för Aanfänger
+      beginners_guide: {}
       forums:
         title: Fohre
         description: Frohre un Klaaf för wä en Bedehnbovverfläsch em Schtihl vun enem
           BBS han well.
-      irc:
-        title: |2-
-
-          <i lang="en" xml:lang="en" dir="ltr" title="Internet Relay Chat">IRC</i>
+      irc: {}
     sidebar:
       close: Zohmaache
     search:
@@ -358,15 +349,6 @@ ksh:
     welcome:
       rules:
         title: Rääjelle!
-        paragraph_1_html: "<i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"An openly\
-          \ licensed map of the world being created by volunteers using local knowledge,\
-          \ GPS tracks and donated sources\">OpenHistoricalMap</i> hät neuje (fomälle)\
-          \ Rääjelle, ävver mer äwahde alle Metmaacher zesammezewerrke un sesch meddeneijn\
-          \ als Jemeijnschaff ußzetuusche. Wää jäd_annderes maache will, wi jät vun\
-          \ Hannd ennzejävve udder vun Hannd ze änndere, dann bs esu johd un lißß\
-          \ un bevollesch de Reeschlennije övver et <a href='http://wiki.openstreetmap.org/wiki/Import/Guidelines'>Empottehre</a>\
-          \ un övver \n<a href='http://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>automattesche\
-          \ Änderonge</a>."
   traces:
     new:
       help: Hölp

@@ -330,12 +330,9 @@ sco:
           station: Aerialway Station
         aeroway:
           aerodrome: Aerodrome
-          apron: Apron
-          gate: Gate
           helipad: Helipad
           runway: Runway
           taxiway: Taxiway
-          terminal: Terminal
         amenity:
           arts_centre: Airts Centre
           atm: ATM
@@ -371,8 +368,6 @@ sco:
           fire_station: Fire Station
           food_court: Fuid Coort
           fountain: Foontain
-          fuel: Fuel
-          grave_yard: Grave Yard
           hospital: Hospital
           hunting_stand: Huntin Staund
           ice_cream: Ice Cream
@@ -492,8 +487,6 @@ sco:
           brownfield: Brounfield Laund
           cemetery: Cemetery
           commercial: Commercial Aurie
-          conservation: Conservation
-          construction: Construction
           farm: Ferm
           farmland: Fermlaund
           farmyard: Fermyard
@@ -513,7 +506,6 @@ sco:
           reservoir: Reservoir
           reservoir_watershed: Reservoir Wattershed
           residential: Residential Aurie
-          retail: Retail
           village_green: Village Green
           vineyard: Vineyard
           "yes": Launduise
@@ -677,7 +669,6 @@ sco:
           deli: Deli
           department_store: Depairtment Store
           discount: Discoont Items Shop
-          doityourself: Dae-It-Yersel
           dry_cleaning: Dry Cleanin
           electronics: Electronics Shop
           estate_agent: Estate Agent
@@ -694,7 +685,6 @@ sco:
           grocery: Grocery Shop
           hairdresser: Hairdresser
           hardware: Hairdware Store
-          hifi: Hi-Fi
           jewelry: Jewelry Shop
           kiosk: Kiosk Shop
           laundry: Laundry
@@ -724,7 +714,6 @@ sco:
           artwork: Airtwirk
           attraction: Attraction
           bed_and_breakfast: Bed an Breakfast
-          cabin: Cabin
           camp_site: Camp Steid
           caravan_site: Caravan Steid
           chalet: Chalet
@@ -797,8 +786,6 @@ sco:
     edit_with: Eedit wi %{editor}
     tag_line: The Free Wiki Warld Cairt
     intro_header: Walcome tae OpenHistoricalMap!
-    intro_text: OpenHistoricalMap is a cairt o the warld, creatit bi fowk lik ye an
-      free tae uise unner an open license.
     intro_2_create_account: Create a uiser accoont
     partners_ucl: the UCL VR Centre
     partners_bytemark: Bytemark Hosting
@@ -881,52 +868,9 @@ sco:
         native_link: Scots version
         mapping_link: stairt cairttin
       legal_babble:
-        title_html: Copyricht an License
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> is <i>open data</i>, licensed unner the <a
-          href="http://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> (ODbL) bi the  <a
-          href="http://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF).
-        intro_2_html: |-
-          Ye are free tae copy, distribute, transmit an adapt oor data,
-          as lang as ye credit OpenHistoricalMap an its
-          contreibutors. If ye alter or big upon oor data, ye
-          mey distribute the result anly unner the same licence. The
-          full <a href="http://opendatacommons.org/licenses/odbl/1.0/">legal
-          code</a> explains yer richts an responsibilities.
-        intro_3_1_html: |-
-          The cairtografie in oor cairt tiles, an oor documentation, are
-          licensed unner the <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons Attribution-ShareAlike 2.0</a> license (CC BY-SA).
-        credit_title_html: Hou tae credit OpenHistoricalMap
-        credit_1_html: |-
-          We require that ye uise the credit &ldquo;&copy; OpenHistoricalMap
-          contributors&rdquo;.
-        credit_2_1_html: |-
-          Ye must an aa mak it clear that the data is available unner the Open
-          Database License, an if uisin oor cairt tiles, that the cairtografie is
-          licensed as CC BY-SA. Ye mey dae this bi airtin tae
-          <a href="http://www.openstreetmap.org/copyright">this copyricht page</a>.
-          Alternatively, an as a requirement if ye are distributin OSM in a
-          data form, ye can name an link directly tae the license(s). In media
-          whaur airtins are nae possible (e.g. printed wirks), we suggest ye
-          direct yer readers tae openstreetmap.org (perhaps bi expandin
-          'OpenHistoricalMap' tae this full address), tae opendatacommons.org, an
-          if relevant, to creativecommons.org.
         attribution_example:
-          alt: Example o hou tae attribute OpenHistoricalMap on a wabpage
           title: Attreibution example
         more_title_html: Findin oot mair
-        more_1_html: |-
-          Read mair aboot uisin oor data, an hou tae credit us, at the <a
-          href="http://osmfoundation.org/Licence">OSMF Licence page</a> an the commonty <a
-          href="http://wiki.openstreetmap.org/wiki/Legal_FAQ">Legal
-          FAQ</a>.
-        contributors_title_html: Oor contreibutors
-        contributors_intro_html: |-
-          Oor contreibutors are thoosands o individuals. We an aa include
-          openly-licensed data frae naitional mappin agencies
-          an ither soorces, amang them:
         infringement_title_html: Copyricht infringement
     export:
       title: Export
@@ -937,8 +881,6 @@ sco:
       map_image: Cairt Image (shaws staundart layer)
       embeddable_html: Embeddable HTML
       licence: Licence
-      export_details_html: OpenHistoricalMap data is licensed unner the <a href="http://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a> (ODbL).
       too_large:
         advice: 'If the abuin export fails, please consider uisin ane o the soorces
           leetit ablo:'
@@ -1013,20 +955,8 @@ sco:
           building: Signeeficant biggin
     welcome:
       title: Walcome!
-      introduction_html: |-
-        Walcome tae OpenHistoricalMap, the free an eeditable cairt o the warld. Nou that ye're signed
-        up, ye're aw set tae get stairtit cairttin. Here's a quick guide wi the maist important
-        things ye need tae ken.
       whats_on_the_map:
         title: Whit's on the Cairt
-        on_html: |-
-          OpenHistoricalMap is a place for cairttin things that are baith <em>real an current</em> -
-          it includes millions o biggins, roads, an ither details aboot places. Ye can cairt
-          whitever real-warld featurs are interestin tae ye.
-        off_html: |-
-          Whit it <em>disna</em> include is opinionatit data lik ratins, historical or
-          hypothetical featurs, an data frae copyrichtit soorces. Unless ye hae special
-          permission, dinna copy frae online or paper cairts.
   traces:
     create:
       upload_trace: Uplaid GPS Trace

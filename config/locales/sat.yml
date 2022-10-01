@@ -283,10 +283,7 @@ sat:
           drag_lift: ᱞᱤᱯᱷᱴ ᱚᱨ ᱢᱮ
           pylon: ᱯᱟᱭᱞᱚᱱ
         aeroway:
-          apron: ᱮᱯᱨᱚᱱ
-          gate: ᱫᱩᱣᱟᱹᱨ
           helipad: ᱦᱮᱞᱤᱯᱮᱰ
-          terminal: ᱴᱚᱨᱢᱤᱱᱚᱞ
         amenity:
           atm: ᱮᱴᱤᱮᱢ
           bank: ᱵᱮᱸᱠ
@@ -313,7 +310,6 @@ sat:
           embassy: ᱮᱢᱵᱮᱥᱤ
           ferry_terminal: ᱯᱷᱮᱨᱤ ᱴᱚᱨᱢᱤᱱᱟᱹᱞ
           fire_station: ᱥᱮᱸᱜᱮᱞ ᱥᱴᱮᱥᱚᱱ
-          fuel: ᱥᱩᱱᱩᱢ
           hospital: ᱟᱥᱯᱟᱛᱟᱞ
           ice_cream: ᱟᱤᱥ ᱠᱤᱨᱤᱢ
           internet_cafe: ᱤᱱᱴᱚᱨᱱᱮᱴ ᱠᱮᱯᱷᱮ
@@ -584,8 +580,7 @@ sat:
       zoom: ᱞᱟᱹᱴᱩ
       export_button: ᱵᱷᱮᱡᱟ
     help:
-      welcome:
-        title: OpenHistoricalMap ᱨᱮ ᱥᱟᱹᱜᱩᱱ ᱫᱟᱨᱟᱢ
+      welcome: {}
     sidebar:
       close: ᱵᱚᱸᱫᱚ
     search:

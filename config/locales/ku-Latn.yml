@@ -617,8 +617,6 @@ ku-Latn:
         aeroway:
           aerodrome: Balafirrgeh
           airstrip: Pîsta ji bo danînê
-          apron: Apron
-          gate: Dergeh
           hangar: Garaja Teyareyan
           helipad: Pîsta Helîkopterê
           holding_position: Cihê sekinandinê ji bo balafiran
@@ -627,7 +625,6 @@ ku-Latn:
           runway: Pîsta teyareyê
           taxilane: Xeta taksiyê
           taxiway: Rêya balafirgehê
-          terminal: Termînal
           windsock: Lûleya bayê
         amenity:
           animal_boarding: Sitareya Heywanan
@@ -673,10 +670,6 @@ ku-Latn:
           fire_station: Îtfaiye
           food_court: Cihê xwarinê
           fountain: Avweşînk
-          fuel: Petrol
-          gambling: Qumarxane
-          grave_yard: Qebristan
-          grit_bin: Qutiya qûm an jî xwêyê
           hospital: Nexweşxane
           hunting_stand: Standa nêçîrê
           ice_cream: Bestenî
@@ -935,8 +928,6 @@ ku-Latn:
           brownfield: Erdên Terkkirî
           cemetery: Goristan
           commercial: Cihê Xizmetên Ticarî
-          conservation: Erdên Muhafezekirî
-          construction: Înşaet
           farm: Zevî
           farmland: Zevî
           farmyard: Hewşa Çiftligê
@@ -958,7 +949,6 @@ ku-Latn:
           reservoir: Enbara Avê
           reservoir_watershed: Hewzeya Çemê
           residential: Cihê îkametê
-          retail: Esnaf (Perakendefiroş)
           village_green: Meydana Şînahiyan
           vineyard: Rez
           "yes": Emilandina erdê
@@ -1223,7 +1213,6 @@ ku-Latn:
           deli: Şarkuterî
           department_store: Firoşgeha mezin
           discount: Dikana tiştûmiştên di erzaniyê de
-          doityourself: Tu Bixwe Çêbike
           dry_cleaning: Paqijiya ziwa
           e-cigarette: Firoşgeha e-cixareyê
           electronics: Dikana elektronîkan
@@ -1249,7 +1238,6 @@ ku-Latn:
           health_food: Dikana Xwarinên Tenduristiyê
           hearing_aids: Cîhazên Bihîstinê
           herbalist: Dikana Giyayên Şîfadar
-          hifi: Dikana Cîhazên Hi-Fi
           houseware: Dikana eşyayên xaniyan
           ice_cream: Dikana Berfeşîrê
           interior_decoration: Dekorasyona hundirê malê
@@ -1309,7 +1297,6 @@ ku-Latn:
           artwork: Berhemên hunerî
           attraction: Cihên balkêş
           bed_and_breakfast: Pansiyona tevî 'taştê û nivîn'
-          cabin: Xanîk
           camp_pitch: Qada Kampê
           camp_site: Cihê kampê
           caravan_site: Cihê karavanê
@@ -1494,11 +1481,7 @@ ku-Latn:
     edit_with: Bi %{editor} sererast bike
     tag_line: Xerîteya Dinyayê a Wîkiya Azad
     intro_header: Tu bi xêr hatî OpenHistoricalMapêǃ
-    intro_text: OpenHistoricalMap xerîteyekî dinyayê ye ku ji aliyê kesên wek te ve
-      tê çêkirin û emilandina we belaş e û di bin lîsansa azad de ye.
     intro_2_create_account: Ji xwe re hesabekî çêbike
-    hosting_partners_html: Xizmeta hewandinê tê piştgirîkirin ji aliyê %{ucl}, %{bytemark},
-      û %{partners} din ve.
     partners_ucl: University College London
     partners_bytemark: Bytemark Hosting
     partners_partners: şirîkên me
@@ -1900,38 +1883,10 @@ ku-Latn:
     about:
       next: Pêşve
       copyright_html: <span>&copy;</span>Beşdarên<br> OpenHistoricalMapê
-      used_by_html: OpenHistoricalMap li ser bi hezaran malper, sepanên mobîl û cîhazên
-        hişkalavan, daneyên nexşeyê pêşkêş dike
-      lede_text: OpenHistoricalMap ji alî civata nexşesazên ku ji seransera dinyayê
-        der barê kolanan, kafeyan, stasyonên trênan û zêdetirê wan de daneyan tevlî
-        vir dike û diparêze.
       local_knowledge_title: Zanyariya herêmî
-      local_knowledge_html: OpenHistoricalMap girîngiyê dide zanyariyên xwecihî. Beşdarên
-        me ji bo tesdîq bikin ku OSM rast û rojane ye, wêneyên hewayî, cîhazên GPSê
-        û nexşeyên deverê yên bi teknolojiya-nizm bi kar tînin.
       community_driven_title: Bi rêbertiya civatê
-      community_driven_html: Civata OpenHistoricalMapê curbicur û bengîn e û herroj
-        mezintir dibe. Di navbera beşdarên me de nexşesazên dilxwaz, pisporên GISê,
-        endazyerên serverên OSMê dixebitînin, xêrxwazên ji bo herêmên di tesîra karesatê
-        de mane nexşe dikin û zêdetirên wan jî henin. Derbarê civatê de ji bo ku zêdetir
-        tiştan hîn bibî, binêre <a href='https://blog.openstreetmap.org'>Bloga OpenHistoricalMapê</a>,
-        <a href='%{diary_path}'>rojnivîskên bikarhêneran</a>, <a href='https://blogs.openstreetmap.org/'>blogên
-        civatê</a> û malpera <a href='https://www.osmfoundation.org/'>Weqfa OSMê</a>.
       open_data_title: Daneyên vekirî
-      open_data_html: "OpenHistoricalMap bi <i>daneya vekirî</i> ye: hûn serbest in\
-        \ ku vê bi her armancê bi kar bînin, bi şerta ku hûn OpenHistoricalMap û beşdarên\
-        \ wê referans bidin. Heke hûn daneyan biguherînin an jî li serê zêde bikin\
-        \ hûn vê encamê tenê di bin eynî lîsansê de dikarin belav bikin. Ji bo dêtayan\
-        \ binêrin <a href='%{copyright_path}'>rûpela lîsans û mafê daneriyê</a>."
       legal_title: Zagonî
-      legal_1_html: |-
-        Ev malper û gelek xizmetên din yên pêwendîdar bi awayekî fermî ji aliyê <a href='https://osmfoundation.org/'>Weqfa OpenHistoricalMapê</a> (OSMF) ve li ser navê civatê tê birêvebirin. Bikaranîna hemû karûbarên ku ji aliyê OSMF ve tê birêvebirin mijara  <a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">Mercên Bikaranînê</a>, <a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">
-        Politikayên Bikaranînê yê Qebûlbar</a> û <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">Politikaya me ya Veşarîtiyê</a> ye.
-      legal_2_html: Eger di derbarê lîsanskirin, mafê daneriyê de pirsên we hebin
-        an jî ji bo pirsên we yên din ên qanûnî xêra xwe <a href='https://osmfoundation.org/Contact'>bi
-        OSMF re têkiliyê deynin</a>. <br>OpenHistoricalMap, logoya mercekê û State
-        of the Map <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">marqeyên
-        ticarî yên qeydkirî yê OSMFê nin</a>.
       partners_title: Şirîkên me
     copyright:
       foreign:
@@ -1948,65 +1903,14 @@ ku-Latn:
         native_link: versiyona bi kurdî
         mapping_link: dest bi çêkirina nexşeyan bike
       legal_babble:
-        title_html: Mafê daneriyê û lîsans
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> <i>open data</i> ye, bi lîsansa <a
-          href="https://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> (ODbLê) ku ji aliyê <a
-          href="https://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF) ve hatiye çêkirin ve hatiye lîsanskirin.
-        intro_2_html: Hûn serbest in ku daneyên me kopî bikin, belav bikin, bişînin
-          yekî an jî adapte bikin bi şerta ku hûn behsa me bikin, rûmeta me bigrin.
-          Eger hûn daneyên me biguherînin an jî baştir bikin hûn vê netîceyê tenê
-          di bin eynî lîsansê de dikarin belav bikin. Temamiya <a href="https://opendatacommons.org/licenses/odbl/1.0/">koda
-          qanûnî</a>, maf û berpirsiyariyên we îzah dike.
-        intro_3_1_html: |-
-          Belgekirinên di nexşeya me de, di bin lîsansa <a href="https://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons Attribution-ShareAlike 2.0</a> (CC BY-SA 2.0) de hatiye lîsanskirin.
-        credit_title_html: Em çawan wekî çavkaniyekê behsa OpenHistoricalMapê bikin
-        credit_1_html: Ji bo referansgirtinê divê tu wisa binivîsîː &ldquo;&copy;
-          beşarên OpenHistoricalMapê &rdquo;.
-        credit_2_1_html: Herwiha divê hûn zelal bikin ku daneyên me di bin lîsansa
-          Open Database License de hatiye lîsanskirin, û eger karoyên nexşeya me were
-          emilandin, diyar bikin ku ev kartografî jî bi CC BY-SA hatiye lîsanskirin.
-          Hûn vê bi lînkdana ji <a href="https://www.openstreetmap.org/copyright">rûpela
-          mafê daneriyê</a> re dikarin bikin. Wekî alternatîv, û wekî hewcehiyek eger
-          tu OSMyê di formekî daneyan de belav bikî tu dikarî rasterast lîsansan bi
-          nav bikî an jî girê bidî lîsansê(n) rasterast. Di medyayên ku lînkkirin
-          ne mimkun bin de (wekî mînak. xebatên çapkirî), em ji we re pêşniyar dikin
-          ku hûn xwînerên xwe tewcîhê openstreetmap.org'ê, opendatacommons.org'ê,
-          û heke minasib be creativecommons.org'ê bikin.
         attribution_example:
-          alt: Mînakekê atfkirinê ya OpenSteetMapê yê li ser malperekî înternetê
           title: Mînaka atfkirinê
         more_title_html: Zêdetir hîn bibe
-        more_1_html: |-
-          Ji bo ku derbarê emilandina daneyên me û referansdana me de zêdetir hîn bibî <a
-          href="https://osmfoundation.org/Licence">rûpela Lîsansê a OSMFê</a> bixwîne.
-        contributors_title_html: Beşdarên me
-        contributors_intro_html: 'Bi hezaran beşdarên me hene. Herwiha em ji ajansên
-          nexşekirinê yên netewî û çavkaniyên din jî daneyên bi lîsansa-vekirî îhtîwa
-          dikin, hinek ji wan ev in:'
-        contributors_footer_1_html: |-
-          Ji bo dêtayên van û çavkaniyên din yên ku di pêşdebirina OpenStreeteMapê de hatine bikaranîn agahiyên zêdetir werbigrî, xêra xwe ji ser OpenStreetMap Wiki'yê binêre <a
-          href="https://wiki.openstreetmap.org/wiki/Contributors">rûpela Beşdaran</a>.
-        contributors_footer_2_html: Daxilbûna daneyan a di OpenHistoricalMapê de nayê
-          maneya ku peydakera daneyan yê eslî OpenHistoricalMapê teswîb dike, garantiyekî
-          temîn dike an jî berpirsîyariyekê qebûl dike.
         infringement_title_html: Îxlala mafê daneriyê
         infringement_1_html: Kesên ku tevkariyên OSMê dikin bila ti carî ji bîr nekin
           daneyên ji çavkaniyên ku mafên wan ên daneriyê parastî be (wekî nimûne Google
           Maps an jî nexşeyên çapkirî) bêyî destûra eşkere yê xwediyê wan, ji van
           çavkaniyan ti daneyek wernegrin.
-        infringement_2_html: Eger tu bawer bî materyalekî ku mafê we yê daneriyê parastî
-          ye bi şaşîtî li vê sîteyê an jî li daneya OpenHistoricalMapê hatibe zêdekirin
-          xêra xwe miracaeta <a href="https://www.osmfoundation.org/wiki/License/Takedown_procedure">prosedûra
-          me ya rakirinê</a> bike an jî rasterast di <a href="https://dmca.openstreetmap.org/">rûpela
-          me ya dosyekirinê a online</a> de qeyd bikin.
-        trademarks_title_html: <span id="trademarks"></span>Markên bazirganî
-        trademarks_1_html: OpenHistoricalMap, logoya mercekê û State of the Map; markên
-          ticarî yên OpenHistoricalMap Foundationê yên qeydkirî nin. Heke derbarê
-          bikaranîna markan de pirsên we hebin xêra xwe binêrin <a href="https://wiki.osmfoundation.org/wiki/Licensing_Working_Group">Polîtîkaya
-          Markên Ticarî</a>.
     index:
       js_1: Tu an gerokek ku piştgiriyê nade JavaScriptê bi kar tînî an jî JavaScript
         hatiye neçalakkirin.
@@ -2039,8 +1943,6 @@ ku-Latn:
       map_image: Risma Xerîteyê (tebeqeya standart nîşan dide)
       embeddable_html: HTML'a ku dikare were pêvekirin
       licence: Lîsans
-      export_details_html: Daneyên OpenHistoricalMapê di bin lîsansa <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a> (ODbL) hatiye lîsanskirin.
       too_large:
         advice: Eger hûn ji yê jor nikaribin eksport bikin, xêra xwe yek ji van çavkaniyên
           li xwarê a lîstekirî biemilînin.
@@ -2106,42 +2008,25 @@ ku-Latn:
         nexşeyê xwediyê çend çavkaniyan e.
       welcome:
         url: /welcome
-        title: Bi xêr hatî OpenHistoricalMapê
-        description: Bi vê rêbernameya kurt ê ku tê de esasên OpenHistoricalMapê heye
-          dest pê bike.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Beginners%27_guide
-        title: Rêbera ji bo kesên ku nû dest pê kirine
-        description: Civata me, ji bo kesên ku nû dest pê kirine rêbertî dike.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Foruma Alîkariyê
         description: Pirsek bipirsin an binêrin cewabên li ser malpera OpenHistoricalMapê
           ya pirs-û-bersivê.
-      mailing_lists:
-        title: Lîsteya E-nameyan
-        description: Di lîsteyên e-nameyan yên deverî an jî herêmî yên cur bi cur
-          de hûn dikarin pirsan bipirsin an jî mijarên balkêş nîqaş bikin.
+      mailing_lists: {}
       forums:
         title: Forum
         description: Pirs û gotûbêjên ji bo kesên ku înterfeysên bi şêweya panoya
           daxuyaniyê tercîh dikin.
-      irc:
-        title: IRC
-        description: Sohbeta înteraktîv yê bi gelek zimanan û di gelek mijaran de.
-      switch2osm:
-        title: switch2osm
-        description: Alikariya ji bo şirket û komeleyên ku derbasî nexşe û xizmetên
-          din yên bi bingeha OpenHistoricalMapê dibin.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Ji bo rêxistinan
         description: Tevî sazî an komeleyekê planên te yên ji bo OpenHistoricalMapê
           hene? Tiştê ku ji te re lazim e di Rûpela Xêrhatinê de peyda bike.
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: Wîkiya OpenHistoricalMapê
-        description: Ji bo belgeyên OpenHistoricalMapyê yên bi berfirehî binêrin wîkiyê.
+      wiki: {}
     potlatch:
       removed: Edîtora te ya OpenHistoricalMapê ya standard wek Potlatch hate bijartin.
         Ji ber ku Adobe Flash Player vekişiya, Potlatch êdî di gerokeke webê de ne
@@ -2236,23 +2121,10 @@ ku-Latn:
           toilets: Tiwalet
     welcome:
       title: Tu bi xêr hatî!
-      introduction_html: Tu bi xêr hatî OpenHistoricalMapê, nexşeya dinyayê yê azad
-        û yê ku bi rehetî dikare were sererastkirin. Niha te xwe qeyd kiriye û tu
-        dikarî dest bi nexşekirinê bikî. Va ye li vir rêbernameyek bilez yê tiştên
-        muhîm heye ku divê tu van bizanibî.
       whats_on_the_map:
         title: Çi hene li ser nexşeyê
-        on_html: OpenHistoricalMap cihekî ye ji bo nexşekirina tiştên <em>heqîqî û
-          rojane</em> - tê de bi milyonan avahî, rê û dêtayên derbarê deveran de heye.
-          Her taybetmendiyê cîhana rastîn ê ku bala te bikişîne dikarî nexşe bikî.
-        off_html: Çi tê de <em>nabe</em>? Daneyên serhişkane yên wek nirxandin, xisûsiyetên
-          dîrokî an jî ferazî û daneyên ji çavkaniyên ku mafên wan ên daneriyê parastî
-          be hatibin. Eger destûrekî we yê xisûsî tine be, ji nexşeyên online an jî
-          ji nexşeyên ser kaxizan kopî nekin.
       basic_terms:
         title: Termên esasî yên ji bo nexşekirinê
-        paragraph_1_html: OpenHistoricalMap xwediyê argoya xwe (zimanê xwe yê taybet)
-          ye. Vaye li vir çend peyvên ku wê bi kêrên we bên heye.
         editor_html: <strong>Sererastker</strong> (edîtor) bername an jî malperekî
           înternetê ye ku hûn wê dikarin ji bo sererastkirina nexşeyê bi kar bînin.
         node_html: <strong>Girêk</strong>, nuqteyekî di nexşeyê de ye, wekî restorantek
@@ -2263,20 +2135,8 @@ ku-Latn:
           jî rêyek yê mîna navê restorantek an jî lîmîta lezê yê kolanek e.
       rules:
         title: Qaîdeyên vêǃ
-        paragraph_1_html: "Her çiqas qaîdeyen fermî yên OpenHistoricalMapê hindik\
-          \ bin jî em ji hemû kesên tevkariya me dikin hêvî dikin ku bi civatê re\
-          \ bi hevkarî bixebitin û di têkiliyê de bin. Eger tu bifikirî ku xebatên\
-          \ xwe ne bi destê xwe bi rê ve bibî, xêra xwe ji jêr rêziknameyê bixwîne\
-          \ û bi ya rêziknameyê bike: <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>Barkirin</a>\
-          \ û \n<a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>Sererastkirinên\
-          \ otomatîk</a>."
       questions:
         title: Pirsekî te heye?
-        paragraph_1_html: OpenHistoricalMap ji bo hînbûna projeyê, pirskirin û cewabdana
-          pirsan, û ji bo nîqaşên ku bi hevkarî têne kirin û ji bo belgekirina mijarên
-          nexşeyê xwediyê çend çavkaniyan e. <a href='%{help_url}'>Ji vir alîkariyê
-          werbigire</a>. Bi sazî an komeleyeke dixwazî planan çêkî ji bo OpenHistoricalMapê?
-          <a href='https://welcome.openstreetmap.org/'>Rûpela Xêrhatinê kontrol bike</a>.
       start_mapping: Dest bi çêkirina nexşeyan bike
       add_a_note:
         title: Ji bo sererastkirinê wextê te tine? Wê gavê notek lê zêde bike!
@@ -2849,7 +2709,6 @@ ku-Latn:
         gps: Şopên GPSê yên giştî
         overlays: Ji bo ku pirsgirêkan çareser bikî tebeqeyan bide aktîvkirin
         title: Tebeqeyên nexşeyê
-      copyright: © <a href='%{copyright_url}'>Beşdarên OpenHistoricalMapê</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Bexşek bike</a>
       terms: <a href='%{terms_url}' target='_blank'>Mercên malper û APIyê</a>
       cyclosm: Şêweya kiremîtan ji aliyê <a href='%{cyclosm_url}' target='_blank'>CyclOSM</a>

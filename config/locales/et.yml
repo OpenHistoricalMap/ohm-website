@@ -593,10 +593,8 @@ et:
     search_osm_nominatim:
       prefix:
         aeroway:
-          gate: Värav
           helipad: Kopteriväljak
           taxiway: Ruleerimisrada
-          terminal: Terminal
         amenity:
           arts_centre: Kunstikeskus
           atm: Pangaautomaat
@@ -631,8 +629,6 @@ et:
           ferry_terminal: Praamiterminal
           fire_station: Tuletõrjedepoo
           fountain: Purskkaev
-          fuel: Kütus
-          grave_yard: Surnuaed
           hospital: Haigla
           hunting_stand: Jahikantsel
           ice_cream: Jäätis
@@ -972,7 +968,6 @@ et:
           artwork: Kunstiteos
           attraction: Turismiatraktsioon
           bed_and_breakfast: Kodumajutus
-          cabin: Metsamaja
           camp_site: Laagriplats
           chalet: Alpimaja
           gallery: Galerii
@@ -1084,11 +1079,7 @@ et:
     edit_with: Redigeeri rakendusega %{editor}
     tag_line: Vaba viki-maailmakaart
     intro_header: Tere tulemast OpenHistoricalMapi!
-    intro_text: OpenHistoricalMap on maailma kaart, mille on loonud inimesed nagu
-      sina ja seda võib vabalt kasutada avatud litsentsi tingimustel.
     intro_2_create_account: loo oma konto
-    hosting_partners_html: Majutust toetavad %{ucl}, %{fastly}, %{bytemark} ja teised
-      %{partners}.
     partners_ucl: UCL
     partners_bytemark: Bytemark Hosting
     partners_partners: partnerid
@@ -1428,45 +1419,10 @@ et:
     about:
       next: Edasi
       copyright_html: <span>&copy;</span>OpenHistoricalMapi<br>kaastöölised
-      used_by_html: OpenHistoricalMap varustab kaardiandmetega tuhandeid veebisaite,
-        mobiilirakendusi ja riistvaraseadmeid.
-      lede_text: OpenHistoricalMapi koostab kaardistajate kogukond, mis täiendab ja
-        haldab andmeid teede, radade, kohvikute, raudteejaamade ja paljude teiste
-        objektide kohta üle kogu maailma.
       local_knowledge_title: Kohalik teave
-      local_knowledge_html: OpenHistoricalMapi rõhuasetus on kohalikul teabel. Kaastöölised
-        kasutavad aerofotosid, GPS-seadmeid ja muid välikaardistuse vahendeid, et
-        kontrollida OSMi andmete täpsust ja ajakohasust.
       community_driven_title: Kogukonnapõhine
-      community_driven_html: |-
-        OpenHistoricalMapi kogukond on laiahaardeline ja entusiastlik ning suureneb iga päevaga.
-        Meie kaastöölisteks on innukad kaardistajad, GIS-spetsialistid, tehnikud, kes
-        hoiavad töös OSM-i servereid, humanitaarabitöötajad, kes kaardistavad õnnetuspiirkondi,
-        ja paljud teised.
-        Et kogukonnaga tutvuda, vaata
-        <a href='https://blog.openstreetmap.org'>OpenHistoricalMapi blogi</a>,
-        <a href='%{diary_path}'>kasutajate päevikuid</a>,
-        <a href='https://blogs.openstreetmap.org/'>kogukonnablogisid</a> ja
-        <a href='https://www.osmfoundation.org/'>OSM Foundationi</a> veebisaiti.
       open_data_title: Avaandmed
-      open_data_html: |-
-        OpenHistoricalMapi andmed on <i>avaandmed</i>. See tähendab, et tohid andmeid vabalt
-        kasutada igal eesmärgil, kui viitad OpenHistoricalMapile ja selle kaastöölistele.
-        Kui muudad andmeid või lood nende põhjal midagi uut, siis tohid tulemust levitada
-        ainult sama litsentsi alusel. Üksikasjad leiad
-        <a href='%{copyright_path}'>autoriõiguste ja litsentsi lehelt</a>.
       legal_title: Juriidiline teave
-      legal_1_html: "Seda saiti ja paljusid teisi seotud teenuseid haldab ametlikult\
-        \ \n<a href='https://osmfoundation.org/'>OpenHistoricalMap Foundation</a>\
-        \ (OSMF) \nkogukonna nimel. Kõigis OSMF-i hallatavates teenustes kehtivad\
-        \ meie <a href=\"https://wiki.osmfoundation.org/wiki/Terms_of_Use\">kasutustingimused</a>,\
-        \ <a href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\">võrgueeskiri</a>\
-        \ ja <a href=\"https://wiki.osmfoundation.org/wiki/Privacy_Policy\">andmekaitsereeglid</a>."
-      legal_2_html: |-
-        Palun <a href='https://osmfoundation.org/Contact'>võta ühendust OSMF-iga</a>,
-        kui sul on küsimusi litsentsimise, autoriõiguse või muude õiguslike teemade kohta.
-        <br>
-        OpenHistoricalMap, suurendusklaasi logo ja State of the Map on <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">OSMF-i registreeritud kaubamärgid</a>.
       partners_title: Partnerid
     copyright:
       foreign:
@@ -1482,67 +1438,14 @@ et:
         native_link: eestikeelse versiooni
         mapping_link: alustada kaardistamist
       legal_babble:
-        title_html: Autoriõigused ja litsents
-        intro_1_html: |-
-          OpenHistoricalMapi<sup><a href="#trademarks">&reg;</a></sup> andmed on <i>avaandmed</i>, mille
-          <a href="https://osmfoundation.org/">OpenHistoricalMap Foundation</a> (OSMF) on avaldanud Open Data Commonsi litsentsi <a href="https://opendatacommons.org/licenses/odbl/">Open Database License</a> (ODbL) all.
-        intro_2_html: |-
-          Tohid andmeid vabalt kopeerida, levitada, edastada ja kohandada,
-          kui viitad OpenHistoricalMapile ja selle kaastöölistele.
-          Kui muudad andmeid või teed neist tuletise, siis tohid
-          tulemust levitada ainult sama litsentsi tingimustel.
-          Sinu õigusi ja kohustusi selgitab litsentsi <a href="https://opendatacommons.org/licenses/odbl/1.0/">täistekst</a>.
-        intro_3_1_html: |-
-          Meie dokumentatsioon kuulub Creative Commonsi
-          litsentsi "<a href="https://creativecommons.org/licenses/by-sa/2.0/deed.et">Autorile viitamine + jagamine samadel tingimustel 2.0</a>" (CC BY-SA 2.0) alla.
-        credit_title_html: OpenHistoricalMapile viitamine
-        credit_1_html: |-
-          Nõuame, et kasutad omistamiseks teksti &ldquo;&copy; OpenHistoricalMapi
-          kaastöölised&rdquo;.
-        credit_2_1_html: |-
-          Samuti pead selgelt välja tooma, et andmed kuuluvad litsentsi Open
-          Database License alla ja kui kasutatakse kaardipaane, siis et kujutised
-          kuuluvad litsentsi CC BY-SA alla. Üks võimalus selleks on linkida
-          <a href="https://www.openstreetmap.org/copyright">siia autoriõiguse leheküljele</a>.
-          Teine võimalus ja samas ka nõue, kui levitad OSM-i
-          andmete kujul, on nimetada litsentsid ja linkida otse neile. Esitusvormis,
-          kus lingid pole võimalikud (nt trükises), soovitame suunata lugejad
-          aadressidele openstreetmap.org (võimalik, et laiendades teksti
-          "OpenHistoricalMap" täisaadressiks), opendatacommons.org ja
-          kui vaja, siis ka aadressile creativecommons.org.
         attribution_example:
-          alt: Näide, kuidas tunnustada OpenHistoricalMapi veebilehel
           title: Omistamise näide
         more_title_html: Lisateave
-        more_1_html: Loe <a href="https://osmfoundation.org/Licence">OSMF-i litsentsileheküljelt</a>
-          veel andmete kasutamise kohta ja sellest, kuidas meile viidata.
-        contributors_title_html: Meie kaastöölised
-        contributors_intro_html: |-
-          Meie kaastöölised on tuhanded üksikisikud. Samuti oleme kaasanud
-          vabalt litsentseeritud andmeid riiklikest kaardistusteenistustest
-          ja muudest allikatest, sealhulgas:
-        contributors_footer_1_html: |-
-          Täpsemat teavet nendest ja teistest allikatest, mida on kasutatud
-          OpenHistoricalMapi täiendamiseks, leiad
-          <a href="https://wiki.openstreetmap.org/wiki/Contributors">kaastööliste leheküljelt</a> OpenHistoricalMapi vikis.
-        contributors_footer_2_html: |-
-          Andmete kasutamine OpenHistoricalMapi koosseisus ei tähenda, et
-          algsete andmete pakkuja toetab OpenHistoricalMapi, pakub mingit tagatist või
-          võtab endale mingeid kohustusi.
         infringement_title_html: Autoriõiguste rikkumine
         infringement_1_html: |-
           OSM-i kaastöölistele on öeldud, et nad ei lisaks kunagi andmeid,
           mis pärinevad autoriõigusega kaitstud allikatest (nt Google Maps või trükikaardid),
           kui neil puudub autoriõiguse valdaja selgesõnaline luba.
-        infringement_2_html: |-
-          Kui usud, et OpenHistoricalMapi andmebaasi või sellele saidile on lisatud sobimatult
-          autoriõigusega kaitstud materjali, siis palun juhindu
-          <a href="https://www.osmfoundation.org/wiki/License/Takedown_procedure">eemaldamise protseduurist</a>
-          või täida <a href="https://dmca.openstreetmap.org/">vastaval leheküljel</a> vorm, et kaebus esitada.
-        trademarks_title_html: <span id="trademarks"></span>Kaubamärgid
-        trademarks_1_html: OpenHistoricalMap, suurendusklaasi logo ja State of the
-          Map on OpenHistoricalMap Foundationi registreeritud kaubamärgid. Kui sul
-          on nende märkide kasutamise kohta küsimusi, siis vaata meie <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">kaubamärgireegleid</a>.
     index:
       js_1: Kasutad kas brauserit, mis ei toeta JavaScripti, või oled JavaScripti
         keelanud.
@@ -1573,9 +1476,6 @@ et:
       map_image: Kaardi pilt (kuvab tavakaardi)
       embeddable_html: Põimitav HTML
       licence: Litsents
-      export_details_html: OpenHistoricalMapi andmed on avaldatud Open Data Commonsi
-        litsentsi <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open Database
-        License</a> (ODbL) tingimustel.
       too_large:
         advice: 'Kui ülaltoodu eksportimine ebaõnnestub, siis kasuta palun ühte alljärgnevatest
           allikatest:'
@@ -1636,40 +1536,24 @@ et:
         arupidamiseks ja dokumenteerimiseks.
       welcome:
         url: /welcome
-        title: Tere tulemast OpenHistoricalMapi
-        description: Alusta selle kiirjuhendiga, mis hõlmab OpenHistoricalMapi põhitõdesid.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Et:Beginners%27_guide
-        title: Juhend algajatele
-        description: Kogukonna hallatav juhend algajatele.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Abifoorum
         description: Esita küsimus või otsi vastuseid OpenHistoricalMapi küsimuste
           ja vastuste veebilehel.
-      mailing_lists:
-        title: Postiloendid
-        description: Esita küsimusi või arutle huvipakkuvatel teemadel paljudes temaatilistes
-          või piirkondlikes postiloendites.
+      mailing_lists: {}
       forums:
         title: Foorumid
         description: Küsimused ja arutelud nendele, kes eelistavad teadetetahvlile
           sarnanevat kasutajaliidest.
-      irc:
-        title: IRC
-        description: Interaktiivne suhtluskanal paljudes keeltes ja paljudel teemadel.
-      switch2osm:
-        title: switch2osm
-        description: Abi ettevõtetele ja organisatsioonidele, kes plaanivad kasutusele
-          võtta OpenHistoricalMapil põhinevad kaardid ja muud teenused.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         title: Organisatsioonidele
         description: Kas sinu organisatsioonil on kavas teha midagi OpenHistoricalMapiga?
           Vajamineva teabe leiad tervituslehelt.
-      wiki:
-        url: https://wiki.openstreetmap.org/wiki/Et:Main_Page
-        title: OpenHistoricalMapi viki
-        description: Sirvi vikis OpenHistoricalMapi põhjalikumat dokumentatsiooni.
+      wiki: {}
     sidebar:
       search_results: Otsingu tulemused
       close: Sulge
@@ -1748,23 +1632,10 @@ et:
           construction: Ehitatavad teed
     welcome:
       title: Tere tulemast!
-      introduction_html: Tere tulemast OpenHistoricalMappi, vabasse ja muudetavasse
-        maailmakaarti. Registreerumine on nüüd tehtud ja sa võid alustada kaardistamist.
-        Siin on lühiülevaade kõige olulisematest asjadest, mida peaksid teadma.
       whats_on_the_map:
         title: Mis on kaardil?
-        on_html: OpenHistoricalMap on koht, kus saab kaardile kanda objekte mis on
-          <em>reaalselt antud hetkel olemas</em> - nendeks on miljonid hooned, teed
-          ja muud üksikasjad. Sa võid kaardile kanda suvalisi reaalselt eksisteerivaid
-          üksikasju, mis sulle huvi pakuvad.
-        off_html: Kaart <em>ei sisalda</em> arvamuslikke andmeid, nagu näiteks hinnangud,
-          ajaloolisi või hüpoteetilisi omadusi, ega andmeid autoriõigustega kaitstud
-          allikatest. Kui sul puudub eriluba siis ära kopeeri võrgus olevatelt või
-          paberkaartidelt.
       basic_terms:
         title: Põhilised mõisted kaardistamisel
-        paragraph_1_html: OpenHistoricalMapil on omad erialased mõisted. Siin on mõned
-          peamised mõisted, mida tasub meelde jätta.
         editor_html: <strong>Redaktor</strong> on programm või veebileht, mida saab
           kasutada kaardi redigeerimiseks.
         node_html: <strong>Sõlm</strong> on punkt kaardil, nagu näiteks restoran või
@@ -1775,17 +1646,8 @@ et:
           kohta, näiteks restorani nime või tee kiiruspiirangut.
       rules:
         title: Reeglid!
-        paragraph_1_html: "OpenHistoricalMapil on vähe formaalseid reegleid, kuid\
-          \ me eeldame, et kõik osavõtjad teevad koostööd ja suhtlevad kogukonnaga.\
-          \ Kui plaanid tegevusi, mis ei ole käsitsi redigeerimine, siis loe \n<a\
-          \ href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>importimise</a>\
-          \ ja \n<a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>automaatsete\
-          \ muudatuste</a> juhendeid."
       questions:
         title: Tekkis küsimusi?
-        paragraph_1_html: |-
-          OpenHistoricalMap pakub erinevaid võimalusi projekti tundmaõppimiseks, küsimuste esitamiseks ja vastamiseks ning kaardistamise teemade üle üheskoos arupidamiseks ja dokumenteerimiseks.
-          <a href='%{help_url}'>Leia abi siit</a>. Kas sinu organisatsioonil on plaane seoses OpenHistoricalMapiga? <a href='https://welcome.openstreetmap.org/'>Vaata tutvustuslehte</a>.
       start_mapping: Alusta kaardistamist
       add_a_note:
         title: Pole aega kaarti muuta? Lisa märkus!
@@ -2313,7 +2175,6 @@ et:
         gps: Avalikud GPS-rajad
         overlays: Luba kattekihte, et kaarti analüüsida
         title: Kihid
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMapi kaastöölised</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Tee annetus</a>
       terms: <a href='%{terms_url}' target='_blank'>Veebisaidi ja API tingimused</a>
     site:

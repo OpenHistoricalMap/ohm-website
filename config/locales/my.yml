@@ -231,12 +231,9 @@ my:
         aeroway:
           aerodrome: ပုဂ္ဂလိက လေယာဉ်ကွင်း
           airstrip: လေယာဉ်ဆင်းကွင်း
-          apron: လေဆိပ်ဥပစာ
-          gate: ဂိတ်
           hangar: လေယာဉ်များထားသည့်ရုံ
           runway: ပြေးလမ်း
           taxiway: တက္ကစီသွားလမ်း
-          terminal: ဘူတာရုံ
         amenity:
           atm: အလိုအလျောက် ငွေထုတ်စက်
           bank: ဘဏ်
@@ -263,9 +260,6 @@ my:
           ferry_terminal: ဖယ်ရီကွင်း
           fire_station: မီးသတ်စခန်း
           fountain: ရေပန်း
-          fuel: လောင်စာ
-          gambling: လောင်းကစား
-          grave_yard: သုဿန်
           hospital: ဆေးရုံ
           ice_cream: ရေခဲမုန့်
           kindergarten: မူလတန်းကျောင်း
@@ -339,7 +333,6 @@ my:
         landuse:
           basin: မြစ်ဝှမ်း
           cemetery: သုဿန်
-          construction: ဆောက်လုပ်ရေး
           forest: သစ်တော
           grass: မြက်
           military: စစ်တပ်ဧရိယာ
@@ -654,9 +647,7 @@ my:
       native:
         title: ဤစာမျက်နှာအကြောင်း
         mapping_link: မြေပုံ စတင်ရေးဆွဲရန်
-      legal_babble:
-        title_html: မူပိုင်ခွင့်နှင့် လိုင်စင်
-        contributors_title_html: မိမိတို့၏ ပံ့ပို့ပေးသူများ
+      legal_babble: {}
     index:
       permalink: ပုံသေလိပ်စာ
     edit:
@@ -677,8 +668,7 @@ my:
       how_to_help:
         title: မည်ကဲ့သို့ ကူညီမည်
     help:
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Beginners%27_guide
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: အကူညီဖိုရမ်
@@ -687,9 +677,7 @@ my:
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: အဖွဲ့အစည်းများအတွက်
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: wiki.openstreetmap.org
+      wiki: {}
     sidebar:
       search_results: ရှာဖွေမှု ရလာဒ်များ
       close: ပိတ်ရန်
@@ -826,8 +814,7 @@ my:
       image: ရုပ်ပုံ
       long_link: လင့်
       download: ဒေါင်းလုဒ်
-    map:
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMap ပံ့ပိုးသူများ</a>
+    map: {}
     changesets:
       show:
         hide_comment: ဝှက်

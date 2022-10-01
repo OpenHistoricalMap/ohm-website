@@ -510,14 +510,12 @@ xmf:
         aeroway:
           aerodrome: აეროდრომი
           airstrip: ეიოფურჷნალ-დაფურჷნალი საროტი
-          gate: გიშაულარი
           hangar: საფიში
           helipad: ვერტფურინჯიშ დახუნალი
           parking_position: პარკინგიშ აბანი
           runway: ეიოფურჷნალ-დაფურჷნალი ღოზი
           taxilane: ტაქსიშ ღოზი
           taxiway: ტაქსიშ რზა
-          terminal: ტერმინალი
           windsock: ბორიამაძირაფალი
         amenity:
           arts_centre: ხელუანაფაშ ცენტრი
@@ -557,9 +555,6 @@ xmf:
           fast_food: ბიწორი ჭკომუ
           ferry_terminal: ბონარიშ დგჷმილი
           fire_station: მედაჩხირე გჷმნართი
-          fuel: ოჭუაშე
-          gambling: აზარტული ლაჸაფეფი
-          grave_yard: საფულა
           hospital: ოსქილადე
           hunting_stand: სამაჯინო
           ice_cream: ნაჸინა
@@ -747,8 +742,6 @@ xmf:
           brownfield: მეტებული აბანი
           cemetery: ოსაფულე
           commercial: კომერციული ტერიტორია
-          conservation: კონსერვაცია
-          construction: აკოგაფა
           farm: ფერმა
           farmland: ორგებუ
           forest: ტყა
@@ -763,7 +756,6 @@ xmf:
           recreation_ground: რეკრეაციული ზონა
           reservoir: წყაროჩუაშე
           residential: ოხორუ ტერიტორია
-          retail: ოვაჭარე ტერიტორია
           village_green: წვანე ოფუტე
           vineyard: ბინეხი
           "yes": დიხარგება

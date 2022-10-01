@@ -533,12 +533,9 @@ scn:
           station: Stazzioni dâ funivìa
         aeroway:
           aerodrome: Ariuportu
-          apron: Chiazzali
-          gate: Porta di mbarcu
           helipad: Eliportu
           runway: Pista d’attirraggiu
           taxiway: Pista di rullaggiu
-          terminal: Terminal
         amenity:
           animal_shelter: Rifuggiu di l'armali
           arts_centre: Centru d'arti
@@ -579,9 +576,6 @@ scn:
           fire_station: Pumperi
           food_court: Zona di risturazzioni
           fountain: Funtana
-          fuel: Pompa dâ binzina
-          gambling: Scummissi
-          grave_yard: Cimiteru
           hospital: Spitali
           hunting_stand: Barracca dî cacciatura
           ice_cream: Gilatarìa
@@ -730,8 +724,6 @@ scn:
           brownfield: Zona luttizzata
           cemetery: Cimiteru
           commercial: Zona cummirciali
-          conservation: Zona prutetta
-          construction: Zona n custruzzioni
           farm: Massarìa
           farmland: Terra curtivata
           farmyard: Aria
@@ -751,7 +743,6 @@ scn:
           reservoir: Lacu artificiali
           reservoir_watershed: Gebbia
           residential: Zona risidinziali
-          retail: Putìa
           village_green: Parcu urbanu
           vineyard: Vigna
           "yes": Usu dâ terra
@@ -924,7 +915,6 @@ scn:
           deli: Salumarìa
           department_store: Magasenu granni
           discount: Discount
-          doityourself: Fai-da-te
           dry_cleaning: Lavasiccu
           electronics: Nigozziu d'elittrònica
           estate_agent: Agginzìa mmubbiliari
@@ -941,7 +931,6 @@ scn:
           grocery: Putìa
           hairdresser: Piluccheri
           hardware: Firramenta
-          hifi: Hi-Fi
           jewelry: Giujillirìa
           kiosk: Cioscu
           laundry: Lavannarìa
@@ -972,7 +961,6 @@ scn:
           artwork: Òpira d'arti
           attraction: Attrazzioni turìstica
           bed_and_breakfast: Bed and Breakfast
-          cabin: Barracca
           camp_site: Campìu
           caravan_site: Campìu pî roulotte
           chalet: Bungalow
@@ -1075,8 +1063,6 @@ scn:
     edit_with: Cancia cu %{editor}
     tag_line: La cartina-wiki dû munnu lìbbira
     intro_header: Bimminuti nta OpenHistoricalMap!
-    intro_text: OpenHistoricalMap è na cartina dû munnu, criata di genti comu a tìa
-      e lìbbira a adupirari secunnu na licenza graputa.
     intro_2_create_account: Crea un cuntu d'utenti
     partners_ucl: UCL
     partners_bytemark: Bytemark Hosting
@@ -1414,35 +1400,10 @@ scn:
     about:
       next: Appressu
       copyright_html: <span>&copy;</span>Li cuntribbutura<br>d'OpenHistoricalMap
-      used_by_html: OpenHistoricalMap furnisci li dati giogràfici a migghiara di siti
-        web, applicazzioni mòbbili e apparecchi hardware
-      lede_text: |-
-        OpenHistoricalMap veni custruutu di na cumunità di mappatura chi cuntribbuìscinu e mantèninu dati
-        c'arriguàrdanu strati, trazzeri, bar, stazzioni dî treni, e tanti àutri cosi, nta tuttu lu munnu.
       local_knowledge_title: Canuscenza lucali
-      local_knowledge_html: OpenHistoricalMap metti l'accentu supra â canuscenza lucali.
-        Li cuntribbutura adòpiranu mmàggini aèrii, dispusitivi GPS, accussì comu cartini
-        a vascia ticnoluggìa, pi virificari chi OpenHistoricalMap è accuratu e arresta
-        aggiurnatu.
       community_driven_title: Guidatu dâ cumunità
-      community_driven_html: |-
-        La cumunità d'OpenHistoricalMap è varia, appassiunata, e crisci ogni jornu.
-        Tra dî nostri cuntribbutura ci sunnu mappatura entusiasti, prufissiunisti dî GIS, ncigneri chi mànnanu avanti li sirventi di OSM, vuluntarî chi màppanu li zoni afflitti dî disastri, e àutri genti ancora.
-        Pi sapiri cchiossai a prupòsitu dâ cumunità, talìa <a href='%{diary_path}'>li diari di l'utenti</a>,
-        <a href='http://blogs.openstreetmap.org/'>li blog dâ cumunità</a>, e lu situ dâ <a href='http://www.osmfoundation.org/'>Funnazzioni OSM</a>.
       open_data_title: Dati graputi
-      open_data_html: "OpenHistoricalMap è fattu di <i>dati graputi</i>: sî lìbbiru\
-        \ d'adupiràrili pi quali mutivu voi voi, finattantu chi duni l'attribbuzzioni\
-        \ a OpenHistoricalMap e li sò cuntribbutura. Si canci li dati o l'adòpiri\
-        \ comu puntu di partenza, lu travagghiu chi nni risurta lu poi distribbuiri\
-        \ sulu sutta â stissa licenza. Talìa la <a href='%{copyright_path}'>pàggina\
-        \ dû drittu d'auturi e dâ licenza</a> pî dittagghî."
       legal_title: Noti ligali
-      legal_1_html: "Stu situ e tanti àutri sirvizzî assuciati sunnu gistuti dâ  \n\
-        <a href='http://osmfoundation.org/'>Funnazzioni OpenHistoricalMap</a> (OSMF)\
-        \ \npi cuntu dâ cumunità.\n<br> \nVi prigamu di <a href='http://osmfoundation.org/Contact'>cuntattari\
-        \ l'OSMF</a> \nsi aviti addumannati o àutri prubblemi a prupòsitu di licenza,\
-        \ drittu d'auturi o àutri quistioni ligali."
       partners_title: Cullabburatura
     copyright:
       foreign:
@@ -1458,66 +1419,14 @@ scn:
         native_link: virsioni n sicilianu
         mapping_link: accuminzari a mappari
       legal_babble:
-        title_html: Dritti d'auturi e Licenza
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> è fattu di <i>dati graputi</i>, cunciduti sutta â licenza <a
-          href="http://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> (ODbL) dâ <a
-          href="http://osmfoundation.org/">Funnazzioni OpenHistoricalMap</a> (OSMF).
-        intro_2_html: |-
-          Sî lìbbiru di cupiari, diffùnniri, trasmèttiri e adattari li nostri dati, fintantu chi l'attribbuisci a OpenHistoricalMap e ê sò cuntribbutura. Si canci li dati o l'adòpiri comu puntu di partenza, poi distribbuiri lu travagghiu risurtanti sulamenti sutta â stissa licenza. Lu <a href="http://opendatacommons.org/licenses/odbl/1.0/">còdici ligali
-          code</a> cumpletu spiega quali sunnu li tò dritti e li tò rispunzabbilità.
-        intro_3_1_html: |-
-          La cartugrafìa ntê mattunelli dâ nostra cartina, e la nostra ducumintazzioni, sunnu sutta â licenza <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons Attribution-ShareAlike 2.0</a> (CC BY-SA).
-        credit_title_html: Comu s'attribbuisci a OpenHistoricalMap
-        credit_1_html: Addumannamu chi s'usa l'attribbuzzioni &laquo;&copy; li cuntribbutura
-          d'OpenHistoricalMap&raquo;.
-        credit_2_1_html: "S'havi a rènniri chiaru ca li dati sunnu misi a dispusizzioni\
-          \ sutta dâ Open\nDatabase License, e si s’adòpiranu li mattunelli dâ nostra\
-          \ cartina, chi la cartugrafìa è sutta dâ licenza CC BY-SA. Sta cosa si pò\
-          \ fari mittennu nu culligamentu a \n<a href=\"http://www.openstreetmap.org/copyright\"\
-          >sta pàggina dû drittu d'auturi</a>.\nComu altirnativa, e obbligatoriamenti\
-          \ quannu si diffunni OSM sutta forma di dati, si ponnu mintuari li licenzi\
-          \ pi nomu e cûn culligamentu direttu chi porta unni iddi. Nta ddi menzi\
-          \ unni li culligamenti nun sunnu pussìbbili (p'esempiu ntâ carta stampata),\
-          \ suggiremu di mannari li littura direttamenti unni openstreetmap.org (macari\
-          \ espannennu \n‘OpenHistoricalMap’ a stu nnirizzu cumpletu), unni opendatacommons.org,\
-          \ e, quann'è oppurtunu, unni\n creativecommons.org."
         attribution_example:
-          alt: Esempiu di comu s'attribbuisci a OpenHistoricalMap nta na pàggina web
           title: Esempiu d'attribbuzzioni
         more_title_html: Pi sapìrinni cchiossai
-        more_1_html: |-
-          Attrova àutri nfurmazzioni a prupòsitu di comu s'adòpiranu li nostri dati, e comu ni si duna attribbuzzioni, ntâ <a
-          href="http://osmfoundation.org/Licence">pàggina dâ licenza di l'OSMF</a> e ntê <a
-          href="http://wiki.openstreetmap.org/wiki/Legal_FAQ">addumannati friquenti ligali</a> gistuti dâ cumunità.
-        contributors_title_html: Li nostri cuntribbutura
-        contributors_intro_html: "Li nostri cuntribbutura sunnu migghiara di genti.\
-          \ Pigghiamu macari dati cu licenza graputa furnuti di l'agginzìi cartugràfichi\
-          \ nazziunali e d'àutri fonti, tra dî quali:"
-        contributors_footer_1_html: |-
-          Pi canùsciri àutri dittagghî supra a chisti e àutri fonti chi foru adupirati pi migghiurari OpenHistoricalMap, poi taliari <a
-          href="http://wiki.openstreetmap.org/wiki/Contributors">la pàggina dî cuntribbutura</a> supra â wiki di OpenHistoricalMap.
-        contributors_footer_2_html: La nclusioni dî dati nta OpenHistoricalMap nun
-          ìmplica ca lu sò furnituri origginali susteni OpenHistoricalMap, furnisci
-          na quarchi garanzìa, o accetta na quarchi rispunzabbilità.
         infringement_title_html: Viulazzioni dû drittu d’auturi
         infringement_1_html: Ê cuntribbutura d'OSM s'arricorda di nun agghiùnciri
           mai dati chi vèninu di fonti prutetti dû drittu d'auturi (ad esempiu Google
           Maps o puru li carti stampati) senza aviri n'auturizzazzioni splìcita dû
           titulari dû drittu d'auturi.
-        infringement_2_html: "Si penzi chi fu junciutu di manera nun dèbbita matiriali\
-          \ prutettu dû drittu d'auturi o ntâ basi di dati di OpenHistoricalMap o\
-          \ puru nta stu situ, pi favuri fai rifirimentu â nostra\n <a href=\"http://www.osmfoundation.org/wiki/License/Takedown_procedure\"\
-          >prucidura di cancillazzioni</a> o puru signalinilu direttamenti pi menzu\
-          \ dû nostru \n<a href=\"https://dmca.openstreetmap.org/\">mòdulu di signalazzioni\
-          \ n lìnia</a>."
-        trademarks_title_html: <span id="trademarks"></span>Marchi riggistrati
-        trademarks_1_html: OpenHistoricalMap e lu logu dâ lenti di ngrannimentu sunnu
-          marchi riggistrati dâ Funnazzioni OpenHistoricalMap. Si hai quarchi addumannata
-          supra a l'utilizzu chi poi fari di sti marchi, la poi mannari ô <a href="http://wiki.osmfoundation.org/wiki/Licensing_Working_Group">Gruppu
-          di travagghiu dî licenzi</a>.
     index:
       js_1: O stai adupirannu nu browser chi nun supporta lu JavaScript, o puru hai
         lu JavaScript disattivatu.
@@ -1548,8 +1457,6 @@ scn:
       map_image: Mmàggini dâ cartina (ammustra lu stratu standard)
       embeddable_html: HTML ncurpuràbbili
       licence: Licenza
-      export_details_html: Li dati d'OpenHistoricalMap sunnu sutta la licenza <a href="http://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a> (ODbL).
       too_large:
         advice: 'Si la spurtazzioni ccassupra nun arrinesci, poi pruvari cu una dî
           fonti ccassutta:'
@@ -1614,39 +1521,22 @@ scn:
         e pi discùtiri d'argumenti c'arriguàrdanu la mappatura e ducumintàrili n cullabburazzioni.
       welcome:
         url: /welcome
-        title: Bimminuti nta OSM
-        description: Accumenza cu sta guida ràpida chi nzigna li funnamenti d'OpenHistoricalMap.
-      beginners_guide:
-        url: http://wiki.openstreetmap.org/wiki/IT:Beginners%27_guide
-        title: Guida dî principianti
-        description: Guida pî principianti mantinuta dâ cumunità.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: help.openstreetmap.org
         description: Fai n'addumannata o cerca n'arrispunnuta ntô situ d'addumannati
           e arrispunnuti d'OSM.
-      mailing_lists:
-        title: Mailing list
-        description: Fai addumannati o discuti di quistioni ntirissanti nta na gamma
-          ampia di mailing list spicializzati pi tema o pi riggiuni.
+      mailing_lists: {}
       forums:
         title: Forum
         description: Addumannati e discussioni pi chiddi chi prifirìscinu na ntirfaccia
           fatta a bacheca.
-      irc:
-        title: IRC
-        description: Chat ntirattiva nta tanti lingui e supra a tanti argumenti diffirenti.
-      switch2osm:
-        title: switch2osm
-        description: Aiutu pi mprisi e assuciazzioni chi vannu a passari ê cartini
-          e a l'àutri sirvizzi basati supra a OpenHistoricalMap.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: wiki.openstreetmap.org
-        description: Sfogghia lu wiki p'attruvari la ducumintazzioni apprufunnuta
-          d'OSM.
+      wiki: {}
     sidebar:
       search_results: Risurtati di l'arricerca
       close: Chiudi
@@ -1724,22 +1614,10 @@ scn:
           construction: Strati n custruzzioni
     welcome:
       title: Bimminuti!
-      introduction_html: Bimminuti nta OpenHistoricalMap, la cartina dû munnu lìbbira
-        e canciàbbili. Ora chi siti scritti, siti pronti p'accuminzari a mappari.
-        Ccà c'è na guida chi spiega li cosi cchiù mpurtanti c'aviti a sapiri.
       whats_on_the_map:
         title: Zocchi c'è supra â cartina
-        on_html: |-
-          OpenHistoricalMap è nu postu pi mappari cosi chi sù <em>veri e attuali</em> -
-          cunteni miliuna d'edificî, strati e àutri dittagghî dî posti. Poi mappari zocchegghiè dû munnu riali chi ti ntiressa.
-        off_html: Chiddu chi mmeci <em>nun c'è</em> sunnu li dati d'opinioni comu
-          p'esempiu li giudizzî, l'elimenti chi nun esìstinu cchiù o chi sunnu iputètici,
-          e li dati chi vèninu di fonti prutetti dû drittu d'auturi. A menu chi nun
-          hai n'auturizzazzioni spiciali, nun cupiari mai di mappi n lìnia o di carta.
       basic_terms:
         title: Tèrmini funnamintali dâ mappatura
-        paragraph_1_html: OpenHistoricalMap havi nu sò linguaggiu particulari. Ccà
-          ci sù na para di palori chi ti ponnu aggiuvari.
         editor_html: N'<strong>editor</strong> è nu prugramma o nu situ web chi poi
           adupirari pi fari canciamenti ntâ cartina.
         node_html: Un <strong>gruppu</strong> è nu puntu sìngulu supra â cartina,
@@ -1751,19 +1629,8 @@ scn:
           p'esempiu lu nomu dûn ristoranti o lu lìmiti di vilucità di na strata.
       rules:
         title: Règuli!
-        paragraph_1_html: "OpenHistoricalMap havi picca règuli furmali, pirò n'aspittamu\
-          \ chi tutti li participanti cullàbburanu e cumùnicanu câ cumunità. Si stai\
-          \ pigghiannu a cunziddirazzioni di canciari la carta di quarchi manera àutra\
-          \ rispettu a fàrilu a manu, pi favuri leggi e rispetta li lìnii guida ca\
-          \ poi attruvari nta\n<a href='http://wiki.openstreetmap.org/wiki/Import/Guidelines'>Mpurtazzioni</a>\
-          \ e \n<a href='http://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>Canciamenti\
-          \ autumatizzati</a>."
       questions:
         title: Hai dumanni?
-        paragraph_1_html: |-
-          OpenHistoricalMap havi tanti risorsi pi nzignàrisi comu funziona lu pruggettu, pi fari addumannati e dari arrispunnuti,
-          e pi discùtiri d'argumenti c'arriguàrdanu la mappatura e ducumintàrili n cullabburazzioni.
-          <a href='%{help_url}'>Poi attruvari aiutu ccà</a>.
       start_mapping: Accumenza a mappari
       add_a_note:
         title: Nun hai tempu pi fari canciamenti? Allura agghiunci na nota!
@@ -2273,7 +2140,6 @@ scn:
         data: Dati dâ cartina
         overlays: Attiva li suprapusizzioni p'arrisòrviri li prubblemi dâ cartina
         title: Strati
-      copyright: © <a href='%{copyright_url}'>li cuntribbutura d'OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Fai na dunazzioni</a>
     site:
       edit_tooltip: Cancia la cartina

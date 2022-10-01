@@ -558,8 +558,6 @@ eu:
         aeroway:
           aerodrome: Aerodromoa
           airstrip: Lurreratze pista
-          apron: Pista
-          gate: Atea
           hangar: Hangarra
           helipad: Heliportua
           holding_position: Pozisioari eusten
@@ -567,7 +565,6 @@ eu:
           runway: Lurreratze pista
           taxilane: Taxi bidea
           taxiway: Taxi bidea
-          terminal: Terminala
         amenity:
           animal_shelter: Animalia Aterpea
           arts_centre: Arte Zentroa
@@ -610,10 +607,6 @@ eu:
           fire_station: Suhiltzaile Egoitza
           food_court: Jatetxe-eremua
           fountain: Iturria
-          fuel: Gasolindegia
-          gambling: Jokoak
-          grave_yard: Hilerria
-          grit_bin: Hauts ontzia
           hospital: Ospitalea
           hunting_stand: Ehiza postua
           ice_cream: Izozkiak
@@ -829,8 +822,6 @@ eu:
           brownfield: Antzinako industria eremua
           cemetery: Hilerria
           commercial: Merkataritza eremua
-          conservation: Kontserbazioa
-          construction: Eraikuntza
           farm: Baserria
           farmland: Nekazari landa
           farmyard: Nekazari zelaia
@@ -850,7 +841,6 @@ eu:
           reservoir: Urtegia
           reservoir_watershed: Urtegiko arroa
           residential: Etxebizitza Ingurua
-          retail: Txikizkako merkataritza gunea
           village_green: Udal Berdegunea
           vineyard: Mahastia
           "yes": Lur-erabilera
@@ -1082,7 +1072,6 @@ eu:
           deli: Urdaitegia
           department_store: Departamendu-denda
           discount: Deskontudun Item-denda
-          doityourself: Zuk-Zeuk-Egin
           dry_cleaning: Lehorreko Garbiketa
           electronics: Elektronika-denda
           erotic: Denda erotiko
@@ -1103,7 +1092,6 @@ eu:
           hardware: Hardware-denda
           hearing_aids: Audifono-denda
           herbalist: Belardenda
-          hifi: Hi-Fi
           houseware: Etxeko artikuluetako Denda
           ice_cream: Izozki denda
           interior_decoration: Barne-dekorazioa
@@ -1155,7 +1143,6 @@ eu:
           artwork: Artelana
           attraction: Atrakzioa
           bed_and_breakfast: Ohe eta gosari (B&B)
-          cabin: Kabina
           camp_pitch: Kanpaleku
           camp_site: Kanpin
           caravan_site: Karabana gunea
@@ -1337,10 +1324,7 @@ eu:
     edit_with: '%{editor}rekin editatu'
     tag_line: Doako Wiki Mundu Mapa
     intro_header: Ongi etorri OpenHistoricalMap-era!
-    intro_text: OpenHistoricalMap munduko mapa da, zu bezalako jendeak sortutakoa
-      eta doako lizentzia irekiarekin erabiltzeko dagoena.
     intro_2_create_account: Erabiltzaile kontua sortu
-    hosting_partners_html: '%{ucl}, %{bytemark} eta beste %{partners}-k babestua.'
     partners_ucl: UCLa
     partners_bytemark: Bytemark Ostatua
     partners_partners: bazkideak
@@ -1664,37 +1648,10 @@ eu:
     about:
       next: Hurrengoa
       copyright_html: <span>&copy;</span>OpenHistoricalMap<br>kolaboratzaileak
-      used_by_html: OpenHistoricalMap-k eskuliburuen mapak milaka web gune, mugikorretako
-        aplikazio eta hardware gailuetan ahalbidetzen ditu
-      lede_text: OpenHistoricalMap mundu osoan zehar errepideak, bideak, kafetegiak,
-        tren geltokiak eta askoz gehiago mapatzaileen komunitate batek eskeinitako
-        datuen eta haien mantentzearen laguntzaz eraiki ditu.
       local_knowledge_title: Tokiko Ezagutza
-      local_knowledge_html: OpenHistoricalMap tokiko ezagutzak azpimarratzen ditu.
-        Laguntzaileek aireko irudiak erabiltzen dituzte, GPS gailuak eta teknologia
-        baxuko eremuko mapak OSMrako egiaztapen zehatza eta eguneratua egiteko.
       community_driven_title: Komunitatearen Ahotsa
-      community_driven_html: "OpenHistoricalMap komunitatea anitza eta sutsua da,\
-        \ egunero haziz doa.\nGure laguntzaileen artean daude, mapazaleak, GIS arloko\
-        \ profesionalak, \nOSM zerbitzariak exekutatzen dituzten ingeniariak, hondamendiek\
-        \ kaltetutako eremuak mapatzen dituzten boluntarioak,\neta askoz gehiagok.\n\
-        Komunitateari buruz gehiago jakiteko, ikus <a href='https://blog.openstreetmap.org'>OpenHistoricalMap\
-        \ bloga</a>,\n<a href='%{diary_path}'>erabiltzaileen egunerokoak</a>,\n<a\
-        \ href='http://blogs.openstreetmap.org/'>komunitate blogak</a> eta <a href='http://www.osmfoundation.org/'>OSM\
-        \ Fundazioaren</a> webgunea."
       open_data_title: Datu Irekiak
-      open_data_html: |-
-        OpenHistoricalMap <i> datu irekiak </i> ditu: edozein gauzarako erabil dezakezu betiere OpenHistoricalMap-ek eta bere kolaboratzaileek aipatzen badituzu. Moduren batean datuen gainean edukia eraikiz, emaitza bakarrik banatu ahal izango duzu lizentzia beraren azpian. Ikusi <a href='%{copyright_path}'> Copyright eta
-        Lizentzia orria </a> xehetasunak lortzeko.
       legal_title: Legala
-      legal_1_html: |-
-        Gune hau eta beste hainbat zerbitzu lotzen dira formalki
-        <a href='http://osmfoundation.org/'> OpenHistoricalMap Foundation </a> (OSMF)
-        komunitatearen izenean. OSMF operatutako zerbitzu guztien erabilera gaia da
-        gure <a href="http://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">
-        Politika Erabilpen Onargarria </ a> eta gure <a href="http://wiki.osmfoundation.org/wiki/Privacy_Policy"> Pribatutasun-gidalerroak </a>
-        Mesedez <a href='http://osmfoundation.org/Contact'> jarri harremanetan OSMF-ekin </a>
-        lizentziak, copyrightak edo bestelako lege-galderak eta arazoak badituzu.
       partners_title: Parte-hartzaileak
     copyright:
       foreign:
@@ -1710,64 +1667,13 @@ eu:
         native_link: Euskara version
         mapping_link: kartografiarekin hasi
       legal_babble:
-        title_html: Egile-eskubideak eta lizentzia
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup><i> irekitako datua multzoa </i> da, <a
-          href = "http://opendatacommons.org/licenses/odbl/">Datu irekiak
-          Commons Open Database Lizentzia </a> (ODbL) <a
-          href = "http://osmfoundation.org/"> darama OpenHistoricalMap Fundazioaren babespean </a> (OSMF).
-        intro_2_html: |-
-          Kopiatu, banatu, transmititu eta gure datuak egokitzeko baimena duzu, betiere kredituetan OpenHistoricalMap eta bere
-          laguntzaileak sartuz. Zure datuak aldatzen edo erauzten badituzu, lizentzia horren azpian soilik banatzea gerta daiteke. <a href="http://opendatacommons.org/licenses/odbl/1.0/"> legal
-          kodeak </a> zure eskubideak eta erantzukizunak azaltzen ditu.
-        intro_3_1_html: |-
-          Gure mapa fitxen kartografia, eta gure dokumentazioa, <a href="http://creativecommons.org/licenses/by-sa/2.0/"> Creative
-          Commons Attribution-ShareAlike 2.0 </a> lizentziapean eskaintzen dira (CC BY-SA).
-        credit_title_html: OpenHistoricalMap nola kreditatu
-        credit_1_html: '&ldquo;&copy; OpenHistoricalMap contributors&rdquo; kreditua
-          erabiltzeko eskatzen dizugu.'
-        credit_2_1_html: "Halaber, argi utzi behar duzu datuak Open azpian erabilgarri\
-          \ dauden\nDatu-basearen lizentziapean, eta gure mapa fitxak erabiltzen badituzu,\
-          \ kartografia CC BY-SA lizentziatu daramala. Horretarako \n<a href=\"http://www.openstreetmap.org/copyright\"\
-          > copyright-orri honetan egin dezakezu</a>.\nBestela, eta behar izanez gero,\
-          \ OSM banatzen ari zarenean\ndatu-inprimakian, izen-abizenak eta baimenak\
-          \ zuzenean lotu ditzakezu. Loturak posibleak ez diren komunikabideetan\n\
-          (adibidez, inprimatutako lanak), gomendatzen dizugu\nzure irakurleei openstreetmap.org\
-          \ (agian hedapenean)\n'OpenHistoricalMap' helbide honetaraino), opendatacommons.org\
-          \ helbidera, eta\ndagokionean, creativecommons.org-era zuzentzea."
         attribution_example:
-          alt: Web-orri batean OpenHistoricalMap nola esleitu erakusteko adibidea
           title: Eskuduntza adibidea
         more_title_html: Jakin ezazu gehiago
-        more_1_html: |-
-          Irakurri gehiago gure datuak erabiltzeari buruz, eta nola gu kreditatu, hemen:<a
-          href="http://osmfoundation.org/Licence">OSMF Licence page</a>.
-        contributors_title_html: Gure kolaboratzaileak
-        contributors_intro_html: |-
-          Gure laguntzaileen taldea milaka pertsonek osatzen dute. Horrez gain, nazio mailan aginte publikoko lizentziak
-          dituzten mapak eta beste iturri batzuk eskeintzen ditugu, besteak beste:
-        contributors_footer_1_html: |-
-          OpenHistoricalMap hobetzen laguntzeko lagundu dutenen xehetasun gehiago eta erabilitako beste iturri batzuk ezagutzeko, mesedez OpenStreetMap Wikian ikusi <a
-          href="http://wiki.openstreetmap.org/wiki/Contributors">Contributors
-          page</a>.
-        contributors_footer_2_html: |-
-          OpenHistoricalMap-en datuak sartzeak ez du beharrez jatorrizko
-          datu-hornitzaileak OpenHistoricalMap onartzea baieztatzen, edozein berme ematen, edota inolako erantzukizunik onartzen.
         infringement_title_html: Egile-eskubideen urraketa
         infringement_1_html: |-
           OSMren laguntzaileek ez dute inolako daturik gehitu behar
           copyright iturrietatik (adibidez, Google Maps edo inprimatutako mapak) copyright-jabeen baimen espliziturik gabe.
-        infringement_2_html: |-
-          Uste baduzu copyrightako materiala ez dela egokia izan
-          OpenHistoricalMap datu-baseari edo gune honi gehitu zaionean, mesedez
-          Gure <a href="http://www.osmfoundation.org/wiki/License/Takedown_procedure"> bajazioa
-          prozedura </a> edo zuzenean gure fitxategian
-          <a href="https://dmca.openstreetmap.org/"> lineako aurkezpen orrira jo</a>.
-        trademarks_title_html: <span id="trademarks"></span>Marka komertzialak
-        trademarks_1_html: OpenHistoricalMap, lupa-logotipoa eta Maparen egoera OpenHistoricalMap
-          Fundazioaren marka erregistratuak dira. Marka erabiltzeari buruzko galderarik
-          baduzu, bidali zure galderak <a href="http://wiki.osmfoundation.org/wiki/Licensing_Working_Group">
-          Lizentzia-lan taldera</a>.
     index:
       js_1: Javascript onartzen ez duen arakatzailea erabiltzen ari zara edo JavaScript
         desgaitu duzu.
@@ -1798,8 +1704,6 @@ eu:
       map_image: Maparen irudia (geruza estandarra erakusten du)
       embeddable_html: HTML kapsulagarria
       licence: Lizentzia
-      export_details_html: OpenHistoricalMap-eko datuak <a href="http://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Datu-base Irekiko Lizentzia</a> baimen baten mende daude.
       too_large:
         advice: 'Goiko esportazioak kale egiten badu, behean zerrendatutako iturrietako
           bat erabiltzea kontuan hartu mesedez:'
@@ -1861,41 +1765,24 @@ eu:
         elkarlana.
       welcome:
         url: /welcome
-        title: Ongi etorri OSMra
-        description: OpenHistoricalMap-en oinarrizkoak betetzen dituen gida azkar
-          honekin hasi.
-      beginners_guide:
-        url: http://wiki.openstreetmap.org/wiki/Eu:Beginners%27_guide
-        title: Hasiberrientzako gida
-        description: Hasiberrientzako mantentze-gida komunitarioa.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Laguntza foroa
         description: Egin galdera bat edo begiratu OSMn galdera-eta-erantzun gunean.
-      mailing_lists:
-        title: Posta Bidaltze Zerrendak
-        description: Galdera bat egin edo eztabaidatu gai interesgarriak gaikako edo
-          eskualdekako posta zerrendetan.
+      mailing_lists: {}
       forums:
         title: Foroak
         description: Galderak eta eztabaidak iragarki taula estilo interfazea nahiago
           dutenentzat.
-      irc:
-        title: IRC
-        description: Hizkuntza eta gai askotako hizketaldi interaktiboa.
-      switch2osm:
-        title: switch2osm
-        description: Laguntza enpresei eta erakundeei OpenHistoricalMap-en oinarritutako
-          mapetara eta beste zerbitzuetara aldatzeko.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Erakundeentzat
         description: OpenHistoricalMap-entzat planak egiten ari den erakunde batekin?
           Aurkitu jakin beharrekoa Ongietorri Lanpasean.
-      wiki:
-        url: http://wiki.openstreetmap.org/wiki/Eu:Main_Page
-        title: OpenStreetMap Wiki
-        description: Arakatu wikia informazio zehatzeko OSM dokumentaziorako.
+      wiki: {}
     sidebar:
       search_results: Bilaketaren emaitzak
       close: Itxi
@@ -1981,21 +1868,10 @@ eu:
           toilets: Komunak
     welcome:
       title: Ongi etorri!
-      introduction_html: Ongi etorri OpenHistoricalMapera, edonork alda dezakeen munduko
-        mapa askera. Orain izena eman duzula, mapak editatzen has zaitezke. Hona hemen
-        gida laburra jakin behar dituzun gauzarik garrantzitsuenak dituena.
       whats_on_the_map:
         title: Mapan dagoena
-        on_html: |-
-          OpenHistoricalMap <em> erreal eta egungo </em> gauzak mapeatzeko lekua da - milioika eraikin, errepide eta beste leku batzuei buruzko xehetasunak biltzen ditu. Mapa jar ditzakezu
-          mundu errealeko zuretzat interesgarriak diren ezaugarriak.
-        off_html: Zer <em>ez</em> baditu balorazio bezalako datu iritziak ematen,
-          historiko edo ezaugarri hipotetikoak eta copyright-iturrietatik datozen
-          datuak. Ez baduzu baimen berezia, ez kopiatu lineako edo papereko mapetatik.
       basic_terms:
         title: Kartografiarako Oinarrizko Terminoak
-        paragraph_1_html: OpenHistoricalMap-ek bere parekatze propioa du. Hemen daude
-          erabilgarriak diren zenbait hitz gako.
         editor_html: <strong>Editore</strong> bat mapa editatzeko erabil dezakezun
           programa edo webgunea da.
         node_html: <strong>Nodo</strong> bat maparen puntu bat da, jatetxe bakar bat
@@ -2006,14 +1882,8 @@ eu:
           da, adibidez jatetxe izena edo errepideen abiadura muga.
       rules:
         title: Arauak!
-        paragraph_1_html: |-
-          OpenHistoricalMap-ek arau formal gutxi ditu baina parte-hartzaile guztiek bete dezaten espero dugu eta komunitatearekin komunikatzea. Eskuz editatzea ez den beste jarduera batean pentsatzen ari bazara, irakurri eta jarraitu jarraibideak
-          <a href='http://wiki.openstreetmap.org/wiki/Import/Guidelines'> Importazioak </a> eta <a href='http://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'> Edizio automatizatuetan </a>.
       questions:
         title: Galderarik?
-        paragraph_1_html: |-
-          OpenHistoricalMap-ek proiektuari buruz ikasteko baliabideak ditu, galdetuz eta erantzunez, eta mapping gaiak eztabaidatu eta dokumentatuz lankidetzan.
-          <a href='%{help_url}'>Jaso laguntza hemen</a>. OpenHistoricalMap-entzat planak egiten ari den erakunde batekin? <a href='https://welcome.openstreetmap.org/'>Aurkitu jakin beharrekoa Ongietorri Lanpasean</a>.
       start_mapping: Hasi mapeatzen
       add_a_note:
         title: Editatzeko denborarik ez? Gehitu ohar bat!
@@ -2525,7 +2395,6 @@ eu:
         gps: GPS aztarna publikoak
         overlays: Gaitu maparen konponketa egiteko gainjartzen direnak
         title: Geruzak
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMap kolaboratzaileak</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Dohaintza egin</a>
     site:
       edit_tooltip: Editatu mapa

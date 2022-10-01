@@ -334,8 +334,6 @@ zh-hk:
         aeroway:
           aerodrome: 機場
           airstrip: 飛機跑道
-          apron: 停機坪
-          gate: 閘口
           hangar: 機庫
           helipad: 直升機坪
           holding_position: 等待位置
@@ -344,7 +342,6 @@ zh-hk:
           runway: 跑道
           taxilane: 滑行道
           taxiway: 滑行道
-          terminal: 客運大樓
           windsock: 布製風標
         amenity:
           animal_boarding: 動物寄養
@@ -390,10 +387,6 @@ zh-hk:
           fire_station: 消防局
           food_court: 美食廣場
           fountain: 噴泉
-          fuel: 加油站
-          gambling: 博彩
-          grave_yard: 墳場
-          grit_bin: 砂礫箱
           hospital: 醫院
           hunting_stand: 狩獵站
           ice_cream: 雪糕
@@ -655,8 +648,6 @@ zh-hk:
           brownfield: 棕地
           cemetery: 墓地
           commercial: 商業區
-          conservation: 保護區
-          construction: 地盤
           farm: 農業用地
           farmland: 農地
           farmyard: 農舍
@@ -678,7 +669,6 @@ zh-hk:
           reservoir: 水庫
           reservoir_watershed: 水庫集水區
           residential: 住宅區
-          retail: 零售用地
           village_green: 社區綠化空間
           vineyard: 葡萄園
           "yes": 土地利用
@@ -873,7 +863,6 @@ zh-hk:
           cosmetics: 化妝品店
           deli: 高級食品店
           department_store: 百貨公司
-          doityourself: DIY用品店
           dry_cleaning: 乾洗店
           e-cigarette: 電子煙店
           erotic: 情趣用品店
@@ -882,7 +871,6 @@ zh-hk:
           fishing: 釣魚用品店
           florist: 花店
           hairdresser: 理髮店
-          hifi: Hi-Fi
           houseware: 生活用品店
           ice_cream: 冰淇淋店
           interior_decoration: 室內裝潢
@@ -1035,16 +1023,13 @@ zh-hk:
       latitude: 緯度：
       longitude: 經度：
     help:
-      beginners_guide:
-        description: 由社群編修的新手指南。
+      beginners_guide: {}
       help:
         description: 在OpenHistoricalMap的問答網站上提問或搜尋答案。
-      mailing_lists:
-        description: 在有着各式各樣主題或地域分類的郵件列表中發問或討論有趣的事。
+      mailing_lists: {}
       forums:
         description: 給喜好論壇界面的人提問和討論。
-      irc:
-        title: IRC
+      irc: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
     sidebar:
@@ -1092,11 +1077,7 @@ zh-hk:
           bicycle_parking: 單車停泊處
           toilets: 廁所
     welcome:
-      introduction_html: 歡迎來到OpenHistoricalMap，自由而可以編輯的世界地圖。現在您已經注冊完成，繪製地圖所需要的準備已經就緒。以下是一份快速指南，裡面包含着您所需要知道的最重要事項。
-      rules:
-        paragraph_1_html: OpenHistoricalMap沒多少正式規則，但我們期望所有參與者都會與社群合作，也會和社群溝通。如果你想用任何不只是純人手編輯的方式做任何事的話，請先閱讀並遵循<a
-          href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>匯入</a>以及<a
-          href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>自動化編輯</a>規範。
+      rules: {}
       add_a_note:
         title: 沒時間編輯？加一個註記吧！
         paragraph_1_html: 如果你只想讓一些小問題得以更正，而沒有時間注冊並學習如何編輯，那麼加入註記是非常容易的。

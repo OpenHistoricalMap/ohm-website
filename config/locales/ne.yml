@@ -431,13 +431,10 @@ ne:
           station: हवाई मार्ग स्टेशन
         aeroway:
           aerodrome: हवाईड्रोम
-          apron: तटबन्द
-          gate: ढोका
           hangar: ह्याङ्गर
           helipad: हेलिकप्टर बस्ने ठाउँ
           runway: रनवे
           taxiway: ट्याक्सीको बाटो
-          terminal: टर्मिनल
         amenity:
           animal_shelter: पशु आश्रय
           arts_centre: कला केन्द्र
@@ -477,9 +474,6 @@ ne:
           fire_station: अग्नि नियन्त्रण स्टेसन्
           food_court: खाजा घर
           fountain: पानीको फोहोरा
-          fuel: इन्धन
-          gambling: जुवाघर
-          grave_yard: श्मशान घाट
           hospital: अस्पताल
           hunting_stand: शिकार क्षेत्र
           ice_cream: बरफ
@@ -601,8 +595,6 @@ ne:
         landuse:
           basin: बेसिन
           commercial: व्यवसायिक क्षेत्र
-          conservation: संरक्षण
-          construction: निर्माण
           farm: खेती
           farmland: खेतीयोग्य जमिन
           farmyard: खेत
@@ -617,7 +609,6 @@ ne:
           railway: रेलमार्ग
           reservoir: जलाशय
           residential: आवासीय क्षेत्र
-          retail: खुद्रा
           vineyard: अङ्गुर-बगैँचा
           "yes": भू-उपयोग
         leisure:
@@ -741,7 +732,6 @@ ne:
           grocery: किराना पसल
           hairdresser: नाइ पसल
           hardware: हार्डवेयर पसल
-          hifi: हाइ-फाइ
           jewelry: गहना पसल
           mall: सपिङ मल
           mobile_phone: मोबाइल फोन पसल
@@ -759,7 +749,6 @@ ne:
         tourism:
           attraction: आकर्षण
           bed_and_breakfast: बेड र ब्रेकफास्ट
-          cabin: क्याबिन
           gallery: सङ्ग्रहालय
           guest_house: अतिथी घर
           hostel: होस्टल
@@ -956,7 +945,6 @@ ne:
         mapping_link: म्यापिङ गर्न सुरु गर्नुहोस्
       legal_babble:
         more_title_html: थप जान्नको लागि
-        contributors_title_html: हाम्रा योगदान कर्ताहरू
     index:
       permalink: स्थायी लिङ्क
       shortlink: छोटो लिङ्क
@@ -972,8 +960,6 @@ ne:
       map_image: नक्साको तस्वीर (सर्वस्वीकृत सतहहरू देखाउँछ)
       embeddable_html: थप्नलायक HTML
       licence: इजाजतपत्र
-      export_details_html: ओपनस्ट्रीटम्यापका जानकारीहरू <a href="http://opendatacommons.org/licenses/odbl/1.0/">अोपन
-        डेटा कमन्स ओपन डेटाबेस लाइसेन्स</a> अनुज्ञप्तिसँग अाबद्ध छन् ।
       too_large:
         advice: निर्यात गर्ने प्रक्रिया असफल भएमा तल दिइएका स्रोतहरू प्रयोग गर्नुहोस्-
         body: यो क्षेत्र ओपनस्ट्रीटम्याप एक्स् एम् एल जानकारीको रूपमा निर्यात गर्नको
@@ -1019,23 +1005,15 @@ ne:
       title: कसरी सहायता पाउने
       welcome:
         url: /welcome
-        title: OSM मा स्वागत् छ
-      beginners_guide:
-        url: http://wiki.openstreetmap.org/wiki/Beginners%27_guide
-        title: सुरुवातकर्ताहरूको लागि मार्गदर्शन
-        description: सुरुवातकर्ताहरूको लागि समुदायद्वारा निर्मित निर्देशिका
+      beginners_guide: {}
       help:
         title: help.openstreetmap.org
-      mailing_lists:
-        title: मेलिङ्ग सूचीहरू
+      mailing_lists: {}
       forums:
         title: मञ्च
-      irc:
-        title: आईआरसि
-      switch2osm:
-        title: स्विचटु‍ओएसएम
-      wiki:
-        url: http://wiki.openstreetmap.org/
+      irc: {}
+      switch2osm: {}
+      wiki: {}
     sidebar:
       close: बन्द गर्नुहोस्
     search:

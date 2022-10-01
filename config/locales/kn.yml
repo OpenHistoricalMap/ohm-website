@@ -396,8 +396,6 @@ kn:
           ferry_terminal: ‍‍ಹಾಯಿದೋಣಿ ನಿಲ್ದಾಣ
           fire_station: ‍‍ಅಗ್ನಿಶಾಮಕ ಠಾಣೆ
           fountain: ‍ಕಾರಂಜಿ
-          fuel: ‍ಇಂಧನ
-          grave_yard: ಸ್ಮಾಶಾನ
           hospital: ಆಸ್ಪತ್ರೆ
           ice_cream: ‍ಐಸ್ ಕ್ರೀಂ
           kindergarten: ‍‍‍ಶಿಶುವಿಹಾರ
@@ -721,8 +719,7 @@ kn:
       native:
         title: ಈ ಪುಟದ ಬಗ್ಗೆ
         mapping_link: ನಕ್ಷೆಯನ್ನು ಸಂಪಾದಿಸಿಲು ಪ್ರಾರಂಭಿಸಿ
-      legal_babble:
-        title_html: ಕೃತಿಸ್ವಾಮ್ಯ ಮತ್ತು ಪರವಾನಗಿ
+      legal_babble: {}
     export:
       title: ರಫ್ತು ಮಾಡು
       licence: ಪರವಾನಗಿ
@@ -744,15 +741,11 @@ kn:
       title: ಸಹಾಯವನ್ನು ಪಡೆವುದು
       welcome:
         url: /welcome
-        title: ಒಪನ್ ಸ್ಟ್ರೀಟ್ ಮ್ಯಾಪ್ ಗೆ  ಸುಸ್ವಾಗತ
       help:
         url: https://help.openstreetmap.org/
         title: help.openstreetmap.org
-      irc:
-        title: ಐ ಆರ್ ಸಿ
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: wiki.openstreetmap.org
+      irc: {}
+      wiki: {}
     sidebar:
       close: ಮುಚ್ಚಿ
     search:

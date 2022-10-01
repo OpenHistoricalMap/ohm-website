@@ -685,8 +685,6 @@ el:
         aeroway:
           aerodrome: Αεροδρόμιο
           airstrip: Διάδρομος προσγειώσεως
-          apron: Χώρος ελιγμών
-          gate: Πύλη
           hangar: Υπόστεγο για αεροπλάνα
           helipad: Ελικοδρόμιο
           holding_position: κράτηση θέσης
@@ -694,7 +692,6 @@ el:
           runway: Διάδρομος
           taxilane: Λωρίδα ταξί
           taxiway: Τροχιόδρομος
-          terminal: Τερματικός σταθμός
           windsock: Ανεμούριο
         amenity:
           animal_shelter: Καταφύγιο ζώων
@@ -738,10 +735,6 @@ el:
           fire_station: Πυροσβεστικός σταθμός
           food_court: Προαύλιο φαγητού
           fountain: Συντριβάνι
-          fuel: Καύσιμα
-          gambling: Τυχερά παιχνίδια
-          grave_yard: Νεκροταφείο
-          grit_bin: Κάδος Χαλικιού
           hospital: Νοσοκομείο
           hunting_stand: Κυνηγητικό κιόσκι
           ice_cream: Παγωτό
@@ -962,8 +955,6 @@ el:
           brownfield: Πρώην βιομηχανική περιοχή
           cemetery: Κοιμητήριο
           commercial: Εμπορική περιοχή
-          conservation: Διατήρηση
-          construction: Κατασκευή
           farm: Αγρόκτημα
           farmland: Γεωργική γη
           farmyard: Αγρόκτημα
@@ -984,7 +975,6 @@ el:
           reservoir: Ταμιευτήρας
           reservoir_watershed: Δεξαμενή απορροής υδάτων
           residential: Κατοικημένη περιοχή
-          retail: Κατάστημα λιανικής
           village_green: Πράσινο χωριό
           vineyard: Αμπελώνας
           "yes": Χρήση γης
@@ -1231,7 +1221,6 @@ el:
           deli: Ντελικατέσεν
           department_store: Πολυκατάστημα
           discount: Εκπτωτικό κατάστημα
-          doityourself: Ιδιοκατασκευές
           dry_cleaning: Στεγνό καθάρισμα
           e-cigarette: Κατάστημα ηλεκτρονικών τσιγάρων
           electronics: Κατάστημα ηλεκτρονικών
@@ -1253,7 +1242,6 @@ el:
           hairdresser: Κομμωτήριο
           hardware: Κατάστημα με χρώματα-σιδηρικά
           hearing_aids: Βοηθήματα ακοής
-          hifi: Hi-Fi
           houseware: Μαγαζί με οικιακά είδη
           ice_cream: Παγωτατζίδικο
           interior_decoration: Διακόσμηση εσωτερικού χώρου
@@ -1306,7 +1294,6 @@ el:
           artwork: Έργο τέχνης
           attraction: Αξιοθέατο
           bed_and_breakfast: Ενοικιαζόμενα δωμάτια
-          cabin: Καμπίνα
           camp_site: Χώρος κατασκήνωσης
           caravan_site: Χώρος τροχόσπιτων
           chalet: Σαλέ
@@ -1491,11 +1478,7 @@ el:
     edit_with: Επεξεργασία με %{editor}
     tag_line: Ο ελεύθερος παγκόσμιος χάρτης Wiki
     intro_header: Καλώς ήρθατε στο OpenHistoricalMap!
-    intro_text: Το OpenHistoricalMap είναι χάρτης του κόσμου, που δημιουργήθηκε από
-      ανθρώπους σαν κι εσάς και είναι δωρεάν, υπό άδεια ελεύθερης χρήσης.
     intro_2_create_account: Δημιουργήστε ένα λογαριασμό χρήστη
-    hosting_partners_html: Η φιλοξενία υποστηρίζεται από %{ucl}, %{fastly}, %{bytemark},
-      και άλλους %{partners}.
     partners_ucl: UCL
     partners_fastly: Fastly
     partners_bytemark: Bytemark Hosting
@@ -1869,42 +1852,10 @@ el:
     about:
       next: Επόμενη
       copyright_html: Συνεισφέροντες του <span>&copy;</span>OpenHistoricalMap<br>
-      used_by_html: Το %{name} προσφέρει δεδομένα χάρτη σε χιλιάδες ιστότοπους, εφαρμογές
-        κινητού και συσκευές υλισμικού
-      lede_text: Το OpenHistoricalMap αναπτύσσεται από μια κοινότητα χαρτογράφων που
-        συνεισφέρουν και διατηρούν δεδομένα σχετικά με δρόμους, μονοπάτια, καφετέριες,
-        σιδηροδρομικούς σταθμούς και πολλά περισσότερα, σε όλον τον κόσμο.
       local_knowledge_title: Τοπική γνώση
-      local_knowledge_html: Το OpenHistoricalMap τονίζει την τοπική γνώση. Οι συνεισφέροντες
-        χρησιμοποιούν αεροφωτογραφίες, συσκευές GPS και τοπικούς χάρτες χαμηλής τεχνολογίας
-        για να σιγουρευτούν πως το OSM είναι ακριβής και ενημερωμένο.
       community_driven_title: Βασίζεται στην κοινότητα
-      community_driven_html: |-
-        Η κοινότητα του OpenHistoricalMap είναι ποικίλη, παθιασμένη, και μεγαλώνει κάθε μέρα.
-        Στους συνεισφέροντες μας περιλαμβάνονται ενθουσιώδεις χαρτογράφοι, επαγγελματίες GIS, μηχανικοί που τρέχουν τους εξυπηρετητές OSM, ανθρωπιστές που χαρτογραφούν κατεστραμμένες-πληγείσες περιοχές και πολλούς περισσότερους.
-        Για να μάθετε περισσότερα για την κοινότητα, ανατρέξτε στα <a href="%{diary_path}">ημερολόγια χρηστών</a>, τα
-        <a href="https://blogs.openstreetmap.org/">ιστολόγια της κοινότητας</a> και
-        την ιστοσελίδα του <a href="https://www.osmfoundation.org/">Ιδρύματος OSM</a>.
       open_data_title: Ανοικτά Δεδομένα
-      open_data_html: "Το OpenHistoricalMap είναι βάση <i>ανοικτών δεδομένων</i>:\
-        \ είστε ελεύθεροι να την χρησιμοποιήστε για οποιονδήποτε σκοπό, εφόσον μνημονεύετε\
-        \ το OpenHistoricalMap και τους συνεισφέροντές του. Εάν προσαρμόσετε ή αξιοποιήσετε\
-        \ αυτά τα δεδομένα με συγκεκριμένους τρόπους, πρέπει να διανείμετε το αποτέλεσμα\
-        \ μόνο υπό την ίδια άδεια χρήσης. Δείτε τη σελίδα <a href='%{copyright_path}'>Πνευματικά\
-        \ Δικαιώματα και Άδεια Χρήσης</a> για λεπτομέρειες."
       legal_title: Νομικό
-      legal_1_html: Αυτός ο ιστότοπος και πολλές άλλες σχετικές υπηρεσίες λειτουργούν
-        επίσημα από το <a href='https://osmfoundation.org/'>Ίδρυμα OpenHistoricalMap</a>
-        (OSMF) εκ μέρους της κοινότητας. Η χρήση όλων των υπηρεσιών του OSMF  υπόκειται
-        στους <a href="https://wiki.osmfoundation.org/wiki/Terms_of_Use">Όρους Χρήσης</a>,
-        στην <a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">Πολιτική
-        Αποδεκτής Χρήσης</a> και στην <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">Πολιτική
-        Απορρήτου</a> μας.
-      legal_2_html: |-
-        Παρακαλούμε <a href='https://osmfoundation.org/Contact'>επικοινωνήστε με το OSMF</a>
-        αν έχετε ερωτήματα για άδειες χρήσης, πνευματικά δικαιώματα ή άλλα νομικά θέματα.
-        <br>
-        Το OpenHistoricalMap, το λογότυπο με το μεγεθυντικό φακό και το «State of the Map» είναι <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">κατατεθέντα σήματα του OSMF</a>.
       partners_title: Συνεργάτες
     copyright:
       foreign:
@@ -1920,57 +1871,13 @@ el:
         native_link: ελληνική έκδοση
         mapping_link: αρχίστε τη χαρτογράφηση
       legal_babble:
-        title_html: Πνευματικά δικαιώματα και άδεια χρήσης
-        intro_1_html: |-
-          Το OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> είναι βάση <i>ανοικτών δεδομένων</i> αδειοδοτημένα υπό την <a href="https://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database License</a> (ODbL) από το <a
-          href="https://osmfoundation.org/">Ίδρυμα OpenHistoricalMap</a> (OSMF).
-        intro_2_html: Είστε ελεύθεροι να αντιγράψετε, να διανείμετε, μεταδώσετε και
-          προσαρμόσετε τα δεδομένα μας εφόσον κάνετε αναφορά στο OpenHistoricalMap
-          και στους συνεισφέροντές του. Εάν τροποποιήσετε ή αξιοποιήσετε τα δεδομένα
-          μας, μπορείτε να διανείμετε το αποτέλεσμα μόνο σύμφωνα με την ίδια άδεια.
-          Ο πλήρης <a href="https://opendatacommons.org/licenses/odbl/1.0/">νομικός
-          κώδικας</a> εξηγεί τα δικαιώματα και τις υποχρεώσεις.
-        intro_3_1_html: |-
-          Η τεκμηρίωση μας, αδειοδοτείται υπό την άδεια <a href="https://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons Attribution-ShareAlike 2.0</a> (CC BY-SA 2.0).
-        credit_title_html: Πως να κάνετε αναφορά στο OpenHistoricalMap
-        credit_1_html: Απαιτείται να χρησιμοποιείτε την αναφορά στο &ldquo;&copy;
-          Συνεισφέροντες του OpenHistoricalMap&rdquo;.
-        credit_2_1_html: |-
-          Επίσης πρέπει να κάνετε σαφές ότι τα δεδομένα διατίθενται υπό την άδεια Open Database License και αν χρησιμοποιείτε τα πλακίδια χάρτη, ότι η χαρτογραφία είναι υπό την άδεια CC-BY-SA. Μπορείτε να το κάνετε αυτό με σύνδεσμο σε <a href="https://www.openstreetmap.org/copyright">αυτήν τη σελίδα δικαιωμάτων</a>.
-          Εναλλακτικά και σαν προαπαιτούμενο εάν διαμοιράζετε δεδομένα OSM, μπορείτε να δώσετε απευθείας σύνδεσμο προς τις άδειες. Σε μέσα στα οποία οι σύνδεσμοι δεν είναι εφικτοί (π.χ. εκτυπώσεις), προτείνουμε να κατευθύνετε τους αναγνώστες σας στο openstreetmap.org (ίσως επεκτείνοντας το «OpenHistoricalMap» σε αυτήν τη πλήρη διεύθυνση), προς opendatacommons.org και αναλόγως στο creativecommons.org.
         attribution_example:
-          alt: Παράδειγμα του πως αναφέρεται το OpenHistoricalMap σε μια ιστοσελίδα
           title: Παράδειγμα αναφοράς δημιουργού
         more_title_html: Μαθαίνοντας περισσότερα
-        more_1_html: |-
-          Διαβάστε περισσότερα σχετικά με τη χρήση των δεδομένων μας και πώς να μας μνημονεύσετε στην
-          <a href="https://osmfoundation.org/Licence">σελίδα Άδειας OSMF</a>.
-        contributors_title_html: Οι συνεισφέροντές μας
-        contributors_intro_html: 'Οι συνεισφέροντες μας είναι χιλιάδες άτομα. Επίσης
-          έχουμε περιλάβει δεδομένα ανοικτής άδειας από εθνικές υπηρεσίες χαρτογράφησης
-          και άλλες πηγές, μεταξύ αυτών:'
-        contributors_footer_1_html: |-
-          Για περισσότερες λεπτομέρειες σχετικά με αυτές, και άλλες πηγές που χρησιμοποιήθηκαν
-          για να βελτιώσουν το OpenHistoricalMap, παρακαλούμε δείτε τη σελίδα <a href="https://wiki.openstreetmap.org/wiki/Contributors">Συνεισφέροντες</a> στο OpenStreetMap Wiki.
-        contributors_footer_2_html: Η συμπερίληψη δεδομένων στο OpenHistoricalMap
-          δεν συνεπάγεται ότι ο αρχικός πάροχος δεδομένων εγκρίνει το OpenHistoricalMap,
-          παρέχει οποιαδήποτε εγγύηση ή αποδέχεται καμία ευθύνη.
         infringement_title_html: Παραβιάσεις πνευματικών δικαιωμάτων
         infringement_1_html: Υπενθυμίζουμε στους συνεισφέροντες του OSM να μην προσθέτουν
           δεδομένα από πηγές με πνευματικά δικαιώματα (π.χ. Google Maps η έντυπους
           χάρτες) χωρίς την προηγούμενη άδεια από τους ιδιοκτήτες των δικαιωμάτων.
-        infringement_2_html: Εάν πιστεύετε ότι προστέθηκε παράνομα υλικό που προστατεύεται
-          από πνευματικά δικαιώματα στη βάση δεδομένων του OpenHistoricalMap ή σε
-          αυτόν τον ιστότοπο, παρακαλούμε απευθυνθείτε στη <a href="https://wiki.osmfoundation.org/wiki/Takedown_procedure">διαδικασία
-          απομάκρυνσης</a> ή καταθέστε άμεσα μια αίτηση στην <a href="https://dmca.openstreetmap.org/">on-line
-          σελίδα αιτήσεων</a>.
-        trademarks_title_html: <span id="trademarks"></span>Εμπορικά σήματα
-        trademarks_1_html: Το OpenHistoricalMap, το λογότυπο με το μεγεθυντικό φακό
-          και το «State of the Map» είναι σήματα κατατεθέντα του Ιδρύματος OpenHistoricalMap.
-          Αν έχετε ερωτήσεις σχετικά με τη χρήση των σημάτων, παρακαλούμε επισκεφθείτε
-          το <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">Πολιτική
-          Εμπορικών Σημάτων</a>.
     index:
       js_1: Είτε χρησιμοποιείτε πρόγραμμα περιήγησης που δεν υποστηρίζει JavaScript
         ή έχετε απενεργοποιήσει την JavaScript.
@@ -2002,9 +1909,6 @@ el:
       map_image: Εικόνα χάρτη (δείχνει τυπικό στρώμα)
       embeddable_html: Ενσωματούμενη HTML
       licence: Άδεια
-      export_details_html: Τα δεδομένα του OpenHistoricalMap είναι αδειοδοτημένα υπό
-        την <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open Data Commons
-        Open Database License</a> (ODbL).
       too_large:
         advice: 'Αν η εξαγωγή αποτυγχάνει, παρακαλούμε δοκιμάστε μία από τις πηγές
           που αναφέρονται παρακάτω:'
@@ -2070,43 +1974,25 @@ el:
         συζητήσετε και να τεκμηριώσετε θέματα χαρτογράφησης συνεργατικά.
       welcome:
         url: /welcome
-        title: Καλώς ήλθατε στο OpenHistoricalMap
-        description: Ξεκινήστε με αυτές τις σύντομες οδηγίες που καλύπτουν τα βασικά
-          του OpenHistoricalMap.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/El:Beginners%27_guide
-        title: Οδηγός Αρχαρίων
-        description: Οδηγός αρχαρίων διατηρούμενος από την κοινότητα.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Κοινότητα βοήθειας
         description: Κάντε μία ερώτηση ή αναζητήσετε απαντήσεις στην ιστοσελίδα ερωτήσεων
           και απαντήσεων του OpenHistoricalMap.
-      mailing_lists:
-        title: Λίστες Αλληλογραφίας
-        description: Κάντε μία ερώτηση ή συζητήστε ενδιαφέροντα θέματα σε ένα ευρύ
-          φάσμα τοπικών ή περιφερειακών λιστών αλληλογραφίας.
+      mailing_lists: {}
       forums:
         title: Φόρουμ
         description: Ερωτήσεις και συζητήσεις για όσους προτιμούν μία διεπαφή με στιλ
           διάρθρωσης κουκκίδων.
-      irc:
-        title: IRC
-        description: Διαδραστική συνομιλία σε πολλές διαφορετικές γλώσσες και για
-          πολλά θέματα.
-      switch2osm:
-        title: switch2osm
-        description: Βοήθεια για εταιρείες και οργανισμούς για μετάβαση σε χάρτες
-          που βασίζονται στο OpenHistoricalMap και άλλες υπηρεσίες.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Για τις Οργανώσεις
         description: Για μια οργάνωση που κάνει σχέδια για το OpenHistoricalMap? Βρείτε
           ότι χρειάζεται στο Welcome Mat.
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: OpenStreetMap Wiki
-        description: Περιηγηθείτε το wiki για επιμελής τεκμηρίωση του OpenHistoricalMap.
+      wiki: {}
     potlatch:
       removed: Ο προεπιλεγμένος σας επεξεργαστής του OpenHistoricalMap έχει τεθεί
         ως Potlatch. Επειδή το Adobe Flash Player έχει αποσυρθεί, ο Potlatch δεν είναι
@@ -2201,24 +2087,10 @@ el:
           toilets: Τουαλέτες
     welcome:
       title: Καλώς ήρθατε!
-      introduction_html: Σας καλωσορίζουμε στο OpenHistoricalMap, τον ελεύθερο και
-        επεξεργάσιμο χάρτη του κόσμου. Τώρα που έχετε εγγραφεί, είστε πανέτοιμοι να
-        αρχίσετε τη χαρτογράφηση. Εδώ είναι ένας γρήγορος οδηγός με τα πιο σημαντικά
-        πράγματα που πρέπει να ξέρετε.
       whats_on_the_map:
         title: Τι είναι στον Χάρτη
-        on_html: |-
-          Το OpenHistoricalMap περιέχει πράγματα που είναι <em>πραγματικά και σύγχρονα</em> -
-          περιλαμβάνει εκατομμύρια κτήρια, δρόμους και άλλες λεπτομέρειες για διάφορα μέρη. Μπορείτε να χαρτογραφήσετε
-          οποιοδήποτε χαρακτηριστικά του πραγματικού κόσμου σας ενδιαφέρει.
-        off_html: |-
-          Αυτά που <em>δεν</em> περιλαμβάνει είναι δογματικά δεδομένα όπως βαθμολογίες, ιστορικά ή
-          υποθετικά χαρακτηριστικά και δεδομένα από πηγές που προστατεύονται από πνευματικά δικαιώματα. Εκτός αν έχετε ειδική άδεια,
-          μην αντιγράψτε από ηλεκτρονικούς ή φυσικούς χάρτες.
       basic_terms:
         title: Βασικοί όροι για τη Χαρτογράφηση
-        paragraph_1_html: Η κοινότητα OpenHistoricalMap έχει δικό της γλωσσάρι. Παρακάτω
-          είναι μερικές λέξεις που μπορεί να σας φανούν χρήσιμες.
         editor_html: Οι <strong>επεξεργαστές</strong> είναι εφαρμογές ή ιστοσελίδες
           που μπορείτε να χρησιμοποιήσετε για να επεξεργαστείτε το χάρτη.
         node_html: Οι <strong>κόμβοι</strong> είναι σημεία στον χάρτη, όπως ένα εστιατόριο
@@ -2230,18 +2102,8 @@ el:
           διάφορων δρόμων.
       rules:
         title: Κανόνες!
-        paragraph_1_html: Το OpenHistoricalMap έχει λίγους επίσημους κανόνες, αλλά
-          αναμένουμε από όλους τους συμμετέχοντες να συνεργαστούν και να επικοινωνούν
-          με την κοινότητα. Αν σκέφτεστε άλλες δραστηριότητες εκτός από την επεξεργασία
-          με το χέρι, παρακαλούμε διαβάστε και ακολουθήστε τις οδηγίες στις <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>Εισαγωγές</a>
-          και στις <a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>Αυτόματες
-          Επεξεργασίες</a>.
       questions:
         title: Ερωτήσεις;
-        paragraph_1_html: |-
-          Το OpenHistoricalMap έχει πολλούς πόρους για να μάθετε για το εγχείρημα, να κάνετε
-          ερωτήσεις και να συζητάτε και να τεκμηριώνετε θέματα χαρτογράφησης με συνεργασία.
-          <a href='%{help_url}'>Λάβετε βοήθεια εδώ</a>.
       start_mapping: Ξεκινήστε τη Χαρτογράφηση
       add_a_note:
         title: Δεν έχετε χρόνο για χαρτογράφηση; Προσθέστε μια σημείωση!
@@ -2852,7 +2714,6 @@ el:
         gps: Δημόσια ίχνη GPS
         overlays: Ενεργοποίηση επικαλύψεων για την αντιμετώπιση προβλημάτων του χάρτη
         title: Στρώματα
-      copyright: © <a href='%{copyright_url}'>Συνεισφέροντες του OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Κάνετε Δωρεά</a>
       terms: <a href='%{terms_url}' target='_blank'>Όροι ιστότοπου και API</a>
       thunderforest: Ευγενική χορηγεία πλακιδίων από τον <a href='%{thunderforest_url}'

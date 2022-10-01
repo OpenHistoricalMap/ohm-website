@@ -654,8 +654,6 @@ te:
         aeroway:
           aerodrome: విమానాశ్రయం
           airstrip: ఎయిర్‌స్ట్రిప్
-          apron: విమానాశ్రయ విమానరహదారి
-          gate: గేటు
           hangar: హ్యంగర్
           helipad: హెలిప్యాడ్
           holding_position: హోల్డింగ్ పొజిషన్
@@ -664,7 +662,6 @@ te:
           runway: రన్‍వే
           taxilane: ట్యాక్సీ లేన్
           taxiway: ట్యాక్సీదారి
-          terminal: ఆఖరి స్టేషను
           windsock: విండ్‌సాక్
         amenity:
           animal_boarding: జంతువుల హాస్టలు
@@ -709,10 +706,6 @@ te:
           fire_station: అగ్నిమాపక కేంద్రం
           food_court: ఆహార శాల
           fountain: ఫౌంటెన్
-          fuel: ఇంధనం
-          gambling: జూదం
-          grave_yard: స్మశానం
-          grit_bin: Grit Bin
           hospital: ఆసుపత్రి
           hunting_stand: వేట మంచె
           ice_cream: ఐస్ క్రీం
@@ -974,8 +967,6 @@ te:
           brownfield: విసర్జిత భూమి
           cemetery: శ్మశానం
           commercial: వాణిజ్య ప్రదేశం
-          conservation: సంరక్షణ
-          construction: నిర్మాణం
           farm: పొలం
           farmland: పంటపొలం
           farmyard: పెరటి పొలం
@@ -997,7 +988,6 @@ te:
           reservoir: జలాశయం
           reservoir_watershed: జలాశయం
           residential: నివాస ప్రాంతం
-          retail: రిటెయిల్
           village_green: Village Green
           vineyard: వైన్‌యార్డు
           "yes": భూఉపయోగం
@@ -1271,7 +1261,6 @@ te:
           deli: డేలి
           department_store: డిపార్ట్‌మెంటు దుకాణం
           discount: డిస్కౌంటు వస్తువుల దుకాణం
-          doityourself: డ్రై క్లీనింగు
           dry_cleaning: డ్రై క్లీనింగు
           e-cigarette: ఇ-సిగరెట్ల దుకాణం
           electronics: ఎలక్ట్రానిక్స్ దుకాణం
@@ -1297,7 +1286,6 @@ te:
           health_food: హెల్త్ ఫుడ్ దుకాణం
           hearing_aids: చెవిటి మిషన్లు
           herbalist: మూలికల దుకాణం
-          hifi: హై-ఫై
           houseware: గృహోపకరణాల దుకాణం
           ice_cream: ఐస్ క్రీము దుకాణం
           interior_decoration: ఇంటీరియర్ డెకొరేషను
@@ -1357,7 +1345,6 @@ te:
           artwork: కళాకృతి
           attraction: ఆకర్షణ
           bed_and_breakfast: బస, బ్రేక్‌ఫాస్టు
-          cabin: పూరిల్లు
           camp_pitch: శిబిరం పిచ్
           camp_site: శిబిరాల స్థలం
           caravan_site: క్యారవాన్ స్థలం
@@ -1535,11 +1522,7 @@ te:
     edit_with: '%{editor} తో సవరించండి'
     tag_line: స్వేచ్ఛా వికీ ప్రపంచ పటం
     intro_header: ఓపెన్‌స్ట్రీట్‌మ్యాప్‌కి స్వాగతం!
-    intro_text: OpenHistoricalMap, ఓ ప్రపంచ మ్యాపు. మీలాంటి వారే దీన్ని తయారు చేసారు.
-      స్వేచ్ఛా లైసెన్సు ద్వారా స్వేచ్ఛగా దీన్ని వాడుకోవచ్చు.
     intro_2_create_account: వాడుకరి ఖాతాను సృష్టించుకోండి
-    hosting_partners_html: '%{ucl}, %{fastly}, %{bytemark}, ఇతర %{partners} హోస్టింగుకు
-      మద్దతు నిస్తున్నారు.'
     partners_ucl: UCL
     partners_fastly: Fastly
     partners_bytemark: Bytemark Hosting
@@ -1927,15 +1910,7 @@ te:
     about:
       next: తదుపరి
       copyright_html: <span>&copy;</span>OpenHistoricalMap<br> తోడ్పాటుదార్లు
-      used_by_html: OpenHistoricalMap వేలాది వెబ్‌సైట్లకు, మొబైలు యాప్‌లకు, హార్డ్‌వేరు
-        డివైసులకూ మ్యాప్ డేటాను అందిస్తుంది
-      lede_text: OpenHistoricalMap ను మ్యాపర్ల సముదాయం నిర్మిస్తోంది. ఈ సముదాయ సభ్యులు
-        ప్రపంచ వ్యాప్తంగా రోడ్లు, రెస్టారెంట్లు, రైల్వే స్టేషన్లు లాంటి ఎన్నో అంశాల
-        గురించి డేటాను చేర్చడం, నిర్వహించడం చేస్తున్నారు.
       local_knowledge_title: స్థానిక పరిజ్ఞానం
-      local_knowledge_html: OpenHistoricalMap స్థానిక పరిజ్ఞానానికి ప్రాముఖ్యత నిస్తుంది.
-        ఇక్కడ తోడ్పాటునందించేవారు విహంగ చిత్రాలను, GPS డివైసులను, లో టెక్ క్షేత్య్ర
-        స్థాయి మ్యాపులనూ వాడి OSM కచ్చితత్వంతో ఉందని, తాజా సమాచారంతో ఉందనీ నిర్థారిస్తారు.
       community_driven_title: సాముదాయిక కృషితో కూడినది
       open_data_title: ఓపెన్ డేటా
       partners_title: భాగస్వాములు
@@ -1952,35 +1927,10 @@ te:
         native_link: THIS_LANGUAGE_NAME_HERE కూర్పు
         mapping_link: మ్యాపింగు మొదలుపెట్టండి
       legal_babble:
-        title_html: కాపీహక్కు, లైసెన్సు
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> అనేది <i>ఓపెన్ డేట్</i>. దీన్ని <a
-          href="https://opendatacommons.org/licenses/odbl/">ఓపెన్ డేటా కామన్స్ ఓపెన్ డేటాబేస్ లైసెన్సు </a> (ODbL) కు లోబడి <a
-          href="https://osmfoundation.org/">OpenHistoricalMap ఫౌండేషను</a> (OSMF) అందిస్తోంది.
-        intro_2_html: |-
-          You are free to copy, distribute, transmit and adapt our data,
-          as long as you credit OpenHistoricalMap కు శ్రేయస్సును ఆపాదించినంతవరకు మా డేటాను కాపీ చేసుకోవచ్చు, పంపిణీ చేసుకోవచ్చు, ప్రసారం చేసుకోనూ వచ్చు. మా డేటాను మార్చినా, దానిపైన మరింగ్త అభిఉవృద్ధి చేసినా దాని ఫలితాన్ని కూడా అదే లైసెన్సు కింద మాత్రమే పంపిణీ చెయ్యాలి. ఈ పూర్తి <a href="https://opendatacommons.org/licenses/odbl/1.0/">లీగల్ కోడ్</a> మీ హక్కులు, బాధ్యతలను వివరిస్తుంది.
-        intro_3_1_html: మా డాక్యుమెంటేషను <a href="https://creativecommons.org/licenses/by-sa/2.0/">క్రియేటివ్
-          కామన్స్ యాట్రిబ్యూషను షేర్‌అలైక్ 2.0</a> లైసెన్సు (CC BY-SA 2.0) కింద లభ్యమౌతుంది.
-        credit_title_html: OpenHistoricalMap కు శ్రేయస్సు నివ్వడం ఎలా
-        credit_1_html: |-
-          మీరు &ldquo;&copy; OpenHistoricalMap
-          contributors&rdquo; అనే క్రిడిట్ వాడాలి.
         attribution_example:
-          alt: వెబ్‌పేజీలో OpenHistoricalMap కు శ్రేయస్సును ఎలా ఆపాదించాలో చెప్పే
-            ఉదాహరణ
           title: ఆపాదింపు ఉదాహరణ
         more_title_html: మరింత తెలుసుకోవడం
-        more_1_html: |-
-          మా డేటాను ఎలా వాడుకోవచ్చో, మాకు శ్రేయస్సును ఎలా ఆపాదించాలో <a
-          href="https://osmfoundation.org/Licence">OSMF Licence page</a> లో మరింత చదవొచ్చు.
-        contributors_title_html: మా కాంట్రిబ్యూటర్లు
         infringement_title_html: కాపీహక్కుల ఉల్లంఘన
-        infringement_2_html: "OpenHistoricalMap డేటాబేసులో గానీ, ఈ సైటులో గానీ కాపీహక్కులున్న\
-          \ సమాచారాన్ని అనుచితంగా వాడారని మీరు భావిస్తే, మా <a href=\"https://wiki.osmfoundation.org/wiki/Takedown_procedure\"\
-          >తొలగించే పద్ధతిని</a> చూడండి. లేదా నేరుగా మా \n<a href=\"https://dmca.openstreetmap.org/\"\
-          >ఆన్‌లైను ఫిర్యాదు పేజీలో</a> రాయండి."
-        trademarks_title_html: <span id="trademarks"></span>ట్రేడుమార్కులు
     index:
       permalink: స్థిరలంకె
       shortlink: చిన్నలింకు
@@ -2000,8 +1950,6 @@ te:
       map_image: మ్యాపు బొమ్మ (ప్రామాణిక పొరను చూపిస్తుంది)
       embeddable_html: ఇముడ్చగలిగే HTML
       licence: లైసెన్సు
-      export_details_html: OpenHistoricalMap డేటా <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a> (ODbL) కు లోబడి ఉంటుంది.
       too_large:
         advice: 'పై ఎగుమతి విఫలమైతే, కింది జాబితా లోంచి ఒక మూలాన్ని వాడండి:'
         body: ఈ ప్రాంతాన్ని OpenHistoricalMap XML డేటాగా ఎగుమతి చెయ్యగలిగిన దాని కంటే
@@ -2049,40 +1997,25 @@ te:
       title: సహాయం పొందడం
       welcome:
         url: /welcome
-        title: ఓపెన్‌స్ట్రీట్‌మ్యాప్‌కి స్వాగతం
-        description: OpenHistoricalMap ప్రాథమికాంశాలను వివరించే ఈ సత్వర మార్గదర్శినితో
-          మొదలు పెట్టండి.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Beginners%27_guide
-        title: కొత్తవారికి మార్గదర్శిని
-        description: కొత్తవారి కోసం సముదాయం నిర్వహించే మార్గదర్శిని.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: సహాయ వేదిక
         description: OpenHistoricalMap వారి ప్రశ్న-జవాబుల సైట్లో మీ ప్రశ్నలు అడగండి,
           లేదా సమాధానాల కోసం చూడండి.
-      mailing_lists:
-        title: మెయిలింగు జాబితాలు
+      mailing_lists: {}
       forums:
         title: వేదికలు
         description: బులెటిన్ బోర్డు శైలిలో ఉండే ఇంటేర్‌ఫేసును ఇష్టపడేవారి కోసం ప్రశ్నలు
           చర్చలూ.
-      irc:
-        title: IRC
-        description: అనేక అంశాలపై అనేక భాషల్లో ఉన్న పరస్పర సంభాషణలు.
-      switch2osm:
-        title: switch2osm
-        description: OpenHistoricalMap ఆధారిత మ్యాపులు, ఇతర సేవలకు మారిపోయే సంస్థల
-          కోసం.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: సంస్థల కోసం
         description: OpenHistoricalMap వాడేందుకు ఆలోచిస్తున్న సంస్థలో పనిచేస్తున్నారా?
           స్వాగత ద్వారం వద్ద మీరు తెలుసుకోవాల్సినవి ఏమిటో తెలుసుకోండి.
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: OpenHistoricalMap వికీ
-        description: లోతైన OpenHistoricalMap డాక్యుమెంటేషను కోసం వికీలో శోధించండి
+      wiki: {}
     potlatch:
       desktop_html: మీరు <a href="https://www.systemed.net/potlatch/">మాక్, విండోస్
         ల్లో పనిచేసే డెస్క్‌టాప్ అనువర్తనాన్ని దించుకుని</a> Potlatch వాడుకోవచ్చు.
@@ -2171,8 +2104,6 @@ te:
         title: పటంలో ఏముంటాయి
       basic_terms:
         title: మ్యాపులకు సంబంధించిన ప్రాథమిక పదాలు
-        paragraph_1_html: OpenHistoricalMap కు స్వంత పరిభాష ఉంది. మీకు పనికొచ్చే కొన్ని
-          కీలకమైన పదాలు ఇక్కడున్నాయి చూడండి.
         editor_html: <strong>ఎడిటరు</strong> అంటే మ్యాపును సవరించే ప్రోగ్రాము లేదా
           వెబ్‌సైటు.
         node_html: 'A <strong>బుడిపె</strong> అంటే మ్యాపులో ఉండే ఒక బిందువు. ఉదా:
@@ -2627,7 +2558,6 @@ te:
         data: పటం భోగట్టా
         gps: బహిరంగ GPS ట్రేసులు
         title: పొరలు
-      copyright: © <a href='%{copyright_url}'>ఓపెన్‌స్ట్రీట్‌మాప్ తోడ్పాటుదార్లు</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>విరాళం ఇవ్వండి</a>
       terms: <a href='%{terms_url}' target='_blank'>వెబ్‌సైటు, API నియమాలు</a>
     site:

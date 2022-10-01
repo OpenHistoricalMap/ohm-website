@@ -649,8 +649,6 @@ ja:
         aeroway:
           aerodrome: 飛行場
           airstrip: 滑走路
-          apron: 空港のエプロン
-          gate: 門
           hangar: 格納庫
           helipad: ヘリポート
           holding_position: 停止位置
@@ -659,7 +657,6 @@ ja:
           runway: 滑走路
           taxilane: 滑走路
           taxiway: 空港誘導路
-          terminal: ターミナル
           windsock: 吹流し
         amenity:
           animal_boarding: 動物宿泊施設
@@ -705,10 +702,6 @@ ja:
           fire_station: 消防署
           food_court: フードコート
           fountain: 噴水
-          fuel: 燃料
-          gambling: ギャンブル
-          grave_yard: 墓地
-          grit_bin: 砂箱
           hospital: 病院
           hunting_stand: ハンティング スタンド
           ice_cream: アイスクリーム販売店
@@ -969,8 +962,6 @@ ja:
           brownfield: 褐色地
           cemetery: 墓地
           commercial: オフィス地域
-          conservation: 保全
-          construction: 工事中
           farm: 農場
           farmland: 農地
           farmyard: 農場
@@ -992,7 +983,6 @@ ja:
           reservoir: 貯水池
           reservoir_watershed: 貯水池流域
           residential: 住宅地
-          retail: 小売店
           village_green: 緑地広場
           vineyard: Vineyard
           "yes": 土地利用
@@ -1263,7 +1253,6 @@ ja:
           deli: デリ
           department_store: デパート
           discount: 安売り店
-          doityourself: 日曜大工
           dry_cleaning: クリーニング
           e-cigarette: 電子タバコ店
           electronics: 電気製品販売店
@@ -1289,7 +1278,6 @@ ja:
           health_food: 健康食品店
           hearing_aids: 補聴器
           herbalist: 漢方薬局
-          hifi: 高級オーディオ
           houseware: 雑貨店
           ice_cream: アイスクリーム屋
           interior_decoration: インテリア
@@ -1349,7 +1337,6 @@ ja:
           artwork: 芸術作品
           attraction: アトラクション
           bed_and_breakfast: 民宿(B&B)
-          cabin: 山小屋
           camp_pitch: 野営地
           camp_site: キャンプ場
           caravan_site: オートキャンプ場
@@ -1532,9 +1519,7 @@ ja:
     edit_with: '%{editor} で編集'
     tag_line: 自由なウィキ世界地図
     intro_header: OpenHistoricalMap へようこそ!
-    intro_text: OpenHistoricalMap は、あなたのような人々が作成した世界地図であり、オープン ライセンスの下で自由に利用できます。
     intro_2_create_account: 新しい利用者アカウントを作成
-    hosting_partners_html: ホスティングは、%{ucl}、%{fastly}、%{bytemark}、およびその他の%{partners}によってサポートされています。
     partners_ucl: UCL
     partners_fastly: すばやく
     partners_bytemark: バイトマーク ホスティング
@@ -1865,25 +1850,10 @@ ja:
     about:
       next: 次へ
       copyright_html: <span>&copy;</span>OpenHistoricalMap<br>協力者
-      used_by_html: OpenHistoricalMap は数多くのウェブ サイト、モバイル アプリ、ハードウェア機器に地図データを提供しています
-      lede_text: OpenHistoricalMapは、道路、通路、カフェ、鉄道駅など、世界中にあるすべてのものに関するデータを提供・メンテナンスしているマッパーのコミュニティによって構築されました。
       local_knowledge_title: 地元の情報
-      local_knowledge_html: OpenHistoricalMapは地域の知識を強調します。協力者は航空写真やGPS機器、ローテクのフィールド地図を使用して、OpenHistoricalMapが正確で最新の状態であることを確認します。
       community_driven_title: コミュニティ主導
-      community_driven_html: OpenHistoricalMapのコミュニティは多様で、情熱的で、毎日成長しています。協力者には地図作りマニア、GISの専門家、OpenHistoricalMapサーバーを稼働させている技術者、被災地の地図作りをする人道主義者などを含みます。コミュニティについて詳しくは、<a
-        href='https://blog.openstreetmap.org'>OpenHistoricalMap のブログ</a>、<a href='%{diary_path}'>利用者の日記</a>、<a
-        href='https://blogs.openstreetmap.org/'>コミュニティのブログ</a>と<a href='https://www.osmfoundation.org/'>OSM財団</a>のウェブサイトをご覧ください。
       open_data_title: オープン データ
-      open_data_html: OpenHistoricalMapは<i>オープンデータ</i>です。利用者はOpenHistoricalMapと協力者の著作権を表示すれば、いかなる目的にも無料で利用することができます。もし何らかの方法でデータを変更したり二次データを作成したりした場合も、同じライセンス条件下でのみ結果を配布できます。詳しくは、<a
-        href='%{copyright_path}'>著作権とライセンス</a>をご覧ください。
       legal_title: 法律関係
-      legal_1_html: このサイトおよびその他の関連サービスは、コミュニティを代表して<a href='https://osmfoundation.org/'>OpenHistoricalMap財団</a>
-        (OSMF) が運営しています。OpenHistoricalMap財団の運営するサービス利用者は、私たちの定める<a href="https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy">利用規定</a>ならびに当財団の<a
-        href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">プライバシーに関する規定</a>の対象となります。
-      legal_2_html: |-
-        ライセンス、著作権その他の法的案件のお問い合わせは<a href='https://osmfoundation.org/Contact'>OSMF</a>宛てにお願いします。
-        <br>
-        OpenHistoricalMap、拡大鏡のロゴならびにState of the Mapはいずれも<a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">OSMFの登録商標です</a>。
       partners_title: パートナー
     copyright:
       foreign:
@@ -1896,42 +1866,12 @@ ja:
         native_link: 日本語版
         mapping_link: マッピングを開始
       legal_babble:
-        title_html: 著作権とライセンス
-        intro_1_html: |-
-          OpenHistoricalMap<a href="#trademarks">&reg;</a> は<a
-          href="https://osmfoundation.org/">OpenHistoricalMap財団</a> (OSMF)が<a
-          href="https://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database License</a> (ODbL) の下にライセンスする<i>オープンデータ</i>です。
-        intro_2_html: OpenHistoricalMapとその協力者をクレジットすれば、データを自由にコピー、配布、送信、利用することができます。変更したり翻案したりしたデータは同じライセンスに従う場合のみ、提供することができます。あなたの権利と責任は、<a
-          href="https://opendatacommons.org/licenses/odbl/1.0/">ライセンス契約</a>の全文で説明しています。
-        intro_3_1_html: |-
-          ドキュメントは、<a href="https://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons Attribution-ShareAlike 2.0</a> ライセンス (CC BY-SA 2.0) に基づいてライセンスされます。
-        credit_title_html: OpenHistoricalMap のクレジット表記の仕方
-        credit_1_html: '&ldquo;&copy; OpenHistoricalMap contributors&rdquo;のクレジットを必ず使用してください。'
-        credit_2_1_html: あなたはデータが Open Database License に基づいて提供されていること、そして地図タイルを使用する場合は、地図画像が
-          CC BY-SA としてライセンスされていることを明確にしなければなりません。<a href="https://www.openstreetmap.org/copyright">著作権表示ページ</a>にリンクすることでこれを表現することができます。また、データの形式でOpenHistoricalMapを配布する場合の要件として、名前を表示の上、ライセンスに直接リンクすることができます。リンクを張れないメディア（印刷など）の場合は、openstreetmap.org（OpenHistoricalMapをアドレスとして展開した形）、opendatacommons.org、さらに関連がある場合はcreativecommons.orgへ読者を誘導することをお勧めします。
         attribution_example:
-          alt: ウェブページに OpenHistoricalMap を記述する方法の例
           title: 権利表示の例
         more_title_html: 詳細を見る
-        more_1_html: |-
-          データの利用やクレジット方法についての詳細は<a
-          href="https://osmfoundation.org/Licence">OSMF ライセンスページ</a>をお読みください。
-        contributors_title_html: 協力者
-        contributors_intro_html: 数千人もの個人が協力者となっています。それに加え、各国の地図作成機関や、以下のように、その他の情報源も含め、公開されたライセンスによるデータを含みます。
-        contributors_footer_1_html: |-
-          これらの詳細について、またOpenHistoricalMapの向上に使用されたその他のソースについては、OpenStreetMap Wikiの<a
-          href="https://wiki.openstreetmap.org/wiki/Contributors">協力者ページ</a>をご覧ください。
-        contributors_footer_2_html: OpenHistoricalMapのデータに含めることは、元データの提供者がOpenHistoricalMapを支持したり、何かしらの保証を行ったり、何かしらの責任を負ったりすることを意味するものではありません。
         infringement_title_html: 著作権侵害
         infringement_1_html: 'OpenHistoricalMapの協力者は、著作権者から明確な許諾を得ずに、著作権のある情報源 (例:
           Google マップや印刷された地図) から決してデータを持ち込まないよう注意するものとします。'
-        infringement_2_html: もし著作権のある素材がOpenHistoricalMapのデータベースや本サイトに不正に追加されたとお考えの場合は、<a
-          href="https://www.osmfoundation.org/wiki/License/Takedown_procedure">却下手順</a>をお読みになるか、<a
-          href="http://dmca.openstreetmap.org">オンライン却下のページ</a>から直接申し立てを行ってください。
-        trademarks_title_html: <span id="trademarks"></span>商標
-        trademarks_1_html: OpenHistoricalMapならびに拡大鏡のロゴおよびState of the MapはOpenHistoricalMap財団の登録商標です。商標の利用に関しては、<a
-          href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">商標利用ポリシー</a>を参照ください。
     index:
       js_1: JavaScript に対応していないブラウザーを使用しているか、JavaScript を無効にしているかのどちらかです。
       js_2: OpenHistoricalMap は地図の表示に JavaScript を使用します。
@@ -1957,8 +1897,6 @@ ja:
       map_image: 地図画像 (標準レイヤーを表示)
       embeddable_html: 埋め込み HTML
       licence: ライセンス
-      export_details_html: OpenHistoricalMap のデータは <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a> (ODbL) の下にライセンスされています。
       too_large:
         advice: '上のエクスポートが失敗した場合は、以下に列挙した情報源のいずれかの使用を検討してください:'
         body: 領域が大きすぎて OpenHistoricalMap XML データとしてエクスポートできません。拡大するか、領域を小さくするか、以下に列挙したソースから一括データダウンロードを使用するかしてください。
@@ -2011,36 +1949,22 @@ ja:
       introduction: OpenHistoricalMapにはプロジェクトについて学んだり、質疑応答したり、協議したり、マッピングについての知識を文書化したりするさまざまなリソースがあります。
       welcome:
         url: /welcome
-        title: OpenHistoricalMap へようこそ
-        description: OpenHistoricalMap の基礎を網羅しているこのクイック ガイドから始めましょう。
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Beginners%27_guide
-        title: 初心者向けの手引き
-        description: コミュニティは、初心者向けガイドが整備しています。
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: ヘルプフォーラム
         description: OpenHistoricalMap の Q&A サイトで質問したり回答を検索したりする。
-      mailing_lists:
-        title: メーリング リスト
-        description: メーリングリストは話題や地域ごとに多種多様で、質問や興味のある事項について議論できる場です。
+      mailing_lists: {}
       forums:
         title: フォーラム
         description: 掲示板方式のインタフェイスを好む人を対象とした質問や議論
-      irc:
-        title: IRC
-        description: 多様な言語によるいろいろな話題を取上げた双方向性チャット
-      switch2osm:
-        title: switch2osm
-        description: ヘルプ、OpenHistoricalMapをベースにした地図その他のサービスへ切り替えた法人や団体向け。
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: 組織向け
         description: ご所属の組織でOpenHistoricalMap との取り組みを検討中ですか？ Welcome Mat に事前にご理解いただきたい諸点をまとめてあります。
-      wiki:
-        url: https://wiki.openstreetmap.org/
-        title: OpenStreetMap Wiki
-        description: 詳細な OpenHistoricalMap の説明が書かれたウィキを参照します。
+      wiki: {}
     potlatch:
       removed: お使いの OpenHistoricalMap エディタは既定では Potlatch が選択されています。 Adobe Flash Player
         の撤退により、 Potlatch is はウェブブラウザ上で利用できなくなりました。
@@ -2133,29 +2057,18 @@ ja:
           toilets: トイレ
     welcome:
       title: ようこそ!
-      introduction_html: フリーで編集可能な世界地図、OpenHistoricalMapへようこそ。サインアップしたので、マッピングの準備はすべて整いました。知っておかなければならない重要事項を簡単に説明します。
       whats_on_the_map:
         title: 地図上にあるもの
-        on_html: OpenHistoricalMapは<em>現実かつ現存</em>のもの - 数々の建物、道路、場所に関するその他の詳細をマッピングする場所です。あなたは関心のある現実世界のものを何でもマッピングできます。
-        off_html: 含めては<em>いけない</em>ものは、評価のような主観的なデータ、歴史的または仮想的なもの、著作権のある情報源からのデータです。特別な許可がない場合は、オンラインや紙の地図からコピーをしてはいけません。
       basic_terms:
         title: マッピングのための基本的な用語
-        paragraph_1_html: OpenHistoricalMap には独自の用語がいくつかあります。ここでは手早く、いくつかのキーワードを紹介しましょう。
         editor_html: <strong>エディター</strong>は、地図を編集できるプログラムやウェブサイトです。
         node_html: <strong>ノード</strong>は地図上の点です。1 軒のレストランや 1 本の樹木が該当します。
         way_html: <strong>ウェイ</strong>は線または領域です。道路、水路、湖、建物などが該当します。
         tag_html: <strong>タグ</strong>はノードやウェイについて補足するデータです。レストランの名前、道路の制限速度などが該当します。
       rules:
         title: ルール
-        paragraph_1_html: |-
-          OpenHistoricalMapには正規の規約がいくつかありますが、すべての利用者とコミュニティの協力と意思疎通をお願いしています。手動で編集する以外をご検討の場合は、<a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>インポート</a>ならびに
-          <a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>自動的な編集</a>ガイドラインをよく読んで従ってください。
       questions:
         title: 何か質問はありますか?
-        paragraph_1_html: |-
-          OpenHistoricalMapにはプロジェクトについて学んだり、質疑応答したり、
-          議論を交わしたり、マッピングに関連する話題を文書化したりするさまざまなリソースがあります。
-          <a href='%{help_url}'>ヘルプが必要ならこちらへどうぞ</a>。ご所属の組織でOpenHistoricalMap導入を検討中ですか? <a href='https://welcome.openstreetmap.org/'>ご案内メッセージをご一読ください</a>。
       start_mapping: マッピングを開始
       add_a_note:
         title: 編集する時間がないためメモを残します
@@ -2720,7 +2633,6 @@ ja:
         gps: 公開GPSトラッキング
         overlays: トラブルシューティング用の地図オーバーレイ
         title: レイヤー
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMap 協力者</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>寄付する</a>
       terms: <a href='%{terms_url}' target='_blank'>ウェブサイトおよびAPI規約</a>
       cyclosm: タイル様式のホストは<a href='%{osmfrance_url}' target='_blank'>OpenStreetMap

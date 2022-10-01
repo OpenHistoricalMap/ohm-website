@@ -520,12 +520,9 @@ nn:
           station: Fjellheisstasjon
         aeroway:
           aerodrome: Flyplass
-          apron: Flyrampe
-          gate: Gate
           helipad: Helikopterplass
           runway: Rullebane
           taxiway: Taksebane
-          terminal: Terminal
         amenity:
           animal_shelter: Dyrehospits
           arts_centre: Kunstsenter
@@ -565,9 +562,6 @@ nn:
           fire_station: Brannstasjon
           food_court: Serveringsstadar
           fountain: Fontene
-          fuel: Drivstoff
-          gambling: Gambling
-          grave_yard: Gravlund
           hospital: Sjukehus
           hunting_stand: Jaktbod
           ice_cream: Iskrem
@@ -730,8 +724,6 @@ nn:
           brownfield: Tidlegare industriområde
           cemetery: Gravplass
           commercial: Kommersielt område
-          conservation: Freda
-          construction: Kontruksjon
           farm: Gard
           farmland: Jordbruksland
           farmyard: Gardstun
@@ -751,7 +743,6 @@ nn:
           reservoir: Reservoar
           reservoir_watershed: Nedbørfelt
           residential: Boligområde
-          retail: Detaljsalg
           village_green: Landsbypark
           vineyard: Vingård
           "yes": Arealbruk
@@ -923,7 +914,6 @@ nn:
           deli: Delikatessebutikk
           department_store: Varehus
           discount: Tilbudsbutikk
-          doityourself: Gjer-det-sjølv
           dry_cleaning: Renseri
           electronics: Elektronikkforretning
           estate_agent: Eiendomsmegler
@@ -940,7 +930,6 @@ nn:
           grocery: Daglegvarebutikk
           hairdresser: Frisør
           hardware: Jernvarehandel
-          hifi: Hi-fi
           jewelry: Gullsmed
           kiosk: Kiosk
           laundry: Vaskeri
@@ -971,7 +960,6 @@ nn:
           artwork: Kunstverk
           attraction: Attraksjon
           bed_and_breakfast: Bed and breakfast
-          cabin: Hytte
           camp_site: Teltplass
           caravan_site: Campingplass
           chalet: Fjellhytte
@@ -1053,10 +1041,7 @@ nn:
     edit_with: Rediger med %{editor}
     tag_line: Fritt Wiki-verdenskart
     intro_header: Velkomen til OpenHistoricalMap!
-    intro_text: OpenHistoricalMap er eit verdskart, laga av folk som deg. Kartet er
-      gratis å bruke under ein open lisens.
     intro_2_create_account: Opprett ein brukarkonto
-    hosting_partners_html: Drifta er støtta av %{ucl}, %{bytemark} og andre %{partners}.
     partners_ucl: UCL VR-senteret
     partners_bytemark: Bytemark Hosting
     partners_partners: partnarar
@@ -1335,56 +1320,13 @@ nn:
         native_link: Nynorsk versjon
         mapping_link: start kartlegging
       legal_babble:
-        title_html: Opphavsrett og lisensar
-        intro_1_html: Data frå OpenHistoricalMap er <i>åpne data</i>, lisensiert under
-          <a href="http://opendatacommons.org/licenses/odbl/">Open Data Commons Open
-          Database License</a> (ODbL).
-        intro_2_html: "Du er fri til å kopiere, distribuere, overføre og tilpasse\
-          \ dataa våre, så lenge du godskriv OpenHistoricalMap og bidragsytarane\n\
-          \  deira. Dersom du endrar eller byggjer på dataa våre, kan du berre distribuere\
-          \ resultatet under same lisens. \n  Den fullstendige <a href=\"http://opendatacommons.org/licenses/odbl/1.0/\"\
-          >juridiske\n  teksten</a> forklarer rettane og ansvaret."
-        intro_3_1_html: |-
-          Kartografien i våre kartfliser, og dokumentasjonen vår, er lisensiert under <a href="http://creativecommons.org/licenses/by-sa/2.0/">Creative
-             Commons Navngivelse-DelPåSammeVilkår 2.0</a> (CC BY-SA).
-        credit_title_html: Korleis kreditere OpenHistoricalMap
-        credit_1_html: Me krev at du brukar godskrivinga «© OpenHistoricalMap-bidragsytarane».
-        credit_2_1_html: Du må óg gjere det klart at dataa er tilgjengeleg under Open
-          Database License, og dersom du brukar kartflisene, at kartografien er lisensiert
-          under CC BY-SA. Du kan gjere dette ved å lenkje til <a href="http://www.openstreetmap.org/copyright">denne
-          sida</a>. Alternativt, og eit krav om du distribuerer OSM i dataform, kan
-          du nemne og lenkje til lisensen eller lisensane. I former der lenkjer er
-          umogleg (t.d. trykte verk), føreslår me at du viser lesarane dine til openstreetmap.org
-          (kanskje ved å utvide «OpenHistoricalMap» til denne fulle adressa), til
-          opendatacommons.org, og dersom relevant, til creativecommons.org.
         attribution_example:
-          alt: Døme på korleis ein syner OpenHistoricalMap som kjelde på ei vevside
           title: Døme på kjeldehenvising
         more_title_html: Finn ut meir
-        more_1_html: |-
-          Les meir om korleis du brukar dataa våre, og korleis du krediterer oss, i den <a href="http://wiki.openstreetmap.org/wiki/Legal_FAQ">juridiske
-            FAQ-en</a>.
-        contributors_title_html: Bidragsytarane våre
-        contributors_intro_html: 'Me har tusenvis av individuelle bidragsytarar. Me
-          inkluderer óg åpne datasett frå nasjonale karttjenester og andre kjelder,
-          bland anna frå:'
-        contributors_footer_1_html: |2-
-            For detaljar om desse og andre kjelder som har blitt brukt for å forbetra
-            OpenHistoricalMap, sjå <a href="http://wiki.openstreetmap.org/wiki/Contributors">Bidragsytarar
-            sida</a> på OpenStreetMap Wikien.
-        contributors_footer_2_html: |2-
-            Inkludering av data i OpenHistoricalMap inneber ikkje at den opphavlege
-            dataleverandøren støttar OpenHistoricalMap, gjev nokon garanti eller
-            godtek noko erstatningsansvar.
         infringement_title_html: Illegal kopiering
         infringement_1_html: |-
           OSM-bidragsytarar vert minna på å aldri leggje til data frå opphavsrettsbeskytta kjelder (t.d. Google Maps eller utskrivne kart) utan
             uttrykkeleg løyve frå rettighetshavere.
-        infringement_2_html: "Dersom du trur at kopibeskytta materiale har blitt lagt\
-          \ inn i OpenHistoricalMap databasen eller denne sida, venligst henvend deg\
-          \ til vår <a href=\"http://www.osmfoundation.org/wiki/License/Takedown_procedure\"\
-          >takedown \nprosedyre</a> eller direkte til vårt <a href=\"https://dmca.openstreetmap.org/\"\
-          >online skjema</a>."
     index:
       js_1: Du har ein nettleser som ikkje støttar JavaScript eller så har du slått
         av JavaScript.
@@ -1416,8 +1358,6 @@ nn:
       map_image: Kartblad (viser standard laget)
       embeddable_html: HTML som kan byggjast inn
       licence: Lisens
-      export_details_html: Data frå OpenHistoricalMap er lisensiert under <a href="http://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a> (ODbL).
       too_large:
         body: Dette området er for stort for å eksporterast som OpenHistoricalMap
           XML-data. Zoom inn eller vel eit mindre område.
@@ -1449,27 +1389,18 @@ nn:
       title: Få hjelp
       welcome:
         url: /velkommen
-        title: Velkomen til OSM
-      beginners_guide:
-        url: http://wiki.openstreetmap.org/wiki/Nn:Beginners%27_guide
-        title: Hjelp for nybegynnarar
-        description: Dugnadsbasert guide for nybegynnarar.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: help.openstreetmap.org
         description: Still spørsmål eller finn eit svar på spørsmål- og svar-sidene
           til OSM.
-      mailing_lists:
-        title: E-postlister
+      mailing_lists: {}
       forums:
         title: Forum
-      irc:
-        title: IRC
-      switch2osm:
-        title: switch2osm
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: wiki.openstreetmap.org
+      irc: {}
+      switch2osm: {}
+      wiki: {}
     sidebar:
       search_results: Søkjeresultat
       close: Lukk
@@ -2019,7 +1950,6 @@ nn:
         gps: Offentlege GPS-sporingar
         overlays: Aktiver lag for å feilsøke i kartet
         title: Lag
-      copyright: © <a href='%{copyright_url}'>OpenHistoricalMap bidragsytarar</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Doner</a>
     site:
       edit_tooltip: Rediger kartet

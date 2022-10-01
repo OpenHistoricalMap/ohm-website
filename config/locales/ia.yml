@@ -648,8 +648,6 @@ ia:
         aeroway:
           aerodrome: Aerodromo
           airstrip: Pista de atterrage
-          apron: Pista
-          gate: Porta
           hangar: Hangar
           helipad: Heliporto
           holding_position: Puncto de attender
@@ -658,7 +656,6 @@ ia:
           runway: Pista
           taxilane: Via de taxi
           taxiway: Via de circulation pro aviones
-          terminal: Terminal
           windsock: Manica a vento
         amenity:
           animal_boarding: Pension pro animales
@@ -704,10 +701,6 @@ ia:
           fire_station: Caserna de pumperos
           food_court: Zona de restaurantes
           fountain: Fontana
-          fuel: Carburante
-          gambling: Joco de hasardo
-          grave_yard: Cemeterio
-          grit_bin: Cassa de sal
           hospital: Hospital
           hunting_stand: Posto de chassa
           ice_cream: Gelato
@@ -969,8 +962,6 @@ ia:
           brownfield: Terreno industrial subutilisate
           cemetery: Cemeterio
           commercial: Area commercial
-          conservation: Conservation
-          construction: Construction
           farm: Ferma
           farmland: Terra arabile
           farmyard: Corte de ferma
@@ -992,7 +983,6 @@ ia:
           reservoir: Reservoir
           reservoir_watershed: Bassino interfluvial
           residential: Area residential
-          retail: Magazines
           village_green: Parco de village
           vineyard: Vinia
           "yes": Uso de terreno
@@ -1266,7 +1256,6 @@ ia:
           deli: Boteca de delicatessas fin
           department_store: Grande magazin
           discount: Boteca de disconto
-          doityourself: Magazin de bricolage
           dry_cleaning: Lavanderia a sic
           e-cigarette: Magazin de cigarrettas electronic
           electronics: Boteca de electronica
@@ -1292,7 +1281,6 @@ ia:
           health_food: Magazin de alimentos natural
           hearing_aids: Apparatos de correction auditive
           herbalist: Herboristeria
-          hifi: Hi-fi
           houseware: Magazin de articulos domestic
           ice_cream: Boteca de gelatos
           interior_decoration: Decoration interior
@@ -1352,7 +1340,6 @@ ia:
           artwork: Obra de arte
           attraction: Attraction
           bed_and_breakfast: Bed and Breakfast
-          cabin: Cabana
           camp_pitch: Terreno de camping
           camp_site: Terreno de camping
           caravan_site: Terreno pro caravanas
@@ -1536,11 +1523,7 @@ ia:
     edit_with: Modificar con %{editor}
     tag_line: Le wiki-carta libere del mundo
     intro_header: Benvenite a OpenHistoricalMap!
-    intro_text: OpenHistoricalMap es un carta del mundo, create per gente como tu
-      e libere de usar sub un licentia aperte.
     intro_2_create_account: Crea un conto de usator
-    hosting_partners_html: Le allogiamento web es supportate per %{ucl}, %{fastly},
-      %{bytemark} e altere %{partners}.
     partners_ucl: UCL
     partners_fastly: Fastly
     partners_bytemark: Bytemark Hosting
@@ -1943,41 +1926,10 @@ ia:
     about:
       next: Sequente
       copyright_html: <span>&copy;</span>Contributores de<br>OpenHistoricalMap
-      used_by_html: OpenHistoricalMap forni datos cartographic a milles de sitos web,
-        applicationes mobile e dispositivos physic
-      lede_text: OpenHistoricalMap es construite per un communitate de cartographos
-        que contribue e mantene datos sur stratas, sentieros, cafés, stationes ferroviari
-        e multo plus, in tote le mundo.
       local_knowledge_title: Cognoscentia local
-      local_knowledge_html: |-
-        OpenHistoricalMap mitte le emphase sur le cognoscentia local. Contributores usa
-        imageria aeree, apparatos GPS e cartas ordinari de terreno pro verificar que OSM
-        es accurate e actual.
       community_driven_title: Dirigite per le communitate
-      community_driven_html: |-
-        Le communitate de OpenHistoricalMap es diverse, passionate e cresce cata die. Nostre contributores include cartographos enthusiasta, professionales de GIS, ingenieros gerente le servitores de OSM, humanitarios cartographiante areas devastate per un disastro, e multe alteres.
-        Pro apprender plus sur le communitate, vide
-        le <a href='https://blog.openstreetmap.org'>blog de OpenHistoricalMap</a>,
-        le <a href='%{diary_path}'>diarios del usatores</a>,
-        le <a href='http://blogs.openstreetmap.org/'>blogs del communitate</a>
-        e le sito web del <a href='http://www.osmfoundation.org/'>Fundation OSM</a>.
       open_data_title: Datos aperte
-      open_data_html: |-
-        OpenHistoricalMap es constituite per <i>datos aperte</i>: tu es libere de usar lo pro qualcunque scopo a condition que tu da credito a OpenHistoricalMap e su contributores. Si tu altera o extende le datos in certe manieras, tu pote distribuer le resultato solmente sub le mesme licentia. Vide le pagina <a href='%{copyright_path}'>Copyright e
-        Licentia</a> pro detalios.
       legal_title: Juridic
-      legal_1_html: "Iste sito e multe altere servicios associate es formalmente gerite\
-        \ per le  \n<a href=\"https://osmfoundation.org/\">Fundation OpenHistoricalMap</a>\
-        \ (OSMF) \nin nomine del communitate. Le uso de tote le servicios gerite per\
-        \ OSMF es subjecte a nostre <a href=\"https://wiki.osmfoundation.org/wiki/Terms_of_Use\"\
-        >conditiones de uso</a>, a nostre <a href=\"https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy\"\
-        >\npoliticas de uso acceptabile</a> e a nostre <a href=\"http://wiki.osmfoundation.org/wiki/Privacy_Policy\"\
-        >politica de confidentialitate</a>."
-      legal_2_html: "<a href=\"https://osmfoundation.org/Contact\">Contacta OSMF</a>\
-        \ \nsi vos ha questiones sur licentias, derectos de autor o altere themas\
-        \ juridic.\n<br>\nOpenHistoricalMap, le logotypo de lupa e \"State of the\
-        \ Map\" es <a href=\"https://wiki.osmfoundation.org/wiki/Trademark_Policy\"\
-        >marcas commercial registrate del OSMF</a>."
       partners_title: Partners
     copyright:
       foreign:
@@ -1993,61 +1945,14 @@ ia:
         native_link: version in interlingua
         mapping_link: comenciar le cartographia
       legal_babble:
-        title_html: Copyright e Licentia
-        intro_1_html: |-
-          OpenHistoricalMap<sup><a href="#trademarks">&reg;</a></sup> es <i>datos aperte</i>, licentiate sub le <a
-          href="https://opendatacommons.org/licenses/odbl/">Open Data
-          Commons Open Database License</a> (ODbL) per le <a
-          href="https://osmfoundation.org/">Fundation OpenHistoricalMap</a> (OSMF).
-        intro_2_html: Vos es libere de copiar, distribuer, transmitter e adaptar nostre
-          datos, a condition que vos da recognoscentia a OpenHistoricalMap e su contributores.
-          Si vos altera o extende nostre datos, vos pote distribuer le resultato solmente
-          sub le mesme licentia. Le <a href="https://opendatacommons.org/licenses/odbl/1.0/">codice
-          juridic</a> complete explica vostre derectos e responsabilitates.
-        intro_3_1_html: Nostre documentation es publicate sub licentia <a href="https://creativecommons.org/licenses/by-sa/2.0/">Creative
-          Commons Attribution-ShareAlike 2.0</a> (CC-BY-SA 2.0).
-        credit_title_html: Como dar recognoscentia a OpenHistoricalMap
-        credit_1_html: |-
-          Nos require que vos usa le recognoscentia &ldquo;&copy; OpenHistoricalMap
-          contributors&rdquo;.
-        credit_2_1_html: |-
-          Vos debe etiam indicar clarmente que le datos es disponibile sub Open Database License. Vos pote facer isto con un ligamine a <a href="https://www.openstreetmap.org/copyright">iste pagina de copyright</a>.
-          Alternativemente, e obligatorimente si vos distribue OSM in forma de datos, vos pote mentionar le licentia(s) e ligar directemente a illo(s). Si vos usa un medio de communication in le qual le ligamines non es possibile (p.ex. un obra imprimite), nos suggere que vos dirige vostre lectores a openstreetmap.org (forsan per inserer iste adresse complete in loco del parola &lsquo;OpenHistoricalMap&rsquo;) e a opendatacommons.org.
         attribution_example:
-          alt: Exemplo de como recognoscer OpenHistoricalMap in un pagina web
           title: Exemplo de recognoscentia
         more_title_html: Pro saper plus
-        more_1_html: Lege plus sur le uso de nostre datos, e sur como citar correctemente
-          lor fonte, in le <a href="https://osmfoundation.org/Licence">pagina de licentia
-          OSMF</a>.
-        contributors_title_html: Nostre contributores
-        contributors_intro_html: 'Nostre contributores es milles de personas. Nos
-          include anque le datos sub licentia aperte de agentias cartographic national
-          e de altere fontes, inter le quales:'
-        contributors_footer_1_html: |-
-          Pro ulterior detalios de iste e altere fontes que ha essite usate
-          pro adjutar a meliorar OpenHistoricalMap, vide le <a
-          href="https://wiki.openstreetmap.org/wiki/Contributors">pagina
-          de contributores</a> in le wiki de OpenHistoricalMap.
-        contributors_footer_2_html: |2-
-            Le inclusion de datos in OpenHistoricalMap non implica que le fornitor
-            original del datos indorsa OpenHistoricalMap, forni alcun garantia, o
-            accepta alcun responsabilitate.
         infringement_title_html: Violation de copyright
         infringement_1_html: |2-
             Nos rememora al contributores de OSM de nunquam adder datos de alcun
             fonte sub derecto de autor (p.ex. Google Maps o cartas imprimite)
             sin explicite permission del titulares del derecto de autor.
-        infringement_2_html: Si vos crede que material sub copyright ha essite inserite
-          inappropriatemente in le base de datos de OpenHistoricalMap o in iste sito,
-          per favor consulta nostre <a href="https://wiki.osmfoundation.org/wiki/Takedown_procedure">procedura
-          de remotion</a> o submitte un plancto immediate usante nostre <a href="https://dmca.openstreetmap.org/">formulario
-          in linea</a>.
-        trademarks_title_html: <span id="trademarks"></span>Marcas commercial
-        trademarks_1_html: OpenHistoricalMap, le logotypo con le lupa e "State of
-          the Map" es marcas registrate del Fundation OpenHistoricalMap. Si vos ha
-          questiones sur le uso de iste marcas, vide nostre <a href="https://wiki.osmfoundation.org/wiki/Trademark_Policy">politica
-          sur le marcas registrate</a>.
     index:
       js_1: O tu usa un navigator que non supporta JavaScript, o tu ha disactivate
         JavaScript.
@@ -2077,8 +1982,6 @@ ia:
       map_image: Imagine de carta (monstra le strato standard)
       embeddable_html: HTML incorporabile
       licence: Licentia
-      export_details_html: Le datos de OpenHistoricalMap es licentiate sub le <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open
-        Data Commons Open Database License</a> (ODbL).
       too_large:
         advice: 'Si iste exportation falle, considera usar un del fontes listate hic
           infra:'
@@ -2142,42 +2045,25 @@ ia:
         le subjectos de cartographia in collaboration con alteres.
       welcome:
         url: /welcome
-        title: Benvenite a OpenHistoricalMap
-        description: Comencia con iste guida rapide sur le fundamentos de OpenHistoricalMap.
-      beginners_guide:
-        url: https://wiki.openstreetmap.org/wiki/Ia:Beginners%27_guide
-        title: Guida pro comenciantes
-        description: Guida pro comenciantes, mantenite per le communitate.
+      beginners_guide: {}
       help:
         url: https://help.openstreetmap.org/
         title: Foro de adjuta
         description: Pone un question o cerca responsas sur le sito de questiones
           e responsas de OpenHistoricalMap.
-      mailing_lists:
-        title: Listas de diffusion
-        description: Pone un question o discute cosas interessante sur un varietate
-          de listas de diffusion thematic o regional.
+      mailing_lists: {}
       forums:
         title: Foros
         description: Questiones e discussiones pro qui prefere un interfacie in stilo
           de tabuliero de bulletines.
-      irc:
-        title: IRC
-        description: Conversation interactive in multe linguas differente e sur multe
-          themas.
-      switch2osm:
-        title: switch2osm
-        description: Adjuta pro companias e organisationes qui vole migrar a cartas
-          e altere servicios a base de OpenHistoricalMap.
+      irc: {}
+      switch2osm: {}
       welcomemat:
         url: https://welcome.openstreetmap.org/
         title: Pro organisationes
         description: Es tu con un organisation que face planos pro OpenHistoricalMap?
           Trova lo que tu debe saper sur le Matta de Benvenita.
-      wiki:
-        url: http://wiki.openstreetmap.org/
-        title: Wiki OpenHistoricalMap
-        description: Percurre le wiki pro le documentation in detalio de OpenHistoricalMap.
+      wiki: {}
     potlatch:
       removed: Tu ha le editor predefinite de OpenHistoricalMap fixate como Potlatch.
         Post que Adobe Flash ha essite retirate, Potlatch non plus pote esser usate
@@ -2272,22 +2158,10 @@ ia:
           toilets: Toilettes
     welcome:
       title: Benvenite!
-      introduction_html: Bevenite a OpenHistoricalMap, le carta libere e modificabile
-        del mundo. Ora que tu te ha inscribite, tu es preste a comenciar a cartographiar.
-        Ecce un guida curte con le cosas le plus importante a saper.
       whats_on_the_map:
         title: Que es sur le carta?
-        on_html: OpenHistoricalMap es un loco pro cartographar cosas <em>real e actual</em>;
-          illo include milliones de edificios, stratas e altere detalios sur locos.
-          Tu pote cartographar qualcunque cosa del mundo real que te interessa.
-        off_html: Illo <em>non</em> include datos subjective como punctos de appreciation,
-          objectos historic o hypothetic. Le datos ab fontes sub copyright es equalmente
-          excludite; non copia cosas ab cartas in linea o de papiro sin permission
-          special!
       basic_terms:
         title: Vocabulario de base pro le cartographia
-        paragraph_1_html: OpenHistoricalMap ha un jargon proprie. Ecce alcun parolas
-          clave que te essera utile.
         editor_html: Un <strong>editor</strong> es un programma o sito web que tu
           pote usar pro modificar le carta.
         node_html: Un <strong>nodo</strong> es un puncto sur le carta, como un restaurante
@@ -2299,17 +2173,8 @@ ia:
           un strata.
       rules:
         title: Regulas!
-        paragraph_1_html: OpenHistoricalMap ha poc regulas formal, ma nos expecta
-          que tote le participantes collabora e communica con le communitate. Si vos
-          considera un activitate altere que modification per mano, lege e seque le
-          directivas sur le <a href='https://wiki.openstreetmap.org/wiki/Import/Guidelines'>importation</a>
-          e sur le <a href='https://wiki.openstreetmap.org/wiki/Automated_Edits_code_of_conduct'>modification
-          automatisate</a>.
       questions:
         title: Questiones?
-        paragraph_1_html: |-
-          OpenHistoricalMap ha plure ressources pro apprender a cognoscer le projecto, pro poner e responder a questiones e pro discuter e documentar le subjectos de cartographia in collaboration con alteres.
-          <a href='%{help_url}'>Obtene adjuta hic</a>. Pertine tu a un organisation que face planos pro OpenHistoricalMap? <a href='https://welcome.openstreetmap.org/'>Benvenite a nostre "Welcome Mat"</a>.
       start_mapping: comenciar le cartographia
       add_a_note:
         title: Non ha tempore pro modificar? Adde un nota!
@@ -2922,7 +2787,6 @@ ia:
         gps: Tracias GPS public
         overlays: Activar superpositiones pro resolver problemas in le carta
         title: Stratos
-      copyright: © <a href='%{copyright_url}'>contributores de OpenHistoricalMap</a>
       donate_link_text: <a class='donate-attr' href='%{donate_url}'>Facer un donation</a>
       terms: <a href='%{terms_url}' target='_blank'>Conditiones del sito web e del
         API</a>
