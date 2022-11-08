@@ -7,7 +7,7 @@
     "js-cookie": "^3.0.0",
     "leaflet": "^1.8.0",
     "mapbox-gl": "0.53.1",
-    "leaflet.locatecontrol": "^0.76.0",
+    "leaflet.locatecontrol": "^0.78.0",
     "qs": "^6.9.4"
   },
   "devDependencies": {
