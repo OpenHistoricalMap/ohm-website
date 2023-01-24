@@ -15,6 +15,12 @@ jobs:
       - uses: tgymnich/fork-sync@v1.6.3
         with:
           token: ${{ github.token }}
-          base: staging
-          head: master
+          base: master
+          head: staging
           pr_title: Upstream sync
+          merge_method: merge
+          ignore_fail: false
+          auto_approve: false
+          auto_merge: false
+          retries: 0
+          retry_after: 10
