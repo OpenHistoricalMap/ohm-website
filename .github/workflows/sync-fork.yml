@@ -1,0 +1,17 @@
+name: Sync Fork
+
+on:
+  workflow_dispatch: # on button click
+
+jobs:
+  sync:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: tgymnich/fork-sync@v1.6.3
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          base: staging
+          head: staging
+          pr_title: Upstream sync
