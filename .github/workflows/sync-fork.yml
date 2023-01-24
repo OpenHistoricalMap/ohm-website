@@ -16,5 +16,5 @@ jobs:
         with:
           token: ${{ github.token }}
           base: staging
-          head: staging
+          head: master
           pr_title: Upstream sync
