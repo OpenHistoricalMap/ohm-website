@@ -314,9 +314,14 @@ L.OSM.share = function (options) {
         params.marker = latLng.lat + "," + latLng.lng;
       }
 
+      const
+        parsedHash = new URLSearchParams(location.hash),
+        embeddedMapPath = parsedHash.get('#map'),
+        embeddedMapDate = parsedHash.get('date')
+      ;
       $("#embed_html").val(
         "<iframe width=\"425\" height=\"350\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"" +
-          escapeHTML(OSM.SERVER_PROTOCOL + "://" + OSM.SERVER_URL + "/export/embed.html?" + $.param(params)) +
+          escapeHTML(OSM.EMBED_SERVER_URL + embeddedMapPath + '&date=' + embeddedMapDate) +
           "\" style=\"border: 1px solid black\"></iframe><br/>" +
           "<small><a href=\"" + escapeHTML(map.getUrl(marker)) + "\">" +
           escapeHTML(I18n.t("javascripts.share.view_larger_map")) + "</a></small>");

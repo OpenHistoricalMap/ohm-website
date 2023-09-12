@@ -1,6 +1,7 @@
 # The server protocol and host
 server_protocol: "http"
 server_url: "openhistoricalmap.example.com"
+embed_server_url: "https://embed.openhistoricalmap.org/ohm-embed-1yr/#map="
 # Publisher
 #publisher_url: ""
 # The generator
@@ -130,7 +131,7 @@ trace_icon_storage: "local"
 #tile_cdn_url: ""
 # SMTP settings for outbound mail
 smtp_address: ""
-smtp_port: 
+smtp_port:
 smtp_domain: ""
 smtp_enable_starttls_auto: true
 smtp_tls_verify_mode: "none"
