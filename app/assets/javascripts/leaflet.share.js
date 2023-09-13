@@ -341,7 +341,7 @@ L.OSM.share = function (options) {
       ;
       $("#embed_html").val(
         "<iframe width=\"425\" height=\"350\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"" +
-          escapeHTML(OSM.EMBED_SERVER_URL + embeddedMapPath + '&date=' + embeddedMapDate) +
+          OSM.EMBED_SERVER_URL + embeddedMapPath + '&date=' + embeddedMapDate +
           "\" style=\"border: 1px solid black\"></iframe><br/>" +
           "<small><a href=\"" + escapeHTML(map.getUrl(marker)) + "\">" +
           escapeHTML(I18n.t("javascripts.share.view_larger_map")) + "</a></small>");
