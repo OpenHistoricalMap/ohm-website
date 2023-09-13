@@ -1,7 +1,7 @@
 # The server protocol and host
 server_protocol: "http"
 server_url: "openhistoricalmap.example.com"
-embed_server_url: "https://embed.openhistoricalmap.org/ohm-embed-1yr/#map="
+embed_server_url: "https://embed.openhistoricalmap.org/#map="
 # Publisher
 #publisher_url: ""
 # The generator
