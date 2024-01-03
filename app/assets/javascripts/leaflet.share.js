@@ -339,9 +339,10 @@ L.OSM.share = function (options) {
         embeddedMapPath = parsedHash.get('#map'),
         embeddedMapDate = parsedHash.get('date')
       ;
+
       $("#embed_html").val(
         "<iframe width=\"425\" height=\"350\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"" +
-          OSM.EMBED_SERVER_URL + '?bbox=' + params.bbox + '&date=' + embeddedMapDate +
+          OSM.EMBED_SERVER_URL + location.hash + '&bbox=' + params.bbox +
           "\" style=\"border: 1px solid black\"></iframe><br/>" +
           "<small><a href=\"" + escapeHTML(map.getUrl(marker)) + "\">" +
           escapeHTML(I18n.t("javascripts.share.view_larger_map")) + "</a></small>");
