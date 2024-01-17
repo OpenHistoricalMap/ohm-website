@@ -25,7 +25,7 @@ jobs:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
     - name: Cache node modules
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: node_modules
         key: yarn-ubuntu-${{ matrix.ubuntu }}-${{ hashFiles('yarn.lock') }}
