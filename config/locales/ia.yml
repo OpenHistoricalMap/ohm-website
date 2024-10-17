@@ -33,8 +33,8 @@ ia:
         create: Registrar
         update: Actualisar
       redaction:
-        create: Crear suppression
-        update: Salveguardar suppression
+        create: Crear censura
+        update: Salveguardar censura
       trace:
         create: Incargar
         update: Salveguardar modificationes
@@ -415,9 +415,9 @@ ia:
         changeset: gruppo de modificationes
         note: nota
     redacted:
-      redaction: Suppression %{id}
+      redaction: Censura %{id}
       message_html: Le version %{version} de iste %{type} non pote esser monstrate
-        perque illo ha essite supprimite. Vide %{redaction_link} pro detalios.
+        perque illo ha essite censurate. Vide %{redaction_link} pro detalios.
       type:
         node: nodo
         way: via
@@ -2208,6 +2208,9 @@ ia:
           usante tu conto de OHM.
       github:
         url: https://github.com/OpenHistoricalMap/
+        title: Defectos e requestas de functionalitate
+        description: Depone un incidente sur nostre repositorios GitHub pro signalar
+          un problema o requestar un nove function.
       mailing_list:
         title: Lista de diffusion
         description: Abona te a nostre lista de diffusion a basse volumine.
@@ -3444,32 +3447,32 @@ ia:
       centre_map: Centrar le carta hic
   redactions:
     edit:
-      heading: Modificar suppression
-      title: Modificar obscuration
+      heading: Modificar censura
+      title: Modificar censura
     index:
-      empty: Il non ha suppressiones a monstrar.
-      heading: Lista de obscurationes
-      title: Lista de suppressiones
+      empty: Il non ha censuras a monstrar.
+      heading: Lista de censuras
+      title: Lista de censuras
     new:
-      heading: Specifica information pro nove suppression
-      title: Creation de nove obscuration
+      heading: Insere le information del nove censura
+      title: Creation de un nove censura
     show:
       description: 'Description:'
-      heading: Es monstrate le suppression "%{title}"
-      title: Presentation de obscuration
+      heading: Es monstrate le censura “%{title}”
+      title: Examinar un censura
       user: 'Creator:'
-      edit: Modificar iste suppression
-      destroy: Remover iste obscuration
+      edit: Modificar iste censura
+      destroy: Remover iste censura
       confirm: Es tu secur?
     create:
-      flash: Suppression create.
+      flash: Censura create.
     update:
       flash: Cambios salveguardate.
     destroy:
-      not_empty: Le suppression non es vacue. Per favor dis-supprime tote le versiones
-        pertinente a iste suppression ante de destruer lo.
-      flash: Obscuration destruite.
-      error: Un error occurreva durante le destruction de iste suppression.
+      not_empty: Le censura non es vacue. Per favor dis-censura tote le versiones
+        pertinente a iste censura ante de destruer lo.
+      flash: Censura destruite.
+      error: Un error ha occurrite durante le destruction de iste censura.
   validations:
     leading_whitespace: ha spatios al initio
     trailing_whitespace: ha spatios al fin
