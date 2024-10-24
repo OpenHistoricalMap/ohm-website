@@ -1565,7 +1565,7 @@ zh-TW:
       h1: OpenHistoricalMap
     logo:
       alt_text: OpenHistoricalMap 標誌
-    home: 移至家的位置
+    home: 前往住家位置
     logout: 登出
     log_in: 登入
     log_in_tooltip: 以現有帳號登入
@@ -1846,9 +1846,9 @@ zh-TW:
       delete image: 移除目前的圖片
       replace image: 取代目前的圖片
       image size hint: ' (方形圖片至少 100x100 的效果最好)'
-      home location: 家的位置
-      no home location: 您尚未輸入家的位置。
-      update home location on click: 當我點選地圖時更新家的位置？
+      home location: 住家位置
+      no home location: 您尚未輸入您的住家位置。
+      update home location on click: 當我點選地圖時更新住家位置？
     update:
       success: 已更新基本資料。
       failure: 無法更新個人資料。
@@ -2238,14 +2238,18 @@ zh-TW:
         title_html: 我們為什麼要儲存和處理個人資料？
         1_html: OpenHistoricalMap 專案的目的是向任何人提供開放的歷史地理資料，例如街道地圖、歷史建築輪廓、鐵路、步道等等。
         2_1_html: 識別帳號做出的所有貢獻
+        2_4_html: 促進 OpenHistoricalMap 貢獻者之間的溝通
       what:
         title_html: 我們儲存處理哪些資料？
         1_html: 來自對 OpenHistoricalMap 貢獻的資料。
         2_2_html: 對目標做出的每次更動的作者使用者 ID、登入名稱，以及更動的時間戳記。
         2_3_html: 與您的帳號關聯的電子郵件地址
         2_4_html: 使用者收到的任何封鎖與相關訊息
+        2_5_html: OHM 營運系統與服務的網路存取資料（例如：IP 位址）。
       who:
         title_html: 誰有權存取資料
+        1_html: 我們不會分享給任何第三方與帳號關聯的電子郵件地址。使用者發送給使用者的訊息，只對發送者與接收者可見，其他存取權限僅限於我們的營運人員，並且僅在出於營運原因時才能執行，以實施我們的可接受使用政策與履行任何法律義務，以及最重要的–防止垃圾訊息。
+        2_html: 同樣地，網路存取資料僅用於內部目的，存取僅限於操作人員用於操作、防護破壞與垃圾訊息。
       where:
         title_html: 我們在哪裡儲存資料</h3>
         1_html: 網站、API 伺服器、資料庫、輔助服務伺服器目前託管在位於美國東海岸地區的 Amazon 網路服務上。
@@ -2253,10 +2257,12 @@ zh-TW:
         2_2_html: 操作問題（伺服器停機等）
         2_3_html: 網路拓撲和負載
       how:
+        title_html: 如何控制您的資料處理，並減少相關隱私問題</h3>
         1_html: 雖然法律沒有要求，但我們提供以下機制來減少暴露您潛在的隱私相關資訊：
         1_1_html: 您可以選擇一個非識別登入名稱，並隨時更改它
         1_2_html: 您不需要在日記貼文、評論、電子郵件清單服務、wiki、或其他 OHM 交流方式裡包含個人資料，您還可以隨時透過您的帳號來刪除日記貼文
         2_html: 若有隱私疑慮，您不應啟用個人頭像支援，或是使用與頭像關聯的電子郵件地址。
+        3_html: 您可以藉由不在地圖資料中新增個人資訊（像是個人姓名等）來進一步減少暴露。此類個人資訊對我們的資料來說，通常不被視為是有用的補充內容，您應該避免添加這些資訊。
       right_to_object:
         title_html: 反對權力
         1_html: |-
@@ -2269,9 +2275,14 @@ zh-TW:
         1_html: |-
           上傳 GPS 資料是可選擇的行為，並不是對 OpenHistoricalMap 做出貢獻的先決條件。如果您有提交 GPS 資料，會以單獨的 GPX 檔案形式上傳。這些會保存為原始檔案，然後匯入到資料庫裡。GPX 檔案可以被上傳者標記為<a href="https://wiki.openstreetmap.org/wiki/Visibility_of_GPS_traces" target="_blank" rel="noopener
           ">公開</a>（這與將編輯給「公開」的選項無關）。
+        2_html: 當透過 API 下載某個區域的 GPS 資料時，不會提供是由哪位使用者上傳了某個點，或是與該點關聯時間戳記的指示。然而，點會以時間戳記的順序返回。以這種方式下載的
+          GPS 資料會包括未標記為公開的軌跡點。
       map_data:
         title_html: 地圖資料
         1_html: 對地圖所做的所有編輯，都會以做出更改的使用者 ID，以及更改上傳時的時間戳記來記錄到資料庫中。一般情況下，這些所有的資訊會透過網站讓任何人可用，包括允許任何人輕鬆交叉引用到使用者所做出編輯的連結。
+      home_location:
+        title_html: 使用者「住家」位置
+        1_html: 如果使用者設定了住家位置，會出現在其他也有設定住家位置使用者的「附近的製圖者」清單中。這是您帳號設定頁面上的選項。
       email:
         title_html: 電子郵件地址
         1_html: OHM 使用者帳號的註冊電子郵件地址絕不會故意公布在網路上的任何地方，也不會分享給第三方組織或直接透露給其他使用者。伺服器會使用電子郵件地址來通知使用者是否有其他使用者透過網站發送了訊息，以及其他系統產生的通知。
@@ -2279,12 +2290,25 @@ zh-TW:
           相關問題。
       gravatar:
         title_html: 個人頭像
+      voluntarily:
+        title_html: 您可以自願加入到您的個人檔案或是日記貼文裡的資料
       automatically:
         title_html: 我們會自動接收到的資料
+        1_html: |-
+          OHM 為 OHM 社群提供多項服務，例如 <a href="/" target="_blank" rel="noopener
+          ">openhistoricalmap.org</a> 網站、標準 OHM 向量圖塊線上地圖、OHM API 和 Nominatim 搜尋工具。
+        3_html: 往後我們可能會運行像是 Piwik 的使用者互動追蹤軟體，此軟體將產生使用者活動的附加紀錄。
+        4_html: 使用 Geo-DNS 或將負載分配到地理上所分佈伺服器的類似機制服務，可能會大規模產生您的位置紀錄。
         5_html: 這些紀錄可透過以下方式使用：</p>
+        5_3_html: 改進 OpenHistoricalMap 資料集。例如透過分析缺少地址和郵遞區號的 Nominatim 查詢，並將此類資料提供給
+          OHM 社群
         7_html: 由 Piwik 儲存的 IP 位址會縮短成兩個位元組，詳細的使用資訊將保留 180 天。
+        9_html: 上述資料是基於合法利益處理的（請查看<a href="https://gdpr-info.eu/art-6-gdpr/" target="_blank"
+          rel="noopener">一般資料保護規則條款 6.1f</a>）。
       account_removal:
+        title_html: 帳號移除
         2_html: 若您沒有積極為該專案做出貢獻，我們就不會保留任何紀錄。將會刪除使用者頁面、日記貼文和類似內容。
+        5_html: 在您的帳號移除請求裡，您需要確認出所有受影響的帳號，因為我們沒有關於哪些帳號是屬於哪些 OpenHistoricalMap 使用者的資訊。
       cookies:
         title_html: Cookies
       contact:
@@ -2637,7 +2661,7 @@ zh-TW:
       confirm: 確認
       report: 回報此使用者
     set_home:
-      flash success: 家的位置成功的儲存
+      flash success: 成功儲存住家位置
     go_public:
       flash success: 現在您所有的編輯都是公開的，而您已獲准編輯。
     index:

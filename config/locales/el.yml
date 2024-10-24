@@ -605,7 +605,6 @@ el:
       comment_link: Σχολιάστε την καταχώρηση
       reply_link: Αποστολή μηνύματος στον συγγραφέα
       comment_count:
-        zero: Χωρίς σχόλια
         one: '%{count} σχόλιο'
         other: '%{count} σχόλια'
       edit_link: Επεξεργασία καταχώρησης
@@ -1505,7 +1504,6 @@ el:
     show:
       title: '%{status} Ζήτημα #%{issue_id}'
       reports:
-        zero: Καμία αναφορά
         one: 1 αναφορά
         other: '%{count} αναφορές'
       report_created_at: Αναφέρθηκε για πρώτη φορά στις %{datetime}
@@ -1601,8 +1599,8 @@ el:
     edit_with: Επεξεργασία με %{editor}
     tag_line: Ο ελεύθερος παγκόσμιος χάρτης Wiki
     intro_header: Καλώς ήρθατε στο OpenHistoricalMap!
-    intro_text: Το OpenHistoricalMap είναι χάρτης του κόσμου, που δημιουργήθηκε από
-      ανθρώπους σαν κι εσάς και είναι δωρεάν, υπό άδεια ελεύθερης χρήσης.
+    intro_text: Το OpenHistoricalMap είναι διαδραστικός χάρτης του κόσμου, που δημιουργήθηκε
+      από ανθρώπους σαν κι εσάς και αφιερωμένος στο κοινό κτήμα.
     intro_2_create_account: Δημιουργήστε ένα λογαριασμό χρήστη
     partners_title: Συνεργάτες
     hosting_partners_html: Η φιλοξενία υποστηρίζεται από %{ucl}, %{fastly}, %{bytemark},
@@ -2192,7 +2190,7 @@ el:
       slack:
         title: IRC
       wiki:
-        title: OpenStreetMap Wiki
+        title: Wiki
         description: Περιηγηθείτε το wiki για επιμελής τεκμηρίωση του OpenHistoricalMap.
     any_questions:
       title: Ερωτήσεις;

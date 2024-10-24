@@ -654,6 +654,15 @@ zh-CN:
       email: 查看您的电子邮件地址
       openid: 验证您的帐户
       phone: 查看您的电话号码
+  errors:
+    contact:
+      contact: 联系
+    forbidden:
+      title: 禁止
+    internal_server_error:
+      title: 应用程序错误
+    not_found:
+      title: 找不到文件
   friendships:
     make_friend:
       heading: 添加 %{user} 为朋友？
@@ -668,6 +677,12 @@ zh-CN:
       success: '%{name} 已从您的朋友中删除。'
       not_a_friend: '%{name} 不是您的朋友。'
   geocoder:
+    search:
+      title:
+        results_from_html: 来自%{results_link}的结果
+        latlon: 内部
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenStreetMap Nominatim
     search_osm_nominatim:
       prefix_format: '%{name}'
       prefix:
@@ -1573,6 +1588,7 @@ zh-CN:
     intro_header: 欢迎访问 OpenHistoricalMap！
     intro_text: OpenHistoricalMap 是一个互动式世界历史地图，由像您一样的人们所构筑，并可在公有领域下使用。
     intro_2_create_account: 创建用户账户
+    partners_title: 合作伙伴
     hosting_partners_html: "<p>\n<a href='https://greeninfo.org'> GreenInfo Network</a>是一个非营利性社会公益测绘和通信组织，它帮助非营利性和政府机构使用一系列工具实现社会、环境和其他目标。这些工具包括以人为本的设计实践、协作开发以及开源网络和地理空间工具。
       \n</p>\n<p>\n<a href='https://developmentseed.org/'> Development Seed</a>是一家工程和产品公司，致力于加速地球数据的应用以应对我们面临的最大全球挑战。
       Development Seed 利用海量地球数据、云计算、地理空间人工智能和深思熟虑的产品开发。\n</p>"
@@ -1859,6 +1875,9 @@ zh-CN:
         facebook:
           title: 使用脸书登录
           alt: 使用Facebook账户登录
+        microsoft:
+          title: 使用Microsoft登录
+          alt: 使用Microsoft账户登录
         github:
           title: 使用GitHub登录
           alt: 通过GitHub账户登录
