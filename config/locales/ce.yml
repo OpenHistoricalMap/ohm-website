@@ -106,7 +106,7 @@ ce:
         latitude: Шоралла
         longitude: Дохалла
         public: Массарна
-        description: Цунах лаьцна
+        description: Цуьнах лаьцна
         gpx_file: GPX файл чуйаккха
         visibility: 'Гуш хилар:'
         tagstring: 'Тегаш:'
@@ -125,7 +125,7 @@ ce:
         new_email: 'Электронан поштан керла адрес:'
         active: Жигара
         display_name: Гуш йолу цӀе
-        description: Цунах лаьцна
+        description: Цуьнах лаьцна
         home_lat: 'Шоралла:'
         home_lon: 'Дохалла:'
         languages: Меттанаш
@@ -966,7 +966,7 @@ ce:
       created from: 'Кхоьллина:'
       status: 'Статус:'
       spam score: 'Спаман маххадор:'
-      description: Цунах лаьцна
+      description: Цуьнах лаьцна
       user location: Декъашхо волу/йолу меттиг
       report: Хаамбе хӀокху декъашхох
     index:
@@ -1021,7 +1021,7 @@ ce:
       heading: '%{user} декъашхочун билгалонаш'
       id: Идентификатор
       creator: Автор
-      description: Цунах лаьцна
+      description: Цуьнах лаьцна
       created_at: Кхоьллина
       last_changed: Хийцина
   javascripts:
