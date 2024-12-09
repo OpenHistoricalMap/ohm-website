@@ -142,11 +142,8 @@ L.OSM.Map = L.Map.extend({
   },
 
   getMapBaseLayerId: function () {
-    var baseLayerId;
-    this.eachLayer(function (layer) {
-      if (layer.options && layer.options.keyid) baseLayerId = layer.options.keyid;
-    });
-    return baseLayerId;
+    const layer = this.getMapBaseLayer();
+    if (layer) return layer.options.layerId;
   },
 
   getMapBaseLayer: function () {
