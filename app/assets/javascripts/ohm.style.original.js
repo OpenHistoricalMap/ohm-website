@@ -159,7 +159,11 @@ ohmVectorStyles.Original = {
       "source-layer": "landuse_areas",
       "minzoom": 0,
       "maxzoom": 24,
-      "filter": ["in", ["get", "type"], ["literal", ["forest", "nature_reserve", "park", "wood"]]],
+      "filter": [
+        "in",
+        ["get", "type"],
+        ["literal", ["forest", "nature_reserve", "park", "wood"]]
+      ],
       "layout": {"visibility": "visible"},
       "paint": {
         "fill-color": [
@@ -229,6 +233,8 @@ ohmVectorStyles.Original = {
             "rgba(212, 225, 211, 0.3)",
             "pitch",
             "rgba(69, 150, 7, 0.39)",
+            "golf_course",
+            "rgba(236, 240, 198, 1)",
             "transparent"
           ]
         ]
@@ -328,7 +334,7 @@ ohmVectorStyles.Original = {
       "filter": ["==", ["get", "type"], "park"],
       "layout": {"visibility": "visible"},
       "paint": {
-        "line-width": ["interpolate", ["linear"], ["zoom"], 12, 0.75, 16, 1.25],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 12, 1, 16, 3],
         "line-color": "rgba(200, 210, 163, 1)"
       }
     },
@@ -356,36 +362,6 @@ ohmVectorStyles.Original = {
             "#C1D09E",
             "scrub",
             "rgba(199, 222, 194, 1)",
-            "transparent"
-          ]
-        ]
-      }
-    },
-    {
-      "id": "landuse_areas_z12_watercover",
-      "type": "fill",
-      "source": "osm",
-      "source-layer": "landuse_areas",
-      "minzoom": 9,
-      "maxzoom": 24,
-      "layout": {"visibility": "visible"},
-      "paint": {
-        "fill-color": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          0,
-          [
-            "match",
-            ["get", "type"],
-            "wetland",
-            "rgba(216, 229, 230, 1)",
-            "salt_pond",
-            "rgba(236, 240, 241, 1)",
-            "glacier",
-            "rgba(219, 244, 249, 1)",
-            "reservoir",
-            "rgba(144, 204, 203, 1)",
             "transparent"
           ]
         ]
@@ -500,20 +476,6 @@ ohmVectorStyles.Original = {
       }
     },
     {
-      "id": "wetlands_z12",
-      "type": "fill",
-      "source": "osm",
-      "source-layer": "landuse_areas",
-      "minzoom": 9,
-      "maxzoom": 24,
-      "filter": ["==", ["get", "type"], "wetland"],
-      "layout": {"visibility": "visible"},
-      "paint": {
-        "fill-color": "rgba(255, 255, 255, 1)",
-        "fill-pattern": "wetland-18"
-      }
-    },
-    {
       "id": "parking_lots",
       "type": "fill",
       "source": "osm",
@@ -545,7 +507,11 @@ ohmVectorStyles.Original = {
       "source-layer": "landuse_areas",
       "minzoom": 12,
       "maxzoom": 24,
-      "filter": ["in", ["get", "type"], ["literal", ["bare_rock", "peak", "rock", "scree"]]],
+      "filter": [
+        "in",
+        ["get", "type"],
+        ["literal", ["bare_rock", "peak", "rock", "scree"]]
+      ],
       "layout": {"visibility": "visible"},
       "paint": {"fill-color": "rgba(255, 255, 255, 1)", "fill-pattern": "rock"}
     },
@@ -618,6 +584,47 @@ ohmVectorStyles.Original = {
       }
     },
     {
+      "id": "landuse_areas_z12_watercover",
+      "type": "fill",
+      "source": "osm",
+      "source-layer": "landuse_areas",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          [
+            "match",
+            ["get", "type"],
+            "salt_pond",
+            "rgba(236, 240, 241, 1)",
+            "glacier",
+            "rgba(219, 244, 249, 1)",
+            "reservoir",
+            "rgba(144, 204, 203, 1)",
+            "swimming_pool",
+            "rgba(144, 204, 203, 1)",
+            "transparent"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "landuse_areas_z11_wetland_watercover",
+      "type": "fill",
+      "source": "osm",
+      "source-layer": "landuse_areas",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "filter": ["all", ["==", "type", "wetland"]],
+      "layout": {"visibility": "visible"},
+      "paint": {"fill-color": "rgba(228, 242, 227, 1)"}
+    },
+    {
       "id": "water_areas-ne",
       "type": "fill",
       "source": "ne",
@@ -671,6 +678,22 @@ ohmVectorStyles.Original = {
       "paint": {
         "fill-color": "rgba(248, 247, 242, 1)",
         "fill-outline-color": "rgba(226, 223, 215, 1)"
+      }
+    },
+    {
+      "id": "wetlands_z11-pattern",
+      "type": "fill",
+      "source": "osm",
+      "source-layer": "landuse_areas",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "filter": ["==", ["get", "type"], "wetland"],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(255, 255, 255, 1)",
+        "fill-pattern": {
+          "stops": [[12, "cattails_space_60px"], [14, "cattails_space_70px"]]
+        }
       }
     },
     {
@@ -1046,6 +1069,20 @@ ohmVectorStyles.Original = {
       }
     },
     {
+      "id": "aero_aerodrome_area",
+      "type": "fill",
+      "source": "osm",
+      "source-layer": "transport_areas",
+      "minzoom": 14,
+      "maxzoom": 24,
+      "filter": ["==", ["get", "type"], "aerodrome"],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(245, 245, 245, 1)",
+        "fill-outline-color": "rgba(214, 212, 212, 1)"
+      }
+    },
+    {
       "id": "aero_heliport_area",
       "type": "fill",
       "source": "osm",
@@ -1252,7 +1289,11 @@ ohmVectorStyles.Original = {
         "all",
         ["==", ["get", "type"], "construction"],
         ["==", ["get", "tunnel"], 1],
-        ["in", ["get", "construction"], ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]]
+        [
+          "in",
+          ["get", "construction"],
+          ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]
+        ]
       ],
       "layout": {
         "visibility": "visible",
@@ -1374,7 +1415,11 @@ ohmVectorStyles.Original = {
         "all",
         ["==", ["get", "type"], "construction"],
         ["==", ["get", "tunnel"], 1],
-        ["in", ["get", "construction"], ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]]
+        [
+          "in",
+          ["get", "construction"],
+          ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]
+        ]
       ],
       "layout": {
         "visibility": "visible",
@@ -1562,7 +1607,11 @@ ohmVectorStyles.Original = {
       "filter": [
         "all",
         ["==", ["get", "type"], "construction"],
-        ["in", ["get", "construction"], ["literal", ["cycleway", "footway", "path"]]]
+        [
+          "in",
+          ["get", "construction"],
+          ["literal", ["cycleway", "footway", "path"]]
+        ]
       ],
       "layout": {
         "visibility": "visible",
@@ -1678,7 +1727,11 @@ ohmVectorStyles.Original = {
         "all",
         ["==", ["get", "type"], "construction"],
         ["==", ["get", "bridge"], 0],
-        ["in", ["get", "construction"], ["literal", ["residential", "service", "unclassified"]]]
+        [
+          "in",
+          ["get", "construction"],
+          ["literal", ["residential", "service", "unclassified"]]
+        ]
       ],
       "layout": {
         "visibility": "visible",
@@ -1835,7 +1888,11 @@ ohmVectorStyles.Original = {
         "all",
         ["==", ["get", "type"], "construction"],
         ["!=", ["get", "tunnel"], 1],
-        ["in", ["get", "construction"], ["literal", ["motorway_link", "trunk_link"]]],
+        [
+          "in",
+          ["get", "construction"],
+          ["literal", ["motorway_link", "trunk_link"]]
+        ],
         ["!=", ["get", "bridge"], 1]
       ],
       "layout": {
@@ -1929,7 +1986,11 @@ ohmVectorStyles.Original = {
       "filter": [
         "all",
         ["==", ["get", "type"], "construction"],
-        ["in", ["get", "construction"], ["literal", ["residential", "service", "unclassified"]]]
+        [
+          "in",
+          ["get", "construction"],
+          ["literal", ["residential", "service", "unclassified"]]
+        ]
       ],
       "layout": {
         "visibility": "visible",
@@ -2033,7 +2094,11 @@ ohmVectorStyles.Original = {
         "all",
         ["==", ["get", "type"], "construction"],
         ["!=", ["get", "tunnel"], 1],
-        ["in", ["get", "construction"], ["literal", ["motorway_link", "trunk_link"]]],
+        [
+          "in",
+          ["get", "construction"],
+          ["literal", ["motorway_link", "trunk_link"]]
+        ],
         ["!=", ["get", "bridge"], 1]
       ],
       "layout": {
@@ -2249,7 +2314,11 @@ ohmVectorStyles.Original = {
         "all",
         ["==", ["get", "type"], "construction"],
         ["==", ["get", "bridge"], 1],
-        ["in", ["get", "construction"], ["literal", ["residential", "service", "unclassified"]]]
+        [
+          "in",
+          ["get", "construction"],
+          ["literal", ["residential", "service", "unclassified"]]
+        ]
       ],
       "layout": {
         "visibility": "visible",
@@ -2340,7 +2409,11 @@ ohmVectorStyles.Original = {
         "all",
         ["==", ["get", "type"], "construction"],
         ["==", ["get", "bridge"], 1],
-        ["in", ["get", "construction"], ["literal", ["primary", "primary_link"]]]
+        [
+          "in",
+          ["get", "construction"],
+          ["literal", ["primary", "primary_link"]]
+        ]
       ],
       "layout": {
         "line-cap": "round",
@@ -2371,7 +2444,11 @@ ohmVectorStyles.Original = {
         "all",
         ["==", ["get", "type"], "construction"],
         ["==", ["get", "bridge"], 1],
-        ["in", ["get", "construction"], ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]]
+        [
+          "in",
+          ["get", "construction"],
+          ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]
+        ]
       ],
       "layout": {
         "visibility": "visible",
@@ -2402,7 +2479,11 @@ ohmVectorStyles.Original = {
         "all",
         ["==", ["get", "type"], "construction"],
         ["==", ["get", "bridge"], 1],
-        ["in", ["get", "construction"], ["literal", ["residential", "service", "unclassified"]]]
+        [
+          "in",
+          ["get", "construction"],
+          ["literal", ["residential", "service", "unclassified"]]
+        ]
       ],
       "layout": {
         "visibility": "visible",
@@ -2552,7 +2633,11 @@ ohmVectorStyles.Original = {
         "all",
         ["==", ["get", "type"], "construction"],
         ["==", ["get", "bridge"], 1],
-        ["in", ["get", "construction"], ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]]
+        [
+          "in",
+          ["get", "construction"],
+          ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]
+        ]
       ],
       "layout": {
         "visibility": "visible",
@@ -2590,7 +2675,6 @@ ohmVectorStyles.Original = {
         "all",
         ["in", ["get", "type"], ["literal", ["funicular", "monorail", "tram"]]],
         ["!", ["in", ["get", "service"], ["literal", ["siding", "yard"]]]]
-        
       ],
       "layout": {"visibility": "visible", "line-cap": "square"},
       "paint": {
@@ -2737,7 +2821,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 20,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]
+        ],
         ["==", ["get", "tunnel"], 1]
       ],
       "layout": {
@@ -2855,7 +2943,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 20,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]
+        ],
         ["==", ["get", "tunnel"], 1]
       ],
       "layout": {
@@ -2995,7 +3087,11 @@ ohmVectorStyles.Original = {
       "source-layer": "transport_lines",
       "minzoom": 14,
       "maxzoom": 24,
-      "filter": ["in", ["get", "type"], ["literal", ["cycleway", "footway", "path"]]],
+      "filter": [
+        "in",
+        ["get", "type"],
+        ["literal", ["cycleway", "footway", "path"]]
+      ],
       "layout": {
         "visibility": "visible",
         "line-cap": "square",
@@ -3069,7 +3165,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 24,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["residential", "service", "unclassified"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["residential", "service", "unclassified"]]
+        ],
         ["!=", ["get", "bridge"], 1]
       ],
       "layout": {
@@ -3411,7 +3511,11 @@ ohmVectorStyles.Original = {
       "source-layer": "transport_lines",
       "minzoom": 12,
       "maxzoom": 24,
-      "filter": ["in", ["get", "type"], ["literal", ["residential", "service", "unclassified"]]],
+      "filter": [
+        "in",
+        ["get", "type"],
+        ["literal", ["residential", "service", "unclassified"]]
+      ],
       "layout": {
         "visibility": "visible",
         "line-cap": "round",
@@ -3437,7 +3541,7 @@ ohmVectorStyles.Original = {
       "source-layer": "transport_lines",
       "minzoom": 14,
       "maxzoom": 24,
-      "filter": ["==", ["get", "type"], "pedestrian"], 
+      "filter": ["==", ["get", "type"], "pedestrian"],
       "layout": {"visibility": "visible"},
       "paint": {
         "line-color": "#ffffff",
@@ -3865,7 +3969,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 24,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["abandoned", "dismantled", "disused", "razed"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["abandoned", "dismantled", "disused", "razed"]]
+        ],
         ["!", ["in", ["get", "service"], ["literal", ["siding", "yard"]]]]
       ],
       "layout": {"visibility": "visible"},
@@ -3895,7 +4003,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 24,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["abandoned", "dismantled", "disused", "razed"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["abandoned", "dismantled", "disused", "razed"]]
+        ],
         ["!", ["in", ["get", "service"], ["literal", ["siding", "yard"]]]]
       ],
       "layout": {"visibility": "visible"},
@@ -3926,7 +4038,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 24,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["abandoned", "dismantled", "disused", "razed"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["abandoned", "dismantled", "disused", "razed"]]
+        ],
         ["!", ["in", ["get", "service"], ["literal", ["siding", "yard"]]]]
       ],
       "layout": {"visibility": "none"},
@@ -3969,7 +4085,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 24,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["light_rail", "preserved", "rail"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["light_rail", "preserved", "rail"]]
+        ],
         ["!", ["in", ["get", "service"], ["literal", ["siding", "yard"]]]],
         ["==", ["get", "usage"], "main"]
       ],
@@ -3992,7 +4112,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 24,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["light_rail", "preserved", "rail"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["light_rail", "preserved", "rail"]]
+        ],
         ["!", ["in", ["get", "service"], ["literal", ["siding", "yard"]]]],
         ["==", ["get", "usage"], "main"]
       ],
@@ -4095,7 +4219,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 24,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["light_rail", "preserved", "rail"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["light_rail", "preserved", "rail"]]
+        ],
         ["!", ["in", ["get", "service"], ["literal", ["siding", "yard"]]]],
         ["!=", ["get", "usage"], "main"]
       ],
@@ -4126,7 +4254,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 24,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["light_rail", "preserved", "rail"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["light_rail", "preserved", "rail"]]
+        ],
         ["!", ["in", ["get", "service"], ["literal", ["siding", "yard"]]]],
         ["!=", ["get", "usage"], "main"]
       ],
@@ -4168,7 +4300,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 24,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["light_rail", "preserved", "rail"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["light_rail", "preserved", "rail"]]
+        ],
         ["!", ["in", ["get", "service"], ["literal", ["siding", "yard"]]]],
         ["==", ["get", "name"], "usage=main"]
       ],
@@ -4212,7 +4348,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 24,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["light_rail", "preserved", "rail"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["light_rail", "preserved", "rail"]]
+        ],
         ["!", ["in", ["get", "service"], ["literal", ["siding", "yard"]]]],
         ["!=", ["get", "name"], "usage=main"]
       ],
@@ -4368,7 +4508,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 24,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["residential", "service", "unclassified"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["residential", "service", "unclassified"]]
+        ],
         ["==", ["get", "bridge"], 1]
       ],
       "layout": {
@@ -4486,7 +4630,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 20,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]
+        ],
         ["==", ["get", "bridge"], 1]
       ],
       "layout": {
@@ -4516,7 +4664,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 24,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["residential", "service", "unclassified"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["residential", "service", "unclassified"]]
+        ],
         ["==", ["get", "bridge"], 1]
       ],
       "layout": {
@@ -4658,7 +4810,11 @@ ohmVectorStyles.Original = {
       "maxzoom": 20,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]],
+        [
+          "in",
+          ["get", "type"],
+          ["literal", ["motorway", "motorway_link", "trunk", "trunk_link"]]
+        ],
         ["==", ["get", "bridge"], 1]
       ],
       "layout": {
@@ -4732,6 +4888,29 @@ ohmVectorStyles.Original = {
       }
     },
     {
+      "id": "landuse_lines",
+      "type": "line",
+      "source": "osm",
+      "source-layer": "landuse_lines",
+      "filter": ["all"],
+      "paint": {
+        "line-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          [
+            "match",
+            ["get", "type"],
+            "tree_row",
+            "rgba(160, 178, 120, 1)",
+            "transparent"
+          ]
+        ],
+        "line-width": 2
+      }
+    },
+    {
       "id": "barriers",
       "type": "line",
       "source": "osm",
@@ -4780,6 +4959,25 @@ ohmVectorStyles.Original = {
       "paint": {"line-color": "rgba(164, 129, 136, 1)"}
     },
     {
+      "id": "city_county_lines_admin_9",
+      "type": "line",
+      "source": "osm",
+      "source-layer": "land_ohm_lines",
+      "minzoom": 11,
+      "maxzoom": 20,
+      "filter": ["in", ["get", "admin_level"], ["literal", [9]]],
+      "layout": {
+        "visibility": "visible",
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "rgba(164, 179, 178, 1)",
+        "line-dasharray": [3],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 10, 0.5]
+      }
+    },
+    {
       "id": "city_county_lines_admin7_8",
       "type": "line",
       "source": "osm",
@@ -4793,7 +4991,7 @@ ohmVectorStyles.Original = {
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(214, 218, 213, 1)",
+        "line-color": "rgba(204, 212, 210, 1)",
         "line-dasharray": [3],
         "line-width": ["interpolate", ["linear"], ["zoom"], 10, 0.75]
       }
@@ -4830,7 +5028,7 @@ ohmVectorStyles.Original = {
       "type": "line",
       "source": "osm",
       "source-layer": "land_ohm_lines",
-      "minzoom": 5,
+      "minzoom": 3,
       "maxzoom": 20,
       "filter": [
         "all",
@@ -4860,7 +5058,7 @@ ohmVectorStyles.Original = {
       "type": "line",
       "source": "osm",
       "source-layer": "land_ohm_lines",
-      "minzoom": 5,
+      "minzoom": 3,
       "maxzoom": 20,
       "filter": [
         "all",
@@ -5224,19 +5422,25 @@ ohmVectorStyles.Original = {
       "maxzoom": 24,
       "filter": [
         "all",
-        ["in", ["get", "type"], ["literal", [
-            "camp_site",
-            "garden",
-            "grass",
-            "grassland",
-            "park",
-            "picnic_site",
-            "playground",
-            "recreation_ground",
-            "sports_centre",
-            "stadium",
-            "village_green"
-          ]]
+        [
+          "in",
+          ["get", "type"],
+          [
+            "literal",
+            [
+              "camp_site",
+              "garden",
+              "grass",
+              "grassland",
+              "park",
+              "picnic_site",
+              "playground",
+              "recreation_ground",
+              "sports_centre",
+              "stadium",
+              "village_green"
+            ]
+          ]
         ],
         [">", ["get", "area"], 12000]
       ],
@@ -5263,7 +5467,12 @@ ohmVectorStyles.Original = {
       "source-layer": "landuse_areas_centroids",
       "minzoom": 14,
       "maxzoom": 24,
-      "filter": ["in", ["get", "type"], ["literal", [
+      "filter": [
+        "in",
+        ["get", "type"],
+        [
+          "literal",
+          [
             "allotmets",
             "farm",
             "farmland",
@@ -5271,7 +5480,8 @@ ohmVectorStyles.Original = {
             "garden",
             "orchard",
             "vineyard"
-          ]]
+          ]
+        ]
       ],
       "layout": {
         "text-field": ["get", "name"],
@@ -5291,7 +5501,11 @@ ohmVectorStyles.Original = {
       "source-layer": "landuse_areas_centroids",
       "minzoom": 14,
       "maxzoom": 24,
-      "filter": ["in", ["get", "type"], ["literal", ["forest", "nature_reserve", "wood"]]],
+      "filter": [
+        "in",
+        ["get", "type"],
+        ["literal", ["forest", "nature_reserve", "wood"]]
+      ],
       "layout": {
         "text-field": ["get", "name"],
         "text-size": 11,
@@ -5310,7 +5524,11 @@ ohmVectorStyles.Original = {
       "source-layer": "landuse_areas_centroids",
       "minzoom": 14,
       "maxzoom": 24,
-      "filter": ["in", ["get", "type"], ["literal", ["", "college", "education", "school", "university"]]],
+      "filter": [
+        "in",
+        ["get", "type"],
+        ["literal", ["", "college", "education", "school", "university"]]
+      ],
       "layout": {
         "text-field": ["get", "name"],
         "text-size": 11,
@@ -5412,21 +5630,25 @@ ohmVectorStyles.Original = {
       "source-layer": "amenity_areas_centroids",
       "minzoom": 14,
       "maxzoom": 16,
-      "filter": ["in", 
-      ["get", "type"], 
-      ["literal", [
-          "bank",
-          "border_control",
-          "embassy",
-          "fire_station",
-          "government",
-          "hospital",
-          "police",
-          "school",
-          "taxi",
-          "townhall",
-          "university"
-        ]]
+      "filter": [
+        "in",
+        ["get", "type"],
+        [
+          "literal",
+          [
+            "bank",
+            "border_control",
+            "embassy",
+            "fire_station",
+            "government",
+            "hospital",
+            "police",
+            "school",
+            "taxi",
+            "townhall",
+            "university"
+          ]
+        ]
       ],
       "layout": {
         "icon-image": "{type}-12",
@@ -5452,19 +5674,25 @@ ohmVectorStyles.Original = {
       "source-layer": "amenity_areas",
       "minzoom": 14,
       "maxzoom": 16,
-      "filter": ["in", ["get", "type"], ["literal", [
-          "bank",
-          "border_control",
-          "embassy",
-          "fire_station",
-          "government",
-          "hospital",
-          "police",
-          "school",
-          "taxi",
-          "townhall",
-          "university"
-        ]]
+      "filter": [
+        "in",
+        ["get", "type"],
+        [
+          "literal",
+          [
+            "bank",
+            "border_control",
+            "embassy",
+            "fire_station",
+            "government",
+            "hospital",
+            "police",
+            "school",
+            "taxi",
+            "townhall",
+            "university"
+          ]
+        ]
       ],
       "layout": {
         "icon-image": "{type}-12",
@@ -5557,6 +5785,50 @@ ohmVectorStyles.Original = {
       }
     },
     {
+      "id": "points_of_interest_other",
+      "type": "symbol",
+      "source": "osm",
+      "source-layer": "other_points",
+      "minzoom": 15,
+      "maxzoom": 24,
+      "filter": ["!", ["in", ["get", "type"], ["literal", ["artwork"]]]],
+      "layout": {
+        "text-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          15.99,
+          0,
+          16,
+          10,
+          20,
+          12
+        ],
+        "icon-text-fit": "none",
+        "icon-image": "{type}-18",
+        "icon-keep-upright": false,
+        "text-font": ["OpenHistorical"],
+        "icon-allow-overlap": false,
+        "visibility": "visible",
+        "text-offset": [0, 1],
+        "icon-optional": false,
+        "icon-size": ["interpolate", ["linear"], ["zoom"], 15, 0.7, 20, 1.4],
+        "text-anchor": "top",
+        "text-field": ["get", "name"],
+        "text-max-width": 10,
+        "icon-ignore-placement": false
+      },
+      "paint": {
+        "text-color": "#505050",
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-width": 0.5,
+        "text-halo-blur": 1,
+        "text-translate-anchor": "viewport",
+        "icon-translate-anchor": "viewport",
+        "text-opacity": ["interpolate", ["linear"], ["zoom"], 16.99, 0, 17, 1]
+      }
+    },
+    {
       "id": "points_of_interest_amenity_14",
       "type": "symbol",
       "source": "osm",
@@ -5614,50 +5886,6 @@ ohmVectorStyles.Original = {
         "text-halo-width": 0.5,
         "text-halo-blur": 1,
         "text-opacity": ["interpolate", ["linear"], ["zoom"], 16.9, 0, 17, 1]
-      }
-    },
-    {
-      "id": "points_of_interest_other",
-      "type": "symbol",
-      "source": "osm",
-      "source-layer": "other_points",
-      "minzoom": 15,
-      "maxzoom": 24,
-      "filter": ["!", ["in", ["get", "type"], ["literal", ["artwork"]]]],
-      "layout": {
-        "text-size": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          15.99,
-          0,
-          16,
-          10,
-          20,
-          12
-        ],
-        "icon-text-fit": "none",
-        "icon-image": "{type}-18",
-        "icon-keep-upright": false,
-        "text-font": ["OpenHistorical"],
-        "icon-allow-overlap": false,
-        "visibility": "visible",
-        "text-offset": [0, 1],
-        "icon-optional": false,
-        "icon-size": ["interpolate", ["linear"], ["zoom"], 15, 0.7, 20, 1.4],
-        "text-anchor": "top",
-        "text-field": ["get", "name"],
-        "text-max-width": 10,
-        "icon-ignore-placement": false
-      },
-      "paint": {
-        "text-color": "#505050",
-        "text-halo-color": "rgba(255, 255, 255, 1)",
-        "text-halo-width": 0.5,
-        "text-halo-blur": 1,
-        "text-translate-anchor": "viewport",
-        "icon-translate-anchor": "viewport",
-        "text-opacity": ["interpolate", ["linear"], ["zoom"], 16.99, 0, 17, 1]
       }
     },
     {
@@ -5752,7 +5980,7 @@ ohmVectorStyles.Original = {
       "source": "osm",
       "source-layer": "transport_areas",
       "minzoom": 10,
-      "maxzoom": 14,
+      "maxzoom": 16,
       "filter": ["==", ["get", "type"], "aerodrome"],
       "layout": {"icon-image": "airport-18", "text-font": ["OpenHistorical"]}
     },
@@ -5791,7 +6019,14 @@ ohmVectorStyles.Original = {
       "filter": [
         "all",
         ["==", ["get", "type"], "place_of_worship"],
-        ["!", ["in", ["get", "religion"], ["literal", ["christian", "jewish", "muslim"]]]]
+        [
+          "!",
+          [
+            "in",
+            ["get", "religion"],
+            ["literal", ["christian", "jewish", "muslim"]]
+          ]
+        ]
       ],
       "layout": {
         "icon-image": "place_of_worship-18",
@@ -5871,61 +6106,12 @@ ohmVectorStyles.Original = {
       "source": "osm",
       "source-layer": "landuse_areas",
       "minzoom": 16,
-      "filter": ["!", ["in", ["get", "type"], ["literal", ["garden", "peak", "wetland"]]]],
-      "layout": {
-        "icon-image": "{type}-18",
-        "text-font": ["OpenHistorical"],
-        "visibility": "visible"
-      }
-    },
-    {
-      "id": "points_acra",
-      "type": "symbol",
-      "source": "osm",
-      "source-layer": "buildings",
-      "filter": ["in", ["get", "name"], ["literal", ["ACRA", "Acra"]]],
-      "layout": {
-        "icon-image": "acra-18",
-        "text-font": ["OpenHistorical"],
-        "visibility": "visible"
-      }
-    },
-    {
-      "id": "points_oxfam",
-      "type": "symbol",
-      "source": "osm",
-      "source-layer": "buildings",
-      "filter": ["in", ["get", "name"], ["literal", [
-          "Centro di accoglienza Oxfam Italia",
-          "Intermon Oxfam",
-          "Magasin du monde-Oxfam",
-          "OXFAM",
-          "OXFAM Latrines",
-          "OXFAM Water Tank",
-          "OXFAM Water point",
-          "Oxfam",
-          "Oxfam Book Shop",
-          "Oxfam Books",
-          "Oxfam Books & Music",
-          "Oxfam Bookshop",
-          "Oxfam Boutique",
-          "Oxfam Buchshop",
-          "Oxfam Charity Shop",
-          "Oxfam GB",
-          "Oxfam Ireland",
-          "Oxfam Magasins du monde",
-          "Oxfam Music",
-          "Oxfam Novib",
-          "Oxfam Shop",
-          "Oxfam Solidarité",
-          "Oxfam Wereldwinkel",
-          "Oxfam books",
-          "Oxfam wereldwinkel",
-          "oxfam"
-        ]]
+      "filter": [
+        "!",
+        ["in", ["get", "type"], ["literal", ["garden", "peak", "wetland"]]]
       ],
       "layout": {
-        "icon-image": "oxfam-18",
+        "icon-image": "{type}-18",
         "text-font": ["OpenHistorical"],
         "visibility": "visible"
       }
@@ -5955,17 +6141,47 @@ ohmVectorStyles.Original = {
       }
     },
     {
-      "id": "county_labels_z11-centroids",
+      "id": "county_labels_z11-admin7_8-centroids",
+      "type": "symbol",
+      "source": "osm",
+      "source-layer": "land_ohm_centroids",
+      "minzoom": 10,
+      "maxzoom": 20,
+      "filter": ["in", ["get", "admin_level"], ["literal", [7, 8]]],
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-font": ["OpenHistorical"],
+        "text-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          6,
+          5,
+          10,
+          11,
+          16,
+          13
+        ],
+        "visibility": "visible",
+        "text-transform": "uppercase",
+        "symbol-spacing": 250,
+        "text-letter-spacing": 0
+      },
+      "paint": {
+        "text-color": "rgba(128, 128, 128, 1)",
+        "text-halo-color": "rgba(255, 255, 255, 1)",
+        "text-halo-blur": 2,
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "county_labels_z11-admin6-centroids",
       "type": "symbol",
       "source": "osm",
       "source-layer": "land_ohm_centroids",
       "minzoom": 8,
       "maxzoom": 20,
-      "filter": [
-        "all",
-        ["==", ["get", "type"], "administrative"],
-        ["==", ["get", "admin_level"], 6]
-      ],
+      "filter": ["in", ["get", "admin_level"], ["literal", [6]]],
       "layout": {
         "text-field": ["get", "name"],
         "text-font": ["OpenHistorical"],
@@ -6033,7 +6249,14 @@ ohmVectorStyles.Original = {
       "source-layer": "place_points",
       "minzoom": 11,
       "maxzoom": 20,
-      "filter": ["in", ["get", "type"], ["literal", ["hamlet", "islet", "locality", "neighborhood", "suburb", "village"]]],
+      "filter": [
+        "in",
+        ["get", "type"],
+        [
+          "literal",
+          ["hamlet", "islet", "locality", "neighborhood", "suburb", "village"]
+        ]
+      ],
       "layout": {
         "text-field": ["get", "name"],
         "text-font": ["OpenHistorical"],
@@ -6065,37 +6288,6 @@ ohmVectorStyles.Original = {
       "minzoom": 8,
       "maxzoom": 20,
       "filter": ["==", ["get", "type"], "town"],
-      "layout": {
-        "text-field": ["get", "name"],
-        "text-font": ["OpenHistorical"],
-        "text-size": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          6,
-          7,
-          10,
-          12,
-          16,
-          14
-        ],
-        "visibility": "visible"
-      },
-      "paint": {
-        "text-color": "rgba(34, 34, 34, 1)",
-        "text-halo-color": "rgba(255, 255, 255, 1)",
-        "text-halo-blur": 2,
-        "text-halo-width": 1
-      }
-    },
-    {
-      "id": "city_labels_town_z8_centroids",
-      "type": "symbol",
-      "source": "osm",
-      "source-layer": "land_ohm_centroids",
-      "minzoom": 8,
-      "maxzoom": 20,
-      "filter": ["in", ["get", "admin_level"], ["literal", [7, 8]]],
       "layout": {
         "text-field": ["get", "name"],
         "text-font": ["OpenHistorical"],
