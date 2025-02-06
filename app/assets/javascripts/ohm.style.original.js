@@ -1,10 +1,5 @@
 /* extends ohmVectorStyles defined in ohm.style.js */
 
-const spriteSheetUrls_Original = {
-  "production": "https://openhistoricalmap.github.io/map-styles/ohm_timeslider_tegola/ohm_spritezero_spritesheet-production",
-  "staging": "https://openhistoricalmap.github.io/map-styles/ohm_timeslider_tegola/ohm_spritezero_spritesheet",
-};
-
 ohmVectorStyles.Original = {
   "version": 8,
   "name": "ohmbasemap",
@@ -12,9 +7,7 @@ ohmVectorStyles.Original = {
   "sources": {
     "osm": {
       "type": "vector",
-      "tiles": [
-        "https://vtiles.staging.openhistoricalmap.org/maps/osm/{z}/{x}/{y}.pbf"
-      ]
+      "tiles": ["https://vtiles.staging.openhistoricalmap.org/maps/osm/{z}/{x}/{y}.pbf"]
     },
     "ohm_landcover_hillshade": {
       "type": "raster",
@@ -368,6 +361,54 @@ ohmVectorStyles.Original = {
       }
     },
     {
+      "id": "landuse_areas_z12_watercover",
+      "type": "fill",
+      "source": "osm",
+      "source-layer": "landuse_areas",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          12,
+          [
+            "match",
+            ["get", "type"],
+            "salt_pond",
+            "rgba(236, 240, 241, 1)",
+            "glacier",
+            "rgba(219, 244, 249, 1)",
+            "reservoir",
+            "rgba(144, 204, 203, 1)",
+            "swimming_pool",
+            "rgba(144, 204, 203, 1)",
+            "wetland",
+            "rgba(228, 242, 227, 1)",
+            "transparent"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "wetlands_z11-pattern",
+      "type": "fill",
+      "source": "osm",
+      "source-layer": "landuse_areas",
+      "minzoom": 11,
+      "maxzoom": 24,
+      "filter": ["==", ["get", "type"], "wetland"],
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-color": "rgba(255, 255, 255, 1)",
+        "fill-pattern": {
+          "stops": [[12, "cattails_space_60px"], [14, "cattails_space_70px"]]
+        }
+      }
+    },
+    {
       "id": "landuse_areas_z12_glacier-outline",
       "type": "line",
       "source": "osm",
@@ -584,47 +625,6 @@ ohmVectorStyles.Original = {
       }
     },
     {
-      "id": "landuse_areas_z12_watercover",
-      "type": "fill",
-      "source": "osm",
-      "source-layer": "landuse_areas",
-      "minzoom": 11,
-      "maxzoom": 24,
-      "layout": {"visibility": "visible"},
-      "paint": {
-        "fill-color": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          12,
-          [
-            "match",
-            ["get", "type"],
-            "salt_pond",
-            "rgba(236, 240, 241, 1)",
-            "glacier",
-            "rgba(219, 244, 249, 1)",
-            "reservoir",
-            "rgba(144, 204, 203, 1)",
-            "swimming_pool",
-            "rgba(144, 204, 203, 1)",
-            "transparent"
-          ]
-        ]
-      }
-    },
-    {
-      "id": "landuse_areas_z11_wetland_watercover",
-      "type": "fill",
-      "source": "osm",
-      "source-layer": "landuse_areas",
-      "minzoom": 11,
-      "maxzoom": 24,
-      "filter": ["all", ["==", "type", "wetland"]],
-      "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "rgba(228, 242, 227, 1)"}
-    },
-    {
       "id": "water_areas-ne",
       "type": "fill",
       "source": "ne",
@@ -678,22 +678,6 @@ ohmVectorStyles.Original = {
       "paint": {
         "fill-color": "rgba(248, 247, 242, 1)",
         "fill-outline-color": "rgba(226, 223, 215, 1)"
-      }
-    },
-    {
-      "id": "wetlands_z11-pattern",
-      "type": "fill",
-      "source": "osm",
-      "source-layer": "landuse_areas",
-      "minzoom": 11,
-      "maxzoom": 24,
-      "filter": ["==", ["get", "type"], "wetland"],
-      "layout": {"visibility": "visible"},
-      "paint": {
-        "fill-color": "rgba(255, 255, 255, 1)",
-        "fill-pattern": {
-          "stops": [[12, "cattails_space_60px"], [14, "cattails_space_70px"]]
-        }
       }
     },
     {
