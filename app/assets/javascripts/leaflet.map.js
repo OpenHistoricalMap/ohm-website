@@ -44,13 +44,6 @@ L.OSM.Map = L.Map.extend({
     }).prop("outerHTML");
     var cyclosm = I18n.t("javascripts.map.cyclosm_credit", { cyclosm_link: cyclosm_link, osm_france_link: osm_france_link });
 
-    var thunderforest_link = $("<a>", {
-      href: "https://www.thunderforest.com/",
-      target: "_blank",
-      text: I18n.t("javascripts.map.andy_allan")
-    }).prop("outerHTML");
-    var thunderforest = I18n.t("javascripts.map.thunderforest_credit", { thunderforest_link: thunderforest_link });
-
     var memomaps_link = $("<a>", {
       href: "https://memomaps.de/",
       target: "_blank",
@@ -144,48 +137,88 @@ L.OSM.Map = L.Map.extend({
       name: I18n.t("javascripts.map.base.standard")
     }));
 
-    this.baseLayers.push(new L.OSM.CyclOSM({
+    this.baseLayers.push(new L.MaplibreGL({
       attribution: copyright + ". " + cyclosm + ". " + terms,
       code: "Y",
-      keyid: "cyclosm",
-      name: I18n.t("javascripts.map.base.cyclosm")
+      keyid: "cyclosm", 
+      name: I18n.t("javascripts.map.base.cyclosm"),
+      style: {
+        version: 8,
+        sources: {
+          'cyclosm': {
+            type: 'raster',
+            tiles: [
+              'https://a.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png',
+              'https://b.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', 
+              'https://c.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png'
+            ],
+            tileSize: 256,
+            attribution: `${copyright}. ${cyclosm}. ${terms}`,
+            maxzoom: 20
+          }
+        },
+        layers: [{
+          id: 'cyclosm',
+          type: 'raster',
+          source: 'cyclosm'
+        }]
+      }
     }));
 
-    if (OSM.THUNDERFOREST_KEY) {
-      this.baseLayers.push(new L.OSM.CycleMap({
-        attribution: copyright + ". " + thunderforest + ". " + terms,
-        apikey: OSM.THUNDERFOREST_KEY,
-        code: "C",
-        keyid: "cyclemap",
-        name: I18n.t("javascripts.map.base.cycle_map")
-      }));
-
-      this.baseLayers.push(new L.OSM.TransportMap({
-        attribution: copyright + ". " + thunderforest + ". " + terms,
-        apikey: OSM.THUNDERFOREST_KEY,
-        code: "T",
-        keyid: "transportmap",
-        name: I18n.t("javascripts.map.base.transport_map")
-      }));
-    }
-
-    this.baseLayers.push(new L.OSM.HOT({
+    this.baseLayers.push(new L.MaplibreGL({
       attribution: copyright + ". " + hotosm + ". " + terms,
-      code: "H",
+      code: "H", 
       keyid: "hot",
-      name: I18n.t("javascripts.map.base.hot")
+      name: I18n.t("javascripts.map.base.hot"),
+      style: {
+        version: 8,
+        sources: {
+          'hot': {
+            type: 'raster',
+            tiles: [
+              'https://tile-a.openstreetmap.fr/hot/{z}/{x}/{y}.png',
+              'https://tile-b.openstreetmap.fr/hot/{z}/{x}/{y}.png',
+              'https://tile-c.openstreetmap.fr/hot/{z}/{x}/{y}.png'
+            ],
+            tileSize: 256,
+            maxzoom: 20
+          }
+        },
+        layers: [{
+          id: 'hot',
+          type: 'raster',
+          source: 'hot'
+        }]
+      }
     }));
-
     this.noteLayer = new L.FeatureGroup();
     this.noteLayer.options = { code: "N" };
 
     this.dataLayer = new L.OSM.DataLayer(null);
     this.dataLayer.options.code = "D";
 
-    this.gpsLayer = new L.OSM.GPS({
-      pane: "overlayPane",
+    this.gpsLayer = new L.MaplibreGL({
       code: "G",
-      name: I18n.t("javascripts.map.base.gps")
+      name: I18n.t("javascripts.map.base.gps"),
+      style: {
+        version: 8,
+        sources: {
+          'gps': {
+            type: 'raster',
+            tiles: [
+              'https://gps.tile.openstreetmap.org/lines/{z}/{x}/{y}.png'
+            ],
+            tileSize: 256,
+            maxZoom: 21,
+            maxNativeZoom: 20
+          }
+        },
+        layers: [{
+          id: 'gps',
+          type: 'raster',
+          source: 'gps'
+        }]
+      }
     });
 
     this.on("layeradd", function (event) {

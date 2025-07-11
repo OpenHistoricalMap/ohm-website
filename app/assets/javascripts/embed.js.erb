@@ -37,20 +37,6 @@ window.onload = function () {
   map.attributionControl.setPrefix('');
   map.removeControl(map.attributionControl);
 
-  if (!args.layer || args.layer === "mapnik" || args.layer === "osmarender" || args.layer === "mapquest") {
-    new L.OSM.Mapnik().addTo(map);
-  } else if (args.layer === "historical") {
-    new L.OSM.Historical().addTo(map);
-  } else if (args.layer === "cyclemap" || args.layer === "cycle map") {
-    new L.OSM.CycleMap(thunderforestOptions).addTo(map);
-  } else if (args.layer === "transportmap") {
-    new L.OSM.TransportMap(thunderforestOptions).addTo(map);
-  } else if (args.layer === "hot") {
-    new L.OSM.HOT().addTo(map);
-  } else {
-    new L.OSM.Mapnik(mapnikOptions).addTo(map);
-  }
-
   if (args.marker) {
     L.marker(args.marker.split(','), {icon: L.icon({
         iconUrl: <%= asset_path('leaflet/dist/images/marker-icon.png').to_json %>,

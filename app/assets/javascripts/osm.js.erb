@@ -27,10 +27,6 @@ OSM = {
   THUNDERFOREST_KEY:       <%= Settings.thunderforest_key.to_json %>,
 <% end %>
 
-<% if Settings.key?(:tracestrack_key) %>
-  TRACESTRACK_KEY:         <%= Settings.tracestrack_key.to_json %>,
-<% end %>
-
   LAYERS_WITH_MAP_KEY:     <%= YAML.load_file(Rails.root.join("config/key.yml")).keys.to_json %>,
 
   MARKER_GREEN:            <%= image_path("marker-green.png").to_json %>,

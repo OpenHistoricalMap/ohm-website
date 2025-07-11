@@ -337,7 +337,6 @@ L.OSM.share = function (options) {
     }
 
     function update() {
-      var canEmbed = map.getMapBaseLayerId() !== "tracestracktopo";
       var bounds = map.getBounds();
 
       $("#link_marker")
@@ -364,13 +363,10 @@ L.OSM.share = function (options) {
       }
 
       $("#embed_link")
-        .toggleClass("btn-primary", canEmbed)
-        .toggleClass("btn-secondary", !canEmbed)
-        .tooltip(canEmbed ? "disable" : "enable");
-      if (!canEmbed && $("#embed_link").hasClass("active")) {
-        $("#long_link").click();
-      }
-
+        .toggleClass("btn-primary", true)
+        .toggleClass("btn-secondary", false)
+        .tooltip("disable");
+ 
       const
         parsedHash = new URLSearchParams(location.hash),
         embeddedMapPath = parsedHash.get('#map'),
