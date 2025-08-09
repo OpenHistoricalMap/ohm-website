@@ -1545,6 +1545,7 @@ en:
       border_types:
         archdiocese: "Archdiocesan Boundary"
         arrondissement: "Arrondissement Boundary"
+        audiencia: "Audiencia Boundary"
         borough: "Borough Boundary"
         caliphate: "Caliphal Boundary"
         canton: "Cantonal Boundary"
