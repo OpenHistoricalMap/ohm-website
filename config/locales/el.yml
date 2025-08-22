@@ -2311,7 +2311,7 @@ el:
       legal_1_privacy_policy: Πολιτική Απορρήτου
       legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Πολιτική Απορρήτου
       legal_2_html: |-
-        Παρακαλούμε %{contact_the_osmf_link}
+        Παρακαλούμε %{contact_team_link}
         εάν έχετε ερωτήσεις για αδειοδότηση, πνευματικά δικαιώματα ή άλλα νομικά.
       legal_2_contact_team: επικοινωνήστε με την ομάδα του OpenHistoricalMap
       legal_3_osmf_trademarks: εγγεγραμμένα εμπορικά σήματα του Ιδρύματος OpenStreetMap
@@ -2384,7 +2384,7 @@ el:
         contributors_footer_2_html: Η συμπερίληψη δεδομένων στο OpenStreetMap δεν
           συνεπάγεται ότι ο αρχικός πάροχος δεδομένων εγκρίνει το OpenStreetMap, παρέχει
           οποιαδήποτε εγγύηση ή αποδέχεται καμία ευθύνη.
-        infringement_title_html: Παραβιάσεις πνευματικών δικαιωμάτων
+        infringement_title_html: Παραβιάσεις πνευματικών δικαιωμάτων 
         infringement_1_html: Υπενθυμίζουμε στους συνεισφέροντες του OSM να μην προσθέτουν
           δεδομένα από πηγές με πνευματικά δικαιώματα (π.χ. Google Maps η έντυπους
           χάρτες) χωρίς την προηγούμενη άδεια από τους ιδιοκτήτες των δικαιωμάτων.

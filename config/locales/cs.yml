@@ -2070,7 +2070,7 @@ cs:
       legal_1_aup: Pravidlům přijatelného užití
       legal_1_privacy_policy: Pravidlům ochrany osobních údajů
       legal_2_html: Pokud máte dotazy týkající se licencování, autorských práv či
-        jiných právních záležitostí, %{contact_the_osmf_link}.
+        jiných právních záležitostí, %{contact_team_link}.
       partners_title: Partneři
     copyright:
       title: Autorská práva a licence

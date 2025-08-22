@@ -1990,7 +1990,7 @@ ro:
       legal_1_aup: Politica de Utilizare Acceptabilă
       legal_1_privacy_policy: Politica de Confidențialitate
       legal_2_html: |-
-        Vă rugăm %{contact_the_osmf_link}
+        Vă rugăm %{contact_team_link}
         dacă aveți întrebări legate de licență, drepturi de autor sau alte întrebări legale.
       partners_title: Parteneri
     copyright:

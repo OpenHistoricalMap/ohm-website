@@ -2016,7 +2016,7 @@ hu:
       legal_1_terms_of_use: Felhasználási feltételek
       legal_1_aup: Elfogadható felhasználási szabályzat
       legal_1_privacy_policy: Adatvédelmi irányelvek
-      legal_2_html: Kérjük, %{contact_the_osmf_link}, ha licencekkel kapcsolatos,
+      legal_2_html: Kérjük, %{contact_team_link}, ha licencekkel kapcsolatos,
         szerzői jogi vagy egyéb jogi kérdései vannak.
       partners_title: Partnerek
     copyright:

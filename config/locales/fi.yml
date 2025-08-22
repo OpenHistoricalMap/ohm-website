@@ -1847,7 +1847,7 @@ fi:
       legal_1_terms_of_use: käyttöehtoja
       legal_1_aup: sallitun käytön käytäntöjä
       legal_1_privacy_policy: tietosuojakäytäntöä
-      legal_2_html: Ota yhteyttä %{contact_the_osmf_link}, jos sinulla on kysymyksiä
+      legal_2_html: Ota yhteyttä %{contact_team_link}, jos sinulla on kysymyksiä
         lisenssoinnista, tekijänoikeuksista tai muista oikeudellisista kysymyksistä.
       partners_title: Kumppanit
     copyright:

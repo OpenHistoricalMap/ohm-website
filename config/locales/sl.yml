@@ -2046,7 +2046,7 @@ sl:
       legal_1_privacy_policy: Pravilnik o zasebnosti
       legal_2_html: |-
         Če imate vprašanja o licenci, avtorskih pravicah ali druga pravna vprašanja,
-        prosimo, %{contact_the_osmf_link}.
+        prosimo, %{contact_team_link}.
       partners_title: Partnerji
     copyright:
       title: Avtorske pravice in licenca

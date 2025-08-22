@@ -1969,7 +1969,7 @@ zh-CN:
       legal_1_aup: 可接受的使用政策
       legal_1_privacy_policy: 隐私政策
       legal_2_html: |-
-        若您有许可证、著作权或其他法律上的问题，请%{contact_the_osmf_link}
+        若您有许可证、著作权或其他法律上的问题，请%{contact_team_link}
         。
       partners_title: 合作伙伴
     copyright:

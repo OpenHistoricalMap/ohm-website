@@ -2357,7 +2357,7 @@ nl:
       legal_1_privacy_policy: privacybeleid
       legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
       legal_2_html: |-
-        %{contact_the_osmf_link}
+        %{contact_team_link}
         als u licentie-, copyright- of andere juridische vragen heeft.
       legal_2_contact_team: contact opnemen met het team van OpenHistoricalMap
       legal_3_html: |-

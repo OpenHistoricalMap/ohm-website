@@ -1953,7 +1953,7 @@ ar:
       legal_1_terms_of_use: شروط الاستخدام
       legal_1_aup: سياسات الاستخدام المقبولة
       legal_1_privacy_policy: سياسة الخصوصية
-      legal_2_html: من فضلك %{contact_the_osmf_link} إذا كان لديك ترخيص أو حقوق طبع
+      legal_2_html: من فضلك %{contact_team_link} إذا كان لديك ترخيص أو حقوق طبع
         ونشر أو أسئلة قانونية أخرى.
       partners_title: الشركاء
     copyright:

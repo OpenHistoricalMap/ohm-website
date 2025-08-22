@@ -1961,7 +1961,7 @@ ko:
       legal_1_terms_of_use: 이용 약관
       legal_1_aup: 사용 범위 정책
       legal_1_privacy_policy: 개인정보처리방침
-      legal_2_html: 라이선스, 저작권 또는 기타 법무 관련 문의는 %{contact_the_osmf_link}.
+      legal_2_html: 라이선스, 저작권 또는 기타 법무 관련 문의는 %{contact_team_link}.
       partners_title: 파트너
     copyright:
       title: 저작권 및 라이선스

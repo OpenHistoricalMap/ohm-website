@@ -1742,7 +1742,7 @@ nn:
       legal_1_terms_of_use: bruksvilkåra
       legal_1_aup: vilkåra for akseptabel bruk
       legal_1_privacy_policy: personvernspolitikken
-      legal_2_html: Kontakt %{contact_the_osmf_link} om du har spørsmål knytte til
+      legal_2_html: Kontakt %{contact_team_link} om du har spørsmål knytte til
         lisens, opphavsrett eller andre juridiske emne.
       partners_title: Partnarar
     copyright:

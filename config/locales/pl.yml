@@ -2121,7 +2121,7 @@ pl:
       legal_1_aup: Zasadom dopuszczalnego użytkowania
       legal_1_privacy_policy: Polityce prywatności
       legal_2_html: W przypadku pytań dotyczących licencji, praw autorskich lub innych
-        kwestii prawnych prosimy o %{contact_the_osmf_link}.
+        kwestii prawnych prosimy o %{contact_team_link}.
       partners_title: Partnerzy
     copyright:
       title: Prawa autorskie i&nbsp;licencja

@@ -2057,7 +2057,7 @@ tr:
       legal_1_aup: Kabul Edilebilir Kullanım Politikaları
       legal_1_privacy_policy: Gizlilik Politikası
       legal_2_html: Lisanslama, telif hakkı veya diğer yasal sorularınız varsa lütfen
-        %{contact_the_osmf_link}
+        %{contact_team_link}
       legal_3_osmf_trademarks_url: https://osmfoundation.org/wiki/Trademark_Policy
       partners_title: İş birlikçiler
     copyright:

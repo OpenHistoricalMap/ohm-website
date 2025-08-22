@@ -1985,7 +1985,7 @@ cy:
       legal_1_terms_of_use: Telerau Gwasanaeth
       legal_1_aup: Polisïau Defnydd Derbyniol
       legal_1_privacy_policy: Polisi Preifatrwydd
-      legal_2_html: '%{contact_the_osmf_link} os oes gennych gwestiynau am drwydded,
+      legal_2_html: '%{contact_team_link} os oes gennych gwestiynau am drwydded,
         hawlfraint neu gwestiynau cyfreithiol eraill.'
       partners_title: Partneriaid
     copyright:

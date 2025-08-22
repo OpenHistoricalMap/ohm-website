@@ -2104,7 +2104,7 @@ it:
       legal_1_terms_of_use: Condizioni d'uso
       legal_1_aup: Politiche di utilizzo accettabile
       legal_1_privacy_policy: Informativa sulla privacy
-      legal_2_html: Puoi %{contact_the_osmf_link} per problemi di licenza, diritto
+      legal_2_html: Puoi %{contact_team_link} per problemi di licenza, diritto
         d'autore o altre questioni legali.
       legal_2_contact_team: contatta il team di OpenHistoricalMap
       legal_3_html: OpenHistoricalMap® è un marchio registrato (USA Reg. n. 90,019,364).

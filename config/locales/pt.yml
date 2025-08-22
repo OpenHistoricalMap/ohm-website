@@ -2102,7 +2102,7 @@ pt:
       legal_1_1_terms_of_use: Termos de uso
       legal_1_1_aup: Políticas de uso aceitável
       legal_1_1_privacy_policy: Politica de privacidade
-      legal_2_1_html: Por favor, %{contact_the_osmf_link} se tiver dúvidas de licenciamento,
+      legal_2_1_html: Por favor, %{contact_team_link} se tiver dúvidas de licenciamento,
         direitos de autor ou de outro teor.
       legal_2_1_contact_the_osmf: contate a OSMF
       legal_2_2_html: O OpenStreetMap, o logótipo da lupa e o State of the Map são

@@ -2443,7 +2443,7 @@ fr:
       legal_1_privacy_policy: politique de confidentialité
       legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
       legal_2_html: |-
-        Veuillez %{contact_the_osmf_link}
+        Veuillez %{contact_team_link}
         si vous avez des questions sur les conditions de licence, les droits d’auteur ou d’autres questions juridiques.
       legal_2_contact_team: contacter l’équipe OpenHistoricalMap
       legal_3_html: |-

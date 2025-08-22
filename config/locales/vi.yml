@@ -2174,7 +2174,7 @@ vi:
       legal_1_privacy_policy: Quy định về Quyền riêng tư
       legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy?uselang=vi
       legal_2_html: |-
-        Xin vui lòng %{contact_the_osmf_link}
+        Xin vui lòng %{contact_team_link}
         nếu có thắc mắc về giấy phép, bản quyền, hoặc vấn đề pháp lý khác.
       legal_2_contact_team: liên lạc với nhóm OpenHistoricalMap
       legal_3_html: |-

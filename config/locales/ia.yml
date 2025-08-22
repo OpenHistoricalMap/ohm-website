@@ -2269,7 +2269,7 @@ ia:
       legal_1_terms_of_use: Conditiones de uso
       legal_1_aup: Politica de uso acceptabile
       legal_1_privacy_policy: Politica de confidentialitate
-      legal_2_html: Per favor %{contact_the_osmf_link} si tu ha questiones sur le
+      legal_2_html: Per favor %{contact_team_link} si tu ha questiones sur le
         licentia o le derecto de autor o altere questiones juridic.
       legal_2_contact_team: contactar le equipa de OpenHistoricalMap
       legal_3_html: |-

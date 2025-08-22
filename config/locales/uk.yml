@@ -2097,7 +2097,7 @@ uk:
       legal_1_aup: Правил щодо прийнятного використання
       legal_1_privacy_policy: Політиці конфіденційності
       legal_2_html: |-
-        Будь ласка, %{contact_the_osmf_link}
+        Будь ласка, %{contact_team_link}
         якщо у вас є питання щодо ліцензування, авторського права чи інші юридичні питання.
       partners_title: Партнери
     copyright:

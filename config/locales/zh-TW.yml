@@ -1957,7 +1957,7 @@ zh-TW:
       legal_1_terms_of_use: 使用條款
       legal_1_aup: 可接受使用方針
       legal_1_privacy_policy: 隱私權政策
-      legal_2_html: 若你有授權、版權、或其他法律上的問題，請%{contact_the_osmf_link}。
+      legal_2_html: 若你有授權、版權、或其他法律上的問題，請%{contact_team_link}。
       partners_title: 合作夥伴
     copyright:
       title: 版權與授權條款

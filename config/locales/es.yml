@@ -2114,7 +2114,7 @@ es:
       legal_1_aup: Normativas de uso aceptable
       legal_1_privacy_policy: Normativa de privacidad
       legal_2_html: Sí tienes alguna pregunta sobre licencias, derechos de autor u
-        otras cuestiones legales, por favor %{contact_the_osmf_link}.
+        otras cuestiones legales, por favor %{contact_team_link}. 
       partners_title: Socios
     copyright:
       title: Derechos de autor y licencia

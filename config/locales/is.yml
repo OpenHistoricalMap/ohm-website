@@ -2033,7 +2033,7 @@ is:
       legal_1_privacy_policy: Persónuverndarstefnu
       legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
       legal_2_html: |-
-        Endilega %{contact_the_osmf_link}
+        Endilega %{contact_team_link}
         ef þú ert með spurningar eða beiðnir varðandi notkunarleyfi, höfundarrétt eða önnur lögfræðileg málefni.
       legal_3_osmf_trademarks_url: https://osmfoundation.org/wiki/Trademark_Policy
       partners_title: Samstarfsaðilar

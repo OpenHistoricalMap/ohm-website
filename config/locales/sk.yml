@@ -1946,7 +1946,7 @@ sk:
       legal_1_aup: Pravidlám prijateľného používania
       legal_1_privacy_policy: Pravidlám ochrany osobných údajov
       legal_2_html: |-
-        Prosím, %{contact_the_osmf_link}
+        Prosím, %{contact_team_link}
         ak máte otázky týkajúce sa licencií, autorských práv alebo iné právne otázky.
       partners_title: Partneri
     copyright:

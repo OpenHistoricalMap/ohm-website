@@ -2041,7 +2041,7 @@ sv:
       legal_1_aup: Riktlinjer för tillåten användning
       legal_1_privacy_policy: Integritetspolicy
       legal_2_html: |-
-        Vänligen %{contact_the_osmf_link}
+        Vänligen %{contact_team_link}
         om du har frågor om licensiering, upphovsrätt eller andra juridiska frågor.
       partners_title: Partners
     copyright:

@@ -2018,7 +2018,7 @@ mk:
       legal_1_aup: Правила за прифатлива употреба
       legal_1_privacy_policy: Правила за личните податоци
       legal_2_html: |-
-        %{contact_the_osmf_link}
+        %{contact_team_link}
         ако имате прашања во врска со лиценцирање, авторски права или други правни работи.
       partners_title: Партнери
     copyright:

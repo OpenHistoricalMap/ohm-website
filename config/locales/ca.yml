@@ -1911,7 +1911,7 @@ ca:
       legal_1_terms_of_use: condicions d’ús
       legal_1_aup: polítiques d'ús acceptable
       legal_1_privacy_policy: polítiques de privadesa
-      legal_2_html: '%{contact_the_osmf_link} si teniu qüestions sobre la llicència,
+      legal_2_html: '%{contact_team_link} si teniu qüestions sobre la llicència,
         copyright o altres temes legals.'
       partners_title: Socis
     copyright:

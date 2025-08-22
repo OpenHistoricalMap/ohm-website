@@ -1471,7 +1471,7 @@ bg:
       open_data_title: Отворени данни
       legal_title: Правни въпроси
       legal_1_privacy_policy: Политика за поверителност
-      legal_2_html: Моля, %{contact_the_osmf_link} ако имате въпроси, свързани с лицензирането,
+      legal_2_html: Моля, %{contact_team_link} ако имате въпроси, свързани с лицензирането,
         авторските права или други правни въпроси.
       partners_title: Партньори
     copyright:

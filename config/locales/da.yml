@@ -2022,7 +2022,7 @@ da:
       legal_1_terms_of_use: Brugsvilkår
       legal_1_aup: Politikker for acceptabel brug
       legal_1_privacy_policy: Privatlivs-poltik
-      legal_2_html: Du bedes %{contact_the_osmf_link} hvis du har spørgsmål om licensering,
+      legal_2_html: Du bedes %{contact_team_link} hvis du har spørgsmål om licensering,
         ophavsret eller andre juridiske spørgsmål og problemstillinger.
       partners_title: Partnere
     copyright:

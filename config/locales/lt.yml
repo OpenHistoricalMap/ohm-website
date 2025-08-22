@@ -1991,7 +1991,7 @@ lt:
       legal_1_aup: Priimtino naudojimo politika
       legal_1_privacy_policy: Privatumo politika
       legal_2_html: |-
-        Prašome %{contact_the_osmf_link}
+        Prašome %{contact_team_link}
         Jei turite licencijų, autorių teisių ar kitų teisinių klausimų.
       partners_title: Partneriai
     copyright:

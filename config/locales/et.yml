@@ -1859,7 +1859,7 @@ et:
       legal_1_aup: kasutamisreeglid
       legal_1_privacy_policy: andmekaitsereeglid
       legal_2_html: |-
-        Palun %{contact_the_osmf_link},
+        Palun %{contact_team_link},
         kui sul on küsimusi litsentsimise, autoriõiguse või muude õiguslike teemade kohta.
       partners_title: Partnerid
     copyright:

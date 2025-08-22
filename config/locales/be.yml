@@ -2008,7 +2008,7 @@ be:
       legal_title: Прававыя пытанні
       legal_1_terms_of_use: Умовы карыстання
       legal_1_privacy_policy: Палітыка прыватнасці
-      legal_2_html: Калі ласка, %{contact_the_osmf_link}, калі ў вас ёсць пытанні
+      legal_2_html: Калі ласка, %{contact_team_link}, калі ў вас ёсць пытанні
         адносна ліцэнзавання, аўтарскіх правоў або іншых юрыдычных пытаннях.
       partners_title: Партнёры
     copyright:

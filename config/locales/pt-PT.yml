@@ -2042,7 +2042,7 @@ pt-PT:
       legal_1_terms_of_use: Termos de Utilização
       legal_1_aup: Políticas de Uso Aceitável
       legal_1_privacy_policy: Política de Privacidade
-      legal_2_html: Por favor, %{contact_the_osmf_link} se tiver dúvidas de licenciamento,
+      legal_2_html: Por favor, %{contact_team_link} se tiver dúvidas de licenciamento,
         direitos de autor ou de outro teor.
       partners_title: Parceiros
     copyright:

@@ -1922,7 +1922,7 @@ ja:
       legal_1_aup: 利用規定
       legal_1_privacy_policy: プライバシー・ポリシー
       legal_2_html: |-
-        ライセンス、著作権、その他の法的な問題については、%{contact_the_osmf_link}
+        ライセンス、著作権、その他の法的な問題については、%{contact_team_link}
         までお問い合わせください。
       partners_title: パートナー
     copyright:
