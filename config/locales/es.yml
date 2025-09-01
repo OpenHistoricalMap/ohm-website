@@ -253,7 +253,7 @@ es:
         company: Empresa
         home_lat: Latitud
         home_lon: Longitud
-        home_location_name: Nombre de Ubicación de Casa
+        home_location_name: Nombre de mi ubicación
         languages: Idiomas preferidos
         preferred_editor: Editor preferido
         pass_crypt: Contraseña
@@ -415,7 +415,7 @@ es:
         delete_introduction: 'Puedes eliminar tu cuenta de OpenHistoricalMap utilizando
           el botón que aparece a continuación. Ten en cuenta los siguientes detalles:'
         delete_profile: Se eliminará la información de tu perfil, incluido tu avatar,
-          descripción y Ubicación de Casa.
+          descripción y tu ubicación.
         delete_display_name: Tu nombre para mostrar será eliminado, y podrá ser reutilizado
           por otras cuentas.
         retain_caveats: 'Sin embargo, algunos datos sobre ti se conservarán en OpenHistoricalMap,
@@ -723,7 +723,7 @@ es:
         para ver los usuarios cercanos.'
       edit_your_profile: Edita tu perfil
       followings: Usuarios que sigues
-      no followings: Aún no has seguido a ningún usuario.
+      no followings: Aún no sigues a ningún usuario.
       nearby users: Otros usuarios cercanos
       no nearby users: Todavía no hay usuarios que admitan mapear cerca.
       followed_changesets: conjunto de cambios
@@ -1872,7 +1872,7 @@ es:
       h1: OpenHistoricalMap
     logo:
       alt_text: Logo de OpenStreetMap
-    home: Ir a Ubicación de Casa
+    home: Ir a mi ubicación
     logout: Cerrar sesión
     log_in: Iniciar sesión
     sign_up: Registrarse
@@ -1890,7 +1890,7 @@ es:
       uso libre bajo una licencia abierta.
     intro_2_create_account: Crear una cuenta de usuario
     partners_title: Socios
-    hosting_partners_2024_html: OpenHistoricalMap es un proyecto fundador de %{osmus},
+    hosting_partners_2024_html: OpenHistoricalMap es un proyecto fundador por %{osmus},
       una organización sin fines de lucro 501(c)(3) afiliada a la %{osmf}. El desarrollo
       técnico cuenta con el apoyo de %{greeninfo} y %{devseed}.
     partners_devseed: Development Seed
@@ -1954,7 +1954,7 @@ es:
       imported_points: Número de puntos importados
     gpx_failure:
       hi: Hola %{to_user},
-      failed_to_import: Parece que falló la importación de tu archivo como traza GPS.
+      failed_to_import: Parece que falló la importación de tu archivo de traza GPS.
       verify: 'Verifica que tu archivo sea un archivo GPX válido o un archivo que
         contenga archivos GPX en el formato soportado (.tar.gz, .tar.bz2, .tar, .zip,
         .gpx.gz, .gpx.bz2). ¿Podría haber un problema de formato o sintaxis con tu
@@ -2243,8 +2243,8 @@ es:
       delete image: Eliminar la imagen actual
       replace image: Reemplazar la imagen actual
       image size hint: (las imágenes cuadradas de al menos 100x100 funcionan mejor)
-      home location: Ubicación de casa
-      no home location: No has introducido tu ubicación de casa.
+      home location: Mi ubicación
+      no home location: No has introducido tu ubicación.
       update home location on click: ¿Actualizar tu lugar de origen cuando hagas clic
         sobre el mapa?
       show: Mostrar
@@ -2260,7 +2260,7 @@ es:
   sessions:
     new:
       tab_title: Iniciar sesión
-      login_to_authorize_html: Inicia sesión en OpenHistoricalMap para acceder a %{client_app_name}.
+      login_to_authorize_html: Iniciar sesión en OpenHistoricalMap para acceder a %{client_app_name}.
       already_logged_in_html: Ya has iniciado sesión como %{user}. Si vuelves a iniciar
         sesión, tu cuenta actual cambiará.
       access_another_page: 'Llegaste aquí mientras intentabas acceder a otra página.
@@ -3157,7 +3157,7 @@ es:
       follow: Seguir
       mapper since: 'Mapeando desde:'
       last map edit: Última edición del mapa
-      home location: Ubicación de casa
+      home location: Mi ubicación
       company: Empresa
       company tooltip: La afiliación de la empresa es autoinformada y no verificada.
       no activity yet: Sin actividad todavía
@@ -3703,8 +3703,8 @@ es:
       centre_map: Centrar el mapa aquí
       scroll_to_changeset: Desplazarse hasta el conjunto de cambios
     home:
-      marker_title: Mi ubicación de casa
-      not_set: La Ubicación de Casa no está configurada para tu cuenta
+      marker_title: Mi ubicación
+      not_set: Tu ubicación no está configurada para tu cuenta
     heatmap:
       tooltip:
         no_contributions: No hay contribuciones el %{date}
