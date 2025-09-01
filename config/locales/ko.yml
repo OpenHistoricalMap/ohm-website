@@ -9,6 +9,7 @@
 # Author: Apzp79
 # Author: Asdfqwer51
 # Author: B891202
+# Author: Bisang
 # Author: CYAN
 # Author: Cerulean
 # Author: Codenstory
@@ -2065,7 +2066,7 @@ ko:
         contact: 문의하기
     help:
       title: 도움말 얻기
-      introduction: 오픈스트리트맵에는 프로젝트에 대해 배우고, 질문하고 답변하고, 매핑 주제에 대해 공동으로 토론하고 문서화할 수
+      introduction: 오픈히스토리컬맵에는 프로젝트에 대해 배우고, 질문하고 답변하고, 매핑 주제에 대해 공동으로 토론하고 문서화할 수
         있는 수단이 많이 있습니다.
       welcome:
         url: /welcome

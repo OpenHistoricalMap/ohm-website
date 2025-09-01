@@ -2060,6 +2060,7 @@ pt-PT:
         native_link: Versão em português europeu
         mapping_link: começar a mapear
       legal_babble:
+        introduction_2_license_key_url: https://wiki.openstreetmap.org/wiki/Pt:OpenHistoricalMap/Tags/Key/license
         introduction_4_creative_commons: Creative Commons Atribuição-CompartilhaIgual
           2.0
         credit_title_html: Como creditar o OpenStreetMap

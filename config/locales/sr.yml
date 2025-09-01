@@ -2210,7 +2210,7 @@ sr:
       unknown_signature_algorithm: Непознат потписни алгоритам
       invalid_scope: Невалидан опсег
     auth_association:
-      heading: Ваш ID још увек није повезан са налогом OpenHistoricalMap.
+      heading: Ваш ID још увек није повезан са OpenHistoricalMap налогом.
       option_1: |-
         Ако сте нови у OpenStreetMap, молимо да направите нови налог
         коришћењем доњег обрасца.
