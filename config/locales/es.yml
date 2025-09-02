@@ -253,7 +253,7 @@ es:
         company: Empresa
         home_lat: Latitud
         home_lon: Longitud
-        home_location_name: Nombre de mi ubicación
+        home_location_name: Nombre de la ubicación de casa
         languages: Idiomas preferidos
         preferred_editor: Editor preferido
         pass_crypt: Contraseña
@@ -415,7 +415,7 @@ es:
         delete_introduction: 'Puedes eliminar tu cuenta de OpenHistoricalMap utilizando
           el botón que aparece a continuación. Ten en cuenta los siguientes detalles:'
         delete_profile: Se eliminará la información de tu perfil, incluido tu avatar,
-          descripción y tu ubicación.
+          descripción y la ubicación de casa.
         delete_display_name: Tu nombre para mostrar será eliminado, y podrá ser reutilizado
           por otras cuentas.
         retain_caveats: 'Sin embargo, algunos datos sobre ti se conservarán en OpenHistoricalMap,
@@ -1872,7 +1872,7 @@ es:
       h1: OpenHistoricalMap
     logo:
       alt_text: Logo de OpenStreetMap
-    home: Ir a mi ubicación
+    home: Ir a ubicación de casa
     logout: Cerrar sesión
     log_in: Iniciar sesión
     sign_up: Registrarse
@@ -2243,8 +2243,8 @@ es:
       delete image: Eliminar la imagen actual
       replace image: Reemplazar la imagen actual
       image size hint: (las imágenes cuadradas de al menos 100x100 funcionan mejor)
-      home location: Mi ubicación
-      no home location: No has introducido tu ubicación.
+      home location: Ubicación de casa
+      no home location: No has introducido ubicación de casa
       update home location on click: ¿Actualizar tu lugar de origen cuando hagas clic
         sobre el mapa?
       show: Mostrar
@@ -3704,7 +3704,7 @@ es:
       scroll_to_changeset: Desplazarse hasta el conjunto de cambios
     home:
       marker_title: Mi ubicación
-      not_set: Tu ubicación no está configurada para tu cuenta
+      not_set: La ubicación de casa no está configurada para tu cuenta
     heatmap:
       tooltip:
         no_contributions: No hay contribuciones el %{date}
