@@ -6,8 +6,6 @@
 function addOpenHistoricalMapTimeSlider(map) {
   if (map.timeslider) return;
 
-  const historicalLayerKeys = ['historical', 'woodblock', 'japanesescroll', 'railway'];
-
   // Same options as the _osm_location cookie in index.js.
   const expiry = new Date();
   expiry.setYear(expiry.getFullYear() + 10);
@@ -76,7 +74,7 @@ function addOpenHistoricalMapTimeSlider(map) {
   function getHistoryLayerIfShowing () {
     let ohmlayer;
     map.eachLayer(function (layer) { // there's only 1 or 0 time layers at a time, so this works
-      if (historicalLayerKeys.indexOf(layer.options.layerId) !== -1) ohmlayer = layer;
+      if (layer instanceof L.OSM.OHM) ohmlayer = layer;
     });
     return ohmlayer;
   }
