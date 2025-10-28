@@ -17,32 +17,21 @@ OSM.Changeset = function (map) {
   };
 
   page.load = function () {
-    // the original page.load content is the function below, and is used when one visits this page, be it first load OR later routing change
-    // below, we wrap "if map.timeslider" so we only try to add the timeslider if we don't already have it
-    function originalLoadFunction () {
-      const changesetData = content.find("[data-changeset]").data("changeset");
-      changesetData.type = "changeset";
+    const changesetData = content.find("[data-changeset]").data("changeset");
+    changesetData.type = "changeset";
 
-      const hashParams = OSM.parseHash();
-      initialize();
-      map.addObject(changesetData, function (bounds) {
-        if (!hashParams.center && bounds.isValid()) {
-          OSM.router.withoutMoveListener(function () {
-            map.fitBounds(bounds);
-          });
-        }
-      })
-      $(".numbered_pagination").trigger("numbered_pagination:enable");
-    }// end originalLoadFunction
+    const hashParams = OSM.parseHash();
+    initialize();
+    map.addObject(changesetData, function (bounds) {
+      if (!hashParams.center && bounds.isValid()) {
+        OSM.router.withoutMoveListener(function () {
+          map.fitBounds(bounds);
+        });
+      }
+    });
+    $(".numbered_pagination").trigger("numbered_pagination:enable");
 
-    // "if map.timeslider" only try to add the timeslider if we don't already have it
-    if (map.timeslider) {
-      originalLoadFunction();
-    }
-    else {
-      const params = querystring.parse(location.hash ? location.hash.substring(1) : location.search.substring(1));
-      addOpenHistoricalMapTimeSlider(map, params, originalLoadFunction);
-    }
+    addOpenHistoricalMapTimeSlider(map);
   };
 
   function updateChangeset(method, url, include_data) {

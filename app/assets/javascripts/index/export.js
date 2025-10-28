@@ -85,50 +85,38 @@ OSM.Export = function (map) {
   };
 
   page.load = function () {
-    // the original page.load content is the function below, and is used when one visits this page, be it first load OR later routing change
-    // below, we wrap "if map.timeslider" so we only try to add the timeslider if we don't already have it
-    function originalLoadFunction () {
-      map
-        .addLayer(locationFilter)
-        .on("moveend", update);
+    map
+      .addLayer(locationFilter)
+      .on("moveend", update);
 
-      $("#maxlat, #minlon, #maxlon, #minlat").change(boundsChanged);
-      $("#drag_box").click(enableFilter);
-      $(".export_form").on("submit", checkSubmit);
+    $("#maxlat, #minlon, #maxlon, #minlat").change(boundsChanged);
+    $("#drag_box").click(enableFilter);
+    $(".export_form").on("submit", checkSubmit);
 
-      document.querySelector(".export_form")
-        .addEventListener("turbo:submit-end", OSM.getTurboBlobHandler("map.osm"));
+    document.querySelector(".export_form")
+      .addEventListener("turbo:submit-end", OSM.getTurboBlobHandler("map.osm"));
 
-      document.querySelector(".export_form")
-        .addEventListener("turbo:before-fetch-response", OSM.turboHtmlResponseHandler);
+    document.querySelector(".export_form")
+      .addEventListener("turbo:before-fetch-response", OSM.turboHtmlResponseHandler);
 
-      document.querySelector(".export_form")
-        .addEventListener("turbo:before-fetch-request", function (event) {
-          event.detail.fetchOptions.headers.Accept = "application/xml";
-        });
-
-      $("#export_overpass").on("click", async function (event) {
-        event.preventDefault();
-        const downloadUrl = $(this).attr("href");
-        const confirmed = await showConfirmationModal();
-        if (confirmed) {
-          window.location.href = downloadUrl;
-        }
+    document.querySelector(".export_form")
+      .addEventListener("turbo:before-fetch-request", function (event) {
+        event.detail.fetchOptions.headers.Accept = "application/xml";
       });
+    $("#export_overpass").on("click", async function (event) {event.preventDefault();
+      const downloadUrl = $(this).attr("href");
+      const confirmed = await showConfirmationModal();
+      if (confirmed) {
+        window.location.href = downloadUrl;
+      }
+    });
 
-      update();
-      return map.getState();
-    } // end originalLoadFunction
+    update();
 
-    // "if map.timeslider" only try to add the timeslider if we don't already have it
-    if (map.timeslider) {
-      originalLoadFunction();
-    }
-    else {
-      var params = querystring.parse(location.hash ? location.hash.substring(1) : location.search.substring(1));
-      addOpenHistoricalMapTimeSlider(map, params, originalLoadFunction);
-    }
-  };
+    addOpenHistoricalMapTimeSlider(map);
+
+    return map.getState();
+  }
 
   page.unload = function () {
     map

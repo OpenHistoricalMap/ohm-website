@@ -116,34 +116,23 @@ OSM.Search = function (map) {
   };
 
   page.load = function () {
-    // the original page.load content is the function below, and is used when one visits this page, be it first load OR later routing change
-    // below, we wrap "if map.timeslider" so we only try to add the timeslider if we don't already have it
-    function originalLoadFunction () {
-      $(".search_results_entry[data-href]").each(function (index) {
-        const entry = $(this);
-        fetchReplace(this.dataset, entry.children().first())
-          .then(() => {
-            // go to first result of first geocoder
-            if (index === 0) {
-              const firstResult = entry.find("*[data-lat][data-lon]:first").first();
-              if (firstResult.length) {
-                panToSearchResult(firstResult.data());
-              }
+    $(".search_results_entry[data-href]").each(function (index) {
+      const entry = $(this);
+      fetchReplace(this.dataset, entry.children().first())
+        .then(() => {
+          // go to first result of first geocoder
+          if (index === 0) {
+            const firstResult = entry.find("*[data-lat][data-lon]:first").first();
+            if (firstResult.length) {
+              panToSearchResult(firstResult.data());
             }
-          });
-      });
+          }
+        });
+    });
 
-      return map.getState();
-    }  // end originalLoadFunction
+    addOpenHistoricalMapTimeSlider(map);
 
-    // "if map.timeslider" only try to add the timeslider if we don't already have it
-    if (map.timeslider) {
-      originalLoadFunction();
-    }
-    else {
-      var params = querystring.parse(location.hash.substring(1));
-      addOpenHistoricalMapTimeSlider(map, params, originalLoadFunction);
-    }
+    return map.getState();
   };
 
   page.unload = function () {
