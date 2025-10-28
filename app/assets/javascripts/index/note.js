@@ -12,19 +12,8 @@ OSM.Note = function (map) {
   };
 
   page.load = function (path, id) {
-    // the original page.load content is the function below, and is used when one visits this page, be it first load OR later routing change
-    // below, we wrap "if map.timeslider" so we only try to add the timeslider if we don't already have it
-    function originalLoadFunction(path, id) {
-      initialize(path, id);
-    }  // end originalLoadFunction
-
-    // "if map.timeslider" only try to add the timeslider if we don't already have it
-    if (map.timeslider) {
-      originalLoadFunction();
-    } else {
-      var params = querystring.parse(location.hash.substring(1));
-      addOpenHistoricalMapTimeSlider(map, params, originalLoadFunction);
-    }
+    initialize(path, id);
+    addOpenHistoricalMapTimeSlider(map);
   };
 
   function initialize(path, id, skipMoveToNote) {

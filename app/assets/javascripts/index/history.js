@@ -289,23 +289,12 @@ OSM.History = function (map) {
   };
 
   page.load = function () {
-    // the original page.load content is the function below, and is used when one visits this page, be it first load OR later routing change
-    // below, we wrap "if map.timeslider" so we only try to add the timeslider if we don't already have it
-    function originalLoadFunction () {
-      map.addLayer(changesetsLayer);
-      map.on("moveend", moveEndListener);
-      map.on("zoomend", zoomEndListener);
-      loadFirstChangesets();
-    } // end originalLoadFunction
+    map.addLayer(changesetsLayer);
+    map.on("moveend", moveEndListener);
+    map.on("zoomend", zoomEndListener);
+    loadFirstChangesets();
 
-    // "if map.timeslider" only try to add the timeslider if we don't already have it
-    if (map.timeslider) {
-      originalLoadFunction();
-    }
-    else {
-      var params = querystring.parse(location.hash ? location.hash.substring(1) : location.search.substring(1));
-      addOpenHistoricalMapTimeSlider(map, params, originalLoadFunction);
-    }
+    addOpenHistoricalMapTimeSlider(map);
   };
 
   page.unload = function () {
