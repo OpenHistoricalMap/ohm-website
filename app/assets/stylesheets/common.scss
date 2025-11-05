@@ -227,6 +227,33 @@ body.small-nav {
   flex-wrap: wrap-reverse;
 }
 
+.maplibregl-ctrl {
+  margin-right: 0 !important;
+}
+
+.maplibregl-control-container .maplibregl-ctrl button {
+  display: block;
+  height: 40px;
+  width: 40px;
+  color: white;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  span {
+    filter: invert(1);
+  }
+
+  &:hover, &:focus {
+    background-color: black !important;
+  }
+  &:first-child {
+    border-start-start-radius: 4px;
+  }
+  &:last-child {
+    border-end-start-radius: 4px;
+  }
+}
+
 .leaflet-control .control-button {
   display: block;
   height: 40px;
@@ -416,6 +443,11 @@ body.small-nav {
   border-top: 0px !important;
 }
 
+.maplibregl-popup-tip {
+  border-top-color: rgb(var(--bs-body-bg-rgb)) !important;
+}
+
+.maplibregl-popup-content,
 .leaflet-popup-content-wrapper, .leaflet-popup-tip,
 .leaflet-contextmenu, .leaflet-contextmenu-item,
 .leaflet-control-attribution, .leaflet-control-scale-line {
@@ -520,7 +552,7 @@ legend {
 
   input:not(:placeholder-shown) + .input-group-text .describe_location {
     display: none;
-  } 
+  }
 }
 
 /* Rules for search results */
