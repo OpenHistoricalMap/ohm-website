@@ -72,7 +72,7 @@ jobs:
         path: tmp/screenshots
         if-no-files-found: ignore
     - name: Report completion to Coveralls
-      uses: coverallsapp/github-action@v2.3.6
+      uses: coverallsapp/github-action@v2.3.7
       with:
         github-token: ${{ secrets.github_token }}
         flag-name: ruby-${{ matrix.ruby }}
@@ -84,7 +84,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Report completion to Coveralls
-      uses: coverallsapp/github-action@v2.3.6
+      uses: coverallsapp/github-action@v2.3.7
       with:
         github-token: ${{ secrets.github_token }}
         parallel-finished: true
