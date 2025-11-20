@@ -21,7 +21,7 @@ jobs:
       PGGSSENCMODE: disable # attempt to solve "PG::Error: Unexpected binary struct layout "
     steps:
     - name: Checkout source
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
     - name: Setup ruby
       uses: ruby/setup-ruby@v1
       with:
