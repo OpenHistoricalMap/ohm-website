@@ -2271,7 +2271,7 @@ en:
       contribute_1_ohm_html: |
         Our growing community of volunteer contributors includes amateur and professional historians, OpenStreetMap and Wikipedia contributors, GIS specialists, and ordinary people knowledgeable about their surroundings.
         We are passionate about documenting the world and helping real-world communities tell their stories.
-        To learn more about the community, consult %{wiki_link}, visit %{forum_link}, read the %{user_diaries_link}, and follow our %{mastodon_link} or %{bluesky_link} account.
+        To learn more about the community, consult %{wiki_link}, visit %{forum_link}, read %{user_diaries_link}, report issues or share feedback on %{github_issues_link}, and follow us on %{mastodon_link} or %{bluesky_link}
       contribute_1_bluesky: Bluesky
       contribute_1_forum: our discussion forum
       contribute_1_mastodon: Mastodon
