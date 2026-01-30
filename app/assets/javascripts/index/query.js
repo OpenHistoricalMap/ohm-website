@@ -1,4 +1,6 @@
 //= require qs/dist/qs
+//= require ohm/dates.js
+
 
 OSM.Query = function (map) {
   const control = $(".control-query"),
@@ -100,7 +102,7 @@ OSM.Query = function (map) {
 
         if (prefixes[key]) {
           const first = value.slice(0, 1).toUpperCase(),
-            rest = value.slice(1).replace(/_/g, " ");
+                rest = value.slice(1).replace(/_/g, " ");
 
           return first + rest;
         }
@@ -162,7 +164,7 @@ OSM.Query = function (map) {
 
   function featureName(feature) {
     const tags = feature.tags,
-      localeKeys = OSM.preferred_languages.map(locale => `name:${locale}`);
+          localeKeys = OSM.preferred_languages.map(locale => `name:${locale}`);
 
     for (const key of [...localeKeys, "name", "ref", "addr:housename"]) {
       if (tags[key]) return tags[key];
@@ -290,67 +292,24 @@ OSM.Query = function (map) {
     return (maxlon - minlon) * (maxlat - minlat);
   }
 
-  // Check if date is before 1000 CE (OverpassQL doesn't support these dates)
-  function isBeforeYear1000(dateStr) {
-    if (!dateStr) return false;
-    const match = dateStr.match(/^(-?\d+)/);
-    return match ? parseInt(match[1], 10) < 1000 : false;
-  }
-
-  // Compare ISO 8601 dates correctly (handles BCE dates where string comparison fails)
-  function compareDates(date1, date2) {
-    if (!date1 && !date2) return 0;
-    if (!date1) return -1;
-    if (!date2) return 1;
-
-    const match1 = date1.match(/^(-?\d+)(?:-(\d{1,2}))?(?:-(\d{1,2}))?/);
-    const match2 = date2.match(/^(-?\d+)(?:-(\d{1,2}))?(?:-(\d{1,2}))?/);
-    if (!match1 || !match2) return date1.localeCompare(date2);
-
-    const [, year1Str, month1Str, day1Str] = match1;
-    const [, year2Str, month2Str, day2Str] = match2;
-    const year1Int = parseInt(year1Str, 10);
-    const year2Int = parseInt(year2Str, 10);
-
-    if (year1Int !== year2Int) return year1Int - year2Int;
-
-    const month1 = month1Str ? parseInt(month1Str, 10) : 1;
-    const month2 = month2Str ? parseInt(month2Str, 10) : 1;
-    if (month1 !== month2) return month1 - month2;
-
-    const day1 = day1Str ? parseInt(day1Str, 10) : 1;
-    const day2 = day2Str ? parseInt(day2Str, 10) : 1;
-    return day1 - day2;
-  }
-
-  function filterByDate(elements, currentDate) {
-    if (!currentDate) return elements;
-    return elements.filter(element => {
-      const tags = element.tags || {};
-      const startDate = tags.start_date;
-      const endDate = tags.end_date;
-      if (startDate && compareDates(startDate, currentDate) > 0) return false;
-      if (endDate && compareDates(endDate, currentDate) <= 0) return false;
-      return true;
-    });
-  }
-
   /*
    * QUERY MECHANISM:
    *
-   * To find nearby objects we ask Overpass for the union of the following sets:
+   * To find nearby objects we ask overpass for the union of the
+   * following sets:
    *   node(around:<radius>,<lat>,<lng>)
    *   way(around:<radius>,<lat>,<lng>)
    *   relation(around:<radius>,<lat>,<lng>)
    *
-   * To find enclosing objects we first find all the enclosing areas:
+   * to find enclosing objects we first find all the enclosing areas:
    *   is_in(<lat>,<lng>)->.a
    *
    * and then return the union of the following sets:
    *   relation(pivot.a)
    *   way(pivot.a)
    *
-   * In both cases we then ask to retrieve tags and the geometry for each object.
+   * In both cases we then ask to retrieve tags and the geometry
+   * for each object.
    *
    * TEMPORAL FILTERING (OpenHistoricalMap - Added Feature):
    * Filter objects to only include those that existed at the time slider date.
@@ -368,13 +327,13 @@ OSM.Query = function (map) {
    */
   function queryOverpass(latlng) {
     const bounds = map.getBounds(),
-      zoom = map.getZoom(),
-      bbox = [bounds.getSouthWest(), bounds.getNorthEast()]
-        .map(c => OSM.cropLocation(c, zoom))
-        .join(),
-      geom = `geom(${bbox})`,
-      radius = 10 * Math.pow(1.5, 19 - zoom),
-      here = `(around:${radius},${latlng})`;
+          zoom = map.getZoom(),
+          bbox = [bounds.getSouthWest(), bounds.getNorthEast()]
+            .map(c => OSM.cropLocation(c, zoom))
+            .join(),
+          geom = `geom(${bbox})`,
+          radius = 10 * Math.pow(1.5, 19 - zoom),
+          here = `(around:${radius},${latlng})`;
 
     let dateFilter = "";  // OverpassQL filter (dates >= 1000 CE)
     let jsDateFilter = null;  // JavaScript filter (dates < 1000 CE)
