@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 1180-hundreds-of-ohm-website-test-failures
+      - 1270-inspector-end-year
 #  pull_request:
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
