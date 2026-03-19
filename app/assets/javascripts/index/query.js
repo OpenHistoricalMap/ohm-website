@@ -100,7 +100,7 @@ OSM.Query = function (map) {
 
         if (prefixes[key]) {
           const first = value.slice(0, 1).toUpperCase(),
-            rest = value.slice(1).replace(/_/g, " ");
+                rest = value.slice(1).replace(/_/g, " ");
 
           return first + rest;
         }
@@ -162,7 +162,7 @@ OSM.Query = function (map) {
 
   function featureName(feature) {
     const tags = feature.tags,
-      localeKeys = OSM.preferred_languages.map(locale => `name:${locale}`);
+          localeKeys = OSM.preferred_languages.map(locale => `name:${locale}`);
 
     for (const key of [...localeKeys, "name", "ref", "addr:housename"]) {
       if (tags[key]) return tags[key];
@@ -338,19 +338,21 @@ OSM.Query = function (map) {
   /*
    * QUERY MECHANISM:
    *
-   * To find nearby objects we ask Overpass for the union of the following sets:
+   * To find nearby objects we ask overpass for the union of the
+   * following sets:
    *   node(around:<radius>,<lat>,<lng>)
    *   way(around:<radius>,<lat>,<lng>)
    *   relation(around:<radius>,<lat>,<lng>)
    *
-   * To find enclosing objects we first find all the enclosing areas:
+   * to find enclosing objects we first find all the enclosing areas:
    *   is_in(<lat>,<lng>)->.a
    *
    * and then return the union of the following sets:
    *   relation(pivot.a)
    *   way(pivot.a)
    *
-   * In both cases we then ask to retrieve tags and the geometry for each object.
+   * In both cases we then ask to retrieve tags and the geometry
+   * for each object.
    *
    * TEMPORAL FILTERING (OpenHistoricalMap - Added Feature):
    * Filter objects to only include those that existed at the time slider date.
@@ -368,13 +370,13 @@ OSM.Query = function (map) {
    */
   function queryOverpass(latlng) {
     const bounds = map.getBounds(),
-      zoom = map.getZoom(),
-      bbox = [bounds.getSouthWest(), bounds.getNorthEast()]
-        .map(c => OSM.cropLocation(c, zoom))
-        .join(),
-      geom = `geom(${bbox})`,
-      radius = 10 * Math.pow(1.5, 19 - zoom),
-      here = `(around:${radius},${latlng})`;
+          zoom = map.getZoom(),
+          bbox = [bounds.getSouthWest(), bounds.getNorthEast()]
+            .map(c => OSM.cropLocation(c, zoom))
+            .join(),
+          geom = `geom(${bbox})`,
+          radius = 10 * Math.pow(1.5, 19 - zoom),
+          here = `(around:${radius},${latlng})`;
 
     let dateFilter = "";  // OverpassQL filter (dates >= 1000 CE)
     let jsDateFilter = null;  // JavaScript filter (dates < 1000 CE)
