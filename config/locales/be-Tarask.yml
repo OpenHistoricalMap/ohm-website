@@ -73,13 +73,13 @@ be-Tarask:
       node_tag: Тэґ вузлу
       note: Камэнтар
       old_node: Стары вузел
-      old_node_tag: Стары тэг вузла
+      old_node_tag: Стары тэґ вузлу
       old_relation: Стары зьвязак
       old_relation_member: Стары аб'ект зьвязку
       old_relation_tag: Стары тэґ зьвязку
       old_way: Старая дарога
       old_way_node: Вузел старой дарогі
-      old_way_tag: Тэг старой дарогі
+      old_way_tag: Стары тэґ лініі
       relation: Зьвязак
       relation_member: Удзельнік зьвязку
       relation_tag: Тэґ зьвязку
@@ -136,7 +136,7 @@ be-Tarask:
         description: Апісаньне
         gpx_file: Загрузіць файл сьледу GPS
         visibility: Бачнасьць
-        tagstring: Тэгі
+        tagstring: Тэґі
       message:
         sender: Адпраўшчык
         title: Тэма
@@ -171,7 +171,7 @@ be-Tarask:
           не канфідэнцыйныя)
         redirect_uri: Кожны URI з асобнага радка
       trace:
-        tagstring: падзеленае коскамі
+        tagstring: праз коскі
       user_block:
         reason: Падайце прычыну, па якой удзельнік блякуецца. Калі ласка, будзьце
           цярплівы і дзейнічайце разумна, прадстаўляючы ўдзельніку падрабязную інфармацыю
@@ -381,11 +381,19 @@ be-Tarask:
       load_data: Загрузіць зьвесткі
       loading: Загрузка…
     tag_details:
-      tags: Меткі
+      tags: Тэґі
       wiki_link:
-        key: Старонка вікі, якая апісвае тэг %{key}
-        tag: Старонка вікі, якая апісвае тэг %{key}=%{value}
+        key: Старонка вікі, што апісвае тэґ %{key}
+        tag: Старонка вікі, што апісвае тэґ %{key}=%{value}
+      wikidata_link: '%{page} аб''ект на Wikidata'
+      wikidata_preview:
+        one: прагляд аб'екту Wikidata
+        other: прагляд аб'ектаў Wikidata
       wikipedia_link: Артыкул %{page} у Вікіпэдыі
+      wikimedia_commons_link: Элемэнт %{page} на Wikimedia Commons
+      telephone_link: Тэлефанаваць %{phone_number}
+      colour_preview: Прягляд колера %{colour_value}
+      email_link: Электронная пошта %{email}
     versions_navigation:
       node: Вузел
       way: Лінія
@@ -973,6 +981,8 @@ be-Tarask:
         %{subject}:'
     follow_notification:
       see_their_profile: Вы можаце прагледзець яго профіль на %{userurl}.
+    gpx_details:
+      tags: Тэґі
     gpx_failure:
       failed_to_import: Падобна, што ваш файл не атрымалася імпартаваць як GPS-сьлед.
       subject: '[OpenHistoricalMap] памылка імпарту GPX'
@@ -1320,11 +1330,13 @@ be-Tarask:
       identifiable: ІДЭНТЫФІКАВАНЫ
       private: ПРЫВАТНЫ
       trackable: МАГЧЫМА САЧЫЦЬ
+      details_with_tags_html: '%{time_ago} ад %{user} на %{tags}'
     index:
       public_traces: Публічныя GPS-трэкі
       public_traces_from: Публічныя GPS-трэкі ўдзельніка %{user}
       tagged_with: ' пазначаныя %{tags}'
       upload_trace: Загрузіць трэк
+      remove_tag_filter: Выдаліць фільтр тэґаў
     destroy:
       scheduled_for_deletion: Трэк заплянаваны на выдаленьне
     offline_warning:
@@ -1431,13 +1443,16 @@ be-Tarask:
       title:
         administrator: Гэты карыстальнік зьяўляецца адміністратарам
         moderator: Гэты карыстальнік зьяўляецца мадэратарам
+        importer: Гэты карыстальнік - імпартэр
       grant:
         administrator: Надаць правы адміністратара
         moderator: Надаць правы мадэратара
+        importer: Надаць правы імпартэра
         are_you_sure: Вы ўпэўнены, што жадаеце надаць ролю „%{role}“ удзельніку „%{name}“?
       revoke:
         administrator: Адклікаць правы адміністратара
         moderator: Адклікаць правы мадэратара
+        importer: Адклікаць правы імпартэра
         are_you_sure: Вы ўпэўненыя, што жадаеце адклікаць ролю „%{role}“ удзельніка
           „%{name}“?
   user_role:
