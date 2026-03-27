@@ -30,6 +30,18 @@ RUN apt-get update \
   ca-certificates \
   firefox-esr
 
+# Section for installing nvm in Docker, after much searching, is taken from
+# https://gist.github.com/remarkablemark/aacf14c29b3f01d6900d13137b21db3a?permalink_comment_id=3067813#gistcomment-3067813
+SHELL ["/bin/bash", "-l", "-euxo", "pipefail", "-c"]
+ENV NVM_DIR /usr/local/nvm
+RUN mkdir -p "$NVM_DIR"; \
+    curl -o- \
+        "https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh" | \
+        bash \
+    ; \
+    source $NVM_DIR/nvm.sh; \
+    nvm install --lts --latest-npm
+
 # Install yarn globally
 RUN npm install --global yarn
 
