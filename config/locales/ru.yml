@@ -96,6 +96,7 @@
 # Author: S.kozyr
 # Author: Sanail
 # Author: Santacloud
+# Author: Sikmir
 # Author: Silovan
 # Author: Sobloku
 # Author: Solidest
@@ -276,6 +277,7 @@ ru:
         active: Активен
         display_name: Отображаемое имя
         description: Описание профиля
+        company: Компания
         home_lat: Широта
         home_lon: Долгота
         languages: Предпочитаемые языки
@@ -584,6 +586,8 @@ ru:
       telephone_link: Позвонить %{phone_number}
       colour_preview: Просмотр цвета %{colour_value}
       email_link: Электронная почта %{email}
+    versions_navigation:
+      versions_label: 'Версия:'
   feature_queries:
     show:
       title: Что здесь?
@@ -775,6 +779,7 @@ ru:
       new: Новая запись в дневнике
       new_title: Создать новую запись в моём дневнике
     profile_diaries:
+      comments_label: Комментарии
       date_label: Дата
   diary_comments:
     new:
@@ -1168,6 +1173,8 @@ ru:
           wayside_shrine: Придорожная святыня
           wreck: Остов судна
           "yes": Памятное место
+        information:
+          map: Карта
         junction:
           "yes": Перекрёсток
         landuse:
@@ -1582,7 +1589,10 @@ ru:
           "yes": Тоннель
         water:
           lake: Озеро
+          pond: Пруд
           reservoir: Водохранилище
+          lagoon: Лагуна
+          oxbow: Старица
         waterway:
           artificial: Искусственный водоток
           boatyard: Верфь
@@ -1780,6 +1790,9 @@ ru:
       hi: Здравствуйте, %{to_user},
       see_their_profile: 'Вы можете просмотреть информацию о них по ссылке: %{userurl}.'
       see_their_profile_html: 'Вы можете просмотреть информацию о них по ссылке: %{userurl}.'
+    gpx_details:
+      filename: Имя файла
+      description: Описание
     gpx_failure:
       hi: Здравствуйте, %{to_user},
       failed_to_import: 'не удалось импортировать как файл GPS-трека. Убедитесь, что
@@ -1958,6 +1971,7 @@ ru:
         from: От
         to: Кому
         subject: Тема
+        date: Дата
         actions: Действия
       message:
         unread_button: Пометить как непрочитанное
@@ -2026,11 +2040,19 @@ ru:
     basic_preferences:
       show:
         title: Мои предпочтения
+        site_color_schemes:
+          light: Светлая
+          dark: Тёмная
+        map_color_schemes:
+          light: Светлая
+          dark: Тёмная
         save: Обновить предпочтения
   profiles:
     profile_sections:
       navigation:
+        description: Описание
         image: Изображение
+        company: Компания
     descriptions:
       show:
         title: Редактирование профиля
@@ -2418,6 +2440,7 @@ ru:
         commercial: Коммерческий район
         heathland: Вересковая пустошь
         scrubland: Скрэб
+        lake: Озеро
         intermittent_water: Пересыхающий водоём
         glacier: Ледник
         reef: Риф
@@ -2432,7 +2455,7 @@ ru:
         reserve: Заповедник
         military: Военная территория
         school: Школа
-        university: университет
+        university: Университет
         hospital: Больница
         building: Значительное здание
         station: Железнодорожная станция
@@ -2745,6 +2768,8 @@ ru:
       delete_user: Удалить этого пользователя
       confirm: Подтвердить
       report: Сообщить об этом пользователе
+    sidebar_section:
+      company: Компания
     go_public:
       flash success: Все ваши правки теперь общедоступны, и вы теперь можете редактировать.
     issued_blocks:
@@ -2763,6 +2788,7 @@ ru:
       show:
         title: Пользователи
         heading: Пользователи
+        ip_address: IP-адрес
       page:
         confirm: Подтвердить выделенных пользователей
         hide: Скрыть выделенных пользователей
@@ -2770,6 +2796,9 @@ ru:
       user:
         summary_html: '%{name} создан %{date}, с адреса %{ip_address}'
         summary_no_ip_html: '%{name} создан %{date}'
+    comments:
+      index:
+        no_comments: Нет комментариев
     changeset_comments:
       page:
         changeset: пакет правок
@@ -2930,6 +2959,7 @@ ru:
       created_at: Создана
       last_changed: Изменена
       closed: Закрыто
+      status: Статус
     show:
       title: 'Заметка: %{id}'
       description: Описание

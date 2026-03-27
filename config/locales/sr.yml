@@ -9,6 +9,7 @@
 # Author: Kizule
 # Author: Macofe
 # Author: Magnumns
+# Author: MaliMrav
 # Author: Milicevic01
 # Author: Minh Nguyen
 # Author: Nemo bis
@@ -2390,7 +2391,7 @@ sr:
       edit_disabled_tooltip: Увећајте приказ да бисте уредили мапу
       createnote_tooltip: Додај белешку на карту
       createnote_disabled_tooltip: Увећај да додаш белешку на карту
-      queryfeature_tooltip: Информације о објектима
+      queryfeature_tooltip: Шта је овде?
       queryfeature_disabled_tooltip: Зумирај на информације о објектима
     edit_help: Помери карту и увећај на место које хоћеш да уредиш, затим кликни овде.
     directions:

@@ -136,7 +136,7 @@ uk:
         support_url: URL підтримки
         allow_read_prefs: отримувати налаштування
         allow_write_prefs: змінювати налаштування
-        allow_write_diary: створювати записи у щоденнику, коментарі та заводити друзів
+        allow_write_diary: створювати записи та коментарі в щоденнику
         allow_write_api: змінювати мапу
         allow_read_gpx: отримувати приватні GPS-треки.
         allow_write_gpx: надсилати GPS-треки на сервер
@@ -216,9 +216,9 @@ uk:
   datetime:
     distance_in_words_ago:
       about_x_hours:
-        one: '%{count} годину тому'
-        few: '%{count} години тому'
-        many: '%{count} годин тому'
+        one: близько %{count} години тому
+        few: близько %{count} годин тому
+        many: близько %{count} годин тому
         other: ""
       about_x_months:
         one: '%{count} місяць тому'
