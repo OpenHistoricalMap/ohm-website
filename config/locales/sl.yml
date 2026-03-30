@@ -2141,7 +2141,7 @@ sl:
       user_page_link: strani vašega uporabniškega računa
       anon_edits_html: (%{link})
       anon_edits_link: https://wiki.openstreetmap.org/wiki/Anonymous_edits
-      anon_edits_link_text: Pojasnilo zakaj je temu tako.
+      anon_edits_link_text: Pojasnilo, zakaj je tako.
     export:
       title: Izvozi
       manually_select: Ročno izberite drugo območje
