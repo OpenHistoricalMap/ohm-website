@@ -59,7 +59,7 @@ hsb:
       message: Powěsć
       node: Suk
       node_tag: Sukowy atribut
-      note: pokiw
+      note: Přispomnjenka
       old_node: Stary suk
       old_node_tag: Atribut stareho suka
       old_relation: Stara relacija
@@ -90,7 +90,7 @@ hsb:
         support_url: URL podpěry
         allow_read_prefs: twoje wužiwarske nastajenja wučitać
         allow_write_prefs: twoje wužiwarske nastajenja změnić.
-        allow_write_diary: dźenikowe zapiski a komentary spisać a přećelow namakać
+        allow_write_diary: dźenikowe zapiski a komentary wutworić
         allow_write_api: kartu wobdźěłać
         allow_read_gpx: twoje priwatne GPS-ćěrje čitać.
         allow_write_gpx: GPS-ćěrje nahrawać
@@ -121,7 +121,7 @@ hsb:
         longitude: Dołhostnik
         public: Zjawny
         description: Wopisanje
-        gpx_file: 'GPX-dataju nahrać:'
+        gpx_file: Wubjerće dataju z čaru GPS
         visibility: Widźomnosć
         tagstring: Tagy
       message:
@@ -270,9 +270,9 @@ hsb:
       external auth: Eksterna awtentifikacija
       contributor_terms:
         heading: Wuměnjenja za sobuskutkowarjow
-        agreed: Sy do nowych wuměnjenjow za sobuskutkowarjow zwolił.
+        agreed: Sy %{date} do nowych wuměnjenjow za sobuskutkowarjow zwolił.
         agreed_with_pd: Sy tež deklarował, zo twoje změny su zjawne.
-        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
+        link: https://www.osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: Što to je?
       terms_of_use:
         heading: Wužiwanske wuměnjenja
@@ -367,12 +367,12 @@ hsb:
         way: Puć
         relation: Relacija
     containing_relation:
-      entry_role_html: Relacija %{relation_name} (jako %{relation_role})
+      entry_role_html: '%{relation_name} (jako %{relation_role})'
     not_found:
       title: Njenamakane
     timeout:
       title: Zmylk časoweho překročenja
-      sorry: Wodaj, traje předołho, daty za %{type} z ID %{id} wotwołać.
+      sorry: Bohužel traješe předołho, daty za %{type} z ID %{id} wotwołać.
       type:
         node: suk
         way: puć
@@ -389,7 +389,7 @@ hsb:
         relation: relacija
     start_rjs:
       feature_warning: '%{num_features} funkcijow so začituje, štož móže twój wobhladowak
-        spomalić abo přećežić. Chceš tute daty zwobraznić?'
+        spomalić abo přećežić. Chceš tute daty woprawdźe pokazać?'
       load_data: Daty začitać
       loading: Začituje so...
     tag_details:
@@ -513,7 +513,7 @@ hsb:
       discussion: Diskusija
       leave_a_comment: Spisaj komentar
       login_to_leave_a_comment_html: '%{login_link}, zo by komentar spisał(a)'
-      login: Přizjew so
+      login: Přizjewić
     no_such_entry:
       title: Zapisk njebu namakany
       heading: Žadyn zapisk z čisłom %{id}
@@ -1301,7 +1301,7 @@ hsb:
           "yes": tunl
         water:
           lake: Jězor
-          reservoir: spjaty jězor
+          reservoir: Spjaty jězor
         waterway:
           artificial: kumštna wodowa dróha
           boatyard: łódźnica
@@ -1322,16 +1322,16 @@ hsb:
           weir: spušćadło
           "yes": wódna dróha
       admin_levels:
-        level2: statna hranica
-        level3: Regionowa hranica
-        level4: krajna hranica
-        level5: regionalna hranica
-        level6: wokrjesna hranica
-        level7: gmejnska hranica
-        level8: měšćanska hranica
-        level9: hranica měšćanskeho dźěla
-        level10: hranica štwórće
-        level11: Susodstwowa hranica
+        level2: Mjezynarodna hranica
+        level3: Administratiwna hranica (runina 3)
+        level4: Administratiwna hranica (runina 4)
+        level5: Administratiwna hranica (runina 5)
+        level6: Administratiwna hranica (runina 6)
+        level7: Administratiwna hranica (runina 7)
+        level8: Administratiwna hranica (runina 8)
+        level9: Administratiwna hranica (runina 9)
+        level10: Administratiwna hranica (runina 10)
+        level11: Administratiwna hranica (runina 11)
   searches:
     queries:
       create:
@@ -1463,7 +1463,7 @@ hsb:
     intro_text: OpenHistoricalMap je karta swěta, wutworjena wot ludźi kaž tebje a
       hodźi so swobodnje pod wotewrjenej licencu wužiwać.
     intro_2_create_account: Załož wužiwarske konto
-    partners_title: partnerow
+    partners_title: Partnerojo
     tou: Wužiwanske wuměnjenja
     help: Pomoc
     about: Wo projekće
@@ -1499,7 +1499,7 @@ hsb:
       see_their_profile_html: Móžeš sej jeho abo jeje profil na %{userurl} wobhladać.
     gpx_failure:
       hi: Witaj %{to_user},
-      failed_to_import: 'njemóhło so importować. Zmylk je:'
+      failed_to_import: Zda so, zo so waša dataja njehodźi so jako čara GPS importować.
       import_failures_url: https://wiki.openstreetmap.org/wiki/GPX_Import_Failures
       subject: '[OpenHistoricalMap] Zmylk při imporće GPX'
     gpx_success:
@@ -1569,8 +1569,8 @@ hsb:
           komentował(a). Pokazka je blisko %{place}.'
         commented_note_html: '%{commenter} je kartowu pokazku reaktiwizował, kotruž
           sy komentował. Pokazka je blisko %{place}.'
-      details: Dalše podrobnosće wo pokazce namakaš pod %{url}.
-      details_html: Dalše podrobnosće wo pokazce namakaš pod %{url}.
+      details: Wotmołw abo zhoń wjace wo pokazce pod %{url}.
+      details_html: Wotmołw abo zhoń wjace wo noticy na %{url}.
     changeset_comment_notification:
       hi: Witaj %{to_user},
       commented:
@@ -1588,8 +1588,8 @@ hsb:
         partial_changeset_with_comment: z přispomnjenku „%{changeset_comment}“
         partial_changeset_with_comment_html: z komentarom „%{changeset_comment}“
         partial_changeset_without_comment: bjez komentara
-      details: Dalše podrobnosće wo sadźbje změnow namakaš na %{url}.
-      details_html: Dalše podrobnosće wo sadźbje změnow namakaš na %{url}.
+      details: Wotmołw abo zhoń wjace wo sadźbje změnow na %{url}.
+      details_html: Wotmołw abo zhoń wjace wo sadźbje změnow na %{url}.
       unsubscribe: Móžeće aktualizacije na tutej sadźbje změnow na %{url}wotskazać.
       unsubscribe_html: Móžeće aktualizacije na tutej sadźbje změnow na %{url}wotskazać.
   confirmations:
@@ -1642,8 +1642,9 @@ hsb:
       unread_button: Jako njepřečitanu markěrować
       destroy_button: Wotstronić
       back: Wróćo
-      wrong_user: Sy jako `%{user}' přizjewjeny, ale powěsć, kotruž chceš čitać, bu
-        na druheho wužiwarja pósłana. Prošu přizjew so z prawym kontom, zo by ju čitał(a).
+      wrong_user: Sy jako '%{user}' přizjewjeny, ale powěsć, kotruž chceš čitać, je
+        so wot abo do druheho wužiwarja pósłała. Prošu přizjew so jako korektny wužiwar,
+        zo by ju čitał.
     destroy:
       destroyed: Powěsć wotstronjena
     read_marks:
@@ -1694,10 +1695,10 @@ hsb:
       show:
         title: Pósłane
         messages:
-          few: Sy %{count} powěsće pósłał(a)
-          one: Sy %{count} powěsć pósłał(a)
-          two: Sy %{count} powěsći pósłał(a)
-          other: Sy  %{count} powěsćow pósłał(a)
+          one: Sy %{count} powěsć pósłał
+          two: Sy %{count} powěsći pósłał
+          few: Sy %{count} powěsće pósłał
+          other: Sy %{count} powěsćow pósłał
         no_sent_messages_html: Hišće njejsy žane powěsće pósłał(a). Chceš z %{people_mapping_nearby_link}
           styki nawjazać?
         people_mapping_nearby: ludźimi, kotřiž w bliskosći kartěruja
@@ -1705,9 +1706,9 @@ hsb:
         destroy_button: Wotstronić
     replies:
       new:
-        wrong_user: Sy jako `%{user}' přizjewjeny, ale powěsć, na kotruž chceš wotmołwić,
-          bu na druheho wužiwarja pósłana. Prošu přizjew so z prawym kontom, zo by
-          wotmołwił(a).
+        wrong_user: Sy jako '%{user}' přizjewjeny, ale powěsć, na kotruž chceš wotmołwić,
+          je so na druheho wužiwarja pósłała. Prošu přizjew so jako prawy wužiwar,
+          zo by wotmołwił.
   passwords:
     new:
       title: Hesło zabyte
@@ -1767,13 +1768,13 @@ hsb:
         undelete: Zhašenje cofnyć
   sessions:
     new:
-      tab_title: Přizjewjenje
+      tab_title: Přizjewić
       email or username: E-mejlowa adresa abo wužiwarske mjeno
       password: Hesło
       remember: Spomjatkować sej
       lost password link: Swoje hesło zabył?
-      login_button: Přizjewjenje
-      with external: 'Wužiwaj jako alternatiwu třećeho za přizjewjenje:'
+      login_button: Přizjewić
+      with external: abo přizjew so wot třećeho poskićowarja
       auth failure: Bohužel přizjewjenje z tutymi podaćemi móžno njeje.
     destroy:
       title: Wotzjewić
@@ -1811,8 +1812,7 @@ hsb:
         newer: Nowše ćěrje
   site:
     about:
-      used_by_html: '%{name} kartowe daty za tysacy websydłow, mobilnych nałoženjow
-        a gratwo k dispoziciji staja'
+      used_by_html: Wuslědź swět w kóždym času z %{name}.
       lede_text: OpenHistoricalMap twori so wot zhromadźenstwa kartěrowarjow, kiž
         přinošuja a hladaja daty wo pućach, twarjenjach, dwórnišćach a wjele wjace
         na cyłym swěće.
@@ -1824,7 +1824,7 @@ hsb:
       legal_1_privacy_policy: Prawidła priwatnosće
       partners_title: Partnerojo
     copyright:
-      title: Awtorske prawo a licenca
+      title: Awtorske prawo a připóznaća
       foreign:
         title: Wo tutym přełožku
         html: W padźe wotchilenja mjez přełoženej stronu a %{english_original_link}
@@ -1838,16 +1838,17 @@ hsb:
         native_link: hornjoserbskej wersiji
         mapping_link: z kartěrowanjom započeć
       legal_babble:
-        credit_title_html: Kak ma so na awtorstwo OpenHistoricalMap pokazać
+        credit_title_html: Kak ma so awtorstwo OpenHistoricalMap pokazać
         credit_1_html: 'Hdyž daty OpenHistoricalMap wužiwaš, dyrbiš slědowacej dwě
           wěcy činić:'
         attribution_example:
-          title: Přikład za mjenowanje na webstronje z elektroniskej kartu
+          title: Přikład, kak so ma OpenHistoricalMap na webstronje pokazać
         more_title_html: Dalše informacije
-        contributors_title_html: Naši sobuskutkowacy
-        contributors_intro_html: 'Naši sobuskutkowacy su tysacy jednotliwcow. Zapřijamy
-          tež wotewrjenje licencowane daty narodnych kartowych agenturow a z druhich
-          žórłow, mjez nimi:'
+        contributors_title_html: Dźakprajenja
+        contributors_intro_html: |-
+          OpenHistoricalMap je zhromadna próca tysacow ludźi a organizacijow, kotřiž ze swojeje strony z wulkeho poola wučenosće, žurnalizma a zastawanja pismowstwa.
+
+          Naše najbóle substancielne žórła a sobuskutkowarjo su:
         contributors_footer_2_html: Zapřijimanje datow do OpenHistoricalMap njerěka,
           zo poskićowar originalnych datow OpenHistoricalMap připóznawa, někajku garantiju
           dodawa abo rukowanje přewozmje.
@@ -2028,20 +2029,20 @@ hsb:
         subway: Podzemska železnica
         ferry: Přewoz
         light_rail: Měšćanska železnica
-        tram: nadróžna
+        tram: Nadróžna
         trolleybus: Obus
         bus: Bus
         cable_car: Kablowa nadróžna
-        chair_lift: sydłowy lift
+        chair_lift: Sydłowy lift
         runway: Přizemišćo
-        taxiway: lětadłowa jězdnja
+        taxiway: Lětadłowa jězdnja
         apron: Lětanišćowe předpolo
         admin: Zarjadniska hranica
         city: Město
         forest: Hajina
         wood: Lěs
         grass: Trawa
-        meadow: łuka
+        meadow: Łuka
         bare_rock: Naha skała
         sand: Pěsk
         golf: Golfownišćo
@@ -2064,12 +2065,12 @@ hsb:
         reserve: Přirodoškitne pasmo
         military: Wojerske pasmo
         school: Šula
-        university: uniwersita
+        university: Uniwersita
         hospital: Chorownja
         building: Wuznamne twarjenje
         station: Dwórnišćo
         summit: Wjeršk
-        peak: kónčk hory
+        peak: Wjeršk hory
         tunnel: Smužkowana kroma = tunl
         bridge: Čorna kroma = móst
         private: Priwatny přistup
@@ -2092,7 +2093,7 @@ hsb:
       format: 'Format:'
       scale: 'Měritko:'
       custom_dimensions: Swójske wotměry nastajić
-      image_dimensions_html: Wobraz standardnu runinu pola %{width} x %{height} pokaza
+      image_dimensions_html: Wobraz runinu %{layer} w %{width} x %{height} pokaza
       download: Sćahnyć
   traces:
     visibility:
@@ -2115,10 +2116,16 @@ hsb:
         banki. To so zwjetša za poł hodźiny stawa a po dokónčenju budźe so ći e-mejl
         słać.
       traces_waiting:
-        one: Maš %{count} ćěrjow, kotrež na nahraće čakaja. Prošu čakaj, doniž njejsu
+        one: Maš %{count} ćěr, kotraž na nahraće čaka. Prošu čakaj, doniž njeje nahrata,
+          prjedy hač dalše nahrawaš, zo njeby so čakanski rynk za druhich wužiwarjow
+          blokował.
+        two: Maš %{count} ćěri, kotrejž na nahraće čakatej. Prošu čakaj, doniž njejstej
+          nahratej, prjedy hač dalše nahrawaš, zo njeby so čakanski rynk za druhich
+          wužiwarjow blokował.
+        few: Maš %{count} ćěrje, kotrež na nahraće čakaja. Prošu čakaj, doniž njejsu
           nahrate, prjedy hač dalše nahrawaš, zo njeby so čakanski rynk za druhich
           wužiwarjow blokował.
-        other: Maš %{count} ćěrjow, kotrež na nahraće čakaja. Prošu čakaj, doniž njejsu
+        other: Maš %{count} ćěrjow, kotrež na nahraće čaka. Prošu čakaj, doniž njeje
           nahrate, prjedy hač dalše nahrawaš, zo njeby so čakanski rynk za druhich
           wužiwarjow blokował.
     edit:
@@ -2205,8 +2212,8 @@ hsb:
         přezjedny być, dyrbiš sej je jenož wobhladać.
     settings_menu:
       account_settings: Kontowe nastajenja
-      oauth2_applications: Nastajenja OAUTH 2
-      oauth2_authorizations: Prawa OAUTH 2
+      oauth2_applications: Nałoženja OAuth 2
+      oauth2_authorizations: Awtorizacije OAuth 2
       muted_users: Zněmjeni wužiwarjo
     auth_providers:
       google:
@@ -2283,13 +2290,13 @@ hsb:
         załožić.
       support: pomoc
       about:
-        header: Swobodny a wobdźěłujomny
+        header: Swobodny a wobdźěłajomny.
       display name description: Sy wužiwarske mjeno zjawnje pokazał. Móžeš to pozdźišo
         w nastajenjach změnić.
       by_signing_up:
         privacy_policy: prawidła priwatnosće
       continue: Registrować
-      use external auth: Jako alternatiwa wužij třeću stronu za přizjewjenje
+      use external auth: abo registruj so wot třećeho poskićowarja
     no_such_user:
       title: Wužiwar njeeksistuje
       heading: Wužiwar %{user} njeeksistuje
@@ -2370,7 +2377,7 @@ hsb:
         summary_no_ip_html: '%{name} dnja %{date} wutworjeny'
     changeset_comments:
       page:
-        changeset: sadźba změnow
+        changeset: Sadźba změnow
         when: Hdy
         comment: Komentar
     diary_comments:
@@ -2400,14 +2407,14 @@ hsb:
       grant:
         administrator: Prawa administratora dać
         moderator: Prawa moderatora dać
-        are_you_sure: Chceš woprawdźe wužiwarjej "%{name}" rólu "%{role}" dać?
+        are_you_sure: Chceš woprawdźe wužiwarjej '%{name}' rólu '%{role}' dać?
       revoke:
         administrator: Prawa administratora preč wzać
         moderator: Prawa moderatora preč wzać
-        are_you_sure: Chceš woprawdźe wužiwarjej "%{name}" rólu "%{role}" preč wzać?
+        are_you_sure: Chceš woprawdźe wužiwarjej '%{name}' rólu '%{role}' preč wzać?
   user_role:
     filter:
-      not_a_role: Znamješkowy rjećazk "%{role}" płaćiwa róla njeje.
+      not_a_role: Znamješkowy rjećazk '%{role}' płaćiwa róla njeje.
       already_has_role: Wužiwar hižo ma rólu %{role}.
       doesnt_have_role: Wužiwar nima rólu %{role}.
       not_revoke_admin_current_user: Administratorowa róla njeda so aktualnemu wužiwarjej
@@ -2670,7 +2677,7 @@ hsb:
         destination_without_exit: Cil docpěty
         against_oneway_without_exit: Přećiwo jednosměrowej dróze na %{name}hić
         end_oneway_without_exit: Kónc jednosměroweje dróhi na %{name}
-        roundabout_with_exit: W kružnym wobchadźe wzaj wujězd %{exit} na %{name}
+        roundabout_with_exit: W kružnym wobchadźe wzmi wujězd %{exit} na %{name}
         roundabout_with_exit_ordinal: W kružnym wobchadźe %{exit} wujězd na %{name}
           wzać
         exit_roundabout: Kružny wobchad na %{name} wopušćić

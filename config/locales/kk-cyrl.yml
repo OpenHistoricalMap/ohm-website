@@ -325,13 +325,22 @@ kk-cyrl:
         heading_ct: Жобаға қатысу шарттары
         tou_explain:
           tou: Қолдану шарттары
+        informal_translations: Бейресми аудармалары
         continue: Жалғастыру
         cancel: Болдырмау
+        you need to accept or decline: Жалғастыру үшін жаңа қатысу шарттарын оқып,
+          келісіңіз не бас тартыңыз.
         legale_select: 'Тұрғылықты жеріңіз:'
         legale_names:
           france: Франция
           italy: Италия
           rest_of_world: Қалған әлем
+      update:
+        terms accepted: Жаңа қатысу шарттарына келісім бергеніңізге рахмет!
+      terms_declined_flash:
+        terms_declined_html: Жаңа шарттарды қабылдамағаныңызға өкініш білдіреміз.
+          Қосымша ақпарат үшін %{terms_declined_link} сілтемесін қараңыз.
+        terms_declined_link: Осы уики-парақша
     pd_declarations:
       show:
         confirm: Құптау
@@ -342,6 +351,7 @@ kk-cyrl:
     in_changeset: Өңдеме дестесі
     anonymous: аноним
     no_comment: (пікір жоқ)
+    part_of: Осының бөлігі
     part_of_relations:
       one: '%{count} қатынас'
       other: '%{count} қатынас'
@@ -360,7 +370,12 @@ kk-cyrl:
         other: '%{count} нүкте'
     relation:
       title_html: 'Қатынас: %{name}'
+      members: Мүшелер
+      members_count:
+        one: '%{count} мүше'
+        other: '%{count} мүше'
     relation_member:
+      entry_role_html: '%{role} ретіндегі %{type} %{name}'
       type:
         node: Нүкте
         way: Сызық
@@ -368,6 +383,7 @@ kk-cyrl:
     not_found:
       title: Табылмады
     timeout:
+      title: Тайм-аут қате
       type:
         node: нүкте
         way: сызық
@@ -400,10 +416,13 @@ kk-cyrl:
       way: Сызық
       relation: Қатынас
       history: Тарихы
+      versions_label: 'Версиялары:'
   feature_queries:
     show:
       title: Маңайдағы нысандар
+      introduction: Жақын объектілерді табу үшін картаға басыңыз
       nearby: Маңайдағы нысандар
+      enclosing: Айналадағы объектілер
   old_elements:
     index:
       node:
@@ -412,6 +431,29 @@ kk-cyrl:
         title_html: 'Сызық тарихы: %{name}'
       relation:
         title_html: 'Қатынас тарихы: %{name}'
+      older_versions: Алдыңғы версиялар
+      newer_versions: Жаңарақ версиялар
+    actions:
+      view_redacted_data: Өңделген деректерді көру
+      view_redaction_message: Өңделген хабарламаны көру
+  nodes:
+    not_found_message:
+      sorry: Өкінішке орай, %{id} нүктесі табылмады.
+    timeout:
+      sorry: Кешірерсіз, ID-сі %{id} нүктесінің деректерін алу ұзаққа созылды.
+  old_nodes:
+    not_found_message:
+      sorry: Өкінішке орай, %{id} нүктесінің %{version} версиясы табылмады.
+    timeout:
+      sorry: Өкінішке орай, ID-cі %{id} нүктесінің тарихын алу тым ұзақ болып кетті.
+  ways:
+    not_found_message:
+      sorry: Өкінішке орай, %{id} сызығы табылмады.
+    timeout:
+      sorry: Кешірерсіз, ID-сі %{id} сызығының деректерін алу ұзаққа созылды.
+  old_ways:
+    not_found_message:
+      sorry: Өкінішке орай, %{id} сызығының %{version} версиясы табылмады.
   changesets:
     index:
       title: Өңдеме дестелері
@@ -979,7 +1021,21 @@ kk-cyrl:
       states:
         open: Ашық
     show:
+      ignore: Елемеу
       reopen: Қайта ашу
+      new_reports: Жаңа хабарлама
+      other_issues_against_this_user: Осы қатысушыға қарсы басқа мәселелер
+      no_other_issues: Осы қатысушыға қарсы басқа мәселелер жоқ
+      comments_on_this_issue: Осы мәселе жайлы комментарийлер
+    resolve:
+      resolved: Мәселенің статусы "Шешілді" деп белгіленді
+    ignore:
+      ignored: Мәселенің статусы "Еленбеген" деп белгіленді
+    reopen:
+      reopened: Мәселенің статусы "Ашық" деп белгіленді
+    comments:
+      comment_from_html: '%{comment_created_at} жазылған %{user_link} қатысушысынан
+        комментарий'
   reports:
     new:
       categories:
@@ -997,23 +1053,47 @@ kk-cyrl:
   layouts:
     logo:
       alt_text: OpenHistoricalMap логотипі
+    home: Үйге
     logout: Шығу
     log_in: Кіру
     sign_up: Тіркелу
+    start_mapping: Картаға түсіруді бастау
     edit: Өңдеу
     history: Тарих
     export: Экспорттау
+    issues: Мәселелер
     gps_traces: GPS бағдарлары
     user_diaries: Қолданушылардың күнделіктері
     edit_with: '%{editor} көмегімен өңдеу'
+    tag_line: Еркін уики әлем картасы
     intro_header: OpenHistoricalMap-ке қош келдіңіз!
+    intro_text: OpenHistoricalMap - бұл тарих бойындағы әлемнің интерактивті картасы,
+      сіз сияқты адамдар жасаған және қоғамдық игілікке арналған.
+    intro_2_create_account: Жаңа қатысушы аккаунтын құру
+    partners_title: Әріптестер
+    hosting_partners_2024_html: OpenHistoricalMap — %{osmus} ұйымының жарғылық жобасы,
+      ол %{osmf} ұйымымен байланысты 501(c)(3) коммерциялық емес ұйым. Техникалық
+      дамуды %{greeninfo} және %{devseed} қолдайды.
+    partners_osmus: OpenStreetMap АҚШ
     tou: Қолдану шарты
+    nothing_to_preview: Алдын ала қарайтын дым жоқ.
     help: Анықтама
     about: Жоба туралы
     copyright: Авторлық құқықтар
     communities: Қауымдастықтар
     learn_more: Көбірек білу
     more: Мәзір
+    header:
+      ok: OK
+      select_language: Тілді таңдау
+    select_language_button:
+      title: Тілді таңдау
+    offline_flash:
+      osm_offline: OpenHistoricalMap дерекқоры қазіргі уақытта маңызды техникалық
+        қызмет көрсету жұмыстары жүргізіліп жатқандықтан уақытша қолжетімсіз.
+      osm_read_only: OpenHistoricalMap дерекқоры қазіргі уақытта маңызды техникалық
+        қызмет көрсету жұмыстары жүргізіліп жатқандықтан тек оқу режимінде жұмыс істеп
+        тұр.
   user_mailer:
     diary_comment_notification:
       hi: Сәлеметсіз бе, %{to_user},
@@ -1024,46 +1104,135 @@ kk-cyrl:
         %{subject}'
     follow_notification:
       hi: Сәлеметсіз бе, %{to_user},
+    gpx_details:
+      filename: Файл атауы
+      url: URL
+      description: Сипаттамасы
+      tags: Тегтер
+      total_points: Барлық нүктелер саны
+      imported_points: Импортталған нүктелер саны
     gpx_failure:
       hi: Сәлеметсіз бе, %{to_user},
+      failed_to_import: Сіздің файлыңыз GPS-трек ретінде импортталмай қалған сияқты.
+      verify: 'Файлыңыздың жарамды GPX файлы екенін немесе қолдау көрсетілетін форматтардың
+        біріндегі (.tar.gz, .tar.bz2, .tar, .zip, .gpx.gz, .gpx.bz2) GPX файл(дар)ын
+        қамтитын архив екенін тексеріңіз. Файлыңызда формат немесе синтаксис қатесі
+        болуы мүмкін бе? Міне, импорттау қатесі:'
+      more_info: GPX импорттау қателері және оларды болдырмау жолдары туралы толығырақ
+        ақпаратты осы жерден %{url} таба аласыз
+      more_info_html: GPX импорттау қателері және оларды болдырмау жолдары туралы
+        толығырақ ақпаратты осы жерден %{url} таба аласыз
     gpx_success:
       hi: Сәлеметсіз бе, %{to_user},
       subject: '[OpenHistoricalMap] GPX сәтті импортталды'
     signup_confirm:
       subject: '[OpenHistoricalMap] OpenHistoricalMap-ке қош келдіңіз'
+      greeting: Сәлем!
     email_confirm:
+      subject: '[OpenHistoricalMap] Электрондық пошта мекенжайыңызды растаңыз'
       greeting: Сәлеметсіз бе,
+      click_the_link: Бұл сіз болсаңыз, өзгерісті растау үшін төмендегі сілтемені
+        басыңыз.
     lost_password:
       subject: '[OpenHistoricalMap] Құпиясөзді арылту сұранысы'
       greeting: Сәлеметсіз бе,
+      hopefully_you: Біреу (мүмкін сіз) осы электрондық пошта мекенжайына тіркелген
+        openhistoricalmap.org аккаунтының паролін қалпына келтіруге сұрау салды.
+      click_the_link: Бұл сіз болсаңыз, парольді қалпына келтіру үшін төмендегі сілтемені
+        басыңыз.
     note_comment_notification:
+      anonymous: Анонимді қатысушы
       greeting: Сәлеметсіз бе,
+      commented:
+        your_note_html: '%{commenter} %{place} маңындағы сіздің бір картадағы жазбаңызға
+          комментарий қалдырды.'
+        commented_note: '%{commenter} сіз де комментарий қалдырған карта жазбасына
+          комментарий қалдырды. Бұл жазба %{place} маңында'
+        commented_note_html: '%{commenter} сіз де комментарий қалдырған карта жазбасына
+          комментарий қалдырды. Бұл жазба %{place} маңында'
+      closed:
+        subject_own: '[OpenHistoricalMap] %{commenter} сіздің бір жазбаңызды жапты.'
+        subject_other: '[OpenHistoricalMap] %{commenter} сізді қызықтырған бір жазбаны
+          жапты.'
+        your_note: '%{commenter} %{place} маңындағы сіздің бір карта жазбаңызды шешті.'
     changeset_comment_notification:
       hi: Сәлеметсіз бе, %{to_user},
   confirmations:
+    confirm:
+      heading: Электрондық поштаңызды тексеріңіз!
+      introduction_1: Біз растау хатын сіздің электрондық поштаңызға жібердік.
+      introduction_2: Аккаунтыңызды электрондық поштадағы сілтемені басу арқылы растаңыз,
+        содан кейін картаны өңдеуді бастай аласыз.
+      press confirm button: Аккаунтыңызды активациялау үшін астыдағы растау батырмасын
+        басыңыз.
+      button: Растау
+      success: Аккаунтыңызды растадық, тіркелгеніңіз үшін рахмет!
+      already active: Бұл аккаунт расталып қойған.
+      unknown token: Бұл растау кодының мерзімі өтіп кетті немесе ондай код жоқ
+      if_need_resend: Растау хатын қайтып жіберу керек болса, төмендегі батырманы
+        басыңыз.
+      resend_button: Растау хатын қайтып жіберу
+    confirm_resend:
+      failure: '%{name} дейтін қатысушы табылмады.'
+    confirm_email:
+      heading: Электрондық пошта мекенжайының өзгеруін растаңыз
+      press confirm button: Жаңа электрондық пошта мекенжайын растау үшін, астыдағы
+        растау батырмасын басыңыз
+      button: Растау
+      success: Электрондық пошта мекенжайының өзгеруін растадық!
+      failure: Бұл токен арқылы электрондық пошта мекенжайы бұрыннан расталып қойған.
+      unknown_token: Бұл растау кодының мерзімі өтіп кетті немесе ондай код жоқ
     gravatar:
       disabled: Gravatar сөндірілді.
   messages:
     new:
       title: Хат жіберу
+    create:
+      message_sent: Хабарлама жіберілді
+    no_such_message:
+      title: Ондай хабарлама жоқ
     show:
+      title: Хабарламаны оқу
       reply_button: Жауап беру
       unread_button: Оқылмаған деп белгілеу
       destroy_button: Жою
       back: Артқа
+    destroy:
+      destroyed: Хабарлама өшірілді
     read_marks:
       create:
         notice: Хатқа оқылды деген белгі қойдыңыз
       destroy:
         notice: Хатқа оқылмады деген белгі қойдыңыз
     mailboxes:
+      heading:
+        my_inbox: Кіріс хаттарым
+        my_outbox: Жіберілген хаттарым
+        muted_messages: Дыбыссыз хабарламаларлар
       messages_table:
+        from: Кімнен
+        to: Кімге
         subject: Тақырып
+        date: Күні
         actions: Әрекеттер
       message:
         unread_button: Оқылмаған деп белгілеу
         read_button: Оқылды деп белгілеу
         destroy_button: Жою
+        unmute_button: Кіріс хаттарына көшіру
+    inboxes:
+      show:
+        title: Кіріс қалтасы
+        messages: Сізде %{new_messages} және %{old_messages}
+        new_messages:
+          one: '%{count} жаңа хабарлама'
+          other: '%{count} жаңа хабарлама'
+        old_messages:
+          one: '%{count} ескі хабарлама'
+          other: '%{count} ескі хабарлама'
+    muted_inboxes:
+      show:
+        title: Дыбыссыз хабарламаларлар
     outboxes:
       show:
         messages:
@@ -1073,7 +1242,13 @@ kk-cyrl:
         destroy_button: Жою
   passwords:
     new:
+      heading: Пароліңізді ұмытып қалдыңыз ба?
       email address: Эл. пошта мекенжайы
+      new password button: Парольді жаңадан қою
+    edit:
+      title: Парольді жаңадан қою
+      heading: '%{user} қатысушысына парольді жаңадан қою'
+      reset: Парольді жаңадан қою
     update:
       flash changed: Құпия сөзіңіз өзгертілді.
   preferences:
@@ -1083,17 +1258,32 @@ kk-cyrl:
   profiles:
     profile_sections:
       navigation:
+        description: Сипаттамасы
+        links: Сілтемелер
         image: Сурет
+        company: Компания
+        location: Географиялық орны
     descriptions:
       show:
         title: Бейінді өңдеу
         save: Бейінді жаңарту
         cancel: Болдырмау
+      update:
+        success: Профильдің сипаттамасы жаңартылды.
+        failure: Профиль сипаттамасын жаңарту мүмкін болмады.
     links:
       show:
+        title: Профильді өңдеу
+        save: Профильді жаңарту
         cancel: Болдырмау
+        social_links:
+          title: Әлеуметтік профильдерге сілтемелер
+          remove: Алып тастау
+          add: Әлеуметтік сілтеме қосу
     images:
       show:
+        save: Профильді жаңарту
+        cancel: Болдырмау
         gravatar:
           gravatar: Gravatar қолдану
           what_is_gravatar: Gravatar деген не?
@@ -1101,47 +1291,83 @@ kk-cyrl:
         keep image: Ағымдағы суретті сақтап қалу
         delete image: Ағымдағы суретті жою
         replace image: Ағымдағы суретті алмастыру
+    companies:
+      show:
+        cancel: Болдырмау
     locations:
       show:
+        cancel: Болдырмау
         delete: Жою
+        undelete: Өшіргенді істетпеу
   sessions:
     new:
       tab_title: Кіру
       password: Құпиясөз
       remember: Жүйеде қалу
       login_button: Кіру
+      or: немесе
     destroy:
       title: Шығу
       heading: OpenHistoricalMap-тен шығу
       logout_button: Шығу
+    suspended_flash:
+      support: қолдау
   shared:
     markdown_help:
+      heading: Тақырып
+      subheading: Тақырыпат
       link: Сілтеме
       text: Мәтін
       image: Сурет
       url: URL
     richtext_field:
       edit: Өңдеу
+      help: Көмек
     pagination:
+      changeset_comments:
+        older: Ескілеу комментарийлар
+        newer: Жаңалау комментарийлар
+        oldest: Ең ескі комментарийлар
+        newest: Ең жаңа комментарийлар
       diary_comments:
         older: Ескілеу пікірлер
         newer: Жаңалау пікірлер
+        oldest: Ең ескі комментарийлар
+        newest: Ең жаңа комментарийлар
       diary_entries:
         older: Ескілеу жазбалар
         newer: Жаңалау жазбалар
+        oldest: Ең ескі жазбалар
+        newest: Ең жаңа жазбалар
   site:
     about_section:
+      contribute_title: Сіз көмектесе аласыз
+      contribute_1_forum: Талқылау форумымыз
+      contribute_2_osmus: OpenStreetMap АҚШ
       open_data_title: Ашық дерек
+      open_data_1_1_reuse: қайта қолдануға болады
+      legal_title: Заңды
+      legal_1_group: бейресми топ
+      legal_1_terms_of_use: Қолдану шарттары
+      partners_title: Әріптестер
     copyright:
       foreign:
         title: Бұл аударма туралы
         english_link: Ағылшынша түпнұсқасы
       native:
         title: Бұл бет туралы
+        mapping_link: картаға түсіруді бастау
+      legal_babble:
+        credit_2_home: Басты парақшамыз
+        contributors_title_html: Жобамызға үлес қосқандар
+        trademarks_1_ohm_contact_team: OpenHistoricalMap командасымен байланысқа шығу
+    index:
+      js_2: OpenHistoricalMap картаны көрсету үшін JavaScript пайдаланады.
     not_public_flash:
       user_page_link: қолданушы беті
     export:
       title: Экспорттау
+      licence: Лицензия
       too_large:
         planet:
           title: OHM ғаламшары
@@ -1150,30 +1376,51 @@ kk-cyrl:
       export_button: Экспорттау
     fixthemap:
       how_to_help:
+        title: Қалай көмектессем
         join_the_community:
           title: Қауымдастыққа қосылу
+      other_concerns:
+        contact: бізбен байланысқа шығыңыз
     help:
+      title: Анықтама алу
       welcome:
         url: /welcome
-        title: OpenHistoricalMap-ке қош келдіңіз
+        title: OpenHistoricalMap-қа қош келдіңіз
+      beginners_guide:
+        title: Бастаушыларға нұсқаулық
       irc:
         title: IRC
       switch2osm:
         title: switch2osm
       welcomemat:
         title: Ұйымдар үшін
+      discord:
+        title: Discord
+      forum:
+        title: Форум
       slack:
         title: IRC
       wiki:
         title: Уики
+    any_questions:
+      title: Сұрақтар қалды ма?
     sidebar:
       search_results: Іздеу нәтижелері
     search:
       search: Іздеу
+      from: Кімнен
+      to: Кімге
       where_am_i: Бұл қайда?
       submit_text: Өту
+      modes:
+        bicycle: Велосипедпен
+        car: Машинамен
+        foot: Жаяу
     welcome:
       title: Қош келдіңіз!
+      whats_on_the_map:
+        title: Картада не бар
+        doesnt: жоқ
       basic_terms:
         node: нүкте
         way: сызық
@@ -1279,9 +1526,15 @@ kk-cyrl:
       permissions: Рұқсаттар
   users:
     new:
+      title: Тіркелу
+      tab_title: Тіркелу
+      support: қолдау
       display name description: Басқа қолданушыларға көрінетін атыңыз. Кейінірек оны
         баптауларда өзгерте аласыз.
+      continue: Тіркелу
+      or: немесе
     no_such_user:
+      title: Ондай қатысушы жоқ
       deleted: жойылған
     show:
       my diary: Күнделігім
@@ -1290,7 +1543,10 @@ kk-cyrl:
       my notes: Ескертпелерім
       my messages: Хаттарым
       my profile: Бейінім
+      my_account: Менің аккаунтым
+      my comments: Комментарийларым
       my_preferences: Қалауларым
+      my_dashboard: Ақпарат панелім
       send message: Хат жіберу
       diary: Күнделік
       traces: Бағдарлары
@@ -1304,6 +1560,14 @@ kk-cyrl:
         changeset: өңдеме дестесі
         when: Қашан
         comment: Пікір
+    diary_comments:
+      page:
+        when: Қашан
+        comment: Комментарий
+    suspended:
+      title: Аккаунт тоқтатылды
+      heading: Аккаунт тоқтатылды
+      support: қолдау
   user_blocks:
     helper:
       block_duration:
@@ -1327,12 +1591,22 @@ kk-cyrl:
       reason: 'Бұғаттау себебі:'
     block:
       edit: Өңдеу
+    page:
+      start: Бастау
+      end: Аяқтау
+      status: Статусы
+  user_mutes:
+    index:
+      table:
+        thead:
+          actions: Әрекеттер
   notes:
     index:
       description: Сипаттама
     show:
       title: 'Ескертпе: %{id}'
       description: Сипаттама
+      description_when_there_is_no_opening_comment: белгісіз
       hide: Жасыру
     new:
       title: Жаңа ескертпе
@@ -1365,8 +1639,23 @@ kk-cyrl:
       queryfeature_disabled_tooltip: Маңайдағы нысандарды көру үшін картаны үлкейтіп
         жіберіңіз
     directions:
+      distance_in_units:
+        m: '%{distance}м'
+        km: '%{distance}км'
+        ft: '%{distance}фут'
+        yd: '%{distance}ярд'
+        mi: '%{distance}миль'
       instructions:
+        continue_without_exit: '%{name} бойынша жүре беріңіз'
+        slight_right_without_exit: '%{name} бағытында сәл оңға'
+        offramp_right: Жолайрықтан оңға бұрылыңыз
+        offramp_right_with_exit: Оң жақтағы %{exit} бағытында бұрылыңыз
+        offramp_right_with_exit_name: '%{exit} бағытында оң жақтағы %{name} бағытында
+          бұрылыңыз'
+        uturn_without_exit: '%{name} бағытында артқа бұрылыңыз'
         via_point_without_exit: (нүкте арқылы)
+        follow_without_exit: '%{name} бойымен еріңіз'
+        start_without_exit: '%{name} бағытынан бастаңыз'
         unnamed: атаусыз жол
         exit_counts:
           first: 1-ші
