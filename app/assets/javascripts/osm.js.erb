@@ -234,7 +234,11 @@ OSM = {
       if (args.date) hash += '&date=' + args.date;
       if (args.daterange) hash += '&daterange=' + args.daterange;
     }
-    if (args.fresh_tiles) hash += '&fresh_tiles=' + args.fresh_tiles;
+    // Preserve fresh_tiles from current hash regardless of args type
+    const currentFreshTiles = (args instanceof L.Map)
+      ? new URLSearchParams(window.location.hash.replace(/^#/, "")).get("fresh_tiles")
+      : args.fresh_tiles;
+    if (currentFreshTiles) hash += '&fresh_tiles=' + currentFreshTiles;
     return hash;
   },
 
