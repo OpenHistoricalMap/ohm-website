@@ -34,6 +34,16 @@ L.OSM.OHM = L.OSM.MaplibreGL.extend({
     language.supportedLanguages.push(selectedLanguage);
     let style = language.setLanguage(ohmVectorStyles[this.ohmStyleName], selectedLanguage);
 
+    // Append ?fresh_tiles=1 to the "ohm" source tile URLs when the URL hash contains &fresh_tiles=1
+    // This bypasses the nginx tile cache so the server fetches fresh tiles from the database.
+    // Only applies to the "ohm" source (/maps/ohm/); other sources (ne, osm_land, ohm_admin,
+    // ohm_other_boundaries) expire naturally via their TTLs.
+    if (new URLSearchParams(window.location.hash.replace(/^#/, "")).get("fresh_tiles") === "1" && style.sources.ohm && style.sources.ohm.tiles) {
+      style.sources.ohm.tiles = style.sources.ohm.tiles.map(function (url) {
+        return url + "?fresh_tiles=1";
+      });
+    }
+
     this.getMaplibreMap().setStyle(style);
   },
   onRemove: function (map) {

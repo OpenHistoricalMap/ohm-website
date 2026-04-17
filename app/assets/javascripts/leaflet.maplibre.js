@@ -19,10 +19,10 @@ const ohmTileServiceName = window.location.hostname.toLowerCase() == 'localhost'
 
 const ohmTileServicesLists = {
   "production": [
-    "https://vtiles.openhistoricalmap.org/maps/osm/{z}/{x}/{y}.pbf",
+    "https://vtiles.openhistoricalmap.org/maps/ohm/{z}/{x}/{y}.pbf",
   ],
   "staging": [
-    "https://vtiles.staging.openhistoricalmap.org/maps/osm/{z}/{x}/{y}.pbf",
+    "https://vtiles.staging.openhistoricalmap.org/maps/ohm/{z}/{x}/{y}.pbf",
   ],
 };
 

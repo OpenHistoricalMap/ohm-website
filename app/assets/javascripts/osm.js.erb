@@ -194,6 +194,9 @@ OSM = {
     if (hashParams.has("date")) args.date = hashParams.get("date");
     if (hashParams.has("daterange")) args.daterange = hashParams.get("daterange");
 
+    // tile cache bypass
+    if (hashParams.has("fresh_tiles")) args.fresh_tiles = hashParams.get("fresh_tiles");
+
     return args;
   },
 
@@ -231,6 +234,7 @@ OSM = {
       if (args.date) hash += '&date=' + args.date;
       if (args.daterange) hash += '&daterange=' + args.daterange;
     }
+    if (args.fresh_tiles) hash += '&fresh_tiles=' + args.fresh_tiles;
     return hash;
   },
 
