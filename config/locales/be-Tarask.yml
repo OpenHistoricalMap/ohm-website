@@ -1341,7 +1341,7 @@ be-Tarask:
       heading: Прагляд трэку %{name}
       pending: ЧАКАЕ
       filename: 'Назва файла:'
-      download: загрузіць
+      download: сьцягнуць
       uploaded: 'Загружаны:'
       points: 'Пункты:'
       start_coordinates: 'Пачатковыя каардынаты:'
