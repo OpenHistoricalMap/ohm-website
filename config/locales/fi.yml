@@ -1562,8 +1562,9 @@ fi:
       subject: '[OpenHistoricalMap] Vahvista sähköpostiosoitteesi'
       greeting: Hei,
       hopefully_you: Joku (toivottavasti sinä) haluaa vaihtaa sähköpostiosoitteen
-        palvelimella %{server_url} osoitteeksi %{new_address}
-      click_the_link: Jos tämä olet sinä, napsauta linkkiä alla vahvistaaksesi muutoksen.
+        sivustolla %{server_url} osoitteeksi %{new_address}.
+      click_the_link: Jos teit itse pyynnön, vahvista vaihto napsauttamalla alla olevaa
+        linkkiä.
     lost_password:
       subject: '[OpenHistoricalMap] Salasanan vaihtopyyntö'
       greeting: Hei,
