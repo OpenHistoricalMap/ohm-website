@@ -162,7 +162,7 @@ kk-cyrl:
         home_lat: Ендік
         home_lon: Бойлық
         home_location_name: Үй мекенжайының атауы
-        languages: Қолайлы тілдер
+        languages: Қалаған тілдер
         preferred_editor: Қолайлы редактор
         pass_crypt: Құпиясөз
         pass_crypt_confirmation: Құпиясөзді растау
@@ -272,7 +272,7 @@ kk-cyrl:
   accounts:
     show:
       title: Аккаунтты өңдеу
-      my_account: Менің аккаунтым
+      my_account: Аккаунтым
       current email address: Ағымдағы е-пошта мекенжайы
       external auth: Сыртқы аутентификация
       contributor_terms:
@@ -1502,7 +1502,7 @@ kk-cyrl:
       from: Кімнен
       to: Кімге
       where_am_i: Бұл қайда?
-      submit_text: Өту
+      submit_text: Табу
       modes:
         bicycle: Велосипедпен
         car: Машинамен
@@ -1672,11 +1672,11 @@ kk-cyrl:
     show:
       my diary: Күнделігім
       my edits: Өңдемелерім
-      my traces: Бағдарларым
+      my traces: Тректерім
       my notes: Ескертпелерім
       my messages: Хаттарым
       my profile: Бейінім
-      my_account: Менің аккаунтым
+      my_account: Аккаунтым
       my comments: Комментарийларым
       my_preferences: Қалауларым
       my_dashboard: Ақпарат панелім
@@ -1685,6 +1685,9 @@ kk-cyrl:
       traces: Бағдарлары
       mapper since: 'Тіркелген күні:'
       status: 'Статус:'
+      contributions:
+        one: Соңғы бір жылда %{count} түзетім
+        other: Соңғы бір жылда %{count} түзетім
     lists:
       show:
         title: Қолданушылар
@@ -1807,8 +1810,8 @@ kk-cyrl:
       way: Сызық
       relation: Қатынас
     context:
-      directions_from: Осы жерден маршрут құру
-      directions_to: Осы жерге маршрут құру
+      directions_from: Осы жерден бастап
+      directions_to: Осы жерге дейін
       add_note: Мұнда ескертпе қосу
       show_address: Мекенжайды көрсету
       query_features: Маңайдағы нысандар

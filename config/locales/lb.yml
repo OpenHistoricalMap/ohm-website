@@ -158,8 +158,8 @@ lb:
         company: Firma
         home_lat: Breedegrad
         home_lon: Längegrad
-        languages: Liblingssproochen
-        preferred_editor: Liblingseditor
+        languages: Preferéiert Sproochen
+        preferred_editor: Preferéierten Editeur
         pass_crypt: Passwuert
         pass_crypt_confirmation: Passwuert confirméieren
     help:
@@ -1420,7 +1420,7 @@ lb:
           guest_house: Pensioun
           hostel: Jugendherberg
           hotel: Hotel
-          information: Informatioun
+          information: Informatiounen
           motel: Motel
           museum: Musée
           picnic_site: Piknikplaz
