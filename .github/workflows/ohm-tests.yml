@@ -69,7 +69,7 @@ jobs:
     - name: Run javascript tests
       run: bundle exec teaspoon
     - name: Upload screenshots
-      uses: actions/upload-artifact@v6
+      uses: actions/upload-artifact@v7.0.1
       if: failure()
       with:
         name: screenshots-${{ github.run_attempt }}
