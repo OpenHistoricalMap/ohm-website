@@ -1007,10 +1007,10 @@ optionator@^0.9.3:
     type-check "^0.4.0"
     word-wrap "^1.2.5"
 
-osm-community-index@^5.2.0:
-  version "5.10.0"
-  resolved "https://registry.yarnpkg.com/osm-community-index/-/osm-community-index-5.10.0.tgz#1dfd4dec1b16b3c6a7fe1b5e0ff85f972d1192e1"
-  integrity sha512-w7siFJuey8CevoZH9mB05V1Rr9rkoEdheB7CF7qq018U3WH2Rt/97kVD+sNTCbPt5Q+aCJogE8ndC6yZlLDkwA==
+osm-community-index@5.9.3:
+  version "5.9.3"
+  resolved "https://registry.yarnpkg.com/osm-community-index/-/osm-community-index-5.9.3.tgz#4fd59b038212a3c6fefd75847cf3be89222289f1"
+  integrity sha512-6wV0J3BFMXXbTMC3y+9nvdxyFZJkZ3ohFv+fDrT0XDvO+KSUucPKXYcYuJojST+Qr4WTMa/PEvjEiOgy4KKSVw==
   dependencies:
     diacritics "^1.3.0"
 
@@ -1202,10 +1202,10 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-tag2link@^2025.7.21:
-  version "2025.11.21"
-  resolved "https://registry.yarnpkg.com/tag2link/-/tag2link-2025.11.21.tgz#087552bca229b36b09b75f3078ec9f33e4f56ef9"
-  integrity sha512-wuT/e5tiph0Ttrw/qvhaYXoHCApbu8h4isXXXFuJnpriM33jkAfLpywLCUjUWmOh3XNohzb2IBrx9w7cXYeGuA==
+tag2link@^2026.3.21:
+  version "2026.3.21"
+  resolved "https://registry.yarnpkg.com/tag2link/-/tag2link-2026.3.21.tgz#d1ef3f1ccbc31b51f207804635551f1f9ec40ab2"
+  integrity sha512-PLa9LpNYMtnvP7wtXzGysKojsmCK2yOCXCggKFvcfBkm3sRaYFcNJIAn/xJMZdc6Qtf9C4FzJCcjLf9F5OiEmQ==
 
 tinyqueue@^2.0.3:
   version "2.0.3"
