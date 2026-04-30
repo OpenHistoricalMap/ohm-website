@@ -856,10 +856,10 @@ kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-leaflet.locatecontrol@^0.84.1:
-  version "0.84.2"
-  resolved "https://registry.yarnpkg.com/leaflet.locatecontrol/-/leaflet.locatecontrol-0.84.2.tgz#44e5e30196a52da311218b57691cfba19b809cd8"
-  integrity sha512-Tv0S2bAhpFgZYyyfPgeVhb3hPr9CnlcP15EpMQd9m5vA+aALhM6key1ucfnnD7n09AEeNEmIFe71T4V18Kpu7g==
+leaflet.locatecontrol@^0.89.0:
+  version "0.89.0"
+  resolved "https://registry.yarnpkg.com/leaflet.locatecontrol/-/leaflet.locatecontrol-0.89.0.tgz#e6d9d055f0bca73dd6956c71bb28edde25f0e75e"
+  integrity sha512-BTf8V802jXhlX4BBHmDg46ja10pPjSOOQuqB9LK+EeEHJMn+Vb7VownvE67nCfTGB4kEexl1gYF8v9rJyAUv0w==
 
 leaflet@^1.8.0:
   version "1.9.4"
@@ -1007,10 +1007,10 @@ optionator@^0.9.3:
     type-check "^0.4.0"
     word-wrap "^1.2.5"
 
-osm-community-index@^5.2.0:
-  version "5.10.0"
-  resolved "https://registry.yarnpkg.com/osm-community-index/-/osm-community-index-5.10.0.tgz#1dfd4dec1b16b3c6a7fe1b5e0ff85f972d1192e1"
-  integrity sha512-w7siFJuey8CevoZH9mB05V1Rr9rkoEdheB7CF7qq018U3WH2Rt/97kVD+sNTCbPt5Q+aCJogE8ndC6yZlLDkwA==
+osm-community-index@5.9.3:
+  version "5.9.3"
+  resolved "https://registry.yarnpkg.com/osm-community-index/-/osm-community-index-5.9.3.tgz#4fd59b038212a3c6fefd75847cf3be89222289f1"
+  integrity sha512-6wV0J3BFMXXbTMC3y+9nvdxyFZJkZ3ohFv+fDrT0XDvO+KSUucPKXYcYuJojST+Qr4WTMa/PEvjEiOgy4KKSVw==
   dependencies:
     diacritics "^1.3.0"
 
