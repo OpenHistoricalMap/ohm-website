@@ -12,6 +12,7 @@
 # Author: Bisang
 # Author: CYAN
 # Author: Cerulean
+# Author: Changwoo
 # Author: Codenstory
 # Author: Cubbe
 # Author: D6283
@@ -817,7 +818,6 @@ ko:
     search:
       title:
         latlon: 내부
-        latlon_url: https://openhistoricalmap.org/
         osm_nominatim: 오픈히스토리컬맵 Nominatim
         osm_nominatim_reverse: 오픈히스토리컬맵 Nominatim
     search_osm_nominatim:
@@ -1726,7 +1726,9 @@ ko:
       title: 이슈
       select_status: 상태 선택
       select_type: 유형 선택
+      select_last_managed_by: 마지막 관리한 사용자로 선택
       reported_user: 사용자 신고함
+      not_managed: 관리되지 않음
       search: 검색
       search_guidance: '이슈 검색:'
       states:
@@ -1777,6 +1779,8 @@ ko:
       reopened: 이슈 상태가 '열림'으로 설정되었습니다
     comments:
       comment_from_html: '%{comment_created_at}에 %{user_link}님의 댓글'
+      reassign_to_moderators: 문제를 중재자에게 다시 할당
+      reassign_to_administrators: 문제를 관리자에게 다시 할당
     reports:
       reported_by_html: '%{updated_at}에 %{user}님이 %{category} 분류로 보고함'
     helper:
@@ -1784,10 +1788,15 @@ ko:
         diary_comment: '%{entry_title}, 의견 #%{comment_id}'
         note: '참고 #%{note_id}'
       reportable_heading:
+        diary_comment_html: '%{datetime_created}에 생성, %{datetime_updated}에 업데이트된 일기
+          댓글 %{title}'
         diary_entry_html: '%{datetime_created}에 생성, %{datetime_updated}에 업데이트된 일기
           항목 %{title}'
+        note_html: '%{datetime_created}에 생성, %{datetime_updated}에 업데이트된 %{title}'
         user_html: '%{title}님이 %{datetime_created}에 생성'
     reporters:
+      index:
+        title: '문제 #%{issue_id} 제보자'
       reporters:
         more_reporters: 그리고 %{count}개 더
   issue_comments:
@@ -1907,6 +1916,8 @@ ko:
       url: URL
       description: 설명
       tags: 태그
+      total_points: 총점
+      imported_points: 가져온 포인트 수
     gpx_failure:
       hi: 안녕하세요 %{to_user}님,
       failed_to_import: GPS 트레이스로 파일을 가져오지 못한 것 같습니다.
@@ -2318,6 +2329,7 @@ ko:
         또한 면세 요건에 해당하는 미국 501(c)(3) 비영리 단체인 %{osmus_link}를 통한 %{donations_link}도 제공되고 있습니다.
         여러분의 아낌없는 기부금은 OpenHistoricalMap이 모든 사람을 위해 원활하게 운영하기 위한 용도로 쓰입니다.
       contribute_2_create_account: 무료 계정 만들기
+      contribute_2_donations: 자선 기부금 받기
       contribute_2_osmus: 오픈스트리트맵 미국
       open_data_title: 개방형 자료
       open_data_1_1_html: 홈페이지 상의 지도는 저희가 수집한 역사 정보를 경험할 수 있는 여러 방법 중 하나일 뿐입니다. 기본
@@ -2423,23 +2435,32 @@ ko:
           ://operations.osmfoundation.org/policies/tiles/
         more_2_1_nominatim_usage_policy: 지명 사용 정책
         more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
-        contributors_title_html: 우리의 기여자
+        contributors_title_html: 감사의 말씀
         contributors_intro_html: 오픈히스토리컬맵은 수천 명의 개인과 단체의 협력으로 만들어졌으며, 방대한 학술 연구, 언론
           보도, 문헌 자료를 활용하였습니다. 대표적인 자료 출처와 기여자는 다음과 같습니다.
         contributors_anr_communes_html: 이 데이터는 %{anr_communes_link} 프로젝트와 %{campop_link}의
           협력으로 생성되었습니다.
         contributors_anr_communes_campop: 케임브리지 인구 사회 구조사 연구진
-        contributors_anr_communes_campop_url: https://www.campop.geog.cam.ac.uk/research/projects/internationaloccupations/enchpopgos/france/
         contributors_newberry_ahcb_html: 이 데이터는 %{newberry_link}에 있는 윌리엄 M. 스콜 미국사
           문화센터의 프로젝트인 %{ahcb_link}에서 가져온 것으로, 제한 없이 재사용할 수 있습니다.
         contributors_newberry: 뉴베리 라이브러리
         contributors_newberry_ahcb: 역사적인 카운티 경계 지도
         contributors_osm_html: 해안선, 수역, 하천 관련 데이터 © %{osm_link}, %{cc_by_sa_link}.
         contributors_osm: 오픈스트리트맵 기여자
+        contributors_osm_cc_by_sa: 크리에이티브 커먼즈 저작자표시-동일조건변경허락 2.0
+        contributors_osm_cc_by_sa_url: https://creativecommons.org/licenses/by-sa/2.0/
         contributors_2_ohm_html: 홈페이지에 소개되어 있는 지도 스타일에는 오픈히스토리컬맵 데이터와 다음 소스가 포함되어
           있습니다.
         contributors_natural_earth_html: '%{natural_earth_link} 데이터집합은 퍼블릭 도메인입니다.'
         contributors_natural_earth: 내추럴 어스
+        contributors_globcover_html: '%{globcover_link}의 토지피복도, © ESA 2010 and UCLouvain,
+          출처를 명시하는 조건으로 교육 및/또는 과학적 목적으로 재사용 가능합니다.'
+        contributors_globcover: GlobCover
+        contributors_gmted_html: '지형 고도 데이터는 Danielson, J.J., and Gesch, D.B., 2011,
+          %{gmted_link} (GMTED2010): U.S. Geological Survey Open-File Report 2011–1073,
+          26 p.에서 가져왔습니다. 공개 도메인입니다.'
+        contributors_gmted: 전 세계 다중 해상도 지형 고도 데이터 2010
+        contributors_more_sources_html: '%{sources_link}는 오픈스트리트맵 위키에서 확인할 수 있습니다.'
         contributors_more_sources_page: 추가 출처 및 기여자
         contributors_more_sources_page_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Sources
         contributors_footer_2_html: |-
@@ -2453,6 +2474,8 @@ ko:
           데이터를 반입하지 않도록 주의하여야 합니다.
         infringement_2_ohm_html: 오픈히스토리컬맵의 데이터베이스나 본 사이트에 저작권으로 보호되는 자료가 부적절하게 추가되었다고
           생각되면 %{contact_team_link}로 연락해 주세요.
+        infringement_2_ohm_contact_team: 제목에 "TAKEDOWN REQUEST"라고 적어서 오픈히스토리컬맵 팀에게
+          문의
         trademarks_title: 상표
         trademarks_1_ohm_html: 오픈히스토리컬맵 (OpenHistoricalMap)의 명칭 사용과 관련하여 질문이 있으시면
           %{contact_team_link}로 문의해 주세요.
@@ -2514,6 +2537,9 @@ ko:
             메시지를 추가하고 나서, 저장을 클릭하면, 다른 매퍼가 조사할 것입니다.
       other_concerns:
         title: 기타 문제
+        concerns_ohm_html: |-
+          저희 데이터의 활용이나 콘텐츠와 관련해 우려 사항이 있는 경우, 자세한 법적 정보는 저희
+          %{contact_link}를 참조하거나 %{copyright_link}에 문의하세요.
         copyright: 저작권 페이지
         contact: 문의하기
     help:
@@ -2556,6 +2582,7 @@ ko:
         description: 소소한 메일링 리스트를 구독해 보세요.
       slack:
         title: IRC
+        description: '오픈스트리트맵 US 슬랙 워크스페이스에 스스로를 초대해 #openhistoricalmap 채널에 참여하세요.'
       wiki:
         title: 위키
         description: 커뮤니티에서 관리하는 OHM 사용 설명서와 프로젝트 참여 가이드라인입니다.
@@ -2831,6 +2858,7 @@ ko:
       identifiable: 식별 가능
       private: 비공개
       trackable: 추적 가능
+      details_with_tags_html: '%{time_ago}에 %{user}님이 %{tags}에 게시'
       details_without_tags_html: '%{time_ago} %{user}님'
     index:
       public_traces: 공개 GPS 궤적
@@ -3085,6 +3113,8 @@ ko:
       change_image: 이미지 변경
       edit_company: 회사 편집
       edit_location: 위치 편집
+      contributions:
+        other: 지난 한해 %{count}개 기여
     sidebar_section:
       home_location: 집 위치
       company: 회사
@@ -3124,6 +3154,7 @@ ko:
           deleted: 삭제됨
         name_or_email: 이름 또는 이메일
         ip_address: IP 주소
+        edits: 편집?
         has_edits: 편집이 있음
         no_edits: 편집이 없음
         search: 검색
@@ -3139,7 +3170,12 @@ ko:
     comments:
       index:
         heading_html: '%{user}님의 의견'
+        changesets: 변경집합
+        diary_entries: 일기 항목
+        no_comments: 의견 없음
     changeset_comments:
+      index:
+        title: '%{user}님이 추가한 바뀜집합 댓글'
       page:
         changeset: 변경집합
         when: 날짜
@@ -3149,6 +3185,7 @@ ko:
         title: '%{user}님이 추가한 일기 댓글'
       page:
         post: 게시물
+        when: 날짜
         comment: 댓글
     suspended:
       title: 계정 정지
@@ -3172,6 +3209,7 @@ ko:
       title:
         administrator: 이 사용자는 관리자입니다
         moderator: 이 사용자는 운영자입니다
+        importer: 이 사용자는 임포터입니다
       grant:
         administrator: 관리자 권한 부여
         moderator: 운영자 권한 부여
@@ -3237,6 +3275,11 @@ ko:
       short:
         ended: 종료
         revoked_html: '%{name}님이 해제함'
+        active: 활성
+        active_until_read: 읽을 때까지 활성
+        read_html: '%{time}에 읽음'
+        time_in_future_title: '%{time_absolute}; %{time_relative}'
+        time_in_past_title: '%{time_absolute}; %{time_relative}'
     show:
       title: '%{block_on}님이 %{block_by}님에 의해 차단됨'
       heading_html: '%{block_on} 님이 %{block_by} 님에 의해 차단됨'
@@ -3254,6 +3297,7 @@ ko:
       creator_name: 만든이
       reason: 차단 이유
       start: 시작
+      end: 끝
       status: 상태
     navigation:
       all_blocks: 모든 차단
@@ -3345,14 +3389,15 @@ ko:
         주시려면 %{log_in} 또는 %{sign_up}을 해주세요.
       anonymous_warning_log_in: 로그인
       anonymous_warning_sign_up: 가입하기
+      counter_warning_html: '%{x_anonymous_notes}개의 익명 메모를 게시해 주셔서 감사합니다. 커뮤니티에 큰
+        도움이 됩니다! 이제 %{contribute_by_yourself}를 권장합니다. 어렵지 않으며 %{community_can_help}.'
+      x_anonymous_notes:
+        other: '%{count} 익명 참고'
       counter_warning_guide_link:
         text: 직접 기여하기
         url: https://wiki.openstreetmap.org/wiki/Beginners%27_guide
       counter_warning_forum_link:
         text: 커뮤니티가 당신을 도울 수 있습니다
-        url: |-
-          https
-          ://forum.openhistoricalmap.org/
       advice: 노트는 공개되어 지도 업데이트에 쓰일 수 있으므로 개인정보 또는 저작권이 있는 지도나 디렉터리 리스팅의 정보를 입력하지 마십시오.
       add: 참고 추가
     new_readonly:
@@ -3536,6 +3581,8 @@ ko:
     heatmap:
       tooltip:
         no_contributions: '%{date}에는 기여가 없습니다'
+        contributions:
+          other: '%{date}에 %{count}개 기여'
     remote_edit:
       failed:
         title: 편집 실패
@@ -3552,6 +3599,7 @@ ko:
       empty: 보여줄 교정이 없습니다.
       heading: 교정 목록
       title: 교정 목록
+      new: 새 교정
     new:
       heading: 새 교정에 대한 정보 입력
       title: 새 교정 만들기

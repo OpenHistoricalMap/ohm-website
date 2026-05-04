@@ -760,11 +760,6 @@ pt:
     forbidden:
       title: Proibido
   geocoder:
-    search:
-      title:
-        latlon_url: https://openhistoricalmap.org/
-        osm_nominatim_url: https://nominatim.openhistoricalmap.org/
-        osm_nominatim_reverse_url: https://nominatim.openhistoricalmap.org/
     search_osm_nominatim:
       prefix_format: '%{name}'
       suffix_format: '[%{dates}]'

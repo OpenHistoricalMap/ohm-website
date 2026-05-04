@@ -902,11 +902,8 @@ nl:
     search:
       title:
         latlon: Intern
-        latlon_url: https://openhistoricalmap.org/
         osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_url: https://nominatim.openhistoricalmap.org/
         osm_nominatim_reverse: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse_url: https://nominatim.openhistoricalmap.org/
     search_osm_nominatim:
       suffix_format: '[%{dates}]'
       prefix:
@@ -2016,7 +2013,7 @@ nl:
     gpx_details:
       details: 'Details van uw bestand:'
       filename: Bestandsnaam
-      url: URL
+      url: Url
       description: Beschrijving
       tags: Labels
       total_points: Totaal aantal punten
@@ -2602,7 +2599,6 @@ nl:
         contributors_anr_communes_project: ANR COMMUNES
         contributors_anr_communes_campop: De Cambridge-groep voor de geschiedenis
           van de bevolking en sociale structuren
-        contributors_anr_communes_campop_url: https://www.campop.geog.cam.ac.uk/research/projects/internationaloccupations/enchpopgos/france/
         contributors_newberry_ahcb_html: Gegevens van %{ahcb_link}, een project van
           het William M. Scholl Center for American History and Culture bij %{newberry_link},
           die zonder beperking hergebruikt mogen worden.
@@ -2734,7 +2730,6 @@ nl:
         title: Handleiding voor beginners
         description: Handleiding voor beginners, onderhouden door de gemeenschap.
       community:
-        url: https://community.openstreetmap.org/
         title: Hulp- en gemeenschapsforum
         description: Een gedeelde plek waar je hulp kunt zoeken en gesprekken kunt
           voeren over OpenStreetMap.
@@ -2762,7 +2757,6 @@ nl:
         description: Neem deel aan langere discussies en informele chatrooms met uw
           OHM-account.
       github:
-        url: https://github.com/OpenHistoricalMap/
         title: Functieverzoeken en bugs
         description: Dien een probleem in onze GitHub-opslagplaatsen in om een bug
           te melden of een nieuwe functie aan te vragen.
@@ -2782,7 +2776,6 @@ nl:
         langer gebruikt worden in de webbrowser.
       desktop_application_html: U kunt Potlatch nog altijd gebruiken door %{download_link}.
       download: het downloaden van de desktop-applicatie voor Mac en Windows
-      download_url: https://www.systemed.net/potlatch/
       id_editor_html: U kunt ook uw standaardeditor op iD zetten. Dat werkt in uw
         browser zoals Potlatch dat vroeger deed. %{change_preferences_link}.
       change_preferences: Wijzig hier uw voorkeuren
@@ -3670,7 +3663,6 @@ nl:
         url: https://wiki.openstreetmap.org/wiki/NL:Beginnershandleiding
       counter_warning_forum_link:
         text: de gemeenschap kan u helpen
-        url: https://forum.openhistoricalmap.org/
       advice: Uw opmerking is openbaar en kan gebruikt worden om de kaart bij te werken.
         Vul hier dus geen persoonlijke informatie in, en ook geen informatie uit kaarten
         of telefoonboeken waar auteursrechtelijke bescherming op rust.

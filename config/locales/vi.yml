@@ -832,11 +832,8 @@ vi:
     search:
       title:
         latlon: Nội bộ
-        latlon_url: https://openhistoricalmap.org/
         osm_nominatim: Nominatim OpenHistoricalMap
-        osm_nominatim_url: https://nominatim.openhistoricalmap.org/
         osm_nominatim_reverse: Nominatim OpenHistoricalMap
-        osm_nominatim_reverse_url: https://nominatim.openhistoricalmap.org/
     search_osm_nominatim:
       prefix_format: '%{name}'
       prefix:
@@ -2401,7 +2398,6 @@ vi:
         contributors_anr_communes_project: ANR COMMUNES
         contributors_anr_communes_campop: Nhóm Cambridge vì Lịch sử Dân cư và Cấu
           trúc Xã hội
-        contributors_anr_communes_campop_url: https://www.campop.geog.cam.ac.uk/research/projects/internationaloccupations/enchpopgos/france/
         contributors_newberry_ahcb_html: Dữ liệu từ dự án %{ahcb_link} của Trung tâm
           Bác sĩ William M. Scholl vì Lịch sử và Văn hóa Mỹ tại %{newberry_link},
           có sẵn để tái sử dụng mà không có bất kỳ hạn chế nào.

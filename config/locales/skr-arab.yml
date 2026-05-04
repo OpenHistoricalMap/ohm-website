@@ -308,7 +308,6 @@ skr-arab:
     search:
       title:
         latlon: اندرونی
-        latlon_url: https://openhistoricalmap.org/
     search_osm_nominatim:
       prefix:
         aerialway:

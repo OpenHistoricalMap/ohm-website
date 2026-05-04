@@ -850,11 +850,8 @@ ia:
     search:
       title:
         latlon: Interne
-        latlon_url: https://openhistoricalmap.org/
         osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_url: https://nominatim.openhistoricalmap.org/
         osm_nominatim_reverse: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse_url: https://nominatim.openhistoricalmap.org/
     search_osm_nominatim:
       suffix_format: '[%{dates}]'
       prefix:
@@ -2547,7 +2544,6 @@ ia:
         contributors_anr_communes_project: COMMUNAS ANR
         contributors_anr_communes_campop: Le gruppo Cambridge pro le Historia del
           Population e del Structuras Social
-        contributors_anr_communes_campop_url: https://www.campop.geog.cam.ac.uk/research/projects/internationaloccupations/enchpopgos/france/
         contributors_newberry_ahcb_html: Datos del %{ahcb_link}, un projecto del Centro
           William M. Scholl pro Historia e Cultura Statounitese presso %{newberry_link},
           que es disponibile pro reuso sin restriction.
@@ -2679,7 +2675,6 @@ ia:
         title: Guida pro comenciantes
         description: Guida pro comenciantes, mantenite per le communitate.
       community:
-        url: https://community.openstreetmap.org/
         title: Foro de assistentia e communitate
         description: Un loco commun ubi cercar adjuta e conversar sur OpenStreetMap.
       mailing_lists:
@@ -2706,7 +2701,6 @@ ia:
         description: Participa a discussiones plus longe e conversationes informal
           usante tu conto de OHM.
       github:
-        url: https://github.com/OpenHistoricalMap/
         title: Defectos e requestas de functionalitate
         description: Depone un incidente sur nostre repositorios GitHub pro signalar
           un problema o requestar un nove function.
@@ -2726,7 +2720,6 @@ ia:
         in un navigator web.
       desktop_application_html: Tu pote sempre usar Potlatch per %{download_link}.
       download: discargar le application scriptorio pro Mac e Windows
-      download_url: https://www.systemed.net/potlatch/
       id_editor_html: Alternativemente, tu pote fixar le editor predefinite a iD,
         le qual functiona in tu navigator web como Potlatch lo faceva antea. %{change_preferences_link}
       change_preferences: Cambia tu preferentias hic
@@ -3612,7 +3605,6 @@ ia:
         url: https://wiki.openstreetmap.org/wiki/Beginners%27_guide
       counter_warning_forum_link:
         text: le communitate pote adjutar te
-        url: https://forum.openhistoricalmap.org/
       advice: Tu nota es public e pote esser usate pro actualisar le carta. Dunque,
         non insere alcun information personal, ni datos ab cartas o catalogos protegite
         per derectos de autor.

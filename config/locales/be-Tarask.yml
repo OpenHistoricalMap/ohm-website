@@ -738,6 +738,8 @@ be-Tarask:
           wayside_cross: Прыдарожны крыж
           wayside_shrine: Прыдарожная капліца
           wreck: Месца катастрофы
+        information:
+          map: Мапа
         landuse:
           allotments: Агароды
           basin: Басэйн
@@ -1141,7 +1143,7 @@ be-Tarask:
       title: Ачысьціць пароль
       heading: Скінуць пароль для %{user}
       reset: Ачысьціць пароль
-      flash token bad: Немагчыма знайсьці такі ключ, можа праверце URL-адрас?
+      flash token bad: Немагчыма знайсьці такі ключ, спраўдзіце URL-адрас.
     update:
       flash changed: Ваш пароль быў зьменены.
   profiles:
@@ -1543,7 +1545,7 @@ be-Tarask:
       status: 'Статус:'
       edit: Рэдагаваць
       reason: 'Прычына блякаваньня:'
-      revoker: 'Адклікаўшы:'
+      revoker: 'Адклікаў:'
     block:
       show: Паказаць
       edit: Рэдагаваць
@@ -1567,6 +1569,8 @@ be-Tarask:
     notes_paging_nav:
       showing_page: Старонка %{page}
   javascripts:
+    share:
+      filename: мапа
     map:
       base:
         standard: Звычайная мапа

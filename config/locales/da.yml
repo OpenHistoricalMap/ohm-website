@@ -2168,7 +2168,6 @@ da:
         description: Deltag i længere diskussioner og uformelle chatrum ved hjælp
           af din OHM-konto.
       github:
-        url: https://github.com/OpenHistoricalMap/
         title: Funktionsanmodninger og fejl
         description: Indsend et problem på vores GitHub for at rapportere en fejl
           eller anmode om en ny funktion.

@@ -868,11 +868,8 @@ gl:
     search:
       title:
         latlon: fontes internas
-        latlon_url: https://openhistoricalmap.org/
         osm_nominatim: Nominatim do OpenHistoricalMap
-        osm_nominatim_url: https://nominatim.openhistoricalmap.org/
         osm_nominatim_reverse: Nominatim do OpenHistoricalMap
-        osm_nominatim_reverse_url: https://nominatim.openhistoricalmap.org/
     search_osm_nominatim:
       prefix_format: '%{name}'
       suffix_format: '[%{dates}]'
@@ -2566,7 +2563,6 @@ gl:
         contributors_anr_communes_project: ANR COMMUNES
         contributors_anr_communes_campop: grupo de Cambridge para a historia da poboación
           e as estruturas sociais
-        contributors_anr_communes_campop_url: https://www.campop.geog.cam.ac.uk/research/projects/internationaloccupations/enchpopgos/france/
         contributors_newberry_ahcb_html: Datos do %{ahcb_link}, un proxecto do Centro
           William M. Scholl para a historia e a cultura estadounidenses na %{newberry_link},
           que está dispoñible para a súa reutilización sen restricións.
@@ -2698,7 +2694,6 @@ gl:
         title: Guía do principiante
         description: Guía para principiantes, mantida pola comunidade.
       community:
-        url: https://community.openstreetmap.org/
         title: Axuda e foro comunitario
         description: Un lugar para buscar axuda e compartir conversas sobre o OpenStreetMap.
       mailing_lists:
@@ -2725,7 +2720,6 @@ gl:
         description: Participa en debates máis longos e salas de conversa informais
           usando a túa conta do OHM.
       github:
-        url: https://github.com/OpenHistoricalMap/
         title: Erros e solicitudes de características
         description: Envía un informe de erro nos nosos repositorios de GitHub para
           avisar dun erro ou solicitar unha nova característica.
@@ -2745,7 +2739,6 @@ gl:
         para o seu uso nun navegador web.
       desktop_application_html: Aínda podes usar Potlatch %{download_link}.
       download: descargando a aplicación de escritorio para Mac e Windows
-      download_url: https://www.systemed.net/potlatch/
       id_editor_html: Como alternativa, podes establecer o iD como o teu editor predeterminado;
         este editor execútase directamente no teu navegador web como antes facía o
         Potlatch. %{change_preferences_link}.
@@ -3630,7 +3623,6 @@ gl:
         url: https://wiki.openstreetmap.org/wiki/Beginners%27_guide
       counter_warning_forum_link:
         text: a comunidade pode axudarche
-        url: https://forum.openhistoricalmap.org/
       advice: A túa nota será pública e poderá empregarse para actualizar o mapa;
         por conseguinte, non insiras información persoal, nin datos de mapas protexidos
         por dereitos de autoría ou listaxes de directorios.
