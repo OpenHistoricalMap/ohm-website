@@ -96,6 +96,7 @@
 # Author: S.kozyr
 # Author: Sanail
 # Author: Santacloud
+# Author: Shabe
 # Author: Sikmir
 # Author: Silovan
 # Author: Sobloku
@@ -787,7 +788,7 @@ ru:
   doorkeeper:
     errors:
       messages:
-        account_selection_required: Сервер авторизации требует выбора учетной записи
+        account_selection_required: Сервер авторизации требует выбора учётной записи
           конечного пользователя.
         consent_required: Сервер авторизации требует согласия конечного пользователя
         interaction_required: Сервер авторизации требует взаимодействия  с конечным
@@ -842,7 +843,6 @@ ru:
     search:
       title:
         latlon: Внутренний
-        latlon_url: https://openhistoricalmap.org/
     search_osm_nominatim:
       prefix:
         aerialway:
@@ -1825,7 +1825,7 @@ ru:
     lost_password:
       subject: '[OpenHistoricalMap] Запрос на смену пароля'
       greeting: Здравствуйте,
-      hopefully_you: Кто-то (возможно, вы) запросил сброс пароля для учетной записи
+      hopefully_you: Кто-то (возможно, вы) запросил сброс пароля для учётной записи
         openhistoricalmap.org этого адреса электронной почты.
       click_the_link: Если это вы, пожалуйста, перейдите по ссылке, указанной ниже,
         чтобы сменить ваш пароль.
@@ -2280,8 +2280,6 @@ ru:
         title: Для организаций
       forum:
         title: Форум
-      github:
-        url: https://github.com/OpenHistoricalMap/
       mailing_list:
         title: Список рассылки
       slack:

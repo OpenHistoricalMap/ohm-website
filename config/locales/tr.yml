@@ -738,11 +738,8 @@ tr:
     search:
       title:
         latlon: Dahili
-        latlon_url: https://openhistoricalmap.org/
         osm_nominatim: OpenHistoricalMap Adaylığı
-        osm_nominatim_url: https://nominatim.openhistoricalmap.org/
         osm_nominatim_reverse: OpenHistoricalMap Adaylığı
-        osm_nominatim_reverse_url: https://nominatim.openhistoricalmap.org/
     search_osm_nominatim:
       prefix_format: '%{name}'
       prefix:
@@ -2214,7 +2211,6 @@ tr:
         kullanılamaz.
       desktop_application_html: Potlatch'ı %{download_link} ile kullanmaya devam edebilirsiniz.
       download: Mac ve Windows için masaüstü uygulamasını indirme
-      download_url: https://www.systemed.net/potlatch/
       id_editor_html: Alternatif olarak varsayılan düzenleyicinizi, daha önce Potlatch'in
         yaptığı gibi web tarayıcınızda çalışan iD'ye ayarlayabilirsiniz. %{change_preferences_link}.
       change_preferences: Tercihlerinizi buradan değiştirin

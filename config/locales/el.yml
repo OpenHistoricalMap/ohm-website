@@ -899,11 +899,8 @@ el:
     search:
       title:
         latlon: Internal
-        latlon_url: https://openhistoricalmap.org/
         osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_url: https://nominatim.openhistoricalmap.org/
         osm_nominatim_reverse: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse_url: https://nominatim.openhistoricalmap.org/
     search_osm_nominatim:
       prefix_format: '%{name}'
       prefix:
@@ -2512,7 +2509,6 @@ el:
         contributors_intro_html: 'Οι συνεισφέροντες μας είναι χιλιάδες άτομα. Επίσης
           έχουμε περιλάβει δεδομένα ανοικτής άδειας από εθνικές υπηρεσίες χαρτογράφησης
           και άλλες πηγές, μεταξύ αυτών:'
-        contributors_anr_communes_campop_url: https://www.campop.geog.cam.ac.uk/research/projects/internationaloccupations/enchpopgos/france/
         contributors_osm_html: Δεδομένα σχετικά με ακτογραμμές, υδάτινα σώματα και
           ρέματα © %{osm_link}, %{cc_by_sa_link}.
         contributors_osm: Συνεισφέροντες OpenStreetMap
@@ -2620,7 +2616,6 @@ el:
         title: Οδηγός Αρχαρίων
         description: Οδηγός αρχαρίων διατηρούμενος από την κοινότητα.
       community:
-        url: https://community.openstreetmap.org/
         title: Φόρουμ κοινότητας & βοήθειας
         description: Ένα κοινόχρηστο μέρος για αναζήτηση βοήθειας και για συνομιλίες
           σχετικά με το OpenStreetMap.
@@ -2641,7 +2636,6 @@ el:
       forum:
         title: Φόρουμ
       github:
-        url: https://github.com/OpenHistoricalMap/
         title: Αιτήματα για λειτουργίες & Σφάλματα
         description: Υποβάλετε ένα ζήτημα στα αποθετήρια μας στο GitHub για να αναφέρετε
           ένα σφάλμα ή να ζητήσετε μια νέα λειτουργία.
@@ -2659,7 +2653,6 @@ el:
       desktop_application_html: Μπορείτε να χρησιμοποιήσετε ακόμη το Potlatch κάνοντας
         %{download_link}.
       download: λήψη της εφαρμογής επιφάνειας εργασίας για Mac και Windows
-      download_url: https://www.systemed.net/potlatch/
       id_editor_html: Εναλλακτικά, μπορείτε να ορίσετε το προεπιλεγμένο πρόγραμμα
         επεξεργασίας σε iD, το οποίο εκτελείται στο πρόγραμμα περιήγησής σας όπως
         έκανε στο παρελθόν το Potlatch. %{change_preferences_link}.
@@ -3555,7 +3548,6 @@ el:
         url: https://wiki.openstreetmap.org/wiki/El:Beginners%27_guide
       counter_warning_forum_link:
         text: η κοινότητα μπορεί να σας βοηθήσει
-        url: https://forum.openhistoricalmap.org/
       advice: Η σημείωση σας είναι δημόσια και μπορεί να χρησιμοποιηθεί για την ενημέρωση
         του χάρτη, γι'αυτό μην προστέθετε προσωπικές πληροφορίες, ή πληροφορίες από
         χάρτες που καλύπτονται από πνευματικά δικαιώματα ή καταχωρήσεις καταλόγου.

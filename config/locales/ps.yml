@@ -192,7 +192,6 @@ ps:
     search:
       title:
         latlon: دنننۍ
-        latlon_url: https://openhistoricalmap.org/
     search_osm_nominatim:
       suffix_format: '[%{dates}]'
       prefix:

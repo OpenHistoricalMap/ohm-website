@@ -60,6 +60,10 @@
 # Author: Zvenzzon
 ---
 sv:
+  date:
+    formats:
+      brief_bce: '%{year} f.v.t.'
+      brief_ce: '%{year} e.v.t.'
   time:
     formats:
       friendly: '%e %B %Y kl. %H:%M'

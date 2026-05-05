@@ -925,11 +925,8 @@ ga:
     search:
       title:
         latlon: Inmheánach
-        latlon_url: https://openhistoricalmap.org/
         osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_url: https://nominatim.openhistoricalmap.org/
         osm_nominatim_reverse: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse_url: https://nominatim.openhistoricalmap.org/
     search_osm_nominatim:
       suffix_format: '[%{dates}]'
       prefix:
@@ -2648,7 +2645,6 @@ ga:
         contributors_anr_communes_project: ANR COMMUNES
         contributors_anr_communes_campop: Grúpa Cambridge um Stair an Daonra agus
           na Struchtúr Sóisialta
-        contributors_anr_communes_campop_url: https://www.campop.geog.cam.ac.uk/research/projects/internationaloccupations/enchpopgos/france/
         contributors_newberry_ahcb_html: Sonraí ón %{ahcb_link}, tionscadal de chuid
           Ionad William M. Scholl um Stair agus Cultúr Mheiriceá ag %{newberry_link},
           atá ar fáil lena athúsáid gan srian.
@@ -2782,7 +2778,6 @@ ga:
         title: Treoir do Thosaitheoirí
         description: Treoir do thosaitheoirí atá faoi stiúir an phobail.
       community:
-        url: https://community.openstreetmap.org/
         title: Fóram Cabhrach & Pobail
         description: Áit chomhroinnte chun cabhair a lorg agus comhráite a bheith
           againn faoi OpenStreetMap.
@@ -2810,7 +2805,6 @@ ga:
         description: Glac páirt i ndíospóireachtaí níos faide agus i seomraí comhrá
           neamhfhoirmiúla ag baint úsáide as do chuntas OHM.
       github:
-        url: https://github.com/OpenHistoricalMap/
         title: Iarratais ar Ghnéithe & Fabhtanna
         description: Cuir fadhb in iúl inár stórtha GitHub chun fabht a thuairisciú
           nó gné nua a iarraidh.
@@ -2830,7 +2824,6 @@ ga:
         ar fáil a thuilleadh le húsáid i mbrabhsálaí gréasáin.
       desktop_application_html: Is féidir leat Potlatch a úsáid fós faoi %{download_link}.
       download: an feidhmchlár deisce le haghaidh Mac agus Windows a íoslódáil
-      download_url: https://www.systemed.net/potlatch/
       id_editor_html: Nó is féidir leat d’eagarthóir réamhshocraithe a shocrú go iD,
         a ritheann i do bhrabhsálaí gréasáin mar a rinne Potlatch roimhe seo. %{change_preferences_link}.
       change_preferences: Athraigh do chuid roghanna anseo
@@ -3769,7 +3762,6 @@ ga:
         url: https://wiki.openstreetmap.org/wiki/Beginners%27_guide
       counter_warning_forum_link:
         text: is féidir leis an bpobal cabhrú leat
-        url: https://forum.openhistoricalmap.org/
       advice: Tá do nóta poiblí agus féadfar í a úsáid chun an léarscáil a nuashonrú,
         mar sin ná cuir isteach faisnéis phearsanta, ná faisnéis ó léarscáileanna
         cóipchirtithe ná ó liostaí eolaire.

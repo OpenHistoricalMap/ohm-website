@@ -820,11 +820,8 @@ zh-TW:
     search:
       title:
         latlon: 內部
-        latlon_url: https://openhistoricalmap.org/
         osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_url: https://nominatim.openhistoricalmap.org/
         osm_nominatim_reverse: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse_url: https://nominatim.openhistoricalmap.org/
     search_osm_nominatim:
       prefix_format: '%{name}'
       suffix_format: '[%{dates}]'
@@ -2409,7 +2406,6 @@ zh-TW:
         contributors_anr_communes_html: 資料由%{anr_communes_link}專案與%{campop_link}合作建立。
         contributors_anr_communes_project: ANR 公社
         contributors_anr_communes_campop: 劍橋人口與社會結構歷史小組
-        contributors_anr_communes_campop_url: https://www.campop.geog.cam.ac.uk/research/projects/internationaloccupations/enchpopgos/france/
         contributors_newberry_ahcb_html: 資料來自於%{ahcb_link}，是%{newberry_link}的美國歷史與文化中心
           William M. Scholl Center 一個專案，可不受限制重複使用。
         contributors_newberry: 紐伯利圖書館
@@ -2509,7 +2505,6 @@ zh-TW:
         title: 新手指南
         description: 社群維護的新手指南
       community:
-        url: https://community.openstreetmap.org/
         title: 幫助與社群論壇
         description: 尋求幫助與討論有關 OpenStreetMap 的分享場所。
       mailing_lists:
@@ -2531,7 +2526,6 @@ zh-TW:
         title: 論壇
         description: 使用您的 OHM 帳號來參與長時間的討論和非正式聊天室。
       github:
-        url: https://github.com/OpenHistoricalMap/
         title: 功能請求與程式錯誤
         description: 在我們的 GitHub 儲存庫上提出問題來報告錯誤，或是請求新功能。
       mailing_list:
@@ -2547,7 +2541,6 @@ zh-TW:
         已不能在網路瀏覽器上使用。
       desktop_application_html: 你仍然可以透過 %{download_link} 使用 Potlatch。
       download: 下載適用於 Mac 和 Windows 的桌面應用程式
-      download_url: https://www.systemed.net/potlatch/
       id_editor_html: 除此之外，你可以設定預設編輯器為 iD，這可以和之前的 Potlatch 一樣在你的網路瀏覽器上運作。%{change_preferences_link}。
       change_preferences: 在此更改你的偏好設定
     any_questions:
@@ -3351,7 +3344,6 @@ zh-TW:
         url: https://wiki.openstreetmap.org/wiki/Beginners%27_guide
       counter_warning_forum_link:
         text: 社群可以幫助您
-        url: https://forum.openhistoricalmap.org/
       advice: 你的註記已公開並可用於更新地圖，因此請不要輸入個人訊息，或是來自於具版權保護地圖的訊息以及目錄清單。
       add: 送出註記
     new_readonly:

@@ -817,11 +817,8 @@ is:
     search:
       title:
         latlon: Innri
-        latlon_url: https://openhistoricalmap.org/
         osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_url: https://nominatim.openhistoricalmap.org/
         osm_nominatim_reverse: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse_url: https://nominatim.openhistoricalmap.org/
     search_osm_nominatim:
       prefix_format: '%{name}:'
       prefix:
@@ -2427,7 +2424,6 @@ is:
         title: Leiðbeiningar fyrir byrjendur
         description: Leiðarvísir fyrir byrjendur sem haldið er við af samfélaginu.
       community:
-        url: https://community.openstreetmap.org/
         title: Aðstoð og samfélagsgátt
         description: Sameiginlegur staður fyrir aðstoð og umræður um OpenStreetMap.
       mailing_lists:
@@ -2447,7 +2443,6 @@ is:
       forum:
         title: Vefspjall
       github:
-        url: https://github.com/OpenHistoricalMap/
         title: Beiðnir um nýja eiginleika og tilkynningar um villur
       mailing_list:
         title: Póstlisti
@@ -2463,7 +2458,6 @@ is:
         að nota í vafra.
       desktop_application_html: Þú getur áfram notað Potlatch með því að %{download_link}.
       download: sækja borðtölvuforritið fyrir Mac og Windows
-      download_url: https://www.systemed.net/potlatch/
       id_editor_html: Annars geturðu stillt sjálfgefinn ritil sem iD, sem keyrir í
         vafra eins og Potlatch gerði áður. %{change_preferences_link}.
       change_preferences: Breyttu kjörstillingum þínum hér
