@@ -2,6 +2,10 @@
 
 <%= render "sidebar_header", :title => t("browse.#{@type}.title_html", :name => printable_element_name(@feature)) %>
 
+<% if @feature.visible? %>
+  <%= render "browse/ohm_details", :feature => @feature %>
+<% end %>
+
 <%= render :partial => "browse/#{@type}", :object => @feature %>
 
 <% if @feature.visible? %>

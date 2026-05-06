@@ -426,6 +426,11 @@ en:
       feature_error: "Features could not be loaded: %{message}"
       load_data: "Load Data"
       loading: "Loading..."
+    ohm_details:
+      prev_image: "Previous image"
+      next_image: "Next image"
+      more_info: "More info"
+      link: "(link)"
     tag_details:
       tags: "Tags"
       wiki_link:
@@ -3558,6 +3563,8 @@ en:
       suffix_format: "[%{dates}]"
     element:
       wikipedia: "Wikipedia"
+    ohm_inspector:
+      network_error: "Unable to load additional details. Please try again later."
     context:
       directions_from: Directions from here
       directions_to: Directions to here

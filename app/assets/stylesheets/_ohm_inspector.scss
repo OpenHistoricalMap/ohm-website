@@ -1,0 +1,95 @@
+// OHM Inspector panel styles
+// Layout / visual design pass deferred — see https://github.com/OpenHistoricalMap/issues/issues?label=inspector
+
+$ohm-slide-size: 290px;
+
+.ohm-inspector-panel {
+  padding: 0 1em;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+// Slideshow
+
+.ohm-inspector-slideshow {
+  position: relative;
+  width: $ohm-slide-size;
+  min-height: $ohm-slide-size;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.ohm-inspector-slide {
+  height: 100%;
+  display: block;
+
+  &.ohm-inspector-slide--hidden {
+    display: none;
+  }
+}
+
+.ohm-inspector-slide-img {
+  width: $ohm-slide-size;
+  height: $ohm-slide-size;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.ohm-inspector-slide-caption {
+  display: block;
+  font-style: italic;
+  text-align: left;
+}
+
+.ohm-inspector-slideshow-btn {
+  position: absolute;
+  top: 125px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  &.ohm-inspector-slideshow-btn--hidden {
+    display: none;
+  }
+}
+
+.ohm-inspector-slideshow-prev { left: 5px; }
+.ohm-inspector-slideshow-next { right: 5px; }
+
+// Date range
+
+.ohm-inspector-dates {
+  margin-bottom: 1em;
+}
+
+// Wikipedia excerpt
+
+.ohm-inspector-wikipedia-excerpt {
+  margin-bottom: 1em;
+}
+
+// More-info links
+
+.ohm-inspector-more-info {
+  display: flex;
+  margin-bottom: 1em;
+
+  > span { flex: 1; }
+  > ul   { flex: 3; }
+}
+
+// Separator
+
+.ohm-inspector-separator {
+  margin-top: 1em;
+}

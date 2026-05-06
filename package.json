@@ -18,6 +18,7 @@
     "maplibre-gl": "^5.6.0",
     "osm-community-index": "5.9.3",
     "qs": "^6.9.4",
+    "simplelightbox": "^2.1.0",
     "tag2link": "^2025.7.21"
   },
   "devDependencies": {
