@@ -1,12 +1,37 @@
 // OHM Inspector panel styles
 // Layout / visual design pass deferred — see https://github.com/OpenHistoricalMap/issues/issues?label=inspector
 
-$ohm-slide-size: 290px;
+// Slideshow image size.
+$ohm-slide-size: 241px;
 
 .ohm-inspector-panel {
-  padding: 0 1em;
+  padding: 0 1em 0 0;
   font-size: 13px;
   line-height: 1.25;
+}
+
+// Local-language name (raw `name` tag), shown bold and slightly smaller
+// just below the H2 header.
+
+.ohm-inspector-local-name {
+  margin: -0.25em 0 0.25em;
+  font-size: 0.875em;
+}
+
+// Date range — shown below the local-language name.
+
+.ohm-inspector-dates {
+  margin: 0 0 0.75em;
+  font-size: 0.875em;
+
+  &.ohm-inspector-dates--clickable {
+    cursor: pointer;
+    text-decoration: underline dotted;
+
+    &:hover {
+      color: var(--bs-link-color, #0d6efd);
+    }
+  }
 }
 
 // Slideshow
@@ -43,7 +68,7 @@ $ohm-slide-size: 290px;
 
 .ohm-inspector-slideshow-btn {
   position: absolute;
-  top: 125px;
+  top: calc(50% - 20px);
   z-index: 10;
   width: 40px;
   height: 40px;
@@ -66,17 +91,46 @@ $ohm-slide-size: 290px;
 .ohm-inspector-slideshow-prev { left: 5px; }
 .ohm-inspector-slideshow-next { right: 5px; }
 
-// Date range
+// Wikipedia excerpt + inline Wikipedia/Wikidata badges
 
-.ohm-inspector-dates {
+.ohm-inspector-wikipedia-block {
   margin-bottom: 1em;
+  font-size: 0.875em;
 }
-
-// Wikipedia excerpt
 
 .ohm-inspector-wikipedia-excerpt {
-  margin-bottom: 1em;
+  // Inline span; the badges flow at the end of the same paragraph.
 }
+
+// Round icon badges that sit at the end of the excerpt copy. Each contains
+// the official Wikipedia / Wikidata SVG mark on a colored background.
+
+.ohm-inspector-wikipedia-link,
+.ohm-inspector-wikidata-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0 0.15em;
+  border-radius: 50%;
+  text-decoration: none;
+  vertical-align: middle;
+
+  img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+    opacity: 0.85;
+  }
+}
+
+.ohm-inspector-wikipedia-link { background-color: #000; }
+.ohm-inspector-wikidata-link  { background-color: #069; }
 
 // More-info links
 
@@ -84,8 +138,11 @@ $ohm-slide-size: 290px;
   display: flex;
   margin-bottom: 1em;
 
-  > span { flex: 1; }
-  > ul   { flex: 3; }
+  > span {
+    flex: 1;
+    font-weight: bold;
+  }
+  > ul { flex: 3; }
 }
 
 // Separator

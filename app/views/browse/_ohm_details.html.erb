@@ -2,17 +2,37 @@
   tags = feature.tags
 
   # Collect image:N tag groups (image:1, image:2, …, image:99)
-  # Domain validation deferred to https://github.com/OpenHistoricalMap/issues/issues/585
+  # URLs are filtered through ohm_inspector_image_url_safe? so we only embed
+  # images from the project allowlist with recognized image extensions.
+  # Refs: https://github.com/OpenHistoricalMap/issues/issues/583
+  #       https://github.com/OpenHistoricalMap/issues/issues/585
   images = []
   (1..99).each do |i|
     url = tags["image:#{i}"].presence
     break unless url
+    next unless ohm_inspector_image_url_safe?(url)
     images << {
       :url     => url,
       :caption => tags["image:#{i}:caption"].presence,
       :date    => tags["image:#{i}:date"].presence,
       :source  => tags["image:#{i}:source"].presence,
       :license => tags["image:#{i}:license"].presence
+    }
+  end
+
+  # https://github.com/OpenHistoricalMap/issues/issues/581
+  # If wikimedia_commons=File:Foo.jpg is set, derive an image URL via the
+  # Commons FilePath redirector and add it to the slideshow.
+  wmc = tags["wikimedia_commons"].presence
+  if wmc && wmc.start_with?("File:")
+    filename = wmc.sub(/\AFile:/, "")
+    wmc_url  = "https://commons.wikimedia.org/wiki/Special:FilePath/#{CGI.escape(filename)}"
+    images << {
+      :url     => wmc_url,
+      :caption => filename,
+      :date    => nil,
+      :source  => "Wikimedia Commons",
+      :license => nil
     }
   end
 
@@ -27,12 +47,9 @@
     }
   end
 
-  date_range    = ohm_inspector_date_range(tags)
-  wikipedia_url = ohm_inspector_wikipedia_url(tags)
-  wikidata_id   = tags["wikidata"].presence
+  wikidata_id = tags["wikidata"].presence
 
-  has_content = images.any? || date_range.present? || wikipedia_url.present? ||
-                (wikidata_id.present? && wikipedia_url.blank?) || more_info.any?
+  has_content = images.any? || wikidata_id.present? || more_info.any?
 %>
 <% if has_content %>
   <div class="ohm-inspector-panel">
@@ -78,23 +95,27 @@
       </div>
     <% end %>
 
-    <% if date_range.present? %>
-      <%# data-start-date / data-end-date reserved for https://github.com/OpenHistoricalMap/issues/issues/1323 %>
-      <p class="ohm-inspector-dates"
-         data-start-date="<%= tags['start_date'] %>"
-         data-end-date="<%= tags['end_date'] %>">
-        [<%= date_range %>]
+    <%# Wikipedia excerpt + inline badges — driven by the wikidata QID.
+        JS resolves the QID to a localized Wikipedia sitelink, fills the
+        excerpt span and reveals the Wikipedia badge. The badges flow
+        inline at the end of the excerpt copy. %>
+    <% if wikidata_id.present? %>
+      <p class="ohm-inspector-wikipedia-block">
+        <span class="ohm-inspector-wikipedia-excerpt"
+              data-wikidata-id="<%= wikidata_id %>"></span>
+        <a class="ohm-inspector-wikipedia-link"
+           target="_blank"
+           rel="nofollow"
+           title="<%= t('.wikipedia') %>"
+           aria-label="<%= t('.wikipedia') %>"
+           hidden><%= image_tag "ohm-inspector-wikipedia.svg", :alt => "" %></a>
+        <a class="ohm-inspector-wikidata-link"
+           href="https://www.wikidata.org/wiki/<%= wikidata_id %>"
+           target="_blank"
+           rel="nofollow"
+           title="<%= t('.wikidata') %>"
+           aria-label="<%= t('.wikidata') %>"><%= image_tag "ohm-inspector-wikidata.svg", :alt => "" %></a>
       </p>
-    <% end %>
-
-    <%# Wikipedia excerpt is fetched asynchronously by ohm_inspector.js %>
-    <% if wikipedia_url.present? %>
-      <p class="ohm-inspector-wikipedia-excerpt"
-         data-wikipedia-url="<%= wikipedia_url %>"></p>
-    <% elsif wikidata_id.present? %>
-      <%# No wikipedia tag; JS will look up the article via Wikidata (#584) %>
-      <p class="ohm-inspector-wikipedia-excerpt"
-         data-wikidata-id="<%= wikidata_id %>"></p>
     <% end %>
 
     <% if more_info.any? %>

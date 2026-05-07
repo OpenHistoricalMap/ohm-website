@@ -24,7 +24,7 @@
 //= require index/home
 //= require index/element
 //= require @openhistoricalmap/map-styles/dist/ohm.styles
-//= require simplelightbox/dist/simpleLightbox
+//= require simplelightbox/dist/simple-lightbox
 //= require index/ohm_inspector
 //= require index/timeslider
 //= require router

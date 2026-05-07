@@ -3,71 +3,19 @@
 require "test_helper"
 
 class OhmInspectorHelperTest < ActionView::TestCase
-  # ---------------------------------------------------------------------------
-  # ohm_inspector_wikipedia_url
-  # ---------------------------------------------------------------------------
-
-  def test_wikipedia_url_returns_nil_when_no_tags
-    assert_nil ohm_inspector_wikipedia_url({})
+  # The production IMAGE_DOMAIN_ALLOWLIST is intentionally empty (see
+  # OhmInspectorHelper). Tests below stub a known allowlist so they cover
+  # the helper logic regardless of what hosts the OHM team eventually trusts.
+  setup do
+    @original_image_allowlist = OhmInspectorHelper::IMAGE_DOMAIN_ALLOWLIST
+    OhmInspectorHelper.send(:remove_const, :IMAGE_DOMAIN_ALLOWLIST)
+    OhmInspectorHelper.const_set(:IMAGE_DOMAIN_ALLOWLIST,
+                                 %w[upload.wikimedia.org commons.wikimedia.org].freeze)
   end
 
-  def test_wikipedia_url_returns_full_url_unchanged
-    url = "https://en.wikipedia.org/wiki/Seattle"
-    assert_equal url, ohm_inspector_wikipedia_url("wikipedia" => url)
-  end
-
-  def test_wikipedia_url_returns_http_url_unchanged
-    url = "http://en.wikipedia.org/wiki/Seattle"
-    assert_equal url, ohm_inspector_wikipedia_url("wikipedia" => url)
-  end
-
-  def test_wikipedia_url_constructs_english_url_from_bare_title
-    # value has no language prefix — assume English
-    assert_equal "https://en.wikipedia.org/wiki/Seattle",
-                 ohm_inspector_wikipedia_url("wikipedia" => "Seattle")
-  end
-
-  def test_wikipedia_url_constructs_english_url_from_en_prefix
-    assert_equal "https://en.wikipedia.org/wiki/Hotel_Seattle",
-                 ohm_inspector_wikipedia_url("wikipedia" => "en:Hotel_Seattle")
-  end
-
-  def test_wikipedia_url_constructs_non_english_url_from_language_prefix
-    # Regression test for https://github.com/OpenHistoricalMap/issues/issues/859
-    assert_equal "https://pt.wikipedia.org/wiki/Algoso_Castle",
-                 ohm_inspector_wikipedia_url("wikipedia" => "pt:Algoso_Castle")
-  end
-
-  def test_wikipedia_url_supports_three_char_language_prefix
-    assert_equal "https://nds.wikipedia.org/wiki/Hamburg",
-                 ohm_inspector_wikipedia_url("wikipedia" => "nds:Hamburg")
-  end
-
-  def test_wikipedia_url_from_wikipedia_colon_key
-    # wikipedia:en=Title (legacy tagging style)
-    assert_equal "https://en.wikipedia.org/wiki/Seattle",
-                 ohm_inspector_wikipedia_url("wikipedia:en" => "Seattle")
-  end
-
-  def test_wikipedia_url_from_non_english_wikipedia_colon_key
-    assert_equal "https://pt.wikipedia.org/wiki/Algoso_Castle",
-                 ohm_inspector_wikipedia_url("wikipedia:pt" => "Algoso_Castle")
-  end
-
-  def test_wikipedia_url_prefers_wikipedia_key_over_wikipedia_colon_key
-    # If both are present, the plain `wikipedia` key wins
-    result = ohm_inspector_wikipedia_url(
-      "wikipedia"    => "en:Primary",
-      "wikipedia:de" => "Secondary"
-    )
-    assert_equal "https://en.wikipedia.org/wiki/Primary", result
-  end
-
-  def test_wikipedia_url_ignores_non_wikipedia_tags
-    assert_nil ohm_inspector_wikipedia_url(
-      "wikidata" => "Q12345",
-      "name"     => "Some Place"
-    )
+  teardown do
+    OhmInspectorHelper.send(:remove_const, :IMAGE_DOMAIN_ALLOWLIST)
+    OhmInspectorHelper.const_set(:IMAGE_DOMAIN_ALLOWLIST, @original_image_allowlist)
   end
 
   # ---------------------------------------------------------------------------
@@ -117,9 +65,63 @@ class OhmInspectorHelperTest < ActionView::TestCase
   end
 
   def test_date_range_with_full_iso_date_extracts_year
-    # start_date / end_date are often full ISO dates in OHM data
     result = ohm_inspector_date_range("start_date" => "1900-06-15", "end_date" => "1950-12-31")
     assert_includes result, "1900"
     assert_includes result, "1950"
+  end
+
+  # ---------------------------------------------------------------------------
+  # ohm_inspector_image_url_safe? (issues #583 and #585)
+  # ---------------------------------------------------------------------------
+
+  def test_image_url_safe_for_allowlisted_host_with_image_extension
+    assert ohm_inspector_image_url_safe?(
+      "https://upload.wikimedia.org/wikipedia/commons/a/aa/Example.jpg"
+    )
+  end
+
+  def test_image_url_safe_for_commons_filepath
+    assert ohm_inspector_image_url_safe?(
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Example.jpg"
+    )
+  end
+
+  def test_image_url_unsafe_when_allowlist_is_empty
+    OhmInspectorHelper.send(:remove_const, :IMAGE_DOMAIN_ALLOWLIST)
+    OhmInspectorHelper.const_set(:IMAGE_DOMAIN_ALLOWLIST, [].freeze)
+    assert_not ohm_inspector_image_url_safe?(
+      "https://upload.wikimedia.org/wikipedia/commons/a/aa/Example.jpg"
+    )
+  end
+
+  def test_image_url_unsafe_for_disallowed_host
+    assert_not ohm_inspector_image_url_safe?(
+      "https://example.com/some/image.jpg"
+    )
+  end
+
+  def test_image_url_unsafe_for_http
+    assert_not ohm_inspector_image_url_safe?(
+      "http://upload.wikimedia.org/wikipedia/commons/a/aa/Example.jpg"
+    )
+  end
+
+  def test_image_url_unsafe_for_non_image_extension
+    assert_not ohm_inspector_image_url_safe?(
+      "https://upload.wikimedia.org/wikipedia/commons/a/aa/Example.txt"
+    )
+  end
+
+  def test_image_url_unsafe_for_javascript_scheme
+    assert_not ohm_inspector_image_url_safe?("javascript:alert(1)")
+  end
+
+  def test_image_url_unsafe_for_blank
+    assert_not ohm_inspector_image_url_safe?(nil)
+    assert_not ohm_inspector_image_url_safe?("")
+  end
+
+  def test_image_url_unsafe_for_invalid_uri
+    assert_not ohm_inspector_image_url_safe?("not a url at all")
   end
 end

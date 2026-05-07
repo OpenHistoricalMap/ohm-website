@@ -431,6 +431,8 @@ en:
       next_image: "Next image"
       more_info: "More info"
       link: "(link)"
+      wikipedia: "Wikipedia"
+      wikidata: "Wikidata"
     tag_details:
       tags: "Tags"
       wiki_link:
@@ -3565,6 +3567,7 @@ en:
       wikipedia: "Wikipedia"
     ohm_inspector:
       network_error: "Unable to load additional details. Please try again later."
+      jump_to_date: "Jump to this date on the map"
     context:
       directions_from: Directions from here
       directions_to: Directions to here

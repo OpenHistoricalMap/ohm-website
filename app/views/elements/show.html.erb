@@ -1,10 +1,36 @@
 <% set_title(t("browse.#{@type}.title_html", :name => printable_element_name(@feature))) %>
 
-<%= render "sidebar_header", :title => t("browse.#{@type}.title_html", :name => printable_element_name(@feature)) %>
+<%# Sidebar header shows just the locale-preferred name. Below the H2:
+    a bold local-language `name` value, then the date range. The "Type/id v#"
+    label moves below the inspector panel. %>
+<%= render "sidebar_header", :title => ohm_inspector_feature_title(@feature) %>
+
+<% if (local_name = ohm_inspector_local_name(@feature)) %>
+  <p class="ohm-inspector-local-name">
+    <strong><bdi><%= local_name %></bdi></strong>
+  </p>
+<% end %>
+
+<% if (date_range = ohm_inspector_date_range(@feature.tags)) %>
+  <%# data-start-date / data-end-date reserved for https://github.com/OpenHistoricalMap/issues/issues/1323 %>
+  <p class="ohm-inspector-dates"
+     data-start-date="<%= @feature.tags['start_date'] %>"
+     data-end-date="<%= @feature.tags['end_date'] %>">
+    <%= date_range %>
+  </p>
+<% end %>
 
 <% if @feature.visible? %>
   <%= render "browse/ohm_details", :feature => @feature %>
 <% end %>
+
+<h3 class="ohm-inspector-element-id">
+  <bdi><%= t("browse.versions_navigation.#{@type}") %>/<%= @feature.id %></bdi>
+  <%= link_to_unless_current "v#{@feature.version}",
+                             :controller => "old_#{@type.pluralize}",
+                             :action     => :show,
+                             :version    => @feature.version %>
+</h3>
 
 <%= render :partial => "browse/#{@type}", :object => @feature %>
 

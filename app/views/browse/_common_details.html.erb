@@ -1,11 +1,16 @@
-<h4>
-  <%= if common_details.redacted?
-        t "browse.redacted_version"
-      else
-        t "browse.version"
-      end %>
-  #<%= link_to_unless_current common_details.version, :controller => "old_#{@type.pluralize}", :action => :show, :version => common_details.version %>
-</h4>
+<%# OHM: on elements/show the inspector renders a combined "[Type]/[id] v[v]"
+    H3, so this H4 is omitted there to avoid duplication.  It still renders
+    for old-version pages (params[:version] is set on those). %>
+<% if params[:version].present? %>
+  <h4>
+    <%= if common_details.redacted?
+          t "browse.redacted_version"
+        else
+          t "browse.version"
+        end %>
+    #<%= link_to_unless_current common_details.version, :controller => "old_#{@type.pluralize}", :action => :show, :version => common_details.version %>
+  </h4>
+<% end %>
 
 <p class="fs-6 overflow-x-auto mb-2" dir="auto">
   <% if common_details.changeset.tags["comment"].present? %>
