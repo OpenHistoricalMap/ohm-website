@@ -394,13 +394,11 @@ OSM.Query = function (map) {
     }
 
     // Build queries - match original format when no dateFilter
-    const enclosed = dateFilter ? `(pivot.a)${dateFilter}` : "(pivot.a);out tags bb",
+    const enclosed = `(pivot.a)${dateFilter};out tags bb`,
       nearby = dateFilter
         ? `(node${here}${dateFilter};way${here}${dateFilter};);out tags ${geom};relation${here}${dateFilter};out ${geom};`
         : `(node${here};way${here};);out tags ${geom};relation${here};out ${geom};`,
-      isin = dateFilter
-        ? `is_in(${latlng})->.a;way${enclosed};out geom;relation${enclosed};out geom;`
-        : `is_in(${latlng})->.a;way${enclosed};out ids ${geom};relation${enclosed};`;
+      isin = `is_in(${latlng})->.a;way${enclosed};out ids ${geom};relation${enclosed};`;
 
     $("#sidebar_content .query-intro")
       .hide();
