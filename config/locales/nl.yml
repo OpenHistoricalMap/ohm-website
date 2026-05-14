@@ -3434,7 +3434,7 @@ nl:
       invalid_credentials: Ongeldige verificatiereferenties
       no_authorization_code: Geen autorisatiecode
       unknown_signature_algorithm: Onbekend algoritme voor handtekening
-      invalid_scope: Ongeldig toepassingsgebied
+      invalid_scope: Onjuist toepassingsgebied
       unknown_error: Authenticatie mislukt
     auth_association:
       heading: Uw ID is nog niet gekoppeld aan een OpenHistoricalMap-account.

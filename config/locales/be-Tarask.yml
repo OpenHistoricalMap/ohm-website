@@ -833,6 +833,7 @@ be-Tarask:
           estate_agent: Агет па продажу нерухомасьці
           government: Дзяржаўная ўстанова
           insurance: Страхавое бюро
+          tax_advisor: Падатковы дарадца
         place:
           archipelago: Архіпэляґ
           city: Горад
@@ -988,6 +989,8 @@ be-Tarask:
         no_results: Нічога ня знойдзена
         more_results: Больш вынікаў
   issues:
+    page:
+      status: Статус
     show:
       resolve: Разьвязаць
   layouts:
@@ -1090,7 +1093,7 @@ be-Tarask:
         notice: Паведамленьне пазначанае як непрачытанае
     mailboxes:
       heading:
-        my_inbox: Мае ўваходзячыя
+        my_inbox: Уваходныя
       messages_table:
         from: Ад
         to: Да
@@ -1101,7 +1104,7 @@ be-Tarask:
         destroy_button: Выдаліць
     inboxes:
       show:
-        title: Уваходзячыя
+        title: Уваходныя
         messages: Вы маеце %{new_messages} і %{old_messages}
         new_messages:
           one: '%{count} новае паведамленьне'
@@ -1116,7 +1119,7 @@ be-Tarask:
         people_mapping_nearby: людзьмі, якія жывуць каля Вас
     outboxes:
       show:
-        title: Зыходзячыя
+        title: Выходныя
         messages:
           one: Вы маеце %{count} дасланае паведамленьне
           few: Вы маеце %{count} дасланыя паведамленьні
@@ -1213,8 +1216,8 @@ be-Tarask:
           OpenHistoricalMap — гэта супольны праект тысячаў асобаў і арганізацый, якія ў сваю чаргу зьвяртаюцца да вялікага аб’ёму навуковых, журналісцкіх і дакумэнтальных працаў.
           Сярод нашых найзначнейшых крыніцаў і аўтараў:
         contributors_footer_2_html: |-
-          Уключэньне зьвестак у OpenHistoricalMap не азначае, што пастаўшчыкі пачатковых зьвестак
-          якім-небудзь чынам падтрымліваюць OpenHistoricalMap, прадстаўляюць гарантыі, ці
+          Улучэньне зьвестак у OpenHistoricalMap не азначае, што правайдэры арыґінальных зьвестак
+          якім-небудзь чынам дапамагаюць OpenHistoricalMap, даюць гарантыі, ці
           прымаюць на сябе якую-небудзь адказнасьць.
     index:
       js_1: Вы карыстаецеся браўзэрам, які не падтрымлівае ці мае забаронены JavaScript.
@@ -1560,6 +1563,8 @@ be-Tarask:
         tbody:
           unmute: Скасаваць сьцішанасьць
   notes:
+    index:
+      status: Статус
     show:
       title: 'Нататка: %{id}'
       open_title: 'Неразьвязаная заўвага #%{note_name}'

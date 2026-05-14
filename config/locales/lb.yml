@@ -62,8 +62,8 @@ lb:
       changeset: Ännerungssaz
       changeset_tag: Ännerungssaz-Tag
       country: Land
-      diary_comment: Blog-Commentaire
-      diary_entry: Blog-Antrag
+      diary_comment: Blogkommentar
+      diary_entry: Blogbäiträg
       friend: Frënd
       issue: Problem
       language: Sprooch
@@ -101,7 +101,7 @@ lb:
         support_url: Support-URL
         allow_read_prefs: Hir Benotzerastellunge liesen
         allow_write_prefs: Hir Benotzerastellungen änneren
-        allow_write_diary: Bloganträg a Commentairë schreiwen
+        allow_write_diary: Blogbäiträg a -kommentare schreiwen
         allow_write_api: d'Kaart änneren
         allow_write_changeset_comments: Ännerungssätz kommentéieren
         allow_read_gpx: Zougrëff op hir privat GPS-Spueren
@@ -304,8 +304,8 @@ lb:
         retain_edits: Är Ännerunge un der Kaarten Datebank, wann et der ginn, ginn
           bäibehalen.
         retain_traces: Är eropgeluede Tracen, wann et der ginn, ginn bäibehalen.
-        retain_diary_entries: Är Tagebuch-Entréeën an Tagebuchkommentarer, wann et
-          der ginn, ginn bäibehalen awer onsiichtbar gemaach.
+        retain_diary_entries: Är Blogbäiträg a Blogkommentaren, wann et der gëtt,
+          gi bäibehalen, awer net ugewisen.
         retain_notes: Är Kaartennotizen an Notizkommentarer, wann et der ginn, ginn
           bäibehalen awer onsiichtbar gemaach.
         retain_changeset_discussions: Är Ännerungssazdiskussiounen, wann et der ginn,
@@ -575,84 +575,98 @@ lb:
       no nearby users: Et gi keng aner Benotzer déi hiren Standort an der Géigend
         hunn.
       followed_changesets: Ännerungssätz
-      followed_diaries: Blog-Anträg
+      followed_diaries: Blogbäiträg
       nearby_changesets: Ännerungssätz vu Benotzer an der Noperschaft
-      nearby_diaries: Blogge vun Benotzer an der Ëmgéigend
+      nearby_diaries: Blogbäiträg vu Benotzer aus der Ëmgéigend
   diary_entries:
     new:
-      title: Neie Blogantrag
+      title: Neie Blogbäitrag
     form:
       location: Plaz
       use_map_link: Kaart benotzen
     index:
-      title: Blogge vun de Benotzer
-      title_nearby: Blogge vu Benotzer an dénger Noperschaft
+      title: Benotzer-Bloggen
+      title_nearby: Blogge vu Benotzer an der Ëmgéigend
       user_title: Blog vum %{user}
-      in_language_title: Blog-Anträg op %{language}
-      no_entries: Keng Bloganträg
+      in_language_title: Blogbäiträg op %{language}
+      no_entries: Keng Blogbäiträg
     page:
-      recent_entries: Neiest Anträg
+      recent_entries: Neist Blogbäiträg
     edit:
-      title: Blogantrag beaarbechten
-      marker_text: Plaz vum Blogantrag
+      title: Blogbäitrag änneren
+      marker_text: Plaz vum Blogbäitrag
     show:
-      title: Blog vun %{user} | %{title}
-      user_title: Blog vun %{user}
+      title: Blog vum %{user} | %{title}
+      user_title: Blog vum %{user}
       discussion: Diskussioun
       subscribe: Abonéieren
       unsubscribe: Ofbestellen
-      leave_a_comment: Eng Bemierkung maachen
-      login_to_leave_a_comment_html: '%{login_link} fir eng Bemierkung ze schreiwen'
+      leave_a_comment: E Kommentar schreiwen
+      login_to_leave_a_comment_html: '%{login_link} fir e Kommentar ze schreiwen'
       login: Aloggen
     no_such_entry:
-      title: Blogantrag net fonnt
-      heading: Kee Blogantrag mat der Nummer %{id}
-      body: Leider gëtt et kee Blogantrag oder Commentaire mat der ID %{id}. Dir hutt
+      title: Blogbäitrag net fonnt
+      heading: 'Kee Bäitrag mat der ID: %{id}'
+      body: Leider gëtt et kee Blogbäitrag oder -kommentar mat der ID %{id}. Dir hutt
         Iech méiglecherweis vertippt oder op en ongültege Link geklickt.
     diary_entry:
-      posted_by_html: Vum %{link_user} matgedeelt de(n) %{created} op %{language_link}.
-      updated_at_html: Lescht Aktualiséierung de(n) %{updated}
-      comment_link: Commentaire zu dësem Antrag
+      posted_by_html: Verëffentlech vum %{link_user}, de(n) %{created} op %{language_link}.
+      updated_at_html: Fir d'lescht aktualiséiert de(n) %{updated}.
+      full_entry: Vollstännege Bäitrag weisen
+      comment_link: Kommentar fir dëse Bäitrag
       reply_link: Dem Auteur e Message schécken
       comment_count:
-        one: '%{count} Bemierkung'
-        other: '%{count} Bemierkungen'
+        one: '%{count} Kommentar'
+        other: '%{count} Kommentaren'
       no_comments: Keng Kommentaren
-      edit_link: Dësen Antrag beaarbechten
-      hide_link: Dësen Antrag verstoppen
-      unhide_link: Dësen Antrag net méi verstoppen
+      edit_link: Dëse Bäitrag änneren
+      hide_link: Dëse Bäitrag verstoppen
+      unhide_link: Dëse Bäitrag net méi verstoppen
       confirm: Confirméieren
-      report: Dësen Antrag mellen
+      report: Dëse Bäitrag mellen
     diary_comment:
-      comment_from_html: Bemierkung vum %{link_user} de(n) %{comment_created_at}
-      hide_link: Dës Bemierkung verstoppen
-      unhide_link: Dëse Commentaire net méi verstoppen
+      comment_from_html: Kommentar vum %{link_user} vum %{comment_created_at}
+      hide_link: Dëse Kommentar verstoppen
+      unhide_link: Dëse Kommentar net méi verstoppen
       confirm: Confirméieren
-      report: Dëse Commentaire mellen
+      report: Dëse Kommentar mellen
     location:
       location: 'Plaz:'
     feed:
       user:
-        title: OpenHistoricalMap-Bloganträg vum %{user}
-        description: Lescht OpenHistoricalMap-Bloganträg vum %{user}
+        title: OpenHistoricalMap-Blogbäiträg vum %{user}
+        description: Neist OpenHistoricalMap-Blogbäiträg vum %{user}
       language:
-        title: OpenHistoricalMap-Bloganträg op %{language_name}
-        description: Lescht Bloganträg vu Benotzer op OpenHistoricalMap op %{language_name}
+        title: OpenHistoricalMap-Blogbäiträg op %{language_name}
+        description: Rezent Blogbäiträg op %{language_name} vun OpenHistoricalMap-Benotzer
       all:
         title: OpenHistoricalMap-Blogbäiträg
-        description: Neist Bloganträg vun OpenHistoricalMap-Benotzer
+        description: Rezent Blogbäiträg vun OpenHistoricalMap-Benotzer
+    comments:
+      title: OpenHistoricalMap-Blogbäiträg
+      description: Rezent Blogbäiträg vun OpenHistoricalMap-Benotzer
     subscribe:
+      heading: Déi follgend Blogbäitragsdiskussioun abonéieren?
       button: Diskussioun abonéieren
     unsubscribe:
+      heading: Déi follgend Blogbäitragsdiskussioun ofbestellen?
       button: Diskussioun ofbestellen
     navigation:
-      in_language: Blog-Anträg op %{language}
+      in_language: Blogbäiträg op %{language}
       my_diary: Mäi Blog
-      new: Neie Blogantrag
-      new_title: Blogantrag erstellen
+      new: Neie Blogbäitrag
+      new_title: En neie Bäitrag a mengem Benotzer-Blog schreiwen
     profile_diaries:
-      title_label: Blog-Antrag
+      latest_diaries: Neist Bloggen
+      comments:
+        one: '%{count} Kommentar'
+        other: '%{count} Kommentaren'
+      title_label: Blogbäiträg
+      comments_label: Kommentaren
       date_label: Datum
+  diary_comments:
+    new:
+      heading: E Kommentar bei déi follgend Blogbäitragsdiskussioun derbäischreiwen?
   doorkeeper:
     flash:
       applications:
@@ -1548,8 +1562,13 @@ lb:
       reported_by_html: Gemellt als %{category} vun %{user} den %{updated_at}
     helper:
       reportable_title:
-        diary_comment: '%{entry_title}, Commentaire #%{comment_id}'
+        diary_comment: '%{entry_title}, Kommentar #%{comment_id}'
         note: 'Hiweis #%{note_id}'
+      reportable_heading:
+        diary_comment_html: Blogkommentar %{title}, ugeluecht de(n) %{datetime_created},
+          aktualiséiert de(n) %{datetime_updated}
+        diary_entry_html: Blogbäitrag %{title}, ugeluecht de(n) %{datetime_created},
+          aktualiséiert de(n) %{datetime_updated}
   issue_comments:
     create:
       comment_created: Däi Commentaire gouf erfollegräich erstallt
@@ -1568,14 +1587,14 @@ lb:
           ze léisen
       categories:
         diary_entry:
-          spam_label: Dëse Blogantrag ass/enthält Spam
-          offensive_label: Dëse Blogcommentaire ass obszön/ustéisseg
-          threat_label: Dëse Blogantrag enthält eng Menace
+          spam_label: Dëse Blogbäitrag ass/enthält Spam
+          offensive_label: Dëse Blogbäitrag ass obszön/ustéisseg
+          threat_label: Dëse Blogbäitrag enthält eng Menace
           other_label: Anerer
         diary_comment:
-          spam_label: Dëse Blogantrag ass/enthält Spam
-          offensive_label: Dëse Blogcommentaire ass obszön/ustéisseg
-          threat_label: Dëse Blogantrag enthält eng Menace
+          spam_label: Dëse Blogkommentar ass/enthält Spam
+          offensive_label: Dëse Blogkommentar ass obszön/ustéisseg
+          threat_label: Dëse Blogkommentar enthält eng Menace
           other_label: Anerer
         user:
           spam_label: Dëse Benotzerkont ass/enthält Spam
@@ -1628,17 +1647,20 @@ lb:
       title: Sprooch eraussichen
   user_mailer:
     diary_comment_notification:
-      subject: '[OpenHistoricalMap] %{user} huet e Blogantrag kommentéiert'
+      description: 'OpenHistoricalMap-Blogbäitrag #%{id}'
+      subject: '[OpenHistoricalMap] De %{user} huet e Blogbäitrag kommentéiert'
       hi: Salut %{to_user},
-      header: '%{from_user} huet den OpenHistoricalMap-Blogantrag mam Theema %{subject}
-        kommentéiert:'
-      header_html: '%{from_user} huet den OpenHistoricalMap-Blogantrag mam Theema
-        %{subject} kommentéiert:'
-      footer: Dir kënnt de Commentaire och ënner %{readurl} liesen an Dir kënnt ënner
+      header: 'De Benoetzer %{from_user} huet den OpenHistoricalMap-Blogbäitrag mam
+        Theema %{subject} kommentéiert:'
+      header_html: 'De Benotzer %{from_user} huet den OpenHistoricalMap-Blogbäitrag
+        mam Theema %{subject} kommentéiert:'
+      footer: Dir kënnt de Kommentar och ënner %{readurl} liesen an Dir kënnt ënner
         %{commenturl} kommentéieren oder dem Auteur ënner %{replyurl} e Message schécken
-      footer_html: Dir kënnt de Commentaire och ënner %{readurl} liesen an Dir kënnt
+      footer_html: Dir kënnt de Kommentar och ënner %{readurl} liesen an Dir kënnt
         ënner %{commenturl} kommentéieren oder dem Auteur ënner %{replyurl} e Message
         schécken
+      footer_unsubscribe: Dir kënnt d'Diskussioun ënner %{unsubscribeurl} ofbestellen
+      footer_unsubscribe_html: Dir kënnt d'Diskussioun ënner %{unsubscribeurl} ofbestellen
     message_notification:
       subject: '[OpenHistoricalMap] %{message_title}'
       hi: Salut %{to_user},
@@ -2023,15 +2045,15 @@ lb:
         oldest: Eelst Kommentaren
         newest: Neist Kommentaren
       diary_comments:
-        older: Méi al Bemierkungen
-        newer: Méi nei Bemierkungen
+        older: Méi al Kommentaren
+        newer: Méi nei Kommentaren
         oldest: Eelst Kommentaren
         newest: Neist Kommentaren
       diary_entries:
-        older: Eeler Anträg
-        newer: Méi nei Anträg
-        oldest: Eelst Anträg
-        newest: Neist Anträg
+        older: Méi al Bäiträg
+        newer: Méi nei Bäiträg
+        oldest: Eelst Bäiträg
+        newest: Neist Bäiträg
       issues:
         older: Méi al Problemer
         newer: Méi nei Problemer
@@ -2386,7 +2408,7 @@ lb:
     scopes:
       read_prefs: Benotzerastellunge liesen
       write_prefs: Benotzerastellungen änneren
-      write_diary: Bloganträg a Commentairë schreiwen a Frënn fannen
+      write_diary: Blogbäiträg a -kommentare schreiwen
       write_api: D'Kaart änneren
       write_changeset_comments: Ännerungssätz kommentéieren
       read_gpx: Privat GPS-Spuere liesen
@@ -2529,16 +2551,19 @@ lb:
     comments:
       index:
         changesets: Ännerungssätz
-        diary_entries: Blog-Anträg
+        diary_entries: Blogbäiträg
     changeset_comments:
       page:
         changeset: Set vun Ännerungen
         when: Wéini
         comment: Bemierkung
     diary_comments:
+      index:
+        title: Blogkommentaren, déi vum %{user} derbäigesat goufen
       page:
-        post: Blogantrag
+        post: Bäitrag
         when: Wéini
+        comment: Kommentar
     suspended:
       support: Ënnerstëtzung
       automatically_suspended: Äre Kont gouf leider wéinst verdächtegen Aktivitéiten
