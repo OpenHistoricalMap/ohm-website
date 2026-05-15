@@ -121,7 +121,7 @@ gem "logstasher"
 # Used to generate images for traces
 gem "bzip2-ffi"
 gem "ffi-libarchive"
-gem "gd2-ffij", ">= 0.4.0"
+gem "gd2-ffij", :github => "rkoeze/gd2-ffij", :ref => "a203a8d5ef004a4198950e86329228fe3f331d06"
 gem "marcel"
 
 # Used for S3 object storage
