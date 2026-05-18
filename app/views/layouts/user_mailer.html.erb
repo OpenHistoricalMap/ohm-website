@@ -1,6 +1,6 @@
 <html lang="<%= I18n.locale %>" dir="<%= I18n.t("html.dir") %>">
   <head>
-    <meta charset="UTF-8"></meta>
+    <meta charset="UTF-8">
   </head>
   <body style="direction: <%= I18n.t("html.dir") %>; padding: 0; margin: 0; font-size: 14px; font-family: 'Helvetica Neue', Arial, sans-serif; color: #222">
     <table style="background-color: #eee; width: 100%">
@@ -19,7 +19,7 @@
               <td style="width: 100%; padding: 0px; text-align: <%= style_left %>">
                 <%# NB we need "text-decoration: none" twice: GMail only honours it on the <a> but Outlook only on the <strong> %>
                 <a href="<%= @root_url %>" target="_blank" style="text-decoration: none; color: #000">
-                  <strong style="text-decoration: none; font-size: 18px; font-weight: 600; margin: 0; text-align: <%= style_left %>; font-family: 'Helvetica Neue', Arial, sans-serif">OpenHistoricalMap</strong>
+                  <strong style="text-decoration: none; font-size: 18px; font-weight: 600; margin: 0; text-align: <%= style_left %>; font-family: 'Helvetica Neue', Arial, sans-serif"><%= t "layouts.project_name.title" %></strong>
                 </a>
               </td>
             </tr>
@@ -42,7 +42,7 @@
         <td style="text-align: center; font-size: 11px; font-family: 'Helvetica Neue', Arial, sans-serif">
           <%= yield :footer %>
           <p style="margin-bottom: 10px">
-            <a href="<%= @root_url %>" target="_blank" style="color: #222">OpenHistoricalMap</a>
+            <a href="<%= @root_url %>" target="_blank" style="color: #222"><%= t "layouts.project_name.title" %></a>
           </p>
         </td>
       </tr>

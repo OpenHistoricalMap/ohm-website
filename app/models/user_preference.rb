@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: user_preferences
@@ -15,5 +17,7 @@ class UserPreference < ApplicationRecord
   belongs_to :user
 
   validates :user, :associated => true
-  validates :k, :v, :length => 1..255, :characters => true
+  validates :k, :v, :length => 1..255, :characters => true, :presence => true
+
+  scope :color_schemes, -> { where("k LIKE '%.color_scheme'") }
 end

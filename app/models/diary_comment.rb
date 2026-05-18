@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: diary_comments
@@ -44,6 +46,10 @@ class DiaryComment < ApplicationRecord
     sha256 << id.to_s
     sha256 << subscriber.to_s
     Base64.urlsafe_encode64(sha256.digest)[0, 8]
+  end
+
+  def notifiable_subscribers
+    diary_entry.visible_subscribers.where.not(:id => user_id)
   end
 
   private

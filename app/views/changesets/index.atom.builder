@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 atom_feed(:language => I18n.locale, :schema_date => 2009,
           :id => url_for(@params.merge(:only_path => false)),
           :root_url => url_for(@params.merge(:action => :index, :format => nil, :only_path => false)),
@@ -5,15 +7,15 @@ atom_feed(:language => I18n.locale, :schema_date => 2009,
           "xmlns:georss" => "http://www.georss.org/georss") do |feed|
   feed.title changeset_index_title(params, current_user)
 
-  feed.updated @changesets.map { |e| [e.created_at, e.closed_at].max }.max
+  feed.updated @changesets.items.map { |e| [e.created_at, e.closed_at].max }.max
   feed.icon image_url("favicon.ico")
-  feed.logo image_url("mag_map-rss2.0.png")
+  feed.logo image_url("osm_logo_100.png")
 
   feed.rights :type => "xhtml" do |xhtml|
     xhtml.a t(".feed.cc0"), :href => t(".feed.cc0_url")
   end
 
-  @changesets.each do |changeset|
+  @changesets.items.each do |changeset|
     feed.entry(changeset, :updated => changeset.closed_at, :id => changeset_url(changeset.id, :only_path => false)) do |entry|
       entry.link :rel => "alternate",
                  :href => api_changeset_url(changeset, :only_path => false),
@@ -22,8 +24,8 @@ atom_feed(:language => I18n.locale, :schema_date => 2009,
                  :href => api_changeset_download_url(changeset, :only_path => false),
                  :type => "application/osmChange+xml"
 
-      if !changeset.tags.empty? && changeset.tags.key?("comment")
-        entry.title t(".feed.title_comment", :id => changeset.id, :comment => changeset.tags["comment"])
+      if changeset.comment.present?
+        entry.title t(".feed.title_comment", :id => changeset.id, :comment => changeset.comment)
       else
         entry.title t(".feed.title", :id => changeset.id)
       end

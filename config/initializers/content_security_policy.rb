@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Be sure to restart your server when you modify this file.
 
 # Define an application-wide content security policy.
@@ -6,11 +8,10 @@
 
 Rails.application.configure do
   connect_src = [:self, "*.openhistoricalmap.org", "openhistoricalmap.github.io", "*.amazonaws.com"]
-  img_src = [:self, :data, "www.gravatar.com", "*.wp.com", "tile.openstreetmap.org", "gps.tile.openstreetmap.org", "*.tile.thunderforest.com", "tile.tracestrack.com", "*.openstreetmap.fr"]
+  img_src = [:self, :data, "www.gravatar.com", "*.wp.com", "tile.openstreetmap.org", "gps.tile.openstreetmap.org", "api.thunderforest.com", "tile.tracestrack.com", "*.openstreetmap.fr"]
   script_src = [:self, "openhistoricalmap.github.io"]
   style_src = [:self, "openhistoricalmap.github.io"]
   worker_src = [:self, :blob, "0.0.0.0:3000"]
-
   connect_src << Settings.matomo["location"] if defined?(Settings.matomo)
   img_src << Settings.matomo["location"] if defined?(Settings.matomo)
   script_src << Settings.matomo["location"] if defined?(Settings.matomo)
@@ -22,18 +23,18 @@ Rails.application.configure do
     policy.default_src :self
     policy.child_src(:self)
     policy.connect_src(*connect_src)
-    policy.font_src(:none)
+    policy.font_src(:self)
     policy.form_action(:self)
     policy.frame_ancestors(:self)
     policy.frame_src(:self)
     policy.img_src(*img_src)
     policy.manifest_src(:self)
     policy.media_src(:none)
-    policy.object_src(:self)
+    policy.object_src(:none)
     policy.plugin_types
     policy.script_src(*script_src)
-    policy.style_src(*style_src)
-    policy.worker_src(*worker_src)
+    policy.style_src(:self)
+    policy.worker_src(:blob)
     policy.manifest_src(:self)
     policy.report_uri(Settings.csp_report_url) if Settings.key?(:csp_report_url)
   end

@@ -15,7 +15,8 @@ L.OSM.TileLayer = L.TileLayer.extend({
 L.OSM.Mapnik = L.OSM.TileLayer.extend({
   options: {
     url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-    maxZoom: 19
+    maxZoom: 19,
+    referrerPolicy: 'strict-origin-when-cross-origin'
   }
 });
 
@@ -37,7 +38,7 @@ L.OSM.Historical = L.OSM.TileLayer.extend({
 
 L.OSM.CycleMap = L.OSM.TileLayer.extend({
   options: {
-    url: 'https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}{r}.png?apikey={apikey}',
+    url: 'https://api.thunderforest.com/cycle/{z}/{x}/{y}{r}.png?apikey={apikey}',
     maxZoom: 21,
     attribution: '© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors. Tiles courtesy of <a href="http://www.thunderforest.com/" target="_blank">Andy Allan</a>'
   }
@@ -45,7 +46,7 @@ L.OSM.CycleMap = L.OSM.TileLayer.extend({
 
 L.OSM.TransportMap = L.OSM.TileLayer.extend({
   options: {
-    url: 'https://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}{r}.png?apikey={apikey}',
+    url: 'https://api.thunderforest.com/transport/{z}/{x}/{y}{r}.png?apikey={apikey}',
     maxZoom: 21,
     attribution: '© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors. Tiles courtesy of <a href="http://www.thunderforest.com/" target="_blank">Andy Allan</a>'
   }
@@ -53,7 +54,7 @@ L.OSM.TransportMap = L.OSM.TileLayer.extend({
 
 L.OSM.TransportDarkMap = L.OSM.TileLayer.extend({
   options: {
-    url: 'https://{s}.tile.thunderforest.com/transport-dark/{z}/{x}/{y}{r}.png?apikey={apikey}',
+    url: 'https://api.thunderforest.com/transport-dark/{z}/{x}/{y}{r}.png?apikey={apikey}',
     maxZoom: 21,
     attribution: '© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors. Tiles courtesy of <a href="http://www.thunderforest.com/" target="_blank">Andy Allan</a>'
   }

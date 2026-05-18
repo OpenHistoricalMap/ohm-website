@@ -1,8 +1,10 @@
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<%# locals: (title:, opengraph_properties:) %>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <%#= favicon_link_tag "ohm_logo.ico" %>
 <% [57, 60, 72, 76, 114, 120, 144, 152, 180].each do |size| -%>
-  <%= favicon_link_tag "apple-touch-icon-#{size}x#{size}.png", :rel => "apple-touch-icon", :sizes => "#{size}x#{size}", :type => "image/png" %>
+<%= favicon_link_tag "apple-touch-icon-#{size}x#{size}.png", :rel => "apple-touch-icon", :sizes => "#{size}x#{size}", :type => "image/png" %>
 <% end -%>
 <%= favicon_link_tag "favicon-32x32.png", :rel => "icon", :sizes => "32x32", :type => "image/png" %>
 <%= favicon_link_tag "favicon-194x194.png", :rel => "icon", :sizes => "194x194", :type => "image/png" %>
@@ -20,11 +22,11 @@
 <%= turbo_refresh_scroll_tag :preserve %>
 <%= canonical_tag %>
 <% if Settings.key?(:publisher_url) -%>
-  <%= tag.link :rel => "publisher", :href => Settings.publisher_url %>
+<%= tag.link :rel => "publisher", :href => Settings.publisher_url %>
 <% end -%>
-<%= tag.link :rel => "search", :type => "application/opensearchdescription+xml", :title => "OpenHistoricalMap Search", :href => asset_path("osm.xml") %>
-<%= tag.meta :name => "description", :content => "OpenHistoricalMap is the free wiki world map." %>
-<%= opengraph_tags(@title, @opengraph_properties || {}) %>
+<%= tag.link :rel => "search", :type => "application/opensearchdescription+xml", :title => t(".openstreetmap_search"), :href => asset_path("osm.xml") %>
+<%= tag.meta :name => "description", :content => t("layouts.intro_text") %>
+<%= opengraph_tags(title, opengraph_properties || {}) %>
 <% if flash[:matomo_goal] -%>
-  <%= tag.meta :name => "matomo-goal", :content => flash[:matomo_goal] %>
+<%= tag.meta :name => "matomo-goal", :content => flash[:matomo_goal] %>
 <% end -%>

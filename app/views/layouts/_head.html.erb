@@ -1,5 +1,7 @@
+<%# locals: (title:, opengraph_properties:) %>
+
 <%= tag.head :data => application_data do %>
-  <%= render :partial => "layouts/meta" %>
+  <%= render "layouts/meta", :title => title, :opengraph_properties => opengraph_properties %>
   <%= javascript_include_tag "turbo", :type => "module" %>
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag "i18n/#{I18n.locale}" %>
@@ -7,19 +9,18 @@
   <script type="text/javascript" src="https://openhistoricalmap.github.io/ohm-inspector/api/api.js"></script>
   <link rel="stylesheet" type="text/css" href="https://openhistoricalmap.github.io/ohm-inspector/api/api.css" />
 
-  <% if preferred_color_scheme(:site) == "auto" %>
-    <%= stylesheet_link_tag "screen-auto-#{dir}", :media => "screen" %>
-  <% else %>
+<% if current_user&.preferred_color_scheme(:site) %>
     <%= stylesheet_link_tag "screen-manual-#{dir}", :media => "screen" %>
+  <% else %>
+    <%= stylesheet_link_tag "screen-auto-#{dir}", :media => "screen" %>
   <% end %>
   <%= stylesheet_link_tag "print-#{dir}", :media => "print" %>
-  <%= stylesheet_link_tag "maplibre-gl-all", :media => "screen, print" %>
   <%= stylesheet_link_tag "leaflet-all", :media => "screen, print" %>
   <%= stylesheet_link_tag "leaflet-ohm-timeslider", :media => "screen, print" %>
-  <%= render :partial => "layouts/meta" %>
+  <%= stylesheet_link_tag "maplibre-gl-all", :media => "screen, print" %>
   <%= yield :head %>
   <%= yield :auto_discovery_link_tag %>
   <%= csrf_meta_tag %>
   <%= csp_meta_tag %>
-  <title><%= "#{@title} | " if @title %><%= t "layouts.project_name.title" %></title>
+  <title><%= "#{title} | " if title %><%= t "layouts.project_name.title" %></title>
 <% end %>

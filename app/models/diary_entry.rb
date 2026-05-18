@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: diary_entries
@@ -51,6 +53,10 @@ class DiaryEntry < ApplicationRecord
 
   def body
     @body ||= RichText.new(self[:body_format], self[:body])
+  end
+
+  def visible_subscribers
+    subscribers.visible
   end
 
   private

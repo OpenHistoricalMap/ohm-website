@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 OpenStreetMap::Application.routes.draw do
   use_doorkeeper :scope => "oauth2" do
     controllers :authorizations => "oauth2_authorizations",
@@ -205,9 +207,11 @@ OpenStreetMap::Application.routes.draw do
   post "/login" => "sessions#create"
   match "/logout" => "sessions#destroy", :via => [:get, :post]
   get "/offline" => "site#offline"
+  resource :languages_pane, :path => "/panes/languages", :only => :show
   resource :layers_pane, :path => "/panes/layers", :only => :show
   resource :legend_pane, :path => "/panes/legend", :only => :show
   resource :share_pane, :path => "/panes/share", :only => :show
+  resource :webgl_error_pane, :path => "/panes/webgl_error", :only => :show
   get "/id" => "site#id"
   resource :feature_query, :path => "query", :only => :show
   post "/user/:display_name/confirm/resend" => "confirmations#confirm_resend", :as => :user_confirm_resend
@@ -327,6 +331,7 @@ OpenStreetMap::Application.routes.draw do
   namespace :profile, :module => :profiles do
     resource :description, :only => [:show, :update]
     resource :links, :only => [:show, :update]
+    resource :heatmap, :only => [:show, :update]
     resource :image, :only => [:show, :update]
     resource :company, :only => [:show, :update]
     resource :location, :only => [:show, :update]
@@ -336,6 +341,7 @@ OpenStreetMap::Application.routes.draw do
 
   scope :preferences, :module => :preferences do
     resource :basic_preferences, :path => "basic", :only => [:show, :update]
+    resource :notification_preferences, :path => "notifications", :only => [:show, :update]
     resource :advanced_preferences, :path => "advanced", :only => [:show, :update]
   end
   get "/preferences", :to => redirect(:path => "/preferences/basic"), :as => nil
@@ -367,8 +373,8 @@ OpenStreetMap::Application.routes.draw do
   resource :directions, :only => :show
 
   # export
-  post "/export/finish" => "export#finish"
-  get "/export/embed" => "export#embed"
+  post "/export/finish" => "export#create"
+  get "/export/embed" => "export#show"
 
   # messages
   resources :messages, :path_names => { :new => "new/:display_name" }, :id => /\d+/, :only => [:new, :create, :show, :destroy] do

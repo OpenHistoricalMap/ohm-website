@@ -1,3 +1,5 @@
+<%# locals: (contact:, type:) %>
+
 <% user_data = {
      :lon => contact.home_lon,
      :lat => contact.home_lat,
@@ -9,7 +11,7 @@
     <%= user_thumbnail contact %>
   </div>
   <div class="col">
-    <p class='text-body-secondary mb-0'>
+    <p class="text-body-secondary mb-0">
       <%= link_to contact.display_name, contact %>
       <% if current_user.home_location? and contact.home_location? %>
         <% distance = current_user.distance(contact) %>
@@ -24,15 +26,15 @@
       <% changeset = contact.changesets.first %>
       <% if changeset %>
         <%= t(".latest_edit_html", :ago => friendly_date_ago(changeset.created_at)) %>
-        <% comment = changeset.tags["comment"].to_s == "" ? t("browse.no_comment") : changeset.tags["comment"] %>
+        <% comment = changeset.comment || t("browse.no_comment") %>
         <q><%= link_to comment, changeset, :title => t(".view_changeset_details") %></q>
       <% else %>
        <%= t ".no_edits" %>
       <% end %>
     </p>
 
-    <nav class='secondary-actions'>
-      <ul class='text-body-secondary'>
+    <nav class="secondary-actions">
+      <ul class="text-body-secondary">
         <li><%= link_to t("users.show.send message"), new_message_path(contact) %></li>
         <li>
           <% if current_user.follows?(contact) %>

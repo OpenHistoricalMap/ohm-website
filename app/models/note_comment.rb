@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: note_comments
@@ -39,5 +41,9 @@ class NoteComment < ApplicationRecord
   # Return the comment text
   def body
     RichText.new("text", self[:body])
+  end
+
+  def notifiable_subscribers
+    note.visible_subscribers.where.not(:id => author_id)
   end
 end

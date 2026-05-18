@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class ChangesetTest < ActiveSupport::TestCase
@@ -408,5 +410,17 @@ class ChangesetTest < ActiveSupport::TestCase
     assert_nothing_raised do
       Changeset.from_xml(xml, :create => true)
     end
+  end
+
+  def test_visible_subscribers
+    commenter1 = create(:user)
+    commenter2 = create(:user, :suspended)
+    commenter3 = create(:user)
+    changeset = create(:changeset)
+    create(:changeset_subscription, :changeset => changeset, :subscriber => commenter1)
+    create(:changeset_subscription, :changeset => changeset, :subscriber => commenter2)
+    create(:changeset_subscription, :changeset => changeset, :subscriber => commenter3)
+
+    assert_equal changeset.visible_subscribers.sort, [commenter1, commenter3].sort
   end
 end

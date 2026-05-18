@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: oauth_applications
@@ -25,6 +27,8 @@
 #
 class Oauth2Application < Doorkeeper::Application
   belongs_to :owner, :polymorphic => true
+
+  validates :redirect_uri, :presence => true
 
   validate :allowed_scopes
 

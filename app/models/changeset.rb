@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: changesets
@@ -36,8 +38,6 @@
 #
 
 class Changeset < ApplicationRecord
-  require "xml/libxml"
-
   belongs_to :user, :counter_cache => true
 
   has_many :changeset_tags
@@ -129,6 +129,10 @@ class Changeset < ApplicationRecord
     cs
   end
 
+  def visible_subscribers
+    subscribers.visible
+  end
+
   ##
   # returns the bounding box of the changeset. it is possible that some
   # or all of the values will be nil, indicating that they are undefined.
@@ -199,6 +203,9 @@ class Changeset < ApplicationRecord
       end
     end
   end
+
+  def comment = tags["comment"].presence
+  def comment_html = comment ? RichText.new("text", comment).to_html : nil
 
   ##
   # set the auto-close time to be one hour in the future unless

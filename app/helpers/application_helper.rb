@@ -1,6 +1,6 @@
-module ApplicationHelper
-  require "rexml/document"
+# frozen_string_literal: true
 
+module ApplicationHelper
   def linkify(text)
     link_attr = 'rel="nofollow" dir="auto"'
     if text.html_safe?
@@ -11,11 +11,7 @@ module ApplicationHelper
   end
 
   def rss_link_to(args = {})
-    link_to image_tag("RSS.png", :size => "16x16", :class => "align-text-bottom"), args
-  end
-
-  def atom_link_to(args = {})
-    link_to image_tag("RSS.png", :size => "16x16", :class => "align-text-bottom"), args
+    link_to tag.i(:class => "bi bi-rss-fill fs-6", :aria => { :hidden => "true" }), args
   end
 
   def dir
@@ -43,8 +39,27 @@ module ApplicationHelper
     end
   end
 
-  def header_nav_link_class(path)
-    ["nav-link", current_page?(path) ? "active text-secondary-emphasis" : "text-secondary"]
+  def secondary_nav_items
+    items = [
+      [history_path, t("layouts.header.history"), { :class => ["geolink"] }],
+      [export_path, t("layouts.header.export"), { :class => ["geolink"] }],
+      [traces_path, t("layouts.header.gps_traces")],
+      [diary_entries_path, t("layouts.header.user_diaries")],
+      [communities_path, t("layouts.header.communities")],
+      [copyright_path, t("layouts.header.copyright")],
+      [help_path, t("layouts.header.help")],
+      [Settings.donation_url, t("layouts.header.donate"), { :target => :new }],
+      [about_path, t("layouts.header.about")]
+    ]
+
+    if Settings.status != "database_offline" && can?(:index, Issue)
+      items.prepend([
+                      issues_path(:status => "open"),
+                      safe_join([t("layouts.header.issues"), open_issues_count], " ")
+                    ])
+    end
+
+    items
   end
 
   def application_data
@@ -70,7 +85,7 @@ module ApplicationHelper
   # This allows us to render html into a flash message in a safe manner.
   def render_flash(flash)
     if flash.is_a?(Hash)
-      render flash.with_indifferent_access
+      render flash.deep_symbolize_keys
     else
       flash
     end

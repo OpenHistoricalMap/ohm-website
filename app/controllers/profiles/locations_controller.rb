@@ -1,5 +1,11 @@
+# frozen_string_literal: true
+
 module Profiles
   class LocationsController < ProfileSectionsController
+    before_action :update_totp, :only => [:show]
+
+    def show; end
+
     private
 
     def update_profile

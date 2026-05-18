@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module UserMailerHelper
   def fp(text)
     format_paragraph(text, 72, 0)
@@ -18,10 +20,10 @@ module UserMailerHelper
     )
   end
 
-  def message_body(&)
+  def message_body(locals = {}, &)
     render(
       :partial => "message_body",
-      :locals => { :body => capture(&) }
+      :locals => locals.merge(:body => capture(&))
     )
   end
 

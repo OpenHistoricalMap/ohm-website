@@ -1,33 +1,53 @@
-//= require leaflet.locate
+//= require maplibre/map
 
 $(function () {
-  const defaultHomeZoom = 12;
   let map;
 
   if ($("#map").length) {
-    map = L.map("map", {
-      attributionControl: false,
-      zoomControl: false
-    }).addLayer(new L.OSM.Mapnik());
+    map = new OSM.MapLibre.SecondaryMap();
 
-    const position = $("html").attr("dir") === "rtl" ? "topleft" : "topright";
+    const position = $("html").attr("dir") === "rtl" ? "top-left" : "top-right";
+    const navigationControl = new OSM.MapLibre.NavigationControl();
+    const geolocateControl = new OSM.MapLibre.GeolocateControl();
+    map.addControl(new OSM.MapLibre.CombinedControlGroup([navigationControl, geolocateControl]), position);
 
-    L.OSM.zoom({ position }).addTo(map);
+    const markerObjects = $("[data-user]")
+      .filter(function () {
+        const { lat, lon } = $(this).data("user");
+        return lat && lon;
+      })
+      .map(function () {
+        const { lat, lon, color, description } = $(this).data("user");
 
-    L.OSM.locate({ position }).addTo(map);
+        const marker = new OSM.MapLibre.Marker({ color })
+          .setLngLat([lon, lat])
+          .setPopup(new OSM.MapLibre.Popup().setHTML(description));
 
-    if (OSM.home) {
-      map.setView([OSM.home.lat, OSM.home.lon], defaultHomeZoom);
-    } else {
-      map.setView([0, 0], 0);
+        return { marker, lat, lon };
+      })
+      .get();
+
+    for (const item of markerObjects) {
+      item.marker.addTo(map);
     }
 
-    $("[data-user]").each(function () {
-      const user = $(this).data("user");
-      if (user.lon && user.lat) {
-        L.marker([user.lat, user.lon], { icon: OSM.getMarker({ color: user.color }) }).addTo(map)
-          .bindPopup(user.description, { minWidth: 200 });
+    const updateZIndex = () => {
+      for (const item of markerObjects) {
+        item.currentY = map.project([item.lon, item.lat]).y;
       }
-    });
+
+      markerObjects.sort((a, b) => a.currentY - b.currentY);
+
+      for (const [index, item] of markerObjects.entries()) {
+        item.marker.getElement().style.zIndex = index;
+      }
+    };
+
+    if (markerObjects.length > 0) {
+      map.on("move", updateZIndex);
+      map.on("rotate", updateZIndex);
+      map.on("pitch", updateZIndex);
+      updateZIndex();
+    }
   }
 });

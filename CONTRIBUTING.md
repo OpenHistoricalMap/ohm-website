@@ -7,9 +7,10 @@ This guide covers our development workflow, coding standards, and how to get you
 1. [Getting Started](#getting-started)
 2. [How to Contribute](#how-to-contribute)
 3. [Code Quality Guidelines](#code-quality-guidelines)
-4. [Submitting Changes](#submitting-changes)
-5. [Localization (i18n)](#localization-i18n)
-6. [Copyright Attribution](#copyright-attribution)
+4. [AI Assisted Contributions](#ai-assisted-contributions)
+5. [Submitting Changes](#submitting-changes)
+6. [Localization (i18n)](#localization-i18n)
+7. [Copyright Attribution](#copyright-attribution)
 
 ## Getting Started
 
@@ -18,24 +19,76 @@ This guide covers our development workflow, coding standards, and how to get you
 * https://www.ruby-lang.org/ - The homepage of Ruby which has more links and some great tutorials.
 * https://rubyonrails.org/ - The homepage of Rails, also has links and tutorials.
 
-### Finding Issues to Work On
+### Finding Opportunities to Contribute
 
 > [!NOTE]
 > We don't assign issues to individual contributors. You are welcome to work on any issue, and there's no need to ask first.
+> For more details see [our FAQ](FAQ.md)
 
-For more details see [our FAQ](FAQ.md)
+We welcome the community to contribute to this repository in any form:
+
+- **Documentation:** are the docs clear? Are they correct? Did you come across
+  any issues when trying to follow them? Could something be explained more
+  clearly?
+- **Bug reporting:** something is broken on the website? Something doesn't work
+  as expected? Create an issue and give as much detail as possible, so that
+  others can understand the context, the conditions in which it happens,
+  and your use case. Or comment on an existing report if one already exists.
+- **Bug triage:** we receive many issue reports. Can you take one and reproduce
+  it? Can you add more detail that could help others fix the issue more
+  easily? Or perhaps you think it's not really an issue and should be left
+  as is? Come to the issue tracker and let us know your thoughts.
+- **Feature discussion:** is there a use case that is not covered? Is there
+  something that you wish that the website did, or did differently? Create
+  an issue to discuss it, or comment on an existing issue if it's already
+  being discussed. Try to express your use case in a way that helps understand
+  your needs well, and frames them in the context of the wider community.
+- **Code reviews:** at any given point, there will be pending PRs, waiting for
+  reviews. Can you take on one, understand what it's trying to do, and
+  provide actionable feedback? Is the code clear, maintainable, and readable?
+  Would you do something differently? Are useful, clear tests provided?
+- **Code:** take an existing issue and try to fix it, or try to implement
+  an idea.
+- And probably other ideas not captured here.
+
+Bear in mind that OSM attracts very diverse contributors with very different
+needs. Others may have needs different from yours, and reaching a consensus
+is sometimes difficult.
+
+If you want to code a feature to this repository, we recommend that you ask
+for feedback early and often. Create an issue to discuss it, or start with a
+["draft" PR](https://github.blog/news-insights/product-news/introducing-draft-pull-requests/)
+that shows your intention clearly and can be used to provide early
+feedback. We are not strict on how you communicate, but it's important that
+you do communicate, early and often, so that you can get feedback quickly.
+This will help you get buy-in from the maintainers, which will translate into
+less waste for everyone and a much easier time getting your code merged.
+
+Bug fixes should be more straighforward than new features, but the same
+guidance applies. If it turns out to be more complex than initially expected,
+stop for a moment and seek feedback, be it in an issue or in a draft PR.
+
+If you are looking for some additional inspiration, you may want to have
+a look at the [Roadmap](https://github.com/openstreetmap/software-roadmap)
+that the OSM Foundation published in 2025. This lists items that OSMF
+would like to focus on, and is not limited to this website. Note that this
+is not a mandatory list of the contributions that will be accepted. You
+can choose to ignore it and provide your own contributions. After all,
+the mission of the OSMF is to support OSM, not to control it.
 
 ## How to Contribute
 
 Here's the typical contribution workflow:
 
 1. **Find an Issue**: Browse our [issues](https://github.com/openstreetmap/openstreetmap-website/issues) or identify a bug/feature you'd like to work on
-2. **Fork & Clone**: Fork the repository and clone it to your local machine
-3. **Set Up**: Follow the [installation guide](INSTALL.md) to set up your development environment
+2. **Fork, Clone & Branch**: Fork the repository, clone it to your local machine, and create a new branch for your work. Avoid working directly on the `master` branch.
+3. **Set Up**: Follow the [installation guide](doc/INSTALL.md) to set up your development environment
 4. **Develop**: Make your changes following our [code quality guidelines](#code-quality-guidelines)
 5. **Test**: Write tests for your changes and ensure all existing tests pass
 6. **Commit**: Write clear commit messages following our [guidelines](#committing)
 7. **Submit a Pull Request**: Create a pull request with a clear description of your changes
+  - In fact, we suggest that you publish a draft PR early in the process, so
+    that maintainers can provide feedback and guidance as soon as possible.
 
 ## Code Quality Guidelines
 
@@ -97,7 +150,7 @@ You can view test coverage statistics by browsing the `coverage` directory.
 The tests are automatically run on Pull Requests and other commits via github actions. The results shown are within the PR display on github.
 
 > [!TIP]
-> **System tests** use Selenium with Firefox for browser automation. On Ubuntu 24.04, if Firefox is installed via snap, you may need to override the Firefox binary path in `config/settings.local.yml`:
+> **System tests** use Selenium with Firefox for browser automation. On Ubuntu 24.04, if Firefox is installed via snap, you may need to override the Firefox binary path in `config/settings/test.local.yml`:
 >
 > ```yaml
 > system_test_firefox_binary: /snap/firefox/current/usr/lib/firefox/firefox
@@ -119,6 +172,15 @@ When contributing, you should:
 
 * Comment your code where necessary - explain the bits which might be difficult to understand what the code does, why it does it and why it should be the way it is.
 * Check existing comments to ensure that they are not misleading.
+
+## AI-Assisted Contributions
+
+If you choose to use AI tools to help create pull requests, you should follow these additional guidelines:
+
+* Make sure that a human has reviewed, tested, and fully understands all the code changes being submitted.
+* If you submit code that you don't understand, then you aren't actually helping anyone. Maintainers already have access to AI tools. If pasting the output into a PR is all that was required, then the maintainers would have done that themselves already.
+* Issues tagged for new contributors are meant as learning opportunities, not as items that need to be addressed with urgency. Using AI for these issues removes the opportunity to learn, both from you and other contributors.
+* If you submit a PR and the maintainers suspect that you haven't reviewed, tested, or understood the code, they may decline your PR without further discussion.
 
 ## Submitting Changes
 
@@ -146,6 +208,8 @@ If you have forked on GitHub then the best way to submit your patches is to push
 
 If your pull request is small, for example one or two commits each containing only a few lines of code, then it is easy for the maintainers to review.
 
+Please ensure your commit history is clean and avoid including "fixup" commits. If you have added a fixup commit (for example to fix a rubocop warning, or because you changed your own new code) please combine the fixup commit into the commit that introduced the problem. `git rebase -i` is very useful for this.
+
 > [!IMPORTANT]
 > If you are creating a larger pull request, then please help the maintainers with making the reviews as straightforward as possible:
 >
@@ -156,7 +220,6 @@ If your pull request is small, for example one or two commits each containing on
 > If you are creating a large pull request then please:
 >
 > * Consider splitting your pull request into multiple PRs. If part of your work can be considered standalone, or is a foundation for the rest of your work, please submit it separately first.
-> * Avoid including "fixup" commits. If you have added a fixup commit (for example to fix a rubocop warning, or because you changed your own new code) please combine the fixup commit into the commit that introduced the problem. `git rebase -i` is very useful for this.
 > * Avoid including "merge" commits. If your PR can no longer be merged cleanly (for example, an unrelated change to Gemfile.lock on master now conflicts with your PR) then please rebase your PR onto the latest master. This allows you to fix the conflicts, while keeping the PR a straightforward list of commits. If there are no conflicts, then there is no need to rebase anything.
 
 ## Localization (i18n)

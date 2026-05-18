@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: gpx_files
@@ -17,7 +19,6 @@
 # Indexes
 #
 #  gpx_files_timestamp_idx            (timestamp)
-#  gpx_files_user_id_idx              (user_id)
 #  gpx_files_visible_visibility_idx   (visible,visibility)
 #  index_gpx_files_on_user_id_and_id  (user_id,id)
 #
@@ -27,8 +28,6 @@
 #
 
 class Trace < ApplicationRecord
-  require "open3"
-
   self.table_name = "gpx_files"
 
   belongs_to :user, :counter_cache => true

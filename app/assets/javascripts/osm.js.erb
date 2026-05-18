@@ -28,11 +28,15 @@ OSM = {
       end.to_json
   %>,
 
+  cookies: Cookies.withAttributes({ path: "/", samesite: "lax", secure: <%= (Settings.server_protocol == "https").to_json %> }),
+
   DEFAULT_LOCALE: <%= I18n.default_locale.to_json %>,
 
   LAYER_DEFINITIONS: <%= MapLayers::full_definitions("config/layers.yml", :legends => "config/legend.yml").to_json %>,
 
   RTL_TEXT_PLUGIN: <%= javascript_path("@mapbox/mapbox-gl-rtl-text/dist/mapbox-gl-rtl-text.js").to_json %>,
+
+  MAKE_PLURAL_CARDINALS: <%= javascript_path("make-plural/cardinals.js").to_json %>,
 
   apiUrl: function (object) {
     const apiType = object.type === "note" ? "notes" : object.type;
@@ -52,8 +56,8 @@ OSM = {
     // any params not in mapParams() will not be set up immediately on page load
     // so keep the three in sync
     const params = new URLSearchParams(search || location.search),
-      geoURI = OSM.parseGeoURI(params.get("geouri")),
-      mapParams = {};
+          geoURI = OSM.parseGeoURI(params.get("geouri")),
+          mapParams = {};
 
     if (params.has("mlon") && params.has("mlat")) {
       mapParams.marker = true;
@@ -75,8 +79,9 @@ OSM = {
       }
     }
 
-    const hash = OSM.parseHash(location.hash);
-    const loc = Cookies.get("_osm_location")?.split("|");
+    const hash = OSM.parseHash();
+
+    const loc = OSM.cookies.get("_osm_location")?.split("|");
 
     function bboxToLatLngBounds({ minlon, minlat, maxlon, maxlat }) {
       return L.latLngBounds([minlat, minlon], [maxlat, maxlon]);
@@ -139,6 +144,7 @@ OSM = {
     if (scale > 0) {
       mapParams.zoom = Math.log(360.0 / (scale * 512.0)) / Math.log(2.0);
     }
+
     return mapParams;
   },
 
@@ -173,11 +179,11 @@ OSM = {
     if (i < 0) return {};
 
     const hashParams = new URLSearchParams(hash.slice(i + 1)),
-      map = (hashParams.get("map") || "").split("/"),
-      zoom = parseInt(map[0], 10),
-      lat = parseFloat(map[1]),
-      lon = parseFloat(map[2]),
-      args = {};
+          map = (hashParams.get("map") || "").split("/"),
+          zoom = parseInt(map[0], 10),
+          lat = parseFloat(map[1]),
+          lon = parseFloat(map[2]),
+          args = {};
 
     if (!isNaN(zoom) && !isNaN(lat) && !isNaN(lon)) {
       args.center = new L.LatLng(lat, lon);
@@ -216,7 +222,8 @@ OSM = {
 
     layers = layers.replace("M", "");
 
-    let hash = "#map=" + [zoom, ...OSM.cropLocation(center, zoom)].join("/");
+    const { lat, lng } = OSM.cropLocation(center, zoom);
+    let hash = `#map=${zoom}/${lat}/${lng}`;
 
     if (layers) {
       hash += "&layers=" + layers;
@@ -242,14 +249,17 @@ OSM = {
 
   cropLocation: function (latLng, zoom) {
     const precision = OSM.zoomPrecision(zoom),
-      wrapped = latLng.wrap();
-    return [wrapped.lat, wrapped.lng].map(c => c.toFixed(precision));
+          wrapped = latLng.wrap();
+    return {
+      lat: wrapped.lat.toFixed(precision),
+      lng: wrapped.lng.toFixed(precision)
+    };
   },
 
   locationCookie: function (map) {
     const zoom = map.getZoom(),
-      center = OSM.cropLocation(map.getCenter(), zoom).reverse();
-    return [...center, zoom, map.getLayersCode()].join("|");
+          { lat, lng } = OSM.cropLocation(map.getCenter(), zoom);
+    return [lng, lat, zoom, map.getLayersCode()].join("|");
   },
 
   showAlert: function (title, message) {
@@ -259,5 +269,7 @@ OSM = {
     modalBody.textContent = message;
     const alertModal = new bootstrap.Modal(document.getElementById("osm_alert_modal"));
     alertModal.show();
-  }
+  },
+
+  MapLibre: {}
 };

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module BrowseHelper
   require "date_range"
 
@@ -69,7 +71,7 @@ module BrowseHelper
 
   def element_strikethrough(object, &)
     if object.redacted? || !object.visible?
-      tag.s(&)
+      tag.del(&)
     else
       yield
     end
@@ -89,7 +91,6 @@ module BrowseHelper
     (locale_keys + %w[name ref addr:housename]).each do |key|
       return tags[key] if tags[key]
     end
-    # TODO: Localize format to country of address
     return "#{tags['addr:housenumber']} #{tags['addr:street']}" if tags["addr:housenumber"] && tags["addr:street"]
 
     nil

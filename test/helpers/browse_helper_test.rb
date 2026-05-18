@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class BrowseHelperTest < ActionView::TestCase
@@ -60,10 +62,10 @@ class BrowseHelperTest < ActionView::TestCase
     assert_equal "test", normal_output
 
     redacted_output = element_strikethrough(node_v1) { "test" }
-    assert_equal "<s>test</s>", redacted_output
+    assert_equal "<del>test</del>", redacted_output
 
     deleted_output = element_strikethrough(create(:node, :deleted)) { "test" }
-    assert_equal "<s>test</s>", deleted_output
+    assert_equal "<del>test</del>", deleted_output
   end
 
   def test_element_icon
@@ -77,31 +79,31 @@ class BrowseHelperTest < ActionView::TestCase
     add_old_tags_selection(node_v1)
 
     icon = element_icon("node", create(:node))
-    icon_dom = Rails::Dom::Testing.html_document_fragment.parse(icon)
+    icon_dom = parse_html(icon)
     assert_dom icon_dom, "img:root", :count => 1 do
       assert_dom "> @title", 0
     end
 
     icon = element_icon("node", create(:node, :deleted))
-    icon_dom = Rails::Dom::Testing.html_document_fragment.parse(icon)
+    icon_dom = parse_html(icon)
     assert_dom icon_dom, "img:root", :count => 1 do
       assert_dom "> @title", 0
     end
 
     icon = element_icon("node", node)
-    icon_dom = Rails::Dom::Testing.html_document_fragment.parse(icon)
+    icon_dom = parse_html(icon)
     assert_dom icon_dom, "img:root", :count => 1 do
       assert_dom "> @title", "building=yes, shop=gift, and tourism=museum"
     end
 
     icon = element_icon("node", node_v2)
-    icon_dom = Rails::Dom::Testing.html_document_fragment.parse(icon)
+    icon_dom = parse_html(icon)
     assert_dom icon_dom, "img:root", :count => 1 do
       assert_dom "> @title", "building=yes, shop=gift, and tourism=museum"
     end
 
     icon = element_icon("node", node_v1)
-    icon_dom = Rails::Dom::Testing.html_document_fragment.parse(icon)
+    icon_dom = parse_html(icon)
     assert_dom icon_dom, "img:root", :count => 1 do
       assert_dom "> @title", 0
     end

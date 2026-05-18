@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 require_relative File.join("..", "config", "environment")
 
@@ -33,6 +34,6 @@ mail = Mail.new($stdin.read
 message = Message.from_mail(mail, from, to)
 message.save!
 
-UserMailer.message_notification(message).deliver if message.notify_recipient?
+DirectMessageNotifier.with(:record => message).deliver_later if message.notify_recipient?
 
 exit 0

@@ -3,9 +3,9 @@
 <%= render "sidebar_header", :title => t(".title", :id => @changeset.id) %>
 
 <div class="mb-3 border-bottom border-secondary-subtle pb-3">
-  <p class="fs-6 overflow-x-auto" dir="auto">
-    <%= linkify(@changeset.tags["comment"].to_s.presence || t("browse.no_comment")) %>
-  </p>
+  <div class="fs-6 overflow-x-auto">
+    <%= @changeset.comment_html || t("browse.no_comment") %>
+  </div>
   <%= tag.p :class => "details", :data => { :changeset => changeset_data(@changeset) } do %>
     <%= changeset_details(@changeset) %>
   <% end %>
@@ -39,7 +39,7 @@
   <% @comments.each do |comment| %>
     <% next unless comment.visible || current_user&.moderator? %>
     <article id="c<%= comment.id %>">
-      <small class='text-body-secondary'>
+      <small class="text-body-secondary">
         <%= comment_by_options = { :time_ago => friendly_date_ago(comment.created_at),
                                    :user => link_to(comment.author.display_name, comment.author) }
             comment.visible ? t(".comment_by_html", **comment_by_options) : t(".hidden_comment_by_html", **comment_by_options) %>
@@ -50,7 +50,7 @@
                          :data => { :method => comment.visible ? "DELETE" : "POST",
                                     :url => api_changeset_comment_visibility_path(comment) } %>
         <% end %>
-        <%= link_to inline_svg_tag("icons/link.svg"), "#c#{comment.id}" %>
+        <%= link_to tag.i(:class => "align-bottom bi bi-link-45deg fs-6 lh-1", :aria => { :hidden => true }), "#c#{comment.id}" %>
       </small>
       <div class="mx-2">
         <%= comment.body.to_html %>
@@ -101,14 +101,14 @@
   <% end %>
 </div>
 
-<div class='secondary-actions'>
+<div class="secondary-actions">
   <%= link_to t(".changesetxml"), api_changeset_path(@changeset) %>
   &middot;
   <%= link_to t(".osmchangexml"), api_changeset_download_path(@changeset) %>
 </div>
 
 <% if @next_by_user || @prev_by_user %>
-  <div class='secondary-actions'>
+  <div class="secondary-actions">
     <% if @prev_by_user %>
       <%= link_to @prev_by_user, :class => "icon-link" do %>
         <%= previous_page_svg_tag :height => 11 %>

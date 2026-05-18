@@ -53,6 +53,7 @@ OSM.Router = function (map, rts) {
   const splatParam = /\*\w+/g;
 
   function Route(path, controller) {
+    let controllerInstance = null;
     const regexp = new RegExp("^" +
       path.replace(escapeRegExp, "\\$&")
         .replace(optionalParam, "(?:$1)?")
@@ -76,14 +77,16 @@ OSM.Router = function (map, rts) {
         });
       }
 
-      return controller[action]?.(...params, ...args);
+      if (!controllerInstance) controllerInstance = controller(map);
+
+      return controllerInstance[action]?.(...params, ...args);
     };
 
     return route;
   }
 
   const routes = Object.entries(rts)
-    .map(([path, controller]) => new Route(path, controller(map)));
+    .map(([path, controller]) => new Route(path, controller));
 
   routes.recognize = function (path) {
     for (const route of this) {
@@ -99,9 +102,10 @@ OSM.Router = function (map, rts) {
 
   function updateSecondaryNav() {
     $("header nav.secondary > ul > li > a").each(function () {
-      const active = $(this).attr("href") === location.pathname;
+      const active = new URL($(this).attr("href"), location.href).pathname === location.pathname;
 
       $(this)
+        .toggleClass("active", active)
         .toggleClass("text-secondary", !active)
         .toggleClass("text-secondary-emphasis", active);
     });

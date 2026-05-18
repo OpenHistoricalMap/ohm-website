@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: notes
@@ -96,6 +98,10 @@ class Note < ApplicationRecord
   # Return the note's description
   def description
     RichText.new("text", super)
+  end
+
+  def visible_subscribers
+    subscribers.visible
   end
 
   private

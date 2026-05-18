@@ -10,8 +10,8 @@ OSM.Export = function (map) {
 
   function getBounds() {
     return L.latLngBounds(
-      L.latLng($("#minlat").val(), $("#minlon").val()),
-      L.latLng($("#maxlat").val(), $("#maxlon").val()));
+      { lat: $("#minlat").val(), lng: $("#minlon").val() },
+      { lat: $("#maxlat").val(), lng: $("#maxlon").val() });
   }
 
   function boundsChanged() {
@@ -37,17 +37,38 @@ OSM.Export = function (map) {
     validateControls();
   }
 
+  async function showConfirmationModal() {
+    const $modal = $("#export_confirmation");
+    const $downloadButton = $modal.find("[data-action=\"download\"]");
+    $modal.appendTo("body").modal("show");
+
+    return new Promise(resolve => {
+      const onOkClick = () => {
+        resolve(true);
+        $modal.modal("hide");
+      };
+
+      const onModalHidden = () => {
+        $downloadButton.off("click", onOkClick);
+        $modal.off("hidden.bs.modal", onModalHidden);
+        resolve(false);
+      };
+
+      $downloadButton.on("click", onOkClick);
+      $modal.on("hidden.bs.modal", onModalHidden);
+    });
+  }
+
   function setBounds(bounds) {
-    const truncated = [bounds.getSouthWest(), bounds.getNorthEast()]
-      .map(c => OSM.cropLocation(c, map.getZoom()));
-    $("#minlon").val(truncated[0][1]);
-    $("#minlat").val(truncated[0][0]);
-    $("#maxlon").val(truncated[1][1]);
-    $("#maxlat").val(truncated[1][0]);
+    const sw = OSM.cropLocation(bounds.getSouthWest(), map.getZoom());
+    $("#minlon").val(sw.lng);
+    $("#minlat").val(sw.lat);
+    const ne = OSM.cropLocation(bounds.getNorthEast(), map.getZoom());
+    $("#maxlon").val(ne.lng);
+    $("#maxlat").val(ne.lat);
 
     $("#export_overpass").attr("href",
-                               "https://overpass-api.de/api/map?bbox=" +
-                               truncated.map(p => p.reverse()).join());
+                               `https://overpass-api.de/api/map?bbox=${sw.lng},${sw.lat},${ne.lng},${ne.lat}`);
   }
 
   function validateControls() {
@@ -85,6 +106,15 @@ OSM.Export = function (map) {
         .addEventListener("turbo:before-fetch-request", function (event) {
           event.detail.fetchOptions.headers.Accept = "application/xml";
         });
+
+      $("#export_overpass").on("click", async function (event) {
+        event.preventDefault();
+        const downloadUrl = $(this).attr("href");
+        const confirmed = await showConfirmationModal();
+        if (confirmed) {
+          window.location.href = downloadUrl;
+        }
+      });
 
       update();
       return map.getState();

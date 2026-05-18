@@ -1,3 +1,4 @@
+//= require download_util
 L.extend(L.LatLngBounds.prototype, {
   getSize: function () {
     return (this._northEast.lat - this._southWest.lat) *
@@ -14,20 +15,27 @@ L.OSM.Map = L.Map.extend({
     L.Map.prototype.initialize.call(this, id, options);
 
     this.baseLayers = OSM.LAYER_DEFINITIONS.map((
-      { credit, nameId, leafletOsmId, leafletOsmDarkId, ...layerOptions }
+      { credit, nameId, leafletOsmId, leafletOsmDarkId, style, styleDark, ...layerOptions }
     ) => {
       let isOhm = layerOptions.source === 'openhistoricalmap';
       if (credit) layerOptions.attribution = makeAttribution(credit, isOhm);
       if (nameId) layerOptions.name = OSM.i18n.t(`javascripts.map.base.${nameId}`);
-      const layerConstructor =
-        (OSM.isDarkMap() && L.OSM[leafletOsmDarkId]) ||
-        L.OSM[leafletOsmId] ||
-        L.OSM.TileLayer;
+
+      let layerConstructor;
+      if (OSM.isDark("map")) {
+        layerConstructor = L.OSM[leafletOsmDarkId] ?? L.OSM[leafletOsmId] ?? L.OSM.TileLayer;
+        layerOptions.url = layerOptions.urlDark ?? layerOptions.url;
+      } else {
+        layerConstructor = L.OSM[leafletOsmId] ?? L.OSM.TileLayer;
+      }
+
+      layerOptions.url = layerOptions.url?.replace("{ratio}", "{r}");
 
       const layer = new layerConstructor(layerOptions);
       layer.on("add", () => {
         this.fire("baselayerchange", { layer: layer });
       });
+      layer.options.style = (OSM.isDark("map") && styleDark) || style;
       return layer;
     });
 
@@ -91,19 +99,19 @@ L.OSM.Map = L.Map.extend({
         children[childId] = makeCredit(credit.children[childId]);
       }
       const text = OSM.i18n.t(`javascripts.map.${credit.id}`, children);
-      if (credit.href) {
-        const link = $("<a>", {
-          href: credit.href,
-          text: text
-        });
-        if (credit.donate) {
-          link.addClass("donate-attr");
-        } else {
-          link.attr("target", "_blank");
-        }
-        return link.prop("outerHTML");
+      if (!credit.href) {
+        return text;
       }
-      return text;
+      const link = $("<a>", {
+        href: credit.href,
+        text: text
+      });
+      if (credit.donate) {
+        link.addClass("donate-attr");
+      } else {
+        link.attr("target", "_blank");
+      }
+      return link.prop("outerHTML");
     }
   },
 
@@ -120,6 +128,11 @@ L.OSM.Map = L.Map.extend({
       } else {
         this.removeLayer(this.baseLayers[i]);
       }
+    }
+
+    if (newBaseLayer !== oldBaseLayer) {
+      if (oldBaseLayer) this.removeLayer(oldBaseLayer);
+      if (newBaseLayer) this.addLayer(newBaseLayer);
     }
   },
 
@@ -152,9 +165,9 @@ L.OSM.Map = L.Map.extend({
     const params = {};
 
     if (marker && this.hasLayer(marker)) {
-      const latLng = marker.getLatLng().wrap();
-      [params.mlat, params.mlon] = OSM.cropLocation(marker.getLatLng(), this.getZoom());
-
+      const { lat, lng } = OSM.cropLocation(marker.getLatLng(), this.getZoom());
+      params.mlat = lat;
+      params.mlon = lng;
     }
 
     let url = location.protocol + "//" + OSM.SERVER_URL + "/";
@@ -240,10 +253,18 @@ L.OSM.Map = L.Map.extend({
       latLng = this.getCenter();
     }
 
-    return `geo:${OSM.cropLocation(latLng, zoom).join(",")}?z=${zoom}`;
+    const { lat, lng } = OSM.cropLocation(latLng, zoom);
+    return `geo:${lat},${lng}?z=${zoom}`;
   },
 
   addObject: function (object, callback) {
+    class ElementGoneError extends Error {
+      constructor(message = "Element is gone") {
+        super(message);
+        this.name = "ElementGoneError";
+      }
+    }
+
     const objectStyle = {
       color: "#FF6200",
       weight: 4,
@@ -299,11 +320,32 @@ L.OSM.Map = L.Map.extend({
       const map = this;
       this._objectLoader = new AbortController();
       fetch(OSM.apiUrl(object), {
-        headers: { accept: "application/json" },
+        headers: { accept: "application/json", ...OSM.oauth },
         signal: this._objectLoader.signal
       })
-        .then(response => response.json())
+        .then(async response => {
+          if (response.ok) {
+            return response.json();
+          }
+
+          if (response.status === 410) {
+            throw new ElementGoneError();
+          }
+
+          const status = response.statusText || response.status;
+          if (response.status !== 400 && response.status !== 509) {
+            throw new Error(status);
+          }
+
+          const text = await response.text();
+          throw new Error(text || status);
+        })
         .then(function (data) {
+          const visible_data = {
+            ...data,
+            elements: data.elements?.filter(el => el.visible !== false) ?? []
+          };
+
           map._object = object;
 
           map._objectLayer = new L.OSM.DataLayer(null, {
@@ -320,13 +362,23 @@ L.OSM.Map = L.Map.extend({
                    (object.type === "relation" && Boolean(relationNodes[node.id]));
           };
 
-          map._objectLayer.addData(data);
+          map._objectLayer.addData(visible_data);
           map._objectLayer.addTo(map);
 
           if (callback) callback(map._objectLayer.getBounds());
           map.fire("overlayadd", { layer: map._objectLayer });
+          $("#browse_status").empty();
         })
-        .catch(() => {});
+        .catch(function (error) {
+          if (error.name === "AbortError") return;
+          if (error instanceof ElementGoneError) {
+            $("#browse_status").empty();
+            return;
+          }
+          OSM.displayLoadError(error?.message, () => {
+            $("#browse_status").empty();
+          });
+        });
     }
   },
 
@@ -376,11 +428,10 @@ L.OSM.Map = L.Map.extend({
   }
 });
 
-OSM.isDarkMap = function () {
-  const mapTheme = $("body").attr("data-map-theme");
-  if (mapTheme) return mapTheme === "dark";
-  const siteTheme = $("html").attr("data-bs-theme");
-  if (siteTheme) return siteTheme === "dark";
+OSM.isDark = function (subject) {
+  const data = `${subject}-theme`,
+        theme = $(`[data-${data}]`).first().data(data);
+  if (theme) return theme === "dark";
   return window.matchMedia("(prefers-color-scheme: dark)").matches;
 };
 

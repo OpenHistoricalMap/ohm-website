@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class ChangesetCommentTest < ActiveSupport::TestCase
@@ -52,5 +54,20 @@ class ChangesetCommentTest < ActiveSupport::TestCase
       changeset_comment.body = body
       assert_not_predicate changeset_comment, :valid?, "#{body} is valid when it shouldn't be"
     end
+  end
+
+  def test_notifiable_subscribers
+    commenter1 = create(:user)
+    commenter2 = create(:user, :suspended)
+    commenter3 = create(:user)
+    commenter4 = create(:user)
+    changeset = create(:changeset)
+    create(:changeset_subscription, :changeset => changeset, :subscriber => commenter1)
+    create(:changeset_subscription, :changeset => changeset, :subscriber => commenter2)
+    create(:changeset_subscription, :changeset => changeset, :subscriber => commenter3)
+    create(:changeset_subscription, :changeset => changeset, :subscriber => commenter4)
+    comment = create(:changeset_comment, :changeset => changeset, :author => commenter4)
+
+    assert_equal comment.notifiable_subscribers.sort, [commenter1, commenter3].sort
   end
 end

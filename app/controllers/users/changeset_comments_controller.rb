@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Users
   class ChangesetCommentsController < CommentsController
     def index
@@ -8,7 +10,7 @@ module Users
 
       @params = params.permit(:display_name, :before, :after)
 
-      @comments, @newer_comments_id, @older_comments_id = get_page_items(comments, :includes => [:author, :changeset])
+      @comments = get_page_items(comments, :includes => [:author, :changeset])
     end
   end
 end
