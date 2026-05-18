@@ -758,7 +758,7 @@ nl:
       user_title: Dagboek van %{user}
       discussion: Overleg
       subscribe: Abonneren
-      unsubscribe: Deabonneren
+      unsubscribe: Uitschrijven
       leave_a_comment: Een reactie achterlaten
       login_to_leave_a_comment_html: U moet moet zich %{login_link} om te kunnen reageren
       login: Aanmelden

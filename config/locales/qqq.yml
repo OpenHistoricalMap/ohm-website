@@ -3,6 +3,7 @@
 # Export driver: phpyaml
 # Author: Albergarri788
 # Author: Amire80
+# Author: Erictheise
 # Author: Kizule
 # Author: McDutchie
 # Author: Minh Nguyen
@@ -138,7 +139,7 @@ qqq:
         * {{msg-ohm|ohm-site.about.contribute_2_donations}}
         * {{msg-ohm|ohm-site.about.contribute_2_osmus}}
       contribute_2_create_account: This message is the parameter %{create_account_link}
-        in {{msg-ohm|Ohm-site.about.contribute 2 html}}.
+        in {{msg-ohm|Ohm-site.about section.contribute 2 html}}.
       contribute_2_donations: This message is the parameter %{donations_link} in {{msg-ohm|Ohm-site.about.contribute
         2 html}}.
       contribute_2_osmus: This message is the parameter %{osmus_link} in {{msg-ohm|Ohm-site.about.contribute
