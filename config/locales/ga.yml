@@ -3590,13 +3590,13 @@ ga:
         logáil isteach.
       time_past_html: Críochnaithe %{time}.
       block_duration:
-        hours: |-
-          {{PLURAL|
-          one=%{count} uair an chloig|
-          two=%{count} uair an chloig|
-          few=%{count} uair an chloig|
-          many=%{count} uair an chloig|
-          other=%{count} uair an chloig}
+        hours:
+          one: '%{count} uair an chloig'
+          two: '%{count} uair an chloig'
+          few: '%{count} uair an chloig'
+          many: '%{count} uair an chloig'
+          other: |
+            %{count} uair an chloig
         days:
           one: '%{count} lá'
           two: '%{count} lá'

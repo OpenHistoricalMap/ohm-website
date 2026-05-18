@@ -634,7 +634,7 @@ be-Tarask:
           kindergarten: Дзіцячы садок
           library: Бібліятэка
           loading_dock: Ладунковы док
-          marketplace: Рынкавая плошча
+          marketplace: Базар
           nightclub: Начны клюб
           nursing_home: Дом састарэлых
           parking: Стаянка
@@ -661,6 +661,7 @@ be-Tarask:
           veterinary: Вэтэрынарная клініка
           village_hall: Кіраўніцтва вёскі
           waste_basket: Сьметніца
+          watering_place: Вада для жывёлы
         boundary:
           administrative: Адміністрацыйная мяжа
           national_park: Нацыянальны парк
@@ -851,11 +852,13 @@ be-Tarask:
           postcode: Паштовы індэкс
           region: Рэгіён
           sea: Мора
+          square: Пляц
           state: Штат
           subdivision: Падразьдзел
           suburb: Прадмесьце
           town: Горад
           village: Вёска
+          "yes": Мясцовасьць
         railway:
           abandoned: Пакінутая чыгуначная лінія
           construction: Будаўніцтва чыгункі
