@@ -1840,6 +1840,7 @@ en:
     partners_greeninfo: GreenInfo Network
     partners_osmf: OpenStreetMap Foundation
     partners_osmus: OpenStreetMap U.S.
+    welcome_tou_notice_html: "By using this website or other infrastructure provided by the OpenStreetMap Foundation, you agree to the %{terms_link}."
     terms_of_use: "Terms of Use"
     tou: "Terms of Use"
     nothing_to_preview: "Nothing to preview."
@@ -2354,6 +2355,7 @@ en:
       legal_1_aup_url: https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy
       legal_1_privacy_policy: Privacy Policy
       legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
+      legal_1_1_terms_of_use_url: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
       legal_2_html: |
         Please %{contact_team_link} with any licensing, copyright, or other legal questions.
       legal_2_contact_team: contact the OpenHistoricalMap team
@@ -3086,6 +3088,9 @@ en:
         html: 'Your address is not displayed publicly, see our %{privacy_policy_link} for more information.'
       or: "or"
       use external auth: "or sign up with a third party"
+      verify_human: Verify you're a human
+    create:
+      not_human: Unfortunately, we can't confirm that you are a human. This is required to create new accounts.
     no_such_user:
       title: "No such user"
       heading: "The user %{user} does not exist"
