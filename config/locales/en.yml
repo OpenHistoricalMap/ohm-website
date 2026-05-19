@@ -2116,6 +2116,7 @@ en:
         message: Preferences updated.
       navigation:
         preferences: Preferences
+        notification_preferences: Notifications
         advanced_preferences: Advanced Preferences
     basic_preferences:
       show:
@@ -2131,6 +2132,11 @@ en:
           auto: Auto
           light: Light
           dark: Dark
+        preferred_editor_color_scheme: Preferred Editor Color Scheme
+        editor_color_schemes:
+          auto: Same as Website
+          light: Light
+          dark: Dark
         save: Update Preferences
     advanced_preferences:
       show:
@@ -2144,6 +2150,7 @@ en:
         image: Image
         company: Company
         location: Location
+        contribution_calendar: Contribution Calendar
     descriptions:
       show:
         title: Edit Profile
@@ -3117,6 +3124,20 @@ en:
       contributions:
         one: "%{count} contribution in the last year"
         other: "%{count} contributions in the last year"
+      title:
+        administrator: "This user is an administrator"
+        moderator: "This user is a moderator"
+        importer: "This user is an importer"
+      grant:
+        administrator: "Grant administrator access"
+        moderator: "Grant moderator access"
+        importer: "Grant importer access"
+        are_you_sure: "Are you sure you want to grant the role '%{role}' to the user '%{name}'?"
+      revoke:
+        administrator: "Revoke administrator access"
+        moderator: "Revoke moderator access"
+        importer: "Revoke importer access"
+        are_you_sure: "Are you sure you want to revoke the role '%{role}' from the user '%{name}'?"
     sidebar_section:
       home_location: "Home location"
       company: "Company"
