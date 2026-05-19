@@ -2209,6 +2209,15 @@ en:
       update:
         success: Profile location updated.
         failure: Couldn't update profile location.
+    heatmaps:
+      show:
+        title: Configure Contribution Calendar
+        show_contribution_calendar_in_public: "Show the contribution calendar on your profile page"
+        save: Update Contribution Calendar Configuration
+        cancel: Cancel
+      update:
+        success: Contribution calendar updated.
+        failure: Couldn't update the contribution calendar.
   sessions:
     new:
       tab_title: "Log In"
@@ -2223,6 +2232,7 @@ en:
       login_button: "Log in"
       with external: "or log in with a third party"
       or: "or"
+      reset_to_login: "Sorry, your password has been expired. Please reset your password to login."
       auth failure: "Sorry, could not log in with those details."
     destroy:
       title: "Logout"
@@ -2510,6 +2520,11 @@ en:
           url: "https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse"
       export_button: "Export"
       export_download: "Downloading..."
+      confirmation:
+        header: Download XML Data
+        body: Do you want to download map data for this area in XML format? Note that large areas may take some time to download.
+        cancel: Cancel
+        download: Download
     fixthemap:
       title: Report a problem / Fix the map
       how_to_help:
@@ -2806,6 +2821,14 @@ en:
       image_dimensions_html: "Image will show the %{layer} layer at %{width} x %{height}"
       download: "Download"
       downloading: "Downloading..."
+  webgl_error_panes:
+    show:
+      compact_message: WebGL is required for this map.
+      description_html: "We are sorry, but it seems that %{your_browser_does_not_support_webgl}, a technology for rendering 3D graphics on the web."
+      your_browser_does_not_support_webgl: your browser does not support WebGL
+      webgl_is_required_for_this_map: WebGL is required to display this map.
+      read_more_about_webgl: "Read more"
+      read_more_about_webgl_url: https://wiki.openstreetmap.org/wiki/This_map_requires_WebGL
   traces:
     visibility:
       private: "Private (only shared as anonymous, unordered points)"
@@ -3109,6 +3132,7 @@ en:
       activate_user: "Activate this User"
       confirm_user: "Confirm this User"
       unconfirm_user: "Unconfirm this User"
+      suspend_user: "Suspend this User"
       unsuspend_user: "Unsuspend this User"
       hide_user: "Hide this User"
       unhide_user: "Unhide this User"
@@ -3121,6 +3145,7 @@ en:
       change_image: Change Image
       edit_company: Edit Company
       edit_location: Edit Location
+      edit_contribution_calendar: Configure Contribution Calendar
       contributions:
         one: "%{count} contribution in the last year"
         other: "%{count} contributions in the last year"
@@ -3187,7 +3212,7 @@ en:
           one: "%{count} user found"
           other: "%{count} users found"
         confirm: Confirm Selected Users
-        hide: Hide Selected Users
+        suspend: Suspend Selected Users
         empty: No matching users found
       user:
         summary_html: "%{name} created from %{ip_address} on %{date}"

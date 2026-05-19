@@ -242,7 +242,7 @@ class RichTextTest < ActiveSupport::TestCase
       r = RichText.new("text", "foo repl.example.com/some/path?query=te<st&limit=20>10#result12 bar")
       assert_html r do
         assert_dom "a", :count => 1, :text => "repl.example.com/some/path?query=te<st&limit=20>10#result12" do
-          assert_dom "> @href", "http://replace-me.example.com/some/path?query=te<st&limit=20>10#result12"
+          assert_dom "> @href", "https://replace-me.example.com/some/path?query=te<st&limit=20>10#result12"
           assert_dom "> @rel", "nofollow noopener noreferrer"
         end
       end
@@ -326,7 +326,7 @@ class RichTextTest < ActiveSupport::TestCase
       r = RichText.new("text", "foo wiki.example.com/Tag:surface%3Dmetal bar")
       assert_html r do
         assert_dom "a", :count => 1, :text => "wiki.example.com/Tag:surface%3Dmetal" do
-          assert_dom "> @href", "http://replace-me-wiki.example.com/Tag:surface%3Dmetal"
+          assert_dom "> @href", "https://replace-me-wiki.example.com/Tag:surface%3Dmetal"
           assert_dom "> @rel", "nofollow noopener noreferrer"
         end
       end
@@ -351,8 +351,8 @@ class RichTextTest < ActiveSupport::TestCase
     with_settings(:linkify => { :detection_rules => [{ :patterns => ["@(?<username>\\w+)"], :path_template => "user/\\k<username>" }] }) do
       r = RichText.new("text", "foo @example bar")
       assert_html r do
-        assert_dom "a", :count => 1, :text => "http://test.host/user/example" do
-          assert_dom "> @href", "http://test.host/user/example"
+        assert_dom "a", :count => 1, :text => "https://test.host/user/example" do
+          assert_dom "> @href", "https://test.host/user/example"
           assert_dom "> @rel", "nofollow noopener noreferrer"
         end
       end
