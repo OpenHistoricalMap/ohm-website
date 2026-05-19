@@ -295,6 +295,8 @@ GEM
       dry-initializer (~> 3.2)
       dry-schema (~> 1.14)
       zeitwerk (~> 2.6)
+    email_validator (2.2.4)
+      activemodel
     erb (6.0.4)
     erb_lint (0.9.0)
       activesupport
@@ -322,6 +324,7 @@ GEM
     faraday-net_http (3.4.2)
       net-http (~> 0.5)
     ffi (1.17.4)
+    ffi (1.17.4-aarch64-linux-gnu)
     ffi-compiler (1.3.2)
       ffi (>= 1.15.5)
       rake
@@ -339,12 +342,14 @@ GEM
     globalid (1.3.0)
       activesupport (>= 6.1)
     google-protobuf (3.25.8)
+    google-protobuf (3.25.8-aarch64-linux)
     googleapis-common-protos-types (1.20.0)
       google-protobuf (>= 3.18, < 5.a)
     hashdiff (1.2.1)
     hashie (5.1.0)
       logger
     herb (0.10.1)
+    herb (0.10.1-aarch64-linux-gnu)
     highline (3.1.2)
       reline
     htmlentities (4.4.2)
@@ -409,6 +414,7 @@ GEM
       kramdown (~> 2.0)
     language_server-protocol (3.17.0.5)
     libv8-node (24.12.0.1)
+    libv8-node (24.12.0.1-aarch64-linux)
     libxml-ruby (6.0.0)
     lint_roller (1.1.0)
     listen (3.9.0)
@@ -430,7 +436,6 @@ GEM
     mini_magick (5.3.1)
       logger
     mini_mime (1.1.5)
-    mini_portile2 (2.8.9)
     mini_racer (0.21.0)
       libv8-node (~> 24.12.0.1)
     minitest (6.0.6)
@@ -455,8 +460,7 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.5)
-    nokogiri (1.19.3)
-      mini_portile2 (~> 2.8.2)
+    nokogiri (1.19.3-aarch64-linux-gnu)
       racc (~> 1.4)
     noticed (3.0.0)
       rails (>= 6.1.0)
@@ -514,6 +518,9 @@ GEM
     omniauth-rails_csrf_protection (2.0.1)
       actionpack (>= 4.2)
       omniauth (~> 2.0)
+    omniauth_openid_connect (0.8.0)
+      omniauth (>= 1.9, < 3)
+      openid_connect (~> 2.2)
     open3 (0.2.1)
     open4 (1.3.4)
     openid_connect (2.3.1)
@@ -715,6 +722,7 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.6.3)
+    pg (1.6.3-aarch64-linux)
     popper_js (2.11.8)
     pp (0.6.3)
       prettyprint
@@ -735,6 +743,13 @@ GEM
     rack-cors (3.0.0)
       logger
       rack (>= 3.0.14)
+    rack-oauth2 (2.3.0)
+      activesupport
+      attr_required
+      faraday (~> 2.0)
+      faraday-follow_redirects
+      json-jwt (>= 1.11.0)
+      rack (>= 2.1.0)
     rack-protection (4.2.1)
       base64 (>= 0.1.0)
       logger (>= 1.6.0)
@@ -858,6 +873,8 @@ GEM
     sass-embedded (1.64.2)
       google-protobuf (~> 3.23)
       rake (>= 13.0.0)
+    sass-embedded (1.64.2-aarch64-linux-gnu)
+      google-protobuf (~> 3.23)
     sawyer (0.9.3)
       addressable (>= 2.3.5)
       faraday (>= 0.17.3, < 3)
@@ -894,6 +911,11 @@ GEM
     stringio (3.2.0)
     strong_migrations (2.7.0)
       activerecord (>= 7.2)
+    swd (2.0.3)
+      activesupport (>= 3)
+      attr_required (>= 0.0.5)
+      faraday (~> 2.0)
+      faraday-follow_redirects
     teaspoon (1.4.0)
       railties (>= 5.0)
     teaspoon-mocha (2.3.3)
@@ -916,11 +938,18 @@ GEM
     unicode-emoji (4.2.0)
     uri (0.13.3)
     useragent (0.16.11)
+    validate_url (1.0.15)
+      activemodel (>= 3.0.0)
+      public_suffix
     validates_email_format_of (1.8.2)
       i18n (>= 0.8.0)
       simpleidn
     vendorer (0.2.0)
     version_gem (1.1.9)
+    webfinger (2.1.3)
+      activesupport
+      faraday (~> 2.0)
+      faraday-follow_redirects
     webmock (3.26.2)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
@@ -936,7 +965,7 @@ GEM
     zeitwerk (2.7.5)
 
 PLATFORMS
-  ruby
+  aarch64-linux
 
 DEPENDENCIES
   aasm
@@ -1009,8 +1038,8 @@ DEPENDENCIES
   omniauth-google-oauth2
   omniauth-mediawiki
   omniauth-microsoft_graph
-  omniauth_openid_connect
   omniauth-rails_csrf_protection
+  omniauth_openid_connect
   open3
   openstreetmap-deadlock_retry
   opentelemetry-exporter-otlp
