@@ -9,6 +9,27 @@ services:
       - /app/node_modules/
       - web-tmp:/app/tmp
       - web-storage:/app/storage
+      # OHM overlays — edit/commit from ../ohm-website-patches
+      - ../ohm-website-patches/overlays/package.json:/app/package.json
+      - ../ohm-website-patches/overlays/app/assets/javascripts/leaflet.map.js:/app/app/assets/javascripts/leaflet.map.js
+      - ../ohm-website-patches/overlays/app/assets/javascripts/leaflet.layers.js:/app/app/assets/javascripts/leaflet.layers.js
+      - ../ohm-website-patches/overlays/app/assets/javascripts/leaflet.maplibre.js:/app/app/assets/javascripts/leaflet.maplibre.js
+      - ../ohm-website-patches/overlays/app/assets/javascripts/leaflet.maptiler.js:/app/app/assets/javascripts/leaflet.maptiler.js
+      - ../ohm-website-patches/overlays/app/assets/javascripts/leaflet.shortbread.js:/app/app/assets/javascripts/leaflet.shortbread.js
+      - ../ohm-website-patches/overlays/app/assets/javascripts/leaflet.locate.js:/app/app/assets/javascripts/leaflet.locate.js
+      - ../ohm-website-patches/overlays/app/views/layouts/_head.html.erb:/app/app/views/layouts/_head.html.erb
+      - ../ohm-website-patches/overlays/app/views/layouts/_header.html.erb:/app/app/views/layouts/_header.html.erb
+      - ../ohm-website-patches/overlays/app/views/site/export.html.erb:/app/app/views/site/export.html.erb
+      - ../ohm-website-patches/overlays/app/models/social_link.rb:/app/app/models/social_link.rb
+      - ../ohm-website-patches/overlays/config/settings.yml:/app/config/settings.yml
+      - ../ohm-website-patches/overlays/config/layers.yml:/app/config/layers.yml
+      - ../ohm-website-patches/overlays/config/routes.rb:/app/config/routes.rb
+      - ../ohm-website-patches/overlays/config/initializers/content_security_policy.rb:/app/config/initializers/content_security_policy.rb
+      - ../ohm-website-patches/overlays/lib/map_layers.rb:/app/lib/map_layers.rb
+      - ../ohm-website-patches/overlays/app/helpers/application_helper.rb:/app/app/helpers/application_helper.rb
+      - ../ohm-website-patches/overlays/app/views/layouts/_select_language_list.html.erb:/app/app/views/layouts/_select_language_list.html.erb
+      - ../ohm-website-patches/overlays/app/assets/images/RSS.png:/app/app/assets/images/RSS.png
+      - ../ohm-website-patches/overlays/app/assets/images/RSS.svg:/app/app/assets/images/RSS.svg
     networks:
       - web_network
     tmpfs:
@@ -32,7 +53,7 @@ services:
       - web_network
 
   db:
-    image: ghcr.io/openhistoricalmap/db:0.0.1-0.dev.git.3101.ha4a4757
+    image: ghcr.io/openhistoricalmap/db:0.0.1-0.dev.git.3376.h3ce15744
     ports:
       - "54321:5432"
     env_file:
