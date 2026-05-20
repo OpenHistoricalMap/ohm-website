@@ -130,10 +130,6 @@ L.OSM.Map = L.Map.extend({
       }
     }
 
-    if (newBaseLayer !== oldBaseLayer) {
-      if (oldBaseLayer) this.removeLayer(oldBaseLayer);
-      if (newBaseLayer) this.addLayer(newBaseLayer);
-    }
   },
 
   getLayersCode: function () {
