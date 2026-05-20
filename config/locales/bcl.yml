@@ -226,7 +226,7 @@ bcl:
         reopened_at_html: Naaktibo giraray kan %{when}
         reopened_at_by_html: Naaktibo giraray kan %{when} ni %{user}
       rss:
-        title: Mga tala sa OpenStreetMap
+        title: Mga tala sa OpenHistoricalMap
         description_all: Sarong lista nin mga ibinareta, pigkomentohan o sarado na
           mga tala
         description_area: Sarong lista nin mga nota, ibinareta, pigkomento o isinara
@@ -291,14 +291,14 @@ bcl:
         warning: Patanid! An proseso nin pagbura kan account pinal na, asin dai na
           pwedeng baliktadon.
         delete_account: Puraon an Account
-        delete_introduction: 'Puwede mong puraon an saimong account sa OpenStreetMap
+        delete_introduction: 'Puwede mong puraon an saimong account sa OpenHistoricalMap
           gamit an buton sa ibaba. Tandaan tabi an minasunod na mga detalye:'
         delete_profile: An saimong impormasyon sa profile, kaiba an saimong avatar,
           paglaladawan asin kinamumugtakan kan harong hahalion.
         delete_display_name: An saimong ipinapahiling na pangaran hahalion, asin puwedeng
           gamiton giraray kan ibang mga account.
         retain_caveats: 'Alagad, an nagkapirang impormasyon manungod saimo itatago
-          sa OpenStreetMap, dawa pa napara na an saimong account:'
+          sa OpenHistoricalMap, dawa pa napara na an saimong account:'
         retain_edits: An saimong mga pagliwat sa database kan mapa, kun igwa man,
           papagdanayon.
         retain_traces: An saimong mga nakakarga na bakas, kun igwa man, papagdanayon.
@@ -521,8 +521,8 @@ bcl:
         comment: 'Bagong komento dapit sa pagbabago #%{changeset_id} ni %{author}'
         commented_at_by_html: Inapdate kan %{when} ni %{user}
       show:
-        title_all: Pag-urolay kan mga pagbabago sa OpenStreetMap
-        title_particular: 'Pag-urolay kan mga pagbabago #%{changeset_id} sa OpenStreetMap'
+        title_all: Pag-urolay kan mga pagbabago sa OpenHistoricalMap
+        title_particular: 'Pag-urolay kan mga pagbabago #%{changeset_id} sa OpenHistoricalMap'
       timeout:
         sorry: Pasensya na, an listahan kan mga komento sa changeset na saimong hinagad
           haloy nang makua.
@@ -695,17 +695,17 @@ bcl:
       location: 'Kinamumugtakan:'
     feed:
       user:
-        title: Mga entrada sa talaaldawan kan OpenStreetMap para ki %{user}
-        description: Mga pinakabagong entrada sa talaaldawan kan OpenStreetMap gikan
+        title: Mga entrada sa talaaldawan kan OpenHistoricalMap para ki %{user}
+        description: Mga pinakabagong entrada sa talaaldawan kan OpenHistoricalMap gikan
           ki %{user}
       language:
-        title: Mga entrada sa talaaldawan kan OpenStreetMap sa %{language_name}
+        title: Mga entrada sa talaaldawan kan OpenHistoricalMap sa %{language_name}
         description: Mga pinakabagong entrada sa talaaldawan gikan sa mga paragamit
-          kan OpenStreetMap sa %{language_name}
+          kan OpenHistoricalMap sa %{language_name}
       all:
-        title: Mga entrada sa talaaldawan kan OpenStreetMap
+        title: Mga entrada sa talaaldawan kan OpenHistoricalMap
         description: Mga pinakabagong entrada sa talaaldawan gikan sa mga paragamit
-          kan OpenStreetMap
+          kan OpenHistoricalMap
     subscribe:
       heading: Mag-subscribe sa minasunod na pag-urolay sa entrada sa talaaldawan?
       button: Mag-subscribe para sa pag-urolay
@@ -765,28 +765,28 @@ bcl:
       contact_url_title: Ipinaliwanag an manlain-lain na paagi nin pakikipag-olay
       contact: kontak
       contact_the_community_html: Dai mag-alangan na mag-%{contact_link} sa komunidad
-        kan OpenStreetMap kun ika nakanompong nin sarong putol na takod / bug. Isurat
+        kan OpenHistoricalMap kun ika nakanompong nin sarong putol na takod / bug. Isurat
         an eksaktong URL kan saimong kahagadan.
     bad_request:
       title: Maraot na kahagadan
-      description: An operasyon na saimong hinagad sa serbidor kan OpenStreetMap bakong
+      description: An operasyon na saimong hinagad sa serbidor kan OpenHistoricalMap bakong
         balido (HTTP 400)
     forbidden:
       title: Ipinapangalad
-      description: An operasyon na saimong hinagad sa serbidor nin OpenStreetMap makukua
+      description: An operasyon na saimong hinagad sa serbidor nin OpenHistoricalMap makukua
         sana kan mga administrador (HTTP 403)
     internal_server_error:
       title: Kasalaan sa aplikasyon
-      description: An serbidor nin OpenStreetMap  nakaeksperyensya nin sarong dai
+      description: An serbidor nin OpenHistoricalMap nakaeksperyensya nin sarong dai
         linalaoman na kondisyon na nakaulang kaini sa pag-otob kan kahagadan (HTTP
         500)
     not_found:
       title: Dai mahanap an sagunson
       description: Dai nakahanap nin operasyon nin file/direktoryo/API na may pangaran
-        na iyan sa serbidor nin OpenStreetMap (HTTP 404)
+        na iyan sa serbidor nin OpenHistoricalMap (HTTP 404)
   export:
     show:
-      title: Naka-embed na OpenStreetMap
+      title: Naka-embed na OpenHistoricalMap
   follows:
     show:
       follow:
@@ -1769,11 +1769,11 @@ bcl:
         ko: Koryano
   layouts:
     logo:
-      alt_text: Logo kan OpenStreetMap
+      alt_text: Logo kan OpenHistoricalMap
     layer_info: Impo. kan Patong
     start_mapping: Magpoon nin Pagmapa
-    intro_header: Maugmang pag-abot sa OpenStreetMap!
-    intro_text: An OpenStreetMap sarong mapa kan kinaban, na ginibo kan mga tawong
+    intro_header: Maugmang pag-abot sa OpenHistoricalMap!
+    intro_text: An OpenHistoricalMap sarong mapa kan kinaban, na ginibo kan mga tawong
       arog mo asin libreng gamiton sa irarom nin sarong bukas na lisensya.
     hosting_partners_2024_html: An hosting suportado kan %{fastly}, %{corpmembers},
       asin iba pang %{partners}.
@@ -1802,24 +1802,24 @@ bcl:
       sign_up: Mag-ayon
       user_diaries: Mga Talaaldawan kan Paragamit
     meta:
-      openstreetmap_search: Paghanap sa OpenStreetMap
+      openstreetmap_search: Paghanap sa OpenHistoricalMap
     select_language_button:
       title: Magpili nin Tataramon
     offline_flash:
-      osm_offline: An database kan OpenStreetMap presenteng offline mantang an mga
+      osm_offline: An database kan OpenHistoricalMap presenteng offline mantang an mga
         mahalagang trabaho sa pagmantenir ginigibo.
-      osm_read_only: An database kan OpenStreetMap yaon sa moda nin pagbasa nguna
+      osm_read_only: An database kan OpenHistoricalMap yaon sa moda nin pagbasa nguna
         sana mantang ginigibo an mga mahalagang trabaho sa pagmantenir.
       expected_restore_html: An mga serbisyo piglalaoman na maibalik sa %{time}.
       announcement: Pwede nindong basahon an anunsyo digdi.
   user_mailer:
     diary_comment_notification:
-      description: 'Entrada nin Talaaldawan kan OpenStreetMap #%{id}'
-      subject: Si [OpenStreetMap] %{user} nagkomento sa sarong entrada sa talaaldawan
+      description: 'Entrada nin Talaaldawan kan OpenHistoricalMap #%{id}'
+      subject: Si [OpenHistoricalMap] %{user} nagkomento sa sarong entrada sa talaaldawan
       hi: Hi %{to_user},
-      header: 'Si %{from_user} nagkomento sa entrada nin Talaaldawan kan OpenStreetMap
+      header: 'Si %{from_user} nagkomento sa entrada nin Talaaldawan kan OpenHistoricalMap
         na may subheto na %{subject}:'
-      header_html: 'Si %{from_user} nagkomento sa entrada nin Talaaldawan kan OpenStreetMap
+      header_html: 'Si %{from_user} nagkomento sa entrada nin Talaaldawan kan OpenHistoricalMap
         na may subheto na %{subject}:'
       footer: Pwede man nindong basahon an komento sa %{readurl} asin pwede kamong
         magkomento sa %{commenturl} o magpadara nin mensahe sa kagsurat sa %{replyurl}
@@ -1828,11 +1828,11 @@ bcl:
       footer_unsubscribe: Pwede kang mag-unsubscribe sa pag-urolay sa %{unsubscribeurl}
       footer_unsubscribe_html: Pwede kang mag-unsubscribe sa pag-urolay sa %{unsubscribeurl}
     message_notification:
-      subject: '[OpenStreetMap] %{message_title}'
+      subject: '[OpenHistoricalMap] %{message_title}'
       hi: Hi %{to_user},
-      header: 'Si %{from_user} nagpadara saimo nin mensahe sa paagi kan OpenStreetMap
+      header: 'Si %{from_user} nagpadara saimo nin mensahe sa paagi kan OpenHistoricalMap
         na may subheto na %{subject}:'
-      header_html: 'Si %{from_user} nagpadara saimo nin mensahe sa paagi kan OpenStreetMap
+      header_html: 'Si %{from_user} nagpadara saimo nin mensahe sa paagi kan OpenHistoricalMap
         na may subheto na %{subject}:'
       footer: Pwede mo man basahon an mensahe sa %{readurl} asin pwede kang magpadara
         nin mensahe sa kagsurat sa %{replyurl}
@@ -1840,8 +1840,8 @@ bcl:
         nin mensahe sa kagsurat sa %{replyurl}
     follow_notification:
       hi: Hi %{to_user},
-      subject: Sinundan ka ni [OpenStreetMap] %{user}
-      followed_you: Sinusundan ka na ngunyan ni %{user} sa OpenStreetMap.
+      subject: Sinundan ka ni [OpenHistoricalMap] %{user}
+      followed_you: Sinusundan ka na ngunyan ni %{user} sa OpenHistoricalMap.
       see_their_profile: Mahihiling mo an saindang profile sa %{userurl}.
       see_their_profile_html: Mahihiling mo an saindang profile sa %{userurl}.
       follow_them: Pwede mo man sindang sundan sa %{followurl}.
@@ -1875,7 +1875,7 @@ bcl:
       all_your_traces_html: An gabos mong mapangganang nakarga na mga bakas kan GPX
         makukua sa %{url}.
     signup_confirm:
-      subject: '[OpenStreetMap] Maugmang Pag-abot sa OpenStreetMap'
+      subject: '[OpenHistoricalMap] Maugmang Pag-abot sa OpenHistoricalMap'
       greeting: Hi, Tara!
       created: May sarong tawo (sana ika) na nagmukna nin sarong account sa %{site_url}.
       confirm: 'Bago kami maggibo nin ano man, kaipuhan ming kumpirmaron na an kahagadan
@@ -1884,27 +1884,27 @@ bcl:
       welcome: Pagkatapos mong kumpirmaron an saimong account, tatawan mi ika nin
         dugang na impormasyon tanganing makapoon ka.
     email_confirm:
-      subject: '[OpenStreetMap] Kumpirmaron an saimong email address'
+      subject: '[OpenHistoricalMap] Kumpirmaron an saimong email address'
       greeting: Hi,
       hopefully_you: May saro (sana ika) na gustong baguhon an saindang email address
         sa %{server_url} pasiring sa %{new_address}.
       click_the_link: Kun ika ini, pakipindot an takod sa ibaba tanganing kumpirmaron
         an pagbabago.
     lost_password:
-      subject: '[OpenStreetMap] Kahagadan sa pag-reset kan sekretong panlaog'
+      subject: '[OpenHistoricalMap] Kahagadan sa pag-reset kan sekretong panlaog'
       greeting: Hi,
       hopefully_you: May sarong tawo (posibleng ika) na naghagad na i-reset an sekretong
-        panlaog sa account na ini kan openstreetmap.org.
+        panlaog sa account na ini kan openhistoricalmap.org.
       click_the_link: Kun ika ini, pakipindot an takod sa ibaba tanganing i-reset
         an saimong sekretong panlaog.
     note_comment_notification:
-      description: 'Tala sa OpenStreetMap #%{id}'
+      description: 'Tala sa OpenHistoricalMap #%{id}'
       anonymous: Sarong daing ngaran na paragamit
       greeting: Hi,
       commented:
-        subject_own: Si [OpenStreetMap] %{commenter} nagkomento sa saro sa saimong
+        subject_own: Si [OpenHistoricalMap] %{commenter} nagkomento sa saro sa saimong
           mga tala
-        subject_other: Si [OpenStreetMap] %{commenter} nagkomento sa sarong tala na
+        subject_other: Si [OpenHistoricalMap] %{commenter} nagkomento sa sarong tala na
           saimong interesado
         your_note: Nagwalat si %{commenter} nin komento sa saro sa saimong mga tala
           sa mapa harani sa %{place}.
@@ -1915,9 +1915,9 @@ bcl:
         commented_note_html: Nagwalat si %{commenter} nin sarong komento sa sarong
           tala sa mapa na saimong pigkomentohan. An tala harani sa %{place}.
       closed:
-        subject_own: Naresulbaran ni [OpenStreetMap] %{commenter} an saro sa saimong
+        subject_own: Naresulbaran ni [OpenHistoricalMap] %{commenter} an saro sa saimong
           mga tala
-        subject_other: Naresulbaran ni [OpenStreetMap] %{commenter} an saro sa mga
+        subject_other: Naresulbaran ni [OpenHistoricalMap] %{commenter} an saro sa mga
           tala na kun sain interesado ka
         your_note: Naresulbaran ni %{commenter} an saro sa saimong mga tala sa mapa
           harani sa %{place}.
@@ -1928,9 +1928,9 @@ bcl:
         commented_note_html: Naresulbaran ni %{commenter} an sarong tala sa mapa na
           kun sain nagkomento ka. Harani an tala sa %{place}.
       reopened:
-        subject_own: Si [OpenStreetMap] %{commenter} nag-aktibo giraray kan saro sa
+        subject_own: Si [OpenHistoricalMap] %{commenter} nag-aktibo giraray kan saro sa
           saimong mga tala
-        subject_other: Si [OpenStreetMap] %{commenter} nag-aktibo giraray kan mga
+        subject_other: Si [OpenHistoricalMap] %{commenter} nag-aktibo giraray kan mga
           tala na kun sain interesado ka
         your_note: Si %{commenter} pinag-aktibo giraray an saro sa saimong mga tala
           sa mapa harani sa %{place}.
@@ -1943,12 +1943,12 @@ bcl:
       details: Magsimbag o aramon pa an dapit sa tala sa %{url}.
       details_html: Magsimbag o aramon pa an dapit sa tala sa %{url}.
     changeset_comment_notification:
-      description: 'OpenStreetMap Changeset #%{id}'
+      description: 'OpenHistoricalMap Changeset #%{id}'
       hi: Hi %{to_user},
       commented:
-        subject_own: Si [OpenStreetMap] %{commenter} nagkomento sa saro sa saimong
+        subject_own: Si [OpenHistoricalMap] %{commenter} nagkomento sa saro sa saimong
           mga changeset
-        subject_other: Si [OpenStreetMap] %{commenter} nagkomento sa sarong changeset
+        subject_other: Si [OpenHistoricalMap] %{commenter} nagkomento sa sarong changeset
           na saimong interesado
         your_changeset: Nagwalat si %{commenter} nin sarong komento kan %{time} sa
           saro sa saimong mga changeset
@@ -2212,7 +2212,7 @@ bcl:
   sessions:
     new:
       tab_title: Maglaog
-      login_to_authorize_html: Maglaog sa OpenStreetMap tanganing makaakses kan %{client_app_name}.
+      login_to_authorize_html: Maglaog sa OpenHistoricalMap tanganing makaakses kan %{client_app_name}.
       already_logged_in_html: Nakalaog ka na bilang %{user}. An paglaog giraray mabago
         an saimong presenteng account.
       access_another_page: 'Nag-abot ka digdi mantang naghihingoang makalaog sa ibang
@@ -2229,7 +2229,7 @@ bcl:
       auth failure: Dispensa, dai makalaog sa mga detalyeng iyan.
     destroy:
       title: Magluwas
-      heading: Magluwas sa OpenStreetMap
+      heading: Magluwas sa OpenHistoricalMap
       logout_button: Magluwas
     suspended_flash:
       suspended: Dispensa, an saimong account nasuspinde huli sa kaduda-dudang aktibidad.
@@ -2298,7 +2298,7 @@ bcl:
       used_by_html: An %{name} nagtatao nin datos nin mapa para sa rinibong mga websityo,
         mga mobile app, asin mga hardware device
       lede_text: |-
-        An OpenStreetMap pigtogdok kan sarong komunidad nin mga paramapa na nag-aarambag asin nagmamantenir nin datos
+        An OpenHistoricalMap pigtogdok kan sarong komunidad nin mga paramapa na nag-aarambag asin nagmamantenir nin datos
         manungod sa mga tinampo, agihan, kapehan, istasyon nin tren, asin kadakol pang iba, sa bilog na kinaban.
     about_section:
       local_knowledge_title: Lokal na Kaaraman
@@ -2410,8 +2410,8 @@ bcl:
         licensing_3_creative_commons_license_url: https://creativecommons.org/licenses/by-sa/2.0/
         licensing_4_html: Magbasa pa manungod sa paggamit kan samong datos sa %{osmf_license_page_link}.
         licensing_4_osmf_license_page: Pahina nin Lisensya kan OSMF
-        credit_title_html: Pano ikredito an OpenStreetMap
-        credit_1_html: 'Kun sain ka naggagamit nin datos kan OpenStreetMap, kaipuhan
+        credit_title_html: Pano ikredito an OpenHistoricalMap
+        credit_1_html: 'Kun sain ka naggagamit nin datos kan OpenHistoricalMap, kaipuhan
           mong gibohon an minasunod na duwang bagay:'
         credit_2_attribution: Magtao nin kredito sa OpenStreetMap sa paagi nin pagpapahiling
           kan samong paisi nin pag-atribwir.
@@ -2438,12 +2438,12 @@ bcl:
         credit_5_v2025_html: 'Sa halimbawang ini, an kredito minalataw sa kanto kan
           mapa:'
         attribution_example:
-          alt: Halimbawa kun pano iaatribwir an OpenStreetMap sa sarong pahina nin
+          alt: Halimbawa kun pano iaatribwir an OHM sa sarong pahina nin
             web
           title: Halimbawa nin pag-atribwir
         infringement_title_html: Pagbalga sa deretso sa pagkopya
         infringement_1_html: |-
-          An mga nag-aambag sa OSM pinapagirumdom na dai nanggad magdugang nin datos gikan sa arin man
+          An mga nag-aambag sa OHM pinapagirumdom na dai nanggad magdugang nin datos gikan sa arin man
           mga pinagkukuanan na may deretso sa pagkopya (halimbawa, Google Maps o mga nakaimprentang mapa) na mayong
           malinaw na pagtugot gikan sa mga kagsadiri nin deretso sa pagkopya.
         infringement_2_1_html: |-
@@ -2551,16 +2551,16 @@ bcl:
           tanganing matabangan na mapakarhay an OpenStreetMap, tabi hilingon an %{contributors_page_link} sa OpenStreetMap Wiki.
         contributors_2_contributors_page: Pahina kan mga nag-ambag
         contributors_footer_2_html: |-
-          An paglaog kan datos sa OpenStreetMap dai nangangahulugan na an orihinal
-          an paratao nin datos nag-eendorso sa OpenStreetMap, nagtatao nin anuman na garantiya, o
+          An paglaog kan datos sa OpenHistoricalMap dai nangangahulugan na an orihinal
+          an paratao nin datos nag-eendorso sa OpenHistoricalMap, nagtatao nin anuman na garantiya, o
           inaako an anuman na paninimbagan.
     index:
       js_1: Naggagamit ka nin sarong browser na dai nagsusuporta sa JavaScript, o
         ika naka-disable kan JavaScript.
-      js_2: An OpenStreetMap naggagamit nin JavaScript para sa saiyang mahalnas na
+      js_2: An OpenHistoricalMap naggagamit nin JavaScript para sa saiyang mahalnas na
         mapa.
       license:
-        copyright: Copyright OpenStreetMap asin mga nag-ambag, sa irarom nin sarong
+        copyright: Copyright OpenHistoricalMap asin mga nag-ambag, sa irarom nin sarong
           bukas na lisensya
     not_public_flash:
       not_public: Dai mo itinalaga an saimong mga pagliwat na magin pampubliko.
@@ -2579,18 +2579,18 @@ bcl:
       too_large:
         advice: 'Kun an pagpapaluwas sa itaas dai nagin mapanggana, pakikonsiderar
           na gamiton an saro sa mga pinagkukuanan na nakalista sa ibaba:'
-        body: An lugar na ini dakulaon na gayo tanganing ipaluwas bilang OpenStreetMap
+        body: An lugar na ini dakulaon na gayo tanganing ipaluwas bilang OpenHistoricalMap
           XML Data. Mag-zoom in o magpili nin mas sadit na lugar, o gamiton an saro
           sa mga pinagkukuanan na nakalista sa ibaba para sa mga pag-download nin
           bulto nin datos.
         planet:
-          title: Planet OSM
+          title: Planet OHM
           description: Mga regular na pig-a-update na mga kopya kan kumpletong database
-            kan OpenStreetMap
+            kan OpenHistoricalMap
         overpass:
           title: Overpass API
           description: I-download an kahon na nagbubugkos na ini gikan sa sarong salming
-            kan database kan OpenStreetMap
+            kan database kan OpenHistoricalMap
         geofabrik:
           title: Geofabrik Downloads
           description: Regular na pig-a-update na mga ekstrakto kan mga kontinente,
@@ -2615,7 +2615,7 @@ bcl:
           title: Mag-ayon sa komunidad
           explanation_html: |-
             Kun may nariparo kang problema sa datos kan samong mapa, halimbawa may nawawarang tinampo o an saimong address, an pinakamarahay na paagi tanganing
-            an pagpadagos iyo an mag-ayon sa komunidad kan OpenStreetMap asin magdugang o maghirahay kan datos sa sadiri mo.
+            an pagpadagos iyo an mag-ayon sa komunidad kan OpenHistoricalMap asin magdugang o maghirahay kan datos sa sadiri mo.
       other_concerns:
         title: Iba pang mga kahaditan
         concerns_html: |-
@@ -2626,13 +2626,13 @@ bcl:
     help:
       title: Pagkua nin Tabang
       introduction: |-
-        An OpenStreetMap igwa nin nagkapirang rekurso para sa pag-adal manungod sa proyekto, paghapot asin pagsimbag nin mga kahaputan,
+        An OpenHistoricalMap igwa nin nagkapirang rekurso para sa pag-adal manungod sa proyekto, paghapot asin pagsimbag nin mga kahaputan,
         asin magkasararong pag-orolay asin pagdokumento kan mga topiko sa pagmapa.
       welcome:
         url: /welcome
-        title: Maugmang pag-abot sa OpenStreetMap
+        title: Maugmang pag-abot sa OpenHistoricalMap
         description: Magpoon sa marikas na giya na ini na nagtatakop kan mga pundamental
-          na OpenStreetMap.
+          na OpenHistoricalMap.
       beginners_guide:
         url: http://wiki.openstreetmap.org/wiki/Beginners%27_giya
         title: Giya sa mga Nagpopoon
@@ -2655,13 +2655,12 @@ bcl:
           mga mapa asin iba pang serbisyo na nakasusog sa OpenStreetMap.
       welcomemat:
         title: Para sa mga Organisasyon
-        description: Sa sarong organisasyon na naggigibo nin mga plano para sa OpenStreetMap?
+        description: Sa sarong organisasyon na naggigibo nin mga plano para sa OpenHistoricalMap?
           Hanapon an kaipuhan mong maaraman sa Welcome Mat.
       wiki:
-        title: Wiki kan OpenStreetMap
-        description: Mag-browse sa wiki para sa detalyadong dokumentasyon kan OpenStreetMap.
+        description: Mag-browse sa wiki para sa detalyadong dokumentasyon kan OHM.
     potlatch:
-      removed: An saimong default na editor kan OpenStreetMap nakabugtak bilang Potlatch.
+      removed: An saimong default na editor kan OpenHistoricalMap nakabugtak bilang Potlatch.
         Nin huli ta an Adobe Flash Player hinale na, an Potlatch dai na magagamit
         sa sarong web browser.
       desktop_application_html: Pwede mo pa man giraray gamiton an Potlatch sa paagi
@@ -2673,9 +2672,9 @@ bcl:
     any_questions:
       title: Igwa nin mga kahaputan?
       paragraph_1_html: |-
-        An OpenStreetMap igwa nin nagkapirang rekurso para sa pag-adal manungod sa proyekto, paghapot asin pagsimbag
+        An OpenHistoricalMap igwa nin nagkapirang rekurso para sa pag-adal manungod sa proyekto, paghapot asin pagsimbag
         mga hapot, asin magkasararong pag-urolay asin pagdokumento kan mga topiko sa pagmapa.
-        %{help_link}. Sa sarong organisasyon na naggigibo nin mga plano para sa OpenStreetMap? %{welcome_mat_link}.
+        %{help_link}. Sa sarong organisasyon na naggigibo nin mga plano para sa OpenHistoricalMap? %{welcome_mat_link}.
       get_help_here: Magkua nin tabang digdi
       welcome_mat: Hilingon an Welcome Mat
     sidebar:
@@ -2699,7 +2698,7 @@ bcl:
     welcome:
       title: Maugmang Pag-abot!
       introduction: |-
-        Maogmang pag-abot sa OpenStreetMap, an libre asin pwedeng liwaton na mapa kan kinaban. Ngunyan na nakapag-sign up ka na, andam ka nang magpoon sa pagmapa. Uya an sarong marikas na giya sa pinaka-importante
+        Maogmang pag-abot sa OpenHistoricalMap, an libre asin pwedeng liwaton na mapa kan kinaban. Ngunyan na nakapag-sign up ka na, andam ka nang magpoon sa pagmapa. Uya an sarong marikas na giya sa pinaka-importante
         mga bagay na kaipuhan mong maaraman.
       whats_on_the_map:
         title: Ano an yaon sa Mapa
@@ -2715,7 +2714,7 @@ bcl:
         doesnt: dai
       basic_terms:
         title: Mga Pundamental na Termino Para sa Pagmapa
-        paragraph_1: An OpenStreetMap igwa nin sadiring tataramon. Uya an nagkapirang
+        paragraph_1: An OpenHistoricalMap igwa nin sadiring tataramon. Uya an nagkapirang
           panginot na taga na magigin kapaki-pakinabang.
         an_editor_html: An %{editor} sarong programa o websityo na pwede mong gamiton
           sa pagliwat kan mapa.
@@ -2732,7 +2731,7 @@ bcl:
       rules:
         title: Mga regulasyon!
         para_1_html: |-
-          An OpenStreetMap igwa nin dikit na pormal na mga regulasyon alagad naglalaom kami na an gabos na partisipante makikipagtabangan
+          An OpenHistoricalMap igwa nin dikit na pormal na mga regulasyon alagad naglalaom kami na an gabos na partisipante makikipagtabangan
           sa, asin makipag-ulay sa, komunidad. Kun ika nag-iisip
           ano man na aktibidad apwera sa pagliwat gamit an kamot, pakibasa asin sunudon an mga giya sa
           %{imports_link} asin %{automated_edits_link}.
@@ -2752,7 +2751,7 @@ bcl:
     communities:
       title: Mga Komunidad
       lede_text: |-
-        An mga tawo hali sa bilog na kinaban nag-aambag o naggagamit kan OpenStreetMap.
+        An mga tawo hali sa bilog na kinaban nag-aambag o naggagamit kan OpenHistoricalMap.
         Mantang an dakol nakikikabtang bilang mga indibiduwal, an iba nagbilog nin mga komunidad.
         An mga grupong ini igwa nin manlain-lain na kadakulaan asin nagrerepresentar nin mga heograpiya poon sa saradit na banwaan sagkod sa darakulang rona na may manlain-lain na nasyon.
         Pwede man sindang magin pormal o impormal.
@@ -2961,7 +2960,7 @@ bcl:
         pa magagamit sa ngunyan.
     feeds:
       show:
-        title: Mga Bakas nin GPS kan OpenStreetMap
+        title: Mga Bakas nin GPS kan OpenHistoricalMap
       description:
         description_with_count:
           one: Sagunson nin GPX na may %{count} na punto gikan ki %{user}
@@ -2973,7 +2972,7 @@ bcl:
       cookies_needed: Minalataw na ika naka-disable nin mga cookies - paki-enable
         an mga cookies sa saimong browser bago magpadagos.
     setup_user_auth:
-      blocked_zero_hour: Igwa ka nin apuradong mensahe sa websityo kan OpenStreetMap.
+      blocked_zero_hour: Igwa ka nin apuradong mensahe sa websityo kan OpenHistoricalMap.
         Kaipuhan mong basahon an mensahe bago mo maitagama an saimong mga pagliwat.
       blocked: An saimong pag-akses sa API nabagat. Maglaog sa interface nin web tanganing
         maaraman an orog pa.
@@ -3033,7 +3032,7 @@ bcl:
     permissions:
       missing: Dai mo tinugutan an aplikasyon na makalaog sa pasilidad na ini
     scopes:
-      openid: Mag-ayon gamit an OpenStreetMap
+      openid: Mag-ayon gamit an OpenHistoricalMap
       read_prefs: Basahon an mga kagustuhan kan paragamit
       write_prefs: Baguhon an mga kagustuhan kan paragamit
       write_diary: Magmukna nin mga entrada sa talaaldawan asin mga komento
@@ -3107,7 +3106,7 @@ bcl:
     new:
       title: Mag-ayon
       tab_title: Mag-ayon
-      signup_to_authorize_html: Mag-ayon sa OpenStreetMap tanganing maakses an %{client_app_name}.
+      signup_to_authorize_html: Mag-ayon sa OpenHistoricalMap tanganing maakses an %{client_app_name}.
       no_auto_account_create: Sa kamunduan, dai pa kami nakakagibo nin sarong account
         para saimo nin awtomatiko.
       please_contact_support_html: Tabi makipag-olay sa %{support_link} para sa tabang
@@ -3115,12 +3114,12 @@ bcl:
       support: suporta
       about:
         header: Libre asin pwedeng liwaton.
-        paragraph_1: Bakong arog kan ibang mga mapa, an OpenStreetMap biyong ginibo
+        paragraph_1: Bakong arog kan ibang mga mapa, an OpenHistoricalMap biyong ginibo
           kan mga tawong arog mo, asin libre ini para sa siisay man na ayuson, i-update,
           i-download asin gamiton.
         paragraph_2: Mag-ayon tanganing makapoon na mag-ambag.
-        welcome: Maugmang pag-abot sa OpenStreetMap
-      duplicate_social_email: Kun igwa ka nang OpenStreetMap account asin boot mong
+        welcome: Maugmang pag-abot sa OpenHistoricalMap
+      duplicate_social_email: Kun igwa ka nang OpenHistoricalMap account asin boot mong
         gumamit nin Tagatao kan indentidad nin ikatolong partido, maglaog gamit an
         saimong pasa-taramon asin baguhon an mga panuytoy kan saimong account.
       display name description: An saimong pampublikong ipinapahiling na pangaran
@@ -3312,9 +3311,9 @@ bcl:
       invalid_scope: Imbalidong kinasakupan
       unknown_error: Dai nagin mapanggana an pagpapatunay
     auth_association:
-      heading: An saimong ID dai pa naka-asosyar sa sarong OpenStreetMap account.
+      heading: An saimong ID dai pa naka-asosyar sa sarong OpenHistoricalMap account.
       option_1: |-
-        Kun ika bago sa OpenStreetMap, maggibo nin bagong account
+        Kun ika bago sa OpenHistoricalMap, maggibo nin bagong account
         gamit an porma sa ibaba.
       option_2: |-
         Kun igwa ka nang account, pwede kang maglaog sa saimong account
@@ -3520,7 +3519,7 @@ bcl:
       add: Magdugang nin Tala
     new_readonly:
       title: Bagong Tala
-      warning: Dai pwedeng maggibo nin mga bagong tala huli ta an API kan OpenStreetMap
+      warning: Dai pwedeng maggibo nin mga bagong tala huli ta an API kan OpenHistoricalMap
         yaon sa modo nin pagbasa sana.
     notes_paging_nav:
       showing_page: Dahon %{page}
