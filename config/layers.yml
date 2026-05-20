@@ -4,6 +4,8 @@
   nameId: "historical"
   canEmbed: true
   source: openhistoricalmap
+  isVectorStyle: true
+  styleUrl: "https://openhistoricalmap.org/map-styles/historical/historical.json"
   credit:
     id: 'make_a_donation'
     href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
@@ -15,6 +17,8 @@
   nameId: "railway"
   canEmbed: true
   source: openhistoricalmap
+  isVectorStyle: true
+  styleUrl: "https://openhistoricalmap.org/map-styles/railway/railway.json"
   credit:
     id: 'make_a_donation'
     href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
@@ -26,6 +30,8 @@
   nameId: "woodblock"
   canEmbed: true
   source: openhistoricalmap
+  isVectorStyle: true
+  styleUrl: "https://openhistoricalmap.org/map-styles/woodblock/woodblock.json"
   credit:
     id: 'make_a_donation'
     href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
@@ -37,6 +43,8 @@
   nameId: "japanesescroll"
   canEmbed: true
   source: openhistoricalmap
+  isVectorStyle: true
+  styleUrl: "https://openhistoricalmap.org/map-styles/japanesescroll/japanesescroll.json"
   credit:
     id: 'make_a_donation'
     href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
