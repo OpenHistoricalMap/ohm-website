@@ -44,7 +44,7 @@
   canEmbed: true
   source: openhistoricalmap
   isVectorStyle: true
-  styleUrl: "https://openhistoricalmap.org/map-styles/japanesescroll/japanesescroll.json"
+  styleUrl: "https://openhistoricalmap.org/map-styles/japanese_scroll/japanese_scroll.json"
   credit:
     id: 'make_a_donation'
     href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
