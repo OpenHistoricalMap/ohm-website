@@ -1775,10 +1775,11 @@ bcl:
     intro_header: Maugmang pag-abot sa OpenHistoricalMap!
     intro_text: An OpenHistoricalMap sarong mapa kan kinaban, na ginibo kan mga tawong
       arog mo asin libreng gamiton sa irarom nin sarong bukas na lisensya.
-    hosting_partners_2024_html: An hosting suportado kan %{fastly}, %{corpmembers},
-      asin iba pang %{partners}.
-    partners_corpmembers: Mga kaapil kan korporasyon kan OSMF
-    partners_partners: mga kasosyo
+    hosting_partners_2024_html: "An OpenHistoricalMap sarong proyekto nin charter kan %{osmus}, sarong 501(c)(3) na organisasyon na daing ganansya na kaapil sa %{osmf}. An teknikal na paggibo suportado kan %{greeninfo} asin %{devseed}."
+    partners_devseed: Development Seed
+    partners_greeninfo: GreenInfo Network
+    partners_osmf: OpenStreetMap Foundation
+    partners_osmus: OpenStreetMap U.S.
     tou: Mga Kondisyon sa Paggamit
     nothing_to_preview: Mayo nin maitatanaw.
     learn_more: Aramon pa
@@ -2671,10 +2672,7 @@ bcl:
       change_preferences: Baguhon an saimong mga kagustuhan digdi
     any_questions:
       title: Igwa nin mga kahaputan?
-      paragraph_1_html: |-
-        An OpenHistoricalMap igwa nin nagkapirang rekurso para sa pag-adal manungod sa proyekto, paghapot asin pagsimbag
-        mga hapot, asin magkasararong pag-urolay asin pagdokumento kan mga topiko sa pagmapa.
-        %{help_link}. Sa sarong organisasyon na naggigibo nin mga plano para sa OpenHistoricalMap? %{welcome_mat_link}.
+      paragraph_1_html: An OpenHistoricalMap igwa nin nagkapirang rekurso para sa pag-adal manungod sa proyekto, paghapot asin pagsimbag mga hapot, asin magkasararong pag-urolay asin pagdokumento kan mga topiko sa pagmapa. %{help_link}.
       get_help_here: Magkua nin tabang digdi
       welcome_mat: Hilingon an Welcome Mat
     sidebar:

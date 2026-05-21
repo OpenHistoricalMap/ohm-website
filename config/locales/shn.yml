@@ -1893,10 +1893,11 @@ shn:
     intro_header: ႁူမ်ၸူမ်းႁပ်ႉတွၼ်ႈထိုင် OpenHistoricalMap ယူႇ
     intro_text: OpenHistoricalMap ၼႆႉ ပဵၼ်ၽႅၼ်ႇလိၼ် လုမ်ႈၾႃႉ ဢၼ်ၵူၼ်းမိူၼ်ၸဝ်ႈၵဝ်ႇ ႁဵတ်းဢွၵ်ႇမႃးသေ
       ၸႂ်ႉတိုဝ်းလႆႈ လူၺ်ႈ ဝႂ်ၶႂၢင်ႉ ဢၼ်လွတ်ႈလႅဝ်းထၢင်ႇႁၢင်ႈၼၼ်ႉ လူၺ်ႈဢမ်ႇလႆႈသဵင်ႈငိုၼ်းသင်။
-    hosting_partners_2024_html: လွင်ႈႁပ်ႉႁွင်းၼႆႉ %{fastly}, %{corpmembers}, လႄႈ %{partners}
-      တၢင်ႇၸိူဝ်း ၵမ်ႉထႅမ်ပၼ်။
-    partners_corpmembers: ၽူႈၶဝ်ႈၸုမ်း OSMF
-    partners_partners: ၽူႈႁူမ်ႈၼႃႈၵၢၼ်
+    hosting_partners_2024_html: "OpenHistoricalMap ၼႆႉ ပဵၼ် ၶူင်းၵၢၼ် ဢၼ် %{osmus} ပဵၼ် ၸုမ်း ဢၼ် ဢမ်ႇ ႁဵတ်း တႃႇ ၼမ်ႉတွၼ်း ဢၼ် ၵပ်းၵၢႆႇ ၵၼ် တင်း %{osmf} ၼၼ်ႉ ယဝ်ႉ။ လွင်ႈၶိုပ်ႈၼႃႈ ပၢႆးၸၢင်ႊၼႆႉ %{greeninfo} လႄႈ %{devseed} ၶဝ် ၵမ်ႉထႅမ်ဝႆႉ။"
+    partners_devseed: Development Seed
+    partners_greeninfo: GreenInfo Network
+    partners_osmf: OpenStreetMap Foundation
+    partners_osmus: OpenStreetMap U.S.
     terms_of_use: ၶေႃႈတူၵ်းလူင်း လွင်ႈၸႂ်ႉတိုဝ်း
     tou: ၶေႃႈမၵ်းမၼ်ႈလွင်ႈၸႂ်ႉတိုဝ်း
     nothing_to_preview: ဢမ်ႇမီးသင်တႃႇတေတူၺ်းဢွၼ်တၢင်း။
@@ -2778,10 +2779,7 @@ shn:
       change_preferences: လႅၵ်ႈလၢႆႈ ၵၢၼ်လိူၵ်ႈၶၼ်ၸဝ်ႈၵဝ်ႇ တီႈၼႆႈ
     any_questions:
       title: မီးၶေႃႈထၢမ်သင်?
-      paragraph_1_html: |-
-        ငိူၼ်ႈတိုၼ်းလၢႆလၢႆဢၼ် တႃႇလဵပ်ႈႁဵၼ်း လွင်ႈၶူင်းၵၢၼ်၊ လွင်ႈတွင်ႈထၢမ် လႄႈ လွင်ႈတွပ်ႇၶေႃႈထၢမ်
-        လႄႈ ႁူမ်ႈၵၼ်ဢုပ်ႇၵုမ် လႄႈ တႅမ်ႈမၢႆဝႆႉ ႁူဝ်ၶေႃႈ ၵၢၼ်ႁဵတ်းၽႅၼ်ႇလိၼ်။
-        %{help_link}။ ဢိၵ်ႇတင်းၸုမ်းဢၼ်ႁဵတ်းၽႅၼ်ၵၢၼ် တႃႇ OpenHistoricalMap ၼၼ်ႉႁိုဝ်? %{welcome_mat_link}။
+      paragraph_1_html: OpenHistoricalMap ၼႆႉ မီးဝႆႉ ၶူဝ်းၶွင်လၢႆလၢႆဢၼ် တႃႇလဵပ်ႈႁဵၼ်း လွင်ႈၶူင်းၵၢၼ်၊ %{ၸွႆႈထႅမ်_ၵွင်ႉသၢၼ်}။ %{help_link}။
       get_help_here: ႁပ်ႉတၢင်းၸွႆႈထႅမ်တီႈၼႆႈ
       welcome_mat: တူၺ်းတီႈ သၢတ်ႇႁပ်ႉတွၼ်ႈ
     sidebar:

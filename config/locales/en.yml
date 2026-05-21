@@ -2610,8 +2610,7 @@ en:
       change_preferences: Change your preferences here
     any_questions:
       title: Any questions?
-      paragraph_1_html: |
-        OpenHistoricalMap has several resources for learning about the project, asking and answering questions, and collaboratively discussing and documenting mapping topics. %{help_link}.
+      paragraph_1_html: OpenHistoricalMap has several resources for learning about the project, asking and answering questions, and collaboratively discussing and documenting mapping topics. %{help_link}.
       get_help_here: Get help here
       welcome_mat: Check out the Welcome Mat
       welcome_mat_url: https://welcome.openstreetmap.org/
