@@ -18,8 +18,10 @@ class SiteTest < ApplicationSystemTestCase
     assert_selector ".tooltip", :text => "Layers"
   end
 
+  # OHM Variant: for OSM, its Standard layer, Mapnik, appears at "/"; we
+  #   preserve this test for OHM but must add "#layers=M" to the visit path
   test "tooltip shows for Legend button on Standard layer" do
-    visit "/"
+    visit "/#layers=M"
 
     assert_no_selector ".tooltip"
     button = find ".control-legend .control-button"
