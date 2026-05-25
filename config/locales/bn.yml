@@ -168,6 +168,7 @@ bn:
         active: সক্রিয়
         display_name: প্রদর্শনের জন্য নাম
         description: প্রোফাইলের বর্ণনা
+        company: কোম্পানি
         home_lat: অক্ষাংশ
         home_lon: দ্রাঘিমাংশ
         languages: পছন্দের ভাষা
@@ -278,7 +279,7 @@ bn:
       external auth: বাহ্যিক প্রমাণীকরণ
       contributor_terms:
         heading: অবদানকারীর জন্য নিয়মাবলি
-        agreed: আপনি নতুন অবদানকারীর শর্তাবলীতে সম্মত।
+        agreed: আপনি %{date} তারিখে অবদানকারীর শর্তাবলীতে সম্মত হয়েছেন।
         agreed_with_pd: আপনি ঘোষণা করেছেন যে আপনি আপনার সম্পাদনাগুলো পাবলিক ডোমেইনের
           অধীনে প্রকাশ করছেন।
         link text: এটি কী?
@@ -441,6 +442,11 @@ bn:
       telephone_link: '%{phone_number}-এ কল করুন'
       colour_preview: রঙ %{colour_value} প্রাকদর্শন
       email_link: ইমেল %{email}
+    versions_navigation:
+      relation: সম্পর্ক
+      history: ইতিহাস
+      version: 'সংস্করণ #%{version}'
+      versions_label: 'সংস্করণ:'
   feature_queries:
     show:
       title: বৈশিষ্ট্য অনুসন্ধান করুন
@@ -455,6 +461,8 @@ bn:
         title_html: 'রাস্তা ইতিহাস: %{name}'
       relation:
         title_html: 'সম্পর্ক ইতিহাস: %{name}'
+      older_versions: পুরনো সংস্করণ
+      newer_versions: নতুনতর সংস্করণ
   nodes:
     timeout:
       sorry: দুঃখিত, আইডি %{id} এর সাথে সম্পৃক্ত নোডের উপাত্ত পুনরুদ্ধার করতে অতিরিক্ত

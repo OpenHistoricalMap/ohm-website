@@ -868,7 +868,7 @@ nl:
     bad_request:
       title: Onjuiste aanvraag
       description: De bewerking die u op de OpenHistoricalMap-server hebt aangevraagd
-        is ongeldig (HTTP 400)
+        is incorrect (HTTP 400)
     forbidden:
       title: Verboden
       description: De door u gevraagde bewerking op de OpenHistoricalMap-server is
