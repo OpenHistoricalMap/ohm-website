@@ -537,7 +537,7 @@ lb:
       unhide_comment: nees weisen
       comment: Bemierkung
       changesetxml: Ännerungssaz-XML
-      osmchangexml: osmChange XML
+      osmchangexml: osmChange-XML
     paging_nav:
       nodes_title: Kniet
       nodes_paginated: Kniet (%{x}–%{y} vu(n) %{count})
@@ -1764,8 +1764,8 @@ lb:
           hutt, reaktivéiert. Den Hiweis ass an der Géigend vu(n) %{place}.'
         commented_note_html: '%{commenter} huet e Kaartenhiweis, deen Dir kommentéiert
           hutt, reaktivéiert. Den Hiweis ass an der Géigend vu(n) %{place}.'
-      details: Äntweren oder méi gewuer ginn iwwer d'Notiz op %{url}.
-      details_html: Äntwert oder gitt op %{url} méi iwwer d'Notiz gewuer.
+      details: Äntwert oder gitt méi iwwer d'Notiz gewuer ënner %{url}.
+      details_html: Äntwert oder gitt méi iwwer d'Notiz gewuer ënner %{url}.
     changeset_comment_notification:
       hi: Salut %{to_user},
       commented:

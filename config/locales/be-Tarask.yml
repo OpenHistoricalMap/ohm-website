@@ -372,7 +372,10 @@ be-Tarask:
       other: '%{count} лініяў'
     download_xml: Спампаваць XML
     location: 'Месцазнаходжаньне:'
+    node:
+      title_html: 'Вузел: %{name}'
     way:
+      title_html: 'Лінія: %{name}'
       nodes: Вузлы
       nodes_count:
         one: '%{count} вузел'
@@ -446,8 +449,37 @@ be-Tarask:
       enclosing: Навакольныя аб’екты
   old_elements:
     index:
+      node:
+        title_html: 'Гісторыя вузла: %{name}'
+      way:
+        title_html: 'Гісторыя лініі: %{name}'
       relation:
         title_html: 'Гісторыя зьвязкаў: %{name}'
+      older_versions: Старэйшыя вэрсіі
+      newer_versions: Навейшыя вэрсіі
+    actions:
+      view_redacted_data: Прагляд рэдактаваных зьвестак
+      view_redaction_message: Прагляд рэдактаванага паведамленьня
+  nodes:
+    not_found_message:
+      sorry: 'На жаль, вузел #%{id} ня знойдзены.'
+    timeout:
+      sorry: На жаль, зьвесткі вузла з ідэнтыфікатарам %{id} занадта вялікія для атрыманьня.
+  old_nodes:
+    not_found_message:
+      sorry: 'На жаль, вузел #%{id} вэрсіі %{version} ня знойдзены.'
+    timeout:
+      sorry: На жаль, гісторыя вузла з ідэнтыфікатарам %{id} занадта вялікая для атрыманьня.
+  ways:
+    not_found_message:
+      sorry: 'На жаль, лінія #%{id} ня знойдзеная.'
+    timeout:
+      sorry: На жаль, зьвесткі лініі з ідэнтыфікатарам %{id} занадта вялікія для атрыманьня.
+  old_ways:
+    not_found_message:
+      sorry: 'На жаль, лінія #%{id} вэрсіі %{version} ня знойдзеная.'
+    timeout:
+      sorry: На жаль, гісторыя лініі з ідэнтыфікатарам %{id} занадта вялікая для атрыманьня.
   relations:
     not_found_message:
       sorry: 'На жаль, зьвязак #%{id} ня знойдзены.'
@@ -472,11 +504,27 @@ be-Tarask:
     timeout:
       sorry: На жаль, сьпіс аб'ектаў зьвязку з ідэнтыфікатарам %{id} занадта вялікі
         для атрыманьня.
+  changeset_comments:
+    feeds:
+      comment:
+        comment: 'Новы камэнтар да набору зьменаў #%{changeset_id} ад %{author}'
+        commented_at_by_html: Абноўлена %{when} %{user}
+      show:
+        title_all: Абмеркаваньне набору зьменаў OpenHistoricalMap
   changesets:
     index:
       title: Наборы зьменаў
       title_user: Набор зьменаў %{user}
+      title_user_link_html: Наборы зьменаў %{user_link}
       title_nearby: Наборы зьменаў для суседніх удзельнікаў
+      empty: Наборы зьменаў ня знойдзеныя.
+      empty_area: Няма набораў зьменаў у гэтай зоне.
+      empty_user: Няма набораў зьменаў ад гэтага карыстальніка.
+      no_more: Набораў зьменаў болей ня знойдзена.
+      no_more_area: Болей няма набораў зьменаў у гэтай зоне.
+      no_more_user: Болей няма набораў зьменаў ад гэтага карыстальніка.
+      older_changesets: Старэйшыя наборы зьменаў
+      newer_changesets: Навейшыя наборы зьменаў
       feed:
         title: Набор зьменаў %{id}
         title_comment: Набор зьменаў %{id} - %{comment}
@@ -485,18 +533,45 @@ be-Tarask:
         belongs_to: Аўтар
     show:
       title: 'Набор зьменаў: %{id}'
+      created: 'Створана: %{when}'
+      closed: 'Закрыта: %{when}'
+      created_ago_html: Створана %{time_ago}
+      closed_ago_html: Закрыта %{time_ago}
+      created_ago_by_html: Створана %{time_ago} %{user}
+      closed_ago_by_html: Закрыта %{time_ago} %{user}
+      discussion: Абмеркаваньне
+      join_discussion: Увайсьці, каб абмяркаваць
+      still_open: Набор зьвестак яшчэ адкрыты - абмеркаваньне будзе даступным, пакуль
+        набор зьвестак не закрыецца.
+      subscribe: Падпісацца
+      unsubscribe: Адпісацца
+      comment_by_html: Камэнтар %{user} %{time_ago}
+      hidden_comment_by_html: Схаваны камэнтар %{user} %{time_ago}
       hide_comment: схаваць
       unhide_comment: паказаць
       comment: Камэнтар
       changesetxml: Набор зьменаў у фармаце XML
       osmchangexml: osmChange XML
     paging_nav:
+      nodes_title: Вузлы
       nodes_paginated: Пункты (%{x}-%{y} з %{count})
+      ways_title: Лініі
       ways_paginated: Лініі (%{x}-%{y} з %{count})
+      relations_title: Зьвязкі
       relations_paginated: Сувязі (%{x}-%{y} з %{count})
+      range: '%{x}-%{y} з %{count}'
+    not_found_message:
+      sorry: На жаль, набор зьменаў %{id} ня знойдзены.
     timeout:
       sorry: Прабачце, сьпіс набораў зьменаў, які Вы запыталі, занадта вялікі для
         атрыманьня.
+  changeset_subscriptions:
+    show:
+      subscribe:
+        heading: Падпісацца на гэтае абмеркаваньне набору зьменаў?
+        button: Падпісацца на абмеркаваньне
+      unsubscribe:
+        heading: Адпісацца ад гэтага абмеркаваньня набору зьменаў?
   dashboards:
     contact:
       km away: '%{count}км ад Вас'
