@@ -1,56 +1,60 @@
+# frozen_string_literal: true
 require "test_helper"
 
 class I18nTest < ActiveSupport::TestCase
   I18n.available_locales.each do |locale|
-    test locale.to_s do
-      without_i18n_exceptions do
-        # plural_keys = plural_keys(locale)
+    # OHM variant: upstream does not use the 'qqq' dummy language for documenting messages
+    unless locale.to_s == 'qqq'
+      test locale.to_s do
+        without_i18n_exceptions do
+          # plural_keys = plural_keys(locale)
 
-        translation_keys.each do |key|
-          variables = []
+          translation_keys.each do |key|
+            variables = []
 
-          default_value = I18n.t(key, :locale => I18n.default_locale)
+            default_value = I18n.t(key, :locale => I18n.default_locale)
 
-          if default_value.is_a?(Hash)
-            variables.push("count")
+            if default_value.is_a?(Hash)
+              variables.push("count")
 
-            default_value.each_value do |subvalue|
-              subvalue.scan(/%\{(\w+)\}/) do
+              default_value.each_value do |subvalue|
+                subvalue.scan(/%\{(\w+)\}/) do
+                  variables.push(Regexp.last_match(1))
+                end
+              end
+            else
+              default_value.scan(/%\{(\w+)\}/) do
                 variables.push(Regexp.last_match(1))
               end
             end
-          else
-            default_value.scan(/%\{(\w+)\}/) do
-              variables.push(Regexp.last_match(1))
-            end
-          end
 
-          variables.push("attribute") if key =~ /^(active(model|record)\.)?errors\./
+            variables.push("attribute") if key =~ /^(active(model|record)\.)?errors\./
 
-          value = I18n.t(key, :locale => locale, :fallback => true)
+            value = I18n.t(key, :locale => locale, :fallback => true)
 
-          if value.is_a?(Hash)
-            value.each do |subkey, subvalue|
-              # assert plural_keys.include?(subkey), "#{key}.#{subkey} is not a valid plural key"
+            if value.is_a?(Hash)
+              value.each do |subkey, subvalue|
+                # assert plural_keys.include?(subkey), "#{key}.#{subkey} is not a valid plural key"
 
-              next if subvalue.nil?
+                next if subvalue.nil?
 
-              subvalue.scan(/%\{(\w+)\}/) do
-                assert_includes variables, Regexp.last_match(1), "#{key}.#{subkey} uses unknown interpolation variable #{Regexp.last_match(1)}"
+                subvalue.scan(/%\{(\w+)\}/) do
+                  assert_includes variables, Regexp.last_match(1), "#{key}.#{subkey} uses unknown interpolation variable #{Regexp.last_match(1)}"
+                end
+              end
+
+              assert_includes value, :other, "#{key}.other plural key missing"
+            else
+              assert_kind_of String, value, "#{key} is not a string"
+
+              value.scan(/%\{(\w+)\}/) do
+                assert_includes variables, Regexp.last_match(1), "#{key} uses unknown interpolation variable #{Regexp.last_match(1)}"
               end
             end
-
-            assert_includes value, :other, "#{key}.other plural key missing"
-          else
-            assert_kind_of String, value, "#{key} is not a string"
-
-            value.scan(/%\{(\w+)\}/) do
-              assert_includes variables, Regexp.last_match(1), "#{key} uses unknown interpolation variable #{Regexp.last_match(1)}"
-            end
           end
-        end
 
-        assert_includes %w[ltr rtl], I18n.t("html.dir", :locale => locale), "html.dir must be ltr or rtl"
+          assert_includes %w[ltr rtl], I18n.t("html.dir", :locale => locale), "html.dir must be ltr or rtl"
+        end
       end
     end
   end

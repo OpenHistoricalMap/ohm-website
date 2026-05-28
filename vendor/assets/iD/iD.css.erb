@@ -374,8 +374,7 @@
 
 /* No interactivity except what we specifically allow */
 .ideditor .data-layer.osm *,
-.ideditor .data-layer.notes *,
-.ideditor .data-layer.keepRight * {
+.ideditor .data-layer.notes * {
     pointer-events: none;
 }
 
@@ -3544,7 +3543,6 @@
 /* OSM Notes and QA Layers */
 
 .ideditor .qa-header-icon .qaItem-fill,
-.ideditor .layer-keepRight .qaItem .qaItem-fill,
 .ideditor .layer-osmose .qaItem .qaItem-fill {
     stroke: #333;
     stroke-width: 1.3px;  /* NOTE: likely a better way to scale the icon stroke */
@@ -3593,79 +3591,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/* Keep Right Issues
-------------------------------------------------------- */
-.ideditor .keepRight.itemType-20,     
-.ideditor .keepRight.itemType-40,     
-.ideditor .keepRight.itemType-210,     
-.ideditor .keepRight.itemType-270,     
-.ideditor .keepRight.itemType-310,     
-.ideditor .keepRight.itemType-320,     
-.ideditor .keepRight.itemType-350 {   /* improper bridge tag */
-    color: #ff9;
-}
-
-.ideditor .keepRight.itemType-50 {    /* almost junctions */
-    color: #88f;
-}
-
-.ideditor .keepRight.itemType-60,     
-.ideditor .keepRight.itemType-70,     
-.ideditor .keepRight.itemType-90,     
-.ideditor .keepRight.itemType-100,     
-.ideditor .keepRight.itemType-110,     
-.ideditor .keepRight.itemType-150,     
-.ideditor .keepRight.itemType-220,     
-.ideditor .keepRight.itemType-380 {   /* non-physical sport tag */
-    color: #5d0;
-}
-
-.ideditor .keepRight.itemType-130 {   /* disconnected ways */
-    color: #fa3;
-}
-
-.ideditor .keepRight.itemType-170 {   /* FIXME tag */
-    color: #ff0;
-}
-
-.ideditor .keepRight.itemType-190 {   /* intersection without junction */
-    color: #f33;
-}
-
-.ideditor .keepRight.itemType-200 {   /* overlapping ways */
-    color: #fdbf6f;
-}
-
-.ideditor .keepRight.itemType-160,    
-.ideditor .keepRight.itemType-230 {   /* layer conflict */
-    color: #b60;
-}
-
-.ideditor .keepRight.itemType-280 {   /* boundary issues */
-    color: #5f47a0;
-}
-
-.ideditor .keepRight.itemType-180,    
-.ideditor .keepRight.itemType-290 {   /* turn restriction issues */
-    color: #ace;
-}
-
-.ideditor .keepRight.itemType-300,    
-.ideditor .keepRight.itemType-390 {   /* missing tracktype */
-    color: #090;
-}
-
-.ideditor .keepRight.itemType-360,    
-.ideditor .keepRight.itemType-370,    
-.ideditor .keepRight.itemType-410 {   /* website issues */
-    color: #f9b;
-}
-
-.ideditor .keepRight.itemType-120,    
-.ideditor .keepRight.itemType-400 {   /* geometry / turn angles */
-    color: #c35;
 }
 
 /* Custom Map Data (geojson, gpx, kml, vector tile) */
@@ -6275,11 +6200,8 @@
             user-select: none;
 }
 
-.ideditor .restriction-help span {
-    margin: 2px;
-}
-
 .ideditor .restriction-help .qualifier {
+    margin: 2px;
     color: #666;
     font-weight: bold;
 }
@@ -8951,7 +8873,7 @@
     margin-left: 5px;
 }
 
-.ideditor .user-list a:not(:last-child):after {
+.ideditor .user-list a:not(:last-of-type):after {
     content: ', ';
 }
 
