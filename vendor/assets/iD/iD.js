@@ -555,10 +555,10 @@
       try {
         new DOMException2();
       } catch (err) {
-        DOMException2 = function(message, name) {
-          this.message = message;
+        DOMException2 = function(message2, name) {
+          this.message = message2;
           this.name = name;
-          var error = Error(message);
+          var error = Error(message2);
           this.stack = error.stack;
         };
         DOMException2.prototype = Object.create(Error.prototype);
@@ -6548,7 +6548,7 @@
     y: y3,
     dx,
     dy,
-    dispatch: dispatch12
+    dispatch: dispatch11
   }) {
     Object.defineProperties(this, {
       type: { value: type2, enumerable: true, configurable: true },
@@ -6561,7 +6561,7 @@
       y: { value: y3, enumerable: true, configurable: true },
       dx: { value: dx, enumerable: true, configurable: true },
       dy: { value: dy, enumerable: true, configurable: true },
-      _: { value: dispatch12 }
+      _: { value: dispatch11 }
     });
   }
   var init_event = __esm({
@@ -6650,7 +6650,7 @@
       }
     }
     function beforestart(that, container2, event, d2, identifier, touch) {
-      var dispatch12 = listeners.copy(), p2 = pointer_default(touch || event, container2), dx, dy, s2;
+      var dispatch11 = listeners.copy(), p2 = pointer_default(touch || event, container2), dx, dy, s2;
       if ((s2 = subject.call(that, new DragEvent("beforestart", {
         sourceEvent: event,
         target: drag,
@@ -6660,7 +6660,7 @@
         y: p2[1],
         dx: 0,
         dy: 0,
-        dispatch: dispatch12
+        dispatch: dispatch11
       }), d2)) == null) return;
       dx = s2.x - p2[0] || 0;
       dy = s2.y - p2[1] || 0;
@@ -6677,7 +6677,7 @@
             p2 = pointer_default(touch2 || event2, container2), n3 = active;
             break;
         }
-        dispatch12.call(
+        dispatch11.call(
           type2,
           that,
           new DragEvent(type2, {
@@ -6690,7 +6690,7 @@
             y: p2[1] + dy,
             dx: p2[0] - p02[0],
             dy: p2[1] - p02[1],
-            dispatch: dispatch12
+            dispatch: dispatch11
           }),
           d2
         );
@@ -9058,14 +9058,14 @@
     sourceEvent,
     target,
     transform: transform3,
-    dispatch: dispatch12
+    dispatch: dispatch11
   }) {
     Object.defineProperties(this, {
       type: { value: type2, enumerable: true, configurable: true },
       sourceEvent: { value: sourceEvent, enumerable: true, configurable: true },
       target: { value: target, enumerable: true, configurable: true },
       transform: { value: transform3, enumerable: true, configurable: true },
-      _: { value: dispatch12 }
+      _: { value: dispatch11 }
     });
   }
   var init_event2 = __esm({
@@ -10400,7 +10400,7 @@
     target,
     selection: selection2,
     mode: mode2,
-    dispatch: dispatch12
+    dispatch: dispatch11
   }) {
     Object.defineProperties(this, {
       type: { value: type2, enumerable: true, configurable: true },
@@ -10408,7 +10408,7 @@
       target: { value: target, enumerable: true, configurable: true },
       selection: { value: selection2, enumerable: true, configurable: true },
       mode: { value: mode2, enumerable: true, configurable: true },
-      _: { value: dispatch12 }
+      _: { value: dispatch11 }
     });
   }
   var init_event3 = __esm({
@@ -25894,7 +25894,7 @@ ${source}
       defaultOsmApiConnections = {
         live: {
           url: "https://www.openhistoricalmap.org",
-          apiUrl: "https://www.openhistoricalmap.org",
+          apiUrl: "https://api.openhistoricalmap.org",
           client_id: "0tmNTmd0Jo1dQp4AUmMBLtGiD9YpMuXzHefitcuVStc",
           client_secret: "BTlNrNxIPitHdL4sP2clHw5KLoee9aKkA7dQbc0Bj7Q"
         },
@@ -26086,51 +26086,63 @@ ${source}
       let path = stringId.split(".").map((s2) => s2.replace(/<TX_DOT>/g, ".")).reverse();
       let stringsKey = locale3;
       if (stringsKey.toLowerCase() === "en-us") stringsKey = "en";
-      let result2 = _localeStrings && _localeStrings[scopeId] && _localeStrings[scopeId][stringsKey];
-      while (result2 !== void 0 && path.length) {
-        result2 = result2[path.pop()];
+      let localeString = _localeStrings && _localeStrings[scopeId] && _localeStrings[scopeId][stringsKey];
+      while (localeString !== void 0 && path.length) {
+        localeString = localeString[path.pop()];
       }
-      if (result2 !== void 0) {
+      if (localeString !== void 0) {
         if (replacements) {
-          if (typeof result2 === "object" && Object.keys(result2).length) {
+          if (typeof localeString === "object" && Object.keys(localeString).length) {
             const number4 = Object.values(replacements).find(function(value) {
               return typeof value === "number";
             });
             if (number4 !== void 0) {
               const rule = pluralRule(number4, locale3);
-              if (result2[rule]) {
-                result2 = result2[rule];
+              if (localeString[rule]) {
+                localeString = localeString[rule];
               } else {
-                result2 = Object.values(result2)[0];
+                localeString = Object.values(localeString)[0];
               }
             }
           }
-          if (typeof result2 === "string") {
+          if (typeof localeString === "string") {
+            let parts = [localeString];
             for (let key in replacements) {
-              let value = replacements[key];
-              if (typeof value === "number") {
-                if (value.toLocaleString) {
-                  value = value.toLocaleString(locale3, {
-                    style: "decimal",
-                    useGrouping: true,
-                    minimumFractionDigits: 0
-                  });
-                } else {
-                  value = value.toString();
-                }
-              }
               const token = `{${key}}`;
               const regex = new RegExp(token, "g");
-              result2 = result2.replace(regex, value);
+              parts = parts.flatMap((part) => {
+                if (typeof part === "object") return part;
+                return part.split(regex).flatMap((p2) => [{ key }, p2]).slice(1);
+              });
             }
+            const result2 = parts.map((part) => {
+              if (typeof part === "object") {
+                const value = replacements[part.key];
+                if (typeof value === "number") {
+                  if (value.toLocaleString) {
+                    return value.toLocaleString(locale3, {
+                      style: "decimal",
+                      useGrouping: true,
+                      minimumFractionDigits: 0
+                    });
+                  } else {
+                    return value.toString();
+                  }
+                }
+                return value;
+              }
+              return part;
+            });
+            return {
+              texts: result2,
+              locale: locale3
+            };
           }
         }
-        if (typeof result2 === "string") {
-          return {
-            text: result2,
-            locale: locale3
-          };
-        }
+        return {
+          texts: [localeString],
+          locale: locale3
+        };
       }
       let index2 = _localeCodes.indexOf(locale3);
       if (index2 >= 0 && index2 < _localeCodes.length - 1) {
@@ -26139,14 +26151,14 @@ ${source}
       }
       if (replacements && "default" in replacements) {
         return {
-          text: replacements.default,
+          texts: [replacements.default],
           locale: null
         };
       }
       const missing = `Missing ${locale3} translation: ${origStringId}`;
       if (typeof console !== "undefined") console.error(missing);
       return {
-        text: missing,
+        texts: [missing],
         locale: "en"
       };
     };
@@ -26155,7 +26167,7 @@ ${source}
     };
     localizer.coalesceStringIds = (stringIds) => stringIds.find((id3) => localizer.hasTextForStringId(id3)) || stringIds[stringIds.length - 1];
     localizer.t = function(stringId, replacements, locale3) {
-      return localizer.tInfo(stringId, replacements, locale3).text;
+      return localizer.tInfo(stringId, replacements, locale3).texts.join("");
     };
     localizer.t.html = function(stringId, replacements, locale3) {
       replacements = Object.assign({}, replacements);
@@ -26168,8 +26180,9 @@ ${source}
         }
       }
       const info = localizer.tInfo(stringId, replacements, locale3);
-      if (info.text) {
-        return `<span class="localized-text" lang="${info.locale || "und"}">${info.text}</span>`;
+      const text = info.texts.join("");
+      if (text) {
+        return `<span class="localized-text" lang="${info.locale || "und"}">${text}</span>`;
       } else {
         return "";
       }
@@ -26177,7 +26190,18 @@ ${source}
     localizer.t.append = function(stringId, replacements, locale3) {
       const ret = function(selection2) {
         const info = localizer.tInfo(stringId, replacements, locale3);
-        return selection2.append("span").attr("class", "localized-text").attr("lang", info.locale || "und").text((replacements && replacements.prefix || "") + info.text + (replacements && replacements.suffix || ""));
+        const texts = [
+          replacements?.prefix,
+          ...info.texts,
+          replacements?.suffix
+        ].filter(Boolean);
+        texts.forEach((text) => {
+          if (typeof text === "string") {
+            selection2.append("span").attr("class", "localized-text").attr("lang", info.locale || "und").text(replacements?._trim ? text.trim() : text);
+          } else {
+            selection2.call(text);
+          }
+        });
       };
       ret.stringId = stringId;
       return ret;
@@ -26185,9 +26209,22 @@ ${source}
     localizer.t.addOrUpdate = function(stringId, replacements, locale3) {
       const ret = function(selection2) {
         const info = localizer.tInfo(stringId, replacements, locale3);
-        const span = selection2.selectAll("span.localized-text").data([info]);
-        const enter = span.enter().append("span").classed("localized-text", true);
-        span.merge(enter).attr("lang", info.locale || "und").text((replacements && replacements.prefix || "") + info.text + (replacements && replacements.suffix || ""));
+        const texts = [
+          replacements?.prefix,
+          ...info.texts,
+          replacements?.suffix
+        ].filter(Boolean);
+        const span = selection2.selectAll("span").data(texts.map((_3, i3) => i3), (d2) => stringId + d2);
+        span.exit().remove();
+        const enter = span.enter().append("span");
+        span.merge(enter).each(function(d2) {
+          const text = texts[d2];
+          if (typeof text === "string") {
+            select_default2(this).classed("localized-text", true).attr("lang", info.locale || "und").text(replacements?._trim ? text.trim() : text);
+          } else {
+            select_default2(this).call(text);
+          }
+        });
       };
       ret.stringId = stringId;
       return ret;
@@ -26279,6 +26316,7 @@ ${source}
   var init_localizer = __esm({
     "modules/core/localizer.js"() {
       "use strict";
+      init_src6();
       init_compat2();
       init_file_fetcher();
       init_detect();
@@ -26291,15 +26329,15 @@ ${source}
   });
 
   // node_modules/edtf/src/assert.js
-  function assert(value, message) {
-    return equal(!!value, true, message || `expected "${value}" to be ok`);
+  function assert(value, message2) {
+    return equal(!!value, true, message2 || `expected "${value}" to be ok`);
   }
-  function equal(actual, expected, message) {
+  function equal(actual, expected, message2) {
     if (actual == expected)
       return true;
     if (Number.isNaN(actual) && Number.isNaN(expected))
       return true;
-    throw new Error(message || `expected "${actual}" to equal "${expected}"`);
+    throw new Error(message2 || `expected "${actual}" to equal "${expected}"`);
   }
   var assert_default;
   var init_assert = __esm({
@@ -26710,7 +26748,7 @@ ${source}
             col: this.index - this.lastLineBreak
           };
         };
-        StreamLexer.prototype.formatError = function(token, message) {
+        StreamLexer.prototype.formatError = function(token, message2) {
           var buffer = this.buffer;
           if (typeof buffer === "string") {
             var lines = buffer.split("\n").slice(
@@ -26721,14 +26759,14 @@ ${source}
             if (nextLineBreak === -1) nextLineBreak = buffer.length;
             var col = this.index - this.lastLineBreak;
             var lastLineDigits = String(this.line).length;
-            message += " at line " + this.line + " col " + col + ":\n\n";
-            message += lines.map(function(line, i3) {
+            message2 += " at line " + this.line + " col " + col + ":\n\n";
+            message2 += lines.map(function(line, i3) {
               return pad7(this.line - lines.length + i3 + 1, lastLineDigits) + " " + line;
             }, this).join("\n");
-            message += "\n" + pad7("", lastLineDigits + col) + "^\n";
-            return message;
+            message2 += "\n" + pad7("", lastLineDigits + col) + "^\n";
+            return message2;
           } else {
-            return message + " at index " + (this.index - 1);
+            return message2 + " at index " + (this.index - 1);
           }
           function pad7(n3, length2) {
             var s2 = String(n3);
@@ -30590,7 +30628,7 @@ ${source}
       }
       return false;
     }
-    function tiler8() {
+    function tiler7() {
       var z3 = geoScaleToZoom(_scale / (2 * Math.PI), _tileSize);
       var z0 = clamp(Math.round(z3), _zoomExtent[0], _zoomExtent[1]);
       var tileMin = 0;
@@ -30625,13 +30663,13 @@ ${source}
       tiles.scale = k3;
       return tiles;
     }
-    tiler8.getTiles = function(projection2) {
+    tiler7.getTiles = function(projection2) {
       var origin = [
         projection2.scale() * Math.PI - projection2.translate()[0],
         projection2.scale() * Math.PI - projection2.translate()[1]
       ];
       this.size(projection2.clipExtent()[1]).scale(projection2.scale() * 2 * Math.PI).translate(projection2.translate());
-      var tiles = tiler8();
+      var tiles = tiler7();
       var ts = tiles.scale;
       return tiles.map(function(tile) {
         if (_skipNullIsland && nearNullIsland(tile)) {
@@ -30649,8 +30687,8 @@ ${source}
         };
       }).filter(Boolean);
     };
-    tiler8.getGeoJSON = function(projection2) {
-      var features = tiler8.getTiles(projection2).map(function(tile) {
+    tiler7.getGeoJSON = function(projection2) {
+      var features = tiler7.getTiles(projection2).map(function(tile) {
         return {
           type: "Feature",
           properties: {
@@ -30668,42 +30706,42 @@ ${source}
         features
       };
     };
-    tiler8.tileSize = function(val) {
+    tiler7.tileSize = function(val) {
       if (!arguments.length) return _tileSize;
       _tileSize = val;
-      return tiler8;
+      return tiler7;
     };
-    tiler8.zoomExtent = function(val) {
+    tiler7.zoomExtent = function(val) {
       if (!arguments.length) return _zoomExtent;
       _zoomExtent = val;
-      return tiler8;
+      return tiler7;
     };
-    tiler8.size = function(val) {
+    tiler7.size = function(val) {
       if (!arguments.length) return _size;
       _size = val;
-      return tiler8;
+      return tiler7;
     };
-    tiler8.scale = function(val) {
+    tiler7.scale = function(val) {
       if (!arguments.length) return _scale;
       _scale = val;
-      return tiler8;
+      return tiler7;
     };
-    tiler8.translate = function(val) {
+    tiler7.translate = function(val) {
       if (!arguments.length) return _translate;
       _translate = val;
-      return tiler8;
+      return tiler7;
     };
-    tiler8.margin = function(val) {
+    tiler7.margin = function(val) {
       if (!arguments.length) return _margin;
       _margin = +val;
-      return tiler8;
+      return tiler7;
     };
-    tiler8.skipNullIsland = function(val) {
+    tiler7.skipNullIsland = function(val) {
       if (!arguments.length) return _skipNullIsland;
       _skipNullIsland = val;
-      return tiler8;
+      return tiler7;
     };
-    return tiler8;
+    return tiler7;
   }
   var init_tiler = __esm({
     "modules/util/tiler.js"() {
@@ -31162,7 +31200,7 @@ ${source}
         if (oldPreset && !oldPreset.id.startsWith(newPreset.id)) {
           newPreset.fields(loc).concat(newPreset.moreFields(loc)).filter((f2) => f2.matchGeometry(geometry2)).flatMap((f2) => f2.allKeys()).filter(Boolean).forEach((key) => preserveKeys.push(key));
         }
-        if (oldPreset) {
+        if (oldPreset && oldPreset.id !== newPreset.id) {
           const oldPresetFieldKeys = [
             ...oldPreset.fields(loc),
             ...oldPreset.moreFields(loc)
@@ -36611,8 +36649,8 @@ ${source}
     discardTags = discardTags || {};
     var _option = "safe";
     var _conflicts = [];
-    function user(d2) {
-      return typeof formatUser === "function" ? formatUser(d2) : escape3(d2);
+    function user(user2) {
+      return typeof formatUser === "function" ? (selection2) => selection2.call(formatUser, user2) : (selection2) => selection2.text(user2);
     }
     function mergeLocation(remote, target) {
       function pointEqual(a2, b11) {
@@ -36625,7 +36663,7 @@ ${source}
       if (_option === "force_remote") {
         return target.update({ loc: remote.loc });
       }
-      _conflicts.push(_t.html("merge_remote_changes.conflict.location", { user: { html: user(remote.user) } }));
+      _conflicts.push(_t.append("merge_remote_changes.conflict.location", { user: user(remote.user) }));
       return target;
     }
     function mergeNodes(base, remote, target) {
@@ -36652,7 +36690,7 @@ ${source}
           } else if (deepEqual(c2.o, c2.b)) {
             nodes.push.apply(nodes, c2.a);
           } else {
-            _conflicts.push(_t.html("merge_remote_changes.conflict.nodelist", { user: { html: user(remote.user) } }));
+            _conflicts.push(_t.append("merge_remote_changes.conflict.nodelist", { user: user(remote.user) }));
             break;
           }
         }
@@ -36692,7 +36730,7 @@ ${source}
           if (remote.visible) {
             target = mergeLocation(remote, target);
           } else {
-            _conflicts.push(_t.html("merge_remote_changes.conflict.deleted", { user: { html: user(remote.user) } }));
+            _conflicts.push(_t.append("merge_remote_changes.conflict.deleted", { user: user(remote.user) }));
           }
           if (_conflicts.length !== ccount) break;
           updates.replacements.push(target);
@@ -36716,7 +36754,7 @@ ${source}
       if (_option === "force_remote") {
         return target.update({ members: remote.members });
       }
-      _conflicts.push(_t.html("merge_remote_changes.conflict.memberlist", { user: { html: user(remote.user) } }));
+      _conflicts.push(_t.append("merge_remote_changes.conflict.memberlist", { user: user(remote.user) }));
       return target;
     }
     function mergeTags(base, remote, target) {
@@ -36739,9 +36777,9 @@ ${source}
         var k3 = keys5[i3];
         if (o2[k3] !== b11[k3] && a2[k3] !== b11[k3]) {
           if (o2[k3] !== a2[k3]) {
-            _conflicts.push(_t.html(
+            _conflicts.push(_t.append(
               "merge_remote_changes.conflict.tags",
-              { tag: k3, local: a2[k3], remote: b11[k3], user: { html: user(remote.user) } }
+              { tag: k3, local: a2[k3], remote: b11[k3], user: user(remote.user) }
             ));
           } else {
             if (b11.hasOwnProperty(k3)) {
@@ -36771,7 +36809,7 @@ ${source}
           }
           return graph.replace(target);
         } else {
-          _conflicts.push(_t.html("merge_remote_changes.conflict.deleted", { user: { html: user(remote.user) } }));
+          _conflicts.push(_t.append("merge_remote_changes.conflict.deleted", { user: user(remote.user) }));
           return graph;
         }
       }
@@ -36804,7 +36842,6 @@ ${source}
       "use strict";
       init_es();
       init_diff3();
-      init_compat2();
       init_localizer();
       init_delete_multiple();
       init_osm();
@@ -37837,7 +37874,7 @@ ${source}
     behaviorHover: () => behaviorHover
   });
   function behaviorHover(context) {
-    var dispatch12 = dispatch_default("hover");
+    var dispatch11 = dispatch_default("hover");
     var _selection = select_default2(null);
     var _newNodeId = null;
     var _initialNodeID = null;
@@ -37849,14 +37886,14 @@ ${source}
       if (_altDisables && d3_event.keyCode === utilKeybinding.modifierCodes.alt) {
         _selection.selectAll(".hover").classed("hover-suppressed", true).classed("hover", false);
         _selection.classed("hover-disabled", true);
-        dispatch12.call("hover", this, null);
+        dispatch11.call("hover", this, null);
       }
     }
     function keyup(d3_event) {
       if (_altDisables && d3_event.keyCode === utilKeybinding.modifierCodes.alt) {
         _selection.selectAll(".hover-suppressed").classed("hover-suppressed", false).classed("hover", true);
         _selection.classed("hover-disabled", false);
-        dispatch12.call("hover", this, _targets);
+        dispatch11.call("hover", this, _targets);
       }
     }
     function behavior(selection2) {
@@ -37943,7 +37980,7 @@ ${source}
           selector = selector.slice(1);
           _selection.selectAll(selector).classed(suppressed ? "hover-suppressed" : "hover", true);
         }
-        dispatch12.call("hover", this, !suppressed && targets);
+        dispatch11.call("hover", this, !suppressed && targets);
       }
     }
     behavior.off = function(selection2) {
@@ -37967,7 +38004,7 @@ ${source}
       _initialNodeID = nodeId;
       return behavior;
     };
-    return utilRebind(behavior, dispatch12, "on");
+    return utilRebind(behavior, dispatch11, "on");
   }
   var init_hover = __esm({
     "modules/behavior/hover.js"() {
@@ -37986,7 +38023,7 @@ ${source}
     behaviorDraw: () => behaviorDraw
   });
   function behaviorDraw(context) {
-    var dispatch12 = dispatch_default(
+    var dispatch11 = dispatch_default(
       "move",
       "down",
       "downcancel",
@@ -38029,7 +38066,7 @@ ${source}
         downTime: +/* @__PURE__ */ new Date(),
         downLoc: pointerLocGetter(d3_event)
       };
-      dispatch12.call("down", this, d3_event, datum2(d3_event));
+      dispatch11.call("down", this, d3_event, datum2(d3_event));
     }
     function pointerup(d3_event) {
       if (!_downPointer || _downPointer.id !== (d3_event.pointerId || "mouse")) return;
@@ -38058,18 +38095,18 @@ ${source}
         var dist = geoVecLength(_downPointer.downLoc, p2);
         if (dist >= _closeTolerance) {
           _downPointer.isCancelled = true;
-          dispatch12.call("downcancel", this);
+          dispatch11.call("downcancel", this);
         }
       }
       if (d3_event.pointerType && d3_event.pointerType !== "mouse" || d3_event.buttons || _downPointer) return;
       if (_lastPointerUpEvent && _lastPointerUpEvent.pointerType !== "mouse" && d3_event.timeStamp - _lastPointerUpEvent.timeStamp < 100) return;
       _lastMouse = d3_event;
-      dispatch12.call("move", this, d3_event, datum2(d3_event));
+      dispatch11.call("move", this, d3_event, datum2(d3_event));
     }
     function pointercancel(d3_event) {
       if (_downPointer && _downPointer.id === (d3_event.pointerId || "mouse")) {
         if (!_downPointer.isCancelled) {
-          dispatch12.call("downcancel", this);
+          dispatch11.call("downcancel", this);
         }
         _downPointer = null;
       }
@@ -38088,7 +38125,7 @@ ${source}
       var target = d2 && d2.properties && d2.properties.entity;
       var mode2 = context.mode();
       if (target && target.type === "node" && allowsVertex(target)) {
-        dispatch12.call("clickNode", this, target, d2);
+        dispatch11.call("clickNode", this, target, d2);
         return;
       } else if (target && target.type === "way" && (mode2.id !== "add-point" || mode2.preset.matchGeometry("vertex"))) {
         var choice = geoChooseEdge(
@@ -38099,12 +38136,12 @@ ${source}
         );
         if (choice) {
           var edge = [target.nodes[choice.index - 1], target.nodes[choice.index]];
-          dispatch12.call("clickWay", this, choice.loc, edge, d2);
+          dispatch11.call("clickWay", this, choice.loc, edge, d2);
           return;
         }
       } else if (mode2.id !== "add-point" || mode2.preset.matchGeometry("point")) {
         var locLatLng = context.projection.invert(loc);
-        dispatch12.call("click", this, locLatLng, d2);
+        dispatch11.call("click", this, locLatLng, d2);
       }
     }
     function space(d3_event) {
@@ -38132,15 +38169,15 @@ ${source}
     }
     function backspace(d3_event) {
       d3_event.preventDefault();
-      dispatch12.call("undo");
+      dispatch11.call("undo");
     }
     function del2(d3_event) {
       d3_event.preventDefault();
-      dispatch12.call("cancel");
+      dispatch11.call("cancel");
     }
     function ret(d3_event) {
       d3_event.preventDefault();
-      dispatch12.call("finish");
+      dispatch11.call("finish");
     }
     function behavior(selection2) {
       context.install(_hover);
@@ -38163,7 +38200,7 @@ ${source}
     behavior.hover = function() {
       return _hover;
     };
-    return utilRebind(behavior, dispatch12, "on");
+    return utilRebind(behavior, dispatch11, "on");
   }
   var _disableSpace, _lastSpace;
   var init_draw = __esm({
@@ -38328,7 +38365,7 @@ ${source}
     "package.json"() {
       package_default = {
         name: "@openhistoricalmap/id",
-        version: "2.29.6",
+        version: "2.39.5",
         description: "The OpenHistoricalMap fork of a friendly editor for OpenStreetMap",
         main: "dist/iD.min.js",
         repository: {
@@ -38378,6 +38415,7 @@ ${source}
           translations: "node scripts/update_locales.js"
         },
         dependencies: {
+          "@esri/wayback-core": "^1.0.10",
           "@mapbox/geojson-area": "^0.2.2",
           "@mapbox/sexagesimal": "1.2.0",
           "@mapbox/vector-tile": "^2.0.4",
@@ -38405,13 +38443,12 @@ ${source}
           pbf: "^4.0.1",
           "polygon-clipping": "~0.15.7",
           rbush: "4.0.1",
-          vitest: "^4.0.9",
           "whatwg-fetch": "^3.6.20",
           "which-polygon": "2.2.1"
         },
         devDependencies: {
           "@actions/github-script": "github:actions/github-script#v8.0.0",
-          "@enzet/roentgen": "^0.13.0",
+          "@enzet/roentgen": "^0.14.0",
           "@eslint/js": "^10.0.1",
           "@fortawesome/fontawesome-svg-core": "^7.2.0",
           "@fortawesome/free-brands-svg-icons": "^7.2.0",
@@ -38470,7 +38507,8 @@ ${source}
           "sinon-chai": "^4.0.1",
           "svg-sprite": "2.0.4",
           typescript: "^5.9.3",
-          "typescript-eslint": "^8.56.0"
+          "typescript-eslint": "^8.56.0",
+          vitest: "^4.1.2"
         },
         engines: {
           node: ">=22"
@@ -39354,7 +39392,11 @@ ${source}
       _modalSelection = uiModal(selection2, _blocking);
       let loadertext = _modalSelection.select(".content").classed("loading-modal", true).append("div").attr("class", "modal-section fillL");
       loadertext.append("img").attr("class", "loader").attr("src", context.imagePath("loader-white.gif"));
-      loadertext.append("h3").html(_message);
+      if (typeof message === "string") {
+        loadertext.append("h3").text(_message);
+      } else {
+        loadertext.append("h3").call(_message);
+      }
       _modalSelection.select("button.close").attr("class", "hide");
       return loading;
     };
@@ -39390,7 +39432,7 @@ ${source}
     coreHistory: () => coreHistory
   });
   function coreHistory(context) {
-    var dispatch12 = dispatch_default("reset", "change", "merge", "restore", "undone", "redone", "storage_error");
+    var dispatch11 = dispatch_default("reset", "change", "merge", "restore", "undone", "redone", "storage_error");
     var lock = utilSessionMutex("lock");
     var _hasUnresolvedRestorableChanges = lock.lock() && !!corePreferences("has_saved_history");
     var duration = 150;
@@ -39449,7 +39491,7 @@ ${source}
     function change(previous) {
       var difference5 = coreDifference(previous, history.graph());
       if (!_pausedGraph) {
-        dispatch12.call("change", this, difference5);
+        dispatch11.call("change", this, difference5);
       }
       return difference5;
     }
@@ -39469,7 +39511,7 @@ ${source}
         });
         _stack[0].graph.rebase(entities, stack, false);
         _tree.rebase(entities, false);
-        dispatch12.call("merge", this, entities);
+        dispatch11.call("merge", this, entities);
       },
       perform: function() {
         select_default2(document).interrupt("history.perform");
@@ -39520,7 +39562,7 @@ ${source}
           _index--;
           if (_stack[_index].annotation) break;
         }
-        dispatch12.call("undone", this, _stack[_index], previousStack);
+        dispatch11.call("undone", this, _stack[_index], previousStack);
         return change(previous);
       },
       // Forward to the next annotated state.
@@ -39533,7 +39575,7 @@ ${source}
           tryIndex++;
           if (_stack[tryIndex].annotation) {
             _index = tryIndex;
-            dispatch12.call("redone", this, _stack[_index], previousStack);
+            dispatch11.call("redone", this, _stack[_index], previousStack);
             break;
           }
         }
@@ -39646,8 +39688,8 @@ ${source}
           _checkpoints = {};
         }
         _pausedGraph = null;
-        dispatch12.call("reset");
-        dispatch12.call("change");
+        dispatch11.call("reset");
+        dispatch11.call("change");
         return history;
       },
       // `toIntroGraph()` is used to export the intro graph used by the walkthrough.
@@ -39828,8 +39870,8 @@ ${source}
                   if (err || !missing.length) {
                     loading.close();
                     context.map().redrawEnable(true);
-                    dispatch12.call("change");
-                    dispatch12.call("restore", this);
+                    dispatch11.call("change");
+                    dispatch11.call("restore", this);
                   }
                 };
                 osm.loadMultiple(missing, childNodesLoaded);
@@ -39874,8 +39916,8 @@ ${source}
           context.map().transformEase(transform3, 0);
         }
         if (loadComplete) {
-          dispatch12.call("change");
-          dispatch12.call("restore", this);
+          dispatch11.call("change");
+          dispatch11.call("restore", this);
         }
         return history;
       },
@@ -39890,9 +39932,9 @@ ${source}
         !_hasUnresolvedRestorableChanges) {
           const historyData = history.toJSON();
           if (!historyData) {
-            asyncPrefs.del("saved_history").then(() => corePreferences("has_saved_history", null)).catch(() => dispatch12.call("storage_error"));
+            asyncPrefs.del("saved_history").then(() => corePreferences("has_saved_history", null)).catch(() => dispatch11.call("storage_error"));
           } else {
-            asyncPrefs.set("saved_history", historyData).then(() => corePreferences("has_saved_history", true)).catch(() => dispatch12.call("storage_error"));
+            asyncPrefs.set("saved_history", historyData).then(() => corePreferences("has_saved_history", true)).catch(() => dispatch11.call("storage_error"));
           }
         }
         return history;
@@ -39932,7 +39974,7 @@ ${source}
       _getLegacyKey: (n3) => "iD_" + window.location.origin + "_" + n3
     };
     history.reset();
-    return utilRebind(history, dispatch12, "on");
+    return utilRebind(history, dispatch11, "on");
   }
   var init_history = __esm({
     "modules/core/history.js"() {
@@ -40074,446 +40116,6 @@ ${source}
     "modules/core/validation/index.js"() {
       "use strict";
       init_models();
-    }
-  });
-
-  // modules/services/keepRight.js
-  var keepRight_exports = {};
-  __export(keepRight_exports, {
-    default: () => keepRight_default
-  });
-  function abortRequest(controller) {
-    if (controller) {
-      controller.abort();
-    }
-  }
-  function abortUnwantedRequests(cache, tiles) {
-    Object.keys(cache.inflightTile).forEach((k3) => {
-      const wanted = tiles.find((tile) => k3 === tile.id);
-      if (!wanted) {
-        abortRequest(cache.inflightTile[k3]);
-        delete cache.inflightTile[k3];
-      }
-    });
-  }
-  function encodeIssueRtree(d2) {
-    return { minX: d2.loc[0], minY: d2.loc[1], maxX: d2.loc[0], maxY: d2.loc[1], data: d2 };
-  }
-  function updateRtree(item, replace2) {
-    _cache.rtree.remove(item, (a2, b11) => a2.data.id === b11.data.id);
-    if (replace2) {
-      _cache.rtree.insert(item);
-    }
-  }
-  function tokenReplacements(d2) {
-    if (!(d2 instanceof QAItem)) return;
-    const replacements = {};
-    const issueTemplate = _krData.errorTypes[d2.whichType];
-    if (!issueTemplate) {
-      console.log("No Template: ", d2.whichType);
-      console.log("  ", d2.description);
-      return;
-    }
-    if (!issueTemplate.regex) return;
-    const errorRegex = new RegExp(issueTemplate.regex, "i");
-    const errorMatch = errorRegex.exec(d2.description);
-    if (!errorMatch) {
-      console.log("Unmatched: ", d2.whichType);
-      console.log("  ", d2.description);
-      console.log("  ", errorRegex);
-      return;
-    }
-    for (let i3 = 1; i3 < errorMatch.length; i3++) {
-      let capture = errorMatch[i3];
-      let idType;
-      idType = "IDs" in issueTemplate ? issueTemplate.IDs[i3 - 1] : "";
-      if (idType && capture) {
-        capture = parseError(capture, idType);
-      } else {
-        const compare2 = capture.toLowerCase();
-        if (_krData.localizeStrings[compare2]) {
-          capture = _t("QA.keepRight.error_parts." + _krData.localizeStrings[compare2]);
-        } else {
-          capture = unescape2(capture);
-        }
-      }
-      replacements["var" + i3] = capture;
-    }
-    return replacements;
-  }
-  function parseError(capture, idType) {
-    const compare2 = capture.toLowerCase();
-    if (_krData.localizeStrings[compare2]) {
-      capture = _t("QA.keepRight.error_parts." + _krData.localizeStrings[compare2]);
-    }
-    switch (idType) {
-      // link a string like "this node"
-      case "this":
-        capture = linkErrorObject(capture);
-        break;
-      case "url":
-        capture = linkURL(capture);
-        break;
-      // link an entity ID
-      case "n":
-      case "w":
-      case "r":
-        capture = linkEntity(idType + capture);
-        break;
-      // some errors have more complex ID lists/variance
-      case "20":
-        capture = parse20(capture);
-        break;
-      case "211":
-        capture = parse211(capture);
-        break;
-      case "231":
-        capture = parse231(capture);
-        break;
-      case "294":
-        capture = parse294(capture);
-        break;
-      case "370":
-        capture = parse370(capture);
-        break;
-    }
-    return capture;
-    function linkErrorObject(d2) {
-      return { html: `<a class="error_object_link">${d2}</a>` };
-    }
-    function linkEntity(d2) {
-      return { html: `<a class="error_entity_link">${d2}</a>` };
-    }
-    function linkURL(d2) {
-      return { html: `<a class="kr_external_link" target="_blank" href="${d2}">${d2}</a>` };
-    }
-    function parse211(capture2) {
-      let newList = [];
-      const items = capture2.split(", ");
-      items.forEach((item) => {
-        let id3 = linkEntity("n" + item.slice(1));
-        newList.push(id3);
-      });
-      return newList.join(", ");
-    }
-    function parse231(capture2) {
-      let newList = [];
-      const items = capture2.split("),");
-      items.forEach((item) => {
-        const match = item.match(/\#(\d+)\((.+)\)?/);
-        if (match !== null && match.length > 2) {
-          newList.push(
-            linkEntity("w" + match[1]) + " " + _t("QA.keepRight.errorTypes.231.layer", { layer: match[2] })
-          );
-        }
-      });
-      return newList.join(", ");
-    }
-    function parse294(capture2) {
-      let newList = [];
-      const items = capture2.split(",");
-      items.forEach((item) => {
-        item = item.split(" ");
-        const role = `"${item[0]}"`;
-        const idType2 = item[1].slice(0, 1);
-        let id3 = item[2].slice(1);
-        id3 = linkEntity(idType2 + id3);
-        newList.push(`${role} ${item[1]} ${id3}`);
-      });
-      return newList.join(", ");
-    }
-    function parse370(capture2) {
-      if (!capture2) return "";
-      const match = capture2.match(/\(including the name (\'.+\')\)/);
-      if (match && match.length) {
-        return _t("QA.keepRight.errorTypes.370.including_the_name", { name: match[1] });
-      }
-      return "";
-    }
-    function parse20(capture2) {
-      let newList = [];
-      const items = capture2.split(",");
-      items.forEach((item) => {
-        const id3 = linkEntity("n" + item.slice(1));
-        newList.push(id3);
-      });
-      return newList.join(", ");
-    }
-  }
-  var tiler, dispatch2, _tileZoom, _krUrlRoot, _krData, _cache, _krRuleset, keepRight_default;
-  var init_keepRight = __esm({
-    "modules/services/keepRight.js"() {
-      "use strict";
-      init_rbush();
-      init_src();
-      init_src21();
-      init_compat2();
-      init_file_fetcher();
-      init_geo2();
-      init_osm();
-      init_localizer();
-      init_util3();
-      tiler = utilTiler();
-      dispatch2 = dispatch_default("loaded");
-      _tileZoom = 14;
-      _krUrlRoot = "https://www.keepright.at";
-      _krData = { errorTypes: {}, localizeStrings: {} };
-      _krRuleset = [
-        // no 20 - multiple node on same spot - these are mostly boundaries overlapping roads
-        30,
-        40,
-        50,
-        60,
-        70,
-        90,
-        100,
-        110,
-        120,
-        130,
-        150,
-        160,
-        170,
-        180,
-        190,
-        191,
-        192,
-        193,
-        194,
-        195,
-        196,
-        197,
-        198,
-        200,
-        201,
-        202,
-        203,
-        204,
-        205,
-        206,
-        207,
-        208,
-        210,
-        220,
-        230,
-        231,
-        232,
-        270,
-        280,
-        281,
-        282,
-        283,
-        284,
-        285,
-        290,
-        291,
-        292,
-        293,
-        294,
-        295,
-        296,
-        297,
-        298,
-        300,
-        310,
-        311,
-        312,
-        313,
-        320,
-        350,
-        360,
-        370,
-        380,
-        390,
-        400,
-        401,
-        402,
-        410,
-        411,
-        412,
-        413
-      ];
-      keepRight_default = {
-        title: "keepRight",
-        init() {
-          _mainFileFetcher.get("keepRight").then((d2) => _krData = d2);
-          if (!_cache) {
-            this.reset();
-          }
-          this.event = utilRebind(this, dispatch2, "on");
-        },
-        reset() {
-          if (_cache) {
-            Object.values(_cache.inflightTile).forEach(abortRequest);
-          }
-          _cache = {
-            data: {},
-            loadedTile: {},
-            inflightTile: {},
-            inflightPost: {},
-            closed: {},
-            rtree: new RBush()
-          };
-        },
-        // KeepRight API:  http://osm.mueschelsoft.de/keepright/interfacing.php
-        loadIssues(projection2) {
-          const options = {
-            format: "geojson",
-            ch: _krRuleset
-          };
-          const tiles = tiler.zoomExtent([_tileZoom, _tileZoom]).getTiles(projection2);
-          abortUnwantedRequests(_cache, tiles);
-          tiles.forEach((tile) => {
-            if (_cache.loadedTile[tile.id] || _cache.inflightTile[tile.id]) return;
-            const [left, top, right, bottom] = tile.extent.rectangle();
-            const params = Object.assign({}, options, { left, bottom, right, top });
-            const url = `${_krUrlRoot}/export.php?` + utilQsString(params);
-            const controller = new AbortController();
-            _cache.inflightTile[tile.id] = controller;
-            json_default(url, { signal: controller.signal }).then((data) => {
-              delete _cache.inflightTile[tile.id];
-              _cache.loadedTile[tile.id] = true;
-              if (!data || !data.features || !data.features.length) {
-                throw new Error("No Data");
-              }
-              data.features.forEach((feature3) => {
-                const {
-                  properties: {
-                    error_type: itemType,
-                    error_id: id3,
-                    comment = null,
-                    object_id: objectId,
-                    object_type: objectType,
-                    schema,
-                    title
-                  }
-                } = feature3;
-                let {
-                  geometry: { coordinates: loc },
-                  properties: { description = "" }
-                } = feature3;
-                const issueTemplate = _krData.errorTypes[itemType];
-                const parentIssueType = (Math.floor(itemType / 10) * 10).toString();
-                const whichType = issueTemplate ? itemType : parentIssueType;
-                const whichTemplate = _krData.errorTypes[whichType];
-                switch (whichType) {
-                  case "170":
-                    description = `This feature has a FIXME tag: ${description}`;
-                    break;
-                  case "292":
-                  case "293":
-                    description = description.replace("A turn-", "This turn-");
-                    break;
-                  case "294":
-                  case "295":
-                  case "296":
-                  case "297":
-                  case "298":
-                    description = `This turn-restriction~${description}`;
-                    break;
-                  case "300":
-                    description = "This highway is missing a maxspeed tag";
-                    break;
-                  case "411":
-                  case "412":
-                  case "413":
-                    description = `This feature~${description}`;
-                    break;
-                }
-                let coincident = false;
-                do {
-                  let delta = coincident ? [1e-5, 0] : [0, 1e-5];
-                  loc = geoVecAdd(loc, delta);
-                  let bbox2 = geoExtent(loc).bbox();
-                  coincident = _cache.rtree.search(bbox2).length;
-                } while (coincident);
-                let d2 = new QAItem(loc, this, itemType, id3, {
-                  comment,
-                  description,
-                  whichType,
-                  parentIssueType,
-                  severity: whichTemplate.severity || "error",
-                  objectId,
-                  objectType,
-                  schema,
-                  title
-                });
-                d2.replacements = tokenReplacements(d2);
-                _cache.data[id3] = d2;
-                _cache.rtree.insert(encodeIssueRtree(d2));
-              });
-              dispatch2.call("loaded");
-            }).catch(() => {
-              delete _cache.inflightTile[tile.id];
-              _cache.loadedTile[tile.id] = true;
-            });
-          });
-        },
-        postUpdate(d2, callback) {
-          if (_cache.inflightPost[d2.id]) {
-            return callback({ message: "Error update already inflight", status: -2 }, d2);
-          }
-          const params = { schema: d2.schema, id: d2.id };
-          if (d2.newStatus) {
-            params.st = d2.newStatus;
-          }
-          if (d2.newComment !== void 0) {
-            params.co = d2.newComment;
-          }
-          const url = `${_krUrlRoot}/comment.php?` + utilQsString(params);
-          const controller = new AbortController();
-          _cache.inflightPost[d2.id] = controller;
-          json_default(url, { signal: controller.signal }).finally(() => {
-            delete _cache.inflightPost[d2.id];
-            if (d2.newStatus === "ignore") {
-              this.removeItem(d2);
-            } else if (d2.newStatus === "ignore_t") {
-              this.removeItem(d2);
-              _cache.closed[`${d2.schema}:${d2.id}`] = true;
-            } else {
-              d2 = this.replaceItem(d2.update({
-                comment: d2.newComment,
-                newComment: void 0,
-                newState: void 0
-              }));
-            }
-            if (callback) callback(null, d2);
-          });
-        },
-        // Get all cached QAItems covering the viewport
-        getItems(projection2) {
-          const viewport = projection2.clipExtent();
-          const min5 = [viewport[0][0], viewport[1][1]];
-          const max5 = [viewport[1][0], viewport[0][1]];
-          const bbox2 = geoExtent(projection2.invert(min5), projection2.invert(max5)).bbox();
-          return _cache.rtree.search(bbox2).map((d2) => d2.data);
-        },
-        // Get a QAItem from cache
-        // NOTE: Don't change method name until UI v3 is merged
-        getError(id3) {
-          return _cache.data[id3];
-        },
-        // Replace a single QAItem in the cache
-        replaceItem(item) {
-          if (!(item instanceof QAItem) || !item.id) return;
-          _cache.data[item.id] = item;
-          updateRtree(encodeIssueRtree(item), true);
-          return item;
-        },
-        // Remove a single QAItem from the cache
-        removeItem(item) {
-          if (!(item instanceof QAItem) || !item.id) return;
-          delete _cache.data[item.id];
-          updateRtree(encodeIssueRtree(item), false);
-        },
-        issueURL(item) {
-          return `${_krUrlRoot}/report_map.php?schema=${item.schema}&error=${item.id}`;
-        },
-        // Get an array of issues closed during this session.
-        // Used to populate `closed:keepright` changeset tag
-        getClosedIDs() {
-          return Object.keys(_cache.closed).sort();
-        }
-      };
     }
   });
 
@@ -42885,27 +42487,27 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
   __export(osmose_exports, {
     default: () => osmose_default
   });
-  function abortRequest2(controller) {
+  function abortRequest(controller) {
     if (controller) {
       controller.abort();
     }
   }
-  function abortUnwantedRequests2(cache, tiles) {
+  function abortUnwantedRequests(cache, tiles) {
     Object.keys(cache.inflightTile).forEach((k3) => {
       let wanted = tiles.find((tile) => k3 === tile.id);
       if (!wanted) {
-        abortRequest2(cache.inflightTile[k3]);
+        abortRequest(cache.inflightTile[k3]);
         delete cache.inflightTile[k3];
       }
     });
   }
-  function encodeIssueRtree2(d2) {
+  function encodeIssueRtree(d2) {
     return { minX: d2.loc[0], minY: d2.loc[1], maxX: d2.loc[0], maxY: d2.loc[1], data: d2 };
   }
-  function updateRtree2(item, replace2) {
-    _cache2.rtree.remove(item, (a2, b11) => a2.data.id === b11.data.id);
+  function updateRtree(item, replace2) {
+    _cache.rtree.remove(item, (a2, b11) => a2.data.id === b11.data.id);
     if (replace2) {
-      _cache2.rtree.insert(item);
+      _cache.rtree.insert(item);
     }
   }
   function preventCoincident(loc) {
@@ -42914,11 +42516,11 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       let delta = coincident ? [1e-5, 0] : [0, 1e-5];
       loc = geoVecAdd(loc, delta);
       let bbox2 = geoExtent(loc).bbox();
-      coincident = _cache2.rtree.search(bbox2).length;
+      coincident = _cache.rtree.search(bbox2).length;
     } while (coincident);
     return loc;
   }
-  var tiler2, dispatch3, _tileZoom2, _osmoseUrlRoot, _osmoseData, _cache2, osmose_default;
+  var tiler, dispatch2, _tileZoom, _osmoseUrlRoot, _osmoseData, _cache, osmose_default;
   var init_osmose = __esm({
     "modules/services/osmose.js"() {
       "use strict";
@@ -42933,9 +42535,9 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       init_geo2();
       init_osm();
       init_util3();
-      tiler2 = utilTiler();
-      dispatch3 = dispatch_default("loaded");
-      _tileZoom2 = 14;
+      tiler = utilTiler();
+      dispatch2 = dispatch_default("loaded");
+      _tileZoom = 14;
       _osmoseUrlRoot = "https://osmose.openstreetmap.fr/api/0.3";
       _osmoseData = { icons: {}, items: [] };
       osmose_default = {
@@ -42945,20 +42547,20 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
             _osmoseData = d2.osmose;
             _osmoseData.items = Object.keys(d2.osmose.icons).map((s2) => s2.split("-")[0]).reduce((unique, item) => unique.indexOf(item) !== -1 ? unique : [...unique, item], []);
           });
-          if (!_cache2) {
+          if (!_cache) {
             this.reset();
           }
-          this.event = utilRebind(this, dispatch3, "on");
+          this.event = utilRebind(this, dispatch2, "on");
         },
         reset() {
           let _strings = {};
           let _colors = {};
-          if (_cache2) {
-            Object.values(_cache2.inflightTile).forEach(abortRequest2);
-            _strings = _cache2.strings;
-            _colors = _cache2.colors;
+          if (_cache) {
+            Object.values(_cache.inflightTile).forEach(abortRequest);
+            _strings = _cache.strings;
+            _colors = _cache.colors;
           }
-          _cache2 = {
+          _cache = {
             data: {},
             loadedTile: {},
             inflightTile: {},
@@ -42975,17 +42577,17 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
             // So we want to filter our request for only types iD supports
             item: _osmoseData.items
           };
-          let tiles = tiler2.zoomExtent([_tileZoom2, _tileZoom2]).getTiles(projection2);
-          abortUnwantedRequests2(_cache2, tiles);
+          let tiles = tiler.zoomExtent([_tileZoom, _tileZoom]).getTiles(projection2);
+          abortUnwantedRequests(_cache, tiles);
           tiles.forEach((tile) => {
-            if (_cache2.loadedTile[tile.id] || _cache2.inflightTile[tile.id]) return;
+            if (_cache.loadedTile[tile.id] || _cache.inflightTile[tile.id]) return;
             let [x3, y3, z3] = tile.xyz;
             let url = `${_osmoseUrlRoot}/issues/${z3}/${x3}/${y3}.mvt?` + utilQsString(params);
             let controller = new AbortController();
-            _cache2.inflightTile[tile.id] = controller;
+            _cache.inflightTile[tile.id] = controller;
             fetch(url, { signal: controller.signal }).then((data) => data.arrayBuffer()).then((data) => {
-              delete _cache2.inflightTile[tile.id];
-              _cache2.loadedTile[tile.id] = true;
+              delete _cache.inflightTile[tile.id];
+              _cache.loadedTile[tile.id] = true;
               var vectorTile = new VectorTile(new Pbf(data));
               data = vectorTile.layers.issues;
               const features = [];
@@ -43003,15 +42605,15 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
                     if (item === 8300 || item === 8360) {
                       d2.elems = [];
                     }
-                    _cache2.data[d2.id] = d2;
-                    _cache2.rtree.insert(encodeIssueRtree2(d2));
+                    _cache.data[d2.id] = d2;
+                    _cache.rtree.insert(encodeIssueRtree(d2));
                   }
                 });
               }
-              dispatch3.call("loaded");
+              dispatch2.call("loaded");
             }).catch(() => {
-              delete _cache2.inflightTile[tile.id];
-              _cache2.loadedTile[tile.id] = true;
+              delete _cache.inflightTile[tile.id];
+              _cache.loadedTile[tile.id] = true;
             });
           });
         },
@@ -43029,14 +42631,14 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         },
         loadStrings(locale3 = _mainLocalizer.localeCode()) {
           const items = Object.keys(_osmoseData.icons);
-          if (locale3 in _cache2.strings && Object.keys(_cache2.strings[locale3]).length === items.length) {
-            return Promise.resolve(_cache2.strings[locale3]);
+          if (locale3 in _cache.strings && Object.keys(_cache.strings[locale3]).length === items.length) {
+            return Promise.resolve(_cache.strings[locale3]);
           }
-          if (!(locale3 in _cache2.strings)) {
-            _cache2.strings[locale3] = {};
+          if (!(locale3 in _cache.strings)) {
+            _cache.strings[locale3] = {};
           }
           const allRequests = items.map((itemType) => {
-            if (itemType in _cache2.strings[locale3]) return null;
+            if (itemType in _cache.strings[locale3]) return null;
             const cacheData = (data) => {
               const [cat = { items: [] }] = data.categories;
               const [item2 = { class: [] }] = cat.items;
@@ -43047,7 +42649,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
               }
               const { item: itemInt, color: color2 } = item2;
               if (/^#[A-Fa-f0-9]{6}|[A-Fa-f0-9]{3}/.test(color2)) {
-                _cache2.colors[itemInt] = color2;
+                _cache.colors[itemInt] = color2;
               }
               const { title, detail, fix, trap } = cl2;
               let issueStrings = {};
@@ -43055,40 +42657,40 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
               if (detail) issueStrings.detail = g2(detail.auto);
               if (trap) issueStrings.trap = g2(trap.auto);
               if (fix) issueStrings.fix = g2(fix.auto);
-              _cache2.strings[locale3][itemType] = issueStrings;
+              _cache.strings[locale3][itemType] = issueStrings;
             };
             const [item, cl] = itemType.split("-");
             const url = `${_osmoseUrlRoot}/items/${item}/class/${cl}?langs=${locale3}`;
             return json_default(url).then(cacheData);
           }).filter(Boolean);
-          return Promise.all(allRequests).then(() => _cache2.strings[locale3]);
+          return Promise.all(allRequests).then(() => _cache.strings[locale3]);
         },
         getStrings(itemType, locale3 = _mainLocalizer.localeCode()) {
-          return locale3 in _cache2.strings ? _cache2.strings[locale3][itemType] : {};
+          return locale3 in _cache.strings ? _cache.strings[locale3][itemType] : {};
         },
         getColor(itemType) {
-          return itemType in _cache2.colors ? _cache2.colors[itemType] : "#FFFFFF";
+          return itemType in _cache.colors ? _cache.colors[itemType] : "#FFFFFF";
         },
         postUpdate(issue, callback) {
-          if (_cache2.inflightPost[issue.id]) {
+          if (_cache.inflightPost[issue.id]) {
             return callback({ message: "Issue update already inflight", status: -2 }, issue);
           }
           const url = `${_osmoseUrlRoot}/issue/${issue.id}/${issue.newStatus}`;
           const controller = new AbortController();
           const after3 = () => {
-            delete _cache2.inflightPost[issue.id];
+            delete _cache.inflightPost[issue.id];
             this.removeItem(issue);
             if (issue.newStatus === "done") {
-              if (!(issue.item in _cache2.closed)) {
-                _cache2.closed[issue.item] = 0;
+              if (!(issue.item in _cache.closed)) {
+                _cache.closed[issue.item] = 0;
               }
-              _cache2.closed[issue.item] += 1;
+              _cache.closed[issue.item] += 1;
             }
             if (callback) callback(null, issue);
           };
-          _cache2.inflightPost[issue.id] = controller;
+          _cache.inflightPost[issue.id] = controller;
           fetch(url, { signal: controller.signal }).then(after3).catch((err) => {
-            delete _cache2.inflightPost[issue.id];
+            delete _cache.inflightPost[issue.id];
             if (callback) callback(err.message);
           });
         },
@@ -43098,12 +42700,12 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           const min5 = [viewport[0][0], viewport[1][1]];
           const max5 = [viewport[1][0], viewport[0][1]];
           const bbox2 = geoExtent(projection2.invert(min5), projection2.invert(max5)).bbox();
-          return _cache2.rtree.search(bbox2).map((d2) => d2.data);
+          return _cache.rtree.search(bbox2).map((d2) => d2.data);
         },
         // Get a QAItem from cache
         // NOTE: Don't change method name until UI v3 is merged
         getError(id3) {
-          return _cache2.data[id3];
+          return _cache.data[id3];
         },
         // get the name of the icon to display for this item
         getIcon(itemType) {
@@ -43112,19 +42714,19 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         // Replace a single QAItem in the cache
         replaceItem(item) {
           if (!(item instanceof QAItem) || !item.id) return;
-          _cache2.data[item.id] = item;
-          updateRtree2(encodeIssueRtree2(item), true);
+          _cache.data[item.id] = item;
+          updateRtree(encodeIssueRtree(item), true);
           return item;
         },
         // Remove a single QAItem from the cache
         removeItem(item) {
           if (!(item instanceof QAItem) || !item.id) return;
-          delete _cache2.data[item.id];
-          updateRtree2(encodeIssueRtree2(item), false);
+          delete _cache.data[item.id];
+          updateRtree(encodeIssueRtree(item), false);
         },
         // Used to populate `closed:osmose:*` changeset tags
         getClosedCounts() {
-          return _cache2.closed;
+          return _cache.closed;
         },
         itemURL(item) {
           return `https://osmose.openstreetmap.fr/en/error/${item.id}`;
@@ -43142,8 +42744,8 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
   function partitionViewport(projection2) {
     let z3 = geoScaleToZoom(projection2.scale());
     let z22 = Math.ceil(z3 * 2) / 2 + 2.5;
-    let tiler8 = utilTiler().zoomExtent([z22, z22]);
-    return (tiler8.getTiles(projection2) || []).map((tile) => tile.extent);
+    let tiler7 = utilTiler().zoomExtent([z22, z22]);
+    return (tiler7.getTiles(projection2) || []).map((tile) => tile.extent);
   }
   function searchLimited(limit2, projection2, rtree) {
     limit2 ||= 5;
@@ -43163,8 +42765,8 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     default: () => mapillary_default
   });
   function loadTiles(which, url, maxZoom2, projection2) {
-    const tiler8 = utilTiler().zoomExtent([minZoom, maxZoom2]).skipNullIsland(true);
-    const tiles = tiler8.getTiles(projection2);
+    const tiler7 = utilTiler().zoomExtent([minZoom, maxZoom2]).skipNullIsland(true);
+    const tiles = tiler7.getTiles(projection2);
     tiles.forEach(function(tile) {
       loadTile(which, url, tile);
     });
@@ -43189,11 +42791,11 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       }
       loadTileDataToCache(data, tile, which);
       if (which === "images") {
-        dispatch4.call("loadedImages");
+        dispatch3.call("loadedImages");
       } else if (which === "signs") {
-        dispatch4.call("loadedSigns");
+        dispatch3.call("loadedSigns");
       } else if (which === "points") {
-        dispatch4.call("loadedMapFeatures");
+        dispatch3.call("loadedMapFeatures");
       }
     }).catch(function() {
       cache.loaded[tileId] = true;
@@ -43312,7 +42914,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       return result2.data || [];
     });
   }
-  var accessToken, apiUrl, baseTileUrl, mapFeatureTileUrl, tileUrl, trafficSignTileUrl, viewercss, viewerjs, minZoom, dispatch4, _loadViewerPromise, _mlyActiveImage, _mlyCache, _mlyFallback, _mlyHighlightedDetection, _mlyShowFeatureDetections, _mlyShowSignDetections, _mlyViewer, _mlyViewerFilter, _isViewerOpen, mapillary_default;
+  var accessToken, apiUrl, baseTileUrl, mapFeatureTileUrl, tileUrl, trafficSignTileUrl, viewercss, viewerjs, minZoom, dispatch3, _loadViewerPromise, _mlyActiveImage, _mlyCache, _mlyFallback, _mlyHighlightedDetection, _mlyShowFeatureDetections, _mlyShowSignDetections, _mlyViewer, _mlyViewerFilter, _isViewerOpen, mapillary_default;
   var init_mapillary = __esm({
     "modules/services/mapillary.js"() {
       "use strict";
@@ -43334,7 +42936,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       viewercss = "mapillary-js/mapillary.css";
       viewerjs = "mapillary-js/mapillary.js";
       minZoom = 14;
-      dispatch4 = dispatch_default("change", "loadedImages", "loadedSigns", "loadedMapFeatures", "bearingChanged", "imageChanged");
+      dispatch3 = dispatch_default("change", "loadedImages", "loadedSigns", "loadedMapFeatures", "bearingChanged", "imageChanged");
       _mlyFallback = false;
       _mlyShowFeatureDetections = false;
       _mlyShowSignDetections = false;
@@ -43346,7 +42948,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           if (!_mlyCache) {
             this.reset();
           }
-          this.event = utilRebind(this, dispatch4, "on");
+          this.event = utilRebind(this, dispatch3, "on");
         },
         // Reset cache and state
         reset: function() {
@@ -43528,9 +43130,9 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           if (!viewer.empty()) viewer.datum(null);
           viewer.classed("hide", true).selectAll(".photo-wrapper").classed("hide", true);
           this.updateUrlImage(null);
-          dispatch4.call("imageChanged");
-          dispatch4.call("loadedMapFeatures");
-          dispatch4.call("loadedSigns");
+          dispatch3.call("imageChanged");
+          dispatch3.call("loadedMapFeatures");
+          dispatch3.call("loadedSigns");
           _isViewerOpen = false;
           return this.setStyles(context, null);
         },
@@ -43603,10 +43205,10 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
             if (_mlyShowFeatureDetections || _mlyShowSignDetections) {
               this.updateDetections(image.id, `${apiUrl}/${image.id}/detections?access_token=${accessToken}&fields=id,image,geometry,value`);
             }
-            dispatch4.call("imageChanged");
+            dispatch3.call("imageChanged");
           }
           function bearingChanged(e3) {
-            dispatch4.call("bearingChanged", void 0, e3);
+            dispatch3.call("bearingChanged", void 0, e3);
           }
         },
         // Move to an image
@@ -43936,12 +43538,12 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
             findIssues: function(entity, graph, issues) {
               if (this.geometryMatches(entity, graph) && this.matches(entity)) {
                 var severity = Object.keys(selector).indexOf("error") > -1 ? "error" : "warning";
-                var message = selector[severity];
+                var message2 = selector[severity];
                 issues.push(new validationIssue({
                   type: "maprules",
                   severity,
                   message: function() {
-                    return message;
+                    return message2;
                   },
                   entityIds: [entity.id]
                 }));
@@ -45248,8 +44850,8 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
               try {
                 resolved = loco.resolveLocationSet(item.locationSet);
               } catch (err) {
-                const message = err instanceof Error ? err.message : err;
-                console.warn(`buildLocationIndex: ${message}`);
+                const message2 = err instanceof Error ? err.message : err;
+                console.warn(`buildLocationIndex: ${message2}`);
               }
               if (!resolved || !resolved.id)
                 return;
@@ -45932,7 +45534,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
   __export(kartaview_exports, {
     default: () => kartaview_default
   });
-  function abortRequest3(controller) {
+  function abortRequest2(controller) {
     controller.abort();
   }
   function maxPageAtZoom(z3) {
@@ -45945,14 +45547,14 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
   }
   function loadTiles2(which, url, projection2) {
     var currZoom = Math.floor(geoScaleToZoom(projection2.scale()));
-    var tiles = tiler3.getTiles(projection2);
+    var tiles = tiler2.getTiles(projection2);
     var cache = _oscCache[which];
     Object.keys(cache.inflight).forEach(function(k3) {
       var wanted = tiles.find(function(tile) {
         return k3.indexOf(tile.id + ",") === 0;
       });
       if (!wanted) {
-        abortRequest3(cache.inflight[k3]);
+        abortRequest2(cache.inflight[k3]);
         delete cache.inflight[k3];
       }
     });
@@ -46028,14 +45630,14 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         cache.nextPage[tile.id] = Infinity;
       }
       if (which === "images") {
-        dispatch5.call("loadedImages");
+        dispatch4.call("loadedImages");
       }
     }).catch(function() {
       cache.loaded[id3] = true;
       delete cache.inflight[id3];
     });
   }
-  var apibase2, maxResults, tileZoom, tiler3, dispatch5, imgZoom, _oscCache, _oscSelectedImage, _loadViewerPromise2, kartaview_default;
+  var apibase2, maxResults, tileZoom, tiler2, dispatch4, imgZoom, _oscCache, _oscSelectedImage, _loadViewerPromise2, kartaview_default;
   var init_kartaview = __esm({
     "modules/services/kartaview.js"() {
       "use strict";
@@ -46051,19 +45653,19 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       apibase2 = "https://kartaview.org";
       maxResults = 1e3;
       tileZoom = 14;
-      tiler3 = utilTiler().zoomExtent([tileZoom, tileZoom]).skipNullIsland(true);
-      dispatch5 = dispatch_default("loadedImages");
+      tiler2 = utilTiler().zoomExtent([tileZoom, tileZoom]).skipNullIsland(true);
+      dispatch4 = dispatch_default("loadedImages");
       imgZoom = zoom_default2().extent([[0, 0], [320, 240]]).translateExtent([[0, 0], [320, 240]]).scaleExtent([1, 15]);
       kartaview_default = {
         init: function() {
           if (!_oscCache) {
             this.reset();
           }
-          this.event = utilRebind(this, dispatch5, "on");
+          this.event = utilRebind(this, dispatch4, "on");
         },
         reset: function() {
           if (_oscCache) {
-            Object.values(_oscCache.images.inflight).forEach(abortRequest3);
+            Object.values(_oscCache.images.inflight).forEach(abortRequest2);
           }
           _oscCache = {
             images: { inflight: {}, loaded: {}, nextPage: {}, rtree: new RBush(), forImageKey: {} },
@@ -47207,9 +46809,9 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     pannellumPhotoFrame: () => pannellumPhotoFrame
   });
   async function pannellumPhotoFrame(context, selection2) {
-    const dispatch12 = dispatch_default("viewerChanged");
+    const dispatch11 = dispatch_default("viewerChanged");
     const module = {};
-    module.event = utilRebind(module, dispatch12, "on");
+    module.event = utilRebind(module, dispatch11, "on");
     module.loadPannellum = function(context2) {
       const head3 = select_default2("head");
       return Promise.all([
@@ -47238,7 +46840,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       sceneFadeDuration: 0
     };
     _pannellumViewer3 = window.pannellum.viewer("ideditor-pannellum-viewer", options);
-    _pannellumViewer3.on("mousedown", () => select_default2(window).on("pointermove.pannellum mousemove.pannellum", () => dispatch12.call("viewerChanged"))).on("mouseup", () => select_default2(window).on("pointermove.pannellum mousemove.pannellum", null)).on("animatefinished", () => dispatch12.call("viewerChanged"));
+    _pannellumViewer3.on("mousedown", () => select_default2(window).on("pointermove.pannellum mousemove.pannellum", () => dispatch11.call("viewerChanged"))).on("mouseup", () => select_default2(window).on("pointermove.pannellum mousemove.pannellum", null)).on("animatefinished", () => dispatch11.call("viewerChanged"));
     context.ui().photoviewer.on("resize.pannellum", () => {
       _pannellumViewer3.resize();
     });
@@ -47281,7 +46883,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       }
       if (_pannellumViewer3.isLoaded() !== false) {
         _pannellumViewer3.loadScene(key, pitch, yaw, hfov);
-        dispatch12.call("viewerChanged");
+        dispatch11.call("viewerChanged");
       } else {
         const retry = setInterval(() => {
           if (_pannellumViewer3.isLoaded() === false) {
@@ -47289,7 +46891,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           }
           if (_activeSceneKey === key) {
             _pannellumViewer3.loadScene(key, pitch, yaw, hfov);
-            dispatch12.call("viewerChanged");
+            dispatch11.call("viewerChanged");
           }
           clearInterval(retry);
         }, 100);
@@ -47331,9 +46933,9 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     planePhotoFrame: () => planePhotoFrame
   });
   async function planePhotoFrame(context, selection2) {
-    const dispatch12 = dispatch_default("viewerChanged");
+    const dispatch11 = dispatch_default("viewerChanged");
     const module = {};
-    module.event = utilRebind(module, dispatch12, "on");
+    module.event = utilRebind(module, dispatch11, "on");
     let _photo;
     let _imageWrapper;
     let _planeWrapper;
@@ -47391,7 +46993,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       return module;
     };
     module.selectPhoto = function(data) {
-      dispatch12.call("viewerChanged");
+      dispatch11.call("viewerChanged");
       loadImage2(_photo, "");
       _planeWrapper.classed("show-loader", true);
       loadImage2(_photo, data.image_path).then((selection3) => {
@@ -47454,7 +47056,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     return Array.from(_vegbilderCache.wfslayers.values()).filter(({ layerInfo }) => layerInfo.year >= fromYear && (!toYear || layerInfo.year <= toYear) && (!layerInfo.is_sphere && showsFlat || layerInfo.is_sphere && showsPano));
   }
   function loadWFSLayers(projection2, margin, wfslayers) {
-    const tiles = tiler4.margin(margin).getTiles(projection2);
+    const tiles = tiler3.margin(margin).getTiles(projection2);
     for (const cache of wfslayers) {
       loadWFSLayer(projection2, cache, tiles);
     }
@@ -47542,7 +47144,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       };
     });
     _vegbilderCache.rtree.load(features);
-    dispatch6.call("loadedImages");
+    dispatch5.call("loadedImages");
   }
   function orderSequences(projection2, cache) {
     const { points: points2 } = cache;
@@ -47636,7 +47238,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     }
     return reference;
   }
-  var owsEndpoint, tileZoom2, tiler4, dispatch6, directionEnum, _planeFrame, _pannellumFrame, _currentFrame, _loadViewerPromise3, _vegbilderCache, vegbilder_default;
+  var owsEndpoint, tileZoom2, tiler3, dispatch5, directionEnum, _planeFrame, _pannellumFrame, _currentFrame, _loadViewerPromise3, _vegbilderCache, vegbilder_default;
   var init_vegbilder = __esm({
     "modules/services/vegbilder.js"() {
       "use strict";
@@ -47655,15 +47257,15 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       init_services();
       owsEndpoint = "https://www.vegvesen.no/kart/ogc/vegbilder_1_0/ows?";
       tileZoom2 = 14;
-      tiler4 = utilTiler().zoomExtent([tileZoom2, tileZoom2]).skipNullIsland(true);
-      dispatch6 = dispatch_default("loadedImages", "viewerChanged");
+      tiler3 = utilTiler().zoomExtent([tileZoom2, tileZoom2]).skipNullIsland(true);
+      dispatch5 = dispatch_default("loadedImages", "viewerChanged");
       directionEnum = Object.freeze({
         forward: /* @__PURE__ */ Symbol(0),
         backward: /* @__PURE__ */ Symbol(1)
       });
       vegbilder_default = {
         init: function() {
-          this.event = utilRebind(this, dispatch6, "on");
+          this.event = utilRebind(this, dispatch5, "on");
         },
         reset: async function() {
           if (_vegbilderCache) {
@@ -47761,9 +47363,9 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
             planePhotoFrame(context, wrapEnter)
           ]).then(([pannellumPhotoFrame2, planePhotoFrame2]) => {
             _pannellumFrame = pannellumPhotoFrame2;
-            _pannellumFrame.event.on("viewerChanged", () => dispatch6.call("viewerChanged"));
+            _pannellumFrame.event.on("viewerChanged", () => dispatch5.call("viewerChanged"));
             _planeFrame = planePhotoFrame2;
-            _planeFrame.event.on("viewerChanged", () => dispatch6.call("viewerChanged"));
+            _planeFrame.event.on("viewerChanged", () => dispatch5.call("viewerChanged"));
           });
           return _loadViewerPromise3;
         },
@@ -48377,12 +47979,12 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     default: () => osm_default
   });
   function authLoading() {
-    dispatch7.call("authLoading");
+    dispatch6.call("authLoading");
   }
   function authDone() {
-    dispatch7.call("authDone");
+    dispatch6.call("authDone");
   }
-  function abortRequest4(controllerOrXHR) {
+  function abortRequest3(controllerOrXHR) {
     if (controllerOrXHR) {
       controllerOrXHR.abort();
     }
@@ -48390,13 +47992,13 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
   function hasInflightRequests(cache) {
     return Object.keys(cache.inflight).length;
   }
-  function abortUnwantedRequests3(cache, visibleTiles) {
+  function abortUnwantedRequests2(cache, visibleTiles) {
     Object.keys(cache.inflight).forEach(function(k3) {
       if (cache.toLoad[k3]) return;
       if (visibleTiles.find(function(tile) {
         return k3 === tile.id;
       })) return;
-      abortRequest4(cache.inflight[k3]);
+      abortRequest3(cache.inflight[k3]);
       delete cache.inflight[k3];
     });
   }
@@ -48526,12 +48128,12 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       var note = new osmNote(props);
       var item = encodeNoteRtree(note);
       _noteCache.note[note.id] = note;
-      updateRtree3(item, true);
+      updateRtree2(item, true);
       return note;
     });
     callback(void 0, notes);
   }
-  function updateRtree3(item, replace2) {
+  function updateRtree2(item, replace2) {
     _noteCache.rtree.remove(item, function isEql(a2, b11) {
       return a2.data.id === b11.data.id;
     });
@@ -48550,7 +48152,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       }
     };
   }
-  var tiler5, dispatch7, urlroot, apiUrlroot, redirectPath, oauth, _apiConnections, _imageryBlocklists, _tileCache, _noteCache, _userCache, _cachedApiStatus, _changeset, _deferred, _connectionID, _tileZoom3, _noteZoom, _rateLimitError, _userChangesets, _userDetails, _off, _maxWayNodes, _maxChangesetElements, jsonparsers, osm_default;
+  var tiler4, dispatch6, urlroot, apiUrlroot, redirectPath, oauth, _apiConnections, _imageryBlocklists, _tileCache, _noteCache, _userCache, _cachedApiStatus, _changeset, _deferred, _connectionID, _tileZoom2, _noteZoom, _rateLimitError, _userChangesets, _userDetails, _off, _maxWayNodes, _maxChangesetElements, jsonparsers, osm_default;
   var init_osm2 = __esm({
     "modules/services/osm.js"() {
       "use strict";
@@ -48566,8 +48168,8 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       init_localizer();
       init_util2();
       init_id();
-      tiler5 = utilTiler();
-      dispatch7 = dispatch_default("apiStatusChange", "authLoading", "authDone", "change", "loading", "loaded", "loadedNotes");
+      tiler4 = utilTiler();
+      dispatch6 = dispatch_default("apiStatusChange", "authLoading", "authDone", "change", "loading", "loaded", "loadedNotes");
       urlroot = osmApiConnections[0].url;
       apiUrlroot = osmApiConnections[0].apiUrl || urlroot;
       redirectPath = window.location.origin + window.location.pathname;
@@ -48588,7 +48190,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       _changeset = {};
       _deferred = /* @__PURE__ */ new Set();
       _connectionID = 1;
-      _tileZoom3 = 16;
+      _tileZoom2 = 16;
       _noteZoom = 12;
       _maxWayNodes = 2e3;
       _maxChangesetElements = 1e4;
@@ -48645,7 +48247,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       };
       osm_default = {
         init: function() {
-          utilRebind(this, dispatch7, "on");
+          utilRebind(this, dispatch6, "on");
         },
         reset: function() {
           Array.from(_deferred).forEach(function(handle) {
@@ -48656,10 +48258,10 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           _userChangesets = void 0;
           _userDetails = void 0;
           _rateLimitError = void 0;
-          Object.values(_tileCache.inflight).forEach(abortRequest4);
-          Object.values(_noteCache.inflight).forEach(abortRequest4);
-          Object.values(_noteCache.inflightPost).forEach(abortRequest4);
-          if (_changeset.inflight) abortRequest4(_changeset.inflight);
+          Object.values(_tileCache.inflight).forEach(abortRequest3);
+          Object.values(_noteCache.inflight).forEach(abortRequest3);
+          Object.values(_noteCache.inflightPost).forEach(abortRequest3);
+          if (_changeset.inflight) abortRequest3(_changeset.inflight);
           _tileCache = { toLoad: {}, loaded: {}, inflight: {}, seen: {}, rtree: new RBush() };
           _noteCache = { toLoad: {}, loaded: {}, inflight: {}, inflightPost: {}, note: {}, closed: {}, rtree: new RBush() };
           _userCache = { toLoad: {}, user: {} };
@@ -49033,7 +48635,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
               that.status(function(err, status) {
                 if (status !== _cachedApiStatus) {
                   _cachedApiStatus = status;
-                  dispatch7.call("apiStatusChange", that, err, status);
+                  dispatch6.call("apiStatusChange", that, err, status);
                 }
               });
             }, 500);
@@ -49049,16 +48651,16 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         // GET /api/0.6/map?bbox=
         loadTiles: function(projection2, callback) {
           if (_off) return;
-          var tiles = tiler5.zoomExtent([_tileZoom3, _tileZoom3]).getTiles(projection2);
+          var tiles = tiler4.zoomExtent([_tileZoom2, _tileZoom2]).getTiles(projection2);
           var hadRequests = hasInflightRequests(_tileCache);
-          abortUnwantedRequests3(_tileCache, tiles);
+          abortUnwantedRequests2(_tileCache, tiles);
           if (hadRequests && !hasInflightRequests(_tileCache)) {
             if (_rateLimitError) {
               _rateLimitError = void 0;
-              dispatch7.call("change");
+              dispatch6.call("change");
               this.reloadApiStatus();
             }
-            dispatch7.call("loaded");
+            dispatch6.call("loaded");
           }
           tiles.forEach(function(tile) {
             this.loadTile(tile, callback);
@@ -49070,7 +48672,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           if (_off) return;
           if (_tileCache.loaded[tile.id] || _tileCache.inflight[tile.id]) return;
           if (!hasInflightRequests(_tileCache)) {
-            dispatch7.call("loading");
+            dispatch6.call("loading");
           }
           var path = "/api/0.6/map.json?bbox=";
           var options = { skipSeen: true };
@@ -49090,7 +48692,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
             } else {
               if (!_rateLimitError && err.status === 509 || err.status === 429) {
                 _rateLimitError = err;
-                dispatch7.call("change");
+                dispatch6.call("change");
                 this.reloadApiStatus();
               }
               setTimeout(() => {
@@ -49104,10 +48706,10 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
             if (!hasInflightRequests(_tileCache)) {
               if (_rateLimitError) {
                 _rateLimitError = void 0;
-                dispatch7.call("change");
+                dispatch6.call("change");
                 this.reloadApiStatus();
               }
-              dispatch7.call("loaded");
+              dispatch6.call("loaded");
             }
           }
         },
@@ -49118,10 +48720,10 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         // load the tile that covers the given `loc`
         loadTileAtLoc: function(loc, callback) {
           if (Object.keys(_tileCache.toLoad).length > 50) return;
-          var k3 = geoZoomToScale(_tileZoom3 + 1);
+          var k3 = geoZoomToScale(_tileZoom2 + 1);
           var offset = geoRawMercator().scale(k3)(loc);
           var projection2 = geoRawMercator().transform({ k: k3, x: -offset[0], y: -offset[1] });
-          var tiles = tiler5.zoomExtent([_tileZoom3, _tileZoom3]).getTiles(projection2);
+          var tiles = tiler4.zoomExtent([_tileZoom2, _tileZoom2]).getTiles(projection2);
           tiles.forEach(function(tile) {
             if (_tileCache.toLoad[tile.id] || _tileCache.loaded[tile.id] || _tileCache.inflight[tile.id]) return;
             _tileCache.toLoad[tile.id] = true;
@@ -49141,8 +48743,8 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
             that.loadUsers(uids, function() {
             });
           }, 750);
-          var tiles = tiler5.zoomExtent([_noteZoom, _noteZoom]).getTiles(projection2);
-          abortUnwantedRequests3(_noteCache, tiles);
+          var tiles = tiler4.zoomExtent([_noteZoom, _noteZoom]).getTiles(projection2);
+          abortUnwantedRequests2(_noteCache, tiles);
           tiles.forEach(function(tile) {
             if (_noteCache.loaded[tile.id] || _noteCache.inflight[tile.id]) return;
             var options = { skipSeen: false };
@@ -49154,7 +48756,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
                   _noteCache.loaded[tile.id] = true;
                 }
                 throttleLoadUsers();
-                dispatch7.call("loadedNotes");
+                dispatch6.call("loadedNotes");
               },
               options
             );
@@ -49264,7 +48866,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           this.reset();
           this.userChangesets(function() {
           });
-          dispatch7.call("change");
+          dispatch6.call("change");
           return this;
         },
         toggle: function(val) {
@@ -49326,7 +48928,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           _userChangesets = void 0;
           _userDetails = void 0;
           oauth.logout();
-          dispatch7.call("change");
+          dispatch6.call("change");
           return this;
         },
         authenticated: function() {
@@ -49348,7 +48950,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
               return;
             }
             _rateLimitError = void 0;
-            dispatch7.call("change");
+            dispatch6.call("change");
             if (callback) callback(err, res);
             that.userChangesets(function() {
             });
@@ -49363,8 +48965,8 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           return _imageryBlocklists;
         },
         tileZoom: function(val) {
-          if (!arguments.length) return _tileZoom3;
-          _tileZoom3 = val;
+          if (!arguments.length) return _tileZoom2;
+          _tileZoom2 = val;
           return this;
         },
         // get all cached notes covering the viewport
@@ -49385,13 +48987,13 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         removeNote: function(note) {
           if (!(note instanceof osmNote) || !note.id) return;
           delete _noteCache.note[note.id];
-          updateRtree3(encodeNoteRtree(note), false);
+          updateRtree2(encodeNoteRtree(note), false);
         },
         // replace a single note in the cache
         replaceNote: function(note) {
           if (!(note instanceof osmNote) || !note.id) return;
           _noteCache.note[note.id] = note;
-          updateRtree3(encodeNoteRtree(note), true);
+          updateRtree2(encodeNoteRtree(note), true);
           return note;
         },
         // Get an array of note IDs closed during this session.
@@ -49739,16 +49341,16 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
   __export(streetside_exports, {
     default: () => streetside_default
   });
-  function abortRequest5(i3) {
+  function abortRequest4(i3) {
     i3.abort();
   }
   function loadTiles3(which, url, projection2, margin) {
-    const tiles = tiler6.margin(margin).getTiles(projection2);
+    const tiles = tiler5.margin(margin).getTiles(projection2);
     const cache = _ssCache[which];
     Object.keys(cache.inflight).forEach((k3) => {
       const wanted = tiles.find((tile) => k3.indexOf(tile.id + ",") === 0);
       if (!wanted) {
-        abortRequest5(cache.inflight[k3]);
+        abortRequest4(cache.inflight[k3]);
         delete cache.inflight[k3];
       }
     });
@@ -49799,7 +49401,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       }).filter(Boolean);
       cache.rtree.load(features);
       if (which === "bubbles") {
-        dispatch8.call("loadedImages");
+        dispatch7.call("loadedImages");
       }
     });
   }
@@ -50231,7 +49833,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     }
     return quadKeys;
   }
-  var streetsideApi, maxResults2, bubbleAppKey, pannellumViewerCSS2, pannellumViewerJS2, tileZoom3, tiler6, dispatch8, minHfov, maxHfov, defaultHfov, _hires, _resolution, _currScene, _ssCache, _pannellumViewer, _sceneOptions, _loadViewerPromise4, streetside_default;
+  var streetsideApi, maxResults2, bubbleAppKey, pannellumViewerCSS2, pannellumViewerJS2, tileZoom3, tiler5, dispatch7, minHfov, maxHfov, defaultHfov, _hires, _resolution, _currScene, _ssCache, _pannellumViewer, _sceneOptions, _loadViewerPromise4, streetside_default;
   var init_streetside = __esm({
     "modules/services/streetside.js"() {
       "use strict";
@@ -50251,8 +49853,8 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       pannellumViewerCSS2 = "pannellum/pannellum.css";
       pannellumViewerJS2 = "pannellum/pannellum.js";
       tileZoom3 = 16.5;
-      tiler6 = utilTiler().zoomExtent([tileZoom3, tileZoom3]).skipNullIsland(true);
-      dispatch8 = dispatch_default("loadedImages", "viewerChanged");
+      tiler5 = utilTiler().zoomExtent([tileZoom3, tileZoom3]).skipNullIsland(true);
+      dispatch7 = dispatch_default("loadedImages", "viewerChanged");
       minHfov = 10;
       maxHfov = 90;
       defaultHfov = 45;
@@ -50278,14 +49880,14 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           if (!_ssCache) {
             this.reset();
           }
-          this.event = utilRebind(this, dispatch8, "on");
+          this.event = utilRebind(this, dispatch7, "on");
         },
         /**
          * reset() reset the cache.
          */
         reset: function() {
           if (_ssCache) {
-            Object.values(_ssCache.bubbles.inflight).forEach(abortRequest5);
+            Object.values(_ssCache.bubbles.inflight).forEach(abortRequest4);
           }
           _ssCache = {
             bubbles: { inflight: {}, loaded: {}, nextPage: {}, rtree: new RBush(), points: {} },
@@ -50348,12 +49950,12 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           let pointerPrefix = "PointerEvent" in window ? "pointer" : "mouse";
           wrapEnter.append("div").attr("id", "ideditor-viewer-streetside").on(pointerPrefix + "down.streetside", () => {
             select_default2(window).on(pointerPrefix + "move.streetside", () => {
-              dispatch8.call("viewerChanged");
+              dispatch7.call("viewerChanged");
             }, true);
           }).on(pointerPrefix + "up.streetside pointercancel.streetside", () => {
             select_default2(window).on(pointerPrefix + "move.streetside", null);
             let t4 = timer((elapsed) => {
-              dispatch8.call("viewerChanged");
+              dispatch7.call("viewerChanged");
               if (elapsed > 2e3) {
                 t4.stop();
               }
@@ -53550,7 +53152,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
   __export(vector_tile_exports, {
     default: () => vector_tile_default
   });
-  function abortRequest6(controller) {
+  function abortRequest5(controller) {
     controller.abort();
   }
   function vtToGeoJSON(data, tile, mergeCache) {
@@ -53634,13 +53236,13 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         source.canMerge[z3] = {};
       }
       source.loaded[tile.id] = vtToGeoJSON(data, tile, source.canMerge[z3]);
-      dispatch9.call("loadedData");
+      dispatch8.call("loadedData");
     }).catch(function() {
       source.loaded[tile.id] = [];
       delete source.inflight[tile.id];
     });
   }
-  var import_fast_json_stable_stringify, import_polygon_clipping, tiler7, dispatch9, _vtCache, vector_tile_default;
+  var import_fast_json_stable_stringify, import_polygon_clipping, tiler6, dispatch8, _vtCache, vector_tile_default;
   var init_vector_tile2 = __esm({
     "modules/services/vector_tile.js"() {
       "use strict";
@@ -53652,20 +53254,20 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       init_pbf();
       init_vector_tile();
       init_util3();
-      tiler7 = utilTiler().tileSize(512).margin(1);
-      dispatch9 = dispatch_default("loadedData");
+      tiler6 = utilTiler().tileSize(512).margin(1);
+      dispatch8 = dispatch_default("loadedData");
       vector_tile_default = {
         init: function() {
           if (!_vtCache) {
             this.reset();
           }
-          this.event = utilRebind(this, dispatch9, "on");
+          this.event = utilRebind(this, dispatch8, "on");
         },
         reset: function() {
           for (var sourceID in _vtCache) {
             var source = _vtCache[sourceID];
             if (source && source.inflight) {
-              Object.values(source.inflight).forEach(abortRequest6);
+              Object.values(source.inflight).forEach(abortRequest5);
             }
           }
           _vtCache = {};
@@ -53677,7 +53279,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         data: function(sourceID, projection2) {
           var source = _vtCache[sourceID];
           if (!source) return [];
-          var tiles = tiler7.getTiles(projection2);
+          var tiles = tiler6.getTiles(projection2);
           var seen = {};
           var results = [];
           for (var i3 = 0; i3 < tiles.length; i3++) {
@@ -53698,13 +53300,13 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           if (!source) {
             source = this.addSource(sourceID, template2);
           }
-          var tiles = tiler7.getTiles(projection2);
+          var tiles = tiler6.getTiles(projection2);
           Object.keys(source.inflight).forEach(function(k3) {
             var wanted = tiles.find(function(tile) {
               return k3 === tile.id;
             });
             if (!wanted) {
-              abortRequest6(source.inflight[k3]);
+              abortRequest5(source.inflight[k3]);
               delete source.inflight[k3];
             }
           });
@@ -54003,14 +53605,14 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     default: () => mapilio_default
   });
   function loadTiles4(which, url, maxZoom2, projection2) {
-    const tiler8 = utilTiler().zoomExtent([minZoom2, maxZoom2]).skipNullIsland(true);
-    const tiles = tiler8.getTiles(projection2);
+    const tiler7 = utilTiler().zoomExtent([minZoom2, maxZoom2]).skipNullIsland(true);
+    const tiles = tiler7.getTiles(projection2);
     tiles.forEach(function(tile) {
       loadTile4(which, url, tile);
     });
   }
   function loadTile4(which, url, tile) {
-    const cache = _cache3.requests;
+    const cache = _cache2.requests;
     const tileId = `${tile.id}-${which}`;
     if (cache.loaded[tileId] || cache.inflight[tileId]) return;
     const controller = new AbortController();
@@ -54029,9 +53631,9 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       }
       loadTileDataToCache2(data, tile, which);
       if (which === "images") {
-        dispatch10.call("loadedImages");
+        dispatch9.call("loadedImages");
       } else {
-        dispatch10.call("loadedLines");
+        dispatch9.call("loadedLines");
       }
     }).catch(function(e3) {
       if (e3.message === "No Data") {
@@ -54045,7 +53647,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     const vectorTile = new VectorTile(new Pbf(data));
     if (vectorTile.layers.hasOwnProperty(pointLayer)) {
       const features = [];
-      const cache = _cache3.images;
+      const cache = _cache2.images;
       const layer = vectorTile.layers[pointLayer];
       for (let i3 = 0; i3 < layer.length; i3++) {
         const feature3 = layer.feature(i3).toGeoJSON(tile.xyz[0], tile.xyz[1], tile.xyz[2]);
@@ -54079,7 +53681,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       }
     }
     if (vectorTile.layers.hasOwnProperty(lineLayer)) {
-      const cache = _cache3.sequences;
+      const cache = _cache2.sequences;
       const layer = vectorTile.layers[lineLayer];
       for (let i3 = 0; i3 < layer.length; i3++) {
         const feature3 = layer.feature(i3).toGeoJSON(tile.xyz[0], tile.xyz[1], tile.xyz[2]);
@@ -54119,7 +53721,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       return data.data[0].username;
     });
   }
-  var apiUrl2, imageBaseUrl, baseTileUrl2, pointLayer, lineLayer, tileStyle, minZoom2, dispatch10, imgZoom2, pannellumViewerCSS3, pannellumViewerJS3, resolution, _activeImage, _cache3, _loadViewerPromise5, _pannellumViewer2, _sceneOptions2, _currScene2, mapilio_default;
+  var apiUrl2, imageBaseUrl, baseTileUrl2, pointLayer, lineLayer, tileStyle, minZoom2, dispatch9, imgZoom2, pannellumViewerCSS3, pannellumViewerJS3, resolution, _activeImage, _cache2, _loadViewerPromise5, _pannellumViewer2, _sceneOptions2, _currScene2, mapilio_default;
   var init_mapilio = __esm({
     "modules/services/mapilio.js"() {
       "use strict";
@@ -54142,7 +53744,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       lineLayer = "map_roads_line";
       tileStyle = "&STYLE=&TILEMATRIX=EPSG:900913:{z}&TILEMATRIXSET=EPSG:900913&FORMAT=application/vnd.mapbox-vector-tile&TILECOL={x}&TILEROW={y}";
       minZoom2 = 14;
-      dispatch10 = dispatch_default("loadedImages", "loadedLines");
+      dispatch9 = dispatch_default("loadedImages", "loadedLines");
       imgZoom2 = zoom_default2().extent([[0, 0], [320, 240]]).translateExtent([[0, 0], [320, 240]]).scaleExtent([1, 15]);
       pannellumViewerCSS3 = "pannellum/pannellum.css";
       pannellumViewerJS3 = "pannellum/pannellum.js";
@@ -54159,19 +53761,19 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       mapilio_default = {
         // Initialize Mapilio
         init: function() {
-          if (!_cache3) {
+          if (!_cache2) {
             this.reset();
           }
-          this.event = utilRebind(this, dispatch10, "on");
+          this.event = utilRebind(this, dispatch9, "on");
         },
         // Reset cache and state
         reset: function() {
-          if (_cache3) {
-            Object.values(_cache3.requests.inflight).forEach(function(request3) {
+          if (_cache2) {
+            Object.values(_cache2.requests.inflight).forEach(function(request3) {
               request3.abort();
             });
           }
-          _cache3 = {
+          _cache2 = {
             images: { rtree: new RBush(), forImageId: {} },
             sequences: { rtree: new RBush(), lineString: {} },
             requests: { loaded: {}, inflight: {} }
@@ -54180,10 +53782,10 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         // Get visible images
         images: function(projection2) {
           const limit2 = 5;
-          return searchLimited(limit2, projection2, _cache3.images.rtree);
+          return searchLimited(limit2, projection2, _cache2.images.rtree);
         },
         cachedImage: function(imageKey) {
-          return _cache3.images.forImageId[imageKey];
+          return _cache2.images.forImageId[imageKey];
         },
         // Load images in the visible area
         loadImages: function(projection2) {
@@ -54203,14 +53805,14 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           const bbox2 = geoExtent(projection2.invert(min5), projection2.invert(max5)).bbox();
           const sequenceIds = {};
           let lineStrings2 = [];
-          _cache3.images.rtree.search(bbox2).forEach(function(d2) {
+          _cache2.images.rtree.search(bbox2).forEach(function(d2) {
             if (d2.data.sequence_id) {
               sequenceIds[d2.data.sequence_id] = true;
             }
           });
           Object.keys(sequenceIds).forEach(function(sequenceId) {
-            if (_cache3.sequences.lineString[sequenceId]) {
-              lineStrings2 = lineStrings2.concat(_cache3.sequences.lineString[sequenceId]);
+            if (_cache2.sequences.lineString[sequenceId]) {
+              lineStrings2 = lineStrings2.concat(_cache2.sequences.lineString[sequenceId]);
             }
           });
           return lineStrings2;
@@ -54294,8 +53896,8 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           });
           wrap3.transition().duration(100).call(imgZoom2.transform, identity2);
           wrap3.selectAll("img").remove();
-          wrap3.selectAll("button.back").classed("hide", !_cache3.images.forImageId.hasOwnProperty(+id3 - 1));
-          wrap3.selectAll("button.forward").classed("hide", !_cache3.images.forImageId.hasOwnProperty(+id3 + 1));
+          wrap3.selectAll("button.back").classed("hide", !_cache2.images.forImageId.hasOwnProperty(+id3 - 1));
+          wrap3.selectAll("button.forward").classed("hide", !_cache2.images.forImageId.hasOwnProperty(+id3 + 1));
           getImageData(d2.id, d2.sequence_id).then(function() {
             if (d2.isPano) {
               if (!_pannellumViewer2) {
@@ -54370,7 +53972,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
               const imageId = _activeImage.id;
               const nextIndex = imageId + stepBy;
               if (!nextIndex) return;
-              const nextImage = _cache3.images.forImageId[nextIndex];
+              const nextImage = _cache2.images.forImageId[nextIndex];
               context.map().centerEase(nextImage.loc);
               that.selectImage(context, nextImage.id);
             };
@@ -54409,7 +54011,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         },
         // Return the current cache
         cache: function() {
-          return _cache3;
+          return _cache2;
         }
       };
     }
@@ -54434,14 +54036,14 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     }, []);
   }
   function loadTiles5(which, url, maxZoom2, projection2, zoom) {
-    const tiler8 = utilTiler().zoomExtent([minZoom3, maxZoom2]).skipNullIsland(true);
-    const tiles = tiler8.getTiles(projection2);
+    const tiler7 = utilTiler().zoomExtent([minZoom3, maxZoom2]).skipNullIsland(true);
+    const tiles = tiler7.getTiles(projection2);
     tiles.forEach(function(tile) {
       loadTile5(which, url, tile, zoom);
     });
   }
   function loadTile5(which, url, tile, zoom) {
-    const cache = _cache4.requests;
+    const cache = _cache3.requests;
     const tileId = `${tile.id}-${which}`;
     if (cache.loaded[tileId] || cache.inflight[tileId]) return;
     const controller = new AbortController();
@@ -54460,9 +54062,9 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       }
       loadTileDataToCache3(data, tile, zoom);
       if (which === "images") {
-        dispatch11.call("loadedImages");
+        dispatch10.call("loadedImages");
       } else {
-        dispatch11.call("loadedLines");
+        dispatch10.call("loadedLines");
       }
     }).catch(function(e3) {
       if (e3.message === "No Data") {
@@ -54477,7 +54079,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     let features, cache, layer, i3, feature3, loc, d2;
     if (vectorTile.layers.hasOwnProperty(pictureLayer)) {
       features = [];
-      cache = _cache4.images;
+      cache = _cache3.images;
       layer = vectorTile.layers[pictureLayer];
       for (i3 = 0; i3 < layer.length; i3++) {
         feature3 = layer.feature(i3).toGeoJSON(tile.xyz[0], tile.xyz[1], tile.xyz[2]);
@@ -54509,8 +54111,8 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       }
     }
     if (vectorTile.layers.hasOwnProperty(sequenceLayer)) {
-      cache = _cache4.sequences;
-      if (zoom >= lineMinZoom && zoom < imageMinZoom) cache = _cache4.mockSequences;
+      cache = _cache3.sequences;
+      if (zoom >= lineMinZoom && zoom < imageMinZoom) cache = _cache3.mockSequences;
       layer = vectorTile.layers[sequenceLayer];
       for (i3 = 0; i3 < layer.length; i3++) {
         feature3 = layer.feature(i3).toGeoJSON(tile.xyz[0], tile.xyz[1], tile.xyz[2]);
@@ -54523,7 +54125,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     }
   }
   async function getUsername(userId) {
-    const cache = _cache4.users;
+    const cache = _cache3.users;
     if (cache[userId]) return cache[userId].name;
     const requestUrl = usernameURL.replace("{userId}", userId);
     const response = await fetch(requestUrl, { method: "GET" });
@@ -54534,7 +54136,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     cache[userId] = data;
     return data.name;
   }
-  var apiUrl3, tileUrl2, imageDataUrl, sequenceDataUrl, userIdUrl, usernameURL, viewerUrl, highDefinition, standardDefinition, pictureLayer, sequenceLayer, minZoom3, imageMinZoom, lineMinZoom, dispatch11, _cache4, _loadViewerPromise6, _definition, _isHD, _planeFrame2, _pannellumFrame2, _currentFrame2, _currentScene, _activeImage2, _isViewerOpen2, panoramax_default;
+  var apiUrl3, tileUrl2, imageDataUrl, sequenceDataUrl, userIdUrl, usernameURL, viewerUrl, highDefinition, standardDefinition, pictureLayer, sequenceLayer, minZoom3, imageMinZoom, lineMinZoom, dispatch10, _cache3, _loadViewerPromise6, _definition, _isHD, _planeFrame2, _pannellumFrame2, _currentFrame2, _currentScene, _activeImage2, _isViewerOpen2, panoramax_default;
   var init_panoramax = __esm({
     "modules/services/panoramax.js"() {
       "use strict";
@@ -54564,7 +54166,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       minZoom3 = 10;
       imageMinZoom = 15;
       lineMinZoom = 10;
-      dispatch11 = dispatch_default("loadedImages", "loadedLines", "viewerChanged");
+      dispatch10 = dispatch_default("loadedImages", "loadedLines", "viewerChanged");
       _definition = standardDefinition;
       _isHD = false;
       _currentScene = {
@@ -54575,18 +54177,18 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       _isViewerOpen2 = false;
       panoramax_default = {
         init: function() {
-          if (!_cache4) {
+          if (!_cache3) {
             this.reset();
           }
-          this.event = utilRebind(this, dispatch11, "on");
+          this.event = utilRebind(this, dispatch10, "on");
         },
         reset: function() {
-          if (_cache4) {
-            Object.values(_cache4.requests.inflight).forEach(function(request3) {
+          if (_cache3) {
+            Object.values(_cache3.requests.inflight).forEach(function(request3) {
               request3.abort();
             });
           }
-          _cache4 = {
+          _cache3 = {
             images: { rtree: new RBush(), forImageId: {} },
             sequences: { rtree: new RBush(), lineString: {}, items: {} },
             users: {},
@@ -54601,7 +54203,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
          */
         images: function(projection2) {
           const limit2 = 5;
-          return searchLimited2(limit2, projection2, _cache4.images.rtree);
+          return searchLimited2(limit2, projection2, _cache3.images.rtree);
         },
         /**
          * Get a specific image from cache
@@ -54609,7 +54211,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
          * @returns
          */
         cachedImage: function(imageKey) {
-          return _cache4.images.forImageId[imageKey];
+          return _cache3.images.forImageId[imageKey];
         },
         /**
          * Fetches images data for the visible area
@@ -54654,21 +54256,21 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           const sequenceIds = {};
           let lineStrings2 = [];
           if (zoom >= imageMinZoom) {
-            _cache4.images.rtree.search(bbox2).forEach(function(d2) {
+            _cache3.images.rtree.search(bbox2).forEach(function(d2) {
               if (d2.data.sequence_id) {
                 sequenceIds[d2.data.sequence_id] = true;
               }
             });
             Object.keys(sequenceIds).forEach(function(sequenceId) {
-              if (_cache4.sequences.lineString[sequenceId]) {
-                lineStrings2 = lineStrings2.concat(_cache4.sequences.lineString[sequenceId]);
+              if (_cache3.sequences.lineString[sequenceId]) {
+                lineStrings2 = lineStrings2.concat(_cache3.sequences.lineString[sequenceId]);
               }
             });
             return lineStrings2;
           }
           if (zoom >= lineMinZoom) {
-            Object.keys(_cache4.mockSequences.lineString).forEach(function(sequenceId) {
-              lineStrings2 = lineStrings2.concat(_cache4.mockSequences.lineString[sequenceId]);
+            Object.keys(_cache3.mockSequences.lineString).forEach(function(sequenceId) {
+              lineStrings2 = lineStrings2.concat(_cache3.mockSequences.lineString[sequenceId]);
             });
           }
           return lineStrings2;
@@ -54818,7 +54420,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
          * @returns The fetched image data
          */
         getImageData: async function(collectionId, imageId) {
-          const cache = _cache4.sequences.items;
+          const cache = _cache3.sequences.items;
           if (cache[collectionId]) {
             const cached = cache[collectionId].find((d2) => d2.id === imageId);
             if (cached) return cached;
@@ -54864,9 +54466,9 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
             planePhotoFrame(context, wrapEnter)
           ]).then(([pannellumPhotoFrame2, planePhotoFrame2]) => {
             _pannellumFrame2 = pannellumPhotoFrame2;
-            _pannellumFrame2.event.on("viewerChanged", () => dispatch11.call("viewerChanged"));
+            _pannellumFrame2.event.on("viewerChanged", () => dispatch10.call("viewerChanged"));
             _planeFrame2 = planePhotoFrame2;
-            _planeFrame2.event.on("viewerChanged", () => dispatch11.call("viewerChanged"));
+            _planeFrame2.event.on("viewerChanged", () => dispatch10.call("viewerChanged"));
           });
           function step(stepBy) {
             return function() {
@@ -54875,7 +54477,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
               if (stepBy === 1) nextId2 = _currentScene.nextImage.id;
               else nextId2 = _currentScene.prevImage.id;
               if (!nextId2) return;
-              const nextImage = _cache4.images.forImageId[nextId2];
+              const nextImage = _cache3.images.forImageId[nextId2];
               if (nextImage) {
                 context.map().centerEase(nextImage.loc);
                 that.selectImage(context, nextImage.id);
@@ -54918,7 +54520,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           return this.setStyles(context, null);
         },
         cache: function() {
-          return _cache4;
+          return _cache3;
         }
       };
     }
@@ -54928,7 +54530,6 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
   var services_exports = {};
   __export(services_exports, {
     serviceKartaview: () => kartaview_default,
-    serviceKeepRight: () => keepRight_default,
     serviceMapRules: () => maprules_default,
     serviceMapilio: () => mapilio_default,
     serviceMapillary: () => mapillary_default,
@@ -54950,7 +54551,6 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
   var init_services = __esm({
     "modules/services/index.js"() {
       "use strict";
-      init_keepRight();
       init_osmose();
       init_mapillary();
       init_maprules();
@@ -54969,7 +54569,6 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       init_panoramax();
       services = {
         geocoder: nominatim_default,
-        keepRight: keepRight_default,
         osmose: osmose_default,
         mapillary: mapillary_default,
         nsi: nsi_default,
@@ -56111,7 +55710,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
   });
   function behaviorDrawWay(context, wayID, mode2, startGraph) {
     const keybinding = utilKeybinding("drawWay");
-    var dispatch12 = dispatch_default("rejectedSelfIntersection");
+    var dispatch11 = dispatch_default("rejectedSelfIntersection");
     var behavior = behaviorDraw(context);
     var _nodeIndex;
     var _origWay;
@@ -56298,7 +55897,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         if (!_pointerHasMoved) {
           removeDrawNode();
         }
-        dispatch12.call("rejectedSelfIntersection", this);
+        dispatch11.call("rejectedSelfIntersection", this);
         return;
       }
       context.pauseChangeDispatch();
@@ -56385,7 +55984,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         /* includeDrawNode */
       );
       if (context.surface().classed("nope")) {
-        dispatch12.call("rejectedSelfIntersection", this);
+        dispatch11.call("rejectedSelfIntersection", this);
         return;
       }
       context.pauseChangeDispatch();
@@ -56422,7 +56021,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       if (!arguments.length) return _drawNode && _drawNode.id;
       return drawWay;
     };
-    return utilRebind(drawWay, dispatch12, "on");
+    return utilRebind(drawWay, dispatch11, "on");
   }
   var init_draw_way = __esm({
     "modules/behavior/draw_way.js"() {
@@ -56983,19 +56582,19 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       validateDate("start_date", "start");
       validateDate("end_date", "end");
       function showReferenceEDTF(selection2, parserError) {
-        let message;
+        let message2;
         if (typeof parserError.offset === "number" && parserError.token) {
-          message = _t.append("issues.invalid_format.edtf.reference", {
+          message2 = _t.append("issues.invalid_format.edtf.reference", {
             token: parserError.token.value,
             position: (parserError.offset + 1).toLocaleString(_mainLocalizer.localeCodes())
           });
         } else if (parserError.message) {
-          message = (selection3) => selection3.append("span").attr("class", "localized-text").attr("lang", "en").text(parserError.message.replace(/^edtf: /, ""));
+          message2 = (selection3) => selection3.append("span").attr("class", "localized-text").attr("lang", "en").text(parserError.message.replace(/^edtf: /, ""));
         }
-        if (!message) {
+        if (!message2) {
           return;
         }
-        selection2.selectAll(".issue-reference").data([0]).enter().append("div").attr("class", "issue-reference").call(message);
+        selection2.selectAll(".issue-reference").data([0]).enter().append("div").attr("class", "issue-reference").call(message2);
       }
       function validateEDTF(key, msgKey) {
         key += ":edtf";
@@ -59185,7 +58784,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     coreValidator: () => coreValidator
   });
   function coreValidator(context) {
-    let dispatch12 = dispatch_default("validated", "focusedIssue");
+    let dispatch11 = dispatch_default("validated", "focusedIssue");
     const validator = {};
     let _rules = {};
     let _disabledRules = {};
@@ -59254,12 +58853,12 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     };
     validator.resetIgnoredIssues = () => {
       _ignoredIssueIDs.clear();
-      dispatch12.call("validated");
+      dispatch11.call("validated");
     };
     validator.revalidateUnsquare = () => {
       revalidateUnsquare(_headCache);
       revalidateUnsquare(_baseCache);
-      dispatch12.call("validated");
+      dispatch11.call("validated");
     };
     function revalidateUnsquare(cache) {
       const checkUnsquareWay = _rules.unsquare_way;
@@ -59337,7 +58936,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       if (selectID) {
         window.setTimeout(() => {
           context.enter(modeSelect(context, [selectID]));
-          dispatch12.call("focusedIssue", this, issue);
+          dispatch11.call("focusedIssue", this, issue);
         }, 250);
       }
     };
@@ -59416,7 +59015,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       const currGraph = context.graph();
       if (currGraph === prevGraph) {
         _headIsCurrent = true;
-        dispatch12.call("validated");
+        dispatch11.call("validated");
         return Promise.resolve();
       }
       if (_headPromise) {
@@ -59429,7 +59028,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       const diff = Object.keys(incrementalDiff.complete());
       const entityIDs = _headCache.withAllRelatedEntities(diff);
       if (!entityIDs.size) {
-        dispatch12.call("validated");
+        dispatch11.call("validated");
         return Promise.resolve();
       }
       const addConnectedWays = (graph) => diff.filter((entityID) => graph.hasEntity(entityID)).map((entityID) => graph.entity(entityID)).flatMap((entity) => graph.childNodes(entity)).flatMap((vertex) => graph.parentWays(vertex)).forEach((way) => entityIDs.add(way.id));
@@ -59442,7 +59041,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         const symDiff = utilArrayDifference(utilArrayUnion(bm, hm), utilArrayIntersection(bm, hm));
         symDiff.forEach((id3) => entityIDs.add(id3));
       });
-      _headPromise = validateEntitiesAsync(entityIDs, _headCache).then(() => updateResolvedIssues(entityIDs)).then(() => dispatch12.call("validated")).catch(() => {
+      _headPromise = validateEntitiesAsync(entityIDs, _headCache).then(() => updateResolvedIssues(entityIDs)).then(() => dispatch11.call("validated")).catch(() => {
       }).then(() => {
         _headPromise = null;
         if (!_headIsCurrent) {
@@ -59571,10 +59170,10 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         });
         _deferredRIC[handle] = rejectPromise;
       }).then(() => {
-        if (cache.queue.length % 25 === 0) dispatch12.call("validated");
+        if (cache.queue.length % 25 === 0) dispatch11.call("validated");
       }).then(() => processQueue(cache));
     }
-    return utilRebind(validator, dispatch12, "on");
+    return utilRebind(validator, dispatch11, "on");
   }
   function validationCache(which) {
     let cache = {
@@ -59670,7 +59269,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     coreUploader: () => coreUploader
   });
   function coreUploader(context) {
-    var dispatch12 = dispatch_default(
+    var dispatch11 = dispatch_default(
       // Start and end events are dispatched exactly once each per legitimate outside call to `save`
       "saveStarted",
       // dispatched as soon as a call to `save` has been deemed legitimate
@@ -59719,7 +59318,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       }
       if (!_isSaving) {
         _isSaving = true;
-        dispatch12.call("saveStarted", this);
+        dispatch11.call("saveStarted", this);
       }
       var history = context.history();
       _anyConflictsAutomaticallyResolved = false;
@@ -59754,7 +59353,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       var _toLoadCount = 0;
       var _toLoadTotal = _toLoad.length;
       if (_toCheck.length) {
-        dispatch12.call("progressChanged", this, _toLoadCount, _toLoadTotal);
+        dispatch11.call("progressChanged", this, _toLoadCount, _toLoadTotal);
         _toLoad.forEach(function(id3) {
           _loaded[id3] = false;
         });
@@ -59814,7 +59413,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           });
           _toLoadCount += result2.data.length;
           _toLoadTotal += loadMore.length;
-          dispatch12.call("progressChanged", this, _toLoadCount, _toLoadTotal);
+          dispatch11.call("progressChanged", this, _toLoadCount, _toLoadTotal);
           if (loadMore.length) {
             _toLoad.push.apply(_toLoad, loadMore);
             osm.loadMultiple(loadMore, loaded);
@@ -59835,8 +59434,8 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
             }
           };
         }
-        function formatUser(d2) {
-          return '<a href="' + osm.userURL(d2) + '" target="_blank">' + escape3(d2) + "</a>";
+        function formatUser(selection2, d2) {
+          selection2.append("a").attr("href", osm.userURL(d2)).attr("target", "_blank").text(d2);
         }
         function entityName(entity) {
           return utilDisplayName(entity) || utilDisplayType(entity.id) + " " + entity.id;
@@ -59898,7 +59497,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         var history = context.history();
         var changes = history.changes(actionDiscardTags(history.difference(), _discardTags));
         if (changes.modified.length || changes.created.length || changes.deleted.length) {
-          dispatch12.call("willAttemptUpload", this);
+          dispatch11.call("willAttemptUpload", this);
           osm.putChangeset(changeset, changes, uploadCallback);
         } else {
           didResultInNoChanges();
@@ -59921,13 +59520,13 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       }
     }
     function didResultInNoChanges() {
-      dispatch12.call("resultNoChanges", this);
+      dispatch11.call("resultNoChanges", this);
       endSave();
       context.flush();
     }
     function didResultInErrors() {
       context.history().pop();
-      dispatch12.call("resultErrors", this, _errors);
+      dispatch11.call("resultErrors", this, _errors);
       endSave();
     }
     function didResultInConflicts(changeset) {
@@ -59936,12 +59535,12 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       _conflicts.sort(function(a2, b11) {
         return b11.id.localeCompare(a2.id);
       });
-      dispatch12.call("resultConflicts", this, changeset, _conflicts, _origChanges);
+      dispatch11.call("resultConflicts", this, changeset, _conflicts, _origChanges);
       endSave();
     }
     function didResultInSuccess(changeset) {
       context.history().clearSaved();
-      dispatch12.call("resultSuccess", this, changeset);
+      dispatch11.call("resultSuccess", this, changeset);
       window.setTimeout(function() {
         endSave();
         context.flush();
@@ -59949,7 +59548,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     }
     function endSave() {
       _isSaving = false;
-      dispatch12.call("saveEnded", this);
+      dispatch11.call("saveEnded", this);
     }
     uploader.cancelConflictResolution = function() {
       context.history().pop();
@@ -59972,13 +59571,12 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     };
     uploader.reset = function() {
     };
-    return utilRebind(uploader, dispatch12, "on");
+    return utilRebind(uploader, dispatch11, "on");
   }
   var init_uploader = __esm({
     "modules/core/uploader.js"() {
       "use strict";
       init_src();
-      init_compat2();
       init_file_fetcher();
       init_discard_tags();
       init_merge_remote_changes();
@@ -60245,7 +59843,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     behaviorDrag: () => behaviorDrag
   });
   function behaviorDrag() {
-    var dispatch12 = dispatch_default("start", "move", "end");
+    var dispatch11 = dispatch_default("start", "move", "end");
     var _tolerancePx = 1;
     var _penTolerancePx = 4;
     var _origin = null;
@@ -60289,21 +59887,21 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           var tolerance = d3_event2.pointerType === "pen" ? _penTolerancePx : _tolerancePx;
           if (dist < tolerance) return;
           started = true;
-          dispatch12.call("start", this, d3_event2, _targetEntity);
+          dispatch11.call("start", this, d3_event2, _targetEntity);
         } else {
           startOrigin = p2;
           d3_event2.stopPropagation();
           d3_event2.preventDefault();
           var dx = p2[0] - startOrigin[0];
           var dy = p2[1] - startOrigin[1];
-          dispatch12.call("move", this, d3_event2, _targetEntity, [p2[0] + offset[0], p2[1] + offset[1]], [dx, dy]);
+          dispatch11.call("move", this, d3_event2, _targetEntity, [p2[0] + offset[0], p2[1] + offset[1]], [dx, dy]);
         }
       }
       function pointerup(d3_event2) {
         if (_pointerId !== (d3_event2.pointerId || "mouse")) return;
         _pointerId = null;
         if (started) {
-          dispatch12.call("end", this, d3_event2, _targetEntity);
+          dispatch11.call("end", this, d3_event2, _targetEntity);
           d3_event2.preventDefault();
         }
         select_default2(window).on(_pointerPrefix + "move.drag", null).on(_pointerPrefix + "up.drag pointercancel.drag", null);
@@ -60360,7 +59958,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       _surface = _3;
       return behavior;
     };
-    return utilRebind(behavior, dispatch12, "on");
+    return utilRebind(behavior, dispatch11, "on");
   }
   var init_drag2 = __esm({
     "modules/behavior/drag.js"() {
@@ -60856,7 +60454,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     uiCombobox: () => uiCombobox
   });
   function uiCombobox(context, klass) {
-    var dispatch12 = dispatch_default("accept", "cancel", "update");
+    var dispatch11 = dispatch_default("accept", "cancel", "update");
     var container = context.container();
     var _suggestions = [];
     var _data = [];
@@ -61036,7 +60634,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           index2 = Math.max(Math.min(index2 + dir, _suggestions.length - 1), 0);
           _selected = _suggestions[index2].value;
           utilGetSetValue(input, _selected);
-          dispatch12.call("update");
+          dispatch11.call("update");
         }
         render();
         ensureVisible();
@@ -61105,7 +60703,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           var bestVal = suggestionValues[bestIndex];
           input.property("value", bestVal);
           input.node().setSelectionRange(val.length, bestVal.length);
-          dispatch12.call("update");
+          dispatch11.call("update");
           return bestVal;
         }
       }
@@ -61158,7 +60756,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         if (!d2) {
           d2 = _fetched[val];
         }
-        dispatch12.call("accept", thiz, d2, val);
+        dispatch11.call("accept", thiz, d2, val);
         hide();
       }
       function cancel() {
@@ -61170,7 +60768,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         val = val.slice(0, start2) + val.slice(end);
         utilGetSetValue(input, val);
         thiz.setSelectionRange(val.length, val.length);
-        dispatch12.call("cancel", thiz);
+        dispatch11.call("cancel", thiz);
         hide();
       }
     };
@@ -61209,7 +60807,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       _mouseLeaveHandler = val;
       return combobox;
     };
-    return utilRebind(combobox, dispatch12, "on");
+    return utilRebind(combobox, dispatch11, "on");
   }
   function _hide(container) {
     if (_comboHideTimerID) {
@@ -61272,7 +60870,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     uiDisclosure: () => uiDisclosure
   });
   function uiDisclosure(context, key, expandedDefault) {
-    const dispatch12 = dispatch_default("toggled");
+    const dispatch11 = dispatch_default("toggled");
     let _expanded;
     let _label = utilFunctor("");
     let _updatePreference = true;
@@ -61322,7 +60920,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         if (_expanded) {
           contentWrap.call(_content);
         }
-        dispatch12.call("toggled", this, _expanded);
+        dispatch11.call("toggled", this, _expanded);
       }
     };
     disclosure.label = function(val) {
@@ -61345,7 +60943,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       _content = val;
       return disclosure;
     };
-    return utilRebind(disclosure, dispatch12, "on");
+    return utilRebind(disclosure, dispatch11, "on");
   }
   var init_disclosure = __esm({
     "modules/ui/disclosure.js"() {
@@ -61589,10 +61187,10 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       var count2 = Object.keys(_tags).filter(function(d2) {
         return d2;
       }).length;
-      return _t.append("inspector.title_count", { title: _t("inspector.tags"), count: count2 });
+      return _t.append("inspector.title_count", { title: _t.append("inspector.tags"), count: count2 });
     }).expandedByDefault(false).disclosureContent(renderDisclosureContent);
     var taginfo = services.taginfo;
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var availableViews = [
       { id: "list", icon: "#fas-th-list" },
       { id: "text", icon: "#fas-i-cursor" }
@@ -61936,7 +61534,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       for (const key in _pendingChange) {
         _tags[key] = _pendingChange[key];
       }
-      dispatch12.call("change", this, _entityIDs, _pendingChange);
+      dispatch11.call("change", this, _entityIDs, _pendingChange);
       _pendingChange = null;
     }
     section.state = function(val) {
@@ -61975,7 +61573,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       _readOnlyTags = val;
       return section;
     };
-    return utilRebind(section, dispatch12, "on");
+    return utilRebind(section, dispatch11, "on");
   }
   var init_raw_tag_editor = __esm({
     "modules/ui/sections/raw_tag_editor.js"() {
@@ -62115,282 +61713,6 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       init_drag_node();
       init_drag_note();
       init_data_editor();
-      init_util3();
-    }
-  });
-
-  // modules/ui/keepRight_details.js
-  var keepRight_details_exports = {};
-  __export(keepRight_details_exports, {
-    uiKeepRightDetails: () => uiKeepRightDetails
-  });
-  function uiKeepRightDetails(context) {
-    let _qaItem;
-    function issueDetail(d2) {
-      const { itemType, parentIssueType } = d2;
-      const unknown = { html: _t.html("inspector.unknown") };
-      let replacements = d2.replacements || {};
-      replacements.default = unknown;
-      if (_mainLocalizer.hasTextForStringId(`QA.keepRight.errorTypes.${itemType}.title`)) {
-        return _t.html(`QA.keepRight.errorTypes.${itemType}.description`, replacements);
-      } else {
-        return _t.html(`QA.keepRight.errorTypes.${parentIssueType}.description`, replacements);
-      }
-    }
-    function keepRightDetails(selection2) {
-      const details = selection2.selectAll(".error-details").data(
-        _qaItem ? [_qaItem] : [],
-        (d2) => `${d2.id}-${d2.status || 0}`
-      );
-      details.exit().remove();
-      const detailsEnter = details.enter().append("div").attr("class", "error-details qa-details-container");
-      const descriptionEnter = detailsEnter.append("div").attr("class", "qa-details-subsection");
-      descriptionEnter.append("h4").call(_t.append("QA.keepRight.detail_description"));
-      descriptionEnter.append("div").attr("class", "qa-details-description-text").html(issueDetail);
-      let relatedEntities = [];
-      descriptionEnter.selectAll(".error_entity_link, .error_object_link").attr("href", "#").each(function() {
-        const link2 = select_default2(this);
-        const isObjectLink = link2.classed("error_object_link");
-        const entityID = isObjectLink ? utilEntityRoot(_qaItem.objectType) + _qaItem.objectId : this.textContent;
-        const entity = context.hasEntity(entityID);
-        relatedEntities.push(entityID);
-        link2.on("mouseenter", () => {
-          utilHighlightEntities([entityID], true, context);
-        }).on("mouseleave", () => {
-          utilHighlightEntities([entityID], false, context);
-        }).on("click", (d3_event) => {
-          d3_event.preventDefault();
-          utilHighlightEntities([entityID], false, context);
-          const osmlayer = context.layers().layer("osm");
-          if (!osmlayer.enabled()) {
-            osmlayer.enabled(true);
-          }
-          context.map().centerZoomEase(_qaItem.loc, 20);
-          if (entity) {
-            context.enter(modeSelect(context, [entityID]));
-          } else {
-            context.loadEntity(entityID, (err, result2) => {
-              if (err) return;
-              const entity2 = result2.data.find((e3) => e3.id === entityID);
-              if (entity2) context.enter(modeSelect(context, [entityID]));
-            });
-          }
-        });
-        if (entity) {
-          let name = utilDisplayName(entity);
-          if (!name && !isObjectLink) {
-            const preset = _mainPresetIndex.match(entity, context.graph());
-            name = preset && !preset.isFallback() && preset.name();
-          }
-          if (name) {
-            this.innerText = name;
-          }
-        }
-      });
-      context.features().forceVisible(relatedEntities);
-      context.map().pan([0, 0]);
-    }
-    keepRightDetails.issue = function(val) {
-      if (!arguments.length) return _qaItem;
-      _qaItem = val;
-      return keepRightDetails;
-    };
-    return keepRightDetails;
-  }
-  var init_keepRight_details = __esm({
-    "modules/ui/keepRight_details.js"() {
-      "use strict";
-      init_src6();
-      init_presets();
-      init_select5();
-      init_localizer();
-      init_util3();
-    }
-  });
-
-  // modules/ui/keepRight_header.js
-  var keepRight_header_exports = {};
-  __export(keepRight_header_exports, {
-    uiKeepRightHeader: () => uiKeepRightHeader
-  });
-  function uiKeepRightHeader() {
-    let _qaItem;
-    function issueTitle(d2) {
-      const { itemType, parentIssueType } = d2;
-      const unknown = _t.html("inspector.unknown");
-      let replacements = d2.replacements || {};
-      replacements.default = { html: unknown };
-      if (_mainLocalizer.hasTextForStringId(`QA.keepRight.errorTypes.${itemType}.title`)) {
-        return _t.html(`QA.keepRight.errorTypes.${itemType}.title`, replacements);
-      } else {
-        return _t.html(`QA.keepRight.errorTypes.${parentIssueType}.title`, replacements);
-      }
-    }
-    function keepRightHeader(selection2) {
-      const header = selection2.selectAll(".qa-header").data(
-        _qaItem ? [_qaItem] : [],
-        (d2) => `${d2.id}-${d2.status || 0}`
-      );
-      header.exit().remove();
-      const headerEnter = header.enter().append("div").attr("class", "qa-header");
-      const iconEnter = headerEnter.append("div").attr("class", "qa-header-icon").classed("new", (d2) => d2.id < 0);
-      iconEnter.append("div").attr("class", (d2) => `preset-icon-28 qaItem ${d2.service} itemId-${d2.id} itemType-${d2.parentIssueType}`).call(svgIcon("#iD-icon-bolt", "qaItem-fill"));
-      headerEnter.append("div").attr("class", "qa-header-label").html(issueTitle);
-    }
-    keepRightHeader.issue = function(val) {
-      if (!arguments.length) return _qaItem;
-      _qaItem = val;
-      return keepRightHeader;
-    };
-    return keepRightHeader;
-  }
-  var init_keepRight_header = __esm({
-    "modules/ui/keepRight_header.js"() {
-      "use strict";
-      init_icon();
-      init_localizer();
-    }
-  });
-
-  // modules/ui/view_on_keepRight.js
-  var view_on_keepRight_exports = {};
-  __export(view_on_keepRight_exports, {
-    uiViewOnKeepRight: () => uiViewOnKeepRight
-  });
-  function uiViewOnKeepRight() {
-    let _qaItem;
-    function viewOnKeepRight(selection2) {
-      let url;
-      if (services.keepRight && _qaItem instanceof QAItem) {
-        url = services.keepRight.issueURL(_qaItem);
-      }
-      const link2 = selection2.selectAll(".view-on-keepRight").data(url ? [url] : []);
-      link2.exit().remove();
-      const linkEnter = link2.enter().append("a").attr("class", "view-on-keepRight").attr("target", "_blank").attr("rel", "noopener").attr("href", (d2) => d2).call(svgIcon("#iD-icon-out-link", "inline"));
-      linkEnter.append("span").call(_t.append("inspector.view_on_keepRight"));
-    }
-    viewOnKeepRight.what = function(val) {
-      if (!arguments.length) return _qaItem;
-      _qaItem = val;
-      return viewOnKeepRight;
-    };
-    return viewOnKeepRight;
-  }
-  var init_view_on_keepRight = __esm({
-    "modules/ui/view_on_keepRight.js"() {
-      "use strict";
-      init_localizer();
-      init_services();
-      init_icon();
-      init_osm();
-    }
-  });
-
-  // modules/ui/keepRight_editor.js
-  var keepRight_editor_exports = {};
-  __export(keepRight_editor_exports, {
-    uiKeepRightEditor: () => uiKeepRightEditor
-  });
-  function uiKeepRightEditor(context) {
-    const dispatch12 = dispatch_default("change");
-    const qaDetails = uiKeepRightDetails(context);
-    const qaHeader = uiKeepRightHeader(context);
-    let _qaItem;
-    function keepRightEditor(selection2) {
-      const headerEnter = selection2.selectAll(".header").data([0]).enter().append("div").attr("class", "header fillL");
-      headerEnter.append("button").attr("class", "close").attr("title", _t("icons.close")).on("click", () => context.enter(modeBrowse(context))).call(svgIcon("#iD-icon-close"));
-      headerEnter.append("h2").call(_t.append("QA.keepRight.title"));
-      let body = selection2.selectAll(".body").data([0]);
-      body = body.enter().append("div").attr("class", "body").merge(body);
-      const editor = body.selectAll(".qa-editor").data([0]);
-      editor.enter().append("div").attr("class", "modal-section qa-editor").merge(editor).call(qaHeader.issue(_qaItem)).call(qaDetails.issue(_qaItem)).call(keepRightSaveSection);
-      const footer = selection2.selectAll(".footer").data([0]);
-      footer.enter().append("div").attr("class", "footer").merge(footer).call(uiViewOnKeepRight(context).what(_qaItem));
-    }
-    function keepRightSaveSection(selection2) {
-      const isSelected = _qaItem && _qaItem.id === context.selectedErrorID();
-      const isShown = _qaItem && (isSelected || _qaItem.newComment || _qaItem.comment);
-      let saveSection = selection2.selectAll(".qa-save").data(
-        isShown ? [_qaItem] : [],
-        (d2) => `${d2.id}-${d2.status || 0}`
-      );
-      saveSection.exit().remove();
-      const saveSectionEnter = saveSection.enter().append("div").attr("class", "qa-save save-section cf");
-      saveSectionEnter.append("h4").attr("class", ".qa-save-header").call(_t.append("QA.keepRight.comment"));
-      saveSectionEnter.append("textarea").attr("class", "new-comment-input").attr("placeholder", _t("QA.keepRight.comment_placeholder")).attr("maxlength", 1e3).property("value", (d2) => d2.newComment || d2.comment).call(utilNoAuto).on("input", changeInput).on("blur", changeInput);
-      saveSection = saveSectionEnter.merge(saveSection).call(qaSaveButtons);
-      function changeInput() {
-        const input = select_default2(this);
-        let val = input.property("value").trim();
-        if (val === _qaItem.comment) {
-          val = void 0;
-        }
-        _qaItem = _qaItem.update({ newComment: val });
-        const qaService = services.keepRight;
-        if (qaService) {
-          qaService.replaceItem(_qaItem);
-        }
-        saveSection.call(qaSaveButtons);
-      }
-    }
-    function qaSaveButtons(selection2) {
-      const isSelected = _qaItem && _qaItem.id === context.selectedErrorID();
-      let buttonSection = selection2.selectAll(".buttons").data(isSelected ? [_qaItem] : [], (d2) => d2.status + d2.id);
-      buttonSection.exit().remove();
-      const buttonEnter = buttonSection.enter().append("div").attr("class", "buttons");
-      buttonEnter.append("button").attr("class", "button comment-button action").call(_t.append("QA.keepRight.save_comment"));
-      buttonEnter.append("button").attr("class", "button close-button action");
-      buttonEnter.append("button").attr("class", "button ignore-button action");
-      buttonSection = buttonSection.merge(buttonEnter);
-      buttonSection.select(".comment-button").attr("disabled", (d2) => d2.newComment ? null : true).on("click.comment", function(d3_event, d2) {
-        this.blur();
-        const qaService = services.keepRight;
-        if (qaService) {
-          qaService.postUpdate(d2, (err, item) => dispatch12.call("change", item));
-        }
-      });
-      buttonSection.select(".close-button").html((d2) => {
-        const andComment = d2.newComment ? "_comment" : "";
-        return _t.html(`QA.keepRight.close${andComment}`);
-      }).on("click.close", function(d3_event, d2) {
-        this.blur();
-        const qaService = services.keepRight;
-        if (qaService) {
-          d2.newStatus = "ignore_t";
-          qaService.postUpdate(d2, (err, item) => dispatch12.call("change", item));
-        }
-      });
-      buttonSection.select(".ignore-button").html((d2) => {
-        const andComment = d2.newComment ? "_comment" : "";
-        return _t.html(`QA.keepRight.ignore${andComment}`);
-      }).on("click.ignore", function(d3_event, d2) {
-        this.blur();
-        const qaService = services.keepRight;
-        if (qaService) {
-          d2.newStatus = "ignore";
-          qaService.postUpdate(d2, (err, item) => dispatch12.call("change", item));
-        }
-      });
-    }
-    keepRightEditor.error = function(val) {
-      if (!arguments.length) return _qaItem;
-      _qaItem = val;
-      return keepRightEditor;
-    };
-    return utilRebind(keepRightEditor, dispatch12, "on");
-  }
-  var init_keepRight_editor = __esm({
-    "modules/ui/keepRight_editor.js"() {
-      "use strict";
-      init_src();
-      init_src6();
-      init_localizer();
-      init_services();
-      init_browse();
-      init_icon();
-      init_keepRight_details();
-      init_keepRight_header();
-      init_view_on_keepRight();
       init_util3();
     }
   });
@@ -62582,7 +61904,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     uiOsmoseEditor: () => uiOsmoseEditor
   });
   function uiOsmoseEditor(context) {
-    const dispatch12 = dispatch_default("change");
+    const dispatch11 = dispatch_default("change");
     const qaDetails = uiOsmoseDetails(context);
     const qaHeader = uiOsmoseHeader(context);
     let _qaItem;
@@ -62622,7 +61944,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         const qaService = services.osmose;
         if (qaService) {
           d2.newStatus = "done";
-          qaService.postUpdate(d2, (err, item) => dispatch12.call("change", item));
+          qaService.postUpdate(d2, (err, item) => dispatch11.call("change", item));
         }
       });
       buttonSection.select(".ignore-button").call(_t.append("QA.keepRight.ignore")).on("click.ignore", function(d3_event, d2) {
@@ -62630,7 +61952,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         const qaService = services.osmose;
         if (qaService) {
           d2.newStatus = "false";
-          qaService.postUpdate(d2, (err, item) => dispatch12.call("change", item));
+          qaService.postUpdate(d2, (err, item) => dispatch11.call("change", item));
         }
       });
     }
@@ -62639,7 +61961,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       _qaItem = val;
       return osmoseEditor;
     };
-    return utilRebind(osmoseEditor, dispatch12, "on");
+    return utilRebind(osmoseEditor, dispatch11, "on");
   }
   var init_osmose_editor = __esm({
     "modules/ui/osmose_editor.js"() {
@@ -62670,14 +61992,6 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     var errorService = services[selectedErrorService];
     var errorEditor;
     switch (selectedErrorService) {
-      case "keepRight":
-        errorEditor = uiKeepRightEditor(context).on("change", function() {
-          context.map().pan([0, 0]);
-          var error = checkSelectedID();
-          if (!error) return;
-          context.ui().sidebar.show(errorEditor.error(error));
-        });
-        break;
       case "osmose":
         errorEditor = uiOsmoseEditor(context).on("change", function() {
           context.map().pan([0, 0]);
@@ -62762,7 +62076,6 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       init_browse();
       init_drag_node();
       init_drag_note();
-      init_keepRight_editor();
       init_osmose_editor();
       init_util3();
     }
@@ -63083,10 +62396,12 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
           selection3.call(_t.append("note.anonymous"));
         }
       });
-      metadataEnter.append("div").attr("class", "comment-date").html(function(d2) {
-        return _t.html("note.status." + d2.action, {
-          when: localeDateString(d2.date.replace(" UTC", "Z").replace(" ", "T"))
-        });
+      metadataEnter.append("div").attr("class", "comment-date").each(function(d2) {
+        select_default2(this).call(
+          _t.addOrUpdate("note.status." + d2.action, {
+            when: localeDateString(d2.date.replace(" UTC", "Z").replace(" ", "T"))
+          })
+        );
       });
       mainEnter.append("div").attr("class", "comment-text").html(function(d2) {
         return d2.html;
@@ -63160,11 +62475,18 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         }
         iconEnter.append("div").attr("class", "note-icon-annotation").attr("title", _t("icons.close")).call(svgIcon(statusIcon, "icon-annotation"));
       });
-      headerEnter.append("div").attr("class", "note-header-label").html(function(d2) {
+      headerEnter.append("div").attr("class", "note-header-label").each(function(d2) {
+        const selection3 = select_default2(this);
+        selection3.text("");
         if (_note.isNew()) {
-          return _t.html("note.new");
+          selection3.call(_t.append("note.new"));
+        } else {
+          selection3.call(_t.append("note.note"));
+          selection3.append("span").text(` ${d2.id} `);
+          if (d2.status === "closed") {
+            selection3.call(_t.append("note.closed"));
+          }
         }
-        return _t.html("note.note") + " " + d2.id + " " + (d2.status === "closed" ? _t.html("note.closed") : "");
       });
     }
     noteHeader.note = function(val) {
@@ -63177,6 +62499,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
   var init_note_header = __esm({
     "modules/ui/note_header.js"() {
       "use strict";
+      init_src6();
       init_localizer();
       init_icon();
     }
@@ -63286,7 +62609,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     uiNoteEditor: () => uiNoteEditor
   });
   function uiNoteEditor(context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var noteComments = uiNoteComments(context);
     var noteHeader = uiNoteHeader();
     var _note;
@@ -63382,12 +62705,13 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       prose = prose.enter().append("p").attr("class", "note-save-prose").call(_t.append("note.upload_explanation")).merge(prose);
       osm.userDetails(function(err, user) {
         if (err) return;
-        var userLink = select_default2(document.createElement("div"));
-        if (user.image_url) {
-          userLink.append("img").attr("src", user.image_url).attr("class", "icon pre-text user-icon");
-        }
-        userLink.append("a").attr("class", "user-info").text(user.display_name).attr("href", osm.userURL(user.display_name)).attr("target", "_blank");
-        prose.html(_t.html("note.upload_explanation_with_user", { user: { html: userLink.html() } }));
+        const userLink = (selection3) => {
+          if (user.image_url) {
+            selection3.append("img").attr("src", user.image_url).attr("class", "icon pre-text user-icon");
+          }
+          selection3.append("a").attr("class", "user-info").text(user.display_name).attr("href", osm.userURL(user.display_name)).attr("target", "_blank");
+        };
+        prose.call(_t.addOrUpdate("note.upload_explanation_with_user", { user: userLink }));
       });
     }
     function noteSaveButtons(selection2) {
@@ -63427,13 +62751,13 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         osm.removeNote(d2);
       }
       context.enter(modeBrowse(context));
-      dispatch12.call("change", d2);
+      dispatch11.call("change", d2);
     }
     function clickSave(d3_event, note) {
       this.blur();
       var osm = services.osm;
       if (osm) {
-        osm.postNoteCreate(note, (err, d2) => dispatch12.call("change", d2));
+        osm.postNoteCreate(note, (err, d2) => dispatch11.call("change", d2));
       }
     }
     function postCommentAndStatus(d3_event, note, newStatus) {
@@ -63442,14 +62766,14 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       if (osm) {
         osm.postNoteUpdate(note, newStatus || note.status, function(err, d2) {
           if (!err) {
-            dispatch12.call("change", d2);
+            dispatch11.call("change", d2);
           } else if (err.status === 409) {
             osm.loadEntityNote(note.id, (err2, d4) => {
-              dispatch12.call("change", osmNote({ ...d4.data[0], newComment: note.newComment }));
+              dispatch11.call("change", osmNote({ ...d4.data[0], newComment: note.newComment }));
             });
           } else if (err.status === 410) {
             osm.removeNote(note);
-            dispatch12.call("change", osmNote({ id: note.id, status: "hidden", comments: [...note.comments, { action: "hidden" }] }));
+            dispatch11.call("change", osmNote({ id: note.id, status: "hidden", comments: [...note.comments, { action: "hidden" }] }));
           }
         });
       }
@@ -63464,7 +62788,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       _newNote = val;
       return noteEditor;
     };
-    return utilRebind(noteEditor, dispatch12, "on");
+    return utilRebind(noteEditor, dispatch11, "on");
   }
   var init_note_editor = __esm({
     "modules/ui/note_editor.js"() {
@@ -65524,9 +64848,9 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
   __export(data_exports, {
     svgData: () => svgData
   });
-  function svgData(projection2, context, dispatch12) {
+  function svgData(projection2, context, dispatch11) {
     var throttledRedraw = throttle(function() {
-      dispatch12.call("change");
+      dispatch11.call("change");
     }, 1e3);
     var _showLabels = true;
     var detected = utilDetect();
@@ -65573,7 +64897,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
     function showLayer() {
       layerOn();
       layer.style("opacity", 0).transition().duration(250).style("opacity", 1).on("end", function() {
-        dispatch12.call("change");
+        dispatch11.call("change");
       });
     }
     function hideLayer() {
@@ -65748,7 +65072,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         _src = extension + " data file";
         this.fitZoom();
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawData.showLabels = function(val) {
@@ -65764,7 +65088,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       } else {
         hideLayer();
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawData.hasData = function() {
@@ -65786,7 +65110,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       _fileList = null;
       _geojson = null;
       _src = src || "vectortile:" + val.split(/[?#]/)[0];
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawData.geojson = function(gj, src) {
@@ -65800,7 +65124,7 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
         _geojson = ensureIDs(gj);
         _src = src || "unknown.geojson";
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawData.fileList = function(fileList) {
@@ -66104,127 +65428,6 @@ Please report this to https://github.com/markedjs/marked.`, e3) {
       init_src21();
       init_src6();
       init_util3();
-    }
-  });
-
-  // modules/svg/keepRight.js
-  var keepRight_exports2 = {};
-  __export(keepRight_exports2, {
-    svgKeepRight: () => svgKeepRight
-  });
-  function svgKeepRight(projection2, context, dispatch12) {
-    const throttledRedraw = throttle(() => dispatch12.call("change"), 1e3);
-    const minZoom5 = 12;
-    let touchLayer = select_default2(null);
-    let drawLayer = select_default2(null);
-    let layerVisible = false;
-    function markerPath(selection2, klass) {
-      selection2.attr("class", klass).attr("transform", "translate(-4, -24)").attr("d", "M11.6,6.2H7.1l1.4-5.1C8.6,0.6,8.1,0,7.5,0H2.2C1.7,0,1.3,0.3,1.3,0.8L0,10.2c-0.1,0.6,0.4,1.1,0.9,1.1h4.6l-1.8,7.6C3.6,19.4,4.1,20,4.7,20c0.3,0,0.6-0.2,0.8-0.5l6.9-11.9C12.7,7,12.3,6.2,11.6,6.2z");
-    }
-    function getService() {
-      if (services.keepRight && !_qaService) {
-        _qaService = services.keepRight;
-        _qaService.on("loaded", throttledRedraw);
-      } else if (!services.keepRight && _qaService) {
-        _qaService = null;
-      }
-      return _qaService;
-    }
-    function editOn() {
-      if (!layerVisible) {
-        layerVisible = true;
-        drawLayer.style("display", "block");
-      }
-    }
-    function editOff() {
-      if (layerVisible) {
-        layerVisible = false;
-        drawLayer.style("display", "none");
-        drawLayer.selectAll(".qaItem.keepRight").remove();
-        touchLayer.selectAll(".qaItem.keepRight").remove();
-      }
-    }
-    function layerOn() {
-      editOn();
-      drawLayer.style("opacity", 0).transition().duration(250).style("opacity", 1).on("end interrupt", () => dispatch12.call("change"));
-    }
-    function layerOff() {
-      throttledRedraw.cancel();
-      drawLayer.interrupt();
-      touchLayer.selectAll(".qaItem.keepRight").remove();
-      drawLayer.transition().duration(250).style("opacity", 0).on("end interrupt", () => {
-        editOff();
-        dispatch12.call("change");
-      });
-    }
-    function updateMarkers() {
-      if (!layerVisible || !_layerEnabled) return;
-      const service = getService();
-      const selectedID = context.selectedErrorID();
-      const data = service ? service.getItems(projection2) : [];
-      const getTransform = svgPointTransform(projection2);
-      const markers = drawLayer.selectAll(".qaItem.keepRight").data(data, (d2) => d2.id);
-      markers.exit().remove();
-      const markersEnter = markers.enter().append("g").attr("class", (d2) => `qaItem ${d2.service} itemId-${d2.id} itemType-${d2.parentIssueType}`);
-      markersEnter.append("ellipse").attr("cx", 0.5).attr("cy", 1).attr("rx", 6.5).attr("ry", 3).attr("class", "stroke");
-      markersEnter.append("path").call(markerPath, "shadow");
-      markersEnter.append("use").attr("class", "qaItem-fill").attr("width", "20px").attr("height", "20px").attr("x", "-8px").attr("y", "-22px").attr("xlink:href", "#iD-icon-bolt");
-      markers.merge(markersEnter).sort(sortY).classed("selected", (d2) => d2.id === selectedID).attr("transform", getTransform);
-      if (touchLayer.empty()) return;
-      const fillClass = context.getDebug("target") ? "pink " : "nocolor ";
-      const targets = touchLayer.selectAll(".qaItem.keepRight").data(data, (d2) => d2.id);
-      targets.exit().remove();
-      targets.enter().append("rect").attr("width", "20px").attr("height", "20px").attr("x", "-8px").attr("y", "-22px").merge(targets).sort(sortY).attr("class", (d2) => `qaItem ${d2.service} target ${fillClass} itemId-${d2.id}`).attr("transform", getTransform);
-      function sortY(a2, b11) {
-        return a2.id === selectedID ? 1 : b11.id === selectedID ? -1 : a2.severity === "error" && b11.severity !== "error" ? 1 : b11.severity === "error" && a2.severity !== "error" ? -1 : b11.loc[1] - a2.loc[1];
-      }
-    }
-    function drawKeepRight(selection2) {
-      const service = getService();
-      const surface = context.surface();
-      if (surface && !surface.empty()) {
-        touchLayer = surface.selectAll(".data-layer.touch .layer-touch.markers");
-      }
-      drawLayer = selection2.selectAll(".layer-keepRight").data(service ? [0] : []);
-      drawLayer.exit().remove();
-      drawLayer = drawLayer.enter().append("g").attr("class", "layer-keepRight").style("display", _layerEnabled ? "block" : "none").merge(drawLayer);
-      if (_layerEnabled) {
-        if (service && ~~context.map().zoom() >= minZoom5) {
-          editOn();
-          service.loadIssues(projection2);
-          updateMarkers();
-        } else {
-          editOff();
-        }
-      }
-    }
-    drawKeepRight.enabled = function(val) {
-      if (!arguments.length) return _layerEnabled;
-      _layerEnabled = val;
-      if (_layerEnabled) {
-        layerOn();
-      } else {
-        layerOff();
-        if (context.selectedErrorID()) {
-          context.enter(modeBrowse(context));
-        }
-      }
-      dispatch12.call("change");
-      return this;
-    };
-    drawKeepRight.supported = () => !!getService();
-    return drawKeepRight;
-  }
-  var _layerEnabled, _qaService;
-  var init_keepRight2 = __esm({
-    "modules/svg/keepRight.js"() {
-      "use strict";
-      init_compat2();
-      init_src6();
-      init_browse();
-      init_helpers();
-      init_services();
-      _layerEnabled = false;
     }
   });
 
@@ -68406,7 +67609,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
   __export(local_photos_exports, {
     svgLocalPhotos: () => svgLocalPhotos
   });
-  function svgLocalPhotos(projection2, context, dispatch12) {
+  function svgLocalPhotos(projection2, context, dispatch11) {
     const detected = utilDetect();
     let layer = select_default2(null);
     let _fileList;
@@ -68566,7 +67769,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
         }
       }
       if (typeof callback === "function") callback(loaded);
-      dispatch12.call("change");
+      dispatch11.call("change");
     }
     drawPhotos.setFiles = function(fileList, callback) {
       readmultifiles(Array.from(fileList), callback);
@@ -68584,7 +67787,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
     };
     drawPhotos.removePhoto = function(id3) {
       _photos = _photos.filter((i3) => i3.id !== id3);
-      dispatch12.call("change");
+      dispatch11.call("change");
       return _photos;
     };
     drawPhotos.openPhoto = click;
@@ -68601,7 +67804,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
     function showLayer() {
       layer.style("display", "block");
       layer.style("opacity", 0).transition().duration(250).style("opacity", 1).on("end", function() {
-        dispatch12.call("change");
+        dispatch11.call("change");
       });
     }
     function hideLayer() {
@@ -68618,7 +67821,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       } else {
         hideLayer();
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawPhotos.hasData = function() {
@@ -68650,8 +67853,8 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
   __export(osmose_exports2, {
     svgOsmose: () => svgOsmose
   });
-  function svgOsmose(projection2, context, dispatch12) {
-    const throttledRedraw = throttle(() => dispatch12.call("change"), 1e3);
+  function svgOsmose(projection2, context, dispatch11) {
+    const throttledRedraw = throttle(() => dispatch11.call("change"), 1e3);
     const minZoom5 = 12;
     let touchLayer = select_default2(null);
     let drawLayer = select_default2(null);
@@ -68660,13 +67863,13 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       selection2.attr("class", klass).attr("transform", "translate(-10, -28)").attr("points", "16,3 4,3 1,6 1,17 4,20 7,20 10,27 13,20 16,20 19,17.033 19,6");
     }
     function getService() {
-      if (services.osmose && !_qaService2) {
-        _qaService2 = services.osmose;
-        _qaService2.on("loaded", throttledRedraw);
-      } else if (!services.osmose && _qaService2) {
-        _qaService2 = null;
+      if (services.osmose && !_qaService) {
+        _qaService = services.osmose;
+        _qaService.on("loaded", throttledRedraw);
+      } else if (!services.osmose && _qaService) {
+        _qaService = null;
       }
-      return _qaService2;
+      return _qaService;
     }
     function editOn() {
       if (!layerVisible) {
@@ -68684,7 +67887,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
     }
     function layerOn() {
       editOn();
-      drawLayer.style("opacity", 0).transition().duration(250).style("opacity", 1).on("end interrupt", () => dispatch12.call("change"));
+      drawLayer.style("opacity", 0).transition().duration(250).style("opacity", 1).on("end interrupt", () => dispatch11.call("change"));
     }
     function layerOff() {
       throttledRedraw.cancel();
@@ -68692,11 +67895,11 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       touchLayer.selectAll(".qaItem.osmose").remove();
       drawLayer.transition().duration(250).style("opacity", 0).on("end interrupt", () => {
         editOff();
-        dispatch12.call("change");
+        dispatch11.call("change");
       });
     }
     function updateMarkers() {
-      if (!layerVisible || !_layerEnabled2) return;
+      if (!layerVisible || !_layerEnabled) return;
       const service = getService();
       const selectedID = context.selectedErrorID();
       const data = service ? service.getItems(projection2) : [];
@@ -68726,8 +67929,8 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       }
       drawLayer = selection2.selectAll(".layer-osmose").data(service ? [0] : []);
       drawLayer.exit().remove();
-      drawLayer = drawLayer.enter().append("g").attr("class", "layer-osmose").style("display", _layerEnabled2 ? "block" : "none").merge(drawLayer);
-      if (_layerEnabled2) {
+      drawLayer = drawLayer.enter().append("g").attr("class", "layer-osmose").style("display", _layerEnabled ? "block" : "none").merge(drawLayer);
+      if (_layerEnabled) {
         if (service && ~~context.map().zoom() >= minZoom5) {
           editOn();
           service.loadIssues(projection2);
@@ -68738,9 +67941,9 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       }
     }
     drawOsmose.enabled = function(val) {
-      if (!arguments.length) return _layerEnabled2;
-      _layerEnabled2 = val;
-      if (_layerEnabled2) {
+      if (!arguments.length) return _layerEnabled;
+      _layerEnabled = val;
+      if (_layerEnabled) {
         getService().loadStrings().then(layerOn).catch((err) => {
           console.log(err);
         });
@@ -68750,13 +67953,13 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
           context.enter(modeBrowse(context));
         }
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawOsmose.supported = () => !!getService();
     return drawOsmose;
   }
-  var _layerEnabled2, _qaService2;
+  var _layerEnabled, _qaService;
   var init_osmose2 = __esm({
     "modules/svg/osmose.js"() {
       "use strict";
@@ -68765,7 +67968,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       init_browse();
       init_helpers();
       init_services();
-      _layerEnabled2 = false;
+      _layerEnabled = false;
     }
   });
 
@@ -68774,9 +67977,9 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
   __export(streetside_exports2, {
     svgStreetside: () => svgStreetside
   });
-  function svgStreetside(projection2, context, dispatch12) {
+  function svgStreetside(projection2, context, dispatch11) {
     var throttledRedraw = throttle(function() {
-      dispatch12.call("change");
+      dispatch11.call("change");
     }, 1e3);
     var minZoom5 = 14;
     var minMarkerZoom = 16;
@@ -68804,7 +68007,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       if (!service) return;
       editOn();
       layer.style("opacity", 0).transition().duration(250).style("opacity", 1).on("end", function() {
-        dispatch12.call("change");
+        dispatch11.call("change");
       });
     }
     function hideLayer() {
@@ -68919,7 +68122,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       var traces = layer.selectAll(".sequences").selectAll(".sequence").data(sequences, function(d2) {
         return d2.properties.key;
       });
-      dispatch12.call("photoDatesChanged", this, "streetside", [
+      dispatch11.call("photoDatesChanged", this, "streetside", [
         ...filterBubbles(bubbles, true).map((p2) => p2.captured_at),
         ...filterSequences(sequences, true).map((t4) => t4.properties.vintageStart)
       ]);
@@ -68962,11 +68165,11 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
           update3();
           service.loadBubbles(projection2);
         } else {
-          dispatch12.call("photoDatesChanged", this, "streetside", []);
+          dispatch11.call("photoDatesChanged", this, "streetside", []);
           editOff();
         }
       } else {
-        dispatch12.call("photoDatesChanged", this, "streetside", []);
+        dispatch11.call("photoDatesChanged", this, "streetside", []);
       }
     }
     drawImages.enabled = function(_3) {
@@ -68979,7 +68182,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
         hideLayer();
         context.photos().on("change.streetside", null);
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawImages.supported = function() {
@@ -69006,8 +68209,8 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
   __export(vegbilder_exports2, {
     svgVegbilder: () => svgVegbilder
   });
-  function svgVegbilder(projection2, context, dispatch12) {
-    const throttledRedraw = throttle(() => dispatch12.call("change"), 1e3);
+  function svgVegbilder(projection2, context, dispatch11) {
+    const throttledRedraw = throttle(() => dispatch11.call("change"), 1e3);
     const minZoom5 = 14;
     const minMarkerZoom = 16;
     const minViewfieldZoom2 = 18;
@@ -69032,7 +68235,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       const service = getService();
       if (!service) return;
       editOn();
-      layer.style("opacity", 0).transition().duration(250).style("opacity", 1).on("end", () => dispatch12.call("change"));
+      layer.style("opacity", 0).transition().duration(250).style("opacity", 1).on("end", () => dispatch11.call("change"));
     }
     function hideLayer() {
       throttledRedraw.cancel();
@@ -69138,7 +68341,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
         service.loadImages(context);
         sequences = service.sequences(projection2);
         images = showMarkers ? service.images(projection2) : [];
-        dispatch12.call("photoDatesChanged", this, "vegbilder", [
+        dispatch11.call("photoDatesChanged", this, "vegbilder", [
           ...filterImages(images, true).map((p2) => p2.captured_at),
           ...filterSequences(sequences, true).map((s2) => s2.images[0].captured_at)
         ]);
@@ -69183,11 +68386,11 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
           update3();
           service.loadImages(context);
         } else {
-          dispatch12.call("photoDatesChanged", this, "vegbilder", []);
+          dispatch11.call("photoDatesChanged", this, "vegbilder", []);
           editOff();
         }
       } else {
-        dispatch12.call("photoDatesChanged", this, "vegbilder", []);
+        dispatch11.call("photoDatesChanged", this, "vegbilder", []);
       }
     }
     drawImages.enabled = function(_3) {
@@ -69200,7 +68403,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
         hideLayer();
         context.photos().on("change.vegbilder", null);
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawImages.supported = function() {
@@ -69230,9 +68433,9 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
   __export(mapillary_images_exports, {
     svgMapillaryImages: () => svgMapillaryImages
   });
-  function svgMapillaryImages(projection2, context, dispatch12) {
+  function svgMapillaryImages(projection2, context, dispatch11) {
     const throttledRedraw = throttle(function() {
-      dispatch12.call("change");
+      dispatch11.call("change");
     }, 1e3);
     const minZoom5 = 12;
     const minMarkerZoom = 16;
@@ -69258,7 +68461,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       if (!service) return;
       editOn();
       layer.style("opacity", 0).transition().duration(250).style("opacity", 1).on("end", function() {
-        dispatch12.call("change");
+        dispatch11.call("change");
       });
     }
     function hideLayer() {
@@ -69351,7 +68554,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       const service = getService();
       let sequences = service ? service.sequences(projection2) : [];
       let images = service && showMarkers ? service.images(projection2) : [];
-      dispatch12.call("photoDatesChanged", this, "mapillary", [
+      dispatch11.call("photoDatesChanged", this, "mapillary", [
         ...filterImages(images, true).map((p2) => p2.captured_at),
         ...filterSequences(sequences, true).map((s2) => s2.properties.captured_at)
       ]);
@@ -69401,11 +68604,11 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
           update3();
           service.loadImages(projection2);
         } else {
-          dispatch12.call("photoDatesChanged", this, "mapillary", []);
+          dispatch11.call("photoDatesChanged", this, "mapillary", []);
           editOff();
         }
       } else {
-        dispatch12.call("photoDatesChanged", this, "mapillary", []);
+        dispatch11.call("photoDatesChanged", this, "mapillary", []);
       }
     }
     drawImages.enabled = function(_3) {
@@ -69418,7 +68621,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
         hideLayer();
         context.photos().on("change.mapillary_images", null);
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawImages.supported = function() {
@@ -69549,9 +68752,9 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
   __export(mapillary_signs_exports, {
     svgMapillarySigns: () => svgMapillarySigns
   });
-  function svgMapillarySigns(projection2, context, dispatch12) {
+  function svgMapillarySigns(projection2, context, dispatch11) {
     const throttledRedraw = throttle(function() {
-      dispatch12.call("change");
+      dispatch11.call("change");
     }, 1e3);
     const minZoom5 = 12;
     let layer = select_default2(null);
@@ -69667,7 +68870,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
         hideLayer();
         context.photos().on("change.mapillary_signs", null);
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawSigns.supported = function() {
@@ -69694,9 +68897,9 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
   __export(mapillary_map_features_exports, {
     svgMapillaryMapFeatures: () => svgMapillaryMapFeatures
   });
-  function svgMapillaryMapFeatures(projection2, context, dispatch12) {
+  function svgMapillaryMapFeatures(projection2, context, dispatch11) {
     const throttledRedraw = throttle(function() {
-      dispatch12.call("change");
+      dispatch11.call("change");
     }, 1e3);
     const minZoom5 = 12;
     let layer = select_default2(null);
@@ -69817,7 +69020,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
         hideLayer();
         context.photos().on("change.mapillary_map_features", null);
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawMapFeatures.supported = function() {
@@ -69845,9 +69048,9 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
   __export(kartaview_images_exports, {
     svgKartaviewImages: () => svgKartaviewImages
   });
-  function svgKartaviewImages(projection2, context, dispatch12) {
+  function svgKartaviewImages(projection2, context, dispatch11) {
     var throttledRedraw = throttle(function() {
-      dispatch12.call("change");
+      dispatch11.call("change");
     }, 1e3);
     var minZoom5 = 12;
     var minMarkerZoom = 16;
@@ -69873,7 +69076,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       if (!service) return;
       editOn();
       layer.style("opacity", 0).transition().duration(250).style("opacity", 1).on("end", function() {
-        dispatch12.call("change");
+        dispatch11.call("change");
       });
     }
     function hideLayer() {
@@ -69965,7 +69168,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       const service = getService();
       let sequences = service ? service.sequences(projection2) : [];
       let images = service && showMarkers ? service.images(projection2) : [];
-      dispatch12.call("photoDatesChanged", this, "kartaview", [
+      dispatch11.call("photoDatesChanged", this, "kartaview", [
         ...filterImages(images, true).map((p2) => p2.captured_at),
         ...filterSequences(sequences, true).map((s2) => s2.properties.captured_at)
       ]);
@@ -70004,11 +69207,11 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
           update3();
           service.loadImages(projection2);
         } else {
-          dispatch12.call("photoDatesChanged", this, "kartaview", []);
+          dispatch11.call("photoDatesChanged", this, "kartaview", []);
           editOff();
         }
       } else {
-        dispatch12.call("photoDatesChanged", this, "kartaview", []);
+        dispatch11.call("photoDatesChanged", this, "kartaview", []);
       }
     }
     drawImages.enabled = function(_3) {
@@ -70021,7 +69224,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
         hideLayer();
         context.photos().on("change.kartaview_images", null);
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawImages.supported = function() {
@@ -70048,9 +69251,9 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
   __export(mapilio_images_exports, {
     svgMapilioImages: () => svgMapilioImages
   });
-  function svgMapilioImages(projection2, context, dispatch12) {
+  function svgMapilioImages(projection2, context, dispatch11) {
     const throttledRedraw = throttle(function() {
-      dispatch12.call("change");
+      dispatch11.call("change");
     }, 1e3);
     const imageMinZoom2 = 16;
     const lineMinZoom2 = 10;
@@ -70107,7 +69310,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       if (!service) return;
       editOn();
       layer.style("opacity", 0).transition().duration(250).style("opacity", 1).on("end", function() {
-        dispatch12.call("change");
+        dispatch11.call("change");
       });
     }
     function hideLayer() {
@@ -70154,7 +69357,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       const service = getService();
       let sequences = service ? service.sequences(projection2, zoom) : [];
       let images = service && zoom >= imageMinZoom2 ? service.images(projection2) : [];
-      dispatch12.call("photoDatesChanged", this, "mapilio", [
+      dispatch11.call("photoDatesChanged", this, "mapilio", [
         ...filterImages(images, true).map((p2) => p2.capture_time),
         ...filterSequences(sequences, true).map((s2) => s2.properties.capture_time)
       ]);
@@ -70215,14 +69418,14 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
             service.loadLines(projection2, zoom);
           } else {
             editOff();
-            dispatch12.call("photoDatesChanged", this, "mapilio", []);
+            dispatch11.call("photoDatesChanged", this, "mapilio", []);
             service.selectImage(context, null);
           }
         } else {
           editOff();
         }
       } else {
-        dispatch12.call("photoDatesChanged", this, "mapilio", []);
+        dispatch11.call("photoDatesChanged", this, "mapilio", []);
       }
     }
     drawImages.enabled = function(_3) {
@@ -70235,7 +69438,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
         hideLayer();
         context.photos().on("change.mapilio_images", null);
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawImages.supported = function() {
@@ -70262,9 +69465,9 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
   __export(panoramax_images_exports, {
     svgPanoramaxImages: () => svgPanoramaxImages
   });
-  function svgPanoramaxImages(projection2, context, dispatch12) {
+  function svgPanoramaxImages(projection2, context, dispatch11) {
     const throttledRedraw = throttle(function() {
-      dispatch12.call("change");
+      dispatch11.call("change");
     }, 1e3);
     const imageMinZoom2 = 15;
     const lineMinZoom2 = 10;
@@ -70369,7 +69572,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       if (!service) return;
       editOn();
       layer.style("opacity", 0).transition().duration(250).style("opacity", 1).on("end", function() {
-        dispatch12.call("change");
+        dispatch11.call("change");
       });
     }
     function hideLayer() {
@@ -70416,7 +69619,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       const service = getService();
       let sequences = service ? service.sequences(projection2, zoom) : [];
       let images = service && zoom >= imageMinZoom2 ? service.images(projection2) : [];
-      dispatch12.call("photoDatesChanged", this, "panoramax", [
+      dispatch11.call("photoDatesChanged", this, "panoramax", [
         ...(await filterImages(images, true)).map((p2) => p2.capture_time),
         ...(await filterSequences(sequences, true)).map((s2) => s2.properties.date)
       ]);
@@ -70483,13 +69686,13 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
             service.loadLines(projection2, zoom);
           } else {
             editOff();
-            dispatch12.call("photoDatesChanged", this, "panoramax", []);
+            dispatch11.call("photoDatesChanged", this, "panoramax", []);
           }
         } else {
           editOff();
         }
       } else {
-        dispatch12.call("photoDatesChanged", this, "panoramax", []);
+        dispatch11.call("photoDatesChanged", this, "panoramax", []);
       }
     }
     drawImages.enabled = function(_3) {
@@ -70502,7 +69705,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
         hideLayer();
         context.photos().on("change.panoramax_images", null);
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawImages.supported = function() {
@@ -70529,7 +69732,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
   __export(osm_exports3, {
     svgOsm: () => svgOsm
   });
-  function svgOsm(projection2, context, dispatch12) {
+  function svgOsm(projection2, context, dispatch11) {
     var enabled = true;
     function drawOsm(selection2) {
       selection2.selectAll(".layer-osm").data(["covered", "areas", "lines", "points", "auxiliary", "labels"]).enter().append("g").attr("class", function(d2) {
@@ -70543,7 +69746,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       var layer = context.surface().selectAll(".data-layer.osm");
       layer.interrupt();
       layer.classed("disabled", false).style("opacity", 0).transition().duration(250).style("opacity", 1).on("end interrupt", function() {
-        dispatch12.call("change");
+        dispatch11.call("change");
       });
     }
     function hideLayer() {
@@ -70551,7 +69754,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       layer.interrupt();
       layer.transition().duration(250).style("opacity", 0).on("end interrupt", function() {
         layer.classed("disabled", true);
-        dispatch12.call("change");
+        dispatch11.call("change");
       });
     }
     drawOsm.enabled = function(val) {
@@ -70562,7 +69765,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       } else {
         hideLayer();
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     return drawOsm;
@@ -70578,12 +69781,12 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
   __export(notes_exports, {
     svgNotes: () => svgNotes
   });
-  function svgNotes(projection2, context, dispatch12) {
-    if (!dispatch12) {
-      dispatch12 = dispatch_default("change");
+  function svgNotes(projection2, context, dispatch11) {
+    if (!dispatch11) {
+      dispatch11 = dispatch_default("change");
     }
     var throttledRedraw = throttle(function() {
-      dispatch12.call("change");
+      dispatch11.call("change");
     }, 1e3);
     var minZoom5 = 12;
     var touchLayer = select_default2(null);
@@ -70618,7 +69821,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
     function layerOn() {
       editOn();
       drawLayer.style("opacity", 0).transition().duration(250).style("opacity", 1).on("end interrupt", function() {
-        dispatch12.call("change");
+        dispatch11.call("change");
       });
     }
     function layerOff() {
@@ -70627,7 +69830,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       touchLayer.selectAll(".note").remove();
       drawLayer.transition().duration(250).style("opacity", 0).on("end interrupt", function() {
         editOff();
-        dispatch12.call("change");
+        dispatch11.call("change");
       });
     }
     function updateMarkers() {
@@ -70706,7 +69909,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
           context.enter(modeBrowse(context));
         }
       }
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     return drawNotes;
@@ -70788,27 +69991,26 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
     svgLayers: () => svgLayers
   });
   function svgLayers(projection2, context) {
-    var dispatch12 = dispatch_default("change", "photoDatesChanged");
+    var dispatch11 = dispatch_default("change", "photoDatesChanged");
     var svg2 = select_default2(null);
     var _layers = [
-      { id: "osm", layer: svgOsm(projection2, context, dispatch12) },
-      { id: "notes", layer: svgNotes(projection2, context, dispatch12) },
-      { id: "data", layer: svgData(projection2, context, dispatch12) },
-      { id: "keepRight", layer: svgKeepRight(projection2, context, dispatch12) },
-      { id: "osmose", layer: svgOsmose(projection2, context, dispatch12) },
-      { id: "streetside", layer: svgStreetside(projection2, context, dispatch12) },
-      { id: "mapillary", layer: svgMapillaryImages(projection2, context, dispatch12) },
-      { id: "mapillary-position", layer: svgMapillaryPosition(projection2, context, dispatch12) },
-      { id: "mapillary-map-features", layer: svgMapillaryMapFeatures(projection2, context, dispatch12) },
-      { id: "mapillary-signs", layer: svgMapillarySigns(projection2, context, dispatch12) },
-      { id: "kartaview", layer: svgKartaviewImages(projection2, context, dispatch12) },
-      { id: "mapilio", layer: svgMapilioImages(projection2, context, dispatch12) },
-      { id: "vegbilder", layer: svgVegbilder(projection2, context, dispatch12) },
-      { id: "panoramax", layer: svgPanoramaxImages(projection2, context, dispatch12) },
-      { id: "local-photos", layer: svgLocalPhotos(projection2, context, dispatch12) },
-      { id: "debug", layer: svgDebug(projection2, context, dispatch12) },
-      { id: "geolocate", layer: svgGeolocate(projection2, context, dispatch12) },
-      { id: "touch", layer: svgTouch(projection2, context, dispatch12) }
+      { id: "osm", layer: svgOsm(projection2, context, dispatch11) },
+      { id: "notes", layer: svgNotes(projection2, context, dispatch11) },
+      { id: "data", layer: svgData(projection2, context, dispatch11) },
+      { id: "osmose", layer: svgOsmose(projection2, context, dispatch11) },
+      { id: "streetside", layer: svgStreetside(projection2, context, dispatch11) },
+      { id: "mapillary", layer: svgMapillaryImages(projection2, context, dispatch11) },
+      { id: "mapillary-position", layer: svgMapillaryPosition(projection2, context, dispatch11) },
+      { id: "mapillary-map-features", layer: svgMapillaryMapFeatures(projection2, context, dispatch11) },
+      { id: "mapillary-signs", layer: svgMapillarySigns(projection2, context, dispatch11) },
+      { id: "kartaview", layer: svgKartaviewImages(projection2, context, dispatch11) },
+      { id: "mapilio", layer: svgMapilioImages(projection2, context, dispatch11) },
+      { id: "vegbilder", layer: svgVegbilder(projection2, context, dispatch11) },
+      { id: "panoramax", layer: svgPanoramaxImages(projection2, context, dispatch11) },
+      { id: "local-photos", layer: svgLocalPhotos(projection2, context, dispatch11) },
+      { id: "debug", layer: svgDebug(projection2, context, dispatch11) },
+      { id: "geolocate", layer: svgGeolocate(projection2, context, dispatch11) },
+      { id: "touch", layer: svgTouch(projection2, context, dispatch11) }
     ];
     function drawLayers(selection2) {
       svg2 = selection2.selectAll(".surface").data([0]);
@@ -70846,7 +70048,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
           return o2.id !== id3;
         });
       });
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawLayers.add = function(what) {
@@ -70856,7 +70058,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
           _layers.push(obj);
         }
       });
-      dispatch12.call("change");
+      dispatch11.call("change");
       return this;
     };
     drawLayers.dimensions = function(val) {
@@ -70864,7 +70066,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       utilSetDimensions(svg2, val);
       return this;
     };
-    return utilRebind(drawLayers, dispatch12, "on");
+    return utilRebind(drawLayers, dispatch11, "on");
   }
   var init_layers = __esm({
     "modules/svg/layers.js"() {
@@ -70875,7 +70077,6 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       init_local_photos();
       init_debug();
       init_geolocate();
-      init_keepRight2();
       init_osmose2();
       init_streetside2();
       init_vegbilder2();
@@ -71775,7 +70976,6 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
     svgGeolocate: () => svgGeolocate,
     svgIcon: () => svgIcon,
     svgKartaviewImages: () => svgKartaviewImages,
-    svgKeepRight: () => svgKeepRight,
     svgLabels: () => svgLabels,
     svgLayers: () => svgLayers,
     svgLines: () => svgLines,
@@ -71808,7 +71008,6 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       init_data2();
       init_debug();
       init_defs();
-      init_keepRight2();
       init_icon();
       init_geolocate();
       init_labels();
@@ -72223,7 +71422,7 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
     uiConflicts: () => uiConflicts
   });
   function uiConflicts(context) {
-    var dispatch12 = dispatch_default("cancel", "save");
+    var dispatch11 = dispatch_default("cancel", "save");
     var keybinding = utilKeybinding("conflicts");
     var _origChanges;
     var _conflictList;
@@ -72236,11 +71435,11 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
     }
     function tryAgain() {
       keybindingOff();
-      dispatch12.call("save");
+      dispatch11.call("save");
     }
     function cancel() {
       keybindingOff();
-      dispatch12.call("cancel");
+      dispatch11.call("cancel");
     }
     function conflicts(selection2) {
       keybindingOn();
@@ -72286,8 +71485,8 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       var details = conflictEnter.append("div").attr("class", "conflict-detail-container");
       details.append("ul").attr("class", "conflict-detail-list").selectAll("li").data(function(d2) {
         return d2.details || [];
-      }).enter().append("li").attr("class", "conflict-detail-item").html(function(d2) {
-        return d2;
+      }).enter().append("li").attr("class", "conflict-detail-item").each(function(d2) {
+        select_default2(this).call(d2);
       });
       details.append("div").attr("class", "conflict-choices").call(addChoices);
       details.append("div").attr("class", "conflict-nav-buttons joined cf").selectAll("button").data(["previous", "next"]).enter().append("button").attr("class", "conflict-nav-button action col6").attr("disabled", function(d2, i3) {
@@ -72369,13 +71568,13 @@ this.ifd0Offset: ${this.ifd0Offset}, file.byteLength: ${e3.byteLength}`), e3.tif
       }
       return [];
     };
-    return utilRebind(conflicts, dispatch12, "on");
+    return utilRebind(conflicts, dispatch11, "on");
   }
   var init_conflicts = __esm({
     "modules/ui/conflicts.js"() {
       "use strict";
-      init_src();
       init_src6();
+      init_src();
       init_localizer();
       init_jxon();
       init_geo2();
@@ -77242,7 +76441,7 @@ ${currentIndent}`
     uiFieldOnewayCheck: () => uiFieldCheck
   });
   function uiFieldCheck(field, context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var options = field.options;
     var values3 = [];
     var texts = [];
@@ -77262,14 +76461,14 @@ ${currentIndent}`
       for (var i3 in options) {
         var v3 = options[i3];
         values3.push(v3 === "undefined" ? void 0 : v3);
-        texts.push(stringsField.t.html("options." + v3, { "default": v3 }));
+        texts.push(stringsField.t.append("options." + v3, { "default": v3 }));
       }
     } else {
       values3 = [void 0, "yes"];
-      texts = [_t.html("inspector.unknown"), _t.html("inspector.check.yes")];
+      texts = [_t.append("inspector.unknown"), _t.append("inspector.check.yes")];
       if (field.type !== "defaultCheck") {
         values3.push("no");
-        texts.push(_t.html("inspector.check.no"));
+        texts.push(_t.append("inspector.check.no"));
       }
     }
     function checkImpliedYes() {
@@ -77278,7 +76477,7 @@ ${currentIndent}`
         var entity = context.entity(_entityIDs[0]);
         if (entity.type === "way" && !!utilCheckTagDictionary(entity.tags, omit(osmOneWayTags, "oneway"))) {
           _impliedYes = true;
-          texts[0] = _t.html("_tagging.presets.fields.oneway_yes.options.undefined");
+          texts[0] = _t.append("_tagging.presets.fields.oneway_yes.options.undefined");
         }
       }
     }
@@ -77293,7 +76492,7 @@ ${currentIndent}`
       var last3 = entity.isClosed() ? entity.nodes[entity.nodes.length - 2] : entity.last();
       var pseudoDirection = first < last3;
       var icon2 = pseudoDirection ? "#iD-icon-forward" : "#iD-icon-backward";
-      selection2.selectAll(".reverser-span").html("").call(_t.append("inspector.check.reverser")).call(svgIcon(icon2, "inline"));
+      selection2.selectAll(".reverser-span").text("").call(_t.append("inspector.check.reverser")).call(svgIcon(icon2, "inline"));
       return selection2;
     }
     var check = function(selection2) {
@@ -77301,7 +76500,7 @@ ${currentIndent}`
       label = selection2.selectAll(".form-field-input-wrap").data([0]);
       var enter = label.enter().append("label").attr("class", "form-field-input-wrap form-field-input-check");
       enter.append("input").property("indeterminate", field.type !== "defaultCheck").attr("type", "checkbox").attr("id", field.domId);
-      enter.append("span").html(texts[0]).attr("class", "value");
+      enter.append("span").call(texts[0]).attr("class", "value");
       if (field.type === "onewayCheck") {
         enter.append("button").attr("class", "reverser" + (reverserHidden() ? " hide" : "")).append("span").attr("class", "reverser-span");
       }
@@ -77323,7 +76522,7 @@ ${currentIndent}`
         if (t4[field.key] === "reversible" || t4[field.key] === "alternating") {
           t4[field.key] = values3[0];
         }
-        dispatch12.call("change", this, t4);
+        dispatch11.call("change", this, t4);
       });
       if (field.type === "onewayCheck") {
         reverser = label.selectAll(".reverser");
@@ -77366,7 +76565,8 @@ ${currentIndent}`
         _value = "yes";
       }
       input.property("indeterminate", isMixed || field.type !== "defaultCheck" && !_value).property("checked", isChecked(_value));
-      text.html(isMixed ? _t.html("inspector.multiple_values") : textFor(_value)).classed("mixed", isMixed);
+      const textForValue = textFor(_value);
+      text.text("").call(isMixed ? _t.append("inspector.multiple_values") : typeof textForValue === "string" ? (selection2) => selection2.text(textForValue) : textForValue).classed("mixed", isMixed);
       label.classed("set", !!_value);
       if (field.type === "onewayCheck") {
         reverser.classed("hide", reverserHidden()).call(reverserSetText);
@@ -77375,7 +76575,7 @@ ${currentIndent}`
     check.focus = function() {
       input.node().focus();
     };
-    return utilRebind(check, dispatch12, "on");
+    return utilRebind(check, dispatch11, "on");
   }
   var init_check = __esm({
     "modules/ui/fields/check.js"() {
@@ -77450,7 +76650,7 @@ ${currentIndent}`
     uiFieldTypeCombo: () => uiFieldCombo
   });
   function uiFieldCombo(field, context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var _isMulti = field.type === "multiCombo" || field.type === "manyCombo";
     var _isNetwork = field.type === "networkCombo";
     var _isSemi = field.type === "semiCombo";
@@ -77849,7 +77049,7 @@ ${currentIndent}`
         val = context.cleanTagValue(tagValue(rawValue));
         t4[field.key] = val || void 0;
       }
-      dispatch12.call("change", this, t4);
+      dispatch11.call("change", this, t4);
     }
     function removeMultikey(d3_event, d2) {
       d3_event.preventDefault();
@@ -77866,7 +77066,7 @@ ${currentIndent}`
         t4[field.key] = arr.length ? arr.join(";") : void 0;
         _lengthIndicator.update(t4[field.key]);
       }
-      dispatch12.call("change", this, t4);
+      dispatch11.call("change", this, t4);
     }
     function invertMultikey(d3_event, d2) {
       d3_event.preventDefault();
@@ -77875,7 +77075,7 @@ ${currentIndent}`
       if (_isMulti) {
         t4[d2.key] = _tags[d2.key] === "yes" ? "no" : "yes";
       }
-      dispatch12.call("change", this, t4);
+      dispatch11.call("change", this, t4);
     }
     function combo(selection2) {
       _container = selection2.selectAll(".form-field-input-wrap").data([0]);
@@ -78102,7 +77302,7 @@ ${currentIndent}`
             d3_event.stopPropagation();
             var t4 = {};
             t4[field.key] = void 0;
-            dispatch12.call("change", this, t4);
+            dispatch11.call("change", this, t4);
           }
         });
         if (!Array.isArray(tags[field.key])) {
@@ -78196,7 +77396,7 @@ ${currentIndent}`
             } else {
               t4[field.key] = void 0;
             }
-            dispatch12.call("change", this, t4);
+            dispatch11.call("change", this, t4);
           }
           dragOrigin = void 0;
           targetIndex = void 0;
@@ -78217,7 +77417,7 @@ ${currentIndent}`
     function combinedEntityExtent() {
       return _entityIDs && _entityIDs.length && utilTotalExtent(_entityIDs, context.graph());
     }
-    return utilRebind(combo, dispatch12, "on");
+    return utilRebind(combo, dispatch11, "on");
   }
   var init_combo = __esm({
     "modules/ui/fields/combo.js"() {
@@ -78610,19 +77810,13 @@ ${currentIndent}`
       });
       var u4 = Object.keys(users), subset2 = u4.slice(0, u4.length > limit2 ? limit2 - 1 : limit2);
       wrap3.html("").call(svgIcon("#iD-icon-nearby", "pre-text light"));
-      var userList = select_default2(document.createElement("span"));
-      userList.selectAll().data(subset2).enter().append("a").attr("class", "user-link").attr("href", function(d2) {
-        return osm.userURL(d2);
-      }).attr("target", "_blank").text(String);
+      const userList = (selection2) => selection2.selectAll().data(subset2).enter().append("a").attr("class", "user-link").attr("href", (d2) => osm.userURL(d2)).attr("target", "_blank").text(String);
       if (u4.length > limit2) {
-        var count2 = select_default2(document.createElement("span"));
         var othersNum = u4.length - limit2 + 1;
-        count2.append("a").attr("target", "_blank").attr("href", function() {
-          return osm.changesetsURL(context.map().center(), context.map().zoom());
-        }).text(othersNum);
-        wrap3.append("span").html(_t.html("contributors.truncated_list", { n: othersNum, users: { html: userList.html() }, count: { html: count2.html() } }));
+        const count2 = (selection2) => selection2.append("a").attr("target", "_blank").attr("href", () => osm.changesetsURL(context.map().center(), context.map().zoom())).text(othersNum);
+        wrap3.append("span").call(_t.append("contributors.truncated_list", { n: othersNum, users: userList, count: count2 }));
       } else {
-        wrap3.append("span").html(_t.html("contributors.list", { users: { html: userList.html() } }));
+        wrap3.append("span").call(_t.append("contributors.list", { users: userList }));
       }
       if (!u4.length) {
         hidden = true;
@@ -78655,7 +77849,7 @@ ${currentIndent}`
     uiEditMenu: () => uiEditMenu
   });
   function uiEditMenu(context) {
-    var dispatch12 = dispatch_default("toggled");
+    var dispatch11 = dispatch_default("toggled");
     var _menu = select_default2(null);
     var _operations = [];
     var _anchorLoc = [0, 0];
@@ -78755,7 +77949,7 @@ ${currentIndent}`
         }
         lastPointerUpType = null;
       }
-      dispatch12.call("toggled", this, true);
+      dispatch11.call("toggled", this, true);
     };
     function updatePosition() {
       if (!_menu || _menu.empty()) return;
@@ -78827,7 +78021,7 @@ ${currentIndent}`
       _menu.remove();
       _tooltips = [];
       drawAuxiliaryGeometry(context, []);
-      dispatch12.call("toggled", this, false);
+      dispatch11.call("toggled", this, false);
     };
     editMenu.anchorLoc = function(val) {
       if (!arguments.length) return _anchorLoc;
@@ -78845,7 +78039,7 @@ ${currentIndent}`
       _operations = val;
       return editMenu;
     };
-    return utilRebind(editMenu, dispatch12, "on");
+    return utilRebind(editMenu, dispatch11, "on");
   }
   function drawAuxiliaryGeometry(context, d2) {
     const surface = context.surface();
@@ -79062,7 +78256,7 @@ ${currentIndent}`
       timeout: 6e3
       // 6sec
     };
-    var _locating = uiLoading(context).message(_t.html("geolocate.locating")).blocking(true);
+    var _locating = uiLoading(context).message(_t.addOrUpdate("geolocate.locating")).blocking(true);
     var _layer = context.layers().layer("geolocate");
     var _position;
     var _extent;
@@ -79273,7 +78467,7 @@ ${currentIndent}`
       osm = context.connection();
       var selected, note, entity;
       if (selectedNoteID && osm) {
-        selected = [_t.html("note.note") + " " + selectedNoteID];
+        selected = [_t.append("note.note", { suffix: " " + selectedNoteID })];
         note = osm.getNote(selectedNoteID);
       } else {
         selected = context.selectedIDs().filter(function(e3) {
@@ -79284,11 +78478,16 @@ ${currentIndent}`
         }
       }
       var singular = selected.length === 1 ? selected[0] : null;
-      selection2.html("");
+      selection2.text("");
+      const heading = selection2.append("h4").attr("class", "history-heading");
       if (singular) {
-        selection2.append("h4").attr("class", "history-heading").html(singular);
+        if (typeof singular === "function") {
+          heading.call(singular);
+        } else {
+          heading.text(singular);
+        }
       } else {
-        selection2.append("h4").attr("class", "history-heading").call(_t.append("info_panels.selected", { n: selected.length }));
+        heading.call(_t.append("info_panels.selected", { n: selected.length }));
       }
       if (!singular) return;
       if (entity) {
@@ -79441,7 +78640,7 @@ ${currentIndent}`
       var totalNodeCount, length2 = 0, area = 0, distance;
       if (selectedNoteID && osm) {
         var note = osm.getNote(selectedNoteID);
-        heading = _t.html("note.note") + " " + selectedNoteID;
+        heading = _t.append("note.note", { suffix: " " + selectedNoteID });
         location = note.loc;
         geometry2 = "note";
       } else {
@@ -79451,7 +78650,7 @@ ${currentIndent}`
         var selected = selectedIDs.map(function(id3) {
           return context.entity(id3);
         });
-        heading = selected.length === 1 ? selected[0].id : _t.html("info_panels.selected", { n: selected.length });
+        heading = selected.length === 1 ? selected[0].id : _t.append("info_panels.selected", { n: selected.length });
         if (selected.length) {
           var extent2 = geoExtent();
           for (var i3 in selected) {
@@ -79491,14 +78690,16 @@ ${currentIndent}`
         }
       }
       selection2.html("");
-      if (heading) {
-        selection2.append("h4").attr("class", "measurement-heading").html(heading);
+      if (heading && typeof heading === "function") {
+        selection2.append("h4").attr("class", "measurement-heading").call(heading);
+      } else {
+        selection2.append("h4").attr("class", "measurement-heading").text(heading);
       }
       var list2 = selection2.append("ul");
       var coordItem;
       if (geometry2) {
-        list2.append("li").call(_t.append("info_panels.measurement.geometry", { suffix: ":" })).append("span").html(
-          closed ? _t.html("info_panels.measurement.closed_" + geometry2) : _t.html("geometry." + geometry2)
+        list2.append("li").call(_t.append("info_panels.measurement.geometry", { suffix: ":" })).append("span").call(
+          closed ? _t.append("info_panels.measurement.closed_" + geometry2) : _t.append("geometry." + geometry2)
         );
       }
       if (totalNodeCount) {
@@ -79887,7 +79088,7 @@ ${currentIndent}`
     uiIntroWelcome: () => uiIntroWelcome
   });
   function uiIntroWelcome(context, reveal) {
-    var dispatch12 = dispatch_default("done");
+    var dispatch11 = dispatch_default("done");
     var chapter = {
       title: "intro.welcome.title"
     };
@@ -79914,7 +79115,7 @@ ${currentIndent}`
       );
     }
     function chapters() {
-      dispatch12.call("done");
+      dispatch11.call("done");
       reveal(
         ".intro-nav-wrap .chapter-navigation",
         helpHtml("intro.welcome.chapters", { next: _t("intro.navigation.title") })
@@ -79930,7 +79131,7 @@ ${currentIndent}`
       chapter.exit();
       chapter.enter();
     };
-    return utilRebind(chapter, dispatch12, "on");
+    return utilRebind(chapter, dispatch11, "on");
   }
   var init_welcome = __esm({
     "modules/ui/intro/welcome.js"() {
@@ -79948,7 +79149,7 @@ ${currentIndent}`
     uiIntroNavigation: () => uiIntroNavigation
   });
   function uiIntroNavigation(context, reveal) {
-    var dispatch12 = dispatch_default("done");
+    var dispatch11 = dispatch_default("done");
     var timeouts = [];
     var hallId = "n2061";
     var townHall = [-85.63591, 41.94285];
@@ -80382,7 +79583,7 @@ ${currentIndent}`
       }
     }
     function play() {
-      dispatch12.call("done");
+      dispatch11.call("done");
       reveal(
         ".ideditor",
         helpHtml("intro.navigation.play", { next: _t("intro.points.title") }),
@@ -80410,7 +79611,7 @@ ${currentIndent}`
       chapter.exit();
       chapter.enter();
     };
-    return utilRebind(chapter, dispatch12, "on");
+    return utilRebind(chapter, dispatch11, "on");
   }
   var init_navigation = __esm({
     "modules/ui/intro/navigation.js"() {
@@ -80432,7 +79633,7 @@ ${currentIndent}`
     uiIntroPoint: () => uiIntroPoint
   });
   function uiIntroPoint(context, reveal) {
-    var dispatch12 = dispatch_default("done");
+    var dispatch11 = dispatch_default("done");
     var timeouts = [];
     var intersection5 = [-85.63279, 41.94394];
     var building = [-85.632422, 41.944045];
@@ -80793,7 +79994,7 @@ ${currentIndent}`
       }
     }
     function play() {
-      dispatch12.call("done");
+      dispatch11.call("done");
       reveal(
         ".ideditor",
         helpHtml("intro.points.play", { next: _t("intro.areas.title") }),
@@ -80821,7 +80022,7 @@ ${currentIndent}`
       chapter.exit();
       chapter.enter();
     };
-    return utilRebind(chapter, dispatch12, "on");
+    return utilRebind(chapter, dispatch11, "on");
   }
   var init_point = __esm({
     "modules/ui/intro/point.js"() {
@@ -80844,7 +80045,7 @@ ${currentIndent}`
     uiIntroArea: () => uiIntroArea
   });
   function uiIntroArea(context, reveal) {
-    var dispatch12 = dispatch_default("done");
+    var dispatch11 = dispatch_default("done");
     var playground = [-85.63552, 41.94159];
     var playgroundPreset = _mainPresetIndex.item("leisure/playground");
     var nameField = _mainPresetIndex.field("name");
@@ -81212,7 +80413,7 @@ ${currentIndent}`
       }
     }
     function play() {
-      dispatch12.call("done");
+      dispatch11.call("done");
       reveal(
         ".ideditor",
         helpHtml("intro.areas.play", { next: _t("intro.lines.title") }),
@@ -81241,7 +80442,7 @@ ${currentIndent}`
       chapter.exit();
       chapter.enter();
     };
-    return utilRebind(chapter, dispatch12, "on");
+    return utilRebind(chapter, dispatch11, "on");
   }
   var init_area4 = __esm({
     "modules/ui/intro/area.js"() {
@@ -81263,7 +80464,7 @@ ${currentIndent}`
     uiIntroLine: () => uiIntroLine
   });
   function uiIntroLine(context, reveal) {
-    var dispatch12 = dispatch_default("done");
+    var dispatch11 = dispatch_default("done");
     var timeouts = [];
     var _tulipRoadID = null;
     var flowerRoadID = "w646";
@@ -82115,7 +81316,7 @@ ${currentIndent}`
       }
     }
     function play() {
-      dispatch12.call("done");
+      dispatch11.call("done");
       reveal(
         ".ideditor",
         helpHtml("intro.lines.play", { next: _t("intro.buildings.title") }),
@@ -82144,7 +81345,7 @@ ${currentIndent}`
       chapter.exit();
       chapter.enter();
     };
-    return utilRebind(chapter, dispatch12, "on");
+    return utilRebind(chapter, dispatch11, "on");
   }
   var init_line2 = __esm({
     "modules/ui/intro/line.js"() {
@@ -82167,7 +81368,7 @@ ${currentIndent}`
     uiIntroBuilding: () => uiIntroBuilding
   });
   function uiIntroBuilding(context, reveal) {
-    var dispatch12 = dispatch_default("done");
+    var dispatch11 = dispatch_default("done");
     var house = [-85.62815, 41.95638];
     var tank = [-85.62732, 41.95347];
     var buildingCatetory = _mainPresetIndex.item("category-building");
@@ -82752,7 +81953,7 @@ ${currentIndent}`
       }
     }
     function play() {
-      dispatch12.call("done");
+      dispatch11.call("done");
       reveal(
         ".ideditor",
         helpHtml("intro.buildings.play", { next: _t("intro.startediting.title") }),
@@ -82781,7 +81982,7 @@ ${currentIndent}`
       chapter.exit();
       chapter.enter();
     };
-    return utilRebind(chapter, dispatch12, "on");
+    return utilRebind(chapter, dispatch11, "on");
   }
   var init_building = __esm({
     "modules/ui/intro/building.js"() {
@@ -82802,7 +82003,7 @@ ${currentIndent}`
     uiIntroStartEditing: () => uiIntroStartEditing
   });
   function uiIntroStartEditing(context, reveal) {
-    var dispatch12 = dispatch_default("done", "startEditing");
+    var dispatch11 = dispatch_default("done", "startEditing");
     var modalSelection = select_default2(null);
     var chapter = {
       title: "intro.startediting.title"
@@ -82854,7 +82055,7 @@ ${currentIndent}`
       });
       startbutton.append("svg").attr("class", "illustration").append("use").attr("xlink:href", "#iD-logo-walkthrough");
       startbutton.append("h2").call(_t.append("intro.startediting.start"));
-      dispatch12.call("startEditing");
+      dispatch11.call("startEditing");
     }
     chapter.enter = function() {
       showHelp();
@@ -82863,7 +82064,7 @@ ${currentIndent}`
       modalSelection.remove();
       context.container().selectAll(".shaded").remove();
     };
-    return utilRebind(chapter, dispatch12, "on");
+    return utilRebind(chapter, dispatch11, "on");
   }
   var init_start_editing = __esm({
     "modules/ui/intro/start_editing.js"() {
@@ -83208,7 +82409,7 @@ ${currentIndent}`
     };
     source.hasDescription = function() {
       var id_safe = source.id.replace(/\./g, "<TX_DOT>");
-      var descriptionText = _mainLocalizer.tInfo("imagery." + id_safe + ".description", { default: _description }).text;
+      var descriptionText = _mainLocalizer.tInfo("imagery." + id_safe + ".description", { default: escape(_description) }).texts.join("");
       return !!descriptionText;
     };
     source.description = function() {
@@ -83361,7 +82562,7 @@ ${currentIndent}`
     `).addListener(function() {
         isRetina = window.devicePixelRatio && window.devicePixelRatio >= 2;
       });
-      rendererBackgroundSource.Bing = function(data, dispatch12) {
+      rendererBackgroundSource.Bing = function(data, dispatch11) {
         data.template = "https://ecn.t{switch:0,1,2,3}.tiles.virtualearth.net/tiles/a{u}.jpeg?g=1&pr=odbl&n=z";
         var bing = rendererBackgroundSource(data);
         var key = utilAesDecrypt("5c875730b09c6b422433e807e1ff060b6536c791dbfffcffc4c6b18a1bdba1f14593d151adb50e19e1be1ab19aef813bf135d0f103475e5c724dec94389e45d0");
@@ -83395,7 +82596,7 @@ ${currentIndent}`
               })
             };
           });
-          dispatch12.call("change");
+          dispatch11.call("change");
         }).catch(function() {
         });
         bing.copyrightNotices = function(zoom, extent2) {
@@ -84293,10 +83494,10 @@ ${currentIndent}`
   });
   function rendererTileLayer(context) {
     var transformProp = utilPrefixCSSProperty("Transform");
-    var tiler8 = utilTiler();
+    var tiler7 = utilTiler();
     var _tileSize = 256;
     var _projection;
-    var _cache5 = {};
+    var _cache4 = {};
     var _tileOrigin;
     var _zoom;
     var _source;
@@ -84315,7 +83516,7 @@ ${currentIndent}`
     function lookUp(d2) {
       for (var up = -1; up > -d2[2]; up--) {
         var tile = atZoom(d2, up);
-        if (_cache5[_source.url(tile)] !== false) {
+        if (_cache4[_source.url(tile)] !== false) {
           return tile;
         }
       }
@@ -84348,7 +83549,7 @@ ${currentIndent}`
       } else {
         pixelOffset = [0, 0];
       }
-      tiler8.scale(_projection.scale() * 2 * Math.PI).translate([
+      tiler7.scale(_projection.scale() * 2 * Math.PI).translate([
         _projection.translate()[0] + pixelOffset[0],
         _projection.translate()[1] + pixelOffset[1]
       ]);
@@ -84363,27 +83564,27 @@ ${currentIndent}`
       var requests = [];
       var showDebug = context.getDebug("tile") && !_source.overlay;
       if (_source.validZoom(_zoom, _underzoom)) {
-        tiler8.skipNullIsland(!!_source.overlay);
-        tiler8().forEach(function(d2) {
+        tiler7.skipNullIsland(!!_source.overlay);
+        tiler7().forEach(function(d2) {
           addSource(d2);
           if (d2.url === "") return;
           if (typeof d2.url !== "string") return;
           requests.push(d2);
-          if (_cache5[d2.url] === false && lookUp(d2)) {
+          if (_cache4[d2.url] === false && lookUp(d2)) {
             requests.push(addSource(lookUp(d2)));
           }
         });
         requests = uniqueBy(requests, "url").filter(function(r2) {
-          return _cache5[r2.url] !== false;
+          return _cache4[r2.url] !== false;
         });
       }
       function load(d3_event, d2) {
-        _cache5[d2.url] = true;
+        _cache4[d2.url] = true;
         select_default2(this).on("error", null).on("load", null);
         render(selection2);
       }
       function error(d3_event, d2) {
-        _cache5[d2.url] = false;
+        _cache4[d2.url] = false;
         select_default2(this).on("error", null).on("load", null).remove();
         render(selection2);
       }
@@ -84403,7 +83604,7 @@ ${currentIndent}`
         var coord2 = tileCenter(d2);
         return "translate(" + coord2[0] + "px," + coord2[1] + "px)";
       }
-      var dims = tiler8.size();
+      var dims = tiler7.size();
       var mapCenter = [dims[0] / 2, dims[1] / 2];
       var minDist = Math.max(dims[0], dims[1]);
       var nearCenter;
@@ -84464,16 +83665,16 @@ ${currentIndent}`
       return background;
     };
     background.dimensions = function(val) {
-      if (!arguments.length) return tiler8.size();
-      tiler8.size(val);
+      if (!arguments.length) return tiler7.size();
+      tiler7.size(val);
       return background;
     };
     background.source = function(val) {
       if (!arguments.length) return _source;
       _source = val;
       _tileSize = _source.tileSize;
-      _cache5 = {};
-      tiler8.tileSize(_source.tileSize).zoomExtent(_source.zoomExtent);
+      _cache4 = {};
+      tiler7.tileSize(_source.tileSize).zoomExtent(_source.zoomExtent);
       return background;
     };
     background.underzoom = function(amount) {
@@ -84499,7 +83700,7 @@ ${currentIndent}`
     rendererBackground: () => rendererBackground
   });
   function rendererBackground(context) {
-    const dispatch12 = dispatch_default("change");
+    const dispatch11 = dispatch_default("change");
     const baseLayer = rendererTileLayer(context).projection(context.projection);
     let _checkedBlocklists = [];
     let _isValid = true;
@@ -84587,7 +83788,7 @@ ${currentIndent}`
         _imageryIndex.query = (0, import_which_polygon4.default)({ type: "FeatureCollection", features });
         _imageryIndex.backgrounds = sources.map((source) => {
           if (source.type === "bing") {
-            return rendererBackgroundSource.Bing(source, dispatch12);
+            return rendererBackgroundSource.Bing(source, dispatch11);
           } else if (/^EsriWorldImagery/.test(source.id)) {
             return rendererBackgroundSource.Esri(source);
           } else {
@@ -84758,7 +83959,7 @@ ${currentIndent}`
         fail = regex.test(template2);
       }
       baseLayer.source(!fail ? d2 : background.findSource("none"));
-      dispatch12.call("change");
+      dispatch11.call("change");
       background.updateImagery();
       return background;
     };
@@ -84783,7 +83984,7 @@ ${currentIndent}`
         layer = _overlayLayers[i3];
         if (layer.source() === d2) {
           _overlayLayers.splice(i3, 1);
-          dispatch12.call("change");
+          dispatch11.call("change");
           background.updateImagery();
           return;
         }
@@ -84792,14 +83993,14 @@ ${currentIndent}`
         baseLayer.dimensions()
       );
       _overlayLayers.push(layer);
-      dispatch12.call("change");
+      dispatch11.call("change");
       background.updateImagery();
     };
     background.nudge = (d2, zoom) => {
       const currSource = baseLayer.source();
       if (currSource) {
         currSource.nudge(d2, zoom);
-        dispatch12.call("change");
+        dispatch11.call("change");
         background.updateImagery();
       }
       return background;
@@ -84811,7 +84012,7 @@ ${currentIndent}`
       }
       if (currSource) {
         currSource.offset(d2);
-        dispatch12.call("change");
+        dispatch11.call("change");
         background.updateImagery();
       }
       return background;
@@ -84819,25 +84020,25 @@ ${currentIndent}`
     background.brightness = function(d2) {
       if (!arguments.length) return _brightness;
       _brightness = d2;
-      if (context.mode()) dispatch12.call("change");
+      if (context.mode()) dispatch11.call("change");
       return background;
     };
     background.contrast = function(d2) {
       if (!arguments.length) return _contrast;
       _contrast = d2;
-      if (context.mode()) dispatch12.call("change");
+      if (context.mode()) dispatch11.call("change");
       return background;
     };
     background.saturation = function(d2) {
       if (!arguments.length) return _saturation;
       _saturation = d2;
-      if (context.mode()) dispatch12.call("change");
+      if (context.mode()) dispatch11.call("change");
       return background;
     };
     background.sharpness = function(d2) {
       if (!arguments.length) return _sharpness;
       _sharpness = d2;
-      if (context.mode()) dispatch12.call("change");
+      if (context.mode()) dispatch11.call("change");
       return background;
     };
     let _loadPromise;
@@ -84905,7 +84106,7 @@ ${currentIndent}`
         console.error(err);
       });
     };
-    return utilRebind(background, dispatch12, "on");
+    return utilRebind(background, dispatch11, "on");
   }
   var import_which_polygon4, _imageryIndex, _waybackIndex;
   var init_background2 = __esm({
@@ -84935,7 +84136,7 @@ ${currentIndent}`
     rendererFeatures: () => rendererFeatures
   });
   function rendererFeatures(context) {
-    var dispatch12 = dispatch_default("change", "redraw");
+    var dispatch11 = dispatch_default("change", "redraw");
     const features = {};
     var _deferred2 = /* @__PURE__ */ new Set();
     var traffic_roads = {
@@ -84969,7 +84170,7 @@ ${currentIndent}`
       "pedestrian": true
     };
     var _cullFactor = 1;
-    var _cache5 = {};
+    var _cache4 = {};
     var _rules = {};
     var _dateMatchCount = 0;
     var _stats = {};
@@ -84987,8 +84188,8 @@ ${currentIndent}`
       window.history.replaceState(null, "", "#" + utilQsString(hash2, true));
       corePreferences("disabled-features", disabled.join(","));
       _hidden = features.hidden();
-      dispatch12.call("change");
-      dispatch12.call("redraw");
+      dispatch11.call("change");
+      dispatch11.call("redraw");
     }
     function defineRule(k3, filter4, max5) {
       var isEnabled = true;
@@ -85175,7 +84376,7 @@ ${currentIndent}`
         _rules[_keys[i3]].count = 0;
       }
       _dateMatchCount = 0;
-      dispatch12.call("change");
+      dispatch11.call("change");
     };
     features.gatherStats = function(d2, resolver, dimensions) {
       var needsRedraw = false;
@@ -85199,7 +84400,7 @@ ${currentIndent}`
       if (currHidden !== _hidden) {
         _hidden = currHidden;
         needsRedraw = true;
-        dispatch12.call("change");
+        dispatch11.call("change");
       }
       return needsRedraw;
     };
@@ -85216,12 +84417,12 @@ ${currentIndent}`
       }
     };
     features.clearEntity = function(entity) {
-      delete _cache5[osmEntity.key(entity)];
-      for (const key in _cache5) {
-        if (_cache5[key].parents) {
-          for (const parent of _cache5[key].parents) {
+      delete _cache4[osmEntity.key(entity)];
+      for (const key in _cache4) {
+        if (_cache4[key].parents) {
+          for (const parent of _cache4[key].parents) {
             if (parent.id === entity.id) {
-              delete _cache5[key];
+              delete _cache4[key];
               break;
             }
           }
@@ -85233,7 +84434,7 @@ ${currentIndent}`
         window.cancelIdleCallback(handle);
         _deferred2.delete(handle);
       });
-      _cache5 = {};
+      _cache4 = {};
     };
     function relationShouldBeChecked(relation) {
       return relation.tags.type === "boundary";
@@ -85241,10 +84442,10 @@ ${currentIndent}`
     features.getMatches = function(entity, resolver, geometry2) {
       if (geometry2 === "vertex" || geometry2 === "relation" && !relationShouldBeChecked(entity)) return {};
       var ent = osmEntity.key(entity);
-      if (!_cache5[ent]) {
-        _cache5[ent] = {};
+      if (!_cache4[ent]) {
+        _cache4[ent] = {};
       }
-      if (!_cache5[ent].matches) {
+      if (!_cache4[ent].matches) {
         var matches2 = {};
         var hasMatch = false;
         for (var i3 = 0; i3 < _keys.length; i3++) {
@@ -85257,8 +84458,8 @@ ${currentIndent}`
                 return parent.tags.type === "boundary";
               })) {
                 var pkey = osmEntity.key(parents[0]);
-                if (_cache5[pkey] && _cache5[pkey].matches) {
-                  matches2 = Object.assign({}, _cache5[pkey].matches);
+                if (_cache4[pkey] && _cache4[pkey].matches) {
+                  matches2 = Object.assign({}, _cache4[pkey].matches);
                   continue;
                 }
               }
@@ -85269,26 +84470,26 @@ ${currentIndent}`
             hasMatch = true;
           }
         }
-        _cache5[ent].matches = matches2;
+        _cache4[ent].matches = matches2;
       }
-      return _cache5[ent].matches;
+      return _cache4[ent].matches;
     };
     features.getParents = function(entity, resolver, geometry2) {
       if (geometry2 === "point") return [];
       const ent = osmEntity.key(entity);
-      if (!_cache5[ent]) {
-        _cache5[ent] = {};
+      if (!_cache4[ent]) {
+        _cache4[ent] = {};
       }
-      if (!_cache5[ent].parents) {
+      if (!_cache4[ent].parents) {
         let parents;
         if (geometry2 === "vertex") {
           parents = resolver.parentWays(entity);
         } else {
           parents = resolver.parentRelations(entity);
         }
-        _cache5[ent].parents = parents;
+        _cache4[ent].parents = parents;
       }
-      return _cache5[ent].parents;
+      return _cache4[ent].parents;
     };
     features.isHiddenPreset = function(preset, geometry2) {
       if (!preset.tags) return false;
@@ -85408,7 +84609,7 @@ ${currentIndent}`
       });
       _deferred2.add(handle);
     });
-    return utilRebind(features, dispatch12, "on");
+    return utilRebind(features, dispatch11, "on");
   }
   var init_features = __esm({
     "modules/renderer/features.js"() {
@@ -85474,7 +84675,7 @@ ${currentIndent}`
     );
   }
   function utilZoomPan() {
-    var filter4 = defaultFilter4, extent2 = defaultExtent3, constrain = defaultConstrain2, wheelDelta = defaultWheelDelta2, scaleExtent = [0, Infinity], translateExtent = [[-Infinity, -Infinity], [Infinity, Infinity]], interpolate = zoom_default, dispatch12 = dispatch_default("start", "zoom", "end"), _wheelDelay = 150, _transform = identity2, _activeGesture;
+    var filter4 = defaultFilter4, extent2 = defaultExtent3, constrain = defaultConstrain2, wheelDelta = defaultWheelDelta2, scaleExtent = [0, Infinity], translateExtent = [[-Infinity, -Infinity], [Infinity, Infinity]], interpolate = zoom_default, dispatch11 = dispatch_default("start", "zoom", "end"), _wheelDelay = 150, _transform = identity2, _activeGesture;
     function zoom(selection2) {
       selection2.on("pointerdown.zoom", pointerdown).on("wheel.zoom", wheeled).style("touch-action", "none").style("-webkit-tap-highlight-color", "rgba(0,0,0,0)");
       select_default2(window).on("pointermove.zoompan", pointermove).on("pointerup.zoompan pointercancel.zoompan", pointerup);
@@ -85561,7 +84762,7 @@ ${currentIndent}`
       start: function(d3_event) {
         if (++this.active === 1) {
           _activeGesture = this;
-          dispatch12.call("start", this, d3_event);
+          dispatch11.call("start", this, d3_event);
         }
         return this;
       },
@@ -85570,13 +84771,13 @@ ${currentIndent}`
         if (this.pointer0 && key !== "touch") this.pointer0[1] = transform3.invert(this.pointer0[0]);
         if (this.pointer1 && key !== "touch") this.pointer1[1] = transform3.invert(this.pointer1[0]);
         _transform = transform3;
-        dispatch12.call("zoom", this, d3_event, key, transform3);
+        dispatch11.call("zoom", this, d3_event, key, transform3);
         return this;
       },
       end: function(d3_event) {
         if (--this.active === 0) {
           _activeGesture = null;
-          dispatch12.call("end", this, d3_event);
+          dispatch11.call("end", this, d3_event);
         }
         return this;
       }
@@ -85699,7 +84900,7 @@ ${currentIndent}`
     zoom._transform = function(_3) {
       return arguments.length ? (_transform = _3, zoom) : _transform;
     };
-    return utilRebind(zoom, dispatch12, "on");
+    return utilRebind(zoom, dispatch11, "on");
   }
   var init_zoom_pan = __esm({
     "modules/util/zoom_pan.js"() {
@@ -85721,7 +84922,7 @@ ${currentIndent}`
     utilDoubleUp: () => utilDoubleUp
   });
   function utilDoubleUp() {
-    var dispatch12 = dispatch_default("doubleUp");
+    var dispatch11 = dispatch_default("doubleUp");
     var _maxTimespan = 500;
     var _maxDistance = 20;
     var _pointer;
@@ -85754,7 +84955,7 @@ ${currentIndent}`
         var loc = [d3_event.clientX, d3_event.clientY];
         if (pointerIsValidFor(loc)) {
           var locInThis = utilFastMouse(this)(d3_event);
-          dispatch12.call("doubleUp", this, d3_event, locInThis);
+          dispatch11.call("doubleUp", this, d3_event, locInThis);
         }
         _pointer = void 0;
       }
@@ -85764,14 +84965,14 @@ ${currentIndent}`
         selection2.on("pointerdown.doubleUp", pointerdown).on("pointerup.doubleUp", pointerup);
       } else {
         selection2.on("dblclick.doubleUp", function(d3_event) {
-          dispatch12.call("doubleUp", this, d3_event, utilFastMouse(this)(d3_event));
+          dispatch11.call("doubleUp", this, d3_event, utilFastMouse(this)(d3_event));
         });
       }
     }
     doubleUp.off = function(selection2) {
       selection2.on("pointerdown.doubleUp", null).on("pointerup.doubleUp", null).on("dblclick.doubleUp", null);
     };
-    return utilRebind(doubleUp, dispatch12, "on");
+    return utilRebind(doubleUp, dispatch11, "on");
   }
   var init_double_up = __esm({
     "modules/util/double_up.js"() {
@@ -85789,7 +84990,7 @@ ${currentIndent}`
     rendererMap: () => rendererMap
   });
   function rendererMap(context) {
-    var dispatch12 = dispatch_default(
+    var dispatch11 = dispatch_default(
       "move",
       "drawn",
       "crossEditableZoom",
@@ -85885,13 +85086,13 @@ ${currentIndent}`
         if (map4.editableDataEnabled() && !_isTransformed) {
           var hover = d3_event.target.__data__;
           surface.call(drawVertices.drawHover, context.graph(), hover, map4.extent());
-          dispatch12.call("drawn", this, { full: false });
+          dispatch11.call("drawn", this, { full: false });
         }
       }).on(_pointerPrefix + "out.vertices", function(d3_event) {
         if (map4.editableDataEnabled() && !_isTransformed) {
           var hover = d3_event.relatedTarget && d3_event.relatedTarget.__data__;
           surface.call(drawVertices.drawHover, context.graph(), hover, map4.extent());
-          dispatch12.call("drawn", this, { full: false });
+          dispatch11.call("drawn", this, { full: false });
         }
       });
       var detected = utilDetect();
@@ -85941,7 +85142,7 @@ ${currentIndent}`
         };
         data = context.features().filter(data, graph);
         surface.call(drawVertices.drawSelected, graph, map4.extent()).call(drawLines, graph, data, filter4).call(drawAreas, graph, data, filter4).call(drawMidpoints, graph, data, filter4, map4.trimmedExtent());
-        dispatch12.call("drawn", this, { full: false });
+        dispatch11.call("drawn", this, { full: false });
         scheduleRedraw();
       });
       map4.dimensions(utilGetDimensions(selection2));
@@ -86022,7 +85223,7 @@ ${currentIndent}`
         surface.call(drawVertices.drawSelected, graph, map4.extent());
       }
       surface.call(drawVertices, graph, data, filter4, map4.extent(), fullRedraw).call(drawLines, graph, data, filter4).call(drawAreas, graph, data, filter4).call(drawMidpoints, graph, data, filter4, map4.trimmedExtent()).call(drawPoints, graph, data, filter4).call(drawLabels, graph, data, filter4, _dimensions, fullRedraw);
-      dispatch12.call("drawn", this, { full: true });
+      dispatch11.call("drawn", this, { full: true });
     }
     map4.init = function() {
       drawLayers = svgLayers(projection2, context);
@@ -86048,7 +85249,7 @@ ${currentIndent}`
       if (mode2 && !allowed[mode2.id]) {
         context.enter(modeBrowse(context));
       }
-      dispatch12.call("drawn", this, { full: true });
+      dispatch11.call("drawn", this, { full: true });
     }
     function gestureChange(d3_event) {
       var e3 = d3_event;
@@ -86151,17 +85352,17 @@ ${currentIndent}`
       }
       if (geoScaleToZoom(k3, TILESIZE) < _minzoom) {
         surface.interrupt();
-        dispatch12.call("hitMinZoom", this, map4);
+        dispatch11.call("hitMinZoom", this, map4);
         setCenterZoom(map4.center(), context.minEditableZoom(), 0, true);
         scheduleRedraw();
-        dispatch12.call("move", this, map4);
+        dispatch11.call("move", this, map4);
         return;
       }
       projection2.transform(eventTransform);
       var withinEditableZoom = map4.withinEditableZoom();
       if (_lastWithinEditableZoom !== withinEditableZoom) {
         if (_lastWithinEditableZoom !== void 0) {
-          dispatch12.call("crossEditableZoom", this, withinEditableZoom);
+          dispatch11.call("crossEditableZoom", this, withinEditableZoom);
         }
         _lastWithinEditableZoom = withinEditableZoom;
       }
@@ -86182,7 +85383,7 @@ ${currentIndent}`
       _transformLast = eventTransform;
       utilSetTransform(supersurface, tX, tY, scale);
       scheduleRedraw();
-      dispatch12.call("move", this, map4);
+      dispatch11.call("move", this, map4);
       function isInteger2(val) {
         return typeof val === "number" && isFinite(val) && Math.floor(val) === val;
       }
@@ -86300,7 +85501,7 @@ ${currentIndent}`
         projection2.translate(t4);
         _transformStart = projection2.transform();
         _selection.call(_zoomerPanner.transform, _transformStart);
-        dispatch12.call("move", this, map4);
+        dispatch11.call("move", this, map4);
         immediateRedraw();
       }
       return map4;
@@ -86344,7 +85545,7 @@ ${currentIndent}`
         return projection2.invert(pxCenter());
       }
       if (setCenterZoom(loc2, map4.zoom())) {
-        dispatch12.call("move", this, map4);
+        dispatch11.call("move", this, map4);
       }
       scheduleRedraw();
       return map4;
@@ -86382,18 +85583,18 @@ ${currentIndent}`
       }
       if (z22 < _minzoom) {
         surface.interrupt();
-        dispatch12.call("hitMinZoom", this, map4);
+        dispatch11.call("hitMinZoom", this, map4);
         z22 = context.minEditableZoom();
       }
       if (setCenterZoom(map4.center(), z22)) {
-        dispatch12.call("move", this, map4);
+        dispatch11.call("move", this, map4);
       }
       scheduleRedraw();
       return map4;
     };
     map4.centerZoom = function(loc2, z22) {
       if (setCenterZoom(loc2, z22)) {
-        dispatch12.call("move", this, map4);
+        dispatch11.call("move", this, map4);
       }
       scheduleRedraw();
       return map4;
@@ -86523,7 +85724,7 @@ ${currentIndent}`
     map4.toggleHighlightEdited = function() {
       surface.classed("highlight-edited", !surface.classed("highlight-edited"));
       map4.pan([0, 0]);
-      dispatch12.call("changeHighlighting", this);
+      dispatch11.call("changeHighlighting", this);
     };
     map4.areaFillOptions = ["wireframe", "partial", "full"];
     map4.activeAreaFill = function(val) {
@@ -86534,7 +85735,7 @@ ${currentIndent}`
       }
       updateAreaFill();
       map4.pan([0, 0]);
-      dispatch12.call("changeAreaFill", this);
+      dispatch11.call("changeAreaFill", this);
       return map4;
     };
     map4.toggleWireframe = function() {
@@ -86556,7 +85757,7 @@ ${currentIndent}`
     map4.doubleUpHandler = function() {
       return _doubleUpHandler;
     };
-    return utilRebind(map4, dispatch12, "on");
+    return utilRebind(map4, dispatch11, "on");
   }
   var TILESIZE, minZoom4, maxZoom, kMin, kMax;
   var init_map3 = __esm({
@@ -86593,7 +85794,7 @@ ${currentIndent}`
     rendererPhotos: () => rendererPhotos
   });
   function rendererPhotos(context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var _layerIDs = ["streetside", "mapillary", "mapillary-map-features", "mapillary-signs", "kartaview", "mapilio", "vegbilder", "panoramax"];
     var _allPhotoTypes = ["flat", "panoramic"];
     var _shownPhotoTypes = _allPhotoTypes.slice();
@@ -86648,7 +85849,7 @@ ${currentIndent}`
           _fromDate = _toDate;
         }
       }
-      dispatch12.call("change", this);
+      dispatch11.call("change", this);
       if (updateUrl) {
         var rangeString;
         if (_fromDate || _toDate) {
@@ -86666,7 +85867,7 @@ ${currentIndent}`
         }
       }
       _usernames = val;
-      dispatch12.call("change", this);
+      dispatch11.call("change", this);
       if (updateUrl) {
         var hashString;
         if (_usernames) {
@@ -86689,7 +85890,7 @@ ${currentIndent}`
         }
         setUrlFilterValue("photo_type", hashString);
       }
-      dispatch12.call("change", this);
+      dispatch11.call("change", this);
       return photos;
     };
     function setUrlFilterValue(property2, val) {
@@ -86789,7 +85990,7 @@ ${currentIndent}`
       }
       context.layers().on("change.rendererPhotos", updateStorage);
     };
-    return utilRebind(photos, dispatch12, "on");
+    return utilRebind(photos, dispatch11, "on");
   }
   var init_photos = __esm({
     "modules/renderer/photos.js"() {
@@ -87047,7 +86248,7 @@ ${currentIndent}`
     uiPhotoviewer: () => uiPhotoviewer
   });
   function uiPhotoviewer(context) {
-    var dispatch12 = dispatch_default("resize");
+    var dispatch11 = dispatch_default("resize");
     var _pointerPrefix = "PointerEvent" in window ? "pointer" : "mouse";
     const addPhotoIdButton = /* @__PURE__ */ new Set(["mapillary", "panoramax"]);
     function photoviewer(selection2) {
@@ -87063,15 +86264,15 @@ ${currentIndent}`
       }
       selection2.append("button").attr("class", "resize-handle-xy").on("touchstart touchdown touchend", preventDefault).on(
         _pointerPrefix + "down",
-        buildResizeListener(selection2, "resize", dispatch12, { resizeOnX: true, resizeOnY: true })
+        buildResizeListener(selection2, "resize", dispatch11, { resizeOnX: true, resizeOnY: true })
       );
       selection2.append("button").attr("class", "resize-handle-x").on("touchstart touchdown touchend", preventDefault).on(
         _pointerPrefix + "down",
-        buildResizeListener(selection2, "resize", dispatch12, { resizeOnX: true })
+        buildResizeListener(selection2, "resize", dispatch11, { resizeOnX: true })
       );
       selection2.append("button").attr("class", "resize-handle-y").on("touchstart touchdown touchend", preventDefault).on(
         _pointerPrefix + "down",
-        buildResizeListener(selection2, "resize", dispatch12, { resizeOnY: true })
+        buildResizeListener(selection2, "resize", dispatch11, { resizeOnY: true })
       );
       context.features().on("change.setPhotoFromViewer", function() {
         setPhotoTagButton();
@@ -87154,7 +86355,7 @@ ${currentIndent}`
           button.select(".tooltip").classed("dark", true).style("width", "300px");
         }
       }
-      function buildResizeListener(target, eventName, dispatch13, options) {
+      function buildResizeListener(target, eventName, dispatch12, options) {
         var resizeOnX = !!options.resizeOnX;
         var resizeOnY = !!options.resizeOnY;
         var minHeight = options.minHeight || 240;
@@ -87182,7 +86383,7 @@ ${currentIndent}`
             var newHeight = clamp(startHeight + startY - d3_event.clientY, minHeight, maxHeight);
             target.style("height", newHeight + "px");
           }
-          dispatch13.call(eventName, target, subtractPadding(utilGetDimensions(target, true), target));
+          dispatch12.call(eventName, target, subtractPadding(utilGetDimensions(target, true), target));
         }
         function stopResize(d3_event) {
           if (pointerId !== (d3_event.pointerId || "mouse")) return;
@@ -87219,9 +86420,9 @@ ${currentIndent}`
           Math.min(photoDimensions[1], mapDimensions[1] - menuHeight - viewerMargin * 2)
         ];
         photoviewer2.style("width", setPhotoDimensions[0] + "px").style("height", setPhotoDimensions[1] + "px");
-        dispatch12.call("resize", photoviewer2, subtractPadding(setPhotoDimensions, photoviewer2));
+        dispatch11.call("resize", photoviewer2, subtractPadding(setPhotoDimensions, photoviewer2));
       } else {
-        dispatch12.call("resize", photoviewer2, subtractPadding(photoDimensions, photoviewer2));
+        dispatch11.call("resize", photoviewer2, subtractPadding(photoDimensions, photoviewer2));
       }
     };
     function subtractPadding(dimensions, selection2) {
@@ -87234,7 +86435,7 @@ ${currentIndent}`
       const photoviewer2 = context.container().select(".photoviewer");
       return subtractPadding(utilGetDimensions(photoviewer2, true), photoviewer2);
     };
-    return utilRebind(photoviewer, dispatch12, "on");
+    return utilRebind(photoviewer, dispatch11, "on");
   }
   var init_photoviewer = __esm({
     "modules/ui/photoviewer.js"() {
@@ -87381,8 +86582,8 @@ ${currentIndent}`
         _activeTab = i3;
         render(selection2);
       });
-      tabsEnter.append("span").html(function(d2) {
-        return _t.html(d2.text);
+      tabsEnter.append("span").each(function(d2) {
+        select_default2(this).call(_t.addOrUpdate(d2.text));
       });
       wrapper.selectAll(".tab").classed("active", function(d2, i3) {
         return i3 === _activeTab;
@@ -87401,8 +86602,8 @@ ${currentIndent}`
         return !d2.shortcuts;
       });
       sectionRows.append("td");
-      sectionRows.append("td").attr("class", "shortcut-section").append("h3").html(function(d2) {
-        return _t.html(d2.text);
+      sectionRows.append("td").attr("class", "shortcut-section").append("h3").each(function(d2) {
+        select_default2(this).call(_t.addOrUpdate(d2.text));
       });
       var shortcutRows = rowsEnter.filter(function(d2) {
         return d2.shortcuts;
@@ -87458,7 +86659,13 @@ ${currentIndent}`
           });
         }
         if (i3 < nodes.length - 1) {
-          selection3.append("span").html(d2.separator || "\xA0" + _t.html("shortcuts.or") + "\xA0");
+          if (d2.separator) {
+            selection3.append("span").text(d2.separator);
+          } else {
+            selection3.append("span").text("\xA0");
+            selection3.append("span").call(_t.append("shortcuts.or"));
+            selection3.append("span").text("\xA0");
+          }
         } else if (i3 === nodes.length - 1 && d2.suffix) {
           selection3.append("span").text(d2.suffix);
         }
@@ -87468,12 +86675,16 @@ ${currentIndent}`
       }).each(function() {
         var selection3 = select_default2(this);
         selection3.append("span").text("+");
-        selection3.append("span").attr("class", "gesture").html(function(d2) {
-          return _t.html(d2.gesture);
+        selection3.append("span").attr("class", "gesture").each(function(d2) {
+          select_default2(this).call(_t.addOrUpdate(d2.gesture));
         });
       });
-      shortcutRows.append("td").attr("class", "shortcut-desc").html(function(d2) {
-        return d2.text ? _t.html(d2.text) : "\xA0";
+      shortcutRows.append("td").attr("class", "shortcut-desc").each(function(d2) {
+        if (d2.text) {
+          select_default2(this).call(_t.addOrUpdate(d2.text));
+        } else {
+          select_default2(this).text("\xA0");
+        }
       });
       wrapper.selectAll(".shortcut-tab").style("display", function(d2, i3) {
         return i3 === _activeTab ? "flex" : "none";
@@ -87886,7 +87097,7 @@ ${currentIndent}`
     var section = uiSection("entity-issues", context).shouldDisplay(function() {
       return _issues.length > 0;
     }).label(function() {
-      return _t.append("inspector.title_count", { title: _t("issues.list_title"), count: _issues.length });
+      return _t.append("inspector.title_count", { title: _t.append("issues.list_title"), count: _issues.length });
     }).disclosureContent(renderDisclosureContent);
     context.validator().on("validated.entity_issues", function() {
       reloadIssues();
@@ -88281,7 +87492,7 @@ ${currentIndent}`
     uiSectionFeatureType: () => uiSectionFeatureType
   });
   function uiSectionFeatureType(context) {
-    var dispatch12 = dispatch_default("choose");
+    var dispatch11 = dispatch_default("choose");
     var _entityIDs = [];
     var _presets = [];
     var _tagReference;
@@ -88303,7 +87514,7 @@ ${currentIndent}`
         tagReferenceBodyWrap.style("display", _presets.length === 1 ? null : "none").call(_tagReference.body);
       }
       selection2.selectAll(".preset-reset").on("click", function() {
-        dispatch12.call("choose", this, _presets);
+        dispatch11.call("choose", this, _presets);
       }).on("pointerdown pointerup mousedown mouseup", function(d3_event) {
         d3_event.preventDefault();
         d3_event.stopPropagation();
@@ -88349,7 +87560,7 @@ ${currentIndent}`
         return counts[geom2] - counts[geom1];
       });
     }
-    return utilRebind(section, dispatch12, "on");
+    return utilRebind(section, dispatch11, "on");
   }
   var init_feature_type = __esm({
     "modules/ui/sections/feature_type.js"() {
@@ -88475,7 +87686,7 @@ ${currentIndent}`
   });
   function uiSectionPresetFields(context) {
     var section = uiSection("preset-fields", context).label(() => _t.append("inspector.fields")).disclosureContent(renderDisclosureContent);
-    var dispatch12 = dispatch_default("change", "revert");
+    var dispatch11 = dispatch_default("change", "revert");
     var formFields = uiFormFields(context);
     var _state;
     var _fieldsArr;
@@ -88517,14 +87728,14 @@ ${currentIndent}`
           return sharedTotalFields.indexOf(field) !== -1;
         });
         _fieldsArr = [];
-        let coreKeys = ["start_date", "end_date", "source"];
+        let coreKeys = ["start_date", "end_date", "source_preset"];
         coreKeys.forEach((key) => {
           let field = presetsManager.field(key);
           if (field) {
             _fieldsArr.push(uiField(context, field, _entityIDs));
           }
         });
-        let optionalCoreKeys = ["source:1", "source:2", "source:3"];
+        let optionalCoreKeys = ["source_preset:1", "source_preset:2", "source_preset:3"];
         optionalCoreKeys.forEach((key) => {
           let field = presetsManager.field(key);
           if (field && !_fieldsArr.includes(field)) {
@@ -88557,9 +87768,9 @@ ${currentIndent}`
         });
         _fieldsArr.forEach(function(field) {
           field.on("change", function(t4, onInput) {
-            dispatch12.call("change", field, _entityIDs, t4, onInput);
+            dispatch11.call("change", field, _entityIDs, t4, onInput);
           }).on("revert", function(keys5) {
-            dispatch12.call("revert", field, keys5);
+            dispatch11.call("revert", field, keys5);
           });
         });
       }
@@ -88596,7 +87807,7 @@ ${currentIndent}`
       }
       return section;
     };
-    return utilRebind(section, dispatch12, "on");
+    return utilRebind(section, dispatch11, "on");
   }
   var init_preset_fields = __esm({
     "modules/ui/sections/preset_fields.js"() {
@@ -88628,7 +87839,7 @@ ${currentIndent}`
       if (!entity) return "";
       var gt3 = entity.members.length > _maxMembers ? ">" : "";
       var count2 = gt3 + entity.members.slice(0, _maxMembers).length;
-      return _t.append("inspector.title_count", { title: _t("inspector.members"), count: count2 });
+      return _t.append("inspector.title_count", { title: _t.append("inspector.members"), count: count2 });
     }).disclosureContent(renderDisclosureContent);
     var taginfo = services.taginfo;
     var _entityIDs;
@@ -88903,7 +88114,7 @@ ${currentIndent}`
       var parents = getSharedParentRelations();
       var gt3 = parents.length > _maxMemberships ? ">" : "";
       var count2 = gt3 + parents.slice(0, _maxMemberships).length;
-      return _t.append("inspector.title_count", { title: _t("inspector.relations"), count: count2 });
+      return _t.append("inspector.title_count", { title: _t.append("inspector.relations"), count: count2 });
     }).disclosureContent(renderDisclosureContent);
     var taginfo = services.taginfo;
     var nearbyCombo = uiCombobox(context, "parent-relation").minItems(1).fetcher(fetchNearbyRelations).itemsMouseEnter(function(d3_event, d2) {
@@ -89346,7 +88557,7 @@ ${currentIndent}`
     var section = uiSection("selected-features", context).shouldDisplay(function() {
       return _selectedIDs.length > 1;
     }).label(function() {
-      return _t.append("inspector.title_count", { title: _t("inspector.features"), count: _selectedIDs.length });
+      return _t.append("inspector.title_count", { title: _t.append("inspector.features"), count: _selectedIDs.length });
     }).disclosureContent(renderDisclosureContent);
     context.history().on("change.selectionList", function(difference5) {
       if (difference5) {
@@ -89424,7 +88635,7 @@ ${currentIndent}`
     uiEntityEditor: () => uiEntityEditor
   });
   function uiEntityEditor(context) {
-    var dispatch12 = dispatch_default("choose");
+    var dispatch11 = dispatch_default("choose");
     var _state = "select";
     var _coalesceChanges = false;
     var _modified = false;
@@ -89446,7 +88657,7 @@ ${currentIndent}`
       header = header.merge(headerEnter);
       header.selectAll("h2").text("").call(_entityIDs.length === 1 ? _t.append("inspector.edit") : _t.append("inspector.edit_features"));
       header.selectAll(".preset-reset").on("click", function() {
-        dispatch12.call("choose", this, _activePresets);
+        dispatch11.call("choose", this, _activePresets);
       });
       var body = selection2.selectAll(".inspector-body").data([0]);
       var bodyEnter = body.enter().append("div").attr("class", "entity-editor inspector-body sep-top");
@@ -89455,7 +88666,7 @@ ${currentIndent}`
         _sections = [
           uiSectionSelectionList(context),
           uiSectionFeatureType(context).on("choose", function(presets) {
-            dispatch12.call("choose", this, presets);
+            dispatch11.call("choose", this, presets);
           }),
           uiSectionEntityIssues(context),
           uiSectionPresetFields(context).on("change", changeTags).on("revert", revertTags),
@@ -89636,7 +88847,7 @@ ${currentIndent}`
       }
       return entityEditor;
     };
-    return utilRebind(entityEditor, dispatch12, "on");
+    return utilRebind(entityEditor, dispatch11, "on");
   }
   var init_entity_editor = __esm({
     "modules/ui/entity_editor.js"() {
@@ -89667,7 +88878,7 @@ ${currentIndent}`
     uiPresetList: () => uiPresetList
   });
   function uiPresetList(context) {
-    var dispatch12 = dispatch_default("cancel", "choose");
+    var dispatch11 = dispatch_default("cancel", "choose");
     var _entityIDs;
     var _currLoc;
     var _currentPresets;
@@ -89677,9 +88888,9 @@ ${currentIndent}`
       var presets = _mainPresetIndex.matchAllGeometry(entityGeometries());
       selection2.html("");
       var messagewrap = selection2.append("div").attr("class", "header fillL");
-      var message = messagewrap.append("h2").call(_t.append("inspector.choose"));
+      var message2 = messagewrap.append("h2").call(_t.addOrUpdate("inspector.choose"));
       messagewrap.append("button").attr("class", "preset-choose").attr("title", _entityIDs.length === 1 ? _t("inspector.edit") : _t("inspector.edit_features")).on("click", function() {
-        dispatch12.call("cancel", this);
+        dispatch11.call("cancel", this);
       }).call(svgIcon("#iD-icon-close"));
       function initialKeydown(d3_event) {
         if (search.property("value").length === 0 && (d3_event.keyCode === utilKeybinding.keyCodes["\u232B"] || d3_event.keyCode === utilKeybinding.keyCodes["\u2326"])) {
@@ -89719,17 +88930,17 @@ ${currentIndent}`
         var results, messageText;
         if (value.length) {
           results = presets.search(value, entityGeometries()[0], _currLoc);
-          messageText = _t.html("inspector.results", {
+          messageText = _t.addOrUpdate("inspector.results", {
             n: results.collection.length,
             search: value
           });
         } else {
           var entityPresets2 = _entityIDs.map((entityID) => _mainPresetIndex.match(context.graph().entity(entityID), context.graph()));
           results = _mainPresetIndex.defaults(entityGeometries()[0], 36, !context.inIntro(), _currLoc, entityPresets2);
-          messageText = _t.html("inspector.choose");
+          messageText = _t.addOrUpdate("inspector.choose");
         }
         list2.call(drawList, results);
-        message.html(messageText);
+        message2.call(messageText);
       }
       var searchWrap = selection2.append("div").attr("class", "search-header");
       searchWrap.call(svgIcon("#iD-icon-search", "pre-text"));
@@ -89903,7 +89114,7 @@ ${currentIndent}`
           _t("operations.change_tags.annotation")
         );
         context.validator().validate();
-        dispatch12.call("choose", this, preset);
+        dispatch11.call("choose", this, preset);
       };
       item.help = function(d3_event) {
         d3_event.stopPropagation();
@@ -89979,7 +89190,7 @@ ${currentIndent}`
         return counts[geom2] - counts[geom1];
       });
     }
-    return utilRebind(presetList, dispatch12, "on");
+    return utilRebind(presetList, dispatch11, "on");
   }
   var init_preset_list = __esm({
     "modules/ui/preset_list.js"() {
@@ -90120,7 +89331,6 @@ ${currentIndent}`
     var inspector = uiInspector(context);
     var dataEditor = uiDataEditor(context);
     var noteEditor = uiNoteEditor(context);
-    var keepRightEditor = uiKeepRightEditor(context);
     var osmoseEditor = uiOsmoseEditor(context);
     var _current;
     var _wasData = false;
@@ -90222,9 +89432,7 @@ ${currentIndent}`
             datum2 = errService.getError(datum2.id);
           }
           var errEditor;
-          if (datum2.service === "keepRight") {
-            errEditor = keepRightEditor;
-          } else {
+          if (datum2.service === "osmose") {
             errEditor = osmoseEditor;
           }
           context.container().selectAll(".qaItem." + datum2.service).classed("hover", function(d2) {
@@ -90388,7 +89596,6 @@ ${currentIndent}`
       init_data_editor();
       init_feature_list();
       init_inspector();
-      init_keepRight_editor();
       init_osmose_editor();
       init_note_editor();
       init_localizer();
@@ -90413,7 +89620,7 @@ ${currentIndent}`
       context.enter(modeBrowse(context));
       context.history().clearSaved();
       context.flush();
-      select_default2(this).html(isLive ? _t.html("source_switch.live") : _t.html("source_switch.dev")).classed("live", isLive).classed("chip", isLive);
+      select_default2(this).classed("live", isLive).classed("chip", isLive).text("").call(isLive ? _t.append("source_switch.live") : _t.append("source_switch.dev"));
       osm.switch(isLive ? keys5[0] : keys5[1]);
     }
     var sourceSwitch = function(selection2) {
@@ -90517,14 +89724,14 @@ ${currentIndent}`
       let introModal = modalSelection.select(".content").append("div").attr("class", "fillL");
       introModal.append("div").attr("class", "modal-section").append("h3").call(_t.append("splash.welcome"));
       let modalSection = introModal.append("div").attr("class", "modal-section");
-      modalSection.append("p").html(_t.html("splash.text", {
+      modalSection.append("p").call(_t.addOrUpdate("splash.text", {
         version: context.version,
-        website: { html: '<a target="_blank" href="https://github.com/openstreetmap/iD/blob/develop/CHANGELOG.md#whats-new">' + _t.html("splash.changelog") + "</a>" },
-        github: { html: '<a target="_blank" href="https://github.com/openstreetmap/iD/issues">github.com</a>' }
+        website: (selection3) => selection3.append("a").attr("target", "_blank").attr("href", "https://github.com/openstreetmap/iD/blob/develop/CHANGELOG.md#whats-new").call(_t.addOrUpdate("splash.changelog")),
+        github: (selection3) => selection3.append("a").attr("target", "_blank").attr("href", "https://github.com/openstreetmap/iD/issues").text("github.com")
       }));
-      modalSection.append("p").html(_t.html("splash.privacy", {
+      modalSection.append("p").call(_t.addOrUpdate("splash.privacy", {
         updateMessage,
-        privacyLink: { html: '<a target="_blank" href="https://github.com/openstreetmap/iD/blob/release/PRIVACY.md">' + _t("splash.privacy_policy") + "</a>" }
+        privacyLink: (selection3) => selection3.append("a").attr("target", "_blank").attr("href", "https://github.com/openstreetmap/iD/blob/release/PRIVACY.md").call(_t.addOrUpdate("splash.privacy_policy"))
       }));
       uiSectionPrivacy(context).label(() => _t.append("splash.privacy_settings")).render(modalSection);
       let buttonWrap = introModal.append("div").attr("class", "modal-actions");
@@ -91463,8 +90670,8 @@ ${currentIndent}`
       var slidersEnter = containerEnter.selectAll(".display-control").data(_sliders).enter().append("label").attr("class", function(d2) {
         return "display-control display-control-" + d2;
       });
-      slidersEnter.html(function(d2) {
-        return _t.html("background." + d2);
+      slidersEnter.each(function(d2) {
+        select_default2(this).call(_t.append("background." + d2));
       }).append("span").attr("class", function(d2) {
         return "display-option-value display-option-value-" + d2;
       });
@@ -91526,7 +90733,7 @@ ${currentIndent}`
     uiSettingsCustomBackground: () => uiSettingsCustomBackground
   });
   function uiSettingsCustomBackground() {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     function render(selection2) {
       var _origSettings = {
         template: corePreferences("background-custom-template")
@@ -91576,10 +90783,10 @@ ${currentIndent}`
         corePreferences("background-custom-template", _currSettings.template);
         this.blur();
         modal.close();
-        dispatch12.call("change", this, _currSettings);
+        dispatch11.call("change", this, _currSettings);
       }
     }
-    return utilRebind(render, dispatch12, "on");
+    return utilRebind(render, dispatch11, "on");
   }
   var init_custom_background = __esm({
     "modules/ui/settings/custom_background.js"() {
@@ -92225,7 +91432,8 @@ ${currentIndent}`
         return all + hhh + helpHtml(subkey, helpPaneReplacements) + "\n\n";
       }, "");
       return {
-        title: _t.html(helpkey + ".title"),
+        title: _t.addOrUpdate(helpkey + ".title"),
+        _title: _t(helpkey + ".title"),
         content: g2(text.trim()).replace(/<code>/g, "<kbd>").replace(/<\/code>/g, "</kbd>")
       };
     });
@@ -92234,13 +91442,13 @@ ${currentIndent}`
       function clickHelp(d2, i3) {
         var rtl = _mainLocalizer.textDirection() === "rtl";
         content.property("scrollTop", 0);
-        helpPane.selection().select(".pane-heading h2").html(d2.title);
+        helpPane.selection().select(".pane-heading h2").call(d2.title);
         body.html(d2.content);
         body.selectAll("a").attr("target", "_blank");
         menuItems.classed("selected", function(m3) {
-          return m3.title === d2.title;
+          return m3._title === d2._title;
         });
-        nav.html("");
+        nav.text("");
         if (rtl) {
           nav.call(drawNext).call(drawPrevious);
         } else {
@@ -92252,7 +91460,7 @@ ${currentIndent}`
               d3_event.preventDefault();
               clickHelp(docs[i3 + 1], i3 + 1);
             });
-            nextLink.append("span").html(docs[i3 + 1].title).call(svgIcon(rtl ? "#iD-icon-backward" : "#iD-icon-forward", "inline"));
+            nextLink.append("span").call(docs[i3 + 1].title).call(svgIcon(rtl ? "#iD-icon-backward" : "#iD-icon-forward", "inline"));
           }
         }
         function drawPrevious(selection2) {
@@ -92261,7 +91469,7 @@ ${currentIndent}`
               d3_event.preventDefault();
               clickHelp(docs[i3 - 1], i3 - 1);
             });
-            prevLink.call(svgIcon(rtl ? "#iD-icon-forward" : "#iD-icon-backward", "inline")).append("span").html(docs[i3 - 1].title);
+            prevLink.call(svgIcon(rtl ? "#iD-icon-forward" : "#iD-icon-backward", "inline")).append("span").call(docs[i3 - 1].title);
           }
         }
       }
@@ -92276,8 +91484,8 @@ ${currentIndent}`
         context.container().call(context.ui().shortcuts, true);
       }
       var toc = content.append("ul").attr("class", "toc");
-      var menuItems = toc.selectAll("li").data(docs).enter().append("li").append("a").attr("role", "button").attr("href", "#").html(function(d2) {
-        return d2.title;
+      var menuItems = toc.selectAll("li").data(docs).enter().append("li").append("a").attr("role", "button").attr("href", "#").each(function(d2) {
+        select_default2(this).call(d2.title);
       }).on("click", function(d3_event, d2) {
         d3_event.preventDefault();
         clickHelp(d2, docs.indexOf(d2));
@@ -92299,6 +91507,7 @@ ${currentIndent}`
   var init_help = __esm({
     "modules/ui/panes/help.js"() {
       "use strict";
+      init_src6();
       init_marked_esm();
       init_icon();
       init_intro();
@@ -92319,7 +91528,7 @@ ${currentIndent}`
     var section = uiSection(id3, context).label(function() {
       if (!_issues) return "";
       var issueCountText = _issues.length > 1e3 ? "1000+" : String(_issues.length);
-      return _t.append("inspector.title_count", { title: _t("issues." + severity + "s.list_title"), count: issueCountText });
+      return _t.append("inspector.title_count", { title: _t.append("issues." + severity + "s.list_title"), count: issueCountText });
     }).disclosureContent(renderDisclosureContent).shouldDisplay(function() {
       return _issues && _issues.length;
     });
@@ -92426,8 +91635,8 @@ ${currentIndent}`
       var optionsEnter = options.enter().append("div").attr("class", function(d2) {
         return "issues-option issues-option-" + d2.key;
       });
-      optionsEnter.append("div").attr("class", "issues-option-title").html(function(d2) {
-        return _t.html("issues.options." + d2.key + ".title");
+      optionsEnter.append("div").attr("class", "issues-option-title").each(function(d2) {
+        select_default2(this).call(_t.append("issues.options." + d2.key + ".title"));
       });
       var valuesEnter = optionsEnter.selectAll("label").data(function(d2) {
         return d2.values.map(function(val) {
@@ -92443,8 +91652,8 @@ ${currentIndent}`
       }).on("change", function(d3_event, d2) {
         updateOptionValue(d3_event, d2.key, d2.value);
       });
-      valuesEnter.append("span").html(function(d2) {
-        return _t.html("issues.options." + d2.key + "." + d2.value);
+      valuesEnter.append("span").each(function(d2) {
+        select_default2(this).call(_t.append("issues.options." + d2.key + "." + d2.value));
       });
     }
     function getOptions() {
@@ -92467,6 +91676,7 @@ ${currentIndent}`
   var init_validation_options = __esm({
     "modules/ui/sections/validation_options.js"() {
       "use strict";
+      init_src6();
       init_preferences();
       init_localizer();
       init_section();
@@ -92517,12 +91727,12 @@ ${currentIndent}`
       }
       var label = enter.append("label");
       label.append("input").attr("type", type2).attr("name", name).on("change", change);
-      label.append("span").html(function(d2) {
+      label.append("span").each(function(d2) {
         var params = {};
         if (d2 === "unsquare_way") {
-          params.val = { html: '<span class="square-degrees"></span>' };
+          params.val = (selection3) => selection3.append("span").classed("square-degrees", true);
         }
-        return _t.html("issues." + d2 + ".title", params);
+        select_default2(this).call(_t.append("issues." + d2 + ".title", params));
       });
       items = items.merge(enter);
       items.classed("active", active).selectAll("input").property("checked", active).property("indeterminate", false);
@@ -92617,7 +91827,7 @@ ${currentIndent}`
       var resetIgnoredEnter = resetIgnored.enter().append("div").attr("class", "reset-ignored section-footer");
       resetIgnoredEnter.append("a").attr("href", "#");
       resetIgnored = resetIgnored.merge(resetIgnoredEnter);
-      resetIgnored.select("a").html(_t.html("inspector.title_count", { title: { html: _t.html("issues.reset_ignored") }, count: ignoredIssues.length }));
+      resetIgnored.select("a").call(_t.addOrUpdate("inspector.title_count", { title: _t.append("issues.reset_ignored"), count: ignoredIssues.length }));
       resetIgnored.on("click", function(d3_event) {
         d3_event.preventDefault();
         context.validator().resetIgnoredIssues();
@@ -92735,7 +91945,7 @@ ${currentIndent}`
     uiSettingsCustomData: () => uiSettingsCustomData
   });
   function uiSettingsCustomData(context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     function render(selection2) {
       var dataLayer = context.layers().layer("data");
       var _origSettings = {
@@ -92788,10 +91998,10 @@ ${currentIndent}`
         corePreferences("settings-custom-data-url", _currSettings.url);
         this.blur();
         modal.close();
-        dispatch12.call("change", this, _currSettings);
+        dispatch11.call("change", this, _currSettings);
       }
     }
-    return utilRebind(render, dispatch12, "on");
+    return utilRebind(render, dispatch11, "on");
   }
   var init_custom_data = __esm({
     "modules/ui/settings/custom_data.js"() {
@@ -92864,8 +92074,8 @@ ${currentIndent}`
       labelEnter.append("input").attr("type", "checkbox").on("change", function(d3_event, d2) {
         toggleLayer(d2.id);
       });
-      labelEnter.append("span").html(function(d2) {
-        return _t.html("map_data.layers." + d2.id + ".title");
+      labelEnter.append("span").each(function(d2) {
+        select_default2(this).call(_t.append("map_data.layers." + d2.id + ".title"));
       });
       li.merge(liEnter).classed("active", function(d2) {
         return d2.layer.enabled();
@@ -93091,8 +92301,8 @@ ${currentIndent}`
       );
       var label = enter.append("label");
       label.append("input").attr("type", type2).attr("name", name).on("change", change);
-      label.append("span").html(function(d2) {
-        return _t.html(name + "." + d2 + ".description");
+      label.append("span").each(function(d2) {
+        select_default2(this).call(_t.append(name + "." + d2 + ".description"));
       });
       items = items.merge(enter);
       items.classed("active", active).selectAll("input").property("checked", active).property("indeterminate", autoHiddenFeature);
@@ -93116,6 +92326,7 @@ ${currentIndent}`
   var init_map_features = __esm({
     "modules/ui/sections/map_features.js"() {
       "use strict";
+      init_src6();
       init_localizer();
       init_tooltip();
       init_section();
@@ -93151,8 +92362,8 @@ ${currentIndent}`
       );
       var label = enter.append("label");
       label.append("input").attr("type", type2).attr("name", name).on("change", change);
-      label.append("span").html(function(d2) {
-        return _t.html(name + "." + d2 + ".description");
+      label.append("span").each(function(d2) {
+        select_default2(this).call(_t.append(name + "." + d2 + ".description"));
       });
       items = items.merge(enter);
       items.classed("active", active).selectAll("input").property("checked", active).property("indeterminate", false);
@@ -93173,6 +92384,7 @@ ${currentIndent}`
   var init_map_style_options = __esm({
     "modules/ui/sections/map_style_options.js"() {
       "use strict";
+      init_src6();
       init_localizer();
       init_tooltip();
       init_section();
@@ -93185,7 +92397,7 @@ ${currentIndent}`
     uiSettingsLocalPhotos: () => uiSettingsLocalPhotos
   });
   function uiSettingsLocalPhotos(context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var photoLayer = context.layers().layer("local-photos");
     var modal;
     function render(selection2) {
@@ -93199,7 +92411,7 @@ ${currentIndent}`
         var files = d3_event.target.files;
         if (files && files.length) {
           photoList.select("ul").append("li").classed("placeholder", true).append("div");
-          dispatch12.call("change", this, files);
+          dispatch11.call("change", this, files);
         }
         d3_event.target.value = null;
       });
@@ -93237,7 +92449,7 @@ ${currentIndent}`
         updatePhotoList(container);
       });
     }
-    return utilRebind(render, dispatch12, "on");
+    return utilRebind(render, dispatch11, "on");
   }
   var init_local_photos2 = __esm({
     "modules/ui/settings/local_photos.js"() {
@@ -93321,10 +92533,10 @@ ${currentIndent}`
       labelEnter.append("input").attr("type", "checkbox").on("change", function(d3_event, d2) {
         toggleLayer(d2.id);
       });
-      labelEnter.append("span").html(function(d2) {
+      labelEnter.append("span").each(function(d2) {
         var id3 = d2.id;
         if (id3 === "mapillary-signs") id3 = "photo_overlays.traffic_signs";
-        return _t.html(id3.replace(/-/g, "_") + ".title");
+        select_default2(this).call(_t.append(id3.replace(/-/g, "_") + ".title"));
       });
       li.merge(liEnter).classed("active", layerEnabled).selectAll("input").property("disabled", (d2) => !layerRendered(d2)).property("checked", layerEnabled);
     }
@@ -93349,8 +92561,8 @@ ${currentIndent}`
       labelEnter.append("input").attr("type", "checkbox").on("change", function(d3_event, d2) {
         context.photos().togglePhotoType(d2, true);
       });
-      labelEnter.append("span").html(function(d2) {
-        return _t.html("photo_overlays.photo_type." + d2 + ".title");
+      labelEnter.append("span").each(function(d2) {
+        select_default2(this).call(_t.append("photo_overlays.photo_type." + d2 + ".title"));
       });
       li.merge(liEnter).classed("active", typeEnabled).selectAll("input").property("checked", typeEnabled);
     }
@@ -93865,7 +93077,7 @@ ${currentIndent}`
         context.container().call(ui.shortcuts);
       }
       var osm = context.connection();
-      var auth = uiLoading(context).message(_t.html("loading_auth")).blocking(true);
+      var auth = uiLoading(context).message(_t.addOrUpdate("loading_auth")).blocking(true);
       if (osm && auth) {
         osm.on("authLoading.ui", function() {
           context.container().call(auth);
@@ -93997,7 +93209,7 @@ ${currentIndent}`
     };
     var _saveLoading = select_default2(null);
     context.uploader().on("saveStarted.ui", function() {
-      _saveLoading = uiLoading(context).message(_t.html("save.uploading")).blocking(true);
+      _saveLoading = uiLoading(context).message(_t.addOrUpdate("save.uploading")).blocking(true);
       context.container().call(_saveLoading);
     }).on("saveEnded.ui", function() {
       _saveLoading.close();
@@ -94186,7 +93398,7 @@ ${currentIndent}`
   __export(source_subfield_exports, {
     uiSourceSubfield: () => uiSourceSubfield
   });
-  function uiSourceSubfield(context, field, tags, dispatch12) {
+  function uiSourceSubfield(context, field, tags, dispatch11) {
     var sourceSubfield = {};
     let sourceInput = select_default2(null);
     let sourceKey = field.key + ":source";
@@ -94206,7 +93418,7 @@ ${currentIndent}`
           _sourceValue = void 0;
           let t4 = {};
           t4[sourceKey] = void 0;
-          dispatch12.call("change", this, t4);
+          dispatch11.call("change", this, t4);
           renderSourceInput(selection2);
         }).call(svgIcon("#iD-operation-delete"));
         wrap3.append("input").attr("type", "text").attr("class", "field-source-value").on("blur", changeSourceValue).on("change", changeSourceValue);
@@ -94233,7 +93445,7 @@ ${currentIndent}`
       let t4 = {};
       t4[sourceKey] = value;
       if (d2.value !== void 0) d2.value = value;
-      dispatch12.call("change", this, t4);
+      dispatch11.call("change", this, t4);
     }
     function addSource(d3_event) {
       d3_event.preventDefault();
@@ -94362,7 +93574,7 @@ ${currentIndent}`
   });
   function uiSuccess(context) {
     const MAXEVENTS = 2;
-    const dispatch12 = dispatch_default("cancel");
+    const dispatch11 = dispatch_default("cancel");
     let _changeset2;
     let _location;
     ensureOSMCommunityIndex();
@@ -94433,7 +93645,7 @@ ${currentIndent}`
     function success(selection2) {
       let header = selection2.append("div").attr("class", "header fillL");
       header.append("h2").call(_t.append("success.just_edited"));
-      header.append("button").attr("class", "close").attr("title", _t("icons.close")).on("click", () => dispatch12.call("cancel")).call(svgIcon("#iD-icon-close"));
+      header.append("button").attr("class", "close").attr("title", _t("icons.close")).on("click", () => dispatch11.call("cancel")).call(svgIcon("#iD-icon-close"));
       let body = selection2.append("div").attr("class", "body save-success fillL");
       let summary = body.append("div").attr("class", "save-summary");
       summary.append("h3").call(_t.append("success.thank_you" + (_location ? "_location" : ""), { where: _location }));
@@ -94446,8 +93658,8 @@ ${currentIndent}`
       row.append("td").attr("class", "cell-icon summary-icon").append("a").attr("target", "_blank").attr("href", changesetURL).append("svg").attr("class", "logo-small").append("use").attr("xlink:href", "#iD-logo-osm");
       let summaryDetail = row.append("td").attr("class", "cell-detail summary-detail");
       summaryDetail.append("a").attr("class", "cell-detail summary-view-on-osm").attr("target", "_blank").attr("href", changesetURL).call(_t.append("success.view_on_osm"));
-      summaryDetail.append("div").html(_t.html("success.changeset_id", {
-        changeset_id: { html: `<a href="${changesetURL}" target="_blank">${_changeset2.id}</a>` }
+      summaryDetail.append("div").call(_t.addOrUpdate("success.changeset_id", {
+        changeset_id: (selection3) => selection3.append("a").attr("target", "_blank").attr("href", changesetURL).text(_changeset2.id)
       }));
       if (showDonationMessage !== false) {
         const donationUrl = "https://openstreetmap.app.neoncrm.com/forms/ohm";
@@ -94516,7 +93728,7 @@ ${currentIndent}`
       }).slice(0, MAXEVENTS);
       if (nextEvents.length) {
         selection2.append("div").call(
-          uiDisclosure(context, `community-events-${d2.id}`, false).expanded(false).updatePreference(false).label(_t.html("success.events")).content(showNextEvents)
+          uiDisclosure(context, `community-events-${d2.id}`, false).expanded(false).updatePreference(false).label(_t.append("success.events")).content(showNextEvents)
         ).select(".hide-toggle").append("span").attr("class", "badge-text").text(nextEvents.length);
       }
       function showMore(selection3) {
@@ -94575,7 +93787,7 @@ ${currentIndent}`
       _location = val;
       return success;
     };
-    return utilRebind(success, dispatch12, "on");
+    return utilRebind(success, dispatch11, "on");
   }
   var _oci;
   var init_success = __esm({
@@ -94626,9 +93838,6 @@ ${currentIndent}`
     uiInit: () => uiInit,
     uiInspector: () => uiInspector,
     uiIssuesInfo: () => uiIssuesInfo,
-    uiKeepRightDetails: () => uiKeepRightDetails,
-    uiKeepRightEditor: () => uiKeepRightEditor,
-    uiKeepRightHeader: () => uiKeepRightHeader,
     uiLasso: () => uiLasso,
     uiLengthIndicator: () => uiLengthIndicator,
     uiLoading: () => uiLoading,
@@ -94655,7 +93864,6 @@ ${currentIndent}`
     uiToggle: () => uiToggle,
     uiTooltip: () => uiTooltip,
     uiVersion: () => uiVersion,
-    uiViewOnKeepRight: () => uiViewOnKeepRight,
     uiViewOnOSM: () => uiViewOnOSM,
     uiZoom: () => uiZoom
   });
@@ -94690,9 +93898,6 @@ ${currentIndent}`
       init_info();
       init_inspector();
       init_issues_info();
-      init_keepRight_details();
-      init_keepRight_editor();
-      init_keepRight_header();
       init_length_indicator();
       init_lasso();
       init_loading();
@@ -94720,7 +93925,6 @@ ${currentIndent}`
       init_tooltip();
       init_version();
       init_view_on_osm();
-      init_view_on_keepRight();
       init_zoom3();
     }
   });
@@ -94739,7 +93943,7 @@ ${currentIndent}`
     uiFieldUrl: () => uiFieldText
   });
   function uiFieldText(field, context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var input = select_default2(null);
     var outlinkButton = select_default2(null);
     var wrap3 = select_default2(null);
@@ -95014,7 +94218,7 @@ ${currentIndent}`
         if (!onInput) utilGetSetValue(input, displayVal);
         t4[field.key] = val || void 0;
         if (field.keys) {
-          dispatch12.call("change", this, (tags) => {
+          dispatch11.call("change", this, (tags) => {
             if (field.keys.some((key) => tags[key])) {
               field.keys.filter((key) => tags[key]).forEach((key) => {
                 tags[key] = val || void 0;
@@ -95025,7 +94229,7 @@ ${currentIndent}`
             return tags;
           }, onInput);
         } else {
-          dispatch12.call("change", this, t4, onInput);
+          dispatch11.call("change", this, t4, onInput);
         }
       };
     }
@@ -95094,7 +94298,7 @@ ${currentIndent}`
     function combinedEntityExtent() {
       return _entityIDs && _entityIDs.length && utilTotalExtent(_entityIDs, context.graph());
     }
-    return utilRebind(i3, dispatch12, "on");
+    return utilRebind(i3, dispatch11, "on");
   }
   var likelyRawNumberFormat, yoHoursURLFormat;
   var init_input = __esm({
@@ -95125,7 +94329,7 @@ ${currentIndent}`
     uiFieldAccess: () => uiFieldAccess
   });
   function uiFieldAccess(field, context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var items = select_default2(null);
     var _tags;
     function access(selection2) {
@@ -95139,8 +94343,10 @@ ${currentIndent}`
       });
       enter.append("div").attr("class", "label preset-label-access").attr("for", function(d2) {
         return "preset-input-access-" + d2;
-      }).html(function(d2) {
-        return field.t.html("types." + d2);
+      }).each(function(d2) {
+        select_default2(this).call(
+          field.t.append("types." + d2)
+        );
       });
       enter.append("div").attr("class", "preset-input-access-wrap").append("input").attr("type", "text").attr("class", function(d2) {
         return "preset-input-access preset-input-access-" + d2;
@@ -95157,7 +94363,7 @@ ${currentIndent}`
       var value = context.cleanTagValue(utilGetSetValue(select_default2(this)));
       if (!value && typeof _tags[d2] !== "string") return;
       tag[d2] = value || void 0;
-      dispatch12.call("change", this, tag);
+      dispatch11.call("change", this, tag);
     }
     access.options = function(type2) {
       var options = [
@@ -95407,7 +94613,7 @@ ${currentIndent}`
     access.focus = function() {
       items.selectAll(".preset-input-access").node().focus();
     };
-    return utilRebind(access, dispatch12, "on");
+    return utilRebind(access, dispatch11, "on");
   }
   var init_access = __esm({
     "modules/ui/fields/access.js"() {
@@ -95426,7 +94632,7 @@ ${currentIndent}`
     uiFieldAddress: () => uiFieldAddress
   });
   function uiFieldAddress(field, context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var _selection = select_default2(null);
     var _wrap = select_default2(null);
     var addrField = _mainPresetIndex.field("address");
@@ -95714,7 +94920,7 @@ ${currentIndent}`
           tags[key] = value || void 0;
         });
         Object.keys(tags).filter((k3) => tags[k3]).forEach((k3) => _tags[k3] = tags[k3]);
-        dispatch12.call("change", this, tags, onInput);
+        dispatch11.call("change", this, tags, onInput);
       };
     }
     function updatePlaceholder(inputSelection) {
@@ -95775,7 +94981,7 @@ ${currentIndent}`
       var node = _wrap.selectAll("input").node();
       if (node) node.focus();
     };
-    return utilRebind(address, dispatch12, "on");
+    return utilRebind(address, dispatch11, "on");
   }
   var init_address = __esm({
     "modules/ui/fields/address.js"() {
@@ -95798,7 +95004,7 @@ ${currentIndent}`
     uiFieldDate: () => uiFieldDate
   });
   function uiFieldDate(field, context) {
-    let dispatch12 = dispatch_default("change");
+    let dispatch11 = dispatch_default("change");
     let yearInput = select_default2(null);
     let eraInput = select_default2(null);
     let monthInput = select_default2(null);
@@ -95955,7 +95161,7 @@ ${currentIndent}`
         }
         tag[field.key] = value;
       }
-      dispatch12.call("change", this, tag);
+      dispatch11.call("change", this, tag);
     }
     function changeEDTFValue(d3_event, d2) {
       let value = context.cleanTagValue(utilGetSetValue(select_default2(this))) || void 0;
@@ -95963,7 +95169,7 @@ ${currentIndent}`
       let t4 = {};
       t4[edtfKey] = value;
       if (d2.value !== void 0) d2.value = value;
-      dispatch12.call("change", this, t4);
+      dispatch11.call("change", this, t4);
     }
     function renderEDTF(selection2) {
       let entries2 = selection2.selectAll("div.entry").data(typeof _edtfValue === "string" || Array.isArray(_edtfValue) ? [_edtfValue] : []);
@@ -95982,7 +95188,7 @@ ${currentIndent}`
             delete _tags[edtfKey];
             let t4 = {};
             t4[edtfKey] = void 0;
-            dispatch12.call("change", this, t4);
+            dispatch11.call("change", this, t4);
             return;
           }
           renderEDTF(selection2);
@@ -96047,7 +95253,7 @@ ${currentIndent}`
       _edtfValue = void 0;
       return date2;
     };
-    return utilRebind(date2, dispatch12, "on");
+    return utilRebind(date2, dispatch11, "on");
   }
   var init_date4 = __esm({
     "modules/ui/fields/date.js"() {
@@ -96068,7 +95274,7 @@ ${currentIndent}`
     uiFieldDirectionalCombo: () => uiFieldDirectionalCombo
   });
   function uiFieldDirectionalCombo(field, context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var items = select_default2(null);
     var wrap3 = select_default2(null);
     const _combos = {};
@@ -96093,8 +95299,8 @@ ${currentIndent}`
       });
       enter.append("div").attr("class", "label preset-label-directionalcombo").attr("for", function(d2) {
         return "preset-input-directionalcombo-" + stripcolon(d2);
-      }).html(function(d2) {
-        return field.t.html("types." + d2);
+      }).each(function(d2) {
+        select_default2(this).call(field.t.append("types." + d2));
       });
       enter.append("div").attr("class", "preset-input-directionalcombo-wrap form-field-input-wrap").each(function(key) {
         const subField = {
@@ -96115,7 +95321,7 @@ ${currentIndent}`
       const otherCommonKey = field.key.includes(":both") ? field.key.replace(/:both(:|$)/, "$1") : `${field.key}:both`;
       const fallbackKey = commonKey.includes(":both") ? otherCommonKey : commonKey;
       const otherKey = key === field.keys[0] ? field.keys[1] : field.keys[0];
-      dispatch12.call("change", this, (tags) => {
+      dispatch11.call("change", this, (tags) => {
         let otherValue = tags[otherKey] || tags[commonKey] || tags[otherCommonKey];
         if (tags[fallbackKey] === "both" && !tags[otherKey]) {
           otherValue = "yes";
@@ -96189,7 +95395,7 @@ ${currentIndent}`
       var node = wrap3.selectAll("input").node();
       if (node) node.focus();
     };
-    return utilRebind(directionalCombo, dispatch12, "on");
+    return utilRebind(directionalCombo, dispatch11, "on");
   }
   var init_directional_combo = __esm({
     "modules/ui/fields/directional_combo.js"() {
@@ -96207,7 +95413,7 @@ ${currentIndent}`
     uiFieldLanes: () => uiFieldLanes
   });
   function uiFieldLanes(field, context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var LANE_WIDTH = 40;
     var LANE_HEIGHT = 200;
     var _entityIDs = [];
@@ -96258,7 +95464,7 @@ ${currentIndent}`
     };
     lanes.off = function() {
     };
-    return utilRebind(lanes, dispatch12, "on");
+    return utilRebind(lanes, dispatch11, "on");
   }
   var init_lanes2 = __esm({
     "modules/ui/fields/lanes.js"() {
@@ -96277,7 +95483,7 @@ ${currentIndent}`
     uiFieldLocalized: () => uiFieldLocalized
   });
   function uiFieldLocalized(field, context) {
-    var dispatch12 = dispatch_default("change", "input");
+    var dispatch11 = dispatch_default("change", "input");
     var input = select_default2(null);
     var localizedInputs = select_default2(null);
     var _lengthIndicator = uiLengthIndicator(context.maxCharsForTagValue());
@@ -96414,7 +95620,7 @@ ${currentIndent}`
           if (!val && Array.isArray(_tags[field.key])) return;
           var t4 = {};
           t4[field.key] = val || void 0;
-          dispatch12.call("change", this, t4, onInput);
+          dispatch11.call("change", this, t4, onInput);
         };
       }
     }
@@ -96437,7 +95643,7 @@ ${currentIndent}`
         tags[newKey] = value;
       }
       d2.lang = lang;
-      dispatch12.call("change", this, tags);
+      dispatch11.call("change", this, tags);
     }
     function changeValue(d3_event, d2) {
       if (!d2.lang) return;
@@ -96446,7 +95652,7 @@ ${currentIndent}`
       var t4 = {};
       t4[key(d2.lang)] = value;
       d2.value = value;
-      dispatch12.call("change", this, t4);
+      dispatch11.call("change", this, t4);
     }
     function fetchLanguages(value, cb) {
       var v3 = value.toLowerCase();
@@ -96489,7 +95695,7 @@ ${currentIndent}`
             delete _tags[langKey];
             var t4 = {};
             t4[langKey] = void 0;
-            dispatch12.call("change", this, t4);
+            dispatch11.call("change", this, t4);
             return;
           }
           renderMultilingual(selection2);
@@ -96550,7 +95756,7 @@ ${currentIndent}`
     function combinedEntityExtent() {
       return _entityIDs && _entityIDs.length && utilTotalExtent(_entityIDs, context.graph());
     }
-    return utilRebind(localized, dispatch12, "on");
+    return utilRebind(localized, dispatch11, "on");
   }
   var _languagesArray, LANGUAGE_SUFFIX_REGEX;
   var init_localized = __esm({
@@ -96578,7 +95784,7 @@ ${currentIndent}`
     uiFieldRoadheight: () => uiFieldRoadheight
   });
   function uiFieldRoadheight(field, context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var primaryUnitInput = select_default2(null);
     var primaryInput = select_default2(null);
     var secondaryInput = select_default2(null);
@@ -96654,7 +95860,7 @@ ${currentIndent}`
           tag[field.key] = context.cleanTagValue(rawPrimaryValue + rawSecondaryValue);
         }
       }
-      dispatch12.call("change", this, tag);
+      dispatch11.call("change", this, tag);
     }
     roadheight.tags = function(tags) {
       _tags = tags;
@@ -96698,7 +95904,7 @@ ${currentIndent}`
     function combinedEntityExtent() {
       return _entityIDs && _entityIDs.length && utilTotalExtent(_entityIDs, context.graph());
     }
-    return utilRebind(roadheight, dispatch12, "on");
+    return utilRebind(roadheight, dispatch11, "on");
   }
   var init_roadheight = __esm({
     "modules/ui/fields/roadheight.js"() {
@@ -96719,7 +95925,7 @@ ${currentIndent}`
     uiFieldRoadspeed: () => uiFieldRoadspeed
   });
   function uiFieldRoadspeed(field, context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var unitInput = select_default2(null);
     var input = select_default2(null);
     var _entityIDs = [];
@@ -96779,7 +95985,7 @@ ${currentIndent}`
           tag[field.key] = context.cleanTagValue(rawValue + " mph");
         }
       }
-      dispatch12.call("change", this, tag);
+      dispatch11.call("change", this, tag);
     }
     roadspeed.tags = function(tags) {
       _tags = tags;
@@ -96811,7 +96017,7 @@ ${currentIndent}`
     function combinedEntityExtent() {
       return _entityIDs && _entityIDs.length && utilTotalExtent(_entityIDs, context.graph());
     }
-    return utilRebind(roadspeed, dispatch12, "on");
+    return utilRebind(roadspeed, dispatch11, "on");
   }
   var init_roadspeed = __esm({
     "modules/ui/fields/roadspeed.js"() {
@@ -96833,7 +96039,7 @@ ${currentIndent}`
     uiFieldStructureRadio: () => uiFieldRadio
   });
   function uiFieldRadio(field, context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var placeholder = select_default2(null);
     var wrap3 = select_default2(null);
     var labels = select_default2(null);
@@ -96938,10 +96144,10 @@ ${currentIndent}`
           }
         }
       }
-      dispatch12.call("change", this, t4, onInput);
+      dispatch11.call("change", this, t4, onInput);
     }
     function changeLayer(t4, onInput) {
-      dispatch12.call("change", this, t4, onInput);
+      dispatch11.call("change", this, t4, onInput);
     }
     function changeRadio() {
       var t4 = {};
@@ -96970,7 +96176,7 @@ ${currentIndent}`
           t4.layer = void 0;
         }
       }
-      dispatch12.call("change", this, t4);
+      dispatch11.call("change", this, t4);
     }
     radio.tags = function(tags) {
       _tags = tags;
@@ -97029,7 +96235,7 @@ ${currentIndent}`
     radio.isAllowed = function() {
       return _entityIDs.length === 1;
     };
-    return utilRebind(radio, dispatch12, "on");
+    return utilRebind(radio, dispatch11, "on");
   }
   var init_radio = __esm({
     "modules/ui/fields/radio.js"() {
@@ -97049,7 +96255,7 @@ ${currentIndent}`
     uiFieldRestrictions: () => uiFieldRestrictions
   });
   function uiFieldRestrictions(field, context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var breathe = behaviorBreathe(context);
     corePreferences("turn-restriction-via-way", null);
     var storedViaWay = corePreferences("turn-restriction-via-way0");
@@ -97287,7 +96493,7 @@ ${currentIndent}`
         var help = _container.selectAll(".restriction-help").html("");
         var placeholders = {};
         ["from", "via", "to"].forEach(function(k3) {
-          placeholders[k3] = { html: '<span class="qualifier">' + _t("restriction.help." + k3) + "</span>" };
+          placeholders[k3] = (selection3) => selection3.append("span").classed("qualifier", true).call(_t.append("restriction.help." + k3));
         });
         var entity = datum2 && datum2.properties && datum2.properties.entity;
         if (entity) {
@@ -97302,30 +96508,30 @@ ${currentIndent}`
           highlightPathsFrom(_fromWayID ? null : way.id);
           surface.selectAll("." + way.id).classed("related", true);
           var clickSelect = !_fromWayID || _fromWayID !== way.id;
-          help.append("div").html(_t.html("restriction.help." + (clickSelect ? "select_from_name" : "from_name"), {
+          help.append("div").call(_t.append("restriction.help." + (clickSelect ? "select_from_name" : "from_name"), {
             from: placeholders.from,
             fromName: displayName(way.id, vgraph)
           }));
         } else if (datum2 instanceof osmTurn) {
           var restrictionType = osmInferRestriction(vgraph, datum2, projection2);
           var turnType = restrictionType.replace(/^(only|no)\_/, "");
-          var indirect = datum2.direct === false ? _t.html("restriction.help.indirect") : "";
+          var indirect = datum2.direct === false ? _t.append("restriction.help.indirect") : "";
           var klass, turnText, nextText;
           if (datum2.no) {
             klass = "restrict";
-            turnText = _t.html("restriction.help.turn.no_" + turnType, { indirect: { html: indirect } });
-            nextText = _t.html("restriction.help.turn.only_" + turnType, { indirect: "" });
+            turnText = _t.append("restriction.help.turn.no_" + turnType, { indirect, _trim: true });
+            nextText = _t.append("restriction.help.turn.only_" + turnType, { indirect: "", _trim: true });
           } else if (datum2.only) {
             klass = "only";
-            turnText = _t.html("restriction.help.turn.only_" + turnType, { indirect: { html: indirect } });
-            nextText = _t.html("restriction.help.turn.allowed_" + turnType, { indirect: "" });
+            turnText = _t.append("restriction.help.turn.only_" + turnType, { indirect, _trim: true });
+            nextText = _t.append("restriction.help.turn.allowed_" + turnType, { indirect: "", _trim: true });
           } else {
             klass = "allow";
-            turnText = _t.html("restriction.help.turn.allowed_" + turnType, { indirect: { html: indirect } });
-            nextText = _t.html("restriction.help.turn.no_" + turnType, { indirect: "" });
+            turnText = _t.append("restriction.help.turn.allowed_" + turnType, { indirect, _trim: true });
+            nextText = _t.append("restriction.help.turn.no_" + turnType, { indirect: "", _trim: true });
           }
-          help.append("div").attr("class", "qualifier " + klass).html(turnText);
-          help.append("div").html(_t.html("restriction.help.from_name_to_name", {
+          help.append("div").classed("qualifier", true).classed(klass, true).call(turnText);
+          help.append("div").call(_t.append("restriction.help.from_name_to_name", {
             from: placeholders.from,
             fromName: displayName(datum2.from.way, vgraph),
             to: placeholders.to,
@@ -97340,13 +96546,13 @@ ${currentIndent}`
                 names.push(curr);
               }
             }
-            help.append("div").html(_t.html("restriction.help.via_names", {
+            help.append("div").call(_t.append("restriction.help.via_names", {
               via: placeholders.via,
               viaNames: names.join(", ")
             }));
           }
           if (!indirect) {
-            help.append("div").html(_t.html("restriction.help.toggle", { turn: { html: nextText.trim() } }));
+            help.append("div").call(_t.append("restriction.help.toggle", { turn: nextText }));
           }
           highlightPathsFrom(null);
           var alongIDs = datum2.path.slice();
@@ -97354,12 +96560,12 @@ ${currentIndent}`
         } else {
           highlightPathsFrom(null);
           if (_fromWayID) {
-            help.append("div").html(_t.html("restriction.help.from_name", {
+            help.append("div").call(_t.append("restriction.help.from_name", {
               from: placeholders.from,
               fromName: displayName(_fromWayID, vgraph)
             }));
           } else {
-            help.append("div").html(_t.html("restriction.help.select_from", {
+            help.append("div").call(_t.append("restriction.help.select_from", {
               from: placeholders.from
             }));
           }
@@ -97416,7 +96622,7 @@ ${currentIndent}`
       selection2.selectAll(".surface").call(breathe.off).on("click.restrictions", null).on("mouseover.restrictions", null);
       select_default2(window).on("resize.restrictions", null);
     };
-    return utilRebind(restrictions, dispatch12, "on");
+    return utilRebind(restrictions, dispatch11, "on");
   }
   var init_restrictions = __esm({
     "modules/ui/fields/restrictions.js"() {
@@ -97444,7 +96650,7 @@ ${currentIndent}`
     uiFieldTextarea: () => uiFieldTextarea
   });
   function uiFieldTextarea(field, context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var input = select_default2(null);
     var _lengthIndicator = uiLengthIndicator(context.maxCharsForTagValue()).silent(field.usage === "changeset" && field.key === "comment");
     var _tags;
@@ -97461,7 +96667,7 @@ ${currentIndent}`
           if (!val && Array.isArray(_tags[field.key])) return;
           var t4 = {};
           t4[field.key] = val || void 0;
-          dispatch12.call("change", this, t4, onInput);
+          dispatch11.call("change", this, t4, onInput);
         };
       }
     }
@@ -97476,7 +96682,7 @@ ${currentIndent}`
     textarea.focus = function() {
       input.node().focus();
     };
-    return utilRebind(textarea, dispatch12, "on");
+    return utilRebind(textarea, dispatch11, "on");
   }
   var init_textarea = __esm({
     "modules/ui/fields/textarea.js"() {
@@ -97496,7 +96702,7 @@ ${currentIndent}`
   });
   function uiFieldWikidata(field, context) {
     var wikidata = services.wikidata;
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var _selection = select_default2(null);
     var _searchInput = select_default2(null);
     var _qid = null;
@@ -97541,8 +96747,8 @@ ${currentIndent}`
       var enter = items.enter().append("li").attr("class", function(d2) {
         return "labeled-input preset-wikidata-" + d2;
       });
-      enter.append("div").attr("class", "label").html(function(d2) {
-        return _t.html("wikidata." + d2);
+      enter.append("div").attr("class", "label").each(function(d2) {
+        select_default2(this).call(_t.addOrUpdate("wikidata." + d2));
       });
       enter.append("input").attr("type", "text").attr("dir", "auto").call(utilNoAuto).classed("disabled", "true").attr("readonly", "true");
       enter.append("button").attr("class", "form-field-button").attr("title", _t("icons.copy")).call(svgIcon("#iD-operation-copy")).on("click", function(d3_event) {
@@ -97581,7 +96787,7 @@ ${currentIndent}`
     function change() {
       var syncTags = {};
       syncTags[field.key] = _qid;
-      dispatch12.call("change", this, syncTags);
+      dispatch11.call("change", this, syncTags);
       var initGraph = context.graph();
       var initEntityIDs = _entityIDs;
       wikidata.entityByQID(_qid, function(err, entity) {
@@ -97723,7 +96929,7 @@ ${currentIndent}`
     wiki.focus = function() {
       _searchInput.node().focus();
     };
-    return utilRebind(wiki, dispatch12, "on");
+    return utilRebind(wiki, dispatch11, "on");
   }
   var init_wikidata2 = __esm({
     "modules/ui/fields/wikidata.js"() {
@@ -97747,7 +96953,7 @@ ${currentIndent}`
   function uiFieldWikipedia(field, context) {
     const scheme = "https://";
     const domain = "wikipedia.org";
-    const dispatch12 = dispatch_default("change");
+    const dispatch11 = dispatch_default("change");
     const wikipedia = services.wikipedia;
     const wikidata = services.wikidata;
     let _langInput = select_default2(null);
@@ -97851,7 +97057,7 @@ ${currentIndent}`
       } else {
         syncTags.wikipedia = void 0;
       }
-      dispatch12.call("change", this, syncTags);
+      dispatch11.call("change", this, syncTags);
       if (skipWikidata || !value || !language()[2]) return;
       const initGraph = context.graph();
       const initEntityIDs = _entityIDs;
@@ -97933,7 +97139,7 @@ ${currentIndent}`
     wiki.focus = () => {
       _titleInput.node().focus();
     };
-    return utilRebind(wiki, dispatch12, "on");
+    return utilRebind(wiki, dispatch11, "on");
   }
   var init_wikipedia2 = __esm({
     "modules/ui/fields/wikipedia.js"() {
@@ -97957,7 +97163,7 @@ ${currentIndent}`
     uiFieldSources: () => uiFieldSources
   });
   function uiFieldSources(field, context) {
-    let dispatch12 = dispatch_default("change");
+    let dispatch11 = dispatch_default("change");
     let items = select_default2(null);
     let _tags = {};
     let _selection = select_default2(null);
@@ -97967,7 +97173,7 @@ ${currentIndent}`
     const possibleSourceSubkeys = [{ key: "name" }, { key: "url" }, { key: "date" }];
     function scheduleChange() {
       if (!_pendingChange) return;
-      dispatch12.call("change", this, _pendingChange);
+      dispatch11.call("change", this, _pendingChange);
       _pendingChange = null;
       _selection.call(sources);
     }
@@ -98020,7 +97226,7 @@ ${currentIndent}`
       var node = _selection.selectAll("input").node();
       if (node) node.focus();
     };
-    return utilRebind(sources, dispatch12, "on");
+    return utilRebind(sources, dispatch11, "on");
   }
   var init_sources = __esm({
     "modules/ui/fields/sources.js"() {
@@ -98158,7 +97364,7 @@ ${currentIndent}`
       revert: true,
       info: true
     }, options);
-    var dispatch12 = dispatch_default("change", "revert");
+    var dispatch11 = dispatch_default("change", "revert");
     var field = Object.assign({}, presetField2);
     field.domId = utilUniqueDomId("form-field-" + field.safeid);
     var _show = options.show;
@@ -98173,13 +97379,13 @@ ${currentIndent}`
       }, geoExtent());
     }
     var _locked = false;
-    var _lockedTip = uiTooltip().title(() => _t.append("inspector.lock.suggestion", { label: field.title })).placement("bottom");
+    var _lockedTip = uiTooltip().title(() => _t.append("inspector.lock.suggestion", { label: field.label() })).placement("bottom");
     if (_show && !field.impl) {
       createField();
     }
     function createField() {
       field.impl = uiFields[field.type](field, context).on("change", function(t4, onInput) {
-        dispatch12.call("change", field, t4, onInput);
+        dispatch11.call("change", field, t4, onInput);
       });
       if (entityIDs) {
         field.entityIDs = entityIDs;
@@ -98231,7 +97437,7 @@ ${currentIndent}`
       d3_event.stopPropagation();
       d3_event.preventDefault();
       if (!entityIDs || _locked) return;
-      dispatch12.call("revert", d2, allKeys());
+      dispatch11.call("revert", d2, allKeys());
     }
     function remove4(d3_event, d2) {
       d3_event.stopPropagation();
@@ -98241,10 +97447,10 @@ ${currentIndent}`
       allKeys().forEach(function(key) {
         t4[key] = void 0;
       });
-      dispatch12.call("change", d2, t4);
+      dispatch11.call("change", d2, t4);
     }
     field.render = function(selection2) {
-      var sourceSubfield = uiSourceSubfield(context, field, _tags, dispatch12);
+      var sourceSubfield = uiSourceSubfield(context, field, _tags, dispatch11);
       var container = selection2.selectAll(".form-field").data([field]);
       var enter = container.enter().append("div").attr("class", function(d2) {
         return "form-field form-field-" + d2.safeid;
@@ -98345,7 +97551,7 @@ ${currentIndent}`
       if (field.default && field.key && _tags[field.key] !== field.default) {
         var t4 = {};
         t4[field.key] = field.default;
-        dispatch12.call("change", this, t4);
+        dispatch11.call("change", this, t4);
       }
     };
     field.isShown = function() {
@@ -98397,7 +97603,7 @@ ${currentIndent}`
         field.impl.focus();
       }
     };
-    return utilRebind(field, dispatch12, "on");
+    return utilRebind(field, dispatch11, "on");
   }
   var init_field = __esm({
     "modules/ui/field.js"() {
@@ -98424,7 +97630,7 @@ ${currentIndent}`
     uiChangesetEditor: () => uiChangesetEditor
   });
   function uiChangesetEditor(context) {
-    var dispatch12 = dispatch_default("change");
+    var dispatch11 = dispatch_default("change");
     var formFields = uiFormFields(context);
     var commentCombo = uiCombobox(context, "comment").caseSensitive(true);
     var _fieldsArr;
@@ -98445,7 +97651,7 @@ ${currentIndent}`
         ];
         _fieldsArr.forEach(function(field) {
           field.on("change", function(t4, onInput) {
-            dispatch12.call("change", field, void 0, t4, onInput);
+            dispatch11.call("change", field, void 0, t4, onInput);
           });
         });
       }
@@ -98528,7 +97734,7 @@ ${currentIndent}`
       _fieldsArr = null;
       return changesetEditor;
     };
-    return utilRebind(changesetEditor, dispatch12, "on");
+    return utilRebind(changesetEditor, dispatch11, "on");
   }
   var init_changeset_editor = __esm({
     "modules/ui/changeset_editor.js"() {
@@ -98560,7 +97766,7 @@ ${currentIndent}`
     var section = uiSection("changes-list", context).label(function() {
       var history = context.history();
       var summary = history.difference().summary();
-      return _t.append("inspector.title_count", { title: _t("commit.changes"), count: summary.length });
+      return _t.append("inspector.title_count", { title: _t.append("commit.changes"), count: summary.length });
     }).disclosureContent(renderDisclosureContent);
     function renderDisclosureContent(selection2) {
       var history = context.history();
@@ -98575,8 +97781,10 @@ ${currentIndent}`
       buttons.each(function(d2) {
         select_default2(this).call(svgIcon("#iD-icon-" + d2.entity.geometry(d2.graph), "pre-text " + d2.changeType));
       });
-      buttons.append("span").attr("class", "change-type").html(function(d2) {
-        return _t.html("commit." + d2.changeType) + " ";
+      buttons.append("span").attr("class", "change-type").each(function(d2) {
+        select_default2(this).call(
+          _t.append("commit." + d2.changeType, { suffix: " " })
+        );
       });
       buttons.append("strong").attr("class", "entity-type").text(function(d2) {
         var matched = _mainPresetIndex.match(d2.entity, d2.graph);
@@ -98640,7 +97848,7 @@ ${currentIndent}`
     uiCommit: () => uiCommit
   });
   function uiCommit(context) {
-    var dispatch12 = dispatch_default("cancel");
+    var dispatch11 = dispatch_default("cancel");
     var _userDetails2;
     var _selection;
     var changesetEditor = uiChangesetEditor(context).on("change", changeTags);
@@ -98715,12 +97923,6 @@ ${currentIndent}`
       if (osmClosed.length) {
         tags["closed:note"] = context.cleanTagValue(osmClosed.join(";"));
       }
-      if (services.keepRight) {
-        var krClosed = services.keepRight.getClosedIDs();
-        if (krClosed.length) {
-          tags["closed:keepright"] = context.cleanTagValue(krClosed.join(";"));
-        }
-      }
       if (services.osmose) {
         var osmoseClosed = services.osmose.getClosedCounts();
         for (itemType in osmoseClosed) {
@@ -98769,7 +97971,7 @@ ${currentIndent}`
       var headerTitle = header.enter().append("div").attr("class", "header fillL");
       headerTitle.append("div").append("h2").call(_t.append("commit.title"));
       headerTitle.append("button").attr("class", "close").attr("title", _t("icons.close")).on("click", function() {
-        dispatch12.call("cancel", this);
+        dispatch11.call("cancel", this);
       }).call(svgIcon("#iD-icon-close"));
       var body = selection2.selectAll(".body").data([0]);
       body = body.enter().append("div").attr("class", "body").merge(body);
@@ -98785,17 +97987,21 @@ ${currentIndent}`
       if (prose.enter().size()) {
         _userDetails2 = null;
       }
-      prose = prose.enter().append("p").attr("class", "commit-info").call(_t.append("commit.upload_explanation")).merge(prose);
+      prose = prose.enter().append("p").attr("class", "commit-info").call(_t.addOrUpdate("commit.upload_explanation")).merge(prose);
       osm.userDetails(function(err, user) {
         if (err) return;
         if (_userDetails2 === user) return;
         _userDetails2 = user;
-        var userLink = select_default2(document.createElement("div"));
-        if (user.image_url) {
-          userLink.append("img").attr("src", user.image_url).attr("class", "icon pre-text user-icon");
-        }
-        userLink.append("a").attr("class", "user-info").text(user.display_name).attr("href", osm.userURL(user.display_name)).attr("target", "_blank");
-        prose.html(_t.html("commit.upload_explanation_with_user", { user: { html: userLink.html() } }));
+        const userLink = function(selection3) {
+          selection3 = selection3.selectAll("span.user-link").data([user.id], (d2) => d2);
+          selection3.exit().remove();
+          const enter = selection3.enter().append("span").classed("user-link", true);
+          if (user.image_url) {
+            enter.append("img").attr("src", user.image_url).attr("class", "icon pre-text user-icon");
+          }
+          enter.append("a").attr("class", "user-info").text(user.display_name).attr("href", osm.userURL(user.display_name)).attr("target", "_blank");
+        };
+        prose.call(_t.addOrUpdate("commit.upload_explanation_with_user", { user: userLink }));
       });
       var requestReview = saveSection.selectAll(".request-review").data([0]);
       var requestReviewEnter = requestReview.enter().append("div").attr("class", "request-review");
@@ -98816,7 +98022,7 @@ ${currentIndent}`
       var uploadBlockerTooltipText = getUploadBlockerMessage();
       buttonSection = buttonSection.merge(buttonEnter);
       buttonSection.selectAll(".cancel-button").on("click.cancel", function() {
-        dispatch12.call("cancel", this);
+        dispatch11.call("cancel", this);
       });
       buttonSection.selectAll(".save-button").classed("disabled", uploadBlockerTooltipText !== null).on("click.save", function() {
         if (!select_default2(this).classed("disabled")) {
@@ -98977,7 +98183,7 @@ ${currentIndent}`
     commit.reset = function() {
       context.changeset = null;
     };
-    return utilRebind(commit, dispatch12, "on");
+    return utilRebind(commit, dispatch11, "on");
   }
   var readOnlyTags, hashtagRegex;
   var init_commit = __esm({
@@ -99009,7 +98215,6 @@ ${currentIndent}`
         /^warnings:/,
         /^resolved:/,
         /^closed:note$/,
-        /^closed:keepright$/,
         /^closed:osmose:/
       ];
       hashtagRegex = /([#＃][^\u2000-\u206F\u2E00-\u2E7F\s\\'!"#$%()*,.\/:;<=>?@\[\]^`{|}~]+)/g;
@@ -99064,8 +98269,8 @@ ${currentIndent}`
       selection2.okButton();
     }
     function addErrors(selection2, data) {
-      var message = selection2.select(".modal-section.message-text");
-      var items = message.selectAll(".error-container").data(data);
+      var message2 = selection2.select(".modal-section.message-text");
+      var items = message2.selectAll(".error-container").data(data);
       var enter = items.enter().append("div").attr("class", "error-container");
       enter.append("a").attr("class", "error-description").attr("href", "#").classed("hide-toggle", true).text(function(d2) {
         return d2.msg || _t("save.unknown_error_details");
@@ -99211,7 +98416,7 @@ ${currentIndent}`
     coreContext: () => coreContext
   });
   function coreContext() {
-    const dispatch12 = dispatch_default("enter", "exit", "change");
+    const dispatch11 = dispatch_default("enter", "exit", "change");
     const context = {};
     let _deferred2 = /* @__PURE__ */ new Set();
     context.version = package_default.version;
@@ -99426,11 +98631,11 @@ ${currentIndent}`
     context.enter = (newMode) => {
       if (_mode) {
         _mode.exit();
-        dispatch12.call("exit", this, _mode);
+        dispatch11.call("exit", this, _mode);
       }
       _mode = newMode;
       _mode.enter();
-      dispatch12.call("enter", this, _mode);
+      dispatch11.call("enter", this, _mode);
     };
     context.selectedIDs = () => _mode && _mode.selectedIDs && _mode.selectedIDs() || [];
     context.activeID = () => _mode && _mode.activeID && _mode.activeID();
@@ -99502,7 +98707,7 @@ ${currentIndent}`
     context.setDebug = function(flag, val) {
       if (arguments.length === 1) val = true;
       _debugFlags[flag] = val;
-      dispatch12.call("change");
+      dispatch11.call("change");
       return context;
     };
     let _container = select_default2(null);
@@ -99633,7 +98838,7 @@ ${currentIndent}`
         }
       }
     };
-    return utilRebind(context, dispatch12, "on");
+    return utilRebind(context, dispatch11, "on");
   }
   var init_context2 = __esm({
     "modules/core/context.js"() {
@@ -99708,7 +98913,7 @@ ${currentIndent}`
       d3_event.preventDefault();
       if (!_operation.available()) {
         context.ui().flash.duration(4e3).iconName("#iD-operation-" + _operation.id).iconClass("operation disabled").label(_t.append("operations._unavailable", {
-          operation: _t(`operations.${_operation.id}.title`) || _operation.id
+          operation: _t.append(`operations.${_operation.id}.title`) || _operation.id
         }))();
       } else if (_operation.disabled()) {
         context.ui().flash.duration(4e3).iconName("#iD-operation-" + _operation.id).iconClass("operation disabled").label(_operation.tooltip())();
@@ -99958,7 +99163,7 @@ ${currentIndent}`
     ];
     var annotation = entityIDs.length === 1 ? _t("operations.move.annotation." + context.graph().geometry(entityIDs[0])) : _t("operations.move.annotation.feature", { n: entityIDs.length });
     var _prevGraph;
-    var _cache5;
+    var _cache4;
     var _origMouseCoords;
     var _nudgeInterval;
     var _pointerPrefix = "PointerEvent" in window ? "pointer" : "mouse";
@@ -99966,7 +99171,7 @@ ${currentIndent}`
       nudge = nudge || [0, 0];
       let fn;
       if (_prevGraph !== context.graph()) {
-        _cache5 = {};
+        _cache4 = {};
         _origMouseCoords = context.map().mouseCoordinates();
         fn = context.perform;
       } else {
@@ -99979,7 +99184,7 @@ ${currentIndent}`
       const currMouse = context.projection(currMouseCoords);
       const origMouse = context.projection(_origMouseCoords);
       const delta = geoVecSubtract(geoVecSubtract(currMouse, origMouse), nudge);
-      fn(actionMove(entityIDs, delta, context.projection, _cache5));
+      fn(actionMove(entityIDs, delta, context.projection, _cache4));
       _prevGraph = context.graph();
     }
     function startNudge(nudge) {
@@ -100026,7 +99231,7 @@ ${currentIndent}`
     mode2.enter = function() {
       _origMouseCoords = context.map().mouseCoordinates();
       _prevGraph = null;
-      _cache5 = {};
+      _cache4 = {};
       context.features().forceVisible(entityIDs);
       behaviors.forEach(context.install);
       var downEvent;
@@ -100802,7 +100007,10 @@ ${currentIndent}`
       if (!ids.length) {
         return _t.append("operations.paste.nothing_copied");
       }
-      return _t.append("operations.paste.description", { feature: utilDisplayLabel(oldGraph.entity(ids[0]), oldGraph), n: ids.length });
+      return _t.append("operations.paste.description", {
+        feature: utilDisplayLabel(oldGraph.entity(ids[0]), oldGraph),
+        n: ids.length
+      });
     };
     operation2.annotation = function() {
       var ids = context.copyIDs();
@@ -101800,15 +101008,15 @@ ${currentIndent}`
     behaviorAddWay: () => behaviorAddWay
   });
   function behaviorAddWay(context) {
-    var dispatch12 = dispatch_default("start", "startFromWay", "startFromNode");
+    var dispatch11 = dispatch_default("start", "startFromWay", "startFromNode");
     var draw = behaviorDraw(context);
     function behavior(surface) {
       draw.on("click", function() {
-        dispatch12.apply("start", this, arguments);
+        dispatch11.apply("start", this, arguments);
       }).on("clickWay", function() {
-        dispatch12.apply("startFromWay", this, arguments);
+        dispatch11.apply("startFromWay", this, arguments);
       }).on("clickNode", function() {
-        dispatch12.apply("startFromNode", this, arguments);
+        dispatch11.apply("startFromNode", this, arguments);
       }).on("cancel", behavior.cancel).on("finish", behavior.cancel);
       context.map().dblclickZoomEnable(false);
       surface.call(draw);
@@ -101822,7 +101030,7 @@ ${currentIndent}`
       }, 1e3);
       context.enter(modeBrowse(context));
     };
-    return utilRebind(behavior, dispatch12, "on");
+    return utilRebind(behavior, dispatch11, "on");
   }
   var init_add_way = __esm({
     "modules/behavior/add_way.js"() {
@@ -102033,10 +101241,6 @@ ${currentIndent}`
   function presetField(fieldID, field, allFields) {
     allFields = allFields || {};
     let _this = Object.assign({}, field);
-    let localizerFieldID = fieldID;
-    if (field.baseKey && field.index) {
-      localizerFieldID = field.baseKey + "_multiple";
-    }
     _this.id = fieldID;
     _this.safeid = utilSafeClassName(fieldID);
     _this.matchGeometry = (geom) => !_this.geometry || _this.geometry.indexOf(geom) !== -1;
@@ -102044,18 +101248,18 @@ ${currentIndent}`
       return !_this.geometry || geometries.every((geom) => _this.geometry.indexOf(geom) !== -1);
     };
     _this.t = (scope, options) => _t(_mainLocalizer.coalesceStringIds([
-      `custom_presets.fields.${localizerFieldID}.${scope}`,
-      `_tagging.presets.fields.${localizerFieldID}.${scope}`
+      `custom_presets.fields.${fieldID}.${scope}`,
+      `_tagging.presets.fields.${fieldID}.${scope}`
     ]), options);
     _this.t.html = (scope, options) => _t.html(_mainLocalizer.coalesceStringIds([
-      `custom_presets.fields.${localizerFieldID}.${scope}`,
-      `_tagging.presets.fields.${localizerFieldID}.${scope}`
+      `custom_presets.fields.${fieldID}.${scope}`,
+      `_tagging.presets.fields.${fieldID}.${scope}`
     ]), options);
     _this.t.append = (scope, options) => _t.append(_mainLocalizer.coalesceStringIds([
-      `custom_presets.fields.${localizerFieldID}.${scope}`,
-      `_tagging.presets.fields.${localizerFieldID}.${scope}`
+      `custom_presets.fields.${fieldID}.${scope}`,
+      `_tagging.presets.fields.${fieldID}.${scope}`
     ]), options);
-    _this.hasTextForStringId = (scope) => _mainLocalizer.hasTextForStringId(`custom_presets.fields.${localizerFieldID}.${scope}`) || _mainLocalizer.hasTextForStringId(`_tagging.presets.fields.${localizerFieldID}.${scope}`);
+    _this.hasTextForStringId = (scope) => _mainLocalizer.hasTextForStringId(`custom_presets.fields.${fieldID}.${scope}`) || _mainLocalizer.hasTextForStringId(`_tagging.presets.fields.${fieldID}.${scope}`);
     _this.resolveReference = (which) => {
       const referenceRegex = /^\{(.*)\}$/;
       const match = (field[which] || "").match(referenceRegex);
@@ -102068,8 +101272,36 @@ ${currentIndent}`
       }
       return _this;
     };
-    _this.title = () => _this.overrideLabel || _this.resolveReference("label").t("label", { "default": fieldID, "index": field.index });
-    _this.label = () => _this.overrideLabel ? (selection2) => selection2.text(_this.overrideLabel) : _this.resolveReference("label").t.append("label", { "default": fieldID, "index": field.index });
+    _this.title = () => {
+      if (_this.overrideLabel) {
+        return _this.overrideLabel;
+      }
+      if (field.index) {
+        let baseLabel = _this.resolveReference("stringsCrossReference").t("label", { "default": fieldID });
+        let index2 = field.index.toLocaleString(_mainLocalizer.localeCode());
+        return _t("inspector.indexed_field_label", {
+          "default": `${baseLabel} (${index2})`,
+          field_name: baseLabel,
+          index: index2
+        });
+      }
+      return _this.resolveReference("label").t("label", { "default": fieldID });
+    };
+    _this.label = () => {
+      if (_this.overrideLabel) {
+        return (selection2) => selection2.text(_this.overrideLabel);
+      }
+      if (field.index) {
+        let baseLabel = _this.resolveReference("stringsCrossReference").t("label", { "default": fieldID });
+        let index2 = field.index.toLocaleString(_mainLocalizer.localeCode());
+        return _t.append("inspector.indexed_field_label", {
+          "default": `${baseLabel} (${index2})`,
+          field_name: baseLabel,
+          index: index2
+        });
+      }
+      return _this.resolveReference("label").t.append("label", { "default": fieldID });
+    };
     _this.placeholder = () => _this.resolveReference("placeholder").t("placeholder", { "default": "" });
     _this.originalTerms = (_this.terms || []).join();
     _this.terms = () => _this.resolveReference("label").t("terms", { "default": _this.originalTerms }).toLowerCase().trim().split(/\s*,+\s*/);
@@ -102611,7 +101843,6 @@ ${currentIndent}`
         "../renderer/tile_layer.js": () => Promise.resolve().then(() => (init_tile_layer(), tile_layer_exports)),
         "../services/index.js": () => Promise.resolve().then(() => (init_services(), services_exports)),
         "../services/kartaview.js": () => Promise.resolve().then(() => (init_kartaview(), kartaview_exports)),
-        "../services/keepRight.js": () => Promise.resolve().then(() => (init_keepRight(), keepRight_exports)),
         "../services/mapilio.js": () => Promise.resolve().then(() => (init_mapilio(), mapilio_exports)),
         "../services/mapillary.js": () => Promise.resolve().then(() => (init_mapillary(), mapillary_exports)),
         "../services/maprules.js": () => Promise.resolve().then(() => (init_maprules(), maprules_exports)),
@@ -102638,7 +101869,6 @@ ${currentIndent}`
         "../svg/icon.js": () => Promise.resolve().then(() => (init_icon(), icon_exports)),
         "../svg/index.js": () => Promise.resolve().then(() => (init_svg(), svg_exports)),
         "../svg/kartaview_images.js": () => Promise.resolve().then(() => (init_kartaview_images(), kartaview_images_exports)),
-        "../svg/keepRight.js": () => Promise.resolve().then(() => (init_keepRight2(), keepRight_exports2)),
         "../svg/labels.js": () => Promise.resolve().then(() => (init_labels(), labels_exports)),
         "../svg/layers.js": () => Promise.resolve().then(() => (init_layers(), layers_exports)),
         "../svg/lines.js": () => Promise.resolve().then(() => (init_lines(), lines_exports)),
@@ -102718,9 +101948,6 @@ ${currentIndent}`
         "../ui/intro/start_editing.js": () => Promise.resolve().then(() => (init_start_editing(), start_editing_exports)),
         "../ui/intro/welcome.js": () => Promise.resolve().then(() => (init_welcome(), welcome_exports)),
         "../ui/issues_info.js": () => Promise.resolve().then(() => (init_issues_info(), issues_info_exports)),
-        "../ui/keepRight_details.js": () => Promise.resolve().then(() => (init_keepRight_details(), keepRight_details_exports)),
-        "../ui/keepRight_editor.js": () => Promise.resolve().then(() => (init_keepRight_editor(), keepRight_editor_exports)),
-        "../ui/keepRight_header.js": () => Promise.resolve().then(() => (init_keepRight_header(), keepRight_header_exports)),
         "../ui/lasso.js": () => Promise.resolve().then(() => (init_lasso(), lasso_exports)),
         "../ui/length_indicator.js": () => Promise.resolve().then(() => (init_length_indicator(), length_indicator_exports)),
         "../ui/loading.js": () => Promise.resolve().then(() => (init_loading(), loading_exports)),
@@ -102799,7 +102026,6 @@ ${currentIndent}`
         "../ui/tooltip.js": () => Promise.resolve().then(() => (init_tooltip(), tooltip_exports)),
         "../ui/top_toolbar.js": () => Promise.resolve().then(() => (init_top_toolbar(), top_toolbar_exports)),
         "../ui/version.js": () => Promise.resolve().then(() => (init_version(), version_exports)),
-        "../ui/view_on_keepRight.js": () => Promise.resolve().then(() => (init_view_on_keepRight(), view_on_keepRight_exports)),
         "../ui/view_on_osm.js": () => Promise.resolve().then(() => (init_view_on_osm(), view_on_osm_exports)),
         "../ui/view_on_osmose.js": () => Promise.resolve().then(() => (init_view_on_osmose(), view_on_osmose_exports)),
         "../ui/zoom.js": () => Promise.resolve().then(() => (init_zoom3(), zoom_exports)),
@@ -102869,7 +102095,6 @@ ${currentIndent}`
       "address_formats": "data/address_formats.min.json",
       "imagery": "data/imagery.min.json",
       "intro_graph": "data/intro_graph.min.json",
-      "keepRight": "data/keepRight.min.json",
       "languages": "data/languages.min.json",
       "locales": "locales/index.min.json",
       "phone_formats": "data/phone_formats.min.json",
@@ -103003,26 +102228,28 @@ ${currentIndent}`
       };
     }
     if (fields.source) {
-      fields.source.type = "source";
       fields.source.source = false;
-      fields.source.keys = ["source", "source:url", "source:name", "source:date"];
+      const subkeys = ["", ":url", ":name", ":date"];
+      fields.source_preset = {
+        ...fields.source,
+        id: "source_preset",
+        type: "source",
+        usage: "preset",
+        keys: subkeys.map((sk) => `source${sk}`)
+      };
       for (let i3 = 1; i3 < 4; i3++) {
-        let id3 = "source:" + i3.toString();
-        let previousId = "source" + (i3 - 1 > 0 ? ":" + (i3 - 1).toString() : "");
+        const id3 = `source_preset:${i3}`;
+        const key = `source:${i3}`;
         fields[id3] = {
-          ...fields.source,
-          key: id3,
-          keys: [id3, id3 + ":url", id3 + ":name", id3 + ":date"],
-          // baseKey and index will be used to create a localized label for this field
-          baseKey: "source",
+          ...fields.source_preset,
+          id: id3,
+          key,
+          keys: subkeys.map((sk) => `${key}${sk}`),
+          // stringsCrossReference and index will be used to create a localized label for this field
+          stringsCrossReference: "{source_preset}",
           index: i3,
           prerequisiteTag: {
-            keys: [
-              previousId,
-              previousId + ":url",
-              previousId + ":name",
-              previousId + ":date"
-            ]
+            keys: subkeys.map((sk) => `source${i3 - 1 > 0 ? ":" + (i3 - 1) : ""}${sk}`)
           }
         };
       }
@@ -103036,7 +102263,7 @@ ${currentIndent}`
     };
   }
   function presetIndex() {
-    const dispatch12 = dispatch_default("favoritePreset", "recentsChange");
+    const dispatch11 = dispatch_default("favoritePreset", "recentsChange");
     const MAX_RECENTS_TO_STORE = 30;
     const MAX_RECENTS_TO_SHOW = 8;
     const POINT = presetPreset("point", { name: "Point", tags: {}, geometry: ["point", "vertex"], matchScore: 0.1 });
@@ -103305,9 +102532,10 @@ ${currentIndent}`
     _this.field = (id3) => _fields[id3];
     _this.universal = () => _universal;
     _this.defaults = (geometry2, n3, startWithRecents, loc, extraPresets) => {
+      const validHere = Array.isArray(loc) ? _sharedLocationManager.locationSetsAt(loc) : null;
       let recents = [];
       if (startWithRecents) {
-        recents = _this.recent().matchGeometry(geometry2).collection.slice(0, MAX_RECENTS_TO_SHOW);
+        recents = _this.recent().matchGeometry(geometry2).collection.filter((a2) => !a2.locationSetID || validHere && validHere[a2.locationSetID]).slice(0, MAX_RECENTS_TO_SHOW);
       }
       let defaults3;
       if (_addablePresetIDs) {
@@ -103315,17 +102543,13 @@ ${currentIndent}`
           var preset = _this.item(id3);
           if (preset && preset.matchGeometry(geometry2)) return preset;
           return null;
-        }).filter(Boolean);
+        }).filter(Boolean).filter((a2) => !a2.locationSetID || validHere[a2.locationSetID]);
       } else {
         defaults3 = _defaults[geometry2].collection.concat(_this.fallback(geometry2));
       }
       let result2 = presetCollection(
         utilArrayUniq(recents.concat(defaults3).concat(extraPresets || [])).slice(0, n3 - 1)
       );
-      if (Array.isArray(loc)) {
-        const validHere = _sharedLocationManager.locationSetsAt(loc);
-        result2.collection = result2.collection.filter((a2) => !a2.locationSetID || validHere[a2.locationSetID]);
-      }
       return result2;
     };
     _this.addablePresetIDs = function(val) {
@@ -103381,7 +102605,7 @@ ${currentIndent}`
       _recents = items;
       const minifiedItems = items.map((d2) => d2.minified());
       corePreferences("preset_recents", JSON.stringify(minifiedItems));
-      dispatch12.call("recentsChange");
+      dispatch11.call("recentsChange");
     }
     _this.getRecents = () => {
       if (!_recents) {
@@ -103450,7 +102674,7 @@ ${currentIndent}`
       _favorites = items;
       const minifiedItems = items.map((d2) => d2.minified());
       corePreferences("preset_favorites", JSON.stringify(minifiedItems));
-      dispatch12.call("favoritePreset");
+      dispatch11.call("favoritePreset");
     }
     _this.addFavorite = (preset, besidePreset, after3) => {
       const favorites = _this.getFavorites();
@@ -103506,7 +102730,7 @@ ${currentIndent}`
       }
       return null;
     };
-    return utilRebind(_this, dispatch12, "on");
+    return utilRebind(_this, dispatch11, "on");
   }
   var _mainPresetIndex;
   var init_presets = __esm({
@@ -104200,7 +103424,6 @@ ${currentIndent}`
     rendererPhotos: () => rendererPhotos,
     rendererTileLayer: () => rendererTileLayer,
     serviceKartaview: () => kartaview_default,
-    serviceKeepRight: () => keepRight_default,
     serviceMapRules: () => maprules_default,
     serviceMapilio: () => mapilio_default,
     serviceMapillary: () => mapillary_default,
@@ -104226,7 +103449,6 @@ ${currentIndent}`
     svgGeolocate: () => svgGeolocate,
     svgIcon: () => svgIcon,
     svgKartaviewImages: () => svgKartaviewImages,
-    svgKeepRight: () => svgKeepRight,
     svgLabels: () => svgLabels,
     svgLayers: () => svgLayers,
     svgLines: () => svgLines,
@@ -104314,9 +103536,6 @@ ${currentIndent}`
     uiInspector: () => uiInspector,
     uiIntro: () => uiIntro,
     uiIssuesInfo: () => uiIssuesInfo,
-    uiKeepRightDetails: () => uiKeepRightDetails,
-    uiKeepRightEditor: () => uiKeepRightEditor,
-    uiKeepRightHeader: () => uiKeepRightHeader,
     uiLasso: () => uiLasso,
     uiLengthIndicator: () => uiLengthIndicator,
     uiLoading: () => uiLoading,
@@ -104376,7 +103595,6 @@ ${currentIndent}`
     uiToggle: () => uiToggle,
     uiTooltip: () => uiTooltip,
     uiVersion: () => uiVersion,
-    uiViewOnKeepRight: () => uiViewOnKeepRight,
     uiViewOnOSM: () => uiViewOnOSM,
     uiZoom: () => uiZoom,
     utilAesDecrypt: () => utilAesDecrypt,
