@@ -64,7 +64,7 @@ module Searches
           elsif extratag.attributes["key"] == "end_date"
             end_date = extratag.attributes['value']
           end
-        end
+        end unless place.elements["extratags"].nil?
         if start_date || end_date
           suffix = t "geocoder.search_osm_nominatim.suffix_format", :dates => DateRange.new(start_date, end_date).to_s
         end
