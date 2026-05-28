@@ -25894,7 +25894,7 @@ ${source}
       defaultOsmApiConnections = {
         live: {
           url: "https://www.openhistoricalmap.org",
-          apiUrl: "https://api.openhistoricalmap.org",
+          apiUrl: "https://www.openhistoricalmap.org",
           client_id: "0tmNTmd0Jo1dQp4AUmMBLtGiD9YpMuXzHefitcuVStc",
           client_secret: "BTlNrNxIPitHdL4sP2clHw5KLoee9aKkA7dQbc0Bj7Q"
         },
@@ -38365,7 +38365,7 @@ ${source}
     "package.json"() {
       package_default = {
         name: "@openhistoricalmap/id",
-        version: "2.39.5",
+        version: "2.39.5-ohm.2",
         description: "The OpenHistoricalMap fork of a friendly editor for OpenStreetMap",
         main: "dist/iD.min.js",
         repository: {
