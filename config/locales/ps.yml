@@ -62,8 +62,8 @@ ps:
         user: کارن
         title: سکالو
         body: جوسه
-        latitude: لوړوالی
-        longitude: اوږدوالی
+        latitude: ځمک‌لنډوالی
+        longitude: ځمک‌اوږدوالی
         language_code: ژبه
       friend:
         user: کارن
@@ -73,8 +73,8 @@ ps:
         visible: ښکاره
         name: نوم
         size: کچه
-        latitude: لوړوالی
-        longitude: اوږدوالی
+        latitude: ځمک‌لنډوالی
+        longitude: ځمک‌اوږدوالی
         public: ټولواله
         description: څرگنداوی
         gpx_file: 'GPX دوتنه پورته کول:'
@@ -94,8 +94,8 @@ ps:
         active: فعال
         display_name: ښکارېدونکی نوم
         description: څرگندونه
-        home_lat: لوړوالی
-        home_lon: اوږدوالی
+        home_lat: ځمک‌لنډوالی
+        home_lon: ځمک‌اوږدوالی
         languages: ژبې
         preferred_editor: غوره سمونگر
         pass_crypt: پټنوم
