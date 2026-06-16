@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module BannerHelper
   def active_banners
     BANNERS.reject do |_k, v|
@@ -13,7 +15,11 @@ module BannerHelper
         enddate = nil
       end
 
-      startdate&.future? || enddate&.past?
+      wrong_locale = v[:locales]&.exclude?(I18n.locale.to_s)
+      remote_country = params[:country] || OSM.ip_to_country(request.remote_ip)
+      wrong_country = v[:countries]&.exclude?(remote_country)
+
+      startdate&.future? || enddate&.past? || wrong_locale || wrong_country
     end
   end
 

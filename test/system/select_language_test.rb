@@ -12,6 +12,11 @@ class SelectLanguageTest < ApplicationSystemTestCase
     end
 
     click_on "Select Language"
+
+    assert_content "English"
+    find_by_id("language_search").set("fra").send_keys(:tab)
+    assert_not_includes find_by_id("select_language_list").text, "English"
+
     click_on "français"
 
     within_content_heading do
@@ -33,6 +38,11 @@ class SelectLanguageTest < ApplicationSystemTestCase
     end
 
     click_on "Select Language"
+
+    assert_content "English"
+    find_by_id("language_search").set("fra").send_keys(:tab)
+    assert_not_includes find_by_id("select_language_list").text, "English"
+
     click_on "français"
 
     assert_text "Préférences mises à jour"

@@ -110,7 +110,7 @@ class OAuth2Test < ActionDispatch::IntegrationTest
     end
 
     assert_equal user.id.to_s, data["sub"]
-    assert_not data.key?("preferred_username")
+    assert_equal user.display_name, data["preferred_username"]
 
     get oauth_userinfo_path
     assert_response :unauthorized
@@ -246,12 +246,12 @@ class OAuth2Test < ActionDispatch::IntegrationTest
     get api_user_preferences_path, :headers => auth_header
     assert_response :forbidden
 
-    user.hide!
+    user.mark_deleted!
 
     get api_user_preferences_path, :headers => auth_header
     assert_response :forbidden
 
-    user.unhide!
+    user.undelete!
 
     get api_user_preferences_path, :headers => auth_header
     assert_response :success

@@ -4,13 +4,13 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
-    can :read, [:feature_query, :layers_pane, :legend_pane, :share_pane]
+    can :read, [:feature_query, :layers_pane, :legend_pane, :share_pane, :languages_pane, :webgl_error_pane]
     can :read, [Node, Way, Relation, OldNode, OldWay, OldRelation]
     can :read, [RelationMember, OldRelationMember]
     can [:show, :create], Note
     can :read, :directions
     can [:index, :permalink, :edit, :help, :fixthemap, :offline, :export, :about, :preview, :copyright, :key, :id, :ohm_privacy_policy], :site
-    can [:finish, :embed], :export
+    can [:create, :show, :embed], :export
     can [:create, :read], :search
 
     if Settings.status != "database_offline"

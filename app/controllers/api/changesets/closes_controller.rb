@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Api
   module Changesets
     class ClosesController < ApiController
@@ -15,7 +17,7 @@ module Api
       # marks a changeset as closed. this may be called multiple times
       # on the same changeset, so is idempotent.
       def update
-        changeset = Changeset.find(params[:changeset_id])
+        changeset = Changeset.find(params.expect(:changeset_id))
         check_changeset_consistency(changeset, current_user)
 
         # to close the changeset, we'll just set its closed_at time to

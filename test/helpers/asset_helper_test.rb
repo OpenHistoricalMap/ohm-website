@@ -1,7 +1,11 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class AssetHelperTest < ActionView::TestCase
   def test_assets
-    assert_kind_of Hash, assets("iD")
+    asset_map = assets("@openhistoricalmap/id")
+    assert_kind_of Hash, asset_map
+    assert_operator asset_map.length, :>, 0
   end
 end

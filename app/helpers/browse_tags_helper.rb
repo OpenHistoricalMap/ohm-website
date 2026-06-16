@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 module BrowseTagsHelper
   # https://wiki.openstreetmap.org/wiki/Key:wikipedia#Secondary_Wikipedia_links
   # https://wiki.openstreetmap.org/wiki/Key:wikidata#Secondary_Wikidata_links
-  SECONDARY_WIKI_PREFIXES = "architect|artist|brand|buried|flag|genus|manufacturer|model|name:etymology|network|operator|species|subject".freeze
+  SECONDARY_WIKI_PREFIXES = "architect|artist|brand|buried|flag|genus|manufacturer|model|name:etymology|network|operator|species|subject"
 
   def format_key(key)
     if url = wiki_link("key", key)
@@ -12,8 +14,11 @@ module BrowseTagsHelper
   end
 
   def format_value(key, value)
-    if wp = wikipedia_link(key, value)
-      link_to h(wp[:title]), wp[:url], :title => t("browse.tag_details.wikipedia_link", :page => wp[:title])
+    if wp = wikipedia_links(key, value)
+      wp = wp.map do |w|
+        link_to(h(w[:title]), w[:url], :title => t("browse.tag_details.wikipedia_link", :page => w[:title]))
+      end
+      safe_join(wp, ";")
     elsif wdt = wikidata_links(key, value)
       # IMPORTANT: Note that wikidata_links() returns an array of hashes, unlike for example wikipedia_link(),
       # which just returns one such hash.
@@ -45,6 +50,8 @@ module BrowseTagsHelper
         concat tag.rect :x => 0.5, :y => 0.5, :width => 13, :height => 13, :fill => colour_value, :stroke => "#2222"
       end
       svg + colour_value
+    elsif %w[opening_hours collection_times service_times].include?(key)
+      tag2link_link(key, value) || linkify(h(value))
     else
       safe_join(value.split(";", -1).map { |x| tag2link_link(key, x) || linkify(h(x)) }, ";")
     end
@@ -69,7 +76,7 @@ module BrowseTagsHelper
     url
   end
 
-  def wikipedia_link(key, value)
+  def wikipedia_links(key, value)
     # Some k/v's are wikipedia=http://en.wikipedia.org/wiki/Full%20URL
     return nil if %r{^https?://}.match?(value)
 
@@ -82,20 +89,26 @@ module BrowseTagsHelper
       return nil
     end
 
-    # This regex should match Wikipedia language codes, everything
-    # from de to zh-classical
-    if value =~ /^([a-z-]{2,12}):(.+)$/i
-      lang = Regexp.last_match(1)
-      title_section = Regexp.last_match(2)
-    else
-      title_section = value
+    # Value could be a semicolon-separated list of Wikipedia pages
+    value.split(";").map do |wiki_value|
+      wiki_value = wiki_value.strip
+
+      # This regex should match Wikipedia language codes, everything
+      # from de to zh-classical
+      if wiki_value =~ /^([a-z-]{2,12}):(.+)$/i
+        page_lang = Regexp.last_match(1)
+        title_section = Regexp.last_match(2)
+      else
+        page_lang = lang
+        title_section = wiki_value
+      end
+
+      title, section = title_section.split("#", 2)
+      url = "https://#{page_lang}.wikipedia.org/wiki/#{wiki_encode(title)}?uselang=#{I18n.locale}"
+      url += "##{wiki_encode(section)}" if section
+
+      { :url => url, :title => wiki_value }
     end
-
-    title, section = title_section.split("#", 2)
-    url = "https://#{lang}.wikipedia.org/wiki/#{wiki_encode(title)}?uselang=#{I18n.locale}"
-    url += "##{wiki_encode(section)}" if section
-
-    { :url => url, :title => value }
   end
 
   def wiki_encode(s)
@@ -134,12 +147,10 @@ module BrowseTagsHelper
   end
 
   def tag2link_link(key, value)
-    # skip if it's a full URL
-    return nil if %r{^https?://}.match?(value)
+    link = Tag2link.link(key, value)
+    return nil unless link
 
-    return nil unless TAG2LINK[key]
-
-    link_to(h(value), TAG2LINK[key].gsub("$1", value), :rel => "nofollow")
+    link_to(h(value), link, :rel => "nofollow")
   end
 
   def email_link(key, value)

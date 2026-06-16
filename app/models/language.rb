@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: languages
@@ -9,6 +11,8 @@
 
 class Language < ApplicationRecord
   has_many :diary_entries, :foreign_key => "language", :inverse_of => :language
+
+  validates :english_name, :presence => true
 
   def self.load(file)
     Language.transaction do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class UserTest < ActiveSupport::TestCase
@@ -148,6 +150,25 @@ class UserTest < ActiveSupport::TestCase
     assert_predicate user, :valid?, "should allow nil value"
   end
 
+  def test_spam_score
+    user = build(:user, :description => "foo [bar](http://example.com/) baz")
+    assert_equal 12, user.spam_score
+  end
+
+  def test_suspend_if_possible
+    active = create(:user, :active)
+    active.suspend_if_possible!
+    assert_equal "suspended", active.reload.status
+
+    confirmed = create(:user, :confirmed)
+    confirmed.suspend_if_possible!
+    assert_equal "suspended", confirmed.reload.status
+
+    suspended = create(:user, :suspended)
+    suspended.suspend_if_possible!
+    assert_equal "suspended", suspended.reload.status
+  end
+
   def test_follows
     alice = create(:user, :active)
     bob = create(:user, :active)
@@ -204,6 +225,17 @@ class UserTest < ActiveSupport::TestCase
 
     user.preferred_editor = "invalid_editor"
     assert_raise(ActiveRecord::RecordInvalid) { user.save! }
+  end
+
+  def test_heatmap_public_by_default
+    # A bit roundabout, but want to make sure that
+    # the factory doesn't betray us here by setting
+    # a default value.
+    attrs = attributes_for(:user)
+    attrs.delete(:public_heatmap)
+    user = User.new(attrs)
+    user.save!
+    assert_predicate user, :public_heatmap?
   end
 
   def test_visible
@@ -263,6 +295,42 @@ class UserTest < ActiveSupport::TestCase
     assert_equal %w[fr de sl], user.preferred_languages.map(&:to_s)
     user = create(:user, :languages => %w[en de])
     assert_equal %w[en de], user.languages
+  end
+
+  def test_preferred_color_scheme_nil_if_nothing_selected
+    user = create(:user)
+    assert_nil user.preferred_color_scheme(:map, :site)
+  end
+
+  def test_preferred_color_scheme_as_selected
+    preferences = [
+      create(:user_preference, :k => "map.color_scheme", :v => "dark"),
+      create(:user_preference, :k => "site.color_scheme", :v => "light")
+    ]
+    user = create(:user, :preferences => preferences)
+
+    assert_equal "dark", user.preferred_color_scheme(:map, :site)
+  end
+
+  def test_preferred_color_scheme_fallback_if_auto
+    preferences = [
+      create(:user_preference, :k => "map.color_scheme", :v => "auto"),
+      create(:user_preference, :k => "site.color_scheme", :v => "light")
+    ]
+    user = create(:user, :preferences => preferences)
+
+    assert_nil user.preferred_color_scheme(:map)
+    assert_equal "light", user.preferred_color_scheme(:map, :site)
+  end
+
+  def test_preferred_color_scheme_fallback_if_missing
+    preferences = [
+      create(:user_preference, :k => "site.color_scheme", :v => "light")
+    ]
+    user = create(:user, :preferences => preferences)
+
+    assert_nil user.preferred_color_scheme(:map)
+    assert_equal "light", user.preferred_color_scheme(:map, :site)
   end
 
   def test_default_diary_language_undefined
@@ -361,6 +429,20 @@ class UserTest < ActiveSupport::TestCase
     assert create(:moderator_user).role?("moderator")
   end
 
+  def test_suspend
+    user = create(:user)
+    user.suspend
+    assert_equal "suspended", user.status
+  end
+
+  def test_suspend_closes_issues
+    user = create(:user)
+    issue = create(:issue, :reportable => user)
+    user.suspend
+    assert_equal "suspended", user.status
+    assert_equal "resolved", issue.reload.status
+  end
+
   def test_soft_destroy
     user = create(:user, :with_home_location, :description => "foo")
     user.soft_destroy
@@ -372,6 +454,14 @@ class UserTest < ActiveSupport::TestCase
     assert_equal "deleted", user.status
     assert_not_predicate user, :visible?
     assert_not_predicate user, :active?
+  end
+
+  def test_soft_destroy_closes_issues
+    user = create(:user)
+    issue = create(:issue, :reportable => user)
+    user.soft_destroy
+    assert_equal "deleted", user.status
+    assert_equal "resolved", issue.reload.status
   end
 
   def test_soft_destroy_revokes_oauth2_tokens

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Update and read user preferences, which are arbitrary key/val pairs
 module Api
   class UserPreferencesController < ApiController
@@ -22,7 +24,7 @@ module Api
     ##
     # return the value for a single preference
     def show
-      pref = UserPreference.find([current_user.id, params[:preference_key]])
+      pref = UserPreference.find([current_user.id, params.expect(:preference_key)])
 
       render :plain => pref.v.to_s
     end
@@ -33,7 +35,7 @@ module Api
 
       new_preferences = {}
 
-      doc = XML::Parser.string(request.raw_post, :options => XML::Parser::Options::NOERROR).parse
+      doc = LibXML::XML::Parser.string(request.raw_post, :options => LibXML::XML::Parser::Options::NOERROR).parse
 
       doc.find("//preferences/preference").each do |pt|
         if preference = old_preferences.delete(pt["k"])
@@ -58,7 +60,7 @@ module Api
     # update the value of a single preference
     def update
       begin
-        pref = UserPreference.find([current_user.id, params[:preference_key]])
+        pref = UserPreference.find([current_user.id, params.expect(:preference_key)])
       rescue ActiveRecord::RecordNotFound
         pref = UserPreference.new
         pref.user = current_user
@@ -74,7 +76,7 @@ module Api
     ##
     # delete a single preference
     def destroy
-      UserPreference.find([current_user.id, params[:preference_key]]).delete
+      UserPreference.find([current_user.id, params.expect(:preference_key)]).delete
 
       render :plain => ""
     end

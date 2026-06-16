@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # this class pulls together the logic for all the old_* controllers
 # into one place. as it turns out, the API methods for historical
 # nodes, ways and relations are basically identical.
@@ -19,11 +21,7 @@ module Api
       raise OSM::APINotFoundError if @elements.empty?
 
       # determine visible elements
-      @elems = if show_redactions?
-                 @elements
-               else
-                 @elements.unredacted
-               end
+      @elements = @elements.unredacted unless show_redactions?
 
       # Render the result
       respond_to do |format|

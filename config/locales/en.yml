@@ -758,6 +758,9 @@ en:
     not_found:
       title: File not found
       description: Couldn't find a file/directory/API operation by that name on the OpenHistoricalMap server (HTTP 404)
+  export:
+    show:
+      title: OpenHistoricalMap Embedded
   follows:
     show:
       follow:
@@ -1686,6 +1689,7 @@ en:
       download: "Download route as GeoJSON"
       filename: "route"
       directions_courtesy_html: "Directions courtesy of %{link}"
+      check_demo_html: "More details from %{link}"
   issues:
     index:
       title: Issues
@@ -1717,27 +1721,6 @@ en:
         ignored: Ignored
         open: Open
         resolved: Resolved
-    show:
-      title:
-        open: "Open Issue #%{issue_id}"
-        ignored: "Ignored Issue #%{issue_id}"
-        resolved: "Resolved Issue #%{issue_id}"
-      reports:
-        one: "%{count} report"
-        other: "%{count} reports"
-      no_reports: No reports
-      report_created_at_html: "First reported at %{datetime}"
-      last_resolved_at_html: "Last resolved at %{datetime}"
-      last_updated_at_html: "Last updated at %{datetime} by %{displayname}"
-      resolve: Resolve
-      ignore: Ignore
-      reopen: Reopen
-      reports_of_this_issue: Reports of this Issue
-      read_reports: Read Reports
-      new_reports: New Reports
-      other_issues_against_this_user: Other issues against this user
-      no_other_issues: No other issues against this user.
-      comments_on_this_issue: Comments on this issue
     resolve:
       resolved: Issue status has been set to 'Resolved'
     ignore:
@@ -1764,6 +1747,30 @@ en:
         title: "Issue #%{issue_id} Reporters"
       reporters:
         more_reporters: "and %{count} more"
+    show:
+      title:
+        open: "Open Issue #%{issue_id}"
+        ignored: "Ignored Issue #%{issue_id}"
+        resolved: "Resolved Issue #%{issue_id}"
+      reports:
+        one: "%{count} report"
+        other: "%{count} reports"
+      no_reports: No reports
+      report_created_at_html: "First reported at %{datetime}"
+      last_resolved_at_html: "Last resolved at %{datetime}"
+      last_updated_at_html: "Last updated at %{datetime} by %{displayname}"
+      resolve: Resolve
+      ignore: Ignore
+      reopen: Reopen
+      reports_of_this_issue: Reports of this Issue
+      read_reports: Read Reports
+      new_reports: New Reports
+      other_issues_against_this_user: Other issues against this user
+      no_other_issues: No other issues against this user.
+      comments_on_this_issue: Comments on this issue
+      comment_from_html: "Comment from %{user_link} on %{comment_created_at}"
+      reassign_to_moderators: Reassign Issue to Moderators
+      reassign_to_administrators: Reassign Issue to Administrators
   issue_comments:
     create:
       comment_created: Your comment was successfully created
@@ -1801,6 +1808,122 @@ en:
     create:
       successful_report: Your report has been registered successfully
       provide_details: Please provide the required details
+  languages_panes:
+    select_language_list:
+      search_language: Search...
+      languages:
+        af: Afrikaans
+        gsw: Alemannic
+        frp: Arpitan
+        ast: Asturian
+        az: Azerbaijani
+        id: Indonesian
+        ms: Malay
+        bcl: Central Bikol
+        bs: Bosnian
+        br: Breton
+        ca: Catalan
+        cs: Czech
+        cy: Welsh
+        da: Danish
+        de: German
+        dsb: Lower Sorbian
+        et: Estonian
+        en: English
+        en-GB: English (UK)
+        es: Spanish
+        eo: Esperanto
+        eu: Basque
+        fr: French
+        fy: Western Frisian
+        fur: Friulian
+        ga: Irish
+        gd: Scottish Gaelic
+        gl: Galician
+        aln: Gheg Albanian
+        hsb: Upper Sorbian
+        hr: Croatian
+        ia: Interlingua
+        is: Icelandic
+        it: Italian
+        kw: Cornish
+        gcf: Guadeloupean Creole
+        ku-Latn: Kurdish (Latin)
+        lv: Latvian
+        lb: Luxembourgish
+        lkt: Lakota
+        lt: Lithuanian
+        hu: Hungarian
+        fit: Tornedalen Finnish
+        nl: Dutch
+        nb: Norwegian Bokmål
+        nn: Norwegian Nynorsk
+        oc: Occitan
+        nds: Low German
+        pl: Polish
+        pt-PT: Portuguese
+        pt: Portuguese (Brazil)
+        ksh: Colognian
+        ro: Romanian
+        sc: Sardinian
+        sco: Scots
+        sq: Albanian
+        scn: Sicilian
+        sk: Slovak
+        sl: Slovenian
+        sr-Latn: Serbian (Latin)
+        sh: Serbo-Croatian (Latin)
+        fi: Finnish
+        sv: Swedish
+        tl: Tagalog
+        kab: Kabyle
+        vi: Vietnamese
+        tr: Turkish
+        yo: Yoruba
+        diq: Dimli
+        el: Greek
+        ba: Bashkir
+        be: Belarusian
+        be-Tarask: Belarusian (Tarašk.)
+        bg: Bulgarian
+        mk: Macedonian
+        mo: Moldovan
+        ce: Chechen
+        ru: Russian
+        sr: Serbian (Cyrillic)
+        tt: Tatar (Cyrillic)
+        uk: Ukrainian
+        kk-cyrl: Kazakh (Cyrillic)
+        yi: Yiddish
+        he: Hebrew
+        ar: Arabic
+        skr-arab: Saraiki
+        fa: Persian
+        arz: Egyptian Arabic
+        pnb: Western Punjabi
+        ps: Pashto
+        nqo: N’Ko
+        ne: Nepali
+        mr: Marathi
+        hi: Hindi
+        bn: Bangla
+        pa: Punjabi
+        gu: Gujarati
+        ta: Tamil
+        te: Telugu
+        kn: Kannada
+        th: Thai
+        my: Burmese
+        shn: Shan
+        xmf: Mingrelian
+        ka: Georgian
+        km: Khmer
+        sat: Santali
+        zh-CN: Chinese (Simplified)
+        zh-TW: Chinese (Traditional)
+        zh-HK: Chinese (Hong Kong)
+        ja: Japanese
+        ko: Korean
   layouts:
     project_name:
       # in <title>
@@ -1809,6 +1932,8 @@ en:
       h1: OpenHistoricalMap
     logo:
       alt_text: OpenHistoricalMap logo
+    main_navigation: Main
+    layer_info: "Layer Info"
     home: Go to Home Location
     logout: Log Out
     log_in: Log In
@@ -1831,6 +1956,8 @@ en:
     partners_greeninfo: GreenInfo Network
     partners_osmf: OpenStreetMap Foundation
     partners_osmus: OpenStreetMap U.S.
+    welcome_tou_notice_html: "By using this website or other infrastructure provided by the OpenStreetMap Foundation, you agree to the %{terms_link}."
+    terms_of_use: "Terms of Use"
     tou: "Terms of Use"
     nothing_to_preview: "Nothing to preview."
     help: Help
@@ -1840,8 +1967,26 @@ en:
     learn_more: "Learn More"
     more: More
     header:
-      ok: OK
+      about: About
+      communities: Communities
+      copyright: Copyright
+      donate: Donate
+      edit: Edit
+      edit_with: Edit with %{editor}
+      export: Export
+      gps_traces: GPS Traces
+      help: Help
+      history: History
+      home: Go to Home Location
+      issues: Issues
+      log_out: Log Out
+      log_in: Log In
+      more: More
       select_language: Select Language
+      sign_up: Sign Up
+      user_diaries: User Diaries
+    meta:
+      openstreetmap_search: OpenHistoricalMap Search
     select_language_button:
       title: Select Language
     offline_flash:
@@ -2088,6 +2233,7 @@ en:
         message: Preferences updated.
       navigation:
         preferences: Preferences
+        notification_preferences: Notifications
         advanced_preferences: Advanced Preferences
     basic_preferences:
       show:
@@ -2103,7 +2249,25 @@ en:
           auto: Auto
           light: Light
           dark: Dark
+        preferred_editor_color_scheme: Preferred Editor Color Scheme
+        editor_color_schemes:
+          auto: Same as Website
+          light: Light
+          dark: Dark
         save: Update Preferences
+    notification_preferences:
+      show:
+        title: Notification Preferences
+        changeset_comment: Changeset comments
+        diary_comment: Diary comments
+        direct_message: Direct messages
+        gpx_import_failure: "GPS trace import: failure"
+        gpx_import_success: "GPX trace import: success"
+        new_follower: New followers
+        note_comment: Note comments
+        save: Update Preferences
+        delivery_mechanisms:
+          email: Email
     advanced_preferences:
       show:
         title: My Advanced Preferences
@@ -2116,6 +2280,7 @@ en:
         image: Image
         company: Company
         location: Location
+        contribution_calendar: Contribution Calendar
     descriptions:
       show:
         title: Edit Profile
@@ -2174,6 +2339,15 @@ en:
       update:
         success: Profile location updated.
         failure: Couldn't update profile location.
+    heatmaps:
+      show:
+        title: Configure Contribution Calendar
+        show_contribution_calendar_in_public: "Show the contribution calendar on your profile page"
+        save: Update Contribution Calendar Configuration
+        cancel: Cancel
+      update:
+        success: Contribution calendar updated.
+        failure: Couldn't update the contribution calendar.
   sessions:
     new:
       tab_title: "Log In"
@@ -2188,6 +2362,7 @@ en:
       login_button: "Log in"
       with external: "or log in with a third party"
       or: "or"
+      reset_to_login: "Sorry, your password has been expired. Please reset your password to login."
       auth failure: "Sorry, could not log in with those details."
     destroy:
       title: "Logout"
@@ -2309,6 +2484,7 @@ en:
       legal_1_aup_url: https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy
       legal_1_privacy_policy: Privacy Policy
       legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
+      legal_1_1_terms_of_use_url: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
       legal_2_html: |
         Please %{contact_team_link} with any licensing, copyright, or other legal questions.
       legal_2_contact_team: contact the OpenHistoricalMap team
@@ -2475,6 +2651,11 @@ en:
           url: "https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse"
       export_button: "Export"
       export_download: "Downloading..."
+      confirmation:
+        header: Download XML Data
+        body: Do you want to download map data for this area in XML format? Note that large areas may take some time to download.
+        cancel: Cancel
+        download: Download
     fixthemap:
       title: Report a problem / Fix the map
       how_to_help:
@@ -2523,8 +2704,6 @@ en:
         description: Help for companies and organisations switching to OpenStreetMap based maps and other services.
       welcomemat:
         url: https://welcome.openstreetmap.org/
-        title: For Organizations
-        description: With an organization making plans for OpenStreetMap? Find what you need to know in the Welcome Mat.
         title: Welcome to OHM
         description: Start with this quick guide covering OpenHistoricalMap basics.
       discord:
@@ -2560,8 +2739,7 @@ en:
       change_preferences: Change your preferences here
     any_questions:
       title: Any questions?
-      paragraph_1_html: |
-        OpenHistoricalMap has several resources for learning about the project, asking and answering questions, and collaboratively discussing and documenting mapping topics. %{help_link}.
+      paragraph_1_html: OpenHistoricalMap has several resources for learning about the project, asking and answering questions, and collaboratively discussing and documenting mapping topics. %{help_link}.
       get_help_here: Get help here
       welcome_mat: Check out the Welcome Mat
       welcome_mat_url: https://welcome.openstreetmap.org/
@@ -2773,6 +2951,14 @@ en:
       image_dimensions_html: "Image will show the %{layer} layer at %{width} x %{height}"
       download: "Download"
       downloading: "Downloading..."
+  webgl_error_panes:
+    show:
+      compact_message: WebGL is required for this map.
+      description_html: "We are sorry, but it seems that %{your_browser_does_not_support_webgl}, a technology for rendering 3D graphics on the web."
+      your_browser_does_not_support_webgl: your browser does not support WebGL
+      webgl_is_required_for_this_map: WebGL is required to display this map.
+      read_more_about_webgl: "Read more"
+      read_more_about_webgl_url: https://wiki.openstreetmap.org/wiki/This_map_requires_WebGL
   traces:
     visibility:
       private: "Private (only shared as anonymous, unordered points)"
@@ -3030,6 +3216,9 @@ en:
         html: 'Your address is not displayed publicly, see our %{privacy_policy_link} for more information.'
       or: "or"
       use external auth: "or sign up with a third party"
+      verify_human: Verify you're a human
+    create:
+      not_human: Unfortunately, we can't confirm that you are a human. This is required to create new accounts.
     no_such_user:
       title: "No such user"
       heading: "The user %{user} does not exist"
@@ -3076,6 +3265,7 @@ en:
       activate_user: "Activate this User"
       confirm_user: "Confirm this User"
       unconfirm_user: "Unconfirm this User"
+      suspend_user: "Suspend this User"
       unsuspend_user: "Unsuspend this User"
       hide_user: "Hide this User"
       unhide_user: "Unhide this User"
@@ -3088,9 +3278,24 @@ en:
       change_image: Change Image
       edit_company: Edit Company
       edit_location: Edit Location
+      edit_contribution_calendar: Configure Contribution Calendar
       contributions:
         one: "%{count} contribution in the last year"
         other: "%{count} contributions in the last year"
+      title:
+        administrator: "This user is an administrator"
+        moderator: "This user is a moderator"
+        importer: "This user is an importer"
+      grant:
+        administrator: "Grant administrator access"
+        moderator: "Grant moderator access"
+        importer: "Grant importer access"
+        are_you_sure: "Are you sure you want to grant the role '%{role}' to the user '%{name}'?"
+      revoke:
+        administrator: "Revoke administrator access"
+        moderator: "Revoke moderator access"
+        importer: "Revoke importer access"
+        are_you_sure: "Are you sure you want to revoke the role '%{role}' from the user '%{name}'?"
     sidebar_section:
       home_location: "Home location"
       company: "Company"
@@ -3140,7 +3345,7 @@ en:
           one: "%{count} user found"
           other: "%{count} users found"
         confirm: Confirm Selected Users
-        hide: Hide Selected Users
+        suspend: Suspend Selected Users
         empty: No matching users found
       user:
         summary_html: "%{name} created from %{ip_address} on %{date}"
@@ -3410,6 +3615,18 @@ en:
       tooltip: "Map Key"
       tooltip_disabled: "Map Key not available for this layer"
     map:
+      navigation_control:
+        zoom_in: Zoom In
+        zoom_out: Zoom Out
+      geolocate_control:
+        find_my_location: Show My Location
+        location_not_available: Location not available
+        metersPopup:
+          one: You are within %{count} meter of this point
+          other: You are within %{count} meters of this point
+        feetPopup:
+          one: You are within %{count} foot of this point
+          other: You are within %{count} feet of this point
       zoom:
         in: Zoom In
         out: Zoom Out

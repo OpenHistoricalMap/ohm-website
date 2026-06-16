@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Preferences
   class BasicPreferencesController < PreferencesController
     private
@@ -31,6 +33,11 @@ module Preferences
       if params[:map_color_scheme]
         map_color_scheme_preference = current_user.preferences.find_or_create_by(:k => "map.color_scheme")
         success &= map_color_scheme_preference.update(:v => params[:map_color_scheme])
+      end
+
+      if params[:editor_color_scheme]
+        editor_color_scheme_preference = current_user.preferences.find_or_create_by(:k => "editor.color_scheme")
+        success &= editor_color_scheme_preference.update(:v => params[:editor_color_scheme])
       end
 
       success

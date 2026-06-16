@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 require_relative "elements_test_helper"
 
@@ -101,7 +103,7 @@ module Api
     end
 
     def test_create_by_private_user
-      with_unchanging_request([:data_public => false]) do |headers, changeset|
+      with_unchanging_request([{ :data_public => false }]) do |headers, changeset|
         osm = "<osm><node lat='0' lon='0' changeset='#{changeset.id}'/></osm>"
 
         post api_nodes_path, :params => osm, :headers => headers
@@ -134,6 +136,16 @@ module Api
         assert_equal 1, changeset.num_changes
         assert_predicate changeset, :num_type_changes_in_sync?
         assert_equal 1, changeset.num_created_nodes
+      end
+    end
+
+    def test_create_in_missing_changeset
+      with_unchanging_request do |headers|
+        osm = "<osm><node lat='0' lon='0' changeset='0'/></osm>"
+
+        post api_nodes_path, :params => osm, :headers => headers
+
+        assert_response :conflict
       end
     end
 
@@ -207,7 +219,7 @@ module Api
     # try and put something into a string that the API might
     # use unquoted and therefore allow code injection
     def test_create_with_string_injection_by_private_user
-      with_unchanging_request([:data_public => false]) do |headers, changeset|
+      with_unchanging_request([{ :data_public => false }]) do |headers, changeset|
         osm = <<~OSM
           <osm>
             <node lat='0' lon='0' changeset='#{changeset.id}'>
@@ -255,6 +267,27 @@ module Api
       end
     end
 
+    def test_create_race_condition
+      user = create(:user)
+      changeset = create(:changeset, :user => user)
+      auth_header = bearer_authorization_header user
+      path = api_nodes_path
+      concurrency_level = 16
+
+      threads = Array.new(concurrency_level) do
+        Thread.new do
+          osm = "<osm><node lat='0' lon='0' changeset='#{changeset.id}'/></osm>"
+          post path, :params => osm, :headers => auth_header
+        end
+      end
+      threads.each(&:join)
+
+      changeset.reload
+      assert_equal concurrency_level, changeset.num_changes
+      assert_predicate changeset, :num_type_changes_in_sync?
+      assert_equal concurrency_level, changeset.num_created_nodes
+    end
+
     def test_show_not_found
       get api_node_path(0)
       assert_response :not_found
@@ -294,7 +327,7 @@ module Api
 
     def test_destroy_in_closed_changeset_by_private_user
       with_unchanging(:node) do |node|
-        with_unchanging_request([:data_public => false], [:closed]) do |headers, changeset|
+        with_unchanging_request([{ :data_public => false }], [:closed]) do |headers, changeset|
           osm_xml = xml_for_node node
           osm_xml = update_changeset osm_xml, changeset.id
 
@@ -307,7 +340,7 @@ module Api
 
     def test_destroy_in_missing_changeset_by_private_user
       with_unchanging(:node) do |node|
-        with_unchanging_request([:data_public => false]) do |headers|
+        with_unchanging_request([{ :data_public => false }]) do |headers|
           osm_xml = xml_for_node node
           osm_xml = update_changeset osm_xml, 0
 
@@ -320,7 +353,7 @@ module Api
 
     def test_destroy_by_private_user
       with_unchanging(:node) do |node|
-        with_unchanging_request([:data_public => false]) do |headers, changeset|
+        with_unchanging_request([{ :data_public => false }]) do |headers, changeset|
           osm_xml = xml_for_node node
           osm_xml = update_changeset osm_xml, changeset.id
 
@@ -333,7 +366,7 @@ module Api
 
     def test_destroy_deleted_node_by_private_user
       with_unchanging(:node, :deleted) do |node|
-        with_unchanging_request([:data_public => false]) do |headers, changeset|
+        with_unchanging_request([{ :data_public => false }]) do |headers, changeset|
           osm_xml = "<osm><node id='#{node.id}' changeset='#{changeset.id}' version='1' lat='0' lon='0'/></osm>"
 
           delete api_node_path(node), :params => osm_xml.to_s, :headers => headers
@@ -344,7 +377,7 @@ module Api
     end
 
     def test_destroy_missing_node_by_private_user
-      with_unchanging_request([:data_public => false]) do |headers|
+      with_unchanging_request([{ :data_public => false }]) do |headers|
         delete api_node_path(0), :headers => headers
 
         assert_require_public_data
@@ -355,7 +388,7 @@ module Api
       with_unchanging(:node) do |node|
         create(:way_node, :node => node)
 
-        with_unchanging_request([:data_public => false]) do |headers, changeset|
+        with_unchanging_request([{ :data_public => false }]) do |headers, changeset|
           osm_xml = xml_for_node node
           osm_xml = update_changeset osm_xml, changeset.id
 
@@ -370,7 +403,7 @@ module Api
       with_unchanging(:node) do |node|
         create(:relation_member, :member => node)
 
-        with_unchanging_request([:data_public => false]) do |headers, changeset|
+        with_unchanging_request([{ :data_public => false }]) do |headers, changeset|
           osm_xml = xml_for_node node
           osm_xml = update_changeset osm_xml, changeset.id
 
@@ -539,7 +572,7 @@ module Api
       with_unchanging(:node) do |node|
         other_user = create(:user)
 
-        with_unchanging_request([:data_public => false], [:user => other_user]) do |headers, changeset|
+        with_unchanging_request([{ :data_public => false }], [{ :user => other_user }]) do |headers, changeset|
           osm_xml = xml_for_node node
           osm_xml = update_changeset osm_xml, changeset.id
 
@@ -552,7 +585,7 @@ module Api
 
     def test_update_in_closed_changeset_by_private_user
       with_unchanging(:node) do |node|
-        with_unchanging_request([:data_public => false], [:closed]) do |headers, changeset|
+        with_unchanging_request([{ :data_public => false }], [:closed]) do |headers, changeset|
           osm_xml = xml_for_node node
           osm_xml = update_changeset osm_xml, changeset.id
 
@@ -565,7 +598,7 @@ module Api
 
     def test_update_in_missing_changeset_by_private_user
       with_unchanging(:node) do |node|
-        with_unchanging_request([:data_public => false]) do |headers|
+        with_unchanging_request([{ :data_public => false }]) do |headers|
           osm_xml = xml_for_node node
           osm_xml = update_changeset osm_xml, 0
 
@@ -594,7 +627,7 @@ module Api
 
     def test_update_by_private_user
       with_unchanging(:node) do |node|
-        with_unchanging_request([:data_public => false]) do |headers, changeset|
+        with_unchanging_request([{ :data_public => false }]) do |headers, changeset|
           osm_xml = xml_for_node node
           osm_xml = update_changeset osm_xml, changeset.id
 
@@ -609,7 +642,7 @@ module Api
       with_unchanging(:node) do |node|
         other_user = create(:user)
 
-        with_unchanging_request([], [:user => other_user]) do |headers, changeset|
+        with_unchanging_request([], [{ :user => other_user }]) do |headers, changeset|
           osm_xml = xml_for_node node
           osm_xml = update_changeset osm_xml, changeset.id
 
@@ -858,7 +891,7 @@ module Api
 
     def check_update_with_invalid_attr_value(name, value, data_public: true)
       with_unchanging(:node) do |node|
-        with_unchanging_request([:data_public => data_public]) do |headers, changeset|
+        with_unchanging_request([{ :data_public => data_public }]) do |headers, changeset|
           osm_xml = xml_for_node node
           osm_xml = xml_attr_rewrite osm_xml, name, value
           osm_xml = update_changeset osm_xml, changeset.id

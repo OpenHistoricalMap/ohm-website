@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Api
   class RelationsController < ApiController
     before_action :check_api_writable, :only => [:create, :update, :destroy]
@@ -10,13 +12,13 @@ module Api
     before_action :check_rate_limit, :only => [:create, :update, :destroy]
 
     def index
-      raise OSM::APIBadUserInput, "The parameter relations is required, and must be of the form relations=id[,id[,id...]]" unless params["relations"]
+      raise OSM::APIBadUserInput, "The parameter relations is required, and must be of the form relations=id[,id[,id...]]" unless params[:relations]
 
-      ids = params["relations"].split(",").collect(&:to_i)
+      ids = params.extract_value(:relations, :delimiter => ",").collect(&:to_i)
 
       raise OSM::APIBadUserInput, "No relations were given to search for" if ids.empty?
 
-      @relations = Relation.find(ids)
+      @relations = Relation.includes(:relation_members, :element_tags).find(ids)
 
       # Render the result
       respond_to do |format|
@@ -26,7 +28,7 @@ module Api
     end
 
     def show
-      relation = Relation.find(params[:id])
+      relation = Relation.includes(:relation_members, :element_tags).find(params.expect(:id))
 
       response.last_modified = relation.timestamp unless params[:full]
 
@@ -49,8 +51,8 @@ module Api
 
           # next load the relations and the ways.
 
-          relations = Relation.where(:id => relation_ids).includes(:relation_tags)
-          ways = Way.where(:id => way_ids).includes(:way_nodes, :way_tags)
+          relations = Relation.where(:id => relation_ids).includes(:element_tags)
+          ways = Way.where(:id => way_ids).includes(:way_nodes, :element_tags)
 
           # now additionally collect nodes referenced by ways. Note how we
           # recursively evaluate ways but NOT relations.
@@ -59,7 +61,7 @@ module Api
             way.way_nodes.collect(&:node_id)
           end
           node_ids += way_node_ids.flatten
-          nodes = Node.where(:id => node_ids.uniq).includes(:node_tags)
+          nodes = Node.where(:id => node_ids.uniq).includes(:element_tags)
 
           @nodes = []
           nodes.each do |node|
@@ -97,26 +99,34 @@ module Api
     def create
       relation = Relation.from_xml(request.raw_post, :create => true)
 
-      # Assume that Relation.from_xml has thrown an exception if there is an error parsing the xml
-      relation.create_with_history current_user
+      Changeset.transaction do
+        relation.changeset&.lock!
+        relation.create_with_history current_user
+      end
       render :plain => relation.id.to_s
     end
 
     def update
-      relation = Relation.find(params[:id])
+      relation = Relation.find(params.expect(:id))
       new_relation = Relation.from_xml(request.raw_post)
 
       raise OSM::APIBadUserInput, "The id in the url (#{relation.id}) is not the same as provided in the xml (#{new_relation.id})" unless new_relation && new_relation.id == relation.id
 
-      relation.update_from new_relation, current_user
+      Changeset.transaction do
+        new_relation.changeset&.lock!
+        relation.update_from(new_relation, current_user)
+      end
       render :plain => relation.version.to_s
     end
 
     def destroy
-      relation = Relation.find(params[:id])
+      relation = Relation.find(params.expect(:id))
       new_relation = Relation.from_xml(request.raw_post)
       if new_relation && new_relation.id == relation.id
-        relation.delete_with_history!(new_relation, current_user)
+        Changeset.transaction do
+          new_relation.changeset&.lock!
+          relation.delete_with_history!(new_relation, current_user)
+        end
         render :plain => relation.version.to_s
       else
         head :bad_request

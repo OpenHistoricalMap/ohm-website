@@ -1,21 +1,23 @@
+# frozen_string_literal: true
+
 require "test_helper"
-
-class InvalidCharsValidatable
-  include ActiveModel::Validations
-
-  validates :chars, :characters => true
-  attr_accessor :chars
-end
-
-class InvalidUrlCharsValidatable
-  include ActiveModel::Validations
-
-  validates :chars, :characters => { :url_safe => true }
-  attr_accessor :chars
-end
 
 class CharactersValidatorTest < ActiveSupport::TestCase
   include Rails::Dom::Testing::Assertions::SelectorAssertions
+
+  class InvalidCharsValidatable
+    include ActiveModel::Validations
+
+    validates :chars, :characters => true
+    attr_accessor :chars
+  end
+
+  class InvalidUrlCharsValidatable
+    include ActiveModel::Validations
+
+    validates :chars, :characters => { :url_safe => true }
+    attr_accessor :chars
+  end
 
   def test_with_valid_chars
     c = InvalidCharsValidatable.new

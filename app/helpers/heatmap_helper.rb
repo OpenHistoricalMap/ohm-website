@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module HeatmapHelper
   def prepare_heatmap(data, from, to)
     # Pad the start by one week to ensure the heatmap can start on the first day of the week
@@ -12,9 +14,9 @@ module HeatmapHelper
              .chunk_while { |before, after| before == after }
              .map(&:first)
              .map do |month|
-      month_offset += 12 if month == 1
-      month + month_offset
-    end
+               month_offset += 12 if month == 1
+               month + month_offset
+             end
 
     {
       :days => all_days,

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Users
   class ListsController < ApplicationController
     include PaginationMethods
@@ -25,7 +27,7 @@ module Users
       @users_count = users.limit(501).count
       @users_count = I18n.t("count.at_least_pattern", :count => 500) if @users_count > 500
 
-      @users, @newer_users_id, @older_users_id = get_page_items(users, :limit => 50)
+      @users = get_page_items(users, :limit => 50)
     end
 
     ##
@@ -33,8 +35,8 @@ module Users
     def update
       ids = params.fetch(:user, {}).keys.collect(&:to_i)
 
-      User.where(:id => ids).update_all(:status => "confirmed") if params[:confirm]
-      User.where(:id => ids).update_all(:status => "deleted") if params[:hide]
+      User.where(:id => ids).each(&:confirm!) if params[:confirm]
+      User.where(:id => ids).each(&:suspend_if_possible!) if params[:suspend]
 
       redirect_to url_for(params.permit(:status, :username, :ip, :edits, :before, :after))
     end

@@ -1,3 +1,4 @@
+//= require download_util
 OSM.initializeDataLayer = function (map) {
   let dataLoader, loadedBounds;
   const dataLayer = map.dataLayer;
@@ -49,20 +50,6 @@ OSM.initializeDataLayer = function (map) {
           .click(add)));
   }
 
-  function displayLoadError(message, close) {
-    $("#browse_status").html(
-      $("<div class='p-3'>").append(
-        $("<div class='d-flex'>").append(
-          $("<h2 class='flex-grow-1 text-break'>")
-            .text(OSM.i18n.t("browse.start_rjs.load_data")),
-          $("<div>").append(
-            $("<button type='button' class='btn-close'>")
-              .attr("aria-label", OSM.i18n.t("javascripts.close"))
-              .click(close))),
-        $("<p class='alert alert-warning'>")
-          .text(OSM.i18n.t("browse.start_rjs.feature_error", { message: message }))));
-  }
-
   function getData() {
     /*
      * Modern browsers are quite happy showing far more than 100 features in
@@ -110,6 +97,7 @@ OSM.initializeDataLayer = function (map) {
 
     function fetchDataForBounds(bounds) {
       return fetch(`/api/${OSM.API_VERSION}/map.json?bbox=${bounds.toBBoxString()}`, {
+        headers: { ...OSM.oauth },
         signal: dataLoader.signal
       });
     }
@@ -166,7 +154,7 @@ OSM.initializeDataLayer = function (map) {
       .catch(function (error) {
         if (error.name === "AbortError") return;
 
-        displayLoadError(error?.message, () => {
+        OSM.displayLoadError(error?.message, () => {
           $("#browse_status").empty();
         });
       })

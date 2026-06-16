@@ -1,4 +1,4 @@
-require "rtlcss"
+# frozen_string_literal: true
 
 class RtlcssSCSSProcessor < SassC::Rails::ScssTemplate
   def self.call(input)

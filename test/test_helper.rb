@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "simplecov"
 require "simplecov-lcov"
 
@@ -32,24 +34,31 @@ ENV["RAILS_ENV"] = "test"
 require_relative "../config/environment"
 require "rails/test_help"
 require "webmock/minitest"
-require "minitest/focus" unless ENV["CI"]
+require "minitest/focus"
 
-WebMock.disable_net_connect!(:allow_localhost => true)
+WebMock.disable_net_connect!(:allow_localhost => true, :allow => %w[selenium-default selenium-de selenium-nolang rails-app])
 
 module ActiveSupport
   class TestCase
     include FactoryBot::Syntax::Methods
     include ActiveJob::TestHelper
+    include LibXML
 
-    # Run tests in parallel with specified workers
-    parallelize(:workers => :number_of_processors)
+    if ENV.key?("CAPYBARA_SERVER_PORT")
+      # Running in the devcontainer. Can't figure out how
+      # to run things in parallel at the moment, so for now
+      # we are not doing it.
+    elsif Settings.enable_parallel_tests
+      # Run tests in parallel with specified workers
+      parallelize(:workers => :number_of_processors)
 
-    parallelize_setup do |worker|
-      SimpleCov.command_name "#{SimpleCov.command_name}-#{worker}"
-    end
+      parallelize_setup do |worker|
+        SimpleCov.command_name "#{SimpleCov.command_name}-#{worker}"
+      end
 
-    parallelize_teardown do
-      SimpleCov.result
+      parallelize_teardown do
+        SimpleCov.result
+      end
     end
 
     ##
@@ -180,6 +189,29 @@ module ActiveSupport
     end
 
     ##
+    # Check that an email was received on the given email address,
+    # with the given subject. Note that it assumes that there's only
+    # one recipient and will fail otherwise. If you need a different
+    # behaviour, please extend.
+    def assert_email_received(expected_address, expected_subject)
+      email = ActionMailer::Base.deliveries.find { |e| e.to.first == expected_address }
+      assert_not_nil email
+      assert_equal 1, email.to.length
+      assert_equal expected_address, email.to.first
+      assert_equal expected_subject, email.subject
+    end
+
+    ##
+    # Check that no email was received on the given email address.
+    # Note that this assumes that any emails have only one recipient,
+    # and may give incorrect results otherwise. If you need a different
+    # behaviour, please extend.
+    def assert_email_not_received(expected_address)
+      email = ActionMailer::Base.deliveries.find { |e| e.to.first == expected_address }
+      assert_nil email
+    end
+
+    ##
     # execute a block with a given set of HTTP responses stubbed
     def with_http_stubs(stubs_file)
       stubs = YAML.load_file(File.expand_path("../http/#{stubs_file}.yml", __FILE__))
@@ -229,7 +261,7 @@ module ActiveSupport
         el["lon"] = node.lon.to_s
       end
 
-      add_tags_to_xml_node(el, node.node_tags)
+      add_tags_to_xml_node(el, node.element_tags)
 
       el
     end
@@ -260,7 +292,7 @@ module ActiveSupport
         el << node_el
       end
 
-      add_tags_to_xml_node(el, way.way_tags)
+      add_tags_to_xml_node(el, way.element_tags)
 
       el
     end
@@ -285,7 +317,7 @@ module ActiveSupport
         el << member_el
       end
 
-      add_tags_to_xml_node(el, relation.relation_tags)
+      add_tags_to_xml_node(el, relation.element_tags)
 
       el
     end
@@ -332,6 +364,10 @@ module ActiveSupport
 
     def with_settings(settings)
       saved_settings = Settings.to_hash.slice(*settings.keys)
+
+      settings.each_key do |key|
+        saved_settings[key] = nil unless saved_settings.key?(key)
+      end
 
       Settings.merge!(settings)
 
@@ -382,6 +418,10 @@ module ActiveSupport
       assert_response :success
       assert_template template
       assert_template :layout => "xhr"
+    end
+
+    def parse_html(html)
+      Rails::Dom::Testing.html_document_fragment.parse(html)
     end
   end
 end

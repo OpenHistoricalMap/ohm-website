@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class IssueCommentsController < ApplicationController
   layout :site_layout
 
@@ -10,7 +12,7 @@ class IssueCommentsController < ApplicationController
   before_action :check_database_writable, :only => [:create]
 
   def create
-    @issue = Issue.find(params[:issue_id])
+    @issue = Issue.find(params.expect(:issue_id))
     comment = @issue.comments.build(issue_comment_params)
     comment.user = current_user
     comment.save!

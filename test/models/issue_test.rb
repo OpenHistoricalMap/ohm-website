@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class IssueTest < ActiveSupport::TestCase
@@ -10,7 +12,6 @@ class IssueTest < ActiveSupport::TestCase
   end
 
   def test_reported_user
-    create(:language, :code => "en")
     user = create(:user)
     note = create(:note, :author => create(:user))
     anonymous_note = create(:note, :author => nil)

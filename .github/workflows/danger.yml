@@ -14,21 +14,26 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Check out code
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           fetch-depth: 0
       - name: Setup ruby
-        uses: ruby/setup-ruby@efbf473cab83af4468e8606cc33eca9281bb213f # v1.256.0
+        uses: ruby/setup-ruby@6aaa311d81eba98ae12eaffbcb63296ace0efcde # v1.307.0
         with:
-          ruby-version: 3.2
-          rubygems: 3.4.10
+          ruby-version: 3.3
           bundler-cache: true
       - name: Create base branch
+        env:
+          BASE_CLONE_URL: ${{ github.event.pull_request.base.repo.clone_url }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
-          git fetch ${{ github.event.pull_request.base.repo.clone_url }} ${{ github.event.pull_request.base.sha }}:danger_base
+          git fetch "$BASE_CLONE_URL" "$BASE_SHA:danger_base"
       - name: Create head branch
+        env:
+          HEAD_CLONE_URL: ${{ github.event.pull_request.head.repo.clone_url }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
-          git fetch ${{ github.event.pull_request.head.repo.clone_url }} ${{ github.event.pull_request.head.sha }}:danger_head
+          git fetch "$HEAD_CLONE_URL" "$HEAD_SHA:danger_head"
       - name: Danger
         env:
           DANGER_GITHUB_BEARER_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -20,6 +20,9 @@
 - :code: ms
   :native_name: Bahasa Melayu
   :english_name: Malay
+- :code: bcl
+  :native_name: Bikol Sentral
+  :english_name: Bikol
 - :code: bs
   :native_name: bosanski
   :english_name: Bosnian
@@ -99,6 +102,9 @@
 - :code: it
   :native_name: italiano
   :english_name: Italian
+- :code: kw
+  :native_name: kernowek
+  :english_name: Cornish
 - :code: gcf
   :native_name: kréyòl Gwadloup
   :english_name: Guadeloupean Creole
@@ -107,6 +113,9 @@
   :short_native_name: kurdî
   :short_native_note: latînî
   :english_name: Kurdish (Latin)
+- :code: lkt
+  :native_name: Lakota
+  :english_name: Lakota
 - :code: lv
   :native_name: latviešu
   :english_name: Latvian
@@ -310,6 +319,9 @@
 - :code: my
   :native_name: မြန်မာဘာသာ
   :english_name: Burmese
+- :code: shn
+  :native_name: လိၵ်ႈတႆး
+  :english_name: Shan
 - :code: xmf
   :native_name: მარგალური
   :english_name: Mingrelian

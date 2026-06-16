@@ -1,6 +1,6 @@
-module UserHelper
-  include InlineSvg::ActionView::Helpers
+# frozen_string_literal: true
 
+module UserHelper
   # User images
 
   def user_image(user, options = {})
@@ -50,22 +50,6 @@ module UserHelper
     else
       image_url("avatar.svg")
     end
-  end
-
-  # External authentication support
-
-  def auth_button(provider, preferred: false)
-    body = inline_svg_tag("auth_providers/#{provider}.svg",
-                          :class => "rounded-1 text-body-emphasis",
-                          :size => "36")
-    body += t("application.auth_providers.#{provider}.title") if preferred
-    link_to(
-      body,
-      auth_path(:provider => provider),
-      :method => :post,
-      :class => ["auth_button btn btn-outline-secondary border p-2", { "px-4 d-flex gap-3 justify-content-center align-items-center" => preferred }],
-      :title => t("application.auth_providers.#{provider}.title")
-    )
   end
 
   private

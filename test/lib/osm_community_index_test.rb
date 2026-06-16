@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class CountryTest < ActiveSupport::TestCase
@@ -7,7 +9,7 @@ class CountryTest < ActiveSupport::TestCase
     community_locale_yaml = {}
     community_en_yaml = {}
 
-    name = OsmCommunityIndex.resolve_name(community, community_locale_yaml, community_en_yaml)
+    name = OsmCommunityIndex.resolve_name(community, community_locale_yaml, community_en_yaml, "en")
     assert_equal("Community Name", name)
   end
 
@@ -17,7 +19,7 @@ class CountryTest < ActiveSupport::TestCase
     community_locale_yaml = {}
     community_en_yaml = {}
 
-    name = OsmCommunityIndex.resolve_name(community, community_locale_yaml, community_en_yaml)
+    name = OsmCommunityIndex.resolve_name(community, community_locale_yaml, community_en_yaml, "en")
     assert_equal("Chapter Name", name)
   end
 
@@ -27,7 +29,7 @@ class CountryTest < ActiveSupport::TestCase
     community_locale_yaml = { "foo-chapter" => { "name" => "Translated Chapter Name" } }
     community_en_yaml = {}
 
-    name = OsmCommunityIndex.resolve_name(community, community_locale_yaml, community_en_yaml)
+    name = OsmCommunityIndex.resolve_name(community, community_locale_yaml, community_en_yaml, "en")
     assert_equal("Translated Chapter Name", name)
   end
 
@@ -37,7 +39,7 @@ class CountryTest < ActiveSupport::TestCase
     community_locale_yaml = { "_communities" => { "communityname" => "Translated Community" }, "_defaults" => { "osm-lc" => { "name" => "{community} Chapter" } } }
     community_en_yaml = {}
 
-    name = OsmCommunityIndex.resolve_name(community, community_locale_yaml, community_en_yaml)
+    name = OsmCommunityIndex.resolve_name(community, community_locale_yaml, community_en_yaml, "en")
     assert_equal("Translated Community Chapter", name)
   end
 
@@ -47,7 +49,7 @@ class CountryTest < ActiveSupport::TestCase
     community_locale_yaml = { "_communities" => { "communityname" => "Translated Community" }, "_defaults" => { "osm-lc" => { "name" => "{comminauté} Chapter" } } }
     community_en_yaml = {}
 
-    name = OsmCommunityIndex.resolve_name(community, community_locale_yaml, community_en_yaml)
+    name = OsmCommunityIndex.resolve_name(community, community_locale_yaml, community_en_yaml, "en")
     assert_equal("Community Name", name)
   end
 end

@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 require_relative File.join("..", "config", "environment")
+
+ActiveRecord::Base.connection.execute("SET statement_timeout = 0 ")
 
 start_time = Time.now.utc
 

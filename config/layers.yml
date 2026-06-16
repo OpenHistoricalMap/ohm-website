@@ -4,6 +4,8 @@
   nameId: "historical"
   canEmbed: true
   source: openhistoricalmap
+  isVectorStyle: true
+  styleUrl: "https://openhistoricalmap.org/map-styles/historical/historical.json"
   credit:
     id: 'make_a_donation'
     href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
@@ -15,6 +17,8 @@
   nameId: "railway"
   canEmbed: true
   source: openhistoricalmap
+  isVectorStyle: true
+  styleUrl: "https://openhistoricalmap.org/map-styles/railway/railway.json"
   credit:
     id: 'make_a_donation'
     href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
@@ -26,6 +30,8 @@
   nameId: "woodblock"
   canEmbed: true
   source: openhistoricalmap
+  isVectorStyle: true
+  styleUrl: "https://openhistoricalmap.org/map-styles/woodblock/woodblock.json"
   credit:
     id: 'make_a_donation'
     href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
@@ -37,6 +43,8 @@
   nameId: "japanesescroll"
   canEmbed: true
   source: openhistoricalmap
+  isVectorStyle: true
+  styleUrl: "https://openhistoricalmap.org/map-styles/japanese_scroll/japanese_scroll.json"
   credit:
     id: 'make_a_donation'
     href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
@@ -46,8 +54,11 @@
   code: "M"
   layerId: "mapnik"
   nameId: "standard"
+  wiki: "https://wiki.openstreetmap.org/wiki/OpenStreetMap_Carto"
   canEmbed: true
   canDownloadImage: true
+  maxZoom: 19
+  tileUrl: "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
   credit:
     id: "make_a_donation"
     href: "https://supporting.openstreetmap.org"
@@ -57,7 +68,11 @@
   code: "Y"
   layerId: "cyclosm"
   nameId: "cyclosm"
+  wiki: "https://wiki.openstreetmap.org/wiki/CyclOSM"
   canEmbed: true
+  maxZoom: 20
+  tileUrl: "https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png"
+  subdomains: [a, b, c]
   credit:
     id: "cyclosm_credit"
     children:
@@ -72,9 +87,12 @@
   code: "C"
   layerId: "cyclemap"
   nameId: "cycle_map"
+  wiki: "https://wiki.openstreetmap.org/wiki/OpenCycleMap"
   apiKeyId: "thunderforest_key"
   canEmbed: true
   canDownloadImage: true
+  maxZoom: 21
+  tileUrl: "https://api.thunderforest.com/cycle/{z}/{x}/{y}{ratio}.png?apikey={apikey}"
   credit:
     id: "thunderforest_credit"
     children:
@@ -82,14 +100,19 @@
         id: "andy_allan"
         href: "https://www.thunderforest.com/"
 
-- leafletOsmId: "TransportMap"
-  leafletOsmDarkId: "TransportDarkMap"
+- leafletOsmId: "TransportMapVector"
+  leafletOsmDarkId: "TransportDarkMapVector"
   code: "T"
   layerId: "transportmap"
   nameId: "transport_map"
+  wiki: "https://wiki.openstreetmap.org/wiki/Transport_Map"
   apiKeyId: "thunderforest_key"
   canEmbed: true
   canDownloadImage: true
+  maxZoom: 23
+  isVectorStyle: true
+  styleUrl: "https://api.thunderforest.com/styles/transport/style.json?apikey={apikey}"
+  styleUrlDark: "https://api.thunderforest.com/styles/transport-dark/style.json?apikey={apikey}"
   credit:
     id: "thunderforest_credit"
     children:
@@ -101,7 +124,10 @@
   code: "P"
   layerId: "tracestracktopo"
   nameId: "tracestracktop_topo"
+  wiki: "https://wiki.openstreetmap.org/wiki/Tracestrack"
   apiKeyId: "tracestrack_key"
+  maxZoom: 19
+  tileUrl: "https://tile.tracestrack.com/topo__/{z}/{x}/{y}.webp?key={apikey}"
   credit:
     id: "tracestrack_credit"
     children:
@@ -113,7 +139,11 @@
   code: "H"
   layerId: "hot"
   nameId: "hot"
+  wiki: "https://wiki.openstreetmap.org/wiki/Humanitarian"
   canEmbed: true
+  maxZoom: 20
+  tileUrl: "https://tile-{s}.openstreetmap.fr/hot/{z}/{x}/{y}.png"
+  subdomains: [a, b, c]
   credit:
     id: "hotosm_credit"
     children:
@@ -129,7 +159,12 @@
   code: "S"
   layerId: "shortbread"
   nameId: "shortbread"
+  wiki: "https://wiki.openstreetmap.org/wiki/Shortbread"
+  canEmbed: true
   maxZoom: 23
+  isVectorStyle: true
+  styleUrl: "https://vector.openstreetmap.org/styles/shortbread/colorful.json"
+  styleUrlDark: "https://vector.openstreetmap.org/styles/shortbread/eclipse.json"
   credit:
     id: "make_a_donation"
     href: "https://supporting.openstreetmap.org"
@@ -139,8 +174,11 @@
   code: "V"
   layerId: "openmaptiles_osm"
   nameId: "openmaptiles_osm"
+  wiki: "https://wiki.openstreetmap.org/wiki/MapTiler"
   apiKeyId: "maptiler_key"
   maxZoom: 23
+  isVectorStyle: true
+  styleUrl: "https://api.maptiler.com/maps/openstreetmap/style.json?key={apikey}"
   credit:
     id: "openmaptiles_credit"
     children:

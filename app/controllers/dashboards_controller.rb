@@ -1,8 +1,11 @@
+# frozen_string_literal: true
+
 class DashboardsController < ApplicationController
   layout :site_layout
 
   before_action :authorize_web
   before_action :set_locale
+  before_action :update_totp
 
   authorize_resource :class => false
 

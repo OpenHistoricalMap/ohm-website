@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module NoteHelper
   include ActionView::Helpers::TranslationHelper
 
@@ -31,5 +33,13 @@ module NoteHelper
       link_to h(author.display_name), link_options.merge(:controller => "/users", :action => "show", :display_name => author.display_name),
               :class => "mw-100 d-inline-block align-bottom text-truncate text-wrap", :dir => "auto"
     end
+  end
+
+  def soft_anonymous_notes_limit_reached?(anonymous_notes_count)
+    !current_user && anonymous_notes_count >= 5
+  end
+
+  def hard_anonymous_notes_limit_reached?(anonymous_notes_count)
+    !current_user && anonymous_notes_count >= 10
   end
 end

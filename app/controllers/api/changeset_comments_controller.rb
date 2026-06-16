@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Api
   class ChangesetCommentsController < ApiController
     include QueryMethods
@@ -29,7 +31,7 @@ module Api
       raise OSM::APIRateLimitExceeded if rate_limit_exceeded?
 
       # Extract the arguments
-      changeset_id = params[:changeset_id].to_i
+      changeset_id = params.expect(:changeset_id).to_i
       body = params[:text]
 
       # Find the changeset and check it is valid
@@ -42,9 +44,7 @@ module Api
                                           :author => current_user)
 
       # Notify current subscribers of the new comment
-      changeset.subscribers.visible.each do |user|
-        UserMailer.changeset_comment_notification(comment, user).deliver_later if current_user != user
-      end
+      ChangesetCommentNotifier.with(:record => comment).deliver_later
 
       # Add the commenter to the subscribers if necessary
       changeset.subscribers << current_user unless changeset.subscribers.exists?(current_user.id)

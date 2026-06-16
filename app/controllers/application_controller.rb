@@ -78,6 +78,8 @@ class ApplicationController < ActionController::Base
 
   def require_user
     unless current_user
+      response.headers["Cache-Control"] = "private, no-store"
+
       if request.get?
         redirect_to login_path(:referer => request.fullpath)
       else
@@ -274,22 +276,16 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def preferred_color_scheme(subject)
-    if current_user
-      current_user.preferences.find_by(:k => "#{subject}.color_scheme")&.v || "auto"
-    else
-      "auto"
-    end
-  end
-
-  helper_method :preferred_editor, :preferred_color_scheme
+  helper_method :preferred_editor
 
   def update_totp
     if Settings.key?(:totp_key)
       cookies["_osm_totp_token"] = {
         :value => ROTP::TOTP.new(Settings.totp_key, :interval => 3600).now,
-        :domain => "openstreetmap.org",
-        :expires => 1.hour.from_now
+        :domain => Settings.totp_domain,
+        :expires => 1.hour.from_now,
+        :secure => Settings.server_protocol == "https",
+        :httponly => true
       }
     end
   end

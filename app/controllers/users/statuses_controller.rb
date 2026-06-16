@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Users
   class StatusesController < ApplicationController
     layout :site_layout
@@ -16,9 +18,9 @@ module Users
       @user.activate! if params[:event] == "activate"
       @user.confirm! if params[:event] == "confirm"
       @user.unconfirm! if params[:event] == "unconfirm"
-      @user.hide! if params[:event] == "hide"
-      @user.unhide! if params[:event] == "unhide"
+      @user.undelete! if params[:event] == "undelete"
       @user.unsuspend! if params[:event] == "unsuspend"
+      @user.suspend! if params[:event] == "suspend"
       @user.soft_destroy! if params[:event] == "soft_destroy" # destroy a user, marking them as deleted and removing personal data
       redirect_to user_path(params[:user_display_name])
     end
@@ -28,7 +30,7 @@ module Users
     ##
     # ensure that there is a "user" instance variable
     def lookup_user_by_name
-      @user = User.find_by!(:display_name => params[:user_display_name])
+      @user = User.find_by!(:display_name => params.expect(:user_display_name))
     rescue ActiveRecord::RecordNotFound
       redirect_to user_path(params[:user_display_name]) unless @user
     end

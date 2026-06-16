@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Api
   class UserBlocksController < ApiController
     before_action :check_api_writable, :only => :create
@@ -10,7 +12,7 @@ module Api
     def show
       raise OSM::APIBadUserInput, "No id was given" unless params[:id]
 
-      @user_block = UserBlock.find(params[:id])
+      @user_block = UserBlock.find(params.expect(:id))
     rescue ActiveRecord::RecordNotFound
       raise OSM::APINotFoundError
     end
