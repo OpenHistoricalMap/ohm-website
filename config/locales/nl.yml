@@ -161,9 +161,9 @@ nl:
     attributes:
       client_application:
         name: Naam (verplicht)
-        url: Hoofd-URL van toepassing (verplicht)
-        callback_url: Callback-URL
-        support_url: Ondersteunings-URL
+        url: Hoofd-urlL van toepassing (verplicht)
+        callback_url: Callback-url
+        support_url: Ondersteunings-url
         allow_read_prefs: gebruikersvoorkeuren lezen
         allow_write_prefs: gebruikersvoorkeuren wijzigen
         allow_write_diary: dagboekberichten schrijven en reacties toevoegen
@@ -525,8 +525,7 @@ nl:
         relation: relatie
     start_rjs:
       feature_warning: '%{num_features} functies worden geladen, waardoor uw browser
-        traag kan worden of niet reageert. Weet u zeker dat je deze gegevens wilt
-        weergeven?'
+        traag kan worden of niet reageert. Weet u zeker dat u deze gegevens wilt weergeven?'
       feature_error: 'Objecten konden niet worden geladen: %{message}'
       load_data: Gegevens laden
       loading: Bezig met laden…
@@ -719,7 +718,7 @@ nl:
       view_changeset_details: Details wijzigingenset weergeven
     popup:
       your location: Uw locatie
-      nearby mapper: Nabije kaartmaker
+      nearby mapper: Kaartmaker in de buurt
       following: U volgt
     show:
       title: Mijn dashboard
@@ -728,7 +727,7 @@ nl:
       edit_your_profile: Pas uw profiel aan
       followings: Gebruikers die u volgt
       no followings: U volgt nog geen andere gebruiker.
-      nearby users: Andere nabije gebruikers
+      nearby users: Andere gebruikers in de buurt
       no nearby users: Er zijn nog geen andere gebruikers die hebben opgegeven in
         de buurt te mappen.
       followed_changesets: wijzigingensets
@@ -1888,7 +1887,7 @@ nl:
         more_reporters: en nog %{count}
   issue_comments:
     create:
-      comment_created: Uw reactie is succesvol aangemaakt
+      comment_created: Uw reactie is aangemaakt
       issue_reassigned: Uw reactie is aangemaakt en het probleem is opnieuw toegewezen
   reports:
     new:
@@ -1925,7 +1924,7 @@ nl:
           abusive_label: Deze opmerking is beledigend
           other_label: Anders
     create:
-      successful_report: Uw rapport is succesvol geregistreerd
+      successful_report: Uw rapport is geregistreerd
       provide_details: Verschaf a.u.b. de vereiste details
   layouts:
     logo:
@@ -1946,7 +1945,7 @@ nl:
     intro_header: Welkom bij OpenHistoricalMap!
     intro_text: OpenHistoricalMap is een kaart van de wereld, gemaakt door mensen
       zoals u en vrij te gebruiken onder een open licentie.
-    intro_2_create_account: Maak een account aan
+    intro_2_create_account: Account aanmaken
     partners_title: Partners
     hosting_partners_2024_html: OpenHistoricalMap is een charterproject van %{osmus},
       een bij de %{osmf} aangesloten Amerikaanse non-profitorganisatie krachtens 501(c)(3).
@@ -2034,11 +2033,9 @@ nl:
       subject: '[OpenHistoricalMap] GPX-import mislukt'
     gpx_success:
       hi: Hallo %{to_user},
-      imported_successfully: Het lijkt erop dat uw bestand succesvol is geïmporteerd
-        als GPS-traject.
-      all_your_traces: Al uw succesvol geüploade GPX-traces zijn te vinden op %{url}.
-      all_your_traces_html: Alle succesvol geüploade GPX-traces zijn te vinden op
-        %{url}.
+      imported_successfully: Het lijkt erop dat uw bestand is geïmporteerd als GPS-traject.
+      all_your_traces: Al uw geüploade GPX-traces zijn te vinden op %{url}.
+      all_your_traces_html: Alle geüploade GPX-traces zijn te vinden op %{url}.
       subject: '[OpenHistoricalMap] GPX-import afgerond'
     signup_confirm:
       subject: '[OpenHistoricalMap] Welkom bij OpenHistoricalMap'
@@ -2162,8 +2159,8 @@ nl:
       confirmation_sent: We hebben een nieuw bevestigingsbericht naar %{email} gestuurd.
         Zodra u uw account bevestigt, kunt u aan de slag met het bewerken van de kaart.
       whitelist: Als u een antispamsysteem gebruikt dat bevestigingsverzoeken verzendt,
-        zorg er dan voor dat u %{sender} op de witte lijst plaatst, aangezien we niet
-        kunnen reageren op bevestigingsverzoeken.
+        zorg er dan voor dat u %{sender} op de toelatingslijst plaatst, aangezien
+        we niet kunnen reageren op bevestigingsverzoeken.
     gravatar:
       disabled: Gravatar is uitgeschakeld.
       enabled: Het weergeven van uw Gravatar is ingeschakeld.
@@ -2409,7 +2406,7 @@ nl:
       text: Tekst
       image: Afbeelding
       alt: Alternatieve tekst
-      url: URL
+      url: Url
       codeblock: Codeblok
     richtext_field:
       edit: Bewerken
@@ -2462,7 +2459,7 @@ nl:
       scope_html: |-
         Rijken komen op en gaan ten onder. Gletsjers verdwijnen. Talen en godsdiensten verspreiden zich van streek tot streek.
         Eenvoudige onverharde paden worden drukke snelwegen en spoorwegen. Bescheiden gebouwen maken plaats voor torenhoge wolkenkrabbers.
-        En je weet nog hoe je buurt er ooit uitzag.
+        En u weet nog hoe uw buurt er ooit uitzag.
         Het hoort allemaal thuis op OpenHistoricalMap.
       contribute_title: U kunt helpen
       contribute_1_ohm_html: |-
@@ -2627,7 +2624,7 @@ nl:
         contributors_more_sources_page: Overige bronnen en bijdragers
         contributors_more_sources_page_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Sources
         contributors_footer_2_html: Opname van gegevens in OpenHistoricalMap betekent
-          niet dat de originele gegevensverstrekker OpenHistoricalMap ondersteunt,
+          niet dat de oorspronkelijke gegevensverstrekker OpenHistoricalMap ondersteunt,
           enige vorm van garantie geeft, of aansprakelijkheid aanvaardt.
         infringement_title_html: Auteursrechtenschending
         infringement_1_html: |-
@@ -2731,7 +2728,7 @@ nl:
         description: Handleiding voor beginners, onderhouden door de gemeenschap.
       community:
         title: Hulp- en gemeenschapsforum
-        description: Een gedeelde plek waar je hulp kunt zoeken en gesprekken kunt
+        description: Een gedeelde plek waar u hulp kunt zoeken en gesprekken kunt
           voeren over OpenStreetMap.
       mailing_lists:
         title: Mailinglijsten
@@ -2814,7 +2811,7 @@ nl:
       whats_on_the_map:
         title: Wat is er op de kaart?
         on_the_map_ohm_html: |-
-          OpenHistoricalMap houdt veranderingen in de natuurlijke en menselijke geografie over de hele wereld bij.
+          OpenHistoricalMap houdt wijzigingen in de natuurlijke en menselijke geografie over de hele wereld bij.
           We hebben miljoenen items uit %{past_and_present}, van keizerrijken en gletsjers tot huizen en restaurants.
           U kunt alle werkelijke kenmerken in kaart brengen die u interessant vindt.
         past_and_present: zowel het verleden als het heden
@@ -3005,7 +3002,7 @@ nl:
   traces:
     visibility:
       private: Persoonlijk (alleen gedeeld als anoniem; ongeordende punten)
-      public: Publiek (weergegeven in trajectlijst en als anonieme, ongeordende punten)
+      public: Openbaar (weergegeven in trajectlijst en als anonieme, ongeordende punten)
       trackable: Traceerbaar (alleen gedeeld als anoniem; geordende punten met tijdstempels)
       identifiable: Identificeerbaar (weergegeven in trajectlijst en als identificeerbare,
         geordende punten met tijdstempels)
@@ -3272,7 +3269,7 @@ nl:
         tou: Gebruiksvoorwaarden
         privacy_policy: privacybeleid
         privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
-        privacy_policy_title: OSMF-privacybeleid, met een kopje over e-mailadressen
+        privacy_policy_title: OSMF-privacybeleid, met een sectie over e-mailadressen
         contributor_terms_url: https://osmfoundation.org/wiki/Licence/Contributor_Terms
         contributor_terms: bijdragevoorwaarden
       continue: Registreren
@@ -3566,8 +3563,8 @@ nl:
       title: Gedempte gebruikers
       my_muted_users: Mijn gedempte gebruikers
       you_have_muted_n_users:
-        one: Je hebt %{count} gebruiker gedempt
-        other: Je hebt %{count} gebruikers gedempt
+        one: U hebt %{count} gebruiker gedempt
+        other: U hebt %{count} gebruikers gedempt
       user_mute_explainer: Berichten van gedempte gebruikers worden naar een aparte
         inbox verplaatst en u ontvangt geen e-mailmeldingen.
       user_mute_admins_and_moderators: U kunt beheerders en moderators dempen, maar
@@ -3580,10 +3577,10 @@ nl:
           unmute: Dempen opheffen
           send_message: Bericht verzenden
     create:
-      notice: Je hebt %{name} gedempt.
+      notice: U hebt %{name} gedempt.
       error: '%{name} kan niet worden gedempt. %{full_message}.'
     destroy:
-      notice: Je hebt het dempen van %{name} opgeheven.
+      notice: U hebt het dempen van %{name} opgeheven.
       error: Het dempen van de gebruiker kan niet worden opgeheven. Probeer het opnieuw.
   notes:
     index:
@@ -3744,7 +3741,7 @@ nl:
       edit_disabled_tooltip: Inzoomen om de kaart te bewerken
       createnote_tooltip: Opmerking bij kaart maken
       createnote_disabled_tooltip: Inzoomen om een opmerking op de kaart toe te voegen
-      queryfeature_tooltip: Nabije objecten opvragen
+      queryfeature_tooltip: Zoekfuncties
       queryfeature_disabled_tooltip: Inzoomen om objecten op te vragen
     profile:
       social_link_n: Koppeling naar sociaal profiel %{n}
@@ -3905,5 +3902,5 @@ nl:
     leading_whitespace: begint met spaties
     trailing_whitespace: eindigt met spaties
     invalid_characters: bevat ongeldige karakters
-    url_characters: bevat speciale URL karakters (%{characters})
+    url_characters: bevat speciale url-tekens (%{characters})
 ...

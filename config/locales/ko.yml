@@ -549,7 +549,7 @@ ko:
     not_found_message:
       sorry: '죄송합니다. 버전 %{version}의 관계 #%{id}를 찾을 수 없습니다.'
     timeout:
-      sorry: 죄송합니다. %{id} id인 관계 구성 요소를 불러오는 데 너무 오래 걸립니다.
+      sorry: 죄송합니다. %{id} id인 관계 구성 요소를 가져오는 데 너무 오래 걸립니다.
   changeset_comments:
     feeds:
       comment:
@@ -559,7 +559,7 @@ ko:
         title_all: 오픈히스토리컬맵 바뀜집합 토론
         title_particular: '오픈히스토리컬맵 변경집합 #%{changeset_id} 토론'
       timeout:
-        sorry: 죄송합니다, 요청하는 변경집합 댓글을 불러오는데 너무 오래 걸렸습니다.
+        sorry: 죄송합니다, 요청하는 변경집합 댓글을 가져오는 데 너무 오래 걸립니다.
   changesets:
     changeset_line:
       comments:
@@ -623,7 +623,7 @@ ko:
     not_found_message:
       sorry: '죄송합니다, 바뀜집합 #%{id}을(를) 찾을 수 없습니다.'
     timeout:
-      sorry: 죄송합니다, 요청하는 변경집합 목록을 가져오는 데 너무 오래 걸렸습니다.
+      sorry: 죄송합니다, 요청하는 변경집합 목록을 가져오는 데 너무 오래 걸립니다.
   changeset_subscriptions:
     show:
       subscribe:
