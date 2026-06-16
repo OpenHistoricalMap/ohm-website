@@ -2525,6 +2525,9 @@ lb:
         title: Späre vum %{name}
         empty: '%{name} gouf bis elo nach net gespaart.'
       edit:
+        active_blocks:
+          one: '%{count} aktiv Spär'
+          other: '%{count} aktiv Spären'
         revoke: Ophiewen!
     lists:
       show:
