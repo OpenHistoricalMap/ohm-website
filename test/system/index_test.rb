@@ -48,7 +48,7 @@ class IndexTest < ApplicationSystemTestCase
 
     within "#map" do
       click_on "Share"
-      click_on "Legend"
+      click_on "Map Key"
     end
 
     assert_no_selector "#content.overlay-right-sidebar"
@@ -60,13 +60,13 @@ class IndexTest < ApplicationSystemTestCase
     assert_no_selector "#content.overlay-right-sidebar"
 
     within "#map" do
-      click_on "Legend"
+      click_on "Map Key"
     end
 
     assert_no_selector "#content.overlay-right-sidebar"
 
     within "#map" do
-      click_on "Legend"
+      click_on "Map Key"
     end
 
     assert_selector "#content.overlay-right-sidebar"
