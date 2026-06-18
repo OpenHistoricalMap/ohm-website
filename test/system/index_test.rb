@@ -42,6 +42,11 @@ class IndexTest < ApplicationSystemTestCase
   end
 
   test "should not add overlay when not closing right menu popup" do
+    # OHM variant: these tests assume the map has what OSM calls a "Legend" and what
+    #   we call a "Map Key". Our layers do not presently have one so we force
+    #   the Mapnik/Standard style.
+    visit "/#layers=M"
+
     node = create(:node)
 
     visit node_path(node)
