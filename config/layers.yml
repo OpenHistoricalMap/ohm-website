@@ -5,7 +5,7 @@
   canEmbed: true
   source: openhistoricalmap
   isVectorStyle: true
-  styleUrl: "https://openhistoricalmap.org/map-styles/historical/historical.json"
+  styleUrl: "/map-styles/historical/historical.json"
   credit:
     id: 'make_a_donation'
     href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
@@ -18,7 +18,7 @@
   canEmbed: true
   source: openhistoricalmap
   isVectorStyle: true
-  styleUrl: "https://openhistoricalmap.org/map-styles/railway/railway.json"
+  styleUrl: "/map-styles/railway/railway.json"
   credit:
     id: 'make_a_donation'
     href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
@@ -31,7 +31,7 @@
   canEmbed: true
   source: openhistoricalmap
   isVectorStyle: true
-  styleUrl: "https://openhistoricalmap.org/map-styles/woodblock/woodblock.json"
+  styleUrl: "/map-styles/woodblock/woodblock.json"
   credit:
     id: 'make_a_donation'
     href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
@@ -44,7 +44,7 @@
   canEmbed: true
   source: openhistoricalmap
   isVectorStyle: true
-  styleUrl: "https://openhistoricalmap.org/map-styles/japanese_scroll/japanese_scroll.json"
+  styleUrl: "/map-styles/japanese_scroll/japanese_scroll.json"
   credit:
     id: 'make_a_donation'
     href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'

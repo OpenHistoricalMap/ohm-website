@@ -7,8 +7,9 @@
 # https://guides.rubyonrails.org/security.html#content-security-policy-header
 
 Rails.application.configure do
-  connect_src = [:self, "*.openhistoricalmap.org", "openhistoricalmap.github.io", "*.amazonaws.com"]
-  img_src = [:self, :data, "www.gravatar.com", "*.wp.com", "tile.openstreetmap.org", "gps.tile.openstreetmap.org", "api.thunderforest.com", "tile.tracestrack.com", "*.openstreetmap.fr"]
+  tile_src = ["tile.openstreetmap.org", "gps.tile.openstreetmap.org", "api.thunderforest.com", "tile.tracestrack.com", "*.openstreetmap.fr"]
+  connect_src = [:self, "*.openhistoricalmap.org", "openhistoricalmap.github.io", "*.amazonaws.com", *tile_src]
+  img_src = [:self, :data, "www.gravatar.com", "*.wp.com", *tile_src]
   script_src = [:self, "openhistoricalmap.github.io"]
   style_src = [:self, "openhistoricalmap.github.io"]
   worker_src = [:self, :blob, "0.0.0.0:3000"]
