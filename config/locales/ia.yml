@@ -1785,27 +1785,6 @@ ia:
         ignored: Ignorate
         open: Aperte
         resolved: Resolvite
-    show:
-      title:
-        open: Problema aperte №%{issue_id}
-        ignored: Problema ignorate №%{issue_id}
-        resolved: Problema resolvite №%{issue_id}
-      reports:
-        one: '%{count} reporto'
-        other: '%{count} reportos'
-      no_reports: Nulle reporto
-      report_created_at_html: 'Prime reporto: %{datetime}'
-      last_resolved_at_html: 'Ultime resolution: %{datetime}'
-      last_updated_at_html: 'Ultime actualisation: %{datetime} per %{displayname}'
-      resolve: Resolver
-      ignore: Ignorar
-      reopen: Reaperir
-      reports_of_this_issue: Reportos de iste problema
-      read_reports: Leger reportos
-      new_reports: Nove reportos
-      other_issues_against_this_user: Altere problemas concernente iste usator
-      no_other_issues: Il non ha altere problemas concernente iste usator.
-      comments_on_this_issue: Commentos sur iste problema
     resolve:
       resolved: Le stato del problema ha essite cambiate a 'Resolvite'
     ignore:
@@ -1834,6 +1813,27 @@ ia:
         title: Signalatores del problema №%{issue_id}
       reporters:
         more_reporters: e %{count} alteres
+    show:
+      title:
+        open: Problema aperte №%{issue_id}
+        ignored: Problema ignorate №%{issue_id}
+        resolved: Problema resolvite №%{issue_id}
+      reports:
+        one: '%{count} reporto'
+        other: '%{count} reportos'
+      no_reports: Nulle reporto
+      report_created_at_html: 'Prime reporto: %{datetime}'
+      last_resolved_at_html: 'Ultime resolution: %{datetime}'
+      last_updated_at_html: 'Ultime actualisation: %{datetime} per %{displayname}'
+      resolve: Resolver
+      ignore: Ignorar
+      reopen: Reaperir
+      reports_of_this_issue: Reportos de iste problema
+      read_reports: Leger reportos
+      new_reports: Nove reportos
+      other_issues_against_this_user: Altere problemas concernente iste usator
+      no_other_issues: Il non ha altere problemas concernente iste usator.
+      comments_on_this_issue: Commentos sur iste problema
   issue_comments:
     create:
       comment_created: Tu commento ha essite create
@@ -1913,7 +1913,6 @@ ia:
     learn_more: Leger plus
     more: Plus
     header:
-      ok: OK
       select_language: Selige lingua
     select_language_button:
       title: Selige lingua
@@ -3344,7 +3343,6 @@ ia:
           one: '%{count} usator trovate'
           other: '%{count} usatores trovate'
         confirm: Confirmar usatores seligite
-        hide: Celar usatores seligite
         empty: Nulle usator correspondente trovate
       user:
         summary_html: '%{name} create ab %{ip_address} le %{date}'

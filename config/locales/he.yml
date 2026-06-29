@@ -1632,6 +1632,20 @@ he:
         ignored: חסר־השפעה
         open: פתוח
         resolved: פתור
+    resolve:
+      resolved: מצב הבעיה שונה ל„טופל”
+    ignore:
+      ignored: מצב הבעיה שונה ל„התעלמות”
+    reopen:
+      reopened: מצב הבעיות שונה ל„פתוחה”
+    comments:
+      comment_from_html: תגובה מאת %{user_link} על %{comment_created_at}
+    reports:
+      reported_by_html: דווח בתור %{category} על־ידי %{user} ב־%{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, תגובה מס׳ %{comment_id}'
+        note: הערה מס׳ %{note_id}
     show:
       reports:
         one: דו״ח אחד
@@ -1651,20 +1665,6 @@ he:
       other_issues_against_this_user: עוד בעיות עם המשתמש הזה
       no_other_issues: אין בעיות נוספות עם המשתמש הזה.
       comments_on_this_issue: הערות על בעיה זו
-    resolve:
-      resolved: מצב הבעיה שונה ל„טופל”
-    ignore:
-      ignored: מצב הבעיה שונה ל„התעלמות”
-    reopen:
-      reopened: מצב הבעיות שונה ל„פתוחה”
-    comments:
-      comment_from_html: תגובה מאת %{user_link} על %{comment_created_at}
-    reports:
-      reported_by_html: דווח בתור %{category} על־ידי %{user} ב־%{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, תגובה מס׳ %{comment_id}'
-        note: הערה מס׳ %{note_id}
   issue_comments:
     create:
       comment_created: התגובה שלך נוצרה בהצלחה
@@ -1734,7 +1734,6 @@ he:
     learn_more: מידע נוסף
     more: עוד
     header:
-      ok: אישור
       select_language: בחירת שפה
     select_language_button:
       title: בחירת שפה
@@ -2827,7 +2826,6 @@ he:
           many: נמצאו %{count} משתמשים
           other: נמצאו %{count} משתמשים
         confirm: אישור משתמשים נבחרים
-        hide: הסתרת משתמשים נבחרים
         empty: לא נמצאו משתמשים תואמים
       user:
         summary_html: '%{name} נוצר מכתובת %{ip_address} ב־%{date}'

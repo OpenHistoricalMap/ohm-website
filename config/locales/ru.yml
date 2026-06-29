@@ -1661,6 +1661,20 @@ ru:
         many: '%{count} сообщений'
         other: '%{count} сообщений'
       reported_item: Тема сообщения
+    resolve:
+      resolved: Статус проблемы был установлен в "Обработано"
+    ignore:
+      ignored: Статус проблемы был установлен в "Проигнорировано"
+    reopen:
+      reopened: Статус проблемы был установлен в "Открыто"
+    comments:
+      comment_from_html: Комментарий участника %{user_link}, созданный %{comment_created_at}
+    reports:
+      reported_by_html: Указано как %{category} пользователем %{user} %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, коммент. #%{comment_id}'
+        note: Заметка № %{note_id}
     show:
       reports:
         one: 1 сообщение
@@ -1679,20 +1693,6 @@ ru:
       other_issues_against_this_user: Другие проблемы с этим пользователем
       no_other_issues: Нет других проблем с этим пользователем
       comments_on_this_issue: Комментарии по этой проблеме
-    resolve:
-      resolved: Статус проблемы был установлен в "Обработано"
-    ignore:
-      ignored: Статус проблемы был установлен в "Проигнорировано"
-    reopen:
-      reopened: Статус проблемы был установлен в "Открыто"
-    comments:
-      comment_from_html: Комментарий участника %{user_link}, созданный %{comment_created_at}
-    reports:
-      reported_by_html: Указано как %{category} пользователем %{user} %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, коммент. #%{comment_id}'
-        note: Заметка № %{note_id}
   issue_comments:
     create:
       comment_created: Ваш комментарий был успешно создан
@@ -2789,7 +2789,6 @@ ru:
         ip_address: IP-адрес
       page:
         confirm: Подтвердить выделенных пользователей
-        hide: Скрыть выделенных пользователей
         empty: Не найдено соответствующих пользователей
       user:
         summary_html: '%{name} создан %{date}, с адреса %{ip_address}'

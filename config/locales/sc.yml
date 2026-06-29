@@ -1406,20 +1406,6 @@ sc:
       reports_count:
         one: '%{count} sinnalatzione'
         other: '%{count} sinnalatziones'
-    show:
-      reports:
-        one: '%{count} sinnalatzione'
-        other: '%{count} sinnalatziones'
-      no_reports: Perunu informe
-      resolve: Risolve
-      ignore: Ignora
-      reopen: Torra a abèrrere
-      reports_of_this_issue: Sinnalatziones de custu problema
-      read_reports: Leghe sas sinnalatziones
-      new_reports: Sinnalatziones noas
-      other_issues_against_this_user: Àteras sinnalatziones contra a custu utente
-      no_other_issues: Non b'at perunu àteru problema chi pertochet a custu utente.
-      comments_on_this_issue: Cummentos subra de custu problema
     resolve:
       resolved: S'istadu de su problema est istadu impostadu comente ‘Risoltu'
     ignore:
@@ -1434,6 +1420,20 @@ sc:
       reportable_title:
         diary_comment: '%{entry_title}, cummentu #%{comment_id}'
         note: 'Nota #%{note_id}'
+    show:
+      reports:
+        one: '%{count} sinnalatzione'
+        other: '%{count} sinnalatziones'
+      no_reports: Perunu informe
+      resolve: Risolve
+      ignore: Ignora
+      reopen: Torra a abèrrere
+      reports_of_this_issue: Sinnalatziones de custu problema
+      read_reports: Leghe sas sinnalatziones
+      new_reports: Sinnalatziones noas
+      other_issues_against_this_user: Àteras sinnalatziones contra a custu utente
+      no_other_issues: Non b'at perunu àteru problema chi pertochet a custu utente.
+      comments_on_this_issue: Cummentos subra de custu problema
   issue_comments:
     create:
       comment_created: Su cummentu tuo est istadu creadu

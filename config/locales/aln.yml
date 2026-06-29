@@ -1027,7 +1027,6 @@ aln:
         heading: Perdoruesit
       page:
         confirm: Konfirmo Anëtarët e Selektum
-        hide: Mshefi Perdorust e Zgjedhun
         empty: Asni perputhje e perdoruesve nuk asht gjetun
       user:
         summary_html: '%{name} u kriju prej %{ip_address} në %{date}'

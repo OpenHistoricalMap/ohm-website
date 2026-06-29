@@ -819,6 +819,12 @@ sq:
       reports_count:
         one: 1 Raport
         other: '%{count} raportet'
+    resolve:
+      resolved: Qështja e statusit është vendosur tek " E zgjedhur"
+    ignore:
+      ignored: Statusi i lëshimit është vendosur në 'Injoruar'
+    reopen:
+      reopened: Statusi i lëshimit është vendosur në 'të hapur'
     show:
       report_created_at_html: E raportuar së pari tek %{datetime}
       last_updated_at_html: Herën e fundit i ri- freskuar%{datetime}nga%{displayname}
@@ -826,12 +832,6 @@ sq:
       ignore: injoro
       reports_of_this_issue: Raportimet e këtij problemi
       no_other_issues: Nuk ka qështje tjera kundër këtij përdoruesi
-    resolve:
-      resolved: Qështja e statusit është vendosur tek " E zgjedhur"
-    ignore:
-      ignored: Statusi i lëshimit është vendosur në 'Injoruar'
-    reopen:
-      reopened: Statusi i lëshimit është vendosur në 'të hapur'
   reports:
     new:
       disclaimer:
@@ -1274,7 +1274,6 @@ sq:
         heading: Përdorues
       page:
         confirm: Konfirmo përdoruesit e zgjedhur
-        hide: Fshih përdoruesit e zgjedhur
         empty: Asnjë përdorues që përputhet nuk u gjet
       user:
         summary_html: '%{name} krijuar nga %{ip_address} më %{date}'

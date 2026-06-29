@@ -1647,6 +1647,20 @@ de:
         ignored: Ignoriert
         open: Offen
         resolved: Erledigt
+    resolve:
+      resolved: Der Problemstatus wurde auf „Erledigt“ geändert
+    ignore:
+      ignored: Der Problemstatus wurde auf „Ignoriert“ geändert
+    reopen:
+      reopened: Der Problemstatus wurde auf „Offen“ geändert
+    comments:
+      comment_from_html: Kommentar von %{user_link} erstellt am %{comment_created_at}
+    reports:
+      reported_by_html: Gemeldet als %{category} von %{user} bei %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, Kommentar Nr. %{comment_id}'
+        note: Hinweis Nr. %{note_id}
     show:
       reports:
         one: Eine Meldung
@@ -1664,20 +1678,6 @@ de:
       other_issues_against_this_user: Weitere Probleme gegen diesen Benutzer
       no_other_issues: Keine weiteren Probleme gegen diesen Benutzer.
       comments_on_this_issue: Kommentare zu diesem Problem
-    resolve:
-      resolved: Der Problemstatus wurde auf „Erledigt“ geändert
-    ignore:
-      ignored: Der Problemstatus wurde auf „Ignoriert“ geändert
-    reopen:
-      reopened: Der Problemstatus wurde auf „Offen“ geändert
-    comments:
-      comment_from_html: Kommentar von %{user_link} erstellt am %{comment_created_at}
-    reports:
-      reported_by_html: Gemeldet als %{category} von %{user} bei %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, Kommentar Nr. %{comment_id}'
-        note: Hinweis Nr. %{note_id}
   issue_comments:
     create:
       comment_created: Dein Kommentar wurde erfolgreich erstellt
@@ -2872,7 +2872,6 @@ de:
           one: '%{count} Benutzer gefunden'
           other: '%{count} Benutzer gefunden'
         confirm: Bestätige ausgewählte Benutzer
-        hide: Ausgewählte Benutzer ausblenden
         empty: Keine übereinstimmenden Benutzer gefunden
       user:
         summary_html: '%{name} erstellt von %{ip_address} am %{date}'

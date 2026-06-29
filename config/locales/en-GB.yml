@@ -1384,6 +1384,20 @@ en-GB:
       reports: Reports
       last_updated: Last Updated
       reported_item: Reported Item
+    resolve:
+      resolved: Issue status has been set to 'Resolved'
+    ignore:
+      ignored: Issue status has been set to 'Ignored'
+    reopen:
+      reopened: Issue status has been set to 'Open'
+    comments:
+      comment_from_html: Comment from %{user_link} on %{comment_created_at}
+    reports:
+      reported_by_html: Reported as %{category} by %{user} on %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, comment #%{comment_id}'
+        note: 'Note #%{note_id}'
     show:
       reports:
         zero: No reports
@@ -1401,20 +1415,6 @@ en-GB:
       other_issues_against_this_user: Other issues against this user
       no_other_issues: No other issues against this user.
       comments_on_this_issue: Comments on this issue
-    resolve:
-      resolved: Issue status has been set to 'Resolved'
-    ignore:
-      ignored: Issue status has been set to 'Ignored'
-    reopen:
-      reopened: Issue status has been set to 'Open'
-    comments:
-      comment_from_html: Comment from %{user_link} on %{comment_created_at}
-    reports:
-      reported_by_html: Reported as %{category} by %{user} on %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, comment #%{comment_id}'
-        note: 'Note #%{note_id}'
   issue_comments:
     create:
       comment_created: Your comment was successfully created
@@ -2258,7 +2258,6 @@ en-GB:
         heading: Users
       page:
         confirm: Confirm Selected Users
-        hide: Hide Selected Users
         empty: No matching users found
       user:
         summary_html: '%{name} created from %{ip_address} on %{date}'

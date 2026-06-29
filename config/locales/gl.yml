@@ -848,6 +848,9 @@ gl:
       title: Non se atopou o ficheiro
       description: Non se puido atopar unha operación de ficheiro/directorio/API con
         ese nome no servidor do OpenHistoricalMap (HTTP 404)
+  export:
+    show:
+      title: OpenHistoricalMap incrustado
   follows:
     show:
       follow:
@@ -1774,6 +1777,7 @@ gl:
       download: Descargar a ruta como GeoJSON
       filename: ruta
       directions_courtesy_html: Indicacións cortesía de %{link}
+      check_demo_html: Máis detalles de %{link}
   issues:
     index:
       title: Problemas
@@ -1805,27 +1809,6 @@ gl:
         ignored: Ignorado
         open: Aberto
         resolved: Resolto
-    show:
-      title:
-        open: Problema aberto n.º %{issue_id}
-        ignored: Problema ignorado n.º %{issue_id}
-        resolved: Problema resolto n.º %{issue_id}
-      reports:
-        one: '%{count} denuncia'
-        other: '%{count} denuncias'
-      no_reports: Sen denuncias
-      report_created_at_html: Primeira incidencia o %{datetime}
-      last_resolved_at_html: Resolto por derradeira vez o %{datetime}
-      last_updated_at_html: Última actualización o %{datetime} por %{displayname}
-      resolve: Resolver
-      ignore: Ignorar
-      reopen: Reabrir
-      reports_of_this_issue: Denuncias acerca deste problema
-      read_reports: Ler informes
-      new_reports: Denuncias novas
-      other_issues_against_this_user: Outro informe deste usuario
-      no_other_issues: Non hai máis informes deste usuario.
-      comments_on_this_issue: Comentarios neste informe
     resolve:
       resolved: O estado da incidencia mudou a "Resolta"
     ignore:
@@ -1854,6 +1837,30 @@ gl:
         title: Denunciantes da incidencia n.º %{issue_id}
       reporters:
         more_reporters: e %{count} máis
+    show:
+      title:
+        open: Problema aberto n.º %{issue_id}
+        ignored: Problema ignorado n.º %{issue_id}
+        resolved: Problema resolto n.º %{issue_id}
+      reports:
+        one: '%{count} denuncia'
+        other: '%{count} denuncias'
+      no_reports: Sen denuncias
+      report_created_at_html: Primeira incidencia o %{datetime}
+      last_resolved_at_html: Resolto por derradeira vez o %{datetime}
+      last_updated_at_html: Última actualización o %{datetime} por %{displayname}
+      resolve: Resolver
+      ignore: Ignorar
+      reopen: Reabrir
+      reports_of_this_issue: Denuncias acerca deste problema
+      read_reports: Ler informes
+      new_reports: Denuncias novas
+      other_issues_against_this_user: Outro informe deste usuario
+      no_other_issues: Non hai máis informes deste usuario.
+      comments_on_this_issue: Comentarios neste informe
+      comment_from_html: Comentario de %{user_link} no %{comment_created_at}
+      reassign_to_moderators: Reasignar a incidencia aos moderadores
+      reassign_to_administrators: Reasignar a incidencia aos administradores
   issue_comments:
     create:
       comment_created: O comentario creouse correctamente
@@ -1892,12 +1899,130 @@ gl:
     create:
       successful_report: A túa denuncia rexistrouse con éxito
       provide_details: Por favor, achega os detalles que se che solicitan.
+  languages_panes:
+    select_language_list:
+      search_language: Procurar...
+      languages:
+        af: afrikaans
+        gsw: alemánico
+        frp: francoprovenzal
+        ast: asturiano
+        az: azarí
+        id: indonesio
+        ms: malaio
+        bcl: bikol central
+        bs: bosníaco
+        br: bretón
+        ca: catalán
+        cs: checo
+        cy: galés
+        da: dinamarqués
+        de: alemán
+        dsb: baixo sorbio
+        et: estoniano
+        en: inglés
+        en-GB: inglés (Reino Unido)
+        es: castelán
+        eo: esperanto
+        eu: éuscaro
+        fr: francés
+        fy: frisón occidental
+        fur: friulano
+        ga: irlandés
+        gd: gaélico escocés
+        gl: galego
+        aln: albanés guego
+        hsb: alto sorbio
+        hr: croata
+        ia: interlingua
+        is: islandés
+        it: italiano
+        kw: córnico
+        gcf: crioulo antillano
+        ku-Latn: kurdo (latino)
+        lv: letón
+        lb: luxemburgués
+        lkt: lakota
+        lt: lituano
+        hu: húngaro
+        fit: meänkieli
+        nl: neerlandés
+        nb: noruegués (bokmål)
+        nn: noruegués (nynorsk)
+        oc: occitano
+        nds: baixo alemán
+        pl: polaco
+        pt-PT: portugués
+        pt: portugués (Brasil)
+        ksh: kölsch
+        ro: romanés
+        sc: sardo
+        sco: scots
+        sq: albanés
+        scn: siciliano
+        sk: eslovaco
+        sl: esloveno
+        sr-Latn: serbio (latino)
+        sh: serbocroata (latino)
+        fi: finés
+        sv: sueco
+        tl: tagalo
+        kab: cabilo
+        vi: vietnamita
+        tr: turco
+        yo: ioruba
+        diq: zazaki
+        el: grego
+        ba: baxkir
+        be: belaruso
+        be-Tarask: belaruso (Taraškievica)
+        bg: búlgaro
+        mk: macedonio
+        mo: moldovo
+        ce: checheno
+        ru: ruso
+        sr: serbio (cirílico)
+        tt: tártaro (cirílico)
+        uk: ucraíno
+        kk-cyrl: kazako (cirílico)
+        yi: yiddish
+        he: hebreo
+        ar: árabe
+        skr-arab: saraiki
+        fa: persa
+        arz: árabe exipcio
+        pnb: panxabí occidental
+        ps: paxto
+        nqo: n'ko
+        ne: nepalés
+        mr: marathi
+        hi: hindi
+        bn: bengalí
+        pa: panxabí
+        gu: gujarati
+        ta: támil
+        te: telugu
+        kn: kanarés
+        th: tailandés
+        my: birmano
+        shn: shan
+        xmf: mingreliano
+        ka: xeorxiano
+        km: khmer
+        sat: santali
+        zh-CN: chinés (simplificado)
+        zh-TW: chinés (tradicional)
+        zh-HK: chinés (Hong Kong)
+        ja: xaponés
+        ko: coreano
   layouts:
     project_name:
       title: OpenHistoricalMap
       h1: OpenHistoricalMap
     logo:
       alt_text: Logotipo do OpenHistoricalMap
+    main_navigation: Principal
+    layer_info: Información da capa
     home: Ir á localización da túa casa
     logout: Pechar a sesión
     log_in: Iniciar a sesión
@@ -1923,6 +2048,9 @@ gl:
     partners_greeninfo: GreenInfo Network
     partners_osmf: Fundación OpenStreetMap
     partners_osmus: OpenStreetMap EUA
+    welcome_tou_notice_html: Ao utilizares este sitio web ou outra infraestrutura
+      proporcionada pola Fundación OpenStreetMap, aceptas os %{terms_link}.
+    terms_of_use: termos de uso
     tou: termos de uso
     nothing_to_preview: Non hai nada que previsualizar.
     help: Axuda
@@ -1932,8 +2060,26 @@ gl:
     learn_more: Máis información
     more: Máis
     header:
-      ok: Aceptar
+      about: Acerca de
+      communities: Comunidades
+      copyright: Dereitos de autoría
+      donate: Doar
+      edit: Editar
+      edit_with: Editar co %{editor}
+      export: Exportar
+      gps_traces: Pistas GPS
+      help: Axuda
+      history: Historial
+      home: Ir á localización da túa casa
+      issues: Problemas
+      log_out: Pechar a sesión
+      log_in: Iniciar a sesión
+      more: Máis
       select_language: Seleccionar unha lingua
+      sign_up: Rexistrarse
+      user_diaries: Diarios de usuario
+    meta:
+      openstreetmap_search: Procura do OpenHistoricalMap
     select_language_button:
       title: Seleccionar unha lingua
     offline_flash:
@@ -2243,6 +2389,7 @@ gl:
         message: Preferencias actualizadas.
       navigation:
         preferences: Preferencias
+        notification_preferences: Notificacións
         advanced_preferences: Preferencias avanzadas
     basic_preferences:
       show:
@@ -2258,7 +2405,25 @@ gl:
           auto: Automático
           light: Claro
           dark: Escuro
+        preferred_editor_color_scheme: Esquema de cores preferido para o editor
+        editor_color_schemes:
+          auto: Igual que o sitio web
+          light: Claro
+          dark: Escuro
         save: Actualizar as preferencias
+    notification_preferences:
+      show:
+        title: Preferencias de notificación
+        changeset_comment: Comentarios do conxunto de cambios
+        diary_comment: Comentarios do diario
+        direct_message: Mensaxes directas
+        gpx_import_failure: 'Importación da pista GPS: erro'
+        gpx_import_success: 'Importación da pista GPX: correcta'
+        new_follower: Novos seguidores
+        note_comment: Comentarios da nota
+        save: Actualizar as preferencias
+        delivery_mechanisms:
+          email: Correo electrónico
     advanced_preferences:
       show:
         title: As miñas preferencias avanzadas
@@ -2271,6 +2436,7 @@ gl:
         image: Imaxe
         company: Empresa
         location: Localización
+        contribution_calendar: Calendario de contribucións
     descriptions:
       show:
         title: Editar o perfil
@@ -2330,6 +2496,16 @@ gl:
       update:
         success: Actualizouse a localización do perfil.
         failure: Non se puido actualizar a localización do perfil.
+    heatmaps:
+      show:
+        title: Configurar o calendario de contribucións
+        show_contribution_calendar_in_public: Mostrar o calendario de contribucións
+          na túa páxina de perfil
+        save: Actualizar a configuración do calendario de contribucións
+        cancel: Cancelar
+      update:
+        success: Actualizouse o calendario de contribucións.
+        failure: Non se puido actualizar o calendario de contribucións.
   sessions:
     new:
       tab_title: Iniciar a sesión
@@ -2347,6 +2523,8 @@ gl:
       login_button: Acceder ao sistema
       with external: ou accede cun servizo de terceiros
       or: ou
+      reset_to_login: Sentímolo, o teu contrasinal caducou. Restablece o contrasinal
+        para iniciar sesión.
       auth failure: Sentímolo, non se puido acceder ó sistema con eses datos.
     destroy:
       title: Pechar a sesión
@@ -2470,6 +2648,7 @@ gl:
       legal_1_aup_url: https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy
       legal_1_privacy_policy: política de protección de datos
       legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
+      legal_1_1_terms_of_use_url: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
       legal_2_html: Por favor, %{contact_team_link} se tes dúbidas sobre as licenzas,
         os dereitos de autoría ou outras cuestións legais.
       legal_2_contact_team: ponte en contacto co equipo do OpenHistoricalMap
@@ -2659,6 +2838,12 @@ gl:
           url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse
       export_button: Exportar
       export_download: Descargando...
+      confirmation:
+        header: Descargar os datos XML
+        body: Queres descargar os datos do mapa desta área en formato XML? Ten en
+          conta que as áreas grandes poden tardar algún tempo en descargarse.
+        cancel: Cancelar
+        download: Descargar
     fixthemap:
       title: Denunciar un problema / Corrixir o mapa
       how_to_help:
@@ -2968,6 +3153,15 @@ gl:
       image_dimensions_html: A imaxe amosará a capa %{layer} con %{width} x %{height}
       download: Baixar
       downloading: Descargando...
+  webgl_error_panes:
+    show:
+      compact_message: Cómpre WebGL para ver este mapa.
+      description_html: Sentímolo, pero semella que %{your_browser_does_not_support_webgl},
+        unha tecnoloxía para renderizar gráficos 3D na web.
+      your_browser_does_not_support_webgl: o teu navegador non é compatible con WebGL
+      webgl_is_required_for_this_map: Cómpre WebGL para mostrar este mapa.
+      read_more_about_webgl: Ler máis
+      read_more_about_webgl_url: https://wiki.openstreetmap.org/wiki/This_map_requires_WebGL
   traces:
     visibility:
       private: Privado (só compartido como anónimo; puntos desordenados)
@@ -3251,6 +3445,10 @@ gl:
           para obter máis información.
       or: ou
       use external auth: ou rexístrate cun servizo de terceiros
+      verify_human: Verifica que es unha persoa
+    create:
+      not_human: Desafortunadamente, non puidemos confirmar que es unha persoa. Isto
+        é necesario para crear contas novas.
     no_such_user:
       title: Non existe tal usuario
       heading: O usuario "%{user}" non existe
@@ -3298,6 +3496,7 @@ gl:
       activate_user: Activar este usuario
       confirm_user: Confirmar este usuario
       unconfirm_user: Desconfirmar este usuario
+      suspend_user: Suspender este usuario
       unsuspend_user: Anular a suspensión deste usuario
       hide_user: Agochar este usuario
       unhide_user: Descubrir este usuario
@@ -3310,9 +3509,24 @@ gl:
       change_image: Cambiar a imaxe
       edit_company: Editar a empresa
       edit_location: Editar a localización
+      edit_contribution_calendar: Configurar o calendario de contribucións
       contributions:
         one: '%{count} contribución no último ano'
         other: '%{count} contribucións no último ano'
+      title:
+        administrator: Este usuario é administrador
+        moderator: Este usuario é moderador
+        importer: Este usuario é importador
+      grant:
+        administrator: Conceder o acceso de administrador
+        moderator: Conceder o acceso de moderador
+        importer: Conceder o acceso de importador
+        are_you_sure: Queres concederlle o rol "%{role}" ó usuario "%{name}"?
+      revoke:
+        administrator: Revogar o acceso de administrador
+        moderator: Revogar o acceso de moderador
+        importer: Revogar o acceso de importador
+        are_you_sure: Queres revogarlle o rol "%{role}" ó usuario "%{name}"?
     sidebar_section:
       home_location: Localización da túa casa
       company: Empresa
@@ -3364,7 +3578,7 @@ gl:
           one: Atopouse %{count} usuario
           other: Atopáronse %{count} usuarios
         confirm: Confirmar os usuarios seleccionados
-        hide: Agochar os usuarios seleccionados
+        suspend: Suspender os usuarios seleccionados
         empty: Non se atoparon usuarios que coincidisen
       user:
         summary_html: '%{name} creado dende %{ip_address} o %{date}'
@@ -3653,6 +3867,18 @@ gl:
       tooltip: Lenda do mapa
       tooltip_disabled: Non está dispoñíbel a lenda do mapa para esta capa
     map:
+      navigation_control:
+        zoom_in: Achegar
+        zoom_out: Afastar
+      geolocate_control:
+        find_my_location: Amosar a miña localización
+        location_not_available: Localización non dispoñible
+        metersPopup:
+          one: Estás a menos de %{count} metro deste punto
+          other: Estás a menos de %{count} metros deste punto
+        feetPopup:
+          one: Estás a menos de %{count} pé deste punto
+          other: Estás a menos de %{count} pés deste punto
       zoom:
         in: Achegar
         out: Afastar

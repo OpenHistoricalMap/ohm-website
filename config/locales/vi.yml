@@ -1652,26 +1652,6 @@ vi:
         ignored: Bỏ qua
         open: Mở
         resolved: Giải quyết
-    show:
-      title:
-        open: 'Vấn đề Mở #%{issue_id}'
-        ignored: 'Vấn đề Bỏ qua #%{issue_id}'
-        resolved: 'Vấn đề Giải quyết #%{issue_id}'
-      reports:
-        other: '%{count} báo cáo'
-      no_reports: Không có báo cáo
-      report_created_at_html: Báo cáo lần đầu tiên vào %{datetime}
-      last_resolved_at_html: Giải quyết lần cuối cùng vào %{datetime}
-      last_updated_at_html: Cập nhật lần cuối cùng vào %{datetime} bởi %{displayname}
-      resolve: Giải quyết
-      ignore: Bỏ qua
-      reopen: Mở lại
-      reports_of_this_issue: Báo cáo về Vấn đề này
-      read_reports: Báo cáo Đã đọc
-      new_reports: Báo cáo Mới
-      other_issues_against_this_user: Vấn đề khác do người dùng này gây ra
-      no_other_issues: Không có vấn đề khác do người dùng ngày gây ra.
-      comments_on_this_issue: Bình luận về vấn đề này
     resolve:
       resolved: Trạng thái vấn đề được đánh dấu là “Giải quyết”
     ignore:
@@ -1700,6 +1680,26 @@ vi:
         title: 'Người Báo cáo Vấn đề #%{issue_id}'
       reporters:
         more_reporters: và %{count} nữa
+    show:
+      title:
+        open: 'Vấn đề Mở #%{issue_id}'
+        ignored: 'Vấn đề Bỏ qua #%{issue_id}'
+        resolved: 'Vấn đề Giải quyết #%{issue_id}'
+      reports:
+        other: '%{count} báo cáo'
+      no_reports: Không có báo cáo
+      report_created_at_html: Báo cáo lần đầu tiên vào %{datetime}
+      last_resolved_at_html: Giải quyết lần cuối cùng vào %{datetime}
+      last_updated_at_html: Cập nhật lần cuối cùng vào %{datetime} bởi %{displayname}
+      resolve: Giải quyết
+      ignore: Bỏ qua
+      reopen: Mở lại
+      reports_of_this_issue: Báo cáo về Vấn đề này
+      read_reports: Báo cáo Đã đọc
+      new_reports: Báo cáo Mới
+      other_issues_against_this_user: Vấn đề khác do người dùng này gây ra
+      no_other_issues: Không có vấn đề khác do người dùng ngày gây ra.
+      comments_on_this_issue: Bình luận về vấn đề này
   issue_comments:
     create:
       comment_created: Bình luận của bạn đã được tạo ra thành công
@@ -1779,7 +1779,6 @@ vi:
     learn_more: Tìm hiểu Thêm
     more: Thêm
     header:
-      ok: OK
       select_language: Chọn Ngôn ngữ
     select_language_button:
       title: Chọn Ngôn ngữ
@@ -3172,7 +3171,6 @@ vi:
         found_users:
           other: Đã tìm thấy %{count} người dùng
         confirm: Xác nhận những Người dùng Được chọn
-        hide: Ẩn những Người dùng Được chọn
         empty: Không tìm thấy người dùng.
       user:
         summary_html: '%{name} do %{ip_address} mở ngày %{date}'

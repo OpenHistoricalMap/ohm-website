@@ -1495,6 +1495,20 @@ id:
       reports_count:
         other: '%{count} Laporan'
       reported_item: Butir dilaporkan
+    resolve:
+      resolved: Status isu telah diset ke 'Selesai'
+    ignore:
+      ignored: Status isu telah diset ke 'Diabaikan'
+    reopen:
+      reopened: Status isu telah diset ke 'Terbuka'
+    comments:
+      comment_from_html: Komentar dari %{user_link} pada %{comment_created_at}
+    reports:
+      reported_by_html: Dilaporkan sebagai %{category} oleh %{user} pada %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, komentar #%{comment_id}'
+        note: 'Catatan #%{note_id}'
     show:
       reports:
         other: '%{count} laporan'
@@ -1511,20 +1525,6 @@ id:
       other_issues_against_this_user: Isu lainnya terhadap pengguna ini
       no_other_issues: Tak ada isu lainnya terhadap pengguna ini.
       comments_on_this_issue: Komentar pada isu ini
-    resolve:
-      resolved: Status isu telah diset ke 'Selesai'
-    ignore:
-      ignored: Status isu telah diset ke 'Diabaikan'
-    reopen:
-      reopened: Status isu telah diset ke 'Terbuka'
-    comments:
-      comment_from_html: Komentar dari %{user_link} pada %{comment_created_at}
-    reports:
-      reported_by_html: Dilaporkan sebagai %{category} oleh %{user} pada %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, komentar #%{comment_id}'
-        note: 'Catatan #%{note_id}'
   issue_comments:
     create:
       comment_created: Komentar Anda telah berhasil dibuat
@@ -2608,7 +2608,6 @@ id:
         heading: Pengguna
       page:
         confirm: Konfirmasi Pengguna yang Dipilih
-        hide: Sembunyikan Pengguna yang Dipilih
         empty: Tidak ditemukan pengguna yang sesuai
       user:
         summary_html: '%{name} dibuat dari %{ip_address} pada %{date}'

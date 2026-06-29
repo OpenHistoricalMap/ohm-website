@@ -1330,19 +1330,6 @@ te:
         one: 1 ఫిర్యాదు
         other: '%{count} ఫిర్యాదులు'
       reported_item: అంశంపై ఫిర్యాదు చేసారు
-    show:
-      report_created_at_html: '%{datetime} న మొదటిసారి ఫిర్యాదు చేసారు'
-      last_resolved_at_html: '%{datetime} న చివరిగా పరిష్కరించారు'
-      last_updated_at_html: చివరిగా %{displayname} గారు %{datetime} కు తాజాకరించారు
-      resolve: పరిష్కరించు
-      ignore: పట్టించుకోవద్దు
-      reopen: మళ్ళీ తెరువు
-      reports_of_this_issue: ఈ అంశంపై ఫిర్యాదులు
-      read_reports: చదివిన ఫిర్యాదులు
-      new_reports: కొత్త ఫిర్యాదులు
-      other_issues_against_this_user: ఈ వాడుకరికి వ్యతిరేకంగా ఉన్న ఇతర అంశాలు
-      no_other_issues: ఈ వాడుకరిపై ఇక వేరే అంశాలేమీ లేవు.
-      comments_on_this_issue: ఈ అంశంపై వ్యాఖ్యలు
     resolve:
       resolved: అంశం స్థితిని 'పరిష్కారమైంది' అని మార్చాం
     ignore:
@@ -1357,6 +1344,19 @@ te:
       reportable_title:
         diary_comment: '%{entry_title}, వ్యాఖ్య #%{comment_id}'
         note: 'గమనిక #%{note_id}'
+    show:
+      report_created_at_html: '%{datetime} న మొదటిసారి ఫిర్యాదు చేసారు'
+      last_resolved_at_html: '%{datetime} న చివరిగా పరిష్కరించారు'
+      last_updated_at_html: చివరిగా %{displayname} గారు %{datetime} కు తాజాకరించారు
+      resolve: పరిష్కరించు
+      ignore: పట్టించుకోవద్దు
+      reopen: మళ్ళీ తెరువు
+      reports_of_this_issue: ఈ అంశంపై ఫిర్యాదులు
+      read_reports: చదివిన ఫిర్యాదులు
+      new_reports: కొత్త ఫిర్యాదులు
+      other_issues_against_this_user: ఈ వాడుకరికి వ్యతిరేకంగా ఉన్న ఇతర అంశాలు
+      no_other_issues: ఈ వాడుకరిపై ఇక వేరే అంశాలేమీ లేవు.
+      comments_on_this_issue: ఈ అంశంపై వ్యాఖ్యలు
   issue_comments:
     create:
       comment_created: మీ వ్యాఖ్యను జయప్రదంగా చేర్చాం
@@ -2129,7 +2129,6 @@ te:
         heading: వాడుకరులు
       page:
         confirm: ఎంచుకున్న వాడూకరులను ధ్రువీకరించు
-        hide: ఎంచుకున్న వాడుకరులను దాచు
         empty: సరిపోలే వాడుకరులు కనబడలేదు
       user:
         summary_html: '%{name}, %{date} న %{ip_address} నుండి సృష్టించారు'

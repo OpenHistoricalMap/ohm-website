@@ -1208,6 +1208,12 @@ pa:
         ignored: ਨਜ਼ਰਅੰਦਾਜ਼ ਕੀਤਾ
         open: ਖੋਲ੍ਹੋ
         resolved: ਹੱਲ-ਕੱਢਿਆ ਗਿਆ
+    reports:
+      reported_by_html: '%{updated_at} ਨੂੰ %{user} ਵੱਲੋਂ %{category} ਵਜੋਂ ਇਤਲਾਹ ਕੀਤੀ
+        ਗਈ'
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, ਟਿੱਪਣੀ #%{comment_id}'
     show:
       no_reports: ਕੋਈ ਇਤਲਾਹ ਨਹੀਂ
       resolve: ਹੱਲ-ਕੱਢੋ
@@ -1216,12 +1222,6 @@ pa:
       other_issues_against_this_user: ਇਸ ਵਰਤੋਂਕਾਰ ਦੇ ਖਿਲਾਫ ਹੋਰ ਮੁੱਦੇ
       no_other_issues: ਇਸ ਵਰਤੋਂਕਾਰ ਦੇ ਖਿਲਾਫ ਕੋਈ ਹੋਰ ਮੁੱਦੇ ਨਹੀਂ ਹਨ।
       comments_on_this_issue: ਇਸ ਮੁੱਦੇ 'ਤੇ ਟਿੱਪਣੀ
-    reports:
-      reported_by_html: '%{updated_at} ਨੂੰ %{user} ਵੱਲੋਂ %{category} ਵਜੋਂ ਇਤਲਾਹ ਕੀਤੀ
-        ਗਈ'
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, ਟਿੱਪਣੀ #%{comment_id}'
   reports:
     new:
       title_html: ਇਤਲਾਹ ਦਿਓ %{link}
@@ -1828,7 +1828,6 @@ pa:
           one: '%{count} ਵਰਤੋਂਕਾਰ ਲੱਭੇ'
           other: '%{count} ਵਰਤੋਂਕਾਰ ਲੱਭੇ'
         confirm: ਚੁਣੇ ਹੋਏ ਵਰਤੋਂਕਾਰਾਂ ਦੀ ਤਸਦੀਕ ਕਰੋ
-        hide: ਚੁਣੇ ਹੋਏ ਵਰਤੋਂਕਾਰ ਲੁਕਾਉ
         empty: ਕੋਈ ਮੇਲ ਖਾਂਦੇ ਵਰਤੋਂਕਾਰ ਨਹੀਂ ਲੱਭੇ
       user:
         summary_html: '%{date} ਨੂੰ %{ip_address} ਤੋਂ %{name} ਬਣਾਇਆ ਗਿਆ'

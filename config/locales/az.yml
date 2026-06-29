@@ -1017,7 +1017,6 @@ az:
         found_users:
           one: '%{count} istifadəçi tapıldı'
           other: '%{count} istifadəçi tapıldı'
-        hide: Seçilmiş istifadəçiləri gizlət
     changeset_comments:
       page:
         changeset: dəyişikliklər dəsti

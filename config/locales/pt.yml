@@ -1567,6 +1567,20 @@ pt:
       reports: Relatórios
       last_updated: Última Atualização
       reported_item: Item Reportado
+    resolve:
+      resolved: O status do problema foi definido como "Resolvido"
+    ignore:
+      ignored: O status do problema foi definido como "Ignorado"
+    reopen:
+      reopened: O status do problema foi definido como "Aberto"
+    comments:
+      comment_from_html: Comentário de %{user_link} em %{comment_created_at}
+    reports:
+      reported_by_html: Reportado como %{category} por %{user} em %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, comentário #%{comment_id}'
+        note: 'Nota #%{note_id}'
     show:
       reports:
         zero: Sem denúncias
@@ -1584,20 +1598,6 @@ pt:
       other_issues_against_this_user: Outros problemas contra este usuário
       no_other_issues: Nenhum outro problema contra este usuário.
       comments_on_this_issue: Comentários sobre este problema
-    resolve:
-      resolved: O status do problema foi definido como "Resolvido"
-    ignore:
-      ignored: O status do problema foi definido como "Ignorado"
-    reopen:
-      reopened: O status do problema foi definido como "Aberto"
-    comments:
-      comment_from_html: Comentário de %{user_link} em %{comment_created_at}
-    reports:
-      reported_by_html: Reportado como %{category} por %{user} em %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, comentário #%{comment_id}'
-        note: 'Nota #%{note_id}'
   issue_comments:
     create:
       comment_created: Seu comentário foi criado com sucesso
@@ -2505,7 +2505,6 @@ pt:
         heading: Usuários
       page:
         confirm: Confirmar Usuários Selecionados
-        hide: Ocultar Usuários Selecionados
         empty: Não há usuários correspondentes
       user:
         summary_html: '%{name} criado no computador %{ip_address} em %{date}'

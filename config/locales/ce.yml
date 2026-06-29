@@ -1518,20 +1518,6 @@ ce:
         ignored: Игнорйина
         open: Йиллина
         resolved: Кечйина
-    show:
-      reports:
-        one: '%{count} хаам'
-        other: '%{count} хаамаш'
-      no_reports: Цхьа хаам бац
-      resolve: Кечйан
-      ignore: Тергал ца дан
-      reopen: Йуха схьайелла
-      reports_of_this_issue: Цу проблемах лаьцна хаам
-      read_reports: Баьшна хаамаш
-      new_reports: Керла хаамаш
-      other_issues_against_this_user: Кхин йолу проблемаш оцу декъашхочунца
-      no_other_issues: Кхин проблемаш йац оцу декъашхочунца
-      comments_on_this_issue: Эца проблемах лаьцна комментари
     resolve:
       resolved: Проблеман статус гIотайира 'ДӀадерзийна' чу.
     ignore:
@@ -1546,6 +1532,21 @@ ce:
       reportable_title:
         diary_comment: '%{entry_title}, коммент #%{comment_id}'
         note: 'Йаззор #%{note_id}'
+    show:
+      reports:
+        one: '%{count} хаам'
+        other: '%{count} хаамаш'
+      no_reports: Цхьа хаам бац
+      resolve: Кечйан
+      ignore: Тергал ца дан
+      reopen: Йуха схьайелла
+      reports_of_this_issue: Цу проблемах лаьцна хаам
+      read_reports: Баьшна хаамаш
+      new_reports: Керла хаамаш
+      other_issues_against_this_user: Кхин йолу проблемаш оцу декъашхочунца
+      no_other_issues: Кхин проблемаш йац оцу декъашхочунца
+      comments_on_this_issue: Эца проблемах лаьцна комментари
+      comment_from_html: Декъашхочуна коммент %{user_link} йина %{comment_created_at}
   issue_comments:
     create:
       comment_created: Хьан комментарий аьттонца кхоьллина
@@ -1584,6 +1585,16 @@ ce:
     create:
       successful_report: Хьан хаам кхиамца дӀаязбина
       provide_details: Дехар ду, оьшуш болу хаамаш схьаалар
+  languages_panes:
+    select_language_list:
+      search_language: Лоьху...
+      languages:
+        af: Африкаанс
+        br: Бретонийн
+        en: Ингалсан
+        pl: Полякийн
+        he: Жуьгтийн
+        bn: Бангалойн
   layouts:
     logo:
       alt_text: OpenHistoricalMap-ан логотип

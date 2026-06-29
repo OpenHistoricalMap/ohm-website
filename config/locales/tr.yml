@@ -1556,6 +1556,21 @@ tr:
         ignored: Yoksayıldı
         open: Aç
         resolved: Çözüldü
+    resolve:
+      resolved: Sorun durumu "Çözüldü" olarak ayarlandı
+    ignore:
+      ignored: Sorun durumu 'Yoksayıldı' olarak ayarlandı
+    reopen:
+      reopened: Sorun durumu 'Aç' olarak ayarlandı
+    comments:
+      comment_from_html: '%{comment_created_at} tarihinde %{user_link} üzerinden yorum'
+    reports:
+      reported_by_html: '%{updated_at} tarihinde %{user} tarafından %{category} olarak
+        bildirildi'
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, yorum #%{comment_id}'
+        note: 'Not #%{note_id}'
     show:
       reports:
         one: '%{count} rapor'
@@ -1574,21 +1589,6 @@ tr:
       other_issues_against_this_user: Bu kullanıcıya karşı diğer sorunlar
       no_other_issues: Bu kullanıcıya karşı başka sorun yok.
       comments_on_this_issue: Bu sorunla ilgili yorumlar
-    resolve:
-      resolved: Sorun durumu "Çözüldü" olarak ayarlandı
-    ignore:
-      ignored: Sorun durumu 'Yoksayıldı' olarak ayarlandı
-    reopen:
-      reopened: Sorun durumu 'Aç' olarak ayarlandı
-    comments:
-      comment_from_html: '%{comment_created_at} tarihinde %{user_link} üzerinden yorum'
-    reports:
-      reported_by_html: '%{updated_at} tarihinde %{user} tarafından %{category} olarak
-        bildirildi'
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, yorum #%{comment_id}'
-        note: 'Not #%{note_id}'
   issue_comments:
     create:
       comment_created: Yorumunuz başarıyla oluşturuldu
@@ -1627,6 +1627,16 @@ tr:
     create:
       successful_report: Raporunuz başarıyla kaydedildi
       provide_details: Lütfen gerekli bilgileri sağlayın
+  languages_panes:
+    select_language_list:
+      languages:
+        br: Bretonca
+        aln: Gheg Arnavutçası
+        kw: Kernevekçe
+        nl: Flemenkçe
+        fi: Fince
+        he: İbranice
+        my: Birmanca
   layouts:
     project_name:
       title: OpenHistoricalMap
@@ -1945,6 +1955,10 @@ tr:
       show:
         title: Tercihlerim
         save: Tercihleri Güncelle
+    notification_preferences:
+      show:
+        gpx_import_success: 'GPX izi içe aktarma: başarılı'
+        note_comment: Not yorumları
   profiles:
     profile_sections:
       navigation:
@@ -2408,6 +2422,9 @@ tr:
       image_dimensions_html: Resim %{layer} katmanını %{width} x %{height} olarak
         gösterecektir
       download: İndir
+  webgl_error_panes:
+    show:
+      read_more_about_webgl: Devamını oku
   traces:
     visibility:
       private: Kişiye özel (sadece anonim ve sıralanmamış noktalar olarak paylaşılır)
@@ -2736,7 +2753,6 @@ tr:
           one: '%{count} kullanıcı bulundu'
           other: '%{count} kullanıcı bulundu'
         confirm: Seçili Kullanıcıları Doğrulayın
-        hide: Seçilen Kullanıcıları Gizle
         empty: Eşleşen kullanıcı bulunamadı
       user:
         summary_html: '%{name}, %{date} tarihinde %{ip_address} tarafından oluşturuldu.'

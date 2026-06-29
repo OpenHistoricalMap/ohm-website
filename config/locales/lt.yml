@@ -1511,6 +1511,20 @@ lt:
         ignored: Ignoruota
         open: Atidaryta
         resolved: Išspręsta
+    resolve:
+      resolved: Problemos būsena pakeista į „Išspręsta“
+    ignore:
+      ignored: Problemos būsena pakeista į „Ignoruota“
+    reopen:
+      reopened: Problemos būsena pakeista į „Atvira“
+    comments:
+      comment_from_html: '%{user_link} komentavo %{comment_created_at}'
+    reports:
+      reported_by_html: Pranešta kaip %{category} naudotojo %{user} %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, komentaras #%{comment_id}'
+        note: 'Pastaba #%{note_id}'
     show:
       reports:
         one: '{%count} pranešimas'
@@ -1530,20 +1544,6 @@ lt:
       other_issues_against_this_user: Kiti pranešimai rieš šį naudotoją
       no_other_issues: Nėra kitų pranešimų prieš šį naudotoją.
       comments_on_this_issue: Šios problemos komentarai
-    resolve:
-      resolved: Problemos būsena pakeista į „Išspręsta“
-    ignore:
-      ignored: Problemos būsena pakeista į „Ignoruota“
-    reopen:
-      reopened: Problemos būsena pakeista į „Atvira“
-    comments:
-      comment_from_html: '%{user_link} komentavo %{comment_created_at}'
-    reports:
-      reported_by_html: Pranešta kaip %{category} naudotojo %{user} %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, komentaras #%{comment_id}'
-        note: 'Pastaba #%{note_id}'
   issue_comments:
     create:
       comment_created: Jūsų komentaras sėkmingai sukurtas
@@ -2637,7 +2637,6 @@ lt:
         heading: Naudotojai
       page:
         confirm: Patvirtinti pažymėtus naudotojus
-        hide: Slėpti parinktus naudotojus
         empty: Nerasta atitinkančių naudotojų
       user:
         summary_html: '%{name} sukurta %{ip_address} %{date}'

@@ -1086,6 +1086,18 @@ pnb:
         one: اِکّ رپورٹ
         other: '%{count} رپورٹاں'
       reported_item: رپورٹ دی چیز
+    resolve:
+      resolved: ہݨے مسئلے دا حال ”حل کھندھیا“
+    reopen:
+      reopened: ہݨے مسئلے دا حال ”کھُلھا“
+    comments:
+      comment_from_html: '%{comment_created_at} «%{user_link}» دی ٹپݨی'
+    reports:
+      reported_by_html: '%{updated_at} %{user} %{category} نال رپورٹ کیتی سی۔'
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}، ٹپݨی نمبر %{comment_id}'
+        note: 'نوٹ: %{note_id}'
     show:
       reports:
         one: اِکّ رپورٹ
@@ -1103,18 +1115,6 @@ pnb:
       other_issues_against_this_user: ایس ورتنوالے بارے وچ ہور مسئلے
       no_other_issues: ایس ورتنوالے بارے وچ ہور مسئلے کوئی نہیں اے۔
       comments_on_this_issue: ایس مسئلے تے ٹپݨیاں
-    resolve:
-      resolved: ہݨے مسئلے دا حال ”حل کھندھیا“
-    reopen:
-      reopened: ہݨے مسئلے دا حال ”کھُلھا“
-    comments:
-      comment_from_html: '%{comment_created_at} «%{user_link}» دی ٹپݨی'
-    reports:
-      reported_by_html: '%{updated_at} %{user} %{category} نال رپورٹ کیتی سی۔'
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}، ٹپݨی نمبر %{comment_id}'
-        note: 'نوٹ: %{note_id}'
   issue_comments:
     create:
       comment_created: ٹپݨی پائی گئی سی۔
@@ -1805,7 +1805,6 @@ pnb:
         heading: ورتنوالے
       page:
         confirm: چݨے ہوۓ ورتنوالیاں دی تصدیق کرو
-        hide: چݨے ہوۓ ورتنوالے لُکاؤ
         empty: کوئی میل کھاندے ورتنوالے نہیں لبھے
     changeset_comments:
       page:

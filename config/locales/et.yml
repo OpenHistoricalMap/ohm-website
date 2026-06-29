@@ -1421,14 +1421,14 @@ et:
       reports_count:
         one: '%{count} kaebus'
         other: '%{count} kaebust'
-    show:
-      resolve: Lahenda
-      ignore: Eira
-      reopen: Ava uuesti
     helper:
       reportable_title:
         diary_comment: '%{entry_title}, kommentaar #%{comment_id}'
         note: 'märkus #%{note_id}'
+    show:
+      resolve: Lahenda
+      ignore: Eira
+      reopen: Ava uuesti
   reports:
     new:
       title_html: Kaebus (%{link})
@@ -2472,7 +2472,6 @@ et:
           one: '%{count} kasutaja leitud'
           other: '%{count} kasutajat leitud'
         confirm: Kinnita valitud kasutajad
-        hide: Peida valitud Kasutajad
         empty: Sobivaid kasutajaid ei leitud!
       user:
         summary_html: '%{name} loodud IP-aadressilt %{ip_address} (%{date})'

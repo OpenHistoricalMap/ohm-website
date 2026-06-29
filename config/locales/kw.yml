@@ -4,9 +4,6 @@
 # Author: Flynn
 ---
 kw:
-  date:
-    formats:
-      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y at %H:%M'
@@ -956,20 +953,6 @@ kw:
         ignored: Skonys Aswon
         open: Ygor
         resolved: Digelmys
-    show:
-      title:
-        open: 'Kudyn Ygor #%{issue_id}'
-        resolved: 'Kudyn Digelmys #%{issue_id}'
-      no_reports: Derivasow vyth
-      resolve: Digelmi
-      ignore: Skonya Aswon
-      reopen: Dasygeri
-      reports_of_this_issue: Derivasow a'n Kudyn ma
-      read_reports: Derivasow Redys
-      new_reports: Derivasow Nowydh
-      other_issues_against_this_user: Kudynnow aral erbynn an devnydhyer ma
-      no_other_issues: Nyns eus kudynnow aral erbynn an devnydhyer ma.
-      comments_on_this_issue: Kampollys war'n kudyn ma
     resolve:
       resolved: Studh kudyn re beu gorrys dhe 'Digelmys'
     ignore:
@@ -986,6 +969,20 @@ kw:
     reporters:
       reporters:
         more_reporters: hag %{count} moy
+    show:
+      title:
+        open: 'Kudyn Ygor #%{issue_id}'
+        resolved: 'Kudyn Digelmys #%{issue_id}'
+      no_reports: Derivasow vyth
+      resolve: Digelmi
+      ignore: Skonya Aswon
+      reopen: Dasygeri
+      reports_of_this_issue: Derivasow a'n Kudyn ma
+      read_reports: Derivasow Redys
+      new_reports: Derivasow Nowydh
+      other_issues_against_this_user: Kudynnow aral erbynn an devnydhyer ma
+      no_other_issues: Nyns eus kudynnow aral erbynn an devnydhyer ma.
+      comments_on_this_issue: Kampollys war'n kudyn ma
   issue_comments:
     create:
       comment_created: Agas kampol o gwrys yn sewen
@@ -1101,8 +1098,6 @@ kw:
     layer_info: Kedhlow Gwiskas
     start_mapping: Dalleth Ow Mappya
     intro_header: Dynnargh dhe OpenStreetMap!
-    partners_corpmembers: Eseli gorforethel OSMF
-    partners_partners: kesparow
     terms_of_use: Termow a Dhevnydh
     tou: Termow a Dhevnydh
     nothing_to_preview: Yma tra vyth rag ragweles.
@@ -1378,25 +1373,11 @@ kw:
       help: Gweres
   site:
     about:
-      heading_html: '%{copyright}Kevriysi %{br} OpenStreetMap'
       used_by_html: '%{name} a brov data mappa rag milyow a wiasvaow, appys glapkodh,
         ha devisyow galesweyth'
     about_section:
-      local_knowledge_title: Skians Leel
-      community_driven_osm_foundation: Fondyans OSM
       open_data_title: Data Ygor
-      open_data_open_data: data ygor
-      open_data_copyright_license: Folen Wirbryntyans ha Leshyans
       legal_title: Laghel
-      legal_1_1_openstreetmap_foundation: Fondyans OpenStreetMap
-      legal_1_1_terms_of_use: Termow a Dhevnydh
-      legal_1_1_privacy_policy: Polici Privetter
-      legal_attribution_guidelines_title: Gidys Aswonans
-      legal_attribution_example_film_title: Fylm
-      legal_attribution_example_tv_title: Pellwolok
-      legal_2_1_html: '%{contact_the_osmf_link} mar pleg rag govynnow leshyans, gwirbryntyans,
-        po laghel.'
-      legal_2_1_contact_the_osmf: Kestewgh an OSMF
       partners_title: Kesparow
     copyright:
       title: Gwirbryntyans ha Leshyans
@@ -1408,43 +1389,10 @@ kw:
         native_link: Versyon Kernewek
         mapping_link: dalleth ow mappya
       legal_babble:
-        lead_2_learn_more_about_osm: Dyski moy a-dro dhe OpenStreetMap
-        lead_2_get_started_mapping: dalleth ow mappya
-        lead_2_osm_community: Kemeneth OSM
-        lead_2_osm_foundation: Fondyans OSM
-        lead_2_making_donation: owth argevri
-        licensing_title: leshyans OpenStreetMap
-        licensing_1_open: ygor
-        licensing_1_osm_foundation: Fondyans OpenStreetMap
-        licensing_3_creative_commons_license_url: https://creativecommons.org/licenses/by-sa/2.0/
-        licensing_4_osmf_license_page: Folen leshyans OSMF
         credit_title_html: Fatel yllir aswon OpenStreetMap
-        credit_4_v2025_this_copyright_page: an folen wirbryntyans ma
         attribution_example:
           title: Ensampel aswonans
-        services_title_html: Gonisyow geworransel
-        services_1_api_usage_policy: Polici Usadow API
-        services_1_tile_usage_policy: Polici Usadow Prileghen
-        services_1_nominatim_usage_policy: Polici Usadow Nominatim
         contributors_title_html: Agan kevriysi
-        contributors_at_austria: Ostri
-        contributors_at_stadt_wien: Stadt Wien
-        contributors_at_land_vorarlberg: Land Vorarlberg
-        contributors_at_cc_by_at_with_amendments: CC BY AT gans amendyansow
-        contributors_au_australia: Ostrali
-        contributors_ca_canada: Kanada
-        contributors_cz_czechia: Repoblek Chek
-        contributors_fi_finland: Fynndir
-        contributors_fr_france: Pow Frynk
-        contributors_hr_croatia: Kroati
-        contributors_nl_netherlands: Iseldiryow
-        contributors_nz_new_zealand: Mordir Nowydh
-        contributors_rs_serbia: Serbi
-        contributors_si_slovenia: Sloveni
-        contributors_es_spain: Spayn
-        contributors_za_south_africa: Afrika Dyghow
-        contributors_gb_united_kingdom: Ruvaneth Unys
-        contributors_2_contributors_page: Folen gevriysi
     not_public_flash:
       user_page_link: folen dhevnydhyer
     export:

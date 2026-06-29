@@ -1756,27 +1756,6 @@ zh-TW:
         ignored: 已忽略
         open: 開放
         resolved: 已解決
-    show:
-      title:
-        open: '開放的問題 #%{issue_id}'
-        ignored: '已忽略的問題 #%{issue_id}'
-        resolved: '已解決的問題 #%{issue_id}'
-      reports:
-        one: '%{count} 份回報'
-        other: '%{count} 份回報'
-      no_reports: 沒有回報
-      report_created_at_html: 首次回報是在 %{datetime}
-      last_resolved_at_html: 最後回報是在 %{datetime}
-      last_updated_at_html: 最後更新是由 %{displayname} 在 %{datetime}
-      resolve: 解決
-      ignore: 忽略
-      reopen: 重新開啟
-      reports_of_this_issue: 此問題的回報
-      read_reports: 讀取回報
-      new_reports: 新的回報
-      other_issues_against_this_user: 其它針對此使用者的問題
-      no_other_issues: 沒有其它針對此使用者的問題。
-      comments_on_this_issue: 在此問題的留言
     resolve:
       resolved: 問題狀態已設定成「已解決」
     ignore:
@@ -1803,6 +1782,27 @@ zh-TW:
         title: '問題 #%{issue_id} 回報者'
       reporters:
         more_reporters: 以及另外 %{count} 個
+    show:
+      title:
+        open: '開放的問題 #%{issue_id}'
+        ignored: '已忽略的問題 #%{issue_id}'
+        resolved: '已解決的問題 #%{issue_id}'
+      reports:
+        one: '%{count} 份回報'
+        other: '%{count} 份回報'
+      no_reports: 沒有回報
+      report_created_at_html: 首次回報是在 %{datetime}
+      last_resolved_at_html: 最後回報是在 %{datetime}
+      last_updated_at_html: 最後更新是由 %{displayname} 在 %{datetime}
+      resolve: 解決
+      ignore: 忽略
+      reopen: 重新開啟
+      reports_of_this_issue: 此問題的回報
+      read_reports: 讀取回報
+      new_reports: 新的回報
+      other_issues_against_this_user: 其它針對此使用者的問題
+      no_other_issues: 沒有其它針對此使用者的問題。
+      comments_on_this_issue: 在此問題的留言
   issue_comments:
     create:
       comment_created: 已成功建立您的留言
@@ -1877,7 +1877,6 @@ zh-TW:
     learn_more: 瞭解更多
     more: 更多
     header:
-      ok: 好
       select_language: 選擇語言
     select_language_button:
       title: 選擇語言
@@ -3106,7 +3105,6 @@ zh-TW:
           one: 找到 %{count} 位使用者
           other: 找到 %{count} 位使用者
         confirm: 確認選取的使用者
-        hide: 隱藏選取的使用者
         empty: 找不到符合的使用者
       user:
         summary_html: '%{name} 由 %{ip_address} 於 %{date} 建立'

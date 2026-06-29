@@ -1185,7 +1185,6 @@ kab:
         heading: Iseqdacen
       page:
         confirm: Sentem iseqdacen yettwafernen
-        hide: Ffer iseqdacen yettwafernen
         empty: Ulac aseqdac d-yefɣen deg unadi
       user:
         summary_html: '%{name} yettwarna si %{ip_address} di %{date}'

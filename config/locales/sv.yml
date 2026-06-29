@@ -1569,6 +1569,20 @@ sv:
         ignored: Ignorerad
         open: Öppen
         resolved: Löst
+    resolve:
+      resolved: Ärendestatus har ändrats till "Löst"
+    ignore:
+      ignored: Ärendestatus har ändrats till "Ignoreras"
+    reopen:
+      reopened: Ärendestatus har ändrats till "Öppen"
+    comments:
+      comment_from_html: Kommentar från %{user_link} på %{comment_created_at}
+    reports:
+      reported_by_html: Rapporterades som %{category} av %{user} den %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, kommentar nr %{comment_id}'
+        note: Anteckning nr %{note_id}
     show:
       reports:
         one: '%{count} rapport'
@@ -1586,20 +1600,6 @@ sv:
       other_issues_against_this_user: Andra ärenden mot denna användare
       no_other_issues: Inga andra ärenden mot denna användare.
       comments_on_this_issue: Kommentarer på detta ärende
-    resolve:
-      resolved: Ärendestatus har ändrats till "Löst"
-    ignore:
-      ignored: Ärendestatus har ändrats till "Ignoreras"
-    reopen:
-      reopened: Ärendestatus har ändrats till "Öppen"
-    comments:
-      comment_from_html: Kommentar från %{user_link} på %{comment_created_at}
-    reports:
-      reported_by_html: Rapporterades som %{category} av %{user} den %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, kommentar nr %{comment_id}'
-        note: Anteckning nr %{note_id}
   issue_comments:
     create:
       comment_created: Din kommentar skapades
@@ -2711,7 +2711,6 @@ sv:
           one: '%{count} användare hittade'
           other: '%{count} användare hittade'
         confirm: Bekräfta valda användare
-        hide: Dölj valda användare
         empty: Inga motsvarande användare hittades
       user:
         summary_html: '%{name} skapades från %{ip_address} den %{date}'

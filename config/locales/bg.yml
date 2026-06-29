@@ -1129,6 +1129,17 @@ bg:
         one: '%{count} доклад'
         other: '%{count} доклада'
       reported_item: Докладван елемент
+    resolve:
+      resolved: Състоянието на проблема е променен на „Решен“
+    ignore:
+      ignored: Проблема е променен на „Пропуснат“
+    reopen:
+      reopened: Проблема е променен на "Отворен"
+    comments:
+      comment_from_html: Коментар от %{user_link} в %{comment_created_at}
+    helper:
+      reportable_title:
+        note: Бележка № %{note_id}
     show:
       reports:
         one: '%{count} доклад'
@@ -1145,17 +1156,6 @@ bg:
       other_issues_against_this_user: Други проблеми срещу този потребител
       no_other_issues: Няма други проблеми срещу този потребител.
       comments_on_this_issue: Коментари за проблема
-    resolve:
-      resolved: Състоянието на проблема е променен на „Решен“
-    ignore:
-      ignored: Проблема е променен на „Пропуснат“
-    reopen:
-      reopened: Проблема е променен на "Отворен"
-    comments:
-      comment_from_html: Коментар от %{user_link} в %{comment_created_at}
-    helper:
-      reportable_title:
-        note: Бележка № %{note_id}
   issue_comments:
     create:
       comment_created: Коментарът е успешно създаден
@@ -1875,7 +1875,6 @@ bg:
         heading: Потребители
         search: Търсене
       page:
-        hide: Скрий избраните потребители
         empty: Не са открити съвпадащи профили
       user:
         summary_no_ip_html: '%{name} създадено на %{date}'

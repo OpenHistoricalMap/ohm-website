@@ -1297,6 +1297,10 @@ sr:
       states:
         open: Отворено
         resolved: Решено
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, коментар %{comment_id}'
+        note: 'Белешка #%{note_id}'
     show:
       no_reports: Нема пријава
       resolve: Разреши
@@ -1305,10 +1309,6 @@ sr:
       read_reports: Прочитај извештаје
       new_reports: Нови извештаји
       comments_on_this_issue: Коментари на овај проблем
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, коментар %{comment_id}'
-        note: 'Белешка #%{note_id}'
   issue_comments:
     create:
       comment_created: Ваш коментар је успешно направљен
@@ -1335,6 +1335,58 @@ sr:
           other_label: Друго
     create:
       provide_details: Молимо наведите потребне детаље
+  languages_panes:
+    select_language_list:
+      languages:
+        gsw: алемански
+        az: азерски
+        id: индонежански
+        ca: каталонски
+        cs: чешки
+        cy: велшки
+        da: дански
+        dsb: доњолужичкосрпски
+        et: естонски
+        en: енглески
+        en-GB: енглески (УК)
+        es: шпански
+        fr: француски
+        ga: ирски
+        hr: хрватски
+        is: исландски
+        it: италијански
+        lv: летонски
+        lb: луксембуршки
+        lt: литвански
+        hu: мађарски
+        nl: холандски
+        pt-PT: португалски
+        pt: португалски (Бразил)
+        ro: румунски
+        sco: шкотски
+        sq: албански
+        sk: словачки
+        sl: словеначки
+        sr-Latn: српски (латиница)
+        sh: српскохрватски (латиница)
+        sv: шведски
+        vi: вијетнамски
+        tr: турски
+        el: грчки
+        bg: бугарски
+        mk: македонски
+        mo: молдавски
+        ru: руски
+        sr: српски (ћирилица)
+        uk: украјински
+        he: хебрејски
+        ar: арапски
+        ne: непалски
+        pa: панџапски
+        ka: грузијски
+        km: кмерски
+        ja: јапански
+        ko: корејски
   layouts:
     project_name:
       title: OpenHistoricalMap
@@ -1360,6 +1412,7 @@ sr:
     intro_2_create_account: Отворите кориснички налог
     partners_title: Партнери
     partners_osmf: OpenStreetMap фондација
+    terms_of_use: Услови коришћења
     tou: Услови коришћења
     help: Помоћ
     about: О нама
@@ -1367,6 +1420,12 @@ sr:
     communities: Заједнице
     learn_more: Детаљније
     more: Више
+    header:
+      about: О
+      help: Помоћ
+      history: Историја
+      log_in: Пријава
+      more: Више
   user_mailer:
     diary_comment_notification:
       subject: '%{user} је прокоментарисао дневнички запис'
@@ -1581,7 +1640,14 @@ sr:
     basic_preferences:
       show:
         title: Подешавања
+        editor_color_schemes:
+          light: Светла
+          dark: Тамно
         save: Сачувај подешавања
+    notification_preferences:
+      show:
+        delivery_mechanisms:
+          email: Имејл
   profiles:
     profile_sections:
       navigation:
@@ -1613,6 +1679,9 @@ sr:
         show: Прикажи
         delete: Обриши
         undelete: Поништи брисање
+    heatmaps:
+      show:
+        cancel: Откажи
   sessions:
     new:
       tab_title: Пријава
@@ -1759,6 +1828,9 @@ sr:
           title: Други извори
           description: Додатни извори наведени на викију OpenStreetMap-а
       export_button: Извези
+      confirmation:
+        cancel: Откажи
+        download: Преузми
     fixthemap:
       title: Пријави проблем / Поправи карту
       how_to_help:
@@ -2194,7 +2266,6 @@ sr:
         heading: Корисници
       page:
         confirm: Потврди изабране кориснике
-        hide: Сакриј изабране кориснике
         empty: Није пронађен ниједан корисник
       user:
         summary_html: '%{name} направљено од %{ip_address} дана %{date}'
@@ -2365,6 +2436,8 @@ sr:
       tooltip: Легенда карте
       tooltip_disabled: Легенда није доступна само за овај лејер
     map:
+      geolocate_control:
+        location_not_available: Локација није доступна
       zoom:
         in: Увећај
         out: Умањи

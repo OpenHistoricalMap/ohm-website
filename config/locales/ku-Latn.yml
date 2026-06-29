@@ -1399,6 +1399,21 @@ ku-Latn:
         one: '%{count} Rapor'
         other: '%{count} Rapor'
       reported_item: Hêmanê Raporkirî
+    resolve:
+      resolved: Rewşa pirsgirêk wekî "Çareser Bike" hat eyarkirin
+    ignore:
+      ignored: Rewşa pirsgirêkê wekî "Guh Nede" hat eyarkirin
+    reopen:
+      reopened: Rewşa pirsgirêk wekî "Vekirî" hat eyarkirin
+    comments:
+      comment_from_html: Şîrove ji %{user_link} li ser %{comment_created_at}
+    reports:
+      reported_by_html: Ji aliyê %{user} ve wekî %{category} hat raporkirin li ser
+        %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, şîrove #%{comment_id}'
+        note: 'Nîşe #%{note_id}'
     show:
       reports:
         one: '%{count} rapor'
@@ -1417,21 +1432,6 @@ ku-Latn:
       other_issues_against_this_user: Pirsgirêkên din ên têkilî vê/vî bikarhênerê/î
       no_other_issues: Pirsgirêkekî din a têkilî vê/vî bikarhênerê/î tune ye
       comments_on_this_issue: Şîroveyên vê pirsgirêkê
-    resolve:
-      resolved: Rewşa pirsgirêk wekî "Çareser Bike" hat eyarkirin
-    ignore:
-      ignored: Rewşa pirsgirêkê wekî "Guh Nede" hat eyarkirin
-    reopen:
-      reopened: Rewşa pirsgirêk wekî "Vekirî" hat eyarkirin
-    comments:
-      comment_from_html: Şîrove ji %{user_link} li ser %{comment_created_at}
-    reports:
-      reported_by_html: Ji aliyê %{user} ve wekî %{category} hat raporkirin li ser
-        %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, şîrove #%{comment_id}'
-        note: 'Nîşe #%{note_id}'
   issue_comments:
     create:
       comment_created: Şîroveya te bi serkeftî hat avakirin
@@ -2387,7 +2387,6 @@ ku-Latn:
         heading: Bikarhêner
       page:
         confirm: Bikarhênerên bijartî bipejirîne
-        hide: Bikarhênerên bijartî veşêre
         empty: Bikarhênerek ku lê were nehate dîtin
       user:
         summary_html: '%{name} ji aliyê %{ip_address} ve di %{date} de hate çêkirin'

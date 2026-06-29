@@ -1470,7 +1470,6 @@ dsb:
         heading: Wužywarje
       page:
         confirm: Wubranych wužywarjow wobkšuśiś
-        hide: Wubranych wužywarjow schowaś
         empty: Žedne wótpowědujuce wužywarje namakane
       user:
         summary_html: '%{name} wót %{ip_address} dnja %{date} napórany'

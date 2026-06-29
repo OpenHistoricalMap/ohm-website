@@ -1347,6 +1347,20 @@ fy:
         one: 1 melding
         other: '%{count} meldings'
       reported_item: Meld elemint
+    resolve:
+      resolved: De probleemstatus is op 'Oplost' set
+    ignore:
+      ignored: De probleemstatus is op 'Negearre' set
+    reopen:
+      reopened: De probleemstatus is op 'Iepen' set
+    comments:
+      comment_from_html: Reäksje fan %{user_link} op %{comment_created_at}
+    reports:
+      reported_by_html: Meld as %{category} troch %{user} op %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, reäksje #%{comment_id}'
+        note: 'Notysje #%{note_id}'
     show:
       reports:
         one: 1 melding
@@ -1363,20 +1377,6 @@ fy:
       other_issues_against_this_user: Oare problemen mei dizze meidogger
       no_other_issues: Gjin oare problemen mei dizze meidogger.
       comments_on_this_issue: Reäksjes by dit probleem
-    resolve:
-      resolved: De probleemstatus is op 'Oplost' set
-    ignore:
-      ignored: De probleemstatus is op 'Negearre' set
-    reopen:
-      reopened: De probleemstatus is op 'Iepen' set
-    comments:
-      comment_from_html: Reäksje fan %{user_link} op %{comment_created_at}
-    reports:
-      reported_by_html: Meld as %{category} troch %{user} op %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, reäksje #%{comment_id}'
-        note: 'Notysje #%{note_id}'
   issue_comments:
     create:
       comment_created: It oanmeitsjen fan jo reäksje is slagge
@@ -2287,7 +2287,6 @@ fy:
         heading: Meidoggers
       page:
         confirm: Selektearre meidoggers befêstigje
-        hide: Selektearre meidoggers ferbergje
         empty: Gjin oerienkommende meidoggers fûn
       user:
         summary_html: '%{name} oanmakke fan %{ip_address} op %{date}'

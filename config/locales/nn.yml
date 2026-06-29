@@ -1309,20 +1309,6 @@ nn:
       reports_count:
         one: '%{count} melding'
         other: '%{count} meldingar'
-    show:
-      reports:
-        one: '%{count} melding'
-        other: '%{count} meldingar'
-      no_reports: Ingen meldingar
-      resolve: Løys
-      ignore: Sjå bort frå
-      reopen: Opna att
-      reports_of_this_issue: Meldingar om denne saka
-      read_reports: Les meldingar
-      new_reports: Nye meldingar
-      other_issues_against_this_user: Andre saker mot denne brukaren
-      no_other_issues: Ingen andre saker mot denne brukaren.
-      comments_on_this_issue: Kommentarar om denne saka
     resolve:
       resolved: Stoda på saka har vorte sett til «Løyst»
     ignore:
@@ -1337,6 +1323,20 @@ nn:
       reportable_title:
         diary_comment: '%{entry_title}, kommentar #%{comment_id}'
         note: 'Merknad #%{note_id}'
+    show:
+      reports:
+        one: '%{count} melding'
+        other: '%{count} meldingar'
+      no_reports: Ingen meldingar
+      resolve: Løys
+      ignore: Sjå bort frå
+      reopen: Opna att
+      reports_of_this_issue: Meldingar om denne saka
+      read_reports: Les meldingar
+      new_reports: Nye meldingar
+      other_issues_against_this_user: Andre saker mot denne brukaren
+      no_other_issues: Ingen andre saker mot denne brukaren.
+      comments_on_this_issue: Kommentarar om denne saka
   issue_comments:
     create:
       comment_created: Kommentaren din vart oppretta
@@ -2142,7 +2142,6 @@ nn:
         heading: Brukarar
       page:
         confirm: Stadfest valde brukarar
-        hide: Skjul valde brukarar
         empty: Ingen samsvarande brukarar funne
       user:
         summary_html: '%{name} oppretta frå %{ip_address} den %{date}'

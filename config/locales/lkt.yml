@@ -5,9 +5,6 @@
 # Author: Tuwewanzi
 ---
 lkt:
-  date:
-    formats:
-      contribution_calendar: '%B %-d'
   time:
     formats:
       friendly: '%e %B %Y %H:%M hé eháŋ'
@@ -85,6 +82,8 @@ lkt:
       way_node: Makȟá-kazópi Tȟaówaŋka
       way_tag: Makȟá-kazópi Ihóši
     attributes:
+      client_application:
+        allow_write_api: makȟówapi kiƞ yutȟókeča
       diary_comment:
         body: Tȟaŋčháŋ
       diary_entry:
@@ -564,6 +563,7 @@ lkt:
       comments:
         other: wóeye %{count}
       title_label: Aŋpél'okigwapi Wówapi
+      date_label: Wíyawapi
   doorkeeper:
     openid_connect:
       errors:
@@ -1057,6 +1057,9 @@ lkt:
       reports_count:
         other: 'Wóel''igle %{count} '
       reported_item: Táku el Iglé
+    helper:
+      reportable_title:
+        note: 'Wówapi čístila #%{note_id}'
     show:
       reports:
         other: 'Wóel''igle %{count} '
@@ -1066,9 +1069,6 @@ lkt:
       read_reports: Wahóši Waŋnáš Lawá
       new_reports: Wahóši Tȟéča
       comments_on_this_issue: Wóičaǧi Tȟawóeye
-    helper:
-      reportable_title:
-        note: 'Wówapi čístila #%{note_id}'
   reports:
     new:
       title_html: Wahóši %{link}
@@ -1475,38 +1475,10 @@ lkt:
         newest: Tuwá Uŋ Kiŋ Iyótaŋ Tȟéča
   site:
     about:
-      heading_html: '%{copyright}OpenStreetMap %{br} tuwá kíč''uŋ kiŋ'
       used_by_html: '%{name} otȟáwokaške, omás’apȟela-wíkhičhaŋye na maswíkhičhaŋye
         khektópawiŋǧe ektá makȟówapi-ihóši kiŋ kpamni.'
     about_section:
-      local_knowledge_title: Makȟóčhe Tȟawóslolye
-      local_knowledge_html: OpenStreetMap ektá, makȟóčhe tȟawóslolye yuonihaŋpi. Tuwe
-        kič'uŋ kiŋ GPS wíkhičhaŋye, kiŋyékhiyapi etaŋhaŋ itowapi kiŋ, na ikčé-makȟówapi
-        ogná OSM yuwíčakȟapi.
-      community_driven_title: Wičhóthi Iglúblihečapi
-      community_driven_1_html: "OpenStreetMap tȟawíčhothi wičhótȟokeča yuhápi, blihélya
-        škéhaŋpi, na aŋpétu iyóhi iglúotapi. Wičhótȟi égna makȟówapi-káǧapi, GIS-wíyukčaŋ,
-        OSM wóuƞspe-omnáye awaŋyaŋkapi kiŋ, tuwá wóakhipȟa el ówičhakiyapi kiŋ, na
-        tuwa uŋma óta. \nOpenStreetMap tȟawíčhothi uŋspénič'iya yačhíŋ, %{osm_blog_link},
-        %{user_diaries_link}, %{community_blogs_link}, na %{osm_foundation_link} otȟáwokaške
-        yawá yo/ye."
-      community_driven_osm_blog: OpenStreetMap wótȟaƞiƞ-wówapi
-      community_driven_user_diaries: aŋpél'okigwapi
-      community_driven_community_blogs: wičhothi wótȟaƞiƞ-wówapi
-      community_driven_osm_foundation: OSM Okȟólakičhiye
-      open_data_copyright_license: Wayúota-wóiyowiƞkhiye na Wóopȟe-wóiyowiƞkhiye oyúblaye
       legal_title: Wóopȟe Kiƞ
-      legal_1_1_openstreetmap_foundation: OpenStreetMap Okȟólakičhiye
-      legal_1_1_terms_of_use: Úƞpi-wóopȟe
-      legal_1_1_privacy_policy: Waúŋyutȟaŋiŋpi-šni
-      legal_attribution_guidelines_url: https://osmfoundation.org/wiki/Licence/Attribution_Guidelines
-      legal_attribution_example_film_title: Wanáškaƞškaƞyaƞpi
-      legal_attribution_example_film_url: https://wiki.openstreetmap.org/wiki/Films
-      legal_attribution_example_tv_title: Wičhítenaškaŋškaŋ
-      legal_attribution_example_tv_url: https://wiki.openstreetmap.org/wiki/TV_series
-      legal_2_1_html: Wóopȟe wóiyowiƞkhiye, wówaiyowaža naíŋš wóopȟe uŋmá awínuŋǧa
-        yačhíŋ, %{contact_the_osmf_link}.
-      legal_2_1_contact_the_osmf: OSMF wówičhakiyaka yo/ye
     copyright:
       title: Wayúota-wóiyowiƞkhiye na Wóopȟe-wóiyowiƞkhiye
       foreign:
@@ -1520,47 +1492,9 @@ lkt:
           %{mapping_link} oyákihi.
         mapping_link: makȟóyawa
       legal_babble:
-        lead_1_html: |-
-          OpenStreetMap otȟáwokaške, omás’apȟela-wíkhičhaŋye na maswíkhičhaŋye khektópawiŋǧe ektá makȟówapi-ihóši kiŋ oyúškeya kpamní.
-          OpenStreetMap wičhóthi iyeničhečapi. Tuwá makȟówapi-ihóši kiŋ káǧapi na aphíyapi. Makȟásitomniyaŋ, héčhed táku óta yaítowapi: čhaŋkú, owóte-thípi, mázačhaŋku na táku uŋmá óta yaítowapi.
-        lead_2_html: |-
-          %{learn_more_about_osm_link} na %{get_started_mapping_link} yo/ye!
-          %{osm_blog_link} ektá waláwa oyákihi, na %{weeklyosm_link} ektá wótȟaƞiƞ otȟápȟa oyákihi.
-          %{osm_community_link} ektá tuwá makȟówapi kiƞ iyéyaya oyákihi.
-          Nakúŋ %{osm_foundation_link} óyapȟa na %{making_donation_link} oyákihi.
-        lead_2_learn_more_about_osm: OpenStreetMap uŋspéič'iya
-        lead_2_get_started_mapping: makȟówa
-        lead_2_osm_blog: OpenStreetMap Wótȟaƞiƞ-Wówapi
-        lead_2_osm_community: OSM wicȟóthi
-        lead_2_osm_foundation: OSM Okȟólakičhiye
-        lead_2_making_donation: mázaska yéč’uŋ
-        licensing_3_creative_commons_license_url: https://creativecommons.org/licenses/by-sa/2.0/
-        licensing_4_osmf_license_page: OSMF Wóopȟe-wóiyowiƞkhiye oyúblaye
-        credit_4_v2025_this_copyright_page: wayúota-wóiyowiƞkhiye oyúblaye kiŋ le
         attribution_example:
           title: Ohútkȟaŋ wóiwaƞyaƞke
-        services_1_api_usage_policy: API Úƞpi-wóopȟe
         contributors_title_html: Tuwá kíč'uŋpi kiŋ
-        contributors_at_austria: Austria Makȟóčhe
-        contributors_at_stadt_wien: Stadt Wien
-        contributors_at_land_vorarlberg: Land Vorarlberg
-        contributors_au_australia: Australia Makȟóčhe
-        contributors_au_geoscape_australia: Geoscape Australia
-        contributors_ca_canada: Uƞčíyapi-Makȟóčhe
-        contributors_cz_czechia: Czechia Makȟóčhe
-        contributors_fi_finland: Finland Makȟóčhe
-        contributors_fi_nlsfi_license: NLSFI Wóopȟe-wóiyowiƞkhiye
-        contributors_fr_france: Wašícu Ikčéka-Makȟóčhe
-        contributors_hr_croatia: Croatia Makȟóčhe
-        contributors_nl_netherlands: Iyášičahča Makȟóčhe
-        contributors_nz_new_zealand: Zealand Théča Makȟóčhe
-        contributors_rs_serbia: Serbia Makȟóčhe
-        contributors_rs_rgz: Serbian Geodetic Authority
-        contributors_si_slovenia: Slovenia Makȟóčhe
-        contributors_es_spain: Eháƞni-Spayóla-Makȟóčhe
-        contributors_za_south_africa: Hásapa-Makȟóčhe Itókaǧa
-        contributors_gb_united_kingdom: Šagláša-Makȟóčhe
-        contributors_2_contributors_page: Tuwá kíč'uŋ kiŋ oyúblaye kiŋ
     not_public_flash:
       user_page_link: čhažé-oyáŋke oyúblaye
     export:
@@ -1590,7 +1524,6 @@ lkt:
           title: Wičhóti kiŋ ópȟa yo/ye
       other_concerns:
         copyright: wayúota-wóiyowiƞkhiye oyúblaye
-        working_group: OSMF Wówaši-Optáye
     help:
       title: Wóokiye-ihóši Iyéyapi
       welcome:
@@ -1628,9 +1561,6 @@ lkt:
       introduction: OpenStreetMap ektá taƞyáƞ yahi! Waƞná čhažé-oyáŋke yakáǧa, na
         makȟóyawa oyákihi. Léčhiya ináȟni-wóuŋspe waŋ yaŋke. Lena wóslolye waŋkátuya.
       whats_on_the_map:
-        on_the_map_html: OpenStreetMap ogná, táku %{real_and_current} makȟówapi okíhipi
-          - léčhiya čhaŋku, thiháŋska, na nakuŋ táku uŋma kiŋ kȟoktáktašiča yukȟé.
-          Táku ke éyaš makȟá akáŋn yaŋké na el éwačhaŋni kiŋ makȟoyawa oyákihi kte.
         off_the_map_html: |-
           Táku uŋ šni kiŋ yukȟé %{doesnt} - táku wayúota-wóiyowiƞkhiye yuha naíŋš táku íŋše nitȟáwačhiŋ.
           Wóiyowiƞkhiye luhá šni eháŋtaŋš, makȟówapi uŋmá etáŋhaŋ yuóta šni yo/ye.
@@ -1881,7 +1811,6 @@ lkt:
       comments: Wóeye
       create_block: Tuwá uŋ kiŋ le Anápta yo/ye
       confirm_user: Tuwá uŋ kiŋ le Yusuta yo/ye
-      undelete_user: Tuwá uŋ kiŋ Yukíni yo/ye
       confirm: Yasúta yo/ye
       report: Tuwá uŋ kiŋ le El Iglé yo/ye
       edit_links: Wóičhikȟoyake Yutȟókča yo/ye
@@ -2023,10 +1952,6 @@ lkt:
       export_failed_title: Makȟówapi oyák'u oyákihi šni
       filename: makȟówapi
     map:
-      map:
-        title: Makȟówapi
-      popup:
-        close: Ečhél iyéya
       navigation_control:
         zoom_in: Yutȟáŋka
         zoom_out: Yučísčila

@@ -1780,27 +1780,6 @@ frp:
         ignored: Ignorâ
         open: Uvèrt
         resolved: Solucionâ
-    show:
-      title:
-        open: Problèmo uvèrt nº %{issue_id}
-        ignored: Problèmo ignorâ nº %{issue_id}
-        resolved: Problèmo solucionâ nº %{issue_id}
-      reports:
-        one: '%{count} rapôrt'
-        other: '%{count} rapôrts'
-      no_reports: Gins de rapôrt
-      report_created_at_html: Signalâ lo premiér côp a %{datetime}
-      last_resolved_at_html: Dèrriére rèsolucion a %{datetime}
-      last_updated_at_html: Dèrriére betâye a jorn a %{datetime} per %{displayname}
-      resolve: Solucionâ
-      ignore: Ignorar
-      reopen: Tornar uvrir
-      reports_of_this_issue: Rapôrts de cét problèmo
-      read_reports: Liére los rapôrts
-      new_reports: Novéls rapôrts
-      other_issues_against_this_user: Ôtros problèmos que regârdont cét(a) usanciér(e)
-      no_other_issues: Gins d'ôtro problèmo avouéc cét(a) usanciér(e).
-      comments_on_this_issue: Comentèros sur cét problèmo
     resolve:
       resolved: L'ètat du problèmo at étâ metu a « Rèsolu »
     ignore:
@@ -1829,6 +1808,27 @@ frp:
         title: Raportiors du problèmo nº %{issue_id}
       reporters:
         more_reporters: et %{count} en ples
+    show:
+      title:
+        open: Problèmo uvèrt nº %{issue_id}
+        ignored: Problèmo ignorâ nº %{issue_id}
+        resolved: Problèmo solucionâ nº %{issue_id}
+      reports:
+        one: '%{count} rapôrt'
+        other: '%{count} rapôrts'
+      no_reports: Gins de rapôrt
+      report_created_at_html: Signalâ lo premiér côp a %{datetime}
+      last_resolved_at_html: Dèrriére rèsolucion a %{datetime}
+      last_updated_at_html: Dèrriére betâye a jorn a %{datetime} per %{displayname}
+      resolve: Solucionâ
+      ignore: Ignorar
+      reopen: Tornar uvrir
+      reports_of_this_issue: Rapôrts de cét problèmo
+      read_reports: Liére los rapôrts
+      new_reports: Novéls rapôrts
+      other_issues_against_this_user: Ôtros problèmos que regârdont cét(a) usanciér(e)
+      no_other_issues: Gins d'ôtro problèmo avouéc cét(a) usanciér(e).
+      comments_on_this_issue: Comentèros sur cét problèmo
   issue_comments:
     create:
       comment_created: Voutron comentèro at ben étâ apondu.
@@ -1901,7 +1901,6 @@ frp:
     learn_more: Nen savêr més
     more: Més
     header:
-      ok: D’acôrd
       select_language: Chouèsir la lengoua
     select_language_button:
       title: Chouèsir la lengoua
@@ -3046,7 +3045,6 @@ frp:
           one: '%{count} usanciér(e) trovâ(ye)'
           other: '%{count} usanciér(e)s trovâ(ye)s'
         confirm: Confirmar los usanciér(e)s sèlèccionâ(ye)s
-        hide: Mâscar los usanciér(e)s sèlèccionâ(ye)s
         empty: Gins d'usanciér(e) corrèspondent at étâ trovâ(ye)
       user:
         summary_html: '%{name} crèâ dês %{ip_address} lo %{date}'

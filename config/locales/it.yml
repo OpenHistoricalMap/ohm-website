@@ -1621,6 +1621,22 @@ it:
         ignored: Ignorato
         open: Aperto
         resolved: Risolto
+    resolve:
+      resolved: Lo stato del problema è stato impostato su ‘Risolto’
+    ignore:
+      ignored: Lo stato del problema è stato impostato su ‘Ignorato’
+    reopen:
+      reopened: Lo stato del problema è stato impostato su ‘Aperto’
+    comments:
+      comment_from_html: Commento di %{user_link} il %{comment_created_at}
+    reports:
+      reported_by_html: Segnalato come %{category} da %{user} il %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, commento #%{comment_id}'
+        note: 'Nota #%{note_id}'
+      reportable_heading:
+        note_html: '%{title} creato il %{datetime_created}, aggiornato il %{datetime_updated}'
     show:
       reports:
         one: '%{count} segnalazione'
@@ -1638,22 +1654,7 @@ it:
       other_issues_against_this_user: Altri problemi riguardanti quest'utente
       no_other_issues: Nessun altro problema riguardante quest'utente.
       comments_on_this_issue: Commenti a questo problema
-    resolve:
-      resolved: Lo stato del problema è stato impostato su ‘Risolto’
-    ignore:
-      ignored: Lo stato del problema è stato impostato su ‘Ignorato’
-    reopen:
-      reopened: Lo stato del problema è stato impostato su ‘Aperto’
-    comments:
-      comment_from_html: Commento di %{user_link} il %{comment_created_at}
-    reports:
-      reported_by_html: Segnalato come %{category} da %{user} il %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, commento #%{comment_id}'
-        note: 'Nota #%{note_id}'
-      reportable_heading:
-        note_html: '%{title} creato il %{datetime_created}, aggiornato il %{datetime_updated}'
+      reassign_to_administrators: Riassegna il problema agli amministratori
   issue_comments:
     create:
       comment_created: Il tuo commento è stato creato con successo
@@ -1694,9 +1695,123 @@ it:
     create:
       successful_report: La tua segnalazione è stata registrata con successo
       provide_details: Fornire i dettagli richiesti
+  languages_panes:
+    select_language_list:
+      languages:
+        af: Afrikaans
+        gsw: Alemanno
+        frp: Francoprovenzale
+        ast: Asturiano
+        az: Azero
+        id: Indonesiano
+        ms: Malese
+        bs: Bosniaco
+        br: Bretone
+        ca: Catalano
+        cs: Ceco
+        cy: Gallese
+        da: Danese
+        de: Tedesco
+        dsb: Basso sorabo
+        et: Estone
+        en: Inglese
+        en-GB: Inglese (Regno Unito)
+        es: Spagnolo
+        eo: Esperanto
+        eu: Basco
+        fr: Francese
+        fy: Frisone occidentale
+        fur: Friulano
+        ga: Irlandese
+        gd: Gaelico scozzese
+        gl: Galiziano
+        aln: Albanese Ghega
+        hsb: Alto sorabo
+        hr: Croato
+        ia: Interlingua
+        is: Islandese
+        it: Italiano
+        kw: Cornico
+        gcf: Creolo della Guadalupa
+        ku-Latn: Curdo (latino)
+        lv: Lettone
+        lb: Lussemburghese
+        lkt: Lakota
+        lt: Lituano
+        hu: Ungherese
+        fit: Tornedaliano
+        nl: Olandese
+        nb: Norvegese Bokmål
+        nn: Neonorvegese
+        oc: Occitano
+        nds: Basso-sassone
+        pl: Polacco
+        pt-PT: Portoghese
+        pt: Portoghese (Brasile)
+        ksh: Coloniese
+        ro: Rumeno
+        sc: Sardo
+        sq: Albanese
+        scn: Siciliano
+        sk: Slovacco
+        sl: Sloveno
+        sr-Latn: Serbo (latino)
+        sh: Serbo-croato (latino)
+        fi: Finlandese
+        sv: Svedese
+        tl: Tagalog
+        kab: Cabilo
+        vi: Vietnamita
+        tr: Turco
+        yo: Yoruba
+        diq: Dimli
+        el: Greco
+        ba: Baschiro
+        be: Bielorusso
+        be-Tarask: Bielorusso (Tarašk.)
+        bg: Bulgaro
+        mk: Macedone
+        mo: Moldavo
+        ce: Ceceno
+        ru: Russo
+        sr: Serbo (cirillico)
+        tt: Tataro (cirillico)
+        uk: Ucraino
+        kk-cyrl: Kazako (cirillico)
+        yi: Yiddish
+        he: Ebraico
+        ar: Arabo
+        skr-arab: Saraiki
+        fa: Persiano
+        arz: Arabo egiziano
+        pnb: Punjabi occidentale
+        ps: Pashto
+        nqo: N'Ko
+        ne: Nepalese
+        mr: Marathi
+        hi: Hindi
+        bn: Bengalese
+        pa: Punjabi
+        gu: Gujarati
+        ta: Tamil
+        te: Telugu
+        kn: Kannada
+        th: Thailandese
+        my: Birmano
+        shn: Shan
+        xmf: Mingrelio
+        ka: Georgiano
+        km: Khmer
+        sat: Santali
+        zh-CN: Cinese (semplificato)
+        zh-TW: Cinese (tradizionale)
+        zh-HK: Cinese (Hong Kong)
+        ja: Giapponese
+        ko: Coreano
   layouts:
     logo:
       alt_text: Logo OpenHistoricalMap
+    main_navigation: Principale
     home: Vai alla posizione di casa
     logout: Esci
     log_in: Accedi
@@ -1720,6 +1835,7 @@ it:
       tecnico è supportato da %{greeninfo} e %{devseed}.
     partners_osmf: Fondazione OpenStreetMap
     partners_osmus: OpenStreetMap USA
+    terms_of_use: Condizioni d'uso
     tou: Condizioni d'uso
     nothing_to_preview: Niente da visualizzare in anteprima.
     help: Aiuto
@@ -1728,6 +1844,22 @@ it:
     communities: Comunità
     learn_more: Ulteriori informazioni
     more: Altro
+    header:
+      about: Informazioni
+      copyright: Copyright
+      donate: Dona
+      edit: Modifica
+      edit_with: Modifica con %{editor}
+      export: Esporta
+      gps_traces: Tracciati GPS
+      help: Aiuto
+      home: Vai alla posizione di casa
+      issues: Anomalie
+      log_out: Esci
+      log_in: Entra
+      more: Altro
+      sign_up: Registrati
+      user_diaries: Diari degli utenti
   user_mailer:
     diary_comment_notification:
       description: 'Voce del diario OpenHistoricalMap #%{id}'
@@ -2006,12 +2138,28 @@ it:
         failure: Impossibile aggiornare le preferenze.
       update_success_flash:
         message: Le preferenze sono state aggiornate.
+      navigation:
+        notification_preferences: Notifiche
     basic_preferences:
       show:
         title: Preferenze
         site_color_schemes:
           dark: Scuro
+        editor_color_schemes:
+          auto: Uguale al sito web
+          light: Chiaro
+          dark: Scuro
         save: Aggiorna preferenze
+    notification_preferences:
+      show:
+        title: Preferenze di notifica
+        diary_comment: Commenti ai diari
+        direct_message: Messaggi diretti
+        gpx_import_failure: 'Importazione della traccia GPS: errore'
+        gpx_import_success: 'Importazione della traccia GPX: riuscita'
+        save: Aggiorna preferenze
+        delivery_mechanisms:
+          email: Email
   profiles:
     profile_sections:
       navigation:
@@ -2043,6 +2191,15 @@ it:
         show: Mostra
         delete: Cancella
         undelete: Annulla eliminazione
+    heatmaps:
+      show:
+        title: Configura il calendario dei contributi
+        show_contribution_calendar_in_public: Mostra il calendario dei contributi
+          sulla tua pagina del profilo
+        cancel: Annulla
+      update:
+        success: Calendario dei contributi aggiornato.
+        failure: Impossibile aggiornare il calendario dei contributi.
   sessions:
     new:
       tab_title: Entra
@@ -2054,6 +2211,7 @@ it:
       login_button: Entra
       with external: o accedi tramite terze parti
       or: o
+      reset_to_login: Spiacenti, la tua password è scaduta. Reimpostala per accedere.
       auth failure: Spiacenti, non si può accedere con questi dettagli.
     destroy:
       title: Esci
@@ -2266,6 +2424,13 @@ it:
           title: Altre fonti
           description: Ulteriori fonti elencate sul wiki di OpenStreetMap
       export_button: Esporta
+      confirmation:
+        header: Scarica dati XML
+        body: Vuoi scaricare i dati della mappa per quest'area in formato XML? Tieni
+          presente che il download di aree di grandi dimensioni potrebbe richiedere
+          un po' di tempo.
+        cancel: Annulla
+        download: Scarica
     fixthemap:
       title: Segnala un problema / Correggi la mappa
       how_to_help:
@@ -2525,6 +2690,9 @@ it:
       image_dimensions_html: L'immagine mostrerà il livello %{layer} in %{width} x
         %{height}
       download: Scarica
+  webgl_error_panes:
+    show:
+      read_more_about_webgl: Per saperne di più
   traces:
     visibility:
       private: Privato (condiviso solamente come anonimo, punti non ordinati)
@@ -2775,6 +2943,7 @@ it:
           %{privacy_policy_link} per ulteriori informazioni.
       or: o
       use external auth: o registrati tramite terze parti
+      verify_human: Conferma di essere un essere umano
     no_such_user:
       title: Nessun utente
       heading: L'utente %{user} non esiste
@@ -2820,12 +2989,27 @@ it:
       activate_user: Attiva quest'utente
       confirm_user: Conferma quest'utente
       unconfirm_user: Annulla la conferma di quest'utente
+      suspend_user: Sospendi questo utente
       unsuspend_user: Annulla la sospensione di quest'utente
       hide_user: Nascondi quest'utente
       unhide_user: Mostra quest'utente
       delete_user: Cancella quest'utente
       confirm: Conferma
       report: Segnala quest'utente
+      edit_contribution_calendar: Configura il calendario dei contributi
+      title:
+        moderator: Quest'utente è un moderatore
+        importer: Quest'utente è un importatore
+      grant:
+        administrator: Assegna l'accesso come amministratore
+        moderator: Assegna l'accesso come moderatore
+        importer: Concedi l'accesso come importatore
+        are_you_sure: Sei sicuro di voler assegnare il ruolo '%{role}' all'utente
+          '%{name}'?
+      revoke:
+        administrator: Revoca l'accesso come amministratore
+        moderator: Revoca l'accesso come moderatore
+        importer: Revoca l'accesso come importatore
     go_public:
       flash success: Tutte le tue modifiche sono ora pubbliche, e hai il permesso
         di modificare.
@@ -2861,7 +3045,7 @@ it:
           one: '%{count} utente trovato'
           other: '%{count} utenti trovati'
         confirm: Conferma Utenti Selezionati
-        hide: Nascondi Utenti Selezionati
+        suspend: Sospendi utenti selezionati
         empty: Nessun utente corrispondente trovato
       user:
         summary_html: '%{name} creato da %{ip_address} il %{date}'
@@ -3105,6 +3289,15 @@ it:
       tooltip: Legenda
       tooltip_disabled: La legenda non è disponibile per questo livello
     map:
+      navigation_control:
+        zoom_in: Zoom avanti
+        zoom_out: Zoom indietro
+      geolocate_control:
+        find_my_location: Mostra la mia posizione
+        location_not_available: Posizione non disponibile
+        metersPopup:
+          one: Ti trovi entro %{count} metro da questo punto
+          other: Ti trovi entro %{count} metri da questo punto
       zoom:
         in: Zoom avanti
         out: Zoom indietro

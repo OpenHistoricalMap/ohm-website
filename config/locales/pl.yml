@@ -1616,6 +1616,20 @@ pl:
         ignored: Zignorowano
         open: Otwórz
         resolved: Rozwiązane
+    resolve:
+      resolved: Status sprawy został ustawiony na „Rozwiązana”
+    ignore:
+      ignored: Status sprawy został ustawiony na „Zignorowana”
+    reopen:
+      reopened: Status sprawy został ustawiony na „Otwarta”
+    comments:
+      comment_from_html: Komentarz od %{user_link} z %{comment_created_at}
+    reports:
+      reported_by_html: Zgłoszone %{updated_at} jako %{category} przez %{user}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, komentarz #%{comment_id}'
+        note: 'Uwaga #%{note_id}'
     show:
       reports:
         one: '%{count} zgłoszenie'
@@ -1636,20 +1650,6 @@ pl:
       other_issues_against_this_user: Inne sprawy przeciwko temu użytkownikowi
       no_other_issues: Brak innych spraw dotyczących tego użytkownika.
       comments_on_this_issue: Komentarze o tej sprawie
-    resolve:
-      resolved: Status sprawy został ustawiony na „Rozwiązana”
-    ignore:
-      ignored: Status sprawy został ustawiony na „Zignorowana”
-    reopen:
-      reopened: Status sprawy został ustawiony na „Otwarta”
-    comments:
-      comment_from_html: Komentarz od %{user_link} z %{comment_created_at}
-    reports:
-      reported_by_html: Zgłoszone %{updated_at} jako %{category} przez %{user}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, komentarz #%{comment_id}'
-        note: 'Uwaga #%{note_id}'
   issue_comments:
     create:
       comment_created: Twój komentarz został pomyślnie utworzony
@@ -2785,7 +2785,6 @@ pl:
           many: Znaleziono %{count} użytkowników
           other: Znaleziono %{count} użytkowników
         confirm: Zatwierdź zaznaczonych użytkowników
-        hide: Ukryj zaznaczonych użytkowników
         empty: Nie znaleziono pasujących użytkowników
       user:
         summary_html: '%{name} utworzony z adresu %{ip_address} dnia %{date}'

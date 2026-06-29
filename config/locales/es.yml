@@ -1769,27 +1769,6 @@ es:
         ignored: Ignorado
         open: Abierto
         resolved: Resuelto
-    show:
-      title:
-        open: 'Incidencia abierta #%{issue_id}'
-        ignored: 'Incidencia ignorada #%{issue_id}'
-        resolved: 'Incidencia resuelta #%{issue_id}'
-      reports:
-        one: '%{count} reporte'
-        other: '%{count} reportes'
-      no_reports: Sin denuncias
-      report_created_at_html: Reportado por primera vez el %{datetime}
-      last_resolved_at_html: Resuelto por última vez el %{datetime}
-      last_updated_at_html: Actualizado por última vez el %{datetime} por %{displayname}
-      resolve: Resolver
-      ignore: Ignorar
-      reopen: Reabrir
-      reports_of_this_issue: Denuncias de esta incidencia
-      read_reports: Leer denuncias
-      new_reports: Denuncias nuevas
-      other_issues_against_this_user: Otras incidencias en contra de este usuario
-      no_other_issues: No hay otras incidencias en contra de este usuario.
-      comments_on_this_issue: Comentarios sobre esta incidencia
     resolve:
       resolved: El estado de la incidencia se ha establecido a 'Resuelto'
     ignore:
@@ -1818,6 +1797,27 @@ es:
         title: 'Incidencia #%{issue_id} denunciantes'
       reporters:
         more_reporters: y %{count} más
+    show:
+      title:
+        open: 'Incidencia abierta #%{issue_id}'
+        ignored: 'Incidencia ignorada #%{issue_id}'
+        resolved: 'Incidencia resuelta #%{issue_id}'
+      reports:
+        one: '%{count} reporte'
+        other: '%{count} reportes'
+      no_reports: Sin denuncias
+      report_created_at_html: Reportado por primera vez el %{datetime}
+      last_resolved_at_html: Resuelto por última vez el %{datetime}
+      last_updated_at_html: Actualizado por última vez el %{datetime} por %{displayname}
+      resolve: Resolver
+      ignore: Ignorar
+      reopen: Reabrir
+      reports_of_this_issue: Denuncias de esta incidencia
+      read_reports: Leer denuncias
+      new_reports: Denuncias nuevas
+      other_issues_against_this_user: Otras incidencias en contra de este usuario
+      no_other_issues: No hay otras incidencias en contra de este usuario.
+      comments_on_this_issue: Comentarios sobre esta incidencia
   issue_comments:
     create:
       comment_created: Tu comentario ha sido creado con éxito
@@ -3251,7 +3251,6 @@ es:
           one: '%{count} usuario encontrado'
           other: '%{count} usuarios encontrados'
         confirm: Confirmar usuarios seleccionados
-        hide: Ocultar usuarios seleccionados
         empty: No hay usuarios coincidentes
       user:
         summary_html: '%{name} creado desde %{ip_address} el %{date}'
