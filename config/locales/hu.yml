@@ -1538,6 +1538,20 @@ hu:
         ignored: Mellőzve
         open: Nyitva
         resolved: Megoldva
+    resolve:
+      resolved: 'A probléma állapota átállítva a következőre: „megoldva”'
+    ignore:
+      ignored: 'A probléma állapota átállítva a következőre: „figyelmen kívül hagyva”'
+    reopen:
+      reopened: 'A probléma állapota átállítva a következőre: „nyitott”'
+    comments:
+      comment_from_html: '%{user_link} hozzászólása (%{comment_created_at})'
+    reports:
+      reported_by_html: '%{user} bejelentette %{category} kategóriájúként ekkor: %{updated_at}'
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title} naplóbejegyzés, #%{comment_id} hozzászólás'
+        note: 'Megjegyzés #%{note_id}'
     show:
       reports:
         one: '%{count} bejelentés'
@@ -1555,20 +1569,6 @@ hu:
       other_issues_against_this_user: Más problémák ezzel a felhasználóval
       no_other_issues: Nincsenek további problémák ezzel a felhasználóval kapcsolatban
       comments_on_this_issue: Hozzászólások a problémához
-    resolve:
-      resolved: 'A probléma állapota átállítva a következőre: „megoldva”'
-    ignore:
-      ignored: 'A probléma állapota átállítva a következőre: „figyelmen kívül hagyva”'
-    reopen:
-      reopened: 'A probléma állapota átállítva a következőre: „nyitott”'
-    comments:
-      comment_from_html: '%{user_link} hozzászólása (%{comment_created_at})'
-    reports:
-      reported_by_html: '%{user} bejelentette %{category} kategóriájúként ekkor: %{updated_at}'
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title} naplóbejegyzés, #%{comment_id} hozzászólás'
-        note: 'Megjegyzés #%{note_id}'
   issue_comments:
     create:
       comment_created: Hozzászólásod sikeresen létrehozva
@@ -1607,6 +1607,21 @@ hu:
     create:
       successful_report: Bejelentésedet sikeresen regisztráltuk
       provide_details: Kérjük, add meg a szükséges részleteket
+  languages_panes:
+    select_language_list:
+      languages:
+        gsw: alemann
+        az: azeri
+        ca: katalán
+        de: német
+        ku-Latn: kurd (latin)
+        fit: meänkieli
+        sq: albán
+        be: belarusz
+        mo: moldáv
+        fa: perzsa
+        ps: pastu
+        km: khmer
   layouts:
     logo:
       alt_text: OpenHistoricalMap logó
@@ -2685,7 +2700,6 @@ hu:
           one: '%{count} felhasználó található'
           other: '%{count} felhasználó található'
         confirm: Kijelölt felhasználók megerősítése
-        hide: Kijelölt felhasználók elrejtése
         empty: Nem találtam egyező felhasználót
       user:
         summary_html: '%{name} létrejött innen: %{ip_address}, ekkor: %{date}'
@@ -2921,6 +2935,8 @@ hu:
       tooltip: Jelmagyarázat
       tooltip_disabled: A jelmagyarázat nem érhető el ezen a rétegen
     map:
+      geolocate_control:
+        location_not_available: Hely nem érhető el
       zoom:
         in: Nagyítás
         out: Kicsinyítés

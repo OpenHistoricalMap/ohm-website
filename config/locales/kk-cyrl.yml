@@ -518,11 +518,11 @@ kk-cyrl:
       osmchangexml: osmChange XML
     paging_nav:
       nodes_title: Нүктелер
-      nodes_paginated: Нүктелер (%{x}-%{y} жалпы саны %{count})
+      nodes_paginated: Нүктелер (%{count} ішінен %{x}-%{y})
       ways_title: Сызықтар
       relations_title: Қатынастар
-      relations_paginated: Қатынастар (%{x}-%{y} жалпы саны %{count})
-      range: '%{x}-%{y} жалпы саны %{count}'
+      relations_paginated: Қатынастар (%{count} ішінен %{x}-%{y})
+      range: '%{count} ішінен %{x}-%{y}'
     not_found_message:
       sorry: Өкінішке орай, %{id} өңдеме дестесі табылмады.
   changeset_subscriptions:
@@ -1110,13 +1110,6 @@ kk-cyrl:
       search: Іздеу
       states:
         open: Ашық
-    show:
-      ignore: Елемеу
-      reopen: Қайта ашу
-      new_reports: Жаңа хабарлама
-      other_issues_against_this_user: Осы қатысушыға қарсы басқа мәселелер
-      no_other_issues: Осы қатысушыға қарсы басқа мәселелер жоқ
-      comments_on_this_issue: Осы мәселе жайлы комментарийлер
     resolve:
       resolved: Мәселенің статусы "Шешілді" деп белгіленді
     ignore:
@@ -1126,6 +1119,13 @@ kk-cyrl:
     comments:
       comment_from_html: '%{comment_created_at} жазылған %{user_link} қатысушысынан
         комментарий'
+    show:
+      ignore: Елемеу
+      reopen: Қайта ашу
+      new_reports: Жаңа хабарлама
+      other_issues_against_this_user: Осы қатысушыға қарсы басқа мәселелер
+      no_other_issues: Осы қатысушыға қарсы басқа мәселелер жоқ
+      comments_on_this_issue: Осы мәселе жайлы комментарийлер
   reports:
     new:
       categories:
@@ -1174,7 +1174,6 @@ kk-cyrl:
     learn_more: Көбірек білу
     more: Мәзір
     header:
-      ok: OK
       select_language: Тілді таңдау
     select_language_button:
       title: Тілді таңдау

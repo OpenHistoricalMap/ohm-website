@@ -1269,6 +1269,20 @@ nb:
         one: '%{count} rapport'
         other: '%{count} rapporter'
       reported_item: Rapportert element
+    resolve:
+      resolved: Saksstatus har blitt satt til 'Løst'
+    ignore:
+      ignored: Saksstatus har blitt satt til 'Sett bort fra'
+    reopen:
+      reopened: Saksstatus har blitt satt til 'Åpen'
+    comments:
+      comment_from_html: Kommentar fra %{user_link} %{comment_created_at}
+    reports:
+      reported_by_html: Reportert som %{category} av %{user} %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, kommentar #%{comment_id}'
+        note: 'Notis #%{note_id}'
     show:
       reports:
         one: '%{count} rapport'
@@ -1286,20 +1300,6 @@ nb:
       other_issues_against_this_user: Andre saker mot denne brukeren
       no_other_issues: Ingen andre saker mot denne brukeren.
       comments_on_this_issue: Kommentarer om denne saken
-    resolve:
-      resolved: Saksstatus har blitt satt til 'Løst'
-    ignore:
-      ignored: Saksstatus har blitt satt til 'Sett bort fra'
-    reopen:
-      reopened: Saksstatus har blitt satt til 'Åpen'
-    comments:
-      comment_from_html: Kommentar fra %{user_link} %{comment_created_at}
-    reports:
-      reported_by_html: Reportert som %{category} av %{user} %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, kommentar #%{comment_id}'
-        note: 'Notis #%{note_id}'
   issue_comments:
     create:
       comment_created: Din kommentar ble feilfritt opprettet
@@ -2143,7 +2143,6 @@ nb:
         heading: Brukere
       page:
         confirm: Bekreft valgte brukere
-        hide: Skjul valgte brukere
         empty: Ingen samsvarende brukere funnet
       user:
         summary_html: '%{name} opprettet fra %{ip_address} den %{date}'

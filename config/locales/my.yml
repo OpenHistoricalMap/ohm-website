@@ -482,13 +482,13 @@ my:
       reports_count:
         one: 1 အစီရင်ခံစာ
         other: '%{count} အစီရင်ခံစာများ'
+    helper:
+      reportable_title:
+        note: 'မှတ်စု #%{note_id}'
     show:
       ignore: လျစ်လျူရှု
       read_reports: အစီရင်ခံစာများ ဖတ်ရှုရန်
       new_reports: အစီရင်ခံစာသစ်များ
-    helper:
-      reportable_title:
-        note: 'မှတ်စု #%{note_id}'
   issue_comments:
     create:
       comment_created: သင်၏မှတ်ချက်မှာ အောင်မြင်စွာ ဖန်တီးပြီးပါပြီ

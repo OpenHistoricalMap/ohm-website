@@ -1720,7 +1720,6 @@ scn:
         heading: Utenti
       page:
         confirm: Cunferma a l'utenti scigghiuti
-        hide: Ammuccia a l'utenti scigghiuti
         empty: Nun fu attruvatu nuḍḍu utenti chi currispunni
       user:
         summary_html: '%{name} criatu di %{ip_address} lu %{date}'

@@ -865,6 +865,10 @@ hi:
           other_label: अन्य
         note:
           other_label: अन्य
+  languages_panes:
+    select_language_list:
+      languages:
+        en: अंग्रेज़ी
   layouts:
     home: गृह
     sign_up: खाता बनाएं
@@ -1017,7 +1021,6 @@ hi:
         ip_address: आईपी पता
       page:
         confirm: इन सदस्यों को चुनें
-        hide: इन सदस्यों को न दिखाएं
         empty: ऐसे कोई सदस्य नहीं मिले
     changeset_comments:
       page:

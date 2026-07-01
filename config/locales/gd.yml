@@ -1018,6 +1018,9 @@ gd:
       search: Lorg
       states:
         open: Fosgailte
+    helper:
+      reportable_title:
+        note: 'Nòta #%{note_id}'
     show:
       reports:
         one: '%{count} aithris'
@@ -1026,9 +1029,6 @@ gd:
         other: '%{count} aithris'
       read_reports: Leugh aithrisean
       new_reports: Aithrisean Ùra
-    helper:
-      reportable_title:
-        note: 'Nòta #%{note_id}'
   layouts:
     project_name:
       title: OpenHistoricalMap
@@ -1747,7 +1747,6 @@ gd:
         heading: Cleachdaichean
       page:
         confirm: Dearbhaich na cleachdaichean a thagh thu
-        hide: Falaich na cleachdaichean a thagh thu
         empty: Cha deach cleachdaiche a fhreagras a lorg
       user:
         summary_html: Chaidh %{name} a chruthachadh o %{ip_address} %{date}

@@ -1099,6 +1099,17 @@ tl:
         one: 1 Ulat
         other: '%{count} mga Ulat'
       reported_item: Naiulat na bagay
+    resolve:
+      resolved: Kalagayan ng isyu ay nakatakda bilang 'Nalutas'
+    ignore:
+      ignored: Kalagayan ng isyu ay nakatakda bilang 'Hindi pinansin'
+    reopen:
+      reopened: Kalagayan ng isyu ay nakatakda bilang 'Bukas'
+    reports:
+      reported_by_html: Naiulat bilang %{category} ni %{user} noong %{updated_at}
+    helper:
+      reportable_title:
+        note: 'Tala #%{note_id}'
     show:
       reports:
         one: 1 ulat
@@ -1112,17 +1123,6 @@ tl:
       new_reports: Bagong Mga Ulat
       other_issues_against_this_user: Iba pang mga isyu laban sa nasabing tagagamit
       comments_on_this_issue: Mga puna sa isyung ito
-    resolve:
-      resolved: Kalagayan ng isyu ay nakatakda bilang 'Nalutas'
-    ignore:
-      ignored: Kalagayan ng isyu ay nakatakda bilang 'Hindi pinansin'
-    reopen:
-      reopened: Kalagayan ng isyu ay nakatakda bilang 'Bukas'
-    reports:
-      reported_by_html: Naiulat bilang %{category} ni %{user} noong %{updated_at}
-    helper:
-      reportable_title:
-        note: 'Tala #%{note_id}'
   reports:
     new:
       categories:
@@ -1878,7 +1878,6 @@ tl:
         heading: Mga tagagamit
       page:
         confirm: Tiyakin ang Napiling mga Tagagamit
-        hide: Itago ang Napiling mga Tagagamit
         empty: Walang natagpuan na katugmang mga tagagamit
       user:
         summary_html: Nilikha ang %{name} mula sa %{ip_address} noong %{date}

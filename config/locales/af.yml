@@ -1264,19 +1264,6 @@ af:
         one: 1 verslag
         other: '%{count} verslae'
       reported_item: Gerapporteerde item
-    show:
-      report_created_at_html: Eerste vermelding op %{datetime}
-      last_resolved_at_html: Laas geregmaak op %{datetime}
-      last_updated_at_html: Laaste opgedateer op %{datetime} deur %{displayname}
-      resolve: Los op
-      ignore: Ignoreer
-      reopen: Heropen
-      reports_of_this_issue: Verslae van hierdie probleem
-      read_reports: Lees verslae
-      new_reports: Nuwe verslae
-      other_issues_against_this_user: Ander probleme teen hierdie gebruiker
-      no_other_issues: Geen ander probleme teen hierdie gebruiker nie.
-      comments_on_this_issue: Kommentaar oor dié probleem
     resolve:
       resolved: Probleemstatus is op 'Opgelos' gestel
     ignore:
@@ -1291,6 +1278,19 @@ af:
       reportable_title:
         diary_comment: '%{entry_title}, kommentaar #%{comment_id}'
         note: 'Nota #%{note_id}'
+    show:
+      report_created_at_html: Eerste vermelding op %{datetime}
+      last_resolved_at_html: Laas geregmaak op %{datetime}
+      last_updated_at_html: Laaste opgedateer op %{datetime} deur %{displayname}
+      resolve: Los op
+      ignore: Ignoreer
+      reopen: Heropen
+      reports_of_this_issue: Verslae van hierdie probleem
+      read_reports: Lees verslae
+      new_reports: Nuwe verslae
+      other_issues_against_this_user: Ander probleme teen hierdie gebruiker
+      no_other_issues: Geen ander probleme teen hierdie gebruiker nie.
+      comments_on_this_issue: Kommentaar oor dié probleem
   issue_comments:
     create:
       comment_created: U opmerking is suksesvol geskep
@@ -1855,7 +1855,6 @@ af:
         heading: Gebruikers
       page:
         confirm: Bevestig geselekteerde gebruikers
-        hide: Versteek verkose gebruikers
         empty: Geen gebruikers gevind nie
       user:
         summary_html: '%{name} geskep vanaf %{ip_address} op %{date}'

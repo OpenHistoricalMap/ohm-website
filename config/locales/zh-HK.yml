@@ -976,13 +976,13 @@ zh-HK:
       reported_user: 曾經舉報的用戶
     page:
       user_not_found: 用戶並不存在
+    helper:
+      reportable_title:
+        note: 註記#%{note_id}
     show:
       resolve: 解決
       ignore: 忽略
       reopen: 重新開啟
-    helper:
-      reportable_title:
-        note: 註記#%{note_id}
   reports:
     new:
       categories:

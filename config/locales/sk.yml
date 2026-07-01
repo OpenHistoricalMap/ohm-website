@@ -896,6 +896,9 @@ sk:
       title: Súbor nenájdený
       description: Nepodarilo sa nájsť súbor/adresár/operáciu API s týmto názvom na
         serveri OpenHistoricalMap (HTTP 404)
+  export:
+    show:
+      title: OpenHistoricalMap – vložená mapa
   follows:
     show:
       follow:
@@ -1822,6 +1825,7 @@ sk:
       download: Stiahnuť trasu ako GeoJSON
       filename: trasa
       directions_courtesy_html: Trasa získaná vďaka %{link}
+      check_demo_html: Ďalšie podrobnosti z %{link}
   issues:
     index:
       title: Problémy
@@ -1855,29 +1859,6 @@ sk:
         ignored: Ignorované
         open: Otvorené
         resolved: Vyriešené
-    show:
-      title:
-        open: Otvorený problém č. %{issue_id}
-        ignored: Ignorovaný problém č. %{issue_id}
-        resolved: Vyriešený problém č. %{issue_id}
-      reports:
-        one: '%{count} hlásenie'
-        few: '%{count} hlásenia'
-        many: '%{count} hlásení'
-        other: '%{count} hlásení'
-      no_reports: Žiadne hlásenia
-      report_created_at_html: Prvýkrát nahlásené %{datetime}
-      last_resolved_at_html: Naposledy vyriešené %{datetime}
-      last_updated_at_html: Naposledy aktualizované %{datetime} používateľom %{displayname}
-      resolve: Vyriešiť
-      ignore: Ignorovať
-      reopen: Znovu otvoriť
-      reports_of_this_issue: Hlásenia o tomto probléme
-      read_reports: Prečítať hlásenia
-      new_reports: Nové hlásenia
-      other_issues_against_this_user: Ďalšie problémy voči tomuto používateľovi
-      no_other_issues: Žiadne ďalšie problémy voči tomuto používateľovi.
-      comments_on_this_issue: Komentáre k problému
     resolve:
       resolved: Stav problému bol nastavený na „Vyriešený“
     ignore:
@@ -1906,6 +1887,32 @@ sk:
         title: Nahlasovatelia problému č. %{issue_id}
       reporters:
         more_reporters: a %{count} ďalších
+    show:
+      title:
+        open: Otvorený problém č. %{issue_id}
+        ignored: Ignorovaný problém č. %{issue_id}
+        resolved: Vyriešený problém č. %{issue_id}
+      reports:
+        one: '%{count} hlásenie'
+        few: '%{count} hlásenia'
+        many: '%{count} hlásení'
+        other: '%{count} hlásení'
+      no_reports: Žiadne hlásenia
+      report_created_at_html: Prvýkrát nahlásené %{datetime}
+      last_resolved_at_html: Naposledy vyriešené %{datetime}
+      last_updated_at_html: Naposledy aktualizované %{datetime} používateľom %{displayname}
+      resolve: Vyriešiť
+      ignore: Ignorovať
+      reopen: Znovu otvoriť
+      reports_of_this_issue: Hlásenia o tomto probléme
+      read_reports: Prečítať hlásenia
+      new_reports: Nové hlásenia
+      other_issues_against_this_user: Ďalšie problémy voči tomuto používateľovi
+      no_other_issues: Žiadne ďalšie problémy voči tomuto používateľovi.
+      comments_on_this_issue: Komentáre k problému
+      comment_from_html: Komentár od %{user_link} z %{comment_created_at}
+      reassign_to_moderators: Postúpiť problém moderátorom
+      reassign_to_administrators: Postúpiť problém administrátorom
   issue_comments:
     create:
       comment_created: Váš komentár bol úspešne ne vytvorený
@@ -1945,12 +1952,130 @@ sk:
     create:
       successful_report: Vaše hlásenie bolo prijaté
       provide_details: Uveďte, prosím, potrebné detaily
+  languages_panes:
+    select_language_list:
+      search_language: Hľadať…
+      languages:
+        af: afrikánčina
+        gsw: alemančina
+        frp: arpitánčina
+        ast: astúrčina
+        az: azerbajdžančina
+        id: indonézčina
+        ms: malajčina
+        bcl: stredná bikolčina
+        bs: bosniačtina
+        br: bretónčina
+        ca: katalánčina
+        cs: čeština
+        cy: waleština
+        da: dánčina
+        de: nemčina
+        dsb: dolná lužická srbčina
+        et: estónčina
+        en: angličtina
+        en-GB: angličtina (Spojené kráľovstvo)
+        es: španielčina
+        eo: esperanto
+        eu: baskičtina
+        fr: francúzština
+        fy: západná frízština
+        fur: friulčina
+        ga: írčina
+        gd: škótska gaelčina
+        gl: galícijčina
+        aln: gegská albánčina
+        hsb: horná lužická srbčina
+        hr: chorvátčina
+        ia: interlingua
+        is: islandčina
+        it: taliančina
+        kw: kornčina
+        gcf: guadeloupská kreolčina
+        ku-Latn: kurdčina (latinka)
+        lv: lotyština
+        lb: luxemburčina
+        lkt: lakotčina
+        lt: litovčina
+        hu: maďarčina
+        fit: tornedalská fínčina
+        nl: holandčina
+        nb: nórčina (bokmål)
+        nn: nórčina (nynorsk)
+        oc: okcitánčina
+        nds: dolná nemčina
+        pl: poľština
+        pt-PT: portugalčina
+        pt: portugalčina (Brazília)
+        ksh: kolínčina
+        ro: rumunčina
+        sc: sardínčina
+        sco: škótčina
+        sq: albánčina
+        scn: sicílčina
+        sk: slovenčina
+        sl: slovinčina
+        sr-Latn: srbčina (latinka)
+        sh: srbochorvátčina (latinka)
+        fi: fínčina
+        sv: švédčina
+        tl: tagalčina
+        kab: kabylčina
+        vi: vietnamčina
+        tr: turečtina
+        yo: jorubčina
+        diq: dimličina
+        el: gréčtina
+        ba: baškirčina
+        be: bieloruština
+        be-Tarask: bieloruština (taraškievica)
+        bg: bulharčina
+        mk: macedónčina
+        mo: moldavčina
+        ce: čečenčina
+        ru: ruština
+        sr: srbčina (cyrilika)
+        tt: tatárčina (cyrilika)
+        uk: ukrajinčina
+        kk-cyrl: kazaština (cyrilika)
+        yi: jidiš
+        he: hebrejčina
+        ar: arabčina
+        skr-arab: saraikčina
+        fa: perzština
+        arz: egyptská arabčina
+        pnb: západná pandžábčina
+        ps: paštčina
+        nqo: N’Ko
+        ne: nepálčina
+        mr: maráthčina
+        hi: hindčina
+        bn: bengálčina
+        pa: pandžábčina
+        gu: gudžarátčina
+        ta: tamilčina
+        te: telugčina
+        kn: kannadčina
+        th: thajčina
+        my: barmčina
+        shn: šančina
+        xmf: mingrelčina
+        ka: gruzínčina
+        km: khmérčina
+        sat: santalčina
+        zh-CN: čínština (zjednodušená)
+        zh-TW: čínština (tradičná)
+        zh-HK: čínština (Hongkong)
+        ja: japončina
+        ko: kórejčina
   layouts:
     project_name:
       title: OpenHistoricalMap
       h1: OpenHistoricalMap
     logo:
       alt_text: Logo OpenHistoricalMap
+    main_navigation: Hlavné
+    layer_info: Informácie o vrstve
     home: Domov
     logout: Odhlásiť sa
     log_in: Prihlásiť sa
@@ -1976,6 +2101,9 @@ sk:
     partners_greeninfo: GreenInfo Network
     partners_osmf: OpenStreetMap Foundation
     partners_osmus: OpenStreetMap U.S.
+    welcome_tou_notice_html: Používaním tejto webovej stránky alebo inej infraštruktúry
+      poskytovanej nadáciou OpenStreetMap Foundation súhlasíte s %{terms_link}.
+    terms_of_use: Podmienkami používania
     tou: Podmienky používania
     nothing_to_preview: Nič k náhľadu.
     help: Pomocník
@@ -1985,8 +2113,26 @@ sk:
     learn_more: Viac info
     more: Ďalšie
     header:
-      ok: OK
+      about: O projekte
+      communities: Komunity
+      copyright: Autorské práva
+      donate: Prispieť
+      edit: Upraviť
+      edit_with: Upraviť pomocou %{editor}
+      export: Exportovať
+      gps_traces: GPS záznamy
+      help: Pomocník
+      history: História
+      home: Prejsť na domovskú polohu
+      issues: Problémy
+      log_out: Odhlásiť sa
+      log_in: Prihlásiť sa
+      more: Viac
       select_language: Vybrať jazyk
+      sign_up: Zaregistrovať sa
+      user_diaries: Denníky používateľov
+    meta:
+      openstreetmap_search: Vyhľadávanie OpenHistoricalMap
     select_language_button:
       title: Vybrať jazyk
     offline_flash:
@@ -2295,6 +2441,7 @@ sk:
         message: Predvoľby aktualizované.
       navigation:
         preferences: Nastavenia
+        notification_preferences: Oznámenia
         advanced_preferences: Pokročilé nastavenia
     basic_preferences:
       show:
@@ -2310,7 +2457,25 @@ sk:
           auto: Automaticky
           light: Svetlá
           dark: Tmavá
+        preferred_editor_color_scheme: Preferovaná farebná schéma editora
+        editor_color_schemes:
+          auto: Rovnaká ako web
+          light: Svetlá
+          dark: Tmavá
         save: Aktualizovať preferencie
+    notification_preferences:
+      show:
+        title: Nastavenia oznámení
+        changeset_comment: Komentáre k sadám zmien
+        diary_comment: Komentáre v denníku
+        direct_message: Priame správy
+        gpx_import_failure: 'Import GPS záznamu: zlyhanie'
+        gpx_import_success: 'Import GPX záznamu: úspech'
+        new_follower: Noví sledovatelia
+        note_comment: Komentáre k poznámkam
+        save: Aktualizovať nastavenia
+        delivery_mechanisms:
+          email: E-mail
     advanced_preferences:
       show:
         title: Moje pokročilé nastavenia
@@ -2323,6 +2488,7 @@ sk:
         image: Obrázok
         company: Spoločnosť
         location: Poloha
+        contribution_calendar: Kalendár príspevkov
     descriptions:
       show:
         title: Upraviť profil
@@ -2382,6 +2548,16 @@ sk:
       update:
         success: Poloha v profile bola aktualizovaná.
         failure: Polohu v profile sa nepodarilo aktualizovať.
+    heatmaps:
+      show:
+        title: Konfigurovať kalendár príspevkov
+        show_contribution_calendar_in_public: Zobraziť kalendár príspevkov na vašej
+          profilovej stránke
+        save: Aktualizovať konfiguráciu kalendára príspevkov
+        cancel: Zrušiť
+      update:
+        success: Kalendár príspevkov bol aktualizovaný.
+        failure: Kalendár príspevkov sa nepodarilo aktualizovať.
   sessions:
     new:
       tab_title: Prihlásenie
@@ -2400,6 +2576,8 @@ sk:
       login_button: Prihlásiť sa
       with external: ale použite na prihlásenie služby tretích strán
       or: alebo
+      reset_to_login: Ľutujeme, platnosť vášho hesla vypršala. Na prihlásenie si prosím
+        obnovte heslo.
       auth failure: Ľutujeme, s uvedenými údajmi sa nie je možné prihlásiť.
     destroy:
       title: Odhlásenie
@@ -2522,6 +2700,7 @@ sk:
       legal_1_aup_url: https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy
       legal_1_privacy_policy: Pravidlám ochrany osobných údajov
       legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
+      legal_1_1_terms_of_use_url: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
       legal_2_html: |-
         Prosím, %{contact_team_link}
         ak máte otázky týkajúce sa licencií, autorských práv alebo iné právne otázky.
@@ -2704,6 +2883,12 @@ sk:
           url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse
       export_button: Export
       export_download: Sťahuje sa…
+      confirmation:
+        header: Stiahnuť údaje XML
+        body: Chcete stiahnuť mapové údaje pre túto oblasť vo formáte XML? Upozorňujeme,
+          že sťahovanie veľkých oblastí môže chvíľu trvať.
+        cancel: Zrušiť
+        download: Stiahnuť
     fixthemap:
       title: Nahlásiť problém / Opraviť mapu
       how_to_help:
@@ -3007,6 +3192,15 @@ sk:
         x %{height}
       download: Stiahnuť
       downloading: Sťahuje sa…
+  webgl_error_panes:
+    show:
+      compact_message: Táto mapa vyžaduje WebGL.
+      description_html: Je nám ľúto, ale zdá sa, že %{your_browser_does_not_support_webgl}
+        – technológiu na vykresľovanie 3D grafiky na webe.
+      your_browser_does_not_support_webgl: váš prehliadač nepodporuje WebGL
+      webgl_is_required_for_this_map: Na zobrazenie tejto mapy je potrebný WebGL.
+      read_more_about_webgl: Čítať viac
+      read_more_about_webgl_url: https://wiki.openstreetmap.org/wiki/This_map_requires_WebGL
   traces:
     visibility:
       private: Súkromné (iba zdieľané ako anonymné, neusporiadané body)
@@ -3298,6 +3492,10 @@ sk:
           našim %{privacy_policy_link}.
       or: alebo
       use external auth: prípadne využite na registráciu služby tretích strán
+      verify_human: Overte, že ste človek
+    create:
+      not_human: Bohužiaľ nedokážeme potvrdiť, že ste človek. Toto je potrebné na
+        vytváranie nových účtov.
     no_such_user:
       title: Taký používateľ neexistuje
       heading: Používateľ %{user} neexistuje
@@ -3345,6 +3543,7 @@ sk:
       activate_user: Aktivovať tohoto používateľa
       confirm_user: Potvrdiť tohoto používateľa
       unconfirm_user: Zrušiť potvrdenie tohto používateľa
+      suspend_user: Pozastaviť tohto používateľa
       unsuspend_user: Zrušiť pozastavenie tohto používateľa
       hide_user: Skryť tohto používateľa
       unhide_user: Zobraziť tohoto používateľa
@@ -3357,11 +3556,26 @@ sk:
       change_image: Zmeniť obrázok
       edit_company: Upraviť spoločnosť
       edit_location: Upraviť polohu
+      edit_contribution_calendar: Konfigurovať kalendár príspevkov
       contributions:
         one: '%{count} príspevok za posledný rok'
         few: '%{count} príspevky za posledný rok'
         many: '%{count} príspevku za posledný rok'
         other: '%{count} príspevkov za posledný rok'
+      title:
+        administrator: Tento používateľ je administrátor
+        moderator: Tento používateľ je moderátor
+        importer: Tento používateľ je importér
+      grant:
+        administrator: Udeliť prístup administrátora
+        moderator: Udeliť prístup moderátora
+        importer: Udeliť prístup importéra
+        are_you_sure: Naozaj chcete používateľovi „%{name}“ udeliť rolu „%{role}“?
+      revoke:
+        administrator: Odobrať prístup administrátora
+        moderator: Odobrať prístup moderátora
+        importer: Odobrať prístup importéra
+        are_you_sure: Naozaj chcete používateľovi „%{name}“ odobrať rolu „%{role}“?
     sidebar_section:
       home_location: Domovská poloha
       company: Spoločnosť
@@ -3417,7 +3631,7 @@ sk:
           many: Nájdených %{count} používateľa
           other: Nájdených %{count} používateľov
         confirm: Potvrdiť zvolených používateľov
-        hide: Skryť vybraných používateľov
+        suspend: Pozastaviť vybraných používateľov
         empty: Žiadni používatelia vyhovujúci podmienkam neboli nájdení
       user:
         summary_html: '%{name} založené %{date} z %{ip_address}'
@@ -3719,6 +3933,22 @@ sk:
       tooltip: Legenda
       tooltip_disabled: Legenda je dostupná nie je dostupná pre túto vrstvu
     map:
+      navigation_control:
+        zoom_in: Priblížiť
+        zoom_out: Oddialiť
+      geolocate_control:
+        find_my_location: Zobraziť moju polohu
+        location_not_available: Poloha nie je dostupná
+        metersPopup:
+          one: Nachádzate sa %{count} meter od tohto bodu
+          few: Nachádzate sa %{count} metre od tohto bodu
+          many: Nachádzate sa %{count} metra od tohto bodu
+          other: Nachádzate sa %{count} metrov od tohto bodu
+        feetPopup:
+          one: Nachádzate sa %{count} stopu od tohto bodu
+          few: Nachádzate sa %{count} stopy od tohto bodu
+          many: Nachádzate sa %{count} stopy od tohto bodu
+          other: Nachádzate sa %{count} stôp od tohto bodu
       zoom:
         in: Priblížiť
         out: Oddialiť

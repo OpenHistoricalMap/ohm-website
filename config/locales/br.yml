@@ -1485,6 +1485,20 @@ br:
         ignored: Lezet a-gostez
         open: Digor
         resolved: Diskoulmet
+    resolve:
+      resolved: Stad ar gudenn zo bet lakaet e "Diskoulmet"
+    ignore:
+      ignored: Stad ar gudenn zo bet lakaet e "Dianavezet"
+    reopen:
+      reopened: Stad ar gudenn zo bet lakaet e "Digor"
+    comments:
+      comment_from_html: Evezhiadenn gant %{user_link} war %{comment_created_at}
+    reports:
+      reported_by_html: Disklêriet evel %{category} gant %{user} d'an %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, evezhiadenn#%{comment_id}'
+        note: 'Notenn #%{note_id}'
     show:
       reports:
         one: 1 danevell
@@ -1505,20 +1519,6 @@ br:
       other_issues_against_this_user: Kudennoù all a sell ouzh an implijer-mañ
       no_other_issues: Kudenn all ebet gant an implijer-mañ.
       comments_on_this_issue: Displegadennoù war ar gudenn-mañ
-    resolve:
-      resolved: Stad ar gudenn zo bet lakaet e "Diskoulmet"
-    ignore:
-      ignored: Stad ar gudenn zo bet lakaet e "Dianavezet"
-    reopen:
-      reopened: Stad ar gudenn zo bet lakaet e "Digor"
-    comments:
-      comment_from_html: Evezhiadenn gant %{user_link} war %{comment_created_at}
-    reports:
-      reported_by_html: Disklêriet evel %{category} gant %{user} d'an %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, evezhiadenn#%{comment_id}'
-        note: 'Notenn #%{note_id}'
   issue_comments:
     create:
       comment_created: Krouet mat eo bet hoc'h evezhiadenn.
@@ -2570,7 +2570,6 @@ br:
           many: '%{count} implijer kavet'
           other: '%{count} implijer'
         confirm: Kadarnaat an implijerien diuzet
-        hide: Kuzhat an implijerien diuzet
         empty: N'eo bet kavet implijer klotaus ebet !
       user:
         summary_html: '%{name} krouet eus %{ip_address} d''an %{date}'

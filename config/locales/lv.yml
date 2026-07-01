@@ -1881,7 +1881,6 @@ lv:
         heading: Lietotāji
       page:
         confirm: Apstiprināt atlasītos lietotājus
-        hide: Paslēpt atlasītos lietotājus
         empty: Nav atrasti atbilstoši lietotāji
       user:
         summary_html: '%{name} izveidoja no %{ip_address} @ %{date}'

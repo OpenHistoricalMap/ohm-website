@@ -1308,7 +1308,6 @@ bs:
         heading: Korisnici
       page:
         confirm: Potvrditi odabrane korisnike
-        hide: Sakriti odabrane korisnike
         empty: Nisu pronađeni odgovarajući korisnici.
       user:
         summary_html: '%{name} napravljeno sa %{ip_address} dana %{date}'

@@ -1544,6 +1544,20 @@ cy:
         ignored: Anwybyddwyd
         open: Agored
         resolved: Wedi datrys
+    resolve:
+      resolved: Mae statws y mater wedi'i osod i 'Datrys'
+    ignore:
+      ignored: Mae statws y mater wedi'i osod i 'Anwybyddwyd'
+    reopen:
+      reopened: Mae statws y mater wedi'i osod i 'Agored'
+    comments:
+      comment_from_html: Sylw gan %{user_link} ar %{comment_created_at}
+    reports:
+      reported_by_html: Adroddwyd fel %{category} gan %{user} ar %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, sylw #%{comment_id}'
+        note: 'Nodyn #%{note_id}'
     show:
       reports:
         zero: '%{count} adroddiad'
@@ -1565,20 +1579,6 @@ cy:
       other_issues_against_this_user: Materion eraill yn erbyn y defnyddiwr hwn
       no_other_issues: Dim materion eraill yn erbyn y defnyddiwr hwn.
       comments_on_this_issue: Sylwadau ar y mater hwn
-    resolve:
-      resolved: Mae statws y mater wedi'i osod i 'Datrys'
-    ignore:
-      ignored: Mae statws y mater wedi'i osod i 'Anwybyddwyd'
-    reopen:
-      reopened: Mae statws y mater wedi'i osod i 'Agored'
-    comments:
-      comment_from_html: Sylw gan %{user_link} ar %{comment_created_at}
-    reports:
-      reported_by_html: Adroddwyd fel %{category} gan %{user} ar %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, sylw #%{comment_id}'
-        note: 'Nodyn #%{note_id}'
   issue_comments:
     create:
       comment_created: Postiwyd eich sylw yn llwyddiannus

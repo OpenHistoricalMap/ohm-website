@@ -1533,23 +1533,6 @@ lb:
         ignored: Ignoréiert
         open: Oppen
         resolved: Geléist
-    show:
-      reports:
-        one: '%{count} Meldung'
-        other: '%{count} Meldungen'
-      no_reports: Kee Rapport
-      report_created_at_html: Fir d'éischt gemellt den %{datetime}
-      last_resolved_at_html: Fir d'lescht erleedegt den %{datetime}
-      last_updated_at_html: Fir d'lescht aktualiséiert den %{datetime} vun %{displayname}
-      resolve: Léisen
-      ignore: Ignoréieren
-      reopen: Nees opmaachen
-      reports_of_this_issue: Meldunge vun dësem Problem
-      read_reports: Rapporte liesem
-      new_reports: Nei Rapporten
-      other_issues_against_this_user: Weider Problemer géint dëse Benotzer
-      no_other_issues: Keng weider Problemer géint dëse Benotzer
-      comments_on_this_issue: Commentairen zu dësem Problem
     resolve:
       resolved: De Problemstatus gouf op „Erleedegt“ geännert
     ignore:
@@ -1569,6 +1552,23 @@ lb:
           aktualiséiert de(n) %{datetime_updated}
         diary_entry_html: Blogbäitrag %{title}, ugeluecht de(n) %{datetime_created},
           aktualiséiert de(n) %{datetime_updated}
+    show:
+      reports:
+        one: '%{count} Meldung'
+        other: '%{count} Meldungen'
+      no_reports: Kee Rapport
+      report_created_at_html: Fir d'éischt gemellt den %{datetime}
+      last_resolved_at_html: Fir d'lescht erleedegt den %{datetime}
+      last_updated_at_html: Fir d'lescht aktualiséiert den %{datetime} vun %{displayname}
+      resolve: Léisen
+      ignore: Ignoréieren
+      reopen: Nees opmaachen
+      reports_of_this_issue: Meldunge vun dësem Problem
+      read_reports: Rapporte liesem
+      new_reports: Nei Rapporten
+      other_issues_against_this_user: Weider Problemer géint dëse Benotzer
+      no_other_issues: Keng weider Problemer géint dëse Benotzer
+      comments_on_this_issue: Commentairen zu dësem Problem
   issue_comments:
     create:
       comment_created: Däi Commentaire gouf erfollegräich erstallt
@@ -1610,6 +1610,91 @@ lb:
     create:
       successful_report: Äre Rapport gouf enregistréiert
       provide_details: Gitt wgl. déi gefroten Detailer un
+  languages_panes:
+    select_language_list:
+      languages:
+        af: Afrikaans
+        gsw: Alemannesch
+        az: Aserbaidjanesch
+        id: Indoneesesch
+        bs: Bosnesch
+        br: Bretonesch
+        ca: Katalounesch
+        cs: Tschechesch
+        cy: Walisesch
+        da: Dänesch
+        de: Däitsch
+        et: Estnesch
+        en: Englesch
+        es: Spuenesch
+        eo: Esperanto
+        eu: Baskesch
+        fr: Franséisch
+        ga: Iresch
+        gl: Galizesch
+        hr: Kroatesch
+        ia: Interlingua
+        is: Islännesch
+        it: Italieenesch
+        ku-Latn: Kurdesch (Laténgesch)
+        lv: Lettesch
+        lb: Lëtzebuergesch
+        lkt: Lakota
+        lt: Litauesch
+        hu: Ungaresch
+        nl: Hollännesch
+        nb: Norwegesch (Bokmål)
+        nn: Norwegesch (Nynorsk)
+        pl: Polnesch
+        pt-PT: Portugisesch
+        pt: Portugisesch (Brasilien)
+        ksh: Kölsch
+        ro: Rumänesch
+        sc: Sardesch
+        sq: Albanesch
+        scn: Sizilianesch
+        sk: Slowakesch
+        sl: Sloweenesch
+        sr-Latn: Serbesch (Laténgesch)
+        sh: Serbo-Kroatesch (Laténgesch)
+        fi: Finnesch
+        sv: Schweedesch
+        tl: Tagalog
+        vi: Vietnameesesch
+        tr: Tierkesch
+        yo: Yoruba
+        el: Griichesch
+        be: Wäissrussesch
+        bg: Bulgaresch
+        mk: Mazedonesch
+        mo: Moldawesch
+        ce: Tschetscheenesch
+        ru: Russesch
+        sr: Serbesch (Kyrillesch)
+        tt: Tataresch (Kyrillesch)
+        uk: Ukrainesch
+        kk-cyrl: Kasachesch (Kyrillesch)
+        yi: Jiddesch
+        he: Hebräesch
+        ar: Arabesch
+        skr-arab: Saraiki
+        fa: Persesch
+        arz: Egyptescht Arabesch
+        ne: Nepaleesesch
+        mr: Marathi
+        hi: Hindi
+        pa: Punjabi
+        gu: Gujarati
+        te: Telugu
+        kn: Kannada
+        ka: Georgesch
+        km: Khmer
+        sat: Santali
+        zh-CN: Chineesesch (Vereinfacht)
+        zh-TW: Chineesesch (Traditionell)
+        zh-HK: Chineesesch (Hong Kong)
+        ja: Japanesch
+        ko: Koreanesch
   layouts:
     logo:
       alt_text: OpenHistoricalMap-Logo
@@ -1641,8 +1726,14 @@ lb:
     learn_more: Méi gewuer ginn
     more: Méi
     header:
-      ok: OK
+      about: Iwwer
+      communities: Communautéiten
+      edit: Änneren
+      help: Hëllef
+      issues: Problemer
+      more: Méi
       select_language: Sprooch eraussichen
+      user_diaries: Benotzer-Bloggen
     select_language_button:
       title: Sprooch eraussichen
   user_mailer:
@@ -1926,6 +2017,7 @@ lb:
         message: Astellungen aktualiséiert.
       navigation:
         preferences: Astellungen
+        notification_preferences: Notifikatiounen
         advanced_preferences: Erweidert Astellungen
     basic_preferences:
       show:
@@ -1936,7 +2028,18 @@ lb:
           dark: Däischter
         map_color_schemes:
           light: Hell
+        preferred_editor_color_scheme: Preferéiert Faarfscheema fir den Editeur
+        editor_color_schemes:
+          light: Hell
+          dark: Däischter
         save: Benotzerastellungen aktualiséieren
+    notification_preferences:
+      show:
+        title: Notifikatiounsastellungen
+        diary_comment: Blogkommentaren
+        save: Astellungen aktualiséieren
+        delivery_mechanisms:
+          email: E-Mail
     advanced_preferences:
       show:
         title: Meng erweidert Astellungen
@@ -2001,6 +2104,9 @@ lb:
         show: Weisen
         delete: Läschen
         undelete: Läsche réckgängeg maachen
+    heatmaps:
+      show:
+        cancel: Ofbriechen
   sessions:
     new:
       tab_title: Aloggen
@@ -2136,6 +2242,12 @@ lb:
           description: Zousätzlech Quelle stinn an der OpenStreetMap Wiki
       export_button: Exportéieren
       export_download: Eroflueden...
+      confirmation:
+        header: XML-Donnéeën eroflueden
+        body: Wëllt Dir Kaartendonnéeën am XML-Format fir dëst Gebitt eroflueden?
+          Bedenkt, datt d'Erofluede bei grousse Gebidder eng Zäitchen dauere kann.
+        cancel: Ofbriechen
+        download: Eroflueden
     fixthemap:
       title: E Problem mellen / D'Kaart verbesseren
       how_to_help:
@@ -2286,6 +2398,14 @@ lb:
       custom_dimensions: Personaliséiert Dimensiounen astellen
       download: Eroflueden
       downloading: Eroflueden...
+  webgl_error_panes:
+    show:
+      compact_message: WebGL ass néideg fir dës Kaart.
+      description_html: Et deet eis Leed, mee et schéngt, datt %{your_browser_does_not_support_webgl},
+        eng Technologie fir Web-3D-Graphiken ze renderen.
+      your_browser_does_not_support_webgl: Äre Browser WebGL net ënnerstëtzt
+      read_more_about_webgl: Méi liesen
+      read_more_about_webgl_url: https://wiki.openstreetmap.org/wiki/This_map_requires_WebGL
   traces:
     visibility:
       public: Ëffentlech (gëtt an der Spuerlëscht ugewisen, allerdéngs nëmmen als
@@ -2511,6 +2631,9 @@ lb:
       contributions:
         one: '%{count} Kontributioun am leschte Joer'
         other: '%{count} Kontributiounen am leschte Joer'
+      title:
+        administrator: Dëse Benotzer ass en Administrateur
+        moderator: Dëse Benotzer ass e Moderateur
     sidebar_section:
       home_location: Doheem
       company: Firma
@@ -2549,7 +2672,6 @@ lb:
           one: '%{count} Benotzer fonnt'
           other: '%{count} Benotzer fonnt'
         confirm: Erausgesicht Benotzer confirméieren
-        hide: Erausgesicht Benotzer vrstoppen
         empty: Et goufe keng sou Benotzer fonnt
     comments:
       index:

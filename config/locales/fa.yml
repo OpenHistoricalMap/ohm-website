@@ -1369,6 +1369,20 @@ fa:
         one: '%{count} گزارش'
         other: '%{count} گزارش'
       reported_item: مورد گزارش‌شده
+    resolve:
+      resolved: وضعیت مسئله روی «حل‌شده» تنظیم شد
+    ignore:
+      ignored: وضعیت مسئله روی «نادیده‌گرفته‌شده» تنظیم شد
+    reopen:
+      reopened: وضعیت مسئله روی «باز» تنظیم شد
+    comments:
+      comment_from_html: نظر از %{user_link} در %{comment_created_at}
+    reports:
+      reported_by_html: در %{updated_at}،‏ %{user} به‌عنوان %{category} گزارشش کرد
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}، نظر #%{comment_id}'
+        note: یادداشت %{note_id}
     show:
       reports:
         one: '%{count} گزارش'
@@ -1386,20 +1400,6 @@ fa:
       other_issues_against_this_user: سایر مسئله‌های بر ضدّ این کاربر
       no_other_issues: مسئلهٔ دیگری بر ضدّ این کاربر یافت نشد.
       comments_on_this_issue: نظرات این مسئله
-    resolve:
-      resolved: وضعیت مسئله روی «حل‌شده» تنظیم شد
-    ignore:
-      ignored: وضعیت مسئله روی «نادیده‌گرفته‌شده» تنظیم شد
-    reopen:
-      reopened: وضعیت مسئله روی «باز» تنظیم شد
-    comments:
-      comment_from_html: نظر از %{user_link} در %{comment_created_at}
-    reports:
-      reported_by_html: در %{updated_at}،‏ %{user} به‌عنوان %{category} گزارشش کرد
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}، نظر #%{comment_id}'
-        note: یادداشت %{note_id}
   issue_comments:
     create:
       comment_created: نظر شما با موفقیت ثبت شد
@@ -2331,7 +2331,6 @@ fa:
         heading: کاربران
       page:
         confirm: تأیید کاربران انتخاب‌شده
-        hide: پنهان‌کردن کاربران انتخاب‌شده
         empty: هیچ کاربر منطبقی یافت نشد
       user:
         summary_html: '%{name} با آی‌پی %{ip_address} در %{date} ایجاد شد'

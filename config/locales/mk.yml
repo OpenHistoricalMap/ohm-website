@@ -1534,6 +1534,20 @@ mk:
         ignored: Занемарено
         open: Отворено
         resolved: Решено
+    resolve:
+      resolved: Состојбата на проблемот е поставена како „Решено“
+    ignore:
+      ignored: Состојбата на проблемот е поставена како „Занемарено“
+    reopen:
+      reopened: Состојбата на проблемот е поставена како „Отворено“
+    comments:
+      comment_from_html: Коментар од %{user_link} на %{comment_created_at}
+    reports:
+      reported_by_html: Пријавено како %{category} од %{user} на %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, коментар бр. %{comment_id}'
+        note: Напомена бр. %{note_id}
     show:
       reports:
         one: '%{count} пријава'
@@ -1551,20 +1565,6 @@ mk:
       other_issues_against_this_user: Други проблеми со овој корисник
       no_other_issues: Нема други проблеми со овој корисник.
       comments_on_this_issue: Коментари за проблемов
-    resolve:
-      resolved: Состојбата на проблемот е поставена како „Решено“
-    ignore:
-      ignored: Состојбата на проблемот е поставена како „Занемарено“
-    reopen:
-      reopened: Состојбата на проблемот е поставена како „Отворено“
-    comments:
-      comment_from_html: Коментар од %{user_link} на %{comment_created_at}
-    reports:
-      reported_by_html: Пријавено како %{category} од %{user} на %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, коментар бр. %{comment_id}'
-        note: Напомена бр. %{note_id}
   issue_comments:
     create:
       comment_created: Коментарот е успешно создаден
@@ -2692,7 +2692,6 @@ mk:
           one: Најдов %{count} корисник
           other: Најдов %{count} корисници
         confirm: Потврди ги одбраните корисници
-        hide: Скриј одбрани корисници
         empty: Нема најдено такви корисници
       user:
         summary_html: '%{name} создадено од %{ip_address} на %{date}'

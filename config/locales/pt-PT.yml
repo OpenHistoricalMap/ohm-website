@@ -1561,6 +1561,20 @@ pt-PT:
         ignored: Ignorada
         open: Aberta
         resolved: Resolvida
+    resolve:
+      resolved: O estado do problema foi alterado para 'Resolvido'
+    ignore:
+      ignored: O estado do problema foi alterado para 'Ignorado'
+    reopen:
+      reopened: O estado do problema foi alterado para 'Aberto'
+    comments:
+      comment_from_html: Comentário de %{user_link} em %{comment_created_at}
+    reports:
+      reported_by_html: Denunciado como %{category} por %{user} em %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, comentário #%{comment_id}'
+        note: 'Nota #%{note_id}'
     show:
       reports:
         one: '%{count} denúncia'
@@ -1578,20 +1592,6 @@ pt-PT:
       other_issues_against_this_user: Outros problemas associados a este utilizador
       no_other_issues: Não há mais problemas associados a este utilizador.
       comments_on_this_issue: Comentários sobre este problema
-    resolve:
-      resolved: O estado do problema foi alterado para 'Resolvido'
-    ignore:
-      ignored: O estado do problema foi alterado para 'Ignorado'
-    reopen:
-      reopened: O estado do problema foi alterado para 'Aberto'
-    comments:
-      comment_from_html: Comentário de %{user_link} em %{comment_created_at}
-    reports:
-      reported_by_html: Denunciado como %{category} por %{user} em %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, comentário #%{comment_id}'
-        note: 'Nota #%{note_id}'
   issue_comments:
     create:
       comment_created: O comentário foi criado com sucesso
@@ -2718,7 +2718,6 @@ pt-PT:
           one: '%{count} utilizador encontrado'
           other: '%{count} utilizadores encontrados'
         confirm: Confirmar utilizadores selecionados
-        hide: Ocultar utilizadores selecionados
         empty: Não foram encontrados utilizadores correspondentes
       user:
         summary_html: '%{name} criado com o ip %{ip_address} em %{date}'

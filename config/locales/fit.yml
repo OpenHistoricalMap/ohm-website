@@ -472,6 +472,18 @@ fit:
       reports_count:
         one: 1 ilmotus
         other: '%{count} ilmiantoa'
+    resolve:
+      resolved: Tapaus oon markeerattu ratkaistuksi
+    ignore:
+      ignored: Tapaus oon markeerattu aiheettomaksi
+    reopen:
+      reopened: Tapaus oon markeerattu käsittelyssä olevaksi
+    reports:
+      reported_by_html: Käyttäjä %{user} ilmiantanut merkinnällä %{category}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, kommenttitunnus %{comment_id}'
+        note: Karttailmoitustunnus %{note_id}
     show:
       reports:
         zero: Ei ilmiantoa
@@ -489,18 +501,6 @@ fit:
       other_issues_against_this_user: Muut tähän käyttäjään kohistetut ilmiannot
       no_other_issues: Ei muita tähän käyttäjään kohistuvia ilmiantoja.
       comments_on_this_issue: Tapauksen kommentit
-    resolve:
-      resolved: Tapaus oon markeerattu ratkaistuksi
-    ignore:
-      ignored: Tapaus oon markeerattu aiheettomaksi
-    reopen:
-      reopened: Tapaus oon markeerattu käsittelyssä olevaksi
-    reports:
-      reported_by_html: Käyttäjä %{user} ilmiantanut merkinnällä %{category}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, kommenttitunnus %{comment_id}'
-        note: Karttailmoitustunnus %{note_id}
   issue_comments:
     create:
       comment_created: Kommentti jätetty

@@ -1501,6 +1501,20 @@ ar:
         many: '%{count} بلاغات'
         other: '%{count} بلاغ'
       reported_item: شيء تم الابلاغ عنه
+    resolve:
+      resolved: تم تعيين حالة المشكلة إلى 'محلولة'
+    ignore:
+      ignored: تم تعيين حالة المشكلة إلى 'تم تجاهلها'
+    reopen:
+      reopened: تم تعيين حالة المشكلة إلى 'مفتوحة'
+    comments:
+      comment_from_html: التعليق من %{user_link} في %{comment_created_at}
+    reports:
+      reported_by_html: تم الإبلاغ عنه ك%{category} بواسطة %{user} في %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}، تعليق #%{comment_id}'
+        note: 'ملاحظة #%{note_id}'
     show:
       reports:
         zero: صفر تقرير
@@ -1521,20 +1535,6 @@ ar:
       other_issues_against_this_user: مشاكل أخرى ضد هذا المستخدم
       no_other_issues: لا مشاكل أخرى ضد هذا المستخدم.
       comments_on_this_issue: التعليقات على هذه المشكلة
-    resolve:
-      resolved: تم تعيين حالة المشكلة إلى 'محلولة'
-    ignore:
-      ignored: تم تعيين حالة المشكلة إلى 'تم تجاهلها'
-    reopen:
-      reopened: تم تعيين حالة المشكلة إلى 'مفتوحة'
-    comments:
-      comment_from_html: التعليق من %{user_link} في %{comment_created_at}
-    reports:
-      reported_by_html: تم الإبلاغ عنه ك%{category} بواسطة %{user} في %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}، تعليق #%{comment_id}'
-        note: 'ملاحظة #%{note_id}'
   issue_comments:
     create:
       comment_created: تم إنشاء تعليقك بنجاح
@@ -2447,7 +2447,6 @@ ar:
         heading: المستخدمون
       page:
         confirm: تأكيد المستخدمين المحددين
-        hide: إخفاء المستخدمين المحددين
         empty: لم يتم العثور على مستخدمين متطابقين
       user:
         summary_html: '%{name} تم إنشاؤها من %{ip_address} في %{date}'

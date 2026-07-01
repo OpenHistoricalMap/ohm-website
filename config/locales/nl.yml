@@ -880,6 +880,9 @@ nl:
       title: Bestand niet gevonden
       description: Kon een bestand/directory/API-bewerking met die naam niet vinden
         op de OpenHistoricalMap-server (HTTP 404)
+  export:
+    show:
+      title: OpenHistoricalMap ingebed
   follows:
     show:
       follow:
@@ -1805,6 +1808,7 @@ nl:
       download: Route downloaden als GeoJSON
       filename: route
       directions_courtesy_html: Routebeschrijving met dank aan %{link}
+      check_demo_html: Meer details van %{link}
   issues:
     index:
       title: Problemen
@@ -1836,27 +1840,6 @@ nl:
         ignored: Genegeerd
         open: Open
         resolved: Opgelost
-    show:
-      title:
-        open: 'Open probleem #%{issue_id}'
-        ignored: 'Genegeerd probleem #%{issue_id}'
-        resolved: 'Opgelost probleem #%{issue_id}'
-      reports:
-        one: '%{count} rapport'
-        other: '%{count} rapporten'
-      no_reports: Geen rapporten
-      report_created_at_html: Voor het eerst vermeld op %{datetime}
-      last_resolved_at_html: Laatst opgelost op %{datetime}
-      last_updated_at_html: Laatst bijgewerkt op %{datetime} door %{displayname}
-      resolve: Oplossen
-      ignore: Negeren
-      reopen: Heropenen
-      reports_of_this_issue: Meldingen van deze kwestie
-      read_reports: Lees Meldingen
-      new_reports: Nieuwe Meldingen
-      other_issues_against_this_user: Andere problemen met deze gebruiker
-      no_other_issues: Geen andere problemen tegen deze gebruiker.
-      comments_on_this_issue: Reacties op deze kwestie
     resolve:
       resolved: De status van het probleem is ingesteld op 'Opgelost'
     ignore:
@@ -1885,6 +1868,30 @@ nl:
         title: 'Melders van probleem #%{issue_id}'
       reporters:
         more_reporters: en nog %{count}
+    show:
+      title:
+        open: 'Open probleem #%{issue_id}'
+        ignored: 'Genegeerd probleem #%{issue_id}'
+        resolved: 'Opgelost probleem #%{issue_id}'
+      reports:
+        one: '%{count} rapport'
+        other: '%{count} rapporten'
+      no_reports: Geen rapporten
+      report_created_at_html: Voor het eerst vermeld op %{datetime}
+      last_resolved_at_html: Laatst opgelost op %{datetime}
+      last_updated_at_html: Laatst bijgewerkt op %{datetime} door %{displayname}
+      resolve: Oplossen
+      ignore: Negeren
+      reopen: Heropenen
+      reports_of_this_issue: Meldingen van deze kwestie
+      read_reports: Lees Meldingen
+      new_reports: Nieuwe Meldingen
+      other_issues_against_this_user: Andere problemen met deze gebruiker
+      no_other_issues: Geen andere problemen tegen deze gebruiker.
+      comments_on_this_issue: Reacties op deze kwestie
+      comment_from_html: Reactie van %{user_link} op %{comment_created_at}
+      reassign_to_moderators: Probleem opnieuw toewijzen aan moderatoren
+      reassign_to_administrators: Probleem opnieuw toewijzen aan beheerders
   issue_comments:
     create:
       comment_created: Uw reactie is aangemaakt
@@ -1926,9 +1933,127 @@ nl:
     create:
       successful_report: Uw rapport is geregistreerd
       provide_details: Verschaf a.u.b. de vereiste details
+  languages_panes:
+    select_language_list:
+      search_language: Zoeken...
+      languages:
+        af: Afrikaans
+        gsw: Alemannisch
+        frp: Arpitan
+        ast: Asturisch
+        az: Azerbeidzjaans
+        id: Indonesisch
+        ms: Maleisisch
+        bcl: Centraal-Bikol
+        bs: Bosnisch
+        br: Bretons
+        ca: Catalaans
+        cs: Tsjechisch
+        cy: Wels
+        da: Deens
+        de: Duits
+        dsb: Neder-Sorbisch
+        et: Ests
+        en: Engels
+        en-GB: Engels (VK)
+        es: Spaans
+        eo: Esperanto
+        eu: Baskisch
+        fr: Frans
+        fy: West-Fries
+        fur: Friulisch
+        ga: Iers
+        gd: Schots-Gaelisch
+        gl: Galicisch
+        aln: Gheg Albanees
+        hsb: Opper-Sorbisch
+        hr: Kroatisch
+        ia: Interlingua
+        is: IJslands
+        it: Italiaans
+        kw: Cornish
+        gcf: Guadeloupe-Creools
+        ku-Latn: Koerdisch (Latijns)
+        lv: Lets
+        lb: Luxemburgs
+        lkt: Lakota
+        lt: Litouws
+        hu: Hongaars
+        fit: Tornedal-Fins
+        nl: Nederlands
+        nb: Noors (Bokmål)
+        nn: Noors (Nynorsk)
+        oc: Occitaans
+        nds: Nederduits
+        pl: Pools
+        pt-PT: Portugees
+        pt: Portugees (Brazilië)
+        ksh: Keuls
+        ro: Roemeens
+        sc: Sardisch
+        sco: Schots
+        sq: Albanees
+        scn: Siciliaans
+        sk: Slovaaks
+        sl: Sloveens
+        sr-Latn: Servisch (Latijn)
+        sh: Servo-Kroatisch (Latijn)
+        fi: Fins
+        sv: Zweeds
+        tl: Tagalog
+        kab: Kabylisch
+        vi: Vietnamees
+        tr: Turks
+        yo: Yoruba
+        diq: Dimli
+        el: Grieks
+        ba: Bashkir
+        be: Wit-Russisch
+        be-Tarask: Wit-Russisch (Tarašk.)
+        bg: Bulgaars
+        mk: Macedonisch
+        mo: Moldavisch
+        ce: Tsjetsjeens
+        ru: Russisch
+        sr: Servisch (Cyrillisch)
+        tt: Tataars (Cyrillisch)
+        uk: Oekraïens
+        kk-cyrl: Kazachs (Cyrillisch)
+        yi: Jiddisch
+        he: Hebreeuws
+        ar: Arabisch
+        skr-arab: Saraiki
+        fa: Perzisch
+        arz: Egyptisch Arabisch
+        pnb: Westelijk Punjabi
+        ps: Pasjtoe
+        nqo: N'Ko
+        ne: Nepalees
+        mr: Marathi
+        hi: Hindi
+        bn: Bengaals
+        pa: Punjabi
+        gu: Gujarati
+        ta: Tamil
+        te: Telugu
+        kn: Kannada
+        th: Thai
+        my: Burmees
+        shn: Shan
+        xmf: Mingreels
+        ka: Georgisch
+        km: Khmer
+        sat: Santali
+        zh-CN: Chinees (Vereenvoudigd)
+        zh-TW: Chinees (Traditioneel)
+        zh-HK: Chinees (Hongkong)
+        ja: Japans
+        ko: Koreaans
   layouts:
     logo:
       alt_text: Logo OpenHistoricalMap
+    main_navigation: Hoofdnavigatie
+    layer_info: Laaginformatie
     home: Naar thuislocatie gaan
     logout: Afmelden
     log_in: Aanmelden
@@ -1954,6 +2079,10 @@ nl:
     partners_greeninfo: GreenInfo Network
     partners_osmf: OpenStreetMap Foundation
     partners_osmus: OpenStreetMap VS
+    welcome_tou_notice_html: Door gebruik te maken van deze website of andere infrastructuur
+      die door de OpenStreetMap Foundation wordt aangeboden, gaat u akkoord met de
+      %{terms_link}.
+    terms_of_use: Gebruiksvoorwaarden
     tou: Gebruiksvoorwaarden
     nothing_to_preview: Er is geen voorvertoning.
     help: Hulp
@@ -1963,8 +2092,26 @@ nl:
     learn_more: Meer lezen
     more: Meer
     header:
-      ok: OK
+      about: Over
+      communities: Gemeenschappen
+      copyright: Auteursrechten
+      donate: Doneren
+      edit: Bewerken
+      edit_with: Bewerken met %{editor}
+      export: Exporteren
+      gps_traces: GPS-trajecten
+      help: Hulp
+      history: Geschiedenis
+      home: Naar thuislocatie gaan
+      issues: Problemen
+      log_out: Afmelden
+      log_in: Aanmelden
+      more: Meer
       select_language: Taal selecteren
+      sign_up: Inschrijven
+      user_diaries: Gebruikersdagboeken
+    meta:
+      openstreetmap_search: Zoeken in OpenHistoricalMap
     select_language_button:
       title: Taal selecteren
     offline_flash:
@@ -2276,6 +2423,7 @@ nl:
         message: Voorkeuren bijgewerkt.
       navigation:
         preferences: Voorkeuren
+        notification_preferences: Meldingen
         advanced_preferences: Geavanceerde voorkeuren
     basic_preferences:
       show:
@@ -2291,7 +2439,25 @@ nl:
           auto: Automatisch
           light: Licht
           dark: Donker
+        preferred_editor_color_scheme: Gewenst kleurenschema voor de editor
+        editor_color_schemes:
+          auto: Net als website
+          light: Licht
+          dark: Donker
         save: Voorkeuren bijwerken
+    notification_preferences:
+      show:
+        title: Meldingsvoorkeuren
+        changeset_comment: Opmerkingen bij de wijzigingsset
+        diary_comment: Dagboekreacties
+        direct_message: Directe berichten
+        gpx_import_failure: 'GPS-traject importeren: mislukt'
+        gpx_import_success: 'GPX-traject importeren: mislukt'
+        new_follower: Nieuwe volgers
+        note_comment: Opmerkingen bij notitie
+        save: Voorkeuren bijwerken
+        delivery_mechanisms:
+          email: E-mail
     advanced_preferences:
       show:
         title: Mijn geavanceerde voorkeuren
@@ -2304,6 +2470,7 @@ nl:
         image: Afbeelding
         company: Bedrijf
         location: Locatie
+        contribution_calendar: Bijdragekalender
     descriptions:
       show:
         title: Profiel wijzigen
@@ -2363,6 +2530,15 @@ nl:
       update:
         success: Locatie-informatie op profiel bijgewerkt.
         failure: Locatie-informatie op profiel kon niet bijgewerkt worden.
+    heatmaps:
+      show:
+        title: Bijdragekalender instellen
+        show_contribution_calendar_in_public: Bijdragekalender weergeven op uw profielpagina
+        save: Instellingen voor Bijdragekalender bijwerken
+        cancel: Annuleren
+      update:
+        success: Bijdragekalender bijgewerkt.
+        failure: De bijdragekalender kon niet worden bijgewerkt.
   sessions:
     new:
       tab_title: Aanmelden
@@ -2381,6 +2557,8 @@ nl:
       login_button: Aanmelden
       with external: of meld u aan via een derde
       or: of
+      reset_to_login: Uw wachtwoord is verlopen. Stel uw wachtwoord opnieuw in om
+        u aan te melden.
       auth failure: Met deze gegevens kunt u helaas niet aanmelden.
     destroy:
       title: Afmelden
@@ -2503,6 +2681,7 @@ nl:
       legal_1_aup_url: https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy
       legal_1_privacy_policy: privacybeleid
       legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
+      legal_1_1_terms_of_use_url: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
       legal_2_html: |-
         %{contact_team_link}
         als u licentie-, copyright- of andere juridische vragen heeft.
@@ -2689,6 +2868,12 @@ nl:
           url: https://wiki.openstreetmap.org/wiki/NL:OpenHistoricalMap/Reuse
       export_button: Exporteren
       export_download: Aan het downloaden…
+      confirmation:
+        header: XML-gegevens downloaden
+        body: Wilt u de kaartgegevens voor dit gebied in XML-formaat downloaden? Het
+          downloaden van grote gebieden kan enige tijd duren.
+        cancel: Annuleren
+        download: Downloaden
     fixthemap:
       title: Een probleem melden / de kaart corrigeren
       how_to_help:
@@ -2999,6 +3184,16 @@ nl:
       image_dimensions_html: Afbeelding geeft laag %{layer} weer op %{width} x %{height}
       download: Downloaden
       downloading: Aan het downloaden…
+  webgl_error_panes:
+    show:
+      compact_message: Voor deze kaart is WebGL vereist.
+      description_html: Het lijkt erop dat %{your_browser_does_not_support_webgl},
+        een technologie voor het weergeven van 3D-afbeeldingen op het web.
+      your_browser_does_not_support_webgl: uw browser geen ondersteuning heeft voor
+        WebGL
+      webgl_is_required_for_this_map: WebGL is vereist om deze kaart weer te geven.
+      read_more_about_webgl: Meer lezen
+      read_more_about_webgl_url: https://wiki.openstreetmap.org/wiki/This_map_requires_WebGL
   traces:
     visibility:
       private: Persoonlijk (alleen gedeeld als anoniem; ongeordende punten)
@@ -3281,6 +3476,10 @@ nl:
           voor meer informatie.
       or: of
       use external auth: of schrijf u in via een derde partij
+      verify_human: Bevestig dat u een mens bent.
+    create:
+      not_human: Helaas kunnen we niet bevestigen dat u een mens bent. Dit is vereist
+        om nieuwe accounts aan te maken.
     no_such_user:
       title: Deze gebruiker bestaat niet
       heading: De gebruiker %{user} bestaat niet
@@ -3328,6 +3527,7 @@ nl:
       activate_user: Deze gebruiker activeren
       confirm_user: Deze gebruiker bevestigen
       unconfirm_user: Bevestigen van deze gebruiker ongedaan maken
+      suspend_user: Deze gebruiker schorsen
       unsuspend_user: Gebruiker opschorten ongedaan maken
       hide_user: Deze gebruiker verbergen
       unhide_user: Gebruiker zichtbaar maken
@@ -3340,9 +3540,26 @@ nl:
       change_image: Afbeelding wijzigen
       edit_company: Bedrijf bewerken
       edit_location: Locatie bewerken
+      edit_contribution_calendar: Bijdragekalender instellen
       contributions:
         one: '%{count} bijdrage in het afgelopen jaar'
         other: '%{count} bijdragen in het afgelopen jaar'
+      title:
+        administrator: Deze gebruiker is beheerder
+        moderator: Deze gebruiker is moderator
+        importer: Deze gebruiker is importeur
+      grant:
+        administrator: Beheerdersrechten toekennen
+        moderator: Moderatorrechten toekennen
+        importer: Importeursrechten toekennen
+        are_you_sure: Weet u zeker dat u de rol ‘%{role}’ aan gebruiker ‘%{name}’
+          wilt toekennen?
+      revoke:
+        administrator: Beheerdersrechten intrekken
+        moderator: Moderatorrechten intrekken
+        importer: Importeursrechten intrekken
+        are_you_sure: Weet u zeker dat u de rol ‘%{role}’ van de gebruiker ‘%{name}’
+          wilt intrekken?
     sidebar_section:
       home_location: Thuislocatie
       company: Bedrijf
@@ -3392,7 +3609,7 @@ nl:
           one: '%{count} gebruiker gevonden'
           other: '%{count} gebruikers gevonden'
         confirm: Geselecteerde gebruikers bevestigen
-        hide: Gelelecteerde gebruikers verbergen
+        suspend: Geselecteerde gebruikers schorsen
         empty: Geen gebruikers gevonden
       user:
         summary_html: '%{name} aangemaakt vanaf %{ip_address} op %{date}'
@@ -3688,6 +3905,18 @@ nl:
       tooltip: Legenda
       tooltip_disabled: Legenda is niet beschikbaar voor deze laag
     map:
+      navigation_control:
+        zoom_in: Inzoomen
+        zoom_out: Uitzoomen
+      geolocate_control:
+        find_my_location: Mijn locatie weergeven
+        location_not_available: Locatie niet beschikbaar
+        metersPopup:
+          one: U bevindt zich binnen %{count} meter van dit punt
+          other: U bevindt zich binnen %{count} meter van dit punt
+        feetPopup:
+          one: U bevindt zich binnen %{count} voet van dit punt
+          other: U bevindt zich binnen %{count} voet van dit punt
       zoom:
         in: Inzoomen
         out: Uitzoomen

@@ -1449,6 +1449,20 @@ ca:
         one: '%{count} Informe'
         other: '%{count} Informes'
       reported_item: Element denunciat
+    resolve:
+      resolved: L'estat de la incidència ha passat a "Resolta"
+    ignore:
+      ignored: L'estat de la incidència ha passat a "Ignorada"
+    reopen:
+      reopened: L'estat de la incidència ha passat a "Oberta"
+    comments:
+      comment_from_html: Comentari de %{user_link} a %{comment_created_at}
+    reports:
+      reported_by_html: Denunciat com a %{category} per %{user} a %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, comentari #%{comment_id}'
+        note: 'Nota #%{note_id}'
     show:
       reports:
         one: '%{count} informe'
@@ -1466,20 +1480,6 @@ ca:
       other_issues_against_this_user: Altres incidències contra aquest usuari
       no_other_issues: No hi ha cap altra incidència contra aquest usuari
       comments_on_this_issue: Comentaris sobre aquesta incidència
-    resolve:
-      resolved: L'estat de la incidència ha passat a "Resolta"
-    ignore:
-      ignored: L'estat de la incidència ha passat a "Ignorada"
-    reopen:
-      reopened: L'estat de la incidència ha passat a "Oberta"
-    comments:
-      comment_from_html: Comentari de %{user_link} a %{comment_created_at}
-    reports:
-      reported_by_html: Denunciat com a %{category} per %{user} a %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, comentari #%{comment_id}'
-        note: 'Nota #%{note_id}'
   issue_comments:
     create:
       comment_created: S’ha creat el comentari correctament
@@ -1519,6 +1519,11 @@ ca:
     create:
       successful_report: S’ha registrat la vostra denúncia correctament
       provide_details: Proporcioneu els detalls demanats
+  languages_panes:
+    select_language_list:
+      languages:
+        ca: Català
+        oc: Occità
   layouts:
     project_name:
       title: OpenHistoricalMap
@@ -1550,6 +1555,11 @@ ca:
     communities: Comunitats
     learn_more: Aprèn-ne més
     more: Més
+    header:
+      edit: Edita
+      history: Historial
+      more: Més
+      sign_up: Registra't
   user_mailer:
     diary_comment_notification:
       subject: '[OpenHistoricalMap] %{user} ha comentat una entrada de diari'
@@ -1805,6 +1815,8 @@ ca:
         failure: No s'han pogut actualitzar les preferències.
       update_success_flash:
         message: S'han actualitzat les preferències.
+      navigation:
+        notification_preferences: Notificacions
     basic_preferences:
       show:
         title: Les meves preferències
@@ -1841,6 +1853,9 @@ ca:
         show: Mostra
         delete: Esborra
         undelete: Desfés l'esborrat
+    heatmaps:
+      show:
+        cancel: Cancel·la
   sessions:
     new:
       tab_title: Inicieu la sessió
@@ -2000,6 +2015,8 @@ ca:
           title: Altres fonts
           description: Fonts addicionals llistades al wiki d'OpenStreetMap
       export_button: Exporta
+      confirmation:
+        cancel: Cancel·la
     fixthemap:
       title: Informeu d'un problema / Corregiu el mapa
       how_to_help:
@@ -2547,7 +2564,6 @@ ca:
         heading: Usuaris
       page:
         confirm: Confirmar usuaris seleccionats
-        hide: Amaga els usuaris seleccionats
         empty: No hi ha usuaris que coincideixin s'ha trobat
       user:
         summary_html: '%{name} creat a partir de %{ip_address} el %{date}'

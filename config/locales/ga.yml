@@ -1863,30 +1863,6 @@ ga:
         ignored: Neamhaird déanta
         open: Oscail
         resolved: Réitithe
-    show:
-      title:
-        open: 'Oscail an Fhadhb #%{issue_id}'
-        ignored: 'Neamhaird tugtha ar Fadhb #%{issue_id}'
-        resolved: 'Fadhb Réitithe #%{issue_id}'
-      reports:
-        one: '%{count} tuairisc'
-        two: '%{count} tuairiscí'
-        few: '%{count} tuairiscí'
-        many: '%{count} tuairiscí'
-        other: '%{count} tuairiscí'
-      no_reports: Gan aon tuairiscí
-      report_created_at_html: Tuairiscíodh den chéad uair ag %{datetime}
-      last_resolved_at_html: Réitithe den uair dheirineach ag %{datetime}
-      last_updated_at_html: Rinne %{displayname} an nuashonrú is déanaí ag %{datetime}
-      resolve: Réitigh
-      ignore: Tabhair neamhaird air
-      reopen: Athoscail
-      reports_of_this_issue: Tuairiscí faoin bhFadhb seo
-      read_reports: Tuairiscí a Léamh
-      new_reports: Tuairiscí Nua
-      other_issues_against_this_user: Fadhbanna eile i leith an úsáideora seo
-      no_other_issues: Níl aon fhadhb eile i leith an úsáideora seo.
-      comments_on_this_issue: Nótaí tráchta faoin bhfadhb
     resolve:
       resolved: Stádas na faidhbe socraithe go 'Réitithe'
     ignore:
@@ -1915,6 +1891,30 @@ ga:
         title: 'Fadhb #%{issue_id} Tuairisceoirí'
       reporters:
         more_reporters: agus %{count} eile
+    show:
+      title:
+        open: 'Oscail an Fhadhb #%{issue_id}'
+        ignored: 'Neamhaird tugtha ar Fadhb #%{issue_id}'
+        resolved: 'Fadhb Réitithe #%{issue_id}'
+      reports:
+        one: '%{count} tuairisc'
+        two: '%{count} tuairiscí'
+        few: '%{count} tuairiscí'
+        many: '%{count} tuairiscí'
+        other: '%{count} tuairiscí'
+      no_reports: Gan aon tuairiscí
+      report_created_at_html: Tuairiscíodh den chéad uair ag %{datetime}
+      last_resolved_at_html: Réitithe den uair dheirineach ag %{datetime}
+      last_updated_at_html: Rinne %{displayname} an nuashonrú is déanaí ag %{datetime}
+      resolve: Réitigh
+      ignore: Tabhair neamhaird air
+      reopen: Athoscail
+      reports_of_this_issue: Tuairiscí faoin bhFadhb seo
+      read_reports: Tuairiscí a Léamh
+      new_reports: Tuairiscí Nua
+      other_issues_against_this_user: Fadhbanna eile i leith an úsáideora seo
+      no_other_issues: Níl aon fhadhb eile i leith an úsáideora seo.
+      comments_on_this_issue: Nótaí tráchta faoin bhfadhb
   issue_comments:
     create:
       comment_created: Cruthaíodh do thrácht go rathúil
@@ -1991,7 +1991,6 @@ ga:
     learn_more: Tuilleadh Eolais
     more: Tuilleadh
     header:
-      ok: Ceart go leor
       select_language: Roghnaigh Teanga
     select_language_button:
       title: Roghnaigh Teanga
@@ -3474,7 +3473,6 @@ ga:
           many: '%{count} úsáideoirí aimsithe'
           other: '%{count} úsáideoirí aimsithe'
         confirm: Deimhnigh Úsáideoirí Roghnaithe
-        hide: Folaigh Úsáideoirí Roghnaithe
         empty: Ní bhfuarthas aon úsáideoirí comhoiriúnacha
       user:
         summary_html: '%{name} cruthaithe ó %{ip_address} ar %{date}'

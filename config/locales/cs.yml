@@ -57,10 +57,16 @@
 # Author: Zbycz
 ---
 cs:
+  date:
+    formats:
+      brief_bce: '%{year} př. n. l.'
+      brief_ce: '%{year} n. l.'
   time:
     formats:
       friendly: '%e. %m. %Y v %H:%M'
       blog: '%-d. %-m. %Y'
+  count:
+    at_least_pattern: '%{count}+'
   helpers:
     file:
       prompt: Vyberte soubor
@@ -92,7 +98,14 @@ cs:
         display_name_is_user_n: nemůže být user_n, pokud n není vaše ID uživatele
       models:
         user_mute:
+          attributes:
+            subject:
+              format: '%{message}'
           is_already_muted: již je ztlumen
+        social_link:
+          attributes:
+            url:
+              http_parse_error: URL adresa by měla začínat http:// nebo https://
     models:
       acl: Seznam přístupových práv
       changeset: Sada změn
@@ -139,6 +152,7 @@ cs:
         allow_write_prefs: měnit jejich uživatelské nastavení
         allow_write_diary: vytvářet deníkové záznamy, komentovat a navazovat přátelství
         allow_write_api: upravovat mapu
+        allow_write_changeset_comments: komentář k sadám změn
         allow_read_gpx: číst jejich soukromé GPS stopy
         allow_write_gpx: nahrávat GPS stopy
         allow_write_notes: měnit poznámky
@@ -190,8 +204,10 @@ cs:
         active: Aktivní
         display_name: Zobrazované jméno
         description: Popis profilu
+        company: Společnost
         home_lat: Zeměpisná šířka
         home_lon: Zeměpisná délka
+        home_location_name: Název domovské lokality
         languages: Preferované jazyky
         preferred_editor: Preferovaný editor
         pass_crypt: Heslo
@@ -277,6 +293,9 @@ cs:
         few: před %{count} lety
         many: před %{count} roku
         other: před %{count} lety
+  printable_name:
+    version: v%{version}
+    current_and_old_links_html: '%{current_link}, %{old_link}'
   editor:
     default: Výchozí (aktuálně %{name})
     id:
@@ -294,6 +313,7 @@ cs:
       microsoft: Microsoft
       github: GitHub
       wikipedia: Wikipedie
+      openstreetmap: OpenStreetMap
   api:
     notes:
       comment:
@@ -321,16 +341,27 @@ cs:
   accounts:
     show:
       title: Upravit účet
+      my_account: Můj účet
       current email address: Stávající e-mailová adresa
       external auth: Externí autentizace
       contributor_terms:
         heading: Podmínky pro přispěvatele
-        agreed: Odsouhlasili jste nové Podmínky pro přispěvatele.
+        agreed: Souhlasili jste s Podmínkami pro přispěvatele dne %{date}.
+        not_agreed: Dosud jste neodsouhlasili nové Podmínky pro přispěvatele.
         agreed_with_pd: Také jste prohlásili, že své editace považujete za volné dílo.
-        link: https://wiki.openstreetmap.org/wiki/Cs:Open_Database_License/Contributor_Terms?uselang=cs
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: co to znamená?
+        not_agreed_with_pd: Neprohlásili jste, že své editace považujete za volné
+          dílo.
+        review: Projděte si podmínky
+        review_and_accept: Projděte si a přijměte Podmínky
+        consider_pd: Zvažte volné dílo
       terms_of_use:
         heading: Podmínkám užití
+        agreed: Souhlasili jste s Podmínkami užití dne %{date}.
+        not_agreed: Ještě jste nesouhlasili s Podmínkami užití.
+        review: Projděte si podmínky
+        review_and_accept: Projděte si a přijměte Podmínky
       save changes button: Uložit změny
       delete_account: Smazat účet…
     go_public:
@@ -341,7 +372,9 @@ cs:
         níže.
       only_public_can_edit: Od přechodu na 0.6 API mohou mapová data upravovat pouze
         veřejní uživatelé.
+      find_out_why_html: (%{link}).
       find_out_why: zjistěte proč
+      find_out_why_url: https://wiki.openstreetmap.org/wiki/Anonymous_edits
       email_not_revealed: Vaše e-mailová adresa nebude zveřejněna.
       not_reversible: Tuto akci nelze vrátit zpět a všichni noví uživatelé jsou nyní
         ve výchozím nastavení veřejní.
@@ -357,10 +390,14 @@ cs:
         title: Smazat můj účet
         warning: Pozor! Proces smazání účtu je konečný a nelze jej vrátit zpět.
         delete_account: Smazat účet
+        delete_introduction: 'Svůj účet OpenHistoricalMap můžete smazat pomocí níže
+          uvedeného tlačítka. Vezměte prosím na vědomí následující podrobnosti:'
         delete_profile: Vaše profilové informace včetně avatara, popisu a domovské
           polohy budou odstraněny.
         delete_display_name: Vaše zobrazované jméno bude odstraněno a může být znovu
           použito jinými účty.
+        retain_caveats: 'Některé informace o vás však budou na OpenHistoricalMap uchovány
+          i po smazání vašeho účtu:'
         retain_edits: Vaše případné úpravy v mapové databázi budou zachovány.
         retain_traces: Vaše případné nahrané stopy budou zachovány.
         retain_diary_entries: Vaše případné záznamy a komentáře v deníku zůstanou
@@ -385,8 +422,10 @@ cs:
         read_ct: Přečetl jsem si výše uvedené podmínky pro přispěvatele a souhlasím
           s nimi
         tou_explain:
-          html: Tyto %{tou_link} řídí užívání tohoto webu a další infrastruktury poskytované
-            OSMF. Klikněte prosím na odkaz, přečtěte si text a odsouhlaste ho.
+          html: Tyto %{tou_link} upravují používání webových stránek a další infrastruktury
+            poskytované společností OpenHistoricalMap. Klikněte prosím na odkaz, přečtěte
+            si text a souhlaste s ním.
+          tou: Podmínky užití
         read_tou: Přečetl jsem si Podmínky užití a souhlasím s nimi
         guidance_info_html: 'Informace, které pomohou tyto podmínky pochopit: %{readable_summary_link}
           a nějaké %{informal_translations_link}'
@@ -408,6 +447,19 @@ cs:
           pro přispěvatele. Podrobnější informace najdete na %{terms_declined_link}.
         terms_declined_link: této wikistránce
         terms_declined_url: http://wiki.openstreetmap.org/wiki/CS:Contributor_Terms_Declined?uselang=cs
+    pd_declarations:
+      show:
+        title: Považujte mé příspěvky za volné dílo
+        consider_pd: Považuji své příspěvky za volné dílo
+        consider_pd_why: Proč bych mohl chtít, aby moje příspěvky byly volným dílem?
+        consider_pd_why_url: https://osmfoundation.org/wiki/Licence_and_Legal_FAQ/Why_would_I_want_my_contributions_to_be_public_domain
+        confirm: Potvrdit
+      create:
+        successfully_declared: Úspěšně jste prohlásili, že své příspěvky považujete
+          za volné dílo.
+        already_declared: Již dříve jste prohlásili, že své příspěvky považujete za
+          volné dílo.
+        did_not_confirm: Nepotvrdili jste, že považujete své příspěvky za volné dílo.
   browse:
     deleted_ago_by_html: Smazáno %{time_ago} uživatelem %{user}
     edited_ago_by_html: Upraveno %{time_ago} uživatelem %{user}
@@ -460,7 +512,7 @@ cs:
         way: Cesta
         relation: Relace
     containing_relation:
-      entry_role_html: Relace %{relation_name} (jako %{relation_role})
+      entry_role_html: '%{relation_name} (jako %{relation_role})'
     not_found:
       title: Nenalezeno
     timeout:
@@ -483,6 +535,7 @@ cs:
     start_rjs:
       feature_warning: Načítá se %{num_features} prvků, což může váš prohlížeč zpomalit
         či zablokovat. Určitě chcete tato data zobrazit?
+      feature_error: 'Nepodařilo se načíst prvky: %{message}'
       load_data: Nahrát data
       loading: Načítá se…
     tag_details:
@@ -496,6 +549,13 @@ cs:
       telephone_link: Volat %{phone_number}
       colour_preview: Náhled barvy %{colour_value}
       email_link: Poslat e-mail na %{email}
+    versions_navigation:
+      node: Uzel
+      way: Cesta
+      relation: Relace
+      history: Historie
+      version: 'Verze #%{version}'
+      versions_label: 'Verze:'
   feature_queries:
     show:
       title: Průzkum prvků
@@ -510,6 +570,8 @@ cs:
         title_html: 'Historie cesty: %{name}'
       relation:
         title_html: 'Historie relace: %{name}'
+      older_versions: Starší verze
+      newer_versions: Novější verze
     actions:
       view_redacted_data: Zobrazit upravená data
       view_redaction_message: Zobrazit zprávu o revizi
@@ -1583,6 +1645,20 @@ cs:
         ignored: Ignorováno
         open: Otevřeno
         resolved: Vyřešeno
+    resolve:
+      resolved: Stav problému změněn na „Vyřešeno”
+    ignore:
+      ignored: Stav problému změněn na „Ignorováno”
+    reopen:
+      reopened: Stav problému změněn na „Otevřeno”
+    comments:
+      comment_from_html: Komentář od %{user_link} z %{comment_created_at}
+    reports:
+      reported_by_html: Nahlášeno jako %{category} uživatelem %{user} v %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, komentář #%{comment_id}'
+        note: 'Poznámka #%{note_id}'
     show:
       reports:
         one: '%{count} hlášení'
@@ -1602,20 +1678,6 @@ cs:
       other_issues_against_this_user: Další hlášení týkající se tohoto uživatele
       no_other_issues: Žádná další hlášení týkající se tohoto uživatele.
       comments_on_this_issue: Komentáře k problému
-    resolve:
-      resolved: Stav problému změněn na „Vyřešeno”
-    ignore:
-      ignored: Stav problému změněn na „Ignorováno”
-    reopen:
-      reopened: Stav problému změněn na „Otevřeno”
-    comments:
-      comment_from_html: Komentář od %{user_link} z %{comment_created_at}
-    reports:
-      reported_by_html: Nahlášeno jako %{category} uživatelem %{user} v %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, komentář #%{comment_id}'
-        note: 'Poznámka #%{note_id}'
   issue_comments:
     create:
       comment_created: Váš komentář byl úspěšně přiložen
@@ -2735,7 +2797,6 @@ cs:
           many: Nalezeno %{count} uživatele
           other: Nalezeno %{count} uživatelů
         confirm: Potvrdit vybrané uživatele
-        hide: Skrýt vybrané uživatele
         empty: Nebyli nalezeni žádní uživatelé vyhovující podmínkám
       user:
         summary_html: '%{name} vytvořeno %{date} z %{ip_address}'

@@ -1958,7 +1958,6 @@ ms:
         heading: Pengguna
       page:
         confirm: Sahkan Pengguna-Pengguna Terpilih
-        hide: Sorokkan Pengguna-Pengguna Terpilih
         empty: Tiada pengguna sepadan yang dijumpai
       user:
         summary_html: '%{name} diwujudkan dari %{ip_address} pada %{date}'

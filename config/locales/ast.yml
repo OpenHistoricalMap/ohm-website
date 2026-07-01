@@ -1101,6 +1101,20 @@ ast:
         one: 1 Informe
         other: '%{count} Informes'
       reported_item: Elementu reportáu
+    resolve:
+      resolved: L'estáu del problema pasó a «Resueltu»
+    ignore:
+      ignored: L'estáu del problema pasó a «Inoráu»
+    reopen:
+      reopened: L'estáu del problema pasó a «Abiertu»
+    comments:
+      comment_from_html: Comentariu de %{user_link} el %{comment_created_at}
+    reports:
+      reported_by_html: Reportáu como %{category} por %{user} el %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, comentariu #%{comment_id}'
+        note: 'Nota #%{note_id}'
     show:
       reports:
         zero: Nun hai informes
@@ -1118,20 +1132,6 @@ ast:
       other_issues_against_this_user: Otros problemes con esti usuariu
       no_other_issues: Nun hai otros problemes con esti usuariu.
       comments_on_this_issue: Comentarios d'esti problema
-    resolve:
-      resolved: L'estáu del problema pasó a «Resueltu»
-    ignore:
-      ignored: L'estáu del problema pasó a «Inoráu»
-    reopen:
-      reopened: L'estáu del problema pasó a «Abiertu»
-    comments:
-      comment_from_html: Comentariu de %{user_link} el %{comment_created_at}
-    reports:
-      reported_by_html: Reportáu como %{category} por %{user} el %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, comentariu #%{comment_id}'
-        note: 'Nota #%{note_id}'
   issue_comments:
     create:
       comment_created: Creóse correutamente'l comentariu
@@ -1895,7 +1895,6 @@ ast:
         heading: Usuarios
       page:
         confirm: Confirmar los usuarios esbillaos
-        hide: Anubrir los usuarios esbillaos
         empty: Nun s'atoparon usuarios que concasen
       user:
         summary_html: '%{name} creáu dende %{ip_address} el %{date}'

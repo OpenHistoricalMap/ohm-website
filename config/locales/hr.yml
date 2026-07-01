@@ -1559,7 +1559,6 @@ hr:
         heading: Korisnici
       page:
         confirm: Potvrdi odabrane korisnike
-        hide: Sakrij odabrane korisnike
         empty: Nema pronađenih odgovarajućih korisnika
       user:
         summary_html: '%{name} napravljeno sa %{ip_address} dana %{date}'

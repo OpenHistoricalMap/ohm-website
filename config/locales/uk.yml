@@ -1599,6 +1599,20 @@ uk:
         ignored: Проігноровано
         open: Відкрито
         resolved: Вирішено
+    resolve:
+      resolved: Статус звернення був змінений на 'Розв’язано'
+    ignore:
+      ignored: Статус звернення був змінений на 'Проігноровано'
+    reopen:
+      reopened: Статус проблеми був змінений на 'Відкрито'
+    comments:
+      comment_from_html: Коментар від %{user_link}, %{comment_created_at}
+    reports:
+      reported_by_html: Повідомлено як %{category}, %{user}, %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, коментар #%{comment_id}'
+        note: 'Нотатка #%{note_id}'
     show:
       reports:
         one: '%{count} скарга'
@@ -1618,20 +1632,6 @@ uk:
       other_issues_against_this_user: Інші звернення щодо цього учасника
       no_other_issues: Немає інших скарг на цього учасника
       comments_on_this_issue: Коментарі до цього звернення
-    resolve:
-      resolved: Статус звернення був змінений на 'Розв’язано'
-    ignore:
-      ignored: Статус звернення був змінений на 'Проігноровано'
-    reopen:
-      reopened: Статус проблеми був змінений на 'Відкрито'
-    comments:
-      comment_from_html: Коментар від %{user_link}, %{comment_created_at}
-    reports:
-      reported_by_html: Повідомлено як %{category}, %{user}, %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, коментар #%{comment_id}'
-        note: 'Нотатка #%{note_id}'
   issue_comments:
     create:
       comment_created: Коментар створено
@@ -2769,7 +2769,6 @@ uk:
           many: знайдено %{count} користувачів
           other: 'знайдено '
         confirm: Підтвердити вибір учасників
-        hide: Сховати вибраних учасників
         empty: Не знайдено учасників відповідно до критеріїв пошуку
       user:
         summary_html: '%{name} зареєстровано з %{ip_address}, %{date}'

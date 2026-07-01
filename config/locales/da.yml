@@ -1537,6 +1537,20 @@ da:
         ignored: Ignoreret
         open: Åben
         resolved: Løst
+    resolve:
+      resolved: Sagens status er sat til 'Løst'.
+    ignore:
+      ignored: Sagens status er blevet sat til 'Ignoreret'
+    reopen:
+      reopened: Sagens status er blevet sat til 'Åben'
+    comments:
+      comment_from_html: Kommentar fra %{user_link} skrevet %{comment_created_at}
+    reports:
+      reported_by_html: Rapporteret som %{category} af %{user} den %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, kommentar #%{comment_id}'
+        note: 'Bemærkning #%{note_id}'
     show:
       reports:
         one: '%{count} rapport'
@@ -1554,20 +1568,6 @@ da:
       other_issues_against_this_user: Andre sager omhandlende denne bruger
       no_other_issues: Ingen andre sager omhandlende denne bruger.
       comments_on_this_issue: Kommentarer på denne sag
-    resolve:
-      resolved: Sagens status er sat til 'Løst'.
-    ignore:
-      ignored: Sagens status er blevet sat til 'Ignoreret'
-    reopen:
-      reopened: Sagens status er blevet sat til 'Åben'
-    comments:
-      comment_from_html: Kommentar fra %{user_link} skrevet %{comment_created_at}
-    reports:
-      reported_by_html: Rapporteret som %{category} af %{user} den %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, kommentar #%{comment_id}'
-        note: 'Bemærkning #%{note_id}'
   issue_comments:
     create:
       comment_created: Din kommentar blev oprettet
@@ -2702,7 +2702,6 @@ da:
           one: '%{count} bruger fundet'
           other: '%{count} brugere fundet'
         confirm: Bekræft valgte brugere
-        hide: Skjul valgte brugere
         empty: Ingen brugere fundet
       user:
         summary_html: '%{name} oprettet fra %{ip_address} på %{date}'

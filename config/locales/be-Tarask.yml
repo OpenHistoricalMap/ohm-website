@@ -18,9 +18,12 @@ be-Tarask:
     formats:
       brief_bce: '%{year} да н. э.'
       brief_ce: '%{year} н. э.'
+      heatmap: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y у %H:%M'
+  count:
+    at_least_pattern: '%{count}+'
   helpers:
     file:
       prompt: Абярыце файл
@@ -53,6 +56,9 @@ be-Tarask:
           id
       models:
         user_mute:
+          attributes:
+            subject:
+              format: '%{message}'
           is_already_muted: ужо сьцішана
         social_link:
           attributes:
@@ -221,6 +227,9 @@ be-Tarask:
       x_years:
         one: '%{count} год таму'
         other: '%{count} гады таму'
+  printable_name:
+    version: v%{version}
+    current_and_old_links_html: '%{current_link}, %{old_link}'
   editor:
     default: Перадвызначана (цяпер %{name})
     id:
@@ -238,6 +247,7 @@ be-Tarask:
       microsoft: Microsoft
       github: GitHub
       wikipedia: Вікіпэдыя
+      openstreetmap: OpenStreetMap
   api:
     notes:
       comment:
@@ -251,6 +261,7 @@ be-Tarask:
         reopened_at_by_html: Пераадкрыта %{when} удзельнікам %{user}
       rss:
         title: Нататкі OpenHistoricalMap
+        description_all: Сьпіс павядомленых, пракамэнтаваных або закрытых заўвагаў
         description_area: Сьпіс заўвагаў, створаных, пракамэнтаваных ці закрытых каля
           вас [(%{min_lat}|%{min_lon}) — (%{max_lat}|%{max_lon})]
         description_item: RSS-стужка для заўвагаў %{id}
@@ -273,6 +284,7 @@ be-Tarask:
         not_agreed: Вы яшчэ не згадзіліся з умовамі ўдзельніцтва.
         agreed_with_pd: Вы таксама заяўляеце, што перадаеце Вашыя рэдагаваньні ў грамадзкі
           набытак.
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: што гэта?
         not_agreed_with_pd: Вы не пазначылі, што ўважаеце свой унёсак Народным Здабыткам.
         review: Знаёмства з умовамі
@@ -293,7 +305,9 @@ be-Tarask:
         і дазволіць людзям зьвязвацца з вамі пра сайт, націсьніце кнопку ніжэй.
       only_public_can_edit: З вэрсіі API 0.6 толькі публічныя карыстальнікі могуць
         рэдагаваць мапу.
+      find_out_why_html: (%{link}).
       find_out_why: знайсьці чаму
+      find_out_why_url: https://wiki.openstreetmap.org/wiki/Anonymous_edits
       email_not_revealed: Ваш email не будзе раскрыты, калі стане публічным.
       not_reversible: Гэту дзею нельга скасаваць, і ўсе новыя карыстальнікі цяпер
         публічныя (перадвызначана).
@@ -310,10 +324,14 @@ be-Tarask:
         title: Выдаліць мой рахунак
         warning: Увага! Працэс выдаленьня рахунку канчатковы і незваротны.
         delete_account: Выдаліць рахунак
+        delete_introduction: 'Вы можаце выдаліць свой рахунак OpenHistoricalMap, націснуўшы
+          кнопку ніжэй. Калі ласка, зьвярніце ўвагу на наступную інфармацыю:'
         delete_profile: Інфармацыя гэтага профілю, аватар, апісаньне й хатняя лякацыя
           будуць выдалены.
         delete_display_name: Вашае імя карыстальніка будзе выдалена і можа быць зноў
           выкарыстана іншымі карыстальнікамі.
+        retain_caveats: 'Аднак пэўныя зьвесткі пра вас будуць захоўвацца на OpenHistoricalMap
+          нават пасьля выдаленьня рахунку:'
         retain_edits: Вашыя рэдагаваньні ў базе зьвестак мапы, калі яны ёсьць, будуць
           захаваныя.
         retain_traces: Вашыя дасланыя трэкі, калі яны ёсьць, будуць захаваныя.
@@ -338,8 +356,17 @@ be-Tarask:
           працягнуць.
         contributor_terms_explain: Гэтае пагадненьне вызначае ўмовы вашага існага
           ці будучага ўнёску.
+        read_ct: Я прачытаў(-ла) і згодны(-на) з вышэйзгаданымі ўмовамі ўдзельніцтва
         tou_explain:
+          html: Гэтыя %{tou_link} рэгулююць ужываньне сайта ды іншай інфраструктуры,
+            якую забясьпечвае OpenHistoricalMap. Калі ласка, націсьніце на спасылку,
+            прачытайце й пагадзіцеся з тэкстам.
           tou: Умовы ўжываньня
+        read_tou: Я прачытаў(-ла) і згаджаюся з Умовамі ўжываньня
+        guidance_info_html: 'Інфармацыя, каб зразумець што там напісана: %{readable_summary_link}
+          і яшчэ %{informal_translations_link}'
+        readable_summary: кароткі зьмест
+        informal_translations: нефармальныя пераклады
         continue: Працягнуць
         cancel: Скасаваць
         you need to accept or decline: Калі ласка, прачытайце, а потым згадзіцеся
@@ -351,11 +378,28 @@ be-Tarask:
           rest_of_world: Астатні сьвет
       update:
         terms accepted: Дзякуй за тое, што прынялі новыя ўмовы супрацоўніцтва!
+      terms_declined_flash:
+        terms_declined_html: Нам шкада, што вы ня згодныя прыняць новыя Умовы Ўдзельніцтва.
+          Падрабазьней %{terms_declined_link}.
+        terms_declined_link: на гэтай старонцы
+        terms_declined_url: https://wiki.openstreetmap.org/wiki/Contributor_Terms_Declined
     pd_declarations:
       show:
+        title: Уважаць мой унёсак Народным Здабыткам
         consider_pd: Я ўважаю мой унёсак Народным Здабыткам
+        consider_pd_why: Чаму варта ўважаць мой унёсак Народным Здабыткам?
+        consider_pd_why_url: https://osmfoundation.org/wiki/Licence_and_Legal_FAQ/Why_would_I_want_my_contributions_to_be_public_domain
+        confirm: Пацьвердзіць
+      create:
+        successfully_declared: Вы пасьпяхова заявілі, што ўважаеце свой унёсак Народным
+          Здабыткам.
+        already_declared: Вы ўжо заявілі, што ўважаеце свой унёсак Народным Здабыткам.
+        did_not_confirm: Вы не пацьвердзілі, што ўважаеце свой унёсак Народным Здабыткам.
   browse:
+    deleted_ago_by_html: Выдалена %{user} %{time_ago}
+    edited_ago_by_html: Рэдагавана %{user} %{time_ago}
     version: Вэрсія
+    redacted_version: Рэдагаваная вэрсія
     in_changeset: Набор зьменаў
     anonymous: ананім
     no_comment: (без камэнтароў)
@@ -371,6 +415,7 @@ be-Tarask:
       many: '%{count} лініяў'
       other: '%{count} лініяў'
     download_xml: Сьцягнуць XML
+    view_unredacted_history: Пряглад неадрэгаванай гісторыі
     location: 'Месцазнаходжаньне:'
     node:
       title_html: 'Вузел: %{name}'
@@ -382,6 +427,9 @@ be-Tarask:
         few: '%{count} вузлы'
         many: '%{count} вузлоў'
         other: '%{count} вузлоў'
+      also_part_of_html:
+        one: частка лініі %{related_ways}
+        other: частка ліній %{related_ways}
     relation:
       title_html: 'Зьвязак: %{name}'
       members: Удзельнікі
@@ -419,6 +467,9 @@ be-Tarask:
         way: дарога
         relation: зьвязак
     start_rjs:
+      feature_warning: Ладаваньне %{num_features} аб'ектаў можа моцна запаволіць браўзэр.
+        Сапраўды паказаць гэтыя зьвесткі?
+      feature_error: 'Не ўдалося заладаваць аб''екты: %{message}'
       load_data: Загрузіць зьвесткі
       loading: Загрузка…
     tag_details:
@@ -445,6 +496,7 @@ be-Tarask:
   feature_queries:
     show:
       title: Шукаць аб'екты
+      introduction: Дотык на мапу, каб адшукаць аб'екты побач.
       nearby: Аб’екты паблізу
       enclosing: Навакольныя аб’екты
   old_elements:
@@ -511,11 +563,34 @@ be-Tarask:
         commented_at_by_html: Абноўлена %{when} %{user}
       show:
         title_all: Абмеркаваньне набору зьменаў OpenHistoricalMap
+        title_particular: 'Абмеркаваньне набору зьменаў #%{changeset_id} OpenHistoricalMap'
+      timeout:
+        sorry: На жаль, сьпіс запытаных камэнтароў да набору зьменаў занадта вялікі
+          для атрыманьня.
   changesets:
+    changeset_line:
+      comments:
+        one: '%{count} камэнтар'
+        few: '%{count} камэнтары'
+        other: '%{count} камэнтароў'
+      changes:
+        one: '%{count} зьмена'
+        few: '%{count} зьмены'
+        other: '%{count} зьменаў'
+      n_elements_created:
+        one: '%{count} элемэнт створаны'
+        other: '%{count} элемэнтаў створана'
+      n_elements_modified:
+        one: '%{count} элемэнт зьменены'
+        other: '%{count} элемэнтаў зьменена'
+      n_elements_deleted:
+        one: '%{count} элемэнт выдалены'
+        other: '%{count} элемэнтаў выдалена'
     index:
       title: Наборы зьменаў
       title_user: Набор зьменаў %{user}
       title_user_link_html: Наборы зьменаў %{user_link}
+      title_followed: Наборы зьменаў сьледваных карыстальнікаў
       title_nearby: Наборы зьменаў для суседніх удзельнікаў
       empty: Наборы зьменаў ня знойдзеныя.
       empty_area: Няма набораў зьменаў у гэтай зоне.
@@ -572,6 +647,14 @@ be-Tarask:
         button: Падпісацца на абмеркаваньне
       unsubscribe:
         heading: Адпісацца ад гэтага абмеркаваньня набору зьменаў?
+        button: Адпісацца ад абмеркаваньня
+    heading:
+      title: Набор зьменаў %{id}
+      created_by_html: Створана %{link_user} %{created}.
+    no_such_entry:
+      heading: 'Няма допісу з ідэнтыфікатарам: %{id}'
+      body: На жаль, няма набору зьменаў з ідэнтыфікатарам %{id}. Калі ласка, праверце
+        дакладнасьць напісаньня, ці, магчыма, спасылка на якую быў пераход, няслушная.
   dashboards:
     contact:
       km away: '%{count}км ад Вас'
@@ -582,12 +665,19 @@ be-Tarask:
     popup:
       your location: Вашае месцазнаходжаньне
       nearby mapper: Мапер паблізу
+      following: Сьляджу
     show:
       title: Мая панэль
+      no_home_location_html: '%{edit_profile_link} і пазначце сваю хатнюю лякацыю,
+        каб бачыць карыстальнікаў паблізу.'
       edit_your_profile: Рэдагаваць Ваш профіль
+      followings: Карыстальнікі, за якімі сьлядзіце́
+      no followings: Вы яшчэ ні за кім не сьлядзіце́.
       nearby users: Іншыя бліжэйшыя карыстальнікі
       no nearby users: Няма іншых карыстальнікаў, якія прызнаюць, што займаюцца складаньнем
         мапы каля Вас.
+      followed_changesets: наборы зьменаў
+      followed_diaries: дзёньнікі
       nearby_changesets: наборы зьменаў суседніх удзельнікаў
       nearby_diaries: запісы дзёньнікаў суседніх удзельнікаў
   diary_entries:
@@ -598,6 +688,7 @@ be-Tarask:
       use_map_link: Выкарыстаць мапу
     index:
       title: Дзёньнікі карыстальнікаў
+      title_followed: Дзёньнікі сьледваных карыстальнікаў
       title_nearby: Дзёньнікі суседніх удзельнікаў
       user_title: Дзёньнік %{user}
       in_language_title: Дзёньнік запісаў у %{language}
@@ -625,6 +716,7 @@ be-Tarask:
     diary_entry:
       posted_by_html: Дасланы %{link_user} %{created} на %{language_link}.
       updated_at_html: Апошняе абнаўленьне %{updated}.
+      full_entry: Глядзець допіс цалкам
       comment_link: Камэнтаваць гэты запіс
       reply_link: Адаслаць аўтару паведамленьне
       comment_count:
@@ -656,28 +748,153 @@ be-Tarask:
       all:
         title: Запісы ў дзёньніку OpenHistoricalMap
         description: Апошнія запісы ў дзёньніку карыстальнікаў OpenHistoricalMap
+    comments:
+      title: Запісы ў дзёньніку OpenHistoricalMap
+      description: Апошнія запісы ў дзёньніку карыстальнікаў OpenHistoricalMap
+    subscribe:
+      heading: Падпісацца на абмяркаваньне гэтага допісу ў дзёньніку?
+      button: Падпісацца на абмеркаваньне
+    unsubscribe:
+      heading: Адпісацца ад абмяркаваньня гэтага допісу ў дзёньніку?
+      button: Адпісацца ад абмеркаваньня
     navigation:
+      in_language: Дзёньнікі на %{language}
       my_diary: Мой дзёньнік
       new: Новы запіс у дзёньніку
       new_title: Стварыць новы запіс у маім дзёньніку удзельніка
     profile_diaries:
+      latest_diaries: Апошнія допісы ў дзёньніках
+      comments:
+        one: '%{count} камэнтар'
+        few: '%{count} камэнтары'
+        other: '%{count} камэнтароў'
+      title_label: Допіс у дзёньнік
+      comments_label: Камэнтары
       date_label: Дата
+  diary_comments:
+    new:
+      heading: Дадаць камэнтар да абмяркаваньня допісу ў дзёньніку?
+  doorkeeper:
+    errors:
+      messages:
+        account_selection_required: Сэрвэр аўтарызацыі патрабуе выбару рахунку мэтавага
+          карыстальніка.
+        consent_required: Сэрвэр аўтарызацыі патрабуе згоды мэтавага карыстальніка.
+        interaction_required: Сэрвэр аўтарызацыі патрабуе ўдзелу мэтавага карыстальніка.
+        login_required: Сэрвэр аўтарызацыі патрабуе аўтэнтыфікацыі мэтавага карыстальніка.
+    flash:
+      applications:
+        create:
+          notice: Запыт зарэґістраваны.
+    openid_connect:
+      errors:
+        messages:
+          auth_time_from_resource_owner_not_configured: Памылка праз брак канфіґурацыі
+            Doorkeeper::OpenidConnect.configure.auth_time_from_resource_owner
+          reauthenticate_resource_owner_not_configured: Памылка праз брак канфіґурацыі
+            Doorkeeper::OpenidConnect.configure.reauthenticate_resource_owner
+          resource_owner_from_access_token_not_configured: Памылка праз брак канфіґурацыі
+            Doorkeeper::OpenidConnect.configure.resource_owner_from_access_token
+          select_account_for_resource_owner_not_configured: Памылка праз брак канфіґурацыі
+            Doorkeeper::OpenidConnect.configure.select_account_for_resource_owner
+          subject_not_configured: Памылка ґенэрацыі ID Token праз брак канфіґурацыі
+            Doorkeeper::OpenidConnect.configure.subject
+    scopes:
+      address: Глядзець свой адрас
+      email: Глядзець свой адрас электроннай пошты
+      openid: Пацьвердзіць свой рахунак
+      phone: Глядзець свой нумар тэлефону
+      profile: Паказаць зьвесткі свайго профілю
+  errors:
+    contact:
+      contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
+      contact_url_title: Інфармацыя пра каналы камунікацыі
+      contact: зьвязацца
+      contact_the_community_html: '%{contact_link} з супольнасьцю OpenHistoricalMap,
+        калі знайшлася пашкоджаная спасылка / памылка. Важна пазначыць пэўны URL гэтага
+        запыту.'
+    bad_request:
+      title: Хібны запыт
+      description: Запытаная апэрацыя на сэрвэр OpenHistoricalMap ня ёсьць слушнай
+        (HTTP 400)
+    forbidden:
+      title: Забаронена
+      description: Запытаная апэрацыя на сэрвэр OpenHistoricalMap даступная толькі
+        адміністратарам (HTTP 400)
+    internal_server_error:
+      title: Памылка праґрамы
+      description: Сэрвэр OpenHistoricalMap сутыкнуўся зь нечаканым станам і ня здоляў
+        выканаць запыт (HTTP 500)
+    not_found:
+      title: Файл ня знойдзены
+      description: Не знойдзены файл/тэчка/апэрацыя API з гэткай назвай на сэрвэры
+        OpenHistoricalMap (HTTP 404)
+  follows:
+    show:
+      follow:
+        heading: Хочаце сьлядзіць за %{user}?
+        button: Сьлядзіць за карыстальнікам
+      unfollow:
+        heading: Перастаць сьлядзіць за %{user}?
+        button: Не сьлядзіць за карыстальнікам
+    create:
+      success: Вы сьлядзіце за %{name}!
+      failed: На жаль, запыт на сьледваньне за %{name} не прайшоў.
+      already_followed: Вы ўжо сьлядзіце за %{name}
+      limit_exceeded: Вы пачалі сьледваць занадта многа карыстальнікаў. Калі ласка,
+        пачакайце пакрысе перад тым як сьледваць іншых.
+    destroy:
+      success: Вы болей не сьлядзіце за %{name}
+      not_followed: Вы не сьлядзіце за %{name}.
   geocoder:
+    search:
+      title:
+        latlon: Унутраны
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       prefix:
+        aerialway:
+          cable_car: Падвясны ваґон
+          chair_lift: Крэславы пад’ёмнік
+          drag_lift: Буксірны пад'ёмнік
+          gondola: Ґандольны пад'ёмнік
+          magic_carpet: Канвэерны пад'ёмнік
+          platter: Талеркавы пад'ёмнік
+          pylon: Апора
+          station: Станцыя канатнай дарогі
+          t-bar: Т-падобны пад'ёмнік
+          "yes": Канатная дарога
         aeroway:
+          aerodrome: Аэрадром
+          airstrip: Узьлётна-пасадачная паласа
+          apron: Пляц для самалётаў
           gate: Выхад на пасадку
+          hangar: Ангар
           helipad: Верталётная пляцоўка
+          holding_position: Месца чаканьня
+          navigationaid: Авіяцыйная навіґацыйная дапамога
+          parking_position: Месца стаянкі
           runway: Узлётна-пасадачная паласа
+          taxilane: Рулёжная паласа
           taxiway: Рулёжная дарога
+          terminal: Тэрмінал аэрапорту
+          windsock: Ветраньнік
         amenity:
+          animal_boarding: Гатэль для жывёлы
+          animal_shelter: Прытулак для жывёлы
           arts_centre: Мастацкі цэнтар
           atm: Банкамат
           bank: Банк
           bar: Бар
+          bbq: BBQ
           bench: Лаўка
           bicycle_parking: Стаянка для ровараў
           bicycle_rental: Пракат ровараў
+          bicycle_repair_station: Станцыя рамонту ровараў
+          biergarten: Піўны двор
+          blood_bank: Банк крыві
+          boat_rental: Арэнда чоўнаў
           brothel: Бардэль
           bureau_de_change: Абмен валюты
           bus_station: Аўтобусны прыпынак
@@ -686,10 +903,14 @@ be-Tarask:
           car_sharing: Кароткатэрміновая арэнда аўтамабіляў
           car_wash: Аўтамабільная мыйка
           casino: Казіно
+          charging_station: Станцыя сілкаваньня
+          childcare: Догляд за дзецьмі
           cinema: Кінатэатар
           clinic: Паліклініка
+          clock: Гадзіньнік
           college: Каледж
           community_centre: Грамадзкі цэнтар
+          conference_centre: Канфэрэнц-цэнтар
           courthouse: Суд
           crematorium: Крэматорый
           dentist: Стаматалёгія
@@ -697,22 +918,37 @@ be-Tarask:
           drinking_water: Пітная вада
           driving_school: Аўташкола
           embassy: Амбасада
+          events_venue: Месца для імпрэзаў
           fast_food: Забягайлаўка
           ferry_terminal: Паромная станцыя
           fire_station: Пажарны пастарунак
+          food_court: Фуд-корт
           fountain: Фантан
           fuel: Заправачная станцыя
+          gambling: Азартныя гульні
           grave_yard: Могілкі
+          grit_bin: Скрыня жвіру
           hospital: Шпіталь
           hunting_stand: Паляўнічая вежа
           ice_cream: Марозіва
+          internet_cafe: Інтэрнэт-кафэ
           kindergarten: Дзіцячы садок
+          language_school: Школа мовы
           library: Бібліятэка
           loading_dock: Ладунковы док
+          love_hotel: Гатэль каханьня
           marketplace: Базар
+          mobile_money_agent: Аґэнт тэлефонавых грошай
+          monastery: Кляштар
+          money_transfer: Абмен валюты
+          motorcycle_parking: Стаянка матацыклаў
+          music_school: Музычная школа
           nightclub: Начны клюб
           nursing_home: Дом састарэлых
           parking: Стаянка
+          parking_entrance: Заезд на стаянку
+          parking_space: Пляц для стаянкі
+          payment_terminal: Плацёжны тэрмінал
           pharmacy: Аптэка
           place_of_worship: Культавае збудаваньне
           police: Паліцыя (Міліцыя)
@@ -720,104 +956,245 @@ be-Tarask:
           post_office: Паштовае аддзяленьне
           prison: Турма
           pub: Шынок
+          public_bath: Грамадзкая лазьня
+          public_bookcase: Грамадзкая кніжная шафа
           public_building: Грамадзкі будынак
+          ranger_station: Станцыя рэйнджэраў
           recycling: Месца перапрацоўкі адыходаў
           restaurant: Рэстаран
+          sanitary_dump_station: Станцыя санітарных адкідаў
           school: Школа
           shelter: Прытулак
+          shower: Душ
+          social_centre: Сацыяльны цэнтар
+          social_facility: Сацыяльная ўстанова
           studio: Студыя
+          swimming_pool: Басэйн
           taxi: Таксі
           telephone: Тэлефон
           theatre: Тэатар
           toilets: Туалет
           townhall: Ратуша
+          training: Навучальная база
           university: Унівэрсытэт
+          vehicle_inspection: Агляд транспартных сродкаў
           vending_machine: Гандлёвы аўтамат
           veterinary: Вэтэрынарная клініка
           village_hall: Кіраўніцтва вёскі
           waste_basket: Сьметніца
+          waste_disposal: Сьметнік
+          waste_dump_site: Купа сьмецьця
           watering_place: Вада для жывёлы
+          water_point: Пітная вада
+          weighbridge: Вагавая плятформа
+          "yes": Паслугі
         boundary:
+          aboriginal_lands: Землі тубыльцаў
           administrative: Адміністрацыйная мяжа
+          census: Мяжа перапісу насельніцтва
           national_park: Нацыянальны парк
+          political: Мяжа выбарчай акругі
           protected_area: Ахоўная зона
+          "yes": Мяжа
+        bridge:
+          aqueduct: Аквэдук
+          boardwalk: Драўляная сьцяжына
+          suspension: Падвесны мост
+          swing: Паваротны мост
+          viaduct: Віядук
+          "yes": Мост
         building:
+          apartment: Апартамэнты
           apartments: Апартамэнты
+          barn: Сьвіран
+          bungalow: Бунґала
+          cabin: Хатка
           chapel: Капліца
           church: Будынак храму
+          civic: Грамадзкі будынак
+          college: Будынак каледжа
           commercial: Камэрцыйны будынак
+          construction: Будоўля
+          cowshed: Кароўнік
+          detached: Асобны дом
           dormitory: Інтэрнат
+          duplex: Двухкватэрны дом
           farm: Дом на фэрме
+          farm_auxiliary: Гаспадарчы будынак
           garage: Гараж
+          garages: Ґаражы
+          greenhouse: Цяпліца
+          hangar: Ангар
           hospital: Будынак шпіталю
           hotel: Будынак гатэлю
           house: Дом
+          houseboat: Плывучы дом
+          hut: Хата
           industrial: Прамысловы будынак
+          kindergarten: Будынак дзіцячага садку
+          manufacture: Вытворчы будынак
           office: Офісны будынак
           public: Грамадзкі будынак
           residential: Жылы будынак
           retail: Будынак розьнічнага гандлю
+          roof: Дах
+          ruins: Разбураны будынак
           school: Школа
+          semidetached_house: Парны дом
+          service: Тэхнічны будынак
+          shed: Пуня
+          stable: Стайня
+          static_caravan: Дом-прычэп
+          sty: Хлеў
+          temple: Будынак сьвятыні
           terrace: Шэраг жылых будынкаў
           train_station: Будынак чыгуначнай станцыі
           university: Унівэрсытэт
+          warehouse: Сховішча
+          "yes": Будынак
+        club:
+          scout: База скаўтаў
+          sport: Спартыўны клюб
+          "yes": Клюб
+        craft:
+          beekeeper: Пчаляр
+          blacksmith: Каваль
+          brewery: Бровар
+          carpenter: Цясьляр
+          caterer: Забясьпечнік харчаваньня
+          confectionery: Цукерня
+          dressmaker: Швачка
+          electrician: Электрык
+          electronics_repair: Рамонт электронікі
+          gardener: Садоўнік
+          glaziery: Шкляр
+          handicraft: Рамяство
+          hvac: Майстар кліматычных сыстэмаў
+          painter: Маляр
+          photographer: Фатоґраф
+          plumber: Сантэхнік
+          roofer: Страхар
+          sawmill: Тартак
+          shoemaker: Шавец
+          stonemason: Муляр
+          tailor: Кравец
+          window_construction: Майстэрня вокнаў
+          winery: Вінаробная
+          "yes": Рамесная майстэрня
         emergency:
+          access_point: Ратавальны нумар
+          ambulance_station: Станцыя хуткай дапамогі
+          assembly_point: Ратавальны пункт
+          defibrillator: Дэфібрылятар
+          fire_extinguisher: Вогнегасільнік
+          fire_water_pond: Пажарны вадаём
+          landing_site: Месца аварыйнай пасадкі
+          life_ring: Ратавальнае кола
           phone: Тэлефон надзвычайных сытуацый
+          siren: Аварыйная сырэна
+          suction_point: Аварыйнае пампаваньне вады
+          water_tank: Аварыйны рэзэрвуар вады
         highway:
+          abandoned: Занядбаная дарога
           bridleway: Дарога для коней
           bus_guideway: Аўтобусная паласа
           bus_stop: Аўтобусны прыпынак
+          busway: Аўтобусная паласа
           construction: Будаўніцтва дарогі
+          corridor: Калідор
+          crossing: Пераход
           cycleway: Роварная дарожка
+          elevator: Ліфт
           emergency_access_point: Пункт хуткай дапамогі
           emergency_bay: Аварыйная затока
           footway: Пешаходная сьцежка
           ford: Брод
+          give_way: Знак "Дай дарогу"
           living_street: Жыльлёвая зона
+          milestone: Дарожны слуп
           motorway: Аўтастрада
           motorway_junction: Скрыжаваньне аўтастрадаў
           motorway_link: Разьвязка аўтастрады
+          passing_place: Разьездны пляц
           path: Шлях
           pedestrian: Пешаходная дарожка
           platform: Плятформа
           primary: Галоўная дарога
           primary_link: Галоўная дарога
+          proposed: Заплянаваная дарога
           raceway: Гоначная траса
           residential: Жылая вуліца
+          rest_area: Зона адпачынку
           road: Дарога
           secondary: Другарадная дарога
           secondary_link: Другарадная дарога
           service: Службовая дарога
           services: Прыдарожны сэрвіс
+          speed_camera: Камэра хуткасьці
           steps: Прыступкі
+          stop: Знак «Стоп»
+          street_lamp: Вулічны ліхтар
           tertiary: Дарога раённага значэньня
+          tertiary_link: Трэцярадная дарога
           track: Ґрунтовая дарога
+          traffic_mirror: Люстра дарожнае
+          traffic_signals: Сьвятлафор
+          trailhead: Пачатак трэйлу
           trunk: Шаша
           trunk_link: Шаша
+          turning_circle: Разваротнае кола
+          turning_loop: Разваротная пятля
           unclassified: Дарога раённага значэньня
+          "yes": Дарога
         historic:
+          aircraft: Гістарычны лятак
           archaeological_site: Археалягічныя раскопкі
+          bomb_crater: Кратэр ад бомбы
           battlefield: Поле гістарычнай бойкі
           boundary_stone: Памежны камень
           building: Гістарычны будынак
+          bunker: Бункэр
+          cannon: Гармата
           castle: Замак
+          charcoal_pile: Стос вуглю
           church: Царква
+          city_gate: Гарадзкая брама
           citywalls: Мескія муры
           fort: Форт
+          heritage: Помнік спадчыны
+          hollow_way: Дарога ў яме
           house: Дом
           manor: Маёнтак
           memorial: Мэмарыял
+          milestone: Гістарычны дарожны слуп
           mine: Капальня
+          mine_shaft: Шахтавы ствол
           monument: Помнік
+          railway: Гістарычная чыгунка
+          roman_road: Рымская дарога
           ruins: Руіны
+          rune_stone: Рунічны камень
+          stone: Камень
+          tomb: Магіла
           tower: Вежа
+          wayside_chapel: Прыдарожная капліца
           wayside_cross: Прыдарожны крыж
           wayside_shrine: Прыдарожная капліца
           wreck: Месца катастрофы
+          "yes": Гістарычнае месца
         information:
+          guidepost: Паказальнік
+          board: Інфармацыйная дашка
           map: Мапа
+          office: Турыстычны офіс
+          terminal: Інфармацыйны тэрмінал
+          sign: Інфармацыйны знак
+          stele: Інфармацыйная стэла
+        junction:
+          "yes": Скрыжаваньне
         landuse:
           allotments: Агароды
+          aquaculture: Аквакультура
           basin: Басэйн
           brownfield: Прамысловая забруджаная глеба
           cemetery: Могілкі
@@ -827,6 +1204,7 @@ be-Tarask:
           farmland: Фэрма
           farmyard: Гаспадарчае падвор’е
           forest: Лес
+          garages: Ґаражы
           grass: Трава
           greenfield: Незасвоеная тэрыторыя
           industrial: Прамысловая тэрыторыя
@@ -834,37 +1212,123 @@ be-Tarask:
           meadow: Луг
           military: Вайсковая тэрыторыя
           mine: Капальня
+          orchard: Прамысловы сад
+          plant_nursery: Гадавальнік расьлінаў
           quarry: Кар’ер
           railway: Чыгунка
           recreation_ground: Зона адпачынку
+          religious: Рэліґійная тэрыторыя
           reservoir: Вадасховішча
+          reservoir_watershed: Зона вадазбору
           residential: Жылы раён
           retail: Тэрыторыя дробнага гандлю
           village_green: Гарадзкі парк
           vineyard: Вінаграднік
+          "yes": Землекарыстаньне
         leisure:
+          adult_gaming_centre: Цэнтр гульняў для дарослых
+          amusement_arcade: Заля гульнёвых аўтаматаў
+          bandstand: Кацнэртная альтанка
           beach_resort: Пляжны курорт
           bird_hide: Пункт назіраньня за птушкамі
+          bleachers: Трыбуны
+          bowling_alley: Боўлінґ
           common: Грамадзкая зямля
+          dance: Танцавальная заля
+          dog_park: Пляцоўка для сабакаў
+          firepit: Пляц для вогнішчу
           fishing: Месца для рыбнай лоўлі
+          fitness_centre: Фітнэс цэнтар
           fitness_station: Фітнэс-станцыя
           garden: Сад
           golf_course: Поле для гольфу
+          horse_riding: Цэнтар коннай язды
           ice_rink: Коўзанка
           marina: Прыстань для яхтаў
           miniature_golf: Поле для мінігольфу
           nature_reserve: Запаведнік
+          outdoor_seating: Сядзеньні на вуліцы
           park: Парк
+          picnic_table: Стол для пікніку
           pitch: Спартовая пляцоўка
           playground: Дзіцячая пляцоўка
           recreation_ground: Зона адпачынку
+          resort: Курорт
+          sauna: Саўна
           slipway: Элінг
           sports_centre: Спартовы цэнтар
           stadium: Стадыён
           swimming_pool: Басэйн
           track: Бегавая дарожка
           water_park: Аквапарк
+          "yes": Вольны час
+        lock:
+          "yes": Шлюз
+        man_made:
+          adit: Штольня
+          advertising: Рэклямаваньне
+          antenna: Антэна
+          avalanche_protection: Абарона ад лавіны
+          beacon: Сьве́тач
+          beam: Бэлька
+          beehive: Пчаліны вулей
+          breakwater: Хвалялом
+          bridge: Мост
+          bunker_silo: Бункэр
+          cairn: Піраміда камянёў
+          chimney: Комін
+          clearcut: Высечаны лес
+          communications_tower: Камунікацыйная вежа
+          crane: Кран
+          cross: Крыж
+          dolphin: Швартовы слуп
+          dyke: Берагавы вал
+          embankment: Насып
+          flagpole: Слуп для сьцягу
+          gasometer: Ґазавы рэзэрвуар
+          groyne: Ґройна
+          kiln: Печ
+          lighthouse: Маяк
+          manhole: Лаз каналізацыйны
+          mast: Мачта
+          mine: Капальня
+          mineshaft: Шахтавы ствол
+          monitoring_station: Станцыя назіраньня
+          petroleum_well: Нафтавая сьвідравіна
+          pier: Прыстань
+          pipeline: Трубаправод
+          pumping_station: Пампавальная станцыя
+          reservoir_covered: Крытае вадасховішча
+          silo: Сілас
+          snow_cannon: Сьнегавая гармата
+          snow_fence: Плот ад сьнегу
+          storage_tank: Захоўны рэзэрвуар
+          street_cabinet: Электрычная шафа
+          surveillance: Назіраньне
+          telescope: Тэлескоп
+          tower: Вежа
+          utility_pole: Электрычны слуп
+          wastewater_plant: Ачыстка сьцёкаў
+          watermill: Вадзяны млын
+          water_tap: Водаправодны кран
+          water_tower: Воданапорная вежа
+          water_well: Студня
+          water_works: Водаправодная станцыя
+          windmill: Вятрак
+          works: Фабрыка
+          "yes": Створана чалавекам
+        military:
+          airfield: Вайсковае лётнішча
+          barracks: Баракі
+          bunker: Бункэр
+          checkpoint: Кантрольны пункт
+          trench: Траншэя
+          "yes": Вайсковы
+        mountain_pass:
+          "yes": Горны праход
         natural:
+          atoll: Атол
+          bare_rock: Голая скала
           bay: Затока
           beach: Пляж
           cape: Мыс
@@ -1549,7 +2013,6 @@ be-Tarask:
         heading: Карыстальнікі
       page:
         confirm: Пацьвердзіць выбраных карыстальнікаў
-        hide: Схаваць выбраных карыстальнікаў
         empty: Адпаведныя карыстальнікі ня знойдзеныя
       user:
         summary_html: '%{name} створаны з %{ip_address}, %{date}'
@@ -1647,6 +2110,7 @@ be-Tarask:
           unmute: Скасаваць сьцішанасьць
   notes:
     index:
+      apply: Ужыць
       status: Статус
     show:
       title: 'Нататка: %{id}'

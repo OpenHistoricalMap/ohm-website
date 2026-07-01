@@ -14,6 +14,7 @@
 # Author: Cantons-de-l'Est
 # Author: Cquoi
 # Author: Crochet.david
+# Author: Crowwhailord
 # Author: Cybereric
 # Author: Damouns
 # Author: Danieldegroot2
@@ -69,6 +70,7 @@
 # Author: MacOS Weed
 # Author: Macofe
 # Author: Mahabarata
+# Author: Majda GHARRABOU
 # Author: Manaviko
 # Author: Mathieu
 # Author: McDutchie
@@ -1796,6 +1798,7 @@ fr:
       download: Télécharger l’itinéraire en GeoJSON
       filename: itinéraire
       directions_courtesy_html: Itinéraire fourni par %{link}
+      check_demo_html: Plus de détails de %{link}
   issues:
     index:
       title: Problèmes
@@ -1827,27 +1830,6 @@ fr:
         ignored: Ignoré
         open: Ouvert
         resolved: Résolu
-    show:
-      title:
-        open: Problème ouvert nº %{issue_id}
-        ignored: Problème ignoré nº %{issue_id}
-        resolved: Problème résolu nº %{issue_id}
-      reports:
-        one: '%{count} rapport'
-        other: '%{count} rapports'
-      no_reports: Aucun rapport
-      report_created_at_html: Signalé la première fois à %{datetime}
-      last_resolved_at_html: Dernière résolution à %{datetime}
-      last_updated_at_html: Dernière mise à jour à %{datetime} par %{displayname}
-      resolve: Résoudre
-      ignore: Ignorer
-      reopen: Rouvrir
-      reports_of_this_issue: Rapports de ce problème
-      read_reports: Lire les rapports
-      new_reports: Nouveaux rapports
-      other_issues_against_this_user: Autres problèmes concernant cet utilisateur
-      no_other_issues: Aucun autre problème avec cet utilisateur.
-      comments_on_this_issue: Commentaires sur ce problème
     resolve:
       resolved: L’état du problème a été mis à « Résolu »
     ignore:
@@ -1876,6 +1858,30 @@ fr:
         title: Rapporteurs du problème nº %{issue_id}
       reporters:
         more_reporters: et %{count} de plus
+    show:
+      title:
+        open: Problème ouvert nº %{issue_id}
+        ignored: Problème ignoré nº %{issue_id}
+        resolved: Problème résolu nº %{issue_id}
+      reports:
+        one: '%{count} rapport'
+        other: '%{count} rapports'
+      no_reports: Aucun rapport
+      report_created_at_html: Signalé la première fois à %{datetime}
+      last_resolved_at_html: Dernière résolution à %{datetime}
+      last_updated_at_html: Dernière mise à jour à %{datetime} par %{displayname}
+      resolve: Résoudre
+      ignore: Ignorer
+      reopen: Rouvrir
+      reports_of_this_issue: Rapports de ce problème
+      read_reports: Lire les rapports
+      new_reports: Nouveaux rapports
+      other_issues_against_this_user: Autres problèmes concernant cet utilisateur
+      no_other_issues: Aucun autre problème avec cet utilisateur.
+      comments_on_this_issue: Commentaires sur ce problème
+      comment_from_html: Commentaire de %{user_link} sur %{comment_created_at}
+      reassign_to_moderators: Réaffecter le problème aux modérateurs
+      reassign_to_administrators: Réaffecter le problème aux administrateurs
   issue_comments:
     create:
       comment_created: Votre commentaire a bien été créé.
@@ -1916,12 +1922,45 @@ fr:
     create:
       successful_report: Votre rapport a bien été enregistré
       provide_details: Veuillez fournir les détails requis
+  languages_panes:
+    select_language_list:
+      search_language: Rechercher...
+      languages:
+        af: Afrikaans
+        az: Azéri
+        bcl: Bikol central
+        bs: Bosnien
+        br: Breton
+        ca: Catalan
+        en: Anglais
+        es: Espagnol
+        eo: Espéranto
+        aln: Albanais guégue
+        kw: cornique
+        lt: Lituanien
+        nl: Néerlandais
+        oc: Occitan
+        pl: Polonais
+        sq: Albanais
+        sr-Latn: Serbe (latin)
+        fi: Finnois
+        diq: Dimli
+        ru: Russe
+        yi: Yiddish
+        he: Hébreu
+        bn: Bangla
+        th: Thaï
+        my: Birman
+        xmf: Mingrélien
+        km: Khmer
+        ja: Japonais
   layouts:
     project_name:
       title: OpenHistoricalMap
       h1: OpenHistoricalMap
     logo:
       alt_text: Logo d’OpenHistoricalMap
+    main_navigation: Principal
     home: Aller à l’emplacement de votre domicile
     logout: Se déconnecter
     log_in: Se connecter
@@ -1955,6 +1994,11 @@ fr:
     communities: Communautés
     learn_more: En savoir plus
     more: Plus
+    header:
+      communities: Communautés
+      export: Export
+      gps_traces: Traces GPS
+      issues: Problèmes
     offline_flash:
       osm_offline: La base de données OpenHistoricalMap est actuellement hors ligne
         du fait de travaux de maintenance essentiels en cours.
@@ -2279,7 +2323,15 @@ fr:
           auto: Auto
           light: Clair
           dark: Sombre
+        editor_color_schemes:
+          auto: Identique au site web
+          light: Clair
         save: Mettre à jour les préférences
+    notification_preferences:
+      show:
+        direct_message: Messages privés
+        gpx_import_success: 'Importation de la trace GPX : succès'
+        note_comment: Noter les commentaires
     advanced_preferences:
       show:
         title: Mes préférences avancées
@@ -2289,6 +2341,7 @@ fr:
       navigation:
         image: Image
         company: Entreprise
+        contribution_calendar: Calendrier des contributions
     descriptions:
       show:
         title: Modifier le profil
@@ -2322,6 +2375,10 @@ fr:
         show: Afficher
         delete: Supprimer
         undelete: Annuler la suppression
+    heatmaps:
+      show:
+        show_contribution_calendar_in_public: Afficher le calendrier des contributions
+          sur votre page de profil
   sessions:
     new:
       tab_title: Se connecter
@@ -2642,6 +2699,11 @@ fr:
           description: Sources supplémentaires listées sur le wiki d’OpenStreetMap
           url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse
       export_button: Exporter
+      confirmation:
+        body: Souhaitez-vous télécharger les données cartographiques de cette zone
+          au format XML ? Veuillez noter que le téléchargement des zones étendues
+          peut prendre un certain temps.
+        cancel: Annuler
     fixthemap:
       title: Signaler un problème / Corriger la carte
       how_to_help:
@@ -2949,6 +3011,11 @@ fr:
       custom_dimensions: Définir les dimensions personnalisées
       image_dimensions_html: L’image affichera la mise en forme %{layer} de %{width} × %{height}
       download: Télécharger
+  webgl_error_panes:
+    show:
+      description_html: Nous sommes désolés, mais il semble que %{your_browser_does_not_support_webgl},
+        une technologie permettant de rendre des graphismes 3D sur le web.
+      read_more_about_webgl: Lire la suite
   traces:
     visibility:
       private: Privé (partagé uniquement de façon anonyme, points non ordonnés)
@@ -3279,6 +3346,7 @@ fr:
       activate_user: Activer cet utilisateur ou cette utilisatrice
       confirm_user: Confirmer cet utilisateur ou cette utilisatrice
       unconfirm_user: Ne plus confirmer cet utilisateur ou cette utilisatrice
+      suspend_user: Suspendre cet utilisateur
       unsuspend_user: Ne plus suspendre cet utilisateur ou cette utilisatrice
       hide_user: Masquer cet utilisateur ou cette utilisatrice
       unhide_user: Réafficher cet utilisateur ou cette utilisatrice
@@ -3288,6 +3356,10 @@ fr:
       contributions:
         one: Une contribution au cours de la dernière année
         other: '%{count} contributions au cours de la dernière année'
+      title:
+        importer: Cet utilisateur est un importateur
+      revoke:
+        importer: Révoquer le droit d’importation
     sidebar_section:
       home_location: Lieu de résidence
       company_tooltip: L’affiliation à l’entreprise est autodéclarée et non vérifiée
@@ -3337,7 +3409,6 @@ fr:
           one: '%{count} utilisateur trouvé'
           other: '%{count} utilisateurs trouvés'
         confirm: Confirmer les utilisateurs sélectionnés
-        hide: Masquer les utilisateurs sélectionnés
         empty: Aucun utilisateur correspondant n’a été trouvé
       user:
         summary_html: '%{name} créé depuis %{ip_address} le %{date}'
@@ -3629,6 +3700,8 @@ fr:
       tooltip: Légende
       tooltip_disabled: La légende n’est pas disponible pour cette couche
     map:
+      geolocate_control:
+        location_not_available: Lieu non disponible
       zoom:
         in: Vue rapprochée
         out: Vue éloignée

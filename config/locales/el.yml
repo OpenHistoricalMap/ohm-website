@@ -1804,28 +1804,6 @@ el:
         ignored: Παραβλέφθηκε
         open: Ανοιχτό
         resolved: Επιλυμένο
-    show:
-      title:
-        open: 'Άνοιγμα ζητήματος #%{issue_id}'
-        ignored: 'Αγνοημένο ζήτημα #%{issue_id}'
-        resolved: 'Επιλυμένο ζήτημα #%{issue_id}'
-      reports:
-        one: '%{count} αναφορά'
-        other: '%{count} αναφορές'
-      no_reports: Καμία αναφορά
-      report_created_at_html: Αναφέρθηκε για πρώτη φορά στις %{datetime}
-      last_resolved_at_html: Επιλύθηκε για τελευταία φορά στις %{datetime}
-      last_updated_at_html: Ενημερώθηκε για τελευταία φορά στις %{datetime} από τον
-        %{displayname}
-      resolve: Επίλυση
-      ignore: Αγνόηση
-      reopen: Ξανάνοιγμα
-      reports_of_this_issue: Αναφορές του ζητήματος
-      read_reports: Ανάγνωση αναφορών
-      new_reports: Νέες αναφορές
-      other_issues_against_this_user: Άλλα ζητήματα κατά αυτού του χρήστη
-      no_other_issues: Δεν υπάρχουν άλλα ζητήματα κατά αυτού του χρήστη.
-      comments_on_this_issue: Σχόλια στο ζήτημα
     resolve:
       resolved: Η κατάσταση του ζητήματος έχει οριστεί σε 'Επιλυμένο'
     ignore:
@@ -1855,6 +1833,28 @@ el:
         title: 'Ζήτημα #%{issue_id} Αναφερόμενοι'
       reporters:
         more_reporters: και %{count} ακόμα
+    show:
+      title:
+        open: 'Άνοιγμα ζητήματος #%{issue_id}'
+        ignored: 'Αγνοημένο ζήτημα #%{issue_id}'
+        resolved: 'Επιλυμένο ζήτημα #%{issue_id}'
+      reports:
+        one: '%{count} αναφορά'
+        other: '%{count} αναφορές'
+      no_reports: Καμία αναφορά
+      report_created_at_html: Αναφέρθηκε για πρώτη φορά στις %{datetime}
+      last_resolved_at_html: Επιλύθηκε για τελευταία φορά στις %{datetime}
+      last_updated_at_html: Ενημερώθηκε για τελευταία φορά στις %{datetime} από τον
+        %{displayname}
+      resolve: Επίλυση
+      ignore: Αγνόηση
+      reopen: Ξανάνοιγμα
+      reports_of_this_issue: Αναφορές του ζητήματος
+      read_reports: Ανάγνωση αναφορών
+      new_reports: Νέες αναφορές
+      other_issues_against_this_user: Άλλα ζητήματα κατά αυτού του χρήστη
+      no_other_issues: Δεν υπάρχουν άλλα ζητήματα κατά αυτού του χρήστη.
+      comments_on_this_issue: Σχόλια στο ζήτημα
   issue_comments:
     create:
       comment_created: Το σχόλιο σας δημιουργήθηκε επιτυχώς
@@ -1935,7 +1935,6 @@ el:
     learn_more: Μάθετε περισσότερα
     more: Περισσότερα
     header:
-      ok: ΟΚ
       select_language: Επιλέξτε γλώσσα
     select_language_button:
       title: Επιλέξτε γλώσσα
@@ -3280,7 +3279,6 @@ el:
           one: '%{count} χρήστης βρέθηκε'
           other: '%{count} χρήστες βρέθηκαν'
         confirm: Επιβεβαίωση Επιλεγμένων Χρηστών
-        hide: Απόκρυψη επιλεγμένων χρηστών
         empty: Δεν βρέθηκαν χρήστες που να ταιριάζουν
       user:
         summary_html: '%{name} δημιουργήθηκε από την διεύθυνση IP %{ip_address} στις

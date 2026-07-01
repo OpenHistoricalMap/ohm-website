@@ -1034,7 +1034,6 @@ diq:
         heading: Karberi
       page:
         confirm: Karberê ke weçineyayê ena tesdiq ke
-        hide: Karbera weçinayışi bınımnê
       user:
         summary_html: '%{name} %{ip_address} ra %{date} dı vıraşt'
         summary_no_ip_html: '%{name} %{date} dı vıraşt'

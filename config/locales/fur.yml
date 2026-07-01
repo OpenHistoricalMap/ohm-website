@@ -925,15 +925,15 @@ fur:
       reports_count:
         one: '%{count} segnalazion'
         other: '%{count} segnalazions'
+    helper:
+      reportable_title:
+        note: 'Note #%{note_id}'
     show:
       reports:
         one: '%{count} segnalazion'
         other: '%{count} segnalazions'
       resolve: Risolf
       ignore: Ignore
-    helper:
-      reportable_title:
-        note: 'Note #%{note_id}'
   reports:
     new:
       title_html: Segnale %{link}
@@ -967,7 +967,6 @@ fur:
     learn_more: Par savênt di plui
     more: Plui
     header:
-      ok: Va ben
       select_language: Sielç une lenghe
     select_language_button:
       title: Sielç une lenghe
@@ -1533,7 +1532,6 @@ fur:
         heading: Utents
       page:
         confirm: Conferme i utents selezionâts
-        hide: Plate i utents selezionâts
       user:
         summary_html: '%{name} creât di %{ip_address} ai %{date}'
         summary_no_ip_html: '%{name} creât ai %{date}'

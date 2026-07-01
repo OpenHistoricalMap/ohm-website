@@ -1431,6 +1431,20 @@ th:
       reports_count:
         other: '%{count} การรายงาน'
       reported_item: รายการที่รายงาน
+    resolve:
+      resolved: สถานะปัญหาได้ถูกตั้งค่าเป็น 'ปิดเรื่องแล้ว'
+    ignore:
+      ignored: สถานะปัญหาได้ถูกตั้งค่าเป็น 'ละเว้น'
+    reopen:
+      reopened: สถานะปัญหาได้ถูกตั้งค่าเป็น 'เปิด'
+    comments:
+      comment_from_html: ความคิดเห็นจาก %{user_link} เมื่อ %{comment_created_at}
+    reports:
+      reported_by_html: รายงานเป็น %{category} โดย %{user} เมื่อ %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, ความคิดเห็น #%{comment_id}'
+        note: 'หมายเหตุ #%{note_id}'
     show:
       reports:
         other: '%{count} การรายงาน'
@@ -1447,20 +1461,6 @@ th:
       other_issues_against_this_user: รายงานอื่น ๆ เกี่ยวกับผู้ใช้นี้
       no_other_issues: ไม่มีรายงานอื่น ๆ เกี่ยวกับผู้ใช้นี้
       comments_on_this_issue: ความคิดเห็นที่มีต่อปัญหานี้
-    resolve:
-      resolved: สถานะปัญหาได้ถูกตั้งค่าเป็น 'ปิดเรื่องแล้ว'
-    ignore:
-      ignored: สถานะปัญหาได้ถูกตั้งค่าเป็น 'ละเว้น'
-    reopen:
-      reopened: สถานะปัญหาได้ถูกตั้งค่าเป็น 'เปิด'
-    comments:
-      comment_from_html: ความคิดเห็นจาก %{user_link} เมื่อ %{comment_created_at}
-    reports:
-      reported_by_html: รายงานเป็น %{category} โดย %{user} เมื่อ %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, ความคิดเห็น #%{comment_id}'
-        note: 'หมายเหตุ #%{note_id}'
   issue_comments:
     create:
       comment_created: สร้างความคิดเห็นของคุณสำเร็จแล้ว
@@ -2139,7 +2139,6 @@ th:
         heading: ผู้ใช้
       page:
         confirm: ยืนยันผู้ใช้ที่เลือก
-        hide: ซ่อนผู้ใช้ที่เลือก
         empty: ไม่พบผู้ใช้ตรงตามที่กำหนด
       user:
         summary_html: '%{name} สร้างจากไอพี %{ip_address} เมื่อ %{date}'

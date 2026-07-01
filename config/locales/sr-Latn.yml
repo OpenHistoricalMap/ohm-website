@@ -1149,7 +1149,6 @@ sr-Latn:
         heading: Korisnici
       page:
         confirm: Potvrdi izabrane korisnike
-        hide: Sakrij izabrane korisnike
         empty: Nije pronađen nijedan korisnik
       user:
         summary_html: '%{name} napravljeno od %{ip_address} dana %{date}'

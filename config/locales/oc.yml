@@ -1350,6 +1350,20 @@ oc:
         one: 1 rapòrt
         other: '%{count} rapòrts'
       reported_item: Element raportat
+    resolve:
+      resolved: L'estat de l'incidéncia s'es establit en 'Reglat'
+    ignore:
+      ignored: L'estat de l'incidéncia s'es establit en 'Ignorat'
+    reopen:
+      reopened: L'estat de l'incidéncia s'es establit en 'Dobèrt'.
+    comments:
+      comment_from_html: Comentari de %{user_link} sus %{comment_created_at}
+    reports:
+      reported_by_html: Raportat coma %{category} per %{user} lo %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, comentari #%{comment_id}'
+        note: 'Nòta #%{note_id}'
     show:
       reports:
         zero: Ges de rapòrt
@@ -1367,20 +1381,6 @@ oc:
       other_issues_against_this_user: Autreis incidéncias còntra d'aqueste usatgier
       no_other_issues: I a pas d'autras incidéncias còntra d'aqueste usatgier.
       comments_on_this_issue: Comentaris sus aquesta incidéncia
-    resolve:
-      resolved: L'estat de l'incidéncia s'es establit en 'Reglat'
-    ignore:
-      ignored: L'estat de l'incidéncia s'es establit en 'Ignorat'
-    reopen:
-      reopened: L'estat de l'incidéncia s'es establit en 'Dobèrt'.
-    comments:
-      comment_from_html: Comentari de %{user_link} sus %{comment_created_at}
-    reports:
-      reported_by_html: Raportat coma %{category} per %{user} lo %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, comentari #%{comment_id}'
-        note: 'Nòta #%{note_id}'
   issue_comments:
     create:
       comment_created: Lo comentari es estat creat amb succès.
@@ -2158,7 +2158,6 @@ oc:
         heading: Utilizaires
       page:
         confirm: Confirmar los utilizaires seleccionats
-        hide: Amagar los utilizaires seleccionats
         empty: Cap d'utilizaire correspondent es pas estat trobat
       user:
         summary_html: '%{name} creat dempuèi %{ip_address} lo %{date}'

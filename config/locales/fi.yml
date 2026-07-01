@@ -54,6 +54,7 @@
 # Author: Tumm1
 # Author: Usp
 # Author: Veikk0.ma
+# Author: Wikipeedikko
 # Author: Yupik
 # Author: ZeiP
 ---
@@ -1399,6 +1400,7 @@ fi:
       ascend: Nousu
       descend: Lasku
       directions_courtesy_html: Reittiohjeet tarjoaa %{link}
+      check_demo_html: 'Lisätietoja: %{link}'
   issues:
     index:
       title: Tapaukset
@@ -1422,6 +1424,20 @@ fi:
         one: '%{count} ilmoitus'
         other: '%{count} ilmiantoa'
       reported_item: Ilmiannettu kohde
+    resolve:
+      resolved: Tapaus on merkitty ratkaistuksi
+    ignore:
+      ignored: Tapaus on merkitty aiheettomaksi
+    reopen:
+      reopened: Tapaus on merkitty käsittelyssä olevaksi
+    comments:
+      comment_from_html: Kommentti käyttäjältä %{user_link} %{comment_created_at}
+    reports:
+      reported_by_html: Käyttäjä %{user} ilmiantanut merkinnällä %{category} %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, kommenttitunnus %{comment_id}'
+        note: Karttailmoitustunnus %{note_id}
     show:
       reports:
         one: '%{count} ilmianto'
@@ -1439,20 +1455,8 @@ fi:
       other_issues_against_this_user: Muut tähän käyttäjään kohdistetut ilmiannot
       no_other_issues: Ei muita tähän käyttäjään kohdistuvia ilmiantoja.
       comments_on_this_issue: Tapauksen kommentit
-    resolve:
-      resolved: Tapaus on merkitty ratkaistuksi
-    ignore:
-      ignored: Tapaus on merkitty aiheettomaksi
-    reopen:
-      reopened: Tapaus on merkitty käsittelyssä olevaksi
-    comments:
       comment_from_html: Kommentti käyttäjältä %{user_link} %{comment_created_at}
-    reports:
-      reported_by_html: Käyttäjä %{user} ilmiantanut merkinnällä %{category} %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, kommenttitunnus %{comment_id}'
-        note: Karttailmoitustunnus %{note_id}
+      reassign_to_moderators: Uudelleenohjaa tapaus moderaattoreille
   issue_comments:
     create:
       comment_created: Kommentti jätetty
@@ -1490,9 +1494,13 @@ fi:
     create:
       successful_report: Ilmianto on rekisteröity
       provide_details: Täydennä puuttuvat tiedot
+  languages_panes:
+    select_language_list:
+      search_language: Hae...
   layouts:
     logo:
       alt_text: OpenHistoricalMap-logo
+    main_navigation: Pääsivu
     home: Siirry kotipaikkaan
     logout: Kirjaudu ulos
     log_in: Kirjaudu sisään
@@ -1511,6 +1519,9 @@ fi:
       käyttää vapaasti avoimella lisenssillä.
     intro_2_create_account: luomalla ensin käyttäjätunnuksen
     partners_title: Kumppanit
+    welcome_tou_notice_html: Käyttämällä tätä sivustoa tai jotakin muuta OpenStreetMap
+      Foundationin tarjoamaa infrastruktuuria hyväksyt samalla %{terms_link}.
+    terms_of_use: Käyttöehdot
     tou: Käyttöehdot
     help: Ohje
     about: Tietoja
@@ -1518,6 +1529,20 @@ fi:
     communities: Yhteisöt
     learn_more: Lisätietoja
     more: Lisää
+    header:
+      about: Tietoja
+      communities: Yhteisöt
+      copyright: Tekijänoikeudet
+      edit: Muokkaa
+      edit_with: 'Muokkaa: %{editor}'
+      export: Vie
+      gps_traces: GPS-jäljet
+      help: Ohje
+      history: Historia
+      log_out: Kirjaudu ulos
+      log_in: Kirjaudu sisään
+      more: Lisää
+      user_diaries: Päiväkirjamerkinnät
     select_language_button:
       title: Valitse kieli
   user_mailer:
@@ -1755,7 +1780,20 @@ fi:
     basic_preferences:
       show:
         title: Asetukset
+        editor_color_schemes:
+          auto: Sama kuin sivuston
         save: Päivitä asetukset
+    notification_preferences:
+      show:
+        title: Ilmoitusasetukset
+        changeset_comment: Muutoskokoelman kommentit
+        diary_comment: Päiväkirjan kommentit
+        direct_message: Suorat viestit
+        gpx_import_failure: 'GPS-jäljen tuonti: epäonnistui'
+        new_follower: Uudet seuraajat
+        save: Päivitä asetukset
+        delivery_mechanisms:
+          email: Sähköposti
   profiles:
     profile_sections:
       navigation:
@@ -1788,6 +1826,9 @@ fi:
         show: Näytä
         delete: Poista
         undelete: Peruuta poistaminen
+    heatmaps:
+      show:
+        cancel: Peru
   sessions:
     new:
       tab_title: Kirjaudu sisään
@@ -1798,6 +1839,8 @@ fi:
       login_button: Kirjaudu sisään
       with external: 'tai kirjaudu jonkun muun palvelun tunnuksilla:'
       or: tai
+      reset_to_login: Salasanasi on vanhentunut. Aseta uusi salasana, jotta voit kirjautua
+        sisään.
       auth failure: Kirjautuminen epäonnistui.
     destroy:
       title: Kirjaudu ulos
@@ -1934,6 +1977,11 @@ fi:
           title: Muut lähteet
           description: Muut lähteet ovat esillä OpenStreetMap-wikissä
       export_button: Vie
+      confirmation:
+        body: Haluatko ladata tämän alueen karttatiedot XML-muodossa? Huomaathan,
+          että suuret alueet voivat latautua hitaasti.
+        cancel: Peru
+        download: Lataa
     fixthemap:
       title: Ilmoita ongelmasta / Korjaa karttaa
       how_to_help:
@@ -2154,6 +2202,10 @@ fi:
       scale: 'Mittakaava:'
       custom_dimensions: Rajaa alue itse
       download: Lataa
+  webgl_error_panes:
+    show:
+      compact_message: WebGL on pakollinen tälle kartalle.
+      webgl_is_required_for_this_map: Tämän kartan näyttämiseen tarvitaan WebGL.
   traces:
     visibility:
       private: Yksityinen (vain pisteet ilman nimeä ja aikaleimoja)
@@ -2374,6 +2426,7 @@ fi:
         html: Osoitetta ei näytetä julkisesti, lisätietoja on sivulla %{privacy_policy_link}.
       or: tai
       use external auth: tai kirjaudu toisen palvelun tunnuksilla
+      verify_human: Vahvista, että olet ihminen
     no_such_user:
       title: Haettua käyttäjää ei ole olemassa
       heading: Käyttäjää %{user} ei ole olemassa
@@ -2412,12 +2465,25 @@ fi:
       activate_user: Aktivoi tämä käyttäjä
       confirm_user: Vahvista tämä käyttäjä
       unconfirm_user: Peru tämän käyttäjän vahvistus
+      suspend_user: Jäädytä tämä käyttäjä
       unsuspend_user: Peru tämän käyttäjän jäädytys
       hide_user: Piilota tämä käyttäjä
       unhide_user: Poista käyttäjän piilottaminen
       delete_user: Poista tämä käyttäjä
       confirm: Vahvista
       report: Ilmianna käyttäjä
+      title:
+        administrator: Tämä käyttäjä on ylläpitäjä.
+        moderator: Tämä käyttäjä on moderaattori
+      grant:
+        administrator: Myönnä ylläpitäjän oikeudet
+        moderator: Myönnä moderaattorin oikeudet
+        importer: Myönnä tuojan käyttöoikeudet
+        are_you_sure: Haluatko varmasti antaa roolin %{role} käyttäjälle %{name}?
+      revoke:
+        administrator: Poista ylläpitäjän oikeudet
+        moderator: Poista moderaattorin oikeudet
+        importer: Poista tuojan käyttöoikeudet
     go_public:
       flash success: Kaikki tekemäsi muokkaukset ovat nyt julkisia.
     issued_blocks:
@@ -2438,7 +2504,7 @@ fi:
         heading: Käyttäjät
       page:
         confirm: Vahvista valitut käyttäjät
-        hide: Piilota valitut käyttäjät
+        suspend: Jäädytä valitut käyttäjät
         empty: Käyttäjiä ei löytynyt.
       user:
         summary_html: '%{name} luotu %{date} osoitteesta %{ip_address}'
@@ -2635,6 +2701,18 @@ fi:
       tooltip: Merkkien selitykset
       tooltip_disabled: Ei käytettävissä tässä karttanäkymässä
     map:
+      navigation_control:
+        zoom_in: Lähennä
+        zoom_out: Loitonna
+      geolocate_control:
+        find_my_location: Näytä sijaintini
+        location_not_available: Sijainti ei ole saatavilla
+        metersPopup:
+          one: Olet %{count} metrin etäisyydellä tästä kohteesta
+          other: Olet %{count} metrin etäisyydellä tästä kohteesta
+        feetPopup:
+          one: Olet %{count} jalan etäisyydellä tästä kohteesta
+          other: Olet %{count} jalan etäisyydellä tästä kohteesta
       zoom:
         in: Lähennä
         out: Loitonna

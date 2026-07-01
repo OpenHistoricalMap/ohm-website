@@ -1448,6 +1448,20 @@ eu:
         one: txosten %{count}
         other: '%{count} txosten'
       reported_item: Salatutako elementua
+    resolve:
+      resolved: Arazoaren egoera 'Konponduta' dela ezarri da
+    ignore:
+      ignored: Arazoaren egoera 'Ez ikusi eginda' dela ezarri da
+    reopen:
+      reopened: Arazoaren egoera 'Irekita' dela ezarri da
+    comments:
+      comment_from_html: '%{user_link} erabiltzailearen iruzkina %{comment_created_at}(e)an'
+    reports:
+      reported_by_html: '%{user} erabiltzaileak %{category} gisa salatua. Data: %{updated_at}'
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, iruzkina #%{comment_id}'
+        note: 'Oharra #%{note_id}'
     show:
       reports:
         one: '%{count} report'
@@ -1465,20 +1479,6 @@ eu:
       other_issues_against_this_user: Beste arazo batzuk erabiltzaile honen aurka
       no_other_issues: Ez dago beste arazorik erabiltzaile honen aurka.
       comments_on_this_issue: Arazo honen inguruko iruzkinak
-    resolve:
-      resolved: Arazoaren egoera 'Konponduta' dela ezarri da
-    ignore:
-      ignored: Arazoaren egoera 'Ez ikusi eginda' dela ezarri da
-    reopen:
-      reopened: Arazoaren egoera 'Irekita' dela ezarri da
-    comments:
-      comment_from_html: '%{user_link} erabiltzailearen iruzkina %{comment_created_at}(e)an'
-    reports:
-      reported_by_html: '%{user} erabiltzaileak %{category} gisa salatua. Data: %{updated_at}'
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, iruzkina #%{comment_id}'
-        note: 'Oharra #%{note_id}'
   issue_comments:
     create:
       comment_created: Zure iruzkina arrakastaz sortu da
@@ -2492,7 +2492,6 @@ eu:
         heading: Erabiltzaileak
       page:
         confirm: Berretsi Hautatutako Erabiltzaileak
-        hide: Ezkutatu Hautatutako Erabiltzaileak
         empty: No matching users found
       user:
         summary_html: '%{date}n %{ip_address}tik %{name} sortu da'

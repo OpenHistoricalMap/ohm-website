@@ -1432,20 +1432,6 @@ ba:
         ignored: Иғтибарһыҙ ҡалдырылған
         open: Асыҡ
         resolved: Хәл ителде
-    show:
-      reports:
-        one: '%{count} хәбәр'
-        other: '%{count} хәбәрҙәр'
-      no_reports: Отчеттар юҡ
-      resolve: Хәл итергә
-      ignore: Иғтибарһыҙ ҡалдырырға
-      reopen: Яңынан асыу
-      reports_of_this_issue: Был мәсьәлә тураһында хәбәрҙәр
-      read_reports: Уҡылған хәбәрҙәр
-      new_reports: Яңы хәбәрҙәр
-      other_issues_against_this_user: Был ҡулланыусыға ҡаршы башҡа мәсьәләләр
-      no_other_issues: Был ҡулланыусыға ҡаршы башҡа мәсьәләләр юҡ.
-      comments_on_this_issue: Был мәсьәләгә комментарийҙар
     resolve:
       resolved: Мәсьәлә статусы 'Хәл ителгән' тип ҡуйылған
     ignore:
@@ -1461,6 +1447,20 @@ ba:
       reportable_title:
         diary_comment: '%{entry_title}, комментарий №%{comment_id}'
         note: Иҫкәрмә №%{note_id}
+    show:
+      reports:
+        one: '%{count} хәбәр'
+        other: '%{count} хәбәрҙәр'
+      no_reports: Отчеттар юҡ
+      resolve: Хәл итергә
+      ignore: Иғтибарһыҙ ҡалдырырға
+      reopen: Яңынан асыу
+      reports_of_this_issue: Был мәсьәлә тураһында хәбәрҙәр
+      read_reports: Уҡылған хәбәрҙәр
+      new_reports: Яңы хәбәрҙәр
+      other_issues_against_this_user: Был ҡулланыусыға ҡаршы башҡа мәсьәләләр
+      no_other_issues: Был ҡулланыусыға ҡаршы башҡа мәсьәләләр юҡ.
+      comments_on_this_issue: Был мәсьәләгә комментарийҙар
   issue_comments:
     create:
       comment_created: Һеҙҙең комментарий уңышлы өҫтәлде

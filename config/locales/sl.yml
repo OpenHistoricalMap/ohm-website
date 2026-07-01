@@ -1825,6 +1825,23 @@ sl:
       states:
         open: Odpri
         resolved: Razrešeno
+    resolve:
+      resolved: Stanje težave je nastavljeno na »Rešeno«
+    ignore:
+      ignored: Stanje težave je nastavljeno na »Prezrto«
+    reopen:
+      reopened: Stanje težave je nastavljeno na »Odprto«
+    comments:
+      comment_from_html: Komentar uporabnika %{user_link} dne %{comment_created_at}
+    reports:
+      reported_by_html: Sporočil_a %{user} kot %{category} dne %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, komentar #%{comment_id}'
+        note: 'Opomba #%{note_id}'
+    reporters:
+      reporters:
+        more_reporters: in še %{count}
     show:
       title:
         ignored: 'Prezrta težava #%{issue_id}'
@@ -1847,23 +1864,6 @@ sl:
       other_issues_against_this_user: Druge težave glede tega uporabnika
       no_other_issues: Ni drugih težav glede tega uporabnika.
       comments_on_this_issue: Komentarji o tej težavi
-    resolve:
-      resolved: Stanje težave je nastavljeno na »Rešeno«
-    ignore:
-      ignored: Stanje težave je nastavljeno na »Prezrto«
-    reopen:
-      reopened: Stanje težave je nastavljeno na »Odprto«
-    comments:
-      comment_from_html: Komentar uporabnika %{user_link} dne %{comment_created_at}
-    reports:
-      reported_by_html: Sporočil_a %{user} kot %{category} dne %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, komentar #%{comment_id}'
-        note: 'Opomba #%{note_id}'
-    reporters:
-      reporters:
-        more_reporters: in še %{count}
   issue_comments:
     create:
       comment_created: Vaš komentar je bil uspešno ustvarjen
@@ -1938,7 +1938,6 @@ sl:
     learn_more: Več o tem
     more: Več
     header:
-      ok: Potrdi
       select_language: Izberi jezik
     select_language_button:
       title: Izberi jezik
@@ -3137,7 +3136,6 @@ sl:
         search: Išči
       page:
         confirm: Potrdi izbrane uporabnike
-        hide: Skrij izbrane uporabnike
         empty: Nobenega uporabnika ni bilo mogoče najti
       user:
         summary_html: '%{name} ustvarjen iz %{ip_address} dne %{date}'

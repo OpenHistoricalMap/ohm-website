@@ -1545,6 +1545,20 @@ be:
         many: '%{count} скаргаў'
         other: '%{count} скаргі(-аў)'
       reported_item: Скарга
+    resolve:
+      resolved: Статус праблемы быў зменены на «Вырашана»
+    ignore:
+      ignored: Статус праблемы быў зменены на «Праігнаравана»
+    reopen:
+      reopened: Статус праблемы быў зменены на «Адкрыта»
+    comments:
+      comment_from_html: Каментарый ад %{user_link} у %{comment_created_at}
+    reports:
+      reported_by_html: Паведамлена як %{category} удзельнікам %{user} у %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, каментар #%{comment_id}'
+        note: 'Заўвага #%{note_id}'
     show:
       reports:
         one: '%{count} скарга'
@@ -1564,20 +1578,6 @@ be:
       other_issues_against_this_user: Іншыя праблемы з гэтым карыстальнікам
       no_other_issues: Няма іншых праблем з гэтым карыстальнікам
       comments_on_this_issue: Каментары па гэтай праблеме
-    resolve:
-      resolved: Статус праблемы быў зменены на «Вырашана»
-    ignore:
-      ignored: Статус праблемы быў зменены на «Праігнаравана»
-    reopen:
-      reopened: Статус праблемы быў зменены на «Адкрыта»
-    comments:
-      comment_from_html: Каментарый ад %{user_link} у %{comment_created_at}
-    reports:
-      reported_by_html: Паведамлена як %{category} удзельнікам %{user} у %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, каментар #%{comment_id}'
-        note: 'Заўвага #%{note_id}'
   issue_comments:
     create:
       comment_created: Ваш каментар быў паспяхова створаны
@@ -2530,7 +2530,6 @@ be:
         heading: Удзельнікі
       page:
         confirm: Пацвердзіць выбраных карыстальнікаў
-        hide: Схаваць выбраных карыстальнікаў
         empty: Адпаведныя карыстальнікі не знойдзеныя
       user:
         summary_html: '%{name} створана з %{ip_address} %{date}'

@@ -1524,6 +1524,20 @@ eo:
         ignored: Ignorita
         open: Malfermita
         resolved: Solvita
+    resolve:
+      resolved: Problemo estas solvita
+    ignore:
+      ignored: Problemo estas ignorita
+    reopen:
+      reopened: Problemo estas malfermita
+    comments:
+      comment_from_html: Komento fare de %{user_link} je %{comment_created_at}
+    reports:
+      reported_by_html: Raportita kiel %{category} fare de %{user} je %{updated_at}
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}, komento #%{comment_id}'
+        note: 'Rimarko #%{note_id}'
     show:
       reports:
         one: '%{count} raporto'
@@ -1541,20 +1555,6 @@ eo:
       other_issues_against_this_user: Aliaj problemoj pri tiu ĉi uzanto
       no_other_issues: Neniu alia problemo pri tiu ĉi uzanto.
       comments_on_this_issue: Komentoj al tiu ĉi problemo
-    resolve:
-      resolved: Problemo estas solvita
-    ignore:
-      ignored: Problemo estas ignorita
-    reopen:
-      reopened: Problemo estas malfermita
-    comments:
-      comment_from_html: Komento fare de %{user_link} je %{comment_created_at}
-    reports:
-      reported_by_html: Raportita kiel %{category} fare de %{user} je %{updated_at}
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}, komento #%{comment_id}'
-        note: 'Rimarko #%{note_id}'
   issue_comments:
     create:
       comment_created: Vi sukcese aldonis komenton
@@ -2641,7 +2641,6 @@ eo:
           one: '%{count} trovita uzanto'
           other: '%{count} trovitaj uzantoj'
         confirm: Konfirmi elektitajn uzantojn
-        hide: Kaŝi elektitajn uzantojn
         empty: Kongruaj uzantoj ne trovitaj
       user:
         summary_html: '%{name} kreita de %{ip_address} je %{date}'

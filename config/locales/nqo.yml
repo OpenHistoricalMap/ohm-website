@@ -1113,6 +1113,18 @@ nqo:
       reports: ߢߊߦߌߘߊߟߌ ߟߎ߫
       last_updated: ߟߏ߲ߘߐߦߊߟߌ ߞߐ߯ߟߕߊ
       reported_item: ߝߛߌ߬ ߟߊߞߏߝߐߣߍ߲
+    resolve:
+      resolved: ߝߌ߬ߛߌ ߟߌ߬ߤߟߊ ߓߘߊ߫ ߘߐߓߍ߲߬ ߊ߬ ߢߊߓߐ߫ ߞߊ߲ߡߊ߬
+    ignore:
+      ignored: ߝߌ߬ߛߌ ߟߌ߬ߤߟߊ ߓߘߊ߫ ߘߐߓߍ߲߬ ߊ߬ ߡߊߓߌ߬ߟߊ߬ ߞߊ߲ߡߊ߬
+    reopen:
+      reopened: ߝߌ߬ߛߌ ߟߌ߬ߤߟߊ ߓߘߊ߫ ߘߐߓߍ߲߬ ߊ߬ ߘߊߦߟߍ߬ ߞߊ߲ߡߊ߬
+    comments:
+      comment_from_html: ߡߙߌߣߊ߲ ߞߊ߬ ߝߘߊ߫ %{user_link} ߟߊ߫ %{comment_created_at} ߘߐ߫
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title} ߡߙߌߣߊ߲ #%{comment_id}'
+        note: 'ߦߟߌߣߐ #%{note_id}'
     show:
       report_created_at_html: ߞߏߝߐߟߌ߫ ߝߟߐ ߞߍ߫ ߘߊ߫ %{datetime}
       last_resolved_at_html: ߢߊߓߐߟߌ߫ ߟߊߓߊ߲ ߞߍ߫ ߘߊ߫ %{datetime}
@@ -1127,18 +1139,6 @@ nqo:
       other_issues_against_this_user: ߝߛߌ߬ ߜߘߍ߫ ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߣߌ߲߬ ߓߟߏ߫ ߌߞߐ߫
       no_other_issues: ߝߛߌ߬ ߜߘߍ߫ ߕߍ߫ ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߣߌ߲߬ ߓߟߴߏ߬ ߞߐ߫.
       comments_on_this_issue: ߡߙߌߣߊ߲ ߡߍ߲ ߠߎ߬ ߦߋ߫ ߝߌ߬ߛߌ ߣߌ߲߬ ߠߊ߫
-    resolve:
-      resolved: ߝߌ߬ߛߌ ߟߌ߬ߤߟߊ ߓߘߊ߫ ߘߐߓߍ߲߬ ߊ߬ ߢߊߓߐ߫ ߞߊ߲ߡߊ߬
-    ignore:
-      ignored: ߝߌ߬ߛߌ ߟߌ߬ߤߟߊ ߓߘߊ߫ ߘߐߓߍ߲߬ ߊ߬ ߡߊߓߌ߬ߟߊ߬ ߞߊ߲ߡߊ߬
-    reopen:
-      reopened: ߝߌ߬ߛߌ ߟߌ߬ߤߟߊ ߓߘߊ߫ ߘߐߓߍ߲߬ ߊ߬ ߘߊߦߟߍ߬ ߞߊ߲ߡߊ߬
-    comments:
-      comment_from_html: ߡߙߌߣߊ߲ ߞߊ߬ ߝߘߊ߫ %{user_link} ߟߊ߫ %{comment_created_at} ߘߐ߫
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title} ߡߙߌߣߊ߲ #%{comment_id}'
-        note: 'ߦߟߌߣߐ #%{note_id}'
   issue_comments:
     create:
       comment_created: ߌ ߟߊ߫ ߡߙߌߣߊ߲ ߛߌ߲ߘߟߌ ߓߘߊ߫ ߛߎߘߊ߲߫
@@ -1850,7 +1850,6 @@ nqo:
         heading: ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߟߎ߬
       page:
         confirm: ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ߫ ߓߊߕߐ߬ߡߐ߲߬ߣߍ߲ ߠߎ߬ ߟߊߛߙߋߦߊ߫
-        hide: ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ߫ ߓߊߕߐ߬ߡߐ߲߬ߣߍ߲ ߠߎ߬ ߢߡߊߘߏ߲߰
         empty: ߕߙߏ߬ߞߏ ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ߫ ߡߊ߫ ߛߐ߬ߘߐ߲߫
       user:
         summary_html: '%{name} ߛߌ߲ߘߌߣߍ߲߫ ߦߋ߫ %{ip_address} ߟߋ߬ ߡߊ߬ %{date} ߟߊ߫'

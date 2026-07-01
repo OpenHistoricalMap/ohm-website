@@ -1558,6 +1558,20 @@ ja:
         ignored: 無視
         open: 開く
         resolved: 解決済
+    resolve:
+      resolved: 問題の状態は「解決」に設定されました
+    ignore:
+      ignored: 問題の状態は「無視」に設定されました
+    reopen:
+      reopened: 問題の状態は「未解決」に設定されました
+    comments:
+      comment_from_html: '%{comment_created_at} の %{user_link} さんからのコメント'
+    reports:
+      reported_by_html: '%{user}による %{category} として%{updated_at}に報告済み'
+    helper:
+      reportable_title:
+        diary_comment: '%{entry_title}とコメント番号 %{comment_id}'
+        note: '注記 #%{note_id}'
     show:
       reports:
         other: '%{count}件のレポート'
@@ -1574,20 +1588,6 @@ ja:
       other_issues_against_this_user: この利用者に関するその他の問題点
       no_other_issues: この利用者に関するその他の問題点はありません。
       comments_on_this_issue: この問題に関するコメント
-    resolve:
-      resolved: 問題の状態は「解決」に設定されました
-    ignore:
-      ignored: 問題の状態は「無視」に設定されました
-    reopen:
-      reopened: 問題の状態は「未解決」に設定されました
-    comments:
-      comment_from_html: '%{comment_created_at} の %{user_link} さんからのコメント'
-    reports:
-      reported_by_html: '%{user}による %{category} として%{updated_at}に報告済み'
-    helper:
-      reportable_title:
-        diary_comment: '%{entry_title}とコメント番号 %{comment_id}'
-        note: '注記 #%{note_id}'
   issue_comments:
     create:
       comment_created: コメントは無事作成されました
@@ -2573,7 +2573,6 @@ ja:
         heading: 利用者
       page:
         confirm: 選択した利用者を承認
-        hide: 選択したユーザーを隠す
         empty: 該当する利用者が見つかりません
       user:
         summary_html: '%{name} は %{ip_address}から%{date}に作成されました。'
