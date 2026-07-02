@@ -103,7 +103,8 @@ OSM.Export = function (map) {
       .addEventListener("turbo:before-fetch-request", function (event) {
         event.detail.fetchOptions.headers.Accept = "application/xml";
       });
-    $("#export_overpass").on("click", async function (event) {event.preventDefault();
+    $("#export_overpass").on("click", async function (event) {
+      event.preventDefault();
       const downloadUrl = $(this).attr("href");
       const confirmed = await showConfirmationModal();
       if (confirmed) {
