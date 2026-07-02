@@ -54,6 +54,7 @@
 # Author: Sujiniku
 # Author: Surgical21
 # Author: Tamaki Wakita
+# Author: Tensama0415
 # Author: Tmv
 # Author: Tombi-aburage
 # Author: Vigorous action
@@ -2140,21 +2141,21 @@ ja:
       introduction: フリーで編集可能な世界地図、OpenHistoricalMapへようこそ。サインアップが完了し、マッピングの準備はすべて整いました。知っておかなければならない重要事項を簡単に説明します。
       whats_on_the_map:
         title: 地図上にあるもの
-        off_the_map_html: 含んではいけないもの %{doesnt} は、評価のような主観的なデータ、過去のデータ、仮想的な地物、そして著作権で保護された情報源からのデータなどです。特別な許可が得られている場合を除いて、オンライン地図や紙地図からの情報をコピーしてはいけません。
+        off_the_map_html: OpenHistoricalMap %{doesnt} は、架空の代替歴史、古い地図に見られる既知の誤り、そして著作権で保護された情報源からのデータなどです。特別な許可が得られている場合を除いて、オンライン地図や紙地図からの情報をコピーしてはいけません。
       basic_terms:
         title: マッピングのための基本的な用語
         paragraph_1: OpenHistoricalMap には独自の用語がいくつかあります。ここでは手早く、いくつかのキーワードを紹介しましょう。
         an_editor_html: '%{editor}は、地図を編集できるプログラムやウェブサイトです。'
         a_node_html: '%{node}は地図上の一点であり、単一のレストランや樹木などを意味します。'
         a_way_html: '%{way}は線形あるいは領域です。道路、水路、湖沼、建物などが該当します。'
-        a_tag_html: '%{tag}はノードやウェイについて補足するデータです。レストランの名称や、道路の速度制限などを意味します。'
+        a_tag_html: '%{tag}はノードやウェイについて補足するデータです。レストランの名称や、橋が建てられた年などを意味します。'
         editor: 編集者
         node: ノード
         way: ウェイ
         tag: タグ
       rules:
         title: ルール
-        para_1_html: OpenHistoricalMap には正規の規約がいくつかありますが、すべての利用者とコミュニティには礼儀を守り相手に敬意を払った協力と意思疎通をお願いしています。
+        para_1_html: OpenHistoricalMapに公式なルールはほとんどありませんが、参加者がコミュニティと協力し、コミュニケーションを取ることを期待していいます。手作業ではない編集活動を検討している場合は%{imports_link}および%{automated_edits_link}のガイドラインを読み、それらに従ってください。
         imports: インポート
         automated_edits: 自動編集
       start_mapping: マッピングを開始

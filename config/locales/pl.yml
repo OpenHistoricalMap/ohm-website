@@ -45,6 +45,7 @@
 # Author: Nemo bis
 # Author: Odie2
 # Author: OrlPL
+# Author: PanWor
 # Author: Pio387
 # Author: Przemub
 # Author: Psokol
@@ -512,7 +513,7 @@ pl:
       wiki_link:
         key: Strona Wiki klucza %{key}
         tag: Strona Wiki znacznika %{key}=%{value}
-      wikidata_link: '%{page} element na Wikidata'
+      wikidata_link: Element %{page} w Wikidanych
       wikipedia_link: Artykuł %{page} w Wikipedii
       wikimedia_commons_link: Plik %{page} na Wikimedia Commons
       telephone_link: Zadzwoń pod %{phone_number}

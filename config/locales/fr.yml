@@ -1930,12 +1930,12 @@ fr:
         az: Azéri
         bcl: Bikol central
         bs: Bosnien
-        br: Breton
+        br: breton
         ca: Catalan
         en: Anglais
         es: Espagnol
         eo: Espéranto
-        aln: Albanais guégue
+        aln: guègue
         kw: cornique
         lt: Lituanien
         nl: Néerlandais
@@ -1947,7 +1947,7 @@ fr:
         diq: Dimli
         ru: Russe
         yi: Yiddish
-        he: Hébreu
+        he: hébreu
         bn: Bangla
         th: Thaï
         my: Birman
