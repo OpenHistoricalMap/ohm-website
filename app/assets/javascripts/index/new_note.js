@@ -112,69 +112,58 @@ OSM.NewNote = function (map) {
   };
 
   page.load = function (path) {
-    // the original page.load content is the function below, and is used when one visits this page, be it first load OR later routing change
-    // below, we wrap "if map.timeslider" so we only try to add the timeslider if we don't already have it
-    function originalLoadFunction () {
-      control.addClass("active");
+    control.addClass("active");
 
-      map.addLayer(noteLayer);
+    map.addLayer(noteLayer);
 
-      const params = new URLSearchParams(path.substring(path.indexOf("?")));
-      let markerLatlng;
+    const params = new URLSearchParams(path.substring(path.indexOf("?")));
+    let markerLatlng;
 
-      if (params.has("lat") && params.has("lon")) {
-        markerLatlng = { lat: params.get("lat"), lng: params.get("lon") };
-      } else {
-        markerLatlng = map.getCenter();
-      }
+    if (params.has("lat") && params.has("lon")) {
+      markerLatlng = { lat: params.get("lat"), lng: params.get("lon") };
+    } else {
+      markerLatlng = map.getCenter();
+    }
 
-      map.panInside(markerLatlng, {
-        padding: [50, 50]
-      });
+    map.panInside(markerLatlng, {
+      padding: [50, 50]
+    });
 
-      addNewNoteMarker(markerLatlng);
+    addNewNoteMarker(markerLatlng);
 
-      content.find("textarea")
-        .on("input", updateControls)
-        .attr("readonly", "readonly") // avoid virtual keyboard popping up on focus
-        .trigger("focus")
-        .removeAttr("readonly");
+    content.find("textarea")
+      .on("input", updateControls)
+      .attr("readonly", "readonly") // avoid virtual keyboard popping up on focus
+      .trigger("focus")
+      .removeAttr("readonly");
 
-      content.find("input[type=submit]").on("click", function (e) {
-        const location = newNoteMarker.getLatLng().wrap();
-        const text = content.find("textarea").val();
+    content.find("input[type=submit]").on("click", function (e) {
+      const location = newNoteMarker.getLatLng().wrap();
+      const text = content.find("textarea").val();
 
-        e.preventDefault();
-        $(this).prop("disabled", true);
-        newNoteMarker.options.draggable = false;
-        newNoteMarker.dragging.disable();
+      e.preventDefault();
+      $(this).prop("disabled", true);
+      newNoteMarker.options.draggable = false;
+      newNoteMarker.dragging.disable();
 
-        createNote(location, text, (feature) => {
-          if (typeof OSM.user === "undefined") {
-            const anonymousNotesCount = Number(OSM.cookies.get("_osm_anonymous_notes_count")) || 0;
+      createNote(location, text, (feature) => {
+        if (typeof OSM.user === "undefined") {
+          const anonymousNotesCount = Number(OSM.cookies.get("_osm_anonymous_notes_count")) || 0;
             OSM.cookies.set("_osm_anonymous_notes_count", anonymousNotesCount + 1, { expires: 14 });
-          }
-          content.find("textarea").val("");
-          addCreatedNoteMarker(feature);
-          OSM.router.route("/note/" + feature.properties.id);
-        });
+        }
+        content.find("textarea").val("");
+        addCreatedNoteMarker(feature);
+        OSM.router.route("/note/" + feature.properties.id);
       });
+    });
 
-      map.on("click", moveNewNoteMarkerToClick);
-      addNoteButton.on("disabled enabled", updateControls);
-      updateControls();
+    map.on("click", moveNewNoteMarkerToClick);
+    addNoteButton.on("disabled enabled", updateControls);
+    updateControls();
 
-      return map.getState();
-    } // end originalLoadFunction
+    addOpenHistoricalMapTimeSlider(map);
 
-    // "if map.timeslider" only try to add the timeslider if we don't already have it
-    if (map.timeslider) {
-      originalLoadFunction();
-    }
-    else {
-      const params = querystring.parse(location.hash ? location.hash.substring(1) : location.search.substring(1));
-      addOpenHistoricalMapTimeSlider(map, params, originalLoadFunction);
-    }
+    return map.getState();
   };
 
   page.unload = function () {

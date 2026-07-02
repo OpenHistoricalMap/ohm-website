@@ -1,10 +1,10 @@
 /*
  * the wrapper function for adding the OpenHistoricalMap TimeSlider to the OHM map
- * called by the various OSM views to add this to their map, with optional callbacks
+ * called by the various OSM views to add this to their map
  */
 
-function addOpenHistoricalMapTimeSlider (map, params, onreadycallback) {
-  const historicalLayerKeys = ['historical', 'woodblock', 'japanesescroll', 'railway'];
+function addOpenHistoricalMapTimeSlider(map) {
+  if (map.timeslider) return;
 
   // Same options as the _osm_location cookie in index.js.
   const expiry = new Date();
@@ -31,6 +31,7 @@ function addOpenHistoricalMapTimeSlider (map, params, onreadycallback) {
     },
     position: 'bottomright',
   };
+  const params = OSM.parseHash();
   const date = (params && params.date) || Cookies.get('_ohm_timeslider_date');
   if (date && typeof date == 'string' && date.match(/^\-?\d{1,4}\-\d\d\-\d\d$/)) {
     sliderOptions.date = date;
@@ -43,8 +44,6 @@ function addOpenHistoricalMapTimeSlider (map, params, onreadycallback) {
   // add the slider IF the OSM vector map is the layer showing
   if (getHistoryLayerIfShowing()) {
     addTimeSliderToMap(sliderOptions);
-  } else {
-    onreadycallback();
   }
 
   map.on('baselayerchange', function () {
@@ -75,7 +74,7 @@ function addOpenHistoricalMapTimeSlider (map, params, onreadycallback) {
   function getHistoryLayerIfShowing () {
     let ohmlayer;
     map.eachLayer(function (layer) { // there's only 1 or 0 time layers at a time, so this works
-      if (historicalLayerKeys.indexOf(layer.options.layerId) !== -1) ohmlayer = layer;
+      if (layer instanceof L.OSM.OHM) ohmlayer = layer;
     });
     return ohmlayer;
   }
@@ -85,16 +84,5 @@ function addOpenHistoricalMapTimeSlider (map, params, onreadycallback) {
     slideroptions.vectorLayer = ohmlayer;
 
     map.timeslider = new L.Control.OHMTimeSlider(slideroptions).addTo(map);
-
-    // if a callback was given for when the slider is ready, poll until it becomes ready
-    if (onreadycallback) {
-      var waitforslider = setInterval(() => {
-        var ready = ! getHistoryLayerIfShowing() || map.timeslider;
-        if (ready) {
-          clearInterval(waitforslider);
-          onreadycallback();
-        }
-      }, 0.1 * 1000);
-    }
   }
 }

@@ -36,7 +36,7 @@ gem "rtlcss"
 gem "autoprefixer-rails"
 
 # Use image_optim to optimise images
-gem "image_optim", :github => "tomhughes/image_optim", :ref => "svgo-config"
+gem "image_optim"
 gem "image_optim_rails"
 
 # Use argon2 for password hashing
@@ -129,7 +129,8 @@ gem "opentelemetry-sdk", :require => false
 
 # Used to generate images for traces
 gem "bzip2-ffi"
-gem "ffi-libarchive"
+# Pull 1.2.5 from chef repo (not yet available at rubygems); may clear noise from CI logs
+gem "ffi-libarchive", github: "chef/ffi-libarchive", tag: "v1.2.5"
 # Use https://github.com/dark-panda/gd2-ffij/pull/28 for Docker/macOS compatibility
 gem "gd2-ffij", :github => "rkoeze/gd2-ffij", :ref => "a203a8d5ef004a4198950e86329228fe3f331d06"
 gem "marcel"

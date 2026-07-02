@@ -284,24 +284,14 @@ $(function () {
     };
 
     page.load = function () {
-      // the original page.load content is the function below, and is used when one visits this page, be it first load OR later routing change
-      // below, we wrap "if map.timeslider" so we only try to add the timeslider if we don't already have it
-      function originalLoadFunction() {
-        const params = new URLSearchParams(location.search);
-        if (params.has("query")) {
-          $("#sidebar .search_form input[name=query]").value(params.get("query"));
-        }
-        return map.getState();
-      } // end originalLoadFunction
+      const params = new URLSearchParams(location.search);
+      if (params.has("query")) {
+        $("#sidebar .search_form input[name=query]").value(params.get("query"));
+      }
 
-      // "if map.timeslider" only try to add the timeslider if we don't already have it
-      if (map.timeslider) {
-        originalLoadFunction();
-      }
-      else {
-        const params = querystring.parse(location.hash ? location.hash.substring(1) : location.search.substring(1));
-        addOpenHistoricalMapTimeSlider(map, params, originalLoadFunction);
-      }
+      addOpenHistoricalMapTimeSlider(map);
+
+      return map.getState();
     };
 
     return page;

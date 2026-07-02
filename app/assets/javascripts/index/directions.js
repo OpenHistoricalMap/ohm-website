@@ -258,27 +258,16 @@ OSM.Directions = function (map) {
   }
 
   page.pushstate = page.popstate = page.load = function () {
-    // the original page.load content is the function below, and is used when one visits this page, be it first load OR later routing change
-    // below, we wrap "if map.timeslider" so we only try to add the timeslider if we don't already have it
-    function originalLoadFunction () {
-      initializeFromParams();
+    initializeFromParams();
 
-      $(".search_form").hide();
-      $(".directions_form").show();
+    $(".search_form").hide();
+    $(".directions_form").show();
 
-      sidebarLoaded().then(enableListeners);
+    sidebarLoaded().then(enableListeners);
 
-      map.setSidebarOverlaid(!endpoints[0].latlng || !endpoints[1].latlng);
-    }  // end originalLoadFunction
+    map.setSidebarOverlaid(!endpoints[0].latlng || !endpoints[1].latlng);
 
-    // "if map.timeslider" only try to add the timeslider if we don't already have it
-    if (map.timeslider) {
-      originalLoadFunction();
-    }
-    else {
-      var params = querystring.parse(location.hash ? location.hash.substring(1) : location.search.substring(1));
-      addOpenHistoricalMapTimeSlider(map, params, originalLoadFunction);
-    }
+    addOpenHistoricalMapTimeSlider(map);
   };
 
   page.unload = function () {
