@@ -9,7 +9,6 @@
 //= require leaflet.osm
 //= require maplibre-gl/dist/maplibre-gl
 //= require leaflet.maplibre
-//= require leaflet.shortbread
 //= require leaflet.thunderforest
 //= require i18n
 //= require leaflet.maptiler
