@@ -91,10 +91,56 @@ OSM.Search = function (map) {
     }
   }
 
+  // Compare two ISO 8601 dates, tolerating partial (year, year-month) and BCE values.
+  // Same logic as compareDates() in query.js; kept local until we share a date util.
+  function compareDates(date1, date2) {
+    const match1 = date1.match(/^(-?\d+)(?:-(\d{1,2}))?(?:-(\d{1,2}))?/);
+    const match2 = date2.match(/^(-?\d+)(?:-(\d{1,2}))?(?:-(\d{1,2}))?/);
+    if (!match1 || !match2) return date1.localeCompare(date2);
+
+    const [, year1, month1, day1] = match1;
+    const [, year2, month2, day2] = match2;
+    if (parseInt(year1, 10) !== parseInt(year2, 10)) return parseInt(year1, 10) - parseInt(year2, 10);
+
+    const m1 = month1 ? parseInt(month1, 10) : 1;
+    const m2 = month2 ? parseInt(month2, 10) : 1;
+    if (m1 !== m2) return m1 - m2;
+
+    return (day1 ? parseInt(day1, 10) : 1) - (day2 ? parseInt(day2, 10) : 1);
+  }
+
+  // The slider only accepts full YYYY-MM-DD, so pad a year or year-month before setDate().
+  function padDate(value) {
+    if (value === null || value === undefined || value === "") return null;
+    const parts = String(value).trim().match(/^(-?\d{1,4})(?:-(\d{2}))?(?:-(\d{2}))?/);
+    if (!parts) return null;
+    return `${parts[1]}-${parts[2] || "01"}-${parts[3] || "01"}`;
+  }
+
+  // Move the slider so the picked feature is visible. If it already exists at the
+  // current time we leave the slider alone.
+  function adjustTimeSliderToResult(data) {
+    if (!map.timeslider) return;
+
+    const startDate = data.startDate != null && data.startDate !== "" ? String(data.startDate) : null;
+    const endDate = data.endDate != null && data.endDate !== "" ? String(data.endDate) : null;
+    if (!startDate && !endDate) return;
+
+    const current = map.timeslider.getDate();
+    const afterStart = !startDate || compareDates(startDate, current) <= 0;
+    const beforeEnd = !endDate || compareDates(endDate, current) > 0;
+    if (afterStart && beforeEnd) return; // already visible now
+
+    // out of view: jump to start_date, or to end_date when there is no start
+    const target = padDate(startDate || endDate);
+    if (target) map.timeslider.setDate(target);
+  }
+
   function clickSearchResult(e) {
     const data = $(this).data();
 
     panToSearchResult(data);
+    adjustTimeSliderToResult(data);
 
     // Let clicks to object browser links propagate.
     if (data.type && data.id) return;
@@ -116,23 +162,34 @@ OSM.Search = function (map) {
   };
 
   page.load = function () {
-    $(".search_results_entry[data-href]").each(function (index) {
-      const entry = $(this);
-      fetchReplace(this.dataset, entry.children().first())
-        .then(() => {
-          // go to first result of first geocoder
-          if (index === 0) {
-            const firstResult = entry.find("*[data-lat][data-lon]:first").first();
-            if (firstResult.length) {
-              panToSearchResult(firstResult.data());
+    // the original page.load content is the function below, and is used when one visits this page, be it first load OR later routing change
+    // below, we wrap "if map.timeslider" so we only try to add the timeslider if we don't already have it
+    function originalLoadFunction () {
+      $(".search_results_entry[data-href]").each(function (index) {
+        const entry = $(this);
+        fetchReplace(this.dataset, entry.children().first())
+          .then(() => {
+            // go to first result of first geocoder
+            if (index === 0) {
+              const firstResult = entry.find("*[data-lat][data-lon]:first").first();
+              if (firstResult.length) {
+                panToSearchResult(firstResult.data());
+              }
             }
-          }
-        });
-    });
+          });
+      });
 
-    addOpenHistoricalMapTimeSlider(map);
+      return map.getState();
+    }  // end originalLoadFunction
 
-    return map.getState();
+    // "if map.timeslider" only try to add the timeslider if we don't already have it
+    if (map.timeslider) {
+      originalLoadFunction();
+    }
+    else {
+      var params = querystring.parse(location.hash.substring(1));
+      addOpenHistoricalMapTimeSlider(map, params, originalLoadFunction);
+    }
   };
 
   page.unload = function () {
