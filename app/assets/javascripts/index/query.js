@@ -320,41 +320,11 @@ OSM.Query = function (map) {
     return match ? parseInt(match[1], 10) < 1000 : false;
   }
 
-  // Compare ISO 8601 dates correctly (handles BCE dates where string comparison fails)
-  function compareDates(date1, date2) {
-    if (!date1 && !date2) return 0;
-    if (!date1) return -1;
-    if (!date2) return 1;
-
-    const match1 = date1.match(/^(-?\d+)(?:-(\d{1,2}))?(?:-(\d{1,2}))?/);
-    const match2 = date2.match(/^(-?\d+)(?:-(\d{1,2}))?(?:-(\d{1,2}))?/);
-    if (!match1 || !match2) return date1.localeCompare(date2);
-
-    const [, year1Str, month1Str, day1Str] = match1;
-    const [, year2Str, month2Str, day2Str] = match2;
-    const year1Int = parseInt(year1Str, 10);
-    const year2Int = parseInt(year2Str, 10);
-
-    if (year1Int !== year2Int) return year1Int - year2Int;
-
-    const month1 = month1Str ? parseInt(month1Str, 10) : 1;
-    const month2 = month2Str ? parseInt(month2Str, 10) : 1;
-    if (month1 !== month2) return month1 - month2;
-
-    const day1 = day1Str ? parseInt(day1Str, 10) : 1;
-    const day2 = day2Str ? parseInt(day2Str, 10) : 1;
-    return day1 - day2;
-  }
-
   function filterByDate(elements, currentDate) {
     if (!currentDate) return elements;
     return elements.filter(element => {
       const tags = element.tags || {};
-      const startDate = tags.start_date;
-      const endDate = tags.end_date;
-      if (startDate && compareDates(startDate, currentDate) > 0) return false;
-      if (endDate && compareDates(endDate, currentDate) <= 0) return false;
-      return true;
+      return OSM.Date.existsAt(tags.start_date, tags.end_date, currentDate);
     });
   }
 

@@ -91,48 +91,17 @@ OSM.Search = function (map) {
     }
   }
 
-  // Compare two ISO 8601 dates, tolerating partial (year, year-month) and BCE values.
-  // Same logic as compareDates() in query.js; kept local until we share a date util.
-  function compareDates(date1, date2) {
-    const match1 = date1.match(/^(-?\d+)(?:-(\d{1,2}))?(?:-(\d{1,2}))?/);
-    const match2 = date2.match(/^(-?\d+)(?:-(\d{1,2}))?(?:-(\d{1,2}))?/);
-    if (!match1 || !match2) return date1.localeCompare(date2);
-
-    const [, year1, month1, day1] = match1;
-    const [, year2, month2, day2] = match2;
-    if (parseInt(year1, 10) !== parseInt(year2, 10)) return parseInt(year1, 10) - parseInt(year2, 10);
-
-    const m1 = month1 ? parseInt(month1, 10) : 1;
-    const m2 = month2 ? parseInt(month2, 10) : 1;
-    if (m1 !== m2) return m1 - m2;
-
-    return (day1 ? parseInt(day1, 10) : 1) - (day2 ? parseInt(day2, 10) : 1);
-  }
-
-  // The slider only accepts full YYYY-MM-DD, so pad a year or year-month before setDate().
-  function padDate(value) {
-    if (value === null || value === undefined || value === "") return null;
-    const parts = String(value).trim().match(/^(-?\d{1,4})(?:-(\d{2}))?(?:-(\d{2}))?/);
-    if (!parts) return null;
-    return `${parts[1]}-${parts[2] || "01"}-${parts[3] || "01"}`;
-  }
-
   // Move the slider so the picked feature is visible. If it already exists at the
   // current time we leave the slider alone.
   function adjustTimeSliderToResult(data) {
     if (!map.timeslider) return;
+    if (!data.startDate && !data.endDate) return;
 
-    const startDate = data.startDate != null && data.startDate !== "" ? String(data.startDate) : null;
-    const endDate = data.endDate != null && data.endDate !== "" ? String(data.endDate) : null;
-    if (!startDate && !endDate) return;
-
-    const current = map.timeslider.getDate();
-    const afterStart = !startDate || compareDates(startDate, current) <= 0;
-    const beforeEnd = !endDate || compareDates(endDate, current) > 0;
-    if (afterStart && beforeEnd) return; // already visible now
+    // leave the slider alone if the feature already exists at the current time
+    if (OSM.Date.existsAt(data.startDate, data.endDate, map.timeslider.getDate())) return;
 
     // out of view: jump to start_date, or to end_date when there is no start
-    const target = padDate(startDate || endDate);
+    const target = OSM.Date.padDate(data.startDate || data.endDate, "start");
     if (target) map.timeslider.setDate(target);
   }
 
