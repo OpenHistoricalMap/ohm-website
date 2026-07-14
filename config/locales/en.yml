@@ -6,7 +6,7 @@ en:
       brief: "%{year}"
       brief_bce: "%{year} BCE"
       brief_ce: "%{year} CE"
-      heatmap: "%B %-d"
+      contribution_calendar: "%B %-d"
       range: "%{start}\u2009–\u2009%{end}"
   time:
     formats:
@@ -3786,7 +3786,7 @@ en:
     home:
       marker_title: My home location
       not_set: Home location is not set for your account
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: "No contributions on %{date}"
         contributions:
