@@ -10,6 +10,12 @@ L.OSM.OHM = L.OSM.MaplibreGL.extend({
   onAdd: function (map) {
     L.OSM.MaplibreGL.prototype.onAdd.call(this, map);
 
+    // ohmVectorStyles is filled by @openhistoricalmap/map-styles (required in index.js).
+    // In the JS test suite that bundle is not loaded, so skip the language/style
+    // setup instead of crashing on an undefined style.
+    const baseStyle = ohmVectorStyles[this.ohmStyleName];
+    if (!baseStyle) return;
+
     // Add multilingual awareness
     const language = new MapboxLanguage({
       defaultLanguage: 'mul'
@@ -32,7 +38,7 @@ L.OSM.OHM = L.OSM.MaplibreGL.extend({
     }
     // console.info(`language:\n  preferred: ${OSM.preferred_languages}\n  browser: ${navigator.language}\n  using: ${selectedLanguage}`);
     language.supportedLanguages.push(selectedLanguage);
-    let style = language.setLanguage(ohmVectorStyles[this.ohmStyleName], selectedLanguage);
+    let style = language.setLanguage(baseStyle, selectedLanguage);
 
     this.getMaplibreMap().setStyle(style);
   },
