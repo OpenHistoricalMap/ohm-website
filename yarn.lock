@@ -358,10 +358,10 @@
     whatwg-fetch "^3.6.20"
     which-polygon "2.2.1"
 
-"@openhistoricalmap/map-styles@^0.9.8":
-  version "0.9.15"
-  resolved "https://registry.yarnpkg.com/@openhistoricalmap/map-styles/-/map-styles-0.9.15.tgz#42c71e1fae4258fabcf1b5e37e56a2f54c67a605"
-  integrity sha512-7VfYgo+Q4xFH+0/haJc6LvGpHKSb1yak/kRMTIKr4gf0oenERvIM/fsSSt/A59XaPcTaR4Poha9bfu01tBYSPw==
+"@openhistoricalmap/map-styles@^0.9.16":
+  version "0.9.16"
+  resolved "https://registry.yarnpkg.com/@openhistoricalmap/map-styles/-/map-styles-0.9.16.tgz#264ab256133455b2f7d07583b6b6c8646bead7e0"
+  integrity sha512-BaxIVmL2IQ9dITGD/LmmgSJEj6hiCf5xylCpaAuPt0AnyixC0+GRYWi2Pvfj2gRjJJKsZBeOrJKzSg15O41U6w==
   dependencies:
     camelcase "^9.0.0"
     fs-extra "^11.3.4"
