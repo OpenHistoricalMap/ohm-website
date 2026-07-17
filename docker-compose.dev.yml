@@ -32,7 +32,7 @@ services:
       - web_network
 
   db:
-    image: ghcr.io/openhistoricalmap/db:0.0.1-0.dev.git.3101.ha4a4757
+    image: ghcr.io/openhistoricalmap/db:0.0.1-0.dev.git.3423.h66378a9e
     ports:
       - "54321:5432"
     env_file:
