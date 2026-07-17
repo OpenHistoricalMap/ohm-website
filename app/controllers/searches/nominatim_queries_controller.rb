@@ -74,6 +74,7 @@ module Searches
                       :min_lat => min_lat, :max_lat => max_lat,
                       :min_lon => min_lon, :max_lon => max_lon,
                       :prefix => prefix, :name => name, :suffix => suffix,
+                      :start_date => start_date, :end_date => end_date,
                       :type => object_type, :id => object_id)
       end
     rescue StandardError => e
