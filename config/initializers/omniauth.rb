@@ -10,6 +10,20 @@ facebook_options = { :name => "facebook", :scope => "email", :client_options => 
 microsoft_options = { :name => "microsoft", :scope => "openid User.Read" }
 github_options = { :name => "github", :scope => "user:email" }
 wikipedia_options = { :name => "wikipedia", :client_options => { :site => "https://meta.wikimedia.org" } }
+osm_oidc_options = { :name => :openstreetmap,
+                     :scope => [Settings.openstreetmap_auth_scopes, :openid].flatten.compact.uniq.map(&:to_sym),
+                     :issuer => "https://www.openstreetmap.org",
+                     :discovery => true,
+                     :response_type => :code,
+                     :uid_field => "sub",
+                     :client_options => {
+                       :port => 443,
+                       :scheme => "https",
+                       :host => "www.openstreetmap.org",
+                       :identifier => Settings.openstreetmap_auth_id,
+                       :secret => Settings.openstreetmap_auth_secret,
+                       :redirect_uri => format("%<protocol>s://%<server_url>s/auth/openstreetmap/callback", :protocol => Settings.server_protocol, :server_url => Settings.server_url)
+                     } }
 
 google_options[:openid_realm] = Settings.google_openid_realm if Settings.key?(:google_openid_realm)
 
@@ -24,4 +38,6 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   provider :microsoft_graph, Settings.microsoft_auth_id, Settings.microsoft_auth_secret, microsoft_options if Settings.key?(:microsoft_auth_id)
   provider :github, Settings.github_auth_id, Settings.github_auth_secret, github_options if Settings.key?(:github_auth_id)
   provider :mediawiki, Settings.wikipedia_auth_id, Settings.wikipedia_auth_secret, wikipedia_options if Settings.key?(:wikipedia_auth_id)
+  # OSM as oauth2 to OHM
+  provider :openid_connect, osm_oidc_options
 end
