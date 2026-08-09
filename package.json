@@ -1,13 +1,19 @@
 {
-  "name": "openstreetmap",
+  "name": "openhistoricalmap",
   "private": true,
+  "scripts": {
+    "postinstall": "mkdir -p public && ln -sfn ../node_modules/@openhistoricalmap/map-styles/dist public/map-styles"
+  },
   "dependencies": {
     "@mapbox/mapbox-gl-rtl-text": "*",
     "@mapbox/polyline": "*",
     "@maplibre/maplibre-gl-leaflet": "*",
     "@maptiler/maplibre-gl-omt-language": "*",
-    "@openstreetmap/id": "2.42.0",
+    "@openhistoricalmap/id": "2.39.5-ohm.2",
+    "@openhistoricalmap/map-styles": "^0.9.17",
+    "@openhistoricalmap/maplibre-gl-language": "^0.1.0",
     "bootstrap-icons": "*",
+    "bs-custom-file-input": "^1.3.4",
     "i18n-js": "*",
     "js-cookie": "*",
     "leaflet": "*",
@@ -15,6 +21,7 @@
     "make-plural": "*",
     "maplibre-gl": "< 6.0.0",
     "osm-community-index": "*",
+    "qs": "^6.9.4",
     "tag2link": "*",
     "terra-draw": "*",
     "terra-draw-maplibre-gl-adapter": "*"

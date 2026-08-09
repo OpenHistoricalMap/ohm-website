@@ -84,6 +84,7 @@ gem "omniauth-github"
 gem "omniauth-google-oauth2"
 gem "omniauth-mediawiki"
 gem "omniauth-microsoft_graph"
+gem "omniauth_openid_connect", "~> 0.8.0"
 gem "omniauth-rails_csrf_protection"
 
 # Doorkeeper for OAuth2
