@@ -146,7 +146,7 @@ L.OSM.share = function (options) {
 
       $("#embed_html").val(
         "<iframe width=\"425\" height=\"350\" src=\"" +
-          escapeHTML($("#embed_link").prop("href")) +
+          escapeHTML(OSM.EMBED_SERVER_URL + location.hash + "&bbox=" + map.getBounds().toBBoxString()) +
           "\" style=\"border: 1px solid black\"></iframe><br/>" +
           "<small><a href=\"" + escapeHTML($("#long_link").prop("href")) + "\">" +
           escapeHTML(OSM.i18n.t("javascripts.share.view_larger_map")) + "</a></small>");
