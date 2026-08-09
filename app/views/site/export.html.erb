@@ -18,7 +18,11 @@
   </div>
 
   <h4><%= t ".licence" %></h4>
-  <p><%= t ".licence_details_html", :odbl_link => link_to(t(".odbl"), t(".odbl_url")) %></p>
+  <p>
+    <%= t ".licence_details_ohm_html",
+          :cc0_link => link_to(t(".cc0"), t(".cc0_url")),
+          :copyright_page_link => link_to(t(".copyright_page"), copyright_path) %>
+  </p>
 
   <div id="export_osm_too_large">
     <p class="alert alert-warning">
@@ -35,7 +39,7 @@
   <p><%= t ".too_large.advice" %></p>
 
   <dl class="px-3">
-    <% %w[overpass planet geofabrik other].each do |source| %>
+    <% %w[overpass planet other].each do |source| %>
       <dt><%= link_to t(".too_large.#{source}.title"), t(".too_large.#{source}.url"), :id => "export_#{source}" %></dt>
       <dd><%= t ".too_large.#{source}.description" %></dd>
     <% end %>
