@@ -1,3 +1,55 @@
+- leafletOsmId: "Historical"
+  code: "O"
+  layerId: "historical"
+  nameId: "historical"
+  canEmbed: true
+  source: openhistoricalmap
+  isVectorStyle: true
+  styleUrl: "/map-styles/historical/historical.json"
+  credit:
+    id: 'make_a_donation'
+    href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
+    donate: true
+
+- leafletOsmId: "Railway"
+  code: "R"
+  layerId: "railway"
+  nameId: "railway"
+  canEmbed: true
+  source: openhistoricalmap
+  isVectorStyle: true
+  styleUrl: "/map-styles/railway/railway.json"
+  credit:
+    id: 'make_a_donation'
+    href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
+    donate: true
+
+- leafletOsmId: "Woodblock"
+  code: "W"
+  layerId: "woodblock"
+  nameId: "woodblock"
+  canEmbed: true
+  source: openhistoricalmap
+  isVectorStyle: true
+  styleUrl: "/map-styles/woodblock/woodblock.json"
+  credit:
+    id: 'make_a_donation'
+    href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
+    donate: true
+
+- leafletOsmId: "JapaneseScroll"
+  code: "J"
+  layerId: "japanesescroll"
+  nameId: "japanesescroll"
+  canEmbed: true
+  source: openhistoricalmap
+  isVectorStyle: true
+  styleUrl: "/map-styles/japanese_scroll/japanese_scroll.json"
+  credit:
+    id: 'make_a_donation'
+    href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
+    donate: true
+
 - leafletOsmId: "Mapnik"
   code: "M"
   layerId: "mapnik"
@@ -102,19 +154,19 @@
         id: "osm_france"
         href: "https://openstreetmap.fr/"
 
-- leafletOsmId: "Shortbread"
-  code: "S"
-  layerId: "shortbread"
-  nameId: "shortbread"
-  wiki: "https://wiki.openstreetmap.org/wiki/Shortbread"
-  canEmbed: true
-  maxZoom: 23
-  isVectorStyle: true
-  styleUrl: "https://vector.openstreetmap.org/styles/svwd/svwd03style.json"
-  credit:
-    id: "make_a_donation"
-    href: "https://supporting.openstreetmap.org"
-    donate: true
+# - leafletOsmId: "Shortbread"
+#   code: "S"
+#   layerId: "shortbread"
+#   nameId: "shortbread"
+#   wiki: "https://wiki.openstreetmap.org/wiki/Shortbread"
+#   canEmbed: true
+#   maxZoom: 23
+#   isVectorStyle: true
+#   styleUrl: "https://vector.openstreetmap.org/styles/svwd/svwd03style.json"
+#   credit:
+#     id: "make_a_donation"
+#     href: "https://supporting.openstreetmap.org"
+#     donate: true
 
 - leafletOsmId: "OpenMapTiles"
   code: "V"
