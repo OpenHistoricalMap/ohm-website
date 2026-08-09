@@ -481,7 +481,7 @@ class SiteControllerTest < ActionDispatch::IntegrationTest
     get export_path
     assert_response :success
 
-    %w[overpass planet geofabrik other].each do |source|
+    %w[overpass planet other].each do |source|
       url = I18n.t("site.export.too_large.#{source}.url")
       title = I18n.t("site.export.too_large.#{source}.title")
 

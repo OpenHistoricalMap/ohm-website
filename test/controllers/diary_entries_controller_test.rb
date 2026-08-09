@@ -664,7 +664,7 @@ class DiaryEntriesControllerTest < ActionDispatch::IntegrationTest
       assert_dom "> @content", ActionController::Base.helpers.image_url("osm_logo_256.png", :host => root_url)
     end
     assert_dom "head meta[property='og:image:alt']" do
-      assert_dom "> @content", "OpenStreetMap logo"
+      assert_dom "> @content", "OpenHistoricalMap logo"
     end
   end
 
@@ -734,7 +734,7 @@ class DiaryEntriesControllerTest < ActionDispatch::IntegrationTest
       assert_dom "> @content", ActionController::Base.helpers.image_url("osm_logo_256.png", :host => root_url)
     end
     assert_dom "head meta[property='og:image:alt']" do
-      assert_dom "> @content", "OpenStreetMap logo"
+      assert_dom "> @content", "OpenHistoricalMap logo"
     end
   end
 
