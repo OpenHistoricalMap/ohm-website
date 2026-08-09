@@ -25,7 +25,7 @@ module Accounts
 
       get auth_deletion_path(:provider => "facebook", :confirmation_code => confirmation_code)
       assert_response :success
-      assert_select "p", /^Data for Facebook ID 12345 was removed at .* and it was disconnected from the associated OpenStreetMap account\.$/
+      assert_select "p", /^Data for Facebook ID 12345 was removed at .* and it was disconnected from the associated OpenHistoricalMap account\.$/
     end
 
     ##

@@ -220,7 +220,7 @@ module Api
 
       email = ActionMailer::Base.deliveries.first
       assert_equal 1, email.to.length
-      assert_equal "[OpenStreetMap] #{commenter_user.display_name} has commented on one of your changesets", email.subject
+      assert_equal "[OpenHistoricalMap] #{commenter_user.display_name} has commented on one of your changesets", email.subject
       assert_equal creator_user.email, email.to.first
     end
 
@@ -243,8 +243,8 @@ module Api
         end
       end
 
-      assert_email_received creator_user.email, "[OpenStreetMap] #{commenter_user.display_name} has commented on one of your changesets"
-      assert_email_received subscriber_user.email, "[OpenStreetMap] #{commenter_user.display_name} has commented on a changeset you are interested in"
+      assert_email_received creator_user.email, "[OpenHistoricalMap] #{commenter_user.display_name} has commented on one of your changesets"
+      assert_email_received subscriber_user.email, "[OpenHistoricalMap] #{commenter_user.display_name} has commented on a changeset you are interested in"
       assert_email_not_received commenter_user.email
       assert_email_not_received unrelated_user.email
     end
@@ -266,7 +266,7 @@ module Api
         end
       end
 
-      assert_email_received creator_user.email, "[OpenStreetMap] #{commenter_user.display_name} has commented on one of your changesets"
+      assert_email_received creator_user.email, "[OpenHistoricalMap] #{commenter_user.display_name} has commented on one of your changesets"
       assert_email_not_received commenter_user.email
     end
 
