@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 module BrowseHelper
+  require "date_range"
+
   def element_icon(type, object)
     selected_icon_data = { :filename => "#{type}.svg", :priority => 1 }
 
@@ -50,6 +52,13 @@ module BrowseHelper
     # away redacted version tag information.
     unless object.redacted?
       feature_name = feature_name(object.tags)
+
+      if (object.tags.include? "start_date") || (object.tags.include? "end_date")
+        start_date = object.tags.include?("start_date") ? object.tags["start_date"].to_s : nil
+        end_date = object.tags.include?("end_date") ? object.tags["end_date"].to_s : nil
+        feature_name = t "printable_name.with_date_html", :name => tag.bdi(feature_name), :dates => DateRange.new(start_date, end_date).to_s
+      end
+
       name = t "printable_name.with_name_html", :name => tag.bdi(feature_name), :id => tag.bdi(id.to_s) if feature_name.present?
     end
 
