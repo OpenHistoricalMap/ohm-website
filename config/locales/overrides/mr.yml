@@ -1,0 +1,68 @@
+# Messages for Marathi (मराठी)
+# Exported from translatewiki.net
+# Author: Erictheise
+# Author: Minh Nguyen
+# Author: Singleton
+# Author: Sureshkhole
+# Author: Susheelkasab
+# Author: V.narsikar
+# Author: Vibhavari
+# Author: अभय नातू
+# Author: गराडे
+# Do not edit by hand.
+mr:
+  accounts:
+    show:
+      contributor_terms:
+        link text: हे काय आहे?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: वैयक्तिक GPS आनुरेखा वाचा
+        allow_read_prefs: वापरकर्त्याच्या पसंती वाचा
+        allow_write_api: नकाशात बदल करा
+        allow_write_gpx: GPS अनुरेख चढवा
+        allow_write_notes: टीपा बदला
+        allow_write_prefs: वापरकर्त्याच्या पसंती बदला
+        name: नाव (आवश्यक)
+        url: मुख्य ऍप्लिकेशन URL (आवश्यक)
+  diary_entries:
+    profile_diaries:
+      date_label: दिनांक
+  layouts:
+    intro_2_create_account: सदस्यखाते तयार करा
+    logout: सनोंद-निर्गम
+    tag_line: मुक्त विकि जागतिक नकाशा
+  site:
+    about:
+      lede_text: OpenHistoricalMap हा मानचित्रकारांनी उभारलेला एक प्रकल्प आहे ज्यात जगभरातील रस्ते, पायवाट, कॅफे, रेल्वे स्थानक व इतर बऱ्याच गोष्टींचा डेटा योगदानातून तयार व व्यवस्थापित केला जातो.
+    copyright:
+      legal_babble:
+        credit_1_html: |-
+          &ldquo;&copy; OpenHistoricalMap
+          contributors&rdquo; असे श्रेय तुम्हाला दर्शवणे आवश्यक आहे.
+        infringement_1_html: OHM योगदानकर्त्यांना कोणत्याही प्रतीलीपी अधिकार राखवलेल्या (उदा. Google नकाशे किंवा मुद्रित नकाशे अश्या) स्त्रोतांमधून कोणतीही माहिती प्रतीलिपी अधिकार धारकांच्या स्पष्ट परवानगीशिवाय जोडू नये याची आठवण करून दिली जाते.
+        more_title_html: अधिक शोध
+    export:
+      too_large:
+        body: हे क्षेत्र OpenHistoricalMap XML Data म्हणून निर्यात करण्यास खूपच मोठे आहे.कृपया लहान करा किंवा लहान क्षेत्र निवडा किंवा मोठ्या प्रमाणात डाटाचे अधिभारणासाठी खालील यादी केलेल्या स्रोतांपैकी एकाचा वापर करा.
+        planet:
+          title: प्लॅनेट OHM
+    help:
+      wiki:
+        description: सखोल OHM प्रलेखनासाठी विकी वाचा.
+    index:
+      remote_failed: संपादन अयशस्वी - JOSM किंवा Merkaartor चालू केले आहे आणि रिमोट निरंत्रण पर्याय सक्षम असल्याची खात्री करा
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS अनुरेखा
+  user_mailer:
+    diary_comment_notification:
+      subject: "[OpenHistoricalMap] %{user}ने एका अनुदिनीतील नोंदीवर अभिप्राय दिला"
+    email_confirm:
+      subject: "[OpenHistoricalMap] तुमच्या ईमेल पत्त्याची पुष्टी करा"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX आयात यशस्वी"
+    lost_password:
+      subject: "[OpenHistoricalMap] परवलीचा शब्द पुनर्स्थापन विनंती"

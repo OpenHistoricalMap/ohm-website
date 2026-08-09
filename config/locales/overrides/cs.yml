@@ -1,0 +1,303 @@
+# Messages for Czech (čeština)
+# Exported from translatewiki.net
+# Author: AlesFiala2002
+# Author: Bilbo
+# Author: Bilykralik16
+# Author: Chmee2
+# Author: Cvanca
+# Author: Decamexd
+# Author: DemonioCZ
+# Author: DoubyCz
+# Author: Dvorapa
+# Author: Erictheise
+# Author: Fraxinus.cs
+# Author: H4nek
+# Author: Ilimanaq29
+# Author: JAn Dudík
+# Author: Jan Myšák
+# Author: Jaroslav Cerny
+# Author: Jezevec
+# Author: Jkjk
+# Author: Kareyac
+# Author: Korytaacheck
+# Author: Kudlav
+# Author: Kuvaly
+# Author: Luk
+# Author: LukasJandera
+# Author: Marek Pavlica
+# Author: Martin Urbanec
+# Author: Masox
+# Author: Matus cz
+# Author: Matěj Grabovský
+# Author: Matěj Suchánek
+# Author: Michaelbrabec
+# Author: Minh Nguyen
+# Author: Mkyral
+# Author: Mormegil
+# Author: Mr. Richard Bolla
+# Author: MrJaroslavik
+# Author: Nemo bis
+# Author: Patriccck
+# Author: Pavreh
+# Author: Paxt
+# Author: Reaperman
+# Author: Robins7
+# Author: ShaggyCZ - Main
+# Author: Spotter
+# Author: StenSoft
+# Author: Tchoř
+# Author: Tkk
+# Author: Tomasokol
+# Author: Urbanecm
+# Author: Veritaslibero
+# Author: Walter Klosse
+# Author: Want
+# Author: YjM
+# Author: Zbycz
+# Do not edit by hand.
+cs:
+  accounts:
+    deletions:
+      show:
+        delete_introduction: 'Svůj účet OpenHistoricalMap můžete smazat pomocí níže uvedeného tlačítka. Vezměte prosím na vědomí následující podrobnosti:'
+        retain_caveats: 'Některé informace o vás však budou na OpenHistoricalMap uchovány i po smazání vašeho účtu:'
+    show:
+      contributor_terms:
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: co to znamená?
+    terms:
+      show:
+        read and accept with tou: Přečtěte si prosím podmínky pro přispěvatele a podmínky užití, poté zaškrtněte obě políčka a stiskněte tlačítko pro pokračování.
+        tou_explain:
+          html: Tyto %{tou_link} upravují používání webových stránek a další infrastruktury poskytované společností OpenHistoricalMap. Klikněte prosím na odkaz, přečtěte si text a souhlaste s ním.
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: číst jejich soukromé GPS stopy
+        allow_read_prefs: číst jejich uživatelské nastavení
+        allow_write_api: upravovat mapu
+        allow_write_changeset_comments: komentář k sadám změn
+        allow_write_diary: vytvářet deníkové záznamy, komentovat a navazovat přátelství
+        allow_write_gpx: nahrávat GPS stopy
+        allow_write_notes: měnit poznámky
+        allow_write_prefs: měnit jejich uživatelské nastavení
+        callback_url: URL pro zpětné volání
+        name: Jméno (vyžadováno)
+        support_url: URL s podporou
+        url: URL hlavní aplikace (vyžadováno)
+  api:
+    notes:
+      rss:
+        title: Poznámky OpenHistoricalMap
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Na webu OpenHistoricalMap máte urgentní zprávu. Tuto zprávu si musíte přečíst, než budete moci ukládat své editace.
+  auth:
+    providers:
+      openstreetmap: OpenStreetMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Diskuse k sadě změn na OpenHistoricalMap
+        title_particular: 'Diskuse k sadě změn #%{changeset_id} na OpenHistoricalMap'
+  date:
+    formats:
+      brief_bce: "%{year} př. n. l."
+      brief_ce: "%{year} n. l."
+  diary_entries:
+    comments:
+      title: Deníkové záznamy OpenHistoricalMap
+    feed:
+      all:
+        description: Nedávné záznamy v denících uživatelů OpenHistoricalMap
+        title: Deníkové záznamy OpenHistoricalMap
+      language:
+        description: Nedávné záznamy v denících uživatelů OpenHistoricalMap v jazyce %{language_name}
+        title: Deníkové záznamy OpenHistoricalMap v jazyce %{language_name}
+      user:
+        description: Nedávné záznamy v OpenHistoricalMap deníku uživatele %{user}
+        title: Záznamy v OpenHistoricalMap deníku uživatele %{user}
+    profile_diaries:
+      date_label: Datum
+  errors:
+    bad_request:
+      description: Operace, kterou jste žádali po serveru OpenHistoricalMap, není platná (HTTP 400)
+    contact:
+      contact_the_community_html: Neváhejte %{contact_link} komunitu OpenHistoricalMap, pokud jste našli nefunkční odkaz / chybu. Poznamenejte si přesnou adresu URL vašeho požadavku.
+    forbidden:
+      description: Operace, kterou jste požadovali na serveru OpenHistoricalMap, je dostupná pouze správcům (HTTP 403)
+    internal_server_error:
+      description: Server OpenHistoricalMap narazil na neočekávanou situaci, která mu zabránila splnit požadavek (HTTP 500)
+    not_found:
+      description: Na serveru OpenHistoricalMap se nepodařilo najít soubor/adresář/operaci API s tímto názvem (HTTP 404)
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: Kulturní centrum
+        leisure:
+          track: Běžecká dráha
+        shop:
+          seafood: Mořské plody
+  javascripts:
+    map:
+      base:
+        historical: Historická
+        japanesescroll: Japonský svitek
+        woodblock: Dřevořez
+      zoom:
+        in: Přiblížit
+        out: Oddálit
+  layouts:
+    intro_2_create_account: Vytvořit uživatelský účet
+    intro_header: Vítejte v OpenHistoricalMap!
+    intro_text: OpenHistoricalMap je mapa světa, vytvořená lidmi jako vy a volně využitelná pod otevřenou licencí.
+    logo:
+      alt_text: Logo OpenHistoricalMap
+    logout: Odhlásit se
+    tag_line: Otevřená wiki-mapa světa
+  oauth:
+    scopes:
+      openid: Přihlaste se pomocí OpenHistoricalMap
+  sessions:
+    destroy:
+      heading: Odhlášení z OpenHistoricalMap
+    new:
+      login_to_authorize_html: Pro přístup k %{client_app_name} se přihlaste do OpenHistoricalMap.
+  site:
+    about:
+      lede_text: OpenHistoricalMap tvoří komunita uživatelů, kteří přidávají a udržují data o silnicích, cestách, kavárnách, železničních stanicích a mnohém dalším po celém světě.
+    about_section:
+      contribute_1_user_diaries: deníky uživatelů
+      legal_1_aup: Pravidlům přijatelného užití
+      legal_1_html: Tento web a mnoho dalších souvisejících služeb za komunitu oficiálně provozuje %{group_link}. Použití všech služeb provozovaných OSMF podléhá našim %{terms_of_use_link}, %{aup_link} a našim %{privacy_policy_link}.
+      legal_1_privacy_policy: Pravidlům ochrany osobních údajů
+      legal_1_terms_of_use: Podmínkám užití
+      legal_2_html: Pokud máte dotazy týkající se licencování, autorských práv či jiných právních záležitostí, %{contact_team_link}.
+    communities:
+      lede_text: |-
+        Do OpenHistoricalMap přispívají a OpenHistoricalMap používají lidé z celého světa. Zatímco mnoho jich přispívá jako jednotlivci, někteří utvořili komunity. Tyto skupiny existují v mnoha velikostech a zastupují území od malých městeček po velké regiony zahrnující několik zemí.
+        Mohou být formální i neformální.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Zahrnutí dat do OpenHistoricalMap neznamená, že původní poskytovatel dat podporuje OpenHistoricalMap, nabízí jakoukoli záruku nebo přijímá jakoukoli zodpovědnost.
+        credit_1_html: 'Pokud používáte data OpenHistoricalMap, máte povinnost učinit následující dvě věci:'
+        credit_2_this_copyright_page: tuto stránku k autorským právům
+        credit_title_html: Jak uvádět OpenHistoricalMap
+        infringement_1_html: Přispěvatelům OHM připomínáme, že by nikdy neměli přidávat data ze zdrojů chráněných autorským právem (např. Google Maps či tištěné mapy) bez výslovného svolení držitelů práv.
+        introduction_2_cc_by_url: https://creativecommons.org/licenses/by/4.0/deed.cs
+        introduction_4_creative_commons: Creative Commons Uveďte autora-Zachovejte licenci 2.0
+        introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/deed.cs
+        more_2_1_api_usage_policy: Pravidla použití API
+        more_2_1_html: |-
+          Přestože jsou OpenHistoricalMap otevřená data, nemůžeme třetím stranám poskytovat
+          bezplatné mapové API. Vizte naše %{api_usage_policy_link}, %{tile_usage_policy_link} a %{nominatim_usage_policy_link}.
+        more_2_1_nominatim_usage_policy: Pravidla použití Nominatimu
+        more_2_1_tile_usage_policy: Pravidla použití dlaždic
+        more_title_html: Další informace
+    export:
+      too_large:
+        body: 'Tato oblast je pro export do XML formátu OpenHistoricalMap příliš velká. Přejděte na větší měřítko, zvolte menší oblast, nebo použijte jeden z následujících zdrojů pro stahování velkého množství dat:'
+        overpass:
+          description: Stažení této oblasti z databázového zrcadla OpenHistoricalMap
+        planet:
+          description: Pravidelně aktualizované kopie kompletní databáze OpenHistoricalMap
+          title: Planeta OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            Stačí kliknout na %{note_icon} nebo na stejnou ikonku na zobrazené mapě.
+            Tím do mapy přidáte značku, kterou můžete přesunout tažením myší. Přidejte svou zprávu a klikněte na uložit a ostatní uživatelé se na to podívají.
+        join_the_community:
+          explanation_html: Pokud jste si všimli nějakého nedostatku našich mapových dat, např. chybějící silnice nebo vaše adresa, nejlepším řešením je připojit se ke komunitě OpenHistoricalMap a přidat nebo opravit data vlastnoručně.
+    help:
+      introduction: OpenHistoricalMap nabízí několik zdrojů pro informace o projektu, otázky a odpovědi a kolaborativní diskuse a dokumentace mapových témat.
+      slack:
+        title: IRC
+      welcome:
+        description: Začněte tímto rychlým průvodcem zahrnujícím základy OpenHistoricalMap.
+        title: Vítejte v OpenHistoricalMap
+      wiki:
+        description: Podrobnou dokumentaci OHM najdete na wiki.
+    index:
+      js_2: OpenHistoricalMap používá pro svou interaktivní mapu JavaScript.
+      remote_failed: Editace se nezdařila – ujistěte se, že JOSM nebo Merkaartor běží a je zapnuto dálkové ovládání
+    potlatch:
+      removed: Jako preferovaný editor pro OpenHistoricalMap máte nastaven Potlatch. Protože byl ale Adobe Flash Player ukončen, Potlatch již pro použití ve webovém prohlížeči není dostupný.
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap používá trochu vlastního žargonu. Tady je několik klíčových slov, která se vám budou hodit.
+      introduction: Vítejte v OpenHistoricalMap, svobodné a editovatelné mapě světa. Teď, když jste se zaregistrovali, můžete začít mapovat. Tady je rychlý přehled nejdůležitějších věcí, které budete potřebovat znát.
+      rules:
+        para_1_html: |-
+          OpenHistoricalMap má jen málo formálních pravidel, ale očekáváme, že všichni účastníci budou spolupracovat
+          s komunitou a komunikovat s ní. Pokud zvažujete jakékoli jiné činnosti než ruční úpravy, přečtěte si a dodržujte pokyny pro
+          %{imports_link} a %{automated_edits_link}.
+  traces:
+    feeds:
+      show:
+        title: GPS stopy z OpenHistoricalMap
+    show:
+      edit: upravit
+      edit_trace: Upravit tuto stopu
+      map: mapa
+    trace:
+      edit_map: Upravit mapu
+      view_map: Zobrazit mapu
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} okomentoval jednu ze sad změn, která vás zajímá"
+        subject_own: "[OpenHistoricalMap] %{commenter} okomentoval jednu z vašich sad změn"
+      description: 'Sada změn OpenHistoricalMap #%{id}'
+    diary_comment_notification:
+      description: 'Záznam #%{id} deníku uživatele OpenHistoricalMap'
+      header: "%{from_user} okomentoval záznam v deníku na OpenHistoricalMap s předmětem %{subject}:"
+      header_html: "%{from_user} okomentoval záznam v deníku na OpenHistoricalMap s předmětem %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} okomentoval záznam v deníku"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Potvrzení vaší e-mailové adresy"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Neúspěšný import GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Úspěšný import GPX"
+    lost_password:
+      hopefully_you: Někdo (patrně vy) požádal o vygenerování nového hesla pro uživatele serveru openhistoricalmap.org s touto e-mailovou adresou.
+      subject: "[OpenHistoricalMap] Žádost o nové heslo"
+    message_notification:
+      header: "%{from_user} vám poslal(a) prostřednictvím OpenHistoricalMap zprávu s předmětem %{subject}:"
+      header_html: "%{from_user} vám poslal(a) prostřednictvím OpenHistoricalMap zprávu s předmětem %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} vyřešil jednu z poznámek, která vás zajímá"
+        subject_own: "[OpenHistoricalMap] %{commenter} vyřešil jednu z vašich poznámek"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} okomentoval jednu z poznámek, která vás zajímá"
+        subject_own: "[OpenHistoricalMap] %{commenter} okomentoval jednu z vašich poznámek"
+      description: 'Poznámka k OpenHistoricalMap #%{id}'
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} reaktivoval jednu z poznámek, která vás zajímá"
+        subject_own: "[OpenHistoricalMap] %{commenter} reaktivoval jednu z vašich poznámek"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Vítejte v OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Vaše ID dosud není propojeno s účtem OpenHistoricalMap.
+      option_1: Pokud jste na OpenHistoricalMap noví, založte si prosím nový účet pomocí níže zobrazeného formuláře.
+    new:
+      about:
+        paragraph_1: Na rozdíl od jiných map je OpenHistoricalMap kompletně vytvořena lidmi jako jste vy a kdokoli ji může zdarma opravit, aktualizovat, stáhnout a používat.
+        welcome: Vítejte v OpenHistoricalMap
+      duplicate_social_email: Pokud již máte účet OpenHistoricalMap a chcete používat poskytovatele identity třetí strany, přihlaste se pomocí svého hesla a upravte nastavení svého účtu.
+      please_contact_support_html: Kontaktujte prosím %{support_link} a domluvte se na vytvoření účtu – pokusíme se žádost vyřídit co nejrychleji.
+      signup_to_authorize_html: Zaregistrujte se pomocí OpenHistoricalMap pro přístup k %{client_app_name}.
+    show:
+      delete_user: Odstranit tohoto uživatele
+      hide_user: Skrýt tohoto uživatele
+      unhide_user: Zobrazit tohoto uživatele

@@ -1,0 +1,250 @@
+# Messages for Lithuanian (lietuvių)
+# Exported from translatewiki.net
+# Author: Aurimas
+# Author: Cyklopas
+# Author: Danieldegroot2
+# Author: Eitvys200
+# Author: Empers
+# Author: Erictheise
+# Author: Garas
+# Author: Hugo.arg
+# Author: Kris2paz
+# Author: Macofe
+# Author: Mantak111
+# Author: Manvydasz
+# Author: Matasg
+# Author: McDutchie
+# Author: Minh Nguyen
+# Author: Nokeoo
+# Author: Pauliuz
+# Author: Pavel1513
+# Author: Pdxx
+# Author: Perkunas
+# Author: Ruila
+# Author: Techwebpd
+# Author: Tomasdd
+# Author: UndefinedCarp
+# Author: Vac31.
+# Author: Zygimantus
+# Do not edit by hand.
+lt:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: kas tai?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: peržiūrėti jų privačius GPS pėdsakus
+        allow_read_prefs: peržiūrėti jų naudotojo nustatymus
+        allow_write_api: redaguoti žemėlapį
+        allow_write_diary: kurti dienoraščio įrašus, komentarus ir susirasti draugų
+        allow_write_gpx: įkelti GPS pėdsakus
+        allow_write_notes: redaguoti užrašus
+        allow_write_prefs: redaguoti jų naudotojo nustatymus
+        callback_url: Atgalinio ryšio nuoroda
+        name: Vardas (Privalomas)
+        support_url: Palaikymo URL
+        url: Pagrindinis aplikacijos URL (Privalomas)
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap pastabos
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Turite neatidėliotiną pranešimą OpenHistoricalMap puslapyje. Jums reikia perskaityti šį pranešimą prieš galint išsaugoti pakeitimus.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap pakeitimo aptarimas
+        title_particular: 'OpenHistoricalMap pakeitimo #%{changeset_id} aptarimas'
+  diary_entries:
+    comments:
+      title: "„OpenHistoricalMap“ dienoraščio įrašai"
+    feed:
+      all:
+        description: Paskutiniai OpenHistoricalMap naudotojų dienoraščių įrašai
+        title: OpenHistoricalMap dienoraščio įrašai
+      language:
+        description: Naujausi dienoraščio įrašai nuo OpenHistoricalMap naudotojų, %{language_name}
+        title: OpenHistoricalMap dienoraščių įrašai %{language_name}
+      user:
+        description: Paskutiniai naudotojo %{user} OpenHistoricalMap dienoraščio įrašai
+        title: Naudotojo %{user} OpenHistoricalMap dienoraščio įrašai
+    profile_diaries:
+      date_label: Data
+  errors:
+    bad_request:
+      description: Operacija, kurios paprašėte „OpenHistoricalMap“ serveryje, negalima (HTTP 400)
+    contact:
+      contact_the_community_html: Jei radote neveikiančią nuorodą ar klaidą, prašome %{contact_link} su OpenHistoricalMap bendruomene. Prašome įrašyti tikslų užklausos universalųjį adresą (URL).
+    forbidden:
+      description: Jūsų prašomas veiksmas OpenHistoricalMap serveryje yra leidžiamas tik administratoriams (HTTP 403)
+    internal_server_error:
+      description: OpenHistoricalMap serveris susidūrė su netikėta sąlyga, kuri neleido įvykdyti užklausos (HTTP 500)
+    not_found:
+      description: OpenHistoricalMap serveryje nepavyko rasti failo, katalogo ar API veiksmo su nurodytu pavadinimu (HTTP 404)
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
+  javascripts:
+    map:
+      base:
+        historical: Istorinis
+      zoom:
+        in: Priartinti
+        out: Nutolinti
+  layouts:
+    intro_2_create_account: sukurti naudotojo paskyrą
+    intro_header: Sveiki atvykę į OpenHistoricalMap!
+    intro_text: OpenHistoricalMap yra pasaulio žemėlapis, kuriamas žmonių, tokių kaip jūs. Jis atviras ir laisvas - naudojamas pagal atvirą licenciją.
+    logo:
+      alt_text: OpenHistoricalMap logotipas
+    logout: Atsijungti
+    tag_line: Atviras wiki žemėlapis
+  oauth:
+    scopes:
+      openid: Prisijungti su OpenHistoricalMap
+  sessions:
+    destroy:
+      heading: Atsijungti nuo OpenHistoricalMap
+    new:
+      login_to_authorize_html: Prisijunkite prie OpenHistoricalMap, kad pasiektumėte %{client_app_name}.
+  site:
+    about:
+      lede_text: OpenHistoricalMap kuria bendruomenė žymėtojų, kuriančių ir prižiūrinčių kelių, takų, kavinių, stočių ir kitokius pasaulio duomenis.
+    about_section:
+      contribute_1_user_diaries: naudotojų dienoraščiai
+      legal_1_aup: Priimtino naudojimo politika
+      legal_1_html: |-
+        Ši svetainė ir daugelis susijusių paslaugų formaliai valdomi
+        %{group_link}
+        bendruomenės vardu. Visų OSMF valdovų paslaugų naudojimui taikoma
+        %{terms_of_use_link}, %{aup_link} ir mūsų %{privacy_policy_link}.
+      legal_1_privacy_policy: Privatumo politika
+      legal_1_terms_of_use: Naudojimo sąlygos
+      legal_2_html: |-
+        Prašome %{contact_team_link}
+        Jei turite licencijų, autorių teisių ar kitų teisinių klausimų.
+    communities:
+      lede_text: |-
+        Žmonės iš viso pasaulio prisideda prie OpenHistoricalMap arba naudojasi juo.
+        Daugelis dalyvauja kaip individualūs asmenys, kiti yra sukūrę bendruomenes. Šios grupės yra įvairaus dydžio ir atstovauja įvairioms geografinėms teritorijoms – nuo mažų miestelių iki didelių daugiašalių regionų. Jos taip pat gali būti formalios arba neformalios.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Duomenų įtraukimas į OpenHistoricalMap nereiškia, kad originalių duomenų tiekėjas remia OpenHistoricalMap. Nenumatomos jokios garantijos ir neprisiimama jokia atsakomybė.
+        credit_1_html: 'Naudodami OpenHistoricalMap duomenis, privalote atlikti šiuos du dalykus:'
+        credit_2_this_copyright_page: šį autorių teisių puslapį
+        credit_title_html: Kaip paminėti OpenHistoricalMap
+        infringement_1_html: OHM pildytojai primenami niekada nesinaudoti autorių teisėmis apsaugotų šaltinių (pvz. Google Maps ar spausdintų žemėlapių) be leidimo naudoti.
+        introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
+        more_2_1_api_usage_policy: API naudojimo politika
+        more_2_1_html: Nors OpenHistoricalMap yra atvirų duomenų, mes negalime teikti nemokamo žemėlapių API trečiosioms šalims. Žiūrėkite mūsų %{api_usage_policy_link}, %{tile_usage_policy_link} ir %{nominatim_usage_policy_link}.
+        more_2_1_nominatim_usage_policy: Nominatim naudojimo politika
+        more_2_1_tile_usage_policy: Plytelių naudojimo politika
+        more_title_html: Papildoma informacija
+    export:
+      too_large:
+        body: Ši sritis per didelė, kad būtų galima eksportuoti OpenHistoricalMap XML duomenis. Padidinkite, parinkite mažesnę sritį arba naudokite vieną iš didelio duomenų kiekio atsiuntimo šaltinių.
+        overpass:
+          description: Atsisiųsti šią apimtį iš OpenHistoricalMap duombazės kopijos
+        planet:
+          description: Periodiškai atnaujinamos pilnos OpenHistoricalMap duomenų bazės kopijos
+          title: OHM planeta
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: Tiesiog spauskite %{note_icon} arba tą pačią piktogramą žemėlapyje. Žemėlapyje bus pridėtas žymeklis, kurį galėsite pertempti. Pridėkite jūsų pranešimą, kurį kiti žymėtojai perskaitys ir ištirs.
+        join_the_community:
+          explanation_html: Jei pastebėjote žemėlapio duomenų problemą, pavyzdžiui radote trūkstamą kelią ar adresą, geriausias variantas yra prisijungti prie OpenHistoricalMap bendruomenės ir pridėti ar pataisyti duomenis patiems.
+    help:
+      discord:
+        description: 'Prisijunkite prie OpenStreetMap World Discord serverio ir gaukite pagalbą #openhistoricalmap kanale.'
+      forum:
+        description: Dalyvaukite ilgesnėse diskusijose ir neoficialiuose pokalbių kambariuose naudodami savo OHM paskyrą.
+        title: Forumas
+      introduction: Yra kelios vietos, kur galima rasti informacijos apie OpenHistoricalMap, užduoti klausimus, diskutuoti ir dokumentuoti žymėjimo temas.
+      mailing_list:
+        description: Prenumeruokite mūsų nedidelės apimties naujienlaiškį.
+        title: Naujienlaiškis
+      slack:
+        description: 'Pakvieskite save į OpenStreetMap US Slack darbo sritį ir prisijunkite prie #openhistoricalmap kanalo.'
+        title: IRC
+      welcome:
+        description: Pradėkite šiuo greitu vadovu apie OpenHistoricalMap pagrindus.
+        title: Sveiki atvykę į OpenHistoricalMap
+      wiki:
+        description: Daugiau detalios informacijos apie OHM rasite wiki.
+    index:
+      js_2: OpenHistoricalMap naudoja JavaScript savo 'slidžiam' žemėlapiui
+      remote_failed: Redagavimas nepavyko - būkite tikras ar JOSM arba Merkaator užkrautas ir nuotolinio valdymo funkcija įjungta.
+    potlatch:
+      removed: Jūsų numatytasis OpenHistoricalMap redaktorius yra "Potlatch". Kadangi "Adobe Flash Player" įskiepis nebenaudojamas, "Potlatch" nebegalima naudoti naršyklėje.
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap turi savo žodyną. Čia keli pagrindiniai naudojami terminai/žodžiai.
+      introduction: Sveikiname prisijungus prie OpenHistoricalMap - laisvo ir redaguojamo pasaulio žemėlapio. Dabar, kai prisijungėte, galite pradėti žymėti. Čia trumpa instrukcija su svarbiausiais dalykais, kuriuos turėtumėte žinoti.
+      rules:
+        para_1_html: |-
+          OpenHistoricalMap turi nedaug formalių taisyklių, bet mes tikimės, kad visi dalyviai bendradarbiaus ir bendraus su bendruomene. Jei svarstote bet kokius veiksmus, išskyrus rankinį redagavimą, perskaitykite ir laikykitės rekomendacijų apie
+          %{imports_link} ir %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: Kas tikrai %{doesnt}, tai subjektyvūs duomenys, tokie kaip įvertinimai, istoriniai arba hipotetiniai objektai, taipogi duomenys iš autorinių teisių saugomų duomenų šaltinių. Jei negavote specialaus leidimo - nekopijuokite iš internetinių ar popierinių žemėlapių.
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS pėdsakai
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} pakomentavo vieną iš jus dominančių pakeitimų"
+        subject_own: "[OpenHistoricalMap] %{commenter} pakomentavo vieną iš jūsų pakeitimų"
+      description: 'OpenHistoricalMap pakeitimų rinkinys #%{id}'
+    diary_comment_notification:
+      description: 'OpenHistoricalMap dienoraščio įrašas #%{id}'
+      header: "%{from_user} pakomentavo jūsų OpenHistoricalMap dienoraščio įrašą su tema %{subject}:"
+      header_html: "%{from_user} pakomentavo OpenHistoricalMap dienoraščio įrašą, kurio antraštė %{subject}"
+      subject: "[OpenHistoricalMap] %{user} pakomentavo dienoraščio įrašą"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Patvirtinkite savo e-pašto adresą"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Nepavyko įkelti pėdsako (GPX)"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Sėkmingai įkeltas pėdsakas (GPX)"
+    lost_password:
+      hopefully_you: Kažkas (tikriausiai jūs) paprašė anuliuoti slaptažodį, susijusį su šio pašto adreso openhistoricalmap.org paskyra.
+      subject: "[OpenHistoricalMap] Slaptažodžio atstatymo prašymas"
+    message_notification:
+      header: "%{from_user} atsiuntė jums pranešimą per OpenHistoricalMap su tema „%{subject}“:"
+      header_html: "%{from_user} atsiuntė jums pranešimą naudojant OpenHistoricalMap su tema „%{subject}“:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} išsprendė jūsų dominančia pastaba"
+        subject_own: "[OpenHistoricalMap] %{commenter} išsprendė vieną iš jūsų pastabos"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} pakomentavo jūsų dominančia pastabą"
+        subject_own: "[OpenHistoricalMap] %{commenter} pakomentavo vieną iš jūsų pastabos"
+      description: 'OpenHistoricalMap pastaba #%{id}'
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} aktyvavo pastabą, kuriuo jūs susidomėjęs(-usi)"
+        subject_own: "[OpenHistoricalMap] %{commenter} aktyvavo vieną iš jūsų pastabų"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Sveiki atvykę į OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Jūsų ID dar nėra susieta su OpenHistoricalMap sąskaita.
+      option_1: Jei esate naujokas OpenHistoricalMap, prašome sukurti naują paskyrą naudodami žemiau pateiktą formą.
+    new:
+      about:
+        paragraph_1: Skirtingai nuo kitų žemėlapių, OpenHistoricalMap žemėlapį visiškai sukūrė žmonės, tokie kaip tu, ir jį nemokamai gali taisyti, atnaujinti, atsisiųsti ir naudoti kiekvienas.
+        welcome: Sveiki atvykę į OpenHistoricalMap
+      duplicate_social_email: Jei jau turite OpenHistoricalMap paskyrą ir norite naudoti trečiosios šalies tapatybės teikėją, prisijunkite naudodami slaptažodį ir pakeiskite paskyros nustatymus.
+      signup_to_authorize_html: Prisiregistruokite naudodami „ OpenHistoricalMap“, kad pasiektumėte %{client_app_name}.
+    show:
+      delete_user: Pašalinti šį naudotoją
+      hide_user: Paslėpti šį naudotoją
+      unhide_user: Nebeslėpti šio naudotojo

@@ -1,0 +1,90 @@
+# Messages for Nepali (नेपाली)
+# Exported from translatewiki.net
+# Author: Bada Kaji
+# Author: Danieldegroot2
+# Author: Drjpoudel
+# Author: Erictheise
+# Author: Gravitystorm
+# Author: Haribanshi
+# Author: Krish Dulal
+# Author: Minh Nguyen
+# Author: Nirajan pant
+# Author: Nirjal stha
+# Author: Njsubedi
+# Author: RajeshPandey
+# Author: पर्वत सुबेदी
+# Author: बडा काजी
+# Author: राम प्रसाद जोशी
+# Author: सरोज कुमार ढकाल
+# Author: हिमाल सुबेदी
+# Do not edit by hand.
+ne:
+  accounts:
+    show:
+      contributor_terms:
+        link text: यो के हो ?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: उनीहरूको निजी जिपिएस ट्रेसहरू पढ्नुहोस्
+        allow_read_prefs: उनीहरूको प्रयोगकर्ता अभिरुचीहरू पढ्नुहोस्
+        allow_write_api: नक्सा परिमार्जन गर्नुहोस्
+        allow_write_diary: डायरी प्रविष्टी गर्नुहोस्, टिप्पणीहरू र साथी बनाउनुहोस्
+        allow_write_gpx: जिपिएस ट्रेसहरू अपलोड गर्नुहोस्
+        allow_write_notes: टिपोटहरू परिमार्जन गर्नुहोस्
+        allow_write_prefs: उनीहरूको प्रयोगकर्ता अभिरुचीहरू परिमार्जन गर्नुहोस्
+        callback_url: कलब्याक युआरएल
+        name: नाम (आवश्यक)
+        support_url: सहायता युआरएल
+        url: मुख्य एप्लिकेसन युआरएल (आवश्यक)
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap परिवर्वतन सूची छलफल
+        title_particular: 'OpenHistoricalMap परिवर्तन सूची #%{changeset_id} छलफल'
+  diary_entries:
+    feed:
+      all:
+        description: OpenHistoricalMap प्रयोगकर्ताहरूका हालैका डायरी प्रविष्टीहरू
+        title: OpenHistoricalMap डायरी प्रविष्टीहरू
+      language:
+        description: "%{language_name} भाषामा OpenHistoricalMap प्रयोगकर्ताहरूका हालैका डायरी"
+        title: "%{language_name} भाषामा OpenHistoricalMap दैनिकी"
+      user:
+        description: "%{user}को लागि हालैका OpenHistoricalMap डायरी"
+        title: "%{user}को लागि OpenHistoricalMap डायरी"
+    profile_diaries:
+      date_label: मिति
+  javascripts:
+    map:
+      zoom:
+        in: ठुलो पार्नुहोस
+        out: सानो पार्नुहोस
+  layouts:
+    logo:
+      alt_text: OpenHistoricalMap लोगो
+    logout: निर्गमन गर्नुहोस्
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: नि:शुल्क विकी विश्व नक्सा
+  site:
+    about_section:
+      legal_1_privacy_policy: गोपनीयता नीति
+    copyright:
+      legal_babble:
+        more_title_html: थप जान्नको लागि
+    export:
+      too_large:
+        overpass:
+          description: OpenHistoricalMap तथ्याङ्कको अर्को स्रोतबाट यो सिमारेखा प्राप्त गर्नुहोस्
+    help:
+      discord:
+        title: डिस्कर्ड
+      slack:
+        title: आईआरसि
+      wiki:
+        title: विकि
+  time:
+    formats:
+      blog: "%B %e, %Y"

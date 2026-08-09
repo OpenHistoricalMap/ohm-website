@@ -1,0 +1,67 @@
+# Messages for Serbo-Croatian (Latin script) (srpskohrvatski (latinica))
+# Exported from translatewiki.net
+# Author: Aca
+# Author: Erictheise
+# Author: Minh Nguyen
+# Author: Vlad5250
+# Do not edit by hand.
+sh:
+  accounts:
+    show:
+      contributor_terms:
+        link text: šta je ovo?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_prefs: čita njihove korisničke postavke
+        allow_write_diary: pravi dnevničke zapise, komentare i dodaje prijatelje
+        allow_write_prefs: mijenja njihove korisničke postavke
+        callback_url: URL za povratni poziv
+        name: Ime (obavezno)
+        support_url: URL podrške
+        url: Glavni URL priloga (obavezno)
+  api:
+    notes:
+      rss:
+        title: Bilješke OpenHistoricalMap-a
+  diary_entries:
+    feed:
+      all:
+        description: Nedavni zapisi u dnevnik korisnika OpenHistoricalMapa
+      language:
+        description: 'Nedavni zapisi u dnevniku OpenHistoricalMap korisnika na jeziku: %{language_name}'
+  errors:
+    forbidden:
+      description: Operacija koju ste tražili na serveru OpenHistoricalMap dostupna je samo administratorima (HTTP 403)
+    internal_server_error:
+      description: Server OpenHistoricalMap naišao je na neočekivano stanje koje ga je spriječilo da ispuni zahtjev (HTTP 500)
+    not_found:
+      description: Nije moguće pronaći operaciju za datoteku/direktorij/priložnik pod tim imenom na serveru OpenHistoricalMap (HTTP 404)
+  layouts:
+    intro_header: Dobrodošao/la na OpenHistoricalMap!
+    intro_text: OpenHistoricalMap je karta svijeta stvorena od strane ljudi kao što ste vi i može se slobodno koristiti pod licencom otvorenog koda.
+  site:
+    about:
+      lede_text: OpenHistoricalMap je izgradila zajednica kartografa koji donose i održavaju podatke o cestama, stazama, kafićima, željezničkim postajama i još mnogo čemu drugom diljem cijelog svijeta.
+    about_section:
+      legal_1_privacy_policy: Politika privatnosti
+      legal_1_terms_of_use: Uslovi korištenja
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Uvrštavanje podataka u OpenHistoricalMap ne podrazumijeva da se izvorni davatelj podataka prihvata ili reklamira OpenHistoricalMap, pruža bilo kakvu garanciju, ili prihvata bilo kakve obaveze.
+        infringement_1_html: |-
+          Suradnike OHM-a podsjećamo da nikada ne staju
+          podatke s izvora zaštićenih autorskim pravima (npr. Google karte ili tiskane karte) bez
+          izričitog ovlaštenja nositelja.
+    index:
+      js_2: OpenHistoricalMap koristi JavaScript za slippy kartu.
+      remote_failed: Uređivanje nije uspjelo - provjerite da li je JOSM ili Merkaartor učitan i da je udaljeni pristup omogućen
+    welcome:
+      introduction: Dobrodošli u OpenHistoricalMap — slobodnu i uredljivu kartu svijeta. Sada kada ste se prijavili, spremni ste za početak rada. Evo kratkog vodiča s najvažnijim stvarima koje je potrebno znati.
+  user_mailer:
+    diary_comment_notification:
+      subject: "[OpenHistoricalMap] %{user} je komentirao vaš unos u dnevniku"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Uspješan uvoz GPX-datoteke"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Dobro došli na OpenHistoricalMap"

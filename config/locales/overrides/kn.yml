@@ -1,0 +1,42 @@
+# Messages for Kannada (ಕನ್ನಡ)
+# Exported from translatewiki.net
+# Author: AKJ GOWDA
+# Author: Ananth subray
+# Author: Anzx
+# Author: Erictheise
+# Author: Minh Nguyen
+# Author: Nayvik
+# Author: Omshivaprakash
+# Author: Shankar
+# Author: Srividyacb
+# Author: VASANTH S.N.
+# Author: Vikashegde
+# Author: Xor
+# Author: Yogesh
+# Author: ~aanzx
+# Author: ಮಲ್ನಾಡಾಚ್ ಕೊಂಕ್ಣೊ
+# Do not edit by hand.
+kn:
+  accounts:
+    show:
+      contributor_terms:
+        link text: ಇದು ಏನು?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: ಅವರ ಖಾಸಗಿ ಜಿಪಿಎಸ್ ಟ್ರೇಸ್‌ಗಳನ್ನು ಓದಿ
+        allow_write_api: ನಕ್ಷೆಯನ್ನು ಮಾರ್ಪಡಿಸಿ
+        allow_write_gpx: GPS ಟ್ರೇಸ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ
+        allow_write_notes: ಟಿಪ್ಪಣಿಗಳನ್ನು ಮಾರ್ಪಡಿಸಿ
+  diary_entries:
+    profile_diaries:
+      date_label: ದಿನಾಂಕ
+  layouts:
+    intro_2_create_account: ಹೊಸ ಬಳಕೆದಾರ ಖಾತೆಯನ್ನು ರಚಿಸಿ
+    logout: ನಿರ್ಗಮಿಸು
+  site:
+    help:
+      slack:
+        title: ಐ ಆರ್ ಸಿ
+      wiki:
+        title: ವಿಕಿ

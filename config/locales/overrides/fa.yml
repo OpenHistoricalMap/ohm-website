@@ -1,0 +1,237 @@
+# Messages for Persian (فارسی)
+# Exported from translatewiki.net
+# Author: Ahangarha
+# Author: Alirezaaa
+# Author: Amirsara
+# Author: Arash.pt
+# Author: Arian Ar
+# Author: Armin1392
+# Author: BMRG14
+# Author: Baqeri
+# Author: Beginneruser
+# Author: Dalba
+# Author: Danialbehzadi
+# Author: Darafsh
+# Author: Dr jackie
+# Author: Ebrahim
+# Author: Ebraminio
+# Author: Erictheise
+# Author: FarsiNevis
+# Author: Fatemi127
+# Author: Gravitystorm
+# Author: Grille chompa
+# Author: Hooshmand.hasannia
+# Author: Huji
+# Author: Iriman
+# Author: Jafari
+# Author: Jeeputer
+# Author: Leyth
+# Author: LordProfo
+# Author: Mcuteangel
+# Author: Minh Nguyen
+# Author: Mjbmr
+# Author: Mobin2008
+# Author: Mohammad ebz
+# Author: Mojtabakd
+# Author: Movyn
+# Author: Mskf1383
+# Author: Nbi
+# Author: Omidh
+# Author: Pirehelokan
+# Author: Reza koulivand
+# Author: Reza1615
+# Author: Ruila
+# Author: Rulebased
+# Author: Sahim
+# Author: Taha
+# Author: Wayiran
+# Author: ZxxZxxZ
+# Author: جواد
+# Author: فلورانس
+# Author: کهربا
+# Do not edit by hand.
+fa:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: این چیست؟
+    terms:
+      show:
+        read and accept with tou: لطفاً توافق‌نامهٔ مشارکت‌کننده و شرایط استفاده را مطالعه کنید و هر دو گزینه را علامت بزنید و سپس روی دکمهٔ ادامه کلیک کنید.
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: ردهای GPS خصوصی او را بخواند
+        allow_read_prefs: ترجیحات کاربری او را بخواند
+        allow_write_api: نقشه را تغییر دهد
+        allow_write_diary: روزنوشت ایجاد کند، نظر ثبت کند و دوست اضافه کند
+        allow_write_gpx: ردهای GPS بارگذاری کند
+        allow_write_notes: یادداشت‌ها را تغییر دهد
+        allow_write_prefs: ترجیحات کاربری او را تغییر دهد
+        callback_url: Callback URL
+        name: نام (الزامی)
+        support_url: URL پشتیبانی
+        url: نشانی اینترنتی برنامهٔ اصلی (الزامی)
+  api:
+    notes:
+      rss:
+        title: یادداشت‌های OpenHistoricalMap
+  application:
+    setup_user_auth:
+      blocked_zero_hour: در وبگاه OpenHistoricalMap یک پیام خیلی مهم دارید. برای اینکه بتوانید ویرایش‌های خود را ذخیره کنید باید ابتدا آن را بخوانید.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: بحث بستهٔ تغییر OpenHistoricalMap
+        title_particular: 'بحث بستهٔ تغییر #%{changeset_id} در OpenHistoricalMap'
+  diary_entries:
+    comments:
+      title: "‫روزنوشت‌های OpenHistoricalMap"
+    feed:
+      all:
+        description: "‫روزنوشت‌های اخیر از کاربران OpenHistoricalMap"
+        title: "‫روزنوشت‌های OpenHistoricalMap"
+      language:
+        description: "‫روزنوشت‌های اخیر کاربران OpenHistoricalMap به %{language_name}‬"
+        title: "‫روزنوشت‌های OpenHistoricalMap به %{language_name}‬"
+      user:
+        description: "‫روزنوشت‌های اخیر %{user} در OpenHistoricalMap"
+        title: "‫روزنوشت‌های %{user} در OpenHistoricalMap"
+    profile_diaries:
+      date_label: تاریخ
+  errors:
+    contact:
+      contact_the_community_html: اگر متوجه پیوند شکسته یا اشکالی شده‌اید لطفاً با جامعهٔ OpenHistoricalMap %{contact_link}. نشانی دقیق درخواست خود را یادداشت کنید.
+    forbidden:
+      description: عملیاتی که در سرور OpenHistoricalMap درخواست کردید فقط برای مدیران در دسترس است (HTTP 403)
+    internal_server_error:
+      description: سرور OpenHistoricalMap با وضعیت غیرمنتظره‌ای روبه‌رو شد که آن را از انجام درخواست باز داشت (HTTP 500)
+    not_found:
+      description: پرونده/پوشه/عملیات API با آن نام در سرور OpenHistoricalMap پیدا نشد (HTTP 404)
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
+  javascripts:
+    legend:
+      title: کلید نقشه
+      tooltip: کلید نقشه
+      tooltip_disabled: کلید نقشه برای این لایه در دسترس نیست
+    map:
+      zoom:
+        in: بزرگ‌نمایی
+        out: کوچک‌نمایی
+  layouts:
+    intro_2_create_account: ساخت حساب کاربری
+    intro_header: به OpenHistoricalMap خوش آمدید!
+    intro_text: OpenHistoricalMap نقشه‌ای از جهان است که افرادی مانند شما آن را ساخته‌اند و آزادید آن را تحت پروانه‌ای آزاد استفاده کنید.
+    logo:
+      alt_text: لوگوی OpenHistoricalMap
+    logout: خروج
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: نقشهٔ ویکی‌گونه و آزاد جهان
+  sessions:
+    destroy:
+      heading: خروج از OpenHistoricalMap
+  site:
+    about:
+      lede_text: OpenHistoricalMap را جامعه‌ای از نقشه‌کشان ساخته‌اند که در ایجاد و نگهداری داده‌های مربوط به جاده‌ها، مسیرهای تریل، کافه‌ها، ایستگاه‌های راه‌آهن و بسیاری موارد دیگر در سرتاسر جهان نقش ایفا می‌کنند.
+    about_section:
+      contribute_1_user_diaries: روزنوشت‌های کاربران
+      legal_1_privacy_policy: سیاست محرمانگی
+      legal_1_terms_of_use: شرایط استفاده
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: ورود داده در OpenHistoricalMap به این معنی نیست که فراهم‌کنندهٔ اصلی داده OpenHistoricalMap را تأیید می‌کند، ضمانتی می‌دهد، یا مسئولیتی می‌پذیرد.
+        credit_title_html: چگونه از OpenHistoricalMap یاد کنیم
+        infringement_1_html: به مشارکت‌کنندگان OHM یادآوری شده است که هرگز از منابع دارای حق نشر داده اضافه نکنند (مثلاً نقشه‌های گوگل یا نقشه‌های چاپی)، مگر با اجازهٔ صریح و آشکار از صاحبان حق نشر.
+        more_title_html: کسب اطلاعات بیشتر
+      title: حق‌نشر و پروانه
+    export:
+      too_large:
+        body: این محدوده برای برون‌ریزی در قالب OpenHistoricalMap XML خیلی بزرگ است. لطفاً بزرگ‌نمایی کنید یا منطقهٔ کوچک‌تری را انتخاب کنید، یا برای دریافت داده‌های انبوه یکی از منابع فهرست زیر را استفاده کنید.
+        overpass:
+          description: بارگیری این محدوده از یکی از آینه‌های پایگاه دادهٔ OpenHistoricalMap
+        planet:
+          description: رونوشت‌های پایگاه دادهٔ کامل OpenHistoricalMap که به‌طور منظم روزآمد می‌شوند
+          title: سیارهٔ OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            کافی است روی %{note_icon} یا آیکون مشابه در صفحهٔ نقشه کلیک کنید.
+            با این کار یک نشانگر به نقشه اضافه خواهد شد که می‌توانید با کشیدن جابه‌جایش کنید. پیام خود را بنویسید و سپس روی ذخیره کلیک کنید. سایر نقشه‌کش‌ها آن را بررسی خواهند‌ کرد.
+    help:
+      forum:
+        title: انجمن
+      introduction: در پروژهٔ OpenHistoricalMap برای آموختن، پرسیدن و پاسخ‌دادنِ سوالات، بحث و همفکری دربارهٔ موضوعات نقشه‌کشی و ثبت آن‌ها منابع زیادی وجود دارد.
+      slack:
+        title: IRC
+      welcome:
+        description: از این راهنمای ساده و سریع که دربرگیرندهٔ مبانی OpenHistoricalMap است آغاز کنید.
+      wiki:
+        description: مستندات پرجزئیات را در ویکی OHM مرور کنید.
+        title: ویکی
+    index:
+      js_2: OpenHistoricalMap برای نقشهٔ لغزان از جاوااسکریپت استفاده می‌کند.
+      remote_failed: ویرایش انجام نشد - مطمئن شوید JOSM یا Merkaartor باز و گزینهٔ کنترل از دور فعال باشد
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap اصطلاحات ویژهٔ خودش را دارد. در اینجا چند کلیدواژهٔ مفید ذکر شده است.
+      introduction: به OpenHistoricalMap، نقشهٔ آزاد و قابل ویرایش جهان، خوش آمدید. اکنون که نام‌نویسی‌تان کامل شده، می‌توانید یکراست نقشه‌کشی را آغاز کنید. این راهنمای سریع دربارهٔ مهم‌ترین چیزهایی است که به دانستنشان نیاز دارید.
+      rules:
+        para_1_html: قوانین رسمی OpenHistoricalMap تنها چند مورد است، اما از همهٔ مشارکت‌کنندگان انتظار داریم با جامعه همکاری کنند و ارتباط داشته باشند. اگر می‌خواهید هرگونه فعالیتی به غیر از ویرایش دستی انجام دهید، لطفاً رهنمودهای مربوط به %{imports_link} و %{automated_edits_link} را بخوانید و از آن‌ها پیروی کنید.
+      whats_on_the_map:
+        off_the_map_html: چیزهایی که در نقشه %{doesnt} عبارت‌اند از دادهٔ سلیقه‌ای مانند رتبه‌بندی‌ها، عارضه‌های تاریخی یا فرضی و داده‌ای که از منابع دارای حق‌نشر به‌دست می‌آوریم. از نقشه‌های آنلاین یا کاغذی کپی نکنید، مگر اینکه اجازهٔ ویژه برای این کار داشته باشید.
+  traces:
+    feeds:
+      show:
+        title: "‫ردهای جی‌پی‌اس OpenHistoricalMap"
+    show:
+      edit: ویرایش
+      edit_trace: ویرایش این رد
+      map: نقشه
+    trace:
+      edit_map: ویرایش نقشه
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] ‫%{commenter} روی یکی از بسته‌های تغییر موردتوجهتان نظر داد‬"
+        subject_own: "[OpenHistoricalMap] ‫%{commenter} روی یکی از بسته‌های تغییر شما نظر داد‬"
+    diary_comment_notification:
+      subject: "[OpenHistoricalMap] ‫%{user} روی روزنوشت نظر داد‬"
+    email_confirm:
+      subject: "[OpenHistoricalMap] نشانی رایانامه‌تان را تأیید کنید"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] ‫شکست درون‌برد GPX‬"
+    gpx_success:
+      subject: "[OpenHistoricalMap] ‫موفقیت درون‌برد GPX‬"
+    lost_password:
+      hopefully_you: "‫کسی (احتمالاً شما) درخواست کرده گذرواژهٔ مربوط به حساب کاربری متناظر با این رایانامه در openhistoricalmap.org بازنشانی شود.‬"
+      subject: "[OpenHistoricalMap] درخواست بازنشانی رمز عبور"
+    message_notification:
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] ‫%{commenter} یکی از یادداشت‌های موردتوجه شما را حل کرد‬"
+        subject_own: "[OpenHistoricalMap] ‫%{commenter} یکی از یادداشت‌های شما را حل کرد‬"
+      commented:
+        subject_other: "[OpenHistoricalMap] ‫%{commenter} روی یادداشت موردتوجه شما نظر داد‬"
+        subject_own: "[OpenHistoricalMap] ‫%{commenter} روی یکی از یادداشت‌های شما نظر داد‬"
+      reopened:
+        subject_other: "[OpenHistoricalMap] ‫%{commenter} یکی از یادداشت‌های موردتوجه شما را دوباره فعال کرد‬"
+        subject_own: "[OpenHistoricalMap] ‫%{commenter} یکی از یادداشت‌های شما را دوباره فعال کرد‬"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] به اوپن‌استریت‌مپ خوش آمدید"
+  users:
+    auth_association:
+      heading: شناسهٔ شما هنوز با یک حساب کاربری OpenHistoricalMap مرتبط نشده است.
+      option_1: اگر در OpenHistoricalMap تازه‌وارد هستید، لطفاً با استفاده از فرم زیر یک حساب کاربری جدید بسازید.
+    show:
+      delete_user: حذف این کاربر
+      hide_user: مخفی‌کردن این کاربر
+      unhide_user: آشکارکردن این کاربر

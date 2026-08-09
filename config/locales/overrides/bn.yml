@@ -1,0 +1,118 @@
+# Messages for Bangla (বাংলা)
+# Exported from translatewiki.net
+# Author: Aftabuzzaman
+# Author: Aishik Rehman
+# Author: Al Riaz Uddin Ripon
+# Author: Anupamdutta73
+# Author: Bellayet
+# Author: Bodhisattwa
+# Author: Borhan
+# Author: Ehsanulhb
+# Author: Elias Ahmmad
+# Author: Erictheise
+# Author: Greatder
+# Author: Gronthokeet
+# Author: Joysriramsarkar.manathetiger56
+# Author: Kayser Ahmad
+# Author: Md. Golam Mukit Khan
+# Author: Minh Nguyen
+# Author: Nasir8891
+# Author: R4356th
+# Author: R4bb1
+# Author: Rasal Lia
+# Author: RiazACU
+# Author: San1joy23
+# Author: Sayma Jahan
+# Author: Tahmid
+# Author: Tauhid16
+# Author: Titodutta
+# Author: Wikisagnik
+# Author: YahyA
+# Author: Yahya
+# Author: আজিজ
+# Author: আফতাবুজ্জামান
+# Author: এম আবু সাঈদ
+# Author: জয়শ্রীরাম সরকার
+# Do not edit by hand.
+bn:
+  accounts:
+    show:
+      contributor_terms:
+        link text: এটি কী?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: তাদের ব্যক্তিগত জিপিএস অনুসরণ করুন
+        allow_read_prefs: ব্যবহারকারীর পছন্দগুলি পড়ে
+        allow_write_api: মানচিত্রটি সম্পাদন করুন
+        allow_write_diary: ডায়েরি ভুক্তি তৈরি, মন্তব্য এবং বন্ধু বানান
+        allow_write_gpx: জিপিএস ট্রেস আপলোড করুন
+        allow_write_notes: টীকা পরিবর্তন করুন
+        allow_write_prefs: তাদের ব্যবহারকারী পছন্দসমূহ যাচাই করুন
+        callback_url: কলব্যাক ইউআরএল
+        name: নাম (আবশ্যিক)
+        support_url: সহায়তা ইউআরএল
+        url: মূল অ্যাপ্লিকেশন ইউআরএল (প্রয়োজন)
+  auth:
+    providers:
+      openstreetmap: ওপেনস্ট্রিটম্যাপ
+  changesets:
+    index:
+      feed:
+        cc0_url: https://creativecommons.org/publicdomain/zero/1.0/deed.bn
+  diary_entries:
+    profile_diaries:
+      date_label: তারিখ
+  javascripts:
+    map:
+      base:
+        railway: রেলপথ
+  layouts:
+    intro_2_create_account: একটি ব্যবহারকারী অ্যাকাউন্ট তৈরি করুন
+    logout: প্রস্থান
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: মুক্ত উইকি বিশ্ব মানচিত্র
+  oauth:
+    scopes:
+      openid: ওপেনস্ট্রিটম্যাপ ব্যবহার করে সাইন-ইন করুন
+  site:
+    about_section:
+      contribute_1_mastodon: মাস্টোডন
+      legal_1_privacy_policy: গোপনীয়তার নীতি
+      legal_1_terms_of_use: ব্যবহারের শর্তাবলী
+    copyright:
+      legal_babble:
+        more_title_html: আরও খুঁজা হচ্ছে
+    help:
+      forum:
+        title: ফোরাম
+      mailing_list:
+        title: মেইলিং তালিকা
+      slack:
+        title: আইআরসি
+      wiki:
+        title: উইকি
+  traces:
+    show:
+      edit_trace: এই অনুসরণটি সম্পাদনা করুন
+      map: মানচিত্র
+    trace:
+      view_map: মানচিত্র দেখুন
+  user_mailer:
+    diary_comment_notification:
+      subject: "[OpenHistoricalMap] %{user} একটি দিনলিপির ভুক্তিতে মন্তব্য করেছেন"
+    email_confirm:
+      subject: "[OpenHistoricalMap] আপনার ইমেইল ঠিকানা নিশ্চিত করুন"
+    lost_password:
+      hopefully_you: কোনো একজন (সম্ভবত আপনি) এই ইমেইল ঠিকানার সাথে যুক্ত openhistoricalmap.org অ্যাকাউন্টের পাসওয়ার্ড পরিবর্তনের অনুরোধ করেছেন।
+    signup_confirm:
+      subject: "[OpenHistoricalMap] ওপেনস্ট্রিটম্যাপে স্বাগতম"
+  users:
+    auth_association:
+      heading: আপনার আইডি এখনও কোনও ওপেনহিস্টোরিকস্ট্রিটম্যাপ অ্যাকাউন্টের সাথে যুক্ত নয়।
+    show:
+      delete_user: এই ব্যবহাকারীকে অপসারণ করুন
+      hide_user: এই ব্যবহারকারীকে লুকান
+      unhide_user: এই ব্যবহাকারীকে দেখান

@@ -1,0 +1,107 @@
+# Messages for Albanian (shqip)
+# Exported from translatewiki.net
+# Author: Bjakupi
+# Author: Dimitar
+# Author: Eraldkerciku
+# Author: Erictheise
+# Author: Euriditi
+# Author: Fanjiayi
+# Author: GretaDoci
+# Author: Kosovastar
+# Author: Liridon
+# Author: Macofe
+# Author: Mdupont
+# Author: MicroBoy
+# Author: Mikullovci11
+# Author: Minh Nguyen
+# Author: Nemo bis
+# Author: Ruila
+# Author: Sidorela.uku
+# Author: Techlik
+# Author: Vinie007
+# Author: 아라
+# Do not edit by hand.
+sq:
+  accounts:
+    show:
+      contributor_terms:
+        link: http://www.osmfoundation.org/wiki/License/Contributor_Terms
+        link text: çfarë është kjo?
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Diskutimi mbi ndryshimet në OpenHistoricalMap
+        title_particular: 'Diskutimi mbi grupin e ndryshimeve #%{changeset_id} të OpenHistoricalMap'
+  diary_entries:
+    feed:
+      all:
+        description: Shënimet e fundit në ditar nga përdoruesit e OpenHistoricalMap
+        title: Shënimet e ditarit të OpenHistoricalMap
+      language:
+        description: Shënimet e fundit në ditar nga përdoruesit e OpenHistoricalMap në %{language_name}
+        title: Shënimet e ditarit të OpenHistoricalMap në %{language_name}
+      user:
+        description: Shënimet e fundit në ditarin e OpenHistoricalMap nga %{user}
+        title: OpenHistoricalMap shënime ditari për %{user}
+    profile_diaries:
+      date_label: Data
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          horse_riding: Kalërim
+  layouts:
+    intro_2_create_account: Krijo një llogari përdoruesi
+    intro_header: Mirësevjen në OpenHistoricalMap!
+    intro_text: OpenHistoricalMap është hartë e botës, e krijuar nga njerëz si ti dhe për përdorim të lirshëm në kuadrin e një licence të hapur.
+    logo:
+      alt_text: Logoja e OpenHistoricalMap
+    logout: Çidentifikohu
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: Harta e lirë e botës Wiki
+  sessions:
+    destroy:
+      heading: Çidentifikohu nga OpenHistoricalMap
+  site:
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Përfshirja e të dhënave në OpenHistoricalMap nuk thekson se të ofruesi origjinal i të dhënave përdor OpenHistoricalMap, ofron garancion, apo pranon çfarëdo anekse.
+        contributors_intro_html: Licenca jonë CC BY-SA kërkon nga ju që &ldquo;të vlerësoni Autorin Origjinal përkatës të mediumit apo masave që jeni duke i shfrytëzuar &rdquo;. Hartuesit individual të OHM nuk kërkojnë një citim mbi dhe për atë që kontribuojnë për &ldquo;OpenHistoricalMap&rdquo;, por kur përfshihen në OHM, hartat nga një agjencion nacional i hartave apo faktor tjerë madhor burimor, është e arsyeshme të citohen drejtpërsëdrejti duke paraqitur emrin apo duke lidhur faqen e tyre me link.
+        credit_1_html: Ne kërkojmë që ju të përdorni kreditet e &ldquo;&copy; OpenHistoricalMap contributors&rdquo;.
+        credit_title_html: Si të citoni OpenHistoricalMap
+        more_title_html: Zbulo më shumë
+    export:
+      too_large:
+        body: Kjo zonë është shumë e madhe për të eksportuar të dhënat XML të OpenHistoricalMap. Të lutem zmadho (zoom) ose zgjidh një zonë më të vogël, ose përdor një nga burimet e listuara më poshtë për të shkarkuar pjesë të mëdha të të dhënave.
+        overpass:
+          description: Shkarkoni këtë kuti kufizimi nga një pasqyrim i të dhënave të OpenHistoricalMap
+        planet:
+          description: Kopje të plota të përditësuara rregullisht të bazës së të dhënave të OpenHistoricalMap
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: Klikoni %{note_icon} ose të njëjtën ikonë në ekranin e hartës. Kjo do të shtojë një shënues në hartë, të cilën ju mund ta lëvizni duke e tërhequr. Shtoni mesazhin tuaj, pastaj klikoni save dhe editues të tjerë do ta kontrollojnë.
+    help:
+      introduction: OpenHistoricalMap ka disa burime për të mësuar në lidhje me projektin, duke bërë pyetje dhe duke ju përgjigjur dhe duke diskutuar bashkërisht dhe duke dokumentuar temat e hartës.
+      welcome:
+        description: Filloni me këtë udhëzues të thjeshtë që mbulon bazat e OpenHistoricalMap.
+        title: Mirësevini në OpenHistoricalMap
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap ka disa shprehje në zhargonin e vet. Këtu janë disa fjalë kyçe mund të jenë të dobishme.
+  traces:
+    trace:
+      view_map: Shiko hartën
+  user_mailer:
+    email_confirm:
+      subject: "[OpenHistoricalMap] Konfirmo adresën e emailit tënd"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Mirësevjen në OpenHistoricalMap"
+  users:
+    show:
+      delete_user: fshi këtë përdorues
+      hide_user: fsheh këtë përdorues
+      unhide_user: zbulo këtë përdorues

@@ -1,0 +1,150 @@
+# Messages for Telugu (తెలుగు)
+# Exported from translatewiki.net
+# Author: Arjunaraoc
+# Author: Chaduvari
+# Author: Danieldegroot2
+# Author: Erictheise
+# Author: Gayatri
+# Author: Kiranmayee
+# Author: McDutchie
+# Author: Minh Nguyen
+# Author: Ravichandra
+# Author: Thirumalgoud
+# Author: V Bhavya
+# Author: Veeven
+# Author: రహ్మానుద్దీన్
+# Do not edit by hand.
+te:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: ఇది ఏమిటి?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: వారు గోప్య GPS అనుసరణలను చదవండి
+        allow_read_prefs: వారి వాడుకరి అభిరుచులను చదవండి
+        allow_write_api: మ్యాపును సవరించండి
+        allow_write_diary: డైరీ ఎంట్రీలు, వ్యాఖ్యలు సృష్టించండి, మిత్రులను చేసుకోండి
+        allow_write_gpx: GPS అనుసరణలను ఎక్కించండి
+        allow_write_notes: గమనికలను సవరించు
+        allow_write_prefs: వారి వాడుకరి అభిరుచులను మార్చు
+        callback_url: కాల్‌బ్యాక్ URL
+        name: పేరు (ఆవశ్యకం)
+        support_url: సపోర్ట్ URL
+        url: ప్రధాన అనువర్తనం URL (ఆవశ్యకం)
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap గమనికలు
+  application:
+    setup_user_auth:
+      blocked_zero_hour: OpenHistoricalMap వెబ్‌సైట్లో మీకు ఒక అర్జెంటు సందేశం ఉంది. మీ దిద్దుబాట్లను భద్రపరచాలంటే, ముందు మీరు ఆ సందేశాన్ని చదవాల్సి ఉంటుంది.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap మార్పులసమితి చర్చ
+        title_particular: 'OpenHistoricalMap మార్పులసమితి #%{changeset_id} చర్చ'
+  diary_entries:
+    comments:
+      title: ఓపెన్ హిస్టోరికల్ మ్యాప్ డైరీ ఎంట్రీలు
+    feed:
+      all:
+        description: OpenHistoricalMap వాడుకరులు ఇటీవల చేర్చిన డైరీ పద్దులు
+        title: OpenHistoricalMap డైరీ పద్దులు
+      language:
+        description: OpenHistoricalMap వాడుకరులు %{language_name} లో చేర్చిన ఇటీవలి డైరీ పద్దులు
+        title: "%{language_name} లో చేర్చిన OpenHistoricalMap డైరీ పద్దులు"
+      user:
+        description: "%{user} చేర్చిన ఇటీవలి OpenHistoricalMap డైరీ పద్దులు"
+        title: "%{user} చేర్చిన OpenHistoricalMap డైరీ పద్దులు"
+    profile_diaries:
+      date_label: తేదీ
+  javascripts:
+    map:
+      base:
+        japanesescroll: జపనీస్ స్క్రోల్
+      zoom:
+        in: జూమ్ ఇన్
+        out: జూమ్ ఔట్
+  layouts:
+    intro_2_create_account: వాడుకరి ఖాతాను సృష్టించుకోండి
+    intro_text: OpenHistoricalMap, ఓ ప్రపంచ మ్యాపు. మీలాంటి వారే దీన్ని తయారు చేసారు. స్వేచ్ఛా లైసెన్సు ద్వారా స్వేచ్ఛగా దీన్ని వాడుకోవచ్చు.
+    logout: నిష్క్రమించండి
+    tag_line: స్వేచ్ఛా వికీ ప్రపంచ పటం
+  site:
+    about:
+      lede_text: OpenHistoricalMap ను మ్యాపర్ల సముదాయం నిర్మిస్తోంది. ఈ సముదాయ సభ్యులు ప్రపంచ వ్యాప్తంగా రోడ్లు, రెస్టారెంట్లు, రైల్వే స్టేషన్లు లాంటి ఎన్నో అంశాల గురించి డేటాను చేర్చడం, నిర్వహించడం చేస్తున్నారు.
+    copyright:
+      legal_babble:
+        credit_1_html: |-
+          మీరు &ldquo;&copy; OpenHistoricalMap
+          contributors&rdquo; అనే క్రిడిట్ వాడాలి.
+        credit_2_this_copyright_page: ఈ కాపీరైట్ పేజీ
+        credit_title_html: OpenHistoricalMap కు శ్రేయస్సు నివ్వడం ఎలా
+        more_2_1_api_usage_policy: API వినియోగ విధానం
+        more_title_html: మరింత తెలుసుకోవడం
+    export:
+      too_large:
+        body: ఈ ప్రాంతాన్ని OpenHistoricalMap XML డేటాగా ఎగుమతి చెయ్యగలిగిన దాని కంటే పెద్దదిగా ఉంది. జూమిన్ చెయ్యండి, లేదా మరింత చిన్న ప్రాంతాన్ని ఎంచుకోండి, లేదా కింద ఉన్న, టోకున దించుకునేందుకు వీలైన మూలాల జాబితా నుండి ఒకదాన్ని వాడండి.
+        planet:
+          description: ఎప్పటికప్పుడూ తాజాకరిస్తూ ఉన్న OpenHistoricalMap సంపూర్ణ డేటాబేసుకు చెందిన కాపీలు
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        join_the_community:
+          explanation_html: మా మ్యాపు డేటాలో మీకేదైనా సమస్య కనిపిస్తే - ఉదాహరణకు మీ అడ్రసు లేకపోవడమో, ఏదైనా రోడ్డు లేకపోవడమో లాంటివి - OpenHistoricalMap సముదాయంలో చేరి ఆ డేటాను మీరే బాగుచెయ్యడమో లేదా అవసరమైన చేర్పులు చెయ్యడమో ఉత్తమమైన పద్ధతి.
+    help:
+      slack:
+        title: IRC
+      welcome:
+        description: OpenHistoricalMap ప్రాథమికాంశాలను వివరించే ఈ సత్వర మార్గదర్శినితో మొదలు పెట్టండి.
+      wiki:
+        description: లోతైన OHM డాక్యుమెంటేషను కోసం వికీలో శోధించండి
+        title: వికీ
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap కు స్వంత పరిభాష ఉంది. మీకు పనికొచ్చే కొన్ని కీలకమైన పదాలు ఇక్కడున్నాయి చూడండి.
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS ట్రేసులు
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] మీకు ఆసక్తి ఉన్న మార్పులసమితిపై %{commenter} వ్యాఖ్యానించారు"
+        subject_own: మీ మార్పులసమితుల్లో ఒకదానిపై [OpenHistoricalMap] %{commenter} వ్యాఖ్యానించారు
+    diary_comment_notification:
+      header: "%{from_user}, %{subject} అనే సబ్జెక్టుతో OpenHistoricalMap డైరీ పద్దుపై వ్యాఖ్యానించారు:"
+      header_html: "%{from_user}, %{subject} అనే సబ్జెక్టుతో OpenHistoricalMap డైరీ పద్దుపై వ్యాఖ్యానించారు:"
+      subject: "[OpenHistoricalMap] %{user} ఒక డైరీ పద్దుపై వ్యాఖ్యానించారు"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX దిగుమతి వైఫల్యం"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX దిగుమతి జయప్రదం"
+    lost_password:
+      hopefully_you: ఈ ఈమెయిలు చిరునామాకు చెందిన openhistoricalmap.org ఖాతా లోని సంకేతపదాన్ని మార్చమని ఎవరో (బహుశా మీరే) అడిగారు.
+      subject: "[OpenHistoricalMap] సంకేతపదం మార్పు అభ్యర్థన"
+    message_notification:
+      header: "%{from_user}, %{subject} అనే సబ్జెక్టుతో OpenHistoricalMap ద్వారా మీకొక సందేశం పంపించారు:"
+      header_html: "%{from_user}, %{subject} అనే సబ్జెక్టుతో OpenHistoricalMap ద్వారా మీకొక సందేశం పంపించారు:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] మీకు ఆసక్తి ఉన్న గమనికల్లో ఒకదాన్ని %{commenter} పరిష్కరించారు"
+        subject_own: "[OpenHistoricalMap] మీ గమనికల్లో ఒకదాన్ని %{commenter} పరిష్కరించారు"
+      commented:
+        subject_other: మీకు ఆసక్తి ఉన్న ఒక గమనికపై [OpenHistoricalMap] %{commenter} వ్యాఖ్యానించారు
+        subject_own: "[OpenHistoricalMap] %{commenter} మీ గమనికలపై వ్యాఖ్యానించారు"
+      reopened:
+        subject_other: "[OpenHistoricalMap] మీకు ఆసక్తి ఉన్న ఒక గమనికను %{commenter} పునరుజ్జీవింపజేసారు"
+        subject_own: "[OpenHistoricalMap] %{commenter}, మీ గమనికల్లో ఒకదాన్ని పునరుజ్జీవింపజేసారు"
+  users:
+    auth_association:
+      heading: మీ ID ఇంకా ఏ OpenHistoricalMap ఖాతాకూ అనుబంధించి లేదు.
+      option_1: మీరు OpenHistoricalMap కు కొత్తైతే, కింది ఫారమును వాడి కొత్త ఖాతాను సృష్టించుకోండి.
+    show:
+      delete_user: ఈ వాడుకరిని తొలగించు
+      hide_user: ఈ వాడుకరిని దాచు
+      unhide_user: ఈ వాడుకరిని చూపు

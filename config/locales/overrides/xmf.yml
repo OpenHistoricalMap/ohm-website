@@ -1,0 +1,50 @@
+# Messages for Mingrelian (მარგალური)
+# Exported from translatewiki.net
+# Author: Erictheise
+# Author: Minh Nguyen
+# Author: Narazeni
+# Author: Silovan
+# Do not edit by hand.
+xmf:
+  accounts:
+    show:
+      contributor_terms:
+        link text: მუ რე თენა?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: კერზო GPS-ტრეკეფიშ კითხირი
+        allow_read_prefs: წეკითხით ომახვარებე პარამეტრეფი
+        allow_write_api: რუკაშ თირუა
+        allow_write_diary: დღარეფიშ დინნაჭარეფიშ გოჭყაფა დო კომენტირაფა
+        allow_write_gpx: GPS-ტრეკეფიშ ეხარგუა
+        allow_write_notes: მოღანკუეფიშ მიშათინუა
+        allow_write_prefs: ომახვარებე პარამეტრეფიშ თირუა
+        callback_url: Callback URL
+        name: ჯოხო (უციო)
+        support_url: აზარაშ URL
+        url: თარი აპლიკაციაშ URL (უციო)
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap ხვილაფეფი
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap-შ თირუეფიშ პაკეტიშ სხუნუა
+        title_particular: 'OpenHistoricalMap თირუეფიშ პაკეტიშ სხუნუა #%{changeset_id}'
+  date:
+    formats:
+      brief_bce: ჯვ. წ. %{year}
+      brief_ce: ახ. წ. %{year}
+  diary_entries:
+    feed:
+      all:
+        title: OpenHistoricalMap დღარიშ დინნაჭარეფი
+      language:
+        title: OpenHistoricalMap დღარიშ დინნაჭარეფი გეჸვენჯი ნინაშა %{language_name}
+      user:
+        title: OpenHistoricalMap დღარიშ დინნაჭარეფი მახვარებუშო %{user}
+  layouts:
+    intro_2_create_account: მახვარებუეფიშ ანგარიშიშ გოჭყაფა
+    intro_header: მოზოჯით OpenHistoricalMap-შა!

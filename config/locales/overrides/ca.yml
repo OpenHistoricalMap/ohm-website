@@ -1,0 +1,265 @@
+# Messages for Catalan (català)
+# Exported from translatewiki.net
+# Author: Alan Mena
+# Author: Aleator
+# Author: Alvaro Vidal-Abarca
+# Author: Amire80
+# Author: Annamerida
+# Author: Bc0ed5a28dfc189b971a689bae2d31b45cb5f3fd
+# Author: Bogreudell
+# Author: Danieldegroot2
+# Author: Delta123
+# Author: Eduardo Martinez
+# Author: El libre
+# Author: Erictheise
+# Author: Fitoschido
+# Author: Galactic Thrasher
+# Author: Gemmaa
+# Author: Grondin
+# Author: Jaumeortola
+# Author: Jconstanti
+# Author: Jlrb+
+# Author: Jmaspons
+# Author: Jmontane
+# Author: Lluis Cat
+# Author: Macofe
+# Author: Martorell
+# Author: McDutchie
+# Author: Medol
+# Author: Mguix
+# Author: Micru
+# Author: Minh Nguyen
+# Author: Mlforcada
+# Author: Nemo bis
+# Author: Netol
+# Author: PerroVerd
+# Author: Pitort
+# Author: Qllach
+# Author: Quel.soler
+# Author: Rbndev
+# Author: Ruila
+# Author: SMP
+# Author: Sim6
+# Author: Skurz0
+# Author: Solde
+# Author: Somenxavier
+# Author: Ssola
+# Author: Toniher
+# Author: VerusPhoebusApollo
+# Author: Vfc
+# Author: XVEC
+# Author: Yupik
+# Author: 아라
+# Do not edit by hand.
+ca:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: què és això?
+    terms:
+      show:
+        read and accept with tou: Llegiu l'acord de col·laborador i les condicions d'ús i, en acabat, marqueu totes dues caselles i premeu el botó de continuar.
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: Llegeix les seves traces GPS privades
+        allow_read_prefs: llegir les vostres preferències d'usuari
+        allow_write_api: Modifica el mapa
+        allow_write_diary: Escriviu entrades de diari, comentaris i feu amics
+        allow_write_gpx: Carrega traces GPS
+        allow_write_notes: Modifica notes
+        allow_write_prefs: modificar les vostres preferències d'usuari.
+        callback_url: URL de crida de retorn
+        name: Nom (Requerit)
+        support_url: URL de suport
+        url: URL de l'aplicació principal (Requerit)
+  api:
+    notes:
+      rss:
+        title: Notes d'OpenHistoricalMap
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Teniu un missatge urgent en el lloc web d'OpenHistoricalMap. Cal que el llegiu per a poder desar els vostres canvis.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Debat sobre els conjunts de canvis d'OpenHistoricalMap
+        title_particular: 'Debat sobre el conjunt de canvis #%{changeset_id} d''OpenHistoricalMap'
+  diary_entries:
+    comments:
+      title: Entrades de diari d'OpenHistoricalMap
+    feed:
+      all:
+        description: Entrades de diari recents dels usuaris d'OpenHistoricalMap
+        title: Entrades de diari d'OpenHistoricalMap
+      language:
+        description: Entrades de diari recents dels usuaris d'OpenHistoricalMap en %{language_name}
+        title: Entrades de diari d'OpenHistoricalMap en %{language_name}
+      user:
+        description: Entrades de diari recents d'OpenHistoricalMap de %{user}
+        title: Entrades de diari d'OpenHistoricalMap de %{user}
+    profile_diaries:
+      date_label: Data
+  errors:
+    contact:
+      contact_the_community_html: No dubteu a %{contact_link} la comunitat d'OpenHistoricalMap si heu trobat un enllaç trencat / error. Anoteu l'URL exacte de la vostra sol·licitud.
+    forbidden:
+      description: L'operació que heu sol·licitat al servidor OpenHistoricalMap només és disponible per als administradors (HTTP 403)
+    internal_server_error:
+      description: El servidor d'OpenHistoricalMap s'ha trobat amb una condició inesperada que li ha impedit complir la sol·licitud (HTTP 500)
+    not_found:
+      description: No s'ha pogut trobar cap operació de fitxer/directori/API amb aquest nom al servidor d'OpenHistoricalMap (HTTP 404)
+  geocoder:
+    search:
+      title:
+        osm_nominatim: Nominatim de l’OpenHistoricalMap
+        osm_nominatim_reverse: Nominatim de l’OpenHistoricalMap
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          track: Pista d'atletisme
+        shop:
+          seafood: Botiga de marisc
+  javascripts:
+    map:
+      zoom:
+        in: Amplia
+        out: Allunya
+  layouts:
+    intro_2_create_account: Crea un compte d’usuari
+    intro_header: OpenHistoricalMap us dona la benvinguda
+    intro_text: L'OpenHistoricalMap és un mapa del món creat per persones com tu i d'ús lliure sota una llicència oberta.
+    logo:
+      alt_text: Logotip de l'OpenHistoricalMap
+    logout: Surt
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: El mapa col·laboratiu lliure
+  sessions:
+    destroy:
+      heading: Tanca la sessió d'OpenHistoricalMap
+  site:
+    about:
+      lede_text: OpenHistoricalMap està fet per una comunitat de cartògrafs que aporten i actualitzen dades sobre carreteres, senders, cafeteries, estacions de ferrocarril i molt més arreu del món.
+    about_section:
+      contribute_1_user_diaries: dietaris dels usuaris
+      legal_1_aup: polítiques d'ús acceptable
+      legal_1_html: "Aquest lloc web i molts altres serveis relacionats són operats formalment per la \n%{group_link} en nom de la comunitat. L'ús de tots els serveis operats per l'OSMF es troba subjecte a les nostres %{terms_of_use_link}, %{aup_link} i a les nostres %{privacy_policy_link}."
+      legal_1_privacy_policy: polítiques de privadesa
+      legal_1_terms_of_use: condicions d’ús
+      legal_2_html: "%{contact_team_link} si teniu qüestions sobre la llicència, copyright o altres temes legals."
+    communities:
+      lede_text: |-
+        Persones d'arreu del món contribueixen o utilitzen OpenHistoricalMap. Si bé moltes hi participen individualment, d'altres han format comunitats.
+        Aquests grups tenen diferents mides i representen àrees des de ciutats petites fins a grans regions de diversos països. També poden ser formals o informals.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: La inclusió de dades a l'OpenHistoricalMap no implica que el proveïdor original de les dades dona suport a l'OpenHistoricalMap, proporciona cap garantia o accepta cap responsabilitat.
+        credit_1_html: 'Allà on utilitzeu les dades de l''OpenHistoricalMap, cal que feu les dues coses següents:'
+        credit_2_this_copyright_page: aquesta pàgina de copyright
+        credit_title_html: Com atribuir autoria a OpenHistoricalMap
+        infringement_1_html: Recordem als col·laboradors de l'OHM que mai no s'han d'afegir dades de cap font amb drets d'autor registrats (com Google Maps o mapes impresos per exemple) sense tenir una autorització explícita dels titulars dels drets d'autor.
+        introduction_4_creative_commons: Creative Commons Reconeixement-CompartirIgual 2.0
+        more_2_1_api_usage_policy: Política d'ús de l'API
+        more_2_1_html: Tot i que OpenHistoricalMap són dades obertes, no podem proporcionar una API gratuïta als mapes per a tercers. Vegeu la %{api_usage_policy_link}, %{tile_usage_policy_link} i %{nominatim_usage_policy_link}.
+        more_2_1_nominatim_usage_policy: Política d'ús de Nominatim
+        more_2_1_tile_usage_policy: Política d'ús de les tessel·les
+        more_title_html: Saber-ne més
+    export:
+      too_large:
+        body: Aquesta zona és massa gran per a ser exportada com a dades XML d'OpenHistoricalMap. Feu zoom, seleccioneu una àrea més petita o useu una de les següents fonts per descarregar quantitats grans de dades.
+        overpass:
+          description: Descarrega aquest requadre delimitador des d'una rèplica de la base de dades d'OpenHistoricalMap
+        planet:
+          description: Còpies actualitzades regularment de la base de dades d'OpenHistoricalMap al complet
+          title: Planeta OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: Feu clic a %{note_icon} o a la mateixa icona sobre el mapa. Això afegirà un marcador al mapa, que podeu desplaçar arrossegant-lo. Afegiu el vostre missatge, deseu-lo i els altres usuaris ho investigaran.
+        join_the_community:
+          explanation_html: Si heu trobat un error en el mapa, com per exemple una carretera que falta o bé la vostra adreça, la millor forma d'arreglar-ho és unint-vos a la comunitat d'OpenHistoricalMap i afegir o bé corregir les dades vós mateix.
+    help:
+      introduction: OpenHistoricalMap té diversos recursos per conèixer el projecte, per plantejar i respondre preguntes, i per discutir i documentar temes de cartografia de manera col·laborativa.
+      slack:
+        title: IRC
+      welcome:
+        description: Comenceu amb aquesta guia ràpida sobre els aspectes bàsics de l'OpenHistoricalMap.
+        title: Benvingut a OpenHistoricalMap
+      wiki:
+        description: Navegueu per la wiki per a trobar documentació detallada d'OHM.
+    index:
+      js_2: L'OpenHistoricalMap utilitza JavaScript per al mapa lliscant.
+      remote_failed: L'edició ha fallat. Assegureu-vos que el JOSM o el Merkaartor està executant-se i que l'opció de comandament a distància està habilitada
+    potlatch:
+      removed: El vostre editor d'OpenHistoricalMap per defecte és el Potlatch. Atès que s'ha discontinuat l'Adobe Flash Player, el Potlach deixarà d'estar disponible des del navegador web.
+    welcome:
+      basic_terms:
+        paragraph_1: L'OpenHistoricalMap té un argot propi. Aquí tens unes quantes paraules clau que et poden venir bé.
+      introduction: Us donem la benvinguda a l'OpenHistoricalMap, el mapamundi lliure i editable. Ara que ja us heu registrat, ja ho teniu tot a punt per començar a editar el mapa. Aquí hi ha una guia ràpida amb les coses més importants que cal saber
+      rules:
+        para_1_html: |-
+          OpenHistoricalMap té poques regles formals, però esperem que tots els participants col·laboreu i us comuniqueu amb la comunitat. Si esteu considerant
+          qualsevol altra activitat que no sigui l'edició manual, llegiu i seguiu les directrius sobre
+          %{imports_link} i %{automated_edits_link}.
+  traces:
+    feeds:
+      show:
+        title: Traces GPS d'OpenHistoricalMap
+    show:
+      edit: edita
+      edit_trace: Editar aquesta traça
+      map: mapa
+    trace:
+      edit_map: Edita el mapa
+      view_map: Mostra el mapa
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} ha comentat un conjunt de canvis que us interessa"
+        subject_own: "[OpenHistoricalMap] %{commenter} ha comentat un dels vostres conjunts de canvis"
+    diary_comment_notification:
+      header: "%{from_user} ha comentat l'entrada de diari de l'OpenHistoricalMap amb el tema %{subject}:"
+      header_html: "%{from_user} ha comentat l'entrada de diari de l'OpenHistoricalMap amb el tema %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} ha comentat una entrada de diari"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Confirmeu l'adreça de correu"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Error d'importació de GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Importació de GPX correcta"
+    lost_password:
+      hopefully_you: Algú (possiblement vós) ha demanat reinicialitzar la contrasenya del compte d'openhistoricalmap.org associat a aquesta adreça de correu electrònic.
+      subject: "[OpenHistoricalMap] Sol·licitud de reinicialització de contrasenya"
+    message_notification:
+      header: "%{from_user} ha enviat un missatge a través d'OpenHistoricalMap amb el tema %{subject}:"
+      header_html: "%{from_user} us ha enviat un missatge a través d'OpenHistoricalMap amb el tema %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} ha solucionat una nota que us interessa"
+        subject_own: "[OpenHistoricalMap] %{commenter} ha solucionat una de les vostres notes"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} ha comentat una nota que us interessa"
+        subject_own: "[OpenHistoricalMap] %{commenter} ha comentat una de les vostres notes"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} ha reactivat una nota que us interessa"
+        subject_own: "[OpenHistoricalMap] %{commenter} ha reactivat una de les vostres notes"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] OpenHistoricalMap us dona la benvinguda"
+  users:
+    auth_association:
+      heading: El teu ID encara no està associat a cap compte a OpenHistoricalMap
+      option_1: Si sou nou a OpenHistoricalMap, si us plau creeu un compte nou Utilitzant el formulari de sota.
+    new:
+      about:
+        paragraph_1: A diferència d'altres mapes, OpenHistoricalMap està completament creat per persones com tu, i és lliure per tal que qualsevol persona pugui arreglar-lo, actualitzar-lo, descarregar-lo i utilitzar-lo.
+        welcome: Benvingut/da a OpenHistoricalMap
+      please_contact_support_html: Contacteu amb l'%{support_link} per gestionar la creació d'un compte - intentarem tractar la sol·licitud tan aviat com sigui possible.
+      signup_to_authorize_html: Registreu-vos amb OpenHistoricalMap per accedir a %{client_app_name}.
+    show:
+      delete_user: Suprimeix aquest usuari
+      hide_user: Amaga aquest usuari
+      unhide_user: No amaguis aquest usuari

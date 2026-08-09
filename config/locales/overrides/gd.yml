@@ -1,0 +1,154 @@
+# Messages for Scottish Gaelic (Gàidhlig)
+# Exported from translatewiki.net
+# Author: Akerbeltz
+# Author: Cuan
+# Author: Dimitar
+# Author: Erictheise
+# Author: GunChleoc
+# Author: Macofe
+# Author: Minh Nguyen
+# Do not edit by hand.
+gd:
+  accounts:
+    show:
+      contributor_terms:
+        link: http://www.osmfoundation.org/wiki/License/Contributor_Terms
+        link text: dè th`ann?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: na lorgaidhean GPS prìobhaideach aca a leughadh
+        allow_write_api: am mapa atharrachadh
+        allow_write_gpx: lorgaidhean GPS a luchdadh suas
+        allow_write_notes: nòtaichean atharrachadh
+        callback_url: URL ais-ghairm
+        name: Ainm (Riatanach)
+        support_url: URL taice
+  api:
+    notes:
+      rss:
+        title: Nòtaichean OpenHistoricalMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Deasbaireachd air seataichean atharraichean OpenHistoricalMap
+        title_particular: Deasbaireachd air seata atharraichean OpenHistoricalMap %{changeset_id}
+  diary_entries:
+    feed:
+      all:
+        description: Clàran leabhair-latha le cleachdaichean OpenHistoricalMap o chionn goirid
+        title: Clàran san leabhar-latha OpenHistoricalMap
+      language:
+        description: Clàran leabhair-latha le cleachdaichean OpenHistoricalMap sa chànan %{language_name} o chionn goirid
+        title: Clàran san leabhar-latha OpenHistoricalMap sa chànan %{language_name}
+      user:
+        description: Clàran san leabhar-latha OpenHistoricalMap aig %{user} o chionn goirid
+        title: Clàran san leabhar-latha OpenHistoricalMap aig %{user}
+    profile_diaries:
+      date_label: Ceann-là
+  javascripts:
+    map:
+      zoom:
+        in: Sùm a-steach
+        out: Sùm a-mach
+  layouts:
+    intro_2_create_account: Cruthaich cunntas cleachdaiche
+    intro_header: Fàilte gu OpenHistoricalMap!
+    intro_text: "'S e mapa an t-saoghail a tha san OpenHistoricalMap a chaidh a chruthachadh le daoine mar thu fhèin 's a tha saor fo cheadachas fhosgailte."
+    logo:
+      alt_text: Suaicheantas OpenHistoricalMap
+    logout: Clàraich a-mach
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: Mapa uicidh saor an t-saoghail
+  sessions:
+    destroy:
+      heading: Clàraich a-mach à OpenHistoricalMap
+  site:
+    about:
+      lede_text: Tha OpenHistoricalMap 'ga thogail le coimhearsnachd de luchd-mapachaidh a bheir dàta dhuinn mu rathaidean, slighean cafaidhean, stèiseanan-rèile agus mòran a bharrachd air feadh an t-saoghail agus a nì obair-càraidh air.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Ma thèid dàta a ghabhail a-steach ann an OpenHistoricalMap, chan eil e fillte a-staigh gun do chuir an solaraiche dàta tùsail aonta ri OpenHistoricalMap, gun toireadh e barantas sam bith seachad no gum biodh e fo fhiachanas sam bith.
+        credit_1_html: |-
+          Tha e riatanach gun chleachd thu &ldquo;&copy; OpenHistoricalMap
+          contributors&rdquo; mar urram.
+        credit_title_html: Mar a bheir thu urram dha OpenHistoricalMap
+        infringement_1_html: Tha sinn a' cur an cuimhne nan co-thabhartaichean OHM nach cuir iad dàta o thùs fo chòir-lethbhreac ri OHM (can Google Maps no mapaichean clò-bhuailte) idir ach ma fhuair iad cead soilleir o shealbhadairean na còrach-lethbhreac.
+        more_title_html: Barrachd fiosrachaidh
+    export:
+      too_large:
+        body: Tha an raon seo ro mhòr ach an gabhadh às-phortadh 'na dhàta XML OpenHistoricalMap. Feuch an sùm thu a-steach no gun tagh thu raon nas lugha no gun cleachd thu aon dhe na tùsan gu h-ìosal airson tomad de dhàta a luchdadh a-nuas.
+        overpass:
+          description: Luchdaich a-nuas na tha sa bhogsa-iadhaidh seo o sgàthan dhen stòr-dàta OpenHistoricalMap
+        planet:
+          description: Lethbhreacan dhen stòr-dàta shlàn aig OpenHistoricalMap a thèid ùrachadh gu cunbhalach.
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: Cha leig thu leas ach briogadh air %{note_icon} no air an aon ìomhaigheag ann an sealladh a' mhapa. Cuiridh seo comharra ris a' mhapa as urrainn dhut gluasad 's tu 'ga shlaodadh. Cuir an teachdaireachd agad ris agus briog air "Sàbhail" an uairsin gus an dèan luchd-mapachaidh eile sgrùdadh air.
+        join_the_community:
+          explanation_html: Ma mhothaicheas tu duilgheadas leis an dàta mapa againn, can bu bheil rathad no an seòladh agad a dhìth, nach fhaigh thu ballrachd sa choimhearsnachd OpenHistoricalMap ach an càraich no an cuir thu fhèin an dàta ris. \
+    help:
+      introduction: Tha iomadh goireas aig OpenHistoricalMap gus faighinn a-mach mun phròiseact, ceistean a chur 's a fhreagairt agus deasbad a dhèanamh is cuspairean mun mhapa a chlàradh còmhla.
+      welcome:
+        description: Faigh toiseach tòiseachaidh air OpenHistoricalMap leis an stiùireadh luath seo.
+        title: Fàilte gu OpenHistoricalMap
+      wiki:
+        description: Brabhsaich san uicidh airson docamaideadh mionaideach air OHM.
+        title: Uicidh
+    index:
+      js_2: Cleachdaidh OpenHistoricalMap JavaScript gus am mapa a shealltainn.
+      remote_failed: Dh'fhàillig leis an deasachadh - dèan cinnteach gun deach JOSM no Merkaartor a luchdadh agus gu bheil gleus an t-smachd chèin an comas
+    welcome:
+      basic_terms:
+        paragraph_1: Tha cainnt shònraichte air OpenHistoricalMap. Seo facal no dhà cudromach a bhios feumail dhut.
+      introduction: Fàilte gu OpenHistoricalMap, mapa saor an t-saoghail a ghabhas deasachadh. Nise on a tha thu air clàradh, tha thu ullamh gus tòiseachadh air an obair-mhapa. Seo treòir luath a bheir eòlas dhut air na rudan as cudromaiche.
+      whats_on_the_map:
+        off_the_map_html: "'S ann %{doesnt} dàta mu bheachdan a leithid rangachaidhean, feartan eachdraidheil no baralach no dàta o thùsan fo chòir-lethbhreac. Mur eil cead soilleir agad, na dèan lethbhreac o mhapaichean air loidhne no air pàipear."
+  time:
+    formats:
+      blog: "%e %B %Y"
+  traces:
+    feeds:
+      show:
+        title: Lorgaidhean GPS aig OpenHistoricalMap
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] Thug %{commenter} beachd air seata atharraichean sa bheil ùidh agad"
+        subject_own: "[OpenHistoricalMap] Thug %{commenter} beachd air seata atharraichean agad"
+    diary_comment_notification:
+      header: 'Thug %{from_user} seachad beachd air innteart leabhar-latha OpenHistoricalMap a rinn thu o chionn goirid air a bheil an cuspair “%{subject}”:'
+      subject: "[OpenHistoricalMap] Thug %{user} seachad beachd air leabhar-latha"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Dearbhaich an seòladh puist-d agad"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Dh'fhàillig le ion-phortadh GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Shoirbhich le ion-phortadh GPX"
+    lost_password:
+      hopefully_you: Dh'iarr cuideigin (an dòchas gur e tusa a bh' ann) gun dèid am facal-faire agad atharrachadh airson cunntas an t-seòlaidh phuist-d seo air openhistoricalmap.org.
+      subject: "[OpenHistoricalMap] Chaidh ath-shuidheachadh air facal-faire iarraidh"
+    message_notification:
+      header: 'Chuir %{from_user} teachdaireachd thugad slighe OpenHistoricalMap air a bheil an cuspair "%{subject}":'
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] Dh'fhuasgail %{commenter} nòta sa bheil ùidh agad"
+        subject_own: "[OpenHistoricalMap] Dh'fhuasgail %{commenter} nòta agad"
+      commented:
+        subject_other: "[OpenHistoricalMap] Thug %{commenter} beachd air nòta sa bheil ùidh agad"
+        subject_own: "[OpenHistoricalMap] Thug %{commenter} beachd air nòta agad"
+      description: 'Nòta OpenHistoricalMap #%{id}'
+      reopened:
+        subject_other: "[OpenHistoricalMap] Ghnìomhaich %{commenter} nòta sa bheil ùidh agad às ùr"
+        subject_own: "[OpenHistoricalMap] Ghnìomhaich %{commenter} nòta agad às ùr"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Fàilte gu OpenHistoricalMap"
+  users:
+    show:
+      delete_user: Sguab às an cleachdaiche seo
+      hide_user: Falaich an cleachdaiche seo
+      unhide_user: Neo-fhalaich an cleachdaiche seo

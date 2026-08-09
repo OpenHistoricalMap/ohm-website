@@ -1,0 +1,72 @@
+# Messages for Scots (Scots)
+# Exported from translatewiki.net
+# Author: AmaryllisGardener
+# Author: C1614
+# Author: ChrisFleming
+# Author: CiphriusKane
+# Author: Erictheise
+# Author: John Reid
+# Author: Lottie1040
+# Author: MJL
+# Author: Minh Nguyen
+# Do not edit by hand.
+sco:
+  diary_entries:
+    feed:
+      all:
+        description: Recent diary entries frae uisers o OpenHistoricalMap
+        title: OpenHistoricalMap diary entries
+      language:
+        description: Recent diary entries frae uisers o OpenHistoricalMap in %{language_name}
+        title: OpenHistoricalMap diary entries in %{language_name}
+      user:
+        description: Recent OpenHistoricalMap diary entries frae %{user}
+        title: OpenHistoricalMap diary entries for %{user}
+  layouts:
+    intro_2_create_account: Create a uiser accoont
+    intro_header: Walcome tae OpenHistoricalMap!
+    intro_text: OpenHistoricalMap is a cairt o the warld, creatit bi fowk lik ye an free tae uise unner an open license.
+    logo:
+      alt_text: OpenHistoricalMap logo
+    logout: Log Oot
+    tag_line: The Free Wiki Warld Cairt
+  sessions:
+    destroy:
+      heading: Logoot frae OpenHistoricalMap
+  site:
+    copyright:
+      legal_babble:
+        credit_1_html: |-
+          We require that ye uise the credit &ldquo;&copy; OpenHistoricalMap
+          contributors&rdquo;.
+        credit_title_html: Hou tae credit OpenHistoricalMap
+        more_title_html: Findin oot mair
+    export:
+      too_large:
+        body: This aurie is too lairge tae be exportit as OpenHistoricalMap XML Data. Please zuim in or select a smawer aurie, or uise ane o the soorces leetit ablo for bulk data dounloads.
+        overpass:
+          description: Dounload this boondin box frae a mirror o the OpenHistoricalMap database
+        planet:
+          description: Regularly-updated copies o the complete OpenHistoricalMap database
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        join_the_community:
+          explanation_html: Gif ye'v seen ae proablem wi oor map data, fer example ae road is missin or yer address, the best waa tae proceed is tae jyn the OpenHistoricalMap communitie n eik or repair the data yersel.
+    welcome:
+      introduction: |-
+        Walcome tae OpenHistoricalMap, the free an eeditable cairt o the warld. Nou that ye're signed
+        up, ye're aw set tae get stairtit cairttin. Here's a quick guide wi the maist important
+        things ye need tae ken.
+      whats_on_the_map:
+        off_the_map_html: |-
+          Whit it %{doesnt} include is opinionatit data lik ratins, historical or
+          hypothetical featurs, an data frae copyrichtit soorces. Unless ye hae special
+          permission, dinna copy frae online or paper cairts.
+  user_mailer:
+    lost_password:
+      hopefully_you: Someane (possibly ye) haes asked for the passwird tae be reset on this email address's openhistoricalmap.org accoont.
+    note_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} haes commentit on a note ye are interestit in"
+        subject_own: "[OpenHistoricalMap] %{commenter} haes commentit on ane o yer notes"

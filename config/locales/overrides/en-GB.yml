@@ -1,0 +1,196 @@
+# Messages for British English (British English)
+# Exported from translatewiki.net
+# Author: Abijeet Patro
+# Author: Alefar
+# Author: AmazingJus
+# Author: Andibing
+# Author: BEANS
+# Author: Back ache
+# Author: Bjh21
+# Author: Bpfhjquevaps
+# Author: Bruce89
+# Author: Caliburn
+# Author: Captaindogfish
+# Author: Chase me ladies, I'm the Cavalry
+# Author: Danieldegroot2
+# Author: E THP
+# Author: EdLoach
+# Author: Eduard Popov
+# Author: Erictheise
+# Author: Gravitystorm
+# Author: Hufkratzer
+# Author: IknowJoseph
+# Author: Jagwar
+# Author: Jguthrie100
+# Author: Jlrb+
+# Author: Kosovastar
+# Author: Macofe
+# Author: Maro21
+# Author: Meno25
+# Author: Michel Bakni
+# Author: Minh Nguyen
+# Author: Mvolz
+# Author: Nikki
+# Author: Sampablokuper
+# Author: Samthecrazyman
+# Author: Samwilson
+# Author: Shirayuki
+# Author: Smsm1
+# Author: Tlubenov
+# Author: TomH
+# Author: Wehwei
+# Author: ديفيد
+# Do not edit by hand.
+en-GB:
+  accounts:
+    show:
+      contributor_terms:
+        link text: what is this?
+    terms:
+      show:
+        read and accept with tou: Please read the contributor agreement and the terms of use, check both checkboxes when done and then press the continue button.
+        tou_explain:
+          html: These %{tou_link} govern the use of the website and other infrastructure provided by the OSMF. Please click on the link, read and agree to the text.
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: read their private GPS traces
+        allow_read_prefs: read their user preferences
+        allow_write_api: modify the map
+        allow_write_diary: create diary entries, comments and make friends
+        allow_write_gpx: upload GPS traces
+        allow_write_notes: modify notes
+        allow_write_prefs: modify their user preferences
+        callback_url: Callback URL
+        name: Name (Required)
+        support_url: Support URL
+        url: Main Application URL (Required)
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap Notes
+  application:
+    setup_user_auth:
+      blocked_zero_hour: You have an urgent message on the OpenHistoricalMap website. You need to read the message before you will be able to save your edits.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap changeset discussion
+        title_particular: 'OpenHistoricalMap changeset #%{changeset_id} discussion'
+  diary_entries:
+    feed:
+      all:
+        description: Recent diary entries from users of OpenHistoricalMap
+        title: OpenHistoricalMap diary entries
+      language:
+        description: Recent diary entries from users of OpenHistoricalMap in %{language_name}
+        title: OpenHistoricalMap diary entries in %{language_name}
+      user:
+        description: Recent OpenHistoricalMap diary entries from %{user}
+        title: OpenHistoricalMap diary entries for %{user}
+    profile_diaries:
+      date_label: Date
+  javascripts:
+    legend:
+      title: Map Key
+      tooltip: Legend
+      tooltip_disabled: Map Key not available for this layer
+    map:
+      base:
+        historical: Historical
+        woodblock: Woodblock
+      zoom:
+        in: Zoom In
+        out: Zoom Out
+  layouts:
+    intro_2_create_account: Create a user account
+    intro_header: Welcome to OpenHistoricalMap!
+    intro_text: OpenHistoricalMap is a map of the world, created by people like you and free to use under an open licence.
+    logo:
+      alt_text: OpenHistoricalMap logo
+    logout: Log Out
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: The Free Wiki World Map
+  sessions:
+    destroy:
+      heading: Logout of OpenHistoricalMap
+  site:
+    about:
+      lede_text: OpenHistoricalMap is built by a community of mappers that contribute and maintain data about roads, trails, cafés, railway stations and much more, all over the world.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Inclusion of data in OpenHistoricalMap does not imply that the original data provider endorses OpenHistoricalMap, provides any warranty, or accepts any liability.
+        credit_title_html: How to credit OpenHistoricalMap
+        more_title_html: Finding out more
+      title: Copyright and License
+    export:
+      too_large:
+        body: This area is too large to be exported as OpenHistoricalMap XML Data. Please zoom in or select a smaller area, or use one of the sources listed below for bulk data downloads.
+        overpass:
+          description: Download this bounding box from a mirror of the OpenHistoricalMap database
+        planet:
+          title: Planet OHM
+    help:
+      introduction: OpenHistoricalMap has several resources for learning about the project, asking and answering questions, and collaboratively discussing and documenting mapping topics.
+      slack:
+        title: Slack
+      welcome:
+        description: Start with this quick guide covering the OpenHistoricalMap basics.
+        title: Welcome to OpenHistoricalMap
+      welcomemat:
+        title: For Organizations
+    index:
+      js_2: OpenHistoricalMap uses JavaScript for its slippy map.
+      remote_failed: Editing failed - make sure JOSM or Merkaartor is loaded and that the remote control option is enabled
+    welcome:
+      rules:
+        para_1_html: |-
+          OpenHistoricalMap has few formal rules but we expect all participants to collaborate
+          with, and communicate with, the community with courtesy and respect.
+  time:
+    formats:
+      blog: "%e %B %Y"
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} has commented on a changeset you are interested in"
+        subject_own: "[OpenHistoricalMap] %{commenter} has commented on one of your changesets"
+    diary_comment_notification:
+      header: "%{from_user} has commented on the OpenHistoricalMap diary entry with the subject %{subject}:"
+      header_html: "%{from_user} has commented on the OpenHistoricalMap diary entry with the subject %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} commented on a diary entry"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Confirm your e-mail address"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX Import failure"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX Import success"
+    lost_password:
+      hopefully_you: Someone (possibly you) has asked for the password to be reset on this email address's openhistoricalmap.org account.
+      subject: "[OpenHistoricalMap] Password reset request"
+    message_notification:
+      header: "%{from_user} has sent you a message through OpenHistoricalMap with the subject %{subject}:"
+      header_html: "%{from_user} has sent you a message through OpenHistoricalMap with the subject %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} has resolved a note that you are interested in"
+        subject_own: "[OpenHistoricalMap] %{commenter} has resolved one of your notes"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} has commented on a note that you are interested in"
+        subject_own: "[OpenHistoricalMap] %{commenter} has commented on one of your notes"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} has reactivated a note that you are interested in"
+        subject_own: "[OpenHistoricalMap] %{commenter} has reactivated one of your notes"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Welcome to OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Your ID is not associated with a OpenHistoricalMap account yet.
+      option_1: If you are new to OpenHistoricalMap, please create a new account using the form below.
+    show:
+      delete_user: Delete this User
+      hide_user: Hide this User
+      unhide_user: Unhide this User

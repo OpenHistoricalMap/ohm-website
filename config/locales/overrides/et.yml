@@ -1,0 +1,235 @@
+# Messages for Estonian (eesti)
+# Exported from translatewiki.net
+# Author: AivoK
+# Author: Avjoska
+# Author: Erictheise
+# Author: Jrttrw
+# Author: Kanne
+# Author: Kareyac
+# Author: Luckas
+# Author: Macofe
+# Author: MidnightRaver
+# Author: Minh Nguyen
+# Author: Pikne
+# Author: RM87
+# Author: StarrySky
+# Author: WikedKentaur
+# Author: Yupik
+# Do not edit by hand.
+et:
+  accounts:
+    show:
+      contributor_terms:
+        link text: mis see on?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: lugeda tema isiklikke GPS-radu
+        allow_read_prefs: lugeda tema kasutajaeelistusi
+        allow_write_api: muuta kaarti
+        allow_write_diary: luua päevikusissekandeid, kommenteerida ja lisada sõpru
+        allow_write_gpx: laadida üles GPS-radu
+        allow_write_notes: muuta märkusi
+        allow_write_prefs: muuta tema kasutajaeelistusi
+        callback_url: Tagasihelistamise URL
+        name: Nimi (nõutav)
+        support_url: Toe URL
+        url: Pearakenduse URL (nõutav)
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap märkused
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMapi muudatuskogumi arutelu
+        title_particular: 'OpenHistoricalMapi muudatuskogumi #%{changeset_id} arutelu'
+  diary_entries:
+    feed:
+      all:
+        description: Hiljutised OpenHistoricalMapi kasutajate päevikusissekanded
+        title: OpenHistoricalMapi päevikusissekanded
+      language:
+        description: Hiljutised OpenHistoricalMapi kasutajate päevikusissekanded keeles %{language_name}
+        title: OpenHistoricalMapi päevikusissekanded keeles %{language_name}
+      user:
+        description: Kasutaja %{user} hiljutised OpenHistoricalMapi päevikusissekanded
+        title: Kasutaja %{user} OpenHistoricalMapi päevikusissekanded
+    profile_diaries:
+      date_label: Kuupäev
+  errors:
+    contact:
+      contact_the_community_html: Kui avastad katkise lingi või vea, palun kirjuta sellest OpenHistoricalMapi kogukonnale siin %{contact_link} aadressil. Palun lisa teatesse ka päringu täpne URL.
+    forbidden:
+      description: Tegevus, mida sa üritasid OpenHistoricalMap'i serveris teha on lubadud vaid administraatoriele (HTTP 403)
+    internal_server_error:
+      description: OpenHistoricalMapi serveris tekkis ootamatu olukord, mistõttu vastust päringule ei õnnestu moodustada (HTTP 500)
+    not_found:
+      description: Sellise nimega faili/kataloogi/API meetodit ei leidu OpenHistoricalMapi serveris (HTTP 404)
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatimi
+        osm_nominatim_reverse: OpenHistoricalMap Nominatimi
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          track: Jooksurada
+        shop:
+          seafood: Mereandide pood
+  javascripts:
+    map:
+      zoom:
+        in: Suurenda
+        out: Vähenda
+  layouts:
+    intro_2_create_account: loo oma konto
+    intro_header: Tere tulemast OpenHistoricalMapi!
+    intro_text: OpenHistoricalMap on maailma kaart, mille on loonud inimesed nagu sina ja seda võib vabalt kasutada avatud litsentsi tingimustel.
+    logo:
+      alt_text: OpenHistoricalMapi logo
+    logout: Logi välja
+    tag_line: Vaba viki-maailmakaart
+  oauth:
+    scopes:
+      openid: Sisse logida kasutades OpenHistoricalMapi
+  sessions:
+    destroy:
+      heading: Logi OpenHistoricalMapist välja
+  site:
+    about:
+      lede_text: OpenHistoricalMapi koostab kaardistajate kogukond, mis täiendab ja haldab andmeid teede, radade, kohvikute, raudteejaamade ja paljude teiste objektide kohta üle kogu maailma.
+    about_section:
+      contribute_1_user_diaries: kasutajate päevikuid
+      legal_1_aup: kasutamisreeglid
+      legal_1_html: |-
+        Seda saiti ja paljusid teisi seotud teenuseid haldab ametlikult
+        %{group_link}
+        kogukonna nimel. Kõigis OSMF-i hallatavates teenustes kehtivad
+        meie %{terms_of_use_link}, %{aup_link} ja %{privacy_policy_link}.
+      legal_1_privacy_policy: andmekaitsereeglid
+      legal_1_terms_of_use: kasutustingimused
+      legal_2_html: |-
+        Palun %{contact_team_link},
+        kui sul on küsimusi litsentsimise, autoriõiguse või muude õiguslike teemade kohta.
+    communities:
+      lede_text: OpenHistoricalMapile teevad kaastööd inimesed üle maailma. Paljud neist osalevad üksikisikutena, teised on moodustanud kogukondi. Need on eri suuruses alates rühmadest, mis esindavad väikseid asulaid, kuni rühmadeni, mis esindavad riikideüleseid piirkondi. Need võivad olla nii ametlikud kui ka mitteametlikud.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: |-
+          Andmete kasutamine OpenHistoricalMapi koosseisus ei tähenda, et
+          algsete andmete pakkuja toetab OpenHistoricalMapi, pakub mingit tagatist või
+          võtab endale mingeid kohustusi.
+        credit_1_html: 'Seal, kus kasutad OpenHistoricalMapi andmeid, tuleb sul teha kaht järgmist asja:'
+        credit_2_this_copyright_page: sellele autoriõiguse leheküljele
+        credit_title_html: OpenHistoricalMapile viitamine
+        infringement_1_html: |-
+          OHM-i kaastöölistele on öeldud, et nad ei lisaks kunagi andmeid,
+          mis pärinevad autoriõigusega kaitstud allikatest (nt Google Maps või trükikaardid),
+          kui neil puudub autoriõiguse valdaja selgesõnaline luba.
+        introduction_4_creative_commons: Autorile viitamine + jagamine samadel tingimustel 2.0
+        more_2_1_api_usage_policy: API kasutusreegleid
+        more_2_1_html: Kuigi OpenHistoricalMapi andmed on avaandmed, ei saa me pakkuda kaardi juures tasuta API-t kolmandatele osapooltele. Vaata meie %{api_usage_policy_link}, %{tile_usage_policy_link} ja %{nominatim_usage_policy_link}.
+        more_2_1_nominatim_usage_policy: Nominatimi kasutusreegleid
+        more_2_1_tile_usage_policy: kaardipaanide kasutusreegleid
+        more_title_html: Lisateave
+    export:
+      too_large:
+        body: See ala on liiga suur, et eksportida OpenHistoricalMapi andmeid XML-kujul. Palun suurenda või vali väiksem ala või kasuta üht allpool loetletud allikatest, et laadida alla suuri andmehulki.
+        overpass:
+          description: Laadi alla piiritletud ala OpenHistoricalMapi andmebaasi peegelserverist.
+        planet:
+          description: Regulaarselt uuendatavad koopiad tervest OpenHistoricalMapi andmebaasist.
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            Kliki %{note_icon} või samale ikoonile kaardivaates.
+            See lisab kaardile markeri, mida sa saad liigutada seda hiirega lohistades. Lisa oma sõnum, seejärel kliki "Salvesta" ja teised kaardistajad näevad seda.
+        join_the_community:
+          explanation_html: Kui oled märganud probleemi meie kaardi andmetes, näiteks puuduvat teed või enda aadressi, siis parim viis selle lahendamiseks on liituda OpenHistoricalMapi kogukonnaga ja muuta või parandada andmed ise.
+    help:
+      introduction: OpenHistoricalMap pakub erinevaid võimalusi projekti tundmaõppimiseks, küsimuste esitamiseks ja vastamiseks ning kaardistamise teemade üle üheskoos arupidamiseks ja dokumenteerimiseks.
+      slack:
+        title: IRC
+      welcome:
+        description: Alusta selle kiirjuhendiga, mis hõlmab OpenHistoricalMapi põhitõdesid.
+        title: Tere tulemast OpenHistoricalMapi
+      wiki:
+        description: Sirvi vikis OHMi põhjalikumat dokumentatsiooni.
+        title: Viki
+    index:
+      js_2: OpenHistoricalMap kasutab JavaScripti kaartide laadimiseks.
+      remote_failed: Redigeerimise ebaõnnestus - veendu, et  JOSM või Merkaartor töötab ning kaugjuhtimine on lubatud
+    potlatch:
+      removed: Sa oled OpenHistoricalMapi jaoks vaikeredaktoriks määranud Potlatchi. Kuna Adobe Flash Player ei ole enam kasutusel, siis pole ka Potlatchi enam veebibrauseris võimalik kasutada.
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMapil on omad erialased mõisted. Siin on mõned peamised mõisted, mida tasub meelde jätta.
+      introduction: Tere tulemast OpenHistoricalMapi, vabasse ja muudetavasse maailmakaarti. Registreerumine on nüüd tehtud ja võid alustada kaardistamist. Siin on lühiülevaade kõige olulisematest asjadest, mida peaksid teadma.
+      rules:
+        para_1_html: |-
+          OpenHistoricalMapil on vähe formaalseid reegleid, kuid me eeldame, et kõik osavõtjad teevad koostööd
+          ja suhtlevad kogukonnaga. Kui plaanid tegevusi, mis ei ole käsitsi redigeerimine, siis loe
+          %{imports_link} ja %{automated_edits_link} juhendeid.
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMapi GPS-rajad
+    show:
+      edit: redigeeri
+      edit_trace: Muuda seda rada
+      map: kaardil
+    trace:
+      edit_map: Redigeeri kaarti
+      view_map: Vaata kaarti
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} on kommenteerinud muudatuskogumit, millest sa oled huvitunud"
+        subject_own: "[OpenHistoricalMap] %{commenter} on kommenteerinud üht sinu muudatuskogumit"
+      description: 'OpenHistoricalMapi muudatuskogum #%{id}'
+    diary_comment_notification:
+      description: 'OpenHistoricalMapi päevikusissekanne #%{id}'
+      header: "%{from_user} kommenteeris hiljutist OpenHistoricalMapi päevikusissekannet pealkirjaga %{subject}:"
+      header_html: "%{from_user} kommenteeris hiljutist OpenHistoricalMapi päevikusissekannet pealkirjaga %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} kommenteeris päevikusissekannet"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Kinnita oma e-posti aadress"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX-faili importimine nurjus"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX-faili importimine õnnestus"
+    lost_password:
+      hopefully_you: Keegi (tõenäoliselt sina) on esitanud taotluse, et lähtestada selle e-posti aadressiga openhistoricalmap.org-i konto parool.
+      subject: "[OpenHistoricalMap] Parooli lähtestamise taotlus"
+    message_notification:
+      header: "%{from_user} on saatnud sulle OpenHistoricalMapi kaudu sõnumi teemaga %{subject}:"
+      header_html: "%{from_user} on saatnud sulle OpenHistoricalMapi kaudu sõnumi teemaga %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} on lahendanud ühe märkuse, millest oled huvitatud"
+        subject_own: "[OpenHistoricalMap] %{commenter} on lahendanud ühe sinu märkuse"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} on kommenteerinud märkust, millest oled huvitatud"
+        subject_own: "[OpenHistoricalMap] %{commenter} on kommenteerinud ühte sinu märkust"
+      description: 'OpenHistoricalMapi märkus #%{id}'
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} on taasaktiveerinud ühe märkuse, millest sa huvitatud oled"
+        subject_own: "[OpenHistoricalMap] %{commenter} on taasaktiveerinud ühe sinu märkustest"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Tere tulemast OpenHistoricalMapi"
+  users:
+    auth_association:
+      heading: Sinu ID ei ole veel seotud OpenHistoricalMapi kasutajakontoga.
+      option_1: Kui oled esimest korda OpenHistoricalMap, siis loo palun uus kasutajakonto, täites allpool oleva vormi.
+    new:
+      about:
+        paragraph_1: Erinevalt teistest kaartidest on kogu OpenHistoricalMapi loonud sinusugused inimesed ja igaüks võib seda parandada, täiendada, alla laadida ja kasutada.
+      please_contact_support_html: Palun võta ühendust %{support_link}, et kasutajakonto luua. Üritame tegeleda selle taotlusega nii kiiresti kui võimalik.
+    show:
+      delete_user: Kustuta see kasutaja
+      hide_user: Peida see kasutaja
+      unhide_user: Muuda see kasutaja nähtavaks

@@ -1,0 +1,37 @@
+# Messages for Guadeloupean Creole (kréyòl Gwadloup)
+# Exported from translatewiki.net
+# Author: Erictheise
+# Author: Istwalezanti
+# Author: Léon973
+# Author: Minh Nguyen
+# Do not edit by hand.
+gcf:
+  accounts:
+    show:
+      contributor_terms:
+        link text: Ka sa yé?
+  activerecord:
+    attributes:
+      client_application:
+        allow_write_api: Modifyé kat-la
+        name: Non (oblijé)
+  layouts:
+    intro_header: Kontan vwè-w asi OpenHistoricalMap!
+    intro_text: OpenHistoricalMap, sé on kat a lèmonn-la ki fèt parapòt a moun kon-w é lib pou sèvi épi-y évè on lisans lib.
+    logout: Chapé
+    tag_line: Lyannaj pou kat lib
+  site:
+    help:
+      welcome:
+        title: Kontan vwè-w asi OpenHistoricalMap
+    index:
+      js_2: OpenHistoricalMap ka sèvi èvè Javascript pou kat glisad.
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} voyé on komantasyon asi on modifikasyon i ka kriyé-w"
+        subject_own: "[OpenHistoricalMap] %{commenter} voyé on komantasyon asi yonn a krèy a modifikasyon a-w"
+    note_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} voyé on komantasyon asi on maké ki ka kriyé-w"
+        subject_own: "[OpenHistoricalMap] %{commenter} voyé on komantasyon asi on biten ou maké"

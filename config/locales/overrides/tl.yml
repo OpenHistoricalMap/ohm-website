@@ -1,0 +1,141 @@
+# Messages for Tagalog (Tagalog)
+# Exported from translatewiki.net
+# Author: AnakngAraw
+# Author: Brazal.dang
+# Author: Chitetskoy
+# Author: Emem.calist
+# Author: Erictheise
+# Author: Ianlopez1115
+# Author: Jewel457
+# Author: Jojit fb
+# Author: KahitAnongPangalan
+# Author: LR Guanzon
+# Author: Leeheonjin
+# Author: Macofe
+# Author: McDutchie
+# Author: Minh Nguyen
+# Author: Ysrael214
+# Author: 아라
+# Do not edit by hand.
+tl:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: ano ba ito?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: basahin ang kanilang pribadong mga bakas ng GPS
+        allow_read_prefs: basahin ang kanilang mga kanaisan ng tagagamit
+        allow_write_api: baguhin ang mapa
+        allow_write_notes: baguhin ang mga tala
+        allow_write_prefs: baguhin ang kanilang mga kanaisan ng tagagamit
+        callback_url: URL ng Pagtawag-Pabalik
+        name: Pangalan (Kailangan)
+        support_url: URL ng Pagtangkilik
+        url: URL ng Pangunahing Aplikasyon (Kailangan)
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap Notes
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Mayroon kang isang importanteng mensahe sa websayt ng OpenHistoricalMap. Kailangan mong basahin ang mensahe bago mo masagip ang iyong mga pagbabago.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Pagtalakay ng pangkat ng pagbabago sa OpenHistoricalMap
+  diary_entries:
+    comments:
+      title: Mga entry sa talaarawan ng OpenHistoricalMap
+    feed:
+      all:
+        description: Kamakailang mga pagpapasok sa talaarawan mula sa mga tagagamit ng OpenHistoricalMap
+        title: Mga ipinasok sa talaarawan ng OpenHistoricalMap
+      language:
+        description: Kamakailang mga pagpapasok sa talaarawan mula sa mga tagagamit ng OpenHistoricalMap na nasa %{language_name}
+        title: Mga pagpapasok sa talaarawan ng OpenHistoricalMap na nasa %{language_name}
+      user:
+        description: Kamakailang mga pagpapasok sa talaarawan ng OpenHistoricalMap mula kay %{user}
+        title: Mga pagpapasok sa talaarawan ng OpenHistoricalMap para kay %{user}
+    profile_diaries:
+      date_label: Petsa
+  javascripts:
+    map:
+      zoom:
+        in: Lumapit
+  layouts:
+    intro_2_create_account: Lumikha ng isang akawnt ng tagagamit
+    intro_header: Maligayang pagdating sa OpenHistoricalMap!
+    intro_text: Ang OpenHistoricalMap ay isang mapa ng mundo na nilikha ng mga taong katulad mo at malayang gamitin sa ilalim ng isang bukas na lisensya.
+    logo:
+      alt_text: Logo ng OpenHistoricalMap
+    logout: Umalis mula sa pagkakalagda
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: Ang Malayang Mapa sa Daigdig ng Wiki
+  sessions:
+    destroy:
+      heading: Umalis sa pagkakalagda mula sa OpenHistoricalMap
+  site:
+    about:
+      lede_text: Ang OpenHistoricalMap ay nilikha ng isang komunidad ng mga nagmamapa na nag-aambag at nagpapanatili ng dato tungkol sa mga kalsada, mga daanan, mga kapihan, mga istasyon ng tren, at iba pa, sa buong mundo.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Ang pagsasama ng dato sa loob ng OpenHistoricalMap ay hindi nagpapahiwatig na ang orihinal na tagapagbigay ng dato ay tumatangkilik sa OpenHistoricalMap, nagbibigay ng anumang garantiya, o tumatanggap ng anumang pananagutan.
+        credit_1_html: 'Kung saan mo ginagamit ang datos ng OpenHistoricalMap, kailangan mong gawin ang sumusunod na dalawang bagay:'
+        credit_title_html: Paano babanggitin ang OpenHistoricalMap
+        infringement_1_html: Ang mga tagapag-ambag ng OHM ay pinaalalahanan na huwag magdagdag ng datos mula sa anumang mapagkukunan na may karapatang-sipi na nakalaan (halimbawa, Google Maps o naka-print na mga mapa) nang walang pahintulot mula sa mga may hawak ng karapatang-sipi.
+        more_title_html: Ang pagtuklas ng mas marami pang iba
+      title: Karapatan sa Paglalathala at Lisensiya
+    export:
+      too_large:
+        body: Masyadong malaki ang lugar na ito upang mailuwas bilang Dato ng XML ng OpenHistoricalMap. Mangyaring lumapit o pumili ng isang mas maliit na pook.
+        planet:
+          title: Planet OHM
+    help:
+      slack:
+        title: IRC
+      welcome:
+        title: Maligayang pagdating sa OpenHistoricalMap!
+    index:
+      js_2: Ang OpenHistoricalMap ay gumagamit ng JavaScript para sa madulas nitong mapa.
+      remote_failed: Nabigo ang pamamatnugot - tiyaking naikarga ang JOSM or Merkaartor at kung gumagana ang pagpipilian ng malayong pantaban
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] Pinuna ni %{commenter} ang isa sa iyong mga pangkat ng pagbabago"
+        subject_own: "[OpenHistoricalMap] Pinuna ni %{commenter} ang isa sa iyong mga pangkat ng pagbabago"
+    diary_comment_notification:
+      header: 'Pinuna ni %{from_user} ang isang pagpapasok sa talaarawan ng OpenHistoricalMap na may paksang %{subject}:'
+      header_html: 'Pinuna ni %{from_user} ang isang pagpapasok sa talaarawan ng OpenHistoricalMap na may paksang %{subject}:'
+      subject: "[OpenHistoricalMap] Si %{user} ay nagbigay ng puna sa ipinasok mo sa talaarawan"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Tiyakin ang iyong tirahan ng e-liham"
+    gpx_failure:
+      subject: Nabigo ang Pag-angkat ng GPX ng [OpenHistoricalMap]
+    gpx_success:
+      subject: Tagumpay ng Pag-angkat ng GPX ng [OpenHistoricalMap]
+    lost_password:
+      hopefully_you: May isang tao (maaaring ikaw) ang humiling na itakda muli ang password sa tirahan ng e-liham ng openhistoricalmap.org akawnt na ito.
+      subject: "[OpenHistoricalMap] Muling pagtatakda ng password"
+    message_notification:
+      header: 'Si %{from_user} ay nagpadala sa iyo ng isang mensahe sa pamamagitan ng OpenHistoricalMap na may paksang %{subject}:'
+      header_html: 'Si %{from_user} ay nagpadala sa iyo ng isang mensahe sa pamamagitan ng OpenHistoricalMap na may paksang %{subject}:'
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_own: "[OpenHistoricalMap] Nalutas ni %{commenter} ang isa sa iyong mga tala"
+      commented:
+        subject_own: "[OpenHistoricalMap] Pinuna ni %{commenter} ang isa sa iyong mga tala"
+      reopened:
+        subject_own: "[OpenHistoricalMap] binuhay muli ni %{commenter} ang isa sa iyong mga tala"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Maligayang pagdating sa OpenHistoricalMap"
+  users:
+    show:
+      delete_user: Burahin ang Tagagamit na ito
+      hide_user: Itago ang Tagagamit na ito
+      unhide_user: Huwag itago ang Tagagamit na ito

@@ -1,0 +1,129 @@
+# Messages for Message documentation (Message documentation)
+# Exported from translatewiki.net
+# Author: Albergarri788
+# Author: Amire80
+# Author: Erictheise
+# Author: Kizule
+# Author: McDutchie
+# Author: Minh Nguyen
+# Author: PiefPafPier
+# Author: Robby
+# Author: Verdy p
+# Do not edit by hand.
+qqq:
+  changesets:
+    index:
+      feed:
+        cc0: "{{Optional}}"
+        cc0_url: "{{Optional}}"
+  date:
+    formats:
+      brief: "{{Optional|Only translate if the date format for a year must include a prefix or suffix.}}"
+      range: "{{Optional|Only translate if the format for a date range uses different punctuation or spacing.}}"
+  geocoder:
+    search:
+      title:
+        latlon_url: "{{optional}}"
+        osm_nominatim_reverse_url: "{{optional}}"
+        osm_nominatim_url: "{{optional}}"
+    search_osm_nominatim:
+      border_types:
+        occupation: The boundary of a region occupied by an occupying force, not a professional occupation.
+        possession: The boundary of a territorial possession.
+        ward: "[[:w:Ward (electoral subdivision)]]"
+      suffix_format: |-
+        {{Optional|Only translate if the conventional format for indicating the dates associated with something would different punctuation or non-ASCII punctuation.}}
+
+        {{Identical|Date suffix format}}
+  javascripts:
+    map:
+      base:
+        woodblock: Name for a map style layer simulating [[w:Woodblock printing|(wood)block printing]] technique / ancient woodblock maps.
+    query:
+      suffix_format: |-
+        {{Optional|Only translate if the customary format for indicating the date range associated with something uses different punctuation.}}
+
+        {{Identical|Date suffix format}}
+  layouts:
+    partners_devseed: See https://developmentseed.org/
+    partners_greeninfo: See https://www.greeninfo.org/
+    project_name:
+      h1: |-
+        {{Optional}}
+        {{Identical|OpenHistoricalMap}}
+      title: |-
+        {{Optional}}
+        {{Identical|OpenHistoricalMap}}
+  notes:
+    new:
+      counter_warning_forum_link:
+        url: "{{Optional}}"
+  printable_name:
+    with_date_html: "{{Optional|Only translate if the conventional format for indicating the dates associated with something would different punctuation or non-ASCII punctuation, or if the dates would be prepended.}}"
+  site:
+    about_section:
+      contribute_1_bluesky: "{{Optional}}"
+      contribute_1_mastodon: "{{Optional}}"
+      contribute_1_ohm_html: |-
+        See also:
+        * {{msg-ohm|ohm-site.about.contribute_1_wiki}}
+        * {{msg-ohm|ohm-site.about.contribute_1_wiki_url}}
+        * {{msg-ohm|ohm-site.about.contribute_1_forum}}
+        * {{msg-ohm|ohm-site.about.contribute_1_user_diaries}}
+        * {{msg-ohm|ohm-site.about.contribute_1_mastodon}}
+        * {{msg-ohm|ohm-site.about.contribute_1_bluesky}}
+      contribute_1_wiki_url: "{{Optional}}"
+      contribute_2_create_account: This message is the parameter %{create_account_link} in {{msg-ohm|Ohm-site.about.contribute 2 html}}.
+      contribute_2_donations: This message is the parameter %{donations_link} in {{msg-ohm|Ohm-site.about.contribute 2 html}}.
+      contribute_2_html: |-
+        See also:
+        * {{msg-ohm|ohm-site.about.contribute_2_create_account}}
+        * {{msg-ohm|ohm-site.about.contribute_2_donations}}
+        * {{msg-ohm|ohm-site.about.contribute_2_osmus}}
+      contribute_2_osmus: This message is the parameter %{osmus_link} in {{msg-ohm|Ohm-site.about.contribute 2 html}}.
+      legal_1_group_url: "{{Optional}}"
+      legal_3_html: |-
+        See also:
+        * {{msg-ohm|ohm-site.about.legal_3_osmf_trademarks}}
+        * {{msg-ohm|ohm-site.about.legal_3_osmf_trademarks_url}}
+      legal_3_osmf_trademarks: This message is the link text for the parameter %{osmf_trademarks_link} in {{msg-ohm|Ohm-site.about.legal 3 html}}.
+      open_data_1_1_html: |-
+        See also:
+        * {{msg-ohm|ohm-site.about.open_data_1_1_reuse}}
+        * {{msg-ohm|ohm-site.about.open_data_1_1_reuse_url}}
+      open_data_1_1_reuse: This message is the link text for the parameter %{reuse_link} in {{msg-ohm|Ohm-site.about.open data 1 1 html}}.
+      open_data_1_1_reuse_url: "{{Optional}}"
+      open_data_2_html: |-
+        See also:
+        * {{msg-ohm|ohm-site.about.open_data_2_copyright_license}}
+    copyright:
+      legal_babble:
+        contributors_anr_communes_campop_url: "{{Optional}}"
+        contributors_anr_communes_project: "{{Optional}}"
+        contributors_more_sources_html: "%{sources_link} is {{msg-ohm|Ohm-site.copyright.legal babble.contributors more sources page}}"
+        contributors_more_sources_page: This message is the parameter %{sources_link} in {{msg-ohm|Ohm-site.copyright.legal babble.contributors more sources html}}
+        contributors_natural_earth: "[[w:Natural Earth]]"
+        contributors_newberry: "[[w:Newberry Library]]"
+        credit_3_project: |-
+          {{optional}}
+          {{Identical|OpenHistoricalMap}}
+        infringement_2_ohm_contact_team: This message is the variable %{contact_team_link} in {{msg-ohm|Ohm-site.copyright.legal babble.infringement 2 ohm html}}.
+        infringement_2_ohm_html: The variable %{contact_team_link} is replaced by the text of {{msg-ohm|Ohm-site.copyright.legal babble.infringement 2 ohm contact team}}.
+        more_1_ohm_html: The variable %{wiki_link} will be replaced by the text of the message {{msg-ohm|Ohm-site.copyright.legal babble.more 1 wiki}}.
+        trademarks_1_ohm_contact_team: This message is the variable %{contact_team_link} in {{msg-ohm|Ohm-site.copyright.legal babble.trademarks 1 ohm html}}.
+        trademarks_1_ohm_html: The variable %{contact_team_link} is replaced by the text of {{msg-ohm|Ohm-site.copyright.legal babble.trademarks 1 ohm contact team}}.
+    fixthemap:
+      other_concerns:
+        contact_url: "{{Optional}}"
+    help:
+      discord:
+        title: |-
+          {{optional}}
+          Name of the [[:w:en:Discord|Discord]] platform.
+        url: "{{optional}}"
+      github:
+        url: "{{Optional}}"
+    welcome:
+      whats_on_the_map:
+        off_the_map_html: The variable %{doesnt} is replaced by the text of {{msg-ohm|Ohm-site.welcome.whats on the map.doesnt}}.
+        on_the_map_ohm_html: The variable %{past_and_present} is replaced by {{msg-ohm|ohm-site.welcome.whats on the map.past and present}}.

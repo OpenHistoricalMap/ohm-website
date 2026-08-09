@@ -1,0 +1,185 @@
+# Messages for Kurdish (Latin script) (kurdî (latînî))
+# Exported from translatewiki.net
+# Author: 1233qwer1234qwer4
+# Author: Balyozxane
+# Author: Bikarhêner
+# Author: Erictheise
+# Author: George Animal
+# Author: Ghybu
+# Author: Gomada
+# Author: Guherto
+# Author: Kur
+# Author: Minh Nguyen
+# Do not edit by hand.
+ku-Latn:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
+        link text: Ev çi ye?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: şopên wan ên GPSê yên xisûsî bixwîne
+        allow_read_prefs: tercîhên wan ên bikarhêneriyê bixwîne
+        allow_write_api: nexşeyê biguherîne
+        allow_write_diary: rojnivîsk, şîroveyan çêke û ji xwe re hevalan hevalan çêke
+        allow_write_gpx: şopên GPSê bar bike
+        allow_write_notes: notan biguherîne
+        allow_write_prefs: tercîhên wan ên bikarhêneriyê biguherîne
+        callback_url: Lînka paşve lêgerînê
+        name: Nav (Hewce ye)
+        support_url: Lînka piştgirîkirinê
+        url: URLya Sepana Sereke (Hewce ye)
+  api:
+    notes:
+      rss:
+        title: Notên OpenHistoricalMapê
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Li ser malpera OpenHistoricalMapê ji te re peyamek acîl heye. Berî ku tu guherandinên xwe qeyd bikî divê tu wê peyamê bixwînî.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Gotûbêja qeyda guhartinên OpenHistoricalMapê
+        title_particular: Gotûbêja qeyda guhartinan a %{changeset_id} yê OpenHistoricalMapê
+  diary_entries:
+    feed:
+      all:
+        description: Nivîsên rojane yên bikarhênerên OpenHistoricalMapê
+        title: Nivîsên rojane yên OpenHistoricalMapê
+      language:
+        description: Nivîsên rojane yên bikarhênerên OpenHistoricalMapê ên bi %{language_name}
+        title: Nivîsên rojane yê OpenHistoricalMapê ên bi %{language_name}
+      user:
+        description: Nivîsên rojane ên %{user} yên nû a OpenHistoricalMapê
+        title: Nivîsên rojane yên %{user} a OpenHistoricalMapê
+    profile_diaries:
+      date_label: Tarîx
+  errors:
+    contact:
+      contact_the_community_html: Ger lînkeke xira / çewtiyekê bibînî bi serbestî wan bi lînka %{contact_link} ragihîne civata OpenHistoricalMapê. URLya temam ya teleba xwe not bike.
+    forbidden:
+      description: Kiryara ku te li ser OpenHistoricalMapê daxwaz kiriye, tenê ji bo admînan berdest e (HTTP 403)
+    internal_server_error:
+      description: Servera OpenHistoricalMapê bi halekî nehêvîkirî re rû bi rû bû ku rê li ber digire daxwaza te were bicîanîn (HTTP 500)
+    not_found:
+      description: Ti kiryara dosye/pelrêç/APIyê peyda nebû bi wê navê li ser servera OpenHistoricalMapê (HTTP 404)
+  javascripts:
+    map:
+      base:
+        historical: Tarîxî
+      zoom:
+        in: Nêzîk bike
+        out: Dûr bike
+  layouts:
+    intro_2_create_account: Ji xwe re hesabekî çêbike
+    intro_header: Tu bi xêr hatî OpenHistoricalMapêǃ
+    intro_text: OpenHistoricalMap xerîteyekî dinyayê ye ku ji aliyê kesên wek te ve tê çêkirin û emilandina we belaş e û di bin lîsansa azad de ye.
+    logo:
+      alt_text: Logoya OpenHistoricalMapê
+    logout: Derkeve
+    tag_line: Xerîteya Dinyayê a Wîkiya Azad
+  sessions:
+    destroy:
+      heading: Ji OpenHistoricalMapê derkeve
+  site:
+    about:
+      lede_text: OpenHistoricalMap ji alî civata nexşesazên ku ji seransera dinyayê der barê kolanan, kafeyan, stasyonên trênan û zêdetirê wan de daneyan tevlî vir dike û diparêze.
+    communities:
+      lede_text: |-
+        Ji temamê dinyayê însan beşdariya OpenHistoricalMapê dikin an wê bi kar tînin.
+        Hinek kes wek şexsî tevlî dibin, hinek kes jî civatan ava kirine. Ev kom ji mezinehiyên cuda pêk tên û ji qezayên biçûk heya herêmên pir-welatî cografyayên mezin û biçûk temsîl dikin. Herwiha mimkin e ku fermî an nefermî bin.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Daxilbûna daneyan a di OpenHistoricalMapê de nayê maneya ku peydakera daneyan yê eslî OpenHistoricalMapê teswîb dike, garantiyekî temîn dike an jî berpirsîyariyekê qebûl dike.
+        credit_1_html: 'Li cihê ku daneya OpenHistoricalMapê bi kar bînî, divê van du tiştan bikî:'
+        credit_title_html: Em çawan wekî çavkaniyekê behsa OpenHistoricalMapê bikin
+        infringement_1_html: Kesên ku tevkariyên OHMê dikin bila ti carî ji bîr nekin daneyên ji çavkaniyên ku mafên wan ên daneriyê parastî be (wekî nimûne Google Maps an jî nexşeyên çapkirî) bêyî destûra eşkere yê xwediyê wan, ji van çavkaniyan ti daneyek wernegrin.
+        more_title_html: Zêdetir hîn bibe
+    export:
+      too_large:
+        body: Ev der ji bo ku wekî Daneya XML a OpenHistoricalMapê were eksportkirin zahf mezin e. Xêra xwe hinek jî nêzîk bike an jî qadekî biçûktir bibijêre an jî ji bo daxistina daneyên mezin yek ji van çavkaniyên lîstekirî yên li jêr biemilîne.
+        overpass:
+          description: Vê qutiya sînorkar ji eyneyekî daneya OpenHistoricalMapê daxîne
+        planet:
+          description: Kopiyên daneyên OpenHistoricalMapê yê ku bi awayekî binîzam têne nûkirin
+          title: Seyareya OHMê
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: Tenê bitikîne ser %{note_icon} an jî ji ser ekrana xerîteyê bitikîne ser eynî îkonê. Wê ev, ji nexşeyê re nîşankerek deyne ku tu karî bi kaşkirinê cihê vê nîşankerê biguherînî. Peyama xwe binivîse, pişt re bitikîne ser qeyd bike'yê, wê nexşesazên din lê bikolin.
+        join_the_community:
+          explanation_html: Heke te di daneyên nexşeya me de pirsgirêkek ferq kiribe, wekî mînak kolanek an jî adrêsa te kêm be, riya herî baş a dewamkirinê beşdarî civata me ya OpenHistoricalMapê bibe û tu bixwe rast bike an jî îlawe bike.
+    help:
+      introduction: OpenHistoricalMap ji bo hînbûna projeyê, pirskirin û cewabdana pirsan, û ji bo nîqaşên ku bi hevkarî têne kirin û ji bo belgekirina mijarên nexşeyê xwediyê çend çavkaniyan e.
+      slack:
+        title: IRC
+      welcome:
+        description: Bi vê rêbernameya kurt ê ku tê de esasên OpenHistoricalMapê heye dest pê bike.
+        title: Bi xêr hatî OpenHistoricalMapê
+      wiki:
+        description: Ji bo belgeyên OHMyê yên bi berfirehî binêrin wîkiyê.
+        title: Wîkî
+    index:
+      js_2: OpenHistoricalMap ji bo nîşandana nexşeya xwe ya şemetok JavaScriptê bi kar tîne.
+      remote_failed: Sererastkirin bi ser neket - jê piştrast be ku JOSM an jî Merkaartor hatiye sazkirin û vebijêrka jidûrve kontrolê hatiye aktîvkirin
+    potlatch:
+      removed: Edîtora te ya OpenHistoricalMapê ya standard wek Potlatch hate bijartin. Ji ber ku Adobe Flash Player vekişiya, Potlatch êdî di gerokeke webê de ne berdest e.
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap xwediyê argoya xwe (zimanê xwe yê taybet) ye. Vaye li vir çend peyvên ku wê bi kêrên we bên heye.
+      introduction: Tu bi xêr hatî OpenHistoricalMapê, nexşeya dinyayê yê azad û yê ku bi rehetî dikare were sererastkirin. Niha te xwe qeyd kiriye û tu dikarî dest bi nexşekirinê bikî. Va ye li vir rêbernameyek bilez yê tiştên muhîm heye ku divê tu van bizanibî.
+      rules:
+        para_1_html: 'Her çiqas qaîdeyen fermî yên OpenHistoricalMapê hindik bin jî em ji hemû kesên tevkariya me dikin hêvî dikin ku bi civatê re bi hevkarî bixebitin û di têkiliyê de bin. Eger tu bifikirî ku xebatên xwe ne bi destê xwe bi rê ve bibî, xêra xwe ji jêr rêziknameyê bixwîne û bi ya rêziknameyê bike: %{imports_link} û %{automated_edits_link}.'
+      whats_on_the_map:
+        off_the_map_html: Çi tê de %{doesnt}? Daneyên qenaetî yên wek nirxandin, xisûsiyetên dîrokî an jî ferazî û daneyên ji çavkaniyên mafên wan ên daneriyê parastî wergirtî. Eger destûrekî we yê xisûsî tine be, ji nexşeyên onlayn an jî ji nexşeyên ser kaxizan kopî nekin.
+  time:
+    formats:
+      blog: "%e %B %Y"
+  traces:
+    feeds:
+      show:
+        title: Şopên GPSê yê OpenHistoricalMapê
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} desteyekî guherandinê ê ku tu pê eleqedar dibî şirove kir"
+        subject_own: "[OpenHistoricalMap] %{commenter} yek ji desteyên te yên guherandinê şiroveyek nivîsand"
+    diary_comment_notification:
+      header: "%{from_user} nivîsa rojane yê OpenHistoricalMapê a bi mijara %{subject} şirove kir:"
+      header_html: "%{from_user} nivîsa rojane yê OpenHistoricalMapê a bi mijara %{subject} şirove kir:"
+      subject: "[OpenHistoricalMap] %{user} li ser nivîsek rojane şirove kir"
+    email_confirm:
+      subject: "[OpenHistoricalMap] E-peyama xwe tesdîq bike"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Anîna GPXê bi ser neket"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Împortkirina GPXê bi ser ket"
+    lost_password:
+      hopefully_you: Yekî (dibe be ku tu bî) xwest ku şîfreya vê adrêsa e-peyamê ya hesaba openhistoricalmap.orgê were nûkirin.
+      subject: "[OpenHistoricalMap] Daxwaza nûkirina şîfreyê"
+    message_notification:
+      header: "%{from_user} ji te re bi rêya OpenHistoricalMapê peyamek bi mijara %{subject} şand:"
+      header_html: "%{from_user} ji te re bi rêya OpenHistoricalMapê peyamek bi mijara %{subject} şand:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} notek ku tu pê eleqedar dibî çareser kir"
+        subject_own: "[OpenHistoricalMap] %{commenter} yek ji notên te çareser kir"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} li ser notek ku tu pê eleqedar dibî şiroveyek nivîsand"
+        subject_own: "[OpenHistoricalMap] %{commenter} li ser notekî te şiroveyek nivîsand"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} notek ku tu pê eleqedar dibî ji nû ve aktîv kir"
+        subject_own: "[OpenHistoricalMap] %{commenter} yek ji notên te ji nû ve aktîv kir"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Bi xêr hatî OpenHistoricalMapê"
+  users:
+    auth_association:
+      heading: Nasnameya te hêj bi hesabekî OpenHistoricalMapê ve ne girêdayî ye.
+      option_1: Eger tu di OpenHistoricalMapê de nû bî, xêra xwe bi vê formê li jêr, ji xwe re hesabekî nû çêbike.
+    show:
+      delete_user: Vî/ê bikarhênerî/ê jê bibe
+      hide_user: Vê bikarhênerê veşêre
+      unhide_user: Vi bikarhênerî nîşan bide

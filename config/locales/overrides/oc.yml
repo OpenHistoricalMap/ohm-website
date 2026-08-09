@@ -1,0 +1,155 @@
+# Messages for Occitan (occitan)
+# Exported from translatewiki.net
+# Author: BrennodAloisi
+# Author: COMISSIONTOPOC
+# Author: Cedric31
+# Author: Erictheise
+# Author: Gasconoc
+# Author: Gravitystorm
+# Author: Guilhelma
+# Author: Lhanars
+# Author: Macofe
+# Author: Minh Nguyen
+# Author: OpenStreetMap-oc
+# Author: Quentí
+# Do not edit by hand.
+oc:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://Www.osmfoundation.org/wiki/License/Contributor_Terms
+        link text: qu’es aquò ?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: legir vòstrei traças GPS privadas.
+        allow_read_prefs: consultar lei preferéncias d'utilizaire.
+        allow_write_api: modificar la mapa
+        allow_write_diary: creatz d'intradas dins lo jornau, de comentaris e fasètz-vos d'amics.
+        allow_write_gpx: telecargar de traças GPS.
+        allow_write_notes: modificar lei nòtas
+        allow_write_prefs: modificar lei preferéncias d'utilizaire.
+        callback_url: URL de rampèu
+        name: Nom (Obligatòri)
+        support_url: URL de supòrt
+        url: URL de l'aplicacion principala (Obligatòri)
+  api:
+    notes:
+      rss:
+        title: Nòtas d'OpenHistoricalMap
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Avètz un messatge urgent sus lo site web de OpenHistoricalMap. Avètz de legir lo messatge abans que posquetz sauvar lei modificacions.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Discussion sus lo grop de modificacions OpenHistoricalMap
+        title_particular: Discussion sus lo grop de modificacions OpenHistoricalMap nº %{changeset_id}
+  diary_entries:
+    comments:
+      title: Entradas do diário do OpenHistoricalMap
+    feed:
+      all:
+        description: Entradas recentas de jornau deis utilizaires d'OpenHistoricalMap
+        title: Entradas de jornau d'OpenHistoricalMap
+      language:
+        description: Entradas recentas de jornal deis utilizaires d'OpenHistoricalMap en %{language_name}
+        title: Entradas de jornau d'OpenHistoricalMap en %{language_name}
+      user:
+        description: Entradas recentas de jornau d'OpenHistoricalMap per %{user}
+        title: Entradas de jornau d'OpenHistoricalMap per %{user}
+    profile_diaries:
+      date_label: Data
+  javascripts:
+    map:
+      zoom:
+        in: Zoom avant
+        out: Zoom arrièr
+  layouts:
+    intro_2_create_account: Creatz un compte d'utilizaire
+    intro_header: Benvenguda dins OpenHistoricalMap !
+    intro_text: OpenHistoricalMap es una mapa dau monde, creada per de personas coma vos e liura d’utilizacion sota licéncia liura.
+    logo:
+      alt_text: Lògo d'OpenHistoricalMap
+    logout: Se desconnectar
+    tag_line: La mapa cooperativa liura
+  sessions:
+    destroy:
+      heading: Desconnexion d'OpenHistoricalMap
+  site:
+    about:
+      lede_text: OpenHistoricalMap es bastit per una comunautat de cartografes benevòls que contribuisson e mantenon las donadas de las rotas, caminòls, cafès, estacions ferroviàrias e plan mai encara, pertot dins lo mond.
+    copyright:
+      legal_babble:
+        credit_1_html: Demandam que vòstre crèdit compòrte la mencion « © lei contribueires d’OpenHistoricalMap ».
+        credit_title_html: Cossí creditar OpenHistoricalMap
+        more_title_html: Per trobar mai d’informacions
+    export:
+      too_large:
+        body: 'Aquesta zòna es tròp vasta per èsser exportada coma donadas XML OpenHistoricalMap. Zoomatz o seleccionatz una zòna mai pichona, o utilizatz una de las fonts seguentas pel telecargament de donadas massivas :'
+        overpass:
+          description: Telecargar aqueste quadre englobant dempuèi un miralh de la basa de donadas d'OpenHistoricalMap
+        planet:
+          description: Còpias actualizadas regularament de la basa de donadas completa d'OpenHistoricalMap
+          title: Planeta OHM
+    help:
+      introduction: OpenHistoricalMap a mantuna ressorsas per aprene lo projècte, per pausar e respondre a de questions, e respondre a de questions, e per discutir en collaboracion amb d’autres e documentar los subjèctes de cartografia.
+      slack:
+        title: IRC
+      welcome:
+        description: Començar amb aqueste guida rapid que cobrís las basas d'OpenHistoricalMap.
+        title: Benvenguda dins OpenHistoricalMap !
+      wiki:
+        description: Percorrètz lo wiki per la documentacion aprigondida d’OHM
+    index:
+      js_2: OpenHistoricalMap utiliza Javascript per sas mapas lisantas.
+      remote_failed: L'edicion a mancat. Asseguratz-vos que lo JOSM o lo Merkaartor s'executa e que l'opcion de comandament a distància es abilitada
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap a son pròpri girgon. Aquí qualques mots claus que vos seràn utiles.
+      introduction: Vos donam la benvenguda a OpenHistoricalMap, la mapa liura e editabla dau mond. Ara que vos siatz enregistrats, siatz lèsts per començar a editar la mapa. I a aicí una guida rapida amb lei causas pus importantas de saber
+  traces:
+    feeds:
+      show:
+        title: Traças GPS d'OpenHistoricalMap
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} a comentat un ensemble de cambiaments al qual vos interessatz"
+        subject_own: "[OpenHistoricalMap] %{commenter} a comentat un de vòstres ensembles de cambiaments"
+    diary_comment_notification:
+      header: "%{from_user} a publicat un comentari sus un article recent del jornal OpenHistoricalMap amb lo subjècte %{subject} :"
+      header_html: "%{from_user} a publicat un comentari sus un article recent dau jornau OpenHistoricalMap amb lo subjècte %{subject} :"
+      subject: "[OpenHistoricalMap] %{user} a postat un comentari sus un article de jornal"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Confirmacion de vòstra adreiça de corrier electronic"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Error al moment de l'impòrt GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Impòrt GPX capitat"
+    lost_password:
+      hopefully_you: Quauqu’un (possiblament vos) a demandat que lo senhau d'aqueu còmpte openhistoricalmap.org siegue remandat a vòstra adreiça de corrier electronic.
+      subject: "[OpenHistoricalMap] Demanda de reïnicializacion del senhal"
+    message_notification:
+      header: "%{from_user} vos a mandat un messatge dempuèi OpenHistoricalMap amb lo subjècte %{subject} :"
+      header_html: "%{from_user} vos a mandat un messatge d'OpenHistoricalMap amb lo subjècte %{subject} :"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} que vis i interessàvetz."
+        subject_own: "[OpenHistoricalMap] %{commenter} a resolgut una de vòstras nòtas"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} a comentat una nòta a la quala vos interessatz"
+        subject_own: "[OpenHistoricalMap] %{commenter} a comentat una de vòstras nòtas"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} a reactivat una nòta a que vos i interessàvetz"
+        subject_own: "[OpenHistoricalMap] %{commenter} a reactivat una de vòstras nòtas"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Benvenguda dins OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Vòstre ID es pas encara associat a un compte OpenHistoricalMap.
+    show:
+      delete_user: Suprimir aqueste utilizaire
+      hide_user: Amagar aqueste utilizaire
+      unhide_user: Reafichar aqueste utilizaire

@@ -1,0 +1,167 @@
+# Messages for Asturian (asturianu)
+# Exported from translatewiki.net
+# Author: Danieldegroot2
+# Author: Enolp
+# Author: Erictheise
+# Author: Fitoschido
+# Author: Fueyas
+# Author: Macofe
+# Author: McDutchie
+# Author: Minh Nguyen
+# Author: Tokvo
+# Author: TomH
+# Author: Xuacu
+# Author: YoaR
+# Do not edit by hand.
+ast:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
+        link text: "¿qué ye esto?"
+  activerecord:
+    attributes:
+      client_application:
+        callback_url: URL de retornu
+        support_url: URL de asistencia
+  api:
+    notes:
+      rss:
+        title: Notes d'OpenHistoricalMap
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Tienes un mensaxe urxente nel sitiu web d'OpenHistoricalMap. Tienes de lleer el mensaxe antes de que puedas guardar les ediciones.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Alderique del conxuntu de cambeos d'OpenHistoricalMap
+        title_particular: 'Alderique del conxuntu de cambeos #%{changeset_id} d''OpenHistoricalMap'
+  diary_entries:
+    feed:
+      all:
+        description: Entraes recién nel diariu d'usuarios d'OpenHistoricalMap
+        title: Entraes nel diariu d'OpenHistoricalMap
+      language:
+        description: Entraes recién nel diariu d'usuarios d'OpenHistoricalMap en %{language_name}
+        title: Entraes nel diariu d'OpenHistoricalMap en %{language_name}
+      user:
+        description: Entraes recién de %{user} nel diariu d'OpenHistoricalMap
+        title: Entraes nel diariu d'OpenHistoricalMap de %{user}
+    profile_diaries:
+      date_label: Data
+  geocoder:
+    search:
+      title:
+        osm_nominatim: Nominatim d’OpenHistoricalMap
+        osm_nominatim_reverse: Nominatim d’OpenHistoricalMap
+  javascripts:
+    map:
+      zoom:
+        in: Ampliar
+        out: Amenorgar
+  layouts:
+    intro_2_create_account: Crear una cuenta d'usuariu
+    intro_header: "¡Afáyate n'OpenHistoricalMap!"
+    intro_text: OpenHistoricalMap ye un mapa del mundu, creáu por persones como tu y d'usu llibre baxo una llicencia abierta.
+    logo:
+      alt_text: Logo d'OpenHistoricalMap
+    logout: Salir
+    tag_line: El Wiki Mapamundi llibre
+  sessions:
+    destroy:
+      heading: Colar d'OpenHistoricalMap
+  site:
+    about:
+      lede_text: OpenHistoricalMap ta construíu por una comunidá de cartógrafos que contribuyen y caltienen datos de carreteres, senderos, cafeteríes, estaciones de ferrocarril, y muncho más, pel mundu enteru.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: La inclusión de datos n'OpenHistoricalMap nun significa que'l fornidor de los datos orixinales sofite OpenHistoricalMap, ufra garantía dala o aceute dalguna responsabilidá.
+        credit_1_html: Riquimos qu'uses el créditu &ldquo;&copy; Collaboradores d'OpenHistoricalMap&rdquo;.
+        credit_title_html: Cómo dar reconocimientu a OpenHistoricalMap
+        infringement_1_html: Recordamos a los collaboradores d'OHM qu'enxamás amiesten datos que vengan d'una fonte con drechos d'autor acutaos (p. ex. de Google Maps o mapes impresos) ensin el permisu esplícitu de los dueños de los drechos d'autor.
+        more_title_html: Pa saber más
+    export:
+      too_large:
+        body: Esti área ye abondo grande pa esportase como Datos XML d'OpenHistoricalMap. Acerca'l mapa o esbilla un área menor, o usa una de les fontes siguientes pa descargar cantidaes grandes de datos.
+        overpass:
+          description: Descargar esti cuadru de llendes dende un espeyu de la base de datos d'OpenHistoricalMap
+        planet:
+          description: Copies anovaes regularmente de la base de datos completa d'OpenHistoricalMap
+          title: Planeta OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            Namái faiga clic en %{note_icon} o nel mesmu iconu na vista del mapa.
+            Esto pondrá un marcador nel mapa, que puede mover
+            abasnando. Escriba'l so mensaxe, faiga clic en guardar, y otros mapeadores investigarán.
+        join_the_community:
+          explanation_html: Si atopó un problema colos datos del nuesu mapa; por exemplu una carretera que falta, o la so direición, lo meyor que pue facer ye xunise a la comunidá d'OpenHistoricalMap y amestar o reparar los datos vusté mesmu.
+    help:
+      introduction: OpenHistoricalMap tien dellos recursos p'aprender sobro'l proyeutu, entrugar y contestar preguntes, y discutir y documentar en collaboración cuestiones de cartografía.
+      slack:
+        title: IRC
+      welcome:
+        description: Principie con esta guía rápida que cubre lo básico d'OpenHistoricalMap.
+        title: Bienveníos a OpenHistoricalMap
+      wiki:
+        description: Mirar na wiki la documentación d'OHM más a fondu.
+    index:
+      js_2: OpenHistoricalMap usa JavaScript pal so mapa eslizante.
+      remote_failed: Falló la edición - asegúrate de tener cargáu JOSM o Merkaartor y de que tea activada la opción de control remotu
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap tien cierta xíriga de so. Estes son delles pallabres importantes que puen ser afayadices.
+      introduction: |-
+        Afáyate n'OpenHistoricalMap, el mapa del mundu llibre y editable. Agora
+        qu'aniciasti sesión, yá puedes editar mapes. Esta ye una guía rápida
+        de les coses más importantes que necesites saber.
+      rules:
+        para_1_html: OpenHistoricalMap tien poques regles formales, pero esperamos que tolos participantes collaboren y se comuniquen cola comunidá. Si tas considerando cualquier actividá distinta de la edición manual, llei y sigui les instrucciones sobro %{imports_link} y %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: |-
+          Lo que %{doesnt} incluye son datos suxetivos como calificaciones, carauterístiques históriques o hipotétiques, y datos de fontes con drechos d'autor. Si nun tienes
+          un permisu especial, nun copies de mapes en llinia o en papel.
+  traces:
+    feeds:
+      show:
+        title: Traces GPS d'OpenHistoricalMap
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} comentó sobro un conxuntu de cambios que t'interesa"
+        subject_own: "[OpenHistoricalMap] %{commenter} comentó unu de los tos conxuntos de cambios"
+    diary_comment_notification:
+      header: "%{from_user} comentó na entrada del diariu d'OpenHistoricalMap col asuntu %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} comentó n'una entrada del diariu"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Confirma la to direición de corréu"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] fallu d'importación GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] importación GPX correuta"
+    lost_password:
+      hopefully_you: Dalguién (esperamos que tu) pidió que se-y reanicie la contraseña na cuenta d'openhistoricalmap.org con estes señes de corréu.
+      subject: "[OpenHistoricalMap] Solicitú de reestablecimientu de contraseña"
+    message_notification:
+      header: "%{from_user} unvióte un mensax per OpenHistoricalMap col asuntu %{subject}:"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} solucionó una nota na que ta interesáu"
+        subject_own: "[OpenHistoricalMap] %{commenter} solucionó una de les sos notes"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} fizo un comentariu sobro una nota na que ta interesáu"
+        subject_own: "[OpenHistoricalMap] %{commenter} fizo un comentariu sobro una de les sos notes"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} reactivó una nota na que ta interesáu"
+        subject_own: "[OpenHistoricalMap] %{commenter} reactivó una de les sos notes"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Bienllegáu a OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: La to ID inda nun ta asociada con una cuenta d'OpenHistoricalMap.
+      option_1: Si yes nuevu n'OpenHistoricalMap, crea una cuenta nueva usando'l formulariu de más abaxo.
+    show:
+      delete_user: Desaniciar esti usuariu
+      hide_user: Anubrir esti usuariu
+      unhide_user: Amosar esti usuariu

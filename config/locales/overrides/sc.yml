@@ -1,0 +1,199 @@
+# Messages for Sardinian (sardu)
+# Exported from translatewiki.net
+# Author: Erictheise
+# Author: Gravitystorm
+# Author: L2212
+# Author: Larentzu
+# Author: Minh Nguyen
+# Author: Placebo2
+# Author: Via maxima
+# Do not edit by hand.
+sc:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms&uselang=sc
+        link text: ite est custu?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: lèghere sas rastas GPS privadas issoro
+        allow_read_prefs: lèghere sas preferèntzias tuas de utente
+        allow_write_api: modìfica sa mapa
+        allow_write_diary: creare intradas de su diàriu, cummentos e fàghere amistades.
+        allow_write_gpx: carrigare rastas GPS
+        allow_write_notes: modificare sas notas
+        allow_write_prefs: modificare sas preferèntzias tuas de utente.
+        callback_url: URL de torrada
+        name: Nùmene (obligatòriu)
+        support_url: URL de s'assistèntzia
+        url: URL printzipale de s'aplicatzione (obligatòriu)
+  api:
+    notes:
+      rss:
+        title: Notas de OpenHistoricalMap
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Tenes unu messàgiu urgente in su situ web de OpenHistoricalMap. Bisòngiat chi lu legas pro pòdere sarvare sas modìficas tuas.
+  diary_entries:
+    feed:
+      all:
+        description: Intradas de diàriu reghentes de sos utentes de OpenHistoricalMap
+        title: Intradas de diàriu de OpenHistoricalMap
+      language:
+        description: Intradas de diàriu reghentes de sos utentes de OpenHistoricalMap in %{language_name}
+        title: Intradas de diàriu de OpenHistoricalMap in %{language_name}
+      user:
+        description: Intradas de diàriu reghentes de OpenHistoricalMap de %{user}
+        title: Intradas de diàriu de OpenHistoricalMap de %{user}
+    profile_diaries:
+      date_label: Data
+  errors:
+    contact:
+      contact_the_community_html: Si as agatadu unu ligàmene chi non chi funtzionat o un'errore, intende·ti lìberu de %{contact_link} sa comunidade de OpenHistoricalMap. Annota s'indiritzu URL curretu de sa dimanda tua.
+    forbidden:
+      description: S'operatzione chi as pedidu in su serbidore de OpenHistoricalMap est a disponimentu petzi pro sos amministradores (HTTP 403)
+    internal_server_error:
+      description: Su serbidore de OpenHistoricalMap at rilevadu una cunditzione imprevista chi l'at impedidu de satisfàghere sa dimanda (HTTP 500)
+    not_found:
+      description: No at fatu a agatare unu documentu/cartella/operatzione API cun custu nùmene in de su serbidore de OpenHistoricalMap (HTTP 404)
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
+  javascripts:
+    map:
+      zoom:
+        in: Ismànnia
+        out: Mìnima
+  layouts:
+    intro_header: Bene bènnidu in OpenHistoricalMap!
+    intro_text: OpenHistoricalMap est una mapa de su mundu, creada dae persones che a tie e de impreu lìberu suta de una litzèntzia aberta.
+    logo:
+      alt_text: Logotipu de OpenHistoricalMap
+    logout: Essi
+  oauth:
+    scopes:
+      openid: Intra impreende OpenHistoricalMap
+  sessions:
+    destroy:
+      heading: Essi dae OpenHistoricalMap
+  site:
+    about:
+      lede_text: OpenHistoricalMap est fraigadu dae una comunidade de mapadores chi frunint e agiornant datos subra de caminos, camineras, cafeterias, istatziones de ferrovia e meda de prus in totu su mundu.
+    about_section:
+      contribute_1_user_diaries: diàrios de sos utentes
+      legal_1_aup: Polìticas de impreu atzetàbile
+      legal_1_html: |-
+        Custu situ web e medas àteros servìtzios relatzionados sunt operados, in manera formale, dae sa
+        %{group_link}
+        on behalf of the community. in nùmene de sa comunidade. S'impreu de totu sos servìtzios operados dae s'OSMF est sugetu
+        a sas %{terms_of_use_link}, a sas %{aup_link} e a sa %{privacy_policy_link} nostras.
+      legal_1_privacy_policy: Polìtica de riservadesa
+      legal_1_terms_of_use: Cunditziones de impreu
+      legal_2_html: Pro praghere %{contact_team_link} si tenes dimandas in contu de sa litzèntzia, de su deretu de autore o de àteras chistiones legales.
+    communities:
+      lede_text: Gente dae totu su mundu contribuit a o impreat OpenHistoricalMap. Cando chi medas bi pigant parte comente indivìduos, àteros ant formadu comunidades. Custos grupos sunt de mannàrias diferentes e rapresentant zonas geogràficas dae sas biddigheddas minores a regiones mannas de prus istados. Podes fintzas èssere formales o informales.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: S'inclusione de datos in OpenHistoricalMap no ìmplicat chi su frunidore originale de sos datos diat suportu a OpenHistoricalMap, frunat cale si siat garantzia o atzetet cale si siat responsabilidade.
+        credit_1_html: 'Cando impreas sos datos de OpenHistoricalMap, depes fàghere custas duas cosas:'
+        credit_2_this_copyright_page: custa pàgina subra de su deretu de autore
+        credit_title_html: Comente dare s'atributzione de sos contributos a OpenHistoricalMap
+        infringement_1_html: |-
+          Ammentamus a sos collaboradores de OHM chi non depent annànghere mai datos dae cale si siat fonte cun deretos de autore registrados (a es. Google Maps o mapas imprentadas) chene
+          tènnere un'autorizatzione esplìtzita de sos titulares de sos deretos de autore.
+        introduction_4_creative_commons: Creative Commons Atributzione - Cumpartzi in sa matessi manera 2.0
+        more_2_1_api_usage_policy: Polìtica de impreu de s'API
+        more_2_1_html: Mancari chi OpenHistoricalMap tèngiat datos abertos, non podimus frunire un'API de badas a sas mapas esternas. Càstia sa %{api_usage_policy_link}, %{tile_usage_policy_link} e %{nominatim_usage_policy_link}.
+        more_2_1_nominatim_usage_policy: Polìtica de impreu de Nominatim
+        more_2_1_tile_usage_policy: Polìtica de impreu de sos tasseddos
+        more_title_html: Pro nd'ischire de prus
+    export:
+      too_large:
+        body: Custa àrea est tropu manna pro l'esportare comente datos XML de OpenHistoricalMap. Ismànnia sa mapa o seletziona un'àrea prus minore, o imprea una de sas fontes allistadas inoghe in suta pro sos iscarrigamentos de massa de datos.
+        overpass:
+          description: Iscàrriga custu ricuadru de seletzione dae un'ispigru de sa base de datos de OpenHistoricalMap
+        planet:
+          description: Còpias atualizadas in manera regulare de sa base de datos intrea de OpenHistoricalMap
+          title: Praneta OHM
+    fixthemap:
+      how_to_help:
+        join_the_community:
+          explanation_html: Si as notadu unu problema cun sos datos de mapa nostros, a esempru unu caminu chi mancat o s'indiritzu tuo, sa manera mègius de l'acontzare est aunende·ti a sa comunidade de OpenHistoricalMap e annanghende o curregende sos datos tue matessi.
+    help:
+      introduction: |-
+        OpenHistoricalMap tenet medas risorsas pro imparare cosa subra de su progetu, pro fàghere preguntas e rispòndere,
+        e pro arresonare e documentare in manera collaborativa de temas de mapadura.
+      welcome:
+        description: Incumintza cun custa ghia lestra subra de sos aspetos fundamentales de OpenHistoricalMap.
+        title: Bene bènnidos in OpenHistoricalMap
+      wiki:
+        description: Esplora sa wiki pro agatare documentatzione a sa minuda subra de OHM.
+    index:
+      js_2: OpenHistoricalMap impreat JavaScript pro sa mapa dinàmica sua.
+      remote_failed: Modìfica fallida - assegura·ti chi JOSM o Merkaartor siat aviadu e chi s'optzione de controllu remotu siat abilitada
+    potlatch:
+      removed: S'editore predefinidu tuo de OpenHistoricalMap est Potlatch. Dae chi s'Adobe Flash Player l'ant ritiradu, su Potlach no est prus a disponimentu pro s'impreu dae unu navigadore web.
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap tenet unu limbàgiu suo. Inoghe tenes unas cantas paràulas crae chi t'ant a pòdere èssere de giudu.
+      introduction: Bene bènnidu in OpenHistoricalMap, sa mapa lìbera e modificàbile de su mundu. Como chi ti ses registradu, ses prontu pro incumintzare a mapare. Custa est una ghia lestra cun sas cosas de importu prus mannu chi depes ischire.
+      rules:
+        para_1_html: |-
+          OpenHistoricalMap tenet pagas règulas formales, ma nos isetamus chi totu sos partetzipantes collàborent e comùnichent cun sa comunidade. Si ses cunsiderende
+          cale si siat àtera atividade chi non siat sa modìfica manuale, leghe e sighi sas lìnias de ghia subra de sas
+          %{imports_link} e  de sas %{automated_edits_link}.
+  traces:
+    feeds:
+      show:
+        title: Rastas GPS de OpenHistoricalMap
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} at cummentadu un'annantu de modìficas chi t'interessat"
+        subject_own: "[OpenHistoricalMap] %{commenter} at cummentadu unu de sos annantos de modìficas tuos"
+    diary_comment_notification:
+      header: "%{from_user} at cummentadu s'intrada de su diàriu de OpenHistoricalMap cun s'ogetu %{subject}:"
+      header_html: "%{from_user} at cummentadu s'intrada de su diàriu de OpenHistoricalMap cun s'ogetu %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} at cummentadu un'intrada de su diàriu"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Cunfirma s'indiritzu de posta tuo"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Faddina de importatzione de GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX importadu chene problemas"
+    lost_password:
+      hopefully_you: Calicunu (forsis tue) at pedidu de ripristinare sa crae de intrada de su contu de openhistoricalmap.org assotziadu a custu indiritzu de posta eletrònica.
+      subject: "[OpenHistoricalMap] Dimanda de riprìstinu de sa crae de intrada"
+    message_notification:
+      header: "%{from_user} t'at imbiadu unu messàgiu pro mèdiu de OpenHistoricalMap cun s'ogetu %{subject}:"
+      header_html: "%{from_user} t'at imbiadu unu messàgiu pro mèdiu OpenHistoricalMap cun s'ogetu %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} at risòlvidu una nota chi t'interessat"
+        subject_own: "[OpenHistoricalMap] %{commenter} at risòlvidu una de sas notas tuas"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} at cummentadu una nota chi t'interessat"
+        subject_own: "[OpenHistoricalMap] %{commenter} at cummentadu una de sas notas tuas"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} at torradu a ativare una nota chi t'interessat"
+        subject_own: "[OpenHistoricalMap] %{commenter} at torradu a ativare una de sas notas tuas"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Bene bènnidos a OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: S'ID tuo no est galu assotziadu cun unu contu de OpenHistoricalMap.
+      option_1: Si ses nou in OpenHistoricalMap pro praghere crea unu contu nou impreende su mòdulu inoghe in suta.
+    new:
+      about:
+        paragraph_1: A diferèntzia de àteras mapas, OpenHistoricalMap est totu realizada dae persones che a tie e chie si siat la podet currègere, agiornare, iscarrigare o impreare in manera lìbera.
+        welcome: Bene bènnidu in OpenHistoricalMap
+      duplicate_social_email: Si tenes giai unu contu de OpenHistoricalMap e boles impreare unu frunidore de identidade esternu, intra impreende sa crae tua e muda sas impostaduras de su contu tuo.
+      signup_to_authorize_html: Registra·ti cun OpenHistoricalMap pro atzèdere a %{client_app_name}.
+    show:
+      delete_user: Iscantzella custu utente
+      hide_user: Cua custu utente
+      unhide_user: Non cues custu utente

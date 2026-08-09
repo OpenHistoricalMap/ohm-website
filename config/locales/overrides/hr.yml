@@ -1,0 +1,151 @@
+# Messages for Croatian (hrvatski)
+# Exported from translatewiki.net
+# Author: Anarhistička Maca
+# Author: Astrind
+# Author: Bugoslav
+# Author: Erictheise
+# Author: Ex13
+# Author: Helena
+# Author: Janjko
+# Author: Macofe
+# Author: Minh Nguyen
+# Author: Mnalis
+# Author: Mvrban
+# Author: Nemo bis
+# Author: Obsuser
+# Author: Phidrho
+# Author: Ponor
+# Author: Roberta F.
+# Author: Ruila
+# Author: SpeedyGonsales
+# Author: Teoo3
+# Author: Upwinxp
+# Author: Сербијана
+# Do not edit by hand.
+hr:
+  accounts:
+    show:
+      contributor_terms:
+        link text: što je ovo?
+  activerecord:
+    attributes:
+      client_application:
+        allow_write_api: uredi kartu
+        allow_write_notes: izmijeni bilješke
+        callback_url: Callback URL
+        name: Naziv (obvezno)
+        support_url: Podrška URL
+  api:
+    notes:
+      rss:
+        title: Bilješke OpenHistoricalMap-a
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Rasprava o OpenHistoricalMap setu promjena
+        title_particular: 'Rasprava o OpenHistoricalMap setu promjena #%{changeset_id}'
+  diary_entries:
+    feed:
+      all:
+        description: Nedavni zapisi u dnevnik korisnika OpenHistoricalMapa
+        title: Zapisi u OpenHistoricalMap dnevniku
+      language:
+        description: 'Nedavni zapisi u dnevniku OpenHistoricalMap korisnika na jeziku: %{language_name}'
+        title: 'Zapisi u OpenHistoricalMap dnevniku na jeziku: %{language_name}'
+      user:
+        description: Nedavni zapisi OpenHistoricalMap dnevnika od %{user}
+        title: Zapisi OpenHistoricalMap dnevnika od korisnika %{user}
+    profile_diaries:
+      date_label: Datum
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          track: Staza za trčanje
+  javascripts:
+    map:
+      zoom:
+        in: Približi
+        out: Udalji
+  layouts:
+    intro_2_create_account: Stvori korisnički račun
+    intro_header: Dobrodošao/la na OpenHistoricalMap!
+    intro_text: OpenHistoricalMap je karta svijeta, stvorena od strane ljudi (volontera/doprinositelja) i može se slobodno koristiti pod licencijom otvorenog koda (ODbL).
+    logo:
+      alt_text: OpenHistoricalMap logotip
+    logout: Odjavi se
+    tag_line: Slobodna wiki karta Svijeta
+  sessions:
+    destroy:
+      heading: Odjava iz OpenHistoricalMap-a
+  site:
+    about:
+      lede_text: OpenHistoricalMap je izgradila zajednica kartografa koji donose i održavaju podatke o cestama, stazama, kafićima, željezničkim postajama i još mnogo čemu drugom diljem cijelog svijeta.
+      used_by_html: "%{name} snabdijeva geografskim podacima tisuće internetskih stranica, mobilnih aplikacija i uređaja"
+    add_a_note:
+      para_1: Ako želiš samo napraviti malu doradu i nemaš vremena za registraciju i učenje pravila uređivanja, možeš jednostavno dodati bilješku na kartu.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Uvrštavanje podataka u OpenHistoricalMap ne podrazumijeva da izvorni davatelj podataka podržava OpenHistoricalMap, pruža bilo kakvo jamstvo, ili prihvaća bilo kakve obveze.
+        contributors_intro_html: 'Sudionici projekta su tisuće individualaca. Projekt također uključuje podatke pod slobodnim licencama od nacionalnih kartografskih agencija i drugih izvora, među kojima su:'
+        credit_1_html: 'Tamo gdje koristite OpenHistoricalMap podatke, morate učiniti sljedeće dvije stvari:'
+        credit_title_html: Kako iskazati zasluge OpenHistoricalMap-a
+        infringement_1_html: Suradnike OHM-a podsjećamo da nikada ne dodaju podatke iz bilo kakvih izvora zaštićenih autorskim pravima (npr. Google karte ili tiskane karte) bez izričitog dopuštenja nositelja autorskih prava.
+        more_title_html: Saznaj više
+      title: Autorska prava i Dozvola
+    export:
+      too_large:
+        body: Ovo područje je preveliko da bi se izvezlo u OpenHistoricalMap XML formatu. Molim približi prikaz ili odaberi manje područje ili odaberi jedan od izvora navedenih ispod za preuzimanje velike količine podataka.
+        overpass:
+          description: Preuzmi iznad odabrano granično područje sa drugog servera na kojem je identična kopija baze podataka OpenHistoricalMap-a
+        planet:
+          description: Redovno ažurirane kopije kompletne baze podataka OpenHistoricalMap-a
+          title: Planet OHM
+    help:
+      welcome:
+        title: Dobrodošao/la na OpenHistoricalMap
+    index:
+      js_2: OpenHistoricalMap koristi JavaScript za slippy kartu.
+      remote_failed: Uređivanje nije uspjelo - provjerite da li je JOSM ili Merkaartor učitan i da je opcija "remote control" omogućena
+  time:
+    formats:
+      friendly: "%e %B %Y u %H:%M"
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GNSS tragovi
+    show:
+      edit: uredi
+      edit_trace: Uredi ovaj trag
+      map: karta
+    trace:
+      edit_map: Uredi kartu
+      view_map: Prikaži kartu
+  user_mailer:
+    diary_comment_notification:
+      header: "%{from_user} je komentirao tvoj nedavni OpenHistoricalMap unos u dnevnik s predmetom %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} je komentirao tvoj unos u dnevnik"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Potvrdi svoju e-mail adresu"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX Import nije uspio"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX Import uspješan"
+    lost_password:
+      subject: "[OpenHistoricalMap] Zahtjev za resetom lozinke"
+    message_notification:
+      header: "%{from_user} ti je poslao poruku preko OpenHistoricalMap sa predmetom %{subject}:"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} je razrješio bilješku koja te zanima"
+      commented:
+        subject_own: "[OpenHistoricalMap] %{commenter} je komentirao na jednu od tvojih bilješki."
+      reopened:
+        subject_own: "[OpenHistoricalMap] %{commenter} je reaktivirao jednu od tvojih bilješki"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Dobrodošli na OpenHistoricalMap"
+  users:
+    show:
+      delete_user: Obriši ovog korisnika
+      hide_user: Sakrij ovog korisnika
+      unhide_user: Otkrij ovog korisnika

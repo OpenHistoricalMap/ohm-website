@@ -1,0 +1,275 @@
+# Messages for Finnish (suomi)
+# Exported from translatewiki.net
+# Author: 01miki10
+# Author: 3Johnny
+# Author: Actuallyisjoha
+# Author: Alluk.
+# Author: Antsa
+# Author: Artnay
+# Author: BriskyBlizzard
+# Author: Centerlink
+# Author: Crt
+# Author: Daeron
+# Author: Erictheise
+# Author: Espeox
+# Author: Jnovikov
+# Author: Joquliina
+# Author: Kesäpäivä
+# Author: Konstaduck
+# Author: Laurianttila
+# Author: Lliehu
+# Author: MITO
+# Author: Maantietäjä
+# Author: Macofe
+# Author: Markosu
+# Author: Markus Mikkonen
+# Author: McSalama
+# Author: Mediawikitranslator
+# Author: Mikahama
+# Author: Minh Nguyen
+# Author: Moiman
+# Author: Moj
+# Author: Moottori
+# Author: MrTapsa
+# Author: Nedergard
+# Author: Nelg
+# Author: Nemo bis
+# Author: Nike
+# Author: Olli
+# Author: Pahkiqaz
+# Author: Patalakki
+# Author: Pyscowicz
+# Author: Ramilehti
+# Author: Ruila
+# Author: Rönttönen
+# Author: SMAUG
+# Author: Samoasambia
+# Author: Silvonen
+# Author: Snidata
+# Author: Spude
+# Author: Str4nd
+# Author: Susannaanas
+# Author: Tomi Toivio
+# Author: Tumm1
+# Author: Usp
+# Author: Veikk0.ma
+# Author: Wikipeedikko
+# Author: Yupik
+# Author: ZeiP
+# Do not edit by hand.
+fi:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: Mitä tämä tarkoittaa?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: päästä yksityisiin GPS-jälkiin
+        allow_read_prefs: päästä käyttäjäasetuksiin
+        allow_write_api: muokata karttaa
+        allow_write_diary: lisätä päiväkirjamerkintöjä, kommentteja ja kavereita
+        allow_write_gpx: tallentaa GPS-jälkiä
+        allow_write_notes: muokata karttailmoituksia
+        allow_write_prefs: muokata käyttäjäasetuksia
+        callback_url: Takaisinsoiton verkko-osoite
+        name: Nimi (pakollinen)
+        support_url: Tuen osoite (URL)
+        url: Pääsovelluksen URL-osoite (pakollinen)
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMapin karttailmoitukset
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Olet saanut kiireellisen viestin OpenHistoricalMapin verkkopalvelussa. Viesti on luettava, ennen kuin karttaan voi tallentaa muutoksia.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Keskustelu OpenHistoricalMapin muutoskokoelmasta
+        title_particular: 'OpenHistoricalMap muutoskokoelma #%{changeset_id} keskustelu'
+  diary_entries:
+    feed:
+      all:
+        description: Tuoreimmat OpenHistoricalMapin käyttäjien päiväkirjamerkinnät
+        title: OpenHistoricalMap-päiväkirjamerkinnät
+      language:
+        description: Viimeisimmät päiväkirjamerkinnät OpenHistoricalMapin käyttäjiltä kielellä %{language_name}
+        title: OpenHistoricalMap-päiväkirjamerkinnät kielellä %{language_name}
+      user:
+        description: Tuoreimmat OpenHistoricalMapin päiväkirjamerkinnät käyttäjältä %{user}
+        title: Käyttäjän %{user} OpenHistoricalMap-päiväkirjamerkinnät
+    profile_diaries:
+      date_label: Päiväys
+  errors:
+    contact:
+      contact_the_community_html: "%{contact_link} OpenHistoricalMap-yhteisöön, jos olet löytänyt rikkinäisen linkin / virheen. Kirjoita muistiin pyyntösi tarkka URL-osoite."
+    forbidden:
+      description: OpenHistoricalMap-palvelimella pyytämäsi toiminto on vain järjestelmänvalvojien käytettävissä (HTTP 403)
+    internal_server_error:
+      description: OpenHistoricalMap-palvelin kohtasi odottamattoman tilanteen, joka esti sitä täyttämästä pyyntöä (HTTP 500)
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          track: Juoksurata
+        shop:
+          seafood: Meriruoka
+  javascripts:
+    legend:
+      title: Kartta­merkinnät
+      tooltip: Merkkien selitykset
+      tooltip_disabled: Ei käytettävissä tässä karttanäkymässä
+    map:
+      base:
+        historical: Historiallinen
+        woodblock: Puupalikka
+      zoom:
+        in: Lähennä
+        out: Loitonna
+  layouts:
+    intro_2_create_account: luomalla ensin käyttäjätunnuksen
+    intro_header: Tervetuloa OpenHistoricalMapiin!
+    intro_text: OpenHistoricalMap on vapaaehtoisten luoma maailmankartta, jota voi käyttää vapaasti avoimella lisenssillä.
+    logo:
+      alt_text: OpenHistoricalMap-logo
+    logout: Kirjaudu ulos
+    tag_line: Avoin wikimaailmankartta
+  oauth:
+    scopes:
+      openid: Kirjaudu sisään OpenHistoricalMapin avulla
+  sessions:
+    destroy:
+      heading: Kirjaudu ulos OpenHistoricalMapista
+  site:
+    about:
+      lede_text: OpenHistoricalMapia rakentavat vapaaehtoiset yhteisön jäsenet, jotka tuottavat ja ylläpitävät karttatietoja teistä, rautateistä, kahviloista, rautatieasemista ja monista muista kohteista kaikkialla maailmassa.
+    about_section:
+      contribute_1_user_diaries: käyttäjien päiväkirjoja
+      legal_1_aup: sallitun käytön käytäntöjä
+      legal_1_html: Tämä sivusto ja monet siihen liittyvät palvelut ovat muodollisesti %{group_link} hallinnoimia OSM-yhteisön puolesta. Kaikkien OSMF:n hallinnoimien palveluiden käyttöön sovelletaan %{terms_of_use_link}, %{aup_link} ja %{privacy_policy_link} (saatavilla vain englanniksi).
+      legal_1_privacy_policy: tietosuojakäytäntöä
+      legal_1_terms_of_use: käyttöehtoja
+      legal_2_html: Ota yhteyttä %{contact_team_link}, jos sinulla on kysymyksiä lisenssoinnista, tekijänoikeuksista tai muista oikeudellisista kysymyksistä.
+    add_a_note:
+      para_1: Jos huomaat kartalla virheen, muttet halua korjata sitä itse, tee siitä karttavirheilmoitus.
+    communities:
+      lede_text: Ihmiset ympäri maailmaa käyttävät ja täydentävät OpenHistoricalMapia. Vaikka monet osallistuvat yksilöinä, osa käyttäjistä on muodostanut yhteisöjä. Näiden ryhmien koko vaihtelee ja ryhmien jäsenet saattavat kattaa joko pienen kylän tai useita alueita eri maista. Ryhmät voivat olla muodollisia tai epävirallisia.
+    copyright:
+      legal_babble:
+        attribution_example:
+          title: Nimeämisesimerkki
+        contributors_footer_2_html: |-
+          Tietojen sisältyminen OpenHistoricalMapiin ei tarkoita, että tietojen antaja
+          ottaa kantaa OpenHistoricalMapiin tai vastuuta tietojen oikeellisuudesta.
+        contributors_intro_html: |-
+          Tekijöinämme on tuhansia yksityishenkilöitä. Olemme myös sisällyttäneet
+          vapaasti lisensoitua dataa kansallisilta kartoitustoimistoilta
+          ja muista lähteistä, muun muassa:
+        credit_1_html: 'Kun käytät OpenHistoricalMap-tietoja, sinun on tehtävä nämä kaksi asiaa:'
+        credit_2_this_copyright_page: tälle tekijänoikeussivulle
+        credit_title_html: OpenHistoricalMapin mainitseminen
+        infringement_1_html: |-
+          OHMin kartoittajia muistutetaan, että kopioiminen tekijänoikeuksien alaisista teoksista
+          (esimerkiksi Google-kartoista tai paperikartoista) ilman tekijänoikeuden haltijan nimenomaista lupaa on kielletty.
+        introduction_4_creative_commons: Creative Commons Nimeä-JaaSamoin 2.0
+        more_2_1_api_usage_policy: API:n käyttöehtoihin
+        more_2_1_html: Vaikka OpenHistoricalMap on avointa dataa, emme voi tarjota maksutonta karttarajapintaa (API) kolmannen osapuolen kehittäjille. Tutustu %{api_usage_policy_link}, %{tile_usage_policy_link} ja %{nominatim_usage_policy_link}.
+        more_2_1_tile_usage_policy: kartta-aineiston käyttöehtoihin
+        more_title_html: Lisätietoja
+    export:
+      too_large:
+        body: 'Näin suurta aluetta ei voi viedä OpenHistoricalMap XML-tiedostona. Lähennä karttaa tai valitse pienempi alue, tai vaihtoehtoisesti lataa tiedosto joltakin seuraavista:'
+        overpass:
+          description: Lataa kartalle rajattu alue OpenHistoricalMapin varapalvelimelta
+        planet:
+          description: Säännöllisesti päivitettyjä kopioita täydellisestä OpenHistoricalMap-tietokannasta
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: "Klikkaa vain %{note_icon} tai samaa ikonia karttanäkymässä.\nTämä lisää merkin kartalle, jota voit liikuttaa \nraahaamalla. Lisää tekstisi, ja klikkaa Tallenna, ja muut voivat tutkia sitä."
+        join_the_community:
+          explanation_html: Jos olet huomannut ongelman kartassa, kuten puuttuvan tien tai puuttuvan osoitteesi, paras tapa toimia on liittyä OpenHistoricalMap-yhteisöön ja lisätä tai korjata kohta itse.
+      other_concerns:
+        contact: ota yhteyttä
+    help:
+      introduction: Ohjeita ja vinkkejä OpenHistoricalMapin käyttöön on saatavilla useista eri lähteistä.
+      slack:
+        title: IRC
+      welcome:
+        description: Opi OpenHistoricalMapin perusteet tällä helpolla aloitusoppaalla.
+        title: Tervetuloa OpenHistoricalMapiin
+      wiki:
+        description: Tutustu syvällisemmin OHMiin wikikirjastossa. Osittain englanninkielinen.
+    index:
+      js_2: OpenHistoricalMap tarvitsee JavaScriptin liikuteltavaan karttaan.
+      remote_failed: Muokkaus epäonnistui - varmista, että JOSM tai Merkaartor on ladattu ja etähallinta-asetus on käytössä
+    potlatch:
+      removed: OpenHistoricalMapin oletusmuokkausohjelmaksi on valittu Potlatch. Adoben Flash Player -lisäosan tuki on päättynyt, minkä vuoksi Potlatch ei ole enää saatavilla verkkoselaimessa.
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMapissa käytetään paljon vain sille omaista termistöä. Kun nämä sanat ovat hallinnassa, olet jo voiton puolella!
+      introduction: 'Tervetuloa OpenHistoricalMapiin: ilmaiseen ja vapaasti muokattavaan maailmankarttaan. Rekisteröityminen on nyt suoritettu, joten olet valmis aloittamaan kartan muokkaamisen. Tutustu ensin kuitenkin näihin perusasioihin.'
+      rules:
+        para_1_html: OpenHistoricalMapilla on joitakin muodollisia säännöksiä, mutta oletamme kaikkien käyttäjien tekevän yhteistyötä muiden kanssa. Jos harkitset muita toimintoja kuin perusmuokkausta, lue ohje %{imports_link} ja %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: Kartta %{doesnt} sisällä mielipiteitä, kuten arvosteluja, historiallisia tai hypoteettisia ominaisuuksia, eikä tietoja tekijänoikeuksin suojatuista lähteistä. Ellei sinulla ole erityistä lupaa, älä kopioi verkko- tai paperikarttoja.
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMapin GPS-jäljet
+    show:
+      edit: muokkaa
+      map: kartalla
+    trace:
+      edit_map: Muokkaa karttaa
+      view_map: Selaa karttaa
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} on kommentoinut sinua kiinnostavaa muutoskokoelmaa"
+        subject_own: "[OpenHistoricalMap] %{commenter} on kommentoinut muutoskokoelmaasi"
+    diary_comment_notification:
+      header: "%{from_user} kommentoi kirjoittamaasi päiväkirjamerkintää OpenHistoricalMapissa otsikolla %{subject}:"
+      header_html: "%{from_user} on kommentoinut OpenHistoricalMap-päiväkirjamerkintää otsikolla %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} on lisännyt kommentin päiväkirjamerkintääsi"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Vahvista sähköpostiosoitteesi"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX-tuonti epäonnistui"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX-tuonti onnistui"
+    lost_password:
+      hopefully_you: Joku (mahdollisesti sinä) on pyytänyt tähän sähköpostiosoitteeseen rekisteröidyn openhistoricalmap.org-tunnuksen salasanan vaihtoa.
+      subject: "[OpenHistoricalMap] Salasanan vaihtopyyntö"
+    message_notification:
+      header: "%{from_user} on lähettänyt sinulle viestin OpenHistoricalMapissa otsikkolla %{subject}:"
+      header_html: "%{from_user} on lähettänyt sinulle viestin OpenHistoricalMapissa otsikolla %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} on ratkaissut sinua kiinnostavan karttailmoituksen"
+        subject_own: "[OpenHistoricalMap] %{commenter} on ratkaissut karttailmoituksesi"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} on kommentoinut sinua kiinnostavaa merkintää"
+        subject_own: "[OpenHistoricalMap] %{commenter} on kommentoinut merkintääsi"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} on avannut karttailmoituksen uudelleen"
+        subject_own: "[OpenHistoricalMap] %{commenter} on avannut karttamerkintäsi uudelleen"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Tervetuloa OpenHistoricalMapiin"
+  users:
+    auth_association:
+      heading: ID:täsi ei ole vielä liitetty OpenHistoricalMap-tiliisi.
+      option_1: 'Uusi OpenHistoricalMapin käyttäjä: luo käyttäjätunnus tällä lomakkeella.'
+    new:
+      about:
+        paragraph_1: Toisin kuin muut karttapalvelut, OpenHistoricalMap on täysin tavallisten ihmisten luoma. Kuka tahansa voi korjata, päivittää, ladata ja käyttää sitä ilmaiseksi.
+        paragraph_2: Osallistu projektiin luomalla käyttäjätunnus.
+        welcome: Tervetuloa OpenHistoricalMapiin
+    show:
+      delete_user: Poista tämä käyttäjä
+      hide_user: Piilota tämä käyttäjä
+      unhide_user: Poista käyttäjän piilottaminen

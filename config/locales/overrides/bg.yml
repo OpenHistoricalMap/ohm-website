@@ -1,0 +1,156 @@
+# Messages for Bulgarian (български)
+# Exported from translatewiki.net
+# Author: BennyZ2304
+# Author: DCLXVI
+# Author: Danieldegroot2
+# Author: Dimitar
+# Author: Erictheise
+# Author: Kareyac
+# Author: Lyubomirv
+# Author: Minh Nguyen
+# Author: MrPanyGoff
+# Author: Plamen
+# Author: Ricordo.tenerissimo
+# Author: ShockD
+# Author: StanProg
+# Author: Stoyan
+# Author: Tlubenov
+# Author: Vlad5250
+# Author: Vodnokon4e
+# Author: YavBav09
+# Author: АдмиралАнимЕ
+# Do not edit by hand.
+bg:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
+        link text: какво е това?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: четете личните им GPS следи
+        allow_read_prefs: прочетете потребителските предпочитания
+        allow_write_api: промени картата
+        allow_write_diary: създай дневник на бележките, коментарите и новите приятелства
+        allow_write_gpx: качвате на GPS следи
+        allow_write_notes: промени бележки
+        allow_write_prefs: променете потребителските им предпочитания
+        name: Име (задължително)
+        url: Адрес на основното приложение (задължително)
+  api:
+    notes:
+      rss:
+        title: Бележки на OpenHistoricalMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Дискусия за промяна на OpenHistoricalMap
+        title_particular: 'Разговор за промяната #%{changeset_id} на OpenHistoricalMap'
+  diary_entries:
+    feed:
+      all:
+        title: Записи в дневника на OpenHistoricalMap
+      language:
+        description: Скорошни записи в дневника от потребители на OpenHistoricalMap на %{language_name}
+        title: Записи в дневника на OpenHistoricalMap на %{language_name}
+      user:
+        description: Последни OpenHistoricalMap записи в дневника от %{user}
+        title: OpenHistoricalMap дневник записи за %{user}
+    profile_diaries:
+      date_label: Дата
+  javascripts:
+    map:
+      zoom:
+        in: Приближаване
+        out: Отдалечаване
+  layouts:
+    intro_2_create_account: Създаване на сметка
+    intro_header: Добре дошли в OpenHistoricalMap!
+    intro_text: OpenHistoricalMap е карта на света създадена от хора като вас, за свободно ползване и под отворен лиценз.
+    logo:
+      alt_text: Лого на OpenHistoricalMap
+    logout: Излизане
+    tag_line: Свободна Wiki-карта на света
+  sessions:
+    destroy:
+      heading: Изход от OpenHistoricalMap
+  site:
+    about:
+      lede_text: OpenHistoricalMap е създадена от общност от картографи, които предоставят и поддържат данни за пътища, пътеки, кафенета, железопътни гари и много други по целия свят.
+    about_section:
+      contribute_1_user_diaries: потребителските дневници
+      legal_1_privacy_policy: Политика за поверителност
+      legal_2_html: Моля, %{contact_team_link} ако имате въпроси, свързани с лицензирането, авторските права или други правни въпроси.
+    communities:
+      lede_text: Хора от цял свят допринасят за OpenHistoricalMap или я използват. Много от тях участват индивидуално, а други са създали общности. Тези групи са с различна големина и представляват географски райони от малки градове до големи региони с много държави. Те също така могат да бъдат официални или неофициални.
+    copyright:
+      legal_babble:
+        credit_1_html: 'Когато използвате данни от OpenHistoricalMap, от вас се изисква да направите следните две неща:'
+        credit_title_html: Как да кредитирате OpenHistoricalMap
+        infringement_1_html: Напомняме на сътрудниците на OHM никога да не добавят данни от източници, защитени с авторски права (например Google Maps или печатни карти), без изрично разрешение от притежателите на авторските права.
+        more_title_html: Открийте повече
+    export:
+      too_large:
+        planet:
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        join_the_community:
+          explanation_html: Ако сте забелязали проблем с нашите картографски данни, например липсва път или вашият адрес, най-добрият начин да продължите е да се присъедините към общността на OpenHistoricalMap и да добавите или поправите данните сами.
+    help:
+      introduction: OpenHistoricalMap разполага с няколко ресурса за запознаване с проекта, задаване и отговаряне на въпроси, както и за съвместно обсъждане и документиране на теми, свързани с картографирането.
+      slack:
+        title: IRC
+      welcome:
+        description: Започнете с това кратко ръководство, обхващащо основите на OpenHistoricalMap.
+        title: Добре дошли в OpenHistoricalMap
+      wiki:
+        description: Разгледайте уикито за подробна документация за OHM.
+        title: Уики
+    index:
+      js_2: OpenHistoricalMap използва JavaScript за своята статична карта.
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap има свой собствен жаргон. Ето няколко ключови думи, които ще Ви бъдат полезни.
+      introduction: Добре дошли в OpenHistoricalMap, безплатната и редактируема карта на света. Сега, след като сте се регистрирали, сте готови да започнете да картографирате. Предлагаме ви кратко ръководство с най-важните неща, които трябва да знаете.
+      rules:
+        para_1_html: |-
+          OpenHistoricalMap има малко официални правила, но очакваме всички участници да си сътрудничат и да комуникират с общността. Ако обмисляте някакви дейности,
+          различни от ръчно редактиране, моля, прочетете и следвайте указанията на
+          %{imports_link} и %{automated_edits_link}.
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS трасета
+  user_mailer:
+    email_confirm:
+      subject: "[OpenHistoricalMap] Потвърждаване на адрес за електронна поща"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Грешка при внасяне на GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX импорта е успешен"
+    lost_password:
+      hopefully_you: Някой (надяваме се Вие) е поискал промяна на паролата на сметка в openhistoricalmap.org свързана този адрес на електронна поща.
+      subject: "[OpenHistoricalMap] Заявка за промяна на парола"
+    message_notification:
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} затвори бележка, която ви интересува"
+        subject_own: "[OpenHistoricalMap] %{commenter} е затворил една от бележките ви"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} коментира бележка, от която се интересувате"
+        subject_own: "[OpenHistoricalMap] %{commenter} е коментирал на една от вашите бележки"
+      reopened:
+        subject_own: "[OpenHistoricalMap] %{commenter} повторно е отворил една от бележките ви"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Добре дошли в OpenHistoricalMap"
+  users:
+    new:
+      about:
+        paragraph_1: За разлика от други карти, OpenHistoricalMap е изцяло създадена от хора като Вас и е безплатна за всеки, който иска да я поправи, актуализира, изтегли и използва.
+    show:
+      delete_user: Изтриване на този потребител
+      hide_user: Скрий този Потребител
+      unhide_user: Разкрий този потребител

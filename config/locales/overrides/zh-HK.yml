@@ -1,0 +1,75 @@
+# Messages for Chinese (Hong Kong) (中文（香港）)
+# Exported from translatewiki.net
+# Author: C933103
+# Author: Erictheise
+# Author: Hkjacksonhk
+# Author: Liuxinyu970226
+# Author: LuciferianThomas
+# Author: Minh Nguyen
+# Author: StarrySky
+# Author: 捍粵者
+# Do not edit by hand.
+zh-HK:
+  accounts:
+    show:
+      contributor_terms:
+        link text: 這是什麼？
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: 讀取他們的私人GPS軌跡
+        allow_read_prefs: 讀取他們的用戶設定。
+        allow_write_api: 修改地圖
+        allow_write_diary: 建立日記項目、評論和加入好友
+        allow_write_gpx: 上載GPS軌跡
+        allow_write_notes: 修改註記
+        allow_write_prefs: 修改他們的用戶設定。
+        callback_url: 回呼 (Callback) URL
+        name: 名稱（必需）
+        support_url: 支援URL
+        url: 主程式URL（必需）
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap註記
+  diary_entries:
+    feed:
+      all:
+        description: 近期的OpenHistoricalMap用戶日記文章
+      language:
+        description: 近期以%{language_name}撰寫的OpenHistoricalMap用戶日記文章
+      user:
+        description: 近期由%{user}所寫的OpenHistoricalMap日記文章
+        title: "%{user}的OpenHistoricalMap日記文章"
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          horse_riding: 馬場
+  javascripts:
+    map:
+      zoom:
+        in: 放大
+        out: 縮小
+  layouts:
+    intro_2_create_account: 建立用戶帳號
+    intro_header: 歡迎來到 OpenHistoricalMap！
+    logo:
+      alt_text: OpenHistoricalMap標誌
+    logout: 登出
+  site:
+    add_a_note:
+      para_1: 如果你只想讓一些小問題得以更正，而沒有時間注冊並學習如何編輯，那麼加入註記是非常容易的。
+    help:
+      slack:
+        title: IRC
+    welcome:
+      introduction: 歡迎來到OpenHistoricalMap，自由而可以編輯的世界地圖。現在您已經注冊完成，繪製地圖所需要的準備已經就緒。以下是一份快速指南，裡面包含着您所需要知道的最重要事項。
+      rules:
+        para_1_html: OpenHistoricalMap沒多少正式規則，但我們期望所有參與者都會與社群合作，也會和社群溝通。如果你想用任何不只是純人手編輯的方式做任何事的話，請先閱讀並遵循%{imports_link}以及%{automated_edits_link}規範。
+  user_mailer:
+    diary_comment_notification:
+      subject: "[OpenHistoricalMap] %{user}在日記中留下了評論"
+    lost_password:
+      hopefully_you: 有人 (或許是您) 要求將以此電子郵件地址註冊的openhistoricalmap.org帳號的密碼重設。
+      subject: "[OpenHistoricalMap] 密碼重設請求"

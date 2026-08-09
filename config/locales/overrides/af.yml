@@ -1,0 +1,100 @@
+# Messages for Afrikaans (Afrikaans)
+# Exported from translatewiki.net
+# Author: Arnobarnard
+# Author: Biggs ZA
+# Author: Danieldegroot2
+# Author: Erictheise
+# Author: Firefishy
+# Author: Fwolff
+# Author: Hentie
+# Author: Joris Darlington Quarshie
+# Author: Minh Nguyen
+# Author: Naudefj
+# Author: Nroets
+# Do not edit by hand.
+af:
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: lees hul privaat GPS-spore
+        allow_read_prefs: hul gebruikersvoorkeure lees
+        allow_write_api: die kaart wysig
+        allow_write_diary: skep dagboekinskrywings, lewer kommentaar en ontmoet vriende
+        allow_write_gpx: laai GPS-spore op
+        allow_write_notes: notas wysig
+        allow_write_prefs: hul gebruikersvoorkeure wysig
+        callback_url: Callback-URL
+        name: Naam (verplig)
+        support_url: Ondersteunings-URL
+        url: Hoof-URL van program (verplig)
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap-notas
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap bespreking oor wysigingstelle
+        title_particular: 'OpenHistoricalMap wysigingstel #%{changeset_id} bespreking'
+  diary_entries:
+    feed:
+      all:
+        description: Onlangse dagboekinskrywings van OpenHistoricalMap-gebruikers
+        title: OpenHistoricalMap-dagboekinskrywings
+      language:
+        description: Onlangse dagboekinskrywings van OpenHistoricalMap-gebruikers in %{language_name}
+        title: OpenHistoricalMap dagboekinskrywings in %{language_name}
+      user:
+        description: Onlangse OpenHistoricalMap-dagboekinskrywings van %{user}
+        title: OpenHistoricalMap-dagboekinskrywings vir %{user}
+    profile_diaries:
+      date_label: Datum
+  javascripts:
+    map:
+      zoom:
+        in: Zoem in
+        out: Zoem uit
+  layouts:
+    intro_2_create_account: Skep 'n gebruikerrekening
+    intro_header: Welkom by OpenHistoricalMap!
+    intro_text: OpenHistoricalMap is wêreldkaart deur gewone mense geskep. Die gebruik daarvan is gratis en val onder 'n oop-lisensie.
+    logo:
+      alt_text: OpenHistoricalMap-embleem
+    logout: Meld af
+    tag_line: Die Vrye Wiki-Wêreldkaart
+  sessions:
+    destroy:
+      heading: Meld van OpenHistoricalMap af
+  site:
+    copyright:
+      legal_babble:
+        credit_title_html: Hoe om na OpenHistoricalMap te verwys
+    export:
+      too_large:
+        planet:
+          title: Planeet OHM
+    help:
+      slack:
+        title: IRC
+      welcome:
+        title: Welkom by OpenHistoricalMap
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap bevat 'n gedeelte van ons eie vakbegrippe. Hier is 'n paar wat handig te pas sal kom.
+  user_mailer:
+    diary_comment_notification:
+      header: "%{from_user} het kommentaar op die OpenHistoricalMap-dagboekinskrywing met die tema %{subject} gelewer:"
+      subject: "[OpenHistoricalMap] %{user} het kommentaar op 'n dagboekinskrywing gelewer"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Bevestig u e-posadres"
+    lost_password:
+      subject: "[OpenHistoricalMap] Versoek om wagwoord te herstel"
+    message_notification:
+      subject: "[OpenHistoricalMap] %{message_title}"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Welkom by OpenHistoricalMap"
+  users:
+    show:
+      delete_user: Skrap dié Gebruiker
+      hide_user: Versteek hierdie gebruiker
+      unhide_user: Wys hierdie gebruiker
