@@ -10,9 +10,13 @@
 //= require leaflet.query
 //= require index/contextmenu
 //= require index/initializations
+//= require index/date_utils
 //= require index/layers/data
 //= require index/layers/notes
+//= require @openhistoricalmap/map-styles/dist/ohm.styles
+//= require index/timeslider
 //= require router
+//= require qs/dist/qs
 
 OSM.initializations = [];
 
@@ -21,6 +25,9 @@ $(function () {
     zoomControl: false,
     layerControl: false,
     contextmenu: true,
+    minZoom: 2, /* match to "L.MaplibreGL" options in leaflet.map.js */
+    maxZoom: 20, /* match to "L.MaplibreGL" options in leaflet.map.js */
+    maxBounds: [[-90, -360], [90, 360]], /* prevents vector & raster maps from slipping out of sync at extreme latitudes */
     worldCopyJump: true
   });
 
