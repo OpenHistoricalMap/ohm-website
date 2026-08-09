@@ -1,0 +1,294 @@
+# Messages for Arpitan (arpetan)
+# Exported from translatewiki.net
+# Author: Eihel
+# Author: Erictheise
+# Author: L'Arpetani
+# Author: Sampi│ϡ
+# Do not edit by hand.
+frp:
+  accounts:
+    deletions:
+      show:
+        delete_introduction: 'Vos povéd suprimar voutron compto OpenHistoricalMap en utilisant lo boton cé d''avâl. Notâd bien céts dètâlys :'
+        retain_caveats: 'Pas-muens, quârques-unes de voutres enformacions seront consèrvâyes sur OpenHistoricalMap aprés la suprèssion de voutron compto :'
+    show:
+      contributor_terms:
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms/FR
+        link text: Qu'o est cen ?
+    terms:
+      show:
+        read and accept with tou: Mèrci de liére l'acôrd du contributor et les condicions d'usâjo, pués validâd les doves câses et apoyéd adonc sur lo boton « Continuar ».
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: liére ses traces GPS privâyes
+        allow_read_prefs: liére les prèferences de l'usanciér(e)
+        allow_write_api: changiér la mapa
+        allow_write_changeset_comments: comentar les bendes de changements
+        allow_write_diary: crèar d'entrâyes du jornâl et de comentèros
+        allow_write_gpx: tèlèvèrsar de traces GPS
+        allow_write_notes: changiér les notes
+        allow_write_prefs: changiér les prèferences de l'usanciér(e)
+        callback_url: URL de rapèl
+        name: Nom (requis)
+        support_url: URL de l'assistance
+        url: URL de l'aplicacion prencipâla (requis)
+  api:
+    notes:
+      rss:
+        title: Notes OpenHistoricalMap
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Vos éd un mèssâjo urgent sur lo sito vouèbe OpenHistoricalMap. Vos dête liére lo mèssâjo devant que de povêr encartar voutres modificacions.
+  auth:
+    providers:
+      openstreetmap: OpenStreetMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Discussion sur la benda de changements OpenHistoricalMap
+        title_particular: Discussion sur la benda de changements OpenHistoricalMap nº %{changeset_id}
+  date:
+    formats:
+      brief: "%{year}"
+      brief_bce: "%{year} AEC"
+      brief_ce: "%{year} EC"
+      heatmap: "%-d %B"
+  diary_entries:
+    comments:
+      description: Entrâyes novèles des jornâls d'usanciér(e)s d'OpenHistoricalMap
+      title: Entrâs dos jornals OpenHistoricalMap
+    feed:
+      all:
+        description: Entrâyes novèles des jornâls d'usanciér(e)s d'OpenHistoricalMap
+        title: Entrâyes des jornâls OpenHistoricalMap
+      language:
+        description: Entrâyes novèles des jornâls d'usanciér(e)s d'OpenHistoricalMap en %{language_name}
+        title: Entrâyes du jornâl OpenHistoricalMap en %{language_name}
+      user:
+        description: Entrâyes novèles du jornâl OpenHistoricalMap de %{user}
+        title: Entrâyes du jornâl OpenHistoricalMap de %{user}
+    profile_diaries:
+      comments_label: Comentèros
+      date_label: Dâta
+  errors:
+    bad_request:
+      description: L'opèracion que vos éd demandâye sur lo sèrvor OpenHistoricalMap est pas valida (HTTP 400)
+    contact:
+      contact_the_community_html: Margalyéd pas a %{contact_link} la comunôtât OpenHistoricalMap se vos éd trovâ un lim cassâ ou una anomalie. Notâd l'URL ègzacta de voutra demanda.
+    forbidden:
+      description: L'opèracion que vos éd demandâye sur lo sèrvor OpenHistoricalMap est disponibla unicament por los administrators (HTTP 403)
+    internal_server_error:
+      description: Lo sèrvor OpenHistoricalMap at trovâ una condicion emprèvua que l'at empachiê d'achavonar la requéta (HTTP 500)
+    not_found:
+      description: S'at pas pu trovar un fichiér, un repèrtouèro ou una opèracion de l'API avouéc cél nom sur lo sèrvor OpenHistoricalMap (HTTP 404)
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
+    search_osm_nominatim:
+      border_types:
+        archdiocese: Frontiére d'arch·idiocèse
+        audiencia: Frontiére d'ôdiance
+        caliphate: Frontiére de califat
+        canton: Frontiére de canton
+        captaincy_general: Frontiére de capitèneria gènèrâla
+        census_area: Frontiére statistica
+        chiefdom: Frontiére de ch·èferie
+        city-state: Frontiére de citât-ètât
+        colony: Frontiére coloniâla
+        commonwealth: Frontiére de Commonwealth
+        commune: Frontiére de comena
+        condominium: Frontiére de condominium
+        confederation: Frontiére de confèdèracion
+        diocese: Frontiére de diocèse
+        dominion: Frontiére de dominion
+        emirate: Frontière d'èmirat
+        empire: Frontiére d'empiro
+        eyalet: Frontiére d'eyalet
+        federal_district: Frontiére de districto fèdèrâl
+        federation: Frontiére de fèdèracion
+        ghetto: Frontiére de ghetto
+        governorate: Frontiére de governorat
+        hundred: Frontiére de hundred
+        intendancy: Frontiére d'entendance
+        kingdom: Frontiére de royômo
+        major_division: Frontiére de division maj·ora
+        markaz: Frontiére de markaz
+        oblast: Frontiére d'oblast
+        occupation: Frontiére de zona ocupâye
+        overseas_collectivity: Frontiére de colèctivitât d'ultra-mar
+        overseas_department: Frontiére de dèpartament d'ultra-mar
+        overseas_territory: Frontiére de tèrritouèro d'ultra-mar
+        planning_region: Frontiére de règ·ion planifiyêe
+        possession: Frontiére de possèssion
+        prefecture: Frontiére de prèfèctura
+        prefecture_apostolic: Frontiére de prèfèctura apostolica
+        principate: Frontiére de prencipât
+        protectorate: Frontiére de protèctorat
+        rancho: Frontiére de rancho
+        realm: Frontiére de realm
+        reichsgau: Frontiére de Reichgau
+        republic: Frontiére de rèpublica
+        rode: Frontiére de rode
+        sanjak: Frontiére de sanjak
+        sector: Frontiére de sèctor
+        shire: Frontiére de shire
+        subdistrict: Frontiére de districto
+        sultanate: Frontiére de sultanât
+        territorial_prelature: Frontiére de tèrritouèro de prèlatura
+        territory: Frontiére de tèrritouèro
+        vicariate_apostolic: Frontiére de viquéro apostolico
+        viceroyalty: Frontiére de vice-royotât
+        viyalet: Frontiére de viyalet
+        voivodeship: Frontiére de wojewoda
+        ward: Frontiére de ward
+        zone: Frontiére de zona
+      prefix:
+        leisure:
+          track: Pista de corsa
+  javascripts:
+    map:
+      zoom:
+        in: S'aprochiér
+        out: S'èluegnér
+  layouts:
+    intro_header: Benvenua dens OpenHistoricalMap!
+    intro_text: OpenHistoricalMap est una mapa du mondo, fâte per des gens come vos, et libra d'usâjo sot licence libra.
+    logo:
+      alt_text: Simbolo d'OpenHistoricalMap
+    logout: Sè dèbranchiér
+    offline_flash:
+      osm_offline: 'La bâsa de balyês OpenHistoricalMap est fôr de legne ora : de travâlys de maneyance èssencièls sont en cors.'
+      osm_read_only: 'La bâsa de balyês OpenHistoricalMap est en lèctura solèta ora : de travâlys de maneyance èssencièls sont en cors.'
+    tag_line: La mapa vouiqui libra du mondo
+  notes:
+    new_readonly:
+      warning: De novèles notes pôvont pas étre apondues porce que l'API d'OpenHistoricalMap est ora en lèctura solèta.
+  oauth:
+    scopes:
+      openid: Sè branchiér avouéc OpenHistoricalMap
+  preferences:
+    basic_preferences:
+      show:
+        map_color_schemes:
+          auto: Ôtô
+    preferences:
+      navigation:
+        advanced_preferences: Prèferences avanciêes
+        preferences: Prèferences
+  sessions:
+    destroy:
+      heading: Dè dèbranchiér d'OpenHistoricalMap
+    new:
+      login_to_authorize_html: Reliyéd vos a OpenHistoricalMap por arrevar a %{client_app_name}.
+  site:
+    about:
+      lede_text: OpenHistoricalMap est bâti per una comunôtât de mapors volontèros que contribuont et mantegnont les balyês des rotes, sentiérs, câfès, stacions de tren et ben més, pertot dens lo mondo.
+    communities:
+      lede_text: De pèrsones du mondo entiér contribuont ou utilisont OpenHistoricalMap. Tandis que de mouéls participont de lor coutâ, d'ôtres ant formâ des comunôtâts. Cetes bendes sont de talyes difèrentes et rassemblont de zones geografiques alent de petites veles a de grants tèrritouèros entèrnacionâls. Ils pôvont asse-ben étre oficièls, ou pas.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: L'encllusion de balyês dens OpenHistoricalMap vôt pas dére que los fornissors des balyês d'origina aprovont OpenHistoricalMap, ni qu'ils garantéssont les balyês ou accèptont quârque rèsponsabilitât.
+        credit_1_html: 'Quand vos utilisâd de balyês d''OpenHistoricalMap, vos dête fâre ces doves chouses :'
+        credit_title_html: Coment crèditar OpenHistoricalMap
+        infringement_1_html: Nos rapelens ux contributors d'OHM qu'ils dêvont jamés apondre de balyês que vegnont de sôrses emparâyes per lo drêt d'ôtor (copyright) ou de drêts vesins (per ègz. Google Maps ou des mapes emprimâyes) sen ôtorisacion cllâra dos titulèros de cetos drêts.
+    export:
+      too_large:
+        body: Ceta zona est trop granda por étre èxportâye u format OpenHistoricalMap XML. Mèrci de vos raprochiér ou sèlèccionar una zona més petita ou utilisar yona des sôrses siuventes por lo tèlèchargement massu de balyês.
+        overpass:
+          description: Tèlèchargiér cét câdro encllôsent dês un merior de la bâsa de balyês OpenHistoricalMap
+        planet:
+          description: Copies règuliérement betâyes a jorn de la bâsa de balyês complèta d'OpenHistoricalMap
+          title: Planèta OHM
+    fixthemap:
+      how_to_help:
+        join_the_community:
+          explanation_html: Se vos éd remarcâ un problèmo avouéc noutres bayês de mapa, per ègzemplo se o manque una rota ou voutra adrèce, lo mèlyor moyen de fâre est de rejuendre la comunôtât OpenHistoricalMap et d'apondre ou rèparar les balyês vos-mémo.
+    help:
+      introduction: OpenHistoricalMap propôse plusiors ressôrses por aprendre a travalyér dens lo projèt, por demandar et rèpondre et por babelyér ou documentar los sujèts de mapâjo en colaboracion avouéc d'ôtros usanciér(e)s.
+      welcome:
+        description: Comenciér avouéc cét guido rapido que cuvre les bâses d'OpenHistoricalMap.
+        title: Benvenua dens OpenHistoricalMap
+      wiki:
+        description: Navigâd dens lo vouiqui por la documentacion aprovondia d'OHM.
+        title: Vouiqui
+    index:
+      js_2: OpenHistoricalMap sèrt JavaScript por ses mapes glissantes.
+    potlatch:
+      removed: Voutron èditor OpenHistoricalMap per dèfôt est fixâ a Potlatch. Mas come Adobe Flash Player at étâ reteriê, Potlatch sè pôt pas sèrvir dens un navegator vouèbe.
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap at son jargon prôpro. Vê-cé quârques mots-cllâfs que pôvont vos sèrvir.
+      introduction: Benvegnua dens OpenHistoricalMap, la mapa du mondo libro et changiâblla. Ora que vos éte encartâ(ye), vos éd tot cen que fôt por comenciér a mapar. Icé é y at un petit guido des chouses més emportantes a savêr.
+      rules:
+        para_1_html: |-
+          OpenHistoricalMap at pou de règlles formèles, mas nos atendens de tôs los participents
+          qu'ils colaboront et comunicont avouéc la comunôtât. Se vos voléd fâre de changements ôtros que manuâls, mèrci de liére et siuvre les consignes sur %{imports_link} et %{automated_edits_link}.
+  traces:
+    feeds:
+      show:
+        title: Traces GPS d'OpenHistoricalMap
+    show:
+      edit: changiér
+      edit_trace: Changiér ceta trace
+      map: mapa
+    trace:
+      edit_map: Changiér la mapa
+      view_map: Vêre la mapa
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} at comentâ yona benda de changements que vos entèrèsse"
+        subject_own: "[OpenHistoricalMap] %{commenter} at comentâ yona de voutres bendes de changements"
+      description: Benda de modificacions OpenHistoricalMap nº %{id}
+    diary_comment_notification:
+      description: Entrâye du jornâl OpenHistoricalMap nº %{id}
+      header: "%{from_user} at balyê un comentèro sur l'entrâye de jornâl OpenHistoricalMap avouéc lo sujèt %{subject} :"
+      header_html: "%{from_user} at balyê un comentèro sur l'entrâye de jornâl OpenHistoricalMap avouéc lo sujèt %{subject} :"
+      subject: "[OpenHistoricalMap] %{user} at publeyê un comentèro sur una entrâye de jornâl"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Confirmacion de voutron mèl"
+    follow_notification:
+      followed_you: "%{user} vos siut dês ora sur OpenHistoricalMap."
+      subject: "[OpenHistoricalMap] %{user} vos at siuvu"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Falyita de l'import GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Import GPX reussi"
+    lost_password:
+      hopefully_you: Quârqu'un (èspèrons qu'o est bien vos) vôt changiér lo mot de pâsse du compto openhistoricalmap.org associyê a ceta adrèce mèl.
+      subject: "[OpenHistoricalMap] Demanda de rèinicialisacion du mot de pâsse"
+    message_notification:
+      header: "%{from_user} vos at balyê un mèssâjo en passant per OpenHistoricalMap avouéc lo sujèt %{subject} :"
+      header_html: "%{from_user} vos at balyê un mèssâjo en passant per OpenHistoricalMap avouéc lo sujèt %{subject} :"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} at rèsolu una nota que vos entèrèsse"
+        subject_own: "[OpenHistoricalMap] %{commenter} at rèsolu yona de voutres notes"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} at comentâ una nota que vos entèrèsse"
+        subject_own: "[OpenHistoricalMap] %{commenter} at comentâ yona de voutres notes"
+      description: Nota OpenHistoricalMap nº %{id}
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} at rebranchiê una nota que vos entèrèsse"
+        subject_own: "[OpenHistoricalMap] %{commenter} at rebranchiê yona de voutres notes"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Benvenua dens OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Voutron identifeyent est pas oncor associyê a un compto OpenHistoricalMap.
+      option_1: Se vos éte novél sur OpenHistoricalMap, mèrci de vos encartar avouéc lo formulêro cé d'avâl.
+    new:
+      about:
+        paragraph_1: A la difèrence d'ôtres mapes, OpenHistoricalMap est totâlament fâte per de pèrsones come vos et pèrmèt a tot lo mondo d'y rèparar, betar a jorn, tèlèchargiér pués s'en sèrvir.
+        welcome: Benvenua dens OpenHistoricalMap
+      duplicate_social_email: Se vos éd ja un compto OpenHistoricalMap et voléd utilisar un fornissor d'identitât tièrs, mèrci de vos branchiér en sèrvant voutron contresegno pués de changiér los paramètros de voutron compto.
+      please_contact_support_html: Mèrci de contactar lo %{support_link} por maneyér la crèacion d'un compto - nos èproverens de trètar la demanda tant rapidament que possiblo.
+      signup_to_authorize_html: Sè branchiér avouéc OpenHistoricalMap por arrevar a %{client_app_name}.
+    show:
+      delete_user: Suprimar cét(a) usanciér(e)
+      hide_user: Betar cét(a) usanciér(e) en sordina
+      unhide_user: Rebranchiér lo son de cét(a) usanciér(e)

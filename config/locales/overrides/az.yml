@@ -1,0 +1,73 @@
+# Messages for Azerbaijani (azərbaycanca)
+# Exported from translatewiki.net
+# Author: AZISS
+# Author: Cekli829
+# Author: Erictheise
+# Author: Huseyn
+# Author: Minh Nguyen
+# Author: Mushviq Abdulla
+# Author: NMW03
+# Author: Nemoralis
+# Author: Ruila
+# Author: SalihB
+# Author: Toghrul Rahimli
+# Author: Vugar 1981
+# Author: Wertuose
+# Author: Şeyx Şamil
+# Author: Əkrəm
+# Author: Əkrəm Cəfər
+# Do not edit by hand.
+az:
+  accounts:
+    show:
+      contributor_terms:
+        link text: bu nədir?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_prefs: Digər istifadəçilərin fikirlərini oxu
+        allow_write_api: Xəritəni dəyişmək
+        name: Ad (Vacib)
+        support_url: Dəstək linki
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap haqqında qeydlər
+  diary_entries:
+    feed:
+      all:
+        description: OpenHistoricalMap istifadəçilərinin axırıncı gündəlik yazıları
+        title: OpenHistoricalMap gündəlik yazısı
+      language:
+        description: "%{language_name} dilində OpenHistoricalMap istifadəçilərinin axırıncı gündəlik yazıları"
+        title: "%{language_name} dilində OpenHistoricalMap gündəlik yazıları"
+      user:
+        description: "%{user} üçün axırıncı OpenHistoricalMap gündəlik yazıları"
+        title: "%{user} üçün OpenHistoricalMap gündəlik yazıları"
+    profile_diaries:
+      date_label: Tarix
+  layouts:
+    intro_2_create_account: İstifadəçi hesabı yarat
+    logo:
+      alt_text: OpenHistoricalMap loqosu
+    logout: çıxış
+    tag_line: Azad Viki Dünya Xəritəsi
+  sessions:
+    destroy:
+      heading: OpenHistoricalMap-dən çıx
+  site:
+    copyright:
+      legal_babble:
+        credit_title_html: OpenHistoricalMap-ə Necə istinad etmək olar
+        more_title_html: Daha ətraflı öyrən
+  user_mailer:
+    diary_comment_notification:
+      subject: "[OpenHistoricalMap] %{user} adlı istifadəçi sənin gündəliy yazına şərh yazıb"
+    lost_password:
+      subject: "[OpenHistoricalMap] Parolu yeniləmək tələbi"
+    signup_confirm:
+      subject: '[OpenHistoricalMap] "OpenHistoricalMap"ə xoş gəlmisiniz'
+  users:
+    show:
+      delete_user: bu istifadəçini sil
+      hide_user: Bu istifadəçini gizlət

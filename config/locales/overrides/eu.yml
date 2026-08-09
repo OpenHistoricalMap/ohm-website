@@ -1,0 +1,208 @@
+# Messages for Basque (euskara)
+# Exported from translatewiki.net
+# Author: 9and3r
+# Author: A mento
+# Author: Amaia
+# Author: An13sa
+# Author: Asieriko
+# Author: Atzerritik
+# Author: Erictheise
+# Author: EukeneFL
+# Author: Garaolaza
+# Author: Gorkaazk
+# Author: Ibai
+# Author: Iñaki LL
+# Author: Juele
+# Author: Maite
+# Author: McDutchie
+# Author: Mikel Ibaiba
+# Author: MikelEH
+# Author: Minh Nguyen
+# Author: PerroVerd
+# Author: Subi
+# Author: Theklan
+# Author: Txopi
+# Author: Xabier Armendaritz
+# Do not edit by hand.
+eu:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
+        link text: zer da hau?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: irakurri haien GPS aztarna pribatuak
+        allow_read_prefs: irakurri haien erabiltzaile hobespenak
+        allow_write_api: mapa aldatu
+        allow_write_diary: sortu eguroko sarreak, iruzkinak eta lagunak egin
+        allow_write_gpx: GPS aztarnak igo
+        allow_write_notes: oharrak aldatu
+        allow_write_prefs: aldatu haien erabiltzaile hobespenak
+        callback_url: Berriz deitzeko URLa
+        name: Izena (beharrezkoa)
+        support_url: Laguntza URLa
+        url: Aplikazio nagusiaren URL (beharrezkoa)
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap oharrak
+  application:
+    setup_user_auth:
+      blocked_zero_hour: OpenHistoricalMap webguneko premiazko mezu bat duzu. Zure aldaketak gorde ahal izango dituzu mezua irakurri eta gero.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap aldaketen eztabaida
+        title_particular: 'OpenHistoricalMap #%{changeset_id} aldaketen eztabaida.'
+  diary_entries:
+    feed:
+      all:
+        description: OpenHistoricalMap erabiltzaileek azkenaldian egindako eguneroko sarrerak
+        title: OpenHistoricalMap eguneroko sarrerak
+      language:
+        description: "%{language_name} hizkuntzan OpenHistoricalMap erabiltzaileek azkenaldian egindako eguneroko sarrerak"
+        title: "%{language_name} hizkuntzan egindako OpenHistoricalMap eguneroko sarrerak"
+      user:
+        description: "%{user} erabiltzailearen azkeneko OpenHistoricalMap eguneroko sarrerak"
+        title: "%{user} erabiltzailearentzako OpenHistoricalMap eguneroko sarrerak"
+    profile_diaries:
+      date_label: Data
+  errors:
+    contact:
+      contact_the_community_html: Anima zaitez OpenHistoricalMap komunitatearekin %{contact_link} arazoren bat edo apurtutako estekaren bat aurkitu baduzu. Zure eskaeraren URL zehatza kontuan hartu.
+    forbidden:
+      description: OpenHistoricalMap zerbitzarian eskatu duzun eragiketa administratzaileentzat bakarrik dago erabilgarri (HTTP 403)
+    internal_server_error:
+      description: OpenHistoricalMap zerbitzariak eskaera betetzea eragotzi duen ustekabeko baldintza bat aurkitu du (HTTP 500)
+    not_found:
+      description: Ezin izan da izen hori duen fitxategi/karpeta/API eragiketarik OpenHistoricalMap zerbitzarian aurkitu (HTTP 404)
+  javascripts:
+    map:
+      zoom:
+        in: Handiagotu
+        out: Txikiagotu
+  layouts:
+    intro_2_create_account: Erabiltzaile kontua sortu
+    intro_header: Ongi etorri OpenHistoricalMap-era!
+    intro_text: OpenHistoricalMap munduko mapa da, zu bezalako jendeak sortutakoa eta doako lizentzia irekiarekin erabiltzeko dagoena.
+    logo:
+      alt_text: OpenHistoricalMap logoa
+    logout: Itxi saioa
+    tag_line: Doako Wiki Mundu Mapa
+  sessions:
+    destroy:
+      heading: OpenHistoricalMap-etik saioa itxi
+  site:
+    about:
+      lede_text: OpenHistoricalMap mundu osoan zehar errepideak, bideak, kafetegiak, tren geltokiak eta askoz gehiago mapatzaileen komunitate batek eskeinitako datuen eta haien mantentzearen laguntzaz eraiki ditu.
+    about_section:
+      contribute_1_user_diaries: Erabiltzaileen egunerokoak
+      legal_1_aup: Erabilera-politika onargarriak
+      legal_1_privacy_policy: Pribatutasun politika
+      legal_1_terms_of_use: Erabilera-baldintzak
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: |-
+          OpenHistoricalMap-en datuak sartzeak ez du beharrez jatorrizko
+          datu-hornitzaileak OpenHistoricalMap onartzea baieztatzen, edozein berme ematen, edota inolako erantzukizunik onartzen.
+        credit_1_html: 'OpenHistoricalMap datuak erabiltzen dituzun lekuetan, bi gauza hauek egin behar dituzu:'
+        credit_2_this_copyright_page: copyright orri hau
+        credit_title_html: OpenHistoricalMap nola kreditatu
+        infringement_1_html: |-
+          OHMren laguntzaileek ez dute inolako daturik gehitu behar
+          copyright iturrietatik (adibidez, Google Maps edo inprimatutako mapak) copyright-jabeen baimen espliziturik gabe.
+        introduction_4_creative_commons: Creative Commons Aitortu-PartekatuBerdin 2.0
+        more_2_1_api_usage_policy: APIaren erabilera-politika
+        more_title_html: Jakin ezazu gehiago
+    export:
+      too_large:
+        body: Area hau oso handia da OpenHistoricalMap XML datu bezala esportatzeko. Zooma handitu edo eremu txikiagoa hautatu edo behean zerrendatutako iturrietako bat erabili datuak bulkatze-deskargak egiteko mesedez.
+        overpass:
+          description: Deskargatu muga kutxa hau OpenHistoricalMap datu-basearen ispilu batetik
+        planet:
+          description: OpenHistoricalMap datu-base osoko aldizkako kopia eguneratuak
+          title: OHM Planeta
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            Egin klik %{note_icon} edo ikono berean maparen pantailan.
+            Honek markatzailea gehituko dio mapari, arrastatuz mugitu ahal izateko. Gehitu zure mezua, ondoren sakatu gorde eta beste erabiltzaileek ikertu egingo dute.
+        join_the_community:
+          explanation_html: Arazoren bat nabaritu baduzu maparen datuekin, adibidez, errepide edo zure helbidea faltan daudela, jarraitzeko modurik onena OpenHistoricalMap komunitatean sartzea da datuak berreskuratu edo konpontzeko.
+    help:
+      introduction: OpenHistoricalMap-ek proiektuari buruz ikasteko hainbat baliabide ditu, galderak egin eta erantzun, edota mapping gaiak eztabaidatu eta dokumentazeko elkarlana.
+      slack:
+        title: IRC
+      welcome:
+        description: OpenHistoricalMap-en oinarrizkoak betetzen dituen gida azkar honekin hasi.
+        title: Ongi etorri OpenHistoricalMapra
+      wiki:
+        description: Arakatu wikia informazio zehatzeko OHM dokumentaziorako.
+    index:
+      js_2: OpenHistoricalMap-ek Javascript erabiltzen du bere mapa irriztagarrirako.
+      remote_failed: Editatzeak huts egin du - Ziurtatu JOSM edo Merkaartor kargatu dela eta urruneko kontrolaren aukera gaituta dagoela
+    potlatch:
+      removed: Zure OpenHistoricalMap editore lehenetsia gisa Potlatch dago ezarrita. Adobe Flash Player baztertu denez, Potlatch jada ez dago erabilgarri web-arakatzaile batean erabiltzeko.
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap-ek bere parekatze propioa du. Hemen daude erabilgarriak diren zenbait hitz gako.
+      introduction: Ongi etorri OpenHistoricalMapera, edonork alda dezakeen munduko mapa askera. Orain izena eman duzula, mapak editatzen has zaitezke. Hona hemen gida laburra jakin behar dituzun gauzarik garrantzitsuenak dituena.
+      rules:
+        para_1_html: |-
+          OpenHistoricalMap-ek arau formal gutxi ditu, baina parte-hartzaile guztiek elkarlanean aritzea espero dugu
+          komunitatearekin eta harekin komunikatzea. Eskuz editatzeaz gain beste edozein jarduera kontuan hartzen ari bazara, irakurri eta jarraitu
+          %{imports_link} eta %{automated_edits_link} ataleko jarraibideak.
+      whats_on_the_map:
+        off_the_map_html: Zer %{doesnt} baditu balorazio bezalako datu iritziak ematen, historiko edo ezaugarri hipotetikoak eta copyright-iturrietatik datozen datuak. Ez baduzu baimen berezia, ez kopiatu lineako edo papereko mapetatik.
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS Aztarnak
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} zuk interesa duzun aldaketa batean iruzkina utzi du"
+        subject_own: "[OpenHistoricalMap] %{commenter} zure aldaketa batean iruzkina utzi du"
+    diary_comment_notification:
+      header: "%{from_user}k OpenHistoricalMap eguneroko sarrera batean iruzkina utzi du %{subject} gaiaren barnean:"
+      header_html: "%{from_user} erabiltzaileak OpenHistoricalMap egunkariko sarrera iruzkindu du %{subject} gaiarekin:"
+      subject: "[OpenHistoricalMap] %{user} eguneroko sarrera batean iruzkina utzi du"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Baieztatu zure eposta helbidea"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX Inportazioan porrota"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX Inportazioan arrakasta"
+    lost_password:
+      hopefully_you: Norbaitek (zuk posibleki) helbide elektroniko kontu honetara openhistoricalmap.org  berrezartzeko pasahitza eskatu du.
+      subject: "[OpenHistoricalMap] Pasahitza berrezartzeko eskaera"
+    message_notification:
+      header: "%{from_user}-k OpenHistoricalMap-en bidez mezua bidali dizu %{subject} gaiarekin:"
+      header_html: "%{from_user} erabiltzaileak mezu bat bidali dizu OpenHistoricalMap bidez %{subject} gaiarekin:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} intereskoa duzun ohar bat ebatzi du"
+        subject_own: "[OpenHistoricalMap] %{commenter} zure ohar bat ebatzi du"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} zuk interesa duzun ohar batean iruzkina utzi du"
+        subject_own: "[OpenHistoricalMap] %{commenter} zure ohar batean iruzkina utzi du"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} zure interesekoa den ohar bar berraktibatu egin du"
+        subject_own: "[OpenHistoricalMap] %{commenter} zure oharretako bat berraktibatu egin du"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Ongi etorri OpenHistoricalMap-era"
+  users:
+    auth_association:
+      heading: Zure IDa oraindik ez dago OpenHistoricalMap kontuarekin lotuta.
+      option_1: OpenHistoricalMap-en berria bazara, sortu kontu berria beheko formularioa erabiliz mesedez.
+    new:
+      about:
+        paragraph_1: Beste mapak ez bezala, OpenHistoricalMap zu bezalako pertsonek sortu dute guztiz, eta edonork konpondu, eguneratu, deskargatu eta erabiltzeko doan da.
+    show:
+      delete_user: Erabiltzaile hau ezabatu
+      hide_user: Erabiltzaile hau ezkutatu
+      unhide_user: Erabiltzaile honen ezkutaketa kendu

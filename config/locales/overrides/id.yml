@@ -1,0 +1,265 @@
+# Messages for Indonesian (Bahasa Indonesia)
+# Exported from translatewiki.net
+# Author: Agam Riyandana
+# Author: Akmaie Ajam
+# Author: Andikbuyung
+# Author: Arief
+# Author: Arifin.wijaya
+# Author: ArlandGa
+# Author: Atriwidada
+# Author: Bayahiu
+# Author: Bloomingfungi
+# Author: C5st4wr6ch
+# Author: DARMAS BUDI SANTOSO
+# Author: Danieldegroot2
+# Author: Daud I.F. Argana
+# Author: Dewisulistio
+# Author: Emirhartato
+# Author: Erictheise
+# Author: Farras
+# Author: Han4299
+# Author: Hanif Al Husaini
+# Author: HarryMahar
+# Author: Hidayatsrf
+# Author: Ilham151096
+# Author: Irwangatot
+# Author: Iwan Novirion
+# Author: Jagwar
+# Author: JakArtisan
+# Author: Kenrick95
+# Author: Leapofod
+# Author: Macofe
+# Author: Mbee-wiki
+# Author: Minh Nguyen
+# Author: Mnam23
+# Author: Pebaryan
+# Author: Penyuwangi
+# Author: Polos
+# Author: RXerself
+# Author: Rachmat04
+# Author: Rafka Aditia
+# Author: Reksa Tresna
+# Author: Relly Komaruzaman
+# Author: Rizkiahmadz
+# Author: Shinkiwa
+# Author: Vasanthi
+# Author: Veracious
+# Author: Wulankhairunisa
+# Author: 아라
+# Do not edit by hand.
+id:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: Apa ini?
+    terms:
+      show:
+        read and accept with tou: Tolong baca persetujuan kontributor dan ketentuan penggunaan, centang kedua kotak centang ketika selesai lalu tekan tombol lanjutkan.
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: baca jejak GPS pribadi mereka
+        allow_read_prefs: Baca pengaturan mereka sebagai pengguna.
+        allow_write_api: modifikasi peta
+        allow_write_diary: membuat entri buku harian, komentar dan berteman
+        allow_write_gpx: unggah jejak GPS
+        allow_write_notes: memodifikasi catatan
+        allow_write_prefs: memodifikasi pengaturan mereka sebagai pengguna
+        callback_url: Panggilan kembali URL
+        name: Nama (diperlukan)
+        support_url: URL Dukungan
+        url: URL Aplikasi Utama (diperlukan)
+  api:
+    notes:
+      rss:
+        title: Catatan OpenHistoricalMap
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Anda mendapat pesan penting di situs web OpenHistoricalMap. Anda perlu membaca pesan tersebut sebelum Anda bisa menyimpan suntingan Anda.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Diskusi set perubahan OpenHistoricalMap
+        title_particular: 'Diskusi set perubahan OpenHistoricalMap #%{changeset_id}'
+  diary_entries:
+    comments:
+      title: Entri buku harian OpenHistoricalMap
+    feed:
+      all:
+        description: Entri catatan harian terbaru dari pengguna OpenHistoricalMap
+        title: Entri catatan harian OpenHistoricalMap
+      language:
+        description: Entri catatan harian terbaru dari pengguna OpenHistoricalMap dalam %{language_name}
+        title: Entri catatan harian OpenHistoricalMap dalam %{language_name}
+      user:
+        description: Entri catatan harian OpenHistoricalMap terbaru dari %{user}
+        title: Entri catatan harian OpenHistoricalMap untuk %{user}
+    profile_diaries:
+      date_label: Tanggal
+  errors:
+    contact:
+      contact_the_community_html: Silakan dengan bebas %{contact_link} komunitas OpenHistoricalMap bila Anda menemukan tautan rusak / kekutu. Buatlah catatan URL tepat dari permintaan Anda.
+    forbidden:
+      description: Halaman yang Anda minta dari peladen OpenHistoricalMap hanya bisa diakses oleh pengurus (HTTP 403)
+    internal_server_error:
+      description: Peladen OpenHistoricalMap mengalami keadaan tak terduga yang mencegahnya memenuhi permintaan (HTTP 500)
+    not_found:
+      description: Gagal menemukan operasi berkas/direktori/API dengan nama itu di peladen OpenHistoricalMap (HTTP 404)
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          track: Trek Lari
+  javascripts:
+    legend:
+      title: Kunci Peta
+      tooltip: Kunci Peta
+    map:
+      base:
+        historical: Historis
+        japanesescroll: Gulungan Jepang
+        railway: Jalur Kereta Api
+        woodblock: Balok Kayu
+      zoom:
+        in: Perbesar
+        out: Perkecil
+  layouts:
+    intro_2_create_account: Buat Akun
+    intro_header: Selamat datang di OpenHistoricalMap!
+    intro_text: OpenHistoricalMap adalah peta interaktif dunia sepanjang sejarah, dibuat oleh orang-orang seperti Anda dan didedikasikan untuk domain publik.
+    logo:
+      alt_text: logo OpenHistoricalMap
+    logout: Keluar Log
+    tag_line: Peta Dunia Wiki Gratis
+  oauth:
+    scopes:
+      openid: Daftar masuk menggunakan OpenHistoricalMap
+  sessions:
+    destroy:
+      heading: Keluar log dari OpenHistoricalMap
+  site:
+    about:
+      lede_text: OpenHistoricalMap adalah proyek bercita-cita tinggi yang dipimpin oleh komunitas untuk memetakan perubahan geografi alam dan manusia di seluruh dunia… sepanjang zaman.
+    about_section:
+      contribute_1_user_diaries: artikel pengguna
+      legal_1_aup: Aturan Penggunaan yang Diizinkan
+      legal_1_html: Situs ini beserta layanan terkait secara resmi dioperasikan oleh %{group_link} atas nama komunitas kontributor. Pemanfaatan semua layanan OSMF wajib mematuhi %{terms_of_use_link}, %{aup_link}, dan %{privacy_policy_link} kami.
+      legal_1_privacy_policy: Kebijakan Privasi
+      legal_1_terms_of_use: Ketentuan Penggunaan
+      legal_2_html: Hubungi %{contact_team_link} bila Anda ingin tahu soal lisensi, hak cipta, atau persoalan hukum lainnya.
+    communities:
+      lede_text: Banyak orang dari berbagai negara turut memperkaya atau memanfaatkan OpenHistoricalMap. Ada yang sendiri-sendiri dan ada pula yang bersatu-padu membentuk kelompok. Kelompok ini beragam ukurannya, mulai dari kota kecil hingga daerah lintas negara; bentuknya formal atau informal.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Penyertaan data dalam OpenHistoricalMap tidak menyiratkan bahwa penyedia data yang asli mendukung OpenHistoricalMap, menyediakan jaminan, atau menerima tanggung jawab apa pun.
+        credit_1_html: Meski hukum hak cipta tidak membatasi atau menempatkan syarat apa pun pada penggunaan konten domain publik, kami sangat menghargai setiap pengakuan yang Anda berikan kepada OpenHistoricalMap saat menggunakan kembali, menyesuaikan, atau memanfaatkan peta atau data kami.
+        credit_2_this_copyright_page: laman hak cipta ini
+        credit_title_html: Cara memberikan kredit pada OpenHistoricalMap
+        infringement_1_html: Kontributor OHM diingatkan untuk tidak menambahkan sembarang data dari sumber berhak cipta (misalnya, Google Maps atau peta cetak) tanpa izin jelas dari pemegang hak cipta.
+        introduction_4_creative_commons: Creative Commons Atribusi-BerbagiSerupa 2.0
+        more_2_1_api_usage_policy: Aturan Penggunaan API
+        more_2_1_html: Meski data OpenHistoricalMap bersifat terbuka, kami tidak bisa menyediakan API peta gratis untuk pihak ketiga. Simak %{api_usage_policy_link}, %{tile_usage_policy_link}, dan %{nominatim_usage_policy_link}.
+        more_2_1_nominatim_usage_policy: Aturan Penggunaan Nominatim
+        more_2_1_tile_usage_policy: Aturan Penggunaan Kotak Peta
+        more_title_html: Mengetahui lebih lanjut
+    export:
+      too_large:
+        body: Kawasan ini terlalu besar untuk diekspor sebagai data XML OpenHistoricalMap. Silakan perbesar atau pilih kawasan yang lebih kecil, atau gunakan salah satu sumber di bawah ini untuk mengunduh data besar-besaran.
+        overpass:
+          description: Unduh kotak pembatas ini dari cermin pangkalan data OpenHistoricalMap
+        planet:
+          description: Salinan lengkap pangkalan data OpenHistoricalMap yang dimutakhiran secara teratur
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: "Hanya klik %{note_icon} atau ikon yang sama pada layar peta. \nIni akan menambahkan penanda ke peta, yang dapat Anda bergerak \ndengan menyeret. Tambahkan pesan Anda, lalu klik simpan, dan pembuat peta lainnya akan menyelidiki."
+        join_the_community:
+          explanation_html: Jika Anda melihat masalah dengan data peta kami, misal jalan yang hilang atau alamat Anda, cara terbaik untuk menanganinya adalah dengan bergabung dengan komunitas OpenHistoricalMap dan menambahkan atau memperbaiki data tersebut sendiri.
+    help:
+      introduction: "OpenHistoricalMap memiliki beberapa sumber daya untuk belajar tentang proyek, bertanya dan menjawab pertanyaan, \ndan bersama-sama mendiskusikan dan mendokumentasikan topik pemetaan."
+      slack:
+        title: IRC
+      welcome:
+        description: Mulai dengan panduan cepat meliputi dasar-dasar OpenHistoricalMap.
+        title: Selamat datang di OpenHistoricalMap
+      wiki:
+        description: Petunjuk yang dikelola komunitas untuk menggunakan OHM dan pedoman untuk bersumbangsih ke pada proyek.
+    index:
+      js_2: OpenHistoricalMap menggunakan JavaScript untuk peta selipnya.
+      remote_failed: Gagal melakukan edit - pastikan JOSM atau Merkaartor telah termuat dan opsi remote control telah diaktifkan
+    potlatch:
+      removed: Alat sunting OpenHistoricalMap bawaan Anda disetel sebagai Potlatch. Karena Adobe Flash Player telah ditarik, Potlatch tidak lagi tersedia untuk digunakan di peramban web.
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap punya beberapa istilah tersendiri. Berikut ini beberapa kata kunci yang dapat digunakan.
+      introduction: Selamat datang di OpenHistoricalMap, peta sejarah dunia yang gratis dan dapat disunting. Sekarang setelah Anda mendaftar, Anda siap untuk mulai memetakan. Berikut panduan singkat dengan hal-hal terpenting yang perlu Anda ketahui.
+      rules:
+        para_1_html: OpenHistoricalMap punya aturan-aturan resmi. Namun, kami berharap para kontributor bisa bekerja sama dan saling berkomunikasi. Bila Anda tidak ingin menyunting peta secara manual, baca dan simak panduan tentang %{imports_link} dan %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: OpenHistoricalMap %{doesnt} mencakup sejarah alternatif fiksi, kesalahan yang diketahui dari peta kuno, dan data dari sumber yang dilindungi hak cipta. Kecuali Anda memiliki izin khusus, jangan menyalin dari peta modern masa lalu yang Anda temui secara daring atau cetak.
+  traces:
+    feeds:
+      show:
+        title: Jejak GPS OpenHistoricalMap
+    show:
+      edit: sunting
+      edit_trace: 'Sunting jejak ini:'
+      map: peta
+    trace:
+      edit_map: Sunting Peta
+      view_map: Lihat peta
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} telah mengomentari sebuah perangkat perubahan yang Anda minati"
+        subject_own: "[OpenHistoricalMap] %{commenter} telah mengomentari salah satu perangkat perubahan Anda"
+      description: 'Perangkat perubahan OpenHistoricalMap #%{id}'
+    diary_comment_notification:
+      header: "%{from_user} telah mengomentari entri catatan harian OpenHistoricalMap dengan subjek %{subject}:"
+      header_html: "%{from_user} mengomentari entri catatan harian OpenHistoricalMap dengan subjek %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} mengomentari sebuah entri catatan harian"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Konfirmasi alamat email Anda"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] gagal impor GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] berhasil impor GPX"
+    lost_password:
+      hopefully_you: Seseorang (kemungkinan Anda) telah meminta untuk mengatur ulang kata sandi pada alamat surel dari akun openhistoricalmap.org ini.
+      subject: "[OpenHistoricalMap] Permintaan atur ulang sandi"
+    message_notification:
+      header: "%{from_user} telah mengirim sebuah pesan kepada Anda melalui OpenHistoricalMap dengan subjek %{subject}:"
+      header_html: "%{from_user} telah mengirim sebuah pesan kepada Anda melalui OpenHistoricalMap dengan subjek %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} telah menyelesaikan sebuah catatan yang Anda minati"
+        subject_own: "[OpenHistoricalMap] %{commenter} telah menyelesaikan salah satu catatan Anda"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} telah mengomentari sebuah catatan yang Anda minati"
+        subject_own: "[OpenHistoricalMap] %{commenter} telah mengomentari salah satu catatan Anda"
+      description: 'Catatan OpenHistoricalMap #%{id}'
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} telah menyalakan kembali catatan yang Anda minati"
+        subject_own: "[OpenHistoricalMap] %{commenter} telah menyalakan kembali salah satu catatan Anda"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Selamat datang di OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: ID Anda tidak diasosiasikan dengan akun OpenHistoricalMap manapun.
+      option_1: Jika Anda baru di OpenHistoricalMap, silakan buat akun baru menggunakan formulir di bawah.
+    new:
+      about:
+        paragraph_1: Tidak seperti peta lain, OpenHistoricalMap sepenuhnya dibangun oleh orang-orang seperti Anda. Siapa saja boleh memperbaiki, memperbarui, mengunduh, dan menggunakannya.
+        paragraph_2: Silakan mendaftar untuk berkontribusi. Kami akan kirimkan surat elektronik untuk konfirmasi akun Anda.
+      please_contact_support_html: Hubungi %{support_link} bila Anda ingin kami buatkan akun. Kami akan menanggapi permintaan Anda sesegera mungkin.
+    show:
+      delete_user: Hapus Pengguna Ini
+      hide_user: Sembunyikan Pengguna Ini
+      unhide_user: Munculkan Kembali Pengguna Ini

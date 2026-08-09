@@ -1,0 +1,321 @@
+# Messages for Icelandic (íslenska)
+# Exported from translatewiki.net
+# Author: Erictheise
+# Author: Gravitystorm
+# Author: Gylfiolafsson
+# Author: LoveIceLang
+# Author: Macofe
+# Author: McDutchie
+# Author: Minh Nguyen
+# Author: Nemo bis
+# Author: Snævar
+# Author: Sveinki
+# Author: Sveinn í Felli
+# Author: Vignir
+# Author: Ævar Arnfjörð Bjarmason
+# Author: Þjarkur
+# Do not edit by hand.
+is:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: hvað er openID?
+    terms:
+      show:
+        tou_explain:
+          html: Þessi %{tou_link} stýra notkuninni á vefsvæðinu ásamt öðrum stoðkerfum OpenHistoricalMap. Smelltu á tengilinn, lestu síðan og samþykktu textann.
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: lesa einka-GPS-ferlana þeirra
+        allow_read_prefs: lesa notandastillingar þeirra
+        allow_write_api: breyta kortagögnunum
+        allow_write_changeset_comments: gera athugasemd við breytingarsett
+        allow_write_diary: búa til bloggfærslur og athugasemdir
+        allow_write_gpx: senda inn GPS ferla
+        allow_write_notes: breyta minnispunktum
+        allow_write_prefs: breyta notandastillingum þeirra
+        callback_url: Svarslóð
+        name: Nafn (krafist)
+        support_url: Slóð á aðstoð
+        url: Slóð á aðalforritið (nauðsynleg)
+  api:
+    notes:
+      rss:
+        title: Minnispunktar OpenHistoricalMap
+  application:
+    auth_providers:
+      openstreetmap:
+        alt: OpenStreetMap merkið
+        title: Skrá inn með OpenStreetMap
+    setup_user_auth:
+      blocked_zero_hour: Þú átt áríðandi skilaboð á OpenHistoricalMap vefsvæðinu. Þú verður að lesa þessi skilaboð áður en þú getur vistað neinar breytingar.
+  auth:
+    providers:
+      openstreetmap: OpenStreetMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Umræða um OpenHistoricalMap breytingasett
+        title_particular: 'Umræða um OpenHistoricalMap breytingasett #%{changeset_id}'
+  changesets:
+    index:
+      feed:
+        cc0: Creative Commons CC0
+  date:
+    formats:
+      heatmap: "%-d. %B"
+  diary_entries:
+    comments:
+      description: Nýjustu bloggfærslur frá notendum OpenHistoricalMap
+      title: OpenHistoricalMap bloggfærslur
+    feed:
+      all:
+        description: Nýjustu bloggfærslur frá notendum OpenHistoricalMap
+        title: OpenHistoricalMap bloggfærslur
+      language:
+        description: Nýjustu bloggfærslur frá notendum OpenHistoricalMap á %{language_name}
+        title: OpenHistoricalMap bloggfærslur á %{language_name}
+      user:
+        description: Nýjustu OpenHistoricalMap bloggfærslur eftir %{user}
+        title: OpenHistoricalMap bloggfærslur eftir %{user}
+    profile_diaries:
+      comments_label: Athugasemdir
+      date_label: Dagsetning
+  errors:
+    bad_request:
+      description: Aðgerðin sem þú baðst um á OpenHistoricalMap-þjóninum er ekki gild (HTTP 400)
+    contact:
+      contact_the_community_html: Ekki hika við að %{contact_link} OpenHistoricalMap-samfélagið ef þú hefur fundið bilaðan tengil eða villu. Taktu niður nákvæma vefslóð beiðni þinnar.
+    forbidden:
+      description: Aðgerðin sem þú baðst um á OpenHistoricalMap-þjóninum er aðeins í boði fyrir stjórnendur (HTTP 403)
+    internal_server_error:
+      description: OpenHistoricalMap-þjónninn lenti í óvæntum aðstæðum sem komu í veg fyrir að hann gæti uppfyllt beiðnina (HTTP 500)
+    not_found:
+      description: Gat ekki fundið skrá/skrá/API-aðgerð með því nafni á OpenHistoricalMap-þjóninum (HTTP 404)
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
+  javascripts:
+    legend:
+      title: Kortaskýringar
+      tooltip: Kortaskýringar
+      tooltip_disabled: Kortaskýringar ekki tiltækar fyrir þetta lag
+    map:
+      base:
+        historical: Sögulegt
+        japanesescroll: Japönsk rúlla
+        railway: Járnbrautir
+        woodblock: Trjárista
+      openhistoricalmap_contributors: OHM
+      zoom:
+        in: Renna að
+        out: Renna frá
+    query:
+      suffix_format: "[%{dates}]"
+  layouts:
+    intro_2_create_account: Búa til notandaaðgang
+    intro_header: Velkomin(n) í OpenHistoricalMap!
+    intro_text: OpenHistoricalMap er heimskort gert af fólki eins og þér. Það er gefið út með opnu hugbúnaðarleyfi og það kostar ekkert að nota það.
+    logo:
+      alt_text: OpenHistoricalMap merkið
+    logout: Skrá út
+    partners_devseed: Development Seed
+    partners_greeninfo: GreenInfo Network
+    partners_osmf: OpenStreetMap-sjálfseignarstofnunin
+    partners_osmus: OpenStreetMap U.S.
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: Frjálsa wiki heimskortið
+  oauth:
+    scopes:
+      openid: Skráðu þig inn með OpenHistoricalMap
+  preferences:
+    basic_preferences:
+      show:
+        map_color_schemes:
+          auto: Sjálfvirkt
+  sessions:
+    destroy:
+      heading: Skrá út úr OpenHistoricalMap
+    new:
+      login_to_authorize_html: Skráðu inn á OpenHistoricalMap til að fá aðgang að %{client_app_name}.
+  site:
+    about:
+      lede_text: OpenHistoricalMap er byggt upp af heilu samfélagi kortagerðarfólks sem leggur inn og viðheldur gögnum um vegi, stíga, kaffihús, járnbrautir og margt, margt fleira, út um víða veröld.
+      used_by_html: Kannaðu heiminn á mismunandi tímabilum með%{name}.
+    about_section:
+      contribute_1_bluesky: Bluesky
+      contribute_1_mastodon: Mastodon
+      contribute_1_user_diaries: blogg notenda
+      legal_1_aup: Stefnu varðandi ásættanlega notkun
+      legal_1_aup_url: https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy
+      legal_1_html: |-
+        Þetta vefsvæði og margar aðrar tengdar þjónustur eru formlega reknar af
+        %{group_link}
+        fyrir hönd þátttakendanna í verkerfninu. Öll notkun á þjónustum sem OSMF rekur falla undir
+        %{terms_of_use_link}, %{aup_link} and our %{privacy_policy_link} okkar.
+      legal_1_privacy_policy: Persónuverndarstefnu
+      legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
+      legal_1_terms_of_use: Notkunarskilmála
+      legal_1_terms_of_use_url: https://osmfoundation.org/wiki/Terms_of_Use
+      legal_2_html: |-
+        Endilega %{contact_team_link}
+        ef þú ert með spurningar eða beiðnir varðandi notkunarleyfi, höfundarrétt eða önnur lögfræðileg málefni.
+      legal_3_osmf_trademarks_url: https://osmfoundation.org/wiki/Trademark_Policy
+      open_data_2_copyright_license: Höfundarréttur og þakkir fyrir framlög
+    communities:
+      lede_text: "Fólk alls staðar að úr heiminum leggur sitt af mörkum til OpenHistoricalMap eða notar OpenHistoricalMap.\nÞó að margir taki þátt sem einstaklingar, hafa aðrir myndað samfélög.\nÞessir hópar eru af ýmsum stærðum og gerðum og geta haft á sinni könnu tiltekin landsvæði allt frá smábæjum til stórra fjölþjóðlegra svæða. \nÞau geta líka verið formleg eða óformleg."
+    copyright:
+      legal_babble:
+        attribution_example:
+          title: Dæmi um hvernig eigi að vísa til OpenHistoricalMap á vefsíðu
+        contributors_footer_2_html: |-
+          Samþætting gagna inn í OpenHistoricalMap hefur ekki sjálfkrafa í för með sér að
+          upprunaleg gagnaþjónusta taki þátt í OpenHistoricalMap, taki neina ábyrgð á gögnum, eða
+          samþykki skaðabótaskyldu vegna þeirra.
+        contributors_osm: Þátttakendur í OpenStreetMap-verkefninu
+        contributors_osm_cc_by_sa: CC BY-SA 2.0
+        contributors_osm_cc_by_sa_url: https://creativecommons.org/licenses/by-sa/2.0/
+        credit_1_html: 'Þegar þú notar gögn úr OpenHistoricalMap, þarft þú að gera tvennt:'
+        credit_2_this_copyright_page: þessa höfundarréttarsíðu
+        credit_title_html: Hvernig á að vísa til OpenHistoricalMap
+        infringement_1_html: |-
+          Þátttakendur í OHM eru minntir á að þeir megi aldrei bæta inn gögnum frá neinum
+          höfundarréttarvörðum upptökum (t.d. Google Maps eða prentuðum kortum) án
+          sérstakrar heimildar frá handhöfum höfundarréttarins.
+        introduction_2_cc_by_url: https://creativecommons.org/licenses/by/4.0/
+        introduction_4_creative_commons: Creative Commons HöfundarGetið-DeilistEinsÁfram 2.0
+        introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/
+        more_2_1_api_usage_policy: Stefna varðandi notkun API-kerfisviðmóts
+        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
+        more_2_1_html: |-
+          Þrátt fyrir að OpenHistoricalMap séu opin gögn, getum við ekki veitt
+          ókeypis óheftan aðgang að API-viðmóti kortagrunnsins fyrir utanaðkomandi aðila.
+          Skoðaðu síðurnar %{api_usage_policy_link}, %{tile_usage_policy_link} og %{nominatim_usage_policy_link}.
+        more_2_1_nominatim_usage_policy: Stefna varðandi notkun Nominatim
+        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
+        more_2_1_tile_usage_policy: Stefna varðandi notkun kortatígla
+        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
+        more_title_html: Finna út meira
+      title: Höfundarréttur og þakkir fyrir framlög
+    export:
+      cc0: Creative Commons CC0
+      copyright_page: Höfundarréttur og þakkir fyrir framlög
+      too_large:
+        body: Svæðið sem þú ert að reyna að flytja út á OpenHistoricalMap á XML-sniði er of stórt. Auktu aðdráttinn eða veldu smærra svæði, nú eða notaðu eina af eftirfarandi leiðum til að flytja inn mikið magn gagna.
+        overpass:
+          description: Sæktu þennan gagnaramma frá spegli af OpenHistoricalMap gagnagrunninum
+        planet:
+          description: Reglulega uppfærð afrit af öllum OpenHistoricalMap gagnagrunninum
+          title: OHM-plánetan
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            Smelltu á %{note_icon} eða sama táknið í kortaglugganum.
+            Þetta mun bæta merki á kortið, sem þú getur fært til
+            með því að draga það. Bættu við skilaboðunum þínum, smelltu síðan á að vista, og annað kortagerðarfólk mun væntanlega rannsaka málið.
+        join_the_community:
+          explanation_html: Ef þú hefur rekist á vandamál í kortagögnunum, til dæmis ef það vantar götu eða húsnúmer, er besta leiðin að ganga til liðs við OpenHistoricalMap og bæta við eða laga gögnin sjálfur.
+    help:
+      forum:
+        title: Vefspjall
+      github:
+        title: Beiðnir um nýja eiginleika og tilkynningar um villur
+      introduction: |-
+        OpenHistoricalMap er með ýmsar leiðir til að læra meira um verkefnið, spyrja og svara
+        spurningum, og ræða í hópum um málefni tengd kortagerð.
+      mailing_list:
+        title: Póstlisti
+      slack:
+        title: IRC
+      welcome:
+        description: Byrjaðu með þessum fljótlega leiðarvísi með helstu grunnatriðum varðandi OpenHistoricalMap.
+        title: Velkomin í OpenHistoricalMap
+      wiki:
+        description: Vafraðu um wiki/kvikuna til að sjá greinargóðar leiðbeiningar varðandi OHM.
+        title: Wiki-vefur
+    index:
+      js_2: OpenHistoricalMap notar JavaScript til að útfæra gagnvirk kort.
+      remote_failed: Breytingar mistókust - gakktu úr skugga um að JOSM eða Merkaartor sé hlaðið inn og að fjarstjórnunarvalkosturinn sé virkur
+    potlatch:
+      removed: Sjálfgefinn OpenHistoricalMap ritill þinn er stilltur sem Potlatch. Þar sem Adobe Flash Player er ekki til lengur, er Potlatch ekki lengur hægt að nota í vafra.
+    welcome:
+      basic_terms:
+        a_tag_html: "%{tag} er dálítill gagnabútur varðandi leið eða annað atriði, til dæmis nafn á veitingastað eða árið sem brú var byggð."
+        paragraph_1: OpenHistoricalMap inniheldur svolítið af eigin slangurorðum. Hér eru nokkur algeng orð sem gott er að hafa á bak við eyrað.
+      introduction: |-
+        Velkomin í OpenHistoricalMap, frjálsa heimskortinu sem þú getur breytt og lagað. Núna þegar þú ert
+        búin(n) að skrá þig, geturðu farið að setja atriði inn á kortið. Hér er fljótlegur leiðarvísir
+        með því helsta sem þú þarft að vita.
+      rules:
+        para_1_html: |-
+          OpenHistoricalMap er með fáar formlegar reglur en við væntum þess og gerum kröfu um
+          að allir þáttakendur starfi með og eigi samskipti við OSM-samfélagið Ef þú ert að íhuga aðgerðir
+          aðrar en handvirkar breytingar, ættirðu að lesa og fylgja leiðbeiningunum á síðunum
+          %{imports_link} og %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: Það sem OpenHistoricalMap %{doesnt} eru gögn sem byggjast á skoðunum eintaklinga, sagnfræðilegar tilgátur eða möguleikar, að ógleymdum gögnum frá höfundarréttarvörðum upptökum. Ef þú ert ekki með sérstakt leyfi til slíks, skaltu ekki afrita eftir landakortum á pappír eða á netinu.
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS-ferlar
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap@] %{commenter} hefur gert athugasemd við breytingasett sem þú hefur áhuga á"
+        subject_own: "[OpenHistoricalMap] %{commenter} hefur gert athugasemd við eitt af breytingasettunum þínum"
+      description: 'OpenHistoricalMap-breytingasett #%{id}'
+    diary_comment_notification:
+      description: 'OpenHistoricalMap bloggfærsla #%{id}'
+      header: "%{from_user} hefur bætt við athugasemd á OpenHistoricalMap bloggfærsluna með titlinum „%{subject}“:"
+      header_html: "%{from_user} hefur bætt við athugasemd á OpenHistoricalMap dagbókarfærslu með titlinum „%{subject}“:"
+      subject: "[OpenHistoricalMap] %{user} bætti athugasemd við bloggfærslu þína"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Staðfestu tölvupóstfangið þitt"
+    follow_notification:
+      followed_you: "%{user} er nú að fylgjast með þér á OpenHistoricalMap."
+      subject: "[OpenHistoricalMap] %{user} fylgdist með þér"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Villa við að flytja inn GPX skrá"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX skrá flutt inn"
+    lost_password:
+      hopefully_you: Einhver (vonandi þú) hefur beðið um að endurstilla lykilorðið á reikningnum með þetta netfang á openhistoricalmap.org
+      subject: "[OpenHistoricalMap] Beiðni um að endurstilla lykilorð"
+    message_notification:
+      header: "%{from_user} hefur send þér skilaboð á OpenHistoricalMap með titlinum „%{subject}“:"
+      header_html: "%{from_user} hefur sent eitt skilaboð gegnum OpenHistoricalMap með efninu %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap@] %{commenter} hefur leyst minnispunkt sem þú hefur áhuga á"
+        subject_own: "[OpenHistoricalMap] %{commenter} hefur leyst einn af minnispunktunum þínum"
+      commented:
+        subject_other: "[OpenHistoricalMap@] %{commenter} hefur gert athugasemd við minnispunkt sem þú hefur áhuga á"
+        subject_own: "[OpenHistoricalMap] %{commenter} hefur gert athugasemd við einn af minnispunktunum þínum"
+      description: 'OpenHistoricalMap-minnispunktur #%{id}'
+      reopened:
+        subject_other: "[OpenHistoricalMap@] %{commenter} hefur endurvirkjað minnispunkt sem þú hefur áhuga á"
+        subject_own: "[OpenHistoricalMap] %{commenter} hefur endurvirkjað einn af minnispunktunum þínum"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Velkomin í OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Auðkennið þitt er ekki ennþá tengt neinum OpenHistoricalMap-aðgangi.
+      option_1: Ef þú ert ný(r) notandi í OpenHistoricalMap, skaltu útbúa nýjan aðgang með því að nota innfyllingarformið hér fyrir neðan.
+    new:
+      about:
+        paragraph_1: Ólíkt öðrum landakortum, er OpenHistoricalMap gert frá grunni af fólki eins og þér, öllum er heimilt að laga það, uppfæra, sækja og nota.
+        welcome: Velkomin í OpenHistoricalMap
+      duplicate_social_email: Ef þú ert þegar með notandaaðgang á OpenHistoricalMap en óskar eftir að nota utanaðkomandi auðkenningarþjónustu, skaltu skrá þig inn með lykilorðinu þínu og gera viðeigandi breytingar í stillingum notandaaðgangsins þíns.
+      signup_to_authorize_html: Skráðu þig á OpenHistoricalMap til að fá aðgang að %{client_app_name}.
+    show:
+      delete_user: Eyða þessum notanda
+      hide_user: Fela þennan notanda
+      unhide_user: Af-fela þennan notanda

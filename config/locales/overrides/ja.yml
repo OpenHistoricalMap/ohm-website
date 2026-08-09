@@ -1,0 +1,336 @@
+# Messages for Japanese (日本語)
+# Exported from translatewiki.net
+# Author: A2y4
+# Author: Aefgh39622
+# Author: Afaz
+# Author: Ajeje Brazorf
+# Author: Aphaia
+# Author: Atysn
+# Author: Chqaz
+# Author: CmplstofB
+# Author: Danieldegroot2
+# Author: Endres
+# Author: Erictheise
+# Author: Ffff23
+# Author: Foomin10
+# Author: Fryed-peach
+# Author: Great ones
+# Author: Hayashi
+# Author: Hideki Yoshida
+# Author: Higa4
+# Author: Hiro884
+# Author: Hosiryuhosi
+# Author: Hzy980512
+# Author: Iwai.masaharu
+# Author: Kkairri
+# Author: Kokage si
+# Author: LaMagiaaa
+# Author: Los688
+# Author: Macofe
+# Author: Mage Whopper
+# Author: MagicAho
+# Author: MathXplore
+# Author: Mfuji
+# Author: Minh Nguyen
+# Author: Miya
+# Author: Mzaki
+# Author: Nabetaro
+# Author: Nazotoko
+# Author: Nyampire
+# Author: OKANO Takayoshi
+# Author: Oinary
+# Author: Omotecho
+# Author: Otokoume
+# Author: PoCoSoFo
+# Author: RYOUMA1117
+# Author: Ruila
+# Author: Rxy
+# Author: Schu
+# Author: Shapez
+# Author: Shirayuki
+# Author: Suchichi02
+# Author: Sudachi
+# Author: Sujiniku
+# Author: Surgical21
+# Author: Tamaki Wakita
+# Author: Tensama0415
+# Author: Tmv
+# Author: Tombi-aburage
+# Author: Vigorous action
+# Author: Wehwei
+# Author: Wrightbus
+# Author: Yusuke1109
+# Author: あたまボーズ
+# Author: かしわのはみん
+# Author: しぃ
+# Author: はまのまさと
+# Author: もなー(偽物)
+# Author: ネイ
+# Author: 沈澄心
+# Author: 神樂坂秀吉
+# Author: 青子守歌
+# Author: 아라
+# Do not edit by hand.
+ja:
+  accounts:
+    deletions:
+      show:
+        delete_introduction: 下のボタンを使用してご自分の OpenStreetMap アカウントを削除してください。次の詳細にご注意願います。
+        retain_caveats: ただしアカウント削除後も、あなたに関する一部の情報は OpenStreetMap に保持されます（以下ご参照）。
+    show:
+      contributor_terms:
+        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
+        link text: これは何ですか?
+    terms:
+      show:
+        read and accept with tou: 貢献者同意と利用規約を読んで、読み終わりましたら、両方のチェックボックスをチェックし、次ボタンを押してください。
+        tou_explain:
+          html: これらの%{tou_link}では、OpenHistoricalMapが提供するウェブサイトおよびその他のインフラストラクチャの利用について定めています。リンクをクリックして通読し、文書に同意してください。
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: 非公開GPSトレースを読み込む
+        allow_read_prefs: 利用者設定を読み込む
+        allow_write_api: 地図を変更する
+        allow_write_changeset_comments: チェンジセットに関するコメント
+        allow_write_diary: 日記エントリを作成する・コメントする
+        allow_write_gpx: GPSトレースをアップロードする
+        allow_write_notes: メモを変更する
+        allow_write_prefs: 利用者設定を変更する
+        callback_url: コールバック URL
+        name: 名称（必須）
+        support_url: サポート URL
+        url: メインのアプリケーションの URL（必須）
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap メモ
+  application:
+    setup_user_auth:
+      blocked_zero_hour: OpenHistoricalMap Web サイトに緊急のメッセージがあります。まずメッセージを読まないと、編集内容を保存することができません。
+  auth:
+    providers:
+      openstreetmap: OpenStreetMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap変更セットの議論
+        title_particular: OpenHistoricalMap変更セット#%{changeset_id}の議論
+  date:
+    formats:
+      brief: "%{year}"
+      brief_bce: 紀元前%{year}年
+      brief_ce: 西暦 %{year}
+      heatmap: "%B %-d"
+      range: "%{start} – %{end}"
+  diary_entries:
+    comments:
+      title: OpenHistoricalMap 利用者の日記エントリ
+    feed:
+      all:
+        description: OpenHistoricalMap 利用者による最近の日記エントリ
+        title: OpenHistoricalMap 利用者の日記エントリ
+      language:
+        description: "%{language_name} の OpenHistoricalMap 利用者による最近の日記エントリ"
+        title: "%{language_name} の OpenHistoricalMap 利用者の日記エントリ"
+      user:
+        description: "%{user} さんの最近の OpenHistoricalMap 日記エントリ"
+        title: "%{user} さんの OpenHistoricalMap 日記エントリ"
+    profile_diaries:
+      date_label: 日付
+  errors:
+    bad_request:
+      description: OpenHistoricalMapサーバへ要求した操作は無効な形式です (HTTP 400)
+    contact:
+      contact_the_community_html: リンク切れ / バグを見つけたら、遠慮なくOpenHistoricalMapコミュニティに%{contact_link}してください。リクエストの正確なURLを書き留めてください。
+    forbidden:
+      description: OpenHistoricalMapサーバへ要求した操作は管理者のみが可能です (HTTP 403)
+    internal_server_error:
+      description: OpenHistoricalMapサーバは予期しない状態となり、リクエストを処理できませんでした (HTTP 500)
+    not_found:
+      description: OpenHistoricalMapサーバ上に、その名称のファイル/ディレクトリ/API操作はありません (HTTP 404)
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          track: 陸上競技用トラック
+  javascripts:
+    map:
+      base:
+        japanesescroll: 日本の巻物
+      zoom:
+        in: 拡大
+        out: 縮小
+  layouts:
+    intro_2_create_account: 新しい利用者アカウントを作成
+    intro_header: OpenHistoricalMap へようこそ!
+    intro_text: OpenHistoricalMap は、あなたのような人々が作成した世界地図であり、オープン ライセンスの下で自由に利用できます。
+    logo:
+      alt_text: OpenHistoricalMap ロゴ
+    logout: ログアウト
+    project_name:
+      title: OpenHistoricalMap
+    tag_line: 自由なウィキ世界地図
+  oauth:
+    scopes:
+      openid: OpenHistoricalMapを使用してログイン
+  printable_name:
+    with_date_html: "%{name} [%{dates}]"
+  sessions:
+    destroy:
+      heading: OpenHistoricalMap からログアウト
+    new:
+      login_to_authorize_html: "%{client_app_name} へのアクセスにはOpenHistoricalMapへのログインが必要です。"
+  site:
+    about:
+      lede_text: OpenHistoricalMap は野心的でコミュニティ主導のプロジェクトとして、自然ならびに人工の地理の変化を全世界で……時代を超えて地図に記録しようとしています。
+      used_by_html: "%{name} を使って世界史のいずれの時期も探検できます。"
+    about_section:
+      contribute_1_user_diaries: 利用者の日記
+      legal_1_aup: 利用規定
+      legal_1_html: このサイトおよび関連サービスはコミュニティを代表し、OpenStreetMap U.S.財団の提携団体である%{group_link}が運営しています。OpenHistoricalMap のいずれのサービスの利用も、私たちの定める%{terms_of_use_link}、%{aup_link}ならびに当財団の%{privacy_policy_link}の対象となります。
+      legal_1_privacy_policy: プライバシー・ポリシー
+      legal_1_terms_of_use: 利用規約
+      legal_2_html: |-
+        ライセンス、著作権、その他の法的な問題については、%{contact_team_link}
+        までお問い合わせください。
+      open_data_2_html: データは特記する場合を除きパブリックドメインです。その使用には規制や制約はありません。しかしながら、可能でしたら OpenHistoricalMap に言及もしくは引用していただけると大変ありがたいです。詳細と承認の説明は %{copyright_license_link}をご参照ください。
+    communities:
+      lede_text: |-
+        世界中の人びとが OpenHistoricalMap に貢献し、OpenHistoricalMap を使用しています。
+        多くは個人として参加していますが、コミュニティをつくる人たちもいます。
+        コミュニティにはさまざまなサイズがあり、小さな町から複数の国からなる大規模な地域まで多岐に渡る地理的範囲を表示しています。
+        コミュニティには公式のものも、非公式のものもあります。
+    copyright:
+      legal_babble:
+        attribution_example:
+          alt: "「OHM」というラベル付きのリンクは、ウェブページの右下隅、日付スライダー下に表示。"
+          title: 特定のウェブサイトで OpenHistoricalMap の権利表示をする例
+        contributors_footer_2_html: OpenHistoricalMapのデータに含めることは、元データの提供者がOpenHistoricalMapを支持したり、何かしらの保証を行ったり、何かしらの責任を負ったりすることを意味するものではありません。
+        contributors_gmted_html: 海抜データの出典は右のとおり。 Danielson, J.J. および Gesch, D.B. " %{gmted_link}"（GMTED2010） ''U.S. Geological Survey Open-File Report''、26ページ（U.S. Geological Survey、2011年）。ISSN:2011–1073。パブリックドメイン。
+        contributors_intro_html: OpenHistoricalMapには、数千人もの個人協力者や組織の共同作業が注がれ、その人々には膨大な学術研究、ジャーナリズム、保存記録の成果が役立っています。これまでの主な情報源と貢献者は以下の通りです。
+        contributors_natural_earth_html: "%{natural_earth_link} データセットはパブリックドメインです。"
+        contributors_title_html: 謝辞
+        credit_1_html: 公共財のコンテンツ利用には、著作権法のしばりもしくは条件付与を受けることはありませんが、私たちの地図やデータを再利用し改変し、またはその他の方法で使用する際には、クレジットを OpenHistoricalMap としてくだされば誠に幸いです。
+        credit_2_this_copyright_page: この著作権ページ
+        credit_3_credit_html: 地図データは %{project_link} プロジェクトの提供で、突起する場合を除きパブリックドメインです。
+        credit_title_html: OpenHistoricalMap のクレジット表記の仕方
+        infringement_1_html: 'OHMの協力者は、著作権者から明確な許諾を得ずに、著作権のある情報源 (例: Google マップや印刷された地図) から決してデータを持ち込まないよう注意するものとします。'
+        introduction_1_cc0_url: https://creativecommons.org/publicdomain/zero/1.0/
+        introduction_1_ohm_html: |-
+          OpenHistoricalMap とは公開の地理空間データ集です。特に明記しない限り、OpenHistoricalMap データは %{cc0_link} の指定に準じてパブリックドメインに提供してあります。
+          パブリックドメインにあるものに限り、その目的を問わず、制限も一切なく、自由に複製や配布、送信や改変ができます。
+        introduction_3_ohm_html: 私たちのホームページに載せた地図の様式は、CC0 指定によりパブリックドメインです。献呈は無条件で、目的を問わず制限も一切なく、自由に複製や配布、送信や改変ができます。
+        introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
+        more_2_1_api_usage_policy: API利用ポリシー
+        more_2_1_html: OpenHistoricalMapはオープンデータですが、第三者に対して地図利用APIもしくは地図タイルを無償で提供することはできません。詳しくは %{api_usage_policy_link}、%{tile_usage_policy_link}および%{nominatim_usage_policy_link}をご参照ください。
+        more_2_1_nominatim_usage_policy: Nominatim利用規約
+        more_2_1_tile_usage_policy: タイル利用規約
+        more_title_html: 詳細を見る
+      title: 著作権と謝辞
+    export:
+      cc0_url: https://creativecommons.org/publicdomain/zero/1.0/
+      licence_details_ohm_html: 特記する場合を除き、OpenHistoricalMap のデータは %{cc0_link} によりパブリックドメインです。詳細は %{copyright_page_link} ページを参照してください。
+      too_large:
+        body: 領域が大きすぎて OpenHistoricalMap XML データとしてエクスポートできません。拡大するか、領域を小さくするか、以下に列挙したソースから一括データダウンロードを使用するかしてください。
+        overpass:
+          description: OpenHistoricalMapデータベースのミラーからこの範囲をダウンロード
+        planet:
+          description: 定期的に更新される、OpenHistoricalMap データベースの完全な複製
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            %{note_icon}をクリックするか、または地図上の同じアイコンをクリックしてください。
+            地図にマーカーが追加されます。マーカーはドラッグで移動できます。
+            メッセージを追加して保存をクリックすると、他のマッパーたちが調査します。
+        join_the_community:
+          explanation_html: 道路やあなたの住所が抜けているなど地図データの問題を見つけた場合、OpenHistoricalMapのコミュニティに参加して自分でデータの修正や追加をすることが最善の方法です。
+    help:
+      introduction: OpenHistoricalMapにはプロジェクトについて学んだり、質疑応答したり、協議したり、マッピングについての知識を文書化したりするさまざまなリソースがあります。
+      slack:
+        title: IRC
+      welcome:
+        description: OpenHistoricalMap の基礎が網羅してありますから、このクイック ガイドから始めましょう。
+        title: OpenHistoricalMap へようこそ
+      wiki:
+        description: 詳細な OHM の説明が書かれたウィキを参照します。
+    index:
+      js_2: OpenHistoricalMap は地図の表示に JavaScript を使用します。
+      license:
+        copyright: OpenHistoricalMapは特筆する場合を除きパブリックドメインです。
+      remote_failed: 編集に失敗しました - JOSM または Merkaartor を起動し、リモート制御オプションが有効になっていることを確認してください
+    potlatch:
+      removed: お使いの既定の OpenHistoricalMap エディタは Potlatch が選択されています。 Adobe Flash Player の撤退により、 Potlatch はウェブブラウザ上でもう利用できません。
+    welcome:
+      basic_terms:
+        a_tag_html: "%{tag}はノードやウェイについて補足するデータです。レストランの名称や、橋が建てられた年などを意味します。"
+        paragraph_1: OpenHistoricalMap には独自の用語がいくつかあります。ここでは手早く、いくつかのキーワードを紹介しましょう。
+      introduction: フリーで編集可能な世界地図、OpenHistoricalMapへようこそ。サインアップが完了し、マッピングの準備はすべて整いました。知っておかなければならない重要事項を簡単に説明します。
+      rules:
+        para_1_html: OpenHistoricalMapに公式なルールはほとんどありませんが、参加者がコミュニティと協力し、コミュニケーションを取ることを期待していいます。手作業ではない編集活動を検討している場合は%{imports_link}および%{automated_edits_link}のガイドラインを読み、それらに従ってください。
+      whats_on_the_map:
+        off_the_map_html: OpenHistoricalMap %{doesnt} は、架空の代替歴史、古い地図に見られる既知の誤り、そして著作権で保護された情報源からのデータなどです。特別な許可が得られている場合を除いて、オンライン地図や紙地図からの情報をコピーしてはいけません。
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPSトレース
+    show:
+      edit: 編集
+      edit_trace: このトレースを編集
+      map: 地図
+    trace:
+      edit_map: 地図を編集
+      view_map: 地図で表示
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter}さんがあなたが関心を持っているメモにコメントしました"
+        subject_own: "[OpenHistoricalMap] %{commenter} さんがあなたの変更セットにコメントしました"
+      description: 'OpenHistoricalMap 変更セット #%{id}'
+    diary_comment_notification:
+      description: 'OpenHistoricalMap日記エントリ #%{id}'
+      header: 'OpenHistoricalMap 日記エントリ (タイトル: %{subject}) に、%{from_user} がコメントしました。'
+      header_html: 'OpenHistoricalMap 日記エントリ (タイトル: %{subject}) に、%{from_user} がコメントしました。'
+      subject: "[OpenHistoricalMap]の%{user}さんが日記エントリにコメントしました"
+    email_confirm:
+      subject: "[OpenHistoricalMap] あなたのメール アドレスの確認"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX インポートに失敗"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX のインポートが成功"
+    lost_password:
+      hopefully_you: 誰か (おそらくあなた) が、このメール アドレスの openhistoricalmap.org アカウントに対するパスワードをリセットするように依頼しました。
+      subject: "[OpenHistoricalMap] パスワードリセットの要求"
+    message_notification:
+      header: "%{from_user} さんが、OpenHistoricalMap であなたに件名 %{subject} のメッセージを送信しました:"
+      header_html: "%{from_user} さんが、OpenHistoricalMap であなたに件名 %{subject} のメッセージを送信しました:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter}さんが、あなたが関心を持っているメモを解決しました"
+        subject_own: "[OpenHistoricalMap] %{commenter} さんがあなたのメモを解決しました"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter}さんがあなたが関心を持っているメモにコメントしました"
+        subject_own: "[OpenHistoricalMap] %{commenter} さんがあなたのメモにコメントしました"
+      description: 'OpenHistoricalMap地図メモ #%{id}'
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter}さんがあなたが関心を持っているメモを再開しました"
+        subject_own: "[OpenHistoricalMap] %{commenter}さんがあなたのメモの1つを再開しました"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] OpenHistoricalMapへようこそ"
+  users:
+    auth_association:
+      heading: あなたのIDはまだOpenHistoricalMapアカウントと関連付けが済んでいません。
+      option_1: OpenHistoricalMapを初めてお使いの方は、以下のフォームを使用して新しいアカウントを作成してください。
+    new:
+      about:
+        paragraph_1: 他の地図とは異なり、OpenHistoricalMapは完全に皆さんのような人によって作成されており、誰でも自由に修正・更新・ダウンロード・利用ができます。
+        welcome: OpenHistoricalMap へようこそ。
+      duplicate_social_email: すでに OpenHistoricalMap アカウントをお持ちで第三者認証プロバイダーを使用したい場合は、パスワードを使用してログインしたうえでアカウントの設定を変更してください。
+      signup_to_authorize_html: "%{client_app_name} にアクセスするには、OpenHistoricalMap に利用者登録してください。"
+    show:
+      delete_user: この利用者を削除
+      hide_user: この利用者を表示しない
+      unhide_user: この利用者を再表示

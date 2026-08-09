@@ -1,0 +1,35 @@
+# Messages for Colognian (Ripoarisch)
+# Exported from translatewiki.net
+# Author: Erictheise
+# Author: Gravitystorm
+# Author: Minh Nguyen
+# Author: Purodha
+# Do not edit by hand.
+ksh:
+  diary_entries:
+    profile_diaries:
+      date_label: Et Dattum
+  layouts:
+    logo:
+      alt_text: Et Logo vun OpenHistoricalMap
+  site:
+    help:
+      slack:
+        title: |2-
+
+          <i lang="en" xml:lang="en" dir="ltr" title="Internet Relay Chat">IRC</i>
+    welcome:
+      rules:
+        para_1_html: OpenHistoricalMap hät neuje (fomälle) Rääjelle, ävver mer äwahde alle Metmaacher zesammezewerrke un sesch meddeneijn als Jemeijnschaff ußzetuusche. Wää jäd_annderes maache will, wi jät vun Hannd ennzejävve udder vun Hannd ze änndere, dann bs esu johd un lißß un bevollesch de Reeschlennije övver et %{imports_link} un övver %{automated_edits_link}.
+  user_mailer:
+    email_confirm:
+      subject: "[OpenHistoricalMap] Donn Ding Addräß för de e-mail beshtääteje"
+    lost_password:
+      subject: "[OpenHistoricalMap] Aanfrooch: Paßwoot neu säze"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Donn Ding Addräß för de e-mail beshtääteje"
+  users:
+    show:
+      delete_user: Donn heh dä Metmaacher fott schmiiße
+      hide_user: Donn heh dä Metmaacher verschteijsche
+      unhide_user: Donn heh dä Metmaacher nim_mih verschteijsche

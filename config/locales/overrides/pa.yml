@@ -1,0 +1,99 @@
+# Messages for Punjabi (ਪੰਜਾਬੀ)
+# Exported from translatewiki.net
+# Author: Aalam
+# Author: Babanwalia
+# Author: Bgo eiu
+# Author: Cabal
+# Author: Erictheise
+# Author: Jimidar
+# Author: Kuldeepburjbhalaike
+# Author: Minh Nguyen
+# Author: Satnam S Virdi
+# Author: Tow
+# Do not edit by hand.
+pa:
+  accounts:
+    show:
+      contributor_terms:
+        link text: ਇਹ ਕੀ ਹੈ?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: ਉਹਨਾਂ ਦੇ ਨਿੱਜੀ GPS ਖੁਰਾ-ਖੋਜ ਪੜ੍ਹੋ
+        allow_read_prefs: ਉਹਨਾਂ ਦੀਆਂ ਵਰਤੋਂਕਾਰ ਤਰਜੀਹਾਂ ਨੂੰ ਪੜ੍ਹੋ
+        allow_write_api: ਨਕਸ਼ੇ ਨੂੰ ਸੋਧੋ
+        allow_write_diary: ਰੋਜ਼ਨਾਮਚਾ ਦਰਜ਼ ਕਰੋ, ਟਿੱਪਣੀਆਂ ਕਰੋ ਅਤੇ ਦੋਸਤ ਬਣਾਓ
+        allow_write_gpx: GPS ਖੁਰਾ-ਖੋਜ ਜੋੜੋ
+        allow_write_notes: ਨੋਟਾਂ ਨੂੰ ਸੋਧੋ
+        allow_write_prefs: ਉਹਨਾਂ ਦੀਆਂ ਵਰਤੋਂਕਾਰ ਤਰਜੀਹਾਂ ਨੂੰ ਸੋਧੋ
+        callback_url: ਮੁੜਕੇ-ਫੋਨ-ਕਰੋ  URL
+        name: ਨਾਮ (ਲੋੜੀਂਦਾ)
+        support_url: ਮਦਦ URL
+        url: ਮੁੱਢਲਾ Application URL (ਲੋੜੀਂਦਾ ਹੈ)
+  diary_entries:
+    feed:
+      all:
+        description: OpenHistoricalMap ਦੇ ਵਰਤੋਂਕਾਰ ਤੋਂ ਹਾਲੀਆ ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ
+        title: OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ
+      language:
+        description: "%{language_name} ਵਿੱਚ OpenHistoricalMap ਦੇ ਵਰਤੋਂਕਾਰ ਤੋਂ ਹਾਲੀਆ ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ"
+        title: "%{language_name} ਵਿੱਚ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ"
+      user:
+        description: "%{user} ਤੋਂ ਤਾਜ਼ਾ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ"
+        title: "%{user} ਲਈ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ"
+    profile_diaries:
+      date_label: ਮਿਤੀ
+  javascripts:
+    map:
+      zoom:
+        in: ਅੰਦਰ ਨੂੰ ਜਾਉ
+        out: ਬਾਹਰ ਨੂੰ ਆਉ
+  layouts:
+    intro_2_create_account: ਇੱਕ ਵਰਤੋਂਕਾਰ ਖਾਤਾ ਬਣਾਉ
+    intro_header: OpenHistoricalMap 'ਤੇ ਜੀ ਆਇਆਂ ਨੂੰ
+    logout: ਬਾਹਰ ਆਓ
+  oauth:
+    scopes:
+      openid: OpenHistoricalMap ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਦਾਖਲ ਹੋਵੋ
+  site:
+    about_section:
+      contribute_1_user_diaries: ਵਰਤੋਂਕਾਰਾਂ ਦੇ ਰੋਜ਼ਨਾਮਚੇ
+      contribute_title: ਤੁਸੀਂ ਮਦਦ ਕਰ ਸਕਦੇ ਹੋ
+      legal_1_aup: ਸਵੀਕਾਰਯੋਗ ਵਰਤੋਂ ਨੀਤੀਆਂ
+      legal_1_privacy_policy: ਨਿੱਜਤਾ ਨੀਤੀ
+      open_data_2_copyright_license: ਨਕਲ-ਹੱਕ ਅਤੇ ਪ੍ਰਵਾਨਗੀਆਂ
+    copyright:
+      legal_babble:
+        contributors_more_sources_page: ਵਾਧੂ ਸਰੋਤ ਅਤੇ ਯੋਗਦਾਨ ਪਾਉਣ ਵਾਲੇ
+        contributors_title_html: ਪ੍ਰਵਾਨਗੀਆਂ
+        credit_2_home: ਸਾਡਾ ਮੁੱਢਲਾ ਵਰਕਾ
+        credit_2_this_copyright_page: ਇਹ ਨਕਲ-ਹੱਕ ਸਫ਼ਾ
+        credit_title_html: ਖੁੱਲ੍ਹਾ-ਗਲੀ-ਨਕਸ਼ੇ ਨੂੰ ਕਿਵੇਂ ਸੇਹਰਾ ਦੇਣਾ ਐ
+        more_2_1_api_usage_policy: ਏਪੀਆਈ (API) ਵਰਤੋਂ ਨੀਤੀ
+        more_title_html: ਹੋਰ ਜਾਣਕਾਰੀ ਲੱਭਣ ਵਾਸਤੇ
+      title: ਨਕਲ-ਹੱਕ ਅਤੇ ਪ੍ਰਵਾਨਗੀਆਂ
+    fixthemap:
+      other_concerns:
+        contact: ਸਾਡੇ ਨਾਲ ਰਾਬਤਾ ਬਣਾਓ
+    help:
+      slack:
+        title: ਆਈ.ਆਰ.ਸੀ
+      wiki:
+        title: ਵਿਕੀ
+  time:
+    formats:
+      friendly: "%e %B %Y at %H:%M"
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS ਖੁਰਾ-ਖੋਜ
+  user_mailer:
+    email_confirm:
+      subject: "[ਖੁੱਲ੍ਹਾ-ਇਤਿਹਾਸੀ-ਨਕਸ਼ਾ] ਆਪਣੇ ਈਮੇਲ ਪਤੇ ਦੀ ਤਸਦੀਕ ਕਰੋ"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] OpenHistoricalMap ਉੱਤੇ ਜੀ ਆਈਆਂ ਨੂੰ"
+  users:
+    show:
+      delete_user: ਇਸ ਵਰਤੋਂਕਾਰ ਨੂੰ ਮਿਟਾਉ
+      hide_user: ਇਸ ਵਰਤੋਂਕਾਰ ਨੂੰ ਲੁਕਾਉ
+      unhide_user: ਇਸ ਵਰਤੋਂਕਾਰ ਨੂੰ ਮੁੜ-ਵਿਖਾਓ

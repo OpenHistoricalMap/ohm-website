@@ -1,0 +1,131 @@
+# Messages for Kazakh (Cyrillic script) (қазақша (кирил))
+# Exported from translatewiki.net
+# Author: Amankel'dy
+# Author: Erictheise
+# Author: Fontan 030
+# Author: Minh Nguyen
+# Author: Moonborn
+# Do not edit by hand.
+kk-cyrl:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: бұл не?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: жеке GPS бағдарларын оқу
+        allow_read_prefs: қолданушы теңшеулерін оқу
+        allow_write_api: картаны өзгерту
+        allow_write_changeset_comments: Өңдеме дестелеріне комментарий қалдыру
+        allow_write_diary: күнделік жазбаларын және комментарий қалдыру
+        allow_write_gpx: GPS бағдар жүктеп салу
+        allow_write_notes: жазбаларды өзгерту
+        allow_write_prefs: қолданушы теңшеулерін өзгерту
+        callback_url: Кері шалу URL
+        name: Аты (міндетті)
+        support_url: Қолдау URL
+        url: Негізгі қолданба URL (міндетті)
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap ескертпелері
+  auth:
+    providers:
+      openstreetmap: OpenStreetMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap өңдеме дестесін талқылау
+        title_particular: OpenHistoricalMap %{changeset_id} өңдеме дестесін талқылау
+  date:
+    formats:
+      brief: "%{year}"
+      brief_bce: б.з.д. %{year}
+      brief_ce: б.з. %{year}
+      heatmap: "%B %-d"
+      range: "%{start} – %{end}"
+  geocoder:
+    search_osm_nominatim:
+      border_types:
+        archdiocese: Архиепархия шекарасы
+        emirate: Әмірлік шекара
+        oblast: Облыс шекарасы
+  javascripts:
+    map:
+      zoom:
+        in: Үлкейту
+        out: Кішірейту
+  layouts:
+    intro_2_create_account: Жаңа қатысушы аккаунтын құру
+    intro_header: OpenHistoricalMap-ке қош келдіңіз!
+    intro_text: OpenHistoricalMap - бұл тарих бойындағы әлемнің интерактивті картасы, сіз сияқты адамдар жасаған және қоғамдық игілікке арналған.
+    logo:
+      alt_text: OpenHistoricalMap логотипі
+    logout: Шығу
+    offline_flash:
+      osm_offline: OpenHistoricalMap дерекқоры қазіргі уақытта маңызды техникалық қызмет көрсету жұмыстары жүргізіліп жатқандықтан уақытша қолжетімсіз.
+      osm_read_only: OpenHistoricalMap дерекқоры қазіргі уақытта маңызды техникалық қызмет көрсету жұмыстары жүргізіліп жатқандықтан тек оқу режимінде жұмыс істеп тұр.
+    partners_osmus: OpenStreetMap АҚШ
+    tag_line: Еркін уики әлем картасы
+  printable_name:
+    with_date_html: "%{name} [%{dates}]"
+  sessions:
+    destroy:
+      heading: OpenHistoricalMap-тен шығу
+  site:
+    about_section:
+      contribute_1_forum: Талқылау форумымыз
+      contribute_2_osmus: OpenStreetMap АҚШ
+      contribute_title: Сіз көмектесе аласыз
+      legal_1_group: бейресми топ
+      legal_1_terms_of_use: Қолдану шарттары
+      open_data_1_1_reuse: қайта қолдануға болады
+    copyright:
+      legal_babble:
+        contributors_title_html: Жобамызға үлес қосқандар
+        credit_2_home: Басты парақшамыз
+        trademarks_1_ohm_contact_team: OpenHistoricalMap командасымен байланысқа шығу
+    export:
+      too_large:
+        planet:
+          title: OHM ғаламшары
+    fixthemap:
+      other_concerns:
+        contact: бізбен байланысқа шығыңыз
+    help:
+      discord:
+        title: Discord
+      forum:
+        title: Форум
+      slack:
+        title: IRC
+      welcome:
+        title: OpenHistoricalMap-қа қош келдіңіз
+      welcomemat:
+        title: Ұйымдар үшін
+      wiki:
+        title: Уики
+    index:
+      js_2: OpenHistoricalMap картаны көрсету үшін JavaScript пайдаланады.
+  traces:
+    show:
+      map: карта
+  user_mailer:
+    email_confirm:
+      subject: "[OpenHistoricalMap] Электрондық пошта мекенжайыңызды растаңыз"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX сәтті импортталды"
+    lost_password:
+      hopefully_you: Біреу (мүмкін сіз) осы электрондық пошта мекенжайына тіркелген openhistoricalmap.org аккаунтының паролін қалпына келтіруге сұрау салды.
+      subject: "[OpenHistoricalMap] Құпиясөзді арылту сұранысы"
+    message_notification:
+      header: 'OpenHistoricalMap қолданушысы %{from_user} сізге хат жіберді. Тақырыбы: %{subject}'
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} сізді қызықтырған бір жазбаны жапты."
+        subject_own: "[OpenHistoricalMap] %{commenter} сіздің бір жазбаңызды жапты."
+    signup_confirm:
+      subject: "[OpenHistoricalMap] OpenHistoricalMap-ке қош келдіңіз"

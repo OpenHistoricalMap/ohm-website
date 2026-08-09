@@ -1,0 +1,159 @@
+# Messages for Sicilian (sicilianu)
+# Exported from translatewiki.net
+# Author: Ajeje Brazorf
+# Author: Erictheise
+# Author: GianAntonucci
+# Author: Gmelfi
+# Author: LametinoWiki
+# Author: Macofe
+# Author: Minh Nguyen
+# Author: Pippinu
+# Author: Sarvaturi
+# Author: SurdusVII
+# Do not edit by hand.
+scn:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
+        link text: chi voli diri?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: lèggi li sò tracciati GPS privati.
+        allow_write_api: cancia la cartina
+        allow_write_diary: criari vuci dû diariu, cummenti e fari amici.
+        allow_write_gpx: càrrica li tracciati GPS
+        allow_write_notes: cancia li noti
+        allow_write_prefs: canciari li so mpustazzioni di l'utenti
+        callback_url: URL di callback
+        support_url: URL di l'assistenza
+  api:
+    notes:
+      rss:
+        title: Noti d'OpenHistoricalMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Discussioni supra ô gruppu di canciamenti d'OpenHistoricalMap
+        title_particular: 'Discussioni supra ô gruppu di canciamenti d''OpenHistoricalMap #%{changeset_id}'
+  diary_entries:
+    feed:
+      all:
+        description: Vuci ricenti dû diariu di l'utenti d'OpenHistoricalMap
+        title: Vuci dû diariu d'OpenHistoricalMap
+      language:
+        description: Vuci ricenti dû diariu di OpenHistoricalMap n %{language_name}
+        title: Vuci dû diariu d'OpenHistoricalMap n %{language_name}
+      user:
+        description: Vuci ricenti dû diariu d'OpenHistoricalMap pi %{user}
+        title: Vuci dû diariu d'OpenHistoricalMap pi %{user}
+    profile_diaries:
+      date_label: Data
+  javascripts:
+    map:
+      zoom:
+        in: Zumma pi dintra
+        out: Zumma pi fora
+  layouts:
+    intro_2_create_account: Crìa un cuntu di l'utenti
+    intro_header: Bimminuti nta OpenHistoricalMap!
+    intro_text: OpenHistoricalMap è na cartina dû munnu, criata di genti comu a tìa e lìbbira a adupirari secunnu na licenza graputa.
+    logo:
+      alt_text: Logu d'OpenHistoricalMap
+    logout: Nesci
+    tag_line: La cartina-wiki dû munnu lìbbira
+  sessions:
+    destroy:
+      heading: Nesci d'OpenHistoricalMap
+  site:
+    about:
+      lede_text: OpenHistoricalMap veni custruutu di na cumunità di mappatura chi cuntribbuìscinu e mantèninu dati c'arriguàrdanu strati, trazzeri, bar, stazzioni dî treni, e tanti àutri cosi, nta tuttu lu munnu.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: La nclusioni dî dati nta OpenHistoricalMap nun ìmplica ca lu sò furnituri origginali susteni OpenHistoricalMap, furnisci na quarchi garanzìa, o accetta na quarchi rispunzabbilità.
+        credit_1_html: Addumannamu chi s'usa l'attribbuzzioni &laquo;&copy; li cuntribbutura d'OpenHistoricalMap&raquo;.
+        credit_title_html: Comu s'attribbuisci a OpenHistoricalMap
+        infringement_1_html: Ê cuntribbutura d'OHM s'arricorda di nun agghiùnciri mai dati chi vèninu di fonti prutetti dû drittu d'auturi (ad esempiu Google Maps o puru li carti stampati) senza aviri n'auturizzazzioni splìcita dû titulari dû drittu d'auturi.
+        more_title_html: Pi sapìrinni cchiossai
+    export:
+      too_large:
+        body: St'ària è troppu granni pi spurtàrila comu Dati XML di OpenHistoricalMap. Pi favuri zumma, o scegghî n'ària cchiù piccidda, o puru pû scarricamentu massizzu di dati adòpira una dî fonti ccassutta.
+        overpass:
+          description: Scàrrica stu riquatru dûn mirror dâ basi di dati d'OpenHistoricalMap
+        planet:
+          description: Copî dâ basi di dati cumpreta di OpenHistoricalMap ca vèninu aggiurnati rigularmenti
+          title: Pianeta OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            Abbasta chi clicchi %{note_icon} o puru la stissa cona ntâ carta.
+            Facennu accussì si piazza un signali supra â carta, chi si pò spustari strascinànnulu.
+            S'agghiunci nu propiu missaggiu, appoi si clicca «sarva», e l'àutri mappatura talìanu la situazzioni.
+        join_the_community:
+          explanation_html: Si t'addunasti chi c'è quarchi prubblema ntê dati dâ nostra cartina, p'esempiu c'ammanca na strata o puru ca lu tò nnirizzu è sbagghiatu, la megghiu cosa di fari è di scrivìriti ntâ cumunità d'OpenHistoricalMap e d'agghiùnciri o cunzari li dati tu stissu.
+    help:
+      introduction: |-
+        OpenHistoricalMap havi tanti risorsi pi nzignàrisi comu funziona lu pruggettu, pi fari addumannati e dari arrispunnuti,
+        e pi discùtiri d'argumenti c'arriguàrdanu la mappatura e ducumintàrili n cullabburazzioni.
+      slack:
+        title: IRC
+      welcome:
+        description: Accumenza cu sta guida ràpida chi nzigna li funnamenti d'OpenHistoricalMap.
+        title: Bimminuti nta OpenHistoricalMap
+      wiki:
+        description: Sfogghia lu wiki p'attruvari la ducumintazzioni apprufunnuta d'OHM.
+    index:
+      js_2: OpenHistoricalMap adòpira lu JavaScript pâ sò cartina scurritura.
+      remote_failed: 'Lu canciamentu nun arriniscìu: assicùrati chi JOSM o Merkaartor sunnu graputi e hannu l''opzioni telecumannu attivata'
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap havi nu sò linguaggiu particulari. Ccà ci sù na para di palori chi ti ponnu aggiuvari.
+      introduction: Bimminuti nta OpenHistoricalMap, la cartina dû munnu lìbbira e canciàbbili. Ora chi siti scritti, siti pronti p'accuminzari a mappari. Ccà c'è na guida chi spiega li cosi cchiù mpurtanti c'aviti a sapiri.
+      rules:
+        para_1_html: OpenHistoricalMap havi picca règuli furmali, pirò n'aspittamu chi tutti li participanti cullàbburanu e cumùnicanu câ cumunità. Si stai pigghiannu a cunziddirazzioni di canciari la carta di quarchi manera àutra rispettu a fàrilu a manu, pi favuri leggi e rispetta li lìnii guida ca poi attruvari nta %{imports_link} e %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: Chiddu chi mmeci %{doesnt} sunnu li dati d'opinioni comu p'esempiu li giudizzî, l'elimenti chi nun esìstinu cchiù o chi sunnu iputètici, e li dati chi vèninu di fonti prutetti dû drittu d'auturi. A menu chi nun hai n'auturizzazzioni spiciali, nun cupiari mai di mappi n lìnia o di carta.
+  traces:
+    feeds:
+      show:
+        title: Tracciati GPS d'OpenHistoricalMap
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} cummintau unu dî gruppa di canciamenti chi ti ntirèssanu"
+        subject_own: "[OpenHistoricalMap] %{commenter} cummintau unu dî tò gruppa di canciamenti"
+    diary_comment_notification:
+      header: "%{from_user} cummintau na vuci ricenti dû tò diariu di OpenHistoricalMap chi havi oggettu %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} cummintau na vuci dû tò diariu"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Cunferma lu tò nnirizzu di posta elittrònica"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Mpurtazzioni GPX nun arrinisciuta"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Mpurtazzioni GPX arrinisciuta"
+    lost_password:
+      hopefully_you: Quarchidunu (spiramu chi fusti tu) addumannau d'azzirari la palora d'òrdini dû cuntu d'openhistoricalmap.org assuciatu a stu nnirizzu di posta elittrònica.
+      subject: "[OpenHistoricalMap] Addumannata d'azziramentu dâ palora d'òrdini"
+    message_notification:
+      header: "%{from_user} ti mannau pi menzu d'OpenHistoricalMap nu missaggiu cu l'oggettu %{subject}:"
+      header_html: "%{from_user} ti mannau pi menzu d'OpenHistoricalMap nu missaggiu cu l'oggettu %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} arrisurvìu una dî noti chi ti ntirèssanu"
+        subject_own: "[OpenHistoricalMap] %{commenter} arrisurvìu una dî tò noti"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} lassau nu cummentu nta una dî noti chi ti ntirèssanu"
+        subject_own: "[OpenHistoricalMap] %{commenter} lassau nu cummentu nta una dî tò noti"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} attivau n'àutra vota una dî noti chi ti ntirèssanu"
+        subject_own: "[OpenHistoricalMap] %{commenter} attivau n'àutra vota una dî tò noti"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Bimminutu nta OpenHistoricalMap"
+  users:
+    show:
+      delete_user: Cancella a st'utenti
+      hide_user: Ammuccia a st'utenti
+      unhide_user: Ammustra a st'utenti

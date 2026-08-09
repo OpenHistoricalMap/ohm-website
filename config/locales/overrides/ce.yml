@@ -1,0 +1,206 @@
+# Messages for Chechen (нохчийн)
+# Exported from translatewiki.net
+# Author: Erictheise
+# Author: McDutchie
+# Author: Minh Nguyen
+# Author: Sasan700
+# Author: Исмаил Садуев
+# Author: Робин
+# Author: Умар
+# Do not edit by hand.
+ce:
+  accounts:
+    show:
+      contributor_terms:
+        link text: хӀун йу хӀара?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: долахь йолу GPS-трекаш йеша
+        allow_read_prefs: йеша лелорчера лаамаш
+        allow_write_api: карта нисдар
+        allow_write_changeset_comments: хийцаран пакеташна тӀехь комментарий йе
+        allow_write_diary: тептар тӀехь дӀайаздарш а, комментареш а кхолла
+        allow_write_gpx: GPS-трекаш чуйаха
+        allow_write_notes: заметкаш нисайар
+        allow_write_prefs: хийца лелорчера лаамаш
+        callback_url: URL йухакхайкха
+        name: ЦIе (схьадоьхург)
+        support_url: URL гӀо дар
+        url: Приложенена URL (схьадоьхург)
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap билгалонаш
+  application:
+    setup_user_auth:
+      blocked_zero_hour: OpenHistoricalMap сайта тӀехь сихонца хаам бу хьан. Хьайн хийцамаш ларбан аьтто балале хьалха хаам беша беза.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap тӀехь дина нисдарийн дийцар
+        title_particular: 'OpenHistoricalMap #%{changeset_id} тӀехь дина нисдарийн дийцар'
+  diary_entries:
+    comments:
+      description: OpenHistoricalMap декъашхойн тӀаьххьарлера дӀайаздарш
+      title: Дневникан дӀайаздарш OpenHistoricalMap
+    feed:
+      all:
+        description: OpenHistoricalMap декъашхойн тӀаьххьарлера дӀайаздарш
+        title: Дневникан дӀайаздарш OpenHistoricalMap
+      language:
+        description: OpenHistoricalMap декъашхойн тӀехьарлера дневникийн дӀайаздарш %{language_name} чуьра
+        title: Дневникийн дӀайаздарш OpenHistoricalMap тӀе %{language_name}
+      user:
+        description: ТӀаьххьара дневникийн дӀайаздарш OpenHistoricalMap цуна %{user}
+        title: Дневникийн дӀайаздарш OpenHistoricalMap цуна %{user}
+    profile_diaries:
+      comments_label: Комменташ
+      date_label: Терахь
+  errors:
+    bad_request:
+      description: OpenHistoricalMap сервер тӀехь ахь йехна операци нийса йац (HTTP 400)
+    contact:
+      contact_the_community_html: Маьрша хила %{contact_link} OpenHistoricalMap йукъаралле, нагахь санна хьуна йоьхна ссылка / гIалат карийнехь.  Нийса URL дӀаязъе хьайн дехаран йуккхех.
+    forbidden:
+      description: OpenHistoricalMap сервер тӀехь ахь йехна операци администраторшна бен магина йац (HTTP 403)
+    internal_server_error:
+      description: OpenHistoricalMap серверна дагахь доцу хьал нисделира, цо новкъарло йира дехар кхочушдан (HTTP 500)
+    not_found:
+      description: Цу цӀарца йолу файл/каталог/API операци ца карийра OpenHistoricalMap сервер тӀехь (HTTP 404)
+  javascripts:
+    map:
+      zoom:
+        in: Йоккха йе
+        out: Жима йе
+  layouts:
+    intro_header: Марша вогӀийла хьо OpenHistoricalMap!
+    intro_text: OpenHistoricalMap — дуьненан карта ду, хьо санна болчу наха кхоьллина, ткъа хIара маьрша лело йиш йу йиллина лицензица.
+    logo:
+      alt_text: OpenHistoricalMap-ан логотип
+    logout: Болх дӀаберзор
+  oauth:
+    scopes:
+      openid: OpenHistoricalMap лелош чу вала
+  sessions:
+    destroy:
+      heading: OpenHistoricalMap чуьра болх дӀаберзор
+    new:
+      login_to_authorize_html: OpenHistoricalMap чу вала, %{client_app_name} чу кхача.
+  site:
+    about:
+      lede_text: OpenHistoricalMap йина картографин юкъаралло, цара дӀало а, латтадо а некъаш, качнаш, кафеш, цӀерпоштнекъан вокзалш, кхин а дуккха а хӀуманаш, дерриг а дуьнентӀехь.
+    about_section:
+      contribute_1_user_diaries: декъашхошна тептарш
+      legal_1_aup: Къобал йина лелоран политика
+      legal_1_html: ХӀара сайт а, кхин дуккха а цуьнца йоьзна сервисаш а формалан кепара лелайо %{group_link} йукъараллин цӀарах. OSMF-о лелочу массо а сервисех пайдаэцар вай %{terms_of_use_link}, %{aup_link} а, вай %{privacy_policy_link} а хьаьжжина ду.
+      legal_1_privacy_policy: Къайлаха политика
+      legal_1_terms_of_use: Лелоран биллам
+      legal_2_html: Дехар ду %{contact_team_link} нагахь санна хьан лицензех, авторан бакъонашех, йа кхин юристийн хаттарш делахь.
+    communities:
+      lede_text: |-
+        Дерриг а дуьнентӀера наха дакъа лоцу йа лелайо OpenHistoricalMap. Дукхачара цхьацца дакъалоцуш хилча, вукхара йукъараллаш кхоьллина.
+        И тобанаш тайп-тайпана барамашкахь йу, ткъа географин регионаш гойту кегийчу гӀаланашкара масех пачхьалкх йолчу яккхийчу регионашка кхаччалц. Уьш формалан а, формалан йоцу а хила тарло.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: OpenHistoricalMap чу хаамаш юкъабахар бохург дац, хьалхара хаамаш луш волчо OpenHistoricalMap къобалйо, цхьа а гарантии ло, йа цхьа а жоьпалла тӀеоьцу.
+        credit_1_html: 'OpenHistoricalMap-ан хаамашехь пайдаоьцучохь, ахь дан деза хӀара ши хӀума:'
+        credit_2_this_copyright_page: хӀара авторан бакъонаш йолу агӀо
+        credit_title_html: OpenHistoricalMap-на тIехьажа муха ло
+        infringement_1_html: OHM-н декъашхошна дагадоуьйту, авторийн бакъонаш йолчу нехан билгал бакъо йоцуш, цхьана а авторан бакъонаш йолчу хьостанашкара (масала, Google Maps йа зорбане даьхна карташ) хаамаш тӀетоха ца безий.
+        introduction_4_creative_commons: Creative Commons Attribution Share Alike
+        more_2_1_api_usage_policy: API лелоран политика
+        more_2_1_html: OpenHistoricalMap биллина хаамаш балахь а, тхан йиш йац мах боцуш картан API кхоалгӀачу агӀонна дӀадала. Хьажа вай %{api_usage_policy_link}, %{tile_usage_policy_link} а, %{nominatim_usage_policy_link} а.
+        more_2_1_nominatim_usage_policy: Номиналан лелоран политика
+        more_2_1_tile_usage_policy: Плитка лелоран политика
+        more_title_html: Кхин алсам довза
+    export:
+      too_large:
+        body: 'И меттиг тӀех йоккха йу, OpenHistoricalMap XML хаамаш санна экспорт ян йиш йоцуш. Дехар ду, масштаб совъяккха я жима меттиг схьахаржа, йа лахахь хьахийначу хьостанех цхьаъ леладе:'
+        overpass:
+          description: ХӀара сизаца доза тоьхна меттиг OpenHistoricalMap базан куьзгана чуьра схьаэца
+        planet:
+          description: Даима карлайоху OpenHistoricalMap-ан йуззина хаамин базан копеш.
+          title: Планета OHM
+    fixthemap:
+      how_to_help:
+        join_the_community:
+          explanation_html: Нагахь санна ахь тидам бина белахь тхан картан хаамашца цхьа проблема, масала, некъ бац йа хьан адрес, уггаре а дика некъ бу OpenHistoricalMap юкъаралле дӀакхетар, хьайна хаамаш тӀетохар йа тодар.
+    help:
+      introduction: OpenHistoricalMap-ехь масех ресурс йу проектах лаьцна хаа, хаттарш дан йа царна жоьпаш дала, цхьаьна картографин теманаш йийцаре йан а.
+      slack:
+        title: IRC
+      welcome:
+        description: ДӀадоло хӀокху OpenHistoricalMap-ан бух дӀа а лоцуш болу сихачу хьехамца.
+        title: Марша вогӀийла OpenHistoricalMap чу.
+      wiki:
+        description: КӀорггера OHM документаци лаха вики тӀехь.
+        title: Вики
+    index:
+      js_2: OpenHistoricalMap лелайо JavaScript шен карта хьагайта.
+      remote_failed: Нийсдар ца дадела.  JOSM йа Merkaartor чуйиллина хиларх а, генар лелоран опци дӀахӀоттийна хиларх а хьовса
+    potlatch:
+      removed: Хьан стандартан OpenHistoricalMap редактор йу Potlatch. Adobe Flash Player-на гӀо дар сацийна дера, Potlatch кхин лело йиш йац веб-браузерехь.
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap-ан шен меттигер сленг кхоллайела. Кхузахь масех коьрта дош ду, вайна пайдехьа хир долу.
+      introduction: Марша вогӀийла хьо OpenHistoricalMap, маьрша а, хийца йиш йолу а дуьненан карта. ХӀинца регистраци чаккха йалча, карта хӀотто волавала мегар ду. ХӀара жимма хьехам бу уггаре а коьртачу хаадеза хӀуманех лаьцна.
+      rules:
+        para_1_html: OpenHistoricalMap формалан бакъонаш йу, амма оха сатуьйсу массо а декъашхочо юкъараллица цхьаьнаболхбаре, цуьнца зӀе латторе. Нагахь санна хьо куьйгаца хийцар доцург кхин гӀуллакх дан дагахь велахь, дехар ду %{imports_link} а, %{automated_edits_link} а тӀера низам деша а, лелада а.
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS-трекаш
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} комментари йина хьуна хьашта хетта хийцаман гуламна"
+        subject_own: "[OpenHistoricalMap] %{commenter} комментари йина хьан цхьана хийцаман гуламна"
+      description: 'OpenHistoricalMap хийцаман гулам #%{id}'
+    diary_comment_notification:
+      description: 'OpenHistoricalMap Тептар Чувалар #%{id}'
+      header: "%{from_user} комментари йина OpenHistoricalMap тептаран йаззамна %{subject}:"
+      header_html: "%{from_user} комментари йина OpenHistoricalMap тептаран йаззамна %{subject}:"
+      subject: Декъашхочо OpenHistoricalMap] %{user} комментари йитан тептар чохь
+    email_confirm:
+      subject: "[OpenHistoricalMap] Хьайн электронан почтан адрес тӀечӀагӀде"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX Импорт ца хилира"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX  Импортан дика хилира"
+    lost_password:
+      hopefully_you: Цхьаммо (хила тарло ахь) оцу электронан почтан адресан openhistoricalmap.org аккаунтехь пароль йухаметтахӀоттор дехна.
+      subject: "[OpenHistoricalMap] Пароль хийцаран дехар"
+    message_notification:
+      header: "%{from_user} хьуьга хаам баийтина OpenHistoricalMap чухула %{subject} темаца:"
+      header_html: "%{from_user} хьуьга хаам баийтина OpenHistoricalMap чухула %{subject} темаца:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} дӀакъоьвлина хьуна хьашт долу билгалдаккхар"
+        subject_own: "[OpenHistoricalMap] %{commenter} хьан цхьа билгалдаккхар дӀакъоьвлина"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} комментари хӀотийна хьуна хьашта йол заметкин"
+        subject_own: "[OpenHistoricalMap] %{commenter} комментари йина хьан цхьана тептарна"
+      description: 'OpenHistoricalMap Билгалдаккхар #%{id}'
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} йуха а дӀахӀоттийна хьуна хьашт долу билгалдаккхар"
+        subject_own: "[OpenHistoricalMap] %{commenter} хьан цхьа билгалдаккхар йуха а дӀахӀоттийна"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Марша вогIийла OpenHistoricalMap чу"
+  users:
+    auth_association:
+      heading: Хьан ID цкъачунна OpenHistoricalMap агӀонца йоьзна йац.
+      option_1: |-
+        Нагахь санна хьо доьххар велахь OpenHistoricalMap-ехь, дехар ду керла аккаунт кхолла
+        лахахь йолчу кепах пайда а оьцуш.
+    new:
+      about:
+        paragraph_1: Кхечу картех къаьсташ, OpenHistoricalMap йуззина кхоьллина йу хьо санна болчу наха, иза маьрша йу муьлххачу а стагана нисдан а, карладаккха а, схьаэца а, лело а.
+        welcome: Марша вогӀийла OpenHistoricalMap чу.
+      duplicate_social_email: Нагахь санна хьан хӀинцале а OpenHistoricalMap аккаунт елахь, хьуна кхоалгӀачу агӀонан ID-провайдер лело лаахь, хьайн парольца чу а вале, хьайн аккаунтан параметраш хийца.
+      signup_to_authorize_html: OpenHistoricalMap тIе дӀаязло %{client_app_name} тӀекхача.
+    show:
+      delete_user: ХӀара декъашхо дӀаваккха
+      hide_user: ХӀара декъашхо къейлаваккха
+      unhide_user: ХӀара декъашхо схьагайта

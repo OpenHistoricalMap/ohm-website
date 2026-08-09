@@ -1,0 +1,224 @@
+# Messages for Serbian (Cyrillic script) (српски (ћирилица))
+# Exported from translatewiki.net
+# Author: Acamicamacaraca
+# Author: Aktron
+# Author: BadDog
+# Author: Danieldegroot2
+# Author: Erictheise
+# Author: Kizule
+# Author: Macofe
+# Author: Magnumns
+# Author: MaliMrav
+# Author: Milicevic01
+# Author: Minh Nguyen
+# Author: Nemo bis
+# Author: Nikola Smolenski
+# Author: Obsuser
+# Author: Prevodim
+# Author: Rancher
+# Author: Sawa
+# Author: Srdjan m
+# Author: Srđan
+# Author: Stalker
+# Author: Zenfiric
+# Author: Zoranzoki21
+# Author: Жељко Тодоровић
+# Author: Милан Јелисавчић
+# Author: Обрадовић Горан
+# Author: Сербијана
+# Do not edit by hand.
+sr:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: шта је ово?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: чита њихове приватне GPS трагове
+        allow_read_prefs: чита њихове корисничке поставке
+        allow_write_api: мења мапу
+        allow_write_diary: прави дневничке записе и коментарише
+        allow_write_gpx: отпрема GPS трагове
+        allow_write_notes: мења белешке
+        allow_write_prefs: мења њихове корисничке поставке
+        callback_url: Повратна адреса
+        name: Име (обавезно)
+        support_url: Адреса подршке
+        url: Главна адреса апликације (обавезно)
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Имате хитну поруку на веб-сајту OpenHistoricalMap. Морате прочитати поруку пре него што можете да чувате своје измене.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Дискусија о скупу промена на OpenHistoricalMap-у
+        title_particular: 'Дискусија о скупу промена #%{changeset_id} на OpenHistoricalMap-у'
+  date:
+    formats:
+      brief_bce: "%{year} пре нове ере"
+      brief_ce: "%{year} нове ере"
+  diary_entries:
+    feed:
+      all:
+        description: Недавни уноси у дневнику корисника OpenHistoricalMap-а
+        title: Уноси у дневнику OpenHistoricalMap-а
+      language:
+        description: Недавни уноси у дневнику корисника OpenHistoricalMap-а на %{language_name}
+        title: Уноси у дневнику OpenHistoricalMap-а на %{language_name}
+      user:
+        description: Недавни уноси у дневнику OpenHistoricalMap-а корисника %{user}
+        title: Уноси у дневнику OpenHistoricalMap-а корисника %{user}
+    profile_diaries:
+      date_label: Датум
+  javascripts:
+    legend:
+      tooltip: Легенда карте
+      tooltip_disabled: Легенда није доступна само за овај лејер
+    map:
+      base:
+        railway: Железница
+      zoom:
+        in: Увећај
+        out: Умањи
+  layouts:
+    intro_2_create_account: Отворите кориснички налог
+    intro_header: Добро дошли на OpenHistoricalMap!
+    intro_text: OpenHistoricalMap је мапа света коју су направили људи попут вас. Слободна је за коришћење под отвореном лиценцом.
+    logo:
+      alt_text: Логотип OpenHistoricalMap-а
+    logout: Одјава
+    partners_osmf: OpenStreetMap фондација
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: Слободна вики мапа света
+  preferences:
+    preferences:
+      navigation:
+        preferences: Подешавања
+  site:
+    about:
+      lede_text: OpenHistoricalMap је направила амбициозна заједница картографа и историчара који доприносе и одржавају податке о природној и људској географији света кроз време.
+      used_by_html: Истражите свет у било ком временском периоду помоћу %{name}.
+    about_section:
+      legal_1_aup: политике прихватљиве употребе
+      legal_1_html: |-
+        Овим сајтом и многим другим сродним сервисима управља
+        %{group_link}
+        а у име заједнице. Коришћење OSMF сервиса предмет је наших %{terms_of_use_link}, %{aup_link} и %{privacy_policy_link}.
+      legal_1_privacy_policy: политике приватности
+      legal_1_terms_of_use: услова коришћења
+      legal_3_html: |-
+        OpenHistoricalMap® је регистрована робна марка (U.S. Reg. No. 90,019,364).
+        OpenStreetMap и лупа логотип су %{osmf_trademarks_link}.
+      legal_3_osmf_trademarks_url: https://osmfoundation.org/wiki/Trademark_Policy
+      open_data_2_copyright_license: Ауторска права и лиценца
+      scope_title: Велики и мали, некад и сад
+    copyright:
+      legal_babble:
+        attribution_example:
+          alt: Пример како да наведете OHM на некој страници
+          title: Пример како да наведете OpenHistoricalMap на некој страници
+        contributors_footer_2_html: Укључивањем података у OpenHistoricalMap не значи да изворни власник података подржава OpenHistoricalMap, обезбеђује било какву гаранцију или прихвата одговорност за исте.
+        contributors_intro_html: |-
+          OpenHistoricalMap is the collaborative effort of thousands of individuals and organizations, who in turn draw from a large body of scholarship, journalism, and recordkeeping.
+          Our most substantial sources and contributors include:
+        credit_1_html: Although copyright law does not restrict or place any conditions on your use of public domain content, we greatly appreciate any credit you provide to OpenHistoricalMap when reusing, adapting, or otherwise using our maps or data.
+        credit_title_html: Како да наведете OpenHistoricalMap
+        infringement_1_html: OHM сарадници се подсећају да никад не додају податке из извора заштићених ауторским правима (нпр. Гугл мапе или штампане карте) без изричите дозволе носиоца ауторских права.
+        introduction_4_creative_commons: Creative Commons Ауторство-Делити под истим условима 2.0
+        introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/
+        more_title_html: Више о
+    export:
+      too_large:
+        overpass:
+          description: Преузмите овај оквир са пресликане копије базе OpenHistoricalMap-а
+        planet:
+          description: Редовно ажурирани примерци целе базе OpenHistoricalMap-а
+          title: Планета OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            Само кликни %{note_icon} или исту иконицу на приказу карте.
+            Овоће на карту додати ознаку, Коју можеш да помераш повлачењем. Додај своју поруку, сними, и остали картографи ће то истражити.
+        join_the_community:
+          explanation_html: Ако приметите проблем са подацима на нашој мапи (нпр. одсуство пута или адресе) најбољи начин је да се придружите OpenHistoricalMap заједници и сами додате или исправите податке.
+    help:
+      forum:
+        title: Форум
+      mailing_list:
+        title: Мејлинг листа
+      slack:
+        title: IRC
+      welcome:
+        description: Почни са овим брзим водичем који покрива основе OpenHistoricalMap
+        title: Добро дошли на OpenHistoricalMap
+      wiki:
+        description: Претражи вики за детаљнију OHM документаацију.
+        title: вики
+    index:
+      js_2: OpenHistoricalMap користи JavaScript за приказивање мапа.
+      remote_failed: Уређивање није успело. Проверите да ли је JOSM или Merkaartor учитан и да је могућност даљинског управљања омогућена
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap има своје жаргоне. Ево пар кључних речи које могу да буду корисне.
+      introduction: Добро дошли на OpenHistoricalMap, бесплатну изменљиву карту светске историје. Сада кад сте се пријавили, спремни сте да почнете са картографијом. Ево га брзи водич са најбитнијим стварима које је потребно знати.
+      rules:
+        para_1_html: OpenHistoricalMap има неколико формалних правила, али очекујемо од свих учесника да сарађују и комуницирају са заједницом. Ако разматрате било какве активности поред ручног уређивања, прочитајте и пратите смернице о %{imports_link} и %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: Оно што се %{doesnt} су пристрасне оцене, историјски или хипотетички подаци, и подаци заштићени ауторским правима. Ако немаш изричиту дозволу, не умножавај папирне и оне са интернета мапе.
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS трасе
+    show:
+      edit: уреди
+      edit_trace: Уреди овај траг
+      map: мапа
+    trace:
+      edit_map: Уреди мапу
+      view_map: Погледај карту
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} је коментарисао о чејнџсету за који сте заинтересовани"
+        subject_own: "[OpenHistoricalMap] %{commenter} је коментарисао о једном од Ваших чејнџсетова"
+    diary_comment_notification:
+      header: "%{from_user} је прокоментарисао OpenHistoricalMap дневнички запис под насловом %{subject}:"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Потврдите Вашу имејл адресу"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX увоз није успео"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX увоз је успео"
+    lost_password:
+      hopefully_you: Неко (вероватно ви) затражио је поништавање лозинке за имејл адресу овог openhistoricalmap.org налога.
+      subject: "[OpenHistoricalMap] Захтев за поништавање лозинке"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} је разрешио белешку за коју сте заинтересовани"
+        subject_own: "[OpenHistoricalMap] %{commenter} је разрешио једну од Ваших белешки"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} је коментарисао на белешци за коју сте заинтересовани"
+        subject_own: "[OpenHistoricalMap] %{commenter} је коментарисао на једној од Ваших белешки"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} је реактивирао белешку за коју сте заинтересовани"
+        subject_own: "[OpenHistoricalMap] %{commenter} је реактивирао једну од Ваших белешки"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Добро дошли на OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Ваш ID још увек није повезан са OpenHistoricalMap налогом.
+      option_1: Ако сте нови у OpenHistoricalMap, молимо да направите нови налог коришћењем доњег обрасца.
+    new:
+      about:
+        paragraph_1: За разлику од других мапа, OpenHistoricalMap-е употпуности праве људи као Ви. И слободна је за све да је поправљају, ажурирају, преузимају и користе.
+        paragraph_2: Региструјте се да почнете доприносити. Послаћемо Вам имејл за потврду налога.
+        welcome: Добро дошли на OpenHistoricalMap
+    show:
+      delete_user: Избриши корисника
+      hide_user: Сакриј корисника
+      unhide_user: Откриј корисника

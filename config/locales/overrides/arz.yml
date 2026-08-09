@@ -1,0 +1,30 @@
+# Messages for Egyptian Arabic (مصرى)
+# Exported from translatewiki.net
+# Author: Ajeje Brazorf
+# Author: Meno25
+# Author: علاء
+# Do not edit by hand.
+arz:
+  activerecord:
+    attributes:
+      client_application:
+        callback_url: رابط الرد
+        support_url: رابط الدعم
+  diary_entries:
+    profile_diaries:
+      date_label: التاريخ
+  layouts:
+    logout: خروج
+    tag_line: ويكى خريطه العالم الحرة
+  user_mailer:
+    email_confirm:
+      subject: "[OpenHistoricalMap] أكد عنوان البريد الإلكتروني الخاص بك"
+    lost_password:
+      subject: "[OpenHistoricalMap] طلب إعادة تعيين كلمة المرور"
+    message_notification:
+      header: "%{from_user} بعث لك رسالة من خلال OpenHistoricalMap مع الموضوع %{subject}:"
+  users:
+    show:
+      delete_user: احذف هذا المستخدم
+      hide_user: اخفِ هذا المستخدم
+      unhide_user: أظهر هذا المستخدم

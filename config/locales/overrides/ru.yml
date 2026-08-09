@@ -1,0 +1,340 @@
+# Messages for Russian (русский)
+# Exported from translatewiki.net
+# Author: 1233qwer1234qwer4
+# Author: AMDmi3
+# Author: AOleg
+# Author: AZISS
+# Author: Aideih
+# Author: Ajeje Brazorf
+# Author: Aleksandr Dezhin
+# Author: Alexander Istomin
+# Author: Alexey zakharenkov
+# Author: Amire80
+# Author: Andrewsh
+# Author: Ashed
+# Author: Banonotit
+# Author: BushmanK
+# Author: Butko
+# Author: CM3X
+# Author: Calibrator
+# Author: Chilin
+# Author: Cjaushe4ka
+# Author: D1g
+# Author: DCamer
+# Author: DDPAT
+# Author: Danieldegroot2
+# Author: Diralik
+# Author: Dirruw'o
+# Author: Dmitry-s93
+# Author: Dr&mx
+# Author: Edible Melon
+# Author: Eduard Popov
+# Author: Edward17
+# Author: Eleferen
+# Author: Elzav
+# Author: Engineer56
+# Author: Ergo
+# Author: Erictheise
+# Author: EugeneZelenko
+# Author: Express2000
+# Author: Ezhick
+# Author: Facenapalm
+# Author: Firapinch
+# Author: FobosD
+# Author: Fontan 030
+# Author: FreeExec
+# Author: G0rn
+# Author: Happy13241
+# Author: Helpau
+# Author: Ice bulldog
+# Author: Ignatus
+# Author: Iluvatar
+# Author: Infovarius
+# Author: Irus
+# Author: Kaganer
+# Author: Kareyac
+# Author: Katunchik
+# Author: Kirill-224
+# Author: Komzpa
+# Author: Link2xt
+# Author: Lockal
+# Author: Lutece398
+# Author: Macofe
+# Author: Mavl
+# Author: MaxSem
+# Author: McDutchie
+# Author: Mechano
+# Author: Meerrahtar
+# Author: Megakott
+# Author: Merrahtar
+# Author: Mike like0708
+# Author: Mike140
+# Author: Minh Nguyen
+# Author: Mixaill
+# Author: Movses
+# Author: MuratTheTurkish
+# Author: Nemo bis
+# Author: Nitch
+# Author: Nk88
+# Author: Nyuhn
+# Author: Nzeemin
+# Author: Okras
+# Author: Pacha Tchernof
+# Author: Parukhin
+# Author: Pavel200071
+# Author: Perevod16
+# Author: PlushBoy
+# Author: Pplex.vhs
+# Author: Putnik
+# Author: Pvwww
+# Author: Redredsonia
+# Author: Rich Flight22
+# Author: Riliam
+# Author: Rivka Silinsky
+# Author: Ruila
+# Author: S.kozyr
+# Author: Sanail
+# Author: Santacloud
+# Author: Shabe
+# Author: Sikmir
+# Author: Silovan
+# Author: Sobloku
+# Author: Solidest
+# Author: Spider
+# Author: Stjn
+# Author: Tanzun
+# Author: TarzanASG
+# Author: Thothsum
+# Author: Tourorist
+# Author: TrickyFoxy
+# Author: UniCollab
+# Author: Valencia212
+# Author: Vlad5250
+# Author: Vovenarg
+# Author: Wileyfoxyx
+# Author: WindEwriX
+# Author: Wirbel78
+# Author: XAN
+# Author: XnL
+# Author: Yuri Nazarov
+# Author: Yurik
+# Author: Yurina Tatiana
+# Author: Yuryleb
+# Author: Zverik
+# Author: Александр Сигачёв
+# Author: Владимир К
+# Author: Дмитрий
+# Author: Дмитрий Нестеров
+# Author: Сrower
+# Do not edit by hand.
+ru:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://openstreetmap.org/wiki/RU:Open_Database_License/Contributor_Terms?uselang=ru
+        link text: что это?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: читать частные GPS-треки
+        allow_read_prefs: читать пользовательские настройки
+        allow_write_api: редактировать карту
+        allow_write_diary: создавать записи в дневнике и комментарии
+        allow_write_gpx: загружать GPS-треки
+        allow_write_notes: исправлять заметки
+        allow_write_prefs: изменять пользовательские настройки
+        callback_url: Callback URL
+        name: Имя (Обязательно)
+        support_url: URL пользовательской поддержки
+        url: Url приложения (обязательно)
+  api:
+    notes:
+      rss:
+        title: Заметки OpenHistoricalMap
+  application:
+    setup_user_auth:
+      blocked_zero_hour: У вас есть срочное сообщение на сайте OpenHistoricalMap. Вам нужно прочитать сообщение, прежде чем вы сможете сохранить ваши изменения.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Обсуждение пакета правок OpenHistoricalMap
+        title_particular: 'Обсуждение пакета правок OpenHistoricalMap #%{changeset_id}'
+  date:
+    formats:
+      brief: "%{year}"
+      brief_bce: "%{year} до н. э."
+      brief_ce: "%{year} н. э."
+      heatmap: "%B %-d"
+      range: "%{start} – %{end}"
+  diary_entries:
+    comments:
+      title: Записи в дневнике OpenHistoricalMap
+    feed:
+      all:
+        description: Последние записи в дневнике от пользователей OpenHistoricalMap
+        title: Записи в дневнике OpenHistoricalMap
+      language:
+        description: Последние записи в дневнике от пользователей OpenHistoricalMap на %{language_name}
+        title: Записи в дневнике OpenHistoricalMap на %{language_name}
+      user:
+        description: Последние записи в дневнике OpenHistoricalMap от %{user}
+        title: Дневниковые записи OpenHistoricalMap пользователя %{user}
+    profile_diaries:
+      comments_label: Комментарии
+      date_label: Дата
+  errors:
+    bad_request:
+      description: Операция, которую вы запросили на сервере OpenHistoricalMap, некорректна (HTTP 400)
+    contact:
+      contact_the_community_html: Не стесняйтесь %{contact_link} к сообществу OpenHistoricalMap, если вы нашли неработающую ссылку/ошибку. Запишите точный URL вашего запроса.
+    forbidden:
+      description: Запрашиваемая вами операция на сервере OpenHistoricalMap доступна только администраторам (HTTP 403).
+    internal_server_error:
+      description: Сервер OpenHistoricalMap столкнулся с непредвиденной ситуацией, из-за которой он не смог выполнить запрос (HTTP 500).
+    not_found:
+      description: Не удалось найти файл/каталог/операцию API с таким именем на сервере OpenHistoricalMap (HTTP 404)
+  javascripts:
+    legend:
+      title: Легенда карты
+      tooltip: Условные знаки
+      tooltip_disabled: Условные знаки не доступны для этого слоя
+    map:
+      base:
+        railway: Железная дорога
+      zoom:
+        in: Приблизить
+        out: Отдалить
+  layouts:
+    intro_2_create_account: Создайте учётную запись
+    intro_header: Добро пожаловать на OpenHistoricalMap!
+    intro_text: OpenHistoricalMap является картой мира, созданной такими же людьми, как и вы, и может свободно использоваться под открытой лицензией.
+    logo:
+      alt_text: Логотип OpenHistoricalMap
+    logout: Выйти
+    tag_line: Свободная вики-карта мира
+  sessions:
+    destroy:
+      heading: Выйти из OpenHistoricalMap
+  site:
+    about:
+      lede_text: OpenHistoricalMap создан сообществом картографов, которые добавляют и поддерживают данные о дорогах, тропах, кафе, вокзалах и о многих других объектах по всему миру.
+    about_section:
+      contribute_1_user_diaries: дневники пользователей
+      legal_1_aup: Политики приемлемого использования
+      legal_1_html: |-
+        Этот сайт и многие другие связанные службы официально управляются
+        %{group_link}
+        от имени сообщества. Использование всех сервисов OSMF регулируется
+        нашими %{terms_of_use_link}, %{aup_link} и %{privacy_policy_link}.
+      legal_1_privacy_policy: Политикой конфиденциальности
+      legal_1_terms_of_use: Условиями использования
+      legal_2_html: |-
+        Пожалуйста, %{contact_team_link}
+        если у вас есть вопросы по лицензированию, авторскому праву или другие юридические вопросы.
+    communities:
+      lede_text: Люди со всего мира вносят свой вклад или используют OpenHistoricalMap. Несмотря на то, что многие участвуют поодиночке, другие сформировали сообщества. Эти группы бывают разных размеров и представляют географические регионы от небольших городов до крупных регионов с несколькими странами. Они также могут быть формальными или неформальными.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Включение данных в OpenHistoricalMap не означает, что поставщик первичных данных каким-либо образом поддерживает OpenHistoricalMap, предоставляет гарантии или принимает на себя какую-любую ответственность.
+        credit_1_html: 'Если вы используете данные OpenHistoricalMap, вы должны выполнить следующие два условия:'
+        credit_2_this_copyright_page: эту страницу об авторских правах
+        credit_title_html: Как сослаться на OpenHistoricalMap
+        infringement_1_html: Напоминаем участникам сообщества OHM, что добавление данных из любых защищённых авторским правом источников (например, с Google Maps или печатных карт) не должно проводиться без явного предварительного согласия правообладателей.
+        introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
+        more_2_1_api_usage_policy: Политика использования API
+        more_title_html: Узнайте больше
+    export:
+      too_large:
+        body: 'Эта область слишком велика для экспорта в качестве данных в формате OpenHistoricalMap XML. Пожалуйста, увеличьте масштаб, выберите меньшую область или используйте один из перечисленных ниже других источников:'
+        overpass:
+          description: Скачать ограниченную этим прямоугольником область с зеркала базы данных OpenHistoricalMap
+        planet:
+          description: Регулярно обновляемые копии полной базы данных OpenHistoricalMap
+          title: Планета OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            Просто нажмите %{note_icon} или на тот же значок на карте.
+            Это добавит на карту маркер, который можно передвигать перетаскиванием. Добавьте сообщение, а затем нажмите кнопку сохранения, и другие картографы увидят его.
+        join_the_community:
+          explanation_html: Если вы заметили проблему в данных нашей карты, например, отсутствие дороги или вашего адреса, лучший способ для дальнейших действий — вступить в сообщество OpenHistoricalMap и добавить или восстановить данные самостоятельно.
+    help:
+      forum:
+        title: Форум
+      introduction: На OpenHistoricalMap есть несколько ресурсов, где можно узнать о проекте, задать вопросы или ответить на них и совместно обсудить темы, касающиеся картографии.
+      mailing_list:
+        title: Список рассылки
+      slack:
+        title: IRC
+      welcome:
+        description: Начните с этого краткого руководства, охватывающего основы OpenHistoricalMap.
+        title: Добро пожаловать в OpenHistoricalMap
+      wiki:
+        description: Посмотреть вики с подробной документацией по OHM.
+        title: Вики
+    index:
+      js_2: OpenHistoricalMap использует JavaScript для отображения карт.
+      remote_failed: Редактирование не удалось. Убедитесь, что JOSM или Merkaartor запущен и опция дистанционного управления включена
+    potlatch:
+      removed: Ваш редактор OpenHistoricalMap по умолчанию - Potlach. Поскольку поддержка Adobe Flash Player была приостановлена, Potlatch больше не доступен для использования в веб-браузере.
+    welcome:
+      basic_terms:
+        paragraph_1: У OpenHistoricalMap выработался локальный сленг. Вот несколько понятий, которые стоит иметь в виду.
+      introduction: Добро пожаловать на OpenHistoricalMap, открытую и свободную карту мира. Теперь, когда регистрация завершена, можно начинать картографировать. Вот небольшая инструкция по самым важным вещам, которые необходимо знать.
+      rules:
+        para_1_html: |-
+          В OpenHistoricalMap несколько формальных правил, но мы ожидаем, что все участники будут сотрудничать
+          с сообществом и общаться с ним. Если вы планируете
+          какие-либо действия, кроме редактирования вручную, прочтите и следуйте инструкциям:
+          %{imports_link} и %{automated_edits_link}.
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS-треки
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} прокомментировал пакет правок, который вас интересует"
+        subject_own: "[OpenHistoricalMap] %{commenter} прокомментировал один из ваших пакетов правок"
+    diary_comment_notification:
+      header: "%{from_user} прокомментировал на OpenHistoricalMap с темой %{subject}:"
+      header_html: "%{from_user} прокомментировал на OpenHistoricalMap с темой %{subject}:"
+      subject: Пользователь [OpenHistoricalMap] %{user} оставил комментарий в дневнике
+    email_confirm:
+      subject: "[OpenHistoricalMap] Подтвердите ваш адрес электронной почты"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Сбой импорта GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Импорт GPX прошёл успешно"
+    lost_password:
+      hopefully_you: Кто-то (возможно, вы) запросил сброс пароля для учётной записи openhistoricalmap.org этого адреса электронной почты.
+      subject: "[OpenHistoricalMap] Запрос на смену пароля"
+    message_notification:
+      header: 'Пользователь OpenHistoricalMap %{from_user} отправил вам сообщение с темой %{subject}:'
+      header_html: 'Пользователь OpenHistoricalMap %{from_user} отправил вам сообщение с темой %{subject}:'
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} закрыл интересную вам заметку"
+        subject_own: "[OpenHistoricalMap] %{commenter} закрыл одну из ваших заметок"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} прокомментировал интересную вам заметку"
+        subject_own: "[OpenHistoricalMap] %{commenter} прокомментировал вашу заметку"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} открыл заново интересную вам заметку"
+        subject_own: "[OpenHistoricalMap] %{commenter} открыл заново вашу заметку"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Добро пожаловать в OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Ваш ID пока ещё не связан с учётной записью OpenHistoricalMap.
+      option_1: Если вы впервые на OpenHistoricalMap, пожалуйста, создайте новую учётную запись, используя форму ниже.
+    new:
+      about:
+        paragraph_1: В отличие от других карт, OpenHistoricalMap полностью создана такими же людьми, как и вы, и каждый может бесплатно исправлять, обновлять, загружать и использовать ее.
+        welcome: Добро пожаловать в OpenHistoricalMap
+    show:
+      delete_user: Удалить этого пользователя
+      hide_user: Скрыть этого пользователя
+      unhide_user: Отобразить этого пользователя

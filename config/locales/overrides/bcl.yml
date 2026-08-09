@@ -1,0 +1,194 @@
+# Messages for Central Bikol (Bikol Central)
+# Exported from translatewiki.net
+# Author: Kunokuno
+# Author: Marwin H.H.
+# Author: ShiminUfesoj
+# Do not edit by hand.
+bcl:
+  accounts:
+    deletions:
+      show:
+        delete_introduction: 'Puwede mong puraon an saimong account sa OpenHistoricalMap gamit an buton sa ibaba. Tandaan tabi an minasunod na mga detalye:'
+        retain_caveats: 'Alagad, an nagkapirang impormasyon manungod saimo itatago sa OpenHistoricalMap, dawa pa napara na an saimong account:'
+  api:
+    notes:
+      rss:
+        title: Mga tala sa OpenHistoricalMap
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Igwa ka nin apuradong mensahe sa websityo kan OpenHistoricalMap. Kaipuhan mong basahon an mensahe bago mo maitagama an saimong mga pagliwat.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Pag-urolay kan mga pagbabago sa OpenHistoricalMap
+        title_particular: 'Pag-urolay kan mga pagbabago #%{changeset_id} sa OpenHistoricalMap'
+  diary_entries:
+    feed:
+      all:
+        description: Mga pinakabagong entrada sa talaaldawan gikan sa mga paragamit kan OpenHistoricalMap
+        title: Mga entrada sa talaaldawan kan OpenHistoricalMap
+      language:
+        description: Mga pinakabagong entrada sa talaaldawan gikan sa mga paragamit kan OpenHistoricalMap sa %{language_name}
+        title: Mga entrada sa talaaldawan kan OpenHistoricalMap sa %{language_name}
+      user:
+        description: Mga pinakabagong entrada sa talaaldawan kan OpenHistoricalMap gikan ki %{user}
+        title: Mga entrada sa talaaldawan kan OpenHistoricalMap para ki %{user}
+  errors:
+    bad_request:
+      description: An operasyon na saimong hinagad sa serbidor kan OpenHistoricalMap bakong balido (HTTP 400)
+    contact:
+      contact_the_community_html: Dai mag-alangan na mag-%{contact_link} sa komunidad kan OpenHistoricalMap kun ika nakanompong nin sarong putol na takod / bug. Isurat an eksaktong URL kan saimong kahagadan.
+    forbidden:
+      description: An operasyon na saimong hinagad sa serbidor nin OpenHistoricalMap makukua sana kan mga administrador (HTTP 403)
+    internal_server_error:
+      description: An serbidor nin OpenHistoricalMap nakaeksperyensya nin sarong dai linalaoman na kondisyon na nakaulang kaini sa pag-otob kan kahagadan (HTTP 500)
+    not_found:
+      description: Dai nakahanap nin operasyon nin file/direktoryo/API na may pangaran na iyan sa serbidor nin OpenHistoricalMap (HTTP 404)
+  export:
+    show:
+      title: Naka-embed na OpenHistoricalMap
+  layouts:
+    intro_header: Maugmang pag-abot sa OpenHistoricalMap!
+    intro_text: An OpenHistoricalMap sarong mapa kan kinaban, na ginibo kan mga tawong arog mo asin libreng gamiton sa irarom nin sarong bukas na lisensya.
+    logo:
+      alt_text: Logo kan OpenHistoricalMap
+    meta:
+      openstreetmap_search: Paghanap sa OpenHistoricalMap
+    offline_flash:
+      osm_offline: An database kan OpenHistoricalMap presenteng offline mantang an mga mahalagang trabaho sa pagmantenir ginigibo.
+      osm_read_only: An database kan OpenHistoricalMap yaon sa moda nin pagbasa nguna sana mantang ginigibo an mga mahalagang trabaho sa pagmantenir.
+    partners_devseed: Development Seed
+    partners_greeninfo: GreenInfo Network
+    partners_osmf: OpenStreetMap Foundation
+    partners_osmus: OpenStreetMap U.S.
+  notes:
+    new_readonly:
+      warning: Dai pwedeng maggibo nin mga bagong tala huli ta an API kan OpenHistoricalMap yaon sa modo nin pagbasa sana.
+  oauth:
+    scopes:
+      openid: Mag-ayon gamit an OpenHistoricalMap
+  sessions:
+    destroy:
+      heading: Magluwas sa OpenHistoricalMap
+    new:
+      login_to_authorize_html: Maglaog sa OpenHistoricalMap tanganing makaakses kan %{client_app_name}.
+  site:
+    about:
+      lede_text: |-
+        An OpenHistoricalMap pigtogdok kan sarong komunidad nin mga paramapa na nag-aarambag asin nagmamantenir nin datos
+        manungod sa mga tinampo, agihan, kapehan, istasyon nin tren, asin kadakol pang iba, sa bilog na kinaban.
+    communities:
+      lede_text: |-
+        An mga tawo hali sa bilog na kinaban nag-aambag o naggagamit kan OpenHistoricalMap.
+        Mantang an dakol nakikikabtang bilang mga indibiduwal, an iba nagbilog nin mga komunidad.
+        An mga grupong ini igwa nin manlain-lain na kadakulaan asin nagrerepresentar nin mga heograpiya poon sa saradit na banwaan sagkod sa darakulang rona na may manlain-lain na nasyon.
+        Pwede man sindang magin pormal o impormal.
+    copyright:
+      legal_babble:
+        attribution_example:
+          alt: Halimbawa kun pano iaatribwir an OHM sa sarong pahina nin web
+        contributors_footer_2_html: |-
+          An paglaog kan datos sa OpenHistoricalMap dai nangangahulugan na an orihinal
+          an paratao nin datos nag-eendorso sa OpenHistoricalMap, nagtatao nin anuman na garantiya, o
+          inaako an anuman na paninimbagan.
+        credit_1_html: 'Kun sain ka naggagamit nin datos kan OpenHistoricalMap, kaipuhan mong gibohon an minasunod na duwang bagay:'
+        credit_title_html: Pano ikredito an OpenHistoricalMap
+        infringement_1_html: |-
+          An mga nag-aambag sa OHM pinapagirumdom na dai nanggad magdugang nin datos gikan sa arin man
+          mga pinagkukuanan na may deretso sa pagkopya (halimbawa, Google Maps o mga nakaimprentang mapa) na mayong
+          malinaw na pagtugot gikan sa mga kagsadiri nin deretso sa pagkopya.
+    export:
+      too_large:
+        body: An lugar na ini dakulaon na gayo tanganing ipaluwas bilang OpenHistoricalMap XML Data. Mag-zoom in o magpili nin mas sadit na lugar, o gamiton an saro sa mga pinagkukuanan na nakalista sa ibaba para sa mga pag-download nin bulto nin datos.
+        overpass:
+          description: I-download an kahon na nagbubugkos na ini gikan sa sarong salming kan database kan OpenHistoricalMap
+        planet:
+          description: Mga regular na pig-a-update na mga kopya kan kumpletong database kan OpenHistoricalMap
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        join_the_community:
+          explanation_html: |-
+            Kun may nariparo kang problema sa datos kan samong mapa, halimbawa may nawawarang tinampo o an saimong address, an pinakamarahay na paagi tanganing
+            an pagpadagos iyo an mag-ayon sa komunidad kan OpenHistoricalMap asin magdugang o maghirahay kan datos sa sadiri mo.
+    help:
+      introduction: |-
+        An OpenHistoricalMap igwa nin nagkapirang rekurso para sa pag-adal manungod sa proyekto, paghapot asin pagsimbag nin mga kahaputan,
+        asin magkasararong pag-orolay asin pagdokumento kan mga topiko sa pagmapa.
+      welcome:
+        description: Magpoon sa marikas na giya na ini na nagtatakop kan mga pundamental na OpenHistoricalMap.
+        title: Maugmang pag-abot sa OpenHistoricalMap
+      welcomemat:
+        description: Sa sarong organisasyon na naggigibo nin mga plano para sa OpenHistoricalMap? Hanapon an kaipuhan mong maaraman sa Welcome Mat.
+      wiki:
+        description: Mag-browse sa wiki para sa detalyadong dokumentasyon kan OHM.
+    index:
+      js_2: An OpenHistoricalMap naggagamit nin JavaScript para sa saiyang mahalnas na mapa.
+      license:
+        copyright: Copyright OpenHistoricalMap asin mga nag-ambag, sa irarom nin sarong bukas na lisensya
+    potlatch:
+      removed: An saimong default na editor kan OpenHistoricalMap nakabugtak bilang Potlatch. Nin huli ta an Adobe Flash Player hinale na, an Potlatch dai na magagamit sa sarong web browser.
+    welcome:
+      basic_terms:
+        paragraph_1: An OpenHistoricalMap igwa nin sadiring tataramon. Uya an nagkapirang panginot na taga na magigin kapaki-pakinabang.
+      introduction: |-
+        Maogmang pag-abot sa OpenHistoricalMap, an libre asin pwedeng liwaton na mapa kan kinaban. Ngunyan na nakapag-sign up ka na, andam ka nang magpoon sa pagmapa. Uya an sarong marikas na giya sa pinaka-importante
+        mga bagay na kaipuhan mong maaraman.
+      rules:
+        para_1_html: |-
+          An OpenHistoricalMap igwa nin dikit na pormal na mga regulasyon alagad naglalaom kami na an gabos na partisipante makikipagtabangan
+          sa, asin makipag-ulay sa, komunidad. Kun ika nag-iisip
+          ano man na aktibidad apwera sa pagliwat gamit an kamot, pakibasa asin sunudon an mga giya sa
+          %{imports_link} asin %{automated_edits_link}.
+  traces:
+    feeds:
+      show:
+        title: Mga Bakas nin GPS kan OpenHistoricalMap
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: Si [OpenHistoricalMap] %{commenter} nagkomento sa sarong changeset na saimong interesado
+        subject_own: Si [OpenHistoricalMap] %{commenter} nagkomento sa saro sa saimong mga changeset
+      description: 'OpenHistoricalMap Changeset #%{id}'
+    diary_comment_notification:
+      description: 'Entrada nin Talaaldawan kan OpenHistoricalMap #%{id}'
+      header: 'Si %{from_user} nagkomento sa entrada nin Talaaldawan kan OpenHistoricalMap na may subheto na %{subject}:'
+      header_html: 'Si %{from_user} nagkomento sa entrada nin Talaaldawan kan OpenHistoricalMap na may subheto na %{subject}:'
+      subject: Si [OpenHistoricalMap] %{user} nagkomento sa sarong entrada sa talaaldawan
+    email_confirm:
+      subject: "[OpenHistoricalMap] Kumpirmaron an saimong email address"
+    follow_notification:
+      followed_you: Sinusundan ka na ngunyan ni %{user} sa OpenHistoricalMap.
+      subject: Sinundan ka ni [OpenHistoricalMap] %{user}
+    lost_password:
+      hopefully_you: May sarong tawo (posibleng ika) na naghagad na i-reset an sekretong panlaog sa account na ini kan openhistoricalmap.org.
+      subject: "[OpenHistoricalMap] Kahagadan sa pag-reset kan sekretong panlaog"
+    message_notification:
+      header: 'Si %{from_user} nagpadara saimo nin mensahe sa paagi kan OpenHistoricalMap na may subheto na %{subject}:'
+      header_html: 'Si %{from_user} nagpadara saimo nin mensahe sa paagi kan OpenHistoricalMap na may subheto na %{subject}:'
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: Naresulbaran ni [OpenHistoricalMap] %{commenter} an saro sa mga tala na kun sain interesado ka
+        subject_own: Naresulbaran ni [OpenHistoricalMap] %{commenter} an saro sa saimong mga tala
+      commented:
+        subject_other: Si [OpenHistoricalMap] %{commenter} nagkomento sa sarong tala na saimong interesado
+        subject_own: Si [OpenHistoricalMap] %{commenter} nagkomento sa saro sa saimong mga tala
+      description: 'Tala sa OpenHistoricalMap #%{id}'
+      reopened:
+        subject_other: Si [OpenHistoricalMap] %{commenter} nag-aktibo giraray kan mga tala na kun sain interesado ka
+        subject_own: Si [OpenHistoricalMap] %{commenter} nag-aktibo giraray kan saro sa saimong mga tala
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Maugmang Pag-abot sa OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: An saimong ID dai pa naka-asosyar sa sarong OpenHistoricalMap account.
+      option_1: |-
+        Kun ika bago sa OpenHistoricalMap, maggibo nin bagong account
+        gamit an porma sa ibaba.
+    new:
+      about:
+        paragraph_1: Bakong arog kan ibang mga mapa, an OpenHistoricalMap biyong ginibo kan mga tawong arog mo, asin libre ini para sa siisay man na ayuson, i-update, i-download asin gamiton.
+        welcome: Maugmang pag-abot sa OpenHistoricalMap
+      duplicate_social_email: Kun igwa ka nang OpenHistoricalMap account asin boot mong gumamit nin Tagatao kan indentidad nin ikatolong partido, maglaog gamit an saimong pasa-taramon asin baguhon an mga panuytoy kan saimong account.
+      signup_to_authorize_html: Mag-ayon sa OpenHistoricalMap tanganing maakses an %{client_app_name}.

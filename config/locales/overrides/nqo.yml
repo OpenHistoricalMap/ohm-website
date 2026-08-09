@@ -1,0 +1,77 @@
+# Messages for N’Ko (ߒߞߏ)
+# Exported from translatewiki.net
+# Author: Aboubacar.banamoridou.toure
+# Author: Ajeje Brazorf
+# Author: Erictheise
+# Author: Lancine.kounfantoh.fofana
+# Author: Minh Nguyen
+# Author: Youssoufkadialy
+# Author: ߛߊ߲߬ߛߊ߲߬ߘߐ߬ ߊߡߙߊ߫
+# Do not edit by hand.
+nqo:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: ߡߎ߲߬ ߦߋ߫ ߣߌ߲߬ ߘߌ߫؟
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: ߊ߬ߟߎ߫ ߘߎ߲߬ߘߎ߬ߡߊ߬ GPS ߝߏ߲߬ߝߏ߲ ߠߎ߬ ߘߐߞߊ߬ߙߊ߲߬
+        allow_read_prefs: ߊ߬ߟߎ߫ ߟߊ߬ߓߊ߰ߙߊ߬ߟߌ ߦߟߌߡߊߛߙߋ ߘߐߞߊ߬ߙߊ߲߬
+        allow_write_api: ߔߊ߬ߔߘߊ ߡߊߦߟߍ߬ߡߊ߲߫
+        allow_write_diary: ߕߋ߬ߟߋ߲ ߟߊ߬ߘߏ߲߬ߠߌ߲ ߛߌ߲ߘߌ߫߸ ߡߙߌߣߊ߲ ߊ߬ ߣߌ߫ ߞߊ߬ ߕߋߙߌ ߟߎ߬ ߟߊߘߊ߲߫
+        allow_write_gpx: GPS ߝߏ߲߬ߝߏ߲ ߠߎ߬ ߟߊߦߟߍ߬
+        allow_write_notes: ߦߙߌߡߊߛߙߋ ߟߎ߬ ߡߊߦߟߍ߬ߡߊ߲
+        allow_write_prefs: ߊ߬ߟߎ߫ ߟߊ߬ߓߊ߰ߙߊ߬ߟߌ ߦߟߌߡߊߛߙߋ ߡߊߦߟߍ߬ߡߊ߲߫
+        callback_url: ߛߊ߲߬ߓߊ߬ߕߐ߮ URL ߞߟߌߟߌ ߡߊߛߊ߬ߦߌ
+        name: ߕߐ߮ (ߢߌ߬ߣߌ߲߬ߞߊ߬ߣߍ߲)
+        support_url: URL ߞߐߞߘߐߓߌ߲ߓߌ߲
+        url: ߟߥߊߟߌߟߊ߲ ߛߊ߲߬ߓߊ߬ߕߐ߮ ߕߊ߲ߓߊ߲ URL (ߘߌߦߊߜߏߦߊ)
+  diary_entries:
+    comments:
+      title: ߔߊ߬ߔߘߊ ߘߐ߬ߝߐ ߘߊߦߟߍ߬ߟߌ ߘߐ߬ߛߙߋ ߟߊߘߏ߲߬ߠߌ߲ ߠߎ߬
+    profile_diaries:
+      date_label: ߕߎ߬ߡߊ߬ߘߊ
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          track: ߓߏ߬ߙߟߌ߬ \ ߜߛߊ߬ߞߍ߬ ߞߣߍ
+        shop:
+          seafood: ߞߐ߰ߖߌ߬ ߘߐ߫ ߦߙߌߘߋ߲
+  javascripts:
+    legend:
+      title: ߝߍ߬ߛߓߍߟߌ
+      tooltip: ߝߍ߬ߛߓߍߟߌ
+    map:
+      base:
+        historical: ߘߝߐ߬ߡߊ
+        japanesescroll: ߗ߭ߊߔߐ߲ߞߊ ߟߎ߬ ߟߊ߫ ߡߌߣߌ߲
+        woodblock: ߦߙߌ߫ ߞߎߘߎ߲
+      zoom:
+        in: ߞߵߊ߬ ߡߊߛߊ߬ߡߊ߲߫
+        out: ߊ߬ ߡߊߓߐ߫
+  layouts:
+    intro_2_create_account: ߖߊ߬ߕߋ߬ߘߊ ߘߏ߫ ߘߊߦߟߍ߬
+    logout: ߌ ߜߊ߲߬ߞߎ߲߬ߣߍ߲ ߓߐ߫
+    tag_line: ߥߞߌ ߛߙߊ߬ߓߊߟߌ ߘߎߢߊ߫ ߔߊ߬ߔߘߊ
+  site:
+    copyright:
+      legal_babble:
+        more_title_html: ߛߌߦߊߡߊ߲߫ ߜߘߍ߫ ߟߎ߫ ߢߌߣߌ߲ ߦߴߌ ߘߐ߫
+    export:
+      too_large:
+        planet:
+          title: ߖߊ߯ߓߊߟߌ OHM
+    help:
+      wiki:
+        title: ߥߞߌ
+  user_mailer:
+    lost_password:
+      hopefully_you: ߡߐ߱ ߘߏ߫ (ߊ߬ ߘߌ߫ ߛߋ߫ ߞߍ߫ ߟߴߌ ߖߍ߬ߘߍ ߘߌ߫) ߓߘߊ߫ ߢߌ߬ߣߌ߲߬ߞߊ߬ߟߌ ߞߍ߫ ߕߊ߬ߡߌ߲߬ߞߊ߲߬ ߡߊߦߟߍߡߊ߲ ߡߊ߬ ߢ:ߞߏ߲ߘߏ ߛߊ߲߬ߓߊ߬ߕߐ߮ ߟߊ߫ openhistoricalmap.org ߖߊ߬ߕߋ߬ߘߊ ߣߌ߲߬ ߞߊ߲߬.
+  users:
+    show:
+      delete_user: ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߣߌ߲߬ ߖߏ߰ߛߌ߫
+      hide_user: ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߣߌ߲߬ ߥߣߊ߬ߙߌ߫
+      unhide_user: ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߣߌ߲߬ ߥߣߊ߬ߙߌ߬ߣߍ߲ ߓߐ߫

@@ -1,0 +1,181 @@
+# Messages for Thai (ไทย)
+# Exported from translatewiki.net
+# Author: Aefgh39622
+# Author: Ariesanywhere
+# Author: B20180
+# Author: Bebiezaza
+# Author: Ekminarin
+# Author: Erictheise
+# Author: Just Sayori
+# Author: Karit
+# Author: Korrawit
+# Author: Kri ttt
+# Author: Minh Nguyen
+# Author: Patsagorn Y.
+# Author: Pon44695
+# Author: Ppnplus
+# Author: Ruila
+# Author: TMo3289
+# Author: Trisorn Triboon
+# Author: Xwindows
+# Author: กิ๊ฟ เลิกล่ะ สายแข็ง
+# Do not edit by hand.
+th:
+  accounts:
+    show:
+      contributor_terms:
+        link text: นี่คืออะไร?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: อ่านรอยทาง GPS ส่วนบุคคล
+        allow_read_prefs: อ่านการตั้งค่าของผู้ใช้
+        allow_write_api: แก้ไขแผนที่
+        allow_write_diary: สร้างรายการบันทึก ข้อคิดเห็น และพบเพื่อนใหม่
+        allow_write_gpx: อัปโหลดรอยทาง GPS
+        allow_write_notes: แก้ไขโน้ต
+        allow_write_prefs: แก้ไขการตั้งค่าของผู้ใช้
+        callback_url: ที่อยู่ URL เรียกกลับ
+        name: ชื่อ (ต้องมี)
+        support_url: ที่อยู่ URL สนับสนุน
+        url: ที่อยู่ URL แอปพลิเคชันหลัก (ต้องมี)
+  api:
+    notes:
+      rss:
+        title: โน้ต OpenHistoricalMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: การอภิปรายชุดการเปลี่ยนแปลงของ OpenHistoricalMap
+        title_particular: 'การอภิปรายชุดการเปลี่ยนแปลง OpenHistoricalMap #%{changeset_id}'
+  diary_entries:
+    feed:
+      all:
+        description: รายการบันทึกล่าสุดจากผู้ใช้ OpenHistoricalMap
+        title: รายการบันทึก OpenHistoricalMap
+      language:
+        description: รายการบันทึกล่าสุดจากผู้ใช้ OpenHistoricalMap ในภาษา%{language_name}
+        title: รายการบันทึก OpenHistoricalMap ในภาษา%{language_name}
+      user:
+        description: รายการบันทึกล่าสุด OpenHistoricalMap จาก %{user}
+        title: รายการบันทึก OpenHistoricalMap สำหรับ %{user}
+    profile_diaries:
+      date_label: วันที่
+  errors:
+    bad_request:
+      description: การดำเนินการที่คุณร้องขอบนเซิร์ฟเวอร์ OpenHistoricalMap ไม่ถูกต้อง (HTTP 400)
+    contact:
+      contact_the_community_html: อย่าลังเลที่จะ%{contact_link}ชุมชน OpenHistoricalMap หากคุณพบลิงก์ที่เสียหาย หรือข้อบกพร่อง จดโน้ตไปยัง URL ที่แน่นอนของคำขอของคุณ
+    forbidden:
+      description: การดำเนินการที่คุณร้องขอบนเซิร์ฟเวอร์ OpenHistoricalMap นั้นใช้ได้เฉพาะผู้ดูแลระบบเท่านั้น (HTTP 403)
+    internal_server_error:
+      description: เซิร์ฟเวอร์ OpenHistoricalMap พบเงื่อนไขที่ไม่คาดคิดซึ่งทำให้ไม่สามารถดำเนินการตามคำขอได้ (HTTP 500)
+    not_found:
+      description: ไม่พบการดำเนินการของไฟล์/ไดเรกทอรี/API ตามชื่อนั้นบนเซิร์ฟเวอร์ OpenHistoricalMap (HTTP 404)
+  javascripts:
+    map:
+      base:
+        railway: ทางรถไฟ
+      zoom:
+        in: ซูมเข้า
+        out: ซูมออก
+  layouts:
+    intro_2_create_account: สร้างบัญชีผู้ใช้ใหม่
+    intro_header: ยินดีต้อนรับสู่ OpenHistoricalMap!
+    intro_text: OpenHistoricalMap เป็นแผนที่โลกที่สร้างโดยผู้คนเช่นท่าน และใช้งานได้ไม่เสียค่าใช้จ่ายภายใต้สัญญาอนุญาตแบบเปิด
+    logo:
+      alt_text: ตราสัญลักษณ์ OpenHistoricalMap
+    logout: ออกจากระบบ
+    tag_line: แผนที่โลกวิกิ ใช้งานได้ไม่เสียค่าใช้จ่าย
+  sessions:
+    destroy:
+      heading: ออกจากระบบ OpenHistoricalMap
+  site:
+    about:
+      lede_text: OpenHistoricalMap เป็นโครงการซึ่งสร้างสรรค์ขึ้นจากชุมชนของผู้ใช้และผู้สนใจ ที่ได้ทำการสำรวจ ปรับปรุง แบ่งปันข้อมูลแผนที่ถนน ทางหลวง ทางเดินป่า, ร้านกาแฟ, สถานีรถไฟ, และอื่นๆ อีกมากมายจากทั่วทุกมุมโลก
+      used_by_html: "%{name} ให้ข้อมูลแผนที่แก่เว็บไซต์ แอปพลิเคชั่นมือถือ และอุปกรณ์นับพัน"
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: การรวมข้อมูลใน OpenHistoricalMap ไม่ได้หมายความว่าผู้ให้บริการข้อมูลดั้งเดิม จะรับรอง OpenHistoricalMap รับประกัน หรือรับผิดชอบใด ๆ
+        contributors_intro_html: |-
+          ผู้มีส่วนร่วมของเราคือบุคคลนับพัน เรายังมีข้อมูลที่ใช้สัญญาอนุญาตแบบเปิดเผย
+          จากตัวแทนการทำแผนที่ของชาติต่าง ๆ และแหล่งข้อมูลอื่น ๆ ต่อไปนี้:
+        contributors_title_html: ผู้ร่วมสร้างสรรค์ของเรา
+        credit_1_html: |-
+          เราจำเป็นต้องให้ท่านแสดงที่มาหรือคำขอบคุณแก่ &ldquo;&copy; ผู้ร่วมสร้างสรรค์ OpenHistoricalMap
+          &rdquo;.
+        credit_title_html: วิธีการแสดงที่มาหรือคำขอบคุณ OpenHistoricalMap
+        infringement_1_html: |-
+          ผู้มีส่วนร่วม OHM จะถูกเตือนไม่ให้เพิ่มข้อมูลจากแหล่งข้อมูลที่มีลิขสิทธิ์
+          (เช่น Google Maps หรือแผนที่แบบพิมพ์) โดยไม่ได้รับอนุญาตอย่าง
+          ชัดเจนจากเจ้าของลิขสิทธิ์
+        more_title_html: ค้นหาเพิ่มเติม
+    export:
+      too_large:
+        body: พื้นที่ใหญ่เกินกว่าที่จะส่งออกเป็นข้อมูล XML ของ OpenHistoricalMap โปรดขยายเข้าหรือเลือกพื้นที่ที่เล็กลง หรืออาจจะใช้แหล่งข้อมูลข้างล่างในการดาวน์โหลดแฟ้มข้อมูลจำนวนมาก
+        overpass:
+          description: ดาวน์โหลดกล่องแบบมีขอบเขตจากมิเรอร์ของฐานข้อมูล OpenHistoricalMap
+        planet:
+          description: สำเนาของฐานข้อมูล OpenHistoricalMap ซึ่งปรับปรุงอย่างสม่ำเสมอ
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        join_the_community:
+          explanation_html: หากท่านประสบปัญหาเกี่ยวกับข้อมูลแผนที่ของเรา หรือพบข้อผิดพลาด เช่น ถนนหายไป หรือมีข้อผิดพลาดด้านที่อยู่ วิธีที่ดีที่สุดคือสมัครเป็นสมาชิก OpenHistoricalMap เพื่อดำเนินการแก้ไขด้วยตัวท่านเอง
+    help:
+      slack:
+        title: ไออาร์ซี
+      welcome:
+        title: ยินดีต้อนรับสู่ OpenHistoricalMap
+    index:
+      js_2: OpenHistoricalMap ใช้จาวาสคริปต์ในการแสดงแผนที่
+      remote_failed: การแก้ไขล้มเหลว - ตรวจสอบให้แน่ใจว่าได้โหลด JOSM หรือ Merkaartor และได้เปิดใช้งานตัวเลือกการควบคุมระยะไกลแล้ว
+    welcome:
+      basic_terms:
+        paragraph_1: 'เมื่อคุณเข้ามาทำแผนที่ใน OpenHistoricalMap, คุณจะพบกับศัพท์เฉพาะหลายคำ ซึ่งความหมายจะอธิบายไว้เบื้องต้นที่ด้านล่างนี้:'
+      introduction: 'ยินดิต้อนรับสู่ OpenHistoricalMap, แผนที่โลกแบบเสรีที่ทุกคนสามารถแก้ไขได้ ซึ่งตอนนี้คุณได้ลงทะเบียนมาแล้ว ก่อนจะไปลุยกัน ด้านล่างมีสิ่งสำคัญที่คุณควรจะรู้ไว้ตลอดการทำแผนที่ของคุณ:'
+      whats_on_the_map:
+        off_the_map_html: แต่ที่นี่จะ%{doesnt}ข้อมูลที่มาจากข้อคิดเห็น เช่นคะแนนเรตติ้ง สถานที่ที่เคยมีอยู่แต่ในอดีต (ปัจจุบันไม่มีแล้ว) รวมทั้งสถานที่ที่คาดว่าจะมีในอนาคต, และจะไม่รับข้อมูลจากแหล่งที่มีลิขสิทธิ์อื่นๆ, ฉะนั้นอย่าได้คัดลอกข้อมูลจากแผนที่ออนไลน์หรือแผนที่กระดาษมาใส่ (เว้นแต่คุณได้รับอนุญาตจากเจ้าของลิขสิทธิ์แล้ว)
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] ผู้ใช้ %{commenter} ได้แสดงความคิดเห็นต่อชุดการเปลี่ยนแปลงที่ท่านสนใจ"
+        subject_own: "[OpenHistoricalMap] ผู้ใช้ %{commenter} ได้แสดงความคิดเห็นต่อชุดการเปลี่ยนแปลงของท่าน"
+    diary_comment_notification:
+      description: 'รายการบันทึก OpenHistoricalMap #%{id}'
+      header: 'ผู้ใช้ %{from_user} ได้แสดงความคิดเห็นต่อบันทึก OpenHistoricalMap หัวเรื่อง %{subject}:'
+      header_html: 'ผู้ใช้ %{from_user} ได้แสดงความคิดเห็นต่อบันทึก OpenHistoricalMap หัวเรื่อง %{subject}:'
+      subject: "[OpenHistoricalMap] ผู้ใช้ %{user} แสดงความคิดเห็นต่อรายการบันทึก"
+    email_confirm:
+      subject: "[OpenHistoricalMap] ยืนยันที่อยู่อีเมลของท่าน"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] การนำเข้า GPX ล้มเหลว"
+    gpx_success:
+      subject: "[OpenHistoricalMap] การนำเข้า GPX เรียบร้อย"
+    lost_password:
+      hopefully_you: มีบางคน (ซึ่งอาจเป็นท่าน) ขอเปลี่ยนรหัสผ่านซึ่งกำกับบัญชีผู้ใช้ openhistoricalmap.org
+      subject: "[OpenHistoricalMap] คำขอเปลี่ยนรหัสผ่านใหม่"
+    message_notification:
+      header: 'ผู้ใช้ %{from_user} ส่งข้อความหาท่านผ่านทาง OpenHistoricalMap โดยมีหัวเรื่อง %{subject}:'
+      header_html: 'ผู้ใช้ %{from_user} ส่งข้อความหาท่านผ่านทาง OpenHistoricalMap โดยมีหัวเรื่อง %{subject}:'
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] ผู้ใช้ %{commenter} ได้ทำการตอบสนองหมายเหตุที่ท่านสนใจ"
+        subject_own: "[OpenHistoricalMap] ผู้ใช้ %{commenter} ได้แก้ไขหรือสนองตอบต่อบันทึกของท่านหนึ่งฉบับแล้ว"
+      commented:
+        subject_other: "[OpenHistoricalMap] ผู้ใช้ %{commenter} แสดงความคิดเห็นต่อบันทึกที่ท่านสนใจ"
+        subject_own: "[OpenHistoricalMap] ผู้ใช้ %{commenter} แสดงความคิดเห็นต่อหมายเหตุของท่าน"
+      reopened:
+        subject_other: "[OpenHistoricalMap] ผู้ใช้ %{commenter} ได้ขอรื้อฟื้นหรือเปิดใช้งานบันทึกที่ท่านสนใจ"
+        subject_own: "[OpenHistoricalMap] ผู้ใช้ %{commenter} ได้ขอรื้อฟื้นหรือเปิดใช้งานบันทึกของท่าน"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] ยินดีต้อนรับสู่ OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: บัญชีภายนอกของท่านยังมิได้ต่อเชื่อมกับบัญชี OpenHistoricalMap
+      option_1: ถ้าท่านเป็นผู้ใช้ OpenHistoricalMap ใหม่ โปรดใช้แบบฟอร์มข้างล่างสร้างบัญชีผู้ใช้
+    show:
+      delete_user: ลบผู้ใช้นี้
+      hide_user: ซ่อนผู้ใช้นี้
+      unhide_user: เลิกซ่อนผู้ใช้นี้

@@ -1,0 +1,64 @@
+# Messages for Tornedalen Finnish (meänkieli)
+# Exported from translatewiki.net
+# Author: Danieldegroot2
+# Author: Erictheise
+# Author: Minh Nguyen
+# Author: Pyscowicz
+# Do not edit by hand.
+fit:
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMapin karttailmoitukset
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Keskustelu OpenHistoricalMapin muutoskokoelmasta
+        title_particular: 'OpenHistoricalMap muutoskokoelma #%{changeset_id} keskustelu'
+  diary_entries:
+    feed:
+      all:
+        description: Verekset OpenHistoricalMapin käyttäjitten päiväkirjamerkinnät
+        title: OpenHistoricalMap-päiväkirjamerkinnät
+      language:
+        description: Viimisimmät päiväkirjamerkinnät OpenHistoricalMapin käyttäjiltä kielellä %{language_name}
+        title: OpenHistoricalMap-päiväkirjamerkinnät kielellä %{language_name}
+      user:
+        description: Tuoreimmat OpenHistoricalMapin päiväkirjamerkinnät käyttäjältä %{user}
+        title: Käyttäjän %{user} OpenHistoricalMap-päiväkirjamerkinnät
+    profile_diaries:
+      date_label: Taatumi
+  layouts:
+    intro_2_create_account: luomalla ensin käyttäjäkonttun
+    intro_header: Tervetuloa OpenHistoricalMaphiin!
+    logo:
+      alt_text: OpenHistoricalMap-logo
+    logout: Lokkaa ulos
+    tag_line: Vapaa ja avvoin maailmankartta
+  sessions:
+    destroy:
+      heading: Lokkaa ulos OpenHistoricalMapista
+  site:
+    about:
+      lede_text: OpenHistoricalMapia rakentavat vapaaehtoiset yhteisön jäsenet, jotka tuottavat ja ylläpitävät karttatietoja teistä, rautateistä, kahviloista, rautatieasemista ja monista muista kohteista kaikkialla maailmassa.
+    copyright:
+      legal_babble:
+        credit_1_html: OpenHistoricalMapin sisältöä levitettäessä oon mainittava teksti &quot;&copy; OpenHistoricalMapin tekijät&quot; tai sen engelskankielinen vastine &quot;&copy; OpenHistoricalMap contributors&quot;.
+        credit_title_html: OpenHistoricalMapin mainitseminen
+        more_title_html: Lisätietoja
+    export:
+      too_large:
+        planet:
+          title: Planet OHM
+    help:
+      slack:
+        title: IRC
+      welcome:
+        title: Tervetuloa OpenHistoricalMaphiin
+  user_mailer:
+    email_confirm:
+      subject: "[OpenHistoricalMap] Vahvista e-postiatressi"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX-importeeraus onnistui"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Tervetuloa OpenHistoricalMaphiin"

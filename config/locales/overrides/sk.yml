@@ -1,0 +1,535 @@
+# Messages for Slovak (slovenčina)
+# Exported from translatewiki.net
+# Author: Aceman444
+# Author: Chiak
+# Author: Dušan Kreheľ
+# Author: Erictheise
+# Author: Filip009
+# Author: Helix84
+# Author: Jose1711
+# Author: KuboF
+# Author: Kusavica
+# Author: Lesny skriatok
+# Author: Lexected
+# Author: Macofe
+# Author: MartinSNV
+# Author: MichalP
+# Author: Mikulas1
+# Author: Mimarik
+# Author: Minh Nguyen
+# Author: Nemo bis
+# Author: Oujon
+# Author: Rudko
+# Author: Ruila
+# Author: Spider 001757
+# Author: Teslaton
+# Author: Tj
+# Author: TomášPolonec
+# Author: Vladolc
+# Author: Wizzard
+# Author: Yardom78
+# Do not edit by hand.
+sk:
+  accounts:
+    deletions:
+      show:
+        delete_introduction: 'Svoj účet na OpenHistoricalMap môžete odstrániť pomocou tlačidla nižšie. Všimnite si nasledujúce podrobnosti:'
+        retain_caveats: 'Niektoré informácie o vás však zostanú na OpenHistoricalMap zachované aj po odstránení vášho účtu:'
+    show:
+      contributor_terms:
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: čo to znamená?
+    terms:
+      show:
+        read and accept with tou: Prečítajte si zmluvu s prispievateľom a podmienky používania, po dokončení začiarknite obe políčka a potom stlačte tlačidlo pokračovať.
+        tou_explain:
+          html: Tieto %{tou_link} upravujú používanie webovej stránky a ďalšej infraštruktúry poskytovanej OpenHistoricalMap. Kliknite na odkaz, prečítajte si text a vyjadrite svoj súhlas.
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: čítať ich súkromné GPS stopy
+        allow_read_prefs: čítať ich používateľské nastavenia
+        allow_write_api: upravovať mapu
+        allow_write_changeset_comments: komentovať sady zmien
+        allow_write_diary: vytvárať záznamy v denníku a komentáre
+        allow_write_gpx: nahrávať GPS stopy
+        allow_write_notes: meniť poznámky
+        allow_write_prefs: upraviť ich používateľské nastavenia
+        callback_url: URL pre spätné volanie (callback)
+        name: Meno (povinné)
+        support_url: URL s podporou
+        url: URL adresa hlavnej aplikácie (vyžaduje sa)
+  api:
+    notes:
+      rss:
+        title: Poznámky OpenHistoricalMap
+  application:
+    auth_providers:
+      openstreetmap:
+        alt: Logo OpenStreetMap
+        title: Prihlásiť sa cez OpenStreetMap
+    setup_user_auth:
+      blocked_zero_hour: Na webstránke OpenHistoricalMap máte súrnu správu. Túto správu si musíte prečítať predtým než budete môcť uložiť zmeny.
+  auth:
+    providers:
+      openstreetmap: OpenStreetMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Diskusia k sade zmien OpenHistoricalMap
+        title_particular: 'Diskusia k sade zmien OpenHistoricalMap #%{changeset_id}'
+  changesets:
+    index:
+      feed:
+        cc0: Creative Commons CC0
+        cc0_url: https://creativecommons.org/publicdomain/zero/1.0/
+  date:
+    formats:
+      brief: "%{year}"
+      brief_bce: "%{year} pred n. l."
+      brief_ce: "%{year} n. l."
+      heatmap: "%-d. %B"
+      range: "%{start} – %{end}"
+  diary_entries:
+    comments:
+      description: Najnovšie záznamy v denníku od používateľov OpenHistoricalMap
+      title: Záznamy v denníku OpenHistoricalMap
+    feed:
+      all:
+        description: Nedávne položky denníkov používateľov OpenHistoricalMap
+        title: Záznamy denníka OpenHistoricalMap
+      language:
+        description: Nedávne záznamy v denníkoch používateľov OpenHistoricalMap v jazyku %{language_name}
+        title: Záznamy OpenHistoricalMap denníka v jazyku %{language_name}
+      user:
+        description: Nedávne záznamy OpenHistoricalMap denníka používateľa %{user}
+        title: Záznamy OpenHistoricalMap denníka používateľa %{user}
+    profile_diaries:
+      comments_label: Komentáre
+      date_label: Dátum
+  errors:
+    bad_request:
+      description: Operácia, ktorú ste požadovali na serveri OpenHistoricalMap, nie je platná (HTTP 400)
+    contact:
+      contact_the_community_html: Neváhajte %{contact_link} komunitu OpenHistoricalMap, ak ste našli nefunkčný odkaz/chybu. Poznačte si presnú adresu URL vašej žiadosti.
+      contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
+    forbidden:
+      description: Operácia, ktorú ste požadovali na serveri OpenHistoricalMap, je dostupná len pre administrátorov (HTTP 403)
+    internal_server_error:
+      description: Server OpenHistoricalMap narazil na neočakávaný stav, ktorý mu zabránil splniť požiadavku (HTTP 500)
+    not_found:
+      description: Nepodarilo sa nájsť súbor/adresár/operáciu API s týmto názvom na serveri OpenHistoricalMap (HTTP 404)
+  export:
+    show:
+      title: OpenHistoricalMap – vložená mapa
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
+    search_osm_nominatim:
+      border_types:
+        archdiocese: Hranica arcidiecézy
+        audiencia: Hranica audiencie
+        caliphate: Hranica kalifátu
+        canton: Hranica kantónu
+        captaincy_general: Hranica generálnej kapitánie
+        census_area: Hranica sčítacieho obvodu
+        chiefdom: Hranica náčelníctva
+        city-state: Hranica mestského štátu
+        colony: Hranica kolónie
+        commonwealth: Hranica spoločenstva
+        commune: Hranica komúny
+        condominium: Hranica kondomínia
+        confederation: Hranica konfederácie
+        diocese: Hranica diecézy
+        dominion: Hranica dominionu
+        emirate: Hranica emirátu
+        empire: Hranica cisárstva
+        eyalet: Hranica ejáletu
+        federal_district: Hranica federálneho dištriktu
+        federation: Hranica federácie
+        ghetto: Hranica geta
+        governorate: Hranica gubernie
+        hundred: Hranica hundredu
+        intendancy: Hranica intendantúry
+        kingdom: Hranica kráľovstva
+        major_division: Hranica hlavného členenia
+        markaz: Hranica markazu
+        oblast: Hranica oblasti
+        occupation: Hranica okupačnej zóny
+        overseas_collectivity: Hranica zámorského spoločenstva
+        overseas_department: Hranica zámorského departementu
+        overseas_territory: Hranica zámorského územia
+        planning_region: Hranica plánovacieho regiónu
+        possession: Hranica državy
+        prefecture: Hranica prefektúry
+        prefecture_apostolic: Hranica apoštolskej prefektúry
+        principate: Hranica principátu
+        protectorate: Hranica protektorátu
+        rancho: Hranica ranča
+        realm: Hranica ríše
+        reichsgau: Hranica ríšskej župy
+        republic: Hranica republiky
+        rode: Hranica rode
+        sanjak: Hranica sandžaku
+        sector: Hranica sektora
+        shire: Hranica shiru
+        subdistrict: Hranica podokresu
+        sultanate: Hranica sultanátu
+        territorial_prelature: Hranica územnej prelatúry
+        territory: Hranica územia
+        vicariate_apostolic: Hranica apoštolského vikariátu
+        viceroyalty: Hranica miestokráľovstva
+        viyalet: Hranica vilájetu
+        voivodeship: Hranica vojvodstva
+        ward: Hranica mestskej časti
+        zone: Hranica zóny
+      prefix:
+        amenity:
+          arts_centre: Kultúrne stredisko
+        leisure:
+          track: Bežecká dráha
+        shop:
+          seafood: Morské plody
+      suffix_format: "[%{dates}]"
+  javascripts:
+    legend:
+      tooltip_disabled: Legenda je dostupná nie je dostupná pre túto vrstvu
+    map:
+      base:
+        historical: Historická
+        japanesescroll: Japonský zvitok
+        railway: Železničná
+        woodblock: Drevorez
+      cc0_text: "%{copyright_link}"
+      openhistoricalmap_contributors: OHM
+      zoom:
+        in: Priblížiť
+        out: Oddialiť
+    query:
+      suffix_format: "[%{dates}]"
+  layouts:
+    intro_2_create_account: Založte si konto
+    intro_header: Vitajte v OpenHistoricalMap!
+    intro_text: OpenHistoricalMap je mapa sveta, vytvorené ľuďmi ako vy, voľne využiteľná pod slobodnou licenciou.
+    logo:
+      alt_text: Logo OpenHistoricalMap
+    logout: Odhlásiť sa
+    meta:
+      openstreetmap_search: Vyhľadávanie OpenHistoricalMap
+    offline_flash:
+      osm_offline: Databáza OpenHistoricalMap je momentálne offline, prebiehajú nevyhnutné údržbové práce.
+      osm_read_only: Databáza OpenHistoricalMap je momentálne v režime iba na čítanie, prebiehajú nevyhnutné údržbové práce.
+    partners_devseed: Development Seed
+    partners_greeninfo: GreenInfo Network
+    partners_osmf: OpenStreetMap Foundation
+    partners_osmus: OpenStreetMap U.S.
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: Slobodná wiki-mapa sveta
+  notes:
+    new_readonly:
+      warning: Nové poznámky nie je možné vytvárať, pretože API OpenHistoricalMap je momentálne v režime iba na čítanie.
+  oauth:
+    scopes:
+      openid: Prihlásenie sa pomocou OpenHistoricalMap
+  preferences:
+    basic_preferences:
+      show:
+        map_color_schemes:
+          auto: Automaticky
+    preferences:
+      navigation:
+        advanced_preferences: Pokročilé nastavenia
+        preferences: Nastavenia
+  printable_name:
+    with_date_html: "%{name} [%{dates}]"
+  sessions:
+    destroy:
+      heading: Odhlásenie z OpenHistoricalMap
+    new:
+      login_to_authorize_html: Prihláste sa do OpenHistoricalMap, aby ste získali prístup k %{client_app_name}.
+  site:
+    about:
+      lede_text: OpenHistoricalMap tvorí komunita používateľov, ktorí pridávajú a udržiavajú údaje o cestách, turistických trasách, kaviarňach, železničných staniciach a mnohých ďalších miestach na celom svete.
+      used_by_html: Preskúmajte svet v ktoromkoľvek časovom období s %{name}.
+    about_section:
+      contribute_1_bluesky: Bluesky
+      contribute_1_forum: naše diskusné fórum
+      contribute_1_mastodon: Mastodon
+      contribute_1_ohm_html: |-
+        Naša rastúca komunita dobrovoľných prispievateľov zahŕňa amatérskych aj profesionálnych historikov, prispievateľov OpenStreetMap a Wikipédie, špecialistov na GIS a bežných ľudí, ktorí poznajú svoje okolie.
+        S nadšením dokumentujeme svet a pomáhame skutočným komunitám rozprávať ich príbehy.
+        Ak sa chcete o komunite dozvedieť viac, pozrite si %{wiki_link}, navštívte %{forum_link}, čítajte %{user_diaries_link} a sledujte náš účet %{mastodon_link} alebo %{bluesky_link}.
+      contribute_1_user_diaries: denníky používateľov
+      contribute_1_wiki: našu rozsiahlu wiki dokumentáciu
+      contribute_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap
+      contribute_2_create_account: vytvoriť si bezplatný účet
+      contribute_2_donations: prijímame charitatívne dary
+      contribute_2_html: |-
+        K mape môžete začať prispievať už dnes – stačí %{create_account_link}.
+        Tiež %{donations_link} prostredníctvom %{osmus_link}, neziskovej organizácie 501(c)(3) s oslobodením od daní.
+        Váš štedrý dar pôjde priamo na zabezpečenie bezproblémového chodu OpenHistoricalMap pre všetkých.
+      contribute_2_osmus: OpenStreetMap U.S.
+      contribute_title: Môžete pomôcť
+      legal_1_1_terms_of_use_url: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
+      legal_1_aup: Pravidlám prijateľného používania
+      legal_1_aup_url: https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy
+      legal_1_group: neformálna skupina
+      legal_1_group_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Governance
+      legal_1_html: |-
+        Túto stránku a súvisiace služby prevádzkuje %{group_link} pridružená k OpenStreetMap U.S. v mene komunity.
+        Používanie všetkých služieb OpenHistoricalMap podlieha našim %{terms_of_use_link}, %{aup_link} a %{privacy_policy_link}.
+      legal_1_privacy_policy: Pravidlám ochrany osobných údajov
+      legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
+      legal_1_terms_of_use: Podmienkam použitia
+      legal_1_terms_of_use_url: https://osmfoundation.org/wiki/Terms_of_Use
+      legal_2_contact_team: kontaktovať tím OpenHistoricalMap
+      legal_2_html: |-
+        Prosím, %{contact_team_link}
+        ak máte otázky týkajúce sa licencií, autorských práv alebo iné právne otázky.
+      legal_3_html: |-
+        OpenHistoricalMap® je registrovaná ochranná známka (U.S. Reg. č. 90,019,364).
+        OpenStreetMap a logo lupy sú %{osmf_trademarks_link}.
+      legal_3_osmf_trademarks: registrované ochranné známky OpenStreetMap Foundation
+      legal_3_osmf_trademarks_url: https://osmfoundation.org/wiki/Trademark_Policy
+      open_data_1_1_html: |-
+        Mapa na našej domovskej stránke je len jedným z mnohých spôsobov, ako spoznať historické informácie, ktoré sme zhromaždili.
+        Podkladové údaje sú %{reuse_link} na stiahnutie alebo prostredníctvom rôznych bezplatných API kompatibilných s open source softvérom.
+      open_data_1_1_reuse: dostupné na ďalšie použitie
+      open_data_1_1_reuse_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse
+      open_data_2_copyright_license: Autorské práva a poďakovania
+      open_data_2_html: |-
+        Údaje sú voľným dielom (public domain), pokiaľ nie je uvedené inak.
+        Môžete ich voľne použiť na akýkoľvek účel, bez akýchkoľvek obmedzení.
+        Napriek tomu veľmi oceníme akékoľvek uvedenie zdroja alebo citáciu OpenHistoricalMap.
+        Viac podrobností a poďakovaní nájdete v %{copyright_license_link}.
+      scope_html: |-
+        Ríše vznikajú a zanikajú. Ľadovce miznú. Jazyky a náboženstvá sa šíria z jedného regiónu do druhého.
+        Z jednoduchých poľných ciest sa stávajú rušné cesty a železnice. Skromné budovy ustupujú týčiacim sa mrakodrapom.
+        A vy si pamätáte, ako kedysi vyzerala vaša štvrť.
+        Toto všetko patrí na OpenHistoricalMap.
+      scope_title: Veľké aj malé, kedysi aj dnes
+    communities:
+      lede_text: Ľudia z celého sveta prispievajú do alebo používajú OpenHistoricalMap. Zatiaľ čo mnohí sa zúčastňujú ako jednotlivci, iní vytvorili komunity. Tieto skupiny majú rôznu veľkosť a predstavujú geografické oblasti od malých miest až po veľké regióny s viacerými krajinami. Môžu byť aj formálne alebo neformálne.
+    copyright:
+      legal_babble:
+        attribution_example:
+          alt: Odkaz s označením OHM v pravom dolnom rohu webovej stránky, pod časovým posuvníkom.
+          title: Príklad, ako uviesť OpenHistoricalMap ako zdroj na webovej stránke
+        contributors_2_ohm_html: 'Mapové štýly uvedené na domovskej stránke obsahujú údaje OpenHistoricalMap a nasledujúce zdroje:'
+        contributors_anr_communes_campop: The Cambridge Group for the History of Population and Social Structures
+        contributors_anr_communes_html: Údaje vytvorené projektom %{anr_communes_link} v spolupráci s %{campop_link}.
+        contributors_anr_communes_project: ANR COMMUNES
+        contributors_footer_2_html: Zahrnutie dát do OpenHistoricalMap neznamená, že pôvodný poskytovateľ dát podporuje OpenHistoricalMap, ponúka akúkoľvek záruku, alebo prijíma akúkoľvek zodpovednosť.
+        contributors_globcover: GlobCover
+        contributors_globcover_html: Krajinná pokrývka z %{globcover_link}, © ESA 2010 a UCLouvain, dostupná na ďalšie použitie na vzdelávacie a/alebo vedecké účely s uvedením zdroja.
+        contributors_gmted: Globálne údaje o nadmorskej výške terénu s viacerými rozlíšeniami 2010
+        contributors_gmted_html: 'Údaje o nadmorskej výške terénu z Danielson, J.J., a Gesch, D.B., 2011, %{gmted_link} (GMTED2010): U.S. Geological Survey Open-File Report 2011–1073, 26 s. Voľné dielo (public domain).'
+        contributors_intro_html: |-
+          OpenHistoricalMap je výsledkom spoločného úsilia tisícok jednotlivcov a organizácií, ktoré zase čerpajú z rozsiahleho súboru vedeckých prác, žurnalistiky a archívnych záznamov.
+          Medzi naše najvýznamnejšie zdroje a prispievateľov patria:
+        contributors_more_sources_html: "%{sources_link} sú dostupné na wiki OpenStreetMap."
+        contributors_more_sources_page: Ďalšie zdroje a prispievatelia
+        contributors_more_sources_page_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Sources
+        contributors_natural_earth: Natural Earth
+        contributors_natural_earth_html: Súbory údajov %{natural_earth_link} vo voľnom diele (public domain).
+        contributors_newberry: The Newberry Library
+        contributors_newberry_ahcb: Atlas historických hraníc okresov
+        contributors_newberry_ahcb_html: Údaje z %{ahcb_link}, projektu centra William M. Scholl Center for American History and Culture pri %{newberry_link}, ktoré sú dostupné na ďalšie použitie bez obmedzení.
+        contributors_osm: prispievatelia OpenStreetMap
+        contributors_osm_cc_by_sa: CC BY-SA 2.0
+        contributors_osm_cc_by_sa_url: https://creativecommons.org/licenses/by-sa/2.0/
+        contributors_osm_html: Údaje o pobrežiach, vodných plochách a tokoch © %{osm_link}, %{cc_by_sa_link}.
+        contributors_title_html: Poďakovania
+        credit_1_html: 'Kde používate údaje OpenHistoricalMap, musíte urobiť nasledujúce dve veci:'
+        credit_2_home: našu domovskú stránku
+        credit_2_ohm_html: |-
+          Toto poďakovanie môžete uviesť akýmkoľvek primeraným spôsobom.
+          Napríklad na digitálnej mape môžete OpenHistoricalMap spomenúť drobným písmom v rohu s odkazom na %{this_copyright_page_link} alebo %{home_link}:
+        credit_2_this_copyright_page: túto stránku o autorských právach
+        credit_3_credit_html: Mapové údaje láskavo poskytol projekt %{project_link}, voľné dielo (public domain), pokiaľ nie je uvedené inak.
+        credit_3_ohm_html: 'Alebo môžete uviesť jasnejšie poďakovanie na samostatnej stránke s poďakovaniami, kde uvádzate aj ďalšie zdroje:'
+        credit_3_project: OpenHistoricalMap
+        credit_4_ohm_html: |-
+          Na tlačenej mape môžete poďakovanie umiestniť do legendy.
+          V knihe môžete použitie OpenHistoricalMap opísať v poznámke pod čiarou, v bibliografii alebo v tiráži.
+          V akademickej práci nás môžete citovať rôznymi spôsobmi v závislosti od toho, čo ste použili.
+        credit_title_html: Ako uviesť OpenHistoricalMap ako zdroj
+        infringement_1_html: Prispievateľom OHM pripomíname, že by nikdy nemali pridávať dáta zo zdrojov chránených autorským právom (napr. Google Maps či tlačené mapy) bez výslovného súhlasu držiteľov práv.
+        infringement_2_ohm_contact_team: kontaktujte tím OpenHistoricalMap s textom „TAKEDOWN REQUEST“ v predmete správy
+        infringement_2_ohm_html: |-
+          Ak sa domnievate, že materiál chránený autorským právom bol nevhodne
+          pridaný do databázy OpenHistoricalMap alebo na túto stránku, %{contact_team_link}.
+        introduction_1_cc0: Creative Commons CC0
+        introduction_1_cc0_url: https://creativecommons.org/publicdomain/zero/1.0/
+        introduction_1_ohm_html: |-
+          OpenHistoricalMap je zbierka otvorených geopriestorových údajov.
+          Pokiaľ nie je uvedené inak, údaje OpenHistoricalMap sú venované do voľného diela (public domain) na základe vyhlásenia %{cc0_link}.
+          V rozsahu, v akom je to, čo používate, voľným dielom, ho môžete voľne kopírovať, šíriť, prenášať a upravovať na akýkoľvek účel, bez akýchkoľvek obmedzení.
+        introduction_2_cc_by: Creative Commons Attribution
+        introduction_2_cc_by_sa: Creative Commons Attribution-ShareAlike
+        introduction_2_cc_by_sa_url: https://creativecommons.org/licenses/by-sa/4.0/
+        introduction_2_cc_by_url: https://creativecommons.org/licenses/by/4.0/
+        introduction_2_license_key_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Tags/Key/license
+        introduction_2_ohm_html: |-
+          Databáza OpenHistoricalMap obsahuje niektoré jednotlivé mapové prvky chránené autorským právom.
+          Tieto prvky sú dostupné pod otvorenou licenciou, ako napríklad %{cc_by_link} (CC&nbsp;BY) alebo %{cc_by_sa_link} (CC&nbsp;BY-SA), ako je uvedené v značkách %{license_key_link} na jednotlivých prvkoch.
+          V rozsahu, v akom použijete akúkoľvek významnú časť databázy, na ktorú sa vzťahuje licencia „share alike“ (rovnakým spôsobom), mali by ste rešpektovať podmienky tejto licencie vo svojej vlastnej úprave.
+        introduction_3_ohm_html: Mapové štýly uvedené na našej domovskej stránke sú venované do voľného diela (public domain) na základe vyhlásenia CC0. Môžete ich voľne kopírovať, šíriť, prenášať a upravovať na akýkoľvek účel, bez akýchkoľvek obmedzení.
+        introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
+        introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/
+        introduction_4_ohm_html: Naša dokumentácia je licencovaná pod licenciou %{creative_commons_link} (CC BY-SA 2.0).
+        more_1_ohm_html: Viac o právnych aspektoch pri používaní našich údajov a o tom, ako nás uviesť ako zdroj, sa dozviete %{wiki_link}.
+        more_1_wiki: na wiki OpenStreetMap
+        more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
+        more_2_1_api_usage_policy: Zásady používania API (aplikačného rozhrania)
+        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
+        more_2_1_html: Hoci OpenHistoricalMap sú otvorené údaje, nemôžeme tretím stranám poskytnúť bezplatné mapové API. Pozrite si naše stránky %{api_usage_policy_link}, %{tile_usage_policy_link} a %{nominatim_usage_policy_link}.
+        more_2_1_nominatim_usage_policy: Pravidlá použitia Nominatim
+        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
+        more_2_1_tile_usage_policy: Zásady používania dlaždíc
+        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
+        more_title_html: Ďalšie informácie
+        trademarks_1_ohm_contact_team: kontaktujte tím OpenHistoricalMap
+        trademarks_1_ohm_html: Ak máte otázky týkajúce sa používania názvu OpenHistoricalMap, %{contact_team_link}.
+      title: Autorské práva a poďakovania
+    export:
+      cc0: Creative Commons CC0
+      cc0_url: https://creativecommons.org/publicdomain/zero/1.0/
+      copyright_page: Autorské práva a poďakovania
+      licence_details_ohm_html: Pokiaľ nie je uvedené inak, údaje OpenHistoricalMap sú venované do voľného diela (public domain) na základe vyhlásenia %{cc0_link}. Podrobnosti nájdete na stránke %{copyright_page_link}.
+      too_large:
+        body: Táto oblasť je príliš veľká pre export OpenHistoricalMap XML dát. Priblížte prosím mapu, alebo vyberte menšiu oblasť.
+        other:
+          url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse
+        overpass:
+          description: Stiahnuť túto oblasť z repliky databázy OpenHistoricalMap
+        planet:
+          description: Pravidelne aktualizované kópie kompletnej databázy OpenHistoricalMap
+          title: Planéta OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: Stačí kliknúť na %{note_icon} alebo na rovnakú ikonu na zobrazení mapy. Tým sa na mapu pridá značka, ktorú môžete presúvať ťahaním. Pridajte svoju správu, potom kliknite na uložiť a ostatní mapujúci to preskúmajú.
+        join_the_community:
+          explanation_html: Ak ste si všimli problém s našimi mapovými údajmi, napríklad chýba cesta alebo vaša adresa, najlepší spôsob, ako postupovať, je pripojiť sa ku komunite OpenHistoricalMap a pridať alebo opraviť údaje sami.
+      other_concerns:
+        concerns_ohm_html: Ak máte obavy o to, ako sa naše údaje používajú, alebo o ich obsah, prečítajte si naše %{copyright_link} pre viac právnych informácií, alebo %{contact_link}.
+        contact: nás kontaktujte
+        contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
+    help:
+      discord:
+        description: 'Pripojte sa na server OpenStreetMap World na Discorde a získajte pomoc v kanáli #openhistoricalmap.'
+        title: Discord
+      forum:
+        description: Zapojte sa do dlhších diskusií a neformálnych chatovacích miestností pomocou svojho účtu OHM.
+        title: Fórum
+      github:
+        description: Nahláste problém v našich repozitároch na GitHube, aby ste oznámili chybu alebo požiadali o novú funkciu.
+        title: Žiadosti o funkcie a chyby
+      introduction: OpenHistoricalMap ponúka niekoľko zdrojov, kde je možné získať informácie o projekte, spýtať sa rôzne otázky a spoločne diskutovať a dokumentovať témy týkajúce sa mapovania.
+      mailing_list:
+        description: Prihláste sa na odber našej málo frekventovanej mailingovej konferencie.
+        title: Mailingová konferencia
+      slack:
+        description: 'Pozvite sa do pracovného priestoru OpenStreetMap U.S. na Slacku a pripojte sa do kanála #openhistoricalmap.'
+        title: IRC
+      welcome:
+        description: Začnite týmto rýchlym sprievodcom popisujúcim základy OpenHistoricalMap.
+        title: Vitajte v OpenHistoricalMap
+      welcomemat:
+        description: Začnite týmto stručným sprievodcom so základmi OpenHistoricalMap.
+      wiki:
+        description: Podrobnú dokumentáciu OHM nájdete na wiki.
+        title: Wiki
+    index:
+      js_2: OpenHistoricalMap používa pre interaktívnu mapu JavaScript.
+      license:
+        copyright: OpenHistoricalMap je venovaný do voľného diela (public domain), pokiaľ nie je uvedené inak.
+      remote_failed: Editácia sa nepodarila – skontrolujte, či je JOSM alebo Merkaartor spustený a je v ňom zapnutá funkcia Diaľkové ovládanie (Remote control)
+    potlatch:
+      removed: Váš prednastavená OpenHistoricalMap editor je nastavený na Potlatch. Pretože však Adobe Flash Player bol už stiahnutý z používania, Potlatch už nie je možné používať vo webovom prehliadači.
+    welcome:
+      basic_terms:
+        a_tag_html: "%{tag} je údaj o uzle alebo ceste, napríklad názov reštaurácie alebo rok postavenia mosta."
+        paragraph_1: OpenHistoricalMap má svoj vlastný žargón. Tu je niekoľko kľúčových slov, ktoré vám prídu vhod.
+      introduction: Vitajte na OpenHistoricalMap, slobodnej a upravovateľnej mape sveta. Teraz, keď ste zaregistrovaný, môžete začať mapovať. Tu je stručný prehľad najdôležitejších, ktoré potrebujete vedieť.
+      rules:
+        para_1_html: OpenHistoricalMap má len niekoľko formálnych pravidiel, ale očakávame, že všetci účastníci budú spolupracovať s komunitou a komunikovať s ňou. Ak zvažujete akékoľvek iné aktivity ako ručné úpravy, prečítajte si a dodržiavajte pokyny na %{imports_link} a %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: |-
+          OpenHistoricalMap %{doesnt} fiktívne alternatívne dejiny,
+          známe chyby zo starých máp ani údaje zo zdrojov chránených autorským právom. Pokiaľ nemáte osobitné povolenie, nekopírujte z moderných máp minulosti, ktoré nájdete online alebo v tlači.
+        on_the_map_ohm_html: |-
+          OpenHistoricalMap sleduje zmeny v prírodnej a ľudskej geografii po celom svete.
+          Máme milióny záznamov z %{past_and_present}, od ríš a ľadovcov až po domy a reštaurácie. Mapovať môžete akékoľvek skutočné prvky, ktoré vás zaujímajú.
+        past_and_present: minulosti aj súčasnosti
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS Stopy
+    show:
+      edit: upraviť
+      edit_trace: Upraviť túto stopu
+      map: mapa
+    trace:
+      edit_map: Upraviť mapu
+      view_map: Zobraziť mapu
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} pridal komentár k sade zmien, o ktorú sa zaujímate"
+        subject_own: "[OpenHistoricalMap] %{commenter} pridal komentár k vašej sade zmien"
+      description: Sada zmien OpenHistoricalMap č. %{id}
+    diary_comment_notification:
+      description: Záznam v denníku OpenHistoricalMap č. %{id}
+      header: "%{from_user} okomentoval váš nedávny záznam v OpenHistoricalMap denníku s predmetom %{subject}:"
+      header_html: "%{from_user} okomentova záznam v denníku OpenHistoricalMap s predmetom %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} okomentoval záznam vo vašom denníku"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Potvrďte svoju e-mailovú adresu"
+    follow_notification:
+      followed_you: "%{user} vás teraz sleduje na OpenHistoricalMap."
+      subject: "[OpenHistoricalMap] %{user} vás začal sledovať"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Neúspešný import GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX import úspešný"
+    lost_password:
+      hopefully_you: Niekto (snáď vy) požiadal o vygenerovanie nového hesla pre používateľa serveru openhistoricalmap.org s touto e-mailovou adresou.
+      subject: "[OpenHistoricalMap] Žiadosť o reset hesla"
+    message_notification:
+      header: "%{from_user} vám zaslal správu cez OpenHistoricalMap s predmetom %{subject}:"
+      header_html: "%{from_user} vám zaslal správu cez OpenHistoricalMap s predmetom %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} vyriešil poznámku, o ktorú sa zaujímate"
+        subject_own: "[OpenHistoricalMap] %{commenter} vyriešil vašu poznámku"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} pridal komentár k poznámke, o ktorú sa zaujímate"
+        subject_own: "[OpenHistoricalMap] %{commenter} pridal komentár k vašej poznámke"
+      description: Poznámka OpenHistoricalMap č. %{id}
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} znovu aktivoval poznámku, o ktorú sa zaujímate"
+        subject_own: "[OpenHistoricalMap] %{commenter} znovu aktivoval vašu poznámku"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Vitajte v OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Vaše ID ešte nie je prepojené s účtom OpenHistoricalMap.
+      option_1: Ak ste novým používateľom OpenHistoricalMap, vytvorte si nový účet pomocou formulára nižšie.
+    new:
+      about:
+        paragraph_1: Na rozdiel od iných máp OpenHistoricalMap tvoria výhradne dobrovoľníci ako ste vy a každý si ju môže bezplatne opraviť, aktualizovať, stiahnuť a použiť.
+        welcome: Vitajte v OpenHistoricalMap
+      duplicate_social_email: Ak už máte účet OpenHistoricalMap a chcete použiť poskytovateľa identity tretej strany, prihláste sa pomocou svojho hesla a upravte nastavenia svojho účtu.
+      please_contact_support_html: Kontaktujte %{support_link} a dohodnite si vytvorenie účtu – pokúsime sa požiadavku vybaviť čo najrýchlejšie.
+      signup_to_authorize_html: Zaregistrujte sa v OpenHistoricalMap a získajte prístup do %{client_app_name}.
+    show:
+      delete_user: Odstrániť tohoto používateľa
+      hide_user: Skryť tohto používateľa
+      unhide_user: Zobraziť tohoto používateľa

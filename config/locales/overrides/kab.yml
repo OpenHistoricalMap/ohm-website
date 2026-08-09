@@ -1,0 +1,138 @@
+# Messages for Kabyle (Taqbaylit)
+# Exported from translatewiki.net
+# Author: Alem
+# Author: Amsideg
+# Author: Belkacem77
+# Author: Bilalbill
+# Author: Erictheise
+# Author: Gravitystorm
+# Author: K Messaoudi
+# Author: Marzuquccen
+# Author: Mastanabal
+# Author: Mhenni
+# Author: Minh Nguyen
+# Author: MustaphaLateb
+# Author: Sayem AtVkm
+# Author: SlimaneAmiri
+# Do not edit by hand.
+kab:
+  accounts:
+    show:
+      contributor_terms:
+        link text: d acu-t wa?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: ɣer lǧerrat GPS usligen
+        allow_read_prefs: ɣeṛ ismenyifen n useqdac
+        allow_write_api: Ẓreg tagertilt
+        allow_write_diary: rnu inekcam n uwitay, iwenniten akken ad tgeḍ imeddukal
+        allow_write_gpx: azen lǧerrat GPS
+        allow_write_notes: beddel tizmilin
+        allow_write_prefs: beddel ismenyifen n useqdac
+        callback_url: Tansa URL n usmekti
+        name: Isem (D usfik)
+        support_url: Tansa URL n tallelt
+        url: URL n usnas agejdan (D usfik)
+  api:
+    notes:
+      rss:
+        title: Tizmilin n OpenHistoricalMap
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Ɣur-k izen utrib ɣef usmel Web OpenHistoricalMap. Yessef ad t-ɣreḍ-t send ad tizmireḍ ad teskelseḍ asnifel-ik.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Asqerdec deg ugraw n usnifel OpenHistoricalMap
+        title_particular: Asqerdec deg ugraw n usnifel OpenHistoricalMap wis %{changeset_id}
+  diary_entries:
+    feed:
+      all:
+        description: Imagraden inegguran n iɣmisen n iseqdacen OpenHistoricalMap
+        title: Imagraden n iɣmisen OpenHistoricalMap
+      language:
+        description: Imagraden ineggura n iɣmisen n iseqdacen OpenHistoricalMap s %{language_name}
+        title: Imagraden n iɣmisen OpenHistoricalMap s %{language_name}
+      user:
+        description: Imagraden ineggura n uɣmis OpenHistoricalMap sɣuṛ %{user}
+        title: Imagraden n uṣmis OpenHistoricalMap i %{user}
+    profile_diaries:
+      date_label: Azemz
+  layouts:
+    intro_2_create_account: Rnu amiḍan n useqdac
+    intro_header: Anṣuf ar OpenHistoricalMap!
+    intro_text: OpenHistoricalMap d takarḍa n umadal, rnna-tt yemdanen am kečč d tilellit i useqdec ddaw n turagt tilellit.
+    logo:
+      alt_text: Alugu n OpenHistoricalMap
+    logout: Ffeɣ
+    tag_line: Takarḍa n uwiki ilelli n umaḍal
+  sessions:
+    destroy:
+      heading: Tuffɣa si OpenHistoricalMap
+  site:
+    copyright:
+      legal_babble:
+        credit_title_html: Amek ara ternuḍ asmad i OpenHistoricalMap
+        more_title_html: Akken ad tafeḍ ugar n telɣut
+    export:
+      too_large:
+        body: Tamnadt-agi hrawet aṭas akken ad tettwasifeḍ ar umasal OpenHistoricalMap XML Senɣes ma ulac aɣilif temɣer neɣ fren tamnaḍt meẓẓiyen, neɣ seqdec yiwen seg iɣbula-agi i usider n isefka s uqettun.
+        overpass:
+          description: Sider akatar-agi amagbar seg temrayt n taffa n isefka OpenHistoricalMap
+        planet:
+          description: Ad yenɣel si sya ar da lqem n taffa n isefka yemmden n OpenHistoricalMap
+          title: Amtiweg OHM
+    help:
+      introduction: OpenHistoricalMap tsumur ddeqs n tiɣbula ara t-issineḍ ad tesxedmeḍ deg usenfaṛ, akken ad testeqsiḍ neɣ ad t-muddeḍ tiririt, udiɣ ad tmeslayeḍ neɣ ad teɣreḍ tasemlit ɣef isental n tira n tkarḍiwin d iseqdacen nniḍen.
+      slack:
+        title: IRC
+      welcome:
+        description: Bdu s uminir-agi arurad yettmeslayen ɣef udasil n OpenHistoricalMap.
+        title: Anɣuf ar OpenHistoricalMap
+  traces:
+    feeds:
+      show:
+        title: Lǧerrat GPS n OpenHistoricalMap
+    show:
+      edit: ẓreg
+    trace:
+      edit_map: Ẓreg takarḍa
+      view_map: Sken takarḍa
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} yerna awennit ar yiwet n tagrumma n usnifel anida telliḍ"
+        subject_own: "[OpenHistoricalMap] %{commenter} yerna awennit ar yiwet si tezmilin-ik n tagrumma n usnifel"
+    diary_comment_notification:
+      header: "%{from_user} yuzen-ad awennit ar umagrad n uɣmis OpenHistoricalMap s usentel %{subject} :"
+      subject: "[OpenHistoricalMap] %{user} yuzen-d awennit ar umagrad n uɣmis"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Sentem tansa-ik imayl"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Akter GPX ur yeddi ara"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Akter GPX yedda"
+    lost_password:
+      subject: "[OpenHistoricalMap] Asuter n tulsa n uwennez n wawal uffir"
+    message_notification:
+      header: "%{from_user} yuzen-ak-d izen si OpenHistoricalMap s usentel %{subject} :"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} yefra yiwet n tezmilt anida telliḍ"
+        subject_own: "[OpenHistoricalMap] %{commenter} yefra yiwet si tezmilin-ik"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} yerna awennit ar yiwet n tezmilt anida telliḍ"
+        subject_own: "[OpenHistoricalMap] %{commenter} yerna awennit ar yiwet si tezmilin-ik"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} yermed yiwet n tezmilt anida telliḍ"
+        subject_own: "[OpenHistoricalMap] %{commenter} yermed yiwet si tezmilin-ik"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Anṣuf ar OpenHistoricalMap"
+  users:
+    auth_association:
+      option_1: Ma yella d amaynut i d-tusiḍ ɣer OpenHistoricalMap, ttxil-ek(m) seɣnew amiḍan amaynut s tallalt n tferkit adda-ya.
+    show:
+      delete_user: Kkes aseqdac-agi
+      hide_user: Ffer aseqdac-agi
+      unhide_user: Sken aseqdac-agi

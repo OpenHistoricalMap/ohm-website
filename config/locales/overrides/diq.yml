@@ -1,0 +1,58 @@
+# Messages for Dimli (Zazaki)
+# Exported from translatewiki.net
+# Author: 1917 Ekim Devrimi
+# Author: Asmen
+# Author: Erdemaslancan
+# Author: Erictheise
+# Author: GolyatGeri
+# Author: Gorizon
+# Author: Gravitystorm
+# Author: Gırd
+# Author: Kumkumuk
+# Author: Marmase
+# Author: Minh Nguyen
+# Author: Mirzali
+# Author: Orbot707
+# Do not edit by hand.
+diq:
+  accounts:
+    show:
+      contributor_terms:
+        link text: no çıko?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: Rêça GPSanê xısusiyan bıwane
+        allow_read_prefs: Tercihanê karberi bıwanê
+        allow_write_api: Xeritay bıvurne
+        allow_write_diary: Embaz bıkerên, mışorê u rocek çiyeki vırazên
+        allow_write_gpx: Şopanê GPSi bar kerê
+        allow_write_notes: Notan bıvurne
+        allow_write_prefs: Tercihanê karberanê inan bıvurne
+        callback_url: Gırey Peyd Cıgeyrayışi
+        name: Name (ganiyo)
+        support_url: Gırey Destegi
+        url: Gıray Esas Aplikasyoni (ganiyo)
+  diary_entries:
+    profile_diaries:
+      date_label: Tarix
+  javascripts:
+    map:
+      zoom:
+        in: Nêzdi ke
+        out: Dûri fiye
+  layouts:
+    logout: Bıveciye
+  sessions:
+    destroy:
+      heading: OpenHistoricalMap ra vıcyayış
+  site:
+    export:
+      too_large:
+        planet:
+          title: Geyrenıka OHM
+  users:
+    show:
+      delete_user: nê karberi esternê
+      hide_user: nê karberi  bınımnê
+      unhide_user: nê karberi menımnê
