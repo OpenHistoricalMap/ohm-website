@@ -121,6 +121,7 @@ lb:
       scope_title: Grouss a kleng, deemools an haut
     copyright:
       legal_babble:
+        contributors_osm: OpenStreetMap-Contributeuren
         contributors_osm_cc_by_sa: CC BY-SA 2.0
         contributors_osm_cc_by_sa_url: https://creativecommons.org/licenses/by-sa/2.0/
         credit_1_html: 'Wann Dir Donnéeë vun OpenHistoricalMap benotz muss Dir dës zwou Saache respektéieren:'
@@ -130,7 +131,7 @@ lb:
     export:
       cc0: Creative Commons CC0
       too_large:
-        body: Dëse Beräich ass ze grouss, fir als OpenHistoricalMap-XML-Donnéeën exportéiert ze ginn. Wannechgelift vergréisseren, e méi klenge Beräich wielen oder eng vun de folgende Quelle fir Massendonnéeëndownloade benotzen.
+        body: Dëse Beräich ass ze grouss, fir als OpenHistoricalMap-XML-Donnéeën exportéiert ze ginn. Vergréissert et wgl. fir e méi klenge Beräich ze wielen oder eng vun de follgende Quelle fir d'Erofluede vu Massendonnéeën ze benotzen.
         planet:
           description: Regelméisseg aktualiséiert Kopie vun der kompletter OpenHistoricalMap Datebank
           title: Planéit OHM
@@ -146,6 +147,8 @@ lb:
       welcome:
         description: Fänkt mat dësem kuerze Guide iwwer d'Grondlage vun OpenHistoricalMap un.
         title: Wëllkomm bei OpenHistoricalMap
+      wiki:
+        title: Wiki
     index:
       js_2: OpenHistoricalMap benotzt JavaScript fir d'Kaartenduerstellung
     welcome:

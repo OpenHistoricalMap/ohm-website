@@ -66,6 +66,7 @@
 # Author: Tntchn
 # Author: TsuyaMarisa
 # Author: Vikarna
+# Author: Vjfjng
 # Author: VulpesVulpes825
 # Author: WQL
 # Author: Wong128cn
@@ -144,6 +145,7 @@ zh-CN:
       range: "%{start} – %{end}"
   diary_entries:
     comments:
+      description: OpenHistoricalMap 用户最近的日记条目
       title: OpenHistoricalMap 日记文章
     feed:
       all:
@@ -156,12 +158,14 @@ zh-CN:
         description: "%{user} 最近的 OpenHistoricalMap 日记文章"
         title: "%{user} 的 OpenHistoricalMap 日记文章"
     profile_diaries:
+      comments_label: 评论
       date_label: 日期
   errors:
     bad_request:
       description: 您在 OpenHistoricalMap 服务器上请求的操作无效 (HTTP 400)
     contact:
       contact_the_community_html: 如果您发现有损坏的链接/错误，请随时%{contact_link} OpenHistoricalMap 社区。并记下您请求的确切 URL。
+      contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
     forbidden:
       description: 您在 OpenHistoricalMap 服务器上请求的操作仅限管理员使用（HTTP 403）
     internal_server_error:
@@ -174,6 +178,62 @@ zh-CN:
         osm_nominatim: OpenHistoricalMap Nominatim
         osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
+      border_types:
+        archdiocese: 大主教区界
+        audiencia: 法院边界
+        caliphate: 哈里发国边界
+        canton: 邦界
+        captaincy_general: 都督府界
+        census_area: 人口普查区边界
+        chiefdom: 酋长领地边界
+        city-state: 城邦边界
+        colony: 殖民地边界
+        commonwealth: 联邦边界
+        commune: 市镇界
+        condominium: 公共边界
+        confederation: 同盟界
+        diocese: 教区边界
+        dominion: 自治领边界
+        emirate: 酋长国边界
+        empire: 帝国边界
+        eyalet: 省界
+        federal_district: 联邦区边界
+        federation: 联邦边界
+        ghetto: 贫民窟边界
+        governorate: 省界
+        hundred: 百户界
+        intendancy: 监督边界
+        kingdom: 王国边界
+        major_division: 主行政区界
+        markaz: 省界
+        oblast: 州界
+        occupation: 占领边界
+        overseas_collectivity: 海外集体边界
+        overseas_department: 海外部门边界
+        overseas_territory: 海外领土边界
+        planning_region: 规划区域边界
+        possession: 占有边界
+        prefecture: 选区边界
+        prefecture_apostolic: 宗座监牧区界
+        principate: 统治边界
+        protectorate: 保护国边界
+        rancho: 牧场边界
+        realm: 领域边界
+        reichsgau: 帝国大区界
+        republic: 共和国边界
+        sanjak: 区界
+        sector: 选区边界
+        shire: 郡界
+        subdistrict: 次区界
+        sultanate: 苏丹国边界
+        territorial_prelature: 自治监督区界
+        territory: 领土边界
+        vicariate_apostolic: 宗座代牧区边界
+        viceroyalty: 总督辖区边界
+        viyalet: 州界
+        voivodeship: 省界
+        ward: 选区边界
+        zone: 区域边界
       prefix:
         leisure:
           track: 跑道

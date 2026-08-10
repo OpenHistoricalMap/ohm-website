@@ -36,11 +36,17 @@ cy:
   application:
     setup_user_auth:
       blocked_zero_hour: Mae gennych neges frys ar wefan OpenHistoricalMap. Mae angen ichi ddarllen y neges cyn y byddwch chi'n gallu cadw eich golygiadau.
+  auth:
+    providers:
+      openstreetmap: OpenStreetMap
   changeset_comments:
     feeds:
       show:
         title_all: Trafodaeth grŵp newid OpenHistoricalMap
         title_particular: Trafodaeth grŵp newid OpenHistoricalMap %{changeset_id}
+  date:
+    formats:
+      heatmap: "%B %-d"
   diary_entries:
     comments:
       title: Cofnodion dyddiadur OpenHistoricalMap

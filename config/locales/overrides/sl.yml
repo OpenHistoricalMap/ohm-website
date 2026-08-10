@@ -56,6 +56,10 @@ sl:
       rss:
         title: OpenHistoricalMap opombe
   application:
+    auth_providers:
+      openstreetmap:
+        alt: Logotip OpenStreetMap
+        title: Prijava z OpenStreetMap
     setup_user_auth:
       blocked_zero_hour: Na spletnem mestu OpenHistoricalMap imate nujno sporočilo. Preden boste lahko shranjevali urejanja, morate prebrati to sporočilo.
   auth:
@@ -100,6 +104,9 @@ sl:
       description: Strežnik OpenHistoricalMap je naletel na nepričakovano stanje, ki mu je preprečilo izpolnitev zahteve (HTTP 500)
     not_found:
       description: Datoteke/imenika/API-operacije s tem imenom v strežniku OpenHistoricalMap ni bilo mogoče najti (HTTP 404)
+  export:
+    show:
+      title: Vgrajen OpenHistoricalMap
   geocoder:
     search:
       title:
@@ -226,6 +233,7 @@ sl:
       contribute_2_osmus: OpenStreetMap ZDA
       contribute_title: Lahko pomagaš
       legal_1_aup: Politika sprejemljive uporabe
+      legal_1_group: neuradna skupina
       legal_1_html: "To spletno mesto in povezane storitve \nv imenu skupnosti upravlja %{group_link}, ki je povezan z OpenStreetMap U.S. Za uporabo vseh storitev OpenHistoricalMap veljajo naši %{terms_of_use_link}, %{aup_link} in %{privacy_policy_link}."
       legal_1_privacy_policy: Pravilnik o zasebnosti
       legal_1_terms_of_use: Pogoji uporabe
@@ -241,13 +249,23 @@ sl:
         attribution_example:
           alt: Povezava z oznako OHM v spodnjem desnem kotu spletne strani, pod časovnim drsnikom.
           title: Primer navajanja OpenHistoricalMap na spletni strani
+        contributors_2_ohm_html: 'Slogi zemljevidov, predstavljeni na domači strani, vsebujejo podatke OpenHistoricalMap in naslednje vire:'
+        contributors_anr_communes_html: Podatki, ustvarjeni v okviru projekta %{anr_communes_link} v sodelovanju z %{campop_link}.
         contributors_footer_2_html: |-
           Vključitev podatkov v OpenHistoricalMap ne pomeni, da izvorni ponudnik podatkov podpira OpenHistoricalMap, daje kakršno koli jamstvo ali
           prevzema kakršno koli odgovornost.
+        contributors_intro_html: |-
+          OpenHistoricalMap je skupni napor tisočev posameznikov in organizacij, ki črpajo iz obsežnega nabora znanstvenih del, novinarstva in vodenja evidenc.
+          Med našimi najpomembnejšimi viri in sodelavci so:
+        contributors_osm: Sodelavci OpenStreetMap
+        contributors_title_html: Priznanja
         credit_1_html: Čeprav zakon o avtorskih pravicah ne omejuje ali postavlja nobenih pogojev za vašo uporabo vsebin v javni domeni, smo zelo hvaležni za vsako priznanje, ki ga navedete OpenHistoricalMap pri ponovni uporabi, prilagajanju ali drugi uporabi naših zemljevidov ali podatkov.
+        credit_2_home: naša domača stran
         credit_2_this_copyright_page: ta stran o avtorskih pravicah
         credit_title_html: Kako pripisati zasluge projektu OpenHistoricalMap
         infringement_1_html: Sodelavce OHM opozarjamo, naj nikoli ne dodajajo podatkov iz nobenega avtorsko varovanega vira (npr. Zemljevidov Google ali tiskanih zemljevidov) brez izrecnega dovoljenja imetnikov avtorskih pravic.
+        introduction_2_ohm_html: Podatkovna zbirka OpenHistoricalMap vključuje nekatere posamezne gradnike zemljevida, ki so avtorsko zaščiteni. Ti gradniki so na voljo pod odprto licenco, kot je %{cc_by_link} (CC BY) ali %{cc_by_sa_link} (CC BY-SA), kot je navedeno v oznakah %{license_key_link} na posameznih gradnikih. V kolikor uporabljate katerikoli pomemben del podatkovne zbirke, ki je zajet z licenco »deljenje pod enakimi pogoji«, morate pri svoji priredbi upoštevati pogoje te licence.
+        introduction_3_ohm_html: Slogi zemljevidov, predstavljeni na naši domači strani, so javno dostopni pod licenco CC0. Lahko jih prosto kopirate, delite, prenašate in prilagajate za kakršen koli namen brez kakršnih koli omejitev.
         introduction_4_creative_commons: Creative Commons Priznanje avtorstva-Deljenje pod enakimi pogoji 2.0
         introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/deed.sl
         more_2_1_api_usage_policy: Politika uporabe API-ja
@@ -273,8 +291,14 @@ sl:
         join_the_community:
           explanation_html: Če ste opazili težavo z našimi kartografskimi podatki, na primer manjkajočo cesto ali naslov, boste najbolje ravnali, če se boste pridružili skupnosti OpenHistoricalMap in boste podatke dodali ali popravili sami.
     help:
+      github:
+        description: Odprite težavo v naših repozitorijih GitHub, da prijavite napako ali zahtevate izboljšavo.
+        title: Zahtevki za izboljšavo, hrošči
       introduction: OpenHistoricalMap ima več virov za učenje o projektu, postavljanje vprašanj in odgovarjanje nanja, sodelovanje v pogovorih in dokumentiranje kartografskih tem.
+      mailing_list:
+        title: Dopisni seznam
       slack:
+        description: 'Povabite se v delovni prostor OpenStreetMap US Slack in se pridružite kanalu #openhistoricalmap.'
         title: IRC
       welcome:
         description: Začnite s tem hitrim vodnikom, ki obravnava osnove OpenHistoricalMap.
@@ -289,12 +313,17 @@ sl:
       removed: Vaš privzeti urejevalnik OpenHistoricalMap je Potlatch. Ker Adobe Flash Player ni več na voljo, Potlatch ni več na voljo za uporabo v spletnem brskalniku.
     welcome:
       basic_terms:
+        a_tag_html: "%{tag} je delček podatkov o vozlišču ali poti, na primer ime restavracije ali leto izgradnje mostu."
         paragraph_1: OpenHistoricalMap ima tudi svoj žargon. Tukaj je nekaj ključnih besed, ki vam bodo prišle prav.
       introduction: Pozdravljeni v OpenHistoricalMap, brezplačnem zemljevidu sveta, ki ga je mogoče tudi urejati. Zdaj, ko ste vpisani, ste pripravljeni za začetek kartiranja. Tu je hitri vodnik z najpomembnejšim, kar morate vedeti.
       rules:
         para_1_html: |-
           OpenHistoricalMap ima nekaj formalnih pravil, vendar pričakujemo, da vsi udeleženci sodelujejo
           s skupnostjo in komunicirajo z njo. Če razmišljate o kateri koli dejavnosti razen ročnega urejanja, preberite in sledite smernicam na %{imports_link} in %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: OpenHistoricalMap %{doesnt} vključuje izmišljenih/prirejenih zgodovin, znanih napak na zgodovinskih zemljevidih in avtorsko zaščitenih virov. Ne kopirajte podatkov s sodobnih zemljevidov preteklosti, ki jih najdete na spletu ali natisnjene, razen če imate za to posebno dovoljenje.
+        on_the_map_ohm_html: OpenHistoricalMap spremlja spremembe naravnega in človeškega zemljepisa po vsem svetu. Imamo milijone vnosov iz %{past_and_present}, od imperijev in ledenikov do hiš in restavracij. Na zemljevid lahko vnesete vse gradnike resničnega sveta, ki vas zanimajo.
+        past_and_present: tako preteklost kot sedanjost
   time:
     formats:
       friendly: "%e. %B %Y ob %H:%M"
@@ -322,6 +351,8 @@ sl:
       subject: "[OpenHistoricalMap] %{user} je komentiral dnevniški zapis"
     email_confirm:
       subject: "[OpenHistoricalMap] Potrdite svoj e-poštni naslov"
+    follow_notification:
+      followed_you: "%{user} vas zdaj spremlja na OpenHistoricalMap."
     gpx_failure:
       subject: "[OpenHistoricalMap] Neuspeh uvoza datoteke GPX"
     gpx_success:
