@@ -30,6 +30,9 @@ eu:
       contributor_terms:
         link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
         link text: zer da hau?
+    terms:
+      show:
+        read and accept with tou: Mesedez, irakurri laguntzaile-akordioa eta erabilera-baldintzak, markatu bi kontrol-laukiak amaitutakoan eta sakatu jarraitu botoia.
   activerecord:
     attributes:
       client_application:

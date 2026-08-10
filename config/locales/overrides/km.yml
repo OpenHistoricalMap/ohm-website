@@ -8,14 +8,13 @@
 # Author: វ័ណថារិទ្ធ
 # Do not edit by hand.
 km:
+  date:
+    formats:
+      brief_bce: "%{year} មុនគ.ស."
+      brief_ce: "%{year} នៃគ.ស."
   diary_entries:
     profile_diaries:
       date_label: កាលបរិច្ឆេទ​
-  geocoder:
-    search_osm_nominatim:
-      prefix:
-        leisure:
-          horse_riding: កន្លែងជិះសេះ
   javascripts:
     map:
       zoom:

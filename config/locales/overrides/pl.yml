@@ -103,6 +103,9 @@ pl:
   application:
     setup_user_auth:
       blocked_zero_hour: Masz pilną wiadomość na stronie OpenHistoricalMap. Musisz przeczytać tę wiadomość, zanim będzie można zapisywać zmiany.
+  auth:
+    providers:
+      openstreetmap: OpenStreetMap
   diary_entries:
     comments:
       title: Wpisy w dzienniku OpenHistoricalMap

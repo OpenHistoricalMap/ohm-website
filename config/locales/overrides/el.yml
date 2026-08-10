@@ -133,6 +133,9 @@ el:
       description: Ο διακομιστής OpenHistoricalMap αντιμετώπισε μια απροσδόκητη συνθήκη που τον εμπόδισε να εκπληρώσει το αίτημα (HTTP 500)
     not_found:
       description: Δεν ήταν δυνατή η εύρεση αρχείου/καταλόγου/λειτουργίας API με αυτό το όνομα στο διακομιστή OpenHistoricalMap (HTTP 404)
+  export:
+    show:
+      title: Ενσωματωμένο OpenHistoricalMap
   geocoder:
     search:
       title:
@@ -193,6 +196,8 @@ el:
     logo:
       alt_text: Λογότυπο OpenHistoricalMap
     logout: Αποσύνδεση
+    meta:
+      openstreetmap_search: Αναζήτηση OpenHistoricalMap
     offline_flash:
       osm_offline: Η βάση δεδομένων του OpenHistoricalMap είναι προσωρινά εκτός λειτουργίας λόγω απαραίτητων εργασιών συντήρησης.
       osm_read_only: Η βάση δεδομένων του OpenHistoricalMap έχει τεθεί προσωρινά σε λειτουργία «μόνο για ανάγνωση» λόγω απαραίτητων εργασιών συντήρησης.
@@ -278,6 +283,7 @@ el:
         credit_title_html: Πως να κάνετε αναφορά δημιουργού προς το OpenHistoricalMap
         infringement_1_html: Υπενθυμίζουμε στους συνεισφέροντες του OHM να μην προσθέτουν δεδομένα από πηγές με πνευματικά δικαιώματα (π.χ. Google Maps η έντυπους χάρτες) χωρίς την προηγούμενη άδεια από τους ιδιοκτήτες των δικαιωμάτων.
         infringement_2_ohm_contact_team: επικοινωνήστε με την ομάδα του OpenHistoricalMap με τίτλο θέματος "TAKEDOWN REQUEST"
+        infringement_2_ohm_html: Εάν πιστεύετε ότι υλικό που προστατεύεται από πνευματικά δικαιώματα έχει προστεθεί ακατάλληλα στη βάση δεδομένων του OpenHistoricalMap ή σε αυτόν τον ιστότοπο, παρακαλούμε %{contact_team_link}.
         introduction_1_cc0: Creative Commons CC0
         introduction_1_cc0_url: https://creativecommons.org/publicdomain/zero/1.0/
         introduction_2_cc_by: Creative Commons Αναφορά Δημιουργού
@@ -323,6 +329,9 @@ el:
         join_the_community:
           explanation_html: Αν έχετε παρατηρήσει ένα πρόβλημα με τα δεδομένα του χάρτη μας, παραδείγματος χάριν ένας δρόμος που λείπει στη διεύθυνσή σας, ο καλύτερος τρόπος να προχωρήσετε είναι να ενταχθείτε στην κοινότητα του OpenHistoricalMap και να προσθέσετε ή να επισκευάσετε τα δεδομένα από μόνοι σας.
       other_concerns:
+        concerns_ohm_html: |-
+          Εάν έχετε ανησυχίες σχετικά με τον τρόπο με τον οποίο χρησιμοποιούνται τα δεδομένα μας ή σχετικά με το περιεχόμενο, παρακαλούμε συμβουλευτείτε τη
+          %{copyright_link} μας για περισσότερες νομικές πληροφορίες, ή %{contact_link}.
         contact: επικοινωνήστε μαζί μας
         contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
     help:
@@ -341,9 +350,11 @@ el:
         description: Ξεκινήστε με αυτές τις σύντομες οδηγίες που καλύπτουν τα βασικά του OpenHistoricalMap.
         title: Καλώς ήλθατε στο OpenHistoricalMap
       welcomemat:
+        description: Ξεκινήστε με αυτόν τον γρήγορο οδηγό που καλύπτει τα βασικά του OpenHistoricalMap.
         title: Για τις Οργανώσεις
       wiki:
         description: Περιηγηθείτε το wiki για επιμελής τεκμηρίωση του OHM.
+        title: Wiki
     index:
       js_2: Το OpenHistoricalMap χρησιμοποιεί JavaScript για το ολισθαίνοντα χάρτη του.
       remote_failed: Η επεξεργασία απέτυχε - βεβαιωθείτε ότι ο JOSM ή ο Merkaartor έχουν φορτωθεί και η επιλογή τηλεχειρισμού είναι ενεργή
@@ -351,7 +362,7 @@ el:
       removed: Ο προεπιλεγμένος σας επεξεργαστής του OpenHistoricalMap έχει τεθεί ως Potlatch. Επειδή το Adobe Flash Player έχει αποσυρθεί, ο Potlatch δεν είναι πια διαθέσιμος για χρήση σε πρόγραμμα περιήγησης ιστού.
     welcome:
       basic_terms:
-        a_tag_html: Η %{tag} είναι δεδομένα που σχετίζονται με κόμβους ή γραμμές, όπως το όνομα ενός εστιατορίου ή το όριο ταχύτητας του δρόμου.
+        a_tag_html: Η %{tag} είναι δεδομένα που σχετίζονται με έναν κόμβο ή μια γραμμή, όπως το όνομα ενός εστιατορίου ή το έτος όπου φτιάχτηκε μια γέφυρα.
         paragraph_1: Η κοινότητα OpenHistoricalMap έχει δικό της γλωσσάρι. Παρακάτω είναι μερικές λέξεις που μπορεί να σας φανούν χρήσιμες.
       introduction: Σας καλωσορίζουμε στο OpenHistoricalMap, τον ελεύθερο και επεξεργάσιμο χάρτη του κόσμου. Τώρα που έχετε εγγραφεί, είστε πανέτοιμοι να αρχίσετε τη χαρτογράφηση. Εδώ είναι ένας γρήγορος οδηγός με τα πιο σημαντικά πράγματα που πρέπει να ξέρετε.
       rules:

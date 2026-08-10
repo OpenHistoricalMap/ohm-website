@@ -17,6 +17,7 @@
 # Author: Grin
 # Author: Hanna Tardos
 # Author: Kempelen
+# Author: Koko1998
 # Author: Leiric
 # Author: Macofe
 # Author: McDutchie
@@ -49,7 +50,7 @@ hu:
         allow_read_gpx: magán GPS-nyomvonalaik megtekintése
         allow_read_prefs: felhasználói beállítások elolvasása
         allow_write_api: a térkép módosítása
-        allow_write_diary: naplóbejegyzések és hozzászólások készítése és ismerősök hozzáadása
+        allow_write_diary: naplóbejegyzések és hozzászólások készítése
         allow_write_gpx: GPS-nyomvonalak feltöltése
         allow_write_notes: jegyzetek módosítása
         allow_write_prefs: felhasználói beállításaik módosítása
@@ -141,6 +142,7 @@ hu:
           title: Példa egy hivatkozásra
         contributors_footer_2_html: Az adatok befoglalása az OpenHistoricalMapbe nem jelenti azt, hogy az eredeti adatszolgáltató támogatja az OpenHistoricalMapet, garanciát nyújt vagy felelősséget vállal rá.
         contributors_intro_html: 'Több ezer egyéni közreműködőnk van. További, szabadon elérhető adatokat is felhasználunk nemzeti térkép intézetektől és más forrásokból, többek között:'
+        contributors_title_html: Köszönetnyilvánítás
         credit_1_html: 'Ahol az OpenHistoricalMap adatait használod, ott kérjük, tüntesd fel az alább felsoroltakat:'
         credit_2_this_copyright_page: erre a szerzői jogi oldalra
         credit_title_html: Hogyan kell feltüntetned az OpenHistoricalMapet?
