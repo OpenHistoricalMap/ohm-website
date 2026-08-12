@@ -116,20 +116,19 @@ L.OSM.Map = L.Map.extend({
   },
 
   updateLayers: function (layerParam) {
-    var layers = layerParam || "O",
-      layersAdded = "";
+    const oldBaseLayer = this.getMapBaseLayer();
+    let newBaseLayer;
 
-    for (let i = this.baseLayers.length - 1; i >= 0; i--) {
-      if (layers.indexOf(this.baseLayers[i].options.code) >= 0) {
-        this.addLayer(this.baseLayers[i]);
-        layersAdded = layersAdded + this.baseLayers[i].options.code;
-      } else if (i === 0 && layersAdded === "") {
-        this.addLayer(this.baseLayers[i]);
-      } else {
-        this.removeLayer(this.baseLayers[i]);
+    for (const layer of this.baseLayers) {
+      if (!newBaseLayer || layerParam.includes(layer.options.code)) {
+        newBaseLayer = layer;
       }
     }
 
+    if (newBaseLayer !== oldBaseLayer) {
+      if (oldBaseLayer) this.removeLayer(oldBaseLayer);
+      if (newBaseLayer) this.addLayer(newBaseLayer);
+    }
   },
 
   getLayersCode: function () {
@@ -143,11 +142,8 @@ L.OSM.Map = L.Map.extend({
   },
 
   getMapBaseLayerId: function () {
-    var baseLayerId;
-    this.eachLayer(function (layer) {
-      if (layer.options && layer.options.keyid) baseLayerId = layer.options.keyid;
-    });
-    return baseLayerId;
+    const layer = this.getMapBaseLayer();
+    if (layer) return layer.options.layerId;
   },
 
   getMapBaseLayer: function () {
