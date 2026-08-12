@@ -339,7 +339,7 @@ describe("OSM", function () {
     it("creates a location cookie value", function () {
       $("body").append("<div id='map'>");
       const map = new L.OSM.Map("map", { center: [57.6247, -3.6845], zoom: 9 });
-      map.updateLayers("");
+      map.updateLayers("M");
       expect(OSM.locationCookie(map)).to.eq("-3.685|57.625|9|M");
       $("#map").remove();
     });
@@ -347,7 +347,7 @@ describe("OSM", function () {
     it("respects zoomPrecision", function () {
       $("body").append("<div id='map'>");
       const map = new L.OSM.Map("map", { center: [57.6247, -3.6845], zoom: 9 });
-      map.updateLayers("");
+      map.updateLayers("M");
       expect(OSM.locationCookie(map)).to.eq("-3.685|57.625|9|M");
       // map.setZoom() doesn't update the zoom level for some reason
       // using map._zoom here to update the zoom level manually
