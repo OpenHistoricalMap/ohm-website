@@ -1,0 +1,539 @@
+# Messages for Korean (한국어)
+# Exported from translatewiki.net
+# Author: A Retired User
+# Author: Adreamy
+# Author: Alatta
+# Author: Alattalatta
+# Author: Alex00728
+# Author: Apzp79
+# Author: Asdfqwer51
+# Author: B891202
+# Author: Bisang
+# Author: CYAN
+# Author: Cerulean
+# Author: Changwoo
+# Author: Codenstory
+# Author: Cubbe
+# Author: D6283
+# Author: Dongha Hwang
+# Author: Drhyme
+# Author: Ellif
+# Author: Erictheise
+# Author: Freebiekr
+# Author: Garam
+# Author: Hangukhistory
+# Author: Hym411
+# Author: IRTC1015
+# Author: Idh0854
+# Author: Jay17
+# Author: Jerrykim306
+# Author: Jonghaya
+# Author: Kwj2772
+# Author: Macofe
+# Author: Markingdots
+# Author: Minh Nguyen
+# Author: Nuevo Paso
+# Author: Priviet
+# Author: Revi
+# Author: Ruila
+# Author: SeoJeongHo
+# Author: Stleamist
+# Author: Sukjong0406
+# Author: Suleiman the Magnificent Television
+# Author: Tensama0415
+# Author: Theshinster123
+# Author: Twotwo2019
+# Author: Wehwei
+# Author: Wrightbus
+# Author: YeBoy371
+# Author: Ykhwong
+# Author: Ysjbserver
+# Author: 予弦
+# Author: 神樂坂秀吉
+# Author: 解浪
+# Author: 고솜
+# Author: 그냥기여자
+# Author: 렌즈
+# Author: 밥풀떼기
+# Author: 아라
+# Author: 한림
+# Do not edit by hand.
+ko:
+  accounts:
+    deletions:
+      show:
+        delete_introduction: 아래 버튼을 눌러 오픈히스토리컬맵 계정을 삭제할 수 있습니다. 다음 세부 사항에 유의하십시오.
+        retain_caveats: 그러나, 귀하의 정보가 삭제된 후 오픈히스토리컬맵에서 일부 정보가 유지될 수 있습니다.
+    show:
+      contributor_terms:
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: 무엇인가요?
+    terms:
+      show:
+        read and accept with tou: 기여자 동의 및 사용 약관을 읽고 두 개의 체크 상자에 체크한 다음 계속 버튼을 눌러 주십시오.
+        tou_explain:
+          html: 본 %{tou_link}는 오픈히스토리컬맵에서 제공하는 웹사이트 및 기타 인프라의 사용에 적용됩니다. 링크를 클릭하여 내용을 읽고 동의해 주십시오.
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: 비공개 GPS 궤적을 읽습니다
+        allow_read_prefs: 사용자 환경 설정을 읽습니다
+        allow_write_api: 지도를 수정합니다
+        allow_write_changeset_comments: 바뀜집합 댓글
+        allow_write_diary: 일기 항목 및 댓글 작성
+        allow_write_gpx: GPS 궤적을 업로드합니다
+        allow_write_notes: 참고를 수정합니다
+        allow_write_prefs: 사용자 환경 설정을 수정합니다
+        callback_url: 연락 URL
+        name: 이름 (필수)
+        support_url: 지원 URL
+        url: 주 애플리케이션 URL (필수)
+  api:
+    notes:
+      rss:
+        title: 오픈히스토리컬맵 참고
+  application:
+    auth_providers:
+      openstreetmap:
+        alt: 오픈스트리트맵 로고
+        title: 오픈스트리트맵으로 로그인
+    setup_user_auth:
+      blocked_zero_hour: 오픈히스토리컬맵 웹사이트에 중요 메시지가 있습니다. 편집을 저장하기 전에 이 메시지를 읽어야 합니다.
+  auth:
+    providers:
+      openstreetmap: 오픈스트리트맵
+  changeset_comments:
+    feeds:
+      show:
+        title_all: 오픈히스토리컬맵 바뀜집합 토론
+        title_particular: '오픈히스토리컬맵 변경집합 #%{changeset_id} 토론'
+  date:
+    formats:
+      brief: "%{year}년"
+      brief_bce: 기원전 %{year}년
+      brief_ce: 기원후 %{year}년
+      heatmap: "%B %-d"
+      range: "%{start} – %{end}"
+  diary_entries:
+    comments:
+      description: 오픈히스토리컬맵 사용자의 최근 일기 항목
+      title: 오픈히스토리컬맵 일기 항목
+    feed:
+      all:
+        description: 오픈히스토리컬맵 사용자의 최근 일기 항목
+        title: 오픈히스토리컬맵 일기 항목
+      language:
+        description: "%{language_name} 오픈히스토리컬맵 사용자의 최근 일기 항목"
+        title: "%{language_name}로 된 오픈히스토리컬맵 일기 항목"
+      user:
+        description: "%{user}의 최근 오픈히스토리컬맵 일기 항목"
+        title: "%{user}의 오픈히스토리컬맵 일기 항목"
+    profile_diaries:
+      comments_label: 댓글
+      date_label: 날짜
+  errors:
+    bad_request:
+      description: 오픈히스토리컬맵 서버에서 요청하신 작업이 유효하지 않습니다 (HTTP 400)
+    contact:
+      contact_the_community_html: 끊어진 링크나 버그를 발견했다면 언제든지 오픈히스토리컬맵 커뮤니티에 %{contact_link}으로 알려주십시오. 요청 시 정확한 URL을 밝혀 주시기 바랍니다.
+      contact_url: |-
+        https
+        ://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
+    forbidden:
+      description: 오픈히스토리컬맵 서버에 요청한 이 작업은 관리자만 사용할 수 있습니다(HTTP 403).
+    internal_server_error:
+      description: 오픈히스토리컬맵 서버가 예상치 못한 상태에 빠져 요청을 수행하지 못했습니다 (HTTP 500)
+    not_found:
+      description: 오픈히스토리컬맵 서버에서 해당 이름으로 파일/디렉토리/API 작업을 찾을 수 없습니다(HTTP 404).
+  export:
+    show:
+      title: 오픈히스토리컬맵 삽입됨
+  geocoder:
+    search:
+      title:
+        osm_nominatim: 오픈히스토리컬맵 Nominatim
+        osm_nominatim_reverse: 오픈히스토리컬맵 Nominatim
+    search_osm_nominatim:
+      border_types:
+        archdiocese: 대교구 경계
+        audiencia: 아우디엔시아 (재판관구) 경계
+        caliphate: 칼리프국 경계
+        canton: 칸톤 경계
+        captaincy_general: 사령부 경계
+        census_area: 인구조사 구역 경계
+        chiefdom: 군장국 경계
+        city-state: 도시국가 경계
+        colony: 식민지 경계
+        commonwealth: 연방 (커먼웰스) 경계
+        commune: 코뮌 경계
+        condominium: 공동통치령 경계
+        confederation: 국가연합 경계
+        diocese: 교구 경계
+        dominion: 자치령 경계
+        emirate: 에미리트 경계
+        empire: 제국 경계
+        eyalet: 에얄레트 경계
+        federal_district: 연방 지구 경계
+        federation: 연방 경계
+        ghetto: 게토 경계
+        governorate: 주 (총독령) 경계
+        hundred: 헌드레드 경계
+        intendancy: 인텐덴시아 (관할구) 경계
+        kingdom: 왕국 경계
+        major_division: 주요 행정구역 경계
+        markaz: 마르카즈 경계
+        oblast: 오블라스트 (주) 경계
+        occupation: 점령지 경계
+        overseas_collectivity: 해외 집단 경계
+        overseas_department: 해외 데파르트망 경계
+        overseas_territory: 해외 영토 경계
+        planning_region: 계획 지구 경계
+        possession: 속령 경계
+        prefecture: 현 경계
+        prefecture_apostolic: 지부대목구 경계
+        principate: 공국 경계
+        protectorate: 보호령 경계
+        rancho: 란초 경계
+        realm: 왕령 경계
+        reichsgau: 라이히스가우 경계
+        republic: 공화국 경계
+        rode: 로데 경계
+        sanjak: 산자크 경계
+        sector: 부분 (섹터) 경계
+        shire: 셔 경계
+        subdistrict: 하위행정지구 경계
+        sultanate: 술탄국 경계
+        territorial_prelature: 자치포교구 경계
+        territory: 영토 경계
+        vicariate_apostolic: 대목구 경계
+        viceroyalty: 부왕령 경계
+        viyalet: 비얄레트 경계
+        voivodeship: 보이보드십 (주) 경계
+        ward: 워드 경계
+        zone: 구역 경계
+      prefix:
+        leisure:
+          track: 육상 트랙
+  javascripts:
+    legend:
+      tooltip_disabled: 범례는 이 레이어에 사용할 수 없습니다
+    map:
+      base:
+        historical: 역사 지도
+        japanesescroll: 일본풍 지도
+        railway: 철도
+        woodblock: 목판 지도
+      cc0_text: "%{copyright_link}"
+      openhistoricalmap_contributors: OHM
+      zoom:
+        in: 확대
+        out: 축소
+  layouts:
+    intro_2_create_account: 사용자 계정을 만드세요
+    intro_header: 오픈히스토리컬맵에 오신 것을 환영합니다!
+    intro_text: 오픈히스토리컬맵은 여러분과 같은 사람들이 만들어, 개방형 라이선스에 따라 자유롭게 사용할 수 있는 세계 지도입니다.
+    logo:
+      alt_text: OpenHistoricalMap 로고
+    logout: 로그아웃
+    meta:
+      openstreetmap_search: 오픈히스토리컬맵 검색
+    offline_flash:
+      osm_offline: 현재 필수적인 유지보수 작업이 진행되고 있는 관계로 오픈히스토리컬맵 데이터베이스가 오프라인 상태에 있습니다.
+      osm_read_only: 현재 필수 유지보수 작업이 진행되고 있는 관계로 오픈히스토리컬맵 데이터베이스가 읽기 전용 상태에 있습니다.
+    partners_devseed: 개발 시드
+    partners_greeninfo: 그린인포 네트워크
+    partners_osmf: 오픈스트리트맵 재단
+    partners_osmus: 오픈스트리트맵 미국
+    project_name:
+      title: OpenHistoricalMap
+    tag_line: 자유로운 위키 세계지도
+  notes:
+    new_readonly:
+      warning: 오픈히스토리컬맵 API가 현재 읽기 전용 모드이기 때문에 새로운 참고를 생성할 수 없습니다.
+  oauth:
+    scopes:
+      openid: 오픈히스토리컬맵을 사용하여 로그인
+  preferences:
+    basic_preferences:
+      show:
+        map_color_schemes:
+          auto: 자동
+    preferences:
+      navigation:
+        advanced_preferences: 고급 환경 설정
+        preferences: 환경 설정
+  sessions:
+    destroy:
+      heading: 오픈히스토리컬맵에서 로그아웃
+    new:
+      login_to_authorize_html: "%{client_app_name}에 접근하려면 오픈히스토리컬맵에 로그인하세요."
+  site:
+    about:
+      lede_text: 오픈히스토리컬맵은 전 세계의 도로나 오솔길, 카페, 기차역을 비롯한 다양한 정보를 관리하고 기여하는 지도 편집자 공동체가 만들어 나갑니다.
+      used_by_html: "%{name}과 함께 온 시대의 세계를 탐험해 보세요."
+    about_section:
+      contribute_1_bluesky: 블루스카이
+      contribute_1_forum: 저희 토론 포럼
+      contribute_1_mastodon: 마스토돈
+      contribute_1_ohm_html: |-
+        자발적 기여자 커뮤니티는 아마추어와 전문 역사학자, OpenStreetMap과 위키백과 기여자, GIS 전문가, 그리고 주변 환경에 대한 지식이 있는 일반인을 아울러 성장하고 있습니다.
+        우리는 세상을 기록하고 현실의 공동체가 본연의 이야기를 전달하도록 돕는 데 열의를 다합니다.
+        커뮤니티에 대해 자세히 알아보려면 %{wiki_link}를 참고하시거나 %{forum_link}를 방문하고 %{user_diaries_link}를 읽고 %{mastodon_link} 또는 %{bluesky_link} 계정을 팔로우하세요.
+      contribute_1_user_diaries: 사용자 일기
+      contribute_1_wiki: 저희의 방대한 위키 문서
+      contribute_2_create_account: 무료 계정 만들기
+      contribute_2_donations: 자선 기부금 받기
+      contribute_2_html: |-
+        지금 이 순간부터 %{create_account_link}으로 지도를 편집할 수 있습니다.
+        또한 면세 요건에 해당하는 미국 501(c)(3) 비영리 단체인 %{osmus_link}를 통한 %{donations_link}도 제공되고 있습니다.
+        여러분의 아낌없는 기부금은 OpenHistoricalMap이 모든 사람을 위해 원활하게 운영하기 위한 용도로 쓰입니다.
+      contribute_2_osmus: 오픈스트리트맵 미국
+      contribute_title: 지금 함께해 보세요
+      legal_1_1_terms_of_use_url: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
+      legal_1_aup: 사용 범위 정책
+      legal_1_aup_url: |-
+        https
+        ://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy
+      legal_1_group: 비공식 그룹
+      legal_1_group_url: |-
+        https
+        ://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Governance
+      legal_1_html: 본 사이트와 관련 서비스는 커뮤니티를 대신하여 OpenStreetMap US와 제휴한 %{group_link}에서 운영합니다. 오픈히스토리컬맵의 모든 서비스 이용은 당사의 %{terms_of_use_link}, %{aup_link} 및 %{privacy_policy_link}의 적용을 받습니다.
+      legal_1_privacy_policy: 개인정보처리방침
+      legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
+      legal_1_terms_of_use: 이용 약관
+      legal_1_terms_of_use_url: |-
+        https
+        ://osmfoundation.org/wiki/Terms_of_Use
+      legal_2_contact_team: 오픈히스토리컬맵 팀에 문의하세요.
+      legal_2_html: 라이선스, 저작권 또는 기타 법무 관련 문의는 %{contact_team_link}.
+      legal_3_html: OpenHistoricalMap®은 등록 상표입니다(U.S. Reg. No. 90,019,364). 오픈스트리트맵과 돋보기 로고는 %{osmf_trademarks_link}의 소유입니다.
+      legal_3_osmf_trademarks: 오픈스트리트맵 재단의 등록 상표
+      legal_3_osmf_trademarks_url: |-
+        https
+        ://osmfoundation.org/wiki/Trademark_Policy
+      open_data_1_1_html: 홈페이지 상의 지도는 저희가 수집한 역사 정보를 경험할 수 있는 여러 방법 중 하나일 뿐입니다. 기본 데이터는 %{reuse_link}를 다운로드하거나 오픈 소스 소프트웨어와 호환되는 다양한 무료 API를 통해 이용할 수 있습니다.
+      open_data_1_1_reuse: 재사용 가능
+      open_data_2_copyright_license: 저작권과 표시
+      open_data_2_html: 다른 내용이 명시되지 않는 한, 본 데이터는 공개되어 있습니다. 어떠한 제한 없이 어떤 목적으로든 자유롭게 사용하실 수 있습니다. 단, 출처를 명시하거나 인용해 주시면 감사하겠습니다. 더 자세한 사항과 저작자 표시는 %{copyright_license_link}를 참고하십시오.
+      scope_html: "제국은 흥망하고, 빙하는 사라지고, 언어와 종교는 한 지역에서 다른 지역으로 퍼져 나갑니다. \n단순한 흙길도 붐비는 고속도로와 철도로 변합니다. 소박한 건물들은 하늘 높이 뻗은 마천루로 변합니다. \n그리고 여러분은 여러분의 동네가 어떠했는지 기억합니다. \n이 모든 것이 오픈히스토리컬맵에 돌아갑니다."
+      scope_title: 큰 것부터 사소한 것까지, 옛날부터 현재까지
+    communities:
+      lede_text: |-
+        전 세계의 사람들이 오픈히스토리컬맵을 사용하고 오픈히스토리컬맵에 기여합니다. 많은 기여자들이 개인적으로 참여하는 반면 어떤 기여자들은 커뮤니티를 형성하기도 합니다.
+        다양한 규모의 커뮤니티가 형성되어있으며 작은 마을에서 대규모 다국적 지역에 이르기까지 다양합니다. 공식적일 수도 있지만 비공식적일 수도 있습니다.
+    copyright:
+      legal_babble:
+        attribution_example:
+          alt: 웹페이지 오른쪽 하단, 시간 슬라이더 아래에 OHM이라고 표시된 링크.
+          title: 웹페이지에 오픈히스토리컬맵을 출처로 표기하는 방법의 예시
+        contributors_2_ohm_html: 홈페이지에 소개되어 있는 지도 스타일에는 오픈히스토리컬맵 데이터와 다음 소스가 포함되어 있습니다.
+        contributors_anr_communes_campop: 케임브리지 인구 사회 구조사 연구진
+        contributors_anr_communes_html: 이 데이터는 %{anr_communes_link} 프로젝트와 %{campop_link}의 협력으로 생성되었습니다.
+        contributors_footer_2_html: |-
+          오픈히스토리컬맵에 포함된 데이터는 해당 데이터 제공자가
+          오픈히스토리컬맵을 보증하거나, 보증을 제공하거나,
+          책임을 진다는 것을 의미하지 않습니다.
+        contributors_globcover: GlobCover
+        contributors_globcover_html: "%{globcover_link}의 토지피복도, © ESA 2010 and UCLouvain, 출처를 명시하는 조건으로 교육 및/또는 과학적 목적으로 재사용 가능합니다."
+        contributors_gmted: 전 세계 다중 해상도 지형 고도 데이터 2010
+        contributors_gmted_html: '지형 고도 데이터는 Danielson, J.J., and Gesch, D.B., 2011, %{gmted_link} (GMTED2010): U.S. Geological Survey Open-File Report 2011–1073, 26 p.에서 가져왔습니다. 공개 도메인입니다.'
+        contributors_intro_html: 오픈히스토리컬맵은 수천 명의 개인과 단체의 협력으로 만들어졌으며, 방대한 학술 연구, 언론 보도, 문헌 자료를 활용하였습니다. 대표적인 자료 출처와 기여자는 다음과 같습니다.
+        contributors_more_sources_html: "%{sources_link}는 오픈스트리트맵 위키에서 확인할 수 있습니다."
+        contributors_more_sources_page: 추가 출처 및 기여자
+        contributors_more_sources_page_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Sources
+        contributors_natural_earth: 내추럴 어스
+        contributors_natural_earth_html: "%{natural_earth_link} 데이터집합은 퍼블릭 도메인입니다."
+        contributors_newberry: 뉴베리 라이브러리
+        contributors_newberry_ahcb: 역사적인 카운티 경계 지도
+        contributors_newberry_ahcb_html: 이 데이터는 %{newberry_link}에 있는 윌리엄 M. 스콜 미국사 문화센터의 프로젝트인 %{ahcb_link}에서 가져온 것으로, 제한 없이 재사용할 수 있습니다.
+        contributors_osm: 오픈스트리트맵 기여자
+        contributors_osm_cc_by_sa: 크리에이티브 커먼즈 저작자표시-동일조건변경허락 2.0
+        contributors_osm_cc_by_sa_url: https://creativecommons.org/licenses/by-sa/2.0/
+        contributors_osm_html: 해안선, 수역, 하천 관련 데이터 © %{osm_link}, %{cc_by_sa_link}.
+        contributors_title_html: 감사의 말씀
+        credit_1_html: 공개된 콘텐츠의 사용에 관해 저작권법에서 제한이나 조건을 두지 않지만, 저희 지도나 데이터를 재사용, 수정 또는 기타 방식으로 사용하실 때 오픈히스토리컬맵 (OpenHistoricalMap)을 출처로 명시해 주시면 대단히 감사하겠습니다.
+        credit_2_home: 저희 홈페이지
+        credit_2_ohm_html: 여러분께서는 어떤 방식이든 적절하게 저작자 표기를 하실 수 있습니다. 가령, 디지털 지도에서는 모서리의 작은 글씨로 OpenHistoricalMap (오픈히스토리컬맵)이라 써두고 %{this_copyright_page_link} 또는 %{home_link}로 링크를 달 수 있습니다.
+        credit_2_this_copyright_page: 이 저작권 페이지
+        credit_3_credit_html: 지도 데이터는 %{project_link} 프로젝트에서 제공받았으며, 별도 명시되지 않는 한 퍼블릭 도메인입니다.
+        credit_3_ohm_html: 아니면 다른 출처를 밝혀두는 별도의 크레딧 페이지에 다음과 같은 방식으로 출처 표기를 더 명확히 할 수도 있습니다.
+        credit_4_ohm_html: 인쇄형 지도에서는 범례에 감사의 글을 넣을 수 있습니다. 책에서는 각주, 참고문헌 또는 판권 정보에 OpenHistoricalMap (오픈히스토리컬맵)을 활용했다는 사실을 명시할 수 있습니다. 학술 논문에서는 사용한 자료에 따라 다양한 방식으로 인용할 수 있습니다.
+        credit_title_html: 오픈히스토리컬맵이라는 출처를 밝히는 방법
+        infringement_1_html: |-
+          OHM 기여자는 저작권 소유자의 명시적 허가 없이
+          저작권이 있는 자료(예를 들어 Google 지도 또는 인쇄된 지도)에서
+          데이터를 반입하지 않도록 주의하여야 합니다.
+        infringement_2_ohm_contact_team: 제목에 "TAKEDOWN REQUEST"라고 적어서 오픈히스토리컬맵 팀에게 문의
+        infringement_2_ohm_html: 오픈히스토리컬맵의 데이터베이스나 본 사이트에 저작권으로 보호되는 자료가 부적절하게 추가되었다고 생각되면 %{contact_team_link}로 연락해 주세요.
+        introduction_1_cc0: 크리에이티브 커먼즈 CC0
+        introduction_1_cc0_url: https://creativecommons.org/publicdomain/zero/1.0/
+        introduction_1_ohm_html: 오픈히스토리컬맵은 공개된 지리 공간 데이터 모음입니다. 별도 명시된 경우를 제외하고, 오픈히스토리컬맵의 데이터는 %{cc0_link} 라이선스에 따라 퍼블릭 도메인에 제공됩니다. 사용자가 사용하는 데이터가 퍼블릭 도메인에 속하는 경우, 어떠한 제한 없이 어떤 목적으로든 복사, 배포, 전송 및 수정할 수 있습니다.
+        introduction_2_cc_by: 크리에이티브 커먼즈 저작자표시
+        introduction_2_cc_by_sa: 크리에이티브 커먼즈 저작자표시-동일조건변경허락
+        introduction_2_cc_by_sa_url: https://creativecommons.org/licenses/by-sa/4.0/
+        introduction_2_cc_by_url: https://creativecommons.org/licenses/by/4.0/
+        introduction_2_license_key_url: |-
+          https
+          ://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Tags/Key/license
+        introduction_2_ohm_html: 오픈히스토리컬맵의 데이터베이스에는 저작권이 있는 일부 개별 지도 요소가 포함되어 있습니다. 이러한 요소는 개별 요소의 %{license_key_link} 태그에 명시된 %{cc_by_link}(CC BY) 또는 %{cc_by_sa_link}(CC BY-SA)와 같은 오픈 라이선스에 따라 사용할 수 있습니다. '동일 조건 공유' 라이선스가 적용되는 데이터베이스의 상당 부분을 사용하는 경우, 자체 수정 시 해당 라이선스의 조건을 준수해야 합니다.
+        introduction_3_ohm_html: 저희 홈페이지에 소개된 지도 스타일은 CC0 라이선스 하에 누구나 자유롭게 사용할 수 있습니다. 어떠한 제한 없이 복사, 배포, 전송 및 수정하여 사용하실 수 있습니다.
+        introduction_4_creative_commons: 크리에이티브 커먼즈 저작자표시-동일조건변경허락 2.0
+        introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/
+        introduction_4_ohm_html: 본 문서는 %{creative_commons_link} 라이선스 (CC BY-SA 2.0)에 따라 제공됩니다.
+        more_1_ohm_html: "%{wiki_link}에서 저희 데이터를 사용할 때 고려해야 할 법적 사항과 출처 표기 방법에 대해 자세히 알아보세요."
+        more_1_wiki: 오픈스트리트맵 위키
+        more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
+        more_2_1_api_usage_policy: API 사용 정책
+        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
+        more_2_1_html: |-
+          OpenHistoricalMap은 공개 데이터이지만 제3자에게 지도 API를 무료로 제공할 수 없습니다.
+          %{api_usage_policy_link}, %{tile_usage_policy_link}, %{nominatim_usage_policy_link}를 참조하세요.
+        more_2_1_nominatim_usage_policy: 지명 사용 정책
+        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
+        more_2_1_tile_usage_policy: 타일 사용 정책
+        more_2_1_tile_usage_policy_url: |-
+          https
+          ://operations.osmfoundation.org/policies/tiles/
+        more_title_html: 자세히 찾기
+        trademarks_1_ohm_contact_team: 오픈히스토리컬맵 팀에 문의
+        trademarks_1_ohm_html: 오픈히스토리컬맵 (OpenHistoricalMap)의 명칭 사용과 관련하여 질문이 있으시면 %{contact_team_link}로 문의해 주세요.
+      title: 저작권과 저작자 표시
+    export:
+      cc0: 크리에이티브 커먼즈 CC0
+      cc0_url: https://creativecommons.org/publicdomain/zero/1.0/
+      copyright_page: 저작권과 저작자 표시
+      licence_details_ohm_html: 별도의 명시가 없는 한, OpenHistoricalMap 데이터는 %{cc0_link} 라이선스에 따라 퍼블릭 도메인으로 제공됩니다. 자세한 내용은 %{copyright_page_link} 페이지를 참조하세요.
+      too_large:
+        body: 이 지역은 OpenHistoricalMap XML 데이터로 내보내기엔 너무 넓습니다. 화면을 확대하거나, 더 좁은 지역을 선택해 주세요. 대량 다운로드는 아래 나열된 소스들을 사용해 주세요.
+        other:
+          url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse
+        overpass:
+          description: OpenHistoricalMap 데이터베이스의 미러에서 영역 다운로드
+        planet:
+          description: 정기적으로 업데이트되는 전체 OpenHistoricalMap 데이터베이스 복사본
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            %{note_icon}나 지도에 표시되는 같은 아이콘을 클릭하세요.
+            끌어서 움직일 수 있는, 지도에 표시를 추가할 것입니다.
+            메시지를 추가하고 나서, 저장을 클릭하면, 다른 매퍼가 조사할 것입니다.
+        join_the_community:
+          explanation_html: 우리의 지도 데이터에, 예를 들어 도로가 없거나 여러분의 주소에 문제가 있음을 보았다면, 진행하는 가장 좋은 방법은 OpenHistoricalMap 공동체에 가입하고 스스로 데이터를 추가하거나 고치는 것입니다.
+      other_concerns:
+        concerns_ohm_html: |-
+          저희 데이터의 활용이나 콘텐츠와 관련해 우려 사항이 있는 경우, 자세한 법적 정보는 저희
+          %{contact_link}를 참조하거나 %{copyright_link}에 문의하세요.
+        contact: 문의하기
+    help:
+      discord:
+        description: '오픈스트리트맵 월드 디스코드 서버에 가입하고 #openhistoricalmap 채널에서 도움을 받으세요.'
+      forum:
+        description: OHM 계정으로 더 자세한 토론과 비공식 채팅방에 참여하세요.
+        title: 포럼
+      github:
+        description: 버그를 보고하거나 새로운 기능을 요청하려면 GitHub 저장소에 문제를 제출하세요.
+        title: 기능 요청 및 버그
+      introduction: 오픈히스토리컬맵에는 프로젝트에 대해 배우고, 질문하고 답변하고, 매핑 주제에 대해 공동으로 토론하고 문서화할 수 있는 수단이 많이 있습니다.
+      mailing_list:
+        description: 소소한 메일링 리스트를 구독해 보세요.
+        title: 메일링 리스트
+      slack:
+        description: '오픈스트리트맵 US 슬랙 워크스페이스에 스스로를 초대해 #openhistoricalmap 채널에 참여하세요.'
+        title: IRC
+      welcome:
+        description: 오픈히스토리컬맵의 기본 사항을 다루는 빠른 길라잡이와 함께 시작하세요.
+        title: 오픈히스토리컬맵에 오신 것을 환영합니다
+      welcomemat:
+        description: 오픈히스토리컬맵 관련 계획을 세우고 계신 기관이신가요? 환영판에서 알아야 할 것을 찾아보세요.
+      wiki:
+        description: 커뮤니티에서 관리하는 OHM 사용 설명서와 프로젝트 참여 가이드라인입니다.
+        title: 위키
+    index:
+      js_2: 오픈히스토리컬맵은 매끄러운 지도를 위해 자바스크립트를 사용합니다.
+      license:
+        copyright: 오픈히스토리컬맵은 별도 명시된 경우를 제외하고 퍼블릭 도메인에 속합니다.
+      remote_failed: 편집을 실패했습니다 - JOSM이나 Merkaartor를 불러왔고 원격 제어 설정이 활성화되어 있는지 확인하세요
+    potlatch:
+      removed: 당신의 오픈히스토리컬맵 기본 편집기가 Potlatch로 설정되어 있습니다. 어도비 플래시의 지원이 중단된 관계로 Potlatch는 더 이상 웹 브라우저에서 사용할 수 없습니다.
+    welcome:
+      basic_terms:
+        paragraph_1: 오픈히스토리컬맵에는 고유한 용어가 몇 가지 있습니다. 다음은 유용한 몇 가지 핵심 개념입니다.
+      introduction: 누구나 편집 가능한 세계 지도, 오픈히스토리컬맵에 오신 것을 환영합니다. 이제 가입을 하셨으니 지도 제작에 나설 차례가 되었습니다. 다음은 여러분이 알아야 할 주요 사항을 담은 '빠른 길라잡이'입니다.
+      rules:
+        para_1_html: 오픈히스토리컬맵에는 공식적인 규칙이 거의 없지만, 모든 참가자가 공동체와 협력하고 소통하기를 기대합니다. 수동 편집 외의 다른 수단을 찾고 있다면 %{imports_link}와 %{automated_edits_link}의 지침을 읽고 준수해 주세요.
+      whats_on_the_map:
+        off_the_map_html: 오픈히스토리컬맵은 허구의 대체 역사, 옛 지도의 큰 오류, 저작권이 있는 출처의 데이터를 %{doesnt}. 별도 허가를 받지 않은 한, 온라인이나 인쇄물에서 찾은 최신 역사 지도를 복사하지 마십시오.
+        on_the_map_ohm_html: 오픈히스토리컬맵은 전세계의 자연, 인문지리의 변화를 추적합니다. 제국과 빙하부터 집과 식당에 이르기까지 %{past_and_present}의 수백만 개에 달하는 항목이 있습니다. 여러분이 관심을 둔 현실의 지형지물이라면 무엇이든 지도에 나타낼 수 있습니다.
+        past_and_present: 과거와 현재 모두
+  time:
+    formats:
+      friendly: "%Y년 %B월 %e일 %H:%M"
+  traces:
+    feeds:
+      show:
+        title: 오픈히스토리컬맵 GPS 궤적
+    show:
+      edit: 편집
+      edit_trace: 이 궤적 편집
+      map: 지도
+    trace:
+      edit_map: 지도 편집
+      view_map: 지도 보기
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter}님이 내가 관심을 가진 변경집합에 댓글을 남겼습니다"
+        subject_own: "[OpenHistoricalMap] %{commenter}님이 변경집합 중 하나에 댓글을 남겼습니다"
+      description: 'OpenHistoricalMap 변경집합 #%{id}'
+    diary_comment_notification:
+      description: '오픈히스토리컬맵 일기 항목 #%{id}'
+      header: "%{from_user}님이 오픈히스토리컬맵 일기 항목 내 %{subject} 주제에 댓글을 남겼습니다."
+      header_html: "%{from_user}님이 오픈히스토리컬맵 일기 항목 내 %{subject} 주제에 댓글을 남겼습니다."
+      subject: "[OpenHistoricalMap] %{user}님이 일기 항목에 댓글을 남겼습니다"
+    email_confirm:
+      subject: "[OpenHistoricalMap] 이메일 주소 확인"
+    follow_notification:
+      followed_you: 이제 %{user}님이 오픈히스토리컬맵에서 당신을 팔로우하고 있습니다.
+      subject: "[OpenHistoricalMap] %{user}님이 팔로우했습니다."
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX 가져오기 실패"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX 가져오기 성공"
+    lost_password:
+      hopefully_you: 누군가가 아마 자신이 이 이메일 계정의 openhistoricalmap.org 계정에서 재설정할 비밀번호를 요청했습니다.
+      subject: "[OpenHistoricalMap] 비밀번호 재설정 요청"
+    message_notification:
+      header: "%{from_user}님이 OpenHistoricalMap을 통해 %{subject} 제목으로 된 메시지를 보냈습니다:"
+      header_html: "%{from_user}님이 OpenHistoricalMap을 통해 %{subject} 제목으로 된 메시지를 보냈습니다:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter}님이 당신이 관심 있는 참고를 해결했습니다"
+        subject_own: "[OpenHistoricalMap] %{commenter}님이 당신의 참고 중 하나를 해결했습니다"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter}님이 내가 관심을 가진 참고에 댓글을 남겼습니다"
+        subject_own: "[OpenHistoricalMap] %{commenter}님이 내 참고에 댓글을 남겼습니다"
+      description: 'OpenHistoricalMap 참고 #%{id}'
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter}님이 당신이 관심 있는 참고를 다시 활성했습니다"
+        subject_own: "[OpenHistoricalMap] %{commenter}님이 당신의 참고 중 하나를 다시 활성했습니다"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] OpenHistoricalMap에 오신 것을 환영합니다"
+  users:
+    auth_association:
+      heading: 당신의 ID는 아직 오픈히스토리컬맵 계정에 등록되지 않았습니다.
+      option_1: 오픈히스토리컬맵에 처음 오셨다면, 아래 양식을 이용하여 새 계정을 만들어 주세요.
+    new:
+      about:
+        paragraph_1: 다른 지도와 달리 오픈히스토리컬맵은 전부 여러분과 같은 사람들이 제작합니다. 누구나 자유롭게 고치고, 업데이트하고, 다운로드하고, 사용할 수 있습니다.
+        welcome: 오픈히스토리컬맵에 오신 것을 환영합니다
+      duplicate_social_email: 이미 오픈히스토리컬맵 계정을 가지고 있고 다른 서비스의 ID를 연동하시려면, 비밀번호를 사용하여 로그인한 뒤 계정 설정을 변경하시기 바랍니다.
+      please_contact_support_html: 계정 생성 준비를 위해 %{support_link}(으)로 문의해 주세요. 요청 처리가 최대한 빨리 이뤄질 수 있도록 노력하겠습니다.
+      signup_to_authorize_html: "%{client_app_name}에 접근하려면 오픈히스토리컬맵에 로그인하세요."
+    show:
+      delete_user: 이 사용자를 삭제
+      hide_user: 이 사용자를 숨기기
+      unhide_user: 이 사용자를 숨기기 취소

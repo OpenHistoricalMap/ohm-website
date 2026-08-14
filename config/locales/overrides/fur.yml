@@ -1,0 +1,123 @@
+# Messages for Friulian (furlan)
+# Exported from translatewiki.net
+# Author: Danieldegroot2
+# Author: Davio
+# Author: Erictheise
+# Author: Klenje
+# Author: Macofe
+# Author: Minh Nguyen
+# Author: Tocaibon
+# Do not edit by hand.
+fur:
+  accounts:
+    show:
+      contributor_terms:
+        link text: ce isal chest?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: lei i siei percors GPS privâts
+        allow_read_prefs: lei lis sôs preferencis dal utent
+        allow_write_api: modificâ la mape
+        allow_write_diary: creâ vôs dal diari e coments
+        allow_write_gpx: cjamâ percors GPS
+        allow_write_notes: cambiâ lis notis
+        allow_write_prefs: modificâ lis sôs preferencis dal utent
+  api:
+    notes:
+      rss:
+        title: Notis di OpenHistoricalMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Discussion sul grup di cambiaments di OpenHistoricalMap
+        title_particular: 'Discussion sul grup di cambiaments #%{changeset_id} di OpenHistoricalMap'
+  date:
+    formats:
+      brief_bce: "%{year} pdC"
+      brief_ce: "%{year} ddC"
+      heatmap: "%-d %B"
+  diary_entries:
+    comments:
+      title: Entrâts di diari OpenHistoricalMap
+    feed:
+      all:
+        description: Lis ultimis vôs dai diaris dai utents di OpenHistoricalMap
+        title: Vôs dai diaris di OpenHistoricalMap
+      language:
+        description: Ultimis vôs par %{language_name} dai diaris dai utents di OpenHistoricalMap
+        title: Vôs dai diaris di OpenHistoricalMap par %{language_name}
+      user:
+        description: Ultimis vôs dal diari di OpenHistoricalMap di %{user}
+        title: Vôs dal diari di OpenHistoricalMap par %{user}
+    profile_diaries:
+      comments_label: Coments
+      date_label: Date
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          track: Piste pe corse
+  javascripts:
+    map:
+      zoom:
+        in: Aumente zoom
+        out: Diminuìs zoom
+  layouts:
+    intro_2_create_account: Cree il to profîl utent
+    intro_header: Benvignût in OpenHistoricalMap!
+    intro_text: OpenHistoricalMap e je une mape dal mont, creade di int come te e di ûs libar sot di une licence vierte.
+    logo:
+      alt_text: Logo di OpenHistoricalMap
+    logout: Jes
+    tag_line: Il WikiMapeMont libar
+  sessions:
+    destroy:
+      heading: Va fûr di OpenHistoricalMap
+  site:
+    about_section:
+      contribute_1_user_diaries: diaris dai utents
+    copyright:
+      legal_babble:
+        more_title_html: Par savênt di plui
+      title: Copyright e ricognossiments
+    export:
+      too_large:
+        body: Cheste aree e je masse grande par espuartâle come dâts XML di OpenHistoricalMap. Par plasê incrès il zoom, sielç une aree plui piçule o dopre une des sorzints ca sot par discjamâ un grum di dâts.
+    help:
+      slack:
+        title: IRC
+      welcome:
+        title: Benvignûts in OpenHistoricalMap
+    index:
+      js_2: OpenHistoricalMap al dopre JavaScript par mostrâ la sô mape.
+      remote_failed: Cambiament falît - siguriti che JOSM o Merkaartor a sedin inviâts e la opzion pal remote control e sedi ativade
+  traces:
+    feeds:
+      show:
+        title: Percors GPS di OpenHistoricalMap
+    show:
+      edit: cambie
+      edit_trace: Cambie chest percors
+      map: mape
+    trace:
+      edit_map: Cambie mape
+      view_map: Viôt mape
+  user_mailer:
+    diary_comment_notification:
+      header: "%{from_user} al à zontât un coment ae tô vôs dal diari di OpenHistoricalMap cun sogjet %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} al à zontât un coment ae tô vôs dal diari"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Conferme la tô direzion di pueste eletroniche"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Impuartazion GPX completade cun sucès"
+    message_notification:
+      header: "%{from_user} ti à mandât un messaç su OpenHistoricalMap cun sogjet %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Benvignût in OpenHistoricalMap"
+  users:
+    show:
+      delete_user: elimine chest utent
+      hide_user: plate chest utent
+      unhide_user: mostre chest utent

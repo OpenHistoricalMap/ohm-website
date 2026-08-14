@@ -1,0 +1,58 @@
+# Messages for Serbian (Latin script) (srpski (latinica))
+# Exported from translatewiki.net
+# Author: Erictheise
+# Author: Macofe
+# Author: McDutchie
+# Author: Milicevic01
+# Author: Minh Nguyen
+# Author: Nemo bis
+# Author: Rancher
+# Author: Сербијана
+# Do not edit by hand.
+sr-Latn:
+  accounts:
+    show:
+      contributor_terms:
+        link: http://www.osmfoundation.org/wiki/License/Contributor_Terms?uselang=sr-ec
+        link text: šta je ovo?
+  activerecord:
+    attributes:
+      client_application:
+        callback_url: Povratna adresa
+        support_url: Adresa podrške
+  diary_entries:
+    profile_diaries:
+      date_label: Datum
+  layouts:
+    intro_2_create_account: Otvorite nalog
+    logout: odjavi me
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: Slobodna viki mapa sveta
+  site:
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Uključivanje podataka u Openstritmap ne podrazumeva da izvorni vlasnik podataka prihvata Openstritmap, obezbeđuje bilo kakvu garanciju ili prihvata odgovornost.
+        credit_title_html: Kako da imenujete OpenHistoricalMap
+        more_title_html: Saznajte više
+    index:
+      remote_failed: Uređivanje nije uspelo. Proverite da li je JOSM ili Merkaartor učitan i da je mogućnost daljinskog upravljanja omogućena
+  user_mailer:
+    diary_comment_notification:
+      subject: "[OpenHistoricalMap] %{user} prokomentarisa vaš unos u dnevniku"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Potvrdite vašu e-adresu"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX uvoz nije uspeo"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX uvoz je uspeo"
+    lost_password:
+      subject: "[OpenHistoricalMap] Zahtev za poništavanje lozinke"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Potvrdite vašu e-adresu"
+  users:
+    show:
+      delete_user: obriši ovog korisnika
+      hide_user: sakrij ovog korisnika
+      unhide_user: otkrij ovog korisnika

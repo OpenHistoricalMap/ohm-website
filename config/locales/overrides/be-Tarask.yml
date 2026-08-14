@@ -1,0 +1,166 @@
+# Messages for Belarusian (Taraškievica orthography) (беларуская (тарашкевіца))
+# Exported from translatewiki.net
+# Author: Erictheise
+# Author: EugeneZelenko
+# Author: Jim-by
+# Author: Kapatych
+# Author: Macofe
+# Author: Minh Nguyen
+# Author: Nieszczarda2
+# Author: Red Winged Duck
+# Author: Renessaince
+# Author: Ucukor
+# Author: Wizardist
+# Do not edit by hand.
+be-Tarask:
+  accounts:
+    deletions:
+      show:
+        delete_introduction: 'Вы можаце выдаліць свой рахунак OpenHistoricalMap, націснуўшы кнопку ніжэй. Калі ласка, зьвярніце ўвагу на наступную інфармацыю:'
+        retain_caveats: 'Аднак пэўныя зьвесткі пра вас будуць захоўвацца на OpenHistoricalMap нават пасьля выдаленьня рахунку:'
+    show:
+      contributor_terms:
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: што гэта?
+    terms:
+      show:
+        tou_explain:
+          html: Гэтыя %{tou_link} рэгулююць ужываньне сайта ды іншай інфраструктуры, якую забясьпечвае OpenHistoricalMap. Калі ласка, націсьніце на спасылку, прачытайце й пагадзіцеся з тэкстам.
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: чытаць іх прыватныя GPS-трэкі
+        allow_read_prefs: чытаць іх налады ўдзельніка
+        allow_write_api: зьмяняць мапу
+        allow_write_changeset_comments: камэнтаваць наборы зьменаў
+        allow_write_diary: ствараць запісы ў дзёньніку і камэнтары
+        allow_write_gpx: загружаць GPS-трэкі
+        allow_write_notes: зьмяняць нататкі
+        allow_write_prefs: зьмяняць іх налады ўдзельніка
+        callback_url: URL-адрас зваротнага выкліку
+        name: Імя (абавязкова)
+        support_url: URL-адрас падтрымкі
+        url: Асноўны URL праграмы (абавязкова)
+  api:
+    notes:
+      rss:
+        title: Нататкі OpenHistoricalMap
+  auth:
+    providers:
+      openstreetmap: OpenStreetMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Абмеркаваньне набору зьменаў OpenHistoricalMap
+        title_particular: 'Абмеркаваньне набору зьменаў #%{changeset_id} OpenHistoricalMap'
+  date:
+    formats:
+      brief_bce: "%{year} да н. э."
+      brief_ce: "%{year} н. э."
+      heatmap: "%-d %B"
+  diary_entries:
+    comments:
+      description: Апошнія запісы ў дзёньніку карыстальнікаў OpenHistoricalMap
+      title: Запісы ў дзёньніку OpenHistoricalMap
+    feed:
+      all:
+        description: Апошнія запісы ў дзёньніку карыстальнікаў OpenHistoricalMap
+        title: Запісы ў дзёньніку OpenHistoricalMap
+      language:
+        description: Апошнія запісы ў дзёньніках карыстальнікаў OpenHistoricalMap на %{language_name}
+        title: Запісы ў дзёньніку OpenHistoricalMap на %{language_name}
+      user:
+        description: Апошнія запісы ў дзёньніку OpenHistoricalMap карыстальніка %{user}
+        title: Запісы ў дзёньніку OpenHistoricalMap карыстальніка %{user}
+    profile_diaries:
+      comments_label: Камэнтары
+      date_label: Дата
+  errors:
+    bad_request:
+      description: Запытаная апэрацыя на сэрвэр OpenHistoricalMap ня ёсьць слушнай (HTTP 400)
+    contact:
+      contact_the_community_html: "%{contact_link} з супольнасьцю OpenHistoricalMap, калі знайшлася пашкоджаная спасылка / памылка. Важна пазначыць пэўны URL гэтага запыту."
+      contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
+    forbidden:
+      description: Запытаная апэрацыя на сэрвэр OpenHistoricalMap даступная толькі адміністратарам (HTTP 400)
+    internal_server_error:
+      description: Сэрвэр OpenHistoricalMap сутыкнуўся зь нечаканым станам і ня здоляў выканаць запыт (HTTP 500)
+    not_found:
+      description: Не знойдзены файл/тэчка/апэрацыя API з гэткай назвай на сэрвэры OpenHistoricalMap (HTTP 404)
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          horse_riding: Цэнтар коннай язды
+          track: Бегавая дарожка
+  layouts:
+    intro_2_create_account: Стварыце рахунак
+    logo:
+      alt_text: Лягатып OpenHistoricalMap
+    logout: Выйсьці
+    tag_line: Вольная Wiki-мапа сьвету
+  sessions:
+    destroy:
+      heading: Выйсьці з OpenHistoricalMap
+  site:
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: |-
+          Улучэньне зьвестак у OpenHistoricalMap не азначае, што правайдэры арыґінальных зьвестак
+          якім-небудзь чынам дапамагаюць OpenHistoricalMap, даюць гарантыі, ці
+          прымаюць на сябе якую-небудзь адказнасьць.
+        contributors_intro_html: |-
+          OpenHistoricalMap — гэта супольны праект тысячаў асобаў і арганізацый, якія ў сваю чаргу зьвяртаюцца да вялікага аб’ёму навуковых, журналісцкіх і дакумэнтальных працаў.
+          Сярод нашых найзначнейшых крыніцаў і аўтараў:
+        contributors_title_html: Падзякі
+        credit_1_html: Хоць закон аб аўтарскім праве не забараняе і не стварае ніякіх умоваў што да вашага ужываньня зьместу з грамадзкага набытку, мы вельмі ўдзячныя за кожную згадку пра OpenHistoricalMap пры выкарыстаньні, адаптацыі ці іншым карыстаньні нашых мапаў або зьвестак.
+        credit_title_html: Як спасылацца на OpenHistoricalMap
+        more_title_html: Даведацца болей
+      title: Аўтарскія правы і падзякі
+    export:
+      too_large:
+        body: 'Гэты абшар занадта вялікі для экспарту ў фармаце XML OpenHistoricalMap. Калі ласка, зьменшыце маштаб, выберыце меншы абшар, ці паспрабуйце адну з наступных крыніцаў для пакетнай запампоўкі зьвестак:'
+        planet:
+          title: Плянэта OHM
+    fixthemap:
+      other_concerns:
+        contact: зьвязацца з намі
+    index:
+      js_2: OpenHistoricalMap выкарыстоўвае JavaScript для паказу мапы.
+      remote_failed: Памылка рэдагаваньня. Упэўніцеся, што JOSM ці Merkaartor загружаныя і дазволеная магчымасьць аддаленага кіраваньня
+  time:
+    formats:
+      friendly: "%e %B %Y у %H:%M"
+  traces:
+    show:
+      edit: рэдагаваць
+      edit_trace: Рэдагаваць гэты трэк
+      map: мапа
+    trace:
+      edit_map: Рэдагаваць мапу
+      view_map: Прагляд мапы
+  user_mailer:
+    diary_comment_notification:
+      header: "%{from_user} пракамэнтаваў запіс у дзёньніку на OpenHistoricalMap з тэмай %{subject}:"
+      subject: Карыстальнік [OpenHistoricalMap] %{user} пакінуў камэнтар у дзёньніку
+    email_confirm:
+      subject: "[OpenHistoricalMap] Пацьвердзіце Ваш адрас электроннай пошты"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] памылка імпарту GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] імпарт GPX адбыўся пасьпяхова"
+    lost_password:
+      subject: "[OpenHistoricalMap] Запыт на зьмену паролю"
+    message_notification:
+      header: "%{from_user} даслаў Вам паведамленьне праз OpenHistoricalMap з тэмай %{subject}:"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Вітаем у OpenHistoricalMap"
+  users:
+    show:
+      delete_user: Выдаліць гэтага ўдзельніка
+      hide_user: Схаваць гэтага ўдзельніка
+      unhide_user: Паказаць гэтага ўдзельніка

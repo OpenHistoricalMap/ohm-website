@@ -1,0 +1,59 @@
+# Messages for Western Punjabi (پنجابی)
+# Exported from translatewiki.net
+# Author: Ajeje Brazorf
+# Author: Bgo eiu
+# Author: Erictheise
+# Author: Minh Nguyen
+# Do not edit by hand.
+pnb:
+  accounts:
+    show:
+      contributor_terms:
+        link text: اِیہہ کی اے؟
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: اوس ورتنوالے دیاں لُکاؤݨ کھرے کھوجاں پڑھا سکدیاں
+        allow_read_prefs: اوس ورتنوالے دیاں ترجیحاں پڑھا سکدیاں
+        allow_write_api: ایہہ نقشہ سودھ سکدا
+        allow_write_diary: اوس روزنامچے وچ لیکھ بݨا سکدے، ٹپݨیاں کر سکدیاں تے دوست جوڑ سکدے
+        allow_write_gpx: اوس لئی کھرے کھوجاں چڑھا سکدیاں
+        allow_write_notes: اوس لئی نوٹ سودھ سکدے
+        allow_write_prefs: اوس ورتنوالے دیان ترجیحاں سودھ سکدیاں
+        callback_url: کال‌بیک کڑی دا پتہ
+        name: ناں (لازم)
+        support_url: مدد‌ کڑی دا پتہ
+        url: ایس اَیپ لئی مکھ کڑی دا پتہ (لازم)
+  diary_entries:
+    comments:
+      title: اوپن ہسٹوریکل میپ ڈائری اندراجات
+    profile_diaries:
+      date_label: تریخ
+  javascripts:
+    map:
+      zoom:
+        in: وڈا کرو
+        out: چھوٹی کرو
+  layouts:
+    intro_2_create_account: ورتنوالے دا کھاتہ بݨاؤݨ
+    logout: لوگ‌آؤٹ کرو
+    project_name:
+      h1: اوپن ہسٹورکل میپ
+      title: اوپن ہسٹورکل میپ
+    tag_line: آزاد نقشہ جو جہڑے جہڑے سودھ سکدے اے
+  site:
+    copyright:
+      legal_babble:
+        more_title_html: ہور جاݨکاری لبھݨ واستے
+    help:
+      slack:
+        title: آئی آر سی
+      wiki:
+        title: وِکی
+    index:
+      remote_failed: سودھ کر نہیں سکدے۔ خبرے جو اَیپ چالو تے ریموٹ کنٹرول چالو وکھیو۔
+  users:
+    show:
+      delete_user: ایس ورتنوالے نوں مٹاؤ
+      hide_user: ایس ورتنوالے نوں لُکاؤ
+      unhide_user: ایس ورتنوالے دا اُہلا ہٹاؤ

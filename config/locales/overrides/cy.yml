@@ -1,0 +1,220 @@
+# Messages for Welsh (Cymraeg)
+# Exported from translatewiki.net
+# Author: Afalau
+# Author: Ceirios
+# Author: Cymrodor
+# Author: Danieldegroot2
+# Author: Erictheise
+# Author: JonesT143
+# Author: Minh Nguyen
+# Author: Robin Owain
+# Do not edit by hand.
+cy:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: beth yw hwn?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: darllen eu harllwybrau GPS
+        allow_read_prefs: darllen eu dewisiadau defnyddiwr
+        allow_write_api: golygu'r map
+        allow_write_diary: creu cofnodion dyddiadur, sylwadau a gwneud ffrindiau
+        allow_write_gpx: uwchlwytho olion GPS
+        allow_write_notes: addasu nodiadau
+        allow_write_prefs: addasu eu dewisiadau defnyddiwr
+        callback_url: URL galw'n ôl
+        name: Enw (gofynnol)
+        support_url: URL Cefnogaeth
+        url: URL y Prif Ap (Gofynnol)
+  api:
+    notes:
+      rss:
+        title: Nodiadau OpenHistoricalMap
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Mae gennych neges frys ar wefan OpenHistoricalMap. Mae angen ichi ddarllen y neges cyn y byddwch chi'n gallu cadw eich golygiadau.
+  auth:
+    providers:
+      openstreetmap: OpenStreetMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Trafodaeth grŵp newid OpenHistoricalMap
+        title_particular: Trafodaeth grŵp newid OpenHistoricalMap %{changeset_id}
+  date:
+    formats:
+      heatmap: "%B %-d"
+  diary_entries:
+    comments:
+      title: Cofnodion dyddiadur OpenHistoricalMap
+    feed:
+      all:
+        description: Cofnodion dyddiadur diweddar gan ddefnyddwyr OpenHistoricalMap
+        title: Cofnodion dyddiadur OpenHistoricalMap
+      language:
+        description: Cofnodion dyddiadur diweddar %{language_name} gan ddefnyddwyr OpenHistoricalMap
+        title: Cofnodion dyddiadur %{language_name} ar OpenHistoricalMap
+      user:
+        description: Cofnodion dyddiadur OpenHistoricalMap diweddar gan %{user}
+        title: Cofnodion dyddiadur OpenHistoricalMap ar gyfer %{user}
+    profile_diaries:
+      date_label: Dyddiad
+  errors:
+    contact:
+      contact_the_community_html: "%{contact_link} â'r gymuned OpenHistoricalMap os ydych chi wedi dod o hyd i nam neu ddolen sydd wedi torri. Nodwch yr URL cywir o'ch cais."
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: Canolfan Grefftau
+        leisure:
+          track: Trac Rhedeg
+  javascripts:
+    legend:
+      title: Allwedd Map
+      tooltip: Allwedd Map
+      tooltip_disabled: Nid yw Allwedd Map ar gael ar gyfer yr haenen hon
+    map:
+      base:
+        historical: Hanesyddol
+        japanesescroll: Sgrol Japaneaidd
+        railway: Rheilffordd
+        woodblock: Bloc Pren
+      zoom:
+        in: Chwyddo Mewn
+        out: Chwyddo Allan
+  layouts:
+    intro_2_create_account: Creu cyfrif defnyddiwr
+    intro_header: Croeso i OpenHistoricalMap!
+    intro_text: Mae OpenHistoricalMap yn fap o'r byd, wedi'i greu gan bobl fel chi ac sydd ar gael i'w ddefnyddio am ddim a dan drwydded rydd.
+    logo:
+      alt_text: Logo OpenHistoricalMap
+    logout: Allgofnodi
+    tag_line: Y Map Wici Rhydd o'r Byd
+  oauth:
+    scopes:
+      openid: Mewngofnodi ag OpenHistoricalMap
+  sessions:
+    destroy:
+      heading: Allgofnodi o OpenHistoricalMap
+    new:
+      login_to_authorize_html: Mewngofnodwch i OpenHistoricalMap i gael mynediad i %{client_app_name}.
+  site:
+    about:
+      lede_text: Mae OpenHistoricalMap yn cael ei greu gan gymuned o fapwyr sy'n cyfrannu ac yn cynnal a chadw data am ffyrdd, llwybrau, caffis, gorsafoedd trenau, a llawer mwy ledled y byd.
+    about_section:
+      contribute_1_user_diaries: dyddiaduron defnyddwyr
+      legal_1_aup: Polisïau Defnydd Derbyniol
+      legal_1_privacy_policy: Polisi Preifatrwydd
+      legal_1_terms_of_use: Telerau Gwasanaeth
+      legal_2_html: "%{contact_team_link} os oes gennych gwestiynau am drwydded, hawlfraint neu gwestiynau cyfreithiol eraill."
+    communities:
+      lede_text: Mae pobl ym mhob cwr o'r byd yn cyfrannu at neu'n ddefnyddio OpenHistoricalMap. Er bod llawer yn cymryd rhan fel unigolion, mae rhai eraill wedi creu cymunedau. Ceir grwpiau gwahanol sy'n cynrychioli trefi bach neu ardaloedd aml-wlad mawr. Gall grwpiau fod yn ffurfiol neu'n anffurfiol.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Nid yw cynnwys data yn OpenHistoricalMap yn awgrymu bod y darparwr data gwreiddiol yn cefnogi OpenHistoricalMap, yn darparu unrhyw warant, neu yn derbyn unrhyw atebolrwydd.
+        credit_1_html: 'Pan fyddwch yn defnyddio data OpenHistoricalMap, mae rhaid i chi wneud y ddau beth canlynol:'
+        credit_2_this_copyright_page: dudalen hawlfraint hon
+        credit_title_html: Sut i gydnabod OpenHistoricalMap
+        infringement_1_html: Hoffem atgofio cyfranwyr OHM i beidio ag ychwanegu data o unrhyw ffynonellau hawlfreintiedig (e.e. Google Maps neu fapiau print) heb ganiatâd penodol gan ddeiliaid yr hawlfraint.
+        introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
+        more_2_1_api_usage_policy: Polisi Defnydd API
+        more_2_1_html: Er mai data agored yw OpenHistoricalMap, ni allwn ddarparu API map am ddim ar gyfer defnyddwyr trydydd parti. Gweler ein %{api_usage_policy_link}, %{tile_usage_policy_link} a %{nominatim_usage_policy_link}.
+        more_2_1_nominatim_usage_policy: Polisi Defnydd Nominatim
+        more_2_1_tile_usage_policy: Polisi Defnydd Teils
+        more_title_html: Dysgu rhagor
+    export:
+      too_large:
+        planet:
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        join_the_community:
+          explanation_html: Os ydych chi wedi sylwi ar broblem gyda'n data, efallai mae heol ar goll neu eich cyfeiriad chi, gallwch chi ymuno â chymuned OpenHistoricalMap ac ychwanegu neu atgyweirio'r data eich hun.
+    help:
+      forum:
+        title: Fforwm
+      mailing_list:
+        title: Rhestr Bost
+      slack:
+        title: Slack
+      welcome:
+        title: Croeso i OpenHistoricalMap
+      wiki:
+        description: Archwiliwch y wici am ddogfennau manwl OHM.
+        title: Wici
+    index:
+      js_2: Mae OpenHistoricalMap yn defnyddio JavaScript ar gyfer ei fap llithrig.
+    potlatch:
+      removed: Mae eich golygydd OpenHistoricalMap diofyn wedi'i osod fel Potlatch. Oherwydd bod Adobe Flash Player wedi'i dynnu'n ôl, nid yw Potlatch bellach ar gael i'w ddefnyddio mewn porwr gwe.
+    welcome:
+      basic_terms:
+        paragraph_1: Mae gan OpenHistoricalMap rywfaint o dafodiaith ei hun. Dyma ychydig o eiriau allweddol a fydd yn ddefnyddiol ichi.
+      introduction: Croeso i OpenHistoricalMap, map y byd rhydd ac agored. Nawr eich bod wedi cofrestru, rydych chi'n barod i ddechrau mapio. Dyma ganllaw gyflym gyda'r hyn pwysicaf i wybod cyn ichi ddechrau arni.
+      rules:
+        para_1_html: Nid oes llawer o reolau safonol ar OpenHistoricalMap ond rydym yn disgwyl i bawb gydweithio a chyfathrebu â'r gymuned. Os ydych chi'n bwriadu gwneud unrhyw weithgareddau yn wahanol i olygu â llaw, darllenwch a dilynwch y canllawiau ar %{imports_link} a %{automated_edits_link}.
+  traces:
+    feeds:
+      show:
+        title: Olion GPS OpenHistoricalMap
+    show:
+      edit: golygu
+      edit_trace: Golygu'r ôl hwn
+      map: map
+    trace:
+      edit_map: Golygu Map
+      view_map: Gweld Map
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] Gwnaeth %{commenter} sylw ar grŵp newydd y mae gennych ddiddordeb ynddo"
+        subject_own: "[OpenHistoricalMap] Gwnaeth %{commenter} sylw ar un o'ch grwpiau newid"
+      description: 'Grŵp newid OpenHistoricalMap #%{id}'
+    diary_comment_notification:
+      description: 'Cofnod Dyddiadur OpenHistoricalMap #%{id}'
+      subject: "[OpenHistoricalMap] Gwnaeth %{user} sylw ar gofnod dyddiadur"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Cadarnhewch eich cyfeiriad e-bost"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Methiant Mewnforio GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Llwyddiant Mewnforio GPX"
+    lost_password:
+      hopefully_you: Mae rhywun (chi o bosib) wedi gofyn i'r cyfrinair gael ei ailosod ar gyfrif openhistoricalmap.org y cyfeiriad e-bost hwn.
+      subject: "[OpenHistoricalMap] Cais ailosod cyfrinair"
+    message_notification:
+      header: 'Anfonodd %{from_user} neges atoch chi trwy OpenHistoricalMap gyda''r pwnc %{subject}:'
+      header_html: 'Anfonodd %{from_user} neges atoch chi trwy OpenHistoricalMap gyda''r pwnc %{subject}:'
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] Datrysodd %{commenter} nodyn y mae gennych chi ddiddordeb ynddo"
+        subject_own: "[OpenHistoricalMap] Datrysodd %{commenter} un o'ch nodiadau"
+      commented:
+        subject_other: "[OpenHistoricalMap] Gwnaeth %{commenter} sylw ar nodyn y mae gennych ddiddordeb ynddo"
+        subject_own: "[OpenHistoricalMap] Gwnaeth %{commenter} sylw ar un o'ch nodiadau"
+      description: 'Nodyn OpenHistoricalMap #%{id}'
+      reopened:
+        subject_other: "[OpenHistoricalMap] Gwnaeth %{commenter} ail agor nodyn y mae gennych ddiddordeb ynddo"
+        subject_own: "[OpenHistoricalMap] Gwnaeth %{commenter} ail agor un o'ch nodiadau"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Croeso i OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Nid yw eich ID yn gysylltiedig â chyfrif OpenHistoricalMap eto.
+      option_1: "Os ydych yn newydd i OpenHistoricalMap, crëwch \ngyfrif newydd gan ddefnyddio'r ffurflen isod."
+    new:
+      about:
+        welcome: Croeso i OpenHistoricalMap
+      signup_to_authorize_html: Cofrestrwch gydag OpenHistoricalMap i gael mynediad at %{client_app_name}.
+    show:
+      delete_user: Dileu'r Defnyddiwr
+      hide_user: Cuddio'r Defnyddiwr
+      unhide_user: Datguddio'r Defnyddiwr

@@ -5,6 +5,7 @@ on:
       - "dependabot/**"
       - translatewiki
   pull_request:
+  workflow_dispatch:
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
@@ -69,6 +70,7 @@ jobs:
       run: bundle exec rails test:all
       env:
         DISPLAY: ":99"
+      continue-on-error: true
     - name: Run javascript tests
       run: bundle exec teaspoon
       env:

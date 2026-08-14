@@ -3,6 +3,10 @@ L.extend(L.LatLngBounds.prototype, {
   getSize: function () {
     return (this._northEast.lat - this._southWest.lat) *
            (this._northEast.lng - this._southWest.lng);
+  },
+
+  wrap: function () {
+    return new L.LatLngBounds(this._southWest.wrap(), this._northEast.wrap());
   }
 });
 
@@ -13,7 +17,8 @@ L.OSM.Map = L.Map.extend({
     this.baseLayers = OSM.LAYER_DEFINITIONS.map((
       { credit, nameId, leafletOsmId, leafletOsmDarkId, style, styleDark, ...layerOptions }
     ) => {
-      if (credit) layerOptions.attribution = makeAttribution(credit);
+      const isOhm = layerOptions.source === "openhistoricalmap";
+      if (credit) layerOptions.attribution = makeAttribution(credit, isOhm);
       if (nameId) layerOptions.name = OSM.i18n.t(`javascripts.map.base.${nameId}`);
 
       let layerConstructor;
@@ -42,7 +47,8 @@ L.OSM.Map = L.Map.extend({
 
     this.gpsLayer = new L.OSM.GPS({
       pane: "overlayPane",
-      code: "G"
+      code: "G",
+      name: OSM.i18n.t("javascripts.map.base.gps")
     });
     this.gpsLayer.on("add", () => {
       this.fire("overlayadd", { layer: this.gpsLayer });
@@ -56,22 +62,31 @@ L.OSM.Map = L.Map.extend({
       }
     });
 
-    function makeAttribution(credit) {
+    function makeAttribution(credit, isOhm = false) {
       let attribution = "";
 
-      attribution += OSM.i18n.t("javascripts.map.copyright_text", {
-        copyright_link: $("<a>", {
-          href: "/copyright",
-          text: OSM.i18n.t("javascripts.map.openstreetmap_contributors")
-        }).prop("outerHTML")
-      });
+      if (isOhm) {
+        attribution += OSM.i18n.t("javascripts.map.cc0_text", {
+          copyright_link: $("<a>", {
+            href: "/copyright",
+            text: OSM.i18n.t("javascripts.map.openhistoricalmap_contributors")
+          }).prop("outerHTML")
+        });
+      } else {
+        attribution += OSM.i18n.t("javascripts.map.copyright_text", {
+          copyright_link: $("<a>", {
+            href: "/copyright",
+            text: OSM.i18n.t("javascripts.map.openstreetmap_contributors")
+          }).prop("outerHTML")
+        });
+      }
 
-      attribution += credit.donate ? " ♥️ " : ". ";
+      attribution += credit.donate ? " &hearts; " : ". ";
       attribution += makeCredit(credit);
       attribution += ". ";
 
       attribution += $("<a>", {
-        href: "https://wiki.osmfoundation.org/wiki/Terms_of_Use",
+        href: isOhm ? "https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse" : "https://wiki.osmfoundation.org/wiki/Terms_of_Use",
         text: OSM.i18n.t("javascripts.map.website_and_api_terms")
       }).prop("outerHTML");
 
@@ -127,8 +142,11 @@ L.OSM.Map = L.Map.extend({
   },
 
   getMapBaseLayerId: function () {
-    const layer = this.getMapBaseLayer();
-    if (layer) return layer.options.layerId;
+    let baseLayerId;
+    this.eachLayer(function (layer) {
+      if (layer.options && layer.options.keyid) baseLayerId = layer.options.keyid;
+    });
+    return baseLayerId;
   },
 
   getMapBaseLayer: function () {
@@ -229,11 +247,13 @@ L.OSM.Map = L.Map.extend({
   },
 
   getGeoUri: function (marker) {
-    let latLng = this.getCenter();
     const zoom = this.getZoom();
+    let latLng;
 
     if (marker && this.hasLayer(marker)) {
-      latLng = marker.getLatLng();
+      latLng = marker.getLatLng().wrap();
+    } else {
+      latLng = this.getCenter();
     }
 
     const { lat, lng } = OSM.cropLocation(latLng, zoom);
@@ -302,7 +322,10 @@ L.OSM.Map = L.Map.extend({
     } else { // element handled by L.OSM.DataLayer
       const map = this;
       this._objectLoader = new AbortController();
-      fetch(OSM.apiUrl(object), {
+      // OHM: the external ohm-inspector fetches the same element URL as XML;
+      // an explicit .json URL keeps the two requests on separate cache keys so
+      // the browser can never hand the XML body to this JSON fetch.
+      fetch(OSM.apiUrl(object) + ".json", {
         headers: { accept: "application/json", ...OSM.oauth },
         signal: this._objectLoader.signal
       })

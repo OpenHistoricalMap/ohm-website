@@ -1,0 +1,489 @@
+# Messages for Vietnamese (Tiếng Việt)
+# Exported from translatewiki.net
+# Author: A Retired User
+# Author: Anewplayer
+# Author: Băng Tỏa
+# Author: Dinhxuanduyet
+# Author: Doraemonluonbentoi
+# Author: Erictheise
+# Author: Flyplanevn27
+# Author: FunnyYellowDog
+# Author: Ioe2015
+# Author: JohnsonLee01
+# Author: Keo010122
+# Author: KhangND
+# Author: Leducthn
+# Author: Macofe
+# Author: Minh Nguyen
+# Author: Nemo bis
+# Author: Nghiemtrongdai VN
+# Author: NguoiDungKhongDinhDanh
+# Author: Nguyenphutrong2
+# Author: Nguyễn Mạnh An
+# Author: Ninomax
+# Author: Phjtieudoc
+# Author: Ruila
+# Author: SongNgu.xyz
+# Author: Trần Nguyễn Minh Huy
+# Author: Trọng Đặng
+# Author: Vinhtantran
+# Author: XDO
+# Author: 予弦
+# Author: 神樂坂秀吉
+# Do not edit by hand.
+vi:
+  accounts:
+    deletions:
+      show:
+        delete_introduction: 'Nhấp vào nút bên dưới để xóa tài khoản OpenHistoricalMap của bạn. Vui lòng lưu ý các điều sau:'
+        retain_caveats: 'Tuy nhiên, một số thông tin về bạn vẫn được giữ lại trên OpenHistoricalMap, ngay cả sau khi tài khoản của bạn bị xóa:'
+    show:
+      contributor_terms:
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms?uselang=vi
+        link text: đây là gì?
+    terms:
+      show:
+        read and accept with tou: Xin vui lòng đọc thỏa thuận đóng góp và các điều khoản sử dụng, đọc xong thì đánh cả hai hộp kiểm và bấm nút Tiếp tục.
+        tou_explain:
+          html: Các %{tou_link} quy định cách sử dụng trang Web và các cơ sở hạ tầng khác do OpenHistoricalMap cung cấp. Xin vui lòng mở liên kết và đọc và chấp nhận thỏa thuận.
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: đọc dấu vết GPS riêng tư của họ
+        allow_read_prefs: thay đổi tùy chọn cá nhân
+        allow_write_api: sửa đổi bản đồ
+        allow_write_changeset_comments: bình luận về bộ thay đổi
+        allow_write_diary: tạo mục nhật ký và bình luận
+        allow_write_gpx: tải lên nật trình GPS
+        allow_write_notes: sửa đổi ghi chú
+        allow_write_prefs: thay đổi tùy chọn cá nhân
+        callback_url: URL Gọi lại
+        name: Tựa đề (Yêu cầu)
+        support_url: URL Trợ giúp
+        url: URL ứng dụng chính (Bắt buộc)
+  api:
+    notes:
+      rss:
+        title: Ghi chú OpenHistoricalMap
+  application:
+    auth_providers:
+      openstreetmap:
+        alt: Biểu trưng OpenStreetMap
+        title: Đăng nhập qua OpenStreetMap
+    setup_user_auth:
+      blocked_zero_hour: Bạn có tin nhắn mới rất quan trọng tại trang OpenHistoricalMap. Bạn phải đọc tin nhắn này trước khi được phép lưu thêm thay đổi.
+  auth:
+    providers:
+      openstreetmap: OpenStreetMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Thảo luận về bộ thay đổi tại OpenHistoricalMap
+        title_particular: 'Thảo luận về bộ thay đổi #%{changeset_id} tại OpenHistoricalMap'
+  date:
+    formats:
+      brief_bce: "%{year} TCN"
+      brief_ce: "%{year} CN"
+      heatmap: "%-d tháng %-m"
+  diary_entries:
+    comments:
+      description: Những mục nhật ký gần đây từ người dùng OpenHistoricalMap
+      title: Các mục nhật ký OpenHistoricalMap
+    feed:
+      all:
+        description: Những mục nhật ký gần đây từ người dùng OpenHistoricalMap
+        title: Các mục nhật ký OpenHistoricalMap
+      language:
+        description: Những mục nhật ký gần đây của người dùng OpenHistoricalMap bằng %{language_name}
+        title: Các mục nhật ký OpenHistoricalMap bằng %{language_name}
+      user:
+        description: Những mục gần đây trong nhật ký OpenHistoricalMap từ %{user}
+    profile_diaries:
+      comments_label: Bình luận
+      date_label: Ngày
+  errors:
+    bad_request:
+      description: Bạn đã yêu cầu tác vụ không hợp lệ trên máy chủ OpenHistoricalMap (HTTP 400)
+    contact:
+      contact_the_community_html: Xin vui lòng %{contact_link} cộng đồng OpenHistoricalMap nếu bạn gặp liên kết hỏng hoặc lỗi phần mềm. Hãy ghi nhớ địa chỉ URL chính xác của yêu cầu máy chủ.
+      contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication?uselang=vi
+    forbidden:
+      description: Tác vụ đuợc yêu cầu trên máy chủ OpenHistoricalMap chỉ khả dụng đối với các quản trị viên (HTTP 403)
+    internal_server_error:
+      description: Máy chủ OpenHistoricalMap gặp phải tình trạng không mong đợi khiến máy chủ không thể thực hiện yêu cầu (HTTP 500)
+    not_found:
+      description: Không thể tìm thấy thao tác tập tin/thư mục/API có tên đó trên máy chủ OpenHistoricalMap (HTTP 404)
+  geocoder:
+    search:
+      title:
+        osm_nominatim: Nominatim OpenHistoricalMap
+        osm_nominatim_reverse: Nominatim OpenHistoricalMap
+    search_osm_nominatim:
+      border_types:
+        archdiocese: Biên giới Tổng giáo phận
+        caliphate: Biên giới Nhà nước Hồi giáo
+        canton: Biên giới Bang
+        census_area: Biên giới Khu vực Thống kê Dân số
+        city-state: Biên giới Thành quốc
+        colony: Biên giới Thuộc địa
+        commonwealth: Biên giới Khối thịnh vượng chung
+        commune: Biên giới Xã
+        condominium: Biên giới Lãnh thổ Công quản
+        confederation: Biên giới Liên bang
+        diocese: Biên giới Giáo phận
+        dominion: Biên giới Quốc gia Tự trị
+        emirate: Biên giới Tiểu vương quốc
+        empire: Biên giới Đế quốc
+        federal_district: Biên giới Đặc khu Liên bang
+        federation: Biên giới Liên bang
+        governorate: Biên giới Tỉnh
+        kingdom: Biên giới Vương quốc
+        oblast: Biên giới Tỉnh
+        occupation: Biên giới Chiếm đóng
+        overseas_collectivity: Biên giới Cộng đồng Hải ngoại
+        overseas_department: Biên giới Tỉnh Hải ngoại
+        overseas_territory: Biên giới Lãnh thổ Hải ngoại
+        planning_region: Biên giới Khu vực Kế hoạch
+        prefecture: Biên giới Tỉnh
+        prefecture_apostolic: Biên giới Hạt Phủ doãn Tông Tòa
+        protectorate: Biên giới Xứ bảo hộ
+        realm: Biên giới Vương quốc
+        republic: Biên giới Cộng hòa
+        sultanate: Biên giới Vương quốc Hồi giáo
+        territorial_prelature: Biên giới Giám hạt Tòng thổ
+        territory: Biên giới Lãnh thổ
+        vicariate_apostolic: Biên giới Hạt Đại diện Tông Tòa
+        viceroyalty: Biên giới Phó vương quốc
+        voivodeship: Biên giới Tỉnh
+        ward: Biên giới Phường
+        zone: Biên giới Khu vực
+      prefix:
+        leisure:
+          track: Đường Chạy
+  javascripts:
+    legend:
+      title: Chú giải Bản đồ
+      tooltip: Chú giải Bản đồ
+    map:
+      base:
+        historical: Lịch sử
+        japanesescroll: Cuộn Nhật
+        railway: Đường sắt
+        woodblock: Mộc bản
+      cc0_text: "%{copyright_link}"
+      openhistoricalmap_contributors: OHM
+      zoom:
+        in: Phóng to
+        out: Thu nhỏ
+  layouts:
+    intro_2_create_account: Mở tài khoản mới
+    intro_header: Chào mừng đến với OpenHistoricalMap!
+    intro_text: OpenHistoricalMap là bản đồ thế giới do những người như bạn xây dựng và cho phép sử dụng thoải mái theo một giấy phép nguồn mở.
+    logo:
+      alt_text: Biểu trưng OpenHistoricalMap
+    logout: Đăng xuất
+    offline_flash:
+      osm_offline: Cơ sở dữ liệu OpenHistoricalMap đang ngoại tuyến trong lúc đang thực hiện những công việc bảo quản cơ sở dữ liệu cần thiết.
+      osm_read_only: Cơ sở dữ liệu OpenHistoricalMap đang bị khóa không được sửa đổi trong lúc đang thực hiện những công việc bảo quản cơ sở dữ liệu cần thiết.
+    partners_devseed: Development Seed
+    partners_greeninfo: Mạng lưới GreenInfo
+    partners_osmf: Quỹ OpenStreetMap
+    partners_osmus: OpenStreetMap Hoa Kỳ
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: Bản đồ Thế giới trên Wiki Mở
+  notes:
+    new_readonly:
+      warning: Không thể tạo ghi chú mới vì API OpenHistoricalMap hiện đang ở chế độ chỉ-đọc.
+  oauth:
+    scopes:
+      openid: Đăng nhập qua OpenHistoricalMap
+  preferences:
+    basic_preferences:
+      show:
+        map_color_schemes:
+          auto: Tự động
+    preferences:
+      navigation:
+        advanced_preferences: Tùy chỉnh Nâng cao
+        preferences: Tùy chọn
+  sessions:
+    destroy:
+      heading: Đăng xuất OpenHistoricalMap
+    new:
+      login_to_authorize_html: Đăng nhập vào OpenHistoricalMap để truy cập %{client_app_name}.
+  site:
+    about:
+      lede_text: OpenHistoricalMap là dự án cộng đồng khát vọng lập bản đồ các thay đổi địa lý cả tự nhiên lẫn nhân tạo ở khắp mọi nơi, từ xưa đến nay.
+      used_by_html: Thám hiểm thế giới vào bất kỳ thời đại trong %{name}.
+    about_section:
+      contribute_1_forum: diễn đàn thảo luận
+      contribute_1_ohm_html: |-
+        Cộng đồng tình nguyện viên chúng ta càng ngày càng lớn, bao gồm các nhà sử học nghiệp dư và chuyên nghiệp, những người đóng góp vào OpenStreetMap và Wikipedia, các chuyên gia hệ thống thông tin địa lý (GIS), và những người bình thường hiểu biết về môi trường chung quanh.
+        Chúng ta ham thích ghi lại các chi tiết về thế giới và giúp các cộng đồng ngoài đời kể lại câu chuyện của họ.
+        Để tìm hiểu thêm về cộng đồng, hãy tham khảo %{wiki_link}, ghé vào %{forum_link}, đọc các %{user_diaries_link}, và theo dõi tài khoản %{mastodon_link} hoặc %{bluesky_link} của chúng ta.
+      contribute_1_user_diaries: nhật ký của người dùng
+      contribute_1_wiki: tài liệu đầy đủ tại wiki
+      contribute_1_wiki_url: https://wiki.openstreetmap.org/wiki/Vi:OpenHistoricalMap?uselang=vi
+      contribute_2_create_account: tạo tài khoản miễn phí
+      contribute_2_donations: chấp nhận khoản quyên góp từ thiện
+      contribute_2_html: |-
+        Bạn có thể bắt đầu đóng góp vào bản đồ ngay hôm nay bằng cách by %{create_account_link}.
+        Chúng tôi cũng %{donations_link} qua %{osmus_link}, một tổ chức phi lợi nhuận 501(c)(3) có tình trạng miễn thuế.
+        Khoản quyên góp hào phóng của bạn sẽ trực tiếp giúp OpenHistoricalMap hoạt động ổn định cho tất cả mọi người.
+      contribute_2_osmus: OpenStreetMap Hoa Kỳ
+      contribute_title: Bạn Có thể Giúp đỡ
+      legal_1_aup: Quy định Sử dụng Đàng hoàng
+      legal_1_aup_url: https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy?uselang=vi
+      legal_1_group: một nhóm không nghi thức lắm
+      legal_1_group_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Governance?uselang=vi
+      legal_1_html: |-
+        Trang này và các dịch vụ có liên quan được hoạt động bởi
+        %{group_link} thuộc OpenStreetMap Hoa Kỳ thay mặt cho cộng đồng. Việc sử dụng tất cả các dịch vụ của OpenHistoricalMap phải tuân theo %{terms_of_use_link}, %{aup_link}, và %{privacy_policy_link} của chúng tôi.
+      legal_1_privacy_policy: Quy định về Quyền riêng tư
+      legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy?uselang=vi
+      legal_1_terms_of_use: Điều khoản Sử dụng
+      legal_1_terms_of_use_url: https://osmfoundation.org/wiki/Terms_of_Use?uselang=vi
+      legal_2_contact_team: liên lạc với nhóm OpenHistoricalMap
+      legal_2_html: |-
+        Xin vui lòng %{contact_team_link}
+        nếu có thắc mắc về giấy phép, bản quyền, hoặc vấn đề pháp lý khác.
+      legal_3_html: |-
+        OpenHistoricalMap® là nhãn hiệu đăng ký (Số đăng ký Hoa Kỳ 90.019.364).
+        OpenStreetMap cũng như biểu hình kính lúp là %{osmf_trademarks_link}.
+      legal_3_osmf_trademarks: nhãn hiệu đăng ký của Quỹ OpenStreetMap
+      legal_3_osmf_trademarks_url: https://osmfoundation.org/wiki/Trademark_Policy?uselang=vi
+      open_data_1_1_html: |-
+        Bản đồ trên trang chủ chỉ là một trong nhiều cách để trải nghiệm các thông tin lịch sử mà chúng ta đã thu thập.
+        Bạn có thể %{reuse_link} bằng cách tải về hoặc thông qua nhiều API miễn phí đều tương thích với phần mềm nguồn mở.
+      open_data_1_1_reuse: tái sử dụng dữ liệu cơ sở
+      open_data_1_1_reuse_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse?uselang=vi
+      open_data_2_copyright_license: Bản quyền và Ghi công
+      open_data_2_html: |-
+        Dữ liệu thuộc phạm vi công cộng trừ khi nêu rõ khác.
+        Bạn được tự do sử dụng nó cho bất kỳ mục đích nào mà không có bất kỳ hạn chế nào.
+        Tuy nhiên, chúng tôi rất trân trọng bất kỳ lời ghi công hoặc trích dẫn nào mà bạn cung cấp cho OpenHistoricalMap.
+        Để biết thêm chi tiết và lời công nhận, xem %{copyright_license_link}.
+      scope_html: Đế quốc nổi lên, sụp đổ. Băng hà biến mất. Ngôn ngữ, tôn giáo lan tràn từ miền này sang miền kia. Đường mòn đơn giản trở thành xa lộ, đường sắt huyết mạch. Tòa nhà bình dân được thay thế bằng tòa nhà chọc trời cao vút. Vả lại bạn vẫn còn nhớ khu phố mình như thế nào. Tất cả đều thuộc về OpenHistoricalMap.
+      scope_title: Lớn nhỏ, Xưa nay
+    communities:
+      lede_text: |-
+        Nhiều người đến với OpenHistoricalMap từ khắp mọi nơi để đóng góp vào dự án hoặc sử dụng bản đồ.
+        Nhiều người cũng tụ tập vào đủ loại nhóm cộng đồng chính thức hoặc không chính thức ứng với hàng xóm, thành phố, tỉnh, quốc gia, lục địa, hoặc sở thích.
+    copyright:
+      legal_babble:
+        attribution_example:
+          alt: Liên kết đề OHM ở góc dưới bên phải của trang Web, bên dưới một con trượt thời gian.
+          title: Ví dụ ghi công OpenHistoricalMap trên một trang Web
+        contributors_2_ohm_html: 'Các kiểu bản đồ trên trang chủ chứa dữ liệu OpenHistoricalMap cùng với các nguồn sau:'
+        contributors_anr_communes_campop: Nhóm Cambridge vì Lịch sử Dân cư và Cấu trúc Xã hội
+        contributors_anr_communes_html: Dữ liệu do dự án %{anr_communes_link} tạo ra cùng với %{campop_link}.
+        contributors_anr_communes_project: ANR COMMUNES
+        contributors_footer_2_html: Việc bao gồm dữ liệu trong OpenHistoricalMap không ngụ ý rằng nhà cung cấp dữ liệu đầu tiên ủng hộ OpenHistoricalMap, biện hộ sự chính xác của nó, hoặc nhận trách nhiệm pháp lý nào.
+        contributors_globcover: GlobCover
+        contributors_globcover_html: Lớp phủ đất từ %{globcover_link}, © Cơ quan Vũ trụ châu Âu 2010 và UCLouvain, có sẵn để tái sử dụng cho mục đích giáo dục và/hoặc khoa học miễn là ghi công.
+        contributors_gmted: Dữ liệu độ cao địa hình toàn cầu năm 2010
+        contributors_gmted_html: 'Dữ liệu độ cao địa hình từ Danielson, J.J., và Gesch, D.B., 2011, %{gmted_link} (GMTED2010): Bản báo cáo Open-File của Cục Khảo sát Địa chất Hoa Kỳ 2011–1073, 26 tr. Phạm vi công cộng.'
+        contributors_intro_html: |-
+          OpenHistoricalMap nhờ công sức cộng tác của hàng ngàn cá nhân và tổ chức lần lượt tham khảo từ nhiều nguồn học thuật, báo chí, và lưu trữ hồ sơ.
+          Các nguồn đóng góp đáng kể nhất bao gồm:
+        contributors_more_sources_html: "%{sources_link} có sẵn tại Wiki OpenStreetMap."
+        contributors_more_sources_page: Các nguồn gốc và người đóng góp khác
+        contributors_more_sources_page_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Sources?uselang=vi
+        contributors_natural_earth: Natural Earth
+        contributors_natural_earth_html: Các tập hợp dữ liệu %{natural_earth_link} thuộc phạm vi công cộng.
+        contributors_newberry: Thư viện Newberry
+        contributors_newberry_ahcb: Tập bản đồ các Biên giới Quận Lịch sử
+        contributors_newberry_ahcb_html: Dữ liệu từ dự án %{ahcb_link} của Trung tâm Bác sĩ William M. Scholl vì Lịch sử và Văn hóa Mỹ tại %{newberry_link}, có sẵn để tái sử dụng mà không có bất kỳ hạn chế nào.
+        contributors_osm: những người đóng góp vào OpenStreetMap
+        contributors_osm_cc_by_sa: CC BY-SA 2.0
+        contributors_osm_cc_by_sa_url: https://creativecommons.org/licenses/by-sa/2.0/deed.vi
+        contributors_osm_html: Dữ liệu bờ biển, thủy vực, và dòng chảy © %{osm_link}, %{cc_by_sa_link}.
+        contributors_title_html: Ghi công
+        credit_1_html: Mặc dù luật bản quyền không có hạn chế hoặc đặt ra bất kỳ điều kiện nào đối với việc bạn sử dụng nội dung thuộc phạm vi công cộng, nhưng chúng tôi rất trân trọng mọi lời ghi công cho OpenHistoricalMap khi nào bạn tái sử dụng, dùng làm nguồn, hoặc sử dụng bản đồ hoặc dữ liệu của chúng tôi một cách khác.
+        credit_2_home: trang chủ của chúng tôi
+        credit_2_ohm_html: |-
+          Bạn được phép trình bày lời ghi công này theo cách hợp lý nào đó.
+          Ví dụ bản đồ kỹ thuật số có thể ghi tên OpenHistoricalMap chữ nhỏ ở góc bản đồ với liên kết đến %{this_copyright_page_link} hoặc %{home_link}:
+        credit_2_this_copyright_page: trang bản quyền này
+        credit_3_credit_html: Dữ liệu bản đồ do dự án %{project_link} cung cấp thuộc phạm vi công cộng trừ khi có ghi chú khác.
+        credit_3_ohm_html: 'Hoặc bạn có thể bao gồm lời ghi công đầy đủ hơn trong trang ghi công riêng cùng với các nguồn gốc khác:'
+        credit_4_ohm_html: |-
+          Trên bản đồ in giấy, bạn có thể đặt lời ghi công vào bảng ghi chú bản đồ.
+          Trong cuốn sách, bạn có thể miêu tả cách sử dụng OpenHistoricalMap trong cước chú, danh mục, hoặc lời thông tin in ấn ở cuối sách.
+          Trong bài khoa học, bạn có thể dẫn nguồn chúng tôi nhiều cách tùy bạn sử dụng cái gì.
+        credit_title_html: Cách ghi công OpenHistoricalMap
+        infringement_1_html: Những người đóng góp vào OHM được khuyên không bao giờ bổ sung dữ liệu từ những nguồn có bản quyền (chẳng hạn Bản đồ Google hoặc các bản đồ trên giấy) trước khi các nhà giữ bản quyền cho phép rõ ràng.
+        infringement_2_ohm_contact_team: liên lạc nhóm OpenHistoricalMap với chữ “TAKEDOWN REQUEST” (yêu cầu tháo gỡ) trong chủ đề
+        infringement_2_ohm_html: Nếu bạn tin rằng tài liệu có bản quyền được thêm vào cơ sỡ dữ liệu hoặc trang của OpenHistoricalMap một cách không đàng hoàng, xin vui lòng liên lạc với %{contact_team_link}.
+        introduction_1_cc0: Creative Commons CC0
+        introduction_1_cc0_url: https://creativecommons.org/publicdomain/zero/1.0/
+        introduction_1_ohm_html: |-
+          OpenHistoricalMap là nơi sưu tập dữ liệu địa không gian mở.
+          Trừ khi có ghi chú khác, các dữ liệu OpenHistoricalMap thuộc phạm vi công cộng theo bản công hiến %{cc0_link}.
+          Miễn là bạn sử dụng các phần dữ liệu thuộc phạm vi công cộng, bạn được tự do sao chép, phân phối, chuyển giao, và sửa lại cho bất kỳ mục đích nào mà chẳng có bất kỳ hạn chế nào.
+        introduction_2_cc_by: Creative Commons Ghi công
+        introduction_2_cc_by_sa: Creative Commons Ghi công–Chia sẻ tương tự
+        introduction_2_cc_by_sa_url: https://creativecommons.org/licenses/by-sa/4.0/deed.vi
+        introduction_2_cc_by_url: https://creativecommons.org/licenses/by/4.0/deed.vi
+        introduction_2_license_key_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Tags/Key/license?uselang=vi
+        introduction_2_ohm_html: |-
+          Cơ sở dữ liệu OpenHistoricalMap bao gồm một số đối tượng bản đồ cụ thể có bản quyền.
+          Các đối tượng này được phát hành theo một giấy phép nguồn mở chẳng hạn %{cc_by_link} (CC&nbsp;BY) hoặc %{cc_by_sa_link} (CC&nbsp;BY-SA), theo các thẻ %{license_key_link} được gắn vào phần tử cụ thể.
+          Nếu bạn sử dụng một phần đáng kể của cơ sở dữ liệu mà áp dụng một giấy phép “chia sẻ tương tự”, bạn nên tuân theo các điều khoản của giấy phép này trong tác phẩm của bạn.
+        introduction_3_ohm_html: Các kiểu bản đồ trên trang chủ của chúng tôi thuộc phạm vi công cộng theo bản công hiến CC0. Bạn được tự do sao chép, phân phối, chuyển giao, và sửa lại cho bất kỳ mục đích nào mà chẳng có bất kỳ hạn chế nào.
+        introduction_4_creative_commons: Creative Commons Ghi công–Chia sẻ tương tự 2.0
+        introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/deed.vi
+        introduction_4_ohm_html: Tài liệu của chúng tôi được phát hành theo giấy phép %{creative_commons_link} (CC BY-SA 2.0).
+        more_1_ohm_html: Tìm hiểu thêm về các vấn đề phải nghĩ đến khi sử dụng dữ liệu của chúng tôi, và cách ghi công chúng tôi làm sao, %{wiki_link}.
+        more_1_wiki: tại Wiki OpenStreetMap
+        more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License?uselang=vi
+        more_2_1_api_usage_policy: Quy định Sử dụng API
+        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
+        more_2_1_html: |-
+          Mặc dù OpenHistoricalMap là dữ liệu mở, nhưng chúng tôi không thể cung cấp API hoặc mảnh bản đồ miễn phí để bên thứ ba sử dụng.
+          Xem %{api_usage_policy_link}, %{tile_usage_policy_link}, và %{nominatim_usage_policy_link} của chúng tôi.
+        more_2_1_nominatim_usage_policy: Quy định Sử dụng Nominatim
+        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
+        more_2_1_tile_usage_policy: Quy định Sử dụng Mảnh bản đồ
+        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
+        more_title_html: Tìm hiểu thêm
+        trademarks_1_ohm_contact_team: liên lạc với nhóm OpenHistoricalMap
+        trademarks_1_ohm_html: Nếu có thắc mắc về cách sử dụng tên OpenHistoricalMap, xin vui lòng %{contact_team_link}.
+      title: Bản quyền và Ghi công
+    export:
+      cc0: Creative Commons CC0
+      cc0_url: https://creativecommons.org/publicdomain/zero/1.0/
+      copyright_page: Bản quyền và Ghi công
+      licence_details_ohm_html: Trừ khi nêu rõ khác, các dữ liệu OpenHistoricalMap thuộc phạm vi công cộng theo bản công hiến %{cc0_link}. Xem thêm chi tiết tại trang %{copyright_page_link}.
+      too_large:
+        body: 'Khu vực này quá lớn để xuất được dữ liệu OpenHistoricalMap XML. Xin vui lòng phóng to, chọn khu vực nhỏ hơn, hoặc tải về dữ liệu khối lượng lớn từ một dịch vụ sau:'
+        other:
+          url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse?uselang=vi
+        overpass:
+          description: Tải về hộp bao này từ một mirror của cơ sở dữ liệu OpenHistoricalMap
+        planet:
+          description: Các bản sao toàn thể cơ sở dữ liệu OpenHistoricalMap được cập nhật thường xuyên
+          title: Quả đất OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            Chỉ việc bấm %{note_icon} hoặc hình tượng này trên bản đồ.
+            Nút này sẽ thả một ghim vào bản đồ để bạn kéo thả vào vị trí đúng. Miêu tả vấn đề và bấm Lưu. Những người khác sẽ điều tra.
+        join_the_community:
+          explanation_html: Nếu bạn nhận thấy một vấn đề trong dữ liệu bản đồ của chúng tôi, chẳng hạn thiếu con đường hoặc địa chỉ của bạn, cách xử lý tốt nhất là tham gia cộng đồng OpenHistoricalMap để thêm hoặc sửa dữ liệu lấy.
+      other_concerns:
+        concerns_ohm_html: |-
+          Nếu có thắc mắc về cách sử dụng dữ liệu của chúng tôi hoặc về nội dung của cơ sở dữ liệu, xin vui lòng tham khảo các thông tin pháp lý tại
+          %{copyright_link} hoặc liên lạc với %{contact_link}.
+        contact: liên lạc với chúng tôi
+        contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication?uselang=vi
+    help:
+      discord:
+        description: 'Tham gia máy chủ Discord OpenStreetMap Thế giới và nhận trợ giúp trong kênh #openhistoricalmap.'
+      forum:
+        description: Tham gia các cuộc thảo luận quan trọng và phòng trò chuyện thoải mái dùng tài khoản OHM của bạn.
+        title: Diễn đàn
+      github:
+        description: Đăng bản báo cáo tại các kho mã nguồn GitHub của chúng ta để báo cáo lỗi hoặc yêu cầu tính năng mới.
+        title: Yêu cầu Tính năng & Báo cáo Lỗi
+      introduction: OpenHistoricalMap có nhiều tài nguyên để cho bạn tìm hiểu về dự án, hỏi đáp, và cộng tác soạn thảo tài liệu về các đề tài bản đồ.
+      mailing_list:
+        description: Đăng ký theo dõi danh sách thư yên lặng.
+        title: Danh sách thư
+      slack:
+        description: 'Hãy gia nhập không gian làm việc Slack của OpenStreetMap Hoa Kỳ và truy cập vào kênh #openhistoricalmap.'
+        title: IRC
+      welcome:
+        description: Bắt đầu với cẩm nang các điều cơ bản OpenHistoricalMap.
+        title: Chào mừng đến OpenHistoricalMap
+      welcomemat:
+        description: Bắt đầu với cẩm nang các điều cơ bản OpenHistoricalMap.
+      wiki:
+        description: Đọc tài liệu đầy đủ về OHM trên wiki.
+    index:
+      js_2: OpenHistoricalMap sử dụng JavaScript cho chức năng bản đồ trơn.
+      license:
+        copyright: OpenHistoricalMap thuộc phạm vi công cộng trừ khi có ghi chú khác.
+      remote_failed: Thất bại mở trình vẽ – hãy chắc chắn rằng JOSM hoặc Markaartor đã khởi động và tùy chọn phần điều khiển từ xa được kích hoạt
+    potlatch:
+      removed: Bạn đã đặt trình vẽ OpenHistoricalMap mặc định là Potlatch. Vì Adobe Flash Player không còn được hỗ trợ, Potlatch không còn hoạt động trong trình duyệt Web.
+    welcome:
+      basic_terms:
+        a_tag_html: "%{tag} là một chi tiết về một nốt hoặc lối, thí dụ tên của một nhà hàng hoặc năm xây dựng của cây cầu."
+        paragraph_1: 'Đây là những thuật ngữ thường gặp khi sử dụng và đóng góp vào OpenHistoricalMap:'
+      introduction: Chào mừng bạn đã đến OpenHistoricalMap, bản đồ thế giới có dữ liệu mở được xây dựng bởi những người như bạn. Bây giờ bạn đã mở tài khoản thì hãy cùng góp sức vẽ bản đồ. Đây là những căn bản cần biết để bắt đầu đóng góp.
+      rules:
+        para_1_html: OpenHistoricalMap có ít quy tắc chính thức nhưng yêu cầu mọi người muốn tham gia phải cộng tác và liên lạc với cộng đồng. Nếu bạn đang tính thực hiện tác vụ nào không phải sửa đổi thủ công, xin vui lòng đọc và tuân theo các hướng dẫn tại %{imports_link} và %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: Nó %{doesnt} chứa các ý kiến như lịch sử thay thế giả tưởng, các lỗi rõ ràng xuất hiện trong bản đồ cổ điển, hoặc thông tin từ các nguồn giữ bản quyền. Nếu bạn khám phá bản đồ sử học hiện đại nào đó trên giấy hoặc trên mạng, bạn phải xin phép của nhà giữ bản quyền mới được sao chép từ bản đồ đó.
+        on_the_map_ohm_html: OpenHistoricalMap theo dõi các thay đổi về địa lý thiên nhiên và nhân văn ở khắp thế giới. Chúng ta có hàng triệu mục từ %{past_and_present}, biết bao đế quốc, băng hà, căn nhà, nhà hàng… đủ mọi thứ. Mời bạn bổ sung bất cứ những gì thu hút sự quan tâm của bạn.
+        past_and_present: cả quá khứ lẫn hiện tại
+  traces:
+    feeds:
+      show:
+        title: Tuyến đường GPS OpenHistoricalMap
+    show:
+      edit: sửa đổi
+      edit_trace: Sửa đổi tuyến đường này
+      map: bản đồ
+    trace:
+      edit_map: Sửa đổi Bản đồ
+      view_map: Xem Bản đồ
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} đã bình luận về một bộ thay đổi mà bạn đang quan tâm"
+        subject_own: "[OpenHistoricalMap] %{commenter} đã bình luận về một bộ thay đổi của bạn"
+      description: 'Bộ thay đổi OpenHistoricalMap #%{id}'
+    diary_comment_notification:
+      description: 'Mục Nhật ký OpenHistoricalMap #%{id}'
+      header: "%{from_user} đã bình luận về mục nhật ký gần đây tại OpenHistoricalMap với tiêu đề %{subject}:"
+      header_html: "%{from_user} đã bình luận về mục nhật ký gần đây tại OpenHistoricalMap với tiêu đề %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} đã bình luận về mục nhật ký"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Xác nhân địa chỉ thư điện tử của bạn"
+    follow_notification:
+      followed_you: "%{user} hiện đang theo dõi bạn tại OpenHistoricalMap."
+      subject: "[OpenHistoricalMap] %{user} đã bắt đầu theo dõi bạn"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Nhập GPX thất bại"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Nhập GPX thành công"
+    lost_password:
+      hopefully_you: Ai đó (chắc bạn) đã xin đặt lại mật khẩu của tài khoản openhistoricalmap.org có địa chỉ thư điện tử này.
+      subject: "[OpenHistoricalMap] Yêu cầu đặt lại mật khẩu"
+    message_notification:
+      header: "%{from_user} đã gửi thư cho bạn dùng OpenHistoricalMap có tiêu đề %{subject}:"
+      header_html: "%{from_user} đã gửi thư cho bạn dùng OpenHistoricalMap có tiêu đề %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} đã giải quyết một ghi chú mà bạn đang quan tâm"
+        subject_own: "[OpenHistoricalMap] %{commenter} đã giải quyết một ghi chú của bạn"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} đã bình luận trên một ghi chú mà bạn đang quan tâm"
+        subject_own: "[OpenHistoricalMap] %{commenter} đã bình luận trên một ghi chú của bạn"
+      description: 'Ghi chú OpenHistoricalMap #%{id}'
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} đã mở lại một ghi chú mà bạn đang quan tâm"
+        subject_own: "[OpenHistoricalMap] %{commenter} đã mở lại một ghi chú của bạn"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Chào mừng bạn đã tham gia OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: ID của bạn chưa được liên kết với một tài khoản OpenHistoricalMap.
+      option_1: Nếu bạn mới đến OpenHistoricalMap, xin vui lòng tạo tài khoản mới dùng biểu mẫu bên dưới.
+    new:
+      about:
+        paragraph_1: Không giống như với các bản đồ kia, OpenHistoricalMap được xây dựng hoàn toàn nhờ những người như bạn, và mọi người có thể tự do sửa chữa, cập nhật, tải về, và sử dụng miễn phí.
+        welcome: Chào mừng đến OpenHistoricalMap
+      duplicate_social_email: Nếu bạn đã có tài khoản OpenHistoricalMap và muốn sử dụng nhà cung cấp danh tính bên thứ ba, xin vui lòng đăng nhập dùng mật khẩu của bạn và thay đổi tùy chọn tài khoản.
+      please_contact_support_html: Vui lòng liên hệ với %{support_link} để yêu cầu tạo tài khoản – chúng tôi sẽ cố gắng giải quyết yêu cầu nhanh nhất có thể.
+      signup_to_authorize_html: Mở tài khoản OpenHistoricalMap để truy cập %{client_app_name}.
+    show:
+      delete_user: Xóa Tài khoản Này
+      hide_user: Ẩn Tài khoản Này
+      unhide_user: Hiện Tài khoản Này

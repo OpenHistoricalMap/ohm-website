@@ -1,0 +1,210 @@
+# Messages for Luxembourgish (Lëtzebuergesch)
+# Exported from translatewiki.net
+# Author: Danieldegroot2
+# Author: Davio
+# Author: Erictheise
+# Author: Felix3qH4
+# Author: Helicoducair
+# Author: Les Meloures
+# Author: McDutchie
+# Author: Minh Nguyen
+# Author: Robby
+# Author: Soued031
+# Author: Talex42
+# Author: Volvox
+# Do not edit by hand.
+lb:
+  accounts:
+    deletions:
+      show:
+        delete_introduction: 'Dir kënnt Ären OpenHistoricalMap-Kont mam Knäppchen hei drënner läschen. Bedenkt wgl. déi follgend Detailer:'
+    show:
+      contributor_terms:
+        link text: wat ass dat?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: Zougrëff op hir privat GPS-Spueren
+        allow_read_prefs: Hir Benotzerastellunge liesen
+        allow_write_api: d'Kaart änneren
+        allow_write_changeset_comments: Ännerungssätz kommentéieren
+        allow_write_diary: Blogbäiträg a -kommentare schreiwen
+        allow_write_gpx: GPS-Spueren eroplueden
+        allow_write_notes: Notize beaarbechten
+        allow_write_prefs: Hir Benotzerastellungen änneren
+        callback_url: Callback-URL
+        name: Numm (Obligatoresch)
+        support_url: Support-URL
+        url: Haaptapplikatiouns-URL
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap-Notizzen
+  application:
+    auth_providers:
+      openstreetmap:
+        alt: OpenStreetMap-Logo
+  auth:
+    providers:
+      openstreetmap: OpenStreetMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Diskussioun iwwer den OpenHistoricalMap-Ännerungssaz
+        title_particular: 'Diskussioun iwwer den OpenHistoricalMap-Ännerungssaz #%{changeset_id}'
+  date:
+    formats:
+      brief_bce: "%{year} v.&nbsp;Chr."
+      brief_ce: "%{year} n.&nbsp;Chr."
+  diary_entries:
+    comments:
+      description: Rezent Blogbäiträg vun OpenHistoricalMap-Benotzer
+      title: OpenHistoricalMap-Blogbäiträg
+    feed:
+      all:
+        description: Rezent Blogbäiträg vun OpenHistoricalMap-Benotzer
+        title: OpenHistoricalMap-Blogbäiträg
+      language:
+        description: Rezent Blogbäiträg op %{language_name} vun OpenHistoricalMap-Benotzer
+        title: OpenHistoricalMap-Blogbäiträg op %{language_name}
+      user:
+        description: Neist OpenHistoricalMap-Blogbäiträg vum %{user}
+        title: OpenHistoricalMap-Blogbäiträg vum %{user}
+    profile_diaries:
+      comments_label: Kommentaren
+      date_label: Datum
+  errors:
+    bad_request:
+      description: D'Operatioun, déi Dir um OpenHistoricalMap-Server ugefrot hutt, ass ongülteg (HTTP 400)
+    contact:
+      contact_the_community_html: Dir kënnt gären d'OpenHistoricalMap-Communautéit %{contact_link}, wann Dir ee futtisse Link oder e Feeler fannt. Notéiert Iech déi exakt URL vun Ärer Ufro.
+    forbidden:
+      description: D'Operatioun, déi Dir um OpenHistoricalMap-Server ugefrot hutt, ass nëmme fir Administrateure verfügbar (HTTP 403)
+  javascripts:
+    map:
+      base:
+        historical: Historesch
+        japanesescroll: Japanesch Schrëftroll
+        railway: Eisebunn
+        woodblock: Holzblock
+      cc0_text: "%{copyright_link}"
+      openhistoricalmap_contributors: OHM
+      zoom:
+        in: Vergréisseren
+        out: Verklengeren
+  layouts:
+    intro_2_create_account: E Benotzerkont uleeën
+    intro_header: Wëllkomm bei OpenHistoricalMap!
+    intro_text: OpenHistoricalMap ass eng Kaart vun der Welt, déi vu Leit wéi Iech gemaach gouf an déi fräi ënner enger oppener Lizenz benotzt ka ginn.
+    logo:
+      alt_text: OpenHistoricalMap-Logo
+    logout: Ofmellen
+    partners_greeninfo: GreenInfo Netzwierk
+    partners_osmf: OpenStreetMap Foundation
+    tag_line: D'fräi Wiki-Weltkaart
+  preferences:
+    preferences:
+      navigation:
+        advanced_preferences: Erweidert Astellungen
+        preferences: Astellungen
+  sessions:
+    destroy:
+      heading: Vun OpenHistoricalMap ofmellen
+  site:
+    about:
+      lede_text: OpenHistoricalMap gëtt vun enger Panoplie vu Mapperen erstallt, déi Donnéeën zu Weeër, Gebaier an allerlee Weiderem weltwäit erfaassen a fleegen.
+      used_by_html: Exploréiert d'Welt mat %{name} an egal wat fir enger Epoch.
+    about_section:
+      contribute_title: Dir kënnt mathëllefen
+      legal_1_privacy_policy: Dateschutzrichtlinnen
+      legal_1_terms_of_use: Benotzungskonditiounen
+      scope_title: Grouss a kleng, deemools an haut
+    copyright:
+      legal_babble:
+        contributors_osm: OpenStreetMap-Contributeuren
+        contributors_osm_cc_by_sa: CC BY-SA 2.0
+        contributors_osm_cc_by_sa_url: https://creativecommons.org/licenses/by-sa/2.0/
+        credit_1_html: 'Wann Dir Donnéeë vun OpenHistoricalMap benotz muss Dir dës zwou Saache respektéieren:'
+        credit_title_html: Wéi et op d'Urhiewerschaft vun OpenHistoricalMap hinzeweise gëllt
+        introduction_1_cc0: Creative Commons CC0
+        more_title_html: Fir méi ze wëssen
+    export:
+      cc0: Creative Commons CC0
+      too_large:
+        body: Dëse Beräich ass ze grouss, fir als OpenHistoricalMap-XML-Donnéeën exportéiert ze ginn. Vergréissert et wgl. fir e méi klenge Beräich ze wielen oder eng vun de follgende Quelle fir d'Erofluede vu Massendonnéeën ze benotzen.
+        planet:
+          description: Regelméisseg aktualiséiert Kopie vun der kompletter OpenHistoricalMap Datebank
+          title: Planéit OHM
+    fixthemap:
+      how_to_help:
+        join_the_community:
+          explanation_html: Falls Iech e Problem mat eise Kaartendonnéeën opgefall ass, zum Beispill datt eng Stross oder Är Adress feelt, dann ass déi beschte Manéier fir virzegoen, Deel vun der OpenHistoricalMap-Communautéit ze ginn an d'Donnéeë selwer derbäizesetzen oder ze verbesseren.
+    help:
+      forum:
+        title: Forum
+      slack:
+        title: IRC
+      welcome:
+        description: Fänkt mat dësem kuerze Guide iwwer d'Grondlage vun OpenHistoricalMap un.
+        title: Wëllkomm bei OpenHistoricalMap
+      wiki:
+        title: Wiki
+    index:
+      js_2: OpenHistoricalMap benotzt JavaScript fir d'Kaartenduerstellung
+    welcome:
+      whats_on_the_map:
+        past_and_present: souwuel d'Vergaangenheet wéi och d'Géigewaart
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap-GPS-Spueren
+    show:
+      edit: änneren
+      edit_trace: Dës Spuer änneren
+      map: Kaart
+    trace:
+      edit_map: Kaart änneren
+      view_map: Kaart weisen
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} huet en Ännerungssaz kommentéiert, un deem Dir interesséiert sidd"
+        subject_own: "[OpenHistoricalMap] %{commenter} huet ee vun dengen Ännerungssätz kommentéiert."
+    diary_comment_notification:
+      description: 'OpenHistoricalMap-Blogbäitrag #%{id}'
+      header: 'De Benoetzer %{from_user} huet den OpenHistoricalMap-Blogbäitrag mam Theema %{subject} kommentéiert:'
+      header_html: 'De Benotzer %{from_user} huet den OpenHistoricalMap-Blogbäitrag mam Theema %{subject} kommentéiert:'
+      subject: "[OpenHistoricalMap] De %{user} huet e Blogbäitrag kommentéiert"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Confirméiert Är E-Mail-Adress"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX-Import Feeler"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX-Import erfollegräich"
+    lost_password:
+      hopefully_you: Iergendeen (hoffentlech Dir selwer) huet ugefrot fir d'Passwuert vum openhistoricalmap.org-Kont vun dëser E-Mail-Adress zréckzesetzen.
+      subject: "[OpenHistoricalMap] Ufro fir d'Passwuert zréckzesetzen"
+    message_notification:
+      header: "%{from_user} huet dir e Message iwwer OpenHistoricalMap mam Betreff %{subject} geschéckt:"
+      header_html: "%{from_user} huet dir e Message iwwer OpenHistoricalMap mat dem Betreff %{subject} geschéckt:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} huet e Kaartenhiweis geléist, un deem Dir interesséiert sidd"
+        subject_own: "[OpenHistoricalMap] %{commenter} huet ee vun dengen Hiweiser kommentéiert"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} huet en Hiweis kommentéiert, un deem Dir interesséiert sidd"
+        subject_own: "[OpenHistoricalMap] %{commenter} huet ee vun déngen Hiweiser kommentéiert"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} huet e Kaartenhiweis geléist, un deem Dir interesséiert sidd"
+        subject_own: "[OpenHistoricalMap] %{commenter} huet ee vun dengen Hiweiser kommentéiert"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Wëllkomm bei OpenHistoricalMap"
+  users:
+    new:
+      about:
+        welcome: Wëllkomm bei OpenHistoricalMap
+    show:
+      delete_user: Dëse Benotzer läschen
+      hide_user: Dëse Benotzer verstoppen
+      unhide_user: Dëse Benotzer net méi verstoppen

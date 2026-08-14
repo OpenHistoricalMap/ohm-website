@@ -1,0 +1,182 @@
+# Messages for Western Frisian (Frysk)
+# Exported from translatewiki.net
+# Author: Danieldegroot2
+# Author: Erictheise
+# Author: Minh Nguyen
+# Author: PiefPafPier
+# Author: Robin van der Vliet
+# Do not edit by hand.
+fy:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: wat is dat?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: privee-GPS-trajekten lêzen
+        allow_read_prefs: meidoggerfoarkarren lêzen
+        allow_write_api: kaart wizigjen
+        allow_write_diary: deiboekstikken, reäksjes en freonen meitsjen
+        allow_write_gpx: GPS-trajekten opladen
+        allow_write_notes: notysjes wizigjen
+        allow_write_prefs: meidoggerfoarkarren wizigjen
+        callback_url: Weromrop-URL
+        name: Namme (ferplichte)
+        support_url: Stipe-URL
+        url: Haad-URL applikaasje (ferplichte)
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap Notysjes
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Jo hawwe in driuwend berjocht op it OpenHistoricalMap-webstee. Jo moatte it berjocht lêze foar't jo jo bewurkings fêstlizze kinne.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Oerlis oer OpenHistoricalMap-wizigingsset
+        title_particular: 'Oerlis oer OpenHistoricalMap-wizigingsset #%{changeset_id}'
+  diary_entries:
+    comments:
+      title: OpenHistoricalMap Deiboekstikken
+    feed:
+      all:
+        description: Nije deiboekstikken fan meidoggers oan OpenHistoricalMap
+        title: OpenHistoricalMap Deiboekstikken
+      language:
+        description: Nije deiboekstikken fan meidoggers oan OpenHistoricalMap yn it %{language_name}
+        title: OpenHistoricalMap Deiboekstikken yn it %{language_name}
+      user:
+        description: Nije OpenHistoricalMap-deiboekstikken fan %{user}
+        title: OpenHistoricalMap Deiboekstikken fan %{user}
+    profile_diaries:
+      date_label: Datum
+  javascripts:
+    map:
+      base:
+        historical: Histoarysk
+        woodblock: Blokdruk
+      zoom:
+        in: Ynsûme
+        out: Utsûme
+  layouts:
+    intro_2_create_account: Meitsje in akkount as meidogger
+    intro_header: Wolkom by OpenHistoricalMap!
+    intro_text: OpenHistoricalMap is in wrâldkaart makke troch minsken krekt as jo, en frij te brûken ûnder in iepen lisinsje.
+    logo:
+      alt_text: OpenHistoricalMap-logo
+    logout: Ofmelde
+    tag_line: De frije wiki-wrâldkaart
+  sessions:
+    destroy:
+      heading: Ofmelde by OpenHistoricalMap
+  site:
+    about:
+      lede_text: OpenHistoricalMap wurdt makke troch in mienskip fan kaartmakkers, dy't gegevens bydrage en ûnderhâlde oer diken, rûtes, kafees, spoarweistasjons en folle mear, oer de hiele wrâld.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: |-
+          It opnimmen fan data yn OpenHistoricalMap betsjut net dat de oanbieder fan 'e oarspronklike
+          data efter OpenHistoricalMap stiet, ien of oare garânsje jout, of
+          oanspraaklikens oanfurdiget.
+        credit_1_html: 'Dêr wêr''t jo OpenHistoricalMap-data brûke, binne jo ferplichte en doch de neikommende twa dingen:'
+        credit_title_html: Hoe moat OpenHistoricalMap neamd wurde
+        infringement_1_html: OHM-bydragers wurde derop wiisd nea data ta te heakjen fan boarnen mei auteursrjochten (bgl. Google Maps as printe kaarten) sûnder de útdruklike tastimming fan 'e auteursrjochthawwers.
+        more_title_html: Mear te witten komme
+    export:
+      too_large:
+        body: Dit gebiet is te grut foar eksport as OpenHistoricalMap-XML-data. Sûm yn of selektearje in lytser gebiet. Brûk oars ien fan 'e boarnen dy't hjirûnder steane foar it ynladen fan bulkdata.
+        overpass:
+          description: It seleksjeramt ynlade fan in spegel fan 'e OpenHistoricalMap-databank
+        planet:
+          description: Geregeldwei bywurke kopyen fan 'e hiele OpenHistoricalMap-databank
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            Klik gewoan op %{note_icon} of itselde ikoan yn 'e kaartwerjefte.
+            Der komt in markearder op 'e kaart dy't jo
+            ferslepe kinne. Heakje jo berjocht ta, klik bewarje, en oare kaartmakkers sille it dan besjen.
+        join_the_community:
+          explanation_html: At jo in probleem yn ús kaartdata opmerke, bygelyks in strjitte mist of jo adres, dan kinne jo jo it bêst oanslute by de OpenHistoricalMap-mienskip, en de data sels tafoegje of reparearje.
+    help:
+      introduction: |-
+        OpenHistoricalMap hat ferskate middels om oer it projekt te learen, foar it stellen en beäntwurdzjen fan fragen,
+        en yn gearwurking bepraten en fêstlizzen fan kartearringssaken.
+      slack:
+        title: Slack
+      welcome:
+        description: Begjin mei dizze koarte útlis oer OpenHistoricalMap-basisdingen.
+        title: Wolkom by OpenHistoricalMap
+      wiki:
+        description: De wiki trochsjen foar wiidweidige dokumintaasje oer OHM.
+    index:
+      js_2: OpenHistoricalMap brûkt JavaScript foar de ferskobere kaart.
+      remote_failed: Bewurkjen mislearre - soargje dat JOSM of Merkaartor laden is, en de ôfstânsbetsjinningsopsje ynskeakele
+    potlatch:
+      removed: Jo standertbewurker foar OpenHistoricalMap is ynsteld op Potlatch. Om't Adobe Flash Player weifallen is, is Potlatch net mear beskikber foar gebrûk yn in webblêder.
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap hat in eigen taaltsje. Hjir binne in pear kaaiwurden dy't fan pas komme sille.
+      introduction: |-
+        Wolkom by OpenHistoricalMap, de frije en bewurkbere wrâldkaart. No't jo ynskreaun binne,
+        binne jo hielendal klear foar jo earste bewurking. Hjir is in koarte útlis mei de wichtichste
+        dingen dy't jo witte moatte.
+      rules:
+        para_1_html: |-
+          OpenHistoricalMap hat net folle formele regels, mar wy ferwachtsje fan alle dielnimmers dat hja gearwurkje
+          en kommunisearje mei de mienskip, mei fatsoen en respekt.
+      whats_on_the_map:
+        off_the_map_html: "Wat it %{doesnt} befettet is subjektive data lykas beoardielings, en data \nút boarnen mei auteursrjocht."
+  time:
+    formats:
+      blog: "%e %B %Y"
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS-trajekten
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} hat op in wizigingsset dêr't jo belang yn stelle reägearre"
+        subject_own: "[OpenHistoricalMap] %{commenter} hat op ien fan jo wizigingssets reägearre"
+    diary_comment_notification:
+      header: "%{from_user} hat reägearre op it OpenHistoricalMap-deiboekstik mei as ûnderwerp %{subject}:"
+      header_html: "%{from_user} hat reägearre op it OpenHistoricalMap-deiboekstik mei as ûnderwerp %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} hat op in deiboekstik reägearre"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Befêstigje jo e-mailadres"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX ymportearjen mislearre"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX ymportearjen slagge"
+    lost_password:
+      hopefully_you: Immen (faaks jo) hat frege en stel it wachtwurd op 'e nij yn foar it akkount op openhistoricalmap.org dat by dit e-mailadres heart.
+      subject: "[OpenHistoricalMap] Wachtwurd feroarjen oanfrege"
+    message_notification:
+      header: "%{from_user} hat jo in berjocht stjoerd op OpenHistoricalMap mei as ûnderwerp %{subject}:"
+      header_html: "%{from_user} hat jo in berjocht stjoerd op OpenHistoricalMap mei as ûnderwerp %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} hat in notysje dêr't jo belang yn stelle oplost"
+        subject_own: "[OpenHistoricalMap] %{commenter} hat ien fan jo notysjes oplost"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} hat op in notysje dêr't jo belang yn stelle reägearre"
+        subject_own: "[OpenHistoricalMap] %{commenter} hat op ien fan jo notysjes reägearre"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} hat in notysje dêr't jo belang yn stelle weraktivearre"
+        subject_own: "[OpenHistoricalMap] %{commenter} hat ien fan jo notysjes weraktivearre"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Wolkom by OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Jo ID is noch net ferbûn oan in OpenHistoricalMap-akkount.
+      option_1: At jo nij binne op OpenHistoricalMap, meitsje dan graach in nij akkount mei it formulier hjirûnder.
+    show:
+      delete_user: Dizze meidogger wiskje
+      hide_user: Dizze meidogger ferbergje
+      unhide_user: Dizze meidogger werompleatse

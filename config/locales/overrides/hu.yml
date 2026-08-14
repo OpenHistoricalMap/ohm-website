@@ -1,0 +1,252 @@
+# Messages for Hungarian (magyar)
+# Exported from translatewiki.net
+# Author: --szabi--
+# Author: Athoss
+# Author: Balint36
+# Author: BanKris
+# Author: Bencemac
+# Author: BáthoryPéter
+# Author: City-busz
+# Author: Csega
+# Author: Dani
+# Author: Dj
+# Author: Erictheise
+# Author: Eukarióta
+# Author: GBAB
+# Author: Glanthor Reviol
+# Author: Grin
+# Author: Hanna Tardos
+# Author: Kempelen
+# Author: Koko1998
+# Author: Leiric
+# Author: Macofe
+# Author: McDutchie
+# Author: MeskoBalazs
+# Author: Minh Nguyen
+# Author: Misibacsi
+# Author: Máté
+# Author: NB
+# Author: Nemo bis
+# Author: Notramo
+# Author: R-Joe
+# Author: Ruila
+# Author: Samat
+# Author: Sucy
+# Author: Tacsipacsi
+# Author: Uno20001
+# Author: Urbalazs
+# Author: Zalán Hári
+# Author: Zizzerus
+# Do not edit by hand.
+hu:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: mi ez?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: magán GPS-nyomvonalaik megtekintése
+        allow_read_prefs: felhasználói beállítások elolvasása
+        allow_write_api: a térkép módosítása
+        allow_write_diary: naplóbejegyzések és hozzászólások készítése
+        allow_write_gpx: GPS-nyomvonalak feltöltése
+        allow_write_notes: jegyzetek módosítása
+        allow_write_prefs: felhasználói beállításaik módosítása
+        callback_url: Visszahívási URL
+        name: Név (kötelező)
+        support_url: Támogatás URL
+        url: Fő alkalmazás URL-je (kötelező)
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap jegyzetek
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Sürgős üzeneted van az OpenHistoricalMap weboldalon. A szerkesztésed elmentése előtt el kell olvasnod.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap módosításcsomag-megbeszélés
+        title_particular: 'A #%{changeset_id} OpenHistoricalMap módosításcsomaghoz tartozó megbeszélés'
+  diary_entries:
+    comments:
+      title: OpenHistoricalMap naplóbejegyzések
+    feed:
+      all:
+        description: Legutóbbi naplóbejegyzések az OpenHistoricalMap felhasználóitól
+        title: OpenHistoricalMap naplóbejegyzések
+      language:
+        description: OpenHistoricalMap-felhasználók friss naplóbejegyzései %{language_name} nyelven
+        title: OpenHistoricalMap naplóbejegyzések %{language_name} nyelven
+      user:
+        description: "%{user} legutóbbi OpenHistoricalMap naplóbejegyzései"
+        title: "%{user} OpenHistoricalMap naplóbejegyzései"
+    profile_diaries:
+      date_label: Érkezett
+  errors:
+    bad_request:
+      description: Az OpenHistoricalMap szerveren kért művelet nem érvényes (HTTP 400)
+    contact:
+      contact_the_community_html: Nyugodtan keresd fel az OpenHistoricalMap közösséget (%{contact_link}), ha hibás linket vagy más hibát találtál. Kérjük, ne felejtsd el feljegyezni a hibás oldal pontos URL-jét.
+    forbidden:
+      description: Az OpenHistoricalMap szerveren kért művelet csak a rendszergazdáknak érhető el (HTTP 403).
+    internal_server_error:
+      description: Az OpenHistoricalMap szerver váratlan feltétellel találkozott, amely megakadályozta a kérés teljesítésében (HTTP 500)
+    not_found:
+      description: Nem található ilyen nevű fájl/könyvtár/API-művelet az OpenHistoricalMap szerveren (HTTP 404)
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        shop:
+          seafood: Halbolt
+  javascripts:
+    legend:
+      tooltip_disabled: A jelmagyarázat nem érhető el ezen a rétegen
+    map:
+      zoom:
+        in: Nagyítás
+        out: Kicsinyítés
+  layouts:
+    intro_2_create_account: Felhasználói fiók létrehozása
+    intro_header: Üdvözöljük az OpenHistoricalMap-en!
+    intro_text: Az OpenHistoricalMap egy világtérkép, amelyet hozzád hasonló emberek készítenek és szabad licenc alatt elérhető.
+    logo:
+      alt_text: OpenHistoricalMap logó
+    logout: Kijelentkezés
+    tag_line: A szabad világtérkép
+  oauth:
+    scopes:
+      openid: Jelentkezz be az OpenHistoricalMap használatával!
+  sessions:
+    destroy:
+      heading: Kijelentkezés az OpenHistoricalMapból
+    new:
+      login_to_authorize_html: Jelentkezz be az OpenHistoricalMap alkalmazásba a %{client_app_name} eléréséhez.
+  site:
+    about:
+      lede_text: Az OpenHistoricalMapet egy térképszerkesztő-közösség építi, akik hozzáadnak és karbantartanak adatokat világszerte utakról, ösvényekről, kávézókról, vasútállomásokról és még sok mindenről.
+    about_section:
+      contribute_1_user_diaries: felhasználók naplói
+      legal_1_aup: Elfogadható felhasználási szabályzat
+      legal_1_html: 'Ezt a webhelyet és sok más kapcsolódó szolgáltatást hivatalosan az %{group_link} üzemelteti a közösség nevében. Az összes OSMF által üzemeltetett szolgáltatás igénybevételére irányadók a következők: %{terms_of_use_link}, %{aup_link} és %{privacy_policy_link}.'
+      legal_1_privacy_policy: Adatvédelmi irányelvek
+      legal_1_terms_of_use: Felhasználási feltételek
+      legal_2_html: Kérjük, %{contact_team_link}, ha licencekkel kapcsolatos, szerzői jogi vagy egyéb jogi kérdései vannak.
+    communities:
+      lede_text: Az emberek a világ minden tájáról szerkesztik vagy használják az OpenHistoricalMap nyújtotta lehetőségeket. Eközben sokak magánszemélyként, míg mások közösségként vesznek ebben részt. Ezek a csoportok különböző méretűek, és különböző földrajzi területeket képviselnek a kisvárosoktól a nagy, több országon átívelő régiókig. Lehetnek formálisak vagy informálisak.
+    copyright:
+      legal_babble:
+        attribution_example:
+          title: Példa egy hivatkozásra
+        contributors_footer_2_html: Az adatok befoglalása az OpenHistoricalMapbe nem jelenti azt, hogy az eredeti adatszolgáltató támogatja az OpenHistoricalMapet, garanciát nyújt vagy felelősséget vállal rá.
+        contributors_intro_html: 'Több ezer egyéni közreműködőnk van. További, szabadon elérhető adatokat is felhasználunk nemzeti térkép intézetektől és más forrásokból, többek között:'
+        contributors_title_html: Köszönetnyilvánítás
+        credit_1_html: 'Ahol az OpenHistoricalMap adatait használod, ott kérjük, tüntesd fel az alább felsoroltakat:'
+        credit_2_this_copyright_page: erre a szerzői jogi oldalra
+        credit_title_html: Hogyan kell feltüntetned az OpenHistoricalMapet?
+        infringement_1_html: Az OHM közreműködői emlékeztetve lettek arra, hogy soha ne adjanak hozzá adatokat egyetlen szerzői jogvédett forrásból se (pl. Google Térkép vagy nyomtatott térképek) a szerzői jog tulajdonosának kifejezett engedélye nélkül.
+        introduction_4_creative_commons: Creative Commons „Nevezd meg! – Így add tovább!” 2.0
+        introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/deed.hu
+        more_2_1_api_usage_policy: API-felhasználási irányelvek
+        more_2_1_html: 'Bár az OpenHistoricalMap nyílt adat, harmadik feleknek nem tudunk ingyenes térkép-API-t biztosítani. A részleteket megtekintheted a következő oldalakon: %{api_usage_policy_link}, %{tile_usage_policy_link} és %{nominatim_usage_policy_link}.'
+        more_2_1_nominatim_usage_policy: a Nominatim felhasználási irányelvei
+        more_2_1_tile_usage_policy: csempefelhasználási irányelvek
+        more_title_html: Tudj meg többet!
+      title: Szerzői jog és licenc
+    export:
+      too_large:
+        body: Ez a terület túl nagy ahhoz, hogy OpenHistoricalMap XML adatként exportálni lehessen. Közelíts, vagy jelölj ki kisebb területet. Esetleg az alábbi listából használd valamelyik nagy adatmennyiség letöltését támogató módszert.
+        overpass:
+          description: A megjelenített befoglaló keret letöltése egy OpenHistoricalMap tükörszerverről
+        planet:
+          description: A teljes OpenHistoricalMap adatbázis rendszeresen frissített másolatai
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: Csak kattints a %{note_icon} ikonra vagy ugyanerre az ikonra a térképmegjelenítőben. Ez felrak egy helyjelölőt a térképre, amelyet húzással mozgathatsz. Írj hozzá egy üzenetet, majd kattints a mentésre, és a többi térképész meg fogja vizsgálni.
+        join_the_community:
+          explanation_html: Ha bármilyen hibát találtál a térképadatokban, például hiányzik egy út vagy cím, a legjobb, ha csatlakozol az OpenHistoricalMap közösséghez és kijavítod az adatot saját magad.
+    help:
+      introduction: Az OpenHistoricalMap számos anyagot kínál fel ahhoz, hogy ismerkedj a projekttel, kérdéseket tégy fel vagy válaszolj meg, vagy térképezési témákat beszélj meg a közösség tagjaival.
+      slack:
+        title: IRC
+      welcome:
+        description: Ez a gyors útmutató megismertet az OpenHistoricalMap alapjaival.
+        title: Üdvözlünk az OpenHistoricalMapen
+      wiki:
+        description: Böngészd a wikit mélyreható OHM dokumentációért.
+    index:
+      js_2: Az OpenHistoricalMap JavaScriptet használ a slippy maphoz.
+      remote_failed: A szerkesztés nem sikerült. Győződj meg róla, hogy a JOSM vagy a Merkaartor be van töltve, és a távirányító opció engedélyezve van
+    potlatch:
+      removed: Az alapértelmezett OpenHistoricalMap szerkesztőd a Potlatch. Mivel az Adobe Flash Playert visszavonták, ezért webböngészőben már nem futtatható.
+    welcome:
+      introduction: Üdvözöl az OpenHistoricalMap - a szabad és szerkeszthető világtérkép - közössége. Most, hogy regisztráltál, máris elkezdheted a térképezést. Itt elérhető egy gyors összefoglaló a legfontosabb tudnivalókkal.
+      rules:
+        para_1_html: Az OpenHistoricalMapnek kevés hivatalos szabálya van, de minden résztvevőtől elvárjuk, hogy együttműködjék a közösséggel, és kommunikáljon vele. Ha a kézi szerkesztésen kívül bármilyen más tevékenységet fontolgatsz, kérjük, olvasd el és kövesd az %{imports_link} és %{automated_edits_link} irányelveit.
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS-nyomvonalak
+    show:
+      edit: szerkesztés
+      edit_trace: Nyomvonal szerkesztése
+      map: térkép
+    trace:
+      edit_map: Térkép szerkesztése
+      view_map: Térkép megtekintése
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} hozzászólt egy módosításkészlethez, amely téged is érdekel"
+        subject_own: "[OpenHistoricalMap] %{commenter} hozzászólt az egyik módosításkészletedhez"
+      description: 'OpenHistoricalMap módosításkészlet #%{id}'
+    diary_comment_notification:
+      description: 'OpenHistoricalMap naplóbejegyzés #%{id}'
+      header: "%{from_user} hozzászólt a(z) %{subject} OpenHistoricalMap naplóbejegyzéshez:"
+      header_html: "%{from_user} hozzászólt „%{subject}” OpenHistoricalMap naplóbejegyzéshez:"
+      subject: "[OpenHistoricalMap] %{user} hozzászólt egy naplóbejegyzéshez"
+    email_confirm:
+      subject: "[OpenHistoricalMap] E-mail-cím megerősítése"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Sikertelen GPX importálás"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Sikeres GPX importálás"
+    lost_password:
+      hopefully_you: Valaki (remélhetőleg te) jelszó visszaállítást kért, ehhez az e-mail-címhez tartozó openhistoricalmap.org felhasználónak.
+      subject: "[OpenHistoricalMap] Jelszó alaphelyzetbe állításának kérése"
+    message_notification:
+      header: "%{from_user} küldött neked egy üzenetet az OpenHistoricalMapon keresztül %{subject} tárggyal:"
+      header_html: "%{from_user} üzenetet küldött neked az OpenHistoricalMap-en %{subject} tárggyal:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} megoldott egy jegyzetet, amely téged is érdekel"
+        subject_own: "[OpenHistoricalMap] %{commenter} megoldotta az egyik jegyzetedet"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} hozzászólt egy jegyzethez, amely téged is érdekel"
+        subject_own: "[OpenHistoricalMap] %{commenter} hozzászólt az egyik jegyzetedhez"
+      description: 'OpenHistoricalMap megjegyzés #%{id}'
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} újra megnyitott egy jegyzetet, amely téged is érdekel"
+        subject_own: "[OpenHistoricalMap] %{commenter} újra megnyitotta az egyik jegyzetedet"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Üdvözlünk az OpenHistoricalMapen"
+  users:
+    auth_association:
+      heading: Az azonosítódhoz még nem tartozik OpenHistoricalMap fiók.
+      option_1: Ha most vagy itt először, készíts magadnak egy OpenHistoricalMap-fiókot a lenti űrlap segítségével.
+    new:
+      about:
+        paragraph_1: Más térképekkel ellentétben az OpenHistoricalMap-et teljes mértékben hozzád hasonló emberek hozzák létre, és bárki ingyenesen javíthatja, frissítheti, letöltheti és használhatja.
+        welcome: Üdvözlünk az OpenHistoricalMapen
+      duplicate_social_email: Ha már rendelkezel OpenHistoricalMap fiókkal, és külső identitásszolgáltatót szeretnél használni, kérjük, jelentkezz be jelszavaddal, és módosítsd fiókod beállításait.
+      please_contact_support_html: Kérjük, lépj kapcsolatba velünk (%{support_link}), hogy elrendezhessük a fiók létrehozását. Kérésedet igyekszünk a lehető leggyorsabban feldolgozni.
+      signup_to_authorize_html: Regisztrálj az OpenHistoricalMap szolgáltatással a %{client_app_name} eléréséhez.
+    show:
+      delete_user: Felhasználó törlése
+      hide_user: Felhasználó elrejtése
+      unhide_user: Felhasználó elrejtésének visszavonása

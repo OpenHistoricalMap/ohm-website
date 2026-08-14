@@ -1,0 +1,188 @@
+# Messages for Upper Sorbian (hornjoserbsce)
+# Exported from translatewiki.net
+# Author: Erictheise
+# Author: J budissin
+# Author: Macofe
+# Author: McDutchie
+# Author: Michawiki
+# Author: Mikławš
+# Author: Minh Nguyen
+# Do not edit by hand.
+hsb:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://www.osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: Što to je?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: twoje priwatne GPS-ćěrje čitać.
+        allow_read_prefs: twoje wužiwarske nastajenja wučitać
+        allow_write_api: kartu wobdźěłać
+        allow_write_diary: dźenikowe zapiski a komentary wutworić
+        allow_write_gpx: GPS-ćěrje nahrawać
+        allow_write_notes: noticy wobdźěłać
+        allow_write_prefs: twoje wužiwarske nastajenja změnić.
+        callback_url: URL wróćowołanja
+        name: Mjeno (trěbne)
+        support_url: URL podpěry
+        url: URL hłowneje aplikacije (trěbna)
+  api:
+    notes:
+      rss:
+        title: Pokazki OpenHistoricalMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Diskusija wo sadźbje změnow OpenHistoricalMap
+        title_particular: Diskusija wo sadźbje změnow čo. %{changeset_id} OpenHistoricalMap
+  diary_entries:
+    feed:
+      all:
+        description: Najnowše dźenikowe zapiski wužiwarjow OpenHistoricalMap
+        title: OpenHistoricalMap dźenikowe zapiski
+      language:
+        description: Najnowše dźenikowe zapiski wot wužiwarjow OpenHistoricalMap w rěči %{language_name}
+        title: OpenHistoricalMap dźenikowe zapiski w rěči %{language_name}
+      user:
+        title: OpenHistoricalMap dźenikowe zapiski wot wužiwarja %{user}
+    profile_diaries:
+      date_label: Datum
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          track: běhanišćo
+  javascripts:
+    map:
+      zoom:
+        in: Powjetšić
+        out: Pomjeńšić
+  layouts:
+    intro_2_create_account: Załož wužiwarske konto
+    intro_header: Witaj k OpenHistoricalMap!
+    intro_text: OpenHistoricalMap je karta swěta, wutworjena wot ludźi kaž tebje a hodźi so swobodnje pod wotewrjenej licencu wužiwać.
+    logo:
+      alt_text: OpenHistoricalMap logo
+    logout: Wotzjewić
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: Swobodna karta swěta
+  sessions:
+    destroy:
+      heading: Z OpenHistoricalMap wotzjewić
+  site:
+    about:
+      lede_text: OpenHistoricalMap twori so wot zhromadźenstwa kartěrowarjow, kiž přinošuja a hladaja daty wo pućach, twarjenjach, dwórnišćach a wjele wjace na cyłym swěće.
+      used_by_html: Wuslědź swět w kóždym času z %{name}.
+    about_section:
+      contribute_1_user_diaries: wužiwarske dźeniki
+      legal_1_privacy_policy: Prawidła priwatnosće
+      legal_1_terms_of_use: Wužiwanske wuměnjenja
+    copyright:
+      legal_babble:
+        attribution_example:
+          title: Přikład, kak so ma OpenHistoricalMap na webstronje pokazać
+        contributors_footer_2_html: Zapřijimanje datow do OpenHistoricalMap njerěka, zo poskićowar originalnych datow OpenHistoricalMap připóznawa, někajku garantiju dodawa abo rukowanje přewozmje.
+        contributors_intro_html: |-
+          OpenHistoricalMap je zhromadna próca tysacow ludźi a organizacijow, kotřiž ze swojeje strony z wulkeho poola wučenosće, žurnalizma a zastawanja pismowstwa.
+
+          Naše najbóle substancielne žórła a sobuskutkowarjo su:
+        contributors_title_html: Dźakprajenja
+        credit_1_html: 'Hdyž daty OpenHistoricalMap wužiwaš, dyrbiš slědowacej dwě wěcy činić:'
+        credit_title_html: Kak ma so awtorstwo OpenHistoricalMap pokazać
+        infringement_1_html: Sobuskutkowacych OHM namołwjamy, zo ženje daty ze žórłow, kotrež su přez awtorske prawo škitane (na př. z Google Maps abo z wućišćanych kartow) bjez wurazneje dowolnosće awtorow  njepřidawaja.
+        more_title_html: Dalše informacije
+      title: Awtorske prawo a připóznaća
+    export:
+      too_large:
+        body: 'Tutón wobłuk je přewulki za eksportowanje jako XML-daty OpenHistoricalMap. Prošu powjetš abo wubjer mjeńši wobłuk abo wužij jedne ze slědowacych žórłow za sćehnjenje wulkich mnóstwow datow:'
+        overpass:
+          description: Tutón wobłuk ze špiheloweho serwera datoweje banki OpenHistoricalMap sćahnyć
+        planet:
+          description: Prawidłownje zaktualizowane kopije dospołneje datoweje banki OpenHistoricalMap
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            Klikń prosće na %{note_icon} abo na samsny symbol w zwobraznjenju karty.
+            To přida karće marku, kotruž móžeš přez ćehnjenje přesunyć.
+            Přidaj swoju powěsć, klikń potom na Składować a druzy kartěrowarjo to přeslědźa.
+        join_the_community:
+          explanation_html: Jeli sy problem z našimi kartowymi datami pytnył, na přikład dróha abo twoja adresa faluje, je najlěpše wašnje, z tym pokročować, so zhromadźenstwu OpenHistoricalMap přiidružić a sam daty přidać abo korigować.
+    help:
+      introduction: OpenHistoricalMap ma wšelake resursy za zeznaće projekta, prašenja a wotmołwy wo něčim a zhromadnu diskusiju a dokumentowanje kartěrowanskich temow.
+      slack:
+        title: IRC
+      welcome:
+        description: Započń z tutym spěšnym nawodom, kotryž zakłady OpenHistoricalMap wobsahuje.
+        title: Witaj k OpenHistoricalMap
+      wiki:
+        description: Přepytaj wiki za nadrobnej dokumentaciju OHM
+    index:
+      js_2: OpenHistoricalMap JavaScript za slippy map wužiwa.
+      remote_failed: Wobdźěłowanje je so njeporadźiło - zawěsć, zo JOSM abo Merkaartor je začitany a dalokowodźenska opcija je zmóžnjena
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap někotre wosebite zapřijeća wužiwa. Tu su někotre z nich, kotrež móhli ći wužitne być.
+      introduction: Witaj k OpenHistoricalMap, swobodnej a wobdźěłujomnej karće swěta. Nětko, po tym zo sy so zregistrował, móžeš so do kartěrowanja dać. Tu je krótki nawod z najwažnišimi informacijemi, kotrež dyrbiš wědźeć.
+      rules:
+        para_1_html: OpenHistoricalMap ma jenož mało formelnych prawidłow, ale wočakujemy wot wšěch wobdźělnikow, zo bychu ze zhromadźenstwom hromadźe dźěłali a komunikowali. Planuješ-li druhe činitosće hač wobdźěłanje z ruku, prošu přečitaj prawidła wo %{imports_link} a %{automated_edits_link} a měj so po nim.
+      whats_on_the_map:
+        off_the_map_html: Štož %{doesnt}ma wobsahować, su subjektiwne daty kaž pohódnoćenja, historiske abo hypotetiske funkcije a daty z přez awtorske prawo škitanych žórłow. Njekopěruju z online- abo papjernych kartow, chibazo maš wosebitu dowolnosć.
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS-slědy
+    show:
+      edit: wobdźěłać
+      edit_trace: Tutu čaru wobdźěłać
+      map: karta
+    trace:
+      edit_map: Kartu wobdźěłać
+      view_map: Kartu pokazać
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} je sadźbu změnow komentował, za kotruž so zajimuješ"
+        subject_own: "[OpenHistoricalMap] %{commenter} je jednu z twojich změnow komentował(a)"
+    diary_comment_notification:
+      header: "%{from_user} je dźenikowy zapisk pola OpenHistoricalMap z temu %{subject} komentował(a):"
+      header_html: "%{from_user} je dźenikowy zapisk pola OpenHistoricalMap z temu %{subject} komentował:"
+      subject: "[OpenHistoricalMap] %{user} je twój dźenikowy zapisk komentował(a)"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Twoju mejlowu adresu wobkrućić"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Zmylk při imporće GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX-import wuspěšny"
+    lost_password:
+      hopefully_you: Něchtó (najskerje ty) je pod tutej mejlowej adresu wo to prosył, hesło za konto na openhistoricalmap.org wróćo stajić.
+      subject: "[OpenHistoricalMap] Próstwa wo wróćostajenje hesła"
+    message_notification:
+      header: "%{from_user} je ći přez OpenHistoricalMap powěsć z temu %{subject} pósłał(a):"
+      header_html: "%{from_user} je ći přez OpenHistoricalMap powěsć z temu %{subject} pósłał:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} je pokazku rozrisał, za kotruž so zajimuješ"
+        subject_own: "[OpenHistoricalMap] %{commenter} je jednu z twojich pokazkow rozrisał"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} je pokazku komentował(a), za kotruž so zajimuješ"
+        subject_own: "[OpenHistoricalMap] %{commenter} je jednu z twojich pokazkow komentował(a)"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} je pokazku reaktiwizował, za kotruž so zajimuješ"
+        subject_own: "[OpenHistoricalMap] %{commenter} je jednu z twojich pokazkow reaktiwizował"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Witaj k OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Waš ID hišće z kontom OpenHistoricalMap zwjazany njeje.
+      option_1: Jeli sy nowy na OpenHistoricalMap, załož nowe konto z pomocu slědowaceho formulara.
+    show:
+      delete_user: Tutoho wužiwarja zhašeć
+      hide_user: Tutoho wužiwarja schować
+      unhide_user: Tutoho wužiwarja pokazaś

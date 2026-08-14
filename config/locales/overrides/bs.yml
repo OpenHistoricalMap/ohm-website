@@ -1,0 +1,103 @@
+# Messages for Bosnian (bosanski)
+# Exported from translatewiki.net
+# Author: Alenmahovic
+# Author: CERminator
+# Author: DzWiki
+# Author: Edinwiki
+# Author: Erictheise
+# Author: KWiki
+# Author: Macofe
+# Author: Maxmus
+# Author: Minh Nguyen
+# Author: Obsuser
+# Author: Palapa
+# Author: Ruila
+# Author: Semso98
+# Author: Srdjan m
+# Author: Srđan
+# Author: Сербијана
+# Do not edit by hand.
+bs:
+  accounts:
+    show:
+      contributor_terms:
+        link text: Šta je ovo?
+  activerecord:
+    attributes:
+      client_application:
+        allow_write_api: izmijeni kartu
+        callback_url: URL za povratni poziv
+        name: Ime (obavezno)
+        support_url: URL podrške
+  diary_entries:
+    feed:
+      all:
+        description: Nedavni unosi u dnevnik OpenHistoricalMap korisnika
+        title: Unosi u OpenHistoricalMap dnevniku
+      language:
+        description: 'Nedavni unosi u dnevnik OpenHistoricalMap korisnika na jeziku: %{language_name}'
+        title: 'Unosi u OpenHistoricalMap dnevnik na jeziku: %{language_name}'
+      user:
+        description: Nedavni unosi u OpenHistoricalMap dnevnik od %{user}
+        title: Unosi u OpenHistoricalMap dnevnik za korisnika %{user}
+    profile_diaries:
+      date_label: Datum
+  javascripts:
+    map:
+      zoom:
+        in: Približi
+        out: Udalji
+  layouts:
+    intro_2_create_account: Napravite korisnički račun
+    intro_header: Dobordošli na OpenHistoricalMap stranicu!
+    intro_text: OpenHistoricalMap predstavlja mapu svijeta, kreiranu od strane ljudi kao što ste vi i može se besplatno koristiti.
+    logo:
+      alt_text: OpenHistoricalMap logotip
+    logout: Odjava
+    tag_line: Slobodna wiki karta Svijeta
+  sessions:
+    destroy:
+      heading: Odjava iz OpenHistoricalMap
+  site:
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Uvrštenje podataka u OpenHistoricalMap ne podrazumjeva da se izvorni davatelj podataka podržava OpenHistoricalMap, pruža bilo kakvu garanciju, ili prihvata bilo kakve obaveze.
+        credit_1_html: |-
+          Tražimo da koristite navedete zasluge &ldquo;&copy; OpenHistoricalMap
+          contributors&rdquo;.
+        credit_title_html: Kako navesti zasluge OpenHistoricalMap projekta kao izvora
+        infringement_1_html: OHM doprinosioci se podsjećaju da nikada ne dodaju podatke sa bilo kojeg izvora koji zadržava autorska prava (npr. Google Maps ili printane karte) bez eksplicitne dozvole od strane autora.
+        more_title_html: Više o
+    export:
+      too_large:
+        body: Ovo područje je preveliko da bi se izvezlo kao OpenHistoricalMap XML podaci. Molimo povećajte (zoom) ili odaberite manje područje ili koristite jedan od izvora navedenih ispod za masovno preuzimanje podataka.
+    help:
+      slack:
+        title: IRC
+    index:
+      js_2: OpenHistoricalMap koristi JavaScript za slippy kartu.
+      remote_failed: Uređivanje nije uspjelo - provjerite da li je JOSM ili Merkaartor učitan i da je opcija udaljenog pristupa omogućena
+  user_mailer:
+    diary_comment_notification:
+      header: "%{from_user} je komentirao tvoj nedavni OpenHistoricalMap unos u dnevnik sa predmetom %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} je komentirao tvoj unos u dnevnik"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Potvrdite Vašu e-mail adresu"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX Import nije uspio"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX Import uspješan"
+    lost_password:
+      subject: "[OpenHistoricalMap] Zahtjev za ponovnim postavljanjem lozinke"
+    message_notification:
+      header: "%{from_user} Vam je poslao poruku preko OpenHistoricalMap sa predmetom %{subject}:"
+    note_comment_notification:
+      commented:
+        subject_own: "[OpenHistoricalMap] %{commenter} je dao komentar na jednu od tvojih bilješki."
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Dobrodošli na OpenHistoricalMap"
+  users:
+    show:
+      delete_user: Obriši ovog korisnika
+      hide_user: Sakrij ovog korisnika
+      unhide_user: Otkrij ovog korisnika

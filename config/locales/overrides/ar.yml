@@ -1,0 +1,249 @@
+# Messages for Arabic (العربية)
+# Exported from translatewiki.net
+# Author: Ali1
+# Author: Alshamiri1
+# Author: Asma
+# Author: Aude
+# Author: Awais
+# Author: Ayatun
+# Author: Azouz.anis
+# Author: Bassem JARKAS
+# Author: ButterflyOfFire
+# Author: Danieldegroot2
+# Author: Dr-Taher
+# Author: Dr. Mohammed
+# Author: Erictheise
+# Author: Fahad
+# Author: Faris knight
+# Author: FiberAhmed
+# Author: Gravitystorm
+# Author: Grille chompa
+# Author: Hanzo64
+# Author: HitomiAkane
+# Author: Houcinee1
+# Author: Hubaishan
+# Author: Karim185.3
+# Author: Kassem7899
+# Author: Kuwaity26
+# Author: LaMagiaaa
+# Author: Lolekek
+# Author: MRidhaAJ
+# Author: Majid Al-Dharrab
+# Author: McDutchie
+# Author: Meno25
+# Author: Mido
+# Author: Minh Nguyen
+# Author: Mohammed Qays
+# Author: Mohammed Qubati
+# Author: Mutarjem horr
+# Author: NEHAOUA
+# Author: NO1xMOHAMED
+# Author: Omda4wady
+# Author: OsamaK
+# Author: Ruila
+# Author: TTMTT
+# Author: XIDME
+# Author: Yahya Sakhnini
+# Author: Zaher kadour
+# Author: Zaid1442011
+# Author: Zpizza
+# Author: أَحمد
+# Author: بدارين
+# Author: بهتين شوكت
+# Author: ترجمان05
+# Author: حبيشان
+# Author: ديفيد
+# Author: زكريا
+# Author: عباد ديرانية
+# Author: عبد الرحمان أيمن
+# Author: محمد أحمد عبد الفتاح
+# Do not edit by hand.
+ar:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: ما هذا؟
+    terms:
+      show:
+        read and accept with tou: تُرجَى قراءة اتفاقية المساهم وشروط الاستخدام، والتحقق من خانتي الاختيار عند الانتهاء، ثم اضغط على زر "متابعة".
+        tou_explain:
+          html: تُنظّم %{tou_link} والأحكام استخدام الموقع الإلكتروني والبنية التحتية الأخرى التي تُقدّمها OpenHistoricalMap. يُرجى النقر على الرابط وقراءة النص والموافقة عليه.
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: قراءة آثار جي بي إس الخاصة بهم
+        allow_read_prefs: قراءة تفضيلات المستخدم الخاصة بهم
+        allow_write_api: تعديل الخريطة.
+        allow_write_diary: إنشاء إدخالات اليوميات والتعليقات
+        allow_write_gpx: رفع آثار جي بي إس.
+        allow_write_notes: تعديل الملاحظات.
+        allow_write_prefs: تعديل تفضيلات المستخدم الخاصة بهم
+        callback_url: رابط الرد
+        name: الاسم (مطلوب)
+        support_url: رابط الدعم
+        url: " مسار (URL) للتطبيق الرئيسي (مطلوب)"
+  application:
+    auth_providers:
+      openstreetmap:
+        alt: شعار خريطة الشارع المفتوحة
+        title: تسجيل الدخول باستخدام خريطة الشارع المفتوحة
+    setup_user_auth:
+      blocked_zero_hour: لديك رسالة عاجلة على موقع ويب OpenHistoricalMap. يجب أن تقرأ الرسالة قبل أن تتمكن من حفظ تعديلاتك.
+  auth:
+    providers:
+      openstreetmap: خريطة الشارع المفتوحة
+  changeset_comments:
+    feeds:
+      show:
+        title_all: مناقشة مجموعة تغييرات OpenHistoricalMap
+  date:
+    formats:
+      brief_bce: "%{year} قبل الميلاد"
+      brief_ce: "%{year} م"
+  diary_entries:
+    profile_diaries:
+      date_label: التاريخ
+  errors:
+    contact:
+      contact_the_community_html: لا تتردد في ٪{contact_link} مجتمع OpenHistoricalMap إذا وجدت ارتباطًا / خطأً معطلاً. قم بتدوين عنوان URL الدقيق لطلبك.%{contact_link}
+      contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
+    forbidden:
+      description: العملية التي طلبتها على خادم OpenHistoricalMap متاحة فقط للمسؤولين (HTTP 403)
+    internal_server_error:
+      description: واجه خادم OpenHistoricalMap حالة غير متوقعة منعته من تلبية الطلب (HTTP 500)
+    not_found:
+      description: تعذر العثور على ملف / دليل / عملية API بهذا الاسم على خادم OpenHistoricalMap (HTTP 404)
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          track: مضمار سباق
+        shop:
+          seafood: أكلات بحرية
+  javascripts:
+    legend:
+      title: مفتاح الخريطة
+      tooltip: مفتاح الخريطة
+      tooltip_disabled: مفتاح الخريطة غير متاح لهذه الطبقة
+    map:
+      zoom:
+        in: تقريب
+        out: بَعِّدْ
+  layouts:
+    intro_2_create_account: إنشاء حساب مستخدم
+    intro_text: OpenHistoricalMap هي خريطة تفاعلية للعالم عبر التاريخ، تم إنشاؤها بواسطة أشخاص مثلك ومخصصة للمجال العام.
+    logout: تسجيل الخروج
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: ويكي خريطة العالم الحرة
+  site:
+    about:
+      lede_text: OpenHistoricalMap هو مشروع طموح بقيادة المجتمع لرسم خرائط للتغيرات في الجغرافيا الطبيعية والبشرية في جميع أنحاء العالم... عبر العصور.
+      used_by_html: استكشف العالم في أي فترة زمنية مع %{name}.
+    about_section:
+      contribute_1_user_diaries: يوميات المستخدم
+      legal_1_aup: سياسات الاستخدام المقبولة
+      legal_1_privacy_policy: سياسة الخصوصية
+      legal_1_terms_of_use: شروط الاستخدام
+      legal_2_html: من فضلك %{contact_team_link} إذا كان لديك ترخيص أو حقوق طبع ونشر أو أسئلة قانونية أخرى.
+    copyright:
+      legal_babble:
+        attribution_example:
+          alt: رابط يحمل علامة OHM في الزاوية اليمنى السفلية لصفحة الويب، أسفل شريط تمرير الوقت.
+          title: مثال على كيفية إسناد OpenHistoricalMap إلى صفحة ويب
+        contributors_footer_2_html: |-
+          إدراج البيانات في OpenHistoricalMap لا يعني أن الأصلي
+          مزود البيانات يؤيد OpenHistoricalMap ، يوفر أي ضمان ، أو
+          يقبل أي مسؤولية.
+        contributors_intro_html: |-
+          OpenHistoricalMap هو جهد تعاوني لآلاف الأفراد والمنظمات، الذين بدورهم يستفيدون من مجموعة كبيرة من المنح الدراسية والصحافة وحفظ السجلات.
+          تشمل أهم مصادرنا ومساهمينا ما يلي:
+        contributors_title_html: الشكر والتقدير
+        credit_1_html: على الرغم من أن قانون حقوق النشر لا يقيد أو يضع أي شروط على استخدامك للمحتوى المتاح في المجال العام، فإننا نقدر بشدة أي رصيد تقدمه إلى OpenHistoricalMap عند إعادة استخدام أو تكييف أو استخدام خرائطنا أو بياناتنا بأي طريقة أخرى.
+        credit_title_html: كيفية إضافة الفضل إلى OpenHistoricalMap
+        infringement_1_html: |-
+          يتم تذكير المساهمين OHM لا لإضافة البيانات من أي
+          المصادر المحمية بحقوق الطبع والنشر (مثل خرائط Google أو الخرائط المطبوعة) بدون
+          إذن صريح من أصحاب حقوق النشر.
+        more_title_html: معرفة المزيد
+      title: حقوق الطبع والنشر والإقرارات
+    export:
+      too_large:
+        planet:
+          title: كوكب أوم
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            انقر على %{note_icon} أو على نفس الرمز على شاشة الخريطة. سيُضاف هذا علامة إلى الخريطة، ويمكنك تحريكها
+             بالسحب. أضف رسالتك، ثم انقر على "حفظ"، وسيقوم مصممو الخرائط الآخرون بالتحقق.
+        join_the_community:
+          explanation_html: إذا لاحظت وجود مشكلة في بيانات خريطتنا، على سبيل المثال طريق مفقود أو عنوانك، فإن أفضل طريقة للمتابعة هي الانضمام إلى مجتمع OpenHistoricalMap وإضافة البيانات أو إصلاحها بنفسك.
+    help:
+      discord:
+        title: ديسكورد
+      introduction: يحتوي OpenHistoricalMap على العديد من الموارد للتعرف على المشروع، وطرح الأسئلة والإجابة عليها، ومناقشة مواضيع رسم الخرائط وتوثيقها بشكل تعاوني.
+      slack:
+        title: سلاك
+      welcome:
+        description: ابدأ بهذا الدليل السريع الذي يغطي أساسيات OpenHistoricalMap.
+        title: مرحباً بكم في OpenHistoricalMap
+      welcomemat:
+        title: مرحباً بكم في OHM
+      wiki:
+        description: تعليمات يتم صيانتها من قبل المجتمع لاستخدام OHM وإرشادات للمساهمة في المشروع.
+        title: ويكي
+    index:
+      license:
+        copyright: يُعد OpenHistoricalMap مخصصًا للملكية العامة ما لم يُذكر خلاف ذلك.
+      remote_failed: فشل التعديل - تأكد من تحميل JOSM أو Merkaartor وتمكين خيار التحكم عن بعد
+    welcome:
+      basic_terms:
+        paragraph_1: لدى OpenHistoricalMap لغة خاصة بها. إليك بعض الكلمات الرئيسية المفيدة.
+      introduction: أهلاً بكم في OpenHistoricalMap، خريطة التاريخ العالمي المجانية والقابلة للتعديل. بعد تسجيلك، أنت جاهز لبدء رسم الخرائط. إليك دليل سريع بأهم المعلومات التي تحتاج لمعرفتها.
+      rules:
+        para_1_html: لدى OpenHistoricalMap قواعد رسمية قليلة، لكننا نتوقع من جميع المشاركين التعاون والتواصل مع مجتمعنا. إذا كنتم تفكرون في أي أنشطة أخرى غير التحرير اليدوي، يُرجى قراءة واتباع الإرشادات المتعلقة بـ %{imports_link} و%{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: "%{doesnt} OpenHistoricalMap تواريخ بديلة خيالية، وأخطاء معروفة من خرائط قديمة، وبيانات من مصادر محمية بحقوق الطبع والنشر. لا تنسخ من خرائط قديمة حديثة تجدها على الإنترنت أو مطبوعة، إلا بإذن خاص."
+  time:
+    formats:
+      blog: "%e %B %Y"
+  traces:
+    show:
+      edit: تعديل
+      edit_trace: عدل هذا الأثر
+      map: خريطة
+    trace:
+      edit_map: عدّل الخريطة
+      view_map: اعرض الخريطة
+  user_mailer:
+    diary_comment_notification:
+      header_html: "%{from_user} علق على إدخال يوميات OpenHistoricalMap بالموضوع %{subject}:"
+    email_confirm:
+      subject: "[OpenHistoricalMap] تأكيد عنوان بريدك الإلكتروني"
+    lost_password:
+      hopefully_you: لقد طلب شخص ما (ربما أنت) إعادة تعيين كلمة المرور على حساب openhistoricalmap.org الخاص بهذا العنوان الإلكتروني.
+      subject: "[OpenHistoricalMap] طلب إعادة تعيين كلمة المرور"
+    message_notification:
+      header: 'لقد أرسل لك %{from_user} رسالة عبر OpenHistoricalMap بموضوع %{subject}:'
+      header_html: "%{from_user} أرسل إليك رسالة عبر OpenHistoricalMap بالموضوع %{subject}:"
+      subject: "[الخريطة التاريخية المفتوحة] %{message_title}"
+  users:
+    auth_association:
+      heading: لم يتم ربط معرفك بحساب OpenHistoricalMap بعد.
+    new:
+      about:
+        paragraph_1: |-
+          على عكس الخرائط الأخرى ، تم إنشاء OpenHistoricalMap بالكامل بواسطة أشخاص مثلك ،
+          وهو مجاني لأي شخص لإصلاحه وتحديثه وتنزيله واستخدامه.
+        paragraph_2: سجل لتبدأ المساهمة. سنرسل بريدًا إلكترونيًا لتأكيد حسابك.
+    show:
+      delete_user: احذف هذا المستخدم
+      hide_user: اخفِ هذا المستخدم
+      unhide_user: أظهر هذا المستخدم

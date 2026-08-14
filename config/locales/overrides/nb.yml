@@ -1,0 +1,189 @@
+# Messages for Norwegian Bokmål (norsk bokmål)
+# Exported from translatewiki.net
+# Author: 6400
+# Author: Abbe98
+# Author: Citadell
+# Author: Danieldegroot2
+# Author: Danmichaelo
+# Author: Dittaeva
+# Author: EdoAug
+# Author: Erictheise
+# Author: EvenT
+# Author: Event
+# Author: Gabriel Kielland
+# Author: Gustavf
+# Author: Haakon K
+# Author: Hansfn
+# Author: Imre Eilertsen
+# Author: Janhoy
+# Author: Jon Harald Søby
+# Author: Josteinh
+# Author: Kingu
+# Author: Laaknor
+# Author: Macofe
+# Author: MarkusHD
+# Author: Mathias-S
+# Author: McDutchie
+# Author: Minh Nguyen
+# Author: Nemo bis
+# Author: Nghtwlkr
+# Author: Nikolajfyhn
+# Author: Oyvind
+# Author: SuperPotato
+# Author: The real emj
+# Author: Yupik
+# Do not edit by hand.
+nb:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
+        link text: hva er dette?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: lese deres private GPS-spor
+        allow_read_prefs: lese brukeralternativ deres
+        allow_write_api: endre kartet
+        allow_write_diary: opprette dagbokoppføringer, kommentarer og finne venner
+        allow_write_gpx: laste opp GPS-spor
+        allow_write_notes: endre merknader
+        allow_write_prefs: endre brukeralternativ deres
+        callback_url: 'URL for tilbakekall:'
+        name: Navn (påkrevd)
+        support_url: Støtte-URL
+        url: Hovedapplikasjons-URL (påkrevd)
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap-merknader
+  application:
+    setup_user_auth:
+      blocked_zero_hour: Du har en viktig beskjed på OpenHistoricalMap-nettsida. Du må lese beskjeden før du vil kunne lagre redigeringene dine.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap-endringssettsdiskusjon
+        title_particular: 'OpenHistoricalMap-endringssettsdiskusjon #%{changeset_id}'
+  diary_entries:
+    feed:
+      all:
+        description: Nye innlegg i dagbøkene til OpenHistoricalMap-brukere
+        title: Innlegg i OpenHistoricalMap-dagboka
+      language:
+        description: Nye innlegg i dagbøkene til OpenHistoricalMap-brukere på %{language_name}
+        title: Innlegg i OpenHistoricalMap-dagbøker på %{language_name}
+      user:
+        description: Nye innlegg i OpenHistoricalMap-dagboka til %{user}
+        title: Innlegg i OpenHistoricalMap-dagboka for %{user}
+    profile_diaries:
+      date_label: Dato
+  javascripts:
+    map:
+      zoom:
+        in: Forstørr utvalg
+        out: Forminsk utvalg
+  layouts:
+    intro_2_create_account: Opprett en brukerkonto
+    intro_header: Velkommen til OpenHistoricalMap!
+    intro_text: OpenHistoricalMap er et kart over verden, skapt av mennesker som deg, og gratis å bruke under en åpen lisens.
+    logo:
+      alt_text: OpenHistoricalMap-logo
+    logout: Logg ut
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: Fritt Wiki-verdenskart
+  sessions:
+    destroy:
+      heading: Logg ut fra OpenHistoricalMap
+  site:
+    about:
+      lede_text: OpenHistoricalMap er bygd av et fellesskap av kartleggere som oppretter og vedlikeholder data om veier, stier, kafeer, jernbanestasjoner og diverse annet, over hele verdien.
+    communities:
+      lede_text: Mennesker fra hele verden bidrar til eller bruker OpenHistoricalMap. Mens mange deltar individuelt, har andre dannet fellesskap. Disse gruppene fins i mange størrelser og representerer brukere fra små byer til store regioner som spenner over flere land. De kan også være formelle eller uformelle.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Inkludering av data i OpenHistoricalMap innebærer ikke at den opprinnelige dataleverandøren støtter OpenHistoricalMap, gir noen garanti eller godtar noe erstatningsansvar.
+        credit_1_html: Vi krever at du bruker godskrivinga «© OpenHistoricalMap-bidragsyterene».
+        credit_title_html: Hvordan kreditere OpenHistoricalMap
+        infringement_1_html: OHM-bidragsytere blir minnet på aldri å legge til data fra opphavsrettsbeskyttede  kilder (f.eks. Google Maps eller utskrevne kart) uten uttrykkelig tillatelse fra rettighetshaverne.
+        more_title_html: Finner ut mer
+    export:
+      too_large:
+        body: Dette området er for stort for å bli eksportert som OpenHistoricalMap XML-data. Forstørr utvalg eller velg et mindre område. Eller bruke en av kildene angitt under for nedlasting av bulkdata.
+        overpass:
+          description: Last ned denne avgrensingsrammen fra et speil av OpenHistoricalMap-databasen
+        planet:
+          description: Regelmessig oppdaterte kopier av hele OpenHistoricalMap-databasen
+          title: Planet OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            Bare klikk %{note_icon} eller det samme ikonet på kartvisningen.
+            Dette vil legge en markør på kartet som du kan flytte rundt på. Legg så inn en melding og klikk lagre, og andre kartleggere kan følge opp informasjonen din.
+        join_the_community:
+          explanation_html: Hvis du har observert et problem med våre kartdata, for eksempel at det mangler en vei, anbefaler vi at du blir med i OpenHistoricalMap-fellesskapet for å kunne reparere dataene selv.
+    help:
+      introduction: OpenHistoricalMap har diverse ressurser for å lære om prosjektet, stille eller svare på spørsmål samt i fellesskap diskutere og dokumentere kartleggingsemner.
+      slack:
+        title: IRC
+      welcome:
+        description: Start med denne hurtigguiden som dekker det grunnleggende om OpenHistoricalMap.
+        title: Velkommen til OpenHistoricalMap
+      wiki:
+        description: Se gjennom wikien for dyptgående OHM-dokumentasjon.
+    index:
+      js_2: OpenHistoricalMap bruker JavaScript på kartsidene.
+      remote_failed: Klarte ikke redigere - forsikre deg at JOSM eller Merkaartor er lastet og fjernkontrollvalget er aktivert
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap har sin egen sjargong. Her er en ordliste som kan være nyttig.
+      introduction: Velkommen til OpenHistoricalMap, det fri brukerredigerte verdenskartet. Nå som du er opprettet som bruker er du klar til å legge til og endre kartinformasjon. Her er en guide med den viktigste informasjonen for å komme hurtig i gang.
+      rules:
+        para_1_html: OpenHistoricalMap har få formelle regler, men vi forventer at alle deltagere samarbeider og kommuniserer med fellesskapet. Hvis du er interessert i andre aktiviteter enn manuell redigering, vennligst les og følg retningslinjene for %{imports_link} og %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: Kartet inneholder %{doesnt} subjektiv informasjon (f.eks. anmeldelser), objekter som er er fiktive eller ikke lenger eksisterer, samt opphavsrettslig beskyttede data fra andre kart. Kopier aldri noe som helst informasjon fra andre digitale eller papirbaserte kart, med mindre det foreligger en særlig tillatelse.
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS-spor
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} har kommentert en endring du har vist interesse for"
+        subject_own: "[OpenHistoricalMap] %{commenter} har kommentert en av dine endringer"
+    diary_comment_notification:
+      header: "%{from_user} har kommentert på OpenHistoricalMap-dagbokinnlegget med emnet %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} kommenterte et dagbokinnlegg"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Bekreft din e-postadresse"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Feil under import av GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Vellykket import av GPX"
+    lost_password:
+      hopefully_you: Noen (forhåpentligvis deg) har bedt om å nullstille passordet for OpenHistoricalMap-kontoen knyttet til denne e-postadressen.
+      subject: "[OpenHistoricalMap] Forespørsel om nullstilling av passord"
+    message_notification:
+      header: "%{from_user} har sendt deg en melding gjennom OpenHistoricalMap med emnet %{subject}:"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} har løst en merknad som du er interessert i"
+        subject_own: "[OpenHistoricalMap] %{commenter} har løst en av dine merknader"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} har kommentert en merknad som du er interessert i"
+        subject_own: "[OpenHistoricalMap] %{commenter} har kommentert en av dine merknader"
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} har reaktivert en merknad som du er interessert i"
+        subject_own: "[OpenHistoricalMap] %{commenter} har reaktivert en av dine merknader"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Velkommen til OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: ID-en din er ikke tilknyttet en OpenHistoricalMap-konto enda.
+    show:
+      delete_user: Slett denne brukeren
+      hide_user: Skjul denne brukeren
+      unhide_user: Slutt å skjule denne brukeren

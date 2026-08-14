@@ -13,6 +13,7 @@ export default function (map) {
 
   page.init = function (path, id) {
     initialize(path, id);
+    addOpenHistoricalMapTimeSlider(map);
   };
 
   function initialize(path, id, skipMoveToNote) {

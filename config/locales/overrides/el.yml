@@ -1,0 +1,440 @@
+# Messages for Greek (Ελληνικά)
+# Exported from translatewiki.net
+# Author: AProdromou
+# Author: Aitolos
+# Author: Alexstam
+# Author: AntonyFragakis
+# Author: Auslaender
+# Author: Babispan
+# Author: Consta
+# Author: Crazymadlover
+# Author: Danieldegroot2
+# Author: Dimitris131
+# Author: Dogogos123
+# Author: Ellentilav
+# Author: Erictheise
+# Author: Evropi
+# Author: FocalPoint
+# Author: Fotis A.
+# Author: Geraki
+# Author: Glavkos
+# Author: Jimkats
+# Author: KATRINE1992
+# Author: KATRINE1993
+# Author: Kiriakos
+# Author: KonVog
+# Author: Kongr43gpen
+# Author: Lilfret
+# Author: Logictheo
+# Author: Macofe
+# Author: McDutchie
+# Author: Michail Angelos Georgoulas
+# Author: Minh Nguyen
+# Author: Mixasgr
+# Author: Mpempa
+# Author: NikosLikomitros
+# Author: Nikosgranturismogt
+# Author: Norhorn
+# Author: Omnipaedista
+# Author: Opensavk
+# Author: P20kios
+# Author: Panos78
+# Author: PeachyOne
+# Author: Protnet
+# Author: Ruila
+# Author: Shirayuki
+# Author: SkarmoutsosV
+# Author: Spyridon Eftychios Kokotos
+# Author: Stam.nikos
+# Author: SucreRouge
+# Author: Tgkarounos
+# Author: Zserdx
+# Author: Ανώνυμος Βικιπαιδιστής
+# Author: 아라
+# Do not edit by hand.
+el:
+  accounts:
+    deletions:
+      show:
+        delete_introduction: 'Μπορείτε να διαγράψετε τον λογαριασμό σας στο OpenHistoricalMap χρησιμοποιώντας το παρακάτω κουμπί. Παρακαλώ σημειώστε τις εξής λεπτομέρειες:'
+        retain_caveats: 'Ωστόσο, ορισμένες πληροφορίες για εσάς θα διατηρηθούν στο OpenHistoricalMap, ακόμη και μετά τη διαγραφή του λογαριασμού σας:'
+    show:
+      contributor_terms:
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
+        link text: τι είναι αυτό;
+    terms:
+      show:
+        read and accept with tou: Παρακαλούμε διαβάστε τους όρους συνεισφοράς και όρους χρήσης, επιλέξτε τα δυο πλαίσια ελέγχου όταν έχετε τελειώσει και πατήστε το κουμπί για να συνεχίσετε.
+        tou_explain:
+          html: Αυτοί οι %{tou_link} καλύπτουν τη χρήση της ιστοσελίδας και άλλης υποδομής που προσφέρει το OpenHistoricalMap. Παρακαλούμε ακολουθήστε τον σύνδεσμο, διαβάστε και αποδεχτείτε το κείμενο.
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: ανάγνωση των προσωπικών ιχνών GPS
+        allow_read_prefs: ανάγνωση των προτιμήσεων χρήστη
+        allow_write_api: τροποποίηση του χάρτη
+        allow_write_changeset_comments: σχόλιο στα σύνολα αλλαγών
+        allow_write_diary: δημιουργία καταχωρήσεων ημερολογίου και σχολίων
+        allow_write_gpx: μεταφόρτωση ιχνών GPS
+        allow_write_notes: τροποποίηση σημειώσεων
+        allow_write_prefs: τροποποίηση των προτιμήσεων χρήστη
+        callback_url: URL Επανάκλησης
+        name: Όνομα (απαιτείται)
+        support_url: URL Υποστήριξης
+        url: URL κύριας εφαρμογής (απαιτείται)
+  api:
+    notes:
+      rss:
+        title: Σημειώσεις OpenHistoricalMap
+  application:
+    auth_providers:
+      openstreetmap:
+        alt: Λογότυπο OpenStreetMap
+        title: Σύνδεση με OpenStreetMap
+    setup_user_auth:
+      blocked_zero_hour: Εκκρεμεί επείγον μήνυμα στον ιστότοπο του OpenHistoricalMap. Πρέπει να διαβάσετε το μήνυμα πριν να μπορείτε να αποθηκεύσετε τις αλλαγές σας.
+  auth:
+    providers:
+      openstreetmap: OpenStreetMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Συζήτηση αλλαγών OpenHistoricalMap
+        title_particular: 'Συζήτηση αλλαγών OpenHistoricalMap #%{changeset_id}'
+  date:
+    formats:
+      brief_bce: "%{year} π.Χ."
+      brief_ce: "%{year} μ.Χ."
+  diary_entries:
+    comments:
+      description: Πρόσφατες καταχωρίσεις ημερολογίου από χρήστες του OpenHistoricalMap
+      title: Καταχωρήσεις ημερολογίου OpenHistoricalMap
+    feed:
+      all:
+        description: Πρόσφατες καταχωρήσεις ημερολογίου από χρήστες του OpenHistoricalMap
+        title: Καταχωρήσεις ημερολογίου OpenHistoricalMap
+      language:
+        description: Πρόσφατες καταχωρήσεις ημερολογίου από χρήστες του OpenHistoricalMap στα %{language_name}
+        title: Καταχωρήσεις ημερολογίου OpenHistoricalMap στα %{language_name}
+      user:
+        description: Πρόσφατες καταχωρήσεις ημερολογίου OpenHistoricalMap από τον %{user}
+        title: Καταχωρήσεις ημερολογίου OpenHistoricalMap για τον %{user}
+    profile_diaries:
+      comments_label: Σχόλια
+      date_label: Ημερομηνία
+  errors:
+    bad_request:
+      description: Η λειτουργία που αιτηθήκατε στον διακομιστή OpenHistoricalMap δεν είναι έγκυρη (HTTP 400)
+    contact:
+      contact_the_community_html: Μη διστάσετε να %{contact_link} με την κοινότητα του OpenHistoricalMap εάν έχετε βρει έναν κατεστραμμένο σύνδεσμο / σφάλμα. Σημειώστε την ακριβή διεύθυνση URL του αιτήματός σας.
+    forbidden:
+      description: H διεργασία που ζητήσατε στο διακομιστή του OpenHistoricalMap είναι μόνο διαθέσιμη σε διαχειριστές (HTTP 403)
+    internal_server_error:
+      description: Ο διακομιστής OpenHistoricalMap αντιμετώπισε μια απροσδόκητη συνθήκη που τον εμπόδισε να εκπληρώσει το αίτημα (HTTP 500)
+    not_found:
+      description: Δεν ήταν δυνατή η εύρεση αρχείου/καταλόγου/λειτουργίας API με αυτό το όνομα στο διακομιστή OpenHistoricalMap (HTTP 404)
+  export:
+    show:
+      title: Ενσωματωμένο OpenHistoricalMap
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
+    search_osm_nominatim:
+      border_types:
+        archdiocese: Όρια αρχιεπισκοπής
+        caliphate: Όρια χαλιφάτου
+        canton: Όρια καντονίου
+        census_area: Όρια περιοχής απογραφής
+        city-state: Όρια πόλης-κράτους
+        commonwealth: Όρια κοινοπολιτείας
+        diocese: Όρια επισκοπής
+        emirate: Όρια εμιράτου
+        empire: Όρια αυτοκρατορίας
+        eyalet: Όρια εγιαλετιού
+        federal_district: Όρια ομοσπονδιακής περιφέρειας
+        federation: Όρια ομοσπονδίας
+        ghetto: Όρια γκέτου
+        governorate: Όρια κυβερνείου
+        kingdom: Όρια βασιλείου
+        markaz: Όρια μαρκάζ
+        oblast: Όρια όμπλαστ
+        overseas_territory: Όρια υπερπόντιων εδαφών
+        principate: Όρια ηγεμονίας
+        protectorate: Όρια προτεκτοράτου
+        sanjak: Σύνορα σαντζακίου
+        sultanate: Όρια σουλτανάτου
+        territory: Εδαφικά όρια
+        viyalet: Όρια βιλαετίου
+        voivodeship: Όρια βοεβοδάτου
+        zone: Ζωνικά όρια
+      prefix:
+        leisure:
+          horse_riding: Ιππικός Όμιλος
+          track: Στίβος
+        shop:
+          seafood: Θαλασσινό φαγητό
+  javascripts:
+    legend:
+      tooltip_disabled: Το υπόμνημα δεν είναι διαθέσιμο σε αυτό το στρώμα
+    map:
+      base:
+        historical: Ιστορικός
+        japanesescroll: Ιαπωνικός πάπυρος
+        railway: Σιδηροδρομικός
+        woodblock: Ξυλόγλυπτο
+      cc0_text: "%{copyright_link}"
+      openhistoricalmap_contributors: OHM
+      zoom:
+        in: Μεγέθυνση
+        out: Σμίκρυνση
+  layouts:
+    intro_2_create_account: Δημιουργήστε ένα λογαριασμό χρήστη
+    intro_header: Καλώς ήρθατε στο OpenHistoricalMap!
+    intro_text: Το OpenHistoricalMap είναι χάρτης του κόσμου, που δημιουργήθηκε από ανθρώπους σαν κι εσάς και είναι δωρεάν, υπό άδεια ελεύθερης χρήσης.
+    logo:
+      alt_text: Λογότυπο OpenHistoricalMap
+    logout: Αποσύνδεση
+    meta:
+      openstreetmap_search: Αναζήτηση OpenHistoricalMap
+    offline_flash:
+      osm_offline: Η βάση δεδομένων του OpenHistoricalMap είναι προσωρινά εκτός λειτουργίας λόγω απαραίτητων εργασιών συντήρησης.
+      osm_read_only: Η βάση δεδομένων του OpenHistoricalMap έχει τεθεί προσωρινά σε λειτουργία «μόνο για ανάγνωση» λόγω απαραίτητων εργασιών συντήρησης.
+    partners_devseed: Development Seed
+    partners_greeninfo: Δίκτυο GreenInfo
+    partners_osmf: Ίδρυμα OpenStreetMap
+    partners_osmus: OpenStreetMap U.S.
+    project_name:
+      h1: OpenHistoricalMap
+      title: OpenHistoricalMap
+    tag_line: Ο ελεύθερος παγκόσμιος χάρτης Wiki
+  notes:
+    new_readonly:
+      warning: Δεν είναι δυνατή η δημιουργία νέων σημειώσεων, επειδή το API του OpenHistoricalMap βρίσκεται αυτήν τη στιγμή σε λειτουργία μόνο για ανάγνωση.
+  oauth:
+    scopes:
+      openid: Συνδεθείτε χρησιμοποιώντας το OpenHistoricalMap
+  preferences:
+    basic_preferences:
+      show:
+        map_color_schemes:
+          auto: Αυτόματο
+    preferences:
+      navigation:
+        advanced_preferences: Προηγμένες προτιμήσεις
+        preferences: Προτιμήσεις
+  sessions:
+    destroy:
+      heading: Αποσύνδεση από το OpenHistoricalMap
+    new:
+      login_to_authorize_html: Συνδεθείτε στο OpenHistoricalMap για πρόσβαση στο %{client_app_name}.
+  site:
+    about:
+      lede_text: Το OpenHistoricalMap είναι ένα φιλόδοξο, κοινοτικό έργο για τη χαρτογράφηση των αλλαγών στη φυσική και ανθρωπογενή γεωγραφία σε όλο τον κόσμο... ανά τους αιώνες.
+      used_by_html: Εξερευνήστε τον κόσμο σε οποιαδήποτε χρονική περίοδο με το %{name}.
+    about_section:
+      contribute_1_forum: το φόρουμ συζήτησης μας
+      contribute_1_user_diaries: ημερολόγια χρηστών
+      contribute_1_wiki: την εκτεταμένη τεκμηρίωση wiki μας
+      contribute_2_create_account: δημιουργία ενός δωρεάν λογαριασμού
+      contribute_2_donations: αποδεχόμαστε φιλανθρωπικές δωρεές
+      contribute_2_osmus: OpenStreetMap U.S.
+      contribute_title: Μπορείτε να βοηθήσετε
+      legal_1_aup: Αποδεκτές Πολιτικές Χρήσης
+      legal_1_aup_url: https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy
+      legal_1_group: μια άτυπη ομάδα
+      legal_1_html: Αυτός ο ιστότοπος και πολλές άλλες σχετικές υπηρεσίες διαχειρίζονται επίσημα από το %{group_link} εκ μέρους της κοινότητας. Η χρήση όλων των υπηρεσιών που διαχειρίζεται το OSMF υπόκειται στους %{terms_of_use_link} μας, στις %{aup_link} και στην %{privacy_policy_link} μας.
+      legal_1_privacy_policy: Πολιτική Απορρήτου
+      legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Πολιτική Απορρήτου
+      legal_1_terms_of_use: Όρους Χρήσης
+      legal_1_terms_of_use_url: https://osmfoundation.org/wiki/Terms_of_Use
+      legal_2_contact_team: επικοινωνήστε με την ομάδα του OpenHistoricalMap
+      legal_2_html: Παρακαλούμε %{contact_team_link} για κάθε ερώτηση σχετική με αδειοδότηση, πνευματικά δικαιώματα, ή άλλα νομικά θέματα.
+      legal_3_osmf_trademarks: εγγεγραμμένα εμπορικά σήματα του Ιδρύματος OpenStreetMap
+      legal_3_osmf_trademarks_url: https://osmfoundation.org/wiki/Trademark_Policy
+      open_data_1_1_reuse: διαθέσιμα για επαναχρησιμοποίηση
+      open_data_2_copyright_license: Πνευματικά Δικαιώματα και Ευχαριστίες
+      scope_title: Μεγάλο και Μικρό, Τότε και Τώρα
+    add_a_note:
+      para_1: Εάν θέλετε κάτι μικρό να διορθωθεί και δεν έχετε χρόνο να εγγραφείτε και να μάθετε πως να επεξεργάζεστε τον χάρτη, είναι εύκολο να προσθέσετε μια σημείωση.
+    communities:
+      lede_text: "Άνθρωποι από όλο τον κόσμο συνεισφέρουν ή χρησιμοποιούν το OpenHistoricalMap. Ενώ πολλοί συμμετέχουν ως μεμονωμένα άτομα, άλλοι έχουν σχηματίσει κοινότητες. Αυτές οι ομάδες έχουν διάφορα μεγέθη και αντιπροσωπεύουν γεωγραφίες από μικρές πόλεις έως μεγάλες περιοχές πολλών χωρών. \nΜπορούν επίσης να είναι επίσημες ή ανεπίσημες."
+    copyright:
+      legal_babble:
+        attribution_example:
+          title: Παράδειγμα του πως αναφέρεται το OpenHistoricalMap σε μια ιστοσελίδα
+        contributors_footer_2_html: Η συμπερίληψη δεδομένων στο OpenHistoricalMap δεν συνεπάγεται ότι ο αρχικός πάροχος δεδομένων εγκρίνει το OpenHistoricalMap, παρέχει οποιαδήποτε εγγύηση ή αποδέχεται καμία ευθύνη.
+        contributors_globcover: GlobCover
+        contributors_intro_html: 'Οι συνεισφέροντες μας είναι χιλιάδες άτομα. Επίσης έχουμε περιλάβει δεδομένα ανοικτής άδειας από εθνικές υπηρεσίες χαρτογράφησης και άλλες πηγές, μεταξύ αυτών:'
+        contributors_more_sources_html: "%{sources_link} είναι διαθέσιμα στο OpenStreetMap Wiki."
+        contributors_more_sources_page: Πρόσθετες πηγές και συνεισφέροντες
+        contributors_more_sources_page_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Sources
+        contributors_natural_earth: Natural Earth
+        contributors_natural_earth_html: "%{natural_earth_link} σύνολα δεδομένων στο κοινό κτήμα."
+        contributors_osm: Συνεισφέροντες OpenStreetMap
+        contributors_osm_cc_by_sa: CC BY-SA 2.0
+        contributors_osm_cc_by_sa_url: https://creativecommons.org/licenses/by-sa/2.0/
+        contributors_osm_html: Δεδομένα σχετικά με ακτογραμμές, υδάτινα σώματα και ρέματα © %{osm_link}, %{cc_by_sa_link}.
+        contributors_title_html: Ευχαριστίες
+        credit_1_html: 'Όπου χρησιμοποιείτε δεδομένα του OpenHistoricalMap, υποχρεούστε να κάνετε τα ακόλουθα δύο πράγματα:'
+        credit_2_home: η αρχική μας σελίδα
+        credit_2_this_copyright_page: αυτή τη σελίδα πνευματικών δικαιωμάτων
+        credit_title_html: Πως να κάνετε αναφορά δημιουργού προς το OpenHistoricalMap
+        infringement_1_html: Υπενθυμίζουμε στους συνεισφέροντες του OHM να μην προσθέτουν δεδομένα από πηγές με πνευματικά δικαιώματα (π.χ. Google Maps η έντυπους χάρτες) χωρίς την προηγούμενη άδεια από τους ιδιοκτήτες των δικαιωμάτων.
+        infringement_2_ohm_contact_team: επικοινωνήστε με την ομάδα του OpenHistoricalMap με τίτλο θέματος "TAKEDOWN REQUEST"
+        infringement_2_ohm_html: Εάν πιστεύετε ότι υλικό που προστατεύεται από πνευματικά δικαιώματα έχει προστεθεί ακατάλληλα στη βάση δεδομένων του OpenHistoricalMap ή σε αυτόν τον ιστότοπο, παρακαλούμε %{contact_team_link}.
+        introduction_1_cc0: Creative Commons CC0
+        introduction_1_cc0_url: https://creativecommons.org/publicdomain/zero/1.0/
+        introduction_2_cc_by: Creative Commons Αναφορά Δημιουργού
+        introduction_2_cc_by_sa: Creative Commons Αναφορά Δημιουργού-Παρόμοια Διανομή
+        introduction_2_cc_by_sa_url: https://creativecommons.org/licenses/by-sa/4.0/
+        introduction_2_cc_by_url: https://creativecommons.org/licenses/by/4.0/
+        introduction_2_license_key_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Tags/Key/license
+        introduction_4_creative_commons: Creative Commons Αναφορά Δημιουργού-Παρόμοια Διανομή 2.0
+        introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/
+        more_1_wiki: στο Wiki του OpenStreetMap
+        more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
+        more_2_1_api_usage_policy: Πολιτική Χρήσης API
+        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
+        more_2_1_html: Παρόλο που το OpenHistoricalMap είναι ανοιχτά δεδομένα, δεν μπορούμε να παρέχουμε API χάρτη για τρίτα μέρη χωρίς χρέωση. Δείτε την %{api_usage_policy_link}, %{tile_usage_policy_link} και %{nominatim_usage_policy_link}.
+        more_2_1_nominatim_usage_policy: Πολιτική Χρήσης Nominatim
+        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
+        more_2_1_tile_usage_policy: Πολιτική Χρήσης Πλακιδίων
+        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
+        more_title_html: Μαθαίνοντας περισσότερα
+        trademarks_1_ohm_contact_team: επικοινωνήστε με την ομάδα του OpenHistoricalMap
+        trademarks_1_ohm_html: Αν έχετε ερωτήσεις σχετικά με τη χρήση σας του ονόματος OpenHistoricalMap, παρακαλούμε %{contact_team_link}.
+      title: Πνευματικά Δικαιώματα και Ευχαριστίες
+    export:
+      cc0: Creative Commons CC0
+      cc0_url: https://creativecommons.org/publicdomain/zero/1.0/
+      copyright_page: Πνευματικά Δικαιώματα και Ευχαριστίες
+      too_large:
+        body: 'Αυτή η περιοχή είναι πολύ μεγάλη για να εξαχθεί ως δεδομένα OpenHistoricalMap XML. Παρακαλούμε κάνετε μεγέθυνση, επιλέξτε μικρότερη περιοχή, ή χρησιμοποιήστε μία από της ακόλουθες πηγές για μαζικές λήψεις δεδομένων:'
+        other:
+          url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse
+        overpass:
+          description: Λήψη αυτού του πλαισίου οριοθέτησης από ένα καθρέφτη της βάσης δεδομένων του OpenHistoricalMap
+        planet:
+          description: Τακτικά-ενημερωμένα αντίγραφα της πλήρης βάσης δεδομένων του OpenHistoricalMap
+          title: Πλανήτης OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            Απλά κάντε κλικ στο %{note_icon} ή στο ίδιο εικονίδιο στην οθόνη του χάρτη.
+            Έτσι θα προστεθεί δείκτης στον χάρτη, τον οποίο μπορείτε να μετακινήσετε σύροντας τον.
+            Προσθέστε το μήνυμά σας και στη συνέχεια, κάντε κλικ στο κουμπί αποθήκευσης, ώστε να μπορούν άλλοι χαρτογράφοι να ερευνήσουν το πρόβλημα.
+        join_the_community:
+          explanation_html: Αν έχετε παρατηρήσει ένα πρόβλημα με τα δεδομένα του χάρτη μας, παραδείγματος χάριν ένας δρόμος που λείπει στη διεύθυνσή σας, ο καλύτερος τρόπος να προχωρήσετε είναι να ενταχθείτε στην κοινότητα του OpenHistoricalMap και να προσθέσετε ή να επισκευάσετε τα δεδομένα από μόνοι σας.
+      other_concerns:
+        concerns_ohm_html: |-
+          Εάν έχετε ανησυχίες σχετικά με τον τρόπο με τον οποίο χρησιμοποιούνται τα δεδομένα μας ή σχετικά με το περιεχόμενο, παρακαλούμε συμβουλευτείτε τη
+          %{copyright_link} μας για περισσότερες νομικές πληροφορίες, ή %{contact_link}.
+        contact: επικοινωνήστε μαζί μας
+        contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
+    help:
+      forum:
+        title: Φόρουμ
+      github:
+        description: Υποβάλετε ένα ζήτημα στα αποθετήρια μας στο GitHub για να αναφέρετε ένα σφάλμα ή να ζητήσετε μια νέα λειτουργία.
+        title: Αιτήματα για λειτουργίες & Σφάλματα
+      introduction: Το OpenHistoricalMap έχει πολλαπλούς πόρους για να μάθετε για το εγχείρημα, να κάνετε ερωτήσεις, να απαντήσετε σε ερωτήσεις άλλων και να συζητήσετε και να τεκμηριώσετε θέματα χαρτογράφησης συνεργατικά.
+      mailing_list:
+        description: Εγγραφείτε στη χαμηλού όγκου λίστα αλληλογραφίας μας.
+        title: Λίστα αλληλογραφίας
+      slack:
+        title: IRC
+      welcome:
+        description: Ξεκινήστε με αυτές τις σύντομες οδηγίες που καλύπτουν τα βασικά του OpenHistoricalMap.
+        title: Καλώς ήλθατε στο OpenHistoricalMap
+      welcomemat:
+        description: Ξεκινήστε με αυτόν τον γρήγορο οδηγό που καλύπτει τα βασικά του OpenHistoricalMap.
+        title: Για τις Οργανώσεις
+      wiki:
+        description: Περιηγηθείτε το wiki για επιμελής τεκμηρίωση του OHM.
+        title: Wiki
+    index:
+      js_2: Το OpenHistoricalMap χρησιμοποιεί JavaScript για το ολισθαίνοντα χάρτη του.
+      remote_failed: Η επεξεργασία απέτυχε - βεβαιωθείτε ότι ο JOSM ή ο Merkaartor έχουν φορτωθεί και η επιλογή τηλεχειρισμού είναι ενεργή
+    potlatch:
+      removed: Ο προεπιλεγμένος σας επεξεργαστής του OpenHistoricalMap έχει τεθεί ως Potlatch. Επειδή το Adobe Flash Player έχει αποσυρθεί, ο Potlatch δεν είναι πια διαθέσιμος για χρήση σε πρόγραμμα περιήγησης ιστού.
+    welcome:
+      basic_terms:
+        a_tag_html: Η %{tag} είναι δεδομένα που σχετίζονται με έναν κόμβο ή μια γραμμή, όπως το όνομα ενός εστιατορίου ή το έτος όπου φτιάχτηκε μια γέφυρα.
+        paragraph_1: Η κοινότητα OpenHistoricalMap έχει δικό της γλωσσάρι. Παρακάτω είναι μερικές λέξεις που μπορεί να σας φανούν χρήσιμες.
+      introduction: Σας καλωσορίζουμε στο OpenHistoricalMap, τον ελεύθερο και επεξεργάσιμο χάρτη του κόσμου. Τώρα που έχετε εγγραφεί, είστε πανέτοιμοι να αρχίσετε τη χαρτογράφηση. Εδώ είναι ένας γρήγορος οδηγός με τα πιο σημαντικά πράγματα που πρέπει να ξέρετε.
+      rules:
+        para_1_html: Το OpenHistoricalMap έχει λίγους επίσημους κανόνες, αλλά αναμένουμε από όλους τους συμμετέχοντες να συνεργαστούν με και να επικοινωνήσουν με την κοινότητα. Εάν σκέφτεστε οποιεσδήποτε άλλες δραστηριότητες εκτός από την επεξεργασία με το χέρι, παρακαλούμε διαβάστε και ακολουθήστε τις οδηγίες για %{imports_link} και %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: Αυτό που %{doesnt} περιλαμβάνει είναι δεδομένα με γνώμη όπως αξιολογήσεις, ιστορικά ή υποθετικά χαρακτηριστικά, καθώς και δεδομένα από πηγές που προστατεύονται από πνευματικά δικαιώματα. Εκτός αν έχετε ειδική άδεια, μην αντιγράφετε από διαδικτυακούς ή έντυπους χάρτες.
+        past_and_present: τόσο το παρελθόν όσο και το παρόν
+  traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap Ίχνη GPS
+    show:
+      edit: επεξεργασία
+      edit_trace: Επεξεργασία ίχνους
+      map: χάρτης
+    trace:
+      edit_map: Επεξεργασία χάρτη
+      view_map: Προβολή χάρτη
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] Ο/Η %{commenter} %{commenter} σχολίασε σε μία ομάδα αλλαγών που σας ενδιαφέρει."
+        subject_own: "[OpenHistoricalMap] Ο/Η %{commenter} %{commenter} σχολίασε σε μία από τις ομάδες αλλαγών σας."
+      description: 'OpenHistoricalMap Ομάδα Αλλαγών #%{id}'
+    diary_comment_notification:
+      description: 'OpenHistoricalMap Καταχώριση Ημερολογίου #%{id}'
+      header: 'Ο %{from_user} έχει σχολιάσει την καταχώριση ημερολογίου στο OpenHistoricalMap με θέμα %{subject}:'
+      header_html: 'Ο %{from_user} έχει σχολιάσει την καταχώριση ημερολογίου στο OpenHistoricalMap με θέμα %{subject}:'
+      subject: "[OpenHistoricalMap] Ο χρήστης %{user} σχολίασε μια καταχώριση ημερολογίου"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Επιβεβαιώστε τη διεύθυνση ηλεκτρονικού ταχυδρομείου σας"
+    follow_notification:
+      followed_you: Ο/Η %{user} σας ακολουθεί τώρα στο OpenHistoricalMap.
+      subject: "[OpenHistoricalMap] Ο/Η %{user} σας ακολούθησε"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Η εισαγωγή GPX απέτυχε"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Η εισαγωγή GPX πέτυχε"
+    lost_password:
+      hopefully_you: Κάποιος (πιθανότατα εσείς) έχει ζητήσει επαναφορά του κωδικού πρόσβασης του λογαριασμού με αυτό το email στο openhistoricalmap.org.
+      subject: "[OpenHistoricalMap] Αίτηση επαναφοράς κωδικού"
+    message_notification:
+      header: 'Ο χρήστης %{from_user} σάς έχει στείλει ένα μήνυμα μέσω του OpenHistoricalMap με θέμα %{subject}:'
+      header_html: 'Ο χρήστης %{from_user} σάς έχει στείλει ένα μήνυμα μέσω του OpenHistoricalMap με θέμα %{subject}:'
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] Ο %{commenter} επίλυσε μια σημείωση που σας ενδιαφέρει"
+        subject_own: "[OpenHistoricalMap] Ο %{commenter} επίλυσε μια από τις σημειώσεις σας"
+      commented:
+        subject_other: "[OpenHistoricalMap] Ο %{commenter} σχολίασε μια σημείωση που σας ενδιαφέρει"
+        subject_own: "[OpenHistoricalMap] %{commenter} σχολίασε μια από τις σημειώσεις σας"
+      description: 'OpenHistoricalMap Σημείωση #%{id}'
+      reopened:
+        subject_other: "[OpenHistoricalMap] Ο %{commenter} επανενεργοποίησε μια σημείωση που σας ενδιαφέρει"
+        subject_own: "[OpenHistoricalMap] Ο %{commenter} επανενεργοποίησε μια από τις σημειώσεις σας"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Καλώς ήλθατε στο OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Το ID σας δεν σχετίζεται ακόμη με λογαριασμό στο OpenHistoricalMap.
+      option_1: |-
+        Εάν είστε νέοι στο OpenHistoricalMap, παρακαλούμε να δημιουργήσετε έναν νέο λογαριασμό
+        χρησιμοποιώντας την παρακάτω φόρμα.
+    new:
+      about:
+        paragraph_1: Σε αντίθεση με άλλους χάρτες, το OpenHistoricalMap δημιουργείται εξ ολοκλήρου από ανθρώπους σαν εσάς και είναι δωρεάν για οποιονδήποτε να το διορθώσει, να ενημερώσει, να το κατεβάσει και να το χρησιμοποιήσει.
+        welcome: Καλώς ήλθατε στο OpenHistoricalMap
+      duplicate_social_email: Εάν έχετε ήδη λογαριασμό OpenHistoricalMap και επιθυμείτε να χρησιμοποιείτε έναν πάροχο ταυτότητας τρίτου μέρους, παρακαλούμε να συνδεθείτε χρησιμοποιώντας τον κωδικό πρόσβασής σας και να τροποποιήσετε τις ρυθμίσεις του λογαριασμού σας.
+      please_contact_support_html: Παρακαλώ επικοινωνήστε με %{support_link} για να κανονίσετε τη δημιουργία λογαριασμού - θα προσπαθήσουμε να αντιμετωπίσουμε το αίτημα το συντομότερο δυνατό.
+      signup_to_authorize_html: Εγγραφείτε με το OpenHistoricalMap για πρόσβαση στο %{client_app_name}.
+    show:
+      delete_user: Διαγραφή αυτού του Χρήστη
+      hide_user: Απόκρυψη αυτού του λογαριασμού Χρήστη
+      unhide_user: Επανεμφάνιση αυτού του λογαριασμού Χρήστη

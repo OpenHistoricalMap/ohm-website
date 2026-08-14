@@ -1,0 +1,18 @@
+# Messages for Lakota (Lakȟótiyapi)
+# Exported from translatewiki.net
+# Author: Minh Nguyen
+# Author: Tuwewanzi
+# Do not edit by hand.
+lkt:
+  activerecord:
+    attributes:
+      client_application:
+        allow_write_api: makȟówapi kiƞ yutȟókeča
+  diary_entries:
+    profile_diaries:
+      date_label: Wíyawapi
+  site:
+    export:
+      too_large:
+        planet:
+          title: Planet OSM

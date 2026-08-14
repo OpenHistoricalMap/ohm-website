@@ -1,0 +1,218 @@
+# Messages for Belarusian (беларуская)
+# Exported from translatewiki.net
+# Author: Alex73
+# Author: Andoti
+# Author: Artsiom91
+# Author: Chadyka
+# Author: Erictheise
+# Author: Goshaproject
+# Author: Jhnrvr
+# Author: Jim-by
+# Author: Kapatych
+# Author: Kareyac
+# Author: Macofe
+# Author: Maksim L.
+# Author: Mechanizatar
+# Author: Minh Nguyen
+# Author: Nerogaf
+# Author: Plaga med
+# Author: Serge
+# Author: Ucukor
+# Author: Unomano
+# Author: ZlyiLev
+# Author: Zmicier21
+# Author: Zmickli21
+# Author: Дзяніс Тутэйшы
+# Author: Тест
+# Author: Чаховіч Уладзіслаў
+# Do not edit by hand.
+be:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
+        link text: што гэта?
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: чытаць прыватныя GPS-трэкі
+        allow_read_prefs: чытаць параметры ўдзельніка
+        allow_write_api: змяняць карту
+        allow_write_diary: рабіць запісы ў дзённіку, каментаваць і заводзіць сяброў
+        allow_write_gpx: загружаць GPS-трэкі
+        allow_write_notes: змяняць нататкі
+        allow_write_prefs: змяняць параметры ўдзельніка
+        callback_url: URL-адрас зваротнага выкліку
+        name: Імя (абявязкова)
+        support_url: URL-адрас падтрымкі
+        url: Галоўны URL-адрас праграмы (абявязкова)
+  api:
+    notes:
+      rss:
+        title: Заўвагі OpenHistoricalMap
+  application:
+    setup_user_auth:
+      blocked_zero_hour: У вас ёсць тэрміновае паведамленне на сайце OpenHistoricalMap. Вам трэба прачытаць паведамленне, перш чым вы зможаце захаваць вашы змены.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Абмеркаванне пакета правак OpenHistoricalMap
+        title_particular: 'Абмеркаванне пакета правак OpenHistoricalMap #%{changeset_id}'
+  diary_entries:
+    feed:
+      all:
+        description: Свежыя дзеннікавыя запісы карыстальнікаў OpenHistoricalMap
+        title: Дзеннікавыя запісы OpenHistoricalMap
+      language:
+        description: Свежыя запісы ў дзённіках карыстальнікаў OpenHistoricalMap на %{language_name}
+        title: Запісы ў дзённіку OpenHistoricalMap на %{language_name}
+      user:
+        description: Свежыя запісы ў дзённіку OpenHistoricalMap карыстальніка %{user}
+        title: Запісы ў дзённіку OpenHistoricalMap карыстальніка %{user}
+    profile_diaries:
+      date_label: Дата
+  errors:
+    bad_request:
+      description: Запытаная вамі аперацыя на серверы OpenHistoricalMap   несапраўдная (HTTP 400)
+    contact:
+      contact_the_community_html: Не саромейцеся %{contact_link} да супольнасці OpenHistoricalMap, калі вы знайшлі непрацуючую спасылку / памылку. Запішыце дакладны URL вашага запыту.
+    forbidden:
+      description: Запытаная вамі аперацыя на серверы OpenHistoricalMap даступная толькі адміністратарам (HTTP 403)
+    internal_server_error:
+      description: Сервер OpenHistoricalMap сутыкнуўся з нечаканай сітуацыяй, якая перашкодзіла яму выканаць запыт (HTTP 500)
+    not_found:
+      description: Не ўдалося знайсці файл/тэчку/аперацыю API з такім імем на серверы OpenHistoricalMap (HTTP 404)
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
+  javascripts:
+    map:
+      zoom:
+        in: Павялічыць
+        out: Паменшыць
+  layouts:
+    intro_2_create_account: Стварыць уліковы запіс удзельніка
+    intro_header: Вітаем у OpenHistoricalMap!
+    intro_text: OpenHistoricalMap - гэта карта свету, створаная людзьмі, як вы, і бясплатная для выкарыстання на ўмовах адкрытай ліцэнзіі.
+    logo:
+      alt_text: Лагатып OpenHistoricalMap
+    logout: Выйсці
+    tag_line: Свабодная Wiki-карта свету
+  sessions:
+    destroy:
+      heading: Выйсці з OpenHistoricalMap
+    new:
+      login_to_authorize_html: Увайдзіце ў сістэму OpenHistoricalMap, каб мець доступ да %{client_app_name}.
+  site:
+    about:
+      lede_text: OpenHistoricalMap створаны супольнасцю картографаў, якія дадаюць і падтрымліваюць даныя аб дарогах, сцежках, кафэ, вакзалах і многіх іншых аб'ектах па ўсім свеце.
+    about_section:
+      contribute_1_user_diaries: дзённікі карыстальнікаў
+      legal_1_privacy_policy: Палітыка прыватнасці
+      legal_1_terms_of_use: Умовы карыстання
+      legal_2_html: Калі ласка, %{contact_team_link}, калі ў вас ёсць пытанні адносна ліцэнзавання, аўтарскіх правоў або іншых юрыдычных пытаннях.
+    communities:
+      lede_text: |-
+        Людзі з усяго свету ўносяць свой уклад у OpenHistoricalMap або выкарыстоўваюць яго.
+        Многія ўдзельнічаюць паасобку, іншыя стварылі свае супольнасці. Супольнасці бываюць розных памераў і могуць прадстаўляць як невялікія гарады, так і цэлыя рэгіёны з некалькімі краінамі. Яны таксама могуць быць афіцыйнымі і неафіцыйнымі.
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: |-
+          Уключэнне даных у OpenHistoricalMap не азначае, што пастаўшчыкі пачатковых даных
+          якім-небудзь чынам падтрымліваюць OpenHistoricalMap, прадстаўляюць гарантыі, ці
+          прымаюць на сябе якую-небудзь адказнасць.
+        credit_1_html: 'Там, дзе вы выкарыстоўваеце даныя OpenHistoricalMap, вы павінны выканаць наступныя дзве рэчы:'
+        credit_2_this_copyright_page: гэтую старонку
+        credit_title_html: Як спасылацца на OpenHistoricalMap
+        infringement_1_html: Удзельнікі супольнасці OHM павінны заўсёды памятаць пра тое, што забараняецца дадаваць даныя з любых абароненых аўтарскім правам крыніц (напрыклад, з Google Maps або з друкаваных карт) без дазволу праваўладальнікаў.
+        introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
+        more_title_html: Даведацца больш
+    export:
+      too_large:
+        body: Гэтая вобласць занадта вялікая, каб быць экспартаванай у фармаце OpenHistoricalMap XML. Калі ласка, павялічце або абярыце меншую вобласць, альбо скарыстайцеся адной з крыніц, пералічаных ніжэй, для загрузкі вялікага аб'ему даных.
+        overpass:
+          description: Спампаваць абмежаваную гэтым прастакутнікам вобласць з люстэрка базы даных OpenHistoricalMap
+        planet:
+          description: Рэгулярна абнаўляемыя копіі поўнай базы даных OpenHistoricalMap
+          title: Планета OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: "Проста націсніце %{note_icon} або падобны значок на карце. \nУ выніку на карце з'явіцца маркер, які вы зможаце перамяшчаць шляхам перацягвання. Дадайце ваша паведамленне, націсніце кнопку Захаваць і іншыя ўдзельнікі змогуць гэта убачыць."
+        join_the_community:
+          explanation_html: Калі вы заўважылі недакладнасці ў нашых картаграфічных даных, напрыклад, калі не пазначана дарога ці ваш адрас, лепшы спосаб гэта выправіць - далучыцца да супольнасці OpenHistoricalMap і дадаць або выправіць даныя самастойна.
+    help:
+      introduction: OpenHistoricalMap мае розныя рэсурсы для атрымання інфармацыі аб праекце, для задавання пытанняў і атрымання адказаў, для сумеснага абмеркавання і стварэння дакументацыі па картаграфаванні.
+      slack:
+        title: IRC
+      welcome:
+        description: Пачніце з гэтага кароткага кіраўніцтва, што ахоплівае асновы OpenHistoricalMap.
+        title: Вітаем у OpenHistoricalMap
+      wiki:
+        description: Паглядзець вікі з падрабязнай дакументацыяй па OHM
+        title: Вікі
+    index:
+      js_2: OpenHistoricalMap выкарыстоўвае JavaScript для адлюстравання карты на сайце.
+      remote_failed: Памылка рэдагавання. Упэўніцеся, што JOSM ці Merkaartor загружаныя і дазволеная магчымасць аддаленага кіравання
+    welcome:
+      basic_terms:
+        paragraph_1: OpenHistoricalMap мае свой ​​уласны жаргон. Вось некалькі ключавых слоў, якія могуць быць карыснымі.
+      introduction: Вітаем у OpenHistoricalMap, свабоднай і даступнай для рэдагавання карце свету. Зараз, калі вы ўвайшлі, усё гатова для пачатку рэдагавання. Вось кароткае кіраўніцтва па найважнейшым рэчам, якія вы павінны ведаць.
+      rules:
+        para_1_html: У OpenHistoricalMap есьць некалькі фармальных правілаў, але мы чакаем, што ўсе ўдзельнікі будуць супрацоўнічаць і мець зносіны з супольнасцю. Калі вы плануеце нейкія дзеянні, па-за рэдагаваннем ўручную, калі ласка, прачытайце і выконвайце рэкамендацыі па %{imports_link} і %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: Карта %{doesnt} ўключае суб'ектыўныя дадзеныя накшталт ацэнак, гістарычных або гіпатэтычных характарыстык і дадзеныя з крыніц, якія абаронены аўтарскім правам. Калі вы не маеце спецыяльнага дазволу, не капіюйце з папяровых карт або карт у Інтэрнэце.
+  traces:
+    feeds:
+      show:
+        title: GPS-сляды OpenHistoricalMap
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} пракаментаваў цікавы вам набор зменаў"
+        subject_own: "[OpenHistoricalMap] %{commenter} пракаментаваў адзін з вашых набораў зменаў"
+      description: Набор зменаў OpenHistoricalMap №%{id}
+    diary_comment_notification:
+      description: 'Запіс у дзённіку OpenHistoricalMap #%{id}'
+      header: "%{from_user} пракаментаваў ваш запіс у дзённіку на OpenHistoricalMap з тэмай %{subject}:"
+      header_html: "%{from_user} пракаментаваў ваш запіс у дзённіку на OpenHistoricalMap з тэмай %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} пакінуў каментар у вашым дзённіку"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Пацвердзіце ваш адрас электроннай пошты"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Збой імпарту GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Паспяховы імпарт GPX"
+    lost_password:
+      hopefully_you: Нехта (спадзяемся, што вы) запатрабаваў змены пароля да ўліковага запісу на openhistoricalmap.org, прывязанага да гэтага адраса электроннай пошты.
+      subject: "[OpenHistoricalMap] Запыт на змену пароля"
+    message_notification:
+      header: "%{from_user} адправіў вам паведамленне з тэмай %{subject} праз OpenHistoricalMap:"
+      header_html: "%{from_user} адправіў вам паведамленне з тэмай %{subject} у OpenHistoricalMap:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} вырашыў заўвагу, што можа быць вам цікава"
+        subject_own: "[OpenHistoricalMap] %{commenter} вырашыў адну з вашых заўваг"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} пракаментаваў заўвагу, што можа быць вам цікава"
+        subject_own: "[OpenHistoricalMap] %{commenter} пракаментаваў адну з вашых заўваг"
+      description: Нататка OpenHistoricalMap №%{id}
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} пераадчыніў заўвагу, што можа быць вам цікава"
+        subject_own: "[OpenHistoricalMap] %{commenter} пераадчыніў адну з вашых заўваг"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Сардэчна запрашаем у OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Ваш ID пакуль што не звязаны з уліковым запісам OpenHistoricalMap.
+    new:
+      about:
+        paragraph_1: У адрозненне ад іншых карт, OpenHistoricalMap цалкам створана такімі ж людзьмі як вы і кожны можа яе свабодна рэдагаваць і выкарыстоўваць.
+        welcome: Вітаем у OpenHistoricalMap
+    show:
+      delete_user: Выдаліць гэтага карыстальніка
+      hide_user: Схаваць гэтага карыстальніка
+      unhide_user: Паказаць гэтага карыстальніка

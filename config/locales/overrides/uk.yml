@@ -1,0 +1,291 @@
+# Messages for Ukrainian (українська)
+# Exported from translatewiki.net
+# Author: AS
+# Author: Alex Blokha
+# Author: Alex Khimich
+# Author: Andrew J.Kurbiko
+# Author: Andriykopanytsia
+# Author: Andygol
+# Author: Arturyatsko
+# Author: Avatar6
+# Author: Base
+# Author: Bicolino34
+# Author: Choomaq
+# Author: DDPAT
+# Author: Dim Grits
+# Author: Dittaeva
+# Author: Drkns
+# Author: Dubyk
+# Author: Dudka
+# Author: Erictheise
+# Author: Esk78
+# Author: Green Zero
+# Author: Gzhegozh
+# Author: Ice bulldog
+# Author: Ignatgg
+# Author: KEL
+# Author: Kareyac
+# Author: Lxlalexlxl
+# Author: Macofe
+# Author: MatviiBohdanFediura
+# Author: Mike140
+# Author: Minh Nguyen
+# Author: Movses
+# Author: Mykola Swarnyk
+# Author: Nemo bis
+# Author: Olvin
+# Author: Piramidion
+# Author: Prima klasy4na
+# Author: Renvoy
+# Author: Riwnodennyk
+# Author: Ruila
+# Author: Sev
+# Author: Shirayuki
+# Author: SteveR
+# Author: TomH
+# Author: Vil4ckc
+# Author: Vlad5250
+# Author: Ypryima
+# Author: Yurkoy
+# Author: Ǝlʞıɯ
+# Author: Ата
+# Author: Драгун
+# Author: Пан Хаунд
+# Author: Тест
+# Do not edit by hand.
+uk:
+  accounts:
+    show:
+      contributor_terms:
+        link: https://wiki.openstreetmap.org/wiki/Uk:Open_Database_License/Contributor_Terms
+        link text: що це?
+    terms:
+      show:
+        read and accept with tou: Будь ласка, ознайомтесь з угодою участі та умовами співпраці, поставте обидва прапорці після чого натисніть кнопку Продовжити.
+        tou_explain:
+          html: "%{tou_link} обумовлюють використання цього вебсайту та іншої інфраструктури, що надається за підтримки OpenHistoricalMap. Натисніть на посилання, прочитайте та погодьтесь з текстом."
+  activerecord:
+    attributes:
+      client_application:
+        allow_read_gpx: отримувати приватні GPS-треки.
+        allow_read_prefs: отримувати налаштування
+        allow_write_api: змінювати мапу
+        allow_write_diary: створювати записи та коментарі в щоденнику
+        allow_write_gpx: надсилати GPS-треки на сервер
+        allow_write_notes: змінювати нотатки
+        allow_write_prefs: змінювати налаштування
+        callback_url: URL зворотного виклику
+        name: Назва (Обов’язково)
+        support_url: URL підтримки
+        url: Основний URL застосунку (Обов’язково)
+  api:
+    notes:
+      rss:
+        title: Нотатки OpenHistoricalMap
+  application:
+    setup_user_auth:
+      blocked_zero_hour: У вас є нагальне повідомлення на вебсайті OpenHistoricalMap. Вам потрібно прочитати повідомлення, перш ніж ви зможете зберегти ваші зміни.
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Обговорення наборів змін в OpenHistoricalMap
+        title_particular: 'Обговорення набору змін OpenHistoricalMap #%{changeset_id}'
+  diary_entries:
+    comments:
+      title: Записи щоденника OpenHistoricalMap
+    feed:
+      all:
+        description: Останні записи в щоденниках від учасників OpenHistoricalMap
+        title: Записи щоденника OpenHistoricalMap
+      language:
+        description: Останні записи щоденників учасників OpenHistoricalMap (%{language_name})
+        title: Записи щоденника OpenHistoricalMap (%{language_name})
+      user:
+        description: Останні записи щоденника OpenHistoricalMap %{user}
+        title: Записи щоденника OpenHistoricalMap %{user}
+    profile_diaries:
+      date_label: Дата
+  errors:
+    bad_request:
+      description: Операція, яку ви запитали на сервері OpenHistoricalMap, не є дійсною (HTTP 400)
+    contact:
+      contact_the_community_html: Будь ласка, %{contact_link} зі спільнотою OpenHistoricalMap, якщо ви знайшли несправне посилання або помилку. Запишіть точну URL-адресу вашого запиту.
+    forbidden:
+      description: Дія, яку ви намагались виконати, доступна лише адміністраторам сервера OpenHistoricalMap (HTTP 403).
+    internal_server_error:
+      description: Сервер OpenHistoricalMap зіткнувся з несподіваною умовою, через яку він не зміг виконати запит (HTTP 500)
+    not_found:
+      description: Не вдалося знайти файл/теку/дію API з такою назвою на сервері OpenHistoricalMap (HTTP 404)
+  geocoder:
+    search:
+      title:
+        osm_nominatim: OpenHistoricalMap Nominatim
+        osm_nominatim_reverse: OpenHistoricalMap Nominatim
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          track: Бігова доріжка
+  javascripts:
+    map:
+      zoom:
+        in: Збільшити
+        out: Зменшити
+  layouts:
+    intro_2_create_account: Створіть обліковий запис
+    intro_header: Ласкаво просимо до OpenHistoricalMap!
+    intro_text: OpenHistoricalMap — мапа світу, створена такими ж людьми, як і ви, для вільного використання під відкритою ліцензією.
+    logo:
+      alt_text: Логотип OpenHistoricalMap
+    logout: Вийти
+    tag_line: Вільна Вікі-мапа Світу
+  oauth:
+    scopes:
+      openid: Вхід за допомогою OpenHistoricalMap
+  sessions:
+    destroy:
+      heading: Вийти з OpenHistoricalMap
+    new:
+      login_to_authorize_html: Увійдіть до OpenHistoricalMap, щоб отримати доступ до %{client_app_name}.
+  site:
+    about:
+      lede_text: OpenHistoricalMap створений спільнотою маперів, які вносять і підтримують дані про дороги, стежки, кав’ярні, вокзали і багато чого іншого по всьому світу.
+      used_by_html: Досліджуйте світ у будь-який період часу з %{name}.
+    about_section:
+      contribute_1_user_diaries: щоденники учасників
+      legal_1_aup: Правил щодо прийнятного використання
+      legal_1_html: "Цей сайт та багато інших повʼязаних сервісів офіційно керуються \n%{group_link} від імені спільноти. Використання усіх сервісів, підконтрольних OSMF, здійснюється на основі %{terms_of_use_link}, %{aup_link} та нашій %{privacy_policy_link}."
+      legal_1_privacy_policy: Політиці конфіденційності
+      legal_1_terms_of_use: Умов використання
+      legal_2_html: |-
+        Будь ласка, %{contact_team_link}
+        якщо у вас є питання щодо ліцензування, авторського права чи інші юридичні питання.
+    communities:
+      lede_text: Люди з усього світу роблять свій внесок в OpenHistoricalMap. Хоча багато хто бере участь самостійно, інші створили спільноти. Ці групи бувають різних розмірів і представляють географію від невеликих міст до великих регіонів, що включають кілька країн. Ці групи також можуть бути офіційними чи ні.
+    copyright:
+      legal_babble:
+        attribution_example:
+          title: Приклад того, як треба посилатись на OpenStreetMap на веб-сторінці
+        contributors_footer_2_html: Включення даних до OpenHistoricalMap не означає, що постачальник цих даних якимось чином підтримує OpenHistoricalMap, надає які-небудь гарантії чи бере на себе якусь  відповідальність.
+        contributors_intro_html: 'OpenHistoricalMap – це спільна робота тисяч людей та організацій, які, своєю чергою, використовують великий масив наукових, журналістських та документальних праць. Серед наших найважливіших джерел та учасників:'
+        contributors_title_html: Подяки
+        credit_1_html: 'У разі використання даних OpenHistoricalMap, вам потрібно зробити дві речі:'
+        credit_2_this_copyright_page: сторінку з роз’ясненням ліцензійних вимог
+        credit_title_html: Як посилатись на OpenHistoricalMap
+        infringement_1_html: Члени спільноти OHM повинні завжди пам’ятати про те, що забороняється додавати дані з будь-яких захищених авторським правом джерел (наприклад, з Google Maps чи з друкованих мап) без отримання попереднього дозволу правовласників.
+        introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
+        more_2_1_api_usage_policy: Правилами використання API
+        more_2_1_html: |-
+          Хоча OpenHistoricalMap є відкритими даними, ми не можемо надати безплатний API для мап для всіх.
+          Ознайомтесь з нашими %{api_usage_policy_link}, %{tile_usage_policy_link} і %{nominatim_usage_policy_link}.
+        more_2_1_nominatim_usage_policy: Правилами використання сервісу Nominatim
+        more_2_1_tile_usage_policy: Правилами використання тайлів
+        more_title_html: Дізнатися більше
+      title: Авторське право та подяки
+    export:
+      too_large:
+        body: 'Ця ділянка дуже велика для експорту у вигляді XML-даних OpenHistoricalMap. Будь ласка, наблизьтесь або виберіть меншу ділянку, або скористайтеся одним з наступних джерел для завантаження великого обсягу даних:'
+        overpass:
+          description: Завантажити цю рамку межі з поточного вигляду мапи з дзеркала бази даних OpenHistoricalMap
+        planet:
+          description: Регулярно оновлювана копія усієї бази даних OpenHistoricalMap
+          title: Планета OHM
+    fixthemap:
+      how_to_help:
+        add_a_note:
+          instructions_1_html: |-
+            Просто натисніть %{note_icon} або подібну піктограму на мапі.
+            У результаті, на мапі з'явиться маркер, який Ви зможете перетягувати на мапі. Додайте Ваше повідомлення, а потім натисніть кнопку Зберегти, і інші учасники матимуть змогу з цим розібратись.
+        join_the_community:
+          explanation_html: Якщо ви помітили, неточності в наших даних, наприклад відсутня дорога або ваша адреса, найкращий спосіб це виправити — приєднатись до спільноти OpenHistoricalMap і додати або виправити дані самостійно.
+    help:
+      introduction: OpenHistoricalMap має різні ресурси для отримання інформації про проєкт, щоб поставити питання та отримати відповідь, для спільного обговорення і створення документації з мапінгу.
+      slack:
+        title: IRC
+      welcome:
+        description: Розпочніть з цього короткого посібника, що охоплює основи OpenHistoricalMap.
+        title: Ласкаво просимо до OpenHistoricalMap
+      wiki:
+        description: Повна документація знаходиться у Вікі OHM.
+    index:
+      js_2: OpenHistoricalMap використовує JavaScript для мапи.
+      remote_failed: Редагування не вдалося — переконайтеся, що JOSM або Merkaartor завантажений та втулок дистанційного керування увімкнений.
+    potlatch:
+      removed: Вашим типовим OpenHistoricalMap редактором зазначено Potlatch. Через припинення роботи Adobe Flash Player він більше не доступний для використання у вебоглядачі.
+    welcome:
+      basic_terms:
+        a_tag_html: "%{tag} — це невелика кількість даних про вузол або лінію, наприклад, назва ресторану або рік будівництва мосту."
+        paragraph_1: OpenHistoricalMap має власну термінологію. Ось кілька важливих слів, які можуть знадобитися.
+      introduction: Ласкаво просимо до OpenHistoricalMap, вільної мапи світу, покращувати яку може кожен. Тепер, коли ви увійшли, все готово для початку редагування. Ось короткий посібник з інформацією про найважливіші речі, про які ви повинні знати.
+      rules:
+        para_1_html: |-
+          OpenHistoricalMap має кілька формальних правил, але ми очікуємо, що всі учасники співпрацюватимуть
+          зі спільнотою та спілкуватимуться з нею. Якщо ви маєте наміри робити внесок, окрім редагування вручну, прочитайте та дотримуйтеся вказівок щодо
+          %{imports_link} та %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: OpenHistoricalMap %{doesnt} містить вигадані альтернативні історії, відомі помилки зі старовинних карт та дані з джерел, захищених авторським правом. Якщо у вас немає спеціального дозволу, не копіюйте сучасні карти минулого, які ви знайдете в Інтернеті або в друкованому вигляді.
+  time:
+    formats:
+      blog: "%e %B %Y"
+  traces:
+    feeds:
+      show:
+        title: GPS-Треки OpenHistoricalMap
+    show:
+      edit: редагувати
+      edit_trace: Редагувати трек
+      map: на мапі
+    trace:
+      edit_map: Редагувати мапу
+      view_map: Перегляд мапи
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} прокоментував набір змін, до якого ви залишали свій коментар"
+        subject_own: "[OpenHistoricalMap] %{commenter} прокоментував один з ваших наборів змін"
+      description: 'Набір змін OpenHistoricalMap #%{id}'
+    diary_comment_notification:
+      description: 'Запис у щоденнику OpenHistoricalMap #%{id}'
+      header: "%{from_user} прокоментував ваш допис у щоденнику у OpenHistoricalMap з темою %{subject}:"
+      header_html: "%{from_user} прокоментував допис %{subject} в щоденнику OpenHistoricalMap"
+      subject: "[OpenHistoricalMap] %{user} залишив коментар у вашому щоденнику"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Підтвердження адреси електронної пошти"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] Збій імпорту GPX"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Імпорт GPX пройшов успішно"
+    lost_password:
+      hopefully_you: Хтось (сподіваємось, що ви) замовив зміну пароля для цієї адреси електронної пошти, зареєстрованої на openhistoricalmap.org.
+      subject: "[OpenHistoricalMap] Запит на зміну пароля"
+    message_notification:
+      header: "%{from_user} надіслав вам повідомлення через OpenHistoricalMap з темою %{subject}:"
+      header_html: "%{from_user} надіслав повідомлення через OpenHistoricalMap з темою %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    note_comment_notification:
+      closed:
+        subject_other: "[OpenHistoricalMap] %{commenter} розв’язав нотатку до якої ви виявили зацікавленість"
+        subject_own: "[OpenHistoricalMap] %{commenter} опрацював одну з ваших нотаток"
+      commented:
+        subject_other: "[OpenHistoricalMap] %{commenter} прокоментував цікаву вам нотатку"
+        subject_own: "[OpenHistoricalMap] %{commenter} прокоментував одну з ваших нотаток"
+      description: 'Нотатка OpenHistoricalMap #%{id}'
+      reopened:
+        subject_other: "[OpenHistoricalMap] %{commenter} поновив  нотатку до якої ви виявили зацікавленість"
+        subject_own: "[OpenHistoricalMap] %{commenter} поновив одну з ваших нотаток"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Ласкаво просимо до OpenHistoricalMap"
+  users:
+    auth_association:
+      heading: Ваш ID ще не пов'язаний з обліковим записом OpenHistoricalMap.
+      option_1: Якщо ви вперше в OpenHistoricalMap – створіть новий обліковий запис, використовуючи форму нижче.
+    new:
+      about:
+        paragraph_1: На відміну від інших мап, OpenHistoricalMap повністю створено людьми, такими ж як ви, і кожен може вільно виправляти, оновлювати, завантажувати та використовувати дані OpenHistoricalMap.
+        welcome: Ласкаво просимо до OpenHistoricalMap
+      duplicate_social_email: Якщо у вас вже є обліковий запис OpenHistoricalMap і ви хочете використовувати стороннього постачальника ідентифікаційних даних, будь ласка, увійдіть, використовуючи свій пароль, і змініть налаштування свого облікового запису.
+      please_contact_support_html: Будь ласка, зв’яжіться з %{support_link}, щоб домовитися про створення облікового запису – ми постараємося розглянути запит якомога швидше.
+      signup_to_authorize_html: Увійдіть до свого облікового запису OpenHistoricalMap, щоб отримати доступ до %{client_app_name}.
+    show:
+      delete_user: Вилучити цього учасника
+      hide_user: Приховати цього учасника
+      unhide_user: Показати цього учасника
