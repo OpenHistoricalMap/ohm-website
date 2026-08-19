@@ -2,6 +2,9 @@
 # Keep only keys OHM changes; everything else falls through to upstream.
 en:
   accounts:
+    auth_deletions:
+      show:
+        body: Data for %{provider} ID %{id} was removed at %{time} and it was disconnected from the associated OpenHistoricalMap account.
     deletions:
       show:
         delete_introduction: 'You can delete your OpenHistoricalMap account using the button below. Please note the following details:'
