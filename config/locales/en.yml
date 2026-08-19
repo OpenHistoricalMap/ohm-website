@@ -1956,6 +1956,7 @@ en:
     partners_greeninfo: GreenInfo Network
     partners_osmf: OpenStreetMap Foundation
     partners_osmus: OpenStreetMap U.S.
+    welcome_partners_html: "OpenHistoricalMap is a charter project of %{osmus}, a 501(c)(3) nonprofit organization affiliated with the %{osmf}."
     welcome_tou_notice_html: "By using this website or other infrastructure provided by the OpenStreetMap Foundation, you agree to the %{terms_link}."
     terms_of_use: "Terms of Use"
     tou: "Terms of Use"
