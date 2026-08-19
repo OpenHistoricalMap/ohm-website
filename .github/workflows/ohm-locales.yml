@@ -1,0 +1,25 @@
+name: Check OHM Locales
+on:
+  pull_request:
+  push:
+    branches-ignore:
+      - "dependabot/**"
+      - translatewiki
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+jobs:
+  locales:
+    name: Locales overrides
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+    - name: Setup ruby
+      uses: ruby/setup-ruby@6aaa311d81eba98ae12eaffbcb63296ace0efcde # v1.307.0
+      with:
+        ruby-version: '3.4'
+    - name: Check which upstream keys need an OHM override
+      run: ruby script/ohm/check_locales.rb
