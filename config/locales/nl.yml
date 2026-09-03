@@ -76,7 +76,7 @@ nl:
       brief: '%{year}'
       brief_bce: '%{year} v.Chr.'
       brief_ce: '%{year} n.Chr.'
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
       range: '%{start} – %{end}'
   time:
     formats:
@@ -1971,7 +1971,7 @@ nl:
         ia: Interlingua
         is: IJslands
         it: Italiaans
-        kw: Cornish
+        kw: Cornisch
         gcf: Guadeloupe-Creools
         ku-Latn: Koerdisch (Latijns)
         lv: Lets
@@ -2448,7 +2448,7 @@ nl:
     notification_preferences:
       show:
         title: Meldingsvoorkeuren
-        changeset_comment: Opmerkingen bij de wijzigingsset
+        changeset_comment: Opmerkingen bij wijzigingenset
         diary_comment: Dagboekreacties
         direct_message: Directe berichten
         gpx_import_failure: 'GPS-traject importeren: mislukt'
@@ -3454,7 +3454,7 @@ nl:
         paragraph_2: Schrijf u in om te beginnen met bijdragen.
         welcome: Welkom bij OpenHistoricalMap
       duplicate_social_email: Als u al een OpenHistoricalMap-account heeft en een
-        identiteitsprovider van derden wilt gebruiken, log dan in met uw wachtwoord
+        identiteitsprovider van derden wilt gebruiken, meld u dan aan met uw wachtwoord
         en wijzig de instellingen van uw account.
       display name description: Uw openbare gebruikersnaam. U kunt deze later in uw
         voorkeuren wijzigen.
@@ -4083,7 +4083,7 @@ nl:
     home:
       marker_title: Mijn thuislocatie
       not_set: De thuislocatie is niet ingesteld voor uw account
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Geen bijdragen op %{date}
         contributions:

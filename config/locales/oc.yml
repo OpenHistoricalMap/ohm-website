@@ -259,7 +259,7 @@ oc:
         link: https://Www.osmfoundation.org/wiki/License/Contributor_Terms
         link text: qu’es aquò ?
       save changes button: Enregistrar lei modificacions
-      delete_account: Suprimir lo còmpte
+      delete_account: Suprimir lo compte
     go_public:
       heading: 'Modificacion publica :'
       make_edits_public_button: Rendre totas mas modificacions publicas
@@ -269,12 +269,13 @@ oc:
         e-mail.
       success: Informacions sus l'utilizaire actualizadas amb succès.
     destroy:
-      success: Còmpte suprimit...
+      success: Compte suprimit...
     deletions:
       show:
-        title: Suprimir lo còmpte
-        warning: Avís! Lo procès de supression dau còmpte es definitiu e pòt pas anullar.
-        delete_account: Suprimir lo còmpte
+        title: Suprimir lo compte
+        warning: Avís! Lo procès de supression de còmpte es definitiu e non pòt pas
+          èsser anullar.
+        delete_account: Suprimir lo compte
         delete_profile: S'eliminarà l'informacion de perfiu, comprés vòstre avatar,
           la descripcion e la localizacion de vòstra demòra.
         delete_display_name: S'eliminarà lo nom mostrat e se podrà utilizar per d'autrei

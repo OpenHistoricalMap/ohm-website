@@ -62,7 +62,7 @@ zh-TW:
       brief: '%{year}'
       brief_bce: 西元前 %{year}
       brief_ce: 西元 %{year}
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
       range: '%{start} – %{end}'
   time:
     formats:
@@ -3525,7 +3525,7 @@ zh-TW:
     home:
       marker_title: 我的住家位置
       not_set: 您的帳號尚未設定住家位置
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: 於 %{date} 未有貢獻
         contributions:

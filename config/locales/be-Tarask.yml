@@ -18,7 +18,7 @@ be-Tarask:
     formats:
       brief_bce: '%{year} да н. э.'
       brief_ce: '%{year} н. э.'
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y у %H:%M'
@@ -1367,6 +1367,7 @@ be-Tarask:
           wood: Лес
         office:
           accountant: Бугальтар
+          advertising_agency: Рэклямная агенцыя
           architect: Архітэктар
           company: Кампанія
           employment_agency: Служба занятасьці
@@ -1535,6 +1536,10 @@ be-Tarask:
       status: Статус
     show:
       resolve: Разьвязаць
+  languages_panes:
+    select_language_list:
+      languages:
+        ru: Расейская
   layouts:
     logo:
       alt_text: Лягатып OpenHistoricalMap

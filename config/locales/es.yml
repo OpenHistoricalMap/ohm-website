@@ -113,7 +113,7 @@ es:
     formats:
       brief_bce: '%{year} a. C.'
       brief_ce: '%{year} d. C.'
-      heatmap: '%-d de %B'
+      contribution_calendar: '%-d de %B'
   time:
     formats:
       friendly: '%e %B %Y a las %H:%M'
@@ -3696,7 +3696,7 @@ es:
     home:
       marker_title: Mi ubicación de casa
       not_set: Tu ubicación de casa no está configurada para tu cuenta
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: No hay contribuciones el %{date}
         contributions:

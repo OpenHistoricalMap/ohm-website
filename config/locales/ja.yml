@@ -80,7 +80,7 @@ ja:
       brief: '%{year}'
       brief_bce: 紀元前%{year}年
       brief_ce: 西暦 %{year}
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
       range: '%{start} – %{end}'
   time:
     formats:
@@ -478,6 +478,7 @@ ja:
         relation: リレーション
     start_rjs:
       feature_warning: '%{num_features}件の地物を読み込むことで、お使いのブラウザが遅くなったり反応がなくなったりするおそれがあります。このデータを本当に表示しますか？'
+      feature_error: '機能を読み込めませんでした: %{message}'
       load_data: データの読み込み
       loading: 読み込み中...
     tag_details:
@@ -486,11 +487,20 @@ ja:
         key: タグ %{key} のウィキでの説明ページ
         tag: タグ %{key}=%{value} のウィキでの説明ページ
       wikidata_link: ウィキデータの項目 %{page}
+      wikidata_preview:
+        other: LWikidata 項目のプレビュー
       wikipedia_link: ウィキペディアの記事 %{page}
       wikimedia_commons_link: ウィキメディアコモンズの項目 %{page}
       telephone_link: '%{phone_number}に電話'
       colour_preview: 色彩%{colour_value}プレビュー
       email_link: メール %{email}
+    versions_navigation:
+      node: ノード
+      way: ウェイ
+      relation: リレーション
+      history: 履歴
+      version: 'バージョン #%{version}'
+      versions_label: バージョン：
   feature_queries:
     show:
       title: 地物を検索
@@ -505,10 +515,13 @@ ja:
         title_html: 'ウェイ: %{name} の履歴'
       relation:
         title_html: 'リレーション: %{name} の履歴'
+      older_versions: 過去のバージョン
     actions:
       view_redacted_data: 編集されたデータを表示
       view_redaction_message: 編集メッセージを表示
   nodes:
+    not_found_message:
+      sorry: 'ノード #%{id} は見つかりませんでした。'
     timeout:
       sorry: 申し訳ありませんが、ノードのデータ（id %{id}）は、時間がかかりすぎたため取得できませんでした。
   old_nodes:
@@ -517,6 +530,8 @@ ja:
     timeout:
       sorry: 申し訳ありませんが、ID %{id} の履歴データは時間がかかりすぎたため取得できませんでした。
   ways:
+    not_found_message:
+      sorry: 'ウェイ #%{id} は見つかりませんでした。'
     timeout:
       sorry: 申し訳ありませんが、ウェイのデータ（id %{id}）は時間がかかりすぎたため取得できませんでした。
   old_ways:
@@ -579,7 +594,9 @@ ja:
       changesetxml: 変更セット XML
       osmchangexml: OSM 差分 XML
     paging_nav:
+      nodes_title: ノード
       nodes_paginated: ノード (%{x}-%{y} / %{count})
+      ways_title: ウェイ
       ways_paginated: ウェイ (%{x}-%{y} / %{count})
       relations_paginated: リレーション (%{x}-%{y} / %{count})
     timeout:
@@ -1973,8 +1990,14 @@ ja:
       used_by_html: '%{name} を使って世界史のいずれの時期も探検できます。'
       lede_text: OpenHistoricalMap は野心的でコミュニティ主導のプロジェクトとして、自然ならびに人工の地理の変化を全世界で……時代を超えて地図に記録しようとしています。
     about_section:
+      scope_html: |-
+        帝国は興亡を繰り返します。氷河は消滅します。言語や宗教は地域から地域へと広がっていくものです。土がむきだしの小道はやがて幹線道路になり鉄道が開通したりして賑わいを集めたり、平屋の建物は減って高層ビルに置き換えられます。
+        やがて、ふと思い出すのです、自分自身が過ごした昔の近所の様子を。これらをすべて記録するのが、OpenHistoricalMap（オープンストリートマップ）。
       contribute_1_user_diaries: 利用者の日記
       open_data_title: オープンデータ
+      open_data_1_1_html: |-
+        私たちが収集した歴史情報を体験する方法は、ホームページの地図の他にもたくさんあります。
+        基盤のデータは保管先 %{reuse_link} からダウンロードしたり、世の中にたくさんある無料 API のうちオープンソース・ソフトウェアと互換性のあるものを介して入手できます。
       open_data_2_html: データは特記する場合を除きパブリックドメインです。その使用には規制や制約はありません。しかしながら、可能でしたら OpenHistoricalMap
         に言及もしくは引用していただけると大変ありがたいです。詳細と承認の説明は %{copyright_license_link}をご参照ください。
       legal_title: 法律関係

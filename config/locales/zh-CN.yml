@@ -67,6 +67,7 @@
 # Author: Tntchn
 # Author: TsuyaMarisa
 # Author: Vikarna
+# Author: Vjfjng
 # Author: VulpesVulpes825
 # Author: WQL
 # Author: Wong128cn
@@ -98,7 +99,7 @@ zh-CN:
       brief: '%{year}'
       brief_bce: 公元前%{year}
       brief_ce: 公元%{year}
-      heatmap: '%-m月%-d日'
+      contribution_calendar: '%-m月%-d日'
       range: '%{start} – %{end}'
   time:
     formats:
@@ -519,6 +520,13 @@ zh-CN:
       telephone_link: 请拨打 %{phone_number}
       colour_preview: '%{colour_value}的颜色预览'
       email_link: 电子邮件 %{email}
+    versions_navigation:
+      node: 节点
+      way: 路径
+      relation: 关系
+      history: 历史
+      version: '版本 #%{version}'
+      versions_label: 版本：
   feature_queries:
     show:
       title: 查询要素
@@ -533,10 +541,14 @@ zh-CN:
         title_html: 路径历史：%{name}
       relation:
         title_html: 关系历史：%{name}
+      older_versions: 较旧版本
+      newer_versions: 较新版本
     actions:
       view_redacted_data: 查看已隐删的数据
       view_redaction_message: 查看隐删消息
   nodes:
+    not_found_message:
+      sorry: '抱歉，找不到节点 #%{id}。'
     timeout:
       sorry: 抱歉，检索id为%{id}的节点数据花费时间过长。
   old_nodes:
@@ -545,6 +557,8 @@ zh-CN:
     timeout:
       sorry: 抱歉，检索id为%{id}的节点历史花费时间过长。
   ways:
+    not_found_message:
+      sorry: '抱歉，找不到路径 #%{id}。'
     timeout:
       sorry: 抱歉，检索id为%{id}的路径数据花费时间过长。
   old_ways:
@@ -553,13 +567,25 @@ zh-CN:
     timeout:
       sorry: 抱歉，检索id为%{id}的路径历史花费时间过长。
   relations:
+    not_found_message:
+      sorry: '抱歉，找不到关系 #%{id}。'
     timeout:
       sorry: 抱歉，检索id为%{id}的关系数据花费时间过长。
+  relation_members:
+    not_found_message:
+      sorry: '抱歉，找不到关系 #%{id}。'
+    timeout:
+      sorry: 抱歉，检索与 id 为 %{id} 的关系数据耗时过长。
   old_relations:
     not_found_message:
       sorry: '抱歉，无法找到关系 #%{id} 的版本 %{version}。'
     timeout:
       sorry: 抱歉，检索id为%{id}的关系历史花费时间过长。
+  old_relation_members:
+    not_found_message:
+      sorry: '抱歉，找不到版本为 %{version} 的关系 #%{id}。'
+    timeout:
+      sorry: 抱歉，检索 id 为 %{id} 的关系成员耗时过长。
   changeset_comments:
     feeds:
       comment:
@@ -581,6 +607,7 @@ zh-CN:
       title: 变更集
       title_user: '%{user}的变更集'
       title_user_link_html: '%{user_link}的变更集'
+      title_followed: 您所关注的用户的变更集
       title_nearby: 附近用户的变更集
       empty: 未找到变更集。
       empty_area: 该区域内没有变更集。
@@ -588,6 +615,8 @@ zh-CN:
       no_more: 未找到更多变更集。
       no_more_area: 该区域内没有更多变更集。
       no_more_user: 该用户无更多变更集。
+      older_changesets: 较旧的变更集
+      newer_changesets: 较新的变更集
       feed:
         title: 变更集 %{id}
         title_comment: 变更集 %{id} - %{comment}
@@ -619,7 +648,11 @@ zh-CN:
       nodes_paginated: 节点 (%{x}-%{y}，共 %{count})
       ways_title: 路径
       ways_paginated: 路径 (%{x}-%{y}，共 %{count})
+      relations_title: 关系
       relations_paginated: 关系 (%{x}-%{y}，共 %{count})
+      range: '%{x}-%{y}（共 %{count}）'
+    not_found_message:
+      sorry: '抱歉，找不到变更集 #%{id}。'
     timeout:
       sorry: 抱歉，您所请求的变更集列表检索时间过长。
   changeset_subscriptions:
@@ -646,12 +679,17 @@ zh-CN:
     popup:
       your location: 您的位置
       nearby mapper: 附近绘图者
+      following: 已关注
     show:
       title: 我的综合面板
       no_home_location_html: '%{edit_profile_link}并设定你的家庭地址来查看附近的用户。'
       edit_your_profile: 编辑你的档案
+      followings: 您关注的用户
+      no followings: 您尚未关注任何用户。
       nearby users: 其他附近的用户
       no nearby users: 附近没有在进行制图的用户。
+      followed_changesets: 变更集
+      followed_diaries: 日记条目
       nearby_changesets: 附近用户的变更集
       nearby_diaries: 附近用户的日记文章
   diary_entries:
@@ -662,6 +700,7 @@ zh-CN:
       use_map_link: 使用地图
     index:
       title: 用户日记
+      title_followed: 关注用户的日记
       title_nearby: 附近用户的日记
       user_title: '%{user}的日记'
       in_language_title: '%{language}日记文章'
@@ -687,6 +726,7 @@ zh-CN:
     diary_entry:
       posted_by_html: '%{link_user} 于 %{created} 以 %{language_link} 发布'
       updated_at_html: 最后一次更新于%{updated}。
+      full_entry: 查看完整日记条目
       comment_link: 评论该文章
       reply_link: 向作者发送消息
       comment_count:
@@ -719,6 +759,7 @@ zh-CN:
         description: 最近的 OpenHistoricalMap 用户日记文章
     comments:
       title: OpenHistoricalMap 日记文章
+      description: OpenHistoricalMap 用户最近的日记条目
     subscribe:
       heading: 订阅以下日记讨论吗？
       button: 订阅讨论
@@ -726,11 +767,15 @@ zh-CN:
       heading: 退订以下日记讨论吗？
       button: 退订讨论
     navigation:
+      in_language: 语言为%{language}的日记条目
       my_diary: 我的日记
       new: 新日记文章
       new_title: 在我的用户日记中撰写新文章
     profile_diaries:
+      latest_diaries: 最新日记
       comments: '%{count}条评论'
+      title_label: 日记条目
+      comments_label: 评论
       date_label: 日期
   diary_comments:
     new:
@@ -767,6 +812,7 @@ zh-CN:
       profile: 查看您的个人资料信息
   errors:
     contact:
+      contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
       contact_url_title: 各种联系渠道说明
       contact: 联系
       contact_the_community_html: 如果您发现有损坏的链接/错误，请随时%{contact_link} OpenHistoricalMap
@@ -783,6 +829,20 @@ zh-CN:
     not_found:
       title: 文件未找到
       description: 在 OpenHistoricalMap 服务器上找不到该名称的文件、目录或API 操作（HTTP 404）
+  follows:
+    show:
+      follow:
+        heading: 您要关注%{user}吗？
+        button: 关注用户
+      unfollow:
+        heading: 您要取消关注%{user}吗？
+        button: 取消关注用户
+    create:
+      success: 您已关注%{name}！
+      failed: 抱歉，您关注%{name}的请求失败。
+      already_followed: 您已关注%{name}。
+    destroy:
+      not_followed: 您尚未关注%{name}。
   geocoder:
     search:
       title:
@@ -1038,6 +1098,7 @@ zh-CN:
           bridleway: 马道
           bus_guideway: 导轨公交车道
           bus_stop: 公共汽车站
+          busway: 公交车道
           construction: 在建公路
           corridor: 走廊
           crossing: 十字路口
@@ -1121,7 +1182,13 @@ zh-CN:
           wreck: 残骸
           "yes": 古迹
         information:
+          guidepost: 路标
+          board: 信息板
           map: 地图
+          office: 游客服务中心
+          terminal: 信息终端
+          sign: 信息牌
+          stele: 信息牌
         junction:
           "yes": 交叉点
         landuse:
@@ -1194,6 +1261,8 @@ zh-CN:
           track: 跑道
           water_park: 水上公园
           "yes": 闲暇
+        lock:
+          "yes": 船闸
         man_made:
           adit: 平坑
           advertising: 广告牌
@@ -1536,7 +1605,15 @@ zh-CN:
           "yes": 隧道
         water:
           lake: 湖
+          pond: 池塘
           reservoir: 水库
+          basin: 蓄水区
+          fishpond: 鱼塘
+          lagoon: 潟湖
+          wastewater: 污水
+          oxbow: 牛轭湖
+          stream_pool: 溪流池
+          lock: 船闸
         waterway:
           artificial: 人工航道
           boatyard: 船坞
@@ -1567,7 +1644,92 @@ zh-CN:
         level9: 行政区域界线（9级）
         level10: 行政区域界线（10级）
         level11: 行政区域界线（11级）
+      border_types:
+        archdiocese: 大主教区界
+        arrondissement: 区界
+        audiencia: 法院边界
+        borough: 自治市镇界
+        caliphate: 哈里发国边界
+        canton: 邦界
+        captaincy_general: 都督府界
+        census_area: 人口普查区边界
+        cercle: 圈界
+        chiefdom: 酋长领地边界
+        city: 市界
+        city-state: 城邦边界
+        colony: 殖民地边界
+        comarca: 县界
+        commonwealth: 联邦边界
+        commune: 市镇界
+        condominium: 公共边界
+        confederation: 同盟界
+        county: 县界
+        departement: 省界
+        department: 省界
+        diocese: 教区边界
+        district: 区界
+        distrito: 区界
+        dominion: 自治领边界
+        emirate: 酋长国边界
+        empire: 帝国边界
+        eyalet: 省界
+        federal_district: 联邦区边界
+        federation: 联邦边界
+        freguesia: 堂区界
+        ghetto: 贫民窟边界
+        governorate: 省界
+        hundred: 百户界
+        intendancy: 监督边界
+        kingdom: 王国边界
+        local_authority: 地方政府界
+        major_division: 主行政区界
+        markaz: 省界
+        municipality: 市政边界
+        municipi: 市政边界
+        município: 市政边界
+        nation: 国界
+        national: 国界
+        neighbourhood: 邻里界
+        oblast: 州界
+        occupation: 占领边界
+        overseas_collectivity: 海外集体边界
+        overseas_department: 海外部门边界
+        overseas_territory: 海外领土边界
+        parish: 堂区界
+        planning_region: 规划区域边界
+        possession: 占有边界
+        prefecture: 选区边界
+        prefecture_apostolic: 宗座监牧区界
+        principate: 统治边界
+        protectorate: 保护国边界
+        province: 省界
+        rancho: 牧场边界
+        realm: 领域边界
+        região: 大区界
+        region: 大区界
+        reichsgau: 帝国大区界
+        republic: 共和国边界
+        sanjak: 区界
+        sector: 选区边界
+        shire: 郡界
+        state: 州界
+        subdistrict: 次区界
+        sultanate: 苏丹国边界
+        territory: 领土边界
+        territorial_prelature: 自治监督区界
+        town: 镇界
+        township: 乡界
+        vicariate_apostolic: 宗座代牧区边界
+        viceroyalty: 总督辖区边界
+        village: 村界
+        viyalet: 州界
+        voivodeship: 省界
+        ward: 选区边界
+        zone: 区域边界
   searches:
+    show:
+      title:
+        latlon: 内部
     queries:
       create:
         no_results: 没有找到结果
@@ -1579,7 +1741,14 @@ zh-CN:
       time: 时间
       ascend: 上升
       descend: 下降
+      kilometers: 千米
+      miles_feet: 英里、英尺
+      miles_yards: 英里、码
+      distance_units_settings: 距离单位设置
+      download: 以GeoJSON格式下载路线
+      filename: 路线
       directions_courtesy_html: 方向经由%{link}
+      check_demo_html: 更多详情请访问%{link}
   issues:
     index:
       title: 问题
@@ -1675,6 +1844,122 @@ zh-CN:
     create:
       successful_report: 您的举报已成功提交
       provide_details: 请提供所需详情
+  languages_panes:
+    select_language_list:
+      search_language: 搜索...
+      languages:
+        af: 阿非利卡语（南非荷兰语）
+        gsw: 阿勒曼尼语
+        frp: 阿皮坦语
+        ast: 阿斯图里亚斯语
+        az: 阿塞拜疆语
+        id: 印尼语
+        ms: 马来语
+        bcl: 中比科尔语
+        bs: 波斯尼亚语
+        br: 布列塔尼语
+        ca: 加泰罗尼亚语
+        cs: 捷克语
+        cy: 威尔士语
+        da: 丹麦语
+        de: 德语
+        dsb: 下索宾语
+        et: 爱沙尼亚语
+        en: 英语
+        en-GB: 英语（英国）
+        es: 西班牙语
+        eo: 世界语
+        eu: 巴斯克语
+        fr: 法语
+        fy: 西弗里西亚语
+        fur: 弗留利语
+        ga: 爱尔兰语
+        gd: 苏格兰盖尔语
+        gl: 加利西亚语
+        aln: 阿尔巴尼亚语盖格方言
+        hsb: 上索布语
+        hr: 克罗地亚语
+        ia: 国际语
+        is: 冰岛语
+        it: 意大利语
+        kw: 康沃尔语
+        gcf: 瓜德罗普克里奥尔语
+        ku-Latn: 库尔德语（拉丁字母）
+        lv: 拉脱维亚语
+        lb: 卢森堡语
+        lkt: 拉科塔语
+        lt: 立陶宛语
+        hu: 匈牙利语
+        fit: 托尔讷河谷芬兰语
+        nl: 荷兰语
+        nb: 书面挪威语
+        nn: 新挪威语
+        oc: 奥克语
+        nds: 低地德语
+        pl: 波兰语
+        pt-PT: 葡萄牙语
+        pt: 葡萄牙语（巴西）
+        ksh: 科隆方言
+        ro: 罗马尼亚语
+        sc: 撒丁语
+        sco: 低地苏格兰语
+        sq: 阿尔巴尼亚语
+        scn: 西西里语
+        sk: 斯洛伐克语
+        sl: 斯洛文尼亚语
+        sr-Latn: 塞尔维亚语（拉丁字母）
+        sh: 塞尔维亚-克罗地亚语（拉丁字母）
+        fi: 芬兰语
+        sv: 瑞典语
+        tl: 他加禄语
+        kab: 卡拜尔语
+        vi: 越南语
+        tr: 土耳其语
+        yo: 约鲁巴语
+        diq: 扎扎其语
+        el: 希腊语
+        ba: 巴什基尔语
+        be: 白俄罗斯语
+        be-Tarask: 白俄罗斯语（传统正写法）
+        bg: 保加利亚语
+        mk: 马其顿语
+        mo: 摩尔多瓦语
+        ce: 车臣语
+        ru: 俄语
+        sr: 塞尔维亚语（西里尔字母）
+        tt: 鞑靼语（西里尔字母）
+        uk: 乌克兰语
+        kk-cyrl: 哈萨克语（西里尔字母）
+        yi: 意第绪语
+        he: 希伯来语
+        ar: 阿拉伯语
+        skr-arab: 色莱基语
+        fa: 波斯语
+        arz: 埃及阿拉伯语
+        pnb: 西旁遮普语
+        ps: 普什图语
+        nqo: 西非书面文字
+        ne: 尼泊尔语
+        mr: 马拉塔语
+        hi: 印地语
+        bn: 孟加拉语
+        pa: 旁遮普语
+        gu: 古吉拉特语
+        ta: 泰米尔语
+        te: 泰卢固语
+        kn: 埃纳德语
+        th: 泰语
+        my: 缅甸语
+        shn: 掸语
+        xmf: 明格里利亚语
+        ka: 格鲁吉亚语
+        km: 高棉语
+        sat: 桑塔尔语
+        zh-CN: 简体中文
+        zh-TW: 繁体中文
+        zh-HK: 繁体中文（香港）
+        ja: 日语
+        ko: 韩语（朝鲜语）
   layouts:
     project_name:
       title: OpenHistoricalMap 开放史图
@@ -2950,7 +3235,7 @@ zh-CN:
       show_address: 显示地址
       query_features: 查询要素
       centre_map: 将此处置于地图中间
-    heatmap:
+    contribution_calendar:
       tooltip:
         contributions: '%{date}有%{count}贡献'
     edit:
