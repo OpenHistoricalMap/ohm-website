@@ -16,7 +16,7 @@ mk:
       brief: '%{year} г.'
       brief_bce: '%{year} г. п.н.е.'
       brief_ce: '%{year} г. н.е.'
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
       range: '%{start} – %{end}'
   time:
     formats:

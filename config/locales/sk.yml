@@ -38,7 +38,7 @@ sk:
       brief: '%{year}'
       brief_bce: '%{year} pred n. l.'
       brief_ce: '%{year} n. l.'
-      heatmap: '%-d. %B'
+      contribution_calendar: '%-d. %B'
       range: '%{start} – %{end}'
   time:
     formats:
@@ -4121,7 +4121,7 @@ sk:
     home:
       marker_title: Moja domovská poloha
       not_set: Pre váš účet nie je nastavená domovská poloha
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Žiadne príspevky dňa %{date}
         contributions:

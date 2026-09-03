@@ -158,6 +158,7 @@ lb:
         company: Firma
         home_lat: Breedegrad
         home_lon: Längegrad
+        home_location_name: Numm vum Wunnuert
         languages: Preferéiert Sproochen
         preferred_editor: Preferéierten Editeur
         pass_crypt: Passwuert
@@ -270,11 +271,18 @@ lb:
       current email address: Aktuell E-Mail-Adress
       external auth: Extern Authentifikatioun
       contributor_terms:
-        heading: Bedéngungen fir Matwierkender
+        heading: Bedéngunge fir Contributeuren
         agreed: Dir hutt de(n) %{date} den neie Bedingunge fir Contributeuren zougestëmmt.
+        not_agreed: Dir hutt d'Bedéngunge fir Contributeuren nach net akzeptéiert.
         agreed_with_pd: Dir hudd och deklaréiert dass Dir Är Ännerungen der Öffentlechkeet
           zur Verfügung stellt (Public Domain).
         link text: wat ass dat?
+      terms_of_use:
+        heading: Benotzungsbedingungen
+        agreed: Dir hutt Iech de(n) %{date} mat de Benotzungsbedingungen averstanen
+          erkläert.
+        not_agreed: Dir hutt Iech nach net mat de Benotzungsbedingungen averstanen
+          erkläert.
       save changes button: Ännerunge späicheren
       delete_account: Benotzerkont läschen...
     go_public:
@@ -297,8 +305,8 @@ lb:
         delete_account: Benotzerkont läschen
         delete_introduction: 'Dir kënnt Ären OpenHistoricalMap-Kont mam Knäppchen
           hei drënner läschen. Bedenkt wgl. déi follgend Detailer:'
-        delete_profile: Är Profilinformatiounen, wéi Ären Avatar, Beschreiwung an
-          Heemplaz ginn geläscht.
+        delete_profile: Är Profilinformatiounen, dorënner Ären Avatar, Är Beschreiwung
+          an Äre Wunnuert gi geläscht.
         delete_display_name: Ären affichéierten Numm gëtt geläscht, a ka vun anere
           Konte benotzt ginn.
         retain_edits: Är Ännerunge un der Kaarten Datebank, wann et der ginn, ginn
@@ -315,19 +323,33 @@ lb:
         cancel: Ofbriechen
     terms:
       show:
+        title: Bedingungen
         heading: Bedingungen
+        heading_ct: Bedéngunge fir Contributeuren
+        read_ct: Ech hunn d'Bedéngunge fir Contributeuren uewe gelies an akzeptéieren
+          se
         tou_explain:
           tou: Benotzungskonditiounen
+        read_tou: Ech hunn d'Benotzungsbedingunge gelies an erkläre mech dermat averstanen
         informal_translations: informell Iwwersetzungen
         continue: Virufueren
         cancel: Ofbriechen
+        you need to accept or decline: Liest wgl. déi nei Bedéngunge fir Contributeuren
+          duerch an akzeptéiert se dann oder refuséiert se fir virunzefueren.
         legale_select: 'Sicht wgl. d''Land eraus wou Dir wunnt:'
         legale_names:
           france: Frankräich
           italy: Italien
           rest_of_world: Rescht vun der Welt
+      update:
+        terms accepted: Merci, datt Dir déi nei Bedéngunge fir Contributeuren akzeptéiert
+          hutt!
       terms_declined_flash:
+        terms_declined_html: Et deet eis leed, datt Dir Iech decidéiert hutt, déi
+          nei Bedéngunge fir Contributeuren net z'akzeptéieren. Kuckt wgl. %{terms_declined_link}
+          fir méi Informatiounen.
         terms_declined_link: dës Wiki-Säit
+        terms_declined_url: https://wiki.openstreetmap.org/wiki/Contributor_Terms_Declined
     pd_declarations:
       show:
         confirm: Confirméieren
@@ -509,7 +531,7 @@ lb:
       no_more: Soss keng Ännerungssätz fonnt.
       no_more_area: Keng weider Ännerungssätz an dëser Géigend.
       no_more_user: Keng weider Ännerungssätz vun dësem Benotzer.
-      older_changesets: Eeler Ännerungssätz
+      older_changesets: Méi al Ännerungssätz
       newer_changesets: Méi nei Ännerungssätz
       feed:
         title: Ännerungssaz %{id}
@@ -556,6 +578,8 @@ lb:
         button: Diskussioun abonéieren
       unsubscribe:
         button: Diskussioun ofbestellen
+    no_such_entry:
+      heading: 'Kee Bäitrag mat der ID: %{id}'
   dashboards:
     contact:
       km away: '%{count} km ewech'
@@ -568,8 +592,8 @@ lb:
       nearby mapper: Mapper an der Emgéigend
     show:
       title: Meng Iwwersiichtssäit
-      no_home_location_html: '%{edit_profile_link} a lee deng Heemecht fest, fir Benotzer
-        an der Noperschaft ze gesinn.'
+      no_home_location_html: '%{edit_profile_link} a leet Äre Wunnuert fest, fir Benotzer
+        an der Ëmgéigend ze gesinn.'
       edit_your_profile: Äre Profil änneren
       nearby users: Aner Benotzer nobäi
       no nearby users: Et gi keng aner Benotzer déi hiren Standort an der Géigend
@@ -1612,6 +1636,7 @@ lb:
       provide_details: Gitt wgl. déi gefroten Detailer un
   languages_panes:
     select_language_list:
+      search_language: Sichen...
       languages:
         af: Afrikaans
         gsw: Alemannesch
@@ -1698,7 +1723,7 @@ lb:
   layouts:
     logo:
       alt_text: OpenHistoricalMap-Logo
-    home: Op déi Plaz zréckgoen déi als Doheem definéiert ass
+    home: Op de Wunnuert goen
     logout: Ofmellen
     log_in: Aloggen
     sign_up: Mellt Iech un
@@ -1718,6 +1743,10 @@ lb:
     partners_title: Partner
     partners_greeninfo: GreenInfo Netzwierk
     partners_osmf: OpenStreetMap Foundation
+    welcome_tou_notice_html: Andeems Dir dës Websäit oder aner Infrastrukturen, déi
+      vun der OpenStreetMap Foundatioun zur Verfügung gestallt ginn, benotzt, erkläert
+      Dir Iech mat de %{terms_link} averstanen.
+    terms_of_use: Benotzungsbedingungen
     tou: Benotzungs-Bedéngungen
     help: Hëllef
     about: Iwwer
@@ -1729,8 +1758,12 @@ lb:
       about: Iwwer
       communities: Communautéiten
       edit: Änneren
+      gps_traces: GPS-Spueren
       help: Hëllef
+      home: Op de Wunnuert goen
       issues: Problemer
+      log_out: Ausloggen
+      log_in: Aloggen
       more: Méi
       select_language: Sprooch eraussichen
       user_diaries: Benotzer-Bloggen
@@ -2099,8 +2132,8 @@ lb:
         title: Profil änneren
         save: Profil aktualiséieren
         cancel: Ofbriechen
-        no home location: Dir hutt nach keng Heemecht aginn.
-        update home location on click: Heemecht beim Klick op d'Kaart aktualiséieren
+        no home location: Dir hutt nach kee Wunnuert aginn.
+        update home location on click: Wunnuert beim Klicken op d'Kaart aktualiséieren?
         show: Weisen
         delete: Läschen
         undelete: Läsche réckgängeg maachen
@@ -2129,6 +2162,7 @@ lb:
       support: support
   shared:
     markdown_help:
+      heading_html: Geparst mat %{kramdown_link}
       headings: Iwwerschrëften
       heading: Iwwerschrëft
       subheading: Ënneriwwerschrëft
@@ -2166,12 +2200,12 @@ lb:
         oldest: Eelst Problemer
         newest: Neist Problemer
       traces:
-        older: Eeler Spueren
+        older: Méi al Spueren
         newer: Méi nei Spueren
         oldest: Eelst Spueren
         newest: Neist Spueren
       users:
-        older: Eeler Benotzer
+        older: Méi al Benotzer
         newer: Méi nei Benotzer
         oldest: Eelst Benotzer
         newest: Neist Benotzer
@@ -2186,6 +2220,7 @@ lb:
       open_data_title: Open Data
       legal_title: Rechtlech Hiweiser
       legal_1_terms_of_use: Benotzungskonditiounen
+      legal_1_terms_of_use_url: https://osmfoundation.org/wiki/Terms_of_Use
       legal_1_privacy_policy: Dateschutzrichtlinnen
       partners_title: Partneren
     copyright:
@@ -2210,6 +2245,7 @@ lb:
         contributors_intro_html: 'Eis Matwierkend sinn dausende vun eenzele Mënschen.
           Mir bezéien och oppe lizenzéiert Donnéeë vu nationale Kaartenagenturen an
           anere Quellen an, dorënner:'
+        contributors_osm: OpenStreetMap-Contributeuren
         contributors_osm_cc_by_sa: CC BY-SA 2.0
         contributors_osm_cc_by_sa_url: https://creativecommons.org/licenses/by-sa/2.0/
         infringement_title_html: Copyright-Verletzung
@@ -2229,8 +2265,8 @@ lb:
       cc0: Creative Commons CC0
       too_large:
         body: Dëse Beräich ass ze grouss, fir als OpenHistoricalMap-XML-Donnéeën exportéiert
-          ze ginn. Wannechgelift vergréisseren, e méi klenge Beräich wielen oder eng
-          vun de folgende Quelle fir Massendonnéeëndownloade benotzen.
+          ze ginn. Vergréissert et wgl. fir e méi klenge Beräich ze wielen oder eng
+          vun de follgende Quelle fir d'Erofluede vu Massendonnéeën ze benotzen.
         planet:
           title: Planéit OHM
           description: Regelméisseg aktualiséiert Kopie vun der kompletter OpenHistoricalMap
@@ -2280,6 +2316,8 @@ lb:
         title: Forum
       slack:
         title: IRC
+      wiki:
+        title: Wiki
     any_questions:
       title: Nach Froen?
     sidebar:
@@ -2302,6 +2340,7 @@ lb:
         past_and_present: souwuel d'Vergaangenheet wéi och d'Géigewaart
       basic_terms:
         node: Knuet
+        way: Wee
       rules:
         title: Reegelen!
     add_a_note:
@@ -2415,6 +2454,7 @@ lb:
       identifiable: Identifizéierbar (gëtt an der Spuerlëscht als identifizéierbar,
         sortéiert Punktfolleg mat Zäitstempel ugewisen)
     new:
+      upload_trace: GPS-Spuer eroplueden
       visibility_help: wat heescht dat?
       help: Hëllef
     create:
@@ -2443,6 +2483,7 @@ lb:
       tags: 'Markéierungen:'
       none: Keen
       edit_trace: Dës Spuer änneren
+      delete_trace: Dës Spuer läschen
       trace_not_found: Spuer net fonnt!
       visibility: 'Visibilitéit:'
       confirm_delete: Dës Spuer läschen?
@@ -2458,11 +2499,14 @@ lb:
       private: PRIVAT
       trackable: VERFOLLEGBAR
     index:
-      public_traces: Ëffentlech GPS Spueren
+      public_traces: Ëffentlech GPS-Spueren
+      my_gps_traces: Meng GPS-Spueren
       public_traces_from: Ëffentlech GPS-Spuere vu(n) %{user}
       description: Lescht GPS-Spuer-Uploads duerchsichen
       empty_title: Nach näischt hei
+      upload_new: Eng nei Spuer eroplueden
       wiki_page: Wiki-Säit
+      upload_trace: Eng Spuer eroplueden
       all_traces: All Spuren
       my_traces: Meng Spueren
       traces_from_html: Ëffentlech Spuere vum %{user}
@@ -2475,6 +2519,7 @@ lb:
       description:
         description_without_count: GPX-Fichier vum %{user}
   application:
+    permission_denied: Dir hutt net d'Recht, fir op dës Aktioun zouzegräifen
     settings_menu:
       account_settings: Astellunge vum Benotzerkont
       oauth2_applications: OAuth-2-Applikatiounen
@@ -2499,6 +2544,7 @@ lb:
         title: Mat Wikipedia aloggen
         alt: Wikipedia-Logo
       openstreetmap:
+        title: Mat OpenStreetMap aloggen
         alt: OpenStreetMap-Logo
     share:
       share:
@@ -2584,6 +2630,7 @@ lb:
       by_signing_up:
         tou: Benotzungskonditiounen
         privacy_policy: Dateschutzrichtlinnen
+        contributor_terms: Bedéngunge fir Contributeuren
       continue: Mellt Iech un
       or: oder
     no_such_user:
@@ -2608,6 +2655,7 @@ lb:
       traces: Spueren
       notes: Notizen op der Kaart
       no activity yet: Nach keng Aktivitéit
+      ct status: 'Bedéngunge fir Contributeuren:'
       email address: 'E-Mail-Adress:'
       status: 'Status:'
       block_history: Aktiv Spären
@@ -2635,7 +2683,7 @@ lb:
         administrator: Dëse Benotzer ass en Administrateur
         moderator: Dëse Benotzer ass e Moderateur
     sidebar_section:
-      home_location: Doheem
+      home_location: Wunnuert
       company: Firma
     go_public:
       flash success: All Är Ännerunge sinn elo ëffentlech, an Dir däerft elo änneren.
@@ -2696,8 +2744,8 @@ lb:
     auth_failure:
       no_authorization_code: Keen Autorisatiouns-Code
     auth_association:
-      option_1: Wann Dir nei sidd bei OpenSrreetMap da leet wgl. e Benotzerkont un
-        andeem Dir de Formulaire hei drënner benotzt.
+      option_1: Wann Dir nei sidd bei OpenHistoricalMap, da leet wgl. en neie Benotzerkont
+        un, andeem Dir de Formulaire hei drënner benotzt.
     role_icons:
       title:
         administrator: Dëse Benotzer ass en Administrateur
@@ -2762,6 +2810,9 @@ lb:
       display_name: Gespaarte Benotzer
       reason: Grond fir d'Spär
       status: Status
+    navigation:
+      block: 'Spär #%{id}'
+      new_block: Nei Spär
   user_mutes:
     index:
       table:
@@ -2772,6 +2823,7 @@ lb:
   notes:
     index:
       no_notes: Keng Notizen
+      id: ID
       description: Beschreiwung
       last_changed: Lescht Ännerung
       open: Ongeléist
@@ -2810,6 +2862,7 @@ lb:
       title: Deelen
       view_larger_map: Méi grouss Kaart weisen
       export_failed_title: Kaartenexport feelgeschloen
+      filename: Kaart
     embed:
       report_problem: E Problem mellen
     legend:
@@ -2840,13 +2893,15 @@ lb:
         header: Kaartenniveauen
         notes: Hiweiser/Feelermeldungen
         data: Kaartendonnéeën
-        gps: Ëffentlech GPS Spueren
+        gps: Ëffentlech GPS-Spueren
         overlays: Overlayë fir d’Feelersich aktivéieren
         title: Niveauen
       copyright_text: © %{copyright_link}
+      openstreetmap_contributors: OpenStreetMap-Contributeuren
       cc0_text: '%{copyright_link}'
       openhistoricalmap_contributors: OHM
       make_a_donation: En Don maachen
+      website_and_api_terms: Websäiten- an API-Bedingungen
     site:
       edit_tooltip: Kaart änneren
       edit_disabled_tooltip: Vergréissere fir d'Kaart z'änneren
@@ -2903,6 +2958,7 @@ lb:
       node: Knuet
       way: Wee
       relation: Relatioun
+      error: 'Feeler beim Kontaktéiere vu(n) %{server}: %{error}'
     element:
       wikipedia: Wikipedia
     context:
@@ -2913,8 +2969,9 @@ lb:
       query_features: Objetsoffro
       centre_map: Kaart hei zentréieren
     home:
-      marker_title: Mäin Doheem
-    heatmap:
+      marker_title: Mäi Wunnuert
+      not_set: Fir Äre Kont ass kee Wunnuert definéiert
+    contribution_calendar:
       tooltip:
         no_contributions: Keng Kontributioune vum %{date}
         contributions:
