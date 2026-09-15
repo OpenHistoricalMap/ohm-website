@@ -190,7 +190,8 @@ en:
     query:
       suffix_format: "[%{dates}]"
   layouts:
-    ohm_hosting_partners_html: OpenHistoricalMap is a charter project of %{osmus}, a 501(c)(3) nonprofit organization affiliated with the %{osmf}. Technical development is supported by %{greeninfo} and %{devseed}.
+    ohm_affiliation_html: OpenHistoricalMap is a charter project of %{osmus}, a 501(c)(3) nonprofit organization affiliated with the %{osmf}.
+    ohm_early_supporters_html: Early technical development was supported by %{greeninfo} and %{devseed}.
     intro_2_create_account: Create a user account
     intro_header: Welcome to OpenHistoricalMap!
     intro_text: OpenHistoricalMap is an interactive map of the world throughout history, created by people like you and dedicated to the public domain.

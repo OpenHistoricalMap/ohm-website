@@ -75,10 +75,11 @@
       <% end %>
 
       <%= render :layout => "about_section", :locals => { :id => "partners", :icon => "partners", :title => "partners" } do %>
-        <p><%= t "layouts.ohm_hosting_partners_html", :devseed => link_to(t("layouts.partners_devseed"), "https://developmentseed.org/"),
-                                                      :greeninfo => link_to(t("layouts.partners_greeninfo"), "https://greeninfo.org/"),
-                                                      :osmf => link_to(t("layouts.partners_osmf"), "https://osmfoundation.org/"),
-                                                      :osmus => link_to(t("layouts.partners_osmus"), "https://openstreetmap.us/") %>
+        <p><%= t "layouts.ohm_affiliation_html", :osmf => link_to(t("layouts.partners_osmf"), "https://osmfoundation.org/"),
+                                                 :osmus => link_to(t("layouts.partners_osmus"), "https://openstreetmap.us/") %>
+        </p>
+        <p><%= t "layouts.ohm_early_supporters_html", :devseed => link_to(t("layouts.partners_devseed"), "https://developmentseed.org/"),
+                                                      :greeninfo => link_to(t("layouts.partners_greeninfo"), "https://greeninfo.org/") %>
         </p>
       <% end %>
     </div>
