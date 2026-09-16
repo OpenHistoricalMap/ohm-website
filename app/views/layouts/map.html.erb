@@ -33,9 +33,7 @@
         <button type="button" class="btn-close position-absolute end-0 top-0 m-2 rounded-5 p-2" aria-label="<%= t("javascripts.close") %>"></button>
         <h2 class="me-4 text-break"><%= t "layouts.intro_header" %></h2>
         <p class="fs-6 fw-light"><%= t "layouts.intro_text" %></p>
-        <p class="fs-6 fw-light"><%= t "layouts.ohm_hosting_partners_html",
-                                       :devseed => link_to(t("layouts.partners_devseed"), "https://developmentseed.org/"),
-                                       :greeninfo => link_to(t("layouts.partners_greeninfo"), "https://greeninfo.org/"),
+        <p class="fs-6 fw-light"><%= t "layouts.ohm_affiliation_html",
                                        :osmf => link_to(t("layouts.partners_osmf"), "https://osmfoundation.org/"),
                                        :osmus => link_to(t("layouts.partners_osmus"), "https://openstreetmap.us/") %>
         </p>
