@@ -77,12 +77,6 @@ bcl:
       lede_text: |-
         An OpenHistoricalMap pigtogdok kan sarong komunidad nin mga paramapa na nag-aarambag asin nagmamantenir nin datos
         manungod sa mga tinampo, agihan, kapehan, istasyon nin tren, asin kadakol pang iba, sa bilog na kinaban.
-    communities:
-      lede_text: |-
-        An mga tawo hali sa bilog na kinaban nag-aambag o naggagamit kan OpenHistoricalMap.
-        Mantang an dakol nakikikabtang bilang mga indibiduwal, an iba nagbilog nin mga komunidad.
-        An mga grupong ini igwa nin manlain-lain na kadakulaan asin nagrerepresentar nin mga heograpiya poon sa saradit na banwaan sagkod sa darakulang rona na may manlain-lain na nasyon.
-        Pwede man sindang magin pormal o impormal.
     copyright:
       legal_babble:
         attribution_example:

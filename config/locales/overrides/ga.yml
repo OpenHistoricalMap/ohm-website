@@ -22,21 +22,6 @@ ga:
         read and accept with tou: Léigh an comhaontú rannpháirtí agus na téarmaí úsáide le do thoil, seiceáil an dá bhosca seiceála nuair a bheidh tú críochnaithe agus ansin brúigh an cnaipe lean ar aghaidh.
         tou_explain:
           html: Rialaíonn na %{tou_link} seo úsáid an tsuímh ghréasáin agus bonneagair eile a sholáthraíonn OpenHistoricalMap. Cliceáil ar an nasc, léigh an téacs agus aontaigh leis.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: a loirg phríobháideacha GPS a léamh
-        allow_read_prefs: a s(h)ainroghanna úsáideora a léamh
-        allow_write_api: an léarscáil a athrú
-        allow_write_changeset_comments: trácht ar shraitheanna athruithe
-        allow_write_diary: cruthaigh iontrálacha dialainne agus tuairimí
-        allow_write_gpx: loirg GPS a uaslódáil
-        allow_write_notes: nótaí a athrú
-        allow_write_prefs: a s(h)ainroghanna úsáideora a athrú
-        callback_url: URL Aisghlaoigh
-        name: Ainm (riachtanach)
-        support_url: URL Tacaíochta
-        url: URL an phríomhfheidhmchláir (riachtanach)
   api:
     notes:
       rss:
@@ -61,7 +46,6 @@ ga:
       brief: "%{year}"
       brief_bce: "%{year} RCR"
       brief_ce: "%{year} CR"
-      contribution_calendar: "%-d %B"
       range: "%{start} – %{end}"
   diary_entries:
     comments:
@@ -274,11 +258,6 @@ ga:
         Agus cuimhníonn tú ar an gcuma a bhíodh ar do chomharsanacht.
         Baineann sé ar fad le OpenHistoricalMap.
       scope_title: Mór agus Beag, Ansin agus Anois
-    communities:
-      lede_text: |-
-        Cuireann daoine ó gach cearn den domhan le OpenHistoricalMap nó úsáideann siad é.
-        Cé go nglacann go leor páirt mar dhaoine aonair, tá pobail bunaithe ag daoine eile.
-        Tagann na grúpaí seo i raon méideanna agus léiríonn siad geografaíochtaí ó bhailte beaga go réigiúin mhóra iltíre. Is féidir leo a bheith foirmiúil nó neamhfhoirmiúil freisin.
     copyright:
       legal_babble:
         attribution_example:

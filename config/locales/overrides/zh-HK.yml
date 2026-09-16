@@ -14,20 +14,6 @@ zh-HK:
     show:
       contributor_terms:
         link text: 這是什麼？
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: 讀取他們的私人GPS軌跡
-        allow_read_prefs: 讀取他們的用戶設定。
-        allow_write_api: 修改地圖
-        allow_write_diary: 建立日記項目、評論和加入好友
-        allow_write_gpx: 上載GPS軌跡
-        allow_write_notes: 修改註記
-        allow_write_prefs: 修改他們的用戶設定。
-        callback_url: 回呼 (Callback) URL
-        name: 名稱（必需）
-        support_url: 支援URL
-        url: 主程式URL（必需）
   api:
     notes:
       rss:

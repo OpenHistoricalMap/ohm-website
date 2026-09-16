@@ -14,20 +14,6 @@ hsb:
       contributor_terms:
         link: https://www.osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: Što to je?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: twoje priwatne GPS-ćěrje čitać.
-        allow_read_prefs: twoje wužiwarske nastajenja wučitać
-        allow_write_api: kartu wobdźěłać
-        allow_write_diary: dźenikowe zapiski a komentary wutworić
-        allow_write_gpx: GPS-ćěrje nahrawać
-        allow_write_notes: noticy wobdźěłać
-        allow_write_prefs: twoje wužiwarske nastajenja změnić.
-        callback_url: URL wróćowołanja
-        name: Mjeno (trěbne)
-        support_url: URL podpěry
-        url: URL hłowneje aplikacije (trěbna)
   api:
     notes:
       rss:

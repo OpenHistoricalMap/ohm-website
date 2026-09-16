@@ -21,20 +21,6 @@ ms:
     show:
       contributor_terms:
         link text: apakah ini?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: baca jejak GPS peribadinya
-        allow_read_prefs: baca keutamaan penggunanya
-        allow_write_api: ubah suai peta
-        allow_write_diary: cipta masukan diari, ulasan dan berkawan
-        allow_write_gpx: muat naik jejak GPS
-        allow_write_notes: ubah suai catatan
-        allow_write_prefs: ubah suai keutamaan penggunanya
-        callback_url: URL Panggil Balik
-        name: Nama (Perlu)
-        support_url: URL Sokongan
-        url: URL Aplikasi Utama (Diperlukan)
   api:
     notes:
       rss:

@@ -22,13 +22,6 @@ bs:
     show:
       contributor_terms:
         link text: Šta je ovo?
-  activerecord:
-    attributes:
-      client_application:
-        allow_write_api: izmijeni kartu
-        callback_url: URL za povratni poziv
-        name: Ime (obavezno)
-        support_url: URL podrške
   diary_entries:
     feed:
       all:

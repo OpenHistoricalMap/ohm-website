@@ -41,20 +41,6 @@ eo:
         read and accept with tou: Bonvolu legi la interkonsenton pri kontribuado kaj la uzkondiĉoj, marki ambaŭ markbutonojn kiam vi estas leginta, kaj alklaku la butonon Daŭrigi.
         tou_explain:
           html: Ĉi tiuj %{tou_link} regas la uzadon de la retejo kaj alia infrastrukturo provizata de la Fondaĵo OSM. Bonvolu alklaki la ligilon, legi, kaj konsenti la tekston.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: legi privatajn GPS-spurojn
-        allow_read_prefs: legi preferojn de uzantoj
-        allow_write_api: redakti la mapon
-        allow_write_diary: afiŝi en taglibro, komenti kaj amikiĝi
-        allow_write_gpx: alŝuti GPS-spurojn
-        allow_write_notes: modifi rimarkojn
-        allow_write_prefs: modifi preferojn de uzantoj
-        callback_url: Revoka retadreso
-        name: Nomo (nepra)
-        support_url: Subtena retadreso
-        url: Ĉefa ligilo de aplikaĵo (nepra)
   api:
     notes:
       rss:
@@ -130,8 +116,6 @@ eo:
       legal_1_privacy_policy: privateca politiko
       legal_1_terms_of_use: kondiĉoj de uzado
       legal_2_html: Se vi havas demandojn pri permesiloj, aŭtorrajtoj aŭ aliaj leĝaj problemoj; %{contact_team_link}.
-    communities:
-      lede_text: Homoj de la tuta mondo kontribuas al aŭ uzas OpenHistoricalMap. Dum kiam multaj kontribuas individue, iuj homoj organizas komunumojn. Tiuj ĉi komunumoj estas je diversaj grandoj kaj reprezentas diversgrandajn geografiajn regionojn – de malgrandaj urboj al plurlandaj areoj. Ili ankaŭ povas esti formalaj aŭ neformalaj.
     copyright:
       legal_babble:
         contributors_footer_2_html: Inkludo de datumoj en OpenHistoricalMap ne indikas, ke la provizanto de datumoj apogas OpenHistoricalMap, garantias por iu aŭ respondumas por iu.

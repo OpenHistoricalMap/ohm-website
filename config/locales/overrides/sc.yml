@@ -14,20 +14,6 @@ sc:
       contributor_terms:
         link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms&uselang=sc
         link text: ite est custu?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: lèghere sas rastas GPS privadas issoro
-        allow_read_prefs: lèghere sas preferèntzias tuas de utente
-        allow_write_api: modìfica sa mapa
-        allow_write_diary: creare intradas de su diàriu, cummentos e fàghere amistades.
-        allow_write_gpx: carrigare rastas GPS
-        allow_write_notes: modificare sas notas
-        allow_write_prefs: modificare sas preferèntzias tuas de utente.
-        callback_url: URL de torrada
-        name: Nùmene (obligatòriu)
-        support_url: URL de s'assistèntzia
-        url: URL printzipale de s'aplicatzione (obligatòriu)
   api:
     notes:
       rss:
@@ -93,8 +79,6 @@ sc:
       legal_1_privacy_policy: Polìtica de riservadesa
       legal_1_terms_of_use: Cunditziones de impreu
       legal_2_html: Pro praghere %{contact_team_link} si tenes dimandas in contu de sa litzèntzia, de su deretu de autore o de àteras chistiones legales.
-    communities:
-      lede_text: Gente dae totu su mundu contribuit a o impreat OpenHistoricalMap. Cando chi medas bi pigant parte comente indivìduos, àteros ant formadu comunidades. Custos grupos sunt de mannàrias diferentes e rapresentant zonas geogràficas dae sas biddigheddas minores a regiones mannas de prus istados. Podes fintzas èssere formales o informales.
     copyright:
       legal_babble:
         contributors_footer_2_html: S'inclusione de datos in OpenHistoricalMap no ìmplicat chi su frunidore originale de sos datos diat suportu a OpenHistoricalMap, frunat cale si siat garantzia o atzetet cale si siat responsabilidade.

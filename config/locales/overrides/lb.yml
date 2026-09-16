@@ -21,21 +21,6 @@ lb:
     show:
       contributor_terms:
         link text: wat ass dat?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: Zougrëff op hir privat GPS-Spueren
-        allow_read_prefs: Hir Benotzerastellunge liesen
-        allow_write_api: d'Kaart änneren
-        allow_write_changeset_comments: Ännerungssätz kommentéieren
-        allow_write_diary: Blogbäiträg a -kommentare schreiwen
-        allow_write_gpx: GPS-Spueren eroplueden
-        allow_write_notes: Notize beaarbechten
-        allow_write_prefs: Hir Benotzerastellungen änneren
-        callback_url: Callback-URL
-        name: Numm (Obligatoresch)
-        support_url: Support-URL
-        url: Haaptapplikatiouns-URL
   api:
     notes:
       rss:

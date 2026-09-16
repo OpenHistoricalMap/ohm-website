@@ -19,20 +19,6 @@ oc:
       contributor_terms:
         link: https://Www.osmfoundation.org/wiki/License/Contributor_Terms
         link text: qu’es aquò ?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: legir vòstrei traças GPS privadas.
-        allow_read_prefs: consultar lei preferéncias d'utilizaire.
-        allow_write_api: modificar la mapa
-        allow_write_diary: creatz d'intradas dins lo jornau, de comentaris e fasètz-vos d'amics.
-        allow_write_gpx: telecargar de traças GPS.
-        allow_write_notes: modificar lei nòtas
-        allow_write_prefs: modificar lei preferéncias d'utilizaire.
-        callback_url: URL de rampèu
-        name: Nom (Obligatòri)
-        support_url: URL de supòrt
-        url: URL de l'aplicacion principala (Obligatòri)
   api:
     notes:
       rss:

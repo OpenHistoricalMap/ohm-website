@@ -10,11 +10,6 @@ gcf:
     show:
       contributor_terms:
         link text: Ka sa yé?
-  activerecord:
-    attributes:
-      client_application:
-        allow_write_api: Modifyé kat-la
-        name: Non (oblijé)
   layouts:
     intro_header: Kontan vwè-w asi OpenHistoricalMap!
     intro_text: OpenHistoricalMap, sé on kat a lèmonn-la ki fèt parapòt a moun kon-w é lib pou sèvi épi-y évè on lisans lib.

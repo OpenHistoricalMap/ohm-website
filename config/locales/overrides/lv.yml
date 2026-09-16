@@ -29,14 +29,6 @@ lv:
     show:
       contributor_terms:
         link text: Kas tas ir?
-  activerecord:
-    attributes:
-      client_application:
-        allow_write_api: mainīt karti
-        allow_write_notes: mainīt piezīmes
-        callback_url: Atzvanīšanas URL
-        name: Nosaukums (obligāts)
-        support_url: Atbalsta URL
   api:
     notes:
       rss:
@@ -87,8 +79,6 @@ lv:
     about:
       lede_text: OpenHistoricalMap būvē kartētāju kopiena, kuri iegulda un uztur datus par ceļiem, takām, kafejnīcām, dzelzceļa stacijām un daudz ko vairāk visā pasaulē.
       used_by_html: "%{name} darbina kartes datus simtiem mājaslapu, mobilajās aplikācijās un aparatūras ierīcēs"
-    communities:
-      lede_text: OpenHistoricalMap veido vai izmanto cilvēki no visas pasaules. Daudzi piedalās individuāli, bet citi ir izveidojuši kopienas. Šīs grupas ir dažāda lieluma un pārstāv dažādas ģeogrāfiskās teritorijas - no mazām pilsētām līdz lieliem daudzvalstu reģioniem. Tās var būt arī formālas vai neformālas.
     copyright:
       legal_babble:
         contributors_footer_2_html: Datu ievietošana OpenHistoricalMap nenozīmē ka oriģinālais datu avots sniedz atbalstu OpenHistoricalMap, dod garantiju, vai pieņem jebkādu atbildību.

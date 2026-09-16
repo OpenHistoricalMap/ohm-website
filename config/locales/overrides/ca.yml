@@ -60,20 +60,6 @@ ca:
     terms:
       show:
         read and accept with tou: Llegiu l'acord de col·laborador i les condicions d'ús i, en acabat, marqueu totes dues caselles i premeu el botó de continuar.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: Llegeix les seves traces GPS privades
-        allow_read_prefs: llegir les vostres preferències d'usuari
-        allow_write_api: Modifica el mapa
-        allow_write_diary: Escriviu entrades de diari, comentaris i feu amics
-        allow_write_gpx: Carrega traces GPS
-        allow_write_notes: Modifica notes
-        allow_write_prefs: modificar les vostres preferències d'usuari.
-        callback_url: URL de crida de retorn
-        name: Nom (Requerit)
-        support_url: URL de suport
-        url: URL de l'aplicació principal (Requerit)
   api:
     notes:
       rss:
@@ -150,10 +136,6 @@ ca:
       legal_1_privacy_policy: polítiques de privadesa
       legal_1_terms_of_use: condicions d’ús
       legal_2_html: "%{contact_team_link} si teniu qüestions sobre la llicència, copyright o altres temes legals."
-    communities:
-      lede_text: |-
-        Persones d'arreu del món contribueixen o utilitzen OpenHistoricalMap. Si bé moltes hi participen individualment, d'altres han format comunitats.
-        Aquests grups tenen diferents mides i representen àrees des de ciutats petites fins a grans regions de diversos països. També poden ser formals o informals.
     copyright:
       legal_babble:
         contributors_footer_2_html: La inclusió de dades a l'OpenHistoricalMap no implica que el proveïdor original de les dades dona suport a l'OpenHistoricalMap, proporciona cap garantia o accepta cap responsabilitat.

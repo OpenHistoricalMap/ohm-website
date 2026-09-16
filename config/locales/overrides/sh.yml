@@ -10,16 +10,6 @@ sh:
     show:
       contributor_terms:
         link text: šta je ovo?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_prefs: čita njihove korisničke postavke
-        allow_write_diary: pravi dnevničke zapise, komentare i dodaje prijatelje
-        allow_write_prefs: mijenja njihove korisničke postavke
-        callback_url: URL za povratni poziv
-        name: Ime (obavezno)
-        support_url: URL podrške
-        url: Glavni URL priloga (obavezno)
   api:
     notes:
       rss:

@@ -12,10 +12,6 @@ gu:
     show:
       contributor_terms:
         link text: આ શું છે?
-  activerecord:
-    attributes:
-      client_application:
-        name: નામ (જરૂરી)
   diary_entries:
     profile_diaries:
       date_label: તારીખ

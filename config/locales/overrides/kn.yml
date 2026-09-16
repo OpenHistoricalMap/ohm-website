@@ -21,13 +21,6 @@ kn:
     show:
       contributor_terms:
         link text: ಇದು ಏನು?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: ಅವರ ಖಾಸಗಿ ಜಿಪಿಎಸ್ ಟ್ರೇಸ್‌ಗಳನ್ನು ಓದಿ
-        allow_write_api: ನಕ್ಷೆಯನ್ನು ಮಾರ್ಪಡಿಸಿ
-        allow_write_gpx: GPS ಟ್ರೇಸ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ
-        allow_write_notes: ಟಿಪ್ಪಣಿಗಳನ್ನು ಮಾರ್ಪಡಿಸಿ
   diary_entries:
     profile_diaries:
       date_label: ದಿನಾಂಕ

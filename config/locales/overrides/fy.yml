@@ -12,20 +12,6 @@ fy:
       contributor_terms:
         link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: wat is dat?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: privee-GPS-trajekten lêzen
-        allow_read_prefs: meidoggerfoarkarren lêzen
-        allow_write_api: kaart wizigjen
-        allow_write_diary: deiboekstikken, reäksjes en freonen meitsjen
-        allow_write_gpx: GPS-trajekten opladen
-        allow_write_notes: notysjes wizigjen
-        allow_write_prefs: meidoggerfoarkarren wizigjen
-        callback_url: Weromrop-URL
-        name: Namme (ferplichte)
-        support_url: Stipe-URL
-        url: Haad-URL applikaasje (ferplichte)
   api:
     notes:
       rss:

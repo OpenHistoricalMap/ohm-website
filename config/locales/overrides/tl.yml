@@ -23,18 +23,6 @@ tl:
       contributor_terms:
         link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: ano ba ito?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: basahin ang kanilang pribadong mga bakas ng GPS
-        allow_read_prefs: basahin ang kanilang mga kanaisan ng tagagamit
-        allow_write_api: baguhin ang mapa
-        allow_write_notes: baguhin ang mga tala
-        allow_write_prefs: baguhin ang kanilang mga kanaisan ng tagagamit
-        callback_url: URL ng Pagtawag-Pabalik
-        name: Pangalan (Kailangan)
-        support_url: URL ng Pagtangkilik
-        url: URL ng Pangunahing Aplikasyon (Kailangan)
   api:
     notes:
       rss:

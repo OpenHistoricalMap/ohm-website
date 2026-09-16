@@ -10,14 +10,6 @@ skr-arab:
     show:
       contributor_terms:
         link text: ایہ کیا ہے؟
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_prefs: انہاں دیاں ورتݨ ترجیحاں پڑھو
-        callback_url: کال بیک یوآرایل
-        name: ناں (ضروری)
-        support_url: سہارا یوآرایل
-        url: مین ایپ یوآرایل (ضروری)
   diary_entries:
     profile_diaries:
       date_label: تریخ

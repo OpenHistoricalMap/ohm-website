@@ -122,21 +122,6 @@ es:
         read and accept with tou: Lee el acuerdo de colaborador y los Términos de Uso, marca ambas casillas de verificación cuando hayas terminado y luego presiona el botón Continuar.
         tou_explain:
           html: Estos %{tou_link} rigen el uso del sitio web y de la infraestructura provista por OpenHistoricalMap. Haz clic en el enlace, lee y acepta el texto.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: leer sus trazas de GPS privadas
-        allow_read_prefs: leer sus preferencias de usuario
-        allow_write_api: modificar el mapa
-        allow_write_changeset_comments: comentar sobre los conjuntos de cambios
-        allow_write_diary: crear entradas de diario y comentarios
-        allow_write_gpx: cargar trazas de GPS
-        allow_write_notes: modificar notas
-        allow_write_prefs: modificar sus preferencias de usuario
-        callback_url: URL de devolución de llamada
-        name: Nombre (obligatorio)
-        support_url: URL de asistencia
-        url: URL de la aplicación principal (obligatorio)
   api:
     notes:
       rss:
@@ -160,7 +145,6 @@ es:
     formats:
       brief_bce: "%{year} a. C."
       brief_ce: "%{year} d. C."
-      contribution_calendar: "%-d de %B"
   diary_entries:
     comments:
       description: Entradas recientes en los diarios de los usuarios de OpenHistoricalMap
@@ -288,12 +272,6 @@ es:
       scope_title: Grande y pequeño, entonces y ahora
     add_a_note:
       para_1: Si sólo deseas corregir algo pequeño y no tienes tiempo para registrarte y aprender a editar, añadir una nota es fácil.
-    communities:
-      lede_text: |-
-        Personas de todo el mundo contribuyen o utilizan OpenHistoricalMap.
-        Aunque muchos participan a título individual, otros han formado comunidades.
-        Estos grupos son de distintos tamaños y representan geografías que van desde pequeñas ciudades a grandes regiones multinacionales.
-        También pueden ser formales o informales.
     copyright:
       legal_babble:
         attribution_example:

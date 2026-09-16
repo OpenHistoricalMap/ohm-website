@@ -26,21 +26,6 @@ be-Tarask:
       show:
         tou_explain:
           html: Гэтыя %{tou_link} рэгулююць ужываньне сайта ды іншай інфраструктуры, якую забясьпечвае OpenHistoricalMap. Калі ласка, націсьніце на спасылку, прачытайце й пагадзіцеся з тэкстам.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: чытаць іх прыватныя GPS-трэкі
-        allow_read_prefs: чытаць іх налады ўдзельніка
-        allow_write_api: зьмяняць мапу
-        allow_write_changeset_comments: камэнтаваць наборы зьменаў
-        allow_write_diary: ствараць запісы ў дзёньніку і камэнтары
-        allow_write_gpx: загружаць GPS-трэкі
-        allow_write_notes: зьмяняць нататкі
-        allow_write_prefs: зьмяняць іх налады ўдзельніка
-        callback_url: URL-адрас зваротнага выкліку
-        name: Імя (абавязкова)
-        support_url: URL-адрас падтрымкі
-        url: Асноўны URL праграмы (абавязкова)
   api:
     notes:
       rss:
@@ -57,7 +42,6 @@ be-Tarask:
     formats:
       brief_bce: "%{year} да н. э."
       brief_ce: "%{year} н. э."
-      contribution_calendar: "%-d %B"
   diary_entries:
     comments:
       description: Апошнія запісы ў дзёньніку карыстальнікаў OpenHistoricalMap

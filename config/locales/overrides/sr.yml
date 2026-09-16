@@ -33,20 +33,6 @@ sr:
       contributor_terms:
         link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: шта је ово?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: чита њихове приватне GPS трагове
-        allow_read_prefs: чита њихове корисничке поставке
-        allow_write_api: мења мапу
-        allow_write_diary: прави дневничке записе и коментарише
-        allow_write_gpx: отпрема GPS трагове
-        allow_write_notes: мења белешке
-        allow_write_prefs: мења њихове корисничке поставке
-        callback_url: Повратна адреса
-        name: Име (обавезно)
-        support_url: Адреса подршке
-        url: Главна адреса апликације (обавезно)
   application:
     setup_user_auth:
       blocked_zero_hour: Имате хитну поруку на веб-сајту OpenHistoricalMap. Морате прочитати поруку пре него што можете да чувате своје измене.

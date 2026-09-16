@@ -24,20 +24,6 @@ br:
       contributor_terms:
         link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
         link text: petra eo an dra-se ?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: lenn o roudoù GPS prevez
-        allow_read_prefs: lenn o fenndibaboù implijer.
-        allow_write_api: kemmañ ar gartenn
-        allow_write_diary: krouiñ enmonedoù en deizlevr, addisplegoù ha kavout mignoned.
-        allow_write_gpx: kas roudoù GPS
-        allow_write_notes: kemmañ an notennoù
-        allow_write_prefs: kemmañ o fenndibaboù implijer.
-        callback_url: URL gervel en-dro
-        name: Anv (Rekis)
-        support_url: URL skoazell
-        url: URL pennañ an arload (Rekis)
   api:
     notes:
       rss:

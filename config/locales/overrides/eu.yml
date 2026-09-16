@@ -33,20 +33,6 @@ eu:
     terms:
       show:
         read and accept with tou: Mesedez, irakurri laguntzaile-akordioa eta erabilera-baldintzak, markatu bi kontrol-laukiak amaitutakoan eta sakatu jarraitu botoia.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: irakurri haien GPS aztarna pribatuak
-        allow_read_prefs: irakurri haien erabiltzaile hobespenak
-        allow_write_api: mapa aldatu
-        allow_write_diary: sortu eguroko sarreak, iruzkinak eta lagunak egin
-        allow_write_gpx: GPS aztarnak igo
-        allow_write_notes: oharrak aldatu
-        allow_write_prefs: aldatu haien erabiltzaile hobespenak
-        callback_url: Berriz deitzeko URLa
-        name: Izena (beharrezkoa)
-        support_url: Laguntza URLa
-        url: Aplikazio nagusiaren URL (beharrezkoa)
   api:
     notes:
       rss:

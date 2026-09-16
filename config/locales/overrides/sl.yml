@@ -36,21 +36,6 @@ sl:
       show:
         tou_explain:
           html: Ti %{tou_link} urejajo uporabo spletnega mesta in drugo infrastrukturo, ki jo zagotavlja OpenHistoricalMap. Prosimo, kliknite povezavo, preberite jih in potrdite, da se strinjate z zapisanim.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: branje zasebnih sledi GPS
-        allow_read_prefs: branje uporabniških prilagoditev
-        allow_write_api: spreminjanje zemljevida
-        allow_write_changeset_comments: komentiranje naborov sprememb
-        allow_write_diary: ustvarjanje dnevniških zapisov in komentarjev
-        allow_write_gpx: nalaganje sledi GPS
-        allow_write_notes: spreminjanje opomb
-        allow_write_prefs: spreminjanje uporabniških nastavitev
-        callback_url: URL povratnih klicev
-        name: Ime (obvezno)
-        support_url: URL podpore
-        url: URL glavne aplikacije (obvezno)
   api:
     notes:
       rss:
@@ -242,8 +227,6 @@ sl:
         prosimo, %{contact_team_link}.
       scope_html: Cesarstva vstajajo in padajo. Ledeniki izginjajo. Jeziki in religije se širijo iz ene regije v drugo. Preproste makadamske poti postanejo prometne avtoceste in železnice. Skromne stavbe se umaknejo visokim nebotičnikom. In spomniš se, kako je bila nekoč videti tvoja soseska. Vse to spada na OpenHistoricalMap.
       scope_title: Veliko in majhno, nekoč in danes
-    communities:
-      lede_text: K OpenHistoricalMap prispevajo in ga uporabljajo ljudje z vsega sveta. Medtem ko številni sodelujejo kot posamezniki, so drugi oblikovali skupnosti. Te skupine so različnih velikosti in predstavljajo geografska območja od majhnih mest do velikih regij z več državami. Lahko so tudi formalne ali neformalne.
     copyright:
       legal_babble:
         attribution_example:

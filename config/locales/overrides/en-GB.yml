@@ -51,20 +51,6 @@ en-GB:
         read and accept with tou: Please read the contributor agreement and the terms of use, check both checkboxes when done and then press the continue button.
         tou_explain:
           html: These %{tou_link} govern the use of the website and other infrastructure provided by the OSMF. Please click on the link, read and agree to the text.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: read their private GPS traces
-        allow_read_prefs: read their user preferences
-        allow_write_api: modify the map
-        allow_write_diary: create diary entries, comments and make friends
-        allow_write_gpx: upload GPS traces
-        allow_write_notes: modify notes
-        allow_write_prefs: modify their user preferences
-        callback_url: Callback URL
-        name: Name (Required)
-        support_url: Support URL
-        url: Main Application URL (Required)
   api:
     notes:
       rss:

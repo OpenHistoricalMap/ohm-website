@@ -15,20 +15,6 @@ cy:
       contributor_terms:
         link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: beth yw hwn?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: darllen eu harllwybrau GPS
-        allow_read_prefs: darllen eu dewisiadau defnyddiwr
-        allow_write_api: golygu'r map
-        allow_write_diary: creu cofnodion dyddiadur, sylwadau a gwneud ffrindiau
-        allow_write_gpx: uwchlwytho olion GPS
-        allow_write_notes: addasu nodiadau
-        allow_write_prefs: addasu eu dewisiadau defnyddiwr
-        callback_url: URL galw'n ôl
-        name: Enw (gofynnol)
-        support_url: URL Cefnogaeth
-        url: URL y Prif Ap (Gofynnol)
   api:
     notes:
       rss:
@@ -44,9 +30,6 @@ cy:
       show:
         title_all: Trafodaeth grŵp newid OpenHistoricalMap
         title_particular: Trafodaeth grŵp newid OpenHistoricalMap %{changeset_id}
-  date:
-    formats:
-      contribution_calendar: "%B %-d"
   diary_entries:
     comments:
       title: Cofnodion dyddiadur OpenHistoricalMap
@@ -115,8 +98,6 @@ cy:
       legal_1_privacy_policy: Polisi Preifatrwydd
       legal_1_terms_of_use: Telerau Gwasanaeth
       legal_2_html: "%{contact_team_link} os oes gennych gwestiynau am drwydded, hawlfraint neu gwestiynau cyfreithiol eraill."
-    communities:
-      lede_text: Mae pobl ym mhob cwr o'r byd yn cyfrannu at neu'n ddefnyddio OpenHistoricalMap. Er bod llawer yn cymryd rhan fel unigolion, mae rhai eraill wedi creu cymunedau. Ceir grwpiau gwahanol sy'n cynrychioli trefi bach neu ardaloedd aml-wlad mawr. Gall grwpiau fod yn ffurfiol neu'n anffurfiol.
     copyright:
       legal_babble:
         contributors_footer_2_html: Nid yw cynnwys data yn OpenHistoricalMap yn awgrymu bod y darparwr data gwreiddiol yn cefnogi OpenHistoricalMap, yn darparu unrhyw warant, neu yn derbyn unrhyw atebolrwydd.

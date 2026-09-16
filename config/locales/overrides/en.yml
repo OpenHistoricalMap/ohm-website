@@ -18,21 +18,6 @@ en:
         read and accept with tou: Please read the contributor agreement and the terms of use, check both checkboxes when done and then press the continue button.
         tou_explain:
           html: These %{tou_link} govern the use of the website and other infrastructure provided by OpenHistoricalMap. Please click on the link, read and agree to the text.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: read their private GPS traces
-        allow_read_prefs: read their user preferences
-        allow_write_api: modify the map
-        allow_write_changeset_comments: comment on changesets
-        allow_write_diary: create diary entries and comments
-        allow_write_gpx: upload GPS traces
-        allow_write_notes: modify notes
-        allow_write_prefs: modify their user preferences
-        callback_url: Callback URL
-        name: Name (Required)
-        support_url: Support URL
-        url: Main Application URL (Required)
   api:
     notes:
       rss:
@@ -62,7 +47,6 @@ en:
       brief: "%{year}"
       brief_bce: "%{year} BCE"
       brief_ce: "%{year} CE"
-      contribution_calendar: "%B %-d"
       range: "%{start} – %{end}"
   diary_entries:
     comments:
@@ -306,11 +290,6 @@ en:
         '
     any_questions:
       ohm_paragraph_1_html: OpenHistoricalMap has several resources for learning about the project, asking and answering questions, and collaboratively discussing and documenting mapping topics. %{help_link}.
-    communities:
-      lede_text: |
-        People from all over the world contribute to or use OpenHistoricalMap.
-        While many participate as individuals, others have formed communities.
-        These groups come in a range of sizes and represent geographies from small towns to large multi-country regions. They can also be formal or informal.
     copyright:
       legal_babble:
         attribution_example:

@@ -82,20 +82,6 @@ pl:
     terms:
       show:
         read and accept with tou: Przeczytaj Warunki uczestnictwa i Warunki użytkowania, zaznacz oba pola wyboru po zakończeniu, a następnie naciśnij przycisk Kontynuuj.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: Odczytywanie ich prywatnych śladów GPS
-        allow_read_prefs: Odczytywanie ich ustawień
-        allow_write_api: Modyfikowanie mapy
-        allow_write_diary: Tworzenie wpisów w dzienniku, dodawanie komentarzy i nawiązywanie kontaktów
-        allow_write_gpx: Przesyłanie śladów GPS
-        allow_write_notes: Modyfikowanie uwag
-        allow_write_prefs: Modyfikowanie ich ustawień
-        callback_url: Adres URL odwołania zwrotnego
-        name: Nazwa (wymagana)
-        support_url: Adres URL pomocy technicznej
-        url: Główny adres URL aplikacji (wymagany)
   api:
     notes:
       rss:
@@ -171,8 +157,6 @@ pl:
       legal_1_privacy_policy: Polityce prywatności
       legal_1_terms_of_use: Warunkom użytkowania
       legal_2_html: W przypadku pytań dotyczących licencji, praw autorskich lub innych kwestii prawnych prosimy o %{contact_team_link}.
-    communities:
-      lede_text: Ludzie z całego świata tworzą lub używają OpenHistoricalMap. Podczas gdy niektórzy działają sami, inni utworzyli społeczności. Grupy te są różnej wielkości i reprezentują obszary geograficzne od małych miast do dużych regionów. Mogą być również formalne lub nieformalne.
     copyright:
       legal_babble:
         contributors_footer_2_html: Włączenie danych do OpenHistoricalMap nie musi oznaczać, że udostępniający je podmiot popiera OpenHistoricalMap, udziela jakiejkolwiek gwarancji lub ponosi jakąkolwiek odpowiedzialność.

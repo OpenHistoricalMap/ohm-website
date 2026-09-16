@@ -15,17 +15,6 @@ mr:
     show:
       contributor_terms:
         link text: हे काय आहे?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: वैयक्तिक GPS आनुरेखा वाचा
-        allow_read_prefs: वापरकर्त्याच्या पसंती वाचा
-        allow_write_api: नकाशात बदल करा
-        allow_write_gpx: GPS अनुरेख चढवा
-        allow_write_notes: टीपा बदला
-        allow_write_prefs: वापरकर्त्याच्या पसंती बदला
-        name: नाव (आवश्यक)
-        url: मुख्य ऍप्लिकेशन URL (आवश्यक)
   diary_entries:
     profile_diaries:
       date_label: दिनांक

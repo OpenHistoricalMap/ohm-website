@@ -18,21 +18,6 @@ frp:
     terms:
       show:
         read and accept with tou: Mèrci de liére l'acôrd du contributor et les condicions d'usâjo, pués validâd les doves câses et apoyéd adonc sur lo boton « Continuar ».
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: liére ses traces GPS privâyes
-        allow_read_prefs: liére les prèferences de l'usanciér(e)
-        allow_write_api: changiér la mapa
-        allow_write_changeset_comments: comentar les bendes de changements
-        allow_write_diary: crèar d'entrâyes du jornâl et de comentèros
-        allow_write_gpx: tèlèvèrsar de traces GPS
-        allow_write_notes: changiér les notes
-        allow_write_prefs: changiér les prèferences de l'usanciér(e)
-        callback_url: URL de rapèl
-        name: Nom (requis)
-        support_url: URL de l'assistance
-        url: URL de l'aplicacion prencipâla (requis)
   api:
     notes:
       rss:
@@ -53,7 +38,6 @@ frp:
       brief: "%{year}"
       brief_bce: "%{year} AEC"
       brief_ce: "%{year} EC"
-      contribution_calendar: "%-d %B"
   diary_entries:
     comments:
       description: Entrâyes novèles des jornâls d'usanciér(e)s d'OpenHistoricalMap
@@ -186,8 +170,6 @@ frp:
   site:
     about:
       lede_text: OpenHistoricalMap est bâti per una comunôtât de mapors volontèros que contribuont et mantegnont les balyês des rotes, sentiérs, câfès, stacions de tren et ben més, pertot dens lo mondo.
-    communities:
-      lede_text: De pèrsones du mondo entiér contribuont ou utilisont OpenHistoricalMap. Tandis que de mouéls participont de lor coutâ, d'ôtres ant formâ des comunôtâts. Cetes bendes sont de talyes difèrentes et rassemblont de zones geografiques alent de petites veles a de grants tèrritouèros entèrnacionâls. Ils pôvont asse-ben étre oficièls, ou pas.
     copyright:
       legal_babble:
         contributors_footer_2_html: L'encllusion de balyês dens OpenHistoricalMap vôt pas dére que los fornissors des balyês d'origina aprovont OpenHistoricalMap, ni qu'ils garantéssont les balyês ou accèptont quârque rèsponsabilitât.

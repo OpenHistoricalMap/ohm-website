@@ -33,20 +33,6 @@ lt:
       contributor_terms:
         link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: kas tai?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: peržiūrėti jų privačius GPS pėdsakus
-        allow_read_prefs: peržiūrėti jų naudotojo nustatymus
-        allow_write_api: redaguoti žemėlapį
-        allow_write_diary: kurti dienoraščio įrašus, komentarus ir susirasti draugų
-        allow_write_gpx: įkelti GPS pėdsakus
-        allow_write_notes: redaguoti užrašus
-        allow_write_prefs: redaguoti jų naudotojo nustatymus
-        callback_url: Atgalinio ryšio nuoroda
-        name: Vardas (Privalomas)
-        support_url: Palaikymo URL
-        url: Pagrindinis aplikacijos URL (Privalomas)
   api:
     notes:
       rss:
@@ -129,10 +115,6 @@ lt:
       legal_2_html: |-
         Prašome %{contact_team_link}
         Jei turite licencijų, autorių teisių ar kitų teisinių klausimų.
-    communities:
-      lede_text: |-
-        Žmonės iš viso pasaulio prisideda prie OpenHistoricalMap arba naudojasi juo.
-        Daugelis dalyvauja kaip individualūs asmenys, kiti yra sukūrę bendruomenes. Šios grupės yra įvairaus dydžio ir atstovauja įvairioms geografinėms teritorijoms – nuo mažų miestelių iki didelių daugiašalių regionų. Jos taip pat gali būti formalios arba neformalios.
     copyright:
       legal_babble:
         contributors_footer_2_html: Duomenų įtraukimas į OpenHistoricalMap nereiškia, kad originalių duomenų tiekėjas remia OpenHistoricalMap. Nenumatomos jokios garantijos ir neprisiimama jokia atsakomybė.

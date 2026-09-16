@@ -13,12 +13,6 @@ sat:
     show:
       contributor_terms:
         link text: ᱱᱤᱭᱟᱹ ᱫᱚ ᱪᱮᱫ?
-  activerecord:
-    attributes:
-      client_application:
-        allow_write_api: ᱱᱚᱠᱥᱟ ᱵᱚᱫᱚᱞ ᱢᱮ
-        allow_write_notes: ᱠᱷᱟᱴᱚ ᱚᱞ ᱠᱚ ᱵᱚᱫᱚᱞ ᱢᱮ
-        name: ᱧᱩᱛᱩᱢ (ᱞᱟᱹᱠᱛᱤ-ᱟ)
   api:
     notes:
       rss:

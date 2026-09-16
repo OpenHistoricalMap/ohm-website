@@ -17,17 +17,6 @@ scn:
       contributor_terms:
         link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
         link text: chi voli diri?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: lèggi li sò tracciati GPS privati.
-        allow_write_api: cancia la cartina
-        allow_write_diary: criari vuci dû diariu, cummenti e fari amici.
-        allow_write_gpx: càrrica li tracciati GPS
-        allow_write_notes: cancia li noti
-        allow_write_prefs: canciari li so mpustazzioni di l'utenti
-        callback_url: URL di callback
-        support_url: URL di l'assistenza
   api:
     notes:
       rss:
