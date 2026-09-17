@@ -12,7 +12,7 @@ frp:
       brief: '%{year}'
       brief_bce: '%{year} AEC'
       brief_ce: '%{year} EC'
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y a %H:%M'
@@ -3484,7 +3484,7 @@ frp:
     home:
       marker_title: Luè de rèsidence
       not_set: Lo luè de rèsidence est pas dèfeni por voutron compto
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Gins de contribucions lo %{date}
         contributions:

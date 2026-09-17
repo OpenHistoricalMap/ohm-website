@@ -18,7 +18,7 @@ be-Tarask:
     formats:
       brief_bce: '%{year} да н. э.'
       brief_ce: '%{year} н. э.'
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e %B %Y у %H:%M'
@@ -279,7 +279,7 @@ be-Tarask:
       current email address: Цяперашні адрас электроннай пошты
       external auth: Вонкавая аўтэнтыфікацыя
       contributor_terms:
-        heading: Умовы супрацоўніцтва
+        heading: Умовы супрацы
         agreed: Вы згадзіліся з ўмовамі ўдзельніцтва %{date}.
         not_agreed: Вы яшчэ не згадзіліся з умовамі ўдзельніцтва.
         agreed_with_pd: Вы таксама заяўляеце, што перадаеце Вашыя рэдагаваньні ў грамадзкі
@@ -370,7 +370,7 @@ be-Tarask:
         continue: Працягнуць
         cancel: Скасаваць
         you need to accept or decline: Калі ласка, прачытайце, а потым згадзіцеся
-          ці адхіліце новыя ўмовы супрацоўніцтва для працягу.
+          ці адхіліце новыя ўмовы супрацы для працягу.
         legale_select: 'Калі ласка, выберыце сваю краіну пражываньня:'
         legale_names:
           france: Францыя
@@ -1367,6 +1367,7 @@ be-Tarask:
           wood: Лес
         office:
           accountant: Бугальтар
+          advertising_agency: Рэклямная агенцыя
           architect: Архітэктар
           company: Кампанія
           employment_agency: Служба занятасьці
@@ -1535,6 +1536,10 @@ be-Tarask:
       status: Статус
     show:
       resolve: Разьвязаць
+  languages_panes:
+    select_language_list:
+      languages:
+        ru: Расейская
   layouts:
     logo:
       alt_text: Лягатып OpenHistoricalMap
@@ -1942,8 +1947,8 @@ be-Tarask:
       blocked: Ваш доступ да API заблякаваны. Калі ласка, увайдзіце праз ўэб-інтэрфэйс,
         каб даведацца болей.
       need_to_see_terms: Ваш доступ да API часова прыпынены. Калі ласка, увайдзіце
-        ў ўэб-інтэрфэйс, каб каб паглядзець умовы супрацоўніцтва. Вам не абавязкова
-        пагаджацца зь імі, але неабходна зь імі азнаёміцца.
+        ў ўэб-інтэрфэйс, каб каб паглядзець умовы супрацы. Вам не абавязкова пагаджацца
+        зь імі, але патрэбна зь імі азнаёміцца.
   oauth2_applications:
     application:
       edit: Рэдагаваць
@@ -1976,7 +1981,7 @@ be-Tarask:
       edits: Рэдагаваньні
       traces: Трэкі
       mapper since: 'Стварае мапы з:'
-      ct status: 'Умовы супрацоўніцтва:'
+      ct status: 'Умовы супрацы:'
       ct undecided: Нявырашана
       ct declined: Адхіленыя
       email address: 'Адрас электроннай пошты:'

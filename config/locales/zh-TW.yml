@@ -62,7 +62,7 @@ zh-TW:
       brief: '%{year}'
       brief_bce: 西元前 %{year}
       brief_ce: 西元 %{year}
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
       range: '%{start} – %{end}'
   time:
     formats:
@@ -784,6 +784,7 @@ zh-TW:
       profile: 查看您的個人檔案
   errors:
     contact:
+      contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
       contact_url_title: 各種聯絡管道說明
       contact: 聯絡
       contact_the_community_html: 如果你發現有損壞的連結/錯誤，請隨時%{contact_link}OpenHistoricalMap
@@ -800,6 +801,9 @@ zh-TW:
     not_found:
       title: 檔案未找到
       description: 在 OpenHistoricalMap 伺服器上找不到該名稱的檔案/目錄/API 操作 (HTTP 404)
+  export:
+    show:
+      title: OpenHistoricalMap 嵌入
   follows:
     show:
       follow:
@@ -1725,6 +1729,7 @@ zh-TW:
       download: 以 GeoJSON 格式下載路線
       filename: 路線
       directions_courtesy_html: 感謝 %{link} 提供路線資訊
+      check_demo_html: 更多詳情請瀏覽 %{link}
   issues:
     index:
       title: 問題
@@ -1840,6 +1845,20 @@ zh-TW:
     create:
       successful_report: 已成功登記你的回報
       provide_details: 請提供所需的詳情
+  languages_panes:
+    select_language_list:
+      search_language: 搜尋…
+      languages:
+        af: 南非荷蘭文
+        cs: 捷克文
+        cy: 威爾斯文
+        da: 丹麥文
+        de: 德文
+        dsb: 下索比文
+        et: 愛沙尼亞文
+        en: 英文
+        en-GB: 英文 (英國)
+        es: 西班牙文
   layouts:
     project_name:
       title: OpenHistoricalMap 開放史圖
@@ -1878,6 +1897,9 @@ zh-TW:
     more: 更多
     header:
       select_language: 選擇語言
+      user_diaries: 使用者日記
+    meta:
+      openstreetmap_search: OpenHistoricalMap 搜尋
     select_language_button:
       title: 選擇語言
     offline_flash:
@@ -2122,6 +2144,7 @@ zh-TW:
         message: 偏好設定已更新。
       navigation:
         preferences: 偏好設定
+        notification_preferences: 通知
         advanced_preferences: 進階偏好設定
     basic_preferences:
       show:
@@ -2474,6 +2497,9 @@ zh-TW:
           url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse
       export_button: 匯出
       export_download: 正在下載…
+      confirmation:
+        cancel: 取消
+        download: 下載
     fixthemap:
       title: 回報問題／改進地圖
       how_to_help:
@@ -2534,6 +2560,7 @@ zh-TW:
         title: IRC
         description: '邀請您自己加入 OpenStreetMap US Slack 工作區，並加入 #openhistoricalmap 頻道。'
       wiki:
+        title: Wiki
         description: 瀏覽 wiki，取得詳盡的開放街圖文件。
     potlatch:
       removed: 您預設的 OpenHistoricalMap 編輯器是設定為 Potlatch。但因為 Adobe Flash Player 已終止維護，Potlatch
@@ -2742,6 +2769,10 @@ zh-TW:
       image_dimensions_html: 圖片會顯示成 %{width} x %{height} %{layer}圖層
       download: 下載
       downloading: 正在下載…
+  webgl_error_panes:
+    show:
+      compact_message: 這份地圖需要啟用 WebGL 功能。
+      read_more_about_webgl: 閱讀更多
   traces:
     visibility:
       private: 私人 (以匿名方式分享，節點無順序)
@@ -3056,6 +3087,8 @@ zh-TW:
       contributions:
         one: 去年有 %{count} 次貢獻
         other: 去年有 %{count} 次貢獻
+      grant:
+        importer: 授予匯入員權限
     sidebar_section:
       home_location: 住家位置
       company: 公司
@@ -3525,7 +3558,7 @@ zh-TW:
     home:
       marker_title: 我的住家位置
       not_set: 您的帳號尚未設定住家位置
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: 於 %{date} 未有貢獻
         contributions:
