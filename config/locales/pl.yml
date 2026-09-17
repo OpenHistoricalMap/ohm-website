@@ -315,6 +315,7 @@ pl:
       microsoft: Microsoft
       github: GitHub
       wikipedia: Wikipedia
+      openstreetmap: OpenStreetMap
   api:
     notes:
       comment:
@@ -342,6 +343,7 @@ pl:
   accounts:
     show:
       title: Zmiana ustawień konta
+      my_account: Moje konto
       current email address: Aktualny adres e-mail
       external auth: Zewnętrzne uwierzytelnienie
       contributor_terms:
@@ -350,17 +352,22 @@ pl:
         agreed_with_pd: Zadeklarowałeś, że swoje edycje publikujesz w domenie publicznej.
         link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: co to jest?
+        review_and_accept: Przejrzyj i zaakceptuj Warunki
+        consider_pd: Rozważ domenę publiczną
       terms_of_use:
         heading: Warunkom użytkowania
+        review: Przejrzyj Warunki
+        review_and_accept: Przejrzyj i zaakceptuj Warunki
       save changes button: Zapisz zmiany
       delete_account: Usuń konto...
     go_public:
       heading: 'Edycje publiczne:'
-      currently_not_public: Twoje edycje są obecnie anonimowe i inni nie mogą ci wysyłać
-        wiadomości ani zobaczyć twojej lokalizacji. Aby pokazać swoje edycje i umożliwić
-        innym kontakt z tobą przez stronę, kliknij przycisk poniżej.
+      currently_not_public: Twoje edycje są obecnie anonimowe i inni nie mogą Ci wysyłać
+        wiadomości ani zobaczyć Twojej lokalizacji. Aby pokazać swoje edycje i umożliwić
+        innym kontakt z Tobą przez stronę, kliknij przycisk poniżej.
       only_public_can_edit: Od czasu zmiany API na wersję 0.6 tylko użytkownicy publiczni
         mogą edytować dane mapy.
+      find_out_why_html: (%{link}).
       find_out_why: dowiedz się, dlaczego
       email_not_revealed: Twój adres e-mail nie będzie wyświetlany publicznie.
       not_reversible: Tej akcji nie można cofnąć, a wszyscy nowi użytkownicy są teraz
@@ -377,7 +384,7 @@ pl:
         title: Usuń moje konto
         warning: Uwaga! Usunięcie konta jest ostateczne i nie można go cofnąć.
         delete_account: Usuń konto
-        delete_profile: Informacje o twoim profilu, w tym twój awatar, opis i lokalizacja
+        delete_profile: Informacje o Twoim profilu, w tym Twój awatar, opis i lokalizacja
           zostaną usunięte.
         delete_display_name: Twoja wyświetlana nazwa zostanie usunięta i będzie mogła
           być użyta przez inne konta.
@@ -429,6 +436,9 @@ pl:
           nowych Warunków uczestnictwa. Więcej informacji możesz znaleźć %{terms_declined_link}.
         terms_declined_link: na tej stronie
         terms_declined_url: https://wiki.openstreetmap.org/wiki/Contributor_Terms_Declined
+    pd_declarations:
+      show:
+        confirm: Potwierdź
   browse:
     deleted_ago_by_html: Usunięte %{time_ago} przez %{user}
     edited_ago_by_html: Edytowane %{time_ago} przez %{user}
@@ -519,6 +529,8 @@ pl:
       telephone_link: Zadzwoń pod %{phone_number}
       colour_preview: Podgląd koloru %{colour_value}
       email_link: E-mail %{email}
+    versions_navigation:
+      versions_label: 'Wersje:'
   feature_queries:
     show:
       title: Dane obiektów
@@ -533,6 +545,8 @@ pl:
         title_html: 'Historia linii: %{name}'
       relation:
         title_html: 'Historia relacji: %{name}'
+      older_versions: Starsze wersje
+      newer_versions: Nowsze wersje
     actions:
       view_redacted_data: Pokaż poprawione dane
       view_redaction_message: Pokaż wiadomość poprawki
@@ -586,6 +600,8 @@ pl:
       no_more: Nie odnaleziono więcej zestawów zmian.
       no_more_area: Brak zestawów zmian na tym obszarze.
       no_more_user: Brak zestawów zmian tego użytkownika.
+      older_changesets: Starsze zestawy zmian
+      newer_changesets: Nowsze zestawy zmian
       feed:
         title: Zestaw zmian %{id}
         title_comment: Zestaw zmian %{id} - %{comment}
@@ -614,8 +630,11 @@ pl:
       changesetxml: XML w formacie zestawu zmian
       osmchangexml: XML w formacie osmChange
     paging_nav:
+      nodes_title: Węzły
       nodes_paginated: Węzły (%{x}-%{y} z %{count})
+      ways_title: Linie
       ways_paginated: Linie (%{x}-%{y} z %{count})
+      relations_title: Relacje
       relations_paginated: Relacje (%{x}-%{y} z %{count})
     timeout:
       sorry: Niestety, pobieranie listy żądanych zestawów zmian trwało zbyt długo.
@@ -1742,10 +1761,10 @@ pl:
     message_notification:
       subject: '[OpenHistoricalMap] %{message_title}'
       hi: Cześć, %{to_user},
-      header: '%{from_user} wysłał do ciebie wiadomość z OpenHistoricalMap o temacie
+      header: '%{from_user} wysłał(a) do Ciebie wiadomość z OpenHistoricalMap o temacie
         %{subject}:'
-      header_html: '%{from_user} wysłał do ciebie wiadomość z OpenHistoricalMap o
-        temacie %{subject}:'
+      header_html: '%{from_user} wysłał(a) do Ciebie wiadomość z OpenHistoricalMap
+        o temacie %{subject}:'
       footer: Możesz również przeczytać wiadomość na %{readurl} i wysłać wiadomość
         do autora na %{replyurl}
       footer_html: Możesz również przeczytać wiadomość na %{readurl} i wysłać wiadomość
@@ -1777,9 +1796,9 @@ pl:
       subject: '[OpenHistoricalMap] Witamy w OpenHistoricalMap'
       greeting: Cześć!
       created: Ktoś (mamy nadzieję, że ty) właśnie założył konto w %{site_url}.
-      confirm: 'Musimy się upewnić, że ta prośba pochodzi od ciebie, dlatego kliknij
-        łącze poniżej, aby potwierdzić założenie konta:'
-      welcome: Po potwierdzeniu konta dostarczymy ci dodatkowych informacji o tym,
+      confirm: 'Musimy się upewnić, że ta prośba pochodzi od Ciebie, dlatego kliknij
+        link poniżej, aby potwierdzić założenie konta:'
+      welcome: Po potwierdzeniu konta dostarczymy Ci dodatkowych informacji o tym,
         jak zacząć.
     email_confirm:
       subject: '[OpenHistoricalMap] Potwierdź swój e-mail'
@@ -1798,21 +1817,21 @@ pl:
       anonymous: Anonimowy użytkownik
       greeting: Cześć,
       commented:
-        subject_own: '[OpenHistoricalMap] %{commenter} skomentował twoją uwagę'
-        subject_other: '[OpenHistoricalMap] %{commenter} skomentował interesującą
-          cię uwagę'
+        subject_own: '[OpenHistoricalMap] %{commenter} skomentował(a) Twoją uwagę'
+        subject_other: '[OpenHistoricalMap] %{commenter} skomentował(a) interesującą
+          Cię uwagę'
         your_note: '%{commenter} zostawił komentarz do jednej z twoich uwag na mapie
           w lokalizacji: %{place}.'
         your_note_html: '%{commenter} zostawił komentarz do jednej z twoich uwag na
           mapie w lokalizacji: %{place}.'
-        commented_note: '%{commenter} zostawił komentarz do skomentowanej przez ciebie
-          uwagi. Znajduje się ona w położeniu %{place}.'
-        commented_note_html: '%{commenter} zostawił komentarz do skomentowanej przez
-          ciebie uwagi. Znajduje się ona w położeniu %{place}.'
+        commented_note: '%{commenter} zostawił(a) komentarz do skomentowanej przez
+          Ciebie uwagi. Znajduje się ona w położeniu %{place}.'
+        commented_note_html: '%{commenter} zostawił(a) komentarz do skomentowanej
+          przez Ciebie uwagi. Znajduje się ona w położeniu %{place}.'
       closed:
-        subject_own: '[OpenHistoricalMap] %{commenter} rozwiązał twoją uwagę'
-        subject_other: '[OpenHistoricalMap] %{commenter} rozwiązał interesującą cię
-          uwagę'
+        subject_own: '[OpenHistoricalMap] %{commenter} rozwiązał(a) Twoją uwagę'
+        subject_other: '[OpenHistoricalMap] %{commenter} rozwiązał(a) interesującą
+          Cię uwagę'
         your_note: '%{commenter} rozwiązał jedną z twoich uwag na mapie w lokalizacji:
           %{place}.'
         your_note_html: '%{commenter} rozwiązał jedną z twoich uwag na mapie w lokalizacji:
@@ -1822,17 +1841,18 @@ pl:
         commented_note_html: 'Użytkownik %{commenter} rozwiązał skomentowaną uwagę.
           Znajduje się ona w położeniu: %{place}.'
       reopened:
-        subject_own: '[OpenHistoricalMap] %{commenter} ponownie aktywował twoją uwagę'
-        subject_other: '[OpenHistoricalMap] %{commenter} ponownie aktywował interesującą
-          cię uwagę'
+        subject_own: '[OpenHistoricalMap] %{commenter} ponownie aktywował(a) Twoją
+          uwagę'
+        subject_other: '[OpenHistoricalMap] %{commenter} ponownie aktywował(a) interesującą
+          Cię uwagę'
         your_note: '%{commenter} ponownie aktywował jedną z twoich uwag na mapie w
           lokalizacji: %{place}'
         your_note_html: '%{commenter} ponownie aktywował jedną z twoich uwag na mapie
           w lokalizacji: %{place}'
-        commented_note: '%{commenter} ponownie aktywował skomentowaną przez ciebie
+        commented_note: '%{commenter} ponownie aktywował(a) skomentowaną przez Ciebie
           uwagę. Znajduje się ona w położeniu %{place}.'
-        commented_note_html: '%{commenter} ponownie aktywował skomentowaną przez ciebie
-          uwagę. Znajduje się ona w położeniu %{place}.'
+        commented_note_html: '%{commenter} ponownie aktywował(a) skomentowaną przez
+          Ciebie uwagę. Znajduje się ona w położeniu %{place}.'
       details: 'Więcej informacji na temat uwagi można znaleźć pod adresem: %{url}.'
       details_html: 'Więcej informacji na temat uwagi można znaleźć pod adresem: %{url}.'
     changeset_comment_notification:
@@ -1864,7 +1884,7 @@ pl:
   confirmations:
     confirm:
       heading: Sprawdź swoją skrzynkę e-mail!
-      introduction_1: Wysłaliśmy ci e-mail z potwierdzeniem.
+      introduction_1: Wysłaliśmy Ci wiadomość e-mail z potwierdzeniem.
       introduction_2: Potwierdź swoje konto, klikając na link w wiadomości i zacznij
         mapować.
       press confirm button: Proszę kliknąć poniższy przycisk, aby aktywować konto.
@@ -1886,8 +1906,8 @@ pl:
       confirmation_sent: Wysłaliśmy nową wiadomość z potwierdzeniem na %{email} i
         jak tylko aktywujesz swoje konto, będziesz mógł zacząć edytować mapę.
       whitelist: Jeśli używasz systemu antyspamowego, upewnij się, że do swojej białej
-        listy dodałeś adres %{sender}. Dzięki temu będziemy mogli skontaktować się
-        z tobą bez problemów.
+        listy dodano adres %{sender}. Dzięki temu będziemy mogli skontaktować się
+        z Tobą bez problemów.
     gravatar:
       disabled: Wyłączono Gravatara.
       enabled: Włączono wyświetlanie Gravatara.
@@ -1990,7 +2010,7 @@ pl:
       help_text: Proszę wprowadzić adres e-mail używany do logowania. Zostanie wysłany
         na niego odnośnik służący do wyczyszczenia hasła.
     create:
-      send_paranoid_instructions: Jeśli twój adres e-mail istnieje w naszej bazie
+      send_paranoid_instructions: Jeśli Twój adres e-mail istnieje w naszej bazie
         danych, otrzymasz link do odzyskania hasła na swój adres e-mail w ciągu kilku
         minut.
     edit:
@@ -2173,7 +2193,7 @@ pl:
       remote_failed: Nieudane edytowanie – proszę sprawdzić, czy program JOSM lub
         Merkaartor jest uruchomiony i funkcja Remote Control jest włączona
     not_public_flash:
-      not_public: Nie ustawiłeś, aby twoje edycje były publiczne.
+      not_public: Nie ustawiono, aby Twoje edycje były publiczne.
       not_public_description_html: W tym trybie nie można już zmieniać mapy. Można
         zmienić je na publiczne na %{user_page}.
       user_page_link: stronie użytkownika
@@ -2296,7 +2316,7 @@ pl:
           nie kopiuj z innych map (zarówno tych papierowych, jak i online).%{doesnt}
       basic_terms:
         title: Podstawowe zasady mapowania
-        paragraph_1: OpenHistoricalMap ma własny slang. Oto kilka słów, które ci się
+        paragraph_1: OpenHistoricalMap ma własny slang. Oto kilka słów, które Ci się
           przydadzą.
         an_editor_html: '%{editor} to program lub strona internetowa, za pomocą których
           można edytować mapę.'
@@ -2642,7 +2662,7 @@ pl:
   oauth2_authorizations:
     new:
       title: Wymagana autoryzacja
-      introduction: Upoważnić %{application} do dostępu do twojego konta z następującymi
+      introduction: Upoważnić %{application} do dostępu do Twojego konta z następującymi
         uprawnieniami?
       authorize: Autoryzuj
       deny: Odmów
@@ -2666,7 +2686,7 @@ pl:
       tab_title: Rejestracja
       signup_to_authorize_html: Zaloguj się do OpenHistoricalMap, aby uzyskać dostęp
         do %{client_app_name}.
-      no_auto_account_create: Niestety nie możemy aktualnie stworzyć ci konta automatycznie.
+      no_auto_account_create: Niestety nie możemy aktualnie utworzyć Ci konta automatycznie.
       please_contact_support_html: Skontaktuj się z %{support_link} w celu umówienia
         się na założenie konta – postaramy się rozpatrzyć prośbę jak najszybciej.
       support: supportem
@@ -2750,7 +2770,7 @@ pl:
       confirm: Potwierdź
       report: zgłoś tego użytkownika
     go_public:
-      flash success: Wszystkie twoje edycje są od teraz publiczne i jesteś uprawniony
+      flash success: Wszystkie Twoje edycje są od teraz publiczne i masz uprawnienia
         do edycji.
     issued_blocks:
       show:
@@ -3007,9 +3027,9 @@ pl:
       disappear_date_html: Ta rozwiązana uwaga zniknie z mapy za %{disappear_in}.
     new:
       title: Nowa uwaga
-      intro: Zauważyłeś błąd lub brak czegoś? Daj znać innym mapującym, aby mogli
-        to poprawić. Przesuń znacznik do właściwej pozycji i opisz problem. Jeśli
-        podasz źródła lub link do zdjęć, twoja uwaga będzie szybciej rozwiązana.
+      intro: Widzisz błąd lub brak czegoś? Daj znać innym mapującym, aby mogli to
+        poprawić. Przesuń znacznik do właściwej pozycji i opisz problem. Jeśli podasz
+        źródła lub link do zdjęć, Twoja uwaga będzie szybciej rozwiązana.
       anonymous_warning_html: Nie jesteś zalogowany. %{log_in} lub %{sign_up}, jeśli
         chcesz otrzymywać aktualizacje tej uwagi.
       anonymous_warning_log_in: Zaloguj się

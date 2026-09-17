@@ -18,6 +18,7 @@
 # Author: Grin
 # Author: Hanna Tardos
 # Author: Kempelen
+# Author: Koko1998
 # Author: Leiric
 # Author: Macofe
 # Author: McDutchie
@@ -88,7 +89,7 @@ hu:
       message: Üzenet
       node: Pont
       node_tag: Pont címkéje
-      note: jegyzet
+      note: Jegyzet
       old_node: Régi pont
       old_node_tag: Régi pont címkéje
       old_relation: Régi kapcsolat
@@ -119,8 +120,7 @@ hu:
         support_url: Támogatás URL
         allow_read_prefs: felhasználói beállítások elolvasása
         allow_write_prefs: felhasználói beállításaik módosítása
-        allow_write_diary: naplóbejegyzések és hozzászólások készítése és ismerősök
-          hozzáadása
+        allow_write_diary: naplóbejegyzések és hozzászólások készítése
         allow_write_api: a térkép módosítása
         allow_read_gpx: magán GPS-nyomvonalaik megtekintése
         allow_write_gpx: GPS-nyomvonalak feltöltése
@@ -1467,7 +1467,7 @@ hu:
           "yes": Alagút
         water:
           lake: Tó
-          reservoir: víztározó
+          reservoir: Víztározó
         waterway:
           artificial: Mesterséges vízfolyás
           boatyard: Hajótelep
@@ -1488,7 +1488,7 @@ hu:
           weir: Bukógát
           "yes": Vízfolyás
       admin_levels:
-        level2: Országhatár
+        level2: Nemzetközi határ
         level3: Térséghatár
         level4: Tartományhatár
         level5: Régióhatár
@@ -2069,7 +2069,7 @@ hu:
         more_2_1_api_usage_policy: API-felhasználási irányelvek
         more_2_1_tile_usage_policy: csempefelhasználási irányelvek
         more_2_1_nominatim_usage_policy: a Nominatim felhasználási irányelvei
-        contributors_title_html: Közreműködőink
+        contributors_title_html: Köszönetnyilvánítás
         contributors_intro_html: 'Több ezer egyéni közreműködőnk van. További, szabadon
           elérhető adatokat is felhasználunk nemzeti térkép intézetektől és más forrásokból,
           többek között:'
@@ -2290,13 +2290,13 @@ hu:
         subway: Metró
         ferry: Komp
         light_rail: HÉV
-        tram: villamos
+        tram: Villamos
         trolleybus: Trolibusz
         bus: Busz
         cable_car: Nagykabinos felvonó
-        chair_lift: függőszékes felvonó
+        chair_lift: Függőszékes felvonó
         runway: Kifutópálya
-        taxiway: gurulóút
+        taxiway: Gurulóút
         apron: Forgalmi előtér
         admin: Közigazgatási határ
         capital: Főváros
@@ -2307,7 +2307,7 @@ hu:
         wood: Természetes erdő
         farmland: Mezőgazdasági terület
         grass: Fű
-        meadow: rét
+        meadow: Rét
         bare_rock: Csupasz szikla
         sand: Homok
         golf: Golfpálya
@@ -2334,7 +2334,7 @@ hu:
         reserve: Természetvédelmi terület
         military: Katonai terület
         school: Iskola
-        university: egyetem
+        university: Egyetem
         hospital: Kórház
         building: Fontosabb épület
         station: Vasútállomás
@@ -2342,7 +2342,7 @@ hu:
         subway_station: Metrómegálló
         tram_stop: Villamosmegálló
         summit: Hegycsúcs
-        peak: magaslat
+        peak: Magaslat
         tunnel: Szaggatott szegély = alagút
         bridge: Fekete szegély = híd
         private: Behajtás csak engedéllyel
@@ -2513,7 +2513,7 @@ hu:
       openid: Jelentkezz be az OpenHistoricalMap használatával!
       read_prefs: Felhasználói beállítások elolvasása
       write_prefs: Felhasználói beállítások módosítása
-      write_diary: Naplóbejegyzések és hozzászólások készítése, és ismerősök hozzáadása
+      write_diary: Naplóbejegyzések és hozzászólások készítése
       write_api: A térkép módosítása
       read_gpx: Magán nyomvonalak megtekintése
       write_gpx: GPS-nyomvonalak feltöltése
@@ -2706,7 +2706,7 @@ hu:
         summary_no_ip_html: '%{name} letrejött ekkor: %{date}'
     changeset_comments:
       page:
-        changeset: módosításkészlet
+        changeset: Módosításkészlet
         when: Mikor
         comment: Hozzászólás
     diary_comments:
@@ -2911,8 +2911,9 @@ hu:
       intro: Hibát találtál vagy valami hiányzik? Tudasd a többi térképezővel, hogy
         javítani tudjuk. Mozgasd a jelölőt a megfelelő helyre, és minél pontosabban
         írd le a problémát.
-      anonymous_warning_html: Nem vagy  bejelentkezve. Kérlek %{log_in} vagy %{sign_up},
-        ha frissítéseket szeretne kapni a hozzászólásodról.
+      anonymous_warning_html: Nem vagy bejelentkezve. Kérjük, %{log_in} vagy %{sign_up},
+        hogy frissítéseket kapj a jegyzeteidhez, és segíthess a többi térképezőnek
+        megoldani őket.
       anonymous_warning_log_in: jelentkezz be
       anonymous_warning_sign_up: regisztrálj
       advice: A jegyzeted nyilvános és használható a térkép frissítéséhez, ezért ne
@@ -3041,7 +3042,7 @@ hu:
         via_point_without_exit: (ponton keresztül)
         follow_without_exit: Kövesse %{name}
         roundabout_without_exit: A körforgalomnál menjen ki %{name} felé
-        leave_roundabout_without_exit: Hagyja el körforgalmat - %{name}
+        leave_roundabout_without_exit: Hagyja el a körforgalmat - %{name}
         stay_roundabout_without_exit: Maradjon a körforgalomban - %{name}
         start_without_exit: 'Induljon a következőn: %{name}'
         destination_without_exit: Érkezés a célhoz
