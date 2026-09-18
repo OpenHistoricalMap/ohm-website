@@ -18,11 +18,6 @@
 # Author: 아라
 # Do not edit by hand.
 aln:
-  activerecord:
-    attributes:
-      client_application:
-        callback_url: Callback URL
-        support_url: Asistenca URL
   diary_entries:
     feed:
       all:

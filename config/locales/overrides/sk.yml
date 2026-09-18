@@ -44,21 +44,6 @@ sk:
         read and accept with tou: Prečítajte si zmluvu s prispievateľom a podmienky používania, po dokončení začiarknite obe políčka a potom stlačte tlačidlo pokračovať.
         tou_explain:
           html: Tieto %{tou_link} upravujú používanie webovej stránky a ďalšej infraštruktúry poskytovanej OpenHistoricalMap. Kliknite na odkaz, prečítajte si text a vyjadrite svoj súhlas.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: čítať ich súkromné GPS stopy
-        allow_read_prefs: čítať ich používateľské nastavenia
-        allow_write_api: upravovať mapu
-        allow_write_changeset_comments: komentovať sady zmien
-        allow_write_diary: vytvárať záznamy v denníku a komentáre
-        allow_write_gpx: nahrávať GPS stopy
-        allow_write_notes: meniť poznámky
-        allow_write_prefs: upraviť ich používateľské nastavenia
-        callback_url: URL pre spätné volanie (callback)
-        name: Meno (povinné)
-        support_url: URL s podporou
-        url: URL adresa hlavnej aplikácie (vyžaduje sa)
   api:
     notes:
       rss:
@@ -88,7 +73,6 @@ sk:
       brief: "%{year}"
       brief_bce: "%{year} pred n. l."
       brief_ce: "%{year} n. l."
-      contribution_calendar: "%-d. %B"
       range: "%{start} – %{end}"
   diary_entries:
     comments:
@@ -312,8 +296,6 @@ sk:
         A vy si pamätáte, ako kedysi vyzerala vaša štvrť.
         Toto všetko patrí na OpenHistoricalMap.
       scope_title: Veľké aj malé, kedysi aj dnes
-    communities:
-      lede_text: Ľudia z celého sveta prispievajú do alebo používajú OpenHistoricalMap. Zatiaľ čo mnohí sa zúčastňujú ako jednotlivci, iní vytvorili komunity. Tieto skupiny majú rôznu veľkosť a predstavujú geografické oblasti od malých miest až po veľké regióny s viacerými krajinami. Môžu byť aj formálne alebo neformálne.
     copyright:
       legal_babble:
         attribution_example:

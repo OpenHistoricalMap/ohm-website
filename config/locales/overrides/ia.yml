@@ -25,21 +25,6 @@ ia:
         read and accept with tou: Per favor, lege le accordo de contributor e le conditiones de uso, marca ambe quadratos quando tu es finite e pois preme le button Continuar.
         tou_explain:
           html: Iste %{tou_link} governa le uso del sito web e altere infrastructura fornite per OpenHistoricalMap. Per favor, clicca sur le ligamine, lege le texto, e declara te de accordo.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: leger su tracias GPS private
-        allow_read_prefs: leger su preferentias de usator
-        allow_write_api: modificar le carta
-        allow_write_changeset_comments: commentar gruppos de modificationes
-        allow_write_diary: crear entratas de diario e commentos
-        allow_write_gpx: incargar tracias GPS
-        allow_write_notes: modificar notas
-        allow_write_prefs: modificar su preferentias de usator
-        callback_url: URL de retorno
-        name: Nomine (obligatori)
-        support_url: URl de supporto
-        url: URL principal del application (obligatori)
   api:
     notes:
       rss:
@@ -64,7 +49,6 @@ ia:
       brief: "%{year}"
       brief_bce: "%{year} aEC"
       brief_ce: "%{year} EC"
-      contribution_calendar: "%-d de %B"
       range: "%{start} – %{end}"
   diary_entries:
     comments:
@@ -268,11 +252,6 @@ ia:
         E tu te rememora como tu quartiero esseva in le passato.
         Tote isto ha su loco in OpenHistoricalMap.
       scope_title: Grande e micre, alora e ora
-    communities:
-      lede_text: |-
-        Personas de tote le mundo usa o contribue a OpenHistoricalMap. Benque multes participa como individuos, alteres ha formate communitates.
-        Tal gruppos varia de grandor e representa areas geographic inter micre villages e grande regiones multinational.
-        Illos pote tamben esser formal o informal.
     copyright:
       legal_babble:
         attribution_example:

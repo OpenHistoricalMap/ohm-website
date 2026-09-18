@@ -14,11 +14,6 @@ dsb:
     show:
       contributor_terms:
         link text: Co to jo?
-  activerecord:
-    attributes:
-      client_application:
-        callback_url: URL slědkwołanja
-        support_url: URL pódpěry
   api:
     notes:
       rss:

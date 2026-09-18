@@ -21,20 +21,6 @@ ta:
     show:
       contributor_terms:
         link text: இது என்ன?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: அவர்களின் தனிப்பட்ட GPS தடங்களைப் படிக்கவும்
-        allow_read_prefs: அவர்களின் பயனர் விருப்பங்களை வாசி
-        allow_write_api: வரைபடத்தை மாற்றவும்
-        allow_write_diary: நாட்குறிப்பு உள்ளீடுகள், கருத்துகள் மற்றும் நண்பர்களை உருவாக்குங்கள்
-        allow_write_gpx: GPS தடங்களை பதிவேற்றவும்
-        allow_write_notes: குறிப்புகளை மாற்றவும்
-        allow_write_prefs: அவர்களின் பயனர் விருப்பங்களை மாற்றவும்
-        callback_url: திரும்ப அழைக்கும் URL
-        name: பெயர் (தேவை)
-        support_url: URL ஐ ஆதரிக்கவும்
-        url: முதன்மை பயன்பாட்டு URL (தேவை)
   diary_entries:
     profile_diaries:
       date_label: நாள்

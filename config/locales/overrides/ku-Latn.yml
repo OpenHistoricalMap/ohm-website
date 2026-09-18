@@ -17,20 +17,6 @@ ku-Latn:
       contributor_terms:
         link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
         link text: Ev çi ye?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: şopên wan ên GPSê yên xisûsî bixwîne
-        allow_read_prefs: tercîhên wan ên bikarhêneriyê bixwîne
-        allow_write_api: nexşeyê biguherîne
-        allow_write_diary: rojnivîsk, şîroveyan çêke û ji xwe re hevalan hevalan çêke
-        allow_write_gpx: şopên GPSê bar bike
-        allow_write_notes: notan biguherîne
-        allow_write_prefs: tercîhên wan ên bikarhêneriyê biguherîne
-        callback_url: Lînka paşve lêgerînê
-        name: Nav (Hewce ye)
-        support_url: Lînka piştgirîkirinê
-        url: URLya Sepana Sereke (Hewce ye)
   api:
     notes:
       rss:
@@ -86,10 +72,6 @@ ku-Latn:
   site:
     about:
       lede_text: OpenHistoricalMap ji alî civata nexşesazên ku ji seransera dinyayê der barê kolanan, kafeyan, stasyonên trênan û zêdetirê wan de daneyan tevlî vir dike û diparêze.
-    communities:
-      lede_text: |-
-        Ji temamê dinyayê însan beşdariya OpenHistoricalMapê dikin an wê bi kar tînin.
-        Hinek kes wek şexsî tevlî dibin, hinek kes jî civatan ava kirine. Ev kom ji mezinehiyên cuda pêk tên û ji qezayên biçûk heya herêmên pir-welatî cografyayên mezin û biçûk temsîl dikin. Herwiha mimkin e ku fermî an nefermî bin.
     copyright:
       legal_babble:
         contributors_footer_2_html: Daxilbûna daneyan a di OpenHistoricalMapê de nayê maneya ku peydakera daneyan yê eslî OpenHistoricalMapê teswîb dike, garantiyekî temîn dike an jî berpirsîyariyekê qebûl dike.

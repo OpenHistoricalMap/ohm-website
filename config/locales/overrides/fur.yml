@@ -13,16 +13,6 @@ fur:
     show:
       contributor_terms:
         link text: ce isal chest?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: lei i siei percors GPS privâts
-        allow_read_prefs: lei lis sôs preferencis dal utent
-        allow_write_api: modificâ la mape
-        allow_write_diary: creâ vôs dal diari e coments
-        allow_write_gpx: cjamâ percors GPS
-        allow_write_notes: cambiâ lis notis
-        allow_write_prefs: modificâ lis sôs preferencis dal utent
   api:
     notes:
       rss:
@@ -36,7 +26,6 @@ fur:
     formats:
       brief_bce: "%{year} pdC"
       brief_ce: "%{year} ddC"
-      contribution_calendar: "%-d %B"
   diary_entries:
     comments:
       title: Entrâts di diari OpenHistoricalMap

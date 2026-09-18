@@ -47,21 +47,6 @@ he:
       contributor_terms:
         link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: מה זה?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: לקרוא את הקלטות ה־GPS הפרטיות שלהם
-        allow_read_prefs: לקרוא את העדפות המשתמש שלהם
-        allow_write_api: לשנות את המפה
-        allow_write_changeset_comments: להעיר על ערכות שינויים
-        allow_write_diary: ליצור רשומות ביומן והערות
-        allow_write_gpx: להעלות הקלטות GPS
-        allow_write_notes: לשנות הערות
-        allow_write_prefs: לשנות את העדפות המשתמש שלהם
-        callback_url: כתובת קריאה חוזרת (callback)
-        name: שם (נדרש)
-        support_url: כתובת לתמיכה
-        url: כתובת יישום ראשית (נדרשת)
   api:
     notes:
       rss:
@@ -168,8 +153,6 @@ he:
       legal_2_html: |-
         נא %{contact_team_link}
         אם יש לך שאלות על רישוי, זכויות יוצרים או נושאים משפטיים אחרים.
-    communities:
-      lede_text: אנשים מכל רחבי העולם תורמים או משתמשים ב־ OpenHistoricalMap. בעוד שרבים משתתפים כיחידים, אחרים יצרו קהילות. הקבוצות האלו מגיעות במגוון גדלים ומייצגות אזורים גאוגרפיים מעיירות קטנות ועד אזורים גדולים מרובי מדינות. הן יכולות להיות רשמיות או לא רשמיות.
     copyright:
       legal_babble:
         contributors_footer_2_html: |-

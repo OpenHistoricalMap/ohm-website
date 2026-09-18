@@ -46,20 +46,6 @@ da:
       contributor_terms:
         link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
         link text: hvad er dette?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: læse deres private GPS-spor
-        allow_read_prefs: læse deres brugerpræferencer
-        allow_write_api: ændre kortet
-        allow_write_diary: oprette blogindlæg, kommentarer og indgå venskaber
-        allow_write_gpx: overføre GPS-spor
-        allow_write_notes: ændre bemærkninger
-        allow_write_prefs: ændre deres brugeralternativer
-        callback_url: Callback URL
-        name: Navn (Påkrævet)
-        support_url: Support URL
-        url: Hovedapplikations-URL (påkrævet)
   api:
     notes:
       rss:
@@ -147,10 +133,6 @@ da:
       legal_1_privacy_policy: Privatlivs-poltik
       legal_1_terms_of_use: Brugsvilkår
       legal_2_html: Du bedes %{contact_team_link} hvis du har spørgsmål om licensering, ophavsret eller andre juridiske spørgsmål og problemstillinger.
-    communities:
-      lede_text: |-
-        Mennesker fra hele verden bidrager til og bruger OpenHistoricalMap. Mens mange deltager individuelt, har andre dannet fællesskaber. Disse grupper findes i mange størrelser, og repræsenterer brugere lige fra små byer til store regioner der spænder over flere lande.
-        De kan også både være formelle og mere uformelle.
     copyright:
       legal_babble:
         contributors_footer_2_html: |-

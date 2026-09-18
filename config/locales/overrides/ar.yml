@@ -69,20 +69,6 @@ ar:
         read and accept with tou: تُرجَى قراءة اتفاقية المساهم وشروط الاستخدام، والتحقق من خانتي الاختيار عند الانتهاء، ثم اضغط على زر "متابعة".
         tou_explain:
           html: تُنظّم %{tou_link} والأحكام استخدام الموقع الإلكتروني والبنية التحتية الأخرى التي تُقدّمها OpenHistoricalMap. يُرجى النقر على الرابط وقراءة النص والموافقة عليه.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: قراءة آثار جي بي إس الخاصة بهم
-        allow_read_prefs: قراءة تفضيلات المستخدم الخاصة بهم
-        allow_write_api: تعديل الخريطة.
-        allow_write_diary: إنشاء إدخالات اليوميات والتعليقات
-        allow_write_gpx: رفع آثار جي بي إس.
-        allow_write_notes: تعديل الملاحظات.
-        allow_write_prefs: تعديل تفضيلات المستخدم الخاصة بهم
-        callback_url: رابط الرد
-        name: الاسم (مطلوب)
-        support_url: رابط الدعم
-        url: " مسار (URL) للتطبيق الرئيسي (مطلوب)"
   application:
     auth_providers:
       openstreetmap:

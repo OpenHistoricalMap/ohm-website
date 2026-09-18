@@ -27,14 +27,6 @@ hr:
     show:
       contributor_terms:
         link text: što je ovo?
-  activerecord:
-    attributes:
-      client_application:
-        allow_write_api: uredi kartu
-        allow_write_notes: izmijeni bilješke
-        callback_url: Callback URL
-        name: Naziv (obvezno)
-        support_url: Podrška URL
   api:
     notes:
       rss:

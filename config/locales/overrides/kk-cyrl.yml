@@ -12,21 +12,6 @@ kk-cyrl:
       contributor_terms:
         link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: бұл не?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: жеке GPS бағдарларын оқу
-        allow_read_prefs: қолданушы теңшеулерін оқу
-        allow_write_api: картаны өзгерту
-        allow_write_changeset_comments: Өңдеме дестелеріне комментарий қалдыру
-        allow_write_diary: күнделік жазбаларын және комментарий қалдыру
-        allow_write_gpx: GPS бағдар жүктеп салу
-        allow_write_notes: жазбаларды өзгерту
-        allow_write_prefs: қолданушы теңшеулерін өзгерту
-        callback_url: Кері шалу URL
-        name: Аты (міндетті)
-        support_url: Қолдау URL
-        url: Негізгі қолданба URL (міндетті)
   api:
     notes:
       rss:
@@ -44,7 +29,6 @@ kk-cyrl:
       brief: "%{year}"
       brief_bce: б.з.д. %{year}
       brief_ce: б.з. %{year}
-      contribution_calendar: "%B %-d"
       range: "%{start} – %{end}"
   geocoder:
     search_osm_nominatim:

@@ -86,21 +86,6 @@ ja:
         read and accept with tou: 貢献者同意と利用規約を読んで、読み終わりましたら、両方のチェックボックスをチェックし、次ボタンを押してください。
         tou_explain:
           html: これらの%{tou_link}では、OpenHistoricalMapが提供するウェブサイトおよびその他のインフラストラクチャの利用について定めています。リンクをクリックして通読し、文書に同意してください。
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: 非公開GPSトレースを読み込む
-        allow_read_prefs: 利用者設定を読み込む
-        allow_write_api: 地図を変更する
-        allow_write_changeset_comments: チェンジセットに関するコメント
-        allow_write_diary: 日記エントリを作成する・コメントする
-        allow_write_gpx: GPSトレースをアップロードする
-        allow_write_notes: メモを変更する
-        allow_write_prefs: 利用者設定を変更する
-        callback_url: コールバック URL
-        name: 名称（必須）
-        support_url: サポート URL
-        url: メインのアプリケーションの URL（必須）
   api:
     notes:
       rss:
@@ -121,7 +106,6 @@ ja:
       brief: "%{year}"
       brief_bce: 紀元前%{year}年
       brief_ce: 西暦 %{year}
-      contribution_calendar: "%B %-d"
       range: "%{start} – %{end}"
   diary_entries:
     comments:
@@ -201,12 +185,6 @@ ja:
       scope_html: |-
         帝国は興亡を繰り返します。氷河は消滅します。言語や宗教は地域から地域へと広がっていくものです。土がむきだしの小道はやがて幹線道路になり鉄道が開通したりして賑わいを集めたり、平屋の建物は減って高層ビルに置き換えられます。
         やがて、ふと思い出すのです、自分自身が過ごした昔の近所の様子を。これらをすべて記録するのが、OpenHistoricalMap（オープンストリートマップ）。
-    communities:
-      lede_text: |-
-        世界中の人びとが OpenHistoricalMap に貢献し、OpenHistoricalMap を使用しています。
-        多くは個人として参加していますが、コミュニティをつくる人たちもいます。
-        コミュニティにはさまざまなサイズがあり、小さな町から複数の国からなる大規模な地域まで多岐に渡る地理的範囲を表示しています。
-        コミュニティには公式のものも、非公式のものもあります。
     copyright:
       legal_babble:
         attribution_example:

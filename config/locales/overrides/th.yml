@@ -25,20 +25,6 @@ th:
     show:
       contributor_terms:
         link text: นี่คืออะไร?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: อ่านรอยทาง GPS ส่วนบุคคล
-        allow_read_prefs: อ่านการตั้งค่าของผู้ใช้
-        allow_write_api: แก้ไขแผนที่
-        allow_write_diary: สร้างรายการบันทึก ข้อคิดเห็น และพบเพื่อนใหม่
-        allow_write_gpx: อัปโหลดรอยทาง GPS
-        allow_write_notes: แก้ไขโน้ต
-        allow_write_prefs: แก้ไขการตั้งค่าของผู้ใช้
-        callback_url: ที่อยู่ URL เรียกกลับ
-        name: ชื่อ (ต้องมี)
-        support_url: ที่อยู่ URL สนับสนุน
-        url: ที่อยู่ URL แอปพลิเคชันหลัก (ต้องมี)
   api:
     notes:
       rss:

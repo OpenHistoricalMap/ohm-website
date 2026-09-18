@@ -25,21 +25,6 @@ is:
       show:
         tou_explain:
           html: Þessi %{tou_link} stýra notkuninni á vefsvæðinu ásamt öðrum stoðkerfum OpenHistoricalMap. Smelltu á tengilinn, lestu síðan og samþykktu textann.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: lesa einka-GPS-ferlana þeirra
-        allow_read_prefs: lesa notandastillingar þeirra
-        allow_write_api: breyta kortagögnunum
-        allow_write_changeset_comments: gera athugasemd við breytingarsett
-        allow_write_diary: búa til bloggfærslur og athugasemdir
-        allow_write_gpx: senda inn GPS ferla
-        allow_write_notes: breyta minnispunktum
-        allow_write_prefs: breyta notandastillingum þeirra
-        callback_url: Svarslóð
-        name: Nafn (krafist)
-        support_url: Slóð á aðstoð
-        url: Slóð á aðalforritið (nauðsynleg)
   api:
     notes:
       rss:
@@ -63,9 +48,6 @@ is:
     index:
       feed:
         cc0: Creative Commons CC0
-  date:
-    formats:
-      contribution_calendar: "%-d. %B"
   diary_entries:
     comments:
       description: Nýjustu bloggfærslur frá notendum OpenHistoricalMap
@@ -168,8 +150,6 @@ is:
         ef þú ert með spurningar eða beiðnir varðandi notkunarleyfi, höfundarrétt eða önnur lögfræðileg málefni.
       legal_3_osmf_trademarks_url: https://osmfoundation.org/wiki/Trademark_Policy
       open_data_2_copyright_license: Höfundarréttur og þakkir fyrir framlög
-    communities:
-      lede_text: "Fólk alls staðar að úr heiminum leggur sitt af mörkum til OpenHistoricalMap eða notar OpenHistoricalMap.\nÞó að margir taki þátt sem einstaklingar, hafa aðrir myndað samfélög.\nÞessir hópar eru af ýmsum stærðum og gerðum og geta haft á sinni könnu tiltekin landsvæði allt frá smábæjum til stórra fjölþjóðlegra svæða. \nÞau geta líka verið formleg eða óformleg."
     copyright:
       legal_babble:
         attribution_example:

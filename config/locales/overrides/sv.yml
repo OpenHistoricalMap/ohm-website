@@ -69,20 +69,6 @@ sv:
         read and accept with tou: Läs villkoren för bidragsgivare och användning, markera båda kryssrutor när du är klar och klicka på fortsätt.
         tou_explain:
           html: Dessa %{tou_link} beskriver villkoren för hur denna hemsida och andra infrastrukturer från OpenHistoricalMap får användas. Klicka på länken, läs och godkänn villkoren.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: läs deras privata GPS-spår
-        allow_read_prefs: läs deras användaralternativ
-        allow_write_api: ändra kartan
-        allow_write_diary: skapa dagboksinlägg och hitta vänner.
-        allow_write_gpx: ladda upp GPS-spår
-        allow_write_notes: ändra anteckningar
-        allow_write_prefs: ändra deras användaralternativ
-        callback_url: Återkopplingsadress
-        name: Namn (krävs)
-        support_url: Supportadress
-        url: Huvudapplikationsadress (obligatorisk)
   api:
     notes:
       rss:
@@ -174,8 +160,6 @@ sv:
       legal_2_html: |-
         Vänligen %{contact_team_link}
         om du har frågor om licensiering, upphovsrätt eller andra juridiska frågor.
-    communities:
-      lede_text: Människor från hela världen bidrar till eller använder OpenHistoricalMap. Medan många deltar som individer har andra bildat gemenskaper. Dessa grupper finns i en mängd olika storlekar och representerar geografier från små städer till stora regioner med flera länder. De kan också vara formella eller informella.
     copyright:
       legal_babble:
         attribution_example:

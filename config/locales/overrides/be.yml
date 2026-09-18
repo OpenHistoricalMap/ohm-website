@@ -32,20 +32,6 @@ be:
       contributor_terms:
         link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
         link text: што гэта?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: чытаць прыватныя GPS-трэкі
-        allow_read_prefs: чытаць параметры ўдзельніка
-        allow_write_api: змяняць карту
-        allow_write_diary: рабіць запісы ў дзённіку, каментаваць і заводзіць сяброў
-        allow_write_gpx: загружаць GPS-трэкі
-        allow_write_notes: змяняць нататкі
-        allow_write_prefs: змяняць параметры ўдзельніка
-        callback_url: URL-адрас зваротнага выкліку
-        name: Імя (абявязкова)
-        support_url: URL-адрас падтрымкі
-        url: Галоўны URL-адрас праграмы (абявязкова)
   api:
     notes:
       rss:
@@ -113,10 +99,6 @@ be:
       legal_1_privacy_policy: Палітыка прыватнасці
       legal_1_terms_of_use: Умовы карыстання
       legal_2_html: Калі ласка, %{contact_team_link}, калі ў вас ёсць пытанні адносна ліцэнзавання, аўтарскіх правоў або іншых юрыдычных пытаннях.
-    communities:
-      lede_text: |-
-        Людзі з усяго свету ўносяць свой уклад у OpenHistoricalMap або выкарыстоўваюць яго.
-        Многія ўдзельнічаюць паасобку, іншыя стварылі свае супольнасці. Супольнасці бываюць розных памераў і могуць прадстаўляць як невялікія гарады, так і цэлыя рэгіёны з некалькімі краінамі. Яны таксама могуць быць афіцыйнымі і неафіцыйнымі.
     copyright:
       legal_babble:
         contributors_footer_2_html: |-

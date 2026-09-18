@@ -20,20 +20,6 @@ kab:
     show:
       contributor_terms:
         link text: d acu-t wa?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: ɣer lǧerrat GPS usligen
-        allow_read_prefs: ɣeṛ ismenyifen n useqdac
-        allow_write_api: Ẓreg tagertilt
-        allow_write_diary: rnu inekcam n uwitay, iwenniten akken ad tgeḍ imeddukal
-        allow_write_gpx: azen lǧerrat GPS
-        allow_write_notes: beddel tizmilin
-        allow_write_prefs: beddel ismenyifen n useqdac
-        callback_url: Tansa URL n usmekti
-        name: Isem (D usfik)
-        support_url: Tansa URL n tallelt
-        url: URL n usnas agejdan (D usfik)
   api:
     notes:
       rss:

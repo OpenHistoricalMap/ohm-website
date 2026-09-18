@@ -71,20 +71,6 @@ tr:
         read and accept with tou: Lütfen katılımcı sözleşmesini ve kullanım koşullarını okuyun, bittiğinde her iki onay kutusunu işaretleyin ve ardından devam düğmesine basın.
         tou_explain:
           html: Bu %{tou_link}, OpenHistoricalMap tarafından sağlanan web sitesinin ve diğer altyapıların kullanımını yönetmektedir. Lütfen bağlantıya tıklayın, metni okuyun ve kabul edin.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: özel GPS izlerini oku
-        allow_read_prefs: kullanıcı tercihlerini okuyun
-        allow_write_api: haritayı değiştir
-        allow_write_diary: günlük girdileri ve yorumlar oluştur
-        allow_write_gpx: GPS izlerini yükle
-        allow_write_notes: notları değiştir
-        allow_write_prefs: kullanıcı tercihlerini değiştir
-        callback_url: Geri Arama Bağlantısı
-        name: Ad (Gerekli)
-        support_url: Destek Bağlantısı
-        url: Ana Uygulama URL'si (Gerekli)
   api:
     notes:
       rss:
@@ -182,13 +168,6 @@ tr:
       legal_1_terms_of_use: Kullanım Şartları
       legal_2_html: Lisanslama, telif hakkı veya diğer yasal sorularınız varsa lütfen %{contact_team_link}
       legal_3_osmf_trademarks_url: https://osmfoundation.org/wiki/Trademark_Policy
-    communities:
-      lede_text: |-
-        Dünyanın dört bir yanından insanlar OpenHistoricalMap'e katkıda bulunuyor veya onu kullanıyor.
-        Birçoğu bireysel olarak katılırken, diğerleri topluluklar oluşturmuştur.
-        Bu gruplar çeşitli boyutlarda olabilir ve küçük kasabalardan büyük çok
-        uluslu bölgelere kadar çeşitli coğrafyaları temsil edebilir.
-        Resmi veya gayriresmi de olabilirler.
     copyright:
       legal_babble:
         attribution_example:

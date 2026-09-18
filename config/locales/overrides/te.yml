@@ -20,20 +20,6 @@ te:
       contributor_terms:
         link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: ఇది ఏమిటి?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: వారు గోప్య GPS అనుసరణలను చదవండి
-        allow_read_prefs: వారి వాడుకరి అభిరుచులను చదవండి
-        allow_write_api: మ్యాపును సవరించండి
-        allow_write_diary: డైరీ ఎంట్రీలు, వ్యాఖ్యలు సృష్టించండి, మిత్రులను చేసుకోండి
-        allow_write_gpx: GPS అనుసరణలను ఎక్కించండి
-        allow_write_notes: గమనికలను సవరించు
-        allow_write_prefs: వారి వాడుకరి అభిరుచులను మార్చు
-        callback_url: కాల్‌బ్యాక్ URL
-        name: పేరు (ఆవశ్యకం)
-        support_url: సపోర్ట్ URL
-        url: ప్రధాన అనువర్తనం URL (ఆవశ్యకం)
   api:
     notes:
       rss:

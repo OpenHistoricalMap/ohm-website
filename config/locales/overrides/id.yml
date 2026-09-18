@@ -56,20 +56,6 @@ id:
     terms:
       show:
         read and accept with tou: Tolong baca persetujuan kontributor dan ketentuan penggunaan, centang kedua kotak centang ketika selesai lalu tekan tombol lanjutkan.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: baca jejak GPS pribadi mereka
-        allow_read_prefs: Baca pengaturan mereka sebagai pengguna.
-        allow_write_api: modifikasi peta
-        allow_write_diary: membuat entri buku harian, komentar dan berteman
-        allow_write_gpx: unggah jejak GPS
-        allow_write_notes: memodifikasi catatan
-        allow_write_prefs: memodifikasi pengaturan mereka sebagai pengguna
-        callback_url: Panggilan kembali URL
-        name: Nama (diperlukan)
-        support_url: URL Dukungan
-        url: URL Aplikasi Utama (diperlukan)
   api:
     notes:
       rss:
@@ -152,8 +138,6 @@ id:
       legal_1_privacy_policy: Kebijakan Privasi
       legal_1_terms_of_use: Ketentuan Penggunaan
       legal_2_html: Hubungi %{contact_team_link} bila Anda ingin tahu soal lisensi, hak cipta, atau persoalan hukum lainnya.
-    communities:
-      lede_text: Banyak orang dari berbagai negara turut memperkaya atau memanfaatkan OpenHistoricalMap. Ada yang sendiri-sendiri dan ada pula yang bersatu-padu membentuk kelompok. Kelompok ini beragam ukurannya, mulai dari kota kecil hingga daerah lintas negara; bentuknya formal atau informal.
     copyright:
       legal_babble:
         contributors_footer_2_html: Penyertaan data dalam OpenHistoricalMap tidak menyiratkan bahwa penyedia data yang asli mendukung OpenHistoricalMap, menyediakan jaminan, atau menerima tanggung jawab apa pun.

@@ -21,20 +21,6 @@ et:
     show:
       contributor_terms:
         link text: mis see on?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: lugeda tema isiklikke GPS-radu
-        allow_read_prefs: lugeda tema kasutajaeelistusi
-        allow_write_api: muuta kaarti
-        allow_write_diary: luua päevikusissekandeid, kommenteerida ja lisada sõpru
-        allow_write_gpx: laadida üles GPS-radu
-        allow_write_notes: muuta märkusi
-        allow_write_prefs: muuta tema kasutajaeelistusi
-        callback_url: Tagasihelistamise URL
-        name: Nimi (nõutav)
-        support_url: Toe URL
-        url: Pearakenduse URL (nõutav)
   api:
     notes:
       rss:
@@ -112,8 +98,6 @@ et:
       legal_2_html: |-
         Palun %{contact_team_link},
         kui sul on küsimusi litsentsimise, autoriõiguse või muude õiguslike teemade kohta.
-    communities:
-      lede_text: OpenHistoricalMapile teevad kaastööd inimesed üle maailma. Paljud neist osalevad üksikisikutena, teised on moodustanud kogukondi. Need on eri suuruses alates rühmadest, mis esindavad väikseid asulaid, kuni rühmadeni, mis esindavad riikideüleseid piirkondi. Need võivad olla nii ametlikud kui ka mitteametlikud.
     copyright:
       legal_babble:
         contributors_footer_2_html: |-

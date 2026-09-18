@@ -44,20 +44,6 @@ hu:
       contributor_terms:
         link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: mi ez?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: magán GPS-nyomvonalaik megtekintése
-        allow_read_prefs: felhasználói beállítások elolvasása
-        allow_write_api: a térkép módosítása
-        allow_write_diary: naplóbejegyzések és hozzászólások készítése
-        allow_write_gpx: GPS-nyomvonalak feltöltése
-        allow_write_notes: jegyzetek módosítása
-        allow_write_prefs: felhasználói beállításaik módosítása
-        callback_url: Visszahívási URL
-        name: Név (kötelező)
-        support_url: Támogatás URL
-        url: Fő alkalmazás URL-je (kötelező)
   api:
     notes:
       rss:
@@ -134,8 +120,6 @@ hu:
       legal_1_privacy_policy: Adatvédelmi irányelvek
       legal_1_terms_of_use: Felhasználási feltételek
       legal_2_html: Kérjük, %{contact_team_link}, ha licencekkel kapcsolatos, szerzői jogi vagy egyéb jogi kérdései vannak.
-    communities:
-      lede_text: Az emberek a világ minden tájáról szerkesztik vagy használják az OpenHistoricalMap nyújtotta lehetőségeket. Eközben sokak magánszemélyként, míg mások közösségként vesznek ebben részt. Ezek a csoportok különböző méretűek, és különböző földrajzi területeket képviselnek a kisvárosoktól a nagy, több országon átívelő régiókig. Lehetnek formálisak vagy informálisak.
     copyright:
       legal_babble:
         attribution_example:

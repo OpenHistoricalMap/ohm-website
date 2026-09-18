@@ -5,11 +5,6 @@
 # Author: علاء
 # Do not edit by hand.
 arz:
-  activerecord:
-    attributes:
-      client_application:
-        callback_url: رابط الرد
-        support_url: رابط الدعم
   diary_entries:
     profile_diaries:
       date_label: التاريخ

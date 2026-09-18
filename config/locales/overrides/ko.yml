@@ -73,21 +73,6 @@ ko:
         read and accept with tou: 기여자 동의 및 사용 약관을 읽고 두 개의 체크 상자에 체크한 다음 계속 버튼을 눌러 주십시오.
         tou_explain:
           html: 본 %{tou_link}는 오픈히스토리컬맵에서 제공하는 웹사이트 및 기타 인프라의 사용에 적용됩니다. 링크를 클릭하여 내용을 읽고 동의해 주십시오.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: 비공개 GPS 궤적을 읽습니다
-        allow_read_prefs: 사용자 환경 설정을 읽습니다
-        allow_write_api: 지도를 수정합니다
-        allow_write_changeset_comments: 바뀜집합 댓글
-        allow_write_diary: 일기 항목 및 댓글 작성
-        allow_write_gpx: GPS 궤적을 업로드합니다
-        allow_write_notes: 참고를 수정합니다
-        allow_write_prefs: 사용자 환경 설정을 수정합니다
-        callback_url: 연락 URL
-        name: 이름 (필수)
-        support_url: 지원 URL
-        url: 주 애플리케이션 URL (필수)
   api:
     notes:
       rss:
@@ -112,7 +97,6 @@ ko:
       brief: "%{year}년"
       brief_bce: 기원전 %{year}년
       brief_ce: 기원후 %{year}년
-      contribution_calendar: "%B %-d"
       range: "%{start} – %{end}"
   diary_entries:
     comments:
@@ -318,10 +302,6 @@ ko:
       open_data_2_html: 다른 내용이 명시되지 않는 한, 본 데이터는 공개되어 있습니다. 어떠한 제한 없이 어떤 목적으로든 자유롭게 사용하실 수 있습니다. 단, 출처를 명시하거나 인용해 주시면 감사하겠습니다. 더 자세한 사항과 저작자 표시는 %{copyright_license_link}를 참고하십시오.
       scope_html: "제국은 흥망하고, 빙하는 사라지고, 언어와 종교는 한 지역에서 다른 지역으로 퍼져 나갑니다. \n단순한 흙길도 붐비는 고속도로와 철도로 변합니다. 소박한 건물들은 하늘 높이 뻗은 마천루로 변합니다. \n그리고 여러분은 여러분의 동네가 어떠했는지 기억합니다. \n이 모든 것이 오픈히스토리컬맵에 돌아갑니다."
       scope_title: 큰 것부터 사소한 것까지, 옛날부터 현재까지
-    communities:
-      lede_text: |-
-        전 세계의 사람들이 오픈히스토리컬맵을 사용하고 오픈히스토리컬맵에 기여합니다. 많은 기여자들이 개인적으로 참여하는 반면 어떤 기여자들은 커뮤니티를 형성하기도 합니다.
-        다양한 규모의 커뮤니티가 형성되어있으며 작은 마을에서 대규모 다국적 지역에 이르기까지 다양합니다. 공식적일 수도 있지만 비공식적일 수도 있습니다.
     copyright:
       legal_babble:
         attribution_example:

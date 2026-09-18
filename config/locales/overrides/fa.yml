@@ -59,20 +59,6 @@ fa:
     terms:
       show:
         read and accept with tou: لطفاً توافق‌نامهٔ مشارکت‌کننده و شرایط استفاده را مطالعه کنید و هر دو گزینه را علامت بزنید و سپس روی دکمهٔ ادامه کلیک کنید.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: ردهای GPS خصوصی او را بخواند
-        allow_read_prefs: ترجیحات کاربری او را بخواند
-        allow_write_api: نقشه را تغییر دهد
-        allow_write_diary: روزنوشت ایجاد کند، نظر ثبت کند و دوست اضافه کند
-        allow_write_gpx: ردهای GPS بارگذاری کند
-        allow_write_notes: یادداشت‌ها را تغییر دهد
-        allow_write_prefs: ترجیحات کاربری او را تغییر دهد
-        callback_url: Callback URL
-        name: نام (الزامی)
-        support_url: URL پشتیبانی
-        url: نشانی اینترنتی برنامهٔ اصلی (الزامی)
   api:
     notes:
       rss:

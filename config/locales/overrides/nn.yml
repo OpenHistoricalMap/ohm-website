@@ -29,12 +29,6 @@ nn:
       contributor_terms:
         link: http://www.osmfoundation.org/wiki/License/Contributor_Terms
         link text: kva er dette?
-  activerecord:
-    attributes:
-      client_application:
-        callback_url: 'URL for tilbakekall:'
-        name: Namn (Påkravd)
-        support_url: Støytte-URL
   api:
     notes:
       rss:

@@ -13,20 +13,6 @@
 # Author: Nroets
 # Do not edit by hand.
 af:
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: lees hul privaat GPS-spore
-        allow_read_prefs: hul gebruikersvoorkeure lees
-        allow_write_api: die kaart wysig
-        allow_write_diary: skep dagboekinskrywings, lewer kommentaar en ontmoet vriende
-        allow_write_gpx: laai GPS-spore op
-        allow_write_notes: notas wysig
-        allow_write_prefs: hul gebruikersvoorkeure wysig
-        callback_url: Callback-URL
-        name: Naam (verplig)
-        support_url: Ondersteunings-URL
-        url: Hoof-URL van program (verplig)
   api:
     notes:
       rss:

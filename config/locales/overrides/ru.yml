@@ -133,20 +133,6 @@ ru:
       contributor_terms:
         link: https://openstreetmap.org/wiki/RU:Open_Database_License/Contributor_Terms?uselang=ru
         link text: что это?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: читать частные GPS-треки
-        allow_read_prefs: читать пользовательские настройки
-        allow_write_api: редактировать карту
-        allow_write_diary: создавать записи в дневнике и комментарии
-        allow_write_gpx: загружать GPS-треки
-        allow_write_notes: исправлять заметки
-        allow_write_prefs: изменять пользовательские настройки
-        callback_url: Callback URL
-        name: Имя (Обязательно)
-        support_url: URL пользовательской поддержки
-        url: Url приложения (обязательно)
   api:
     notes:
       rss:
@@ -231,8 +217,6 @@ ru:
       legal_2_html: |-
         Пожалуйста, %{contact_team_link}
         если у вас есть вопросы по лицензированию, авторскому праву или другие юридические вопросы.
-    communities:
-      lede_text: Люди со всего мира вносят свой вклад или используют OpenHistoricalMap. Несмотря на то, что многие участвуют поодиночке, другие сформировали сообщества. Эти группы бывают разных размеров и представляют географические регионы от небольших городов до крупных регионов с несколькими странами. Они также могут быть формальными или неформальными.
     copyright:
       legal_babble:
         contributors_footer_2_html: Включение данных в OpenHistoricalMap не означает, что поставщик первичных данных каким-либо образом поддерживает OpenHistoricalMap, предоставляет гарантии или принимает на себя какую-любую ответственность.

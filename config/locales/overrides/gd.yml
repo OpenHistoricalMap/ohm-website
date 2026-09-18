@@ -14,16 +14,6 @@ gd:
       contributor_terms:
         link: http://www.osmfoundation.org/wiki/License/Contributor_Terms
         link text: dè th`ann?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: na lorgaidhean GPS prìobhaideach aca a leughadh
-        allow_write_api: am mapa atharrachadh
-        allow_write_gpx: lorgaidhean GPS a luchdadh suas
-        allow_write_notes: nòtaichean atharrachadh
-        callback_url: URL ais-ghairm
-        name: Ainm (Riatanach)
-        support_url: URL taice
   api:
     notes:
       rss:

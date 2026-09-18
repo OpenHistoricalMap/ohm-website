@@ -21,20 +21,6 @@ ba:
     show:
       contributor_terms:
         link text: был нимә?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: шәхси GPS-тректарҙы уҡыу
-        allow_read_prefs: ҡулланыусы көйләүҙәрен уҡыу
-        allow_write_api: картаны мөхәррирләү
-        allow_write_diary: көндәлектә яҙмалар булдырыу, комментарий биреү һәм дуҫтар табыу
-        allow_write_gpx: GPS-тректарҙы тейәү
-        allow_write_notes: яҙмаларҙы төҙәтеү
-        allow_write_prefs: ҡулланыусы көйләүҙәрен үҙгәртеү
-        callback_url: Callback URL
-        name: Исем (Мотлаҡ)
-        support_url: Ҡулланыусыларға ярҙам URL
-        url: Ҡушымта Url (Мотлаҡ)
   api:
     notes:
       rss:

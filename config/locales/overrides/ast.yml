@@ -19,11 +19,6 @@ ast:
       contributor_terms:
         link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
         link text: "¿qué ye esto?"
-  activerecord:
-    attributes:
-      client_application:
-        callback_url: URL de retornu
-        support_url: URL de asistencia
   api:
     notes:
       rss:

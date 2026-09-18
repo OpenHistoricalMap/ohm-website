@@ -1,12 +1,34 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Finds upstream texts that say OpenStreetMap, reach the OHM site, and have no
-# OHM version yet.
+# Keeps config/locales/overrides/en.yml honest against upstream's en.yml.
 #
-# Rails loads overrides/en.yml after upstream's en.yml, so the override wins.
-# OHM also forked many views under new key names, so keys nothing renders are
-# left alone.
+# Rails loads overrides/en.yml after upstream's en.yml, so our text wins wherever
+# we define a key. That file is the only place we restate upstream strings, so it
+# is also where stale text piles up: upstream renames a key, drops a model or
+# rewrites a sentence, and our copy stays behind saying nothing to nobody.
+#
+# Four checks, three of them fatal:
+#
+#   1. upstream says OpenStreetMap, the site shows it, and we have no override.
+#      Someone reads OpenStreetMap on an OHM page.                      (fails)
+#
+#   2. an override drops or renames a %{} variable that upstream uses.
+#      Rails raises I18n::MissingInterpolationArgument and the page dies. (fails)
+#
+#   3. an override repeats the upstream text word for word, so it overrides
+#      nothing and is one more string to keep in sync.                   (fails)
+#
+#   4. upstream has no such key and nothing in the code renders it, so it is
+#      probably left over from a page or model that went away.         (reports)
+#
+# Check 4 only reports, because some keys are built at runtime, as in
+# t("...border_types.#{value}"), and no scan can prove those are dead. Treat its
+# list as candidates to read, not as a verdict.
+#
+# Scope: English only. The other 109 override files come from Translatewiki, and
+# OHM forked many views under new key names, so keys nothing renders are left
+# alone rather than guessed at.
 
 require "set"
 require "yaml"
@@ -33,10 +55,20 @@ KEEP_UPSTREAM_WORDING = [
   "javascripts.map.openstreetmap_contributors", # OSM base layer attribution
   "layouts.welcome_tou_notice_html", # OSMF terms of use, stays as it is
   "site.export.too_large.other.description", # OSM links OHM points people to
+  # help.html.erb lists its cards from %w[wiki github forum discord slack
+  # mailing_list], so these upstream sections never reach a page. The scan reads
+  # the cards as t(".#{site}.url") and cannot tell which sections the list holds,
+  # so it counts them as rendered and they need an entry here.
   "site.help.community.description",
   "site.help.switch2osm.description",
   "site.help.switch2osm.title",
   "site.help.switch2osm.url"
+].freeze
+
+# Scopes the scan cannot follow, so the unused report skips them.
+DYNAMIC_SCOPES = [
+  "site.about_section.",
+  "geocoder.search_osm_nominatim."
 ].freeze
 
 # Flat "site.about.title" => "text" hash.
@@ -64,7 +96,8 @@ def rendered
     body.scan(/\bt[( ]\s*["'](\.?[a-z][\w.]*)["']/) do |key,|
       exact << (key.start_with?(".") ? "#{here}#{key}" : key) if here || !key.start_with?(".")
     end
-    body.scan(/\bt[( ]\s*["']((?:[^"'\\]|\\.)*?#\{.*?)["']/) do |template,|
+    # Only the outer double quote closes the string, so #{} may hold quotes.
+    body.scan(/\bt[( ]\s*"([^"]*\#\{[^}]*\}[^"]*)"/) do |template,|
       next if template.start_with?(".") && here.nil?
 
       full = template.start_with?(".") ? "#{here}#{template}" : template
@@ -79,6 +112,10 @@ def rendered
     scan.call(File.read(file), here.join("."))
   end
   Dir.glob("#{ROOT}/app/{controllers,helpers,models,mailers,jobs}/**/*.rb").each do |file|
+    scan.call(File.read(file), nil)
+  end
+  # lib looks up keys too, like date_range.rb.
+  Dir.glob("#{ROOT}/lib/**/*.rb").each do |file|
     scan.call(File.read(file), nil)
   end
   Dir.glob("#{ROOT}/app/assets/javascripts/**/*.js").reject { |file| file.include?("/i18n/") }.each do |file|
@@ -131,6 +168,31 @@ if broken.any?
        broken.map { |key| "  #{key}: upstream #{variables(upstream[key])}, override #{variables(overrides[key])}" })
   puts "These raise I18n::MissingInterpolationArgument. Fix the override."
   problems = true
+end
+
+# Same text as upstream, so the override does nothing.
+same_as_upstream = (overrides.keys & upstream.keys).select do |key|
+  overrides[key] == upstream[key]
+end
+
+if same_as_upstream.any?
+  show("#{same_as_upstream.length} override(s) repeat the upstream text word for word",
+       same_as_upstream.map { |key| "  #{key}: #{upstream[key].gsub("\n", ' ')}" })
+  puts "Delete them from config/locales/overrides/en.yml. Upstream already says this,"
+  puts "so the override only adds a string to keep in sync."
+  problems = true
+end
+
+# Not in upstream and nothing renders it. Reported only: some keys are built at
+# runtime and no scan can see them.
+unused = overrides.keys.reject { |key| upstream.key?(key) || shown.call(key) }
+unused = unused.reject { |key| DYNAMIC_SCOPES.any? { |scope| key.start_with?(scope) } }
+
+if unused.any?
+  show("#{unused.length} override(s) may be unused: upstream has no such key and nothing renders it",
+       unused.map { |key| "  #{key}" })
+  puts "Check each one before deleting. If a key is built at runtime, add its scope"
+  puts "to DYNAMIC_SCOPES in this script instead."
 end
 
 unless problems

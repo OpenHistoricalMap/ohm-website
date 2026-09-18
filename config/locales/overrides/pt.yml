@@ -24,21 +24,6 @@ pt:
         read and accept with tou: Por favor, leia o contrato de colaborador e os termos de uso, marque ambas as caixas de seleção quando terminar e pressione o botão continuar.
         tou_explain:
           html: Estes %{tou_link} regem o uso do site e de outras infraestruturas fornecidas pelo OpenHistoricalMap. Por favor, clique no link, leia e concorde com o texto.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: ler as rotas GPS privadas do usuário
-        allow_read_prefs: ler preferências do usuário
-        allow_write_api: modificar o mapa
-        allow_write_changeset_comments: comentar sobre conjuntos de alterações
-        allow_write_diary: criar publicações no diário, comentários e adicionar amigos
-        allow_write_gpx: enviar rotas GPS
-        allow_write_notes: modificar notas
-        allow_write_prefs: modificar preferências do usuário
-        callback_url: URL de callback
-        name: Nome (necessário)
-        support_url: URL de suporte
-        url: URL do aplicativo principal (necessário)
   api:
     notes:
       rss:
@@ -59,7 +44,6 @@ pt:
       brief: "%{year}"
       brief_bce: "%{year} a. C."
       brief_ce: "%{year} d. C."
-      contribution_calendar: "%B %-d"
       range: "%{start} – %{end}"
   diary_entries:
     comments:

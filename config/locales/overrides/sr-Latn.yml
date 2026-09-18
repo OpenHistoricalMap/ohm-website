@@ -15,11 +15,6 @@ sr-Latn:
       contributor_terms:
         link: http://www.osmfoundation.org/wiki/License/Contributor_Terms?uselang=sr-ec
         link text: šta je ovo?
-  activerecord:
-    attributes:
-      client_application:
-        callback_url: Povratna adresa
-        support_url: Adresa podrške
   diary_entries:
     profile_diaries:
       date_label: Datum

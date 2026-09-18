@@ -35,21 +35,6 @@ gl:
         read and accept with tou: Le o acordo do colaborador e os termos de uso, marca ambas as dúas celas de verificación cando remates e despois preme no botón "Continuar".
         tou_explain:
           html: Estes %{tou_link} rexen o uso da páxina/sitio web e outras infraestruturas fornecidas polo OpenHistoricalMap. Preme na ligazón, le e acepta o texto.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: ler as súas pistas GPS privadas
-        allow_read_prefs: ler as súas preferencias de usuario
-        allow_write_api: modificar o mapa
-        allow_write_changeset_comments: comentar os conxuntos de cambios
-        allow_write_diary: crear entradas de diario e comentarios
-        allow_write_gpx: subir pistas GPS
-        allow_write_notes: modificar notas
-        allow_write_prefs: modificar as súas preferencias de usuario
-        callback_url: URL de retorno de chamada
-        name: Nome (Obrigatorio)
-        support_url: URL de apoio
-        url: URL da aplicación principal (obrigatorio)
   api:
     notes:
       rss:
@@ -78,7 +63,6 @@ gl:
       brief: "%{year}"
       brief_bce: "%{year} a. e. c."
       brief_ce: "%{year} e. c."
-      contribution_calendar: "%-d de %B"
       range: "%{start} – %{end}"
   diary_entries:
     comments:
@@ -298,8 +282,6 @@ gl:
         E ti lembras como era o teu barrio.
         Todo isto pertence ao OpenHistoricalMap.
       scope_title: Grandes e pequenos, antes e agora
-    communities:
-      lede_text: "Persoas de todo o mundo contribúen ou usan OpenHistoricalMap.\nAínda que moitos participan individualmente, outros formaron comunidades.\nEstes grupos teñen varios tamaños e representan xeografías de cidades pequenas ou grandes rexións de varios países. \nTamén poden ser formais ou informais."
     copyright:
       legal_babble:
         attribution_example:

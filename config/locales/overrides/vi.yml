@@ -46,21 +46,6 @@ vi:
         read and accept with tou: Xin vui lòng đọc thỏa thuận đóng góp và các điều khoản sử dụng, đọc xong thì đánh cả hai hộp kiểm và bấm nút Tiếp tục.
         tou_explain:
           html: Các %{tou_link} quy định cách sử dụng trang Web và các cơ sở hạ tầng khác do OpenHistoricalMap cung cấp. Xin vui lòng mở liên kết và đọc và chấp nhận thỏa thuận.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: đọc dấu vết GPS riêng tư của họ
-        allow_read_prefs: thay đổi tùy chọn cá nhân
-        allow_write_api: sửa đổi bản đồ
-        allow_write_changeset_comments: bình luận về bộ thay đổi
-        allow_write_diary: tạo mục nhật ký và bình luận
-        allow_write_gpx: tải lên nật trình GPS
-        allow_write_notes: sửa đổi ghi chú
-        allow_write_prefs: thay đổi tùy chọn cá nhân
-        callback_url: URL Gọi lại
-        name: Tựa đề (Yêu cầu)
-        support_url: URL Trợ giúp
-        url: URL ứng dụng chính (Bắt buộc)
   api:
     notes:
       rss:
@@ -84,7 +69,6 @@ vi:
     formats:
       brief_bce: "%{year} TCN"
       brief_ce: "%{year} CN"
-      contribution_calendar: "%-d tháng %-m"
   diary_entries:
     comments:
       description: Những mục nhật ký gần đây từ người dùng OpenHistoricalMap
@@ -267,10 +251,6 @@ vi:
         Để biết thêm chi tiết và lời công nhận, xem %{copyright_license_link}.
       scope_html: Đế quốc nổi lên, sụp đổ. Băng hà biến mất. Ngôn ngữ, tôn giáo lan tràn từ miền này sang miền kia. Đường mòn đơn giản trở thành xa lộ, đường sắt huyết mạch. Tòa nhà bình dân được thay thế bằng tòa nhà chọc trời cao vút. Vả lại bạn vẫn còn nhớ khu phố mình như thế nào. Tất cả đều thuộc về OpenHistoricalMap.
       scope_title: Lớn nhỏ, Xưa nay
-    communities:
-      lede_text: |-
-        Nhiều người đến với OpenHistoricalMap từ khắp mọi nơi để đóng góp vào dự án hoặc sử dụng bản đồ.
-        Nhiều người cũng tụ tập vào đủ loại nhóm cộng đồng chính thức hoặc không chính thức ứng với hàng xóm, thành phố, tỉnh, quốc gia, lục địa, hoặc sở thích.
     copyright:
       legal_babble:
         attribution_example:

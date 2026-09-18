@@ -13,21 +13,6 @@ ce:
     show:
       contributor_terms:
         link text: хӀун йу хӀара?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: долахь йолу GPS-трекаш йеша
-        allow_read_prefs: йеша лелорчера лаамаш
-        allow_write_api: карта нисдар
-        allow_write_changeset_comments: хийцаран пакеташна тӀехь комментарий йе
-        allow_write_diary: тептар тӀехь дӀайаздарш а, комментареш а кхолла
-        allow_write_gpx: GPS-трекаш чуйаха
-        allow_write_notes: заметкаш нисайар
-        allow_write_prefs: хийца лелорчера лаамаш
-        callback_url: URL йухакхайкха
-        name: ЦIе (схьадоьхург)
-        support_url: URL гӀо дар
-        url: Приложенена URL (схьадоьхург)
   api:
     notes:
       rss:
@@ -97,10 +82,6 @@ ce:
       legal_1_privacy_policy: Къайлаха политика
       legal_1_terms_of_use: Лелоран биллам
       legal_2_html: Дехар ду %{contact_team_link} нагахь санна хьан лицензех, авторан бакъонашех, йа кхин юристийн хаттарш делахь.
-    communities:
-      lede_text: |-
-        Дерриг а дуьнентӀера наха дакъа лоцу йа лелайо OpenHistoricalMap. Дукхачара цхьацца дакъалоцуш хилча, вукхара йукъараллаш кхоьллина.
-        И тобанаш тайп-тайпана барамашкахь йу, ткъа географин регионаш гойту кегийчу гӀаланашкара масех пачхьалкх йолчу яккхийчу регионашка кхаччалц. Уьш формалан а, формалан йоцу а хила тарло.
     copyright:
       legal_babble:
         contributors_footer_2_html: OpenHistoricalMap чу хаамаш юкъабахар бохург дац, хьалхара хаамаш луш волчо OpenHistoricalMap къобалйо, цхьа а гарантии ло, йа цхьа а жоьпалла тӀеоьцу.

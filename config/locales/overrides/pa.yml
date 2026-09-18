@@ -16,20 +16,6 @@ pa:
     show:
       contributor_terms:
         link text: ਇਹ ਕੀ ਹੈ?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: ਉਹਨਾਂ ਦੇ ਨਿੱਜੀ GPS ਖੁਰਾ-ਖੋਜ ਪੜ੍ਹੋ
-        allow_read_prefs: ਉਹਨਾਂ ਦੀਆਂ ਵਰਤੋਂਕਾਰ ਤਰਜੀਹਾਂ ਨੂੰ ਪੜ੍ਹੋ
-        allow_write_api: ਨਕਸ਼ੇ ਨੂੰ ਸੋਧੋ
-        allow_write_diary: ਰੋਜ਼ਨਾਮਚਾ ਦਰਜ਼ ਕਰੋ, ਟਿੱਪਣੀਆਂ ਕਰੋ ਅਤੇ ਦੋਸਤ ਬਣਾਓ
-        allow_write_gpx: GPS ਖੁਰਾ-ਖੋਜ ਜੋੜੋ
-        allow_write_notes: ਨੋਟਾਂ ਨੂੰ ਸੋਧੋ
-        allow_write_prefs: ਉਹਨਾਂ ਦੀਆਂ ਵਰਤੋਂਕਾਰ ਤਰਜੀਹਾਂ ਨੂੰ ਸੋਧੋ
-        callback_url: ਮੁੜਕੇ-ਫੋਨ-ਕਰੋ  URL
-        name: ਨਾਮ (ਲੋੜੀਂਦਾ)
-        support_url: ਮਦਦ URL
-        url: ਮੁੱਢਲਾ Application URL (ਲੋੜੀਂਦਾ ਹੈ)
   diary_entries:
     feed:
       all:

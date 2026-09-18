@@ -10,20 +10,6 @@ xmf:
     show:
       contributor_terms:
         link text: მუ რე თენა?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: კერზო GPS-ტრეკეფიშ კითხირი
-        allow_read_prefs: წეკითხით ომახვარებე პარამეტრეფი
-        allow_write_api: რუკაშ თირუა
-        allow_write_diary: დღარეფიშ დინნაჭარეფიშ გოჭყაფა დო კომენტირაფა
-        allow_write_gpx: GPS-ტრეკეფიშ ეხარგუა
-        allow_write_notes: მოღანკუეფიშ მიშათინუა
-        allow_write_prefs: ომახვარებე პარამეტრეფიშ თირუა
-        callback_url: Callback URL
-        name: ჯოხო (უციო)
-        support_url: აზარაშ URL
-        url: თარი აპლიკაციაშ URL (უციო)
   api:
     notes:
       rss:

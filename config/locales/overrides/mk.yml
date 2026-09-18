@@ -18,20 +18,6 @@ mk:
     terms:
       show:
         read and accept with tou: Прочитајте ги согласноста за учесници и условите на употреба, штиклирајте ги двете кутивчиња, па стиснете на „Продолжи“.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: им ги чита личните ГПС-траги
-        allow_read_prefs: им ги чита корисничките нагодувања
-        allow_write_api: ја менува картата
-        allow_write_diary: создава ставки во дневникот, пишува коментари и да се спријателува
-        allow_write_gpx: подига ГПС-траги
-        allow_write_notes: менува белешки
-        allow_write_prefs: им ги менува корисничките нагодувања
-        callback_url: URL за одѕив
-        name: Име (задолжително)
-        support_url: URL за поддршка
-        url: URL на главниот прилог (задолжително)
   api:
     notes:
       rss:
@@ -52,7 +38,6 @@ mk:
       brief: "%{year} г."
       brief_bce: "%{year} г. п.н.е."
       brief_ce: "%{year} г. н.е."
-      contribution_calendar: "%-d %B"
       range: "%{start} – %{end}"
   diary_entries:
     comments:
@@ -129,10 +114,6 @@ mk:
       legal_2_html: |-
         %{contact_team_link}
         ако имате прашања во врска со лиценцирање, авторски права или други правни работи.
-    communities:
-      lede_text: |-
-        На OpenHistoricalMap имаме учесници и корисници од  целиот свет. Многумина учествуваат како поединци, но други имаат создадено заедници. Овие групи се од најразлична големина и застапуваат подрачја од мали гратчиња до големи региони со повеќе земји.
-        Тие може да бидат формални и неформални.
     copyright:
       legal_babble:
         contributors_footer_2_html: |-

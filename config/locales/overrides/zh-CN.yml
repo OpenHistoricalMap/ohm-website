@@ -106,21 +106,6 @@ zh-CN:
         read and accept with tou: 请阅读贡献者协议和使用条款，勾选下列2个复选框，并点击“确定”按钮。
         tou_explain:
           html: 这些%{tou_link}适用于网站方面的使用，与其它由OpenHistoricalMap提供的基础内容。请点击链接，阅读并同意该条款。
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: 读取他们的私人GPS轨迹
-        allow_read_prefs: 读取其用户设置
-        allow_write_api: 修改地图
-        allow_write_changeset_comments: 评论变更集
-        allow_write_diary: 创建日记文章和评论。
-        allow_write_gpx: 上传GPS轨迹
-        allow_write_notes: 修改注记
-        allow_write_prefs: 修改其用户偏好
-        callback_url: 回调 URL
-        name: 名称（必填）
-        support_url: 支持 URL
-        url: 主程序URL（必填）
   api:
     notes:
       rss:
@@ -141,7 +126,6 @@ zh-CN:
       brief: "%{year}"
       brief_bce: 公元前%{year}
       brief_ce: 公元%{year}
-      contribution_calendar: "%-m月%-d日"
       range: "%{start} – %{end}"
   diary_entries:
     comments:
@@ -278,12 +262,6 @@ zh-CN:
       legal_2_html: |-
         若您有许可证、著作权或其他法律上的问题，请%{contact_team_link}
         。
-    communities:
-      lede_text: |-
-        来自世界各地的人们都在贡献或使用 OpenHistoricalMap。
-        虽然许多人以个人身份参与，但其他人则组成了社群。
-        这些团体的规模各不相同，代表了小到城镇大到大型多国地区的地域。
-        它们也可以是正式的或非正式的。
     copyright:
       legal_babble:
         contributors_footer_2_html: OpenHistoricalMap 纳入数据并不意味着原始数据提供者认可 OpenHistoricalMap、提供任何担保或担负任何法律责任。

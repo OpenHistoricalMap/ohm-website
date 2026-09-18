@@ -142,21 +142,6 @@ fr:
       show:
         tou_explain:
           html: Ces %{tou_link} régissent l’utilisation du site web et des autres infrastructures fournies par OpenHistoricalMap. Veuillez cliquer sur le lien pour les lire et accepter le texte.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: lire ses traces GPS privées
-        allow_read_prefs: lire les préférences de l’utilisateur
-        allow_write_api: modifier la carte
-        allow_write_changeset_comments: commenter les groupes de modifications
-        allow_write_diary: créer des entrées du journal et des commentaires
-        allow_write_gpx: téléverser des traces GPS
-        allow_write_notes: modifier les notes
-        allow_write_prefs: modifier les préférences de l’utilisateur
-        callback_url: URL de rappel
-        name: Nom (obligatoire)
-        support_url: URL de l’assistance
-        url: URL principale de l’application (obligatoire)
   api:
     notes:
       rss:
@@ -186,7 +171,6 @@ fr:
       brief: "%{year}"
       brief_bce: "%{year} AEC"
       brief_ce: "%{year} EC"
-      contribution_calendar: "%-d %B"
       range: "%{start} – %{end}"
   diary_entries:
     comments:
@@ -338,11 +322,6 @@ fr:
         Pour plus de détails et de remerciements, voir %{copyright_license_link}.
       scope_html: Les empires s’élèvent et s’effondrent. Les glaciers disparaissent. Les langues et religions se propagent d’une région à l’autre. De simples chemins de terre se transforment en autoroutes très fréquentées et voies ferrées. De modestes bâtiments cèdent la place à d’imposants gratte-ciel. Et vous vous souvenez d’à quoi ressemblait votre quartier. Tout cela a sa place sur OpenHistoricalMap.
       scope_title: Grand et petit, hier et aujourd’hui
-    communities:
-      lede_text: |-
-        Des personnes du monde entier contribuent ou utilisent OpenHistoricalMap. Alors que beaucoup participent de manière individuelle, d’autres ont formé des communautés.
-        Ces groupes sont de tailles diverses et rassemblent des zones géographiques allant de petites villes à de grands territoires multi pays.
-        Ils peuvent aussi être officiels ou non.
     copyright:
       legal_babble:
         attribution_example:

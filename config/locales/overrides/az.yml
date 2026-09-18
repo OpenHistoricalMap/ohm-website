@@ -22,13 +22,6 @@ az:
     show:
       contributor_terms:
         link text: bu nədir?
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_prefs: Digər istifadəçilərin fikirlərini oxu
-        allow_write_api: Xəritəni dəyişmək
-        name: Ad (Vacib)
-        support_url: Dəstək linki
   api:
     notes:
       rss:

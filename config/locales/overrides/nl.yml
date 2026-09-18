@@ -84,21 +84,6 @@ nl:
         read and accept with tou: Lees de bijdragersovereenkomst en de gebruiksvoorwaarden, vink beide selectievakjes aan als u klaar bent en druk vervolgens op de knop Doorgaan.
         tou_explain:
           html: Deze %{tou_link} regelen het gebruik van de website en andere infrastructuur die door OpenHistoricalMap wordt aangeboden. Klik op de koppeling, lees de tekst en stem ermee in.
-  activerecord:
-    attributes:
-      client_application:
-        allow_read_gpx: privé-gps-trajecten lezen
-        allow_read_prefs: gebruikersvoorkeuren lezen
-        allow_write_api: de kaart wijzigen
-        allow_write_changeset_comments: reacties over wijzigingensets plaatsen
-        allow_write_diary: dagboekberichten schrijven en reacties toevoegen
-        allow_write_gpx: gps-trajecten uploaden
-        allow_write_notes: opmerkingen wijzigen
-        allow_write_prefs: gebruikersvoorkeuren wijzigen
-        callback_url: Callback-url
-        name: Naam (verplicht)
-        support_url: Ondersteunings-url
-        url: Hoofd-urlL van toepassing (verplicht)
   api:
     notes:
       rss:
@@ -339,8 +324,6 @@ nl:
         En u weet nog hoe uw buurt er ooit uitzag.
         Het hoort allemaal thuis op OpenHistoricalMap.
       scope_title: Groot en klein, toen en nu
-    communities:
-      lede_text: "Mensen van over de hele wereld dragen bij aan of gebruiken OpenHistoricalMap.\nHoewel velen als individu deelnemen, hebben anderen gemeenschappen gevormd.\nDeze groepen zijn er in verschillende groottes en vertegenwoordigen regio's van kleine steden tot grote regio's met meerdere landen. \nZe kunnen ook formeel of informeel zijn."
     copyright:
       legal_babble:
         attribution_example:
