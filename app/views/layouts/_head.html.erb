@@ -5,13 +5,18 @@
   <%= javascript_include_tag "turbo", :type => "module" %>
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag "i18n/#{I18n.locale}" %>
-  <% if current_user&.preferred_color_scheme(:site) %>
+
+  <%= javascript_include_tag "https://openhistoricalmap.github.io/ohm-inspector/api/api.js" %>
+  <%= stylesheet_link_tag "https://openhistoricalmap.github.io/ohm-inspector/api/api.css" %>
+
+<% if current_user&.preferred_color_scheme(:site) %>
     <%= stylesheet_link_tag "screen-manual-#{dir}", :media => "screen" %>
   <% else %>
     <%= stylesheet_link_tag "screen-auto-#{dir}", :media => "screen" %>
   <% end %>
   <%= stylesheet_link_tag "print-#{dir}", :media => "print" %>
   <%= stylesheet_link_tag "leaflet-all", :media => "screen, print" %>
+  <%= stylesheet_link_tag "leaflet-ohm-timeslider", :media => "screen, print" %>
   <%= stylesheet_link_tag "maplibre-gl-all", :media => "screen, print" %>
   <%= yield :head %>
   <%= yield :auto_discovery_link_tag %>

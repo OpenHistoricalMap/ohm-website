@@ -1,0 +1,24 @@
+# Messages for Yoruba (Yorùbá)
+# Exported from translatewiki.net
+# Author: BigDareLibrary
+# Author: Demmy
+# Do not edit by hand.
+yo:
+  layouts:
+    logout: jade
+  site:
+    help:
+      discord:
+        description: 'Darapọ mọ olupin OpenStreetMap World Discord ki o gba hwlp ni ikanni #openhistoricalmap.'
+      forum:
+        description: Kopa ninu awọn ijiroro gigun ati awọn yara iwiregbe ti kii ṣe alaye nipa lilo akọọlẹ OHM rẹ.
+        title: Apejọ
+      mailing_list:
+        description: ṣe alabapin si maapu ifiweranṣẹ iwọn kekere wa.
+        title: Mail Akojọ
+      slack:
+        description: 'Pe ararẹ si idanileko OpenStreetMap US Slack ki o darapọ mọ ikanni #openhistoricalmap.'
+      welcome:
+        description: Bẹrẹ pẹlu itọsọna iyara yii ti o bo awọn ipilẹ OpenHistoricalMap.
+      wiki:
+        description: Awọn ilana itọju agbegbe fun lilo OHM ati ati awọn itọnisọna fun idasi si iṣẹ akanṣe naa

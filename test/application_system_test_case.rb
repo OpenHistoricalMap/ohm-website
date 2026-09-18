@@ -13,6 +13,10 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
 
   Capybara.configure do |config|
     config.enable_aria_label = true
+    # OHM's default vector base layer renders through software WebGL in
+    # headless CI, so sidebar updates can take longer than Capybara's 2s
+    # default before the JS settles. Overridable for slower local machines.
+    config.default_max_wait_time = ENV.fetch("CAPYBARA_MAX_WAIT_TIME", 10).to_i
   end
 
   cattr_accessor(:capybara_server_port) { ENV.fetch("CAPYBARA_SERVER_PORT", nil) }

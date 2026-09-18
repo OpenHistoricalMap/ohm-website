@@ -19,10 +19,11 @@ class MapLayersTest < ActiveSupport::TestCase
     end
   end
 
-  def test_first_layer_is_standard_layer
+  # OHM variant: our first layer should be "historical", not "standard"
+  def test_first_layer_is_historical_layer
     layers = MapLayers.full_definitions("config/layers.yml")
     first_layer = layers.first
 
-    assert_equal "standard", first_layer["nameId"], "Expected first layer to have nameId 'standard'"
+    assert_equal "historical", first_layer["nameId"], "Expected first layer to have nameId 'historical'"
   end
 end

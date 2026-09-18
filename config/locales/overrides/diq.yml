@@ -1,0 +1,44 @@
+# Messages for Dimli (Zazaki)
+# Exported from translatewiki.net
+# Author: 1917 Ekim Devrimi
+# Author: Asmen
+# Author: Erdemaslancan
+# Author: Erictheise
+# Author: GolyatGeri
+# Author: Gorizon
+# Author: Gravitystorm
+# Author: Gırd
+# Author: Kumkumuk
+# Author: Marmase
+# Author: Minh Nguyen
+# Author: Mirzali
+# Author: Orbot707
+# Do not edit by hand.
+diq:
+  accounts:
+    show:
+      contributor_terms:
+        link text: no çıko?
+  diary_entries:
+    profile_diaries:
+      date_label: Tarix
+  javascripts:
+    map:
+      zoom:
+        in: Nêzdi ke
+        out: Dûri fiye
+  layouts:
+    logout: Bıveciye
+  sessions:
+    destroy:
+      heading: OpenHistoricalMap ra vıcyayış
+  site:
+    export:
+      too_large:
+        planet:
+          title: Geyrenıka OHM
+  users:
+    show:
+      delete_user: nê karberi esternê
+      hide_user: nê karberi  bınımnê
+      unhide_user: nê karberi menımnê

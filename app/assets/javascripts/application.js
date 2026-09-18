@@ -4,20 +4,27 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require osm
+//= require maplibre-gl
 //= require leaflet/dist/leaflet-src
 //= require leaflet.osm
 //= require maplibre-gl/dist/maplibre-gl
 //= require leaflet.maplibre
-//= require leaflet.shortbread
 //= require leaflet.thunderforest
 //= require i18n
 //= require leaflet.maptiler
+//= require leaflet.ohm
+//= require @maplibre/maplibre-gl-leaflet
+//= require leaflet-ohm-timeslider.js
+//= require @openhistoricalmap/maplibre-gl-language
+//= require decimaldate.js
 //= require leaflet.map
 //= require leaflet.zoom
 //= require leaflet.locationfilter
 //= require matomo
 //= require richtext
 //= require language_selector
+//= require querystring
+//= require qs/dist/qs
 
 {
   const application_data = $("head").data();

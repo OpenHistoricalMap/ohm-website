@@ -16,6 +16,8 @@ AllCops:
   NewCops: enable
   Exclude:
     - 'vendor/**/*'
+    # OHM development tooling, not application code
+    - 'lib/tasks/ohm_vs_osm_rb.rake'
 
 Rails:
   Enabled: true
