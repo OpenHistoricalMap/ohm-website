@@ -131,7 +131,7 @@ pl:
   layouts:
     intro_2_create_account: Utwórz konto
     intro_header: Witamy w OpenHistoricalMap!
-    intro_text: OpenHistoricalMap to mapa świata stworzona przez ludzi takich jak ty i z możliwością użycia pod otwartą licencją.
+    intro_text: OpenHistoricalMap to mapa świata stworzona przez ludzi takich jak Ty i z możliwością użycia pod otwartą licencją.
     logo:
       alt_text: Logo OpenHistoricalMap
     logout: Wyloguj się
@@ -200,7 +200,7 @@ pl:
       removed: Twój domyślny edytor OpenHistoricalMap to Potlatch. Ponieważ Adobe Flash Player został wycofany, Potlatch nie jest już dostępny w przeglądarce.
     welcome:
       basic_terms:
-        paragraph_1: OpenHistoricalMap ma własny slang. Oto kilka słów, które ci się przydadzą.
+        paragraph_1: OpenHistoricalMap ma własny slang. Oto kilka słów, które Ci się przydadzą.
       introduction: Witamy w OpenHistoricalMap, wolnej mapie świata. Teraz, gdy masz już konto, możesz przystąpić do mapowania. Oto krótki przewodnik z najważniejszymi rzeczami, o których musisz wiedzieć.
       rules:
         para_1_html: W OpenHistoricalMap jest kilka formalnych zasad, ale oczekujemy, że wszyscy uczestnicy będą współpracować i komunikować się ze społecznością. Jeśli planujesz jakieś działania inne niż same edycje manualne, proszę przeczytaj i dostosuj się do zaleceń dotyczących %{imports_link} oraz %{automated_edits_link}.
@@ -235,23 +235,23 @@ pl:
     gpx_success:
       subject: "[OpenHistoricalMap] Zaimportowano plik GPX"
     lost_password:
-      hopefully_you: Ktoś (prawdopodobnie ty) poprosił o zresetowanie hasła do konta w serwisie openhistoricalmap.org przypisanego do tego adresu e-mail.
+      hopefully_you: Ktoś (prawdopodobnie Ty) poprosił o zresetowanie hasła do konta w serwisie openhistoricalmap.org przypisanego do tego adresu e-mail.
       subject: "[OpenHistoricalMap] Prośba zmiany hasła"
     message_notification:
-      header: "%{from_user} wysłał do ciebie wiadomość z OpenHistoricalMap o temacie %{subject}:"
-      header_html: "%{from_user} wysłał do ciebie wiadomość z OpenHistoricalMap o temacie %{subject}:"
+      header: "%{from_user} wysłał(a) do Ciebie wiadomość z OpenHistoricalMap o temacie %{subject}:"
+      header_html: "%{from_user} wysłał(a) do Ciebie wiadomość z OpenHistoricalMap o temacie %{subject}:"
       subject: "[OpenHistoricalMap] %{message_title}"
     note_comment_notification:
       closed:
-        subject_other: "[OpenHistoricalMap] %{commenter} rozwiązał interesującą cię uwagę"
-        subject_own: "[OpenHistoricalMap] %{commenter} rozwiązał twoją uwagę"
+        subject_other: "[OpenHistoricalMap] %{commenter} rozwiązał(a) interesującą Cię uwagę"
+        subject_own: "[OpenHistoricalMap] %{commenter} rozwiązał(a) Twoją uwagę"
       commented:
-        subject_other: "[OpenHistoricalMap] %{commenter} skomentował interesującą cię uwagę"
-        subject_own: "[OpenHistoricalMap] %{commenter} skomentował twoją uwagę"
+        subject_other: "[OpenHistoricalMap] %{commenter} skomentował(a) interesującą Cię uwagę"
+        subject_own: "[OpenHistoricalMap] %{commenter} skomentował(a) Twoją uwagę"
       description: 'Notatka OpenHistoricalMap #%{id}'
       reopened:
-        subject_other: "[OpenHistoricalMap] %{commenter} ponownie aktywował interesującą cię uwagę"
-        subject_own: "[OpenHistoricalMap] %{commenter} ponownie aktywował twoją uwagę"
+        subject_other: "[OpenHistoricalMap] %{commenter} ponownie aktywował(a) interesującą Cię uwagę"
+        subject_own: "[OpenHistoricalMap] %{commenter} ponownie aktywował(a) Twoją uwagę"
     signup_confirm:
       subject: "[OpenHistoricalMap] Witamy w OpenHistoricalMap"
   users:
@@ -260,9 +260,9 @@ pl:
       option_1: Jeśli jesteś po raz pierwszy na OpenHistoricalMap, utwórz nowe konto za pomocą formularza poniżej.
     new:
       about:
-        paragraph_1: W przeciwieństwie do innych map, OpenHistoricalMap jest w całości tworzona przez ludzi takich jak ty i każdy może ją bezpłatnie poprawiać, aktualizować, pobierać i używać.
+        paragraph_1: W przeciwieństwie do innych map, OpenHistoricalMap jest w całości tworzona przez ludzi takich jak Ty i każdy może ją bezpłatnie poprawiać, aktualizować, pobierać i używać.
         welcome: Witamy w OpenHistoricalMap
-      duplicate_social_email: Jeśli posiadasz już konto OpenHistoricalMap i chcesz skorzystać z usług zewnętrznego dostawcy tożsamości, zaloguj się, podając swoje hasło, i zmień ustawienia swojego konta.
+      duplicate_social_email: Jeśli masz już konto OpenHistoricalMap i chcesz skorzystać z usług zewnętrznego dostawcy tożsamości, zaloguj się, podając swoje hasło, i zmień ustawienia swojego konta.
       please_contact_support_html: Skontaktuj się z %{support_link} w celu umówienia się na założenie konta – postaramy się rozpatrzyć prośbę jak najszybciej.
       signup_to_authorize_html: Zaloguj się do OpenHistoricalMap, aby uzyskać dostęp do %{client_app_name}.
     show:

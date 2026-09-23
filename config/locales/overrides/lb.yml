@@ -29,6 +29,7 @@ lb:
     auth_providers:
       openstreetmap:
         alt: OpenStreetMap-Logo
+        title: Mat OpenStreetMap aloggen
   auth:
     providers:
       openstreetmap: OpenStreetMap
@@ -104,6 +105,7 @@ lb:
       legal_1_privacy_policy: Dateschutzrichtlinnen
       legal_1_terms_of_use: Benotzungskonditiounen
       scope_title: Grouss a kleng, deemools an haut
+      legal_1_terms_of_use_url: https://osmfoundation.org/wiki/Terms_of_Use
     copyright:
       legal_babble:
         contributors_osm: OpenStreetMap-Contributeuren
@@ -193,3 +195,5 @@ lb:
       delete_user: Dëse Benotzer läschen
       hide_user: Dëse Benotzer verstoppen
       unhide_user: Dëse Benotzer net méi verstoppen
+    auth_association:
+      option_1: Wann Dir nei sidd bei OpenHistoricalMap, da leet wgl. en neie Benotzerkont un, andeem Dir de Formulaire hei drënner benotzt.

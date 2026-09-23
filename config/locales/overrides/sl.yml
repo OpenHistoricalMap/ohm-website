@@ -60,7 +60,6 @@ sl:
       brief: "%{year}"
       brief_bce: "%{year} pr. n. št."
       brief_ce: "%{year} n. št."
-      contribution_calendar: "%-d %B"
       range: "%{start} – %{end}"
   diary_entries:
     comments:
@@ -184,6 +183,8 @@ sl:
     partners_osmf: Fundacija OpenStreetMap
     partners_osmus: OpenStreetMap ZDA
     tag_line: Prosti viki zemljevid sveta
+    meta:
+      openstreetmap_search: Iskanje OpenHistoricalMap
   oauth:
     scopes:
       openid: Prijava z uporabo OpenHistoricalMap
