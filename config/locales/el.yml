@@ -878,6 +878,9 @@ el:
       title: Το αρχείο δε βρέθηκε
       description: Δεν ήταν δυνατή η εύρεση αρχείου/καταλόγου/λειτουργίας API με αυτό
         το όνομα στο διακομιστή OpenHistoricalMap (HTTP 404)
+  export:
+    show:
+      title: Ενσωματωμένο OpenHistoricalMap
   follows:
     show:
       follow:
@@ -1773,6 +1776,7 @@ el:
       download: Λήψη διαδρομής ως GeoJSON
       filename: διαδρομή
       directions_courtesy_html: Οι οδηγίες είναι προσφορά του %{link}
+      check_demo_html: Περισσότερες λεπτομέρειες από %{link}
   issues:
     index:
       title: Ζητήματα
@@ -1855,6 +1859,9 @@ el:
       other_issues_against_this_user: Άλλα ζητήματα κατά αυτού του χρήστη
       no_other_issues: Δεν υπάρχουν άλλα ζητήματα κατά αυτού του χρήστη.
       comments_on_this_issue: Σχόλια στο ζήτημα
+      comment_from_html: Σχόλιο από %{user_link} στις %{comment_created_at}
+      reassign_to_moderators: Ανάθεση ζητήματος σε Συντονιστές
+      reassign_to_administrators: Ανάθεση ζητήματος σε Διαχειριστές
   issue_comments:
     create:
       comment_created: Το σχόλιο σας δημιουργήθηκε επιτυχώς
@@ -1895,12 +1902,130 @@ el:
     create:
       successful_report: Η αναφορά σας έχει καταγραφεί επιτυχώς
       provide_details: Παρακαλούμε δώστε τις απαιτούμενες λεπτομέρειες
+  languages_panes:
+    select_language_list:
+      search_language: Αναζήτηση...
+      languages:
+        af: Αφρικάανς
+        gsw: Αλεμαννικά
+        frp: Αρπιτανικά
+        ast: Αστουριανά
+        az: Αζερμπαϊτζανικά
+        id: Ινδονησιακά
+        ms: Μαλαϊκά
+        bcl: Κεντρική Μπικόλ
+        bs: Βοσνιακά
+        br: Βρετονικά
+        ca: Καταλανικά
+        cs: Τσέχικα
+        cy: Ουαλικά
+        da: Δανικά
+        de: Γερμανικά
+        dsb: Κάτω Σορβικά
+        et: Εσθονικά
+        en: Αγγλικά
+        en-GB: Αγγλικά (Ηνωμένο Βασίλειο)
+        es: Ισπανικά
+        eo: Εσπεράντο
+        eu: Βασκικά
+        fr: Γαλλικά
+        fy: Δυτικά Φριζικά
+        fur: Φριούλιαν
+        ga: Ιρλανδικά
+        gd: Σκωτικά Γαελικά
+        gl: Γαλικιανά
+        aln: Γκεγκικά Αλβανικά
+        hsb: Άνω Σορβικά
+        hr: Κροατικά
+        ia: Ιντερλίνγκουα
+        is: Ισλανδικά
+        it: Ιταλικά
+        kw: Κορνουαλικά
+        gcf: Κρεολή Γουαδελούπης
+        ku-Latn: Κουρδικά (Λατινικά)
+        lv: Λετονικά
+        lb: Λουξεμβουργιανά
+        lkt: Λακότα
+        lt: Λιθουανικά
+        hu: Ουγγρικά
+        fit: Φινλανδικά Τορνεντάλεν
+        nl: Ολλανδικά
+        nb: Νορβηγικά Μποκμάλ
+        nn: Νορβηγικά Νινόρσκ
+        oc: Οξιτανικά
+        nds: Κάτω Γερμανικά
+        pl: Πολωνικά
+        pt-PT: Πορτογαλικά
+        pt: Πορτογαλικά (Βραζιλίας)
+        ksh: Κολωνικά
+        ro: Ρουμάνικα
+        sc: Σαρδηνιακά
+        sco: Σκωτικά
+        sq: Αλβανικά
+        scn: Σικελικά
+        sk: Σλοβάκικα
+        sl: Σλοβένικα
+        sr-Latn: Σερβικά (Λατινικά)
+        sh: Σερβοκροατικά (Λατινικά)
+        fi: Φινλανδικά
+        sv: Σουηδικά
+        tl: Ταγκαλόγκ
+        kab: Καβυλικά
+        vi: Βιετναμέζικα
+        tr: Τούρκικα
+        yo: Γιορούμπα
+        diq: Ζαζάκι
+        el: Ελληνικά
+        ba: Μπασκίρ
+        be: Λευκορώσικα
+        be-Tarask: Λευκορωσικά (Ταρασκ.)
+        bg: Βουλγαρικά
+        mk: Σλαβομακεδονικά
+        mo: Μολδαβικά
+        ce: Τσετσενικά
+        ru: Ρωσικά
+        sr: Σερβικά (Κυριλλικά)
+        tt: Ταταρικά (Κυριλλικά)
+        uk: Ουκρανικά
+        kk-cyrl: Καζακικά (Κυριλλικά)
+        yi: Γίντις
+        he: Εβραϊκά
+        ar: Αραβικά
+        skr-arab: Σαραϊκί
+        fa: Περσικά
+        arz: Αιγυπτιακά Αραβικά
+        pnb: Δυτικά Παντζάμπι
+        ps: Παστού
+        nqo: Ν'Κο
+        ne: Νεπαλικά
+        mr: Μαράτι
+        hi: Χίντι
+        bn: Μπάνγκλα
+        pa: Παντζάμπι
+        gu: Γκουτζαράτι
+        ta: Ταμίλ
+        te: Τελούγκου
+        kn: Κανάντα
+        th: Ταϊλανδικά
+        my: Βιρμανικά
+        shn: Σαν
+        xmf: Μινγκρελικά
+        ka: Γεωργιανά
+        km: Χμερ
+        sat: Σαντάλι
+        zh-CN: Κινεζικά (Απλοποιημένα)
+        zh-TW: Κινεζικά (Παραδοσιακά)
+        zh-HK: Κινεζικά (Χονγκ Κονγκ)
+        ja: Ιαπωνικά
+        ko: Κορεάτικα
   layouts:
     project_name:
       title: OpenHistoricalMap
       h1: OpenHistoricalMap
     logo:
       alt_text: Λογότυπο OpenHistoricalMap
+    main_navigation: Κεντρική
+    layer_info: Πληροφορίες επιπέδου
     home: Δείξε το σπίτι μου
     logout: Αποσύνδεση
     log_in: Σύνδεση
@@ -1926,6 +2051,9 @@ el:
     partners_greeninfo: Δίκτυο GreenInfo
     partners_osmf: Ίδρυμα OpenStreetMap
     partners_osmus: OpenStreetMap U.S.
+    welcome_tou_notice_html: Χρησιμοποιώντας αυτόν τον ιστότοπο ή άλλη υποδομή που
+      παρέχεται από το Ίδρυμα OpenStreetMap, συμφωνείτε με τους %{terms_link}.
+    terms_of_use: Όροι χρήσης
     tou: Όροι χρήσης
     nothing_to_preview: Τίποτα για προεπισκόπηση.
     help: Βοήθεια
@@ -1935,7 +2063,26 @@ el:
     learn_more: Μάθετε περισσότερα
     more: Περισσότερα
     header:
+      about: Σχετικά
+      communities: Κοινότητες
+      copyright: Πνευματικά δικαιώματα
+      donate: Δωρεά
+      edit: Επεξεργασία
+      edit_with: Επεξεργασία με %{editor}
+      export: Εξαγωγή
+      gps_traces: Ίχνη GPS
+      help: Βοήθεια
+      history: Ιστορικό
+      home: Μετάβαση στην Τοποθεσία σπιτιού
+      issues: Ζητήματα
+      log_out: Αποσύνδεση
+      log_in: Σύνδεση
+      more: Περισσότερα
       select_language: Επιλέξτε γλώσσα
+      sign_up: Εγγραφή
+      user_diaries: Ημερολόγια χρηστών
+    meta:
+      openstreetmap_search: Αναζήτηση OpenHistoricalMap
     select_language_button:
       title: Επιλέξτε γλώσσα
     offline_flash:
@@ -2251,6 +2398,7 @@ el:
         message: Οι προτιμήσεις ενημερώθηκαν.
       navigation:
         preferences: Προτιμήσεις
+        notification_preferences: Ειδοποιήσεις
         advanced_preferences: Προηγμένες προτιμήσεις
     basic_preferences:
       show:
@@ -2266,7 +2414,25 @@ el:
           auto: Αυτόματο
           light: Φωτεινό
           dark: Σκοτεινό
+        preferred_editor_color_scheme: Προτιμώμενος χρωματικός συνδυασμός επεξεργαστή
+        editor_color_schemes:
+          auto: Ίδιος με τον ιστότοπο
+          light: Φωτεινός
+          dark: Σκοτεινός
         save: Ενημέρωση προτιμήσεων
+    notification_preferences:
+      show:
+        title: Προτιμήσεις ειδοποιήσεων
+        changeset_comment: Σχόλια συνόλων αλλαγών
+        diary_comment: Σχόλια ημερολογίων
+        direct_message: Άμεσα μηνύματα
+        gpx_import_failure: 'Εισαγωγή ιχνών GPS: αποτυχία'
+        gpx_import_success: 'Εισαγωγή ιχνών GPX: επιτυχία'
+        new_follower: Νέοι ακόλουθοι
+        note_comment: Σχόλια σημείωσεων
+        save: Ενημέρωση προτιμήσεων
+        delivery_mechanisms:
+          email: Διεύθυνση email
     advanced_preferences:
       show:
         title: Οι προηγμένες προτιμήσεις μου
@@ -2279,6 +2445,7 @@ el:
         image: Εικόνα
         company: Εταιρεία
         location: Τοποθεσία
+        contribution_calendar: Ημερολόγιο συνεισφορών
     descriptions:
       show:
         title: Επεξεργασία προφίλ
@@ -2338,6 +2505,16 @@ el:
       update:
         success: Η τοποθεσία του προφίλ ενημερώθηκε.
         failure: Δεν ήταν δυνατή η ενημέρωση της τοποθεσίας του προφίλ.
+    heatmaps:
+      show:
+        title: Διαμόρφωση ημερολογίου συνεισφορών
+        show_contribution_calendar_in_public: Εμφάνιση του ημερολογίου συνεισφορών
+          στη σελίδα του προφίλ σας
+        save: Ενημέρωση διαμόρφωσης ημερολογίου συνεισφορών
+        cancel: Ακύρωση
+      update:
+        success: Το ημερολόγιο συνεισφορών ενημερώθηκε.
+        failure: Δεν ήταν δυνατή η ενημέρωση του ημερολογίου συνεισφορών.
   sessions:
     new:
       tab_title: Σύνδεση
@@ -2355,6 +2532,8 @@ el:
       login_button: Σύνδεση
       with external: ή συνδεθείτε μέσω τρίτης υπηρεσίας
       or: ή
+      reset_to_login: Λυπούμαστε, ο κωδικός πρόσβασής σας έχει λήξει. Παρακαλούμε
+        επαναφέρετε τον κωδικό πρόσβασής σας για να συνδεθείτε.
       auth failure: Λυπούμαστε, δεν μπορείτε να συνδεθείτε με αυτές τις λεπτομέρειες.
     destroy:
       title: Αποσύνδεση
@@ -2392,38 +2571,38 @@ el:
       changeset_comments:
         older: Παλαιότερα σχόλια
         newer: Νεότερα σχόλια
-        oldest: Παλαιότερα σχόλια
-        newest: Νεότερα σχόλια
+        oldest: Παλαιότατα σχόλια
+        newest: Νεότατα σχόλια
       diary_comments:
         older: Παλαιότερα σχόλια
         newer: Νεότερα σχόλια
-        oldest: Παλαιότερα σχόλια
-        newest: Νεότερα σχόλια
+        oldest: Παλαιότατα σχόλια
+        newest: Νεότατα σχόλια
       diary_entries:
         older: Παλιότερες καταχωρήσεις
         newer: Νεότερες καταχωρήσεις
-        oldest: Παλαιότερες καταχωρίσεις
-        newest: Νεότερες καταχωρίσεις
+        oldest: Παλαιότατες καταχωρίσεις
+        newest: Νεότατες καταχωρίσεις
       issues:
         older: Παλαιότερα ζητήματα
         newer: Νεότερα ζητήματα
-        oldest: Παλαιότερα ζητήματα
-        newest: Νεότερα ζητήματα
+        oldest: Παλαιότατα ζητήματα
+        newest: Νεότατα ζητήματα
       traces:
         older: Παλαιότερα ίχνη
         newer: Νεότερα ίχνη
-        oldest: Παλαιότερα ίχνη
-        newest: Νεότερα ίχνη
+        oldest: Παλαιότατα ίχνη
+        newest: Νεότατα ίχνη
       user_blocks:
         older: Παλαιότερες φραγές
         newer: Νεότερες φραγές
-        oldest: Παλαιότερες φραγές
-        newest: Νεότερες φραγές
+        oldest: Παλαιότατες φραγές
+        newest: Νεότατες φραγές
       users:
         older: Παλαιότεροι Χρήστες
         newer: Νεότεροι Χρήστες
-        oldest: Παλαιότεροι χρήστες
-        newest: Νεότεροι χρήστες
+        oldest: Παλαιότατοι χρήστες
+        newest: Νεότατοι χρήστες
   site:
     about:
       used_by_html: Εξερευνήστε τον κόσμο σε οποιαδήποτε χρονική περίοδο με το %{name}.
@@ -2528,6 +2707,9 @@ el:
         infringement_1_html: Υπενθυμίζουμε στους συνεισφέροντες του OHM να μην προσθέτουν
           δεδομένα από πηγές με πνευματικά δικαιώματα (π.χ. Google Maps η έντυπους
           χάρτες) χωρίς την προηγούμενη άδεια από τους ιδιοκτήτες των δικαιωμάτων.
+        infringement_2_ohm_html: Εάν πιστεύετε ότι υλικό που προστατεύεται από πνευματικά
+          δικαιώματα έχει προστεθεί ακατάλληλα στη βάση δεδομένων του OpenHistoricalMap
+          ή σε αυτόν τον ιστότοπο, παρακαλούμε %{contact_team_link}.
         infringement_2_ohm_contact_team: επικοινωνήστε με την ομάδα του OpenHistoricalMap
           με τίτλο θέματος "TAKEDOWN REQUEST"
         trademarks_title: Εμπορικά σήματα
@@ -2580,6 +2762,12 @@ el:
           url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse
       export_button: Εξαγωγή
       export_download: Γίνεται λήψη...
+      confirmation:
+        header: Λήψη δεδομένων XML
+        body: Θέλετε να κατεβάσετε δεδομένα χάρτη για αυτήν την περιοχή σε μορφή XML;
+          Λάβετε υπόψη ότι η λήψη μεγάλων περιοχών ενδέχεται να διαρκέσει λίγη ώρα.
+        cancel: Ακύρωση
+        download: Λήψη
     fixthemap:
       title: Αναφέρετε πρόβλημα / Διορθώστε τον χάρτη
       how_to_help:
@@ -2597,6 +2785,9 @@ el:
             Προσθέστε το μήνυμά σας και στη συνέχεια, κάντε κλικ στο κουμπί αποθήκευσης, ώστε να μπορούν άλλοι χαρτογράφοι να ερευνήσουν το πρόβλημα.
       other_concerns:
         title: Άλλες ανησυχίες
+        concerns_ohm_html: |-
+          Εάν έχετε ανησυχίες σχετικά με τον τρόπο με τον οποίο χρησιμοποιούνται τα δεδομένα μας ή σχετικά με το περιεχόμενο, παρακαλούμε συμβουλευτείτε τη
+          %{copyright_link} μας για περισσότερες νομικές πληροφορίες, ή %{contact_link}.
         copyright: σελίδα πνευματικών δικαιωμάτων
         contact: επικοινωνήστε μαζί μας
         contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
@@ -2632,6 +2823,8 @@ el:
           που βασίζονται στο OpenStreetMap και άλλες υπηρεσίες.
       welcomemat:
         title: Για τις Οργανώσεις
+        description: Ξεκινήστε με αυτόν τον γρήγορο οδηγό που καλύπτει τα βασικά του
+          OpenHistoricalMap.
       forum:
         title: Φόρουμ
       github:
@@ -2644,6 +2837,7 @@ el:
       slack:
         title: IRC
       wiki:
+        title: Wiki
         description: Περιηγηθείτε το wiki για επιμελής τεκμηρίωση του OHM.
     potlatch:
       removed: Ο προεπιλεγμένος σας επεξεργαστής του OpenHistoricalMap έχει τεθεί
@@ -2707,8 +2901,8 @@ el:
           ή ένα δέντρο.
         a_way_html: Μια %{way} είναι μια γραμμή ή περιοχή, όπως δρόμος, ρέμα, λίμνη
           ή κτίριο.
-        a_tag_html: Η %{tag} είναι δεδομένα που σχετίζονται με κόμβους ή γραμμές,
-          όπως το όνομα ενός εστιατορίου ή το όριο ταχύτητας του δρόμου.
+        a_tag_html: Η %{tag} είναι δεδομένα που σχετίζονται με έναν κόμβο ή μια γραμμή,
+          όπως το όνομα ενός εστιατορίου ή το έτος όπου φτιάχτηκε μια γέφυρα.
         editor: επεξεργαστής
         node: κόμβος
         way: γραμμή
@@ -2731,6 +2925,10 @@ el:
       para_1: Εάν θέλετε κάτι μικρό να διορθωθεί και δεν έχετε χρόνο να εγγραφείτε
         και να μάθετε πως να επεξεργάζεστε τον χάρτη, είναι εύκολο να προσθέσετε μια
         σημείωση.
+      para_2_html: |-
+        Απλώς πατήστε το %{note_icon} ή το ίδιο εικονίδιο %{map_link}.
+        Αυτό θα προσθέσει ένα σημάδι στον χάρτη, το οποίο μπορείτε να μετακινήσετε με σύρσιμο.
+        Προσθέστε το μήνυμα σας, μετά πατήστε αποθήκευση και άλλοι χαρτογράφοι θα το ερευνήσουν.
       the_map: στο χάρτη
     communities:
       title: Κοινότητες
@@ -2876,6 +3074,15 @@ el:
       image_dimensions_html: Η εικόνα θα εμφανίζει το %{layer} στο %{width} x %{height}
       download: Λήψη
       downloading: Γίνεται λήψη...
+  webgl_error_panes:
+    show:
+      compact_message: Απαιτείται το WebGL για αυτόν τον χάρτη.
+      description_html: Λυπούμαστε, αλλά φαίνεται ότι ο %{your_browser_does_not_support_webgl},
+        μια τεχνολογία για την απεικόνιση τρισδιάστατων γραφικών στο διαδίκτυο.
+      your_browser_does_not_support_webgl: ο περιηγητής σας δεν υποστηρίζει το WebGL
+      webgl_is_required_for_this_map: Απαιτείται το WebGL για αυτόν τον χάρτη.
+      read_more_about_webgl: Διαβάστε περισσότερα
+      read_more_about_webgl_url: https://wiki.openstreetmap.org/wiki/This_map_requires_WebGL
   traces:
     visibility:
       private: Προσωπικό (διαμοιρασμός μόνο σαν ανώνυμος, μη χρονοσημασμένα σημεία)
@@ -3166,6 +3373,10 @@ el:
           για περισσότερες πληροφορίες.
       or: ή
       use external auth: ή συνδεθείτε μέσω τρίτης υπηρεσίας
+      verify_human: Επιβεβαιώστε ότι είστε άνθρωπος
+    create:
+      not_human: Δυστυχώς, δεν μπορούμε να επιβεβαιώσουμε ότι είστε άνθρωπος. Αυτό
+        απαιτείται για τη δημιουργία νέων λογαριασμών.
     no_such_user:
       title: Άγνωστος χρήστης
       heading: Ο χρήστης %{user} δεν υπάρχει
@@ -3214,6 +3425,7 @@ el:
       activate_user: Ενεργοποίηση αυτού του λογαριασμού Χρήστη
       confirm_user: Επιβεβαίωση αυτού του λογαριασμού Χρήστη
       unconfirm_user: Καταργήση της επιβεβαίωσης αυτού του χρήστη
+      suspend_user: Αναστολή αυτού του χρήστη
       unsuspend_user: Κατάργηση αναστολής αυτού του χρήστη
       hide_user: Απόκρυψη αυτού του λογαριασμού Χρήστη
       unhide_user: Επανεμφάνιση αυτού του λογαριασμού Χρήστη
@@ -3226,9 +3438,26 @@ el:
       change_image: Αλλαγή εικόνας
       edit_company: Επεξεργασία εταιρείας
       edit_location: Επεξεργασία τοποθεσίας
+      edit_contribution_calendar: Διαμόρφωση ημερολογίου συνεισφορών
       contributions:
         one: '%{count} συνεισφορά τον τελευταίο χρόνο'
         other: '%{count} συνεισφορές τον τελευταίο χρόνο'
+      title:
+        administrator: Αυτός ο χρήστης είναι διαχειριστής
+        moderator: Αυτός ο χρήστης είναι συντονιστής
+        importer: Αυτός ο χρήστης είναι εισαγωγέας
+      grant:
+        administrator: Χορήγηση πρόσβασης διαχειριστή
+        moderator: Χορήγηση πρόσβασης συντονιστή
+        importer: Χορήγηση πρόσβασης εισαγωγέα
+        are_you_sure: Σίγουρα θέλετε να εκχωρήσετε τον ρόλο «%{role}» στον χρήστη
+          «%{name}»;
+      revoke:
+        administrator: Ανάκληση πρόσβασης διαχειριστή
+        moderator: Ανάκληση πρόσβασης συντονιστή
+        importer: Ανάκληση πρόσβασης εισαγωγέα
+        are_you_sure: Σίγουρα θέλετε να ανακαλέστε τον ρόλο «%{role}» από τον χρήστη
+          «%{name}»;
     sidebar_section:
       home_location: Τοποθεσία σπιτιού
       company: Εταιρεία
@@ -3279,6 +3508,7 @@ el:
           one: '%{count} χρήστης βρέθηκε'
           other: '%{count} χρήστες βρέθηκαν'
         confirm: Επιβεβαίωση Επιλεγμένων Χρηστών
+        suspend: Αναστολή επιλεγμένων χρηστών
         empty: Δεν βρέθηκαν χρήστες που να ταιριάζουν
       user:
         summary_html: '%{name} δημιουργήθηκε από την διεύθυνση IP %{ip_address} στις
@@ -3574,6 +3804,18 @@ el:
       tooltip: Υπόμνημα
       tooltip_disabled: Το υπόμνημα δεν είναι διαθέσιμο σε αυτό το στρώμα
     map:
+      navigation_control:
+        zoom_in: Μεγέθυνση
+        zoom_out: Σμίκρυνση
+      geolocate_control:
+        find_my_location: Προβολή της τοποθεσίας μου
+        location_not_available: Η τοποθεσία δεν είναι διαθέσιμη
+        metersPopup:
+          one: Είστε εντός %{count} μέτρου από το σημείο
+          other: Είστε εντός %{count} μέτρων από το σημείο
+        feetPopup:
+          one: Είστε εντός %{count} ποδός από το σημείο
+          other: Είστε εντός %{count} ποδιών από το σημείο
       zoom:
         in: Μεγέθυνση
         out: Σμίκρυνση
@@ -3738,7 +3980,7 @@ el:
     home:
       marker_title: Τοποθεσία του σπιτιού μου
       not_set: Η τοποθεσία του σπιτιού δεν έχει οριστεί για τον λογαριασμό σας
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Δεν υπάρχουν συνεισφορές στις %{date}
         contributions:

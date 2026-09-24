@@ -62,7 +62,7 @@ zh-TW:
       brief: '%{year}'
       brief_bce: 西元前 %{year}
       brief_ce: 西元 %{year}
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
       range: '%{start} – %{end}'
   time:
     formats:
@@ -784,6 +784,7 @@ zh-TW:
       profile: 查看您的個人檔案
   errors:
     contact:
+      contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
       contact_url_title: 各種聯絡管道說明
       contact: 聯絡
       contact_the_community_html: 如果你發現有損壞的連結/錯誤，請隨時%{contact_link}OpenHistoricalMap
@@ -800,6 +801,9 @@ zh-TW:
     not_found:
       title: 檔案未找到
       description: 在 OpenHistoricalMap 伺服器上找不到該名稱的檔案/目錄/API 操作 (HTTP 404)
+  export:
+    show:
+      title: OpenHistoricalMap 嵌入
   follows:
     show:
       follow:
@@ -1725,6 +1729,7 @@ zh-TW:
       download: 以 GeoJSON 格式下載路線
       filename: 路線
       directions_courtesy_html: 感謝 %{link} 提供路線資訊
+      check_demo_html: 更多詳情請瀏覽 %{link}
   issues:
     index:
       title: 問題
@@ -1803,6 +1808,9 @@ zh-TW:
       other_issues_against_this_user: 其它針對此使用者的問題
       no_other_issues: 沒有其它針對此使用者的問題。
       comments_on_this_issue: 在此問題的留言
+      comment_from_html: 使用者 %{user_link} 於 %{comment_created_at} 發表了評論
+      reassign_to_moderators: 將問題重新分配給版主
+      reassign_to_administrators: 將此問題重新指派給管理員。
   issue_comments:
     create:
       comment_created: 已成功建立您的留言
@@ -1840,12 +1848,130 @@ zh-TW:
     create:
       successful_report: 已成功登記你的回報
       provide_details: 請提供所需的詳情
+  languages_panes:
+    select_language_list:
+      search_language: 搜尋…
+      languages:
+        af: 南非荷蘭文
+        gsw: 阿勒曼尼克文
+        frp: 阿爾皮坦文
+        ast: 阿斯圖裡亞斯文
+        az: 亞塞拜然文
+        id: 印尼文
+        ms: 馬來文
+        bcl: 中央比科爾文
+        bs: 波士尼亞文
+        br: 布列塔尼文
+        ca: 加泰隆尼亞文
+        cs: 捷克文
+        cy: 威爾斯文
+        da: 丹麥文
+        de: 德文
+        dsb: 下索比文
+        et: 愛沙尼亞文
+        en: 英文
+        en-GB: 英文 (英國)
+        es: 西班牙文
+        eo: 世界文
+        eu: 巴斯克文
+        fr: 法文
+        fy: 西弗里西亞文
+        fur: 弗留利文
+        ga: 愛爾蘭文
+        gd: 蘇格蘭蓋爾文
+        gl: 加利西亞文
+        aln: 蓋格·阿爾巴尼亞文
+        hsb: 上索布文
+        hr: 克羅埃西亞文
+        ia: 國際文
+        is: 冰島文
+        it: 義大利文
+        kw: 康乃爾文
+        gcf: 瓜德羅普島克里奧爾文
+        ku-Latn: 庫德文（拉丁字母）
+        lv: 拉脫維亞文
+        lb: 盧森堡文
+        lkt: 拉科塔文
+        lt: 立陶宛文
+        hu: 匈牙利文
+        fit: 托爾內達倫芬蘭文
+        nl: 荷蘭文
+        nb: 挪威文（書面挪威文）
+        nn: 新挪威文
+        oc: 奧克文
+        nds: 低地德文
+        pl: 波蘭文
+        pt-PT: 葡萄牙文
+        pt: 葡萄牙文（巴西）
+        ksh: 科隆文
+        ro: 羅馬尼亞文
+        sc: 撒丁文
+        sco: 蘇格蘭文
+        sq: 阿爾巴尼亞文
+        scn: 西西里文
+        sk: 斯洛伐克文
+        sl: 斯洛維尼亞文
+        sr-Latn: 塞爾維亞文（拉丁字母）
+        sh: 塞爾維亞-克羅埃西亞文（拉丁字母）
+        fi: 芬蘭文
+        sv: 瑞典文
+        tl: 他加祿文
+        kab: 卡比爾文
+        vi: 越南文
+        tr: 土耳其文
+        yo: 約魯巴文
+        diq: 迪姆利文
+        el: 希臘文
+        ba: 巴什基爾文
+        be: 白羅斯文
+        be-Tarask: 白羅斯（塔拉什克文）
+        bg: 保加利亞文
+        mk: 馬其頓文
+        mo: 摩爾多瓦文
+        ce: 車臣文
+        ru: 俄文
+        sr: 塞爾維亞文（西里爾字母）
+        tt: 韃靼文（西里爾字母）
+        uk: 烏克蘭文
+        kk-cyrl: 哈薩克文（西里爾字母）
+        yi: 意第緒文
+        he: 希伯來文
+        ar: 阿拉伯文
+        skr-arab: 薩拉基文
+        fa: 波斯文
+        arz: 埃及阿拉伯文
+        pnb: 西旁遮普文
+        ps: 普什圖文
+        nqo: 恩科文
+        ne: 尼泊爾文
+        mr: 馬拉地文
+        hi: 印地文
+        bn: 孟加拉文
+        pa: 旁遮普文
+        gu: 古吉拉特文
+        ta: 泰米爾文
+        te: 泰盧固文
+        kn: 卡納達文
+        th: 泰文
+        my: 緬甸文
+        shn: 撣文
+        xmf: 明格列連文
+        ka: 喬治亞文
+        km: 高棉文
+        sat: 桑塔利文
+        zh-CN: 簡體中文
+        zh-TW: 繁體中文
+        zh-HK: 中文 (香港)
+        ja: 日文
+        ko: 韓文
   layouts:
     project_name:
       title: OpenHistoricalMap 開放史圖
       h1: OpenHistoricalMap 開放史圖
     logo:
       alt_text: OpenHistoricalMap 標誌
+    main_navigation: 首頁
+    layer_info: 圖層資訊
     home: 前往住家位置
     logout: 登出
     log_in: 登入
@@ -1868,6 +1994,7 @@ zh-TW:
     partners_greeninfo: GreenInfo Network
     partners_osmf: OpenStreetMap 基金會
     partners_osmus: OpenStreetMap U.S.
+    terms_of_use: 使用者條款
     tou: 使用條款
     nothing_to_preview: 無可預覽內容。
     help: 說明
@@ -1877,7 +2004,26 @@ zh-TW:
     learn_more: 瞭解更多
     more: 更多
     header:
+      about: 關於
+      communities: 社群
+      copyright: 版權
+      donate: 捐款
+      edit: 編輯
+      edit_with: 使用 %{editor} 編輯
+      export: 匯出
+      gps_traces: GPS 軌跡
+      help: 幫助
+      history: 歷史
+      home: 回到家位置
+      issues: 問題
+      log_out: 登出
+      log_in: 登入
+      more: 更多
       select_language: 選擇語言
+      sign_up: 註冊
+      user_diaries: 使用者日記
+    meta:
+      openstreetmap_search: OpenHistoricalMap 搜尋
     select_language_button:
       title: 選擇語言
     offline_flash:
@@ -2122,6 +2268,7 @@ zh-TW:
         message: 偏好設定已更新。
       navigation:
         preferences: 偏好設定
+        notification_preferences: 通知
         advanced_preferences: 進階偏好設定
     basic_preferences:
       show:
@@ -2137,7 +2284,18 @@ zh-TW:
           auto: 自動
           light: 明亮
           dark: 暗黑
+        preferred_editor_color_scheme: 偏好的編輯器顏色組態
+        editor_color_schemes:
+          auto: 與網站一致
+          light: 明亮
+          dark: 黑暗
         save: 更新偏好
+    notification_preferences:
+      show:
+        title: 通知設定
+        changeset_comment: 變更集摘要
+        diary_comment: 日記評論
+        direct_message: 私訊
     advanced_preferences:
       show:
         title: 我的進階偏好設定
@@ -2208,6 +2366,9 @@ zh-TW:
       update:
         success: 已更新個人檔案位置。
         failure: 無法更新個人檔案位置。
+    heatmaps:
+      show:
+        cancel: 取消
   sessions:
     new:
       tab_title: 登入
@@ -2474,6 +2635,10 @@ zh-TW:
           url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse
       export_button: 匯出
       export_download: 正在下載…
+      confirmation:
+        header: 下載 XML 資料
+        cancel: 取消
+        download: 下載
     fixthemap:
       title: 回報問題／改進地圖
       how_to_help:
@@ -2534,6 +2699,7 @@ zh-TW:
         title: IRC
         description: '邀請您自己加入 OpenStreetMap US Slack 工作區，並加入 #openhistoricalmap 頻道。'
       wiki:
+        title: Wiki
         description: 瀏覽 wiki，取得詳盡的開放街圖文件。
     potlatch:
       removed: 您預設的 OpenHistoricalMap 編輯器是設定為 Potlatch。但因為 Adobe Flash Player 已終止維護，Potlatch
@@ -2742,6 +2908,10 @@ zh-TW:
       image_dimensions_html: 圖片會顯示成 %{width} x %{height} %{layer}圖層
       download: 下載
       downloading: 正在下載…
+  webgl_error_panes:
+    show:
+      compact_message: 這份地圖需要啟用 WebGL 功能。
+      read_more_about_webgl: 閱讀更多
   traces:
     visibility:
       private: 私人 (以匿名方式分享，節點無順序)
@@ -3056,6 +3226,14 @@ zh-TW:
       contributions:
         one: 去年有 %{count} 次貢獻
         other: 去年有 %{count} 次貢獻
+      title:
+        administrator: 這位用戶是管理員
+        moderator: 這位用戶是版主
+        importer: 這位用戶是匯入者
+      grant:
+        administrator: 授予管理員權限
+        moderator: 授予版主權限
+        importer: 授予匯入員權限
     sidebar_section:
       home_location: 住家位置
       company: 公司
@@ -3367,6 +3545,12 @@ zh-TW:
       tooltip: 圖例
       tooltip_disabled: 圖例不適用這個圖層
     map:
+      navigation_control:
+        zoom_in: 放大
+        zoom_out: 縮小
+      geolocate_control:
+        find_my_location: 顯示我的位置
+        location_not_available: 無法取得位置
       zoom:
         in: 放大
         out: 縮小
@@ -3525,7 +3709,7 @@ zh-TW:
     home:
       marker_title: 我的住家位置
       not_set: 您的帳號尚未設定住家位置
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: 於 %{date} 未有貢獻
         contributions:

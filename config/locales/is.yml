@@ -21,7 +21,7 @@ is:
     dir: ltr
   date:
     formats:
-      heatmap: '%-d. %B'
+      contribution_calendar: '%-d. %B'
   time:
     formats:
       friendly: '%e. %B %Y kl. %H:%M'
@@ -3528,7 +3528,7 @@ is:
     home:
       marker_title: Heimastaðsetning mín
       not_set: Heimastaðsetning er ekki sett upp fyrir notandaaðganginn þinn
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Engin framlög þann %{date}
         contributions:

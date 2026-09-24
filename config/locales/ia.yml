@@ -17,7 +17,7 @@ ia:
       brief: '%{year}'
       brief_bce: '%{year} aEC'
       brief_ce: '%{year} EC'
-      heatmap: '%-d de %B'
+      contribution_calendar: '%-d de %B'
       range: '%{start} – %{end}'
   time:
     formats:
@@ -3799,7 +3799,7 @@ ia:
     home:
       marker_title: Mi loco de residentia
       not_set: Le loco de residentia non es definite pro tu conto
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Necun contribution le %{date}
         contributions:

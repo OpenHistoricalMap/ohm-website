@@ -31,7 +31,7 @@ sl:
       brief: '%{year}'
       brief_bce: '%{year} pr. n. št.'
       brief_ce: '%{year} n. št.'
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
       range: '%{start} – %{end}'
   time:
     formats:
@@ -506,7 +506,7 @@ sl:
         way: poti
         relation: relacije
     start_rjs:
-      feature_warning: Nalaganje %{num_features}-ih značilnosti, kar lahko upočasni
+      feature_warning: Nalaganje %{num_features}-ih gradnikov, kar lahko upočasni
         brskalnik ali ga naredi neodzivnega. Ali res želite prikazati te podatke?
       feature_error: 'Gradnikov ni bilo mogoče naložiti: %{message}'
       load_data: Naloži podatke
@@ -536,10 +536,10 @@ sl:
       versions_label: 'Različice:'
   feature_queries:
     show:
-      title: Preveri značilnosti
-      introduction: Kliknite na zemljevid za iskanje bližnjih značilnosti.
-      nearby: Značilnosti v neposredni bližini
-      enclosing: Vsebujoče značilnosti
+      title: Poizvedi po gradnikih
+      introduction: Kliknite na zemljevid za iskanje bližnjih gradnikov.
+      nearby: Gradniki v neposredni bližini
+      enclosing: Vsebujoči gradniki
   old_elements:
     index:
       node:
@@ -876,6 +876,9 @@ sl:
       title: Datoteka ni bila najdena
       description: Datoteke/imenika/API-operacije s tem imenom v strežniku OpenHistoricalMap
         ni bilo mogoče najti (HTTP 404)
+  export:
+    show:
+      title: Vgrajen OpenHistoricalMap
   follows:
     show:
       follow:
@@ -1148,6 +1151,7 @@ sl:
           bridleway: Jahalna pot
           bus_guideway: Turistični avtobus
           bus_stop: Avtobusna postaja
+          busway: Avtobusna proga
           construction: Cesta v izgradnji
           corridor: Hodnik
           crossing: Prehod
@@ -1421,7 +1425,7 @@ sl:
           water: Vodovje
           wetland: Mokrišče
           wood: Pragozd
-          "yes": Naravna značilnost
+          "yes": Naravni gradnik
         office:
           accountant: Računovodstvo
           administrative: Administracija
@@ -1696,6 +1700,7 @@ sl:
         archdiocese: Meja nadškofije
         arrondissement: Meja okrožja
         audiencia: Meja avdience (španski sodni okraj)
+        borough: Meja okraja
         caliphate: Meja kalifata
         canton: Meja kantona
         captaincy_general: Meja splošne kapitanije (kolonialna upravna enota)
@@ -1798,6 +1803,7 @@ sl:
       download: Prenesi pot kot GeoJSON
       filename: pot
       directions_courtesy_html: Navodila prispeva %{link}
+      check_demo_html: Več podrobnosti iz %{link}
   issues:
     index:
       title: Težave
@@ -1823,6 +1829,7 @@ sl:
         other: '%{count} poročil'
       reported_item: Prijavljeni predmet
       states:
+        ignored: Prezrto
         open: Odpri
         resolved: Razrešeno
     resolve:
@@ -1839,6 +1846,8 @@ sl:
       reportable_title:
         diary_comment: '%{entry_title}, komentar #%{comment_id}'
         note: 'Opomba #%{note_id}'
+      reportable_heading:
+        user_html: Ustvaril uporabnik %{title} dne %{datetime_created}
     reporters:
       reporters:
         more_reporters: in še %{count}
@@ -1903,9 +1912,123 @@ sl:
     create:
       successful_report: Vaše sporočilo je uspešno zabeleženo.
       provide_details: Navedite zahtevane podrobnosti
+  languages_panes:
+    select_language_list:
+      search_language: Išči ...
+      languages:
+        af: Afrikanščina
+        gsw: Alemanščina
+        frp: Arpitanščina
+        ast: Asturijščina
+        az: Azerbajdžanščina
+        id: Indonezijščina
+        ms: Malajščina
+        bcl: Osrednja bikolščina
+        bs: Bosanščina
+        br: Bretonščina
+        ca: Katalonščina
+        cs: Češčina
+        cy: Valižanščina
+        da: Danščina
+        de: Nemščina
+        dsb: Spodnjelužiška srbščina
+        et: Estonščina
+        en: Angleščina
+        en-GB: Angleščina (VB)
+        es: Španščina
+        eo: Esperanto
+        eu: Baskovščina
+        fr: Francoščina
+        fy: Zahodna frizijščina
+        fur: Furlanščina
+        ga: Irščina
+        gd: Škotska gelščina
+        gl: Galicijščina
+        aln: Gegovska albanščina
+        hsb: Gornjelužiška srbščina
+        hr: Hrvaščina
+        ia: Interlingua
+        is: Islandščina
+        it: Italijanščina
+        kw: Kornščina
+        gcf: Gvadalupska kreolščina
+        ku-Latn: Kurdščina (latinična)
+        lv: Latvijščina
+        lb: Luksemburščina
+        lkt: Lakota
+        lt: Litovščina
+        hu: Madžarščina
+        fit: Tornedalska finščina
+        nl: Nizozemščina
+        nb: Norveščina (Bokmål)
+        nn: Norveščina (Nynorsk)
+        oc: Okcitanščina
+        nds: Nizka nemščina
+        pl: Poljščina
+        pt-PT: Portugalščina
+        pt: Portugalščina (Brazilija)
+        ro: Romunščina
+        sc: Sardinščina
+        sco: Škotščina
+        sq: Albanščina
+        scn: Sicilijanščina
+        sk: Slovaščina
+        sl: Slovenščina
+        sr-Latn: Srbščina (latinična)
+        sh: Srbohrvaščina (latinična)
+        fi: Finščina
+        sv: Švedščina
+        tl: Tagaloščina
+        kab: Kabilščina
+        vi: Vietnamščina
+        tr: Turščina
+        yo: Jorubščina
+        diq: Dimli
+        el: Grščina
+        ba: Baškirščina
+        be: Beloruščina
+        be-Tarask: Beloruščina (tarašk.)
+        bg: Bolgarščina
+        mk: Makedonščina
+        mo: Moldavščina
+        ce: Čečenščina
+        ru: Ruščina
+        sr: Srbščina (cirilična)
+        tt: Tatarščina (cirilična)
+        uk: Ukrajinščina
+        kk-cyrl: Kazaščina (cirilična)
+        yi: Jidiš
+        he: Hebrejščina
+        ar: Arabščina
+        skr-arab: Sarajščina
+        fa: Perzijščina
+        arz: Egiptovska arabščina
+        pnb: Zahodna pandžabščina
+        nqo: Nkojščina
+        ne: Nepalščina
+        mr: Maratščina
+        hi: Hindijščina
+        pa: Pandžabščina
+        gu: Gudžaratščina
+        ta: Tamilščina
+        te: Teluščina
+        kn: Kanareščina
+        th: Tajščina
+        my: Burmajščina
+        shn: Šanščina
+        xmf: Mingrelščina
+        ka: Gruzijščina
+        km: Kmerščina
+        sat: Santalščina
+        zh-CN: Kitajščina (poenostavljena)
+        zh-TW: Kitajščina (tradicionalna)
+        zh-HK: Kitajščina (Hongkong)
+        ja: Japonščina
+        ko: Korejščina
   layouts:
     logo:
       alt_text: OpenHistoricalMap logotip
+    layer_info: Podatki o sloju
     home: Domov
     logout: Odjava
     log_in: Prijava
@@ -1929,6 +2052,7 @@ sl:
       podpirata %{greeninfo} in %{devseed}.
     partners_osmf: Fundacija OpenStreetMap
     partners_osmus: OpenStreetMap ZDA
+    terms_of_use: Pogoji uporabe
     tou: Pogoji uporabe
     nothing_to_preview: Ničesar ni za predogled.
     help: Pomoč
@@ -1938,7 +2062,25 @@ sl:
     learn_more: Več o tem
     more: Več
     header:
+      about: O projektu
+      communities: ' Skupnosti'
+      copyright: Avtorske pravice
+      donate: Daruj
+      edit: Uredi
+      edit_with: Uredi z %{editor}
+      export: Izvozi
+      gps_traces: Sledi GPS
+      help: Pomoč
+      history: Zgodovina
+      home: Pojdi na domači položaj
+      issues: Težave
+      log_out: Odjava
+      log_in: Prijava
+      more: Več
       select_language: Izberi jezik
+      sign_up: Registracija
+    meta:
+      openstreetmap_search: Iskanje OpenHistoricalMap
     select_language_button:
       title: Izberi jezik
     offline_flash:
@@ -1971,8 +2113,11 @@ sl:
         na %{replyurl}
     follow_notification:
       hi: Pozdravljeni, %{to_user},
+      followed_you: '%{user} vas zdaj spremlja na OpenHistoricalMap.'
       see_their_profile: Njegov profil si lahko ogledate na %{userurl}.
       see_their_profile_html: Njegov profil si lahko ogledate na %{userurl}.
+      follow_them: Tudi vi ga lahko spremljate na %{followurl}.
+      follow_them_html: Spremljate ga lahko tudi na %{followurl}.
     gpx_details:
       details: 'Podrobnosti vaše datoteke:'
       filename: Ime datoteke
@@ -2247,6 +2392,7 @@ sl:
         message: Nastavitve posodobljene.
       navigation:
         preferences: Nastavitve
+        notification_preferences: Obvestila
         advanced_preferences: Napredne nastavitve
     basic_preferences:
       show:
@@ -2262,7 +2408,25 @@ sl:
           auto: Samodejno
           light: Svetla
           dark: Temna
+        preferred_editor_color_scheme: Prednostna barvna shema urejevalnika
+        editor_color_schemes:
+          auto: Enako kot spletno mesto
+          light: Svetla
+          dark: Temna
         save: Posodobi prilagoditve
+    notification_preferences:
+      show:
+        title: Nastavitve obveščanja
+        changeset_comment: Komentarji sklopov sprememb
+        diary_comment: Komentarji dnevniških zapisov
+        direct_message: Neposredna sporočila
+        gpx_import_failure: 'Uvoz sledi GPS: spodletelo'
+        gpx_import_success: 'Uvoz sledi GPX: uspešen'
+        new_follower: Novi spremljevalci
+        note_comment: Komentarji opombe
+        save: Posodobi nastavitve
+        delivery_mechanisms:
+          email: E-pošta
     advanced_preferences:
       show:
         title: Moje napredne nastavitve
@@ -2275,6 +2439,7 @@ sl:
         image: Slika
         company: Podjetje
         location: Lokacija
+        contribution_calendar: Koledar prispevkov
     descriptions:
       show:
         title: Uredi profil
@@ -2333,6 +2498,13 @@ sl:
       update:
         success: Položaj profila je posodobljen.
         failure: Položaja profila ni bilo mogoče posodobiti.
+    heatmaps:
+      show:
+        title: Nastavi koledar prispevkov
+        show_contribution_calendar_in_public: Prikaži koledar prispevkov na strani
+          profila
+        save: Posodobi nastavitve koledarja prispevkov
+        cancel: Prekliči
   sessions:
     new:
       tab_title: Prijava
@@ -2350,6 +2522,7 @@ sl:
       login_button: Prijava
       with external: ali pa se prijavite prek tretje osebe
       or: ali
+      reset_to_login: Vaše geslo je poteklo. Za prijavo ponastavite svoje geslo.
       auth failure: Oprostite, prijava s temi podatki ni uspela.
     destroy:
       title: Odjava
@@ -2447,6 +2620,7 @@ sl:
       legal_1_html: "To spletno mesto in povezane storitve \nv imenu skupnosti upravlja
         %{group_link}, ki je povezan z OpenStreetMap U.S. Za uporabo vseh storitev
         OpenHistoricalMap veljajo naši %{terms_of_use_link}, %{aup_link} in %{privacy_policy_link}."
+      legal_1_group: neuradna skupina
       legal_1_terms_of_use: Pogoji uporabe
       legal_1_aup: Politika sprejemljive uporabe
       legal_1_privacy_policy: Pravilnik o zasebnosti
@@ -2468,6 +2642,16 @@ sl:
         native_link: Slovensko verzijo
         mapping_link: začnete kartirati
       legal_babble:
+        introduction_2_ohm_html: Podatkovna zbirka OpenHistoricalMap vključuje nekatere
+          posamezne gradnike zemljevida, ki so avtorsko zaščiteni. Ti gradniki so
+          na voljo pod odprto licenco, kot je %{cc_by_link} (CC BY) ali %{cc_by_sa_link}
+          (CC BY-SA), kot je navedeno v oznakah %{license_key_link} na posameznih
+          gradnikih. V kolikor uporabljate katerikoli pomemben del podatkovne zbirke,
+          ki je zajet z licenco »deljenje pod enakimi pogoji«, morate pri svoji priredbi
+          upoštevati pogoje te licence.
+        introduction_3_ohm_html: Slogi zemljevidov, predstavljeni na naši domači strani,
+          so javno dostopni pod licenco CC0. Lahko jih prosto kopirate, delite, prenašate
+          in prilagajate za kakršen koli namen brez kakršnih koli omejitev.
         introduction_4_creative_commons: Creative Commons Priznanje avtorstva-Deljenje
           pod enakimi pogoji 2.0
         introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/deed.sl
@@ -2477,6 +2661,7 @@ sl:
           za vsako priznanje, ki ga navedete OpenHistoricalMap pri ponovni uporabi,
           prilagajanju ali drugi uporabi naših zemljevidov ali podatkov.
         credit_2_this_copyright_page: ta stran o avtorskih pravicah
+        credit_2_home: naša domača stran
         attribution_example:
           alt: Povezava z oznako OHM v spodnjem desnem kotu spletne strani, pod časovnim
             drsnikom.
@@ -2489,10 +2674,15 @@ sl:
         more_2_1_api_usage_policy: Politika uporabe API-ja
         more_2_1_tile_usage_policy: Politika uporabe ploščic
         more_2_1_nominatim_usage_policy: Politika uporabe Nominatim
-        contributors_title_html: Naši sodelavci
-        contributors_intro_html: "Naših sodelavcev je na tisoče. Vključujemo tudi
-          odprtolicenčne \npodatke nacionalnih kartografskih agencij\nin drugih virov,
-          med njimi:"
+        contributors_title_html: Priznanja
+        contributors_intro_html: |-
+          OpenHistoricalMap je skupni napor tisočev posameznikov in organizacij, ki črpajo iz obsežnega nabora znanstvenih del, novinarstva in vodenja evidenc.
+          Med našimi najpomembnejšimi viri in sodelavci so:
+        contributors_anr_communes_html: Podatki, ustvarjeni v okviru projekta %{anr_communes_link}
+          v sodelovanju z %{campop_link}.
+        contributors_osm: Sodelavci OpenStreetMap
+        contributors_2_ohm_html: 'Slogi zemljevidov, predstavljeni na domači strani,
+          vsebujejo podatke OpenHistoricalMap in naslednje vire:'
         contributors_footer_2_html: |-
           Vključitev podatkov v OpenHistoricalMap ne pomeni, da izvorni ponudnik podatkov podpira OpenHistoricalMap, daje kakršno koli jamstvo ali
           prevzema kakršno koli odgovornost.
@@ -2538,6 +2728,13 @@ sl:
           title: Drugi viri
           description: Dodatni viri, navedeni v vikiju OpenStreetMap
       export_button: Izvozi
+      export_download: Prenos ...
+      confirmation:
+        header: Prenesi podatke XML
+        body: Ali želite prenesti podatke zemljevida za to območje v obliki XML? Upoštevajte,
+          da lahko prenos velikih območij traja nekaj časa.
+        cancel: Prekliči
+        download: Prenesi
     fixthemap:
       title: Prijavi napako / Popravi zemljevid
       how_to_help:
@@ -2585,8 +2782,16 @@ sl:
           in druge storitve OpenStreetMap.
       welcomemat:
         title: Za organizacije
+      github:
+        title: Zahtevki za izboljšavo, hrošči
+        description: Odprite težavo v naših repozitorijih GitHub, da prijavite napako
+          ali zahtevate izboljšavo.
+      mailing_list:
+        title: Dopisni seznam
       slack:
         title: IRC
+        description: 'Povabite se v delovni prostor OpenStreetMap US Slack in se pridružite
+          kanalu #openhistoricalmap.'
       wiki:
         title: Viki
         description: Prebrskajte viki za poglobljeno dokumentacijo OHM.
@@ -2617,6 +2822,12 @@ sl:
       where_am_i_title: Opišite trenutno lokacijo z uporabo iskalnika
       submit_text: Išči
       reverse_directions_text: Obrni smer
+      modes:
+        bicycle: Kolo
+        car: Avto
+        foot: Peš
+      providers:
+        description: Storitve usmerjanja
     welcome:
       title: Pozdravljeni!
       introduction: Pozdravljeni v OpenHistoricalMap, brezplačnem zemljevidu sveta,
@@ -2624,10 +2835,15 @@ sl:
         kartiranja. Tu je hitri vodnik z najpomembnejšim, kar morate vedeti.
       whats_on_the_map:
         title: Kaj je na zemljevidu
-        off_the_map_html: To, česar %{doesnt} vključuje, so mnenjski podatki, kot
-          so ocene, zgodovinske ali hipotetične značilnosti in podatki iz avtorsko
-          varovanih virov. Če nimate posebnega dovoljenja, ne kopirajte iz spletnih
-          ali tiskanih zemljevidov.
+        on_the_map_ohm_html: OpenHistoricalMap spremlja spremembe naravnega in človeškega
+          zemljepisa po vsem svetu. Imamo milijone vnosov iz %{past_and_present},
+          od imperijev in ledenikov do hiš in restavracij. Na zemljevid lahko vnesete
+          vse gradnike resničnega sveta, ki vas zanimajo.
+        past_and_present: tako preteklost kot sedanjost
+        off_the_map_html: OpenHistoricalMap %{doesnt} vključuje izmišljenih/prirejenih
+          zgodovin, znanih napak na zgodovinskih zemljevidih in avtorsko zaščitenih
+          virov. Ne kopirajte podatkov s sodobnih zemljevidov preteklosti, ki jih
+          najdete na spletu ali natisnjene, razen če imate za to posebno dovoljenje.
         doesnt: ne vključuje
       basic_terms:
         title: Osnovni pogoji za kartiranje
@@ -2637,8 +2853,8 @@ sl:
           za urejanje zemljevida.'
         a_node_html: '%{node} je točka na zemljevidu, npr. restavracija ali drevo.'
         a_way_html: '%{way} je črta ali območje, npr. cesta, potok, jezero ali stavba.'
-        a_tag_html: '%{tag} je podatek o vozlišču ali poti, npr. ime restavracije
-          ali omejitev cestne hitrosti.'
+        a_tag_html: '%{tag} je delček podatkov o vozlišču ali poti, na primer ime
+          restavracije ali leto izgradnje mostu.'
         editor: urejevalec
         node: vozlišče
         way: pot
@@ -2677,6 +2893,9 @@ sl:
           obstajajo kot neformalno srečevanje ali kot skupina v skupnosti. Vsakdo
           jih lahko ustanovi ali se jim pridruži. Preberite več na %{communities_wiki_link}.
         communities_wiki: Vikistran skupnosti
+  social_links:
+    show:
+      website: spletno mesto
   layers_panes:
     show:
       map_notes_zoom_in_tooltip: Približaj za ogled opomb zemljevida
@@ -2694,6 +2913,10 @@ sl:
         track: Kolovoz
         bridleway: Jahalna pot
         cycleway: Kolesarska steza
+        international_bike_route: Mednarodna kolesarska povezava
+        national_bike_route: Državna kolesarska povezava
+        regional_bike_route: Regionalna kolesarska povezava
+        local_bike_route: Lokalna kolesarska povezava
         mountain_bike_route: Gorskokolesarska pot
         footway: Pešpot
         rail: Železnica
@@ -2767,6 +2990,7 @@ sl:
         bicycle_parking: Parkirišče za kolesa
         bicycle_parking_small: Majhno parkirišče za kolesa
         toilets: Stranišče
+      see_external_legend: Poglej zunanjo legendo zemljevida
   share_panes:
     show:
       link: povezavo ali HTML
@@ -2778,12 +3002,21 @@ sl:
       paste_html: Prilepite HTML za vdelavo v spletno mesto
       geo_uri: URI lokacije
       image: sliko
+      only_layers_exported_as_image: 'Kot sliko je mogoče izvoziti le naslednje plasti:'
       format: 'Format:'
       scale: 'Merilo:'
       custom_dimensions: Nastavitev velikosti po meri
-      image_dimensions_html: Slika bo prikazovala standardni sloj velikosti %{width}
-        x %{height}
+      image_dimensions_html: Slika bo prikazovala standardni sloj %{layer} velikosti
+        %{width} x %{height}
       download: Prenesi
+      downloading: Prenos ...
+  webgl_error_panes:
+    show:
+      description_html: Zdi se, da %{your_browser_does_not_support_webgl}, tehnologije
+        za upodabljanje 3D-grafike na spletu.
+      your_browser_does_not_support_webgl: vaš brskalnik ne podpira WebGL
+      webgl_is_required_for_this_map: Za prikaz tega zemljevida je potreben WebGL.
+      read_more_about_webgl: Preberi več
   traces:
     visibility:
       private: Zasebna (v skupni rabi kot anonimna, neurejene točke)
@@ -2883,6 +3116,7 @@ sl:
         description_with_count:
           one: Datoteka GPX z %{count} točko uporabnika %{user}
           two: Datoteka GPX z %{count} točkama uporabnika %{user}
+          few: Datoteka GPX z %{count} točkami uporabnika %{user}
           other: Datoteka GPX z %{count} točkami uporabnika %{user}
         description_without_count: Datoteka GPX uporabnika %{user}
   application:
@@ -2907,6 +3141,9 @@ sl:
       google:
         title: Prijava z Googlom
         alt: Logotip Google
+      apple:
+        title: Prijava z Applom
+        alt: Applov logotip
       facebook:
         title: Prijavi se s Facebookom
         alt: Logotip Facebook
@@ -2919,7 +3156,31 @@ sl:
       wikipedia:
         title: Prijavi se z Wikipedijo
         alt: Logotip Wikipedije
+      openstreetmap:
+        title: Prijava z OpenStreetMap
+        alt: Logotip OpenStreetMap
     share:
+      share:
+        title: Deli
+        alt: Ikona deljenja
+      email:
+        title: Deli prek e-pošte
+        alt: Ikona e-pošte
+      bluesky:
+        title: Deli prek Blueskyja
+        alt: Ikona Blueskyja
+      facebook:
+        title: Deli prek Facebooka
+        alt: Ikona Facebooka
+      linkedin:
+        title: Deli prek LinkedIna
+        alt: Ikona LinkedIna
+      mastodon:
+        title: Deli na Mastodonu
+        alt: Ikona Mastodona
+      telegram:
+        title: Deli na Telegramu
+        alt: Ikona Telegrama
       x:
         title: Deli na X-u
         alt: Ikona X-a
@@ -2930,7 +3191,7 @@ sl:
       openid: Prijava z uporabo OpenHistoricalMap
       read_prefs: Branje uporabniških prilagoditev
       write_prefs: Spreminjanje uporabniških nastavitev
-      write_diary: Ustvarjajte dnevniške zapise, komentarje in sklepajte prijateljstva
+      write_diary: Ustvarite dnevniške zapise in komentarje
       write_api: Spreminjanje zemljevida
       read_gpx: Branje zasebnih sledi GPS
       write_gpx: Nalaganje sledi GPS
@@ -3032,6 +3293,7 @@ sl:
         html: Vaš naslov ni javno prikazan, za več informacij glejte naš %{privacy_policy_link}.
       or: ali
       use external auth: ali se prijavite prek tretje osebe
+      verify_human: Potrdite, da ste človek
     no_such_user:
       title: Ni tega uporabnika
       heading: Uporabnik %{user} ne obstaja
@@ -3091,6 +3353,20 @@ sl:
       change_image: Spremeni sliko
       edit_company: Uredi podjetje
       edit_location: Uredi položaj
+      title:
+        moderator: Ta uporabnik je moderator
+        importer: Ta uporabnik je uvoznik
+      grant:
+        administrator: Dodeli administratorski dostop
+        moderator: Dodeli moderatorski dostop
+        importer: Dodeli dostop uvoznika
+        are_you_sure: Ali res želite dodeliti vlogo »%{role}« uporabniku »%{name}«?
+      revoke:
+        administrator: Odvzemi administratorski dostop
+        moderator: Odvzemi moderatorski dostop
+        importer: Odvzemi dostop uvoznika
+        are_you_sure: Ali ste prepričani, da želite uporabniku '%{name}' preklicati
+          vlogo '%{role}'?
     sidebar_section:
       home_location: Domači položaj
       company: Podjetje
@@ -3389,6 +3665,11 @@ sl:
       tooltip: Legenda
       tooltip_disabled: Legenda za ta sloj ni na voljo
     map:
+      navigation_control:
+        zoom_in: Približaj
+        zoom_out: Oddalji
+      geolocate_control:
+        find_my_location: Pokaži moj položaj
       zoom:
         in: Približaj
         out: Oddalji
@@ -3440,14 +3721,17 @@ sl:
       edit_disabled_tooltip: Približaj za urejanje zemljevida
       createnote_tooltip: Dodaj opombo na zemljevid
       createnote_disabled_tooltip: Približajte za dodajanje opomb na zemljevid
-      queryfeature_tooltip: Preveri značilnosti
-      queryfeature_disabled_tooltip: Približaj za preverjanje značilnosti
+      queryfeature_tooltip: Poizvedi po gradnikih
+      queryfeature_disabled_tooltip: Približajte za poizvedbo po gradnikih
     edit_help: Premaknite zemljevid in približajte lokacijo, ki jo želite urediti,
       nato pa kliknite tukaj.
     directions:
       distance_in_units:
         m: '%{distance}&nbsp;m'
         km: '%{distance}&nbsp;km'
+        ft: '%{distance} ft'
+        yd: '%{distance} yd'
+        mi: '%{distance} mi'
       errors:
         no_route: Ni mogoče najti poti med tema dvema položajema.
         no_place:
@@ -3532,7 +3816,7 @@ sl:
       node: Vozlišče
       way: Pot
       relation: Relacija
-      nothing_found: Značilnosti ni bilo mogoče najti
+      nothing_found: Nobenih gradnikov ni bilo najti
       error: 'Napaka pri povezovanju s strežnikom %{server}: %{error}'
       timeout: Časovna omejitev povezovanja s strežnikom %{server}
     context:
@@ -3540,13 +3824,13 @@ sl:
       directions_to: Navodila za pot do tu
       add_note: Tu dodaj opombo
       show_address: Prikaži naslov
-      query_features: Preveri značilnosti
+      query_features: Poizvedi po gradnikih
       centre_map: Osredini zemljevid tukaj
       scroll_to_changeset: Pomaknite se do nabora sprememb
     home:
       marker_title: Moj domači položaj
       not_set: Domači položaj za vaš račun ni nastavljen
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Brez prispevkov dne %{date}
         contributions:
