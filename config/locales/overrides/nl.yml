@@ -108,7 +108,6 @@ nl:
       brief: "%{year}"
       brief_bce: "%{year} v.Chr."
       brief_ce: "%{year} n.Chr."
-      contribution_calendar: "%B %-d"
       range: "%{start} – %{end}"
   diary_entries:
     comments:
@@ -540,7 +539,7 @@ nl:
       about:
         paragraph_1: In tegenstelling tot andere kaarten is OpenHistoricalMap volledig gemaakt door mensen zoals u, en is het voor iedereen gratis te verbeteren, bij te werken, te downloaden en te gebruiken.
         welcome: Welkom bij OpenHistoricalMap
-      duplicate_social_email: Als u al een OpenHistoricalMap-account heeft en een identiteitsprovider van derden wilt gebruiken, log dan in met uw wachtwoord en wijzig de instellingen van uw account.
+      duplicate_social_email: Als u al een OpenHistoricalMap-account heeft en een identiteitsprovider van derden wilt gebruiken, meld u dan aan met uw wachtwoord en wijzig de instellingen van uw account.
       please_contact_support_html: Neem contact op met de %{support_link} om een account aan te maken - we zullen proberen het verzoek zo snel mogelijk af te handelen.
       signup_to_authorize_html: Registreer u bij OpenHistoricalMap om toegang te krijgen tot %{client_app_name}.
     show:

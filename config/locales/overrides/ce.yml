@@ -63,7 +63,7 @@ ce:
     intro_text: OpenHistoricalMap — дуьненан карта ду, хьо санна болчу наха кхоьллина, ткъа хIара маьрша лело йиш йу йиллина лицензица.
     logo:
       alt_text: OpenHistoricalMap-ан логотип
-    logout: Болх дӀаберзор
+    logout: Ара
   oauth:
     scopes:
       openid: OpenHistoricalMap лелош чу вала

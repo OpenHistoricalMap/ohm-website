@@ -8,6 +8,7 @@
 # Author: ArlandGa
 # Author: Atriwidada
 # Author: Bayahiu
+# Author: Bennylin
 # Author: Bloomingfungi
 # Author: C5st4wr6ch
 # Author: DARMAS BUDI SANTOSO
@@ -174,6 +175,8 @@ id:
         title: Selamat datang di OpenHistoricalMap
       wiki:
         description: Petunjuk yang dikelola komunitas untuk menggunakan OHM dan pedoman untuk bersumbangsih ke pada proyek.
+      welcomemat:
+        title: Selamat datang di OHM
     index:
       js_2: OpenHistoricalMap menggunakan JavaScript untuk peta selipnya.
       remote_failed: Gagal melakukan edit - pastikan JOSM atau Merkaartor telah termuat dan opsi remote control telah diaktifkan

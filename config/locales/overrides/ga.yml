@@ -178,6 +178,8 @@ ga:
     partners_osmf: Fondúireacht OpenStreetMap
     partners_osmus: OpenStreetMap SAM
     tag_line: An Léarscáil Dhomhanda Vicí Shaor in Aisce
+    meta:
+      openstreetmap_search: OpenHistoricalMap Cuardach
   notes:
     new_readonly:
       warning: Ní féidir nótaí nua a chruthú mar go bhfuil OpenHistoricalMap API i mód léite amháin faoi láthair.
@@ -258,6 +260,7 @@ ga:
         Agus cuimhníonn tú ar an gcuma a bhíodh ar do chomharsanacht.
         Baineann sé ar fad le OpenHistoricalMap.
       scope_title: Mór agus Beag, Ansin agus Anois
+      legal_1_1_terms_of_use_url: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
     copyright:
       legal_babble:
         attribution_example:
@@ -474,3 +477,6 @@ ga:
       delete_user: Scrios an tÚsáideoir seo
       hide_user: Cuir an tÚsáideoir seo i bhfolach
       unhide_user: Taispeáin an tÚsáideoir seo
+  export:
+    show:
+      title: OpenHistoricalMap Leabaithe

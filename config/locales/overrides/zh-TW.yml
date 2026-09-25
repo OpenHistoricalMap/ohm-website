@@ -94,7 +94,6 @@ zh-TW:
       brief: "%{year}"
       brief_bce: 西元前 %{year}
       brief_ce: 西元 %{year}
-      contribution_calendar: "%B %-d"
       range: "%{start} – %{end}"
   diary_entries:
     comments:
@@ -118,6 +117,7 @@ zh-TW:
       description: 你在 OpenHistoricalMap 伺服器上請求的操作無效 (HTTP 400)
     contact:
       contact_the_community_html: 如果你發現有損壞的連結/錯誤，請隨時%{contact_link}OpenHistoricalMap 社群。並請記下你的請求的確切 URL 網址。
+      contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
     forbidden:
       description: 您在 OpenHistoricalMap 伺服器上請求的運作僅限管理員使用（HTTP 403）
     internal_server_error:
@@ -223,6 +223,8 @@ zh-TW:
       h1: OpenHistoricalMap 開放史圖
       title: OpenHistoricalMap 開放史圖
     tag_line: 自由的 wiki 世界地圖
+    meta:
+      openstreetmap_search: OpenHistoricalMap 搜尋
   notes:
     new_readonly:
       warning: 無法建立新註記，因為 OpenHistoricalMap API 目前處於唯讀模式。
@@ -414,6 +416,8 @@ zh-TW:
         title: 歡迎來到 OpenHistoricalMap
       welcomemat:
         description: 以這份涵蓋 OpenHistoricalMap 基礎知識快速指南開始。
+      wiki:
+        title: Wiki
     index:
       js_2: OpenHistoricalMap 使用 JavaScript 讓地圖更平順。
       license:
@@ -504,3 +508,6 @@ zh-TW:
       delete_user: 刪除這位使用者
       hide_user: 隱藏這位使用者
       unhide_user: 取消隱藏這位使用者
+  export:
+    show:
+      title: OpenHistoricalMap 嵌入
