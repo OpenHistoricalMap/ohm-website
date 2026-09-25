@@ -15,11 +15,6 @@
 # Author: రహ్మానుద్దీన్
 # Do not edit by hand.
 te:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: ఇది ఏమిటి?
   api:
     notes:
       rss:
@@ -33,8 +28,6 @@ te:
         title_all: OpenHistoricalMap మార్పులసమితి చర్చ
         title_particular: 'OpenHistoricalMap మార్పులసమితి #%{changeset_id} చర్చ'
   diary_entries:
-    comments:
-      title: ఓపెన్ హిస్టోరికల్ మ్యాప్ డైరీ ఎంట్రీలు
     feed:
       all:
         description: OpenHistoricalMap వాడుకరులు ఇటీవల చేర్చిన డైరీ పద్దులు
@@ -45,20 +38,12 @@ te:
       user:
         description: "%{user} చేర్చిన ఇటీవలి OpenHistoricalMap డైరీ పద్దులు"
         title: "%{user} చేర్చిన OpenHistoricalMap డైరీ పద్దులు"
-    profile_diaries:
-      date_label: తేదీ
   javascripts:
     map:
       base:
         japanesescroll: జపనీస్ స్క్రోల్
-      zoom:
-        in: జూమ్ ఇన్
-        out: జూమ్ ఔట్
   layouts:
-    intro_2_create_account: వాడుకరి ఖాతాను సృష్టించుకోండి
     intro_text: OpenHistoricalMap, ఓ ప్రపంచ మ్యాపు. మీలాంటి వారే దీన్ని తయారు చేసారు. స్వేచ్ఛా లైసెన్సు ద్వారా స్వేచ్ఛగా దీన్ని వాడుకోవచ్చు.
-    logout: నిష్క్రమించండి
-    tag_line: స్వేచ్ఛా వికీ ప్రపంచ పటం
   site:
     about:
       lede_text: OpenHistoricalMap ను మ్యాపర్ల సముదాయం నిర్మిస్తోంది. ఈ సముదాయ సభ్యులు ప్రపంచ వ్యాప్తంగా రోడ్లు, రెస్టారెంట్లు, రైల్వే స్టేషన్లు లాంటి ఎన్నో అంశాల గురించి డేటాను చేర్చడం, నిర్వహించడం చేస్తున్నారు.
@@ -69,7 +54,6 @@ te:
           contributors&rdquo; అనే క్రిడిట్ వాడాలి.
         credit_2_this_copyright_page: ఈ కాపీరైట్ పేజీ
         credit_title_html: OpenHistoricalMap కు శ్రేయస్సు నివ్వడం ఎలా
-        more_2_1_api_usage_policy: API వినియోగ విధానం
         more_title_html: మరింత తెలుసుకోవడం
     export:
       too_large:
@@ -130,7 +114,3 @@ te:
     auth_association:
       heading: మీ ID ఇంకా ఏ OpenHistoricalMap ఖాతాకూ అనుబంధించి లేదు.
       option_1: మీరు OpenHistoricalMap కు కొత్తైతే, కింది ఫారమును వాడి కొత్త ఖాతాను సృష్టించుకోండి.
-    show:
-      delete_user: ఈ వాడుకరిని తొలగించు
-      hide_user: ఈ వాడుకరిని దాచు
-      unhide_user: ఈ వాడుకరిని చూపు

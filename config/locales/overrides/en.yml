@@ -9,10 +9,6 @@ en:
       show:
         delete_introduction: 'You can delete your OpenHistoricalMap account using the button below. Please note the following details:'
         retain_caveats: 'However, some information about you will be retained on OpenHistoricalMap, even after your account is deleted:'
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: what is this?
     terms:
       show:
         read and accept with tou: Please read the contributor agreement and the terms of use, check both checkboxes when done and then press the continue button.
@@ -49,9 +45,6 @@ en:
       brief_ce: "%{year} CE"
       range: "%{start} – %{end}"
   diary_entries:
-    comments:
-      description: Recent diary entries from users of OpenHistoricalMap
-      title: OpenHistoricalMap diary entries
     feed:
       all:
         description: Recent diary entries from users of OpenHistoricalMap
@@ -62,9 +55,6 @@ en:
       user:
         description: Recent OpenHistoricalMap diary entries from %{user}
         title: OpenHistoricalMap diary entries for %{user}
-    profile_diaries:
-      comments_label: Comments
-      date_label: Date
   errors:
     bad_request:
       description: The operation you requested on the OpenHistoricalMap server is not valid (HTTP 400)
@@ -81,13 +71,6 @@ en:
     show:
       title: OpenHistoricalMap Embedded
   geocoder:
-    search:
-      title:
-        latlon_url: https://openhistoricalmap.org/
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse_url: https://nominatim.openhistoricalmap.org/
-        osm_nominatim_url: https://nominatim.openhistoricalmap.org/
     search_osm_nominatim:
       border_types:
         archdiocese: Archdiocesan Boundary
@@ -168,20 +151,15 @@ en:
         woodblock: Woodblock
       cc0_text: "%{copyright_link}"
       openhistoricalmap_contributors: OHM
-      zoom:
-        in: Zoom In
-        out: Zoom Out
     query:
       suffix_format: "[%{dates}]"
   layouts:
     ohm_affiliation_html: OpenHistoricalMap is a charter project of %{osmus}, a 501(c)(3) nonprofit organization affiliated with the %{osmf}.
     ohm_early_supporters_html: Early technical development was supported by %{greeninfo} and %{devseed}.
-    intro_2_create_account: Create a user account
     intro_header: Welcome to OpenHistoricalMap!
     intro_text: OpenHistoricalMap is an interactive map of the world throughout history, created by people like you and dedicated to the public domain.
     logo:
       alt_text: OpenHistoricalMap logo
-    logout: Log Out
     meta:
       openstreetmap_search: OpenHistoricalMap Search
     offline_flash:
@@ -192,9 +170,7 @@ en:
     partners_osmf: OpenStreetMap Foundation
     partners_osmus: OpenStreetMap U.S.
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: The Free Wiki World Map
   notes:
     new:
       counter_warning_forum_link:
@@ -389,16 +365,6 @@ en:
           '
         more_1_wiki: on the OpenStreetMap Wiki
         more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
-        more_2_1_api_usage_policy: API Usage Policy
-        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
-        more_2_1_html: |
-          Although OpenHistoricalMap is open data, we cannot provide a
-          free-of-charge map API or map tiles for third-parties.
-          See our %{api_usage_policy_link}, %{tile_usage_policy_link} and %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Nominatim Usage Policy
-        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
-        more_2_1_tile_usage_policy: Tile Usage Policy
-        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
         more_title_html: Finding out more
         trademarks_1_ohm_contact_team: contact the OpenHistoricalMap team
         trademarks_1_ohm_html: 'If you have questions about your use of the OpenHistoricalMap name, please %{contact_team_link}.
@@ -423,10 +389,6 @@ en:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: 'Just click %{note_icon} or the same icon on the map display. This will add a marker to the map, which you can move by dragging. Add your message, then click save, and other mappers will investigate.
-
-            '
         join_the_community:
           explanation_html: 'If you have noticed a problem with our map data, for example a road is missing or your address, the best way to proceed is to join the OpenHistoricalMap community and add or repair the data yourself.
 
@@ -477,7 +439,6 @@ en:
         copyright: OpenHistoricalMap is dedicated to the public domain except where otherwise noted.
         license_url: https://www.openhistoricalmap.org/copyright
         project_url: https://www.openhistoricalmap.org
-      remote_failed: Editing failed - make sure JOSM or Merkaartor is loaded and the remote control option is enabled
     potlatch:
       removed: Your default OpenHistoricalMap editor is set as Potlatch. Because Adobe Flash Player has been withdrawn, Potlatch is no longer available to use in a web browser.
     welcome:
@@ -576,7 +537,3 @@ en:
       duplicate_social_email: If you already have an OpenHistoricalMap account and wish to use a 3rd party identity provider, please log in using your password and modify the settings of your account.
       please_contact_support_html: Please contact %{support_link} to arrange for an account to be created - we will try and deal with the request as quickly as possible.
       signup_to_authorize_html: Sign up with OpenHistoricalMap to access %{client_app_name}.
-    show:
-      delete_user: Delete this User
-      hide_user: Hide this User
-      unhide_user: Unhide this User

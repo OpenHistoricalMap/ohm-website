@@ -60,10 +60,6 @@
 # Do not edit by hand.
 ar:
   accounts:
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: ما هذا؟
     terms:
       show:
         read and accept with tou: تُرجَى قراءة اتفاقية المساهم وشروط الاستخدام، والتحقق من خانتي الاختيار عند الانتهاء، ثم اضغط على زر "متابعة".
@@ -87,9 +83,6 @@ ar:
     formats:
       brief_bce: "%{year} قبل الميلاد"
       brief_ce: "%{year} م"
-  diary_entries:
-    profile_diaries:
-      date_label: التاريخ
   errors:
     contact:
       contact_the_community_html: لا تتردد في ٪{contact_link} مجتمع OpenHistoricalMap إذا وجدت ارتباطًا / خطأً معطلاً. قم بتدوين عنوان URL الدقيق لطلبك.%{contact_link}
@@ -101,10 +94,6 @@ ar:
     not_found:
       description: تعذر العثور على ملف / دليل / عملية API بهذا الاسم على خادم OpenHistoricalMap (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       prefix:
         leisure:
@@ -116,18 +105,10 @@ ar:
       title: مفتاح الخريطة
       tooltip: مفتاح الخريطة
       tooltip_disabled: مفتاح الخريطة غير متاح لهذه الطبقة
-    map:
-      zoom:
-        in: تقريب
-        out: بَعِّدْ
   layouts:
-    intro_2_create_account: إنشاء حساب مستخدم
     intro_text: OpenHistoricalMap هي خريطة تفاعلية للعالم عبر التاريخ، تم إنشاؤها بواسطة أشخاص مثلك ومخصصة للمجال العام.
-    logout: تسجيل الخروج
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: ويكي خريطة العالم الحرة
   site:
     about:
       lede_text: OpenHistoricalMap هو مشروع طموح بقيادة المجتمع لرسم خرائط للتغيرات في الجغرافيا الطبيعية والبشرية في جميع أنحاء العالم... عبر العصور.
@@ -165,10 +146,6 @@ ar:
           title: كوكب أوم
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            انقر على %{note_icon} أو على نفس الرمز على شاشة الخريطة. سيُضاف هذا علامة إلى الخريطة، ويمكنك تحريكها
-             بالسحب. أضف رسالتك، ثم انقر على "حفظ"، وسيقوم مصممو الخرائط الآخرون بالتحقق.
         join_the_community:
           explanation_html: إذا لاحظت وجود مشكلة في بيانات خريطتنا، على سبيل المثال طريق مفقود أو عنوانك، فإن أفضل طريقة للمتابعة هي الانضمام إلى مجتمع OpenHistoricalMap وإضافة البيانات أو إصلاحها بنفسك.
     help:
@@ -188,7 +165,6 @@ ar:
     index:
       license:
         copyright: يُعد OpenHistoricalMap مخصصًا للملكية العامة ما لم يُذكر خلاف ذلك.
-      remote_failed: فشل التعديل - تأكد من تحميل JOSM أو Merkaartor وتمكين خيار التحكم عن بعد
     welcome:
       basic_terms:
         paragraph_1: لدى OpenHistoricalMap لغة خاصة بها. إليك بعض الكلمات الرئيسية المفيدة.
@@ -229,7 +205,3 @@ ar:
           على عكس الخرائط الأخرى ، تم إنشاء OpenHistoricalMap بالكامل بواسطة أشخاص مثلك ،
           وهو مجاني لأي شخص لإصلاحه وتحديثه وتنزيله واستخدامه.
         paragraph_2: سجل لتبدأ المساهمة. سنرسل بريدًا إلكترونيًا لتأكيد حسابك.
-    show:
-      delete_user: احذف هذا المستخدم
-      hide_user: اخفِ هذا المستخدم
-      unhide_user: أظهر هذا المستخدم

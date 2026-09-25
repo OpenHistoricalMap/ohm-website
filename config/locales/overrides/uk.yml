@@ -55,10 +55,6 @@
 # Do not edit by hand.
 uk:
   accounts:
-    show:
-      contributor_terms:
-        link: https://wiki.openstreetmap.org/wiki/Uk:Open_Database_License/Contributor_Terms
-        link text: що це?
     terms:
       show:
         read and accept with tou: Будь ласка, ознайомтесь з угодою участі та умовами співпраці, поставте обидва прапорці після чого натисніть кнопку Продовжити.
@@ -77,8 +73,6 @@ uk:
         title_all: Обговорення наборів змін в OpenHistoricalMap
         title_particular: 'Обговорення набору змін OpenHistoricalMap #%{changeset_id}'
   diary_entries:
-    comments:
-      title: Записи щоденника OpenHistoricalMap
     feed:
       all:
         description: Останні записи в щоденниках від учасників OpenHistoricalMap
@@ -89,8 +83,6 @@ uk:
       user:
         description: Останні записи щоденника OpenHistoricalMap %{user}
         title: Записи щоденника OpenHistoricalMap %{user}
-    profile_diaries:
-      date_label: Дата
   errors:
     bad_request:
       description: Операція, яку ви запитали на сервері OpenHistoricalMap, не є дійсною (HTTP 400)
@@ -103,27 +95,15 @@ uk:
     not_found:
       description: Не вдалося знайти файл/теку/дію API з такою назвою на сервері OpenHistoricalMap (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       prefix:
         leisure:
           track: Бігова доріжка
-  javascripts:
-    map:
-      zoom:
-        in: Збільшити
-        out: Зменшити
   layouts:
-    intro_2_create_account: Створіть обліковий запис
     intro_header: Ласкаво просимо до OpenHistoricalMap!
     intro_text: OpenHistoricalMap — мапа світу, створена такими ж людьми, як і ви, для вільного використання під відкритою ліцензією.
     logo:
       alt_text: Логотип OpenHistoricalMap
-    logout: Вийти
-    tag_line: Вільна Вікі-мапа Світу
   oauth:
     scopes:
       openid: Вхід за допомогою OpenHistoricalMap
@@ -157,12 +137,6 @@ uk:
         credit_title_html: Як посилатись на OpenHistoricalMap
         infringement_1_html: Члени спільноти OHM повинні завжди пам’ятати про те, що забороняється додавати дані з будь-яких захищених авторським правом джерел (наприклад, з Google Maps чи з друкованих мап) без отримання попереднього дозволу правовласників.
         introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
-        more_2_1_api_usage_policy: Правилами використання API
-        more_2_1_html: |-
-          Хоча OpenHistoricalMap є відкритими даними, ми не можемо надати безплатний API для мап для всіх.
-          Ознайомтесь з нашими %{api_usage_policy_link}, %{tile_usage_policy_link} і %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Правилами використання сервісу Nominatim
-        more_2_1_tile_usage_policy: Правилами використання тайлів
         more_title_html: Дізнатися більше
       title: Авторське право та подяки
     export:
@@ -175,10 +149,6 @@ uk:
           title: Планета OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Просто натисніть %{note_icon} або подібну піктограму на мапі.
-            У результаті, на мапі з'явиться маркер, який Ви зможете перетягувати на мапі. Додайте Ваше повідомлення, а потім натисніть кнопку Зберегти, і інші учасники матимуть змогу з цим розібратись.
         join_the_community:
           explanation_html: Якщо ви помітили, неточності в наших даних, наприклад відсутня дорога або ваша адреса, найкращий спосіб це виправити — приєднатись до спільноти OpenHistoricalMap і додати або виправити дані самостійно.
     help:
@@ -192,7 +162,6 @@ uk:
         description: Повна документація знаходиться у Вікі OHM.
     index:
       js_2: OpenHistoricalMap використовує JavaScript для мапи.
-      remote_failed: Редагування не вдалося — переконайтеся, що JOSM або Merkaartor завантажений та втулок дистанційного керування увімкнений.
     potlatch:
       removed: Вашим типовим OpenHistoricalMap редактором зазначено Potlatch. Через припинення роботи Adobe Flash Player він більше не доступний для використання у вебоглядачі.
     welcome:
@@ -269,7 +238,3 @@ uk:
       duplicate_social_email: Якщо у вас вже є обліковий запис OpenHistoricalMap і ви хочете використовувати стороннього постачальника ідентифікаційних даних, будь ласка, увійдіть, використовуючи свій пароль, і змініть налаштування свого облікового запису.
       please_contact_support_html: Будь ласка, зв’яжіться з %{support_link}, щоб домовитися про створення облікового запису – ми постараємося розглянути запит якомога швидше.
       signup_to_authorize_html: Увійдіть до свого облікового запису OpenHistoricalMap, щоб отримати доступ до %{client_app_name}.
-    show:
-      delete_user: Вилучити цього учасника
-      hide_user: Приховати цього учасника
-      unhide_user: Показати цього учасника

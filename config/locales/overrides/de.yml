@@ -128,10 +128,6 @@ de:
     deletions:
       show:
         delete_introduction: 'Du kannst dein OpenHistoricalMap-Konto über den untenstehenden Button löschen. Bitte beachte dabei die folgenden Hinweise:'
-    show:
-      contributor_terms:
-        link: https://wiki.osmfoundation.org/w/index.php?title=Licence/Contributor_Terms&uselang=de
-        link text: Was bedeutet dies?
     terms:
       show:
         read and accept with tou: Lies bitte die Bedingungen für Mitwirkende und die Nutzungsbedingungen, bestätige dies jeweils mit einem Häkchen und klicke dann auf den "Weiter"-Knopf.
@@ -148,9 +144,6 @@ de:
         title_all: Diskussion zum OpenHistoricalMap-Änderungssatz
         title_particular: Diskussion zum OpenHistoricalMap-Änderungssatz Nr. %{changeset_id}
   diary_entries:
-    comments:
-      description: Neueste Blogeinträge von Nutzern von OpenHistoricalMap
-      title: Tagebucheinträge auf OpenHistoricalMap
     feed:
       all:
         description: Neueste Blogeinträge von OpenHistoricalMap-Nutzern
@@ -161,8 +154,6 @@ de:
       user:
         description: Letzte OpenHistoricalMap Blogeinträge von %{user}
         title: OpenHistoricalMap Blogeinträge von %{user}
-    profile_diaries:
-      date_label: Datum
   errors:
     bad_request:
       description: Die angeforderte Operation auf dem OpenHistoricalMap-Server ist ungültig (HTTP 400).
@@ -175,10 +166,6 @@ de:
     not_found:
       description: Konnte keine Datei-/Verzeichnis-/API-Operation mit diesem Namen auf dem OpenHistoricalMap-Server finden (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       prefix:
         leisure:
@@ -190,22 +177,15 @@ de:
         japanesescroll: Japanische Rolle
         railway: Eisenbahn
         woodblock: Holzblock
-      zoom:
-        in: Vergrößern
-        out: Verkleinern
   layouts:
-    intro_2_create_account: Erstelle ein Benutzerkonto
     intro_header: Willkommen bei OpenHistoricalMap!
     intro_text: OpenHistoricalMap ist eine Karte der Welt, erstellt von Menschen wie dir und frei verwendbar unter einer offenen Lizenz.
     logo:
       alt_text: OpenHistoricalMap Logo
-    logout: Abmelden
     offline_flash:
       osm_offline: Die OpenHistoricalMap-Datenbank ist derzeit offline, da wichtige Wartungsarbeiten durchgeführt werden.
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: Die freie Wiki-Weltkarte
   oauth:
     scopes:
       openid: Melde Dich mit OpenHistoricalMap an
@@ -247,10 +227,6 @@ de:
         credit_title_html: Wie auf die Urheberschaft von OpenHistoricalMap hinzuweisen ist
         infringement_1_html: Die Mitwirkenden von OHM weisen wir darauf hin, dass keinesfalls Daten aus urheberrechtlich geschützten Quellen verwendet werden dürfen (z. B. Google Maps oder gedruckte Kartenwerke), ohne vorher die ausdrückliche Erlaubnis des Rechteinhabers erhalten zu haben.
         introduction_4_creative_commons: Creative Commons Namensnennung – Weitergabe unter gleichen Bedingungen 2.0
-        more_2_1_api_usage_policy: API-Nutzungsrichtlinie
-        more_2_1_html: Obwohl es sich bei OpenHistoricalMap um offene Daten handelt, können wir keine kostenlose Karten-API für Dritte bereitstellen. Siehe unsere %{api_usage_policy_link}, %{tile_usage_policy_link} und %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Nominatim-Nutzungsrichtlinie
-        more_2_1_tile_usage_policy: Nutzungsrichtlinie für Kacheln
         more_title_html: Weitere Informationen
     export:
       too_large:
@@ -262,11 +238,6 @@ de:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Klicke einfach auf %{note_icon} oder auf das gleiche Symbol in der Kartenanzeige.
-            Dies fügt eine Markierung der Karte hinzu, die du durch Ziehen verschieben kannst.
-            Schreibe deine Nachricht, klicke auf „Speichern“ und andere Mapper werden den Fehler untersuchen.
         join_the_community:
           explanation_html: |-
             Falls du bei unseren Kartendaten ein Problem bemerkt hast wie das Fehlen einer Straße oder deiner Adresse,
@@ -293,7 +264,6 @@ de:
         description: Durchsuche das Wiki für eine ausführliche OHM-Dokumentation.
     index:
       js_2: OpenHistoricalMap nutzt JavaScript für die Kartendarstellung.
-      remote_failed: Der Aufruf des Editors ist fehlgeschlagen. Stelle sicher, dass JOSM oder Merkaartor gestartet ist und die Remote-Control-Option aktiviert ist.
     potlatch:
       removed: Ihr Standard-OpenHistoricalMap-Editor ist Potlatch. Da Adobe Flash Player zurückgezogen wurde, ist Potlatch nicht mehr für die Verwendung in Webbrowsern verfügbar.
     welcome:
@@ -369,7 +339,3 @@ de:
       duplicate_social_email: Wenn du bereits ein OpenHistoricalMap-Konto hast und einen Identitätsanbieter eines Drittanbieters verwenden möchtest, melde dich bitte mit deinem Passwort an und ändere die Einstellungen deines Kontos.
       please_contact_support_html: Bitte kontaktiere %{support_link} um einen Account erstellen zu lassen - wir werden die Anfrage möglichst schnell bearbeiten.
       signup_to_authorize_html: Melde dich bei OpenHistoricalMap an, um auf %{client_app_name} zuzugreifen.
-    show:
-      delete_user: Benutzer löschen
-      hide_user: Benutzer verstecken
-      unhide_user: Benutzer nicht mehr verstecken

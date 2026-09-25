@@ -52,10 +52,6 @@
 # Do not edit by hand.
 fa:
   accounts:
-    show:
-      contributor_terms:
-        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: این چیست؟
     terms:
       show:
         read and accept with tou: لطفاً توافق‌نامهٔ مشارکت‌کننده و شرایط استفاده را مطالعه کنید و هر دو گزینه را علامت بزنید و سپس روی دکمهٔ ادامه کلیک کنید.
@@ -72,8 +68,6 @@ fa:
         title_all: بحث بستهٔ تغییر OpenHistoricalMap
         title_particular: 'بحث بستهٔ تغییر #%{changeset_id} در OpenHistoricalMap'
   diary_entries:
-    comments:
-      title: "‫روزنوشت‌های OpenHistoricalMap"
     feed:
       all:
         description: "‫روزنوشت‌های اخیر از کاربران OpenHistoricalMap"
@@ -84,8 +78,6 @@ fa:
       user:
         description: "‫روزنوشت‌های اخیر %{user} در OpenHistoricalMap"
         title: "‫روزنوشت‌های %{user} در OpenHistoricalMap"
-    profile_diaries:
-      date_label: تاریخ
   errors:
     contact:
       contact_the_community_html: اگر متوجه پیوند شکسته یا اشکالی شده‌اید لطفاً با جامعهٔ OpenHistoricalMap %{contact_link}. نشانی دقیق درخواست خود را یادداشت کنید.
@@ -95,31 +87,18 @@ fa:
       description: سرور OpenHistoricalMap با وضعیت غیرمنتظره‌ای روبه‌رو شد که آن را از انجام درخواست باز داشت (HTTP 500)
     not_found:
       description: پرونده/پوشه/عملیات API با آن نام در سرور OpenHistoricalMap پیدا نشد (HTTP 404)
-  geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
   javascripts:
     legend:
       title: کلید نقشه
       tooltip: کلید نقشه
       tooltip_disabled: کلید نقشه برای این لایه در دسترس نیست
-    map:
-      zoom:
-        in: بزرگ‌نمایی
-        out: کوچک‌نمایی
   layouts:
-    intro_2_create_account: ساخت حساب کاربری
     intro_header: به OpenHistoricalMap خوش آمدید!
     intro_text: OpenHistoricalMap نقشه‌ای از جهان است که افرادی مانند شما آن را ساخته‌اند و آزادید آن را تحت پروانه‌ای آزاد استفاده کنید.
     logo:
       alt_text: لوگوی OpenHistoricalMap
-    logout: خروج
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: نقشهٔ ویکی‌گونه و آزاد جهان
   sessions:
     destroy:
       heading: خروج از OpenHistoricalMap
@@ -145,12 +124,6 @@ fa:
         planet:
           description: رونوشت‌های پایگاه دادهٔ کامل OpenHistoricalMap که به‌طور منظم روزآمد می‌شوند
           title: سیارهٔ OHM
-    fixthemap:
-      how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            کافی است روی %{note_icon} یا آیکون مشابه در صفحهٔ نقشه کلیک کنید.
-            با این کار یک نشانگر به نقشه اضافه خواهد شد که می‌توانید با کشیدن جابه‌جایش کنید. پیام خود را بنویسید و سپس روی ذخیره کلیک کنید. سایر نقشه‌کش‌ها آن را بررسی خواهند‌ کرد.
     help:
       forum:
         title: انجمن
@@ -164,7 +137,6 @@ fa:
         title: ویکی
     index:
       js_2: OpenHistoricalMap برای نقشهٔ لغزان از جاوااسکریپت استفاده می‌کند.
-      remote_failed: ویرایش انجام نشد - مطمئن شوید JOSM یا Merkaartor باز و گزینهٔ کنترل از دور فعال باشد
     welcome:
       basic_terms:
         paragraph_1: OpenHistoricalMap اصطلاحات ویژهٔ خودش را دارد. در اینجا چند کلیدواژهٔ مفید ذکر شده است.
@@ -217,7 +189,3 @@ fa:
     auth_association:
       heading: شناسهٔ شما هنوز با یک حساب کاربری OpenHistoricalMap مرتبط نشده است.
       option_1: اگر در OpenHistoricalMap تازه‌وارد هستید، لطفاً با استفاده از فرم زیر یک حساب کاربری جدید بسازید.
-    show:
-      delete_user: حذف این کاربر
-      hide_user: مخفی‌کردن این کاربر
-      unhide_user: آشکارکردن این کاربر

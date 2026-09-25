@@ -6,10 +6,6 @@
 # Author: Vlad5250
 # Do not edit by hand.
 sh:
-  accounts:
-    show:
-      contributor_terms:
-        link text: šta je ovo?
   api:
     notes:
       rss:
@@ -45,7 +41,6 @@ sh:
           izričitog ovlaštenja nositelja.
     index:
       js_2: OpenHistoricalMap koristi JavaScript za slippy kartu.
-      remote_failed: Uređivanje nije uspjelo - provjerite da li je JOSM ili Merkaartor učitan i da je udaljeni pristup omogućen
     welcome:
       introduction: Dobrodošli u OpenHistoricalMap — slobodnu i uredljivu kartu svijeta. Sada kada ste se prijavili, spremni ste za početak rada. Evo kratkog vodiča s najvažnijim stvarima koje je potrebno znati.
   user_mailer:

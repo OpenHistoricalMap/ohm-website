@@ -23,10 +23,6 @@
 # Author: Сербијана
 # Do not edit by hand.
 hr:
-  accounts:
-    show:
-      contributor_terms:
-        link text: što je ovo?
   api:
     notes:
       rss:
@@ -47,26 +43,16 @@ hr:
       user:
         description: Nedavni zapisi OpenHistoricalMap dnevnika od %{user}
         title: Zapisi OpenHistoricalMap dnevnika od korisnika %{user}
-    profile_diaries:
-      date_label: Datum
   geocoder:
     search_osm_nominatim:
       prefix:
         leisure:
           track: Staza za trčanje
-  javascripts:
-    map:
-      zoom:
-        in: Približi
-        out: Udalji
   layouts:
-    intro_2_create_account: Stvori korisnički račun
     intro_header: Dobrodošao/la na OpenHistoricalMap!
     intro_text: OpenHistoricalMap je karta svijeta, stvorena od strane ljudi (volontera/doprinositelja) i može se slobodno koristiti pod licencijom otvorenog koda (ODbL).
     logo:
       alt_text: OpenHistoricalMap logotip
-    logout: Odjavi se
-    tag_line: Slobodna wiki karta Svijeta
   sessions:
     destroy:
       heading: Odjava iz OpenHistoricalMap-a
@@ -98,7 +84,6 @@ hr:
         title: Dobrodošao/la na OpenHistoricalMap
     index:
       js_2: OpenHistoricalMap koristi JavaScript za slippy kartu.
-      remote_failed: Uređivanje nije uspjelo - provjerite da li je JOSM ili Merkaartor učitan i da je opcija "remote control" omogućena
   time:
     formats:
       friendly: "%e %B %Y u %H:%M"
@@ -136,8 +121,3 @@ hr:
         subject_own: "[OpenHistoricalMap] %{commenter} je reaktivirao jednu od tvojih bilješki"
     signup_confirm:
       subject: "[OpenHistoricalMap] Dobrodošli na OpenHistoricalMap"
-  users:
-    show:
-      delete_user: Obriši ovog korisnika
-      hide_user: Sakrij ovog korisnika
-      unhide_user: Otkrij ovog korisnika

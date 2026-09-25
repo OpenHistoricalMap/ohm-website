@@ -17,10 +17,6 @@
 # Author: Янмурза Баки
 # Do not edit by hand.
 ba:
-  accounts:
-    show:
-      contributor_terms:
-        link text: был нимә?
   api:
     notes:
       rss:
@@ -57,7 +53,6 @@ ba:
     intro_text: OpenHistoricalMap — был донъя картаһы, ул һеҙҙең кеүек кешеләр тарафынан төҙөлә һәм асыҡ лицензия аҫтында ирекле ҡулланыу өсөн тәғәйенләнгән.
     logo:
       alt_text: OpenHistoricalMap логотибы
-    logout: Сығыу
   site:
     export:
       too_large:

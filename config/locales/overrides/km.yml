@@ -12,17 +12,6 @@ km:
     formats:
       brief_bce: "%{year} មុនគ.ស."
       brief_ce: "%{year} នៃគ.ស."
-  diary_entries:
-    profile_diaries:
-      date_label: កាលបរិច្ឆេទ​
-  javascripts:
-    map:
-      zoom:
-        in: ពង្រីកចូល
-        out: បង្រួមចេញ
-  layouts:
-    logout: កត់ឈ្មោះចេញ
-    tag_line: ផែនទីពិភពលោក​វិគីសេរី
   site:
     export:
       too_large:

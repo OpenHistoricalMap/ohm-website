@@ -10,10 +10,6 @@
 # Author: 捍粵者
 # Do not edit by hand.
 zh-HK:
-  accounts:
-    show:
-      contributor_terms:
-        link text: 這是什麼？
   api:
     notes:
       rss:
@@ -32,17 +28,10 @@ zh-HK:
       prefix:
         leisure:
           horse_riding: 馬場
-  javascripts:
-    map:
-      zoom:
-        in: 放大
-        out: 縮小
   layouts:
-    intro_2_create_account: 建立用戶帳號
     intro_header: 歡迎來到 OpenHistoricalMap！
     logo:
       alt_text: OpenHistoricalMap標誌
-    logout: 登出
   site:
     add_a_note:
       para_1: 如果你只想讓一些小問題得以更正，而沒有時間注冊並學習如何編輯，那麼加入註記是非常容易的。

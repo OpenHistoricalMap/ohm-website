@@ -17,10 +17,6 @@
 # Author: Zulfadli51
 # Do not edit by hand.
 ms:
-  accounts:
-    show:
-      contributor_terms:
-        link text: apakah ini?
   api:
     notes:
       rss:
@@ -36,21 +32,11 @@ ms:
       user:
         description: Catatan diari OpenHistoricalMap terkini oleh %{user}
         title: Catatan diari OpenHistoricalMap oleh %{user}
-    profile_diaries:
-      date_label: Tarikh
-  javascripts:
-    map:
-      zoom:
-        in: Zum Dekat
-        out: Zum Jauh
   layouts:
-    intro_2_create_account: Buka akaun pengguna
     intro_header: Selamat datang ke OpenHistoricalMap!
     intro_text: OpenHistoricalMap ialah peta dunia yang diwujudkan oleh insan seperti anda, dan bebas digunakan dengan berlandaskan lesen terbuka.
     logo:
       alt_text: Logo OpenHistoricalMap
-    logout: Log Keluar
-    tag_line: Peta Dunia Wiki Bebas
   sessions:
     destroy:
       heading: Log keluar dari OpenHistoricalMap
@@ -74,10 +60,6 @@ ms:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Hanya klik %{note_icon} atau ikon yang sama pada paparan peta.
-            Ini akan menambah penanda pada peta yang boleh anda alihkan secara menyeret. Berikan pesanan anda, kemudian klik "simpan", barulah pemeta-pemeta lain akan menyiasat.
         join_the_community:
           explanation_html: Jika anda mendapati kemusykilan dengan data peta kami, misalnya jalan raya atau alamat anda tertinggal, cara penyelesaian yang terbaik ialah menyertai komuniti OpenHistoricalMap dan menambah atau membetulkan data sendiri.
     help:
@@ -91,7 +73,6 @@ ms:
         description: Layari wiki untuk maklumat lanjut tentang OHM.
     index:
       js_2: OpenHistoricalMap menggunakan JavaScript untuk peta licinnya.
-      remote_failed: Penyuntingan gagal - pastikan JOSM atau Merkaartor dimuatkan dan ciri kawalan jauh dihidupkan
     welcome:
       basic_terms:
         paragraph_1: OpenHistoricalMap mempunyai peristilahan tersendiri. Yang berikut ialah kata-kata kunci yang berguna.
@@ -129,8 +110,3 @@ ms:
         subject_own: "[OpenHistoricalMap] %{commenter} telah menghidupkan semula salah satu nota anda"
     signup_confirm:
       subject: "[OpenHistoricalMap] Selamat datang ke OpenHistoricalMap"
-  users:
-    show:
-      delete_user: hapuskan pengguna ini
-      hide_user: sorokkan pengguna ini
-      unhide_user: tunjukkan pengguna ini

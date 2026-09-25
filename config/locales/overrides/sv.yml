@@ -60,10 +60,6 @@
 # Do not edit by hand.
 sv:
   accounts:
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: vad är detta?
     terms:
       show:
         read and accept with tou: Läs villkoren för bidragsgivare och användning, markera båda kryssrutor när du är klar och klicka på fortsätt.
@@ -86,8 +82,6 @@ sv:
       brief_bce: "%{year} f.v.t."
       brief_ce: "%{year} e.v.t."
   diary_entries:
-    comments:
-      title: OpenHistoricalMap dagboksanteckningar
     feed:
       all:
         description: Senaste dagboksinlägg från användare av OpenHistoricalMap
@@ -98,8 +92,6 @@ sv:
       user:
         description: Senaste dagboksinlägg på OpenHistoricalMap från %{user}
         title: OpenHistoricalMap-dagboksinlägg för %{user}
-    profile_diaries:
-      date_label: Datum
   errors:
     bad_request:
       description: Operationen du begärde från OpenHistoricalMap server är inte giltig (HTTP 400)
@@ -126,19 +118,13 @@ sv:
     map:
       base:
         historical: Historisk
-      zoom:
-        in: Zooma in
-        out: Zooma ut
   layouts:
-    intro_2_create_account: Skapa ett användarkonto
     intro_header: Välkommen till OpenHistoricalMap!
     intro_text: OpenHistoricalMap är en karta över världen, skapad av människor som du och fri att använda under en öppen licens.
     logo:
       alt_text: OpenHistoricalMap logotyp
-    logout: Logga ut
     project_name:
       title: OpenHistoricalMap
-    tag_line: Den fria wiki-världskartan
   oauth:
     scopes:
       openid: Logga in med OpenHistoricalMap
@@ -172,10 +158,6 @@ sv:
         credit_title_html: Hur man erkännder OpenHistoricalMap
         infringement_1_html: Bidragsgivare till OHM påminns om att aldrig lägga till data från upphovsrättsskyddade källor (t.ex. Google Maps och tryckta kartor) utan uttryckligt tillstånd från upphovsrättsinnehavarna.
         introduction_4_creative_commons: Creative Commons Erkännande-DelaLika 2.0
-        more_2_1_api_usage_policy: API-användningspolicy
-        more_2_1_html: Även om OpenHistoricalMap är öppen data kan vi inte tillhandahålla ett gratis kart-API för tredje part. Se våra %{api_usage_policy_link}, %{tile_usage_policy_link} och %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Nominativ användningspolicy
-        more_2_1_tile_usage_policy: Användningspolicy för Brickor
         more_title_html: Mer information
       title: Upphovsrätt och erkännanden
     export:
@@ -188,11 +170,6 @@ sv:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Klicka bara på %{note_icon} eller samma ikon i kartrutan.
-            Detta lägger till en markör på kartan som du kan flytta
-            genom att dra. Skriv ditt meddelande och klicka sedan på spara, så kommer andra kartritare att undersöka.
         join_the_community:
           explanation_html: Om du har hittat ett problem med vår kartdata, till exempel att en väg eller din adress saknas, är den bästa lösningen att gå med i OpenHistoricalMap-gemenskapen och själv lägga till eller reparera datan.
     help:
@@ -204,8 +181,6 @@ sv:
         title: Välkommen till OpenHistoricalMap
       wiki:
         description: Sök i wikin för ingående dokumentation av OHM.
-    index:
-      remote_failed: Redigering misslyckades - kontrollera att JOSM eller Merkaartor är startad och fjärrkontrollsalternativet är aktiverat
     potlatch:
       removed: Din standardredigerare på OpenHistoricalMap är Potlatch. På grund av att Adobe Flash Player har dragits tillbaka, kan inte Potlatch längre användas i webbläsaren.
     welcome:
@@ -282,7 +257,3 @@ sv:
       duplicate_social_email: Om du redan har ett OpenHistoricalMap-konto och vill använda en identitetsleverantör från en tredjepart, kan du logga in med ditt lösenord och modifiera inställningarna för ditt konto.
       please_contact_support_html: Kontakta %{support_link} för att ordna att ett konto ska skapas - vi kommer att försöka ta itu med begäran så fort som möjligt.
       signup_to_authorize_html: Registrera dig på OpenHistoricalMap för att få åtkomst till %{client_app_name}
-    show:
-      delete_user: Radera denna användare
-      hide_user: Dölj denna användare
-      unhide_user: Sluta dölja användare

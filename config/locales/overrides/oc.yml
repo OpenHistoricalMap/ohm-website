@@ -14,11 +14,6 @@
 # Author: Quentí
 # Do not edit by hand.
 oc:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://Www.osmfoundation.org/wiki/License/Contributor_Terms
-        link text: qu’es aquò ?
   api:
     notes:
       rss:
@@ -32,8 +27,6 @@ oc:
         title_all: Discussion sus lo grop de modificacions OpenHistoricalMap
         title_particular: Discussion sus lo grop de modificacions OpenHistoricalMap nº %{changeset_id}
   diary_entries:
-    comments:
-      title: Entradas do diário do OpenHistoricalMap
     feed:
       all:
         description: Entradas recentas de jornau deis utilizaires d'OpenHistoricalMap
@@ -44,21 +37,11 @@ oc:
       user:
         description: Entradas recentas de jornau d'OpenHistoricalMap per %{user}
         title: Entradas de jornau d'OpenHistoricalMap per %{user}
-    profile_diaries:
-      date_label: Data
-  javascripts:
-    map:
-      zoom:
-        in: Zoom avant
-        out: Zoom arrièr
   layouts:
-    intro_2_create_account: Creatz un compte d'utilizaire
     intro_header: Benvenguda dins OpenHistoricalMap !
     intro_text: OpenHistoricalMap es una mapa dau monde, creada per de personas coma vos e liura d’utilizacion sota licéncia liura.
     logo:
       alt_text: Lògo d'OpenHistoricalMap
-    logout: Se desconnectar
-    tag_line: La mapa cooperativa liura
   sessions:
     destroy:
       heading: Desconnexion d'OpenHistoricalMap
@@ -89,7 +72,6 @@ oc:
         description: Percorrètz lo wiki per la documentacion aprigondida d’OHM
     index:
       js_2: OpenHistoricalMap utiliza Javascript per sas mapas lisantas.
-      remote_failed: L'edicion a mancat. Asseguratz-vos que lo JOSM o lo Merkaartor s'executa e que l'opcion de comandament a distància es abilitada
     welcome:
       basic_terms:
         paragraph_1: OpenHistoricalMap a son pròpri girgon. Aquí qualques mots claus que vos seràn utiles.
@@ -135,7 +117,3 @@ oc:
   users:
     auth_association:
       heading: Vòstre ID es pas encara associat a un compte OpenHistoricalMap.
-    show:
-      delete_user: Suprimir aqueste utilizaire
-      hide_user: Amagar aqueste utilizaire
-      unhide_user: Reafichar aqueste utilizaire

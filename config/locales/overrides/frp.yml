@@ -11,10 +11,6 @@ frp:
       show:
         delete_introduction: 'Vos povéd suprimar voutron compto OpenHistoricalMap en utilisant lo boton cé d''avâl. Notâd bien céts dètâlys :'
         retain_caveats: 'Pas-muens, quârques-unes de voutres enformacions seront consèrvâyes sur OpenHistoricalMap aprés la suprèssion de voutron compto :'
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms/FR
-        link text: Qu'o est cen ?
     terms:
       show:
         read and accept with tou: Mèrci de liére l'acôrd du contributor et les condicions d'usâjo, pués validâd les doves câses et apoyéd adonc sur lo boton « Continuar ».
@@ -39,9 +35,6 @@ frp:
       brief_bce: "%{year} AEC"
       brief_ce: "%{year} EC"
   diary_entries:
-    comments:
-      description: Entrâyes novèles des jornâls d'usanciér(e)s d'OpenHistoricalMap
-      title: Entrâs dos jornals OpenHistoricalMap
     feed:
       all:
         description: Entrâyes novèles des jornâls d'usanciér(e)s d'OpenHistoricalMap
@@ -52,9 +45,6 @@ frp:
       user:
         description: Entrâyes novèles du jornâl OpenHistoricalMap de %{user}
         title: Entrâyes du jornâl OpenHistoricalMap de %{user}
-    profile_diaries:
-      comments_label: Comentèros
-      date_label: Dâta
   errors:
     bad_request:
       description: L'opèracion que vos éd demandâye sur lo sèrvor OpenHistoricalMap est pas valida (HTTP 400)
@@ -67,10 +57,6 @@ frp:
     not_found:
       description: S'at pas pu trovar un fichiér, un repèrtouèro ou una opèracion de l'API avouéc cél nom sur lo sèrvor OpenHistoricalMap (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       border_types:
         archdiocese: Frontiére d'arch·idiocèse
@@ -132,21 +118,14 @@ frp:
       prefix:
         leisure:
           track: Pista de corsa
-  javascripts:
-    map:
-      zoom:
-        in: S'aprochiér
-        out: S'èluegnér
   layouts:
     intro_header: Benvenua dens OpenHistoricalMap!
     intro_text: OpenHistoricalMap est una mapa du mondo, fâte per des gens come vos, et libra d'usâjo sot licence libra.
     logo:
       alt_text: Simbolo d'OpenHistoricalMap
-    logout: Sè dèbranchiér
     offline_flash:
       osm_offline: 'La bâsa de balyês OpenHistoricalMap est fôr de legne ora : de travâlys de maneyance èssencièls sont en cors.'
       osm_read_only: 'La bâsa de balyês OpenHistoricalMap est en lèctura solèta ora : de travâlys de maneyance èssencièls sont en cors.'
-    tag_line: La mapa vouiqui libra du mondo
   notes:
     new_readonly:
       warning: De novèles notes pôvont pas étre apondues porce que l'API d'OpenHistoricalMap est ora en lèctura solèta.
@@ -270,7 +249,3 @@ frp:
       duplicate_social_email: Se vos éd ja un compto OpenHistoricalMap et voléd utilisar un fornissor d'identitât tièrs, mèrci de vos branchiér en sèrvant voutron contresegno pués de changiér los paramètros de voutron compto.
       please_contact_support_html: Mèrci de contactar lo %{support_link} por maneyér la crèacion d'un compto - nos èproverens de trètar la demanda tant rapidament que possiblo.
       signup_to_authorize_html: Sè branchiér avouéc OpenHistoricalMap por arrevar a %{client_app_name}.
-    show:
-      delete_user: Suprimar cét(a) usanciér(e)
-      hide_user: Betar cét(a) usanciér(e) en sordina
-      unhide_user: Rebranchiér lo son de cét(a) usanciér(e)

@@ -19,11 +19,6 @@
 # Author: Y-M D
 # Do not edit by hand.
 br:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
-        link text: petra eo an dra-se ?
   api:
     notes:
       rss:
@@ -37,8 +32,6 @@ br:
         title_all: Kaozeadenn hollad cheñchamantoù OpenHistoricalMap
         title_particular: 'Kaozeadenn hollad cheñchamantoù #%{changeset_id} OpenHistoricalMap'
   diary_entries:
-    comments:
-      title: Enmontoù en deizlevr OpenHistoricalMap
     feed:
       all:
         description: Enmontoù nevez en deizlevr gant implijerien OpenHistoricalMap
@@ -49,13 +42,6 @@ br:
       user:
         description: Enmontoù nevez e deizlevr OpenHistoricalMap gant %{user}
         title: Enmontoù deizlevr OpenHistoricalMap gant %{user}
-    profile_diaries:
-      date_label: Deiziad
-  geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
   javascripts:
     legend:
       title: Alc'hwez ar gartenn
@@ -65,19 +51,12 @@ br:
       base:
         historical: Istorel
         railway: Hent-houarn
-      zoom:
-        in: Zoumañ
-        out: Dizoumañ
   layouts:
-    intro_2_create_account: Krouiñ ur gont implijer
     intro_header: Donemat en OpenHistoricalMap !
     logo:
       alt_text: Logo OpenHistoricalMap
-    logout: Digevreañ
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: Kartenn digoust eus ar bed Wiki
   oauth:
     scopes:
       openid: Kennaskañ gant OpenHistoricalMap
@@ -105,8 +84,6 @@ br:
           eus mammennoù dindan wirioù (da sk. : Google Maps pe kartennoù moullet) hep aotre
           ezpleg ar re zo ar gwirioù-aozer ganto.
         introduction_4_creative_commons: Aotre-implijout Creative Commons Attribution-ShareAlike 2.0
-        more_2_1_api_usage_policy: Politikerezh implij an API
-        more_2_1_tile_usage_policy: Politikerezh implij an teol
         more_title_html: Titouroù ouzhpenn
       title: Copyright hag aotre-implijout
     export:
@@ -119,10 +96,6 @@ br:
           title: Planedenn OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Klikit war %{note_icon} pe war ar memes arlun war ar gartenn.
-            Evel-se e vo ouzhpennet ur merker d'ar gartenn, ha gallout a reoc'h riklañ anezhañ. Ouzhpennit ho kemennadenn, neuze klikit war enrollañ, ha studiet e vo gant ar gartennaouerien all.
         join_the_community:
           explanation_html: M'ho peus merzet ez eus ur gudenn gant roadennoù hor c'hartennoù, da skouer un hent diank pe ho chomlec'h, an doare d'ober gwellañ eo mont d'ar gumuniezh OpenHistoricalMap hag ouzhpennañ pe dresañ ar roadennoù hoc'h-unan.
     help:
@@ -138,7 +111,6 @@ br:
         description: Furchal er wiki evit gouzout traoù resis diwar-benn OHM.
     index:
       js_2: OpenHistoricalMap a implij JavaScript evit e gartenn risklus.
-      remote_failed: C'hwitet eo ar c'hemm - gwiriit hag-eñ eo karget JOSM or Merkaartor ha gweredekaet an dibarzh kontroll a-bell
     welcome:
       basic_terms:
         paragraph_1: E luc'haj dezhañ e-unan en deus OpenHistoricalMap. Setu amañ un nebeud gerioù-alc'hwez a c'hallo talvezout deoc'h.
@@ -203,7 +175,3 @@ br:
       about:
         paragraph_1: E-skoaz ar c'hartennoù all eo savet OpenHistoricalMap penn-da-benn gant tud eveldoc'h ha tu zo da bep hini reizhañ, hizivaat, pellgargañ hag implijout e gartennoù.
         welcome: Degemer mat en OpenHistoricalMap
-    show:
-      delete_user: Dilemel an implijer-mañ
-      hide_user: Kuzhat an implijer-mañ
-      unhide_user: Diguzhat an implijer-mañ

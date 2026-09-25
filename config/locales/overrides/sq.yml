@@ -22,11 +22,6 @@
 # Author: 아라
 # Do not edit by hand.
 sq:
-  accounts:
-    show:
-      contributor_terms:
-        link: http://www.osmfoundation.org/wiki/License/Contributor_Terms
-        link text: çfarë është kjo?
   changeset_comments:
     feeds:
       show:
@@ -43,24 +38,18 @@ sq:
       user:
         description: Shënimet e fundit në ditarin e OpenHistoricalMap nga %{user}
         title: OpenHistoricalMap shënime ditari për %{user}
-    profile_diaries:
-      date_label: Data
   geocoder:
     search_osm_nominatim:
       prefix:
         leisure:
           horse_riding: Kalërim
   layouts:
-    intro_2_create_account: Krijo një llogari përdoruesi
     intro_header: Mirësevjen në OpenHistoricalMap!
     intro_text: OpenHistoricalMap është hartë e botës, e krijuar nga njerëz si ti dhe për përdorim të lirshëm në kuadrin e një licence të hapur.
     logo:
       alt_text: Logoja e OpenHistoricalMap
-    logout: Çidentifikohu
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: Harta e lirë e botës Wiki
   sessions:
     destroy:
       heading: Çidentifikohu nga OpenHistoricalMap
@@ -80,10 +69,6 @@ sq:
         planet:
           description: Kopje të plota të përditësuara rregullisht të bazës së të dhënave të OpenHistoricalMap
           title: Planet OHM
-    fixthemap:
-      how_to_help:
-        add_a_note:
-          instructions_1_html: Klikoni %{note_icon} ose të njëjtën ikonë në ekranin e hartës. Kjo do të shtojë një shënues në hartë, të cilën ju mund ta lëvizni duke e tërhequr. Shtoni mesazhin tuaj, pastaj klikoni save dhe editues të tjerë do ta kontrollojnë.
     help:
       introduction: OpenHistoricalMap ka disa burime për të mësuar në lidhje me projektin, duke bërë pyetje dhe duke ju përgjigjur dhe duke diskutuar bashkërisht dhe duke dokumentuar temat e hartës.
       welcome:
@@ -100,8 +85,3 @@ sq:
       subject: "[OpenHistoricalMap] Konfirmo adresën e emailit tënd"
     signup_confirm:
       subject: "[OpenHistoricalMap] Mirësevjen në OpenHistoricalMap"
-  users:
-    show:
-      delete_user: fshi këtë përdorues
-      hide_user: fsheh këtë përdorues
-      unhide_user: zbulo këtë përdorues

@@ -9,10 +9,6 @@
 # Author: Умар
 # Do not edit by hand.
 ce:
-  accounts:
-    show:
-      contributor_terms:
-        link text: хӀун йу хӀара?
   api:
     notes:
       rss:
@@ -26,9 +22,6 @@ ce:
         title_all: OpenHistoricalMap тӀехь дина нисдарийн дийцар
         title_particular: 'OpenHistoricalMap #%{changeset_id} тӀехь дина нисдарийн дийцар'
   diary_entries:
-    comments:
-      description: OpenHistoricalMap декъашхойн тӀаьххьарлера дӀайаздарш
-      title: Дневникан дӀайаздарш OpenHistoricalMap
     feed:
       all:
         description: OpenHistoricalMap декъашхойн тӀаьххьарлера дӀайаздарш
@@ -39,9 +32,6 @@ ce:
       user:
         description: ТӀаьххьара дневникийн дӀайаздарш OpenHistoricalMap цуна %{user}
         title: Дневникийн дӀайаздарш OpenHistoricalMap цуна %{user}
-    profile_diaries:
-      comments_label: Комменташ
-      date_label: Терахь
   errors:
     bad_request:
       description: OpenHistoricalMap сервер тӀехь ахь йехна операци нийса йац (HTTP 400)
@@ -53,17 +43,11 @@ ce:
       description: OpenHistoricalMap серверна дагахь доцу хьал нисделира, цо новкъарло йира дехар кхочушдан (HTTP 500)
     not_found:
       description: Цу цӀарца йолу файл/каталог/API операци ца карийра OpenHistoricalMap сервер тӀехь (HTTP 404)
-  javascripts:
-    map:
-      zoom:
-        in: Йоккха йе
-        out: Жима йе
   layouts:
     intro_header: Марша вогӀийла хьо OpenHistoricalMap!
     intro_text: OpenHistoricalMap — дуьненан карта ду, хьо санна болчу наха кхоьллина, ткъа хIара маьрша лело йиш йу йиллина лицензица.
     logo:
       alt_text: OpenHistoricalMap-ан логотип
-    logout: Ара
   oauth:
     scopes:
       openid: OpenHistoricalMap лелош чу вала
@@ -90,10 +74,6 @@ ce:
         credit_title_html: OpenHistoricalMap-на тIехьажа муха ло
         infringement_1_html: OHM-н декъашхошна дагадоуьйту, авторийн бакъонаш йолчу нехан билгал бакъо йоцуш, цхьана а авторан бакъонаш йолчу хьостанашкара (масала, Google Maps йа зорбане даьхна карташ) хаамаш тӀетоха ца безий.
         introduction_4_creative_commons: Creative Commons Attribution Share Alike
-        more_2_1_api_usage_policy: API лелоран политика
-        more_2_1_html: OpenHistoricalMap биллина хаамаш балахь а, тхан йиш йац мах боцуш картан API кхоалгӀачу агӀонна дӀадала. Хьажа вай %{api_usage_policy_link}, %{tile_usage_policy_link} а, %{nominatim_usage_policy_link} а.
-        more_2_1_nominatim_usage_policy: Номиналан лелоран политика
-        more_2_1_tile_usage_policy: Плитка лелоран политика
         more_title_html: Кхин алсам довза
     export:
       too_large:
@@ -119,7 +99,6 @@ ce:
         title: Вики
     index:
       js_2: OpenHistoricalMap лелайо JavaScript шен карта хьагайта.
-      remote_failed: Нийсдар ца дадела.  JOSM йа Merkaartor чуйиллина хиларх а, генар лелоран опци дӀахӀоттийна хиларх а хьовса
     potlatch:
       removed: Хьан стандартан OpenHistoricalMap редактор йу Potlatch. Adobe Flash Player-на гӀо дар сацийна дера, Potlatch кхин лело йиш йац веб-браузерехь.
     welcome:
@@ -181,7 +160,3 @@ ce:
         welcome: Марша вогӀийла OpenHistoricalMap чу.
       duplicate_social_email: Нагахь санна хьан хӀинцале а OpenHistoricalMap аккаунт елахь, хьуна кхоалгӀачу агӀонан ID-провайдер лело лаахь, хьайн парольца чу а вале, хьайн аккаунтан параметраш хийца.
       signup_to_authorize_html: OpenHistoricalMap тIе дӀаязло %{client_app_name} тӀекхача.
-    show:
-      delete_user: ХӀара декъашхо дӀаваккха
-      hide_user: ХӀара декъашхо къейлаваккха
-      unhide_user: ХӀара декъашхо схьагайта

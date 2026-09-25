@@ -18,9 +18,6 @@ lb:
     deletions:
       show:
         delete_introduction: 'Dir kënnt Ären OpenHistoricalMap-Kont mam Knäppchen hei drënner läschen. Bedenkt wgl. déi follgend Detailer:'
-    show:
-      contributor_terms:
-        link text: wat ass dat?
   api:
     notes:
       rss:
@@ -43,9 +40,6 @@ lb:
       brief_bce: "%{year} v.&nbsp;Chr."
       brief_ce: "%{year} n.&nbsp;Chr."
   diary_entries:
-    comments:
-      description: Rezent Blogbäiträg vun OpenHistoricalMap-Benotzer
-      title: OpenHistoricalMap-Blogbäiträg
     feed:
       all:
         description: Rezent Blogbäiträg vun OpenHistoricalMap-Benotzer
@@ -56,9 +50,6 @@ lb:
       user:
         description: Neist OpenHistoricalMap-Blogbäiträg vum %{user}
         title: OpenHistoricalMap-Blogbäiträg vum %{user}
-    profile_diaries:
-      comments_label: Kommentaren
-      date_label: Datum
   errors:
     bad_request:
       description: D'Operatioun, déi Dir um OpenHistoricalMap-Server ugefrot hutt, ass ongülteg (HTTP 400)
@@ -75,19 +66,13 @@ lb:
         woodblock: Holzblock
       cc0_text: "%{copyright_link}"
       openhistoricalmap_contributors: OHM
-      zoom:
-        in: Vergréisseren
-        out: Verklengeren
   layouts:
-    intro_2_create_account: E Benotzerkont uleeën
     intro_header: Wëllkomm bei OpenHistoricalMap!
     intro_text: OpenHistoricalMap ass eng Kaart vun der Welt, déi vu Leit wéi Iech gemaach gouf an déi fräi ënner enger oppener Lizenz benotzt ka ginn.
     logo:
       alt_text: OpenHistoricalMap-Logo
-    logout: Ofmellen
     partners_greeninfo: GreenInfo Netzwierk
     partners_osmf: OpenStreetMap Foundation
-    tag_line: D'fräi Wiki-Weltkaart
   preferences:
     preferences:
       navigation:
@@ -191,9 +176,5 @@ lb:
     new:
       about:
         welcome: Wëllkomm bei OpenHistoricalMap
-    show:
-      delete_user: Dëse Benotzer läschen
-      hide_user: Dëse Benotzer verstoppen
-      unhide_user: Dëse Benotzer net méi verstoppen
     auth_association:
       option_1: Wann Dir nei sidd bei OpenHistoricalMap, da leet wgl. en neie Benotzerkont un, andeem Dir de Formulaire hei drënner benotzt.

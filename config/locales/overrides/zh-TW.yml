@@ -61,10 +61,6 @@ zh-TW:
       show:
         delete_introduction: 您可以使用下方按鈕刪除您的 OpenHistoricalMap 帳號。請注意以下細節：
         retain_caveats: 然而，即使您的帳號被刪除掉，您的某些資訊仍會保留在 OpenHistoricalMap 上：
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: 這是什麼？
     terms:
       show:
         read and accept with tou: 請閱讀貢獻者協議與使用條款，勾選兩項方框後點擊繼續按鈕。
@@ -96,9 +92,6 @@ zh-TW:
       brief_ce: 西元 %{year}
       range: "%{start} – %{end}"
   diary_entries:
-    comments:
-      description: OpenHistoricalMap 使用者的近期日記項目
-      title: OpenHistoricalMap 日記項目
     feed:
       all:
         description: OpenHistoricalMap 使用者最近的日記項目
@@ -109,9 +102,6 @@ zh-TW:
       user:
         description: "%{user} 最近的 OpenHistoricalMap 日記項目"
         title: "%{user} 的 OpenHistoricalMap 日記項目"
-    profile_diaries:
-      comments_label: 留言
-      date_label: 日期
   errors:
     bad_request:
       description: 你在 OpenHistoricalMap 伺服器上請求的操作無效 (HTTP 400)
@@ -125,10 +115,6 @@ zh-TW:
     not_found:
       description: 在 OpenHistoricalMap 伺服器上找不到該名稱的檔案/目錄/API 操作 (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       border_types:
         archdiocese: 大主教區界
@@ -200,18 +186,13 @@ zh-TW:
         woodblock: 木版
       cc0_text: "%{copyright_link}"
       openhistoricalmap_contributors: OHM
-      zoom:
-        in: 放大
-        out: 縮小
     query:
       suffix_format: "[%{dates}]"
   layouts:
-    intro_2_create_account: 建立使用者帳號
     intro_header: 歡迎來到 OpenHistoricalMap！
     intro_text: OpenHistoricalMap 是一份全世界的地圖，由像你這樣的人們所建立，在開放授權下可以自由使用。
     logo:
       alt_text: OpenHistoricalMap 標誌
-    logout: 登出
     offline_flash:
       osm_offline: OpenHistoricalMap 資料庫目前已離線，正在進行必要的維護工作。
       osm_read_only: OpenHistoricalMap 資料庫目前處於唯讀模式，正在進行必要的維護工作。
@@ -220,9 +201,7 @@ zh-TW:
     partners_osmf: OpenStreetMap 基金會
     partners_osmus: OpenStreetMap U.S.
     project_name:
-      h1: OpenHistoricalMap 開放史圖
       title: OpenHistoricalMap 開放史圖
-    tag_line: 自由的 wiki 世界地圖
     meta:
       openstreetmap_search: OpenHistoricalMap 搜尋
   notes:
@@ -355,15 +334,6 @@ zh-TW:
         more_1_ohm_html: 詳細了解使用我們的資料時的法律考量因素，以及如何表彰我們的內容，%{wiki_link}。
         more_1_wiki: 在 OpenStreetMap Wiki
         more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
-        more_2_1_api_usage_policy: API 使用方針
-        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
-        more_2_1_html: |-
-          儘管 OpenHistoricalMap 是開放資料，我們不對第三方提供免費的地圖 API 或地圖圖塊。
-          請參閱我們的%{api_usage_policy_link}、%{tile_usage_policy_link}、和%{nominatim_usage_policy_link}。
-        more_2_1_nominatim_usage_policy: 提名使用方針
-        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
-        more_2_1_tile_usage_policy: 圖磚使用方針
-        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
         more_title_html: 尋找更多
         trademarks_1_ohm_contact_team: 聯絡 OpenHistoricalMap 團隊
         trademarks_1_ohm_html: 如果您對使用 OpenHistoricalMap 名稱有任何疑問，請%{contact_team_link}。
@@ -384,10 +354,6 @@ zh-TW:
           title: 地球 OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            只須點選%{note_icon}或地圖上的同一圖示，
-            這將在地圖上加入一個標記，你可以拖動它，並新增你的註記，然後點選儲存，其他製圖者會作出查證。
         join_the_community:
           explanation_html: 如果你發現我們的地圖資料有問題，例如缺少某條道路或者你的地址，最好的方法就是加入 OpenHistoricalMap 社群，然後自己加入或者改進資料。
       other_concerns:
@@ -422,7 +388,6 @@ zh-TW:
       js_2: OpenHistoricalMap 使用 JavaScript 讓地圖更平順。
       license:
         copyright: 除非另有說明，OpenHistoricalMap 用於公眾領域。
-      remote_failed: 編輯失敗 - 請確定已載入 JOSM 或 Merkaartor 並開啟遠端控制選項
     potlatch:
       removed: 您預設的 OpenHistoricalMap 編輯器是設定為 Potlatch。但因為 Adobe Flash Player 已終止維護，Potlatch 已不能在網路瀏覽器上使用。
     welcome:
@@ -504,10 +469,6 @@ zh-TW:
       duplicate_social_email: 若你已有 OpenHistoricalMap 帳號，並希望使用第三方身份提供者，請使用你的密碼登入並修改帳號的設定。
       please_contact_support_html: 請聯繫 %{support_link} 來安排建立帳號 - 我們會盡快處理這份請求。
       signup_to_authorize_html: 註冊 OpenHistoricalMap 以存取 %{client_app_name}。
-    show:
-      delete_user: 刪除這位使用者
-      hide_user: 隱藏這位使用者
-      unhide_user: 取消隱藏這位使用者
   export:
     show:
       title: OpenHistoricalMap 嵌入

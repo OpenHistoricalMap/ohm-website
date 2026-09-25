@@ -6,27 +6,9 @@
 # Author: Minh Nguyen
 # Do not edit by hand.
 pnb:
-  accounts:
-    show:
-      contributor_terms:
-        link text: اِیہہ کی اے؟
-  diary_entries:
-    comments:
-      title: اوپن ہسٹوریکل میپ ڈائری اندراجات
-    profile_diaries:
-      date_label: تریخ
-  javascripts:
-    map:
-      zoom:
-        in: وڈا کرو
-        out: چھوٹی کرو
   layouts:
-    intro_2_create_account: ورتنوالے دا کھاتہ بݨاؤݨ
-    logout: لوگ‌آؤٹ کرو
     project_name:
-      h1: اوپن ہسٹورکل میپ
       title: اوپن ہسٹورکل میپ
-    tag_line: آزاد نقشہ جو جہڑے جہڑے سودھ سکدے اے
   site:
     copyright:
       legal_babble:
@@ -36,10 +18,3 @@ pnb:
         title: آئی آر سی
       wiki:
         title: وِکی
-    index:
-      remote_failed: سودھ کر نہیں سکدے۔ خبرے جو اَیپ چالو تے ریموٹ کنٹرول چالو وکھیو۔
-  users:
-    show:
-      delete_user: ایس ورتنوالے نوں مٹاؤ
-      hide_user: ایس ورتنوالے نوں لُکاؤ
-      unhide_user: ایس ورتنوالے دا اُہلا ہٹاؤ

@@ -9,10 +9,6 @@
 # Author: Tocaibon
 # Do not edit by hand.
 fur:
-  accounts:
-    show:
-      contributor_terms:
-        link text: ce isal chest?
   api:
     notes:
       rss:
@@ -27,8 +23,6 @@ fur:
       brief_bce: "%{year} pdC"
       brief_ce: "%{year} ddC"
   diary_entries:
-    comments:
-      title: Entrâts di diari OpenHistoricalMap
     feed:
       all:
         description: Lis ultimis vôs dai diaris dai utents di OpenHistoricalMap
@@ -39,27 +33,16 @@ fur:
       user:
         description: Ultimis vôs dal diari di OpenHistoricalMap di %{user}
         title: Vôs dal diari di OpenHistoricalMap par %{user}
-    profile_diaries:
-      comments_label: Coments
-      date_label: Date
   geocoder:
     search_osm_nominatim:
       prefix:
         leisure:
           track: Piste pe corse
-  javascripts:
-    map:
-      zoom:
-        in: Aumente zoom
-        out: Diminuìs zoom
   layouts:
-    intro_2_create_account: Cree il to profîl utent
     intro_header: Benvignût in OpenHistoricalMap!
     intro_text: OpenHistoricalMap e je une mape dal mont, creade di int come te e di ûs libar sot di une licence vierte.
     logo:
       alt_text: Logo di OpenHistoricalMap
-    logout: Jes
-    tag_line: Il WikiMapeMont libar
   sessions:
     destroy:
       heading: Va fûr di OpenHistoricalMap
@@ -80,7 +63,6 @@ fur:
         title: Benvignûts in OpenHistoricalMap
     index:
       js_2: OpenHistoricalMap al dopre JavaScript par mostrâ la sô mape.
-      remote_failed: Cambiament falît - siguriti che JOSM o Merkaartor a sedin inviâts e la opzion pal remote control e sedi ativade
   traces:
     feeds:
       show:
@@ -105,8 +87,3 @@ fur:
       subject: "[OpenHistoricalMap] %{message_title}"
     signup_confirm:
       subject: "[OpenHistoricalMap] Benvignût in OpenHistoricalMap"
-  users:
-    show:
-      delete_user: elimine chest utent
-      hide_user: plate chest utent
-      unhide_user: mostre chest utent

@@ -128,11 +128,6 @@
 # Author: Сrower
 # Do not edit by hand.
 ru:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://openstreetmap.org/wiki/RU:Open_Database_License/Contributor_Terms?uselang=ru
-        link text: что это?
   api:
     notes:
       rss:
@@ -152,8 +147,6 @@ ru:
       brief_ce: "%{year} н. э."
       range: "%{start} – %{end}"
   diary_entries:
-    comments:
-      title: Записи в дневнике OpenHistoricalMap
     feed:
       all:
         description: Последние записи в дневнике от пользователей OpenHistoricalMap
@@ -164,9 +157,6 @@ ru:
       user:
         description: Последние записи в дневнике OpenHistoricalMap от %{user}
         title: Дневниковые записи OpenHistoricalMap пользователя %{user}
-    profile_diaries:
-      comments_label: Комментарии
-      date_label: Дата
   errors:
     bad_request:
       description: Операция, которую вы запросили на сервере OpenHistoricalMap, некорректна (HTTP 400)
@@ -186,17 +176,11 @@ ru:
     map:
       base:
         railway: Железная дорога
-      zoom:
-        in: Приблизить
-        out: Отдалить
   layouts:
-    intro_2_create_account: Создайте учётную запись
     intro_header: Добро пожаловать на OpenHistoricalMap!
     intro_text: OpenHistoricalMap является картой мира, созданной такими же людьми, как и вы, и может свободно использоваться под открытой лицензией.
     logo:
       alt_text: Логотип OpenHistoricalMap
-    logout: Выйти
-    tag_line: Свободная вики-карта мира
   sessions:
     destroy:
       heading: Выйти из OpenHistoricalMap
@@ -224,7 +208,6 @@ ru:
         credit_title_html: Как сослаться на OpenHistoricalMap
         infringement_1_html: Напоминаем участникам сообщества OHM, что добавление данных из любых защищённых авторским правом источников (например, с Google Maps или печатных карт) не должно проводиться без явного предварительного согласия правообладателей.
         introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
-        more_2_1_api_usage_policy: Политика использования API
         more_title_html: Узнайте больше
     export:
       too_large:
@@ -236,10 +219,6 @@ ru:
           title: Планета OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Просто нажмите %{note_icon} или на тот же значок на карте.
-            Это добавит на карту маркер, который можно передвигать перетаскиванием. Добавьте сообщение, а затем нажмите кнопку сохранения, и другие картографы увидят его.
         join_the_community:
           explanation_html: Если вы заметили проблему в данных нашей карты, например, отсутствие дороги или вашего адреса, лучший способ для дальнейших действий — вступить в сообщество OpenHistoricalMap и добавить или восстановить данные самостоятельно.
     help:
@@ -258,7 +237,6 @@ ru:
         title: Вики
     index:
       js_2: OpenHistoricalMap использует JavaScript для отображения карт.
-      remote_failed: Редактирование не удалось. Убедитесь, что JOSM или Merkaartor запущен и опция дистанционного управления включена
     potlatch:
       removed: Ваш редактор OpenHistoricalMap по умолчанию - Potlach. Поскольку поддержка Adobe Flash Player была приостановлена, Potlatch больше не доступен для использования в веб-браузере.
     welcome:
@@ -317,7 +295,3 @@ ru:
       about:
         paragraph_1: В отличие от других карт, OpenHistoricalMap полностью создана такими же людьми, как и вы, и каждый может бесплатно исправлять, обновлять, загружать и использовать ее.
         welcome: Добро пожаловать в OpenHistoricalMap
-    show:
-      delete_user: Удалить этого пользователя
-      hide_user: Скрыть этого пользователя
-      unhide_user: Отобразить этого пользователя

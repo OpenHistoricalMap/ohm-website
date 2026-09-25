@@ -13,10 +13,6 @@ ga:
       show:
         delete_introduction: 'Is féidir leat do chuntas OpenHistoricalMap a scriosadh trí úsáid a bhaint as an gcnaipe thíos. Tabhair faoi deara na sonraí seo a leanas le do thoil:'
         retain_caveats: 'Mar sin féin, coinneofar roinnt faisnéise fút ar OpenHistoricalMap, fiú tar éis do chuntas a scriosadh:'
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: céard é seo?
     terms:
       show:
         read and accept with tou: Léigh an comhaontú rannpháirtí agus na téarmaí úsáide le do thoil, seiceáil an dá bhosca seiceála nuair a bheidh tú críochnaithe agus ansin brúigh an cnaipe lean ar aghaidh.
@@ -48,9 +44,6 @@ ga:
       brief_ce: "%{year} CR"
       range: "%{start} – %{end}"
   diary_entries:
-    comments:
-      description: Iontrálacha dialainne le déanaí ó úsáideoirí OpenHistoricalMap
-      title: Iontrálacha dialainne OpenHistoricalMap
     feed:
       all:
         description: Iontrálacha dialainne le déanaí ó úsáideoirí OpenHistoricalMap
@@ -61,9 +54,6 @@ ga:
       user:
         description: Iontrálacha dialainne OpenHistoricalMap le déanaí de chuid %{user}
         title: Iontrálacha dialainne OpenHistoricalMap le haghaidh %{user}
-    profile_diaries:
-      comments_label: Tráchtanna
-      date_label: Dáta
   errors:
     bad_request:
       description: Níl an oibríocht a d'iarr tú ar an bhfreastalaí OpenHistoricalMap bailí (HTTP 400)
@@ -77,10 +67,6 @@ ga:
     not_found:
       description: Níorbh fhéidir comhad/eolaire/oibríocht API leis an ainm sin a aimsiú ar an bhfreastalaí OpenHistoricalMap (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       border_types:
         archdiocese: Teorainn Ard-Deoise
@@ -158,18 +144,13 @@ ga:
         woodblock: Bloc adhmaid
       cc0_text: "%{copyright_link}"
       openhistoricalmap_contributors: OHM
-      zoom:
-        in: Zúmáil isteach
-        out: Zúmáil amach
     query:
       suffix_format: "[%{dates}]"
   layouts:
-    intro_2_create_account: Cruthaigh cuntas úsáideora
     intro_header: Fáilte go OpenHistoricalMap!
     intro_text: Is léarscáil den domhan é OpenHistoricalMap, a chruthaigh daoine cosúil leatsa agus atá saor in aisce le húsáid faoi cheadúnas oscailte.
     logo:
       alt_text: Lógó OpenHistoricalMap
-    logout: Logáil Amach
     offline_flash:
       osm_offline: Tá bunachar sonraí OpenHistoricalMap as líne faoi láthair agus obair chothabhála riachtanach ar siúl.
       osm_read_only: Tá bunachar sonraí OpenHistoricalMap i mód léite amháin faoi láthair agus obair chothabhála riachtanach ar siúl.
@@ -177,7 +158,6 @@ ga:
     partners_greeninfo: Líonra GreenInfo
     partners_osmf: Fondúireacht OpenStreetMap
     partners_osmus: OpenStreetMap SAM
-    tag_line: An Léarscáil Dhomhanda Vicí Shaor in Aisce
     meta:
       openstreetmap_search: OpenHistoricalMap Cuardach
   notes:
@@ -329,13 +309,6 @@ ga:
         more_1_ohm_html: Faigh tuilleadh eolais faoi na cúinsí dlíthiúla agus ár sonraí á n-úsáid, agus conas creidiúint a thabhairt dúinn, %{wiki_link}.
         more_1_wiki: ar an Vicí OpenStreetMap
         more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
-        more_2_1_api_usage_policy: Polasaí Úsáide API
-        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
-        more_2_1_html: Cé gur sonraí oscailte é OpenHistoricalMap, ní féidir linn API léarscáile saor in aisce ná tíleanna léarscáile a sholáthar do thríú páirtithe. Féach ar ár %{api_usage_policy_link}, %{tile_usage_policy_link} agus %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Polasaí Úsáide Nominatim
-        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
-        more_2_1_tile_usage_policy: Polasaí Úsáide Tíleanna
-        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
         more_title_html: Tuilleadh eolais
         trademarks_1_ohm_contact_team: déan teagmháil leis an bhfoireann OpenHistoricalMap
         trademarks_1_ohm_html: Má tá ceisteanna agat faoi d'úsáid den ainm OpenHistoricalMap, déan teagmháil %{contact_team_link} le do thoil.
@@ -356,8 +329,6 @@ ga:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: Cliceáil %{note_icon} nó an deilbhín céanna ar an léarscáil. Cuirfidh sé seo marcóir leis an léarscáil, agus is féidir leat é a bhogadh trí tharraingt. Cuir do theachtaireacht leis, ansin cliceáil sábháil, agus déanfaidh mapálaithe eile imscrúdú.
         join_the_community:
           explanation_html: Má thug tú faoi deara fadhb lenár sonraí léarscáile, mar shampla má tá bóthar ar iarraidh nó má tá do sheoladh ar iarraidh, is é an bealach is fearr le dul ar aghaidh ná dul isteach i bpobal OpenHistoricalMap agus na sonraí a chur leis nó a dheisiú tú féin.
       other_concerns:
@@ -394,7 +365,6 @@ ga:
       js_2: Baineann OpenHistoricalMap úsáid as JavaScript dá léarscáil 'slippy' (léarscáil ghréasáin bunaithe ar thíleanna).
       license:
         copyright: Tá OpenHistoricalMap tiomnaithe don fhearann ​​poiblí mura luaitear a mhalairt.
-      remote_failed: Theip ar eagarthóireacht - déan cinnte go bhfuil JOSM nó Merkaartor lódáilte agus go bhfuil an rogha 'cianrialú' cumasaithe
     potlatch:
       removed: Is é Potlatch an t-eagarthóir réamhshocraithe OpenHistoricalMap atá socraithe agat. Ós rud é gur tarraingíodh siar Adobe Flash Player, níl Potlatch ar fáil a thuilleadh le húsáid i mbrabhsálaí gréasáin.
     welcome:
@@ -473,10 +443,6 @@ ga:
       duplicate_social_email: Má tá cuntas OpenHistoricalMap agat cheana féin agus más mian leat soláthraí aitheantais tríú páirtí a úsáid, logáil isteach le do phasfhocal agus athraigh socruithe do chuntais.
       please_contact_support_html: Téigh i dteagmháil le %{support_link} le socrú a dhéanamh cuntas a chruthú - déanfaimid iarracht déileáil leis an iarratas chomh luath agus is féidir.
       signup_to_authorize_html: Cláraigh le OpenHistoricalMap chun rochtain a fháil ar %{client_app_name}.
-    show:
-      delete_user: Scrios an tÚsáideoir seo
-      hide_user: Cuir an tÚsáideoir seo i bhfolach
-      unhide_user: Taispeáin an tÚsáideoir seo
   export:
     show:
       title: OpenHistoricalMap Leabaithe

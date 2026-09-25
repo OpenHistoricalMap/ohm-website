@@ -10,10 +10,6 @@
 # Author: Shirayuki
 # Do not edit by hand.
 dsb:
-  accounts:
-    show:
-      contributor_terms:
-        link text: Co to jo?
   api:
     notes:
       rss:
@@ -29,21 +25,11 @@ dsb:
       user:
         description: Nejnowše zapiski dnjownika OpenHistoricalMap wót %{user}
         title: Zapiski dnjownika OpenHistoricalMap za %{user}
-    profile_diaries:
-      date_label: Datum
-  javascripts:
-    map:
-      zoom:
-        in: Pówětšyś
-        out: Pómjeńšyś
   layouts:
-    intro_2_create_account: Załož wužywarske konto
     intro_header: Witaj k OpenHistoricalMap!
     intro_text: OpenHistoricalMap jó kórta swěta, napórana wót luźi ako ty a dajo se licho pód wótwórjoneju licencu wužywaś.
     logo:
       alt_text: Logo OpenHistoricalMap
-    logout: Wótzjawiś
-    tag_line: Licha wikikórta swěta
   sessions:
     destroy:
       heading: Z OpenHistoricalMap se wótzjawiś
@@ -67,11 +53,6 @@ dsb:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Klikni jadnorje na %{note_icon} abo na ten samski symbol w zwobraznjenju kórty.
-            To pśidajo kórśe marku, kótaruž móžoš pśez śěgnjenje pśesunuś.
-            Pśidaj swóju powěsć, klikni pon na Składowaś a druge kartěrowarje budu pó tom slěźiś.
         join_the_community:
           explanation_html: Jolic sy problem z našymi kórtowymi datami zawuputnuł, na pśikład droga abo twója adresa felujo, jo nejlěpša wašnja, z tym pókšacowaś, se zgromaźeństwoju OpenHistoricalMap pśizamknuś a sam daty pśidaś abo korigěrowaś.
     help:
@@ -83,7 +64,6 @@ dsb:
         description: Pśepytaj wiki za nadrobneju OHM-dokumentaciju
     index:
       js_2: OpenHistoricalMap wužywa JavaScript za suwatu kórtu.
-      remote_failed: Wobźěłowanje njejo se raźiło - pśeznań se, lěc JOSM jo zacytany a opcija zdalokawóźenje jo zmóžnjona
     welcome:
       basic_terms:
         paragraph_1: OpenHistoricalMap wužywa někotare wósebne zapśimjeśa. How su někotare z nich, kótarež by mógli śi wužytne byś.
@@ -121,8 +101,3 @@ dsb:
         subject_own: "[OpenHistoricalMap] %{commenter} jo jadnu z twójich pokazkow reaktiwěrował"
     signup_confirm:
       subject: "[OpenHistoricalMap] Witaj do OpenHistoricalMap"
-  users:
-    show:
-      delete_user: toś togo wužywarja lašowaś
-      hide_user: toś togo wužywarja schowaś
-      unhide_user: toś togo wužiwarja pokazaś

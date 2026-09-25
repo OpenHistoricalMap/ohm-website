@@ -35,10 +35,6 @@ sk:
       show:
         delete_introduction: 'Svoj účet na OpenHistoricalMap môžete odstrániť pomocou tlačidla nižšie. Všimnite si nasledujúce podrobnosti:'
         retain_caveats: 'Niektoré informácie o vás však zostanú na OpenHistoricalMap zachované aj po odstránení vášho účtu:'
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: čo to znamená?
     terms:
       show:
         read and accept with tou: Prečítajte si zmluvu s prispievateľom a podmienky používania, po dokončení začiarknite obe políčka a potom stlačte tlačidlo pokračovať.
@@ -75,9 +71,6 @@ sk:
       brief_ce: "%{year} n. l."
       range: "%{start} – %{end}"
   diary_entries:
-    comments:
-      description: Najnovšie záznamy v denníku od používateľov OpenHistoricalMap
-      title: Záznamy v denníku OpenHistoricalMap
     feed:
       all:
         description: Nedávne položky denníkov používateľov OpenHistoricalMap
@@ -88,9 +81,6 @@ sk:
       user:
         description: Nedávne záznamy OpenHistoricalMap denníka používateľa %{user}
         title: Záznamy OpenHistoricalMap denníka používateľa %{user}
-    profile_diaries:
-      comments_label: Komentáre
-      date_label: Dátum
   errors:
     bad_request:
       description: Operácia, ktorú ste požadovali na serveri OpenHistoricalMap, nie je platná (HTTP 400)
@@ -107,10 +97,6 @@ sk:
     show:
       title: OpenHistoricalMap – vložená mapa
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       border_types:
         archdiocese: Hranica arcidiecézy
@@ -188,18 +174,13 @@ sk:
         woodblock: Drevorez
       cc0_text: "%{copyright_link}"
       openhistoricalmap_contributors: OHM
-      zoom:
-        in: Priblížiť
-        out: Oddialiť
     query:
       suffix_format: "[%{dates}]"
   layouts:
-    intro_2_create_account: Založte si konto
     intro_header: Vitajte v OpenHistoricalMap!
     intro_text: OpenHistoricalMap je mapa sveta, vytvorené ľuďmi ako vy, voľne využiteľná pod slobodnou licenciou.
     logo:
       alt_text: Logo OpenHistoricalMap
-    logout: Odhlásiť sa
     meta:
       openstreetmap_search: Vyhľadávanie OpenHistoricalMap
     offline_flash:
@@ -210,9 +191,7 @@ sk:
     partners_osmf: OpenStreetMap Foundation
     partners_osmus: OpenStreetMap U.S.
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: Slobodná wiki-mapa sveta
   notes:
     new_readonly:
       warning: Nové poznámky nie je možné vytvárať, pretože API OpenHistoricalMap je momentálne v režime iba na čítanie.
@@ -367,13 +346,6 @@ sk:
         more_1_ohm_html: Viac o právnych aspektoch pri používaní našich údajov a o tom, ako nás uviesť ako zdroj, sa dozviete %{wiki_link}.
         more_1_wiki: na wiki OpenStreetMap
         more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
-        more_2_1_api_usage_policy: Zásady používania API (aplikačného rozhrania)
-        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
-        more_2_1_html: Hoci OpenHistoricalMap sú otvorené údaje, nemôžeme tretím stranám poskytnúť bezplatné mapové API. Pozrite si naše stránky %{api_usage_policy_link}, %{tile_usage_policy_link} a %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Pravidlá použitia Nominatim
-        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
-        more_2_1_tile_usage_policy: Zásady používania dlaždíc
-        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
         more_title_html: Ďalšie informácie
         trademarks_1_ohm_contact_team: kontaktujte tím OpenHistoricalMap
         trademarks_1_ohm_html: Ak máte otázky týkajúce sa používania názvu OpenHistoricalMap, %{contact_team_link}.
@@ -394,8 +366,6 @@ sk:
           title: Planéta OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: Stačí kliknúť na %{note_icon} alebo na rovnakú ikonu na zobrazení mapy. Tým sa na mapu pridá značka, ktorú môžete presúvať ťahaním. Pridajte svoju správu, potom kliknite na uložiť a ostatní mapujúci to preskúmajú.
         join_the_community:
           explanation_html: Ak ste si všimli problém s našimi mapovými údajmi, napríklad chýba cesta alebo vaša adresa, najlepší spôsob, ako postupovať, je pripojiť sa ku komunite OpenHistoricalMap a pridať alebo opraviť údaje sami.
       other_concerns:
@@ -431,7 +401,6 @@ sk:
       js_2: OpenHistoricalMap používa pre interaktívnu mapu JavaScript.
       license:
         copyright: OpenHistoricalMap je venovaný do voľného diela (public domain), pokiaľ nie je uvedené inak.
-      remote_failed: Editácia sa nepodarila – skontrolujte, či je JOSM alebo Merkaartor spustený a je v ňom zapnutá funkcia Diaľkové ovládanie (Remote control)
     potlatch:
       removed: Váš prednastavená OpenHistoricalMap editor je nastavený na Potlatch. Pretože však Adobe Flash Player bol už stiahnutý z používania, Potlatch už nie je možné používať vo webovom prehliadači.
     welcome:
@@ -511,7 +480,3 @@ sk:
       duplicate_social_email: Ak už máte účet OpenHistoricalMap a chcete použiť poskytovateľa identity tretej strany, prihláste sa pomocou svojho hesla a upravte nastavenia svojho účtu.
       please_contact_support_html: Kontaktujte %{support_link} a dohodnite si vytvorenie účtu – pokúsime sa požiadavku vybaviť čo najrýchlejšie.
       signup_to_authorize_html: Zaregistrujte sa v OpenHistoricalMap a získajte prístup do %{client_app_name}.
-    show:
-      delete_user: Odstrániť tohoto používateľa
-      hide_user: Skryť tohto používateľa
-      unhide_user: Zobraziť tohoto používateľa

@@ -39,11 +39,6 @@
 # Author: Zizzerus
 # Do not edit by hand.
 hu:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: mi ez?
   api:
     notes:
       rss:
@@ -57,8 +52,6 @@ hu:
         title_all: OpenHistoricalMap módosításcsomag-megbeszélés
         title_particular: 'A #%{changeset_id} OpenHistoricalMap módosításcsomaghoz tartozó megbeszélés'
   diary_entries:
-    comments:
-      title: OpenHistoricalMap naplóbejegyzések
     feed:
       all:
         description: Legutóbbi naplóbejegyzések az OpenHistoricalMap felhasználóitól
@@ -69,8 +62,6 @@ hu:
       user:
         description: "%{user} legutóbbi OpenHistoricalMap naplóbejegyzései"
         title: "%{user} OpenHistoricalMap naplóbejegyzései"
-    profile_diaries:
-      date_label: Érkezett
   errors:
     bad_request:
       description: Az OpenHistoricalMap szerveren kért művelet nem érvényes (HTTP 400)
@@ -90,18 +81,11 @@ hu:
   javascripts:
     legend:
       tooltip_disabled: A jelmagyarázat nem érhető el ezen a rétegen
-    map:
-      zoom:
-        in: Nagyítás
-        out: Kicsinyítés
   layouts:
-    intro_2_create_account: Felhasználói fiók létrehozása
     intro_header: Üdvözöljük az OpenHistoricalMap-en!
     intro_text: Az OpenHistoricalMap egy világtérkép, amelyet hozzád hasonló emberek készítenek és szabad licenc alatt elérhető.
     logo:
       alt_text: OpenHistoricalMap logó
-    logout: Kijelentkezés
-    tag_line: A szabad világtérkép
   oauth:
     scopes:
       openid: Jelentkezz be az OpenHistoricalMap használatával!
@@ -133,10 +117,6 @@ hu:
         infringement_1_html: Az OHM közreműködői emlékeztetve lettek arra, hogy soha ne adjanak hozzá adatokat egyetlen szerzői jogvédett forrásból se (pl. Google Térkép vagy nyomtatott térképek) a szerzői jog tulajdonosának kifejezett engedélye nélkül.
         introduction_4_creative_commons: Creative Commons „Nevezd meg! – Így add tovább!” 2.0
         introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/deed.hu
-        more_2_1_api_usage_policy: API-felhasználási irányelvek
-        more_2_1_html: 'Bár az OpenHistoricalMap nyílt adat, harmadik feleknek nem tudunk ingyenes térkép-API-t biztosítani. A részleteket megtekintheted a következő oldalakon: %{api_usage_policy_link}, %{tile_usage_policy_link} és %{nominatim_usage_policy_link}.'
-        more_2_1_nominatim_usage_policy: a Nominatim felhasználási irányelvei
-        more_2_1_tile_usage_policy: csempefelhasználási irányelvek
         more_title_html: Tudj meg többet!
       title: Szerzői jog és licenc
     export:
@@ -149,8 +129,6 @@ hu:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: Csak kattints a %{note_icon} ikonra vagy ugyanerre az ikonra a térképmegjelenítőben. Ez felrak egy helyjelölőt a térképre, amelyet húzással mozgathatsz. Írj hozzá egy üzenetet, majd kattints a mentésre, és a többi térképész meg fogja vizsgálni.
         join_the_community:
           explanation_html: Ha bármilyen hibát találtál a térképadatokban, például hiányzik egy út vagy cím, a legjobb, ha csatlakozol az OpenHistoricalMap közösséghez és kijavítod az adatot saját magad.
     help:
@@ -164,7 +142,6 @@ hu:
         description: Böngészd a wikit mélyreható OHM dokumentációért.
     index:
       js_2: Az OpenHistoricalMap JavaScriptet használ a slippy maphoz.
-      remote_failed: A szerkesztés nem sikerült. Győződj meg róla, hogy a JOSM vagy a Merkaartor be van töltve, és a távirányító opció engedélyezve van
     potlatch:
       removed: Az alapértelmezett OpenHistoricalMap szerkesztőd a Potlatch. Mivel az Adobe Flash Playert visszavonták, ezért webböngészőben már nem futtatható.
     welcome:
@@ -230,7 +207,3 @@ hu:
       duplicate_social_email: Ha már rendelkezel OpenHistoricalMap fiókkal, és külső identitásszolgáltatót szeretnél használni, kérjük, jelentkezz be jelszavaddal, és módosítsd fiókod beállításait.
       please_contact_support_html: Kérjük, lépj kapcsolatba velünk (%{support_link}), hogy elrendezhessük a fiók létrehozását. Kérésedet igyekszünk a lehető leggyorsabban feldolgozni.
       signup_to_authorize_html: Regisztrálj az OpenHistoricalMap szolgáltatással a %{client_app_name} eléréséhez.
-    show:
-      delete_user: Felhasználó törlése
-      hide_user: Felhasználó elrejtése
-      unhide_user: Felhasználó elrejtésének visszavonása

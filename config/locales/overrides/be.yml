@@ -27,11 +27,6 @@
 # Author: Чаховіч Уладзіслаў
 # Do not edit by hand.
 be:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
-        link text: што гэта?
   api:
     notes:
       rss:
@@ -55,8 +50,6 @@ be:
       user:
         description: Свежыя запісы ў дзённіку OpenHistoricalMap карыстальніка %{user}
         title: Запісы ў дзённіку OpenHistoricalMap карыстальніка %{user}
-    profile_diaries:
-      date_label: Дата
   errors:
     bad_request:
       description: Запытаная вамі аперацыя на серверы OpenHistoricalMap   несапраўдная (HTTP 400)
@@ -68,24 +61,11 @@ be:
       description: Сервер OpenHistoricalMap сутыкнуўся з нечаканай сітуацыяй, якая перашкодзіла яму выканаць запыт (HTTP 500)
     not_found:
       description: Не ўдалося знайсці файл/тэчку/аперацыю API з такім імем на серверы OpenHistoricalMap (HTTP 404)
-  geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
-  javascripts:
-    map:
-      zoom:
-        in: Павялічыць
-        out: Паменшыць
   layouts:
-    intro_2_create_account: Стварыць уліковы запіс удзельніка
     intro_header: Вітаем у OpenHistoricalMap!
     intro_text: OpenHistoricalMap - гэта карта свету, створаная людзьмі, як вы, і бясплатная для выкарыстання на ўмовах адкрытай ліцэнзіі.
     logo:
       alt_text: Лагатып OpenHistoricalMap
-    logout: Выйсці
-    tag_line: Свабодная Wiki-карта свету
   sessions:
     destroy:
       heading: Выйсці з OpenHistoricalMap
@@ -121,8 +101,6 @@ be:
           title: Планета OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: "Проста націсніце %{note_icon} або падобны значок на карце. \nУ выніку на карце з'явіцца маркер, які вы зможаце перамяшчаць шляхам перацягвання. Дадайце ваша паведамленне, націсніце кнопку Захаваць і іншыя ўдзельнікі змогуць гэта убачыць."
         join_the_community:
           explanation_html: Калі вы заўважылі недакладнасці ў нашых картаграфічных даных, напрыклад, калі не пазначана дарога ці ваш адрас, лепшы спосаб гэта выправіць - далучыцца да супольнасці OpenHistoricalMap і дадаць або выправіць даныя самастойна.
     help:
@@ -137,7 +115,6 @@ be:
         title: Вікі
     index:
       js_2: OpenHistoricalMap выкарыстоўвае JavaScript для адлюстравання карты на сайце.
-      remote_failed: Памылка рэдагавання. Упэўніцеся, што JOSM ці Merkaartor загружаныя і дазволеная магчымасць аддаленага кіравання
     welcome:
       basic_terms:
         paragraph_1: OpenHistoricalMap мае свой ​​уласны жаргон. Вось некалькі ключавых слоў, якія могуць быць карыснымі.
@@ -194,7 +171,3 @@ be:
       about:
         paragraph_1: У адрозненне ад іншых карт, OpenHistoricalMap цалкам створана такімі ж людзьмі як вы і кожны можа яе свабодна рэдагаваць і выкарыстоўваць.
         welcome: Вітаем у OpenHistoricalMap
-    show:
-      delete_user: Выдаліць гэтага карыстальніка
-      hide_user: Схаваць гэтага карыстальніка
-      unhide_user: Паказаць гэтага карыстальніка

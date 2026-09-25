@@ -26,10 +26,6 @@ gl:
       show:
         delete_introduction: 'Podes borrar a túa conta do OpenHistoricalMap usando o seguinte botón. Ten en conta os seguintes detalles:'
         retain_caveats: 'Non obstante, conservaremos algunha información sobre ti no OpenHistoricalMap, mesmo despois de que se elimine a túa conta:'
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: que é isto?
     terms:
       show:
         read and accept with tou: Le o acordo do colaborador e os termos de uso, marca ambas as dúas celas de verificación cando remates e despois preme no botón "Continuar".
@@ -65,9 +61,6 @@ gl:
       brief_ce: "%{year} e. c."
       range: "%{start} – %{end}"
   diary_entries:
-    comments:
-      description: Entradas de diario recentes dos usuarios do OpenHistoricalMap
-      title: Entradas no diario do OpenHistoricalMap
     feed:
       all:
         description: Entradas de diario recentes dos usuarios do OpenHistoricalMap
@@ -78,9 +71,6 @@ gl:
       user:
         description: Entradas recentes no diario do OpenHistoricalMap de %{user}
         title: Entradas no diario do OpenHistoricalMap de %{user}
-    profile_diaries:
-      comments_label: Comentarios
-      date_label: Data
   errors:
     bad_request:
       description: A operación que solicitaches no servidor do OpenHistoricalMap non é válida (HTTP 400)
@@ -97,10 +87,6 @@ gl:
     show:
       title: OpenHistoricalMap incrustado
   geocoder:
-    search:
-      title:
-        osm_nominatim: Nominatim do OpenHistoricalMap
-        osm_nominatim_reverse: Nominatim do OpenHistoricalMap
     search_osm_nominatim:
       border_types:
         archdiocese: Fronteira de arquidiocese
@@ -176,18 +162,13 @@ gl:
         woodblock: Xilografía
       cc0_text: "%{copyright_link}"
       openhistoricalmap_contributors: OHM
-      zoom:
-        in: Achegar
-        out: Afastar
     query:
       suffix_format: "[%{dates}]"
   layouts:
-    intro_2_create_account: Crea unha conta de usuario
     intro_header: Dámosche a benvida ó OpenHistoricalMap!
     intro_text: O OpenHistoricalMap é un mapa do mundo, creado por xente coma ti e de libre uso baixo unha licenza aberta.
     logo:
       alt_text: Logotipo do OpenHistoricalMap
-    logout: Pechar a sesión
     meta:
       openstreetmap_search: Procura do OpenHistoricalMap
     offline_flash:
@@ -198,9 +179,7 @@ gl:
     partners_osmf: Fundación OpenStreetMap
     partners_osmus: OpenStreetMap EUA
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: O mapa mundial libre
   notes:
     new_readonly:
       warning: Non se poden crear notas novas porque nestes intres a API do OpenHistoricalMap está en modo de lectura só.
@@ -356,16 +335,6 @@ gl:
         more_1_ohm_html: Obtén máis información sobre as consideracións legais ao usar os nosos datos e como acreditarnos %{wiki_link}.
         more_1_wiki: no wiki do OpenStreetMap
         more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
-        more_2_1_api_usage_policy: política de uso da API
-        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
-        more_2_1_html: |-
-          Malia que os datos do OpenHistoricalMap son libres, non podemos ofrecer unha
-          API de mapas ou mosaicos de mapas gratuítos para terceiros.
-          Consulta a nosa %{api_usage_policy_link}, a nosa %{tile_usage_policy_link} e a nosa %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: política de uso de Nominatim
-        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
-        more_2_1_tile_usage_policy: política de uso de mosaicos
-        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
         more_title_html: Máis información
         trademarks_1_ohm_contact_team: ponte en contacto co equipo do OpenHistoricalMap
         trademarks_1_ohm_html: Se tes algunha dúbida sobre o uso que fas do nome OpenHistoricalMap, %{contact_team_link}.
@@ -386,11 +355,6 @@ gl:
           title: Planeta OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Preme na %{note_icon} ou na mesma icona na visualización do mapa.
-            Isto ha engadir unha marcaxe ó mapa que podes mover
-            arrastrando. Engade a túa mensaxe, preme en "Gardar" e outras persoas pescudarán iso.
         join_the_community:
           explanation_html: |-
             Se atopas algún problema cos datos dos nosos mapas (por exemplo, se falta algunha estrada), o mellor é
@@ -432,7 +396,6 @@ gl:
       js_2: O OpenHistoricalMap emprega JavaScript para o seu mapa estático e dinámico.
       license:
         copyright: O OpenHistoricalMap pertence ao dominio público agás onde se indique o contrario.
-      remote_failed: Erro ao editar; comproba que ou ben o JOSM ou ben o Merkaartor estea cargado e que a opción do control remoto estea activada
     potlatch:
       removed: O teu editor predeterminado do OpenHistoricalMap é o Potlatch. Debido a que o Adobe Flash Player xa non é compatíbel, Potlatch xa non está dispoñíbel para o seu uso nun navegador web.
     welcome:
@@ -520,7 +483,3 @@ gl:
       duplicate_social_email: Se xa tes unha conta do OpenHistoricalMap e queres utilizar un provedor de identidade de terceiros, inicia sesión usando o teu contrasinal e modifica a configuración da túa conta.
       please_contact_support_html: Ponte en contacto co %{support_link} para que cree unha conta por ti; tentaremos xestionar a solicitude o máis axiña que poidamos.
       signup_to_authorize_html: Rexístrate co OpenHistoricalMap para acceder a %{client_app_name}.
-    show:
-      delete_user: Eliminar este usuario
-      hide_user: Agochar este usuario
-      unhide_user: Descubrir este usuario

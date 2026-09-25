@@ -77,10 +77,6 @@ ja:
       show:
         delete_introduction: 下のボタンを使用してご自分の OpenStreetMap アカウントを削除してください。次の詳細にご注意願います。
         retain_caveats: ただしアカウント削除後も、あなたに関する一部の情報は OpenStreetMap に保持されます（以下ご参照）。
-    show:
-      contributor_terms:
-        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
-        link text: これは何ですか?
     terms:
       show:
         read and accept with tou: 貢献者同意と利用規約を読んで、読み終わりましたら、両方のチェックボックスをチェックし、次ボタンを押してください。
@@ -108,8 +104,6 @@ ja:
       brief_ce: 西暦 %{year}
       range: "%{start} – %{end}"
   diary_entries:
-    comments:
-      title: OpenHistoricalMap 利用者の日記エントリ
     feed:
       all:
         description: OpenHistoricalMap 利用者による最近の日記エントリ
@@ -120,8 +114,6 @@ ja:
       user:
         description: "%{user} さんの最近の OpenHistoricalMap 日記エントリ"
         title: "%{user} さんの OpenHistoricalMap 日記エントリ"
-    profile_diaries:
-      date_label: 日付
   errors:
     bad_request:
       description: OpenHistoricalMapサーバへ要求した操作は無効な形式です (HTTP 400)
@@ -142,19 +134,13 @@ ja:
     map:
       base:
         japanesescroll: 日本の巻物
-      zoom:
-        in: 拡大
-        out: 縮小
   layouts:
-    intro_2_create_account: 新しい利用者アカウントを作成
     intro_header: OpenHistoricalMap へようこそ!
     intro_text: OpenHistoricalMap は、あなたのような人々が作成した世界地図であり、オープン ライセンスの下で自由に利用できます。
     logo:
       alt_text: OpenHistoricalMap ロゴ
-    logout: ログアウト
     project_name:
       title: OpenHistoricalMap
-    tag_line: 自由なウィキ世界地図
   oauth:
     scopes:
       openid: OpenHistoricalMapを使用してログイン
@@ -206,10 +192,6 @@ ja:
           パブリックドメインにあるものに限り、その目的を問わず、制限も一切なく、自由に複製や配布、送信や改変ができます。
         introduction_3_ohm_html: 私たちのホームページに載せた地図の様式は、CC0 指定によりパブリックドメインです。献呈は無条件で、目的を問わず制限も一切なく、自由に複製や配布、送信や改変ができます。
         introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
-        more_2_1_api_usage_policy: API利用ポリシー
-        more_2_1_html: OpenHistoricalMapはオープンデータですが、第三者に対して地図利用APIもしくは地図タイルを無償で提供することはできません。詳しくは %{api_usage_policy_link}、%{tile_usage_policy_link}および%{nominatim_usage_policy_link}をご参照ください。
-        more_2_1_nominatim_usage_policy: Nominatim利用規約
-        more_2_1_tile_usage_policy: タイル利用規約
         more_title_html: 詳細を見る
       title: 著作権と謝辞
     export:
@@ -224,11 +206,6 @@ ja:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            %{note_icon}をクリックするか、または地図上の同じアイコンをクリックしてください。
-            地図にマーカーが追加されます。マーカーはドラッグで移動できます。
-            メッセージを追加して保存をクリックすると、他のマッパーたちが調査します。
         join_the_community:
           explanation_html: 道路やあなたの住所が抜けているなど地図データの問題を見つけた場合、OpenHistoricalMapのコミュニティに参加して自分でデータの修正や追加をすることが最善の方法です。
     help:
@@ -244,7 +221,6 @@ ja:
       js_2: OpenHistoricalMap は地図の表示に JavaScript を使用します。
       license:
         copyright: OpenHistoricalMapは特筆する場合を除きパブリックドメインです。
-      remote_failed: 編集に失敗しました - JOSM または Merkaartor を起動し、リモート制御オプションが有効になっていることを確認してください
     potlatch:
       removed: お使いの既定の OpenHistoricalMap エディタは Potlatch が選択されています。 Adobe Flash Player の撤退により、 Potlatch はウェブブラウザ上でもう利用できません。
     welcome:
@@ -314,7 +290,3 @@ ja:
         welcome: OpenHistoricalMap へようこそ。
       duplicate_social_email: すでに OpenHistoricalMap アカウントをお持ちで第三者認証プロバイダーを使用したい場合は、パスワードを使用してログインしたうえでアカウントの設定を変更してください。
       signup_to_authorize_html: "%{client_app_name} にアクセスするには、OpenHistoricalMap に利用者登録してください。"
-    show:
-      delete_user: この利用者を削除
-      hide_user: この利用者を表示しない
-      unhide_user: この利用者を再表示

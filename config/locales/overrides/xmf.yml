@@ -6,10 +6,6 @@
 # Author: Silovan
 # Do not edit by hand.
 xmf:
-  accounts:
-    show:
-      contributor_terms:
-        link text: მუ რე თენა?
   api:
     notes:
       rss:
@@ -32,5 +28,4 @@ xmf:
       user:
         title: OpenHistoricalMap დღარიშ დინნაჭარეფი მახვარებუშო %{user}
   layouts:
-    intro_2_create_account: მახვარებუეფიშ ანგარიშიშ გოჭყაფა
     intro_header: მოზოჯით OpenHistoricalMap-შა!

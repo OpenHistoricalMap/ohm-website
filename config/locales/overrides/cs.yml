@@ -61,10 +61,6 @@ cs:
       show:
         delete_introduction: 'Svůj účet OpenHistoricalMap můžete smazat pomocí níže uvedeného tlačítka. Vezměte prosím na vědomí následující podrobnosti:'
         retain_caveats: 'Některé informace o vás však budou na OpenHistoricalMap uchovány i po smazání vašeho účtu:'
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: co to znamená?
     terms:
       show:
         read and accept with tou: Přečtěte si prosím podmínky pro přispěvatele a podmínky užití, poté zaškrtněte obě políčka a stiskněte tlačítko pro pokračování.
@@ -90,8 +86,6 @@ cs:
       brief_bce: "%{year} př. n. l."
       brief_ce: "%{year} n. l."
   diary_entries:
-    comments:
-      title: Deníkové záznamy OpenHistoricalMap
     feed:
       all:
         description: Nedávné záznamy v denících uživatelů OpenHistoricalMap
@@ -102,8 +96,6 @@ cs:
       user:
         description: Nedávné záznamy v OpenHistoricalMap deníku uživatele %{user}
         title: Záznamy v OpenHistoricalMap deníku uživatele %{user}
-    profile_diaries:
-      date_label: Datum
   errors:
     bad_request:
       description: Operace, kterou jste žádali po serveru OpenHistoricalMap, není platná (HTTP 400)
@@ -116,10 +108,6 @@ cs:
     not_found:
       description: Na serveru OpenHistoricalMap se nepodařilo najít soubor/adresář/operaci API s tímto názvem (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       prefix:
         amenity:
@@ -134,17 +122,11 @@ cs:
         historical: Historická
         japanesescroll: Japonský svitek
         woodblock: Dřevořez
-      zoom:
-        in: Přiblížit
-        out: Oddálit
   layouts:
-    intro_2_create_account: Vytvořit uživatelský účet
     intro_header: Vítejte v OpenHistoricalMap!
     intro_text: OpenHistoricalMap je mapa světa, vytvořená lidmi jako vy a volně využitelná pod otevřenou licencí.
     logo:
       alt_text: Logo OpenHistoricalMap
-    logout: Odhlásit se
-    tag_line: Otevřená wiki-mapa světa
   oauth:
     scopes:
       openid: Přihlaste se pomocí OpenHistoricalMap
@@ -173,12 +155,6 @@ cs:
         introduction_2_cc_by_url: https://creativecommons.org/licenses/by/4.0/deed.cs
         introduction_4_creative_commons: Creative Commons Uveďte autora-Zachovejte licenci 2.0
         introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/deed.cs
-        more_2_1_api_usage_policy: Pravidla použití API
-        more_2_1_html: |-
-          Přestože jsou OpenHistoricalMap otevřená data, nemůžeme třetím stranám poskytovat
-          bezplatné mapové API. Vizte naše %{api_usage_policy_link}, %{tile_usage_policy_link} a %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Pravidla použití Nominatimu
-        more_2_1_tile_usage_policy: Pravidla použití dlaždic
         more_title_html: Další informace
     export:
       too_large:
@@ -190,10 +166,6 @@ cs:
           title: Planeta OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Stačí kliknout na %{note_icon} nebo na stejnou ikonku na zobrazené mapě.
-            Tím do mapy přidáte značku, kterou můžete přesunout tažením myší. Přidejte svou zprávu a klikněte na uložit a ostatní uživatelé se na to podívají.
         join_the_community:
           explanation_html: Pokud jste si všimli nějakého nedostatku našich mapových dat, např. chybějící silnice nebo vaše adresa, nejlepším řešením je připojit se ke komunitě OpenHistoricalMap a přidat nebo opravit data vlastnoručně.
     help:
@@ -207,7 +179,6 @@ cs:
         description: Podrobnou dokumentaci OHM najdete na wiki.
     index:
       js_2: OpenHistoricalMap používá pro svou interaktivní mapu JavaScript.
-      remote_failed: Editace se nezdařila – ujistěte se, že JOSM nebo Merkaartor běží a je zapnuto dálkové ovládání
     potlatch:
       removed: Jako preferovaný editor pro OpenHistoricalMap máte nastaven Potlatch. Protože byl ale Adobe Flash Player ukončen, Potlatch již pro použití ve webovém prohlížeči není dostupný.
     welcome:
@@ -278,7 +249,3 @@ cs:
       duplicate_social_email: Pokud již máte účet OpenHistoricalMap a chcete používat poskytovatele identity třetí strany, přihlaste se pomocí svého hesla a upravte nastavení svého účtu.
       please_contact_support_html: Kontaktujte prosím %{support_link} a domluvte se na vytvoření účtu – pokusíme se žádost vyřídit co nejrychleji.
       signup_to_authorize_html: Zaregistrujte se pomocí OpenHistoricalMap pro přístup k %{client_app_name}.
-    show:
-      delete_user: Odstranit tohoto uživatele
-      hide_user: Skrýt tohoto uživatele
-      unhide_user: Zobrazit tohoto uživatele

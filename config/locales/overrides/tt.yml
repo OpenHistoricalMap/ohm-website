@@ -10,17 +10,10 @@
 # Author: Ильгиз
 # Do not edit by hand.
 tt:
-  accounts:
-    show:
-      contributor_terms:
-        link text: бу нәрсә?
   api:
     notes:
       rss:
         title: OpenHistoricalMap искәрмәләре
-  diary_entries:
-    profile_diaries:
-      date_label: Вакыт
   errors:
     contact:
       contact_the_community_html: Әгәр дә сез эшләми торган сылтама / баш тапсагыз, бернинди шиксез OpenHistoricalMap җәмгыятенә %{contact_link} итегез. Соравыгызга туры килгән URL турында искәрмә ясагыз.
@@ -30,8 +23,6 @@ tt:
       description: OpenHistoricalMap серверы көтелмәгән шарт белән очрашты, бу вакыйга сорауга җавап бирергә комачаулады (HTTP 500)
     not_found:
       description: Шушы исем буенча OpenHistoricalMap серверыннан файл/директория/API гамәл табып булмый
-  layouts:
-    logout: Чыгу
   site:
     export:
       too_large:

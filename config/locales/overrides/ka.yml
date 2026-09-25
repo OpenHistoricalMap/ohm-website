@@ -10,19 +10,9 @@
 # Author: Იო ოქრო
 # Do not edit by hand.
 ka:
-  accounts:
-    show:
-      contributor_terms:
-        link text: რა არის ეს?
-  diary_entries:
-    profile_diaries:
-      date_label: თარიღი
   layouts:
-    intro_2_create_account: მომხმარებლის ანგარიშის შექმნა
     logo:
       alt_text: OpenHistoricalMap-ის ლოგო
-    logout: გასვლა
-    tag_line: თავისუფალი ვიკი-რუკა
   sessions:
     destroy:
       heading: OpenHistoricalMap-დან გასვლა
@@ -38,8 +28,3 @@ ka:
       subject: "[OpenHistoricalMap] დაადასტურეთ თქვენი ელ.ფოსტის მისამართი"
     signup_confirm:
       subject: "[OpenHistoricalMap] მოგესალმებით OpenHistoricalMap-ში"
-  users:
-    show:
-      delete_user: ამ მომხმარებლის წაშლა
-      hide_user: ამ მომხმარებლის დამალვა
-      unhide_user: ამ მომხმარებლის გამოჩენა

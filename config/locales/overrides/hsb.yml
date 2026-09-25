@@ -9,11 +9,6 @@
 # Author: Minh Nguyen
 # Do not edit by hand.
 hsb:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://www.osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: Što to je?
   api:
     notes:
       rss:
@@ -33,29 +28,18 @@ hsb:
         title: OpenHistoricalMap dźenikowe zapiski w rěči %{language_name}
       user:
         title: OpenHistoricalMap dźenikowe zapiski wot wužiwarja %{user}
-    profile_diaries:
-      date_label: Datum
   geocoder:
     search_osm_nominatim:
       prefix:
         leisure:
           track: běhanišćo
-  javascripts:
-    map:
-      zoom:
-        in: Powjetšić
-        out: Pomjeńšić
   layouts:
-    intro_2_create_account: Załož wužiwarske konto
     intro_header: Witaj k OpenHistoricalMap!
     intro_text: OpenHistoricalMap je karta swěta, wutworjena wot ludźi kaž tebje a hodźi so swobodnje pod wotewrjenej licencu wužiwać.
     logo:
       alt_text: OpenHistoricalMap logo
-    logout: Wotzjewić
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: Swobodna karta swěta
   sessions:
     destroy:
       heading: Z OpenHistoricalMap wotzjewić
@@ -92,11 +76,6 @@ hsb:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Klikń prosće na %{note_icon} abo na samsny symbol w zwobraznjenju karty.
-            To přida karće marku, kotruž móžeš přez ćehnjenje přesunyć.
-            Přidaj swoju powěsć, klikń potom na Składować a druzy kartěrowarjo to přeslědźa.
         join_the_community:
           explanation_html: Jeli sy problem z našimi kartowymi datami pytnył, na přikład dróha abo twoja adresa faluje, je najlěpše wašnje, z tym pokročować, so zhromadźenstwu OpenHistoricalMap přiidružić a sam daty přidać abo korigować.
     help:
@@ -110,7 +89,6 @@ hsb:
         description: Přepytaj wiki za nadrobnej dokumentaciju OHM
     index:
       js_2: OpenHistoricalMap JavaScript za slippy map wužiwa.
-      remote_failed: Wobdźěłowanje je so njeporadźiło - zawěsć, zo JOSM abo Merkaartor je začitany a dalokowodźenska opcija je zmóžnjena
     welcome:
       basic_terms:
         paragraph_1: OpenHistoricalMap někotre wosebite zapřijeća wužiwa. Tu su někotre z nich, kotrež móhli ći wužitne być.
@@ -168,7 +146,3 @@ hsb:
     auth_association:
       heading: Waš ID hišće z kontom OpenHistoricalMap zwjazany njeje.
       option_1: Jeli sy nowy na OpenHistoricalMap, załož nowe konto z pomocu slědowaceho formulara.
-    show:
-      delete_user: Tutoho wužiwarja zhašeć
-      hide_user: Tutoho wužiwarja schować
-      unhide_user: Tutoho wužiwarja pokazaś

@@ -29,13 +29,9 @@ aln:
       user:
         description: shënimet e fundit OpenHistoricalMap ditar nga %{user}
         title: hyra OpenHistoricalMap ditar për %{user}
-    profile_diaries:
-      date_label: Data
   layouts:
     logo:
       alt_text: logo e OpenHistoricalMap
-    logout: logout
-    tag_line: Free Harta Wiki Botërore
   sessions:
     destroy:
       heading: Dil nga OpenHistoricalMap
@@ -73,8 +69,3 @@ aln:
       header: "%{from_user} ju ka dërgu një mesazh përmes OpenHistoricalMap me titullin %{subject}:"
     signup_confirm:
       subject: "[OpenHistoricalMap] Konfirmoje email adresën tonde"
-  users:
-    show:
-      delete_user: fshije kët shfrytzues
-      hide_user: mshife kët shfrytëzues
-      unhide_user: shfaqe kët shfrytzues

@@ -23,13 +23,10 @@ sco:
         description: Recent OpenHistoricalMap diary entries frae %{user}
         title: OpenHistoricalMap diary entries for %{user}
   layouts:
-    intro_2_create_account: Create a uiser accoont
     intro_header: Walcome tae OpenHistoricalMap!
     intro_text: OpenHistoricalMap is a cairt o the warld, creatit bi fowk lik ye an free tae uise unner an open license.
     logo:
       alt_text: OpenHistoricalMap logo
-    logout: Log Oot
-    tag_line: The Free Wiki Warld Cairt
   sessions:
     destroy:
       heading: Logoot frae OpenHistoricalMap

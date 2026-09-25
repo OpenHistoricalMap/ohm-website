@@ -33,21 +33,11 @@ af:
       user:
         description: Onlangse OpenHistoricalMap-dagboekinskrywings van %{user}
         title: OpenHistoricalMap-dagboekinskrywings vir %{user}
-    profile_diaries:
-      date_label: Datum
-  javascripts:
-    map:
-      zoom:
-        in: Zoem in
-        out: Zoem uit
   layouts:
-    intro_2_create_account: Skep 'n gebruikerrekening
     intro_header: Welkom by OpenHistoricalMap!
     intro_text: OpenHistoricalMap is wêreldkaart deur gewone mense geskep. Die gebruik daarvan is gratis en val onder 'n oop-lisensie.
     logo:
       alt_text: OpenHistoricalMap-embleem
-    logout: Meld af
-    tag_line: Die Vrye Wiki-Wêreldkaart
   sessions:
     destroy:
       heading: Meld van OpenHistoricalMap af
@@ -79,8 +69,3 @@ af:
       subject: "[OpenHistoricalMap] %{message_title}"
     signup_confirm:
       subject: "[OpenHistoricalMap] Welkom by OpenHistoricalMap"
-  users:
-    show:
-      delete_user: Skrap dié Gebruiker
-      hide_user: Versteek hierdie gebruiker
-      unhide_user: Wys hierdie gebruiker

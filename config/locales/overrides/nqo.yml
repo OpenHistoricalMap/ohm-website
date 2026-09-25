@@ -9,16 +9,6 @@
 # Author: ߛߊ߲߬ߛߊ߲߬ߘߐ߬ ߊߡߙߊ߫
 # Do not edit by hand.
 nqo:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: ߡߎ߲߬ ߦߋ߫ ߣߌ߲߬ ߘߌ߫؟
-  diary_entries:
-    comments:
-      title: ߔߊ߬ߔߘߊ ߘߐ߬ߝߐ ߘߊߦߟߍ߬ߟߌ ߘߐ߬ߛߙߋ ߟߊߘߏ߲߬ߠߌ߲ ߠߎ߬
-    profile_diaries:
-      date_label: ߕߎ߬ߡߊ߬ߘߊ
   geocoder:
     search_osm_nominatim:
       prefix:
@@ -35,13 +25,6 @@ nqo:
         historical: ߘߝߐ߬ߡߊ
         japanesescroll: ߗ߭ߊߔߐ߲ߞߊ ߟߎ߬ ߟߊ߫ ߡߌߣߌ߲
         woodblock: ߦߙߌ߫ ߞߎߘߎ߲
-      zoom:
-        in: ߞߵߊ߬ ߡߊߛߊ߬ߡߊ߲߫
-        out: ߊ߬ ߡߊߓߐ߫
-  layouts:
-    intro_2_create_account: ߖߊ߬ߕߋ߬ߘߊ ߘߏ߫ ߘߊߦߟߍ߬
-    logout: ߌ ߜߊ߲߬ߞߎ߲߬ߣߍ߲ ߓߐ߫
-    tag_line: ߥߞߌ ߛߙߊ߬ߓߊߟߌ ߘߎߢߊ߫ ߔߊ߬ߔߘߊ
   site:
     copyright:
       legal_babble:
@@ -56,8 +39,3 @@ nqo:
   user_mailer:
     lost_password:
       hopefully_you: ߡߐ߱ ߘߏ߫ (ߊ߬ ߘߌ߫ ߛߋ߫ ߞߍ߫ ߟߴߌ ߖߍ߬ߘߍ ߘߌ߫) ߓߘߊ߫ ߢߌ߬ߣߌ߲߬ߞߊ߬ߟߌ ߞߍ߫ ߕߊ߬ߡߌ߲߬ߞߊ߲߬ ߡߊߦߟߍߡߊ߲ ߡߊ߬ ߢ:ߞߏ߲ߘߏ ߛߊ߲߬ߓߊ߬ߕߐ߮ ߟߊ߫ openhistoricalmap.org ߖߊ߬ߕߋ߬ߘߊ ߣߌ߲߬ ߞߊ߲߬.
-  users:
-    show:
-      delete_user: ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߣߌ߲߬ ߖߏ߰ߛߌ߫
-      hide_user: ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߣߌ߲߬ ߥߣߊ߬ߙߌ߫
-      unhide_user: ߟߊ߬ߓߊ߰ߙߊ߬ߟߊ ߣߌ߲߬ ߥߣߊ߬ߙߌ߬ߣߍ߲ ߓߐ߫

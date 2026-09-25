@@ -11,17 +11,6 @@
 # Author: गराडे
 # Do not edit by hand.
 mr:
-  accounts:
-    show:
-      contributor_terms:
-        link text: हे काय आहे?
-  diary_entries:
-    profile_diaries:
-      date_label: दिनांक
-  layouts:
-    intro_2_create_account: सदस्यखाते तयार करा
-    logout: सनोंद-निर्गम
-    tag_line: मुक्त विकि जागतिक नकाशा
   site:
     about:
       lede_text: OpenHistoricalMap हा मानचित्रकारांनी उभारलेला एक प्रकल्प आहे ज्यात जगभरातील रस्ते, पायवाट, कॅफे, रेल्वे स्थानक व इतर बऱ्याच गोष्टींचा डेटा योगदानातून तयार व व्यवस्थापित केला जातो.
@@ -40,8 +29,6 @@ mr:
     help:
       wiki:
         description: सखोल OHM प्रलेखनासाठी विकी वाचा.
-    index:
-      remote_failed: संपादन अयशस्वी - JOSM किंवा Merkaartor चालू केले आहे आणि रिमोट निरंत्रण पर्याय सक्षम असल्याची खात्री करा
   traces:
     feeds:
       show:

@@ -34,11 +34,6 @@
 # Author: Yupik
 # Do not edit by hand.
 nb:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
-        link text: hva er dette?
   api:
     notes:
       rss:
@@ -62,24 +57,13 @@ nb:
       user:
         description: Nye innlegg i OpenHistoricalMap-dagboka til %{user}
         title: Innlegg i OpenHistoricalMap-dagboka for %{user}
-    profile_diaries:
-      date_label: Dato
-  javascripts:
-    map:
-      zoom:
-        in: Forstørr utvalg
-        out: Forminsk utvalg
   layouts:
-    intro_2_create_account: Opprett en brukerkonto
     intro_header: Velkommen til OpenHistoricalMap!
     intro_text: OpenHistoricalMap er et kart over verden, skapt av mennesker som deg, og gratis å bruke under en åpen lisens.
     logo:
       alt_text: OpenHistoricalMap-logo
-    logout: Logg ut
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: Fritt Wiki-verdenskart
   sessions:
     destroy:
       heading: Logg ut fra OpenHistoricalMap
@@ -103,10 +87,6 @@ nb:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Bare klikk %{note_icon} eller det samme ikonet på kartvisningen.
-            Dette vil legge en markør på kartet som du kan flytte rundt på. Legg så inn en melding og klikk lagre, og andre kartleggere kan følge opp informasjonen din.
         join_the_community:
           explanation_html: Hvis du har observert et problem med våre kartdata, for eksempel at det mangler en vei, anbefaler vi at du blir med i OpenHistoricalMap-fellesskapet for å kunne reparere dataene selv.
     help:
@@ -120,7 +100,6 @@ nb:
         description: Se gjennom wikien for dyptgående OHM-dokumentasjon.
     index:
       js_2: OpenHistoricalMap bruker JavaScript på kartsidene.
-      remote_failed: Klarte ikke redigere - forsikre deg at JOSM eller Merkaartor er lastet og fjernkontrollvalget er aktivert
     welcome:
       basic_terms:
         paragraph_1: OpenHistoricalMap har sin egen sjargong. Her er en ordliste som kan være nyttig.
@@ -167,7 +146,3 @@ nb:
   users:
     auth_association:
       heading: ID-en din er ikke tilknyttet en OpenHistoricalMap-konto enda.
-    show:
-      delete_user: Slett denne brukeren
-      hide_user: Skjul denne brukeren
-      unhide_user: Slutt å skjule denne brukeren

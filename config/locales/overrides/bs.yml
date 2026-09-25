@@ -18,10 +18,6 @@
 # Author: Сербијана
 # Do not edit by hand.
 bs:
-  accounts:
-    show:
-      contributor_terms:
-        link text: Šta je ovo?
   diary_entries:
     feed:
       all:
@@ -33,21 +29,11 @@ bs:
       user:
         description: Nedavni unosi u OpenHistoricalMap dnevnik od %{user}
         title: Unosi u OpenHistoricalMap dnevnik za korisnika %{user}
-    profile_diaries:
-      date_label: Datum
-  javascripts:
-    map:
-      zoom:
-        in: Približi
-        out: Udalji
   layouts:
-    intro_2_create_account: Napravite korisnički račun
     intro_header: Dobordošli na OpenHistoricalMap stranicu!
     intro_text: OpenHistoricalMap predstavlja mapu svijeta, kreiranu od strane ljudi kao što ste vi i može se besplatno koristiti.
     logo:
       alt_text: OpenHistoricalMap logotip
-    logout: Odjava
-    tag_line: Slobodna wiki karta Svijeta
   sessions:
     destroy:
       heading: Odjava iz OpenHistoricalMap
@@ -69,7 +55,6 @@ bs:
         title: IRC
     index:
       js_2: OpenHistoricalMap koristi JavaScript za slippy kartu.
-      remote_failed: Uređivanje nije uspjelo - provjerite da li je JOSM ili Merkaartor učitan i da je opcija udaljenog pristupa omogućena
   user_mailer:
     diary_comment_notification:
       header: "%{from_user} je komentirao tvoj nedavni OpenHistoricalMap unos u dnevnik sa predmetom %{subject}:"
@@ -89,8 +74,3 @@ bs:
         subject_own: "[OpenHistoricalMap] %{commenter} je dao komentar na jednu od tvojih bilješki."
     signup_confirm:
       subject: "[OpenHistoricalMap] Dobrodošli na OpenHistoricalMap"
-  users:
-    show:
-      delete_user: Obriši ovog korisnika
-      hide_user: Sakrij ovog korisnika
-      unhide_user: Otkrij ovog korisnika
