@@ -50,10 +50,6 @@
 # Do not edit by hand.
 id:
   accounts:
-    show:
-      contributor_terms:
-        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: Apa ini?
     terms:
       show:
         read and accept with tou: Tolong baca persetujuan kontributor dan ketentuan penggunaan, centang kedua kotak centang ketika selesai lalu tekan tombol lanjutkan.
@@ -70,8 +66,6 @@ id:
         title_all: Diskusi set perubahan OpenHistoricalMap
         title_particular: 'Diskusi set perubahan OpenHistoricalMap #%{changeset_id}'
   diary_entries:
-    comments:
-      title: Entri buku harian OpenHistoricalMap
     feed:
       all:
         description: Entri catatan harian terbaru dari pengguna OpenHistoricalMap
@@ -82,8 +76,6 @@ id:
       user:
         description: Entri catatan harian OpenHistoricalMap terbaru dari %{user}
         title: Entri catatan harian OpenHistoricalMap untuk %{user}
-    profile_diaries:
-      date_label: Tanggal
   errors:
     contact:
       contact_the_community_html: Silakan dengan bebas %{contact_link} komunitas OpenHistoricalMap bila Anda menemukan tautan rusak / kekutu. Buatlah catatan URL tepat dari permintaan Anda.
@@ -94,10 +86,6 @@ id:
     not_found:
       description: Gagal menemukan operasi berkas/direktori/API dengan nama itu di peladen OpenHistoricalMap (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       prefix:
         leisure:
@@ -112,17 +100,11 @@ id:
         japanesescroll: Gulungan Jepang
         railway: Jalur Kereta Api
         woodblock: Balok Kayu
-      zoom:
-        in: Perbesar
-        out: Perkecil
   layouts:
-    intro_2_create_account: Buat Akun
     intro_header: Selamat datang di OpenHistoricalMap!
     intro_text: OpenHistoricalMap adalah peta interaktif dunia sepanjang sejarah, dibuat oleh orang-orang seperti Anda dan didedikasikan untuk domain publik.
     logo:
       alt_text: logo OpenHistoricalMap
-    logout: Keluar Log
-    tag_line: Peta Dunia Wiki Gratis
   oauth:
     scopes:
       openid: Daftar masuk menggunakan OpenHistoricalMap
@@ -147,10 +129,6 @@ id:
         credit_title_html: Cara memberikan kredit pada OpenHistoricalMap
         infringement_1_html: Kontributor OHM diingatkan untuk tidak menambahkan sembarang data dari sumber berhak cipta (misalnya, Google Maps atau peta cetak) tanpa izin jelas dari pemegang hak cipta.
         introduction_4_creative_commons: Creative Commons Atribusi-BerbagiSerupa 2.0
-        more_2_1_api_usage_policy: Aturan Penggunaan API
-        more_2_1_html: Meski data OpenHistoricalMap bersifat terbuka, kami tidak bisa menyediakan API peta gratis untuk pihak ketiga. Simak %{api_usage_policy_link}, %{tile_usage_policy_link}, dan %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Aturan Penggunaan Nominatim
-        more_2_1_tile_usage_policy: Aturan Penggunaan Kotak Peta
         more_title_html: Mengetahui lebih lanjut
     export:
       too_large:
@@ -162,8 +140,6 @@ id:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: "Hanya klik %{note_icon} atau ikon yang sama pada layar peta. \nIni akan menambahkan penanda ke peta, yang dapat Anda bergerak \ndengan menyeret. Tambahkan pesan Anda, lalu klik simpan, dan pembuat peta lainnya akan menyelidiki."
         join_the_community:
           explanation_html: Jika Anda melihat masalah dengan data peta kami, misal jalan yang hilang atau alamat Anda, cara terbaik untuk menanganinya adalah dengan bergabung dengan komunitas OpenHistoricalMap dan menambahkan atau memperbaiki data tersebut sendiri.
     help:
@@ -179,7 +155,6 @@ id:
         title: Selamat datang di OHM
     index:
       js_2: OpenHistoricalMap menggunakan JavaScript untuk peta selipnya.
-      remote_failed: Gagal melakukan edit - pastikan JOSM atau Merkaartor telah termuat dan opsi remote control telah diaktifkan
     potlatch:
       removed: Alat sunting OpenHistoricalMap bawaan Anda disetel sebagai Potlatch. Karena Adobe Flash Player telah ditarik, Potlatch tidak lagi tersedia untuk digunakan di peramban web.
     welcome:
@@ -246,7 +221,3 @@ id:
         paragraph_1: Tidak seperti peta lain, OpenHistoricalMap sepenuhnya dibangun oleh orang-orang seperti Anda. Siapa saja boleh memperbaiki, memperbarui, mengunduh, dan menggunakannya.
         paragraph_2: Silakan mendaftar untuk berkontribusi. Kami akan kirimkan surat elektronik untuk konfirmasi akun Anda.
       please_contact_support_html: Hubungi %{support_link} bila Anda ingin kami buatkan akun. Kami akan menanggapi permintaan Anda sesegera mungkin.
-    show:
-      delete_user: Hapus Pengguna Ini
-      hide_user: Sembunyikan Pengguna Ini
-      unhide_user: Munculkan Kembali Pengguna Ini

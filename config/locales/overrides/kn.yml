@@ -17,16 +17,6 @@
 # Author: ಮಲ್ನಾಡಾಚ್ ಕೊಂಕ್ಣೊ
 # Do not edit by hand.
 kn:
-  accounts:
-    show:
-      contributor_terms:
-        link text: ಇದು ಏನು?
-  diary_entries:
-    profile_diaries:
-      date_label: ದಿನಾಂಕ
-  layouts:
-    intro_2_create_account: ಹೊಸ ಬಳಕೆದಾರ ಖಾತೆಯನ್ನು ರಚಿಸಿ
-    logout: ನಿರ್ಗಮಿಸು
   site:
     help:
       slack:

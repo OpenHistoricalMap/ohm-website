@@ -8,22 +8,12 @@
 # Author: Sushant savla
 # Do not edit by hand.
 gu:
-  accounts:
-    show:
-      contributor_terms:
-        link text: આ શું છે?
-  diary_entries:
-    profile_diaries:
-      date_label: તારીખ
   layouts:
     logo:
       alt_text: OpenHistoricalMapનો લોગો
   site:
     about_section:
       legal_1_privacy_policy: ગોપનિયતા નીતિ
-    copyright:
-      legal_babble:
-        more_2_1_api_usage_policy: APIના ઉપયોગની નીતિ
     help:
       welcome:
         title: OpenHistoricalMapમાં સ્વાગત છે
@@ -36,7 +26,3 @@ gu:
     new:
       about:
         welcome: OpenHistoricalMapમાં સ્વાગત છે
-    show:
-      delete_user: આ વપરાશકર્તાને દૂર કરી નાંખો
-      hide_user: આ વપરાશકર્તાને છુપાવો
-      unhide_user: આ વપરાશકર્તાને દર્શાવો

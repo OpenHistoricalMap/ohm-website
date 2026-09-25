@@ -35,10 +35,6 @@
 # Author: জয়শ্রীরাম সরকার
 # Do not edit by hand.
 bn:
-  accounts:
-    show:
-      contributor_terms:
-        link text: এটি কী?
   auth:
     providers:
       openstreetmap: ওপেনস্ট্রিটম্যাপ
@@ -46,20 +42,13 @@ bn:
     index:
       feed:
         cc0_url: https://creativecommons.org/publicdomain/zero/1.0/deed.bn
-  diary_entries:
-    profile_diaries:
-      date_label: তারিখ
   javascripts:
     map:
       base:
         railway: রেলপথ
   layouts:
-    intro_2_create_account: একটি ব্যবহারকারী অ্যাকাউন্ট তৈরি করুন
-    logout: প্রস্থান
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: মুক্ত উইকি বিশ্ব মানচিত্র
   oauth:
     scopes:
       openid: ওপেনস্ট্রিটম্যাপ ব্যবহার করে সাইন-ইন করুন
@@ -98,7 +87,3 @@ bn:
   users:
     auth_association:
       heading: আপনার আইডি এখনও কোনও ওপেনহিস্টোরিকস্ট্রিটম্যাপ অ্যাকাউন্টের সাথে যুক্ত নয়।
-    show:
-      delete_user: এই ব্যবহাকারীকে অপসারণ করুন
-      hide_user: এই ব্যবহারকারীকে লুকান
-      unhide_user: এই ব্যবহাকারীকে দেখান

@@ -28,11 +28,6 @@
 # Author: Zygimantus
 # Do not edit by hand.
 lt:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: kas tai?
   api:
     notes:
       rss:
@@ -46,8 +41,6 @@ lt:
         title_all: OpenHistoricalMap pakeitimo aptarimas
         title_particular: 'OpenHistoricalMap pakeitimo #%{changeset_id} aptarimas'
   diary_entries:
-    comments:
-      title: "„OpenHistoricalMap“ dienoraščio įrašai"
     feed:
       all:
         description: Paskutiniai OpenHistoricalMap naudotojų dienoraščių įrašai
@@ -58,8 +51,6 @@ lt:
       user:
         description: Paskutiniai naudotojo %{user} OpenHistoricalMap dienoraščio įrašai
         title: Naudotojo %{user} OpenHistoricalMap dienoraščio įrašai
-    profile_diaries:
-      date_label: Data
   errors:
     bad_request:
       description: Operacija, kurios paprašėte „OpenHistoricalMap“ serveryje, negalima (HTTP 400)
@@ -71,26 +62,15 @@ lt:
       description: OpenHistoricalMap serveris susidūrė su netikėta sąlyga, kuri neleido įvykdyti užklausos (HTTP 500)
     not_found:
       description: OpenHistoricalMap serveryje nepavyko rasti failo, katalogo ar API veiksmo su nurodytu pavadinimu (HTTP 404)
-  geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
   javascripts:
     map:
       base:
         historical: Istorinis
-      zoom:
-        in: Priartinti
-        out: Nutolinti
   layouts:
-    intro_2_create_account: sukurti naudotojo paskyrą
     intro_header: Sveiki atvykę į OpenHistoricalMap!
     intro_text: OpenHistoricalMap yra pasaulio žemėlapis, kuriamas žmonių, tokių kaip jūs. Jis atviras ir laisvas - naudojamas pagal atvirą licenciją.
     logo:
       alt_text: OpenHistoricalMap logotipas
-    logout: Atsijungti
-    tag_line: Atviras wiki žemėlapis
   oauth:
     scopes:
       openid: Prisijungti su OpenHistoricalMap
@@ -123,10 +103,6 @@ lt:
         credit_title_html: Kaip paminėti OpenHistoricalMap
         infringement_1_html: OHM pildytojai primenami niekada nesinaudoti autorių teisėmis apsaugotų šaltinių (pvz. Google Maps ar spausdintų žemėlapių) be leidimo naudoti.
         introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
-        more_2_1_api_usage_policy: API naudojimo politika
-        more_2_1_html: Nors OpenHistoricalMap yra atvirų duomenų, mes negalime teikti nemokamo žemėlapių API trečiosioms šalims. Žiūrėkite mūsų %{api_usage_policy_link}, %{tile_usage_policy_link} ir %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Nominatim naudojimo politika
-        more_2_1_tile_usage_policy: Plytelių naudojimo politika
         more_title_html: Papildoma informacija
     export:
       too_large:
@@ -138,8 +114,6 @@ lt:
           title: OHM planeta
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: Tiesiog spauskite %{note_icon} arba tą pačią piktogramą žemėlapyje. Žemėlapyje bus pridėtas žymeklis, kurį galėsite pertempti. Pridėkite jūsų pranešimą, kurį kiti žymėtojai perskaitys ir ištirs.
         join_the_community:
           explanation_html: Jei pastebėjote žemėlapio duomenų problemą, pavyzdžiui radote trūkstamą kelią ar adresą, geriausias variantas yra prisijungti prie OpenHistoricalMap bendruomenės ir pridėti ar pataisyti duomenis patiems.
     help:
@@ -162,7 +136,6 @@ lt:
         description: Daugiau detalios informacijos apie OHM rasite wiki.
     index:
       js_2: OpenHistoricalMap naudoja JavaScript savo 'slidžiam' žemėlapiui
-      remote_failed: Redagavimas nepavyko - būkite tikras ar JOSM arba Merkaator užkrautas ir nuotolinio valdymo funkcija įjungta.
     potlatch:
       removed: Jūsų numatytasis OpenHistoricalMap redaktorius yra "Potlatch". Kadangi "Adobe Flash Player" įskiepis nebenaudojamas, "Potlatch" nebegalima naudoti naršyklėje.
     welcome:
@@ -226,7 +199,3 @@ lt:
         welcome: Sveiki atvykę į OpenHistoricalMap
       duplicate_social_email: Jei jau turite OpenHistoricalMap paskyrą ir norite naudoti trečiosios šalies tapatybės teikėją, prisijunkite naudodami slaptažodį ir pakeiskite paskyros nustatymus.
       signup_to_authorize_html: Prisiregistruokite naudodami „ OpenHistoricalMap“, kad pasiektumėte %{client_app_name}.
-    show:
-      delete_user: Pašalinti šį naudotoją
-      hide_user: Paslėpti šį naudotoją
-      unhide_user: Nebeslėpti šio naudotojo

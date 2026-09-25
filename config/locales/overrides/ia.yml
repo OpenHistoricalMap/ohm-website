@@ -16,10 +16,6 @@ ia:
       show:
         delete_introduction: 'Tu pote deler tu conto de OpenHistoricalMap usante le button infra. Per favor nota le sequente detalios:'
         retain_caveats: 'Nonobstante, alcun informationes sur te remanera sur OpenHistoricalMap, mesmo post le deletion de tu conto:'
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: que es isto?
     terms:
       show:
         read and accept with tou: Per favor, lege le accordo de contributor e le conditiones de uso, marca ambe quadratos quando tu es finite e pois preme le button Continuar.
@@ -51,9 +47,6 @@ ia:
       brief_ce: "%{year} EC"
       range: "%{start} – %{end}"
   diary_entries:
-    comments:
-      description: Entratas recente de diario de usatores de OpenHistoricalMap
-      title: Entratas de diario de OpenHistoricalMap
     feed:
       all:
         description: Entratas recente de diario de usatores de OpenHistoricalMap
@@ -64,9 +57,6 @@ ia:
       user:
         description: Entratas recente de diario de OpenHistoricalMap de %{user}
         title: Entratas de diario de OpenHistoricalMap de %{user}
-    profile_diaries:
-      comments_label: Commentos
-      date_label: Data
   errors:
     bad_request:
       description: Le operation que tu ha requestate sur le servitor de OpenHistoricalMap non es valide (HTTP 400)
@@ -80,10 +70,6 @@ ia:
     not_found:
       description: Non poteva trovar un file, directorio o operation API con iste nomine sur le servitor de OpenHistoricalMap (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       border_types:
         archdiocese: Limite de archidiocese
@@ -155,18 +141,13 @@ ia:
         woodblock: Bloco de ligno
       cc0_text: "%{copyright_link}"
       openhistoricalmap_contributors: OHM
-      zoom:
-        in: Zoom avante
-        out: Zoom retro
     query:
       suffix_format: "[%{dates}]"
   layouts:
-    intro_2_create_account: Crea un conto de usator
     intro_header: Benvenite a OpenHistoricalMap!
     intro_text: OpenHistoricalMap es un carta del mundo, create per gente como tu e libere de usar sub un licentia aperte.
     logo:
       alt_text: Logo de OpenHistoricalMap
-    logout: Clauder session
     offline_flash:
       osm_offline: Le base de datos de OpenHistoricalMap non es disponibile al momento debite a operationes de mantenentia essential.
       osm_read_only: Le base de datos de OpenHistoricalMap es actualmente in modo de lectura sol debite a operationes de mantenentia essential.
@@ -174,7 +155,6 @@ ia:
     partners_greeninfo: GreenInfo Network
     partners_osmf: Fundation OpenStreetMap
     partners_osmus: OpenStreetMap Statos Unite
-    tag_line: Le wiki-carta libere del mundo
   notes:
     new_readonly:
       warning: Non es possibile crear nove notas perque le API de OpenHistoricalMap es actualmente in modo de lectura sol.
@@ -320,15 +300,6 @@ ia:
         more_1_ohm_html: Lege plus sur le considerationes juridic ligate al uso de nostre datos, e como recognoscer nos, %{wiki_link}.
         more_1_wiki: sur le wiki de OpenStreetMap
         more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
-        more_2_1_api_usage_policy: Politica de uso del API
-        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
-        more_2_1_html: |-
-          Benque OpenHistoricalMap es datos aperte, nos non pote fornir un API cartographic gratuite o tegulas cartographic a tertios.
-          Vide nostre %{api_usage_policy_link}, %{tile_usage_policy_link} e %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Politica de uso de Nominatim
-        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
-        more_2_1_tile_usage_policy: Politica de uso de tegulas
-        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
         more_title_html: Pro saper plus
         trademarks_1_ohm_contact_team: contacta le equipa de OpenHistoricalMap
         trademarks_1_ohm_html: Si tu ha questiones sur tu uso del nomine OpenHistoricalMap, per favor %{contact_team_link}.
@@ -349,8 +320,6 @@ ia:
           title: Planeta OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: Clicca simplemente sur %{note_icon} o sur le mesme icone in le quadro del carta. Un marcator essera addite al carta, que tu pote displaciar trahente lo con le mouse. Adde tu message, pois clicca sur Salveguardar, e altere cartographos lo investigara.
         join_the_community:
           explanation_html: Si tu ha trovate un problema con nostre datos cartographic, per exemplo si il manca un cammino o tu adresse, lo melior es inscriber te a OpenHistoricalMap e adder o reparar le datos tu mesme.
       other_concerns:
@@ -386,7 +355,6 @@ ia:
       js_2: OpenHistoricalMap usa JavaScript pro su carta glissante.
       license:
         copyright: OpenHistoricalMap es dedicate al dominio public, excepte ubi alteremente indicate.
-      remote_failed: Modification fallite - assecura te que JOSM o Merkaartor es cargate e que le plug-in de controlo remote es activate
     potlatch:
       removed: Tu ha le editor predefinite de OpenHistoricalMap fixate como Potlatch. Post que Adobe Flash ha essite retirate, Potlatch non plus pote esser usate in un navigator web.
     welcome:
@@ -465,7 +433,3 @@ ia:
       duplicate_social_email: Si tu ha ja un conto de OpenHistoricalMap e vole usar un fornitor tertie de identitate, per favor aperi session usante tu contrasigno e modifica le parametros de tu conto.
       please_contact_support_html: Per favor contacta le %{support_link} pro arrangiar le creation de un conto. Nos tentara tractar le requesta le plus rapidemente possibile.
       signup_to_authorize_html: Crea un conto sur OpenHistoricalMap pro acceder a %{client_app_name}.
-    show:
-      delete_user: Deler iste usator
-      hide_user: Celar iste usator
-      unhide_user: Revelar iste usator

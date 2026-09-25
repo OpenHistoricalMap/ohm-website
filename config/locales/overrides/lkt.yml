@@ -4,9 +4,6 @@
 # Author: Tuwewanzi
 # Do not edit by hand.
 lkt:
-  diary_entries:
-    profile_diaries:
-      date_label: Wíyawapi
   site:
     export:
       too_large:

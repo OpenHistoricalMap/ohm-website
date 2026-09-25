@@ -97,10 +97,6 @@ zh-CN:
     deletions:
       show:
         retain_caveats: 然而，即使在您的账户被删除后，部分关于您的信息仍将被保留在OpenStreetMap里：
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: 这是什么？
     terms:
       show:
         read and accept with tou: 请阅读贡献者协议和使用条款，勾选下列2个复选框，并点击“确定”按钮。
@@ -128,9 +124,6 @@ zh-CN:
       brief_ce: 公元%{year}
       range: "%{start} – %{end}"
   diary_entries:
-    comments:
-      description: OpenHistoricalMap 用户最近的日记条目
-      title: OpenHistoricalMap 日记文章
     feed:
       all:
         description: 最近的 OpenHistoricalMap 用户日记文章
@@ -141,9 +134,6 @@ zh-CN:
       user:
         description: "%{user} 最近的 OpenHistoricalMap 日记文章"
         title: "%{user} 的 OpenHistoricalMap 日记文章"
-    profile_diaries:
-      comments_label: 评论
-      date_label: 日期
   errors:
     bad_request:
       description: 您在 OpenHistoricalMap 服务器上请求的操作无效 (HTTP 400)
@@ -157,10 +147,6 @@ zh-CN:
     not_found:
       description: 在 OpenHistoricalMap 服务器上找不到该名称的文件、目录或API 操作（HTTP 404）
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       border_types:
         archdiocese: 大主教区界
@@ -226,20 +212,13 @@ zh-CN:
       base:
         japanesescroll: 日本挂轴
         railway: 铁路
-      zoom:
-        in: 放大
-        out: 缩小
   layouts:
-    intro_2_create_account: 创建用户账户
     intro_header: 欢迎访问 OpenHistoricalMap！
     intro_text: OpenHistoricalMap 是一个世界地图，由像您一样的人们所构筑，可依据开放许可协议自由使用。
     logo:
       alt_text: OpenHistoricalMap 标志
-    logout: 退出
     project_name:
-      h1: OpenHistoricalMap 开放史图
       title: OpenHistoricalMap 开放史图
-    tag_line: 自由的 Wiki 世界地图
   oauth:
     scopes:
       openid: 使用 OpenHistoricalMap 登录
@@ -270,10 +249,6 @@ zh-CN:
         credit_title_html: 如何表明作者是 OpenHistoricalMap
         infringement_1_html: OHM 的贡献者会被提醒，绝不要在没有著作权人的明确许可时添加来自任何有著作权的来源的数据(如谷歌地图或印刷地图)。
         introduction_4_creative_commons: 知识共享署名-相同方式共享 2.0
-        more_2_1_api_usage_policy: API 使用政策
-        more_2_1_html: 尽管 OpenHistoricalMap 是开放数据，但我们无法为第三方提供免费的地图 API。请参阅我们的 %{api_usage_policy_link}、%{tile_usage_policy_link} 和 %{nominatim_usage_policy_link}。
-        more_2_1_nominatim_usage_policy: Nominatim使用政策
-        more_2_1_tile_usage_policy: 瓦片使用政策
         more_title_html: 了解更多
     export:
       too_large:
@@ -285,8 +260,6 @@ zh-CN:
           title: OHM星球
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: 只需点击%{note_icon}或地图上显示的相同图标。这会在地图上添加标记，您可以拖动它来改变位置。添加您所知信息后点击保存，其他绘图者将进行核查。
         join_the_community:
           explanation_html: 如果您发现我们的地图数据有问题，例如缺少某条道路或者您的地址，最好的处理方法就是加入 OpenHistoricalMap 社区，然后您自己添加或者改进数据。
     help:
@@ -300,7 +273,6 @@ zh-CN:
         description: 浏览 wiki 深入了解 OHM 文档。
     index:
       js_2: OpenHistoricalMap 使用 JavaScript 让地图更平滑。
-      remote_failed: 编辑失败 - 请确保已加载 JOSM 或 Merkaartor 并启用了远程控制
     potlatch:
       removed: 您的默认OpenHistoricalMap编辑器设置为Potlatch。由于Adobe Flash Player已停止支持，因此Potlatch不再可在Web浏览器中使用。
     welcome:
@@ -377,7 +349,3 @@ zh-CN:
       duplicate_social_email: 如果您已经拥有OpenHistoricalMap账户并希望使用第三方提供的身份标识，请使用密码登录并修改您的账户设置。
       please_contact_support_html: 请联系 %{support_link} 以安排创建帐户 - 我们会尽快处理该请求。
       signup_to_authorize_html: 注册 OpenHistoricalMap 以访问 %{client_app_name}
-    show:
-      delete_user: 删除此用户
-      hide_user: 隐藏此用户
-      unhide_user: 取消隐藏此用户

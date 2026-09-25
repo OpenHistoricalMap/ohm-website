@@ -75,10 +75,6 @@
 # Do not edit by hand.
 pl:
   accounts:
-    show:
-      contributor_terms:
-        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: co to jest?
     terms:
       show:
         read and accept with tou: Przeczytaj Warunki uczestnictwa i Warunki użytkowania, zaznacz oba pola wyboru po zakończeniu, a następnie naciśnij przycisk Kontynuuj.
@@ -93,16 +89,12 @@ pl:
     providers:
       openstreetmap: OpenStreetMap
   diary_entries:
-    comments:
-      title: Wpisy w dzienniku OpenHistoricalMap
     feed:
       all:
         description: Ostatnie wpisy dzienników od użytkowników OpenHistoricalMap
         title: Wpisy dzienników OpenHistoricalMap
       language:
         description: Ostatnie wpisy użytkowników OpenHistoricalMap w języku %{language_name}
-    profile_diaries:
-      date_label: Data
   errors:
     bad_request:
       description: Operacja, której zażądałeś na serwerze OpenHistoricalMap jest nieprawidłowa (HTTP 400)
@@ -115,30 +107,17 @@ pl:
     not_found:
       description: Nie udało się znaleźć pliku / katalogu / operacji API o tej nazwie na serwerze OpenHistoricalMap (HTTP 404).
   geocoder:
-    search:
-      title:
-        osm_nominatim: Nominatim
-        osm_nominatim_reverse: Nominatim
     search_osm_nominatim:
       prefix:
         leisure:
           horse_riding: Centrum jazdy konnej
-  javascripts:
-    map:
-      zoom:
-        in: Przybliż
-        out: Oddal
   layouts:
-    intro_2_create_account: Utwórz konto
     intro_header: Witamy w OpenHistoricalMap!
     intro_text: OpenHistoricalMap to mapa świata stworzona przez ludzi takich jak Ty i z możliwością użycia pod otwartą licencją.
     logo:
       alt_text: Logo OpenHistoricalMap
-    logout: Wyloguj się
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: Wolna wikimapa świata
   oauth:
     scopes:
       openid: Zaloguj się za pomocą OpenHistoricalMap
@@ -164,10 +143,6 @@ pl:
         credit_2_this_copyright_page: tej strony licencyjnej
         infringement_1_html: Autorzy OHM powinni pamiętać, aby nigdy nie dodawać danych z żadnych źródeł chronionych prawami autorskimi (jak np. Google Maps i&nbsp;większość map drukowanych) bez wyraźnego pozwolenia właściciela praw autorskich.
         introduction_4_creative_commons: Uznanie autorstwa na tych samych warunkach 2.0
-        more_2_1_api_usage_policy: Polityką korzystania z API
-        more_2_1_html: Chociaż dane OpenHistoricalMap są otwarte, nie jesteśmy w stanie zapewnić nieograniczonego dostępu do naszego API wszystkim chętnym. Zapoznaj się z naszą %{api_usage_policy_link}, %{tile_usage_policy_link} oraz %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Polityką korzystania z Nominatima
-        more_2_1_tile_usage_policy: Polityką korzystania z kafelków
         more_title_html: Dowiedz się więcej
       title: Prawa autorskie i&nbsp;licencja
     export:
@@ -180,8 +155,6 @@ pl:
           title: Planeta OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: 'Wystarczy, że klikniesz tutaj: %{note_icon} lub na taką samą ikonkę przeglądając mapę na głównej stronie. Pojawi się wtedy pinezka, którą możesz przesunąć, przeciągając. Wpisz wiadomość, kliknij Zapisz, a inni mapujący zajmą się opisanym problemem.'
         join_the_community:
           explanation_html: Jeśli zauważyłeś problem z mapą, na przykład brakującą ulicę lub adres, najlepszym sposobem na dodanie lub naprawę takich danych jest dołączenie do społeczności OpenHistoricalMap i dokonanie edycji lub naprawy własnoręcznie.
     help:
@@ -195,7 +168,6 @@ pl:
         description: Zapoznaj się z Wiki, aby uzyskać szczegółową dokumentację OHM.
     index:
       js_2: OpenHistoricalMap używa JavaScriptu do wyświetlania tej mapy.
-      remote_failed: Nieudane edytowanie – proszę sprawdzić, czy program JOSM lub Merkaartor jest uruchomiony i funkcja Remote Control jest włączona
     potlatch:
       removed: Twój domyślny edytor OpenHistoricalMap to Potlatch. Ponieważ Adobe Flash Player został wycofany, Potlatch nie jest już dostępny w przeglądarce.
     welcome:
@@ -265,7 +237,3 @@ pl:
       duplicate_social_email: Jeśli masz już konto OpenHistoricalMap i chcesz skorzystać z usług zewnętrznego dostawcy tożsamości, zaloguj się, podając swoje hasło, i zmień ustawienia swojego konta.
       please_contact_support_html: Skontaktuj się z %{support_link} w celu umówienia się na założenie konta – postaramy się rozpatrzyć prośbę jak najszybciej.
       signup_to_authorize_html: Zaloguj się do OpenHistoricalMap, aby uzyskać dostęp do %{client_app_name}.
-    show:
-      delete_user: Usuń tego użytkownika
-      hide_user: Ukryj tego użytkownika
-      unhide_user: Odkryj tego użytkownika

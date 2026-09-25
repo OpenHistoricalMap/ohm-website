@@ -64,10 +64,6 @@ ko:
       show:
         delete_introduction: 아래 버튼을 눌러 오픈히스토리컬맵 계정을 삭제할 수 있습니다. 다음 세부 사항에 유의하십시오.
         retain_caveats: 그러나, 귀하의 정보가 삭제된 후 오픈히스토리컬맵에서 일부 정보가 유지될 수 있습니다.
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: 무엇인가요?
     terms:
       show:
         read and accept with tou: 기여자 동의 및 사용 약관을 읽고 두 개의 체크 상자에 체크한 다음 계속 버튼을 눌러 주십시오.
@@ -99,9 +95,6 @@ ko:
       brief_ce: 기원후 %{year}년
       range: "%{start} – %{end}"
   diary_entries:
-    comments:
-      description: 오픈히스토리컬맵 사용자의 최근 일기 항목
-      title: 오픈히스토리컬맵 일기 항목
     feed:
       all:
         description: 오픈히스토리컬맵 사용자의 최근 일기 항목
@@ -112,9 +105,6 @@ ko:
       user:
         description: "%{user}의 최근 오픈히스토리컬맵 일기 항목"
         title: "%{user}의 오픈히스토리컬맵 일기 항목"
-    profile_diaries:
-      comments_label: 댓글
-      date_label: 날짜
   errors:
     bad_request:
       description: 오픈히스토리컬맵 서버에서 요청하신 작업이 유효하지 않습니다 (HTTP 400)
@@ -133,10 +123,6 @@ ko:
     show:
       title: 오픈히스토리컬맵 삽입됨
   geocoder:
-    search:
-      title:
-        osm_nominatim: 오픈히스토리컬맵 Nominatim
-        osm_nominatim_reverse: 오픈히스토리컬맵 Nominatim
     search_osm_nominatim:
       border_types:
         archdiocese: 대교구 경계
@@ -209,16 +195,11 @@ ko:
         woodblock: 목판 지도
       cc0_text: "%{copyright_link}"
       openhistoricalmap_contributors: OHM
-      zoom:
-        in: 확대
-        out: 축소
   layouts:
-    intro_2_create_account: 사용자 계정을 만드세요
     intro_header: 오픈히스토리컬맵에 오신 것을 환영합니다!
     intro_text: 오픈히스토리컬맵은 여러분과 같은 사람들이 만들어, 개방형 라이선스에 따라 자유롭게 사용할 수 있는 세계 지도입니다.
     logo:
       alt_text: OpenHistoricalMap 로고
-    logout: 로그아웃
     meta:
       openstreetmap_search: 오픈히스토리컬맵 검색
     offline_flash:
@@ -230,7 +211,6 @@ ko:
     partners_osmus: 오픈스트리트맵 미국
     project_name:
       title: OpenHistoricalMap
-    tag_line: 자유로운 위키 세계지도
   notes:
     new_readonly:
       warning: 오픈히스토리컬맵 API가 현재 읽기 전용 모드이기 때문에 새로운 참고를 생성할 수 없습니다.
@@ -364,17 +344,6 @@ ko:
         more_1_ohm_html: "%{wiki_link}에서 저희 데이터를 사용할 때 고려해야 할 법적 사항과 출처 표기 방법에 대해 자세히 알아보세요."
         more_1_wiki: 오픈스트리트맵 위키
         more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
-        more_2_1_api_usage_policy: API 사용 정책
-        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
-        more_2_1_html: |-
-          OpenHistoricalMap은 공개 데이터이지만 제3자에게 지도 API를 무료로 제공할 수 없습니다.
-          %{api_usage_policy_link}, %{tile_usage_policy_link}, %{nominatim_usage_policy_link}를 참조하세요.
-        more_2_1_nominatim_usage_policy: 지명 사용 정책
-        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
-        more_2_1_tile_usage_policy: 타일 사용 정책
-        more_2_1_tile_usage_policy_url: |-
-          https
-          ://operations.osmfoundation.org/policies/tiles/
         more_title_html: 자세히 찾기
         trademarks_1_ohm_contact_team: 오픈히스토리컬맵 팀에 문의
         trademarks_1_ohm_html: 오픈히스토리컬맵 (OpenHistoricalMap)의 명칭 사용과 관련하여 질문이 있으시면 %{contact_team_link}로 문의해 주세요.
@@ -395,11 +364,6 @@ ko:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            %{note_icon}나 지도에 표시되는 같은 아이콘을 클릭하세요.
-            끌어서 움직일 수 있는, 지도에 표시를 추가할 것입니다.
-            메시지를 추가하고 나서, 저장을 클릭하면, 다른 매퍼가 조사할 것입니다.
         join_the_community:
           explanation_html: 우리의 지도 데이터에, 예를 들어 도로가 없거나 여러분의 주소에 문제가 있음을 보았다면, 진행하는 가장 좋은 방법은 OpenHistoricalMap 공동체에 가입하고 스스로 데이터를 추가하거나 고치는 것입니다.
       other_concerns:
@@ -435,7 +399,6 @@ ko:
       js_2: 오픈히스토리컬맵은 매끄러운 지도를 위해 자바스크립트를 사용합니다.
       license:
         copyright: 오픈히스토리컬맵은 별도 명시된 경우를 제외하고 퍼블릭 도메인에 속합니다.
-      remote_failed: 편집을 실패했습니다 - JOSM이나 Merkaartor를 불러왔고 원격 제어 설정이 활성화되어 있는지 확인하세요
     potlatch:
       removed: 당신의 오픈히스토리컬맵 기본 편집기가 Potlatch로 설정되어 있습니다. 어도비 플래시의 지원이 중단된 관계로 Potlatch는 더 이상 웹 브라우저에서 사용할 수 없습니다.
     welcome:
@@ -513,7 +476,3 @@ ko:
       duplicate_social_email: 이미 오픈히스토리컬맵 계정을 가지고 있고 다른 서비스의 ID를 연동하시려면, 비밀번호를 사용하여 로그인한 뒤 계정 설정을 변경하시기 바랍니다.
       please_contact_support_html: 계정 생성 준비를 위해 %{support_link}(으)로 문의해 주세요. 요청 처리가 최대한 빨리 이뤄질 수 있도록 노력하겠습니다.
       signup_to_authorize_html: "%{client_app_name}에 접근하려면 오픈히스토리컬맵에 로그인하세요."
-    show:
-      delete_user: 이 사용자를 삭제
-      hide_user: 이 사용자를 숨기기
-      unhide_user: 이 사용자를 숨기기 취소

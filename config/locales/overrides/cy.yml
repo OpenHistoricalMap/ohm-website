@@ -10,11 +10,6 @@
 # Author: Robin Owain
 # Do not edit by hand.
 cy:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: beth yw hwn?
   api:
     notes:
       rss:
@@ -31,8 +26,6 @@ cy:
         title_all: Trafodaeth grŵp newid OpenHistoricalMap
         title_particular: Trafodaeth grŵp newid OpenHistoricalMap %{changeset_id}
   diary_entries:
-    comments:
-      title: Cofnodion dyddiadur OpenHistoricalMap
     feed:
       all:
         description: Cofnodion dyddiadur diweddar gan ddefnyddwyr OpenHistoricalMap
@@ -43,16 +36,10 @@ cy:
       user:
         description: Cofnodion dyddiadur OpenHistoricalMap diweddar gan %{user}
         title: Cofnodion dyddiadur OpenHistoricalMap ar gyfer %{user}
-    profile_diaries:
-      date_label: Dyddiad
   errors:
     contact:
       contact_the_community_html: "%{contact_link} â'r gymuned OpenHistoricalMap os ydych chi wedi dod o hyd i nam neu ddolen sydd wedi torri. Nodwch yr URL cywir o'ch cais."
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       prefix:
         amenity:
@@ -70,17 +57,11 @@ cy:
         japanesescroll: Sgrol Japaneaidd
         railway: Rheilffordd
         woodblock: Bloc Pren
-      zoom:
-        in: Chwyddo Mewn
-        out: Chwyddo Allan
   layouts:
-    intro_2_create_account: Creu cyfrif defnyddiwr
     intro_header: Croeso i OpenHistoricalMap!
     intro_text: Mae OpenHistoricalMap yn fap o'r byd, wedi'i greu gan bobl fel chi ac sydd ar gael i'w ddefnyddio am ddim a dan drwydded rydd.
     logo:
       alt_text: Logo OpenHistoricalMap
-    logout: Allgofnodi
-    tag_line: Y Map Wici Rhydd o'r Byd
   oauth:
     scopes:
       openid: Mewngofnodi ag OpenHistoricalMap
@@ -106,10 +87,6 @@ cy:
         credit_title_html: Sut i gydnabod OpenHistoricalMap
         infringement_1_html: Hoffem atgofio cyfranwyr OHM i beidio ag ychwanegu data o unrhyw ffynonellau hawlfreintiedig (e.e. Google Maps neu fapiau print) heb ganiatâd penodol gan ddeiliaid yr hawlfraint.
         introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
-        more_2_1_api_usage_policy: Polisi Defnydd API
-        more_2_1_html: Er mai data agored yw OpenHistoricalMap, ni allwn ddarparu API map am ddim ar gyfer defnyddwyr trydydd parti. Gweler ein %{api_usage_policy_link}, %{tile_usage_policy_link} a %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Polisi Defnydd Nominatim
-        more_2_1_tile_usage_policy: Polisi Defnydd Teils
         more_title_html: Dysgu rhagor
     export:
       too_large:
@@ -195,7 +172,3 @@ cy:
       about:
         welcome: Croeso i OpenHistoricalMap
       signup_to_authorize_html: Cofrestrwch gydag OpenHistoricalMap i gael mynediad at %{client_app_name}.
-    show:
-      delete_user: Dileu'r Defnyddiwr
-      hide_user: Cuddio'r Defnyddiwr
-      unhide_user: Datguddio'r Defnyddiwr

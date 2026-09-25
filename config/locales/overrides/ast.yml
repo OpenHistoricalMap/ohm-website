@@ -14,11 +14,6 @@
 # Author: YoaR
 # Do not edit by hand.
 ast:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
-        link text: "¿qué ye esto?"
   api:
     notes:
       rss:
@@ -42,26 +37,11 @@ ast:
       user:
         description: Entraes recién de %{user} nel diariu d'OpenHistoricalMap
         title: Entraes nel diariu d'OpenHistoricalMap de %{user}
-    profile_diaries:
-      date_label: Data
-  geocoder:
-    search:
-      title:
-        osm_nominatim: Nominatim d’OpenHistoricalMap
-        osm_nominatim_reverse: Nominatim d’OpenHistoricalMap
-  javascripts:
-    map:
-      zoom:
-        in: Ampliar
-        out: Amenorgar
   layouts:
-    intro_2_create_account: Crear una cuenta d'usuariu
     intro_header: "¡Afáyate n'OpenHistoricalMap!"
     intro_text: OpenHistoricalMap ye un mapa del mundu, creáu por persones como tu y d'usu llibre baxo una llicencia abierta.
     logo:
       alt_text: Logo d'OpenHistoricalMap
-    logout: Salir
-    tag_line: El Wiki Mapamundi llibre
   sessions:
     destroy:
       heading: Colar d'OpenHistoricalMap
@@ -85,11 +65,6 @@ ast:
           title: Planeta OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Namái faiga clic en %{note_icon} o nel mesmu iconu na vista del mapa.
-            Esto pondrá un marcador nel mapa, que puede mover
-            abasnando. Escriba'l so mensaxe, faiga clic en guardar, y otros mapeadores investigarán.
         join_the_community:
           explanation_html: Si atopó un problema colos datos del nuesu mapa; por exemplu una carretera que falta, o la so direición, lo meyor que pue facer ye xunise a la comunidá d'OpenHistoricalMap y amestar o reparar los datos vusté mesmu.
     help:
@@ -103,7 +78,6 @@ ast:
         description: Mirar na wiki la documentación d'OHM más a fondu.
     index:
       js_2: OpenHistoricalMap usa JavaScript pal so mapa eslizante.
-      remote_failed: Falló la edición - asegúrate de tener cargáu JOSM o Merkaartor y de que tea activada la opción de control remotu
     welcome:
       basic_terms:
         paragraph_1: OpenHistoricalMap tien cierta xíriga de so. Estes son delles pallabres importantes que puen ser afayadices.
@@ -156,7 +130,3 @@ ast:
     auth_association:
       heading: La to ID inda nun ta asociada con una cuenta d'OpenHistoricalMap.
       option_1: Si yes nuevu n'OpenHistoricalMap, crea una cuenta nueva usando'l formulariu de más abaxo.
-    show:
-      delete_user: Desaniciar esti usuariu
-      hide_user: Anubrir esti usuariu
-      unhide_user: Amosar esti usuariu

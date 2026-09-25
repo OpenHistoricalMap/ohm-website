@@ -71,10 +71,6 @@
 # Do not edit by hand.
 it:
   accounts:
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms/IT
-        link text: che cos'è questo?
     terms:
       show:
         read and accept with tou: Leggi l’accordo di collaborazione e le condizioni d’uso, quando hai finito spunta entrambe le caselle e poi premi il pulsante Continua.
@@ -104,8 +100,6 @@ it:
       brief: "%{year}"
       brief_bce: "%{year} a.C."
   diary_entries:
-    comments:
-      title: Voci del diario di OpenHistoricalMap
     feed:
       all:
         description: Voci del diario recenti degli utenti di OpenHistoricalMap
@@ -116,8 +110,6 @@ it:
       user:
         description: Voci del diario recenti di OpenHistoricalMap per %{user}
         title: Voci del diario di OpenHistoricalMap per %{user}
-    profile_diaries:
-      date_label: Data
   errors:
     bad_request:
       description: L'operazione richiesta al server OpenHistoricalMap non è valida (HTTP 400)
@@ -130,10 +122,6 @@ it:
     not_found:
       description: Impossibile trovare un file/cartella/operazione API con questo nome sul server OpenHistoricalMap (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       border_types:
         archdiocese: Confine arcidiocesano
@@ -176,19 +164,13 @@ it:
         historical: Storico
         japanesescroll: Pergamena Giapponese
         railway: Ferrovia
-      zoom:
-        in: Zoom avanti
-        out: Zoom indietro
   layouts:
-    intro_2_create_account: Crea un account utente
     intro_header: Benvenuti in OpenHistoricalMap!
     intro_text: OpenHistoricalMap è una mappa del mondo, creata da persone come te e libera da utilizzare secondo una licenza aperta.
     logo:
       alt_text: Logo OpenHistoricalMap
-    logout: Esci
     partners_osmf: Fondazione OpenStreetMap
     partners_osmus: OpenStreetMap USA
-    tag_line: La wiki-mappa libera del mondo
   oauth:
     scopes:
       openid: Accedi utilizzando OpenHistoricalMap
@@ -253,12 +235,6 @@ it:
         introduction_4_creative_commons: Creative Commons Attribuzione-Condividi allo stesso modo 2.0
         introduction_4_ohm_html: La nostra documentazione è rilasciato con licenza %{creative_commons_link} (CC BY-SA 2.0).
         more_1_wiki: sulla Wiki di OpenStreetMap
-        more_2_1_api_usage_policy: Normativa sull'utilizzo delle API
-        more_2_1_html: |-
-          Sebbene OpenHistoricalMap sia costituita interamente da dati aperti, non possiamo fornire un'API cartografica gratuita a terzi.
-          Consulta la nostra %{api_usage_policy_link}, %{tile_usage_policy_link} e %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Normativa sull'utilizzo di Nominatim
-        more_2_1_tile_usage_policy: Normativa sull'utilizzo dei tasselli
         more_title_html: Per saperne di più
         trademarks_1_ohm_contact_team: contatta il team di OpenHistoricalMap
         trademarks_1_ohm_html: Se hai domande sull'uso del nome OpenHistoricalMap, contatta %{contact_team_link}.
@@ -275,8 +251,6 @@ it:
           title: Pianeta OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: Basta cliccare su %{note_icon} o sulla stessa icona visualizzata sulla mappa. Ciò aggiungerà un indicatore alla mappa che puoi spostare trascinandolo. Aggiungi un messaggio, poi fai clic su “Salva” e altri mappatori indagheranno.
         join_the_community:
           explanation_html: Se hai notato un problema con i dati della nostra mappa, ad esempio manca una strada o il tuo indirizzo, il modo migliore per procedere è unirti alla comunità OpenHistoricalMap e aggiungere o correggere i dati tu stesso.
       other_concerns:
@@ -298,7 +272,6 @@ it:
       js_2: OpenHistoricalMap utilizza JavaScript per le sua mappa.
       license:
         copyright: OpenHistoricalMap è dedicato al pubblico dominio, salvo quanto diversamente indicato.
-      remote_failed: Modifica non riuscita - assicurarsi che JOSM o Merkaartor sia avviato e che l'opzione di controllo remoto sia abilitata
     potlatch:
       removed: Il tuo editor predefinito di OpenHistoricalMap è impostato su Potlatch. Dato che Adobe Flash Player è stato ritirato, Potlatch non è più disponibile per essere usato in un browser web.
     welcome:
@@ -369,7 +342,3 @@ it:
       duplicate_social_email: Se hai già un account OpenHistoricalMap e desideri utilizzare un provider d'identità di terze parti, accedi utilizzando la tua password e modifica le impostazioni del tuo account.
       please_contact_support_html: Contatta %{support_link} per organizzare la creazione di un'utenza (cercheremo di gestire la richiesta il più rapidamente possibile).
       signup_to_authorize_html: Registrati su OpenHistoricalMap per accedere a %{client_app_name}.
-    show:
-      delete_user: Cancella quest'utente
-      hide_user: Nascondi quest'utente
-      unhide_user: Mostra quest'utente

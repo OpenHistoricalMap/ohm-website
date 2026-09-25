@@ -18,10 +18,6 @@ be-Tarask:
       show:
         delete_introduction: 'Вы можаце выдаліць свой рахунак OpenHistoricalMap, націснуўшы кнопку ніжэй. Калі ласка, зьвярніце ўвагу на наступную інфармацыю:'
         retain_caveats: 'Аднак пэўныя зьвесткі пра вас будуць захоўвацца на OpenHistoricalMap нават пасьля выдаленьня рахунку:'
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: што гэта?
     terms:
       show:
         tou_explain:
@@ -43,9 +39,6 @@ be-Tarask:
       brief_bce: "%{year} да н. э."
       brief_ce: "%{year} н. э."
   diary_entries:
-    comments:
-      description: Апошнія запісы ў дзёньніку карыстальнікаў OpenHistoricalMap
-      title: Запісы ў дзёньніку OpenHistoricalMap
     feed:
       all:
         description: Апошнія запісы ў дзёньніку карыстальнікаў OpenHistoricalMap
@@ -56,9 +49,6 @@ be-Tarask:
       user:
         description: Апошнія запісы ў дзёньніку OpenHistoricalMap карыстальніка %{user}
         title: Запісы ў дзёньніку OpenHistoricalMap карыстальніка %{user}
-    profile_diaries:
-      comments_label: Камэнтары
-      date_label: Дата
   errors:
     bad_request:
       description: Запытаная апэрацыя на сэрвэр OpenHistoricalMap ня ёсьць слушнай (HTTP 400)
@@ -72,21 +62,14 @@ be-Tarask:
     not_found:
       description: Не знойдзены файл/тэчка/апэрацыя API з гэткай назвай на сэрвэры OpenHistoricalMap (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       prefix:
         leisure:
           horse_riding: Цэнтар коннай язды
           track: Бегавая дарожка
   layouts:
-    intro_2_create_account: Стварыце рахунак
     logo:
       alt_text: Лягатып OpenHistoricalMap
-    logout: Выйсьці
-    tag_line: Вольная Wiki-мапа сьвету
   sessions:
     destroy:
       heading: Выйсьці з OpenHistoricalMap
@@ -115,7 +98,6 @@ be-Tarask:
         contact: зьвязацца з намі
     index:
       js_2: OpenHistoricalMap выкарыстоўвае JavaScript для паказу мапы.
-      remote_failed: Памылка рэдагаваньня. Упэўніцеся, што JOSM ці Merkaartor загружаныя і дазволеная магчымасьць аддаленага кіраваньня
   time:
     formats:
       friendly: "%e %B %Y у %H:%M"
@@ -143,8 +125,3 @@ be-Tarask:
       header: "%{from_user} даслаў Вам паведамленьне праз OpenHistoricalMap з тэмай %{subject}:"
     signup_confirm:
       subject: "[OpenHistoricalMap] Вітаем у OpenHistoricalMap"
-  users:
-    show:
-      delete_user: Выдаліць гэтага ўдзельніка
-      hide_user: Схаваць гэтага ўдзельніка
-      unhide_user: Паказаць гэтага ўдзельніка

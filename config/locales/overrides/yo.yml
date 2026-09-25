@@ -4,8 +4,6 @@
 # Author: Demmy
 # Do not edit by hand.
 yo:
-  layouts:
-    logout: jade
   site:
     help:
       discord:

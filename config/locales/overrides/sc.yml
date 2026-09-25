@@ -9,11 +9,6 @@
 # Author: Via maxima
 # Do not edit by hand.
 sc:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms&uselang=sc
-        link text: ite est custu?
   api:
     notes:
       rss:
@@ -32,8 +27,6 @@ sc:
       user:
         description: Intradas de diàriu reghentes de OpenHistoricalMap de %{user}
         title: Intradas de diàriu de OpenHistoricalMap de %{user}
-    profile_diaries:
-      date_label: Data
   errors:
     contact:
       contact_the_community_html: Si as agatadu unu ligàmene chi non chi funtzionat o un'errore, intende·ti lìberu de %{contact_link} sa comunidade de OpenHistoricalMap. Annota s'indiritzu URL curretu de sa dimanda tua.
@@ -43,22 +36,11 @@ sc:
       description: Su serbidore de OpenHistoricalMap at rilevadu una cunditzione imprevista chi l'at impedidu de satisfàghere sa dimanda (HTTP 500)
     not_found:
       description: No at fatu a agatare unu documentu/cartella/operatzione API cun custu nùmene in de su serbidore de OpenHistoricalMap (HTTP 404)
-  geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
-  javascripts:
-    map:
-      zoom:
-        in: Ismànnia
-        out: Mìnima
   layouts:
     intro_header: Bene bènnidu in OpenHistoricalMap!
     intro_text: OpenHistoricalMap est una mapa de su mundu, creada dae persones che a tie e de impreu lìberu suta de una litzèntzia aberta.
     logo:
       alt_text: Logotipu de OpenHistoricalMap
-    logout: Essi
   oauth:
     scopes:
       openid: Intra impreende OpenHistoricalMap
@@ -89,10 +71,6 @@ sc:
           Ammentamus a sos collaboradores de OHM chi non depent annànghere mai datos dae cale si siat fonte cun deretos de autore registrados (a es. Google Maps o mapas imprentadas) chene
           tènnere un'autorizatzione esplìtzita de sos titulares de sos deretos de autore.
         introduction_4_creative_commons: Creative Commons Atributzione - Cumpartzi in sa matessi manera 2.0
-        more_2_1_api_usage_policy: Polìtica de impreu de s'API
-        more_2_1_html: Mancari chi OpenHistoricalMap tèngiat datos abertos, non podimus frunire un'API de badas a sas mapas esternas. Càstia sa %{api_usage_policy_link}, %{tile_usage_policy_link} e %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Polìtica de impreu de Nominatim
-        more_2_1_tile_usage_policy: Polìtica de impreu de sos tasseddos
         more_title_html: Pro nd'ischire de prus
     export:
       too_large:
@@ -117,7 +95,6 @@ sc:
         description: Esplora sa wiki pro agatare documentatzione a sa minuda subra de OHM.
     index:
       js_2: OpenHistoricalMap impreat JavaScript pro sa mapa dinàmica sua.
-      remote_failed: Modìfica fallida - assegura·ti chi JOSM o Merkaartor siat aviadu e chi s'optzione de controllu remotu siat abilitada
     potlatch:
       removed: S'editore predefinidu tuo de OpenHistoricalMap est Potlatch. Dae chi s'Adobe Flash Player l'ant ritiradu, su Potlach no est prus a disponimentu pro s'impreu dae unu navigadore web.
     welcome:
@@ -177,7 +154,3 @@ sc:
         welcome: Bene bènnidu in OpenHistoricalMap
       duplicate_social_email: Si tenes giai unu contu de OpenHistoricalMap e boles impreare unu frunidore de identidade esternu, intra impreende sa crae tua e muda sas impostaduras de su contu tuo.
       signup_to_authorize_html: Registra·ti cun OpenHistoricalMap pro atzèdere a %{client_app_name}.
-    show:
-      delete_user: Iscantzella custu utente
-      hide_user: Cua custu utente
-      unhide_user: Non cues custu utente

@@ -18,11 +18,6 @@
 # Author: 아라
 # Do not edit by hand.
 tl:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: ano ba ito?
   api:
     notes:
       rss:
@@ -35,8 +30,6 @@ tl:
       show:
         title_all: Pagtalakay ng pangkat ng pagbabago sa OpenHistoricalMap
   diary_entries:
-    comments:
-      title: Mga entry sa talaarawan ng OpenHistoricalMap
     feed:
       all:
         description: Kamakailang mga pagpapasok sa talaarawan mula sa mga tagagamit ng OpenHistoricalMap
@@ -47,23 +40,13 @@ tl:
       user:
         description: Kamakailang mga pagpapasok sa talaarawan ng OpenHistoricalMap mula kay %{user}
         title: Mga pagpapasok sa talaarawan ng OpenHistoricalMap para kay %{user}
-    profile_diaries:
-      date_label: Petsa
-  javascripts:
-    map:
-      zoom:
-        in: Lumapit
   layouts:
-    intro_2_create_account: Lumikha ng isang akawnt ng tagagamit
     intro_header: Maligayang pagdating sa OpenHistoricalMap!
     intro_text: Ang OpenHistoricalMap ay isang mapa ng mundo na nilikha ng mga taong katulad mo at malayang gamitin sa ilalim ng isang bukas na lisensya.
     logo:
       alt_text: Logo ng OpenHistoricalMap
-    logout: Umalis mula sa pagkakalagda
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: Ang Malayang Mapa sa Daigdig ng Wiki
   sessions:
     destroy:
       heading: Umalis sa pagkakalagda mula sa OpenHistoricalMap
@@ -90,7 +73,6 @@ tl:
         title: Maligayang pagdating sa OpenHistoricalMap!
     index:
       js_2: Ang OpenHistoricalMap ay gumagamit ng JavaScript para sa madulas nitong mapa.
-      remote_failed: Nabigo ang pamamatnugot - tiyaking naikarga ang JOSM or Merkaartor at kung gumagana ang pagpipilian ng malayong pantaban
   user_mailer:
     changeset_comment_notification:
       commented:
@@ -122,8 +104,3 @@ tl:
         subject_own: "[OpenHistoricalMap] binuhay muli ni %{commenter} ang isa sa iyong mga tala"
     signup_confirm:
       subject: "[OpenHistoricalMap] Maligayang pagdating sa OpenHistoricalMap"
-  users:
-    show:
-      delete_user: Burahin ang Tagagamit na ito
-      hide_user: Itago ang Tagagamit na ito
-      unhide_user: Huwag itago ang Tagagamit na ito

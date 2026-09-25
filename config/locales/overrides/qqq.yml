@@ -21,11 +21,6 @@ qqq:
       brief: "{{Optional|Only translate if the date format for a year must include a prefix or suffix.}}"
       range: "{{Optional|Only translate if the format for a date range uses different punctuation or spacing.}}"
   geocoder:
-    search:
-      title:
-        latlon_url: "{{optional}}"
-        osm_nominatim_reverse_url: "{{optional}}"
-        osm_nominatim_url: "{{optional}}"
     search_osm_nominatim:
       border_types:
         occupation: The boundary of a region occupied by an occupying force, not a professional occupation.
@@ -48,9 +43,6 @@ qqq:
     partners_devseed: See https://developmentseed.org/
     partners_greeninfo: See https://www.greeninfo.org/
     project_name:
-      h1: |-
-        {{Optional}}
-        {{Identical|OpenHistoricalMap}}
       title: |-
         {{Optional}}
         {{Identical|OpenHistoricalMap}}

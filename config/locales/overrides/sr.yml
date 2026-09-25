@@ -28,11 +28,6 @@
 # Author: Сербијана
 # Do not edit by hand.
 sr:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: шта је ово?
   application:
     setup_user_auth:
       blocked_zero_hour: Имате хитну поруку на веб-сајту OpenHistoricalMap. Морате прочитати поруку пре него што можете да чувате своје измене.
@@ -56,8 +51,6 @@ sr:
       user:
         description: Недавни уноси у дневнику OpenHistoricalMap-а корисника %{user}
         title: Уноси у дневнику OpenHistoricalMap-а корисника %{user}
-    profile_diaries:
-      date_label: Датум
   javascripts:
     legend:
       tooltip: Легенда карте
@@ -65,21 +58,14 @@ sr:
     map:
       base:
         railway: Железница
-      zoom:
-        in: Увећај
-        out: Умањи
   layouts:
-    intro_2_create_account: Отворите кориснички налог
     intro_header: Добро дошли на OpenHistoricalMap!
     intro_text: OpenHistoricalMap је мапа света коју су направили људи попут вас. Слободна је за коришћење под отвореном лиценцом.
     logo:
       alt_text: Логотип OpenHistoricalMap-а
-    logout: Одјава
     partners_osmf: OpenStreetMap фондација
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: Слободна вики мапа света
   preferences:
     preferences:
       navigation:
@@ -126,10 +112,6 @@ sr:
           title: Планета OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Само кликни %{note_icon} или исту иконицу на приказу карте.
-            Овоће на карту додати ознаку, Коју можеш да помераш повлачењем. Додај своју поруку, сними, и остали картографи ће то истражити.
         join_the_community:
           explanation_html: Ако приметите проблем са подацима на нашој мапи (нпр. одсуство пута или адресе) најбољи начин је да се придружите OpenHistoricalMap заједници и сами додате или исправите податке.
     help:
@@ -147,7 +129,6 @@ sr:
         title: вики
     index:
       js_2: OpenHistoricalMap користи JavaScript за приказивање мапа.
-      remote_failed: Уређивање није успело. Проверите да ли је JOSM или Merkaartor учитан и да је могућност даљинског управљања омогућена
     welcome:
       basic_terms:
         paragraph_1: OpenHistoricalMap има своје жаргоне. Ево пар кључних речи које могу да буду корисне.
@@ -204,7 +185,3 @@ sr:
         paragraph_1: За разлику од других мапа, OpenHistoricalMap-е употпуности праве људи као Ви. И слободна је за све да је поправљају, ажурирају, преузимају и користе.
         paragraph_2: Региструјте се да почнете доприносити. Послаћемо Вам имејл за потврду налога.
         welcome: Добро дошли на OpenHistoricalMap
-    show:
-      delete_user: Избриши корисника
-      hide_user: Сакриј корисника
-      unhide_user: Откриј корисника

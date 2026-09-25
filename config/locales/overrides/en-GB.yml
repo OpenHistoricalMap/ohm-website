@@ -43,9 +43,6 @@
 # Do not edit by hand.
 en-GB:
   accounts:
-    show:
-      contributor_terms:
-        link text: what is this?
     terms:
       show:
         read and accept with tou: Please read the contributor agreement and the terms of use, check both checkboxes when done and then press the continue button.
@@ -74,8 +71,6 @@ en-GB:
       user:
         description: Recent OpenHistoricalMap diary entries from %{user}
         title: OpenHistoricalMap diary entries for %{user}
-    profile_diaries:
-      date_label: Date
   javascripts:
     legend:
       title: Map Key
@@ -85,20 +80,13 @@ en-GB:
       base:
         historical: Historical
         woodblock: Woodblock
-      zoom:
-        in: Zoom In
-        out: Zoom Out
   layouts:
-    intro_2_create_account: Create a user account
     intro_header: Welcome to OpenHistoricalMap!
     intro_text: OpenHistoricalMap is a map of the world, created by people like you and free to use under an open licence.
     logo:
       alt_text: OpenHistoricalMap logo
-    logout: Log Out
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: The Free Wiki World Map
   sessions:
     destroy:
       heading: Logout of OpenHistoricalMap
@@ -129,7 +117,6 @@ en-GB:
         title: For Organizations
     index:
       js_2: OpenHistoricalMap uses JavaScript for its slippy map.
-      remote_failed: Editing failed - make sure JOSM or Merkaartor is loaded and that the remote control option is enabled
     welcome:
       rules:
         para_1_html: |-
@@ -176,7 +163,3 @@ en-GB:
     auth_association:
       heading: Your ID is not associated with a OpenHistoricalMap account yet.
       option_1: If you are new to OpenHistoricalMap, please create a new account using the form below.
-    show:
-      delete_user: Delete this User
-      hide_user: Hide this User
-      unhide_user: Unhide this User

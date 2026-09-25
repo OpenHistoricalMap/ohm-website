@@ -9,26 +9,12 @@
 # Author: Rocky 734
 # Do not edit by hand.
 sat:
-  accounts:
-    show:
-      contributor_terms:
-        link text: ᱱᱤᱭᱟᱹ ᱫᱚ ᱪᱮᱫ?
   api:
     notes:
       rss:
         title: OpenHistoricalMap ᱠᱷᱟᱴᱟᱹ ᱚᱞᱠᱚ
-  diary_entries:
-    profile_diaries:
-      date_label: ᱢᱟᱹᱦᱤᱛ
-  javascripts:
-    map:
-      zoom:
-        in: ᱞᱟᱹᱴᱩᱭ ᱢᱮ
-        out: ᱠᱟᱹᱴᱤᱡᱽ ᱢᱮ
   layouts:
-    intro_2_create_account: ᱢᱤᱫ ᱵᱮᱵᱷᱟᱨᱤᱭᱟᱹ ᱠᱷᱟᱛᱟ ᱛᱮᱭᱟᱨ ᱛᱟᱢ
     intro_header: OpenHistoricalMap ᱨᱮ ᱥᱟᱹᱜᱩᱱ ᱫᱟᱨᱟᱢ!
-    logout: ᱚᱰᱚᱠᱚᱜ ᱢᱮ
   site:
     help:
       welcome:

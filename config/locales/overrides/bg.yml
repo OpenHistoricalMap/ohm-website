@@ -21,11 +21,6 @@
 # Author: АдмиралАнимЕ
 # Do not edit by hand.
 bg:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
-        link text: какво е това?
   api:
     notes:
       rss:
@@ -45,21 +40,11 @@ bg:
       user:
         description: Последни OpenHistoricalMap записи в дневника от %{user}
         title: OpenHistoricalMap дневник записи за %{user}
-    profile_diaries:
-      date_label: Дата
-  javascripts:
-    map:
-      zoom:
-        in: Приближаване
-        out: Отдалечаване
   layouts:
-    intro_2_create_account: Създаване на сметка
     intro_header: Добре дошли в OpenHistoricalMap!
     intro_text: OpenHistoricalMap е карта на света създадена от хора като вас, за свободно ползване и под отворен лиценз.
     logo:
       alt_text: Лого на OpenHistoricalMap
-    logout: Излизане
-    tag_line: Свободна Wiki-карта на света
   sessions:
     destroy:
       heading: Изход от OpenHistoricalMap
@@ -136,7 +121,3 @@ bg:
     new:
       about:
         paragraph_1: За разлика от други карти, OpenHistoricalMap е изцяло създадена от хора като Вас и е безплатна за всеки, който иска да я поправи, актуализира, изтегли и използва.
-    show:
-      delete_user: Изтриване на този потребител
-      hide_user: Скрий този Потребител
-      unhide_user: Разкрий този потребител

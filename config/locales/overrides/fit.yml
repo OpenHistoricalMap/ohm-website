@@ -26,15 +26,10 @@ fit:
       user:
         description: Tuoreimmat OpenHistoricalMapin päiväkirjamerkinnät käyttäjältä %{user}
         title: Käyttäjän %{user} OpenHistoricalMap-päiväkirjamerkinnät
-    profile_diaries:
-      date_label: Taatumi
   layouts:
-    intro_2_create_account: luomalla ensin käyttäjäkonttun
     intro_header: Tervetuloa OpenHistoricalMaphiin!
     logo:
       alt_text: OpenHistoricalMap-logo
-    logout: Lokkaa ulos
-    tag_line: Vapaa ja avvoin maailmankartta
   sessions:
     destroy:
       heading: Lokkaa ulos OpenHistoricalMapista

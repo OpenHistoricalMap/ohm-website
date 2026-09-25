@@ -42,11 +42,6 @@
 # Author: תומר ט
 # Do not edit by hand.
 he:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: מה זה?
   api:
     notes:
       rss:
@@ -64,8 +59,6 @@ he:
       brief_bce: "%{year} לפנה״ס"
       brief_ce: "%{year} לספירה"
   diary_entries:
-    comments:
-      title: רשומות יומן של OpenHistoricalMap
     feed:
       all:
         description: רשומות יומן אחרונות ממשתמשי OpenHistoricalMap
@@ -76,9 +69,6 @@ he:
       user:
         description: רשומות יומן OpenHistoricalMap אחרונות מאת %{user}
         title: רשומות יומן OpenHistoricalMap של %{user}
-    profile_diaries:
-      comments_label: הערות
-      date_label: תאריך
   errors:
     bad_request:
       description: הפעולה שביקשת בשרת OpenHistoricalMap אינה תקינה (HTTP 400)
@@ -91,10 +81,6 @@ he:
     not_found:
       description: איתור קובץ/תיקייה/פעולת API בשם הזה בשרת של OpenHistoricalMap לא הצליח (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: נומינטים של OpenHistoricalMap
-        osm_nominatim_reverse: נומינטים של OpenHistoricalMap
     search_osm_nominatim:
       prefix:
         leisure:
@@ -109,19 +95,13 @@ he:
         historical: היסטורית
         japanesescroll: מגילה יפנית
         woodblock: חתיכת עץ
-      zoom:
-        in: התקרבות
-        out: התרחקות
   layouts:
-    intro_2_create_account: נא ליצור חשבון משתמש
     intro_header: ברוך בואך ל־OpenHistoricalMap!
     intro_text: OpenHistoricalMap היא מפה הידודית של העולם לאורך ההיסטוריה, שנוצרה על־ידי אנשים כמוך ומוקדשת לנחלת הכלל.
     logo:
       alt_text: סמל OpenHistoricalMap
-    logout: יציאה מהחשבון
     partners_greeninfo: רשת GreenInfo
     partners_osmf: קרן OpenStreetMap
-    tag_line: מפת עולם חופשית בשיטת הוויקי
   oauth:
     scopes:
       openid: כניסה עם OpenHistoricalMap
@@ -168,13 +148,6 @@ he:
           אישור מפורש מבעלי הזכויות.
         introduction_4_creative_commons: קריאייטיב קומונז–ייחוס–שיתוף זהה 2.0
         introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/deed.he
-        more_2_1_api_usage_policy: מדינית השימוש ב־API
-        more_2_1_html: |-
-          אף ש־OpenHistoricalMap היא נתונים פתוחים, איננו יכולים לספק
-          API של מפות ללא תשלום עבור צדדים שלישיים.
-          נא לעיין ב%{api_usage_policy_link}, ב%{tile_usage_policy_link} וב%{nominatim_usage_policy_link} שלנו.
-        more_2_1_nominatim_usage_policy: מדיניות השימוש בנומינטים
-        more_2_1_tile_usage_policy: מדיניות השימוש באריחים
         more_title_html: איך למצוא מידע נוסף
     export:
       too_large:
@@ -186,11 +159,6 @@ he:
           title: פלאנט OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            צריך פשוט ללחוץ על %{note_icon} או על אותו הסמל בתצוגת המפה.
-            זה יוסיף למפה סמן שאפשר להזיז
-            באמצעות גרירה. יש להוסיף שם הערה ולשמור אותה וממפים אחרים יחקרו את זה.
         join_the_community:
           explanation_html: |-
             אם שמת לב לבעיה על נתוני המפה שלנו, למשל שדרך או שכתובת שלך חסרה, הדרך הטובה ביותר
@@ -213,7 +181,6 @@ he:
         title: ויקי
     index:
       js_2: אתר OpenHistoricalMap משתמש ב־JavaScript למפה המחליקה.
-      remote_failed: העריכה נכשלה – נא לוודא כי JOSM או Merkaartor נטענו ושאפשרות השליטה מקחור מופעלת
     potlatch:
       removed: עורך OpenHistoricalMap ברירת המחדל שלך מוגדר כ־Potlatch. בגלל שנגן הפלאש של אדובי כבר לא נתמך, Potlatch כבר לא זמין בדפדפן.
     welcome:
@@ -290,7 +257,3 @@ he:
       duplicate_social_email: אם כבר יש לך חשבון OpenHistoricalMap וברצונך להשתמש בספק זהות של צד שלישי, נא להתחבר באמצעות הסיסמה שלך ולשנות את הגדרות החשבון שלך.
       please_contact_support_html: נא ליצור קשר עם %{support_link} כדי לארגן יצירת חשבון - נשתדל לטפל בבקשה במהירות האפשרית.
       signup_to_authorize_html: נא להירשם עם OpenHistoricalMap כדי לגשת ליישום %{client_app_name}.
-    show:
-      delete_user: מחיקת המשתמש הזה
-      hide_user: הסתרת המשתמש הזה
-      unhide_user: ביטול הסתרת המשתמש הזה

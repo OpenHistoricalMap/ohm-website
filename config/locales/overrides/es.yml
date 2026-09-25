@@ -113,10 +113,6 @@ es:
       show:
         delete_introduction: 'Puedes eliminar tu cuenta de OpenHistoricalMap utilizando el botón que aparece a continuación. Ten en cuenta los siguientes detalles:'
         retain_caveats: 'Sin embargo, algunos datos sobre ti se conservarán en OpenHistoricalMap, incluso después de que se elimine tu cuenta:'
-    show:
-      contributor_terms:
-        link: https://wiki.openstreetmap.org/wiki/ES:Licencia_Abierta_de_Base_de_Datos/T%C3%A9rminos_del_colaborador
-        link text: "¿Qué es esto?"
     terms:
       show:
         read and accept with tou: Lee el acuerdo de colaborador y los Términos de Uso, marca ambas casillas de verificación cuando hayas terminado y luego presiona el botón Continuar.
@@ -146,9 +142,6 @@ es:
       brief_bce: "%{year} a. C."
       brief_ce: "%{year} d. C."
   diary_entries:
-    comments:
-      description: Entradas recientes en los diarios de los usuarios de OpenHistoricalMap
-      title: Entradas en el diario de OpenHistoricalMap
     feed:
       all:
         description: Entradas recientes en los diarios de los usuarios de OpenHistoricalMap
@@ -159,9 +152,6 @@ es:
       user:
         description: Entradas recientes en el diario de OpenHistoricalMap de %{user}
         title: Entradas de diario de OpenHistoricalMap de %{user}
-    profile_diaries:
-      comments_label: Comentarios
-      date_label: Fecha
   errors:
     bad_request:
       description: La operación que solicitaste en el servidor de OpenHistoricalMap no es válida (HTTP 400)
@@ -174,10 +164,6 @@ es:
     not_found:
       description: No se pudo encontrar un archivo, directorio u operación de API con ese nombre en el servidor de OpenHistoricalMap (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: Nominatim de OpenHistoricalMap
-        osm_nominatim_reverse: Nominatim de OpenHistoricalMap
     search_osm_nominatim:
       prefix:
         leisure:
@@ -192,16 +178,11 @@ es:
         railway: Ferrocarriles
         woodblock: Xilografía
       openhistoricalmap_contributors: OHM
-      zoom:
-        in: Acercar
-        out: Alejar
   layouts:
-    intro_2_create_account: Crear una cuenta de usuario
     intro_header: "¡Bienvenido a OpenHistoricalMap!"
     intro_text: OpenHistoricalMap es un mapa interactivo del mundo a lo largo de la historia, creado por personas como tú y dedicado al dominio público.
     logo:
       alt_text: Logo de OpenHistoricalMap
-    logout: Cerrar sesión
     offline_flash:
       osm_offline: La base de datos de OpenHistoricalMap se encuentra actualmente fuera de línea mientras se realizan trabajos de mantenimiento esenciales.
       osm_read_only: La base de datos de OpenHistoricalMap está actualmente en modo de solo lectura mientras se realizan trabajos de mantenimiento esenciales.
@@ -210,9 +191,7 @@ es:
     partners_osmf: Fundación OpenStreetMap
     partners_osmus: OpenStreetMap EE.UU.
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: El wikimapamundi libre
   notes:
     new_readonly:
       warning: No se pueden crear nuevas notas porque la API de OpenHistoricalMap está actualmente en modo de solo lectura.
@@ -333,10 +312,6 @@ es:
         introduction_4_ohm_html: Nuestra documentación está licenciada bajo los términos de %{creative_commons_link} (CC BY-SA 2.0).
         more_1_ohm_html: Obtenga más información sobre las consideraciones legales al utilizar nuestros datos y cómo darnos crédito %{wiki_link}.
         more_1_wiki: en la wiki de OpenStreetMap
-        more_2_1_api_usage_policy: Normativa de uso de la API
-        more_2_1_html: "Aunque OpenHistoricalMap es un sistema de datos abiertos, no podemos proporcionar una API de mapas gratuita ni teselas de mapas gratuitas para terceros. \nMira nuestra %{api_usage_policy_link}, %{tile_usage_policy_link} y %{nominatim_usage_policy_link}."
-        more_2_1_nominatim_usage_policy: Normativa de uso de Nominatim
-        more_2_1_tile_usage_policy: Política de uso de teselas
         more_title_html: Para saber más
         trademarks_1_ohm_contact_team: contactar con el equipo de OpenHistoricalMap
         trademarks_1_ohm_html: Si tiene preguntas sobre el uso del nombre OpenHistoricalMap, por favor %{contact_team_link}.
@@ -355,10 +330,6 @@ es:
           title: Planeta OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Simplemente haz clic en %{note_icon} o en el mismo icono en la visualización del mapa.
-            Esto agregará un marcador al mapa que puedes mover arrastrándolo. Agrega tu mensaje, luego haz clic en guardar, y otros mapeadores lo investigarán.
         join_the_community:
           explanation_html: Si ha notado un problema con los datos de nuestros mapas, por ejemplo, falta una carretera o su dirección, la mejor manera de continuar es unirse a la comunidad OpenHistoricalMap y agregar o reparar los datos usted mismo.
       other_concerns:
@@ -394,7 +365,6 @@ es:
       js_2: OpenHistoricalMap utiliza JavaScript para mostrar su mapa deslizable.
       license:
         copyright: OpenHistoricalMap está dedicado al dominio público salvo que se indique lo contrario.
-      remote_failed: Error de edición - Asegúrate de que JOSM o Merkaartor están cargados y con la opción de control remoto activada
     potlatch:
       removed: El editor de OpenHistoricalMap predeterminado está establecido como Potlatch. Dado que Adobe Flash Player se ha retirado, Potlatch ya no está disponible para su uso en un navegador web.
     welcome:
@@ -471,7 +441,3 @@ es:
       duplicate_social_email: Si ya tienes una cuenta de OpenHistoricalMap y deseas utilizar un proveedor de identidad externo, inicia sesión con tu contraseña y modifica la configuración de tu cuenta.
       please_contact_support_html: 'Pónte en contacto con %{support_link} para organizar la creación de una cuenta: intentaremos atender la solicitud lo antes posible.'
       signup_to_authorize_html: Regístrate con OpenHistoricalMap para acceder al %{client_app_name}.
-    show:
-      delete_user: Eliminar este usuario
-      hide_user: Ocultar este usuario
-      unhide_user: Mostrar este usuario

@@ -4,10 +4,6 @@
 # Author: Slomox
 # Do not edit by hand.
 nds:
-  diary_entries:
-    profile_diaries:
-      date_label: Datum
   layouts:
     logo:
       alt_text: OpenHistoricalMap-Logo
-    logout: afmellen

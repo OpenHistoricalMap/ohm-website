@@ -75,10 +75,6 @@ nl:
       show:
         delete_introduction: 'U kunt uw OpenHistoricalMap-account verwijderen via onderstaande knop. Let op de volgende details:'
         retain_caveats: 'Sommige informatie over u blijft behouden op OpenHistoricalMap, ook nadat uw account is verwijderd:'
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: wat is dit?
     terms:
       show:
         read and accept with tou: Lees de bijdragersovereenkomst en de gebruiksvoorwaarden, vink beide selectievakjes aan als u klaar bent en druk vervolgens op de knop Doorgaan.
@@ -110,9 +106,6 @@ nl:
       brief_ce: "%{year} n.Chr."
       range: "%{start} – %{end}"
   diary_entries:
-    comments:
-      description: Recente dagboekberichten van OpenHistoricalMap-gebruikers
-      title: OpenHistoricalMap-dagboekberichten
     feed:
       all:
         description: Recente dagboekberichten van OpenHistoricalMap-gebruikers
@@ -123,9 +116,6 @@ nl:
       user:
         description: Recente OpenHistoricalMap-dagboekberichten van %{user}
         title: OpenHistoricalMap-dagboekberichten van %{user}
-    profile_diaries:
-      comments_label: Reacties
-      date_label: Datum
   errors:
     bad_request:
       description: De bewerking die u op de OpenHistoricalMap-server hebt aangevraagd is incorrect (HTTP 400)
@@ -141,10 +131,6 @@ nl:
     show:
       title: OpenHistoricalMap ingebed
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       border_types:
         archdiocese: Aartsbisdomgrens
@@ -218,18 +204,13 @@ nl:
         woodblock: Blokdruk
       cc0_text: "%{copyright_link}"
       openhistoricalmap_contributors: OHM
-      zoom:
-        in: Inzoomen
-        out: Uitzoomen
     query:
       suffix_format: "[%{dates}]"
   layouts:
-    intro_2_create_account: Account aanmaken
     intro_header: Welkom bij OpenHistoricalMap!
     intro_text: OpenHistoricalMap is een kaart van de wereld, gemaakt door mensen zoals u en vrij te gebruiken onder een open licentie.
     logo:
       alt_text: Logo OpenHistoricalMap
-    logout: Afmelden
     meta:
       openstreetmap_search: Zoeken in OpenHistoricalMap
     offline_flash:
@@ -239,7 +220,6 @@ nl:
     partners_greeninfo: GreenInfo Network
     partners_osmf: OpenStreetMap Foundation
     partners_osmus: OpenStreetMap VS
-    tag_line: De vrije wikiwereldkaart
   notes:
     new_readonly:
       warning: Er kunnen geen nieuwe opmerkingen worden aangemaakt omdat de OpenHistoricalMap-API momenteel in de alleen-lezenmodus staat.
@@ -394,13 +374,6 @@ nl:
         more_1_ohm_html: Lees %{wiki_link} meer over de juridische overwegingen bij het gebruik van onze gegevens en hoe u ons kunt vermelden.
         more_1_wiki: op de wiki van OpenStreetMap
         more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
-        more_2_1_api_usage_policy: API-gebruiksbeleid
-        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
-        more_2_1_html: Hoewel OpenHistoricalMap open data is, kunnen we geen gratis kaart-API of -tegels voor derden aanbieden. Zie onze %{api_usage_policy_link}, %{tile_usage_policy_link} en %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: gebruiksbeleid voor Nominatim
-        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
-        more_2_1_tile_usage_policy: gebruiksbeleid voor kaarttegels
-        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
         more_title_html: Meer informatie
         trademarks_1_ohm_contact_team: neem dan contact op met het team van OpenHistoricalMap
         trademarks_1_ohm_html: Als u vragen hebt over uw gebruik van de naam OpenHistoricalMap, %{contact_team_link}.
@@ -421,11 +394,6 @@ nl:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Klik op %{note_icon} of hetzelfde pictogram op de kaartweergave.
-            Er wordt een markering toegevoegd aan de kaart die u kunt verplaatsen
-            door deze te verslepen. Voeg uw bericht toe en klik op “Opslaan”, dan zullen andere kaartmakers uw melding nagaan.
         join_the_community:
           explanation_html: Als u een probleem met onze kaartgegevens hebt gevonden (er ontbreekt bijvoorbeeld een weg of uw adres staat er niet in) dan kunt u zich het best bij OpenHistoricalMap inschrijven en de gegevens zelf toevoegen of corrigeren.
       other_concerns:
@@ -463,7 +431,6 @@ nl:
       js_2: OpenHistoricalMap gebruikt JavaScript voor de slippykaart.
       license:
         copyright: OpenHistoricalMap is vrijgegeven aan het publieke domein, behalve waar anders is aangegeven.
-      remote_failed: Bewerken is mislukt. Zorg dat JOSM of Merkaartor is geladen en dat de instelling voor afstandsbediening is ingeschakeld
     potlatch:
       removed: Uw standaard OpenHistoricalMap-bewerkingsprogramma staat ingesteld op Potlatch. Omdat Adobe Flash Player niet meer bestaat, kan Potlatch niet langer gebruikt worden in de webbrowser.
     welcome:
@@ -542,7 +509,3 @@ nl:
       duplicate_social_email: Als u al een OpenHistoricalMap-account heeft en een identiteitsprovider van derden wilt gebruiken, meld u dan aan met uw wachtwoord en wijzig de instellingen van uw account.
       please_contact_support_html: Neem contact op met de %{support_link} om een account aan te maken - we zullen proberen het verzoek zo snel mogelijk af te handelen.
       signup_to_authorize_html: Registreer u bij OpenHistoricalMap om toegang te krijgen tot %{client_app_name}.
-    show:
-      delete_user: Deze gebruiker verwijderen
-      hide_user: Deze gebruiker verbergen
-      unhide_user: Gebruiker zichtbaar maken

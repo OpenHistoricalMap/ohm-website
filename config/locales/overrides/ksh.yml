@@ -6,9 +6,6 @@
 # Author: Purodha
 # Do not edit by hand.
 ksh:
-  diary_entries:
-    profile_diaries:
-      date_label: Et Dattum
   layouts:
     logo:
       alt_text: Et Logo vun OpenHistoricalMap
@@ -28,8 +25,3 @@ ksh:
       subject: "[OpenHistoricalMap] Aanfrooch: Paßwoot neu säze"
     signup_confirm:
       subject: "[OpenHistoricalMap] Donn Ding Addräß för de e-mail beshtääteje"
-  users:
-    show:
-      delete_user: Donn heh dä Metmaacher fott schmiiße
-      hide_user: Donn heh dä Metmaacher verschteijsche
-      unhide_user: Donn heh dä Metmaacher nim_mih verschteijsche

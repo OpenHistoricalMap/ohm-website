@@ -7,11 +7,6 @@
 # Author: Robin van der Vliet
 # Do not edit by hand.
 fy:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: wat is dat?
   api:
     notes:
       rss:
@@ -25,8 +20,6 @@ fy:
         title_all: Oerlis oer OpenHistoricalMap-wizigingsset
         title_particular: 'Oerlis oer OpenHistoricalMap-wizigingsset #%{changeset_id}'
   diary_entries:
-    comments:
-      title: OpenHistoricalMap Deiboekstikken
     feed:
       all:
         description: Nije deiboekstikken fan meidoggers oan OpenHistoricalMap
@@ -37,24 +30,16 @@ fy:
       user:
         description: Nije OpenHistoricalMap-deiboekstikken fan %{user}
         title: OpenHistoricalMap Deiboekstikken fan %{user}
-    profile_diaries:
-      date_label: Datum
   javascripts:
     map:
       base:
         historical: Histoarysk
         woodblock: Blokdruk
-      zoom:
-        in: Ynsûme
-        out: Utsûme
   layouts:
-    intro_2_create_account: Meitsje in akkount as meidogger
     intro_header: Wolkom by OpenHistoricalMap!
     intro_text: OpenHistoricalMap is in wrâldkaart makke troch minsken krekt as jo, en frij te brûken ûnder in iepen lisinsje.
     logo:
       alt_text: OpenHistoricalMap-logo
-    logout: Ofmelde
-    tag_line: De frije wiki-wrâldkaart
   sessions:
     destroy:
       heading: Ofmelde by OpenHistoricalMap
@@ -81,11 +66,6 @@ fy:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Klik gewoan op %{note_icon} of itselde ikoan yn 'e kaartwerjefte.
-            Der komt in markearder op 'e kaart dy't jo
-            ferslepe kinne. Heakje jo berjocht ta, klik bewarje, en oare kaartmakkers sille it dan besjen.
         join_the_community:
           explanation_html: At jo in probleem yn ús kaartdata opmerke, bygelyks in strjitte mist of jo adres, dan kinne jo jo it bêst oanslute by de OpenHistoricalMap-mienskip, en de data sels tafoegje of reparearje.
     help:
@@ -101,7 +81,6 @@ fy:
         description: De wiki trochsjen foar wiidweidige dokumintaasje oer OHM.
     index:
       js_2: OpenHistoricalMap brûkt JavaScript foar de ferskobere kaart.
-      remote_failed: Bewurkjen mislearre - soargje dat JOSM of Merkaartor laden is, en de ôfstânsbetsjinningsopsje ynskeakele
     potlatch:
       removed: Jo standertbewurker foar OpenHistoricalMap is ynsteld op Potlatch. Om't Adobe Flash Player weifallen is, is Potlatch net mear beskikber foar gebrûk yn in webblêder.
     welcome:
@@ -162,7 +141,3 @@ fy:
     auth_association:
       heading: Jo ID is noch net ferbûn oan in OpenHistoricalMap-akkount.
       option_1: At jo nij binne op OpenHistoricalMap, meitsje dan graach in nij akkount mei it formulier hjirûnder.
-    show:
-      delete_user: Dizze meidogger wiskje
-      hide_user: Dizze meidogger ferbergje
-      unhide_user: Dizze meidogger werompleatse

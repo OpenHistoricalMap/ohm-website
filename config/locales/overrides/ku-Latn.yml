@@ -12,11 +12,6 @@
 # Author: Minh Nguyen
 # Do not edit by hand.
 ku-Latn:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
-        link text: Ev çi ye?
   api:
     notes:
       rss:
@@ -40,8 +35,6 @@ ku-Latn:
       user:
         description: Nivîsên rojane ên %{user} yên nû a OpenHistoricalMapê
         title: Nivîsên rojane yên %{user} a OpenHistoricalMapê
-    profile_diaries:
-      date_label: Tarîx
   errors:
     contact:
       contact_the_community_html: Ger lînkeke xira / çewtiyekê bibînî bi serbestî wan bi lînka %{contact_link} ragihîne civata OpenHistoricalMapê. URLya temam ya teleba xwe not bike.
@@ -55,17 +48,11 @@ ku-Latn:
     map:
       base:
         historical: Tarîxî
-      zoom:
-        in: Nêzîk bike
-        out: Dûr bike
   layouts:
-    intro_2_create_account: Ji xwe re hesabekî çêbike
     intro_header: Tu bi xêr hatî OpenHistoricalMapêǃ
     intro_text: OpenHistoricalMap xerîteyekî dinyayê ye ku ji aliyê kesên wek te ve tê çêkirin û emilandina we belaş e û di bin lîsansa azad de ye.
     logo:
       alt_text: Logoya OpenHistoricalMapê
-    logout: Derkeve
-    tag_line: Xerîteya Dinyayê a Wîkiya Azad
   sessions:
     destroy:
       heading: Ji OpenHistoricalMapê derkeve
@@ -89,8 +76,6 @@ ku-Latn:
           title: Seyareya OHMê
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: Tenê bitikîne ser %{note_icon} an jî ji ser ekrana xerîteyê bitikîne ser eynî îkonê. Wê ev, ji nexşeyê re nîşankerek deyne ku tu karî bi kaşkirinê cihê vê nîşankerê biguherînî. Peyama xwe binivîse, pişt re bitikîne ser qeyd bike'yê, wê nexşesazên din lê bikolin.
         join_the_community:
           explanation_html: Heke te di daneyên nexşeya me de pirsgirêkek ferq kiribe, wekî mînak kolanek an jî adrêsa te kêm be, riya herî baş a dewamkirinê beşdarî civata me ya OpenHistoricalMapê bibe û tu bixwe rast bike an jî îlawe bike.
     help:
@@ -105,7 +90,6 @@ ku-Latn:
         title: Wîkî
     index:
       js_2: OpenHistoricalMap ji bo nîşandana nexşeya xwe ya şemetok JavaScriptê bi kar tîne.
-      remote_failed: Sererastkirin bi ser neket - jê piştrast be ku JOSM an jî Merkaartor hatiye sazkirin û vebijêrka jidûrve kontrolê hatiye aktîvkirin
     potlatch:
       removed: Edîtora te ya OpenHistoricalMapê ya standard wek Potlatch hate bijartin. Ji ber ku Adobe Flash Player vekişiya, Potlatch êdî di gerokeke webê de ne berdest e.
     welcome:
@@ -161,7 +145,3 @@ ku-Latn:
     auth_association:
       heading: Nasnameya te hêj bi hesabekî OpenHistoricalMapê ve ne girêdayî ye.
       option_1: Eger tu di OpenHistoricalMapê de nû bî, xêra xwe bi vê formê li jêr, ji xwe re hesabekî nû çêbike.
-    show:
-      delete_user: Vî/ê bikarhênerî/ê jê bibe
-      hide_user: Vê bikarhênerê veşêre
-      unhide_user: Vi bikarhênerî nîşan bide

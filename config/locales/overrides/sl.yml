@@ -28,10 +28,6 @@ sl:
       show:
         delete_introduction: 'S spodnjim gumbom lahko izbrišete svoj račun na OpenHistoricalMap. Upoštevajte sledeče:'
         retain_caveats: 'Kljub temu se bodo nekateri podatki o vas na OpenHistoricalMap ohranili, tudi ko bo vaš račun izbrisan:'
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: kaj je to?
     terms:
       show:
         tou_explain:
@@ -62,9 +58,6 @@ sl:
       brief_ce: "%{year} n. št."
       range: "%{start} – %{end}"
   diary_entries:
-    comments:
-      description: Nedavni dnevniški zapisi uporabnikov OpenHistoricalMap
-      title: Dnevniški vpisi na OpenHistoricalMap
     feed:
       all:
         description: Nedavni dnevniški zapisi uporabnikov OpenHistoricalMap
@@ -75,9 +68,6 @@ sl:
       user:
         description: Nedavni dnevniški zapisi OpenHistoricalMap uporabnika %{user}
         title: Dnevniški zapisi OpenHistoricalMap za uporabnika %{user}
-    profile_diaries:
-      comments_label: Komentarji
-      date_label: Datum
   errors:
     contact:
       contact_the_community_html: Če ste našli nedelujočo povezavo/hrošča, ne oklevajte %{contact_link} skupnosti OpenHistoricalMap. Zabeležite si točen URL vašega zahtevka.
@@ -92,10 +82,6 @@ sl:
     show:
       title: Vgrajen OpenHistoricalMap
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       border_types:
         archdiocese: Meja nadškofije
@@ -168,21 +154,15 @@ sl:
         woodblock: Leseni blok
       cc0_text: "%{copyright_link}"
       openhistoricalmap_contributors: OHM
-      zoom:
-        in: Približaj
-        out: Oddalji
   layouts:
-    intro_2_create_account: Ustvarite uporabniški račun
     intro_header: Pozdravljeni v OpenHistoricalMap!
     intro_text: OpenHistoricalMap je zemljevid sveta, ki ga ustvarjajo ljudje, kot ste vi, in brezplačen za uporabo pod odprto licenco.
     logo:
       alt_text: OpenHistoricalMap logotip
-    logout: Odjava
     offline_flash:
       osm_offline: Podatkovna baza OpenHistoricalMap trenutno ni na voljo, saj se izvajajo nujna vzdrževalna dela.
     partners_osmf: Fundacija OpenStreetMap
     partners_osmus: OpenStreetMap ZDA
-    tag_line: Prosti viki zemljevid sveta
     meta:
       openstreetmap_search: Iskanje OpenHistoricalMap
   oauth:
@@ -252,10 +232,6 @@ sl:
         introduction_3_ohm_html: Slogi zemljevidov, predstavljeni na naši domači strani, so javno dostopni pod licenco CC0. Lahko jih prosto kopirate, delite, prenašate in prilagajate za kakršen koli namen brez kakršnih koli omejitev.
         introduction_4_creative_commons: Creative Commons Priznanje avtorstva-Deljenje pod enakimi pogoji 2.0
         introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/deed.sl
-        more_2_1_api_usage_policy: Politika uporabe API-ja
-        more_2_1_html: Čeprav so OpenHistoricalMap prostodostopni podatki, tretjim osebam ne moremo zagotoviti brezplačnega API-ja za zemljevide ali ploščic zemljevidov. Glejte naše %{api_usage_policy_link}, %{tile_usage_policy_link} in %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Politika uporabe Nominatim
-        more_2_1_tile_usage_policy: Politika uporabe ploščic
         more_title_html: Več o tem
       title: Avtorske pravice in Potrdila
     export:
@@ -268,10 +244,6 @@ sl:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Preprosto kliknite %{note_icon} ali isto ikono na prikazu zemljevida.
-            To bo na zemljevid dodalo označevalec, ki ga lahko premikate z vlečenjem. Dodajte svojo sporočilo in nato kliknite »Shrani«, drugi kartografi pa bodo to pregledali.
         join_the_community:
           explanation_html: Če ste opazili težavo z našimi kartografskimi podatki, na primer manjkajočo cesto ali naslov, boste najbolje ravnali, če se boste pridružili skupnosti OpenHistoricalMap in boste podatke dodali ali popravili sami.
     help:
@@ -292,7 +264,6 @@ sl:
         title: Viki
     index:
       js_2: OpenHistoricalMap za prikaz zemljevida uporablja Javascript.
-      remote_failed: Urejanje ni uspelo - poskrbite da je JOSM ali Merkaartor naložen in je možnost daljinskega upravljanja omogočena
     potlatch:
       removed: Vaš privzeti urejevalnik OpenHistoricalMap je Potlatch. Ker Adobe Flash Player ni več na voljo, Potlatch ni več na voljo za uporabo v spletnem brskalniku.
     welcome:
@@ -372,7 +343,3 @@ sl:
       duplicate_social_email: Če že imate račun OpenHistoricalMap in želite uporabljati tretjega ponudnika identitete, se prijavite s svojim geslom in spremenite nastavitve svojega računa.
       please_contact_support_html: Obrnite se na %{support_link}, da se dogovorimo za ustvaritev računa – zahtevek bomo poskušali  obravnavati čim prej.
       signup_to_authorize_html: Za dostop do %{client_app_name} se registrirajte z OpenHistoricalMap
-    show:
-      delete_user: Izbriši uporabnika
-      hide_user: Skrij uporabnika
-      unhide_user: Prikaži uporabnika

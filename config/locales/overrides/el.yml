@@ -58,10 +58,6 @@ el:
       show:
         delete_introduction: 'Μπορείτε να διαγράψετε τον λογαριασμό σας στο OpenHistoricalMap χρησιμοποιώντας το παρακάτω κουμπί. Παρακαλώ σημειώστε τις εξής λεπτομέρειες:'
         retain_caveats: 'Ωστόσο, ορισμένες πληροφορίες για εσάς θα διατηρηθούν στο OpenHistoricalMap, ακόμη και μετά τη διαγραφή του λογαριασμού σας:'
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: τι είναι αυτό;
     terms:
       show:
         read and accept with tou: Παρακαλούμε διαβάστε τους όρους συνεισφοράς και όρους χρήσης, επιλέξτε τα δυο πλαίσια ελέγχου όταν έχετε τελειώσει και πατήστε το κουμπί για να συνεχίσετε.
@@ -91,9 +87,6 @@ el:
       brief_bce: "%{year} π.Χ."
       brief_ce: "%{year} μ.Χ."
   diary_entries:
-    comments:
-      description: Πρόσφατες καταχωρίσεις ημερολογίου από χρήστες του OpenHistoricalMap
-      title: Καταχωρήσεις ημερολογίου OpenHistoricalMap
     feed:
       all:
         description: Πρόσφατες καταχωρήσεις ημερολογίου από χρήστες του OpenHistoricalMap
@@ -104,9 +97,6 @@ el:
       user:
         description: Πρόσφατες καταχωρήσεις ημερολογίου OpenHistoricalMap από τον %{user}
         title: Καταχωρήσεις ημερολογίου OpenHistoricalMap για τον %{user}
-    profile_diaries:
-      comments_label: Σχόλια
-      date_label: Ημερομηνία
   errors:
     bad_request:
       description: Η λειτουργία που αιτηθήκατε στον διακομιστή OpenHistoricalMap δεν είναι έγκυρη (HTTP 400)
@@ -122,10 +112,6 @@ el:
     show:
       title: Ενσωματωμένο OpenHistoricalMap
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       border_types:
         archdiocese: Όρια αρχιεπισκοπής
@@ -171,16 +157,11 @@ el:
         woodblock: Ξυλόγλυπτο
       cc0_text: "%{copyright_link}"
       openhistoricalmap_contributors: OHM
-      zoom:
-        in: Μεγέθυνση
-        out: Σμίκρυνση
   layouts:
-    intro_2_create_account: Δημιουργήστε ένα λογαριασμό χρήστη
     intro_header: Καλώς ήρθατε στο OpenHistoricalMap!
     intro_text: Το OpenHistoricalMap είναι χάρτης του κόσμου, που δημιουργήθηκε από ανθρώπους σαν κι εσάς και είναι δωρεάν, υπό άδεια ελεύθερης χρήσης.
     logo:
       alt_text: Λογότυπο OpenHistoricalMap
-    logout: Αποσύνδεση
     meta:
       openstreetmap_search: Αναζήτηση OpenHistoricalMap
     offline_flash:
@@ -191,9 +172,7 @@ el:
     partners_osmf: Ίδρυμα OpenStreetMap
     partners_osmus: OpenStreetMap U.S.
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: Ο ελεύθερος παγκόσμιος χάρτης Wiki
   notes:
     new_readonly:
       warning: Δεν είναι δυνατή η δημιουργία νέων σημειώσεων, επειδή το API του OpenHistoricalMap βρίσκεται αυτήν τη στιγμή σε λειτουργία μόνο για ανάγνωση.
@@ -278,13 +257,6 @@ el:
         introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/
         more_1_wiki: στο Wiki του OpenStreetMap
         more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
-        more_2_1_api_usage_policy: Πολιτική Χρήσης API
-        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
-        more_2_1_html: Παρόλο που το OpenHistoricalMap είναι ανοιχτά δεδομένα, δεν μπορούμε να παρέχουμε API χάρτη για τρίτα μέρη χωρίς χρέωση. Δείτε την %{api_usage_policy_link}, %{tile_usage_policy_link} και %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Πολιτική Χρήσης Nominatim
-        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
-        more_2_1_tile_usage_policy: Πολιτική Χρήσης Πλακιδίων
-        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
         more_title_html: Μαθαίνοντας περισσότερα
         trademarks_1_ohm_contact_team: επικοινωνήστε με την ομάδα του OpenHistoricalMap
         trademarks_1_ohm_html: Αν έχετε ερωτήσεις σχετικά με τη χρήση σας του ονόματος OpenHistoricalMap, παρακαλούμε %{contact_team_link}.
@@ -304,11 +276,6 @@ el:
           title: Πλανήτης OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Απλά κάντε κλικ στο %{note_icon} ή στο ίδιο εικονίδιο στην οθόνη του χάρτη.
-            Έτσι θα προστεθεί δείκτης στον χάρτη, τον οποίο μπορείτε να μετακινήσετε σύροντας τον.
-            Προσθέστε το μήνυμά σας και στη συνέχεια, κάντε κλικ στο κουμπί αποθήκευσης, ώστε να μπορούν άλλοι χαρτογράφοι να ερευνήσουν το πρόβλημα.
         join_the_community:
           explanation_html: Αν έχετε παρατηρήσει ένα πρόβλημα με τα δεδομένα του χάρτη μας, παραδείγματος χάριν ένας δρόμος που λείπει στη διεύθυνσή σας, ο καλύτερος τρόπος να προχωρήσετε είναι να ενταχθείτε στην κοινότητα του OpenHistoricalMap και να προσθέσετε ή να επισκευάσετε τα δεδομένα από μόνοι σας.
       other_concerns:
@@ -340,7 +307,6 @@ el:
         title: Wiki
     index:
       js_2: Το OpenHistoricalMap χρησιμοποιεί JavaScript για το ολισθαίνοντα χάρτη του.
-      remote_failed: Η επεξεργασία απέτυχε - βεβαιωθείτε ότι ο JOSM ή ο Merkaartor έχουν φορτωθεί και η επιλογή τηλεχειρισμού είναι ενεργή
     potlatch:
       removed: Ο προεπιλεγμένος σας επεξεργαστής του OpenHistoricalMap έχει τεθεί ως Potlatch. Επειδή το Adobe Flash Player έχει αποσυρθεί, ο Potlatch δεν είναι πια διαθέσιμος για χρήση σε πρόγραμμα περιήγησης ιστού.
     welcome:
@@ -417,7 +383,3 @@ el:
       duplicate_social_email: Εάν έχετε ήδη λογαριασμό OpenHistoricalMap και επιθυμείτε να χρησιμοποιείτε έναν πάροχο ταυτότητας τρίτου μέρους, παρακαλούμε να συνδεθείτε χρησιμοποιώντας τον κωδικό πρόσβασής σας και να τροποποιήσετε τις ρυθμίσεις του λογαριασμού σας.
       please_contact_support_html: Παρακαλώ επικοινωνήστε με %{support_link} για να κανονίσετε τη δημιουργία λογαριασμού - θα προσπαθήσουμε να αντιμετωπίσουμε το αίτημα το συντομότερο δυνατό.
       signup_to_authorize_html: Εγγραφείτε με το OpenHistoricalMap για πρόσβαση στο %{client_app_name}.
-    show:
-      delete_user: Διαγραφή αυτού του Χρήστη
-      hide_user: Απόκρυψη αυτού του λογαριασμού Χρήστη
-      unhide_user: Επανεμφάνιση αυτού του λογαριασμού Χρήστη

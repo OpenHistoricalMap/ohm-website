@@ -37,10 +37,6 @@ vi:
       show:
         delete_introduction: 'Nhấp vào nút bên dưới để xóa tài khoản OpenHistoricalMap của bạn. Vui lòng lưu ý các điều sau:'
         retain_caveats: 'Tuy nhiên, một số thông tin về bạn vẫn được giữ lại trên OpenHistoricalMap, ngay cả sau khi tài khoản của bạn bị xóa:'
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms?uselang=vi
-        link text: đây là gì?
     terms:
       show:
         read and accept with tou: Xin vui lòng đọc thỏa thuận đóng góp và các điều khoản sử dụng, đọc xong thì đánh cả hai hộp kiểm và bấm nút Tiếp tục.
@@ -70,9 +66,6 @@ vi:
       brief_bce: "%{year} TCN"
       brief_ce: "%{year} CN"
   diary_entries:
-    comments:
-      description: Những mục nhật ký gần đây từ người dùng OpenHistoricalMap
-      title: Các mục nhật ký OpenHistoricalMap
     feed:
       all:
         description: Những mục nhật ký gần đây từ người dùng OpenHistoricalMap
@@ -82,9 +75,6 @@ vi:
         title: Các mục nhật ký OpenHistoricalMap bằng %{language_name}
       user:
         description: Những mục gần đây trong nhật ký OpenHistoricalMap từ %{user}
-    profile_diaries:
-      comments_label: Bình luận
-      date_label: Ngày
   errors:
     bad_request:
       description: Bạn đã yêu cầu tác vụ không hợp lệ trên máy chủ OpenHistoricalMap (HTTP 400)
@@ -98,10 +88,6 @@ vi:
     not_found:
       description: Không thể tìm thấy thao tác tập tin/thư mục/API có tên đó trên máy chủ OpenHistoricalMap (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: Nominatim OpenHistoricalMap
-        osm_nominatim_reverse: Nominatim OpenHistoricalMap
     search_osm_nominatim:
       border_types:
         archdiocese: Biên giới Tổng giáo phận
@@ -156,16 +142,11 @@ vi:
         woodblock: Mộc bản
       cc0_text: "%{copyright_link}"
       openhistoricalmap_contributors: OHM
-      zoom:
-        in: Phóng to
-        out: Thu nhỏ
   layouts:
-    intro_2_create_account: Mở tài khoản mới
     intro_header: Chào mừng đến với OpenHistoricalMap!
     intro_text: OpenHistoricalMap là bản đồ thế giới do những người như bạn xây dựng và cho phép sử dụng thoải mái theo một giấy phép nguồn mở.
     logo:
       alt_text: Biểu trưng OpenHistoricalMap
-    logout: Đăng xuất
     offline_flash:
       osm_offline: Cơ sở dữ liệu OpenHistoricalMap đang ngoại tuyến trong lúc đang thực hiện những công việc bảo quản cơ sở dữ liệu cần thiết.
       osm_read_only: Cơ sở dữ liệu OpenHistoricalMap đang bị khóa không được sửa đổi trong lúc đang thực hiện những công việc bảo quản cơ sở dữ liệu cần thiết.
@@ -174,9 +155,7 @@ vi:
     partners_osmf: Quỹ OpenStreetMap
     partners_osmus: OpenStreetMap Hoa Kỳ
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: Bản đồ Thế giới trên Wiki Mở
   notes:
     new_readonly:
       warning: Không thể tạo ghi chú mới vì API OpenHistoricalMap hiện đang ở chế độ chỉ-đọc.
@@ -319,15 +298,6 @@ vi:
         more_1_ohm_html: Tìm hiểu thêm về các vấn đề phải nghĩ đến khi sử dụng dữ liệu của chúng tôi, và cách ghi công chúng tôi làm sao, %{wiki_link}.
         more_1_wiki: tại Wiki OpenStreetMap
         more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License?uselang=vi
-        more_2_1_api_usage_policy: Quy định Sử dụng API
-        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
-        more_2_1_html: |-
-          Mặc dù OpenHistoricalMap là dữ liệu mở, nhưng chúng tôi không thể cung cấp API hoặc mảnh bản đồ miễn phí để bên thứ ba sử dụng.
-          Xem %{api_usage_policy_link}, %{tile_usage_policy_link}, và %{nominatim_usage_policy_link} của chúng tôi.
-        more_2_1_nominatim_usage_policy: Quy định Sử dụng Nominatim
-        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
-        more_2_1_tile_usage_policy: Quy định Sử dụng Mảnh bản đồ
-        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
         more_title_html: Tìm hiểu thêm
         trademarks_1_ohm_contact_team: liên lạc với nhóm OpenHistoricalMap
         trademarks_1_ohm_html: Nếu có thắc mắc về cách sử dụng tên OpenHistoricalMap, xin vui lòng %{contact_team_link}.
@@ -348,10 +318,6 @@ vi:
           title: Quả đất OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Chỉ việc bấm %{note_icon} hoặc hình tượng này trên bản đồ.
-            Nút này sẽ thả một ghim vào bản đồ để bạn kéo thả vào vị trí đúng. Miêu tả vấn đề và bấm Lưu. Những người khác sẽ điều tra.
         join_the_community:
           explanation_html: Nếu bạn nhận thấy một vấn đề trong dữ liệu bản đồ của chúng tôi, chẳng hạn thiếu con đường hoặc địa chỉ của bạn, cách xử lý tốt nhất là tham gia cộng đồng OpenHistoricalMap để thêm hoặc sửa dữ liệu lấy.
       other_concerns:
@@ -387,7 +353,6 @@ vi:
       js_2: OpenHistoricalMap sử dụng JavaScript cho chức năng bản đồ trơn.
       license:
         copyright: OpenHistoricalMap thuộc phạm vi công cộng trừ khi có ghi chú khác.
-      remote_failed: Thất bại mở trình vẽ – hãy chắc chắn rằng JOSM hoặc Markaartor đã khởi động và tùy chọn phần điều khiển từ xa được kích hoạt
     potlatch:
       removed: Bạn đã đặt trình vẽ OpenHistoricalMap mặc định là Potlatch. Vì Adobe Flash Player không còn được hỗ trợ, Potlatch không còn hoạt động trong trình duyệt Web.
     welcome:
@@ -463,7 +428,3 @@ vi:
       duplicate_social_email: Nếu bạn đã có tài khoản OpenHistoricalMap và muốn sử dụng nhà cung cấp danh tính bên thứ ba, xin vui lòng đăng nhập dùng mật khẩu của bạn và thay đổi tùy chọn tài khoản.
       please_contact_support_html: Vui lòng liên hệ với %{support_link} để yêu cầu tạo tài khoản – chúng tôi sẽ cố gắng giải quyết yêu cầu nhanh nhất có thể.
       signup_to_authorize_html: Mở tài khoản OpenHistoricalMap để truy cập %{client_app_name}.
-    show:
-      delete_user: Xóa Tài khoản Này
-      hide_user: Ẩn Tài khoản Này
-      unhide_user: Hiện Tài khoản Này

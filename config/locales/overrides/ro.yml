@@ -28,11 +28,6 @@
 # Author: Wintereu
 # Do not edit by hand.
 ro:
-  accounts:
-    show:
-      contributor_terms:
-        link: https://www.osmfoundation.org/wiki/License/Contributor_Terms
-        link text: Ce este aceasta?
   api:
     notes:
       rss:
@@ -56,8 +51,6 @@ ro:
       user:
         description: Înregistrări recente în jurnalul OpenHistoricalMap de la %{user}
         title: Înregistrări în jurnalul OpenHistoricalMap pentru %{user}
-    profile_diaries:
-      date_label: Dată
   errors:
     bad_request:
       description: Cererea pe care ați făcut-o pe serverul OpenHistoricalMap nu este validă. (HTTP 400)
@@ -80,17 +73,11 @@ ro:
     map:
       base:
         railway: Cale ferată
-      zoom:
-        in: Mărește
-        out: Micșorează
   layouts:
-    intro_2_create_account: Creează un cont de utilizator
     intro_header: Bine ați venit la OpenHistoricalMap!
     intro_text: OpenHistoricalMap este o hartă a lumii, creată de oameni ca tine și liberă pentru utilizare sub o licență deschisă.
     logo:
       alt_text: Logoul OpenHistoricalMap
-    logout: Închide sesiunea
-    tag_line: Harta liberă Wiki World Map
   oauth:
     scopes:
       openid: Conectați-vă folosind OpenHistoricalMap
@@ -131,10 +118,6 @@ ro:
         credit_title_html: Cum se creditează OpenHistoricalMap
         infringement_1_html: Responsabilii OHM sunt reamintiți să nu adauge niciodată date de la nici una dintre sursele protejate de drepturi de autor (de ex., Hărți Google sau hărți tipărite) fără permisiunea explicită din partea deținătorilor drepturilor de autor.
         introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
-        more_2_1_api_usage_policy: Politica de utilizare API
-        more_2_1_html: Deși OpenHistoricalMap este date deschise, nu putem oferi o API gratuit pentru hărți pentru terți. Consultați %{api_usage_policy_link}, %{tile_usage_policy_link} și %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Politica Utilizare Nominatim
-        more_2_1_tile_usage_policy: Politica de Utilizare a Plăcilor
         more_title_html: Aflați mai multe.
     export:
       too_large:
@@ -146,11 +129,6 @@ ro:
           title: Planeta OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Doar faceți clic pe %{note_icon} sau pe aceeași pictogramă pe hartă.
-            Acest lucru va adăuga un marcator pe hartă, pe care îl puteți muta
-            prin tragere. Adăugați mesajul dvs., apoi faceți clic pe Salvați, iar alți cartografi vor investiga.
         join_the_community:
           explanation_html: Dacă ați observat o problemă cu datele noastre de pe hartă, de exemplu un drum care lipsește sau adresa dvs., cel mai bun mod de a rezolva această problemă este să vă alăturați comunității OpenHistoricalMap și să adăugați sau să reparați singuri datele.
     help:
@@ -164,7 +142,6 @@ ro:
         description: Caută pe wiki pentru o documentație OHM detaliată.
     index:
       js_2: OpenHistoricalMap folosește JavaScript pentru hărțile goale.
-      remote_failed: Editarea a eșuat - asigurați-vă că JOSM sau Merkaartor este încărcat și că opțiunea de control de la distanță este activată
     potlatch:
       removed: Editorul dvs. implicit OpenHistoricalMap este setat ca Potlatch. Deoarece Adobe Flash Player a fost retras, Potlatch nu mai este disponibil pentru utilizare într-un browser web.
     welcome:
@@ -237,7 +214,3 @@ ro:
         welcome: Bun venit la OpenHistoricalMap
       please_contact_support_html: Vă rugăm să contactați %{support_link} pentru a aranja crearea unui cont - vom încerca să rezolvăm solicitarea cât mai repede posibil.
       signup_to_authorize_html: Autentifică-te cu OpenHistoricalMap pentru a accesa %{client_app_name}.
-    show:
-      delete_user: Șterge acest utilizator
-      hide_user: Ascunde acest utilizator
-      unhide_user: Descoperă acest utilizator

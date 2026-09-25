@@ -17,10 +17,6 @@
 # Author: Yupik
 # Do not edit by hand.
 et:
-  accounts:
-    show:
-      contributor_terms:
-        link text: mis see on?
   api:
     notes:
       rss:
@@ -41,8 +37,6 @@ et:
       user:
         description: Kasutaja %{user} hiljutised OpenHistoricalMapi päevikusissekanded
         title: Kasutaja %{user} OpenHistoricalMapi päevikusissekanded
-    profile_diaries:
-      date_label: Kuupäev
   errors:
     contact:
       contact_the_community_html: Kui avastad katkise lingi või vea, palun kirjuta sellest OpenHistoricalMapi kogukonnale siin %{contact_link} aadressil. Palun lisa teatesse ka päringu täpne URL.
@@ -53,29 +47,17 @@ et:
     not_found:
       description: Sellise nimega faili/kataloogi/API meetodit ei leidu OpenHistoricalMapi serveris (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatimi
-        osm_nominatim_reverse: OpenHistoricalMap Nominatimi
     search_osm_nominatim:
       prefix:
         leisure:
           track: Jooksurada
         shop:
           seafood: Mereandide pood
-  javascripts:
-    map:
-      zoom:
-        in: Suurenda
-        out: Vähenda
   layouts:
-    intro_2_create_account: loo oma konto
     intro_header: Tere tulemast OpenHistoricalMapi!
     intro_text: OpenHistoricalMap on maailma kaart, mille on loonud inimesed nagu sina ja seda võib vabalt kasutada avatud litsentsi tingimustel.
     logo:
       alt_text: OpenHistoricalMapi logo
-    logout: Logi välja
-    tag_line: Vaba viki-maailmakaart
   oauth:
     scopes:
       openid: Sisse logida kasutades OpenHistoricalMapi
@@ -112,10 +94,6 @@ et:
           mis pärinevad autoriõigusega kaitstud allikatest (nt Google Maps või trükikaardid),
           kui neil puudub autoriõiguse valdaja selgesõnaline luba.
         introduction_4_creative_commons: Autorile viitamine + jagamine samadel tingimustel 2.0
-        more_2_1_api_usage_policy: API kasutusreegleid
-        more_2_1_html: Kuigi OpenHistoricalMapi andmed on avaandmed, ei saa me pakkuda kaardi juures tasuta API-t kolmandatele osapooltele. Vaata meie %{api_usage_policy_link}, %{tile_usage_policy_link} ja %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Nominatimi kasutusreegleid
-        more_2_1_tile_usage_policy: kaardipaanide kasutusreegleid
         more_title_html: Lisateave
     export:
       too_large:
@@ -127,10 +105,6 @@ et:
           title: Planet OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Kliki %{note_icon} või samale ikoonile kaardivaates.
-            See lisab kaardile markeri, mida sa saad liigutada seda hiirega lohistades. Lisa oma sõnum, seejärel kliki "Salvesta" ja teised kaardistajad näevad seda.
         join_the_community:
           explanation_html: Kui oled märganud probleemi meie kaardi andmetes, näiteks puuduvat teed või enda aadressi, siis parim viis selle lahendamiseks on liituda OpenHistoricalMapi kogukonnaga ja muuta või parandada andmed ise.
     help:
@@ -145,7 +119,6 @@ et:
         title: Viki
     index:
       js_2: OpenHistoricalMap kasutab JavaScripti kaartide laadimiseks.
-      remote_failed: Redigeerimise ebaõnnestus - veendu, et  JOSM või Merkaartor töötab ning kaugjuhtimine on lubatud
     potlatch:
       removed: Sa oled OpenHistoricalMapi jaoks vaikeredaktoriks määranud Potlatchi. Kuna Adobe Flash Player ei ole enam kasutusel, siis pole ka Potlatchi enam veebibrauseris võimalik kasutada.
     welcome:
@@ -213,7 +186,3 @@ et:
       about:
         paragraph_1: Erinevalt teistest kaartidest on kogu OpenHistoricalMapi loonud sinusugused inimesed ja igaüks võib seda parandada, täiendada, alla laadida ja kasutada.
       please_contact_support_html: Palun võta ühendust %{support_link}, et kasutajakonto luua. Üritame tegeleda selle taotlusega nii kiiresti kui võimalik.
-    show:
-      delete_user: Kustuta see kasutaja
-      hide_user: Peida see kasutaja
-      unhide_user: Muuda see kasutaja nähtavaks

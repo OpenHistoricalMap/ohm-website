@@ -15,20 +15,6 @@
 # Author: Orbot707
 # Do not edit by hand.
 diq:
-  accounts:
-    show:
-      contributor_terms:
-        link text: no çıko?
-  diary_entries:
-    profile_diaries:
-      date_label: Tarix
-  javascripts:
-    map:
-      zoom:
-        in: Nêzdi ke
-        out: Dûri fiye
-  layouts:
-    logout: Bıveciye
   sessions:
     destroy:
       heading: OpenHistoricalMap ra vıcyayış
@@ -37,8 +23,3 @@ diq:
       too_large:
         planet:
           title: Geyrenıka OHM
-  users:
-    show:
-      delete_user: nê karberi esternê
-      hide_user: nê karberi  bınımnê
-      unhide_user: nê karberi menımnê

@@ -25,10 +25,6 @@
 # Author: Ttdnet
 # Do not edit by hand.
 lv:
-  accounts:
-    show:
-      contributor_terms:
-        link text: Kas tas ir?
   api:
     notes:
       rss:
@@ -52,26 +48,16 @@ lv:
       user:
         description: Neseni %{user} OpenHistoricalMap dienasgrāmatas ieraksti
         title: Lietotāja %{user} OpenHistoricalMap dienasgrāmatas ieraksti
-    profile_diaries:
-      date_label: Datums
   geocoder:
     search_osm_nominatim:
       prefix:
         leisure:
           track: Skrejceļš
-  javascripts:
-    map:
-      zoom:
-        in: Palielināt
-        out: Samazināt
   layouts:
-    intro_2_create_account: Izveidot lietotāja kontu
     intro_header: Laipni lūdzam OpenHistoricalMap!
     intro_text: OpenHistoricalMap ir pasaules karte, kuru veido cilvēki kā tu, un tā ir bezmaksas lietošanai zem atvērtas licences.
     logo:
       alt_text: OpenHistoricalMap logo
-    logout: Iziet
-    tag_line: Atvērtā Wiki pasaules karte
   sessions:
     destroy:
       heading: Iziet no OpenHistoricalMap
@@ -98,8 +84,6 @@ lv:
           title: OHM Planēta
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: Noklikšķiniet uz %{note_icon} vai arī uz tās pašas ikonas kartes displejā. Tādā veidā jūs pievienosiet marķieri šai kartei, kuru jūs varēsiet izkustināt, 'velkot'. Pievienojiet savu  ziņu un tad uzspiediet 'Saglabāt' un pārējie lietotāji to izpētīs.
         join_the_community:
           explanation_html: Konstatējot problēmas ar mūsu kartes datiem, piemēram trūkstošu ceļu vai adresi, labākais variants, kā rīkoties ir pievienoties OpenHistoricalMap kopienai un pievienot vai atjaunot datus jums pašam.
     help:
@@ -113,7 +97,6 @@ lv:
         description: Pārlūkojiet wiki, lai iegūtu padziļinātu OHM dokumentāciju.
     index:
       js_2: OpenHistoricalMap kartes rādīšanai lieto JavaScript.
-      remote_failed: Rediģēšana neizdevās - pārbaudi, ka JOSM vai Merkaartor ir ieslēgts un attālinātās vadības iespēja ir aktivizēta
     welcome:
       basic_terms:
         paragraph_1: OpenHistoricalMap ir pašai savs profesionālais žargons. Šeit ir daži atslēgvārdi, kas var noderēt.
@@ -167,7 +150,3 @@ lv:
     auth_association:
       heading: Jūsu ID nav vēl asociēts ar OpenHistoricalMap kontu.
       option_1: Ja jūs tikko iepazināties ar OpenHistoricalMap tad lūdzu izveidojiet jaunu kontu izmantojot zemāk esošo formu.
-    show:
-      delete_user: Dzēst šo dalībnieku
-      hide_user: Slēpt šo dalībnieku
-      unhide_user: Parādīt šo dalībnieku

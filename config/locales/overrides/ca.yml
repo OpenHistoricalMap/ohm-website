@@ -53,10 +53,6 @@
 # Do not edit by hand.
 ca:
   accounts:
-    show:
-      contributor_terms:
-        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: què és això?
     terms:
       show:
         read and accept with tou: Llegiu l'acord de col·laborador i les condicions d'ús i, en acabat, marqueu totes dues caselles i premeu el botó de continuar.
@@ -73,8 +69,6 @@ ca:
         title_all: Debat sobre els conjunts de canvis d'OpenHistoricalMap
         title_particular: 'Debat sobre el conjunt de canvis #%{changeset_id} d''OpenHistoricalMap'
   diary_entries:
-    comments:
-      title: Entrades de diari d'OpenHistoricalMap
     feed:
       all:
         description: Entrades de diari recents dels usuaris d'OpenHistoricalMap
@@ -85,8 +79,6 @@ ca:
       user:
         description: Entrades de diari recents d'OpenHistoricalMap de %{user}
         title: Entrades de diari d'OpenHistoricalMap de %{user}
-    profile_diaries:
-      date_label: Data
   errors:
     contact:
       contact_the_community_html: No dubteu a %{contact_link} la comunitat d'OpenHistoricalMap si heu trobat un enllaç trencat / error. Anoteu l'URL exacte de la vostra sol·licitud.
@@ -97,32 +89,19 @@ ca:
     not_found:
       description: No s'ha pogut trobar cap operació de fitxer/directori/API amb aquest nom al servidor d'OpenHistoricalMap (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: Nominatim de l’OpenHistoricalMap
-        osm_nominatim_reverse: Nominatim de l’OpenHistoricalMap
     search_osm_nominatim:
       prefix:
         leisure:
           track: Pista d'atletisme
         shop:
           seafood: Botiga de marisc
-  javascripts:
-    map:
-      zoom:
-        in: Amplia
-        out: Allunya
   layouts:
-    intro_2_create_account: Crea un compte d’usuari
     intro_header: OpenHistoricalMap us dona la benvinguda
     intro_text: L'OpenHistoricalMap és un mapa del món creat per persones com tu i d'ús lliure sota una llicència oberta.
     logo:
       alt_text: Logotip de l'OpenHistoricalMap
-    logout: Surt
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: El mapa col·laboratiu lliure
   sessions:
     destroy:
       heading: Tanca la sessió d'OpenHistoricalMap
@@ -144,10 +123,6 @@ ca:
         credit_title_html: Com atribuir autoria a OpenHistoricalMap
         infringement_1_html: Recordem als col·laboradors de l'OHM que mai no s'han d'afegir dades de cap font amb drets d'autor registrats (com Google Maps o mapes impresos per exemple) sense tenir una autorització explícita dels titulars dels drets d'autor.
         introduction_4_creative_commons: Creative Commons Reconeixement-CompartirIgual 2.0
-        more_2_1_api_usage_policy: Política d'ús de l'API
-        more_2_1_html: Tot i que OpenHistoricalMap són dades obertes, no podem proporcionar una API gratuïta als mapes per a tercers. Vegeu la %{api_usage_policy_link}, %{tile_usage_policy_link} i %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Política d'ús de Nominatim
-        more_2_1_tile_usage_policy: Política d'ús de les tessel·les
         more_title_html: Saber-ne més
     export:
       too_large:
@@ -159,8 +134,6 @@ ca:
           title: Planeta OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: Feu clic a %{note_icon} o a la mateixa icona sobre el mapa. Això afegirà un marcador al mapa, que podeu desplaçar arrossegant-lo. Afegiu el vostre missatge, deseu-lo i els altres usuaris ho investigaran.
         join_the_community:
           explanation_html: Si heu trobat un error en el mapa, com per exemple una carretera que falta o bé la vostra adreça, la millor forma d'arreglar-ho és unint-vos a la comunitat d'OpenHistoricalMap i afegir o bé corregir les dades vós mateix.
     help:
@@ -174,7 +147,6 @@ ca:
         description: Navegueu per la wiki per a trobar documentació detallada d'OHM.
     index:
       js_2: L'OpenHistoricalMap utilitza JavaScript per al mapa lliscant.
-      remote_failed: L'edició ha fallat. Assegureu-vos que el JOSM o el Merkaartor està executant-se i que l'opció de comandament a distància està habilitada
     potlatch:
       removed: El vostre editor d'OpenHistoricalMap per defecte és el Potlatch. Atès que s'ha discontinuat l'Adobe Flash Player, el Potlach deixarà d'estar disponible des del navegador web.
     welcome:
@@ -241,7 +213,3 @@ ca:
         welcome: Benvingut/da a OpenHistoricalMap
       please_contact_support_html: Contacteu amb l'%{support_link} per gestionar la creació d'un compte - intentarem tractar la sol·licitud tan aviat com sigui possible.
       signup_to_authorize_html: Registreu-vos amb OpenHistoricalMap per accedir a %{client_app_name}.
-    show:
-      delete_user: Suprimeix aquest usuari
-      hide_user: Amaga aquest usuari
-      unhide_user: No amaguis aquest usuari

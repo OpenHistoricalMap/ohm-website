@@ -21,10 +21,6 @@
 # Author: กิ๊ฟ เลิกล่ะ สายแข็ง
 # Do not edit by hand.
 th:
-  accounts:
-    show:
-      contributor_terms:
-        link text: นี่คืออะไร?
   api:
     notes:
       rss:
@@ -45,8 +41,6 @@ th:
       user:
         description: รายการบันทึกล่าสุด OpenHistoricalMap จาก %{user}
         title: รายการบันทึก OpenHistoricalMap สำหรับ %{user}
-    profile_diaries:
-      date_label: วันที่
   errors:
     bad_request:
       description: การดำเนินการที่คุณร้องขอบนเซิร์ฟเวอร์ OpenHistoricalMap ไม่ถูกต้อง (HTTP 400)
@@ -62,17 +56,11 @@ th:
     map:
       base:
         railway: ทางรถไฟ
-      zoom:
-        in: ซูมเข้า
-        out: ซูมออก
   layouts:
-    intro_2_create_account: สร้างบัญชีผู้ใช้ใหม่
     intro_header: ยินดีต้อนรับสู่ OpenHistoricalMap!
     intro_text: OpenHistoricalMap เป็นแผนที่โลกที่สร้างโดยผู้คนเช่นท่าน และใช้งานได้ไม่เสียค่าใช้จ่ายภายใต้สัญญาอนุญาตแบบเปิด
     logo:
       alt_text: ตราสัญลักษณ์ OpenHistoricalMap
-    logout: ออกจากระบบ
-    tag_line: แผนที่โลกวิกิ ใช้งานได้ไม่เสียค่าใช้จ่าย
   sessions:
     destroy:
       heading: ออกจากระบบ OpenHistoricalMap
@@ -115,7 +103,6 @@ th:
         title: ยินดีต้อนรับสู่ OpenHistoricalMap
     index:
       js_2: OpenHistoricalMap ใช้จาวาสคริปต์ในการแสดงแผนที่
-      remote_failed: การแก้ไขล้มเหลว - ตรวจสอบให้แน่ใจว่าได้โหลด JOSM หรือ Merkaartor และได้เปิดใช้งานตัวเลือกการควบคุมระยะไกลแล้ว
     welcome:
       basic_terms:
         paragraph_1: 'เมื่อคุณเข้ามาทำแผนที่ใน OpenHistoricalMap, คุณจะพบกับศัพท์เฉพาะหลายคำ ซึ่งความหมายจะอธิบายไว้เบื้องต้นที่ด้านล่างนี้:'
@@ -161,7 +148,3 @@ th:
     auth_association:
       heading: บัญชีภายนอกของท่านยังมิได้ต่อเชื่อมกับบัญชี OpenHistoricalMap
       option_1: ถ้าท่านเป็นผู้ใช้ OpenHistoricalMap ใหม่ โปรดใช้แบบฟอร์มข้างล่างสร้างบัญชีผู้ใช้
-    show:
-      delete_user: ลบผู้ใช้นี้
-      hide_user: ซ่อนผู้ใช้นี้
-      unhide_user: เลิกซ่อนผู้ใช้นี้

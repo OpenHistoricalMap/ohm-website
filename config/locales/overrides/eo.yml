@@ -32,10 +32,6 @@
 # Do not edit by hand.
 eo:
   accounts:
-    show:
-      contributor_terms:
-        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: Pliaj informoj
     terms:
       show:
         read and accept with tou: Bonvolu legi la interkonsenton pri kontribuado kaj la uzkondiĉoj, marki ambaŭ markbutonojn kiam vi estas leginta, kaj alklaku la butonon Daŭrigi.
@@ -53,8 +49,6 @@ eo:
       show:
         title_all: Diskuto pri OpenHistoricalMap-ŝanĝaro
   diary_entries:
-    comments:
-      title: OpenHistoricalMap taglibraj afiŝoj
     feed:
       all:
         description: Lastaj taglibraj afiŝoj de OpenHistoricalMap-uzantoj
@@ -65,8 +59,6 @@ eo:
       user:
         description: Lastaj OpenHistoricalMap taglibraj afiŝoj de %{user}
         title: OpenHistoricalMap taglibraj afiŝoj de %{user}
-    profile_diaries:
-      date_label: Dato
   errors:
     bad_request:
       description: La ago – pri kiu vi petis la servilon OpenHistoricalMap – ne estas valida (HTTP 400)
@@ -78,26 +70,14 @@ eo:
       description: La OpenHistoricalMap-servilo renkontis neatenditan kondiĉon, kiu malebligis al ĝi plenumi la peton (HTTP 500).
     not_found:
       description: Ne povis trovi dosieron/dosierujon/API-peton kun tiu ĉi nomo ĉe la OpenHistoricalMap-servilo (HTTP 404).
-  geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
   javascripts:
     legend:
       tooltip_disabled: Mapklarigo ne disponeblas por tiu ĉi tavolo
-    map:
-      zoom:
-        in: Pligrandigi
-        out: Malgrandigi
   layouts:
-    intro_2_create_account: Krei konton
     intro_header: Bonvenon al OpenHistoricalMap!
     intro_text: OpenHistoricalMap estas mapo de la mondo, kreata de homoj kiel vi, kaj libere uzebla laŭ malferma permesilo.
     logo:
       alt_text: Emblemo de OpenHistoricalMap
-    logout: Elsaluti
-    tag_line: La libera viki-mondmapo
   oauth:
     scopes:
       openid: ensaluti uzante OpenHistoricalMap
@@ -125,10 +105,6 @@ eo:
         introduction_2_cc_by_url: https://creativecommons.org/licenses/by/4.0/deed.eo
         introduction_4_creative_commons: Krea Komunaĵo Atribuite-Samkondiĉe 2.0
         introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/deed.eo
-        more_2_1_api_usage_policy: uzkondiĉoj de API
-        more_2_1_html: Kvankam OpenHistoricalMap estas malfermaj datumoj, ni ne povas liveri senpagan API al triaj partioj. Ekkonu kun %{api_usage_policy_link}, %{tile_usage_policy_link} kaj %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: uzkondiĉoj de Nominatim
-        more_2_1_tile_usage_policy: uzkondiĉoj de kaheloj
         more_title_html: Pliaj informoj
     export:
       too_large:
@@ -140,8 +116,6 @@ eo:
           title: Planedo OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: Simple alklaku %{note_icon} aŭ la saman piktogramon sur la mapo. Ĉi tio aldonos moveblan markon, aldonu vian mesaĝon, konservu ĝin, kaj aliaj mapigistoj okupiĝos pri via rimarko.
         join_the_community:
           explanation_html: Se vi rimarkis iun problemon kun niaj map-datumoj, ekzemple strato aŭ adreso mankas, la plej bona rimedo estas aniĝi OpenHistoricalMap-komunumo kaj redakti kaj ripari datumojn mem.
     help:
@@ -156,7 +130,6 @@ eo:
         title: Vikio
     index:
       js_2: OpensStreetMap uzas Ĝavoskripton por montri ŝoveblan mapon.
-      remote_failed: Redaktado malsukcesis - certigu ĉu JOSM aŭ Merkaartor estas startigita kaj ĉu defora aliro estas aktiva
     potlatch:
       removed: Via implicita OpenHistoricalMap‑reaktilo estas Potlatch. Pro la fakto, ke Adobe Flash Player estis eksigita, la redaktilo Potlatch ne estas plu uzebla per retfoliumilo.
     welcome:
@@ -224,7 +197,3 @@ eo:
       duplicate_social_email: Se vi jam havas konton OpenHistoricalMap kaj volas uzi aŭtentokontrolon de ekstera liveranto, ensalutu uzante vian pasvorton kaj modifu agordojn de via konto.
       please_contact_support_html: Kontaktu la %{support_link} por renkonti por krei konton – ni provos kiel eble plej rapide respondi vian peton.
       signup_to_authorize_html: Registriĝu al OpenHistoricalMap por aliri %{client_app_name}.
-    show:
-      delete_user: Forigi ĉi tiun uzanton
-      hide_user: Kaŝi ĉi tiun uzanton
-      unhide_user: Malkaŝi ĉi tiun uzanton

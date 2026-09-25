@@ -6,15 +6,6 @@
 # Author: Umar Shahid
 # Do not edit by hand.
 skr-arab:
-  accounts:
-    show:
-      contributor_terms:
-        link text: ایہ کیا ہے؟
-  diary_entries:
-    profile_diaries:
-      date_label: تریخ
-  layouts:
-    logout: لاگ آؤٹ
   site:
     about_section:
       legal_1_privacy_policy: رازداری پالیسی

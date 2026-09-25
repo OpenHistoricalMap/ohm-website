@@ -62,10 +62,6 @@
 # Do not edit by hand.
 tr:
   accounts:
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: bu nedir?
     terms:
       show:
         read and accept with tou: Lütfen katılımcı sözleşmesini ve kullanım koşullarını okuyun, bittiğinde her iki onay kutusunu işaretleyin ve ardından devam düğmesine basın.
@@ -88,8 +84,6 @@ tr:
       brief: "%{year}"
       brief_bce: "%{year} MÖ"
   diary_entries:
-    comments:
-      title: OpenHistoricalMap günlük kayıtları
     feed:
       all:
         description: OpenHistoricalMap kullanıcıların en son günlük girdileri
@@ -100,8 +94,6 @@ tr:
       user:
         description: "%{user} kullanıcısının en son OpenHistoricalMap günlük girdileri"
         title: "%{user} için OpenHistoricalMap günlük girdileri"
-    profile_diaries:
-      date_label: Tarih
   errors:
     bad_request:
       description: OpenHistoricalMap sunucusunda talep ettiğiniz işlem geçerli değil (HTTP 400)
@@ -114,10 +106,6 @@ tr:
     not_found:
       description: OpenHistoricalMap sunucusunda (HTTP 404) bu ada sahip bir dosya/dizin/API işlemi bulunamadı
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Adaylığı
-        osm_nominatim_reverse: OpenHistoricalMap Adaylığı
     search_osm_nominatim:
       prefix:
         leisure:
@@ -130,23 +118,16 @@ tr:
         historical: Tarihi
         japanesescroll: Japon Parşömeni
         woodblock: Ahşap blok
-      zoom:
-        in: Yakınlaştır
-        out: Uzaklaştır
   layouts:
-    intro_2_create_account: hesap oluşturunuz
     intro_header: OpenHistoricalMap'e hoş geldiniz!
     intro_text: OpenHistoricalMap, sizler tarafından oluşturulan ve açık lisans altında ücretsiz olarak kullanılabilen bir dünya haritasıdır.
     logo:
       alt_text: OpenHistoricalMap logosu
-    logout: Oturumu Kapat
     partners_greeninfo: GreenInfo Ağı
     partners_osmf: OpenStreetMap Vakfı
     partners_osmus: OpenStreetMap ABD
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: Özgür Viki Dünya Haritası
   oauth:
     scopes:
       openid: OpenHistoricalMap'i kullanarak oturum açın
@@ -190,14 +171,6 @@ tr:
         introduction_2_cc_by_url: https://creativecommons.org/licenses/by/4.0/
         introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
         more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
-        more_2_1_api_usage_policy: API Kullanım Politikası
-        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
-        more_2_1_html: |-
-          OpenHistoricalMap açık veri olmasına rağmen, üçüncü taraflar için
-          ücretsiz bir harita API'si veya harita döşemeleri sağlayamıyoruz. %{api_usage_policy_link}, %{tile_usage_policy_link} ve %{nominatim_usage_policy_link} sayfalarına bakınız.
-        more_2_1_nominatim_usage_policy: İsmen Kullanım Politikası
-        more_2_1_tile_usage_policy: Karo Kullanım Politikası
-        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
         more_title_html: Daha fazlasını öğrenin
       title: Telif Hakkı ve Onaylar
     export:
@@ -210,10 +183,6 @@ tr:
           title: OHM Gezegeni
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Sadece %{note_icon} ikonuna tıklayın veya harita görünümü üzerinde aynı ikona tıklayın.
-            Bu haritaya daha sonra sürükleyerek taşıyabileceğiniz bir işaretleyici ekleyecek. Mesajınızı ekleyin ve kaydedin, diğer haritacılar bunu araştıracaklar.
         join_the_community:
           explanation_html: |-
             Harita verilerinde bir sorun fark ettiyseniz, örneğin bir yol veya adresinizin eksik olması gibi,
@@ -235,7 +204,6 @@ tr:
       js_2: OpenHistoricalMap harita gösterim için JavaScript kullanıyor.
       license:
         copyright: OpenHistoricalMap, aksi belirtilmedikçe kamu malı olmaya adanmıştır.
-      remote_failed: Düzenleme başarısız - JOSM veya Merkaartor'un yüklendiğinden ve uzaktan kontrol seçeneğinin etkinleştirildiğinden emin olun.
     potlatch:
       removed: Varsayılan OpenHistoricalMapdüzenleyiciniz Potlatch olarak ayarlanmıştır. Adobe Flash Player geri çekildiğinden, Potlatch artık bir web tarayıcısında kullanılamaz.
     welcome:
@@ -316,7 +284,3 @@ tr:
       duplicate_social_email: Zaten bir OpenHistoricalMap hesabınız varsa ve 3. parti bir kimlik sağlayıcı kullanmak istiyorsanız lütfen şifrenizi kullanarak giriş yapın ve hesabınızın ayarlarını değiştirin.
       please_contact_support_html: Oluşturulacak bir hesap ayarlamak için lütfen %{support_link} ile iletişime geçin - isteğinizi en kısa sürede çözmeye çalışacağız.
       signup_to_authorize_html: "%{client_app_name} uygulamasına erişmek için OpenHistoricalMap'e kaydolun."
-    show:
-      delete_user: Bu Kullanıcıyı Sil
-      hide_user: Bu Kullanıcıyı Gizle
-      unhide_user: Bu Kullanıcıyı Göster

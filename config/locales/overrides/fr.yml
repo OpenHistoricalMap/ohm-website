@@ -134,10 +134,6 @@ fr:
       show:
         delete_introduction: 'Vous pouvez supprimer votre compte OpenHistoricalMap en utilisant le bouton ci-dessous. Veuillez prendre note des détails suivants :'
         retain_caveats: 'Cependant, certaines informations vous concernant seront conservées sur OpenHistoricalMap, même après la suppression de votre compte :'
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms/FR
-        link text: qu’est-ce ?
     terms:
       show:
         tou_explain:
@@ -173,9 +169,6 @@ fr:
       brief_ce: "%{year} EC"
       range: "%{start} – %{end}"
   diary_entries:
-    comments:
-      description: Entrées récentes des journaux d’utilisateurs d’OpenHistoricalMap
-      title: Entrées des journaux OpenHistoricalMap
     feed:
       all:
         description: Entrées récentes des journaux d’utilisateurs d’OpenHistoricalMap
@@ -186,9 +179,6 @@ fr:
       user:
         description: Entrées récentes du journal OpenHistoricalMap de %{user}
         title: Entrées du journal OpenHistoricalMap de %{user}
-    profile_diaries:
-      comments_label: Commentaires
-      date_label: Date
   errors:
     bad_request:
       description: L’opération que vous avez demandée sur le serveur OpenHistoricalMap n’est pas valide (HTTP 400)
@@ -201,10 +191,6 @@ fr:
     not_found:
       description: Impossible de trouver un fichier, un répertoire ou une opération de l’API portant ce nom sur le serveur OpenHistoricalMap (HTTP 404)
   geocoder:
-    search:
-      title:
-        osm_nominatim: OpenHistoricalMap Nominatim
-        osm_nominatim_reverse: OpenHistoricalMap Nominatim
     search_osm_nominatim:
       border_types:
         audiencia: La frontière de l'audience
@@ -225,18 +211,13 @@ fr:
         woodblock: Bloc de bois
       cc0_text: "%{copyright_link}"
       openhistoricalmap_contributors: OHM
-      zoom:
-        in: Vue rapprochée
-        out: Vue éloignée
     query:
       suffix_format: "[%{dates}]"
   layouts:
-    intro_2_create_account: Créez un compte d’utilisateur
     intro_header: Bienvenue dans OpenHistoricalMap !
     intro_text: OpenHistoricalMap est une carte interactive du monde à travers l’histoire, créée par des gens comme vous et dédiée au domaine public.
     logo:
       alt_text: Logo d’OpenHistoricalMap
-    logout: Se déconnecter
     offline_flash:
       osm_offline: La base de données OpenHistoricalMap est actuellement hors ligne du fait de travaux de maintenance essentiels en cours.
       osm_read_only: La base de données OpenHistoricalMap est actuellement en mode lecture seule du fait de travaux de maintenance essentiels en cours.
@@ -245,9 +226,7 @@ fr:
     partners_osmf: Fondation OpenStreetMap
     partners_osmus: OpenStreetMap États-Unis
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: La carte wiki libre du monde
   notes:
     new_readonly:
       warning: De nouvelles notes ne peuvent pas être créées car l’API d’OpenHistoricalMap est actuellement en mode lecture seule.
@@ -388,16 +367,6 @@ fr:
         more_1_ohm_html: Apprenez-en davantage sur les considérations juridiques liées à l'utilisation de nos données ainsi que la manière de nous créditer, %{wiki_link}.
         more_1_wiki: sur le wiki OpenStreetMap
         more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Licence
-        more_2_1_api_usage_policy: politique d’utilisation de l’API
-        more_2_1_api_usage_policy_url: https://operations.osmfoundation.org/policies/api/
-        more_2_1_html: |-
-          Bien qu’OpenHistoricalMap soit des données ouvertes, nous ne pouvons pas fournir une
-          API cartographique ou des carreaux de cartes gratuit·e·s pour des tiers.
-          Consultez notre %{api_usage_policy_link}, celle des %{tile_usage_policy_link} et celle de %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: Nominatim
-        more_2_1_nominatim_usage_policy_url: https://operations.osmfoundation.org/policies/nominatim/
-        more_2_1_tile_usage_policy: tuiles graphiques
-        more_2_1_tile_usage_policy_url: https://operations.osmfoundation.org/policies/tiles/
         more_title_html: Pour trouver plus d’informations
         trademarks_1_ohm_contact_team: contacter l’équipe OpenHistoricalMap
         trademarks_1_ohm_html: Si vous avez des question à propos de votre utilisation du nom OpenHistoricaMap, veuillez %{contact_team_link}.
@@ -418,8 +387,6 @@ fr:
           title: Planète OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: Cliquez tout simplement sur %{note_icon} ou le même icône sur affiché sur la carte. Cela ajoutera un point de repère sur la carte, que vous pouvez déplacer par la glissant. Ajoutez votre messages, puis cliquez “Enregistrer”, et les autres cartographes iront enquêter.
         join_the_community:
           explanation_html: Si vous avez remarqué un problème avec nos données de carte, par exemple s’il manque une route ou votre adresse, le meilleur moyen de faire est de rejoindre la communauté OpenHistoricalMap et d’ajouter ou réparer les données vous-même.
       other_concerns:
@@ -451,7 +418,6 @@ fr:
       js_2: OpenHistoricalMap utilise Javascript pour ses cartes glissantes.
       license:
         copyright: OpenHistoricalMap est dans le domaine public, sauf indication contraire.
-      remote_failed: Échec de la modification — vérifiez que l’éditeur externe JOSM ou Merkaartor est ouvert et que l’option de contrôle à distance de l’application est activée.
     potlatch:
       removed: Votre éditeur OpenHistoricalMap par défaut est fixé à Potlatch. Comme Adobe Flash Player a été retiré, Potlatch n’est plus disponible à l’utilisation dans un navigateur web.
     welcome:
@@ -534,7 +500,3 @@ fr:
       duplicate_social_email: Si vous possédez déjà un compte OpenHistoricalMap et souhaitez utiliser un fournisseur d’identité tiers, veuillez vous connecter en utilisant votre mot de passe et modifier les paramètres de votre compte.
       please_contact_support_html: Veuillez contacter l’%{support_link} pour organiser la création d’un compte — nous essaierons de traiter la demande le plus rapidement possible.
       signup_to_authorize_html: Se connecter à OpenHistoricalMap pour accéder à %{client_app_name}.
-    show:
-      delete_user: Supprimer cet utilisateur ou cette utilisatrice
-      hide_user: Masquer cet utilisateur ou cette utilisatrice
-      unhide_user: Réafficher cet utilisateur ou cette utilisatrice

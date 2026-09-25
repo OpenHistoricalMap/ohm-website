@@ -24,11 +24,6 @@
 # Author: Ruila
 # Do not edit by hand.
 nn:
-  accounts:
-    show:
-      contributor_terms:
-        link: http://www.osmfoundation.org/wiki/License/Contributor_Terms
-        link text: kva er dette?
   api:
     notes:
       rss:
@@ -44,24 +39,13 @@ nn:
       user:
         description: Nye oppføringar i OpenHistoricalMap-dagboka til %{user}
         title: Oppføringar i OpenHistoricalMap-dagboka frå %{user}
-    profile_diaries:
-      date_label: Dato
-  javascripts:
-    map:
-      zoom:
-        in: Vis større
-        out: Vis mindre
   layouts:
-    intro_2_create_account: Opprett ein brukarkonto
     intro_header: Velkomen til OpenHistoricalMap!
     intro_text: OpenHistoricalMap er eit verdskart, laga av folk som deg. Kartet er gratis å bruke under ein open lisens.
     logo:
       alt_text: OpenHistoricalMap-logo
-    logout: Logg ut
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: Fritt Wiki-verdenskart
   sessions:
     destroy:
       heading: Logg ut frå OpenHistoricalMap
@@ -84,12 +68,6 @@ nn:
         credit_title_html: Korleis kreditere OpenHistoricalMap
         infringement_1_html: OHM-bidragsytarar vert minna på å aldri leggje til data frå opphavsrettsbeskytta kjelder (t.d. Google Maps eller utskrivne kart) utan uttrykkeleg løyve frå rettighetshavere.
         introduction_4_creative_commons: Creative Commons Navngiving-DelPåSameVilkår 2.0
-        more_2_1_api_usage_policy: Retningslina for bruk av API
-        more_2_1_html: |-
-          Enda OpenHistoricalMap er ope data, kan vi ikkje levera eit gratis kart-API til tredje partar.
-          Sjå %{api_usage_policy_link}, %{tile_usage_policy_link} og %{nominatim_usage_policy_link}.
-        more_2_1_nominatim_usage_policy: REtningslina for bruk av Nominatim
-        more_2_1_tile_usage_policy: Retningslina for bruk av kartfliser
         more_title_html: Finn ut meir
     export:
       too_large:
@@ -112,7 +90,6 @@ nn:
         title: Velkomen til OpenHistoricalMap
     index:
       js_2: OpenHistoricalMap brukar JavaScript på kartsidene.
-      remote_failed: Klarte ikkje redigere - forsikre deg at JOSM eller Merkaartor er lasta og fjernkontrollvalget er aktivert
   traces:
     feeds:
       show:
@@ -151,8 +128,3 @@ nn:
         subject_own: "[OpenHistoricalMap] %{commenter} har atteraktivert ein av merknadane dine"
     signup_confirm:
       subject: "[OpenHistoricalMap] Velkommen til OpenHistoricalMap"
-  users:
-    show:
-      delete_user: Slett denne brukaren
-      hide_user: Gøym denne brukaren
-      unhide_user: Gøym ikkje lenger denne brukaren

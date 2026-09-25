@@ -8,9 +8,5 @@
 # Author: သူထွန်း
 # Do not edit by hand.
 my:
-  diary_entries:
-    profile_diaries:
-      date_label: နေ့စွဲ
   layouts:
     intro_header: OpenHistoricalMap မှ ကြိုဆိုပါ၏
-    logout: ထွက်ရန်

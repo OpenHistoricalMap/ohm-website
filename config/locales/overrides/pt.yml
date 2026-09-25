@@ -15,10 +15,6 @@ pt:
       show:
         delete_introduction: 'Você pode excluir sua conta do OpenHistoricalMap usando o botão abaixo. Observe os seguintes detalhes:'
         retain_caveats: 'No entanto, algumas informações sobre você serão mantidas no OpenHistoricalMap, mesmo após a exclusão da sua conta:'
-    show:
-      contributor_terms:
-        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
-        link text: o que é isto?
     terms:
       show:
         read and accept with tou: Por favor, leia o contrato de colaborador e os termos de uso, marque ambas as caixas de seleção quando terminar e pressione o botão continuar.
@@ -46,9 +42,6 @@ pt:
       brief_ce: "%{year} d. C."
       range: "%{start} – %{end}"
   diary_entries:
-    comments:
-      description: Entradas recentes do diário de usuários do OpenHistoricalMap
-      title: Entradas do diário OpenHistoricalMap
     feed:
       all:
         description: Publicações no diário recentes de usuários do OpenHistoricalMap
@@ -59,9 +52,6 @@ pt:
       user:
         description: Publicações recentes no diário do OpenHistoricalMap de %{user}
         title: Publicações do diário do OpenHistoricalMap de %{user}
-    profile_diaries:
-      comments_label: Comentários
-      date_label: Data
   geocoder:
     search_osm_nominatim:
       prefix:
@@ -75,20 +65,13 @@ pt:
         historical: Histórico
         japanesescroll: Pergaminho japonês
         woodblock: Bloco de madeira
-      zoom:
-        in: Aproximar
-        out: Afastar
   layouts:
-    intro_2_create_account: Criar uma conta de usuário
     intro_header: Bem-vindo(a) ao OpenHistoricalMap!
     intro_text: O OpenHistoricalMap é um mapa do mundo, criado por pessoas como você e de uso livre sob uma licença aberta.
     logo:
       alt_text: Logotipo do OpenHistoricalMap
-    logout: Sair
     project_name:
-      h1: OpenHistoricalMap
       title: OpenHistoricalMap
-    tag_line: A Wiki de mapas livres
   printable_name:
     with_date_html: "%{name} [%{dates}]"
   sessions:
@@ -132,10 +115,6 @@ pt:
           title: Planeta OHM
     fixthemap:
       how_to_help:
-        add_a_note:
-          instructions_1_html: |-
-            Apenas clique em %{note_icon} ou no mesmo ícone na interface do mapa.
-            Isto incluirá um marcador ao mapa, que você pode mover arrastando. Adicione a sua mensagem, clique em salvar, e outros utilizadores como você vão investigar.
         join_the_community:
           explanation_html: Se você achou um problema nos dados do nosso mapa, como por exemplo uma estrada ou o seu endereço em falta, o melhor a fazer é juntar-se à comunidade do OpenHistoricalMap e incluir ou reparar os dados você mesmo.
     help:
@@ -151,7 +130,6 @@ pt:
       js_2: O OpenHistoricalMap usa JavaScript para a navegação dos mapas.
       license:
         copyright: Direitos autorais do OpenHistoricalMap e contribuidores sob uma licença aberta
-      remote_failed: Falha ao editar - certifique-se de que o JOSM ou o Merkaartor estão carregados e que o Controle Remoto está ativado
     welcome:
       basic_terms:
         paragraph_1: OpenHistoricalMap tem seus próprios jargões. Aqui estão algumas palavras-chave úteis.
@@ -212,7 +190,3 @@ pt:
       option_1: |-
         Se você é novo no OpenHistoricalMap, por favor, crie uma nova conta
         utilizando o formulário abaixo.
-    show:
-      delete_user: Excluir este usuário
-      hide_user: Esconder esse usuário
-      unhide_user: Exibir esse usuário
