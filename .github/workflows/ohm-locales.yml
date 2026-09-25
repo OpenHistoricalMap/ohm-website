@@ -23,3 +23,7 @@ jobs:
         ruby-version: '3.4'
     - name: Check which upstream keys need an OHM override
       run: ruby script/ohm/check_locales.rb
+    - name: Check that every key the code renders exists
+      run: |
+        gem install i18n-tasks --no-document
+        i18n-tasks missing --locales en

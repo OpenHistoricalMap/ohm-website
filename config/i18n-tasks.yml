@@ -17,6 +17,7 @@ data:
   read:
     ## Default:
     - config/locales/en.yml
+    - config/locales/overrides/en.yml
     ## More files:
     # - config/locales/**/*.%{locale}.yml
 
@@ -119,6 +120,20 @@ ignore_missing:
 # - '{devise,simple_form}.*'
   - 'geocoder.search_osm_nominatim.admin_levels.level' # does not exist; is always concatenated with level numbers
   - 'javascripts.site.map_' # does not exist; is always concatenated with `name` & `_zoom_in_tooltip`
+  # Lazy keys inside a block passed to `render :layout` or a partial resolve to the partial's scope.
+  - 'site.about.*' # rendered inside site/_about_section
+  - 'users.show.home_location' # rendered inside users/_sidebar_section
+  - 'users.show.company'
+  - 'users.show.company_tooltip'
+  # Lazy keys in a shared controller method resolve to the calling action or subclass.
+  - 'confirmations.gravatar_status_message.*'
+  - 'messages.read_marks.*'
+  - 'profiles.profile_sections.update.*'
+  # Rails ships these in active_support.
+  - 'date.abbr_month_names'
+  - 'date.abbr_day_names'
+  # The privacy policy strings were removed in #303; see OpenHistoricalMap/issues#1417.
+  - 'site.ohm_privacy_policy.*'
 
 ## Consider these keys used:
 ignore_unused:

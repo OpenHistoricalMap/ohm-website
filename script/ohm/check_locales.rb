@@ -8,7 +8,7 @@
 # is also where stale text piles up: upstream renames a key, drops a model or
 # rewrites a sentence, and our copy stays behind saying nothing to nobody.
 #
-# Four checks, three of them fatal:
+# Four checks, all fatal:
 #
 #   1. upstream says OpenStreetMap, the site shows it, and we have no override.
 #      Someone reads OpenStreetMap on an OHM page.                      (fails)
@@ -20,13 +20,14 @@
 #      nothing and is one more string to keep in sync.                   (fails)
 #
 #   4. upstream has no such key and nothing in the code renders it, so it is
-#      probably left over from a page or model that went away.         (reports)
+#      left over from a page or model that went away, or upstream renamed
+#      the key and our override no longer applies.                       (fails)
 #
-# Check 4 only reports, because some keys are built at runtime, as in
-# t("...border_types.#{value}"), and no scan can prove those are dead. Treat its
-# list as candidates to read, not as a verdict.
+# Some keys are built at runtime, as in t("...border_types.#{value}"), and no
+# scan can see those. Their scopes are listed in DYNAMIC_SCOPES so check 4
+# skips them.
 #
-# Scope: English only. The other 109 override files come from Translatewiki, and
+# Scope: English only. The other override files come from Translatewiki, and
 # OHM forked many views under new key names, so keys nothing renders are left
 # alone rather than guessed at.
 
@@ -68,7 +69,8 @@ KEEP_UPSTREAM_WORDING = [
 # Scopes the scan cannot follow, so the unused report skips them.
 DYNAMIC_SCOPES = [
   "site.about_section.",
-  "geocoder.search_osm_nominatim."
+  "geocoder.search_osm_nominatim.",
+  "date.formats." # lib/date_range.rb picks the format name at runtime
 ].freeze
 
 # Flat "site.about.title" => "text" hash.
@@ -106,8 +108,8 @@ def rendered
     end
   end
 
-  Dir.glob("#{ROOT}/app/views/**/*.erb").each do |file|
-    here = file.sub("#{ROOT}/app/views/", "").sub(/\.\w+\.erb\z/, "").split("/")
+  Dir.glob("#{ROOT}/app/views/**/*.{erb,builder}").each do |file|
+    here = file.sub("#{ROOT}/app/views/", "").sub(/\.\w+\.(erb|builder)\z/, "").split("/")
     here[-1] = here[-1].delete_prefix("_")
     scan.call(File.read(file), here.join("."))
   end
@@ -183,16 +185,17 @@ if same_as_upstream.any?
   problems = true
 end
 
-# Not in upstream and nothing renders it. Reported only: some keys are built at
-# runtime and no scan can see them.
+# Not in upstream and nothing renders it: dead, or upstream renamed the key.
 unused = overrides.keys.reject { |key| upstream.key?(key) || shown.call(key) }
 unused = unused.reject { |key| DYNAMIC_SCOPES.any? { |scope| key.start_with?(scope) } }
 
 if unused.any?
-  show("#{unused.length} override(s) may be unused: upstream has no such key and nothing renders it",
+  show("#{unused.length} override(s) are unused: upstream has no such key and nothing renders it",
        unused.map { |key| "  #{key}" })
-  puts "Check each one before deleting. If a key is built at runtime, add its scope"
-  puts "to DYNAMIC_SCOPES in this script instead."
+  puts "Delete them from config/locales/overrides/*.yml, or move the override to the"
+  puts "key upstream uses now. If a key is built at runtime, add its scope to"
+  puts "DYNAMIC_SCOPES in this script instead."
+  problems = true
 end
 
 unless problems
