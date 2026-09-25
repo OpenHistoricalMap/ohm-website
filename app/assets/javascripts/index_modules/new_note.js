@@ -163,6 +163,8 @@ export default function (map) {
     addNoteButton.on("disabled enabled", updateControls);
     updateControls();
 
+    addOpenHistoricalMapTimeSlider(map);
+
     return map.getState();
   };
 

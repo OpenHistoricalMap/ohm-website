@@ -1,0 +1,11 @@
+# Messages for Lakota (Lakȟótiyapi)
+# Exported from translatewiki.net
+# Author: Minh Nguyen
+# Author: Tuwewanzi
+# Do not edit by hand.
+lkt:
+  site:
+    export:
+      too_large:
+        planet:
+          title: Planet OSM

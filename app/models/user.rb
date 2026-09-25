@@ -20,7 +20,7 @@
 #  languages            :string
 #  status               :enum             default("pending"), not null
 #  terms_agreed         :datetime
-#  consider_pd          :boolean          default(FALSE), not null
+#  consider_pd          :boolean          default(TRUE), not null
 #  auth_uid             :string
 #  preferred_editor     :string
 #  terms_seen           :boolean          default(FALSE), not null

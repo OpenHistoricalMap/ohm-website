@@ -57,10 +57,25 @@ export default function (map) {
     }
   }
 
+  // Move the slider so the picked feature is visible. If it already exists at the
+  // current time we leave the slider alone.
+  function adjustTimeSliderToResult(data) {
+    if (!map.timeslider) return;
+    if (!data.startDate && !data.endDate) return;
+
+    // leave the slider alone if the feature already exists at the current time
+    if (OSM.Date.existsAt(data.startDate, data.endDate, map.timeslider.getDate())) return;
+
+    // out of view: jump to start_date, or to end_date when there is no start
+    const target = OSM.Date.padDate(data.startDate || data.endDate, "start");
+    if (target) map.timeslider.setDate(target);
+  }
+
   function clickSearchResult(e) {
     const data = $(this).data();
 
     panToSearchResult(data);
+    adjustTimeSliderToResult(data);
 
     // Let clicks to object browser links propagate.
     if (data.type && data.id) return;
@@ -96,6 +111,8 @@ export default function (map) {
           }
         });
     });
+
+    addOpenHistoricalMapTimeSlider(map);
 
     return map.getState();
   };

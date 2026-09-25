@@ -1,0 +1,21 @@
+# Messages for Saraiki (Arabic script) (سرائیکی)
+# Exported from translatewiki.net
+# Author: Ajeje Brazorf
+# Author: Saraiki
+# Author: Sayam Asjad
+# Author: Umar Shahid
+# Do not edit by hand.
+skr-arab:
+  site:
+    about_section:
+      legal_1_privacy_policy: رازداری پالیسی
+      legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
+    help:
+      slack:
+        title: آئی آر سی
+  traces:
+    show:
+      edit: تبدیلی کرو
+      map: نقشہ
+    trace:
+      view_map: نقشہ ݙیکھو

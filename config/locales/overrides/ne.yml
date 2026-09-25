@@ -1,0 +1,62 @@
+# Messages for Nepali (नेपाली)
+# Exported from translatewiki.net
+# Author: Bada Kaji
+# Author: Danieldegroot2
+# Author: Drjpoudel
+# Author: Erictheise
+# Author: Gravitystorm
+# Author: Haribanshi
+# Author: Krish Dulal
+# Author: Minh Nguyen
+# Author: Nirajan pant
+# Author: Nirjal stha
+# Author: Njsubedi
+# Author: RajeshPandey
+# Author: पर्वत सुबेदी
+# Author: बडा काजी
+# Author: राम प्रसाद जोशी
+# Author: सरोज कुमार ढकाल
+# Author: हिमाल सुबेदी
+# Do not edit by hand.
+ne:
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap परिवर्वतन सूची छलफल
+        title_particular: 'OpenHistoricalMap परिवर्तन सूची #%{changeset_id} छलफल'
+  diary_entries:
+    feed:
+      all:
+        description: OpenHistoricalMap प्रयोगकर्ताहरूका हालैका डायरी प्रविष्टीहरू
+        title: OpenHistoricalMap डायरी प्रविष्टीहरू
+      language:
+        description: "%{language_name} भाषामा OpenHistoricalMap प्रयोगकर्ताहरूका हालैका डायरी"
+        title: "%{language_name} भाषामा OpenHistoricalMap दैनिकी"
+      user:
+        description: "%{user}को लागि हालैका OpenHistoricalMap डायरी"
+        title: "%{user}को लागि OpenHistoricalMap डायरी"
+  layouts:
+    logo:
+      alt_text: OpenHistoricalMap लोगो
+    project_name:
+      title: OpenHistoricalMap
+  site:
+    about_section:
+      legal_1_privacy_policy: गोपनीयता नीति
+    copyright:
+      legal_babble:
+        more_title_html: थप जान्नको लागि
+    export:
+      too_large:
+        overpass:
+          description: OpenHistoricalMap तथ्याङ्कको अर्को स्रोतबाट यो सिमारेखा प्राप्त गर्नुहोस्
+    help:
+      discord:
+        title: डिस्कर्ड
+      slack:
+        title: आईआरसि
+      wiki:
+        title: विकि
+  time:
+    formats:
+      blog: "%B %e, %Y"

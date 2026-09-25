@@ -1,4 +1,4 @@
-//= require @openstreetmap/id/dist/iD.js
+//= require @openhistoricalmap/id/dist/iD.js
 
 /* globals iD */
 
@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const url = location.protocol + "//" + location.host;
     idContext.preauth({
       url: url,
-      apiUrl: url.replace("www.openstreetmap.org", "api.openstreetmap.org"),
+      apiUrl: url.replace("www.openhistoricalmap.org", "api.openhistoricalmap.org"),
       access_token: container.dataset.token
     });
 
     const id = idContext
       .embed(true)
-      .assetPath("@openstreetmap/id/dist/")
+      .assetPath("@openhistoricalmap/id/dist/")
       .assetMap(JSON.parse(container.dataset.assetMap))
       .locale(container.dataset.locale)
       .theme(container.dataset.theme)

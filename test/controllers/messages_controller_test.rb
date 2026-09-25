@@ -45,7 +45,7 @@ class MessagesControllerTest < ActionDispatch::IntegrationTest
     get new_message_path(recipient_user)
     assert_response :success
     assert_template "new"
-    assert_select "title", "Send message | OpenStreetMap"
+    assert_select "title", "Send message | OpenHistoricalMap"
     assert_select "a[href='#{user_path recipient_user}']", :text => recipient_user.display_name
     assert_select "form[action='/messages']", :count => 1 do
       assert_select "input[type='hidden'][name='display_name'][value='#{recipient_user.display_name}']"
@@ -73,7 +73,7 @@ class MessagesControllerTest < ActionDispatch::IntegrationTest
     end
     assert_response :success
     assert_template "new"
-    assert_select "title", "Send message | OpenStreetMap"
+    assert_select "title", "Send message | OpenHistoricalMap"
     assert_select "form[action='/messages']", :count => 1 do
       assert_select "input[type='hidden'][name='display_name'][value='#{recipient_user.display_name}']"
       assert_select "input#message_title", :count => 1 do
@@ -103,7 +103,7 @@ class MessagesControllerTest < ActionDispatch::IntegrationTest
     end
     assert_response :success
     assert_template "new"
-    assert_select "title", "Send message | OpenStreetMap"
+    assert_select "title", "Send message | OpenHistoricalMap"
     assert_select "form[action='/messages']", :count => 1 do
       assert_select "input[type='hidden'][name='display_name'][value='#{recipient_user.display_name}']"
       assert_select "input#message_title", :count => 1 do
@@ -133,7 +133,7 @@ class MessagesControllerTest < ActionDispatch::IntegrationTest
     end
     assert_response :success
     assert_template "new"
-    assert_select "title", "Send message | OpenStreetMap"
+    assert_select "title", "Send message | OpenHistoricalMap"
     assert_select "form[action='/messages']", :count => 1 do
       assert_select "input[type='hidden'][name='display_name'][value='#{recipient_user.display_name}']"
       assert_select "input#message_title", :count => 1 do
@@ -165,7 +165,7 @@ class MessagesControllerTest < ActionDispatch::IntegrationTest
     assert_equal "Message sent", flash[:notice]
     e = ActionMailer::Base.deliveries.first
     assert_equal [recipient_user.email], e.to
-    assert_equal "[OpenStreetMap] Test Message", e.subject
+    assert_equal "[OpenHistoricalMap] Test Message", e.subject
     assert_match(/Test message body/, e.text_part.decoded)
     assert_match(/Test message body/, e.html_part.decoded)
     assert_match %r{#{Settings.server_url}/messages/[0-9]+}, e.text_part.decoded

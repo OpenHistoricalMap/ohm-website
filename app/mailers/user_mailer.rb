@@ -242,7 +242,7 @@ class UserMailer < ApplicationMailer
   end
 
   def attach_project_logo
-    attachments.inline["logo.png"] = Rails.root.join("app/assets/images/osm_logo_30.png").read
+    attachments.inline["logo.png"] = Rails.root.join("app/assets/images/ohm_logo_30.png").read
   end
 
   def attach_user_avatar(user)

@@ -1,0 +1,70 @@
+# Messages for Bashkir (башҡортса)
+# Exported from translatewiki.net
+# Author: AiseluRB
+# Author: Bashkorttan
+# Author: Erictheise
+# Author: Lizalizaufa
+# Author: MR973
+# Author: Minh Nguyen
+# Author: Roustammr
+# Author: Sagan
+# Author: Visem
+# Author: Азат Хәлилов
+# Author: Айсар
+# Author: З. ӘЙЛЕ
+# Author: Ләйсән
+# Author: Рустам Нурыев
+# Author: Янмурза Баки
+# Do not edit by hand.
+ba:
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap Яҙмалары
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap төҙәтмәләр пакеты буйынса фекерләшеү
+        title_particular: 'OpenHistoricalMap #%{changeset_id} төҙәтмәләр пакеты буйынса фекерләшеү'
+  diary_entries:
+    feed:
+      all:
+        description: OpenHistoricalMap ҡулланысыларының һуңғы көндәлек яҙмалары
+        title: OpenHistoricalMap көндәлек яҙмаһы
+      language:
+        description: OpenHistoricalMap ҡулланыусыларының %{language_name}тағы һуңғы яҙмалары
+        title: "%{language_name} OpenHistoricalMap көндәлек яҙмаһы"
+      user:
+        description: "%{user} OpenHistoricalMap көндәлек яҙмаһының һуңғыһы"
+        title: "%{user} OpenHistoricalMap көндәлеге яҙмаһы"
+  errors:
+    bad_request:
+      description: OpenHistoricalMap серверында һораған операцияғыҙ дөрөҫ түгел (HTTP 400)
+    contact:
+      contact_the_community_html: Әгәр ҙә боҙоҡ һылтанма/хаталыҡ тапһағыҙ, %{contact_link} OpenHistoricalMap берләшмәһе менән бәйләнешкә сығырға ҡурҡмағыҙ. Үтенесегеҙҙең теүәл URL-адресын яҙып ҡуйығыҙ.
+    forbidden:
+      description: OpenHistoricalMap серверында һораған операцияғыҙ тик администраторҙар өсөн генә мөмкин (HTTP 403)
+    internal_server_error:
+      description: OpenHistoricalMap серверында һорауҙы үтәүгә ҡамасаулаған көтөлмәгән шарттар килеп сыҡты (HTTP 500)
+    not_found:
+      description: OpenHistoricalMap серверында был исем менән файл/директория/API операцияһы табылманы (HTTP 404)
+  layouts:
+    intro_header: OpenHistoricalMap-ҡа рәхим итегеҙ!
+    intro_text: OpenHistoricalMap — был донъя картаһы, ул һеҙҙең кеүек кешеләр тарафынан төҙөлә һәм асыҡ лицензия аҫтында ирекле ҡулланыу өсөн тәғәйенләнгән.
+    logo:
+      alt_text: OpenHistoricalMap логотибы
+  site:
+    export:
+      too_large:
+        planet:
+          title: OHM планетаһы
+  user_mailer:
+    diary_comment_notification:
+      description: OpenHistoricalMap көндәлек яҙмаһы №%{id}
+      header: "%{from_user} OpenHistoricalMap көндәлек яҙмаһына %{subject} темаһы буйынса аңлатма бирҙе:"
+      header_html: '%{from_user} OpenHistoricalMap көндәлек яҙмаһына \"%{subject}\" темаһы буйынса аңлатма бирҙе:'
+      subject: "[OpenHistoricalMap] %{user} көндәлек яҙмаһына аңлатма бирҙе"
+    message_notification:
+      header: '%{from_user} һеҙгә OpenHistoricalMap аша "%{subject}" темаһы менән хәбәр ебәрҙе:'
+      header_html: '%{from_user} һеҙгә OpenHistoricalMap аша "%{subject}" темаһы менән хәбәр ебәрҙе:'
+      subject: "[OpenHistoricalMap] %{message_title}"

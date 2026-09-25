@@ -2,6 +2,8 @@
 
 module Searches
   class NominatimQueriesController < QueriesController
+    require "date_range"
+
     include NominatimMethods
 
     def create
@@ -10,7 +12,6 @@ module Searches
 
       # extract the results from the response
       results = response.elements["searchresults"]
-
       # create result array
       @results = []
 
@@ -32,7 +33,16 @@ module Searches
                       else
                         t "geocoder.search_osm_nominatim.prefix.#{klass}.#{type}", :default => type.tr("_", " ").capitalize
                       end
-        if klass == "boundary" && type == "administrative"
+        # Keep in sync with qualifiedBoundaryTypes in OSM.Query.featurePrefix.
+        qualified_boundary_types = %w[
+          administrative
+          census
+          religious_administrative
+          statistical
+        ]
+        if klass == "boundary" && qualified_boundary_types.include?(type)
+          rank = (place.attributes["address_rank"].to_i + 1) / 2
+          prefix_name = t "geocoder.search_osm_nominatim.admin_levels.level#{rank}", :default => prefix_name
           border_type = nil
           place_type = nil
           admin_type = nil
@@ -48,10 +58,21 @@ module Searches
         object_type = place.attributes["osm_type"]
         object_id = place.attributes["osm_id"]
 
+        start_date, end_date = nil
+        place.elements["extratags"]&.elements&.each("tag") do |extratag|
+          if extratag.attributes["key"] == "start_date"
+            start_date = extratag.attributes["value"]
+          elsif extratag.attributes["key"] == "end_date"
+            end_date = extratag.attributes["value"]
+          end
+        end
+        suffix = t "geocoder.search_osm_nominatim.suffix_format", :dates => DateRange.new(start_date, end_date).to_s if start_date || end_date
+
         @results.push(:lat => lat, :lon => lon,
                       :min_lat => min_lat, :max_lat => max_lat,
                       :min_lon => min_lon, :max_lon => max_lon,
-                      :prefix => prefix, :name => name,
+                      :prefix => prefix, :name => name, :suffix => suffix,
+                      :start_date => start_date, :end_date => end_date,
                       :type => object_type, :id => object_id)
       end
     rescue StandardError => e

@@ -45,7 +45,6 @@ module ApplicationHelper
       [export_path, t("layouts.header.export"), { :class => ["geolink"] }],
       [traces_path, t("layouts.header.gps_traces")],
       [diary_entries_path, t("layouts.header.user_diaries")],
-      [communities_path, t("layouts.header.communities")],
       [copyright_path, t("layouts.header.copyright")],
       [help_path, t("layouts.header.help")],
       [Settings.donation_url, t("layouts.header.donate"), { :target => :new }],

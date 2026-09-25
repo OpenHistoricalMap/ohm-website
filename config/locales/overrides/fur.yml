@@ -1,0 +1,89 @@
+# Messages for Friulian (furlan)
+# Exported from translatewiki.net
+# Author: Danieldegroot2
+# Author: Davio
+# Author: Erictheise
+# Author: Klenje
+# Author: Macofe
+# Author: Minh Nguyen
+# Author: Tocaibon
+# Do not edit by hand.
+fur:
+  api:
+    notes:
+      rss:
+        title: Notis di OpenHistoricalMap
+  changeset_comments:
+    feeds:
+      show:
+        title_all: Discussion sul grup di cambiaments di OpenHistoricalMap
+        title_particular: 'Discussion sul grup di cambiaments #%{changeset_id} di OpenHistoricalMap'
+  date:
+    formats:
+      brief_bce: "%{year} pdC"
+      brief_ce: "%{year} ddC"
+  diary_entries:
+    feed:
+      all:
+        description: Lis ultimis vôs dai diaris dai utents di OpenHistoricalMap
+        title: Vôs dai diaris di OpenHistoricalMap
+      language:
+        description: Ultimis vôs par %{language_name} dai diaris dai utents di OpenHistoricalMap
+        title: Vôs dai diaris di OpenHistoricalMap par %{language_name}
+      user:
+        description: Ultimis vôs dal diari di OpenHistoricalMap di %{user}
+        title: Vôs dal diari di OpenHistoricalMap par %{user}
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        leisure:
+          track: Piste pe corse
+  layouts:
+    intro_header: Benvignût in OpenHistoricalMap!
+    intro_text: OpenHistoricalMap e je une mape dal mont, creade di int come te e di ûs libar sot di une licence vierte.
+    logo:
+      alt_text: Logo di OpenHistoricalMap
+  sessions:
+    destroy:
+      heading: Va fûr di OpenHistoricalMap
+  site:
+    about_section:
+      contribute_1_user_diaries: diaris dai utents
+    copyright:
+      legal_babble:
+        more_title_html: Par savênt di plui
+      title: Copyright e ricognossiments
+    export:
+      too_large:
+        body: Cheste aree e je masse grande par espuartâle come dâts XML di OpenHistoricalMap. Par plasê incrès il zoom, sielç une aree plui piçule o dopre une des sorzints ca sot par discjamâ un grum di dâts.
+    help:
+      slack:
+        title: IRC
+      welcome:
+        title: Benvignûts in OpenHistoricalMap
+    index:
+      js_2: OpenHistoricalMap al dopre JavaScript par mostrâ la sô mape.
+  traces:
+    feeds:
+      show:
+        title: Percors GPS di OpenHistoricalMap
+    show:
+      edit: cambie
+      edit_trace: Cambie chest percors
+      map: mape
+    trace:
+      edit_map: Cambie mape
+      view_map: Viôt mape
+  user_mailer:
+    diary_comment_notification:
+      header: "%{from_user} al à zontât un coment ae tô vôs dal diari di OpenHistoricalMap cun sogjet %{subject}:"
+      subject: "[OpenHistoricalMap] %{user} al à zontât un coment ae tô vôs dal diari"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Conferme la tô direzion di pueste eletroniche"
+    gpx_success:
+      subject: "[OpenHistoricalMap] Impuartazion GPX completade cun sucès"
+    message_notification:
+      header: "%{from_user} ti à mandât un messaç su OpenHistoricalMap cun sogjet %{subject}:"
+      subject: "[OpenHistoricalMap] %{message_title}"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Benvignût in OpenHistoricalMap"
