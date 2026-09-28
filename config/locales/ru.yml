@@ -134,7 +134,7 @@ ru:
       brief: '%{year}'
       brief_bce: '%{year} до н. э.'
       brief_ce: '%{year} н. э.'
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
       range: '%{start} – %{end}'
   time:
     formats:

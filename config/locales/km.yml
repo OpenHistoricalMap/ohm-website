@@ -9,6 +9,10 @@
 # Author: វ័ណថារិទ្ធ
 ---
 km:
+  date:
+    formats:
+      brief_bce: '%{year} មុនគ.ស.'
+      brief_ce: '%{year} នៃគ.ស.'
   time:
     formats:
       friendly: ថ្ងៃ%e ខែ%B ឆ្នាំ%Y នៅម៉ោង %H:%M
@@ -17,7 +21,7 @@ km:
       prompt: ជ្រើសរើស​ឯកសារ
     submit:
       diary_comment:
-        create: មតិយោបល់
+        create: យោបល់
       diary_entry:
         create: បោះផ្សាយ
         update: ធ្វើបច្ចុប្បន្នភាព
@@ -87,6 +91,9 @@ km:
         title: ប្រធានបទ​
         body: តួសេចក្ដី​
         recipient: អ្នក​ទទួល​
+      redaction:
+        title: ចំណងជើង
+        description: ការពិពណ៌នា
       user:
         email: អ៊ីម៉ែល​
         active: សកម្ម​
@@ -209,7 +216,7 @@ km:
       user_title: កំណត់ហេតុរបស់ %{user}
       leave_a_comment: បញ្ចេញមតិយោបល់​
       login_to_leave_a_comment_html: '%{login_link} ដើម្បីបញ្ចេញមតិយោបល់​'
-      login: កត់ឈ្មោះចូល
+      login: បញ្ជាប់ចូល
     diary_entry:
       comment_count:
         zero: គ្មានមតិយោបល់
@@ -413,7 +420,7 @@ km:
           fitness_station: ស្ថានីយ៍ហាត់ប្រាណ
           garden: សួនច្បារ
           golf_course: ទីលានកូនហ្គោល
-          horse_riding: កន្លែងជិះសេះ
+          horse_riding: មជ្ឈមណ្ឌលជិះសេះ
           ice_rink: តារាងលេងស្គីលើទឹកកក
           nature_reserve: តំបន់អភិរក្សធម្មជាតិ
           park: ឧទ្យាន​
@@ -618,9 +625,9 @@ km:
         subject: ប្រធានបទ​
   sessions:
     new:
-      tab_title: កត់ឈ្មោះចូល
-      email or username: អាសយដ្ឋានអ៊ីមែល ឬឈ្មោះអ្នកប្រើប្រាស់​៖
-      login_button: កត់ឈ្មោះចូល
+      tab_title: បញ្ជាប់ចូល
+      email or username: អាសយដ្ឋានអុីមែល ឬអត្ថនាម
+      login_button: បញ្ជាប់ចូល
     destroy:
       title: កត់ឈ្មោះចេញ
       logout_button: កត់ឈ្មោះចេញ
@@ -667,7 +674,7 @@ km:
         farm: កសិដ្ឋាន​
         centre: មជ្ឈមណ្ឌល​កីឡា​
         school: សាលារៀន​
-        university: សាកលវិទ្យាល័យ​
+        university: សាកលវិទ្យាល័យ
         station: ស្ថានីយ៍ផ្លូវដែក
   traces:
     new:
@@ -707,7 +714,7 @@ km:
     new:
       title: ចុះឈ្មោះ​ចូល
       continue: ចុះឈ្មោះចូល
-      use external auth: ប្រើភ្នាក់ងារទី៣ដើម្បីកត់ឈ្មោះចូល
+      use external auth: ឬក៏ចុះឈ្មោះជាមួយតតិយភាគី
     show:
       my edits: កំណែប្រែ​របស់ខ្ញុំ​
       edits: កំណែប្រែ​

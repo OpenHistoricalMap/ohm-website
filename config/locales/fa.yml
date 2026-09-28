@@ -26,6 +26,7 @@
 # Author: Iriman
 # Author: Jafari
 # Author: Jeeputer
+# Author: LProfo
 # Author: Leyth
 # Author: LordProfo
 # Author: Mcuteangel
@@ -182,8 +183,8 @@ fa:
         description: توضیحات نمایه
         home_lat: عرض جغرافیایی
         home_lon: طول جغرافیایی
-        languages: زبان‌های مورد ترجیح
-        preferred_editor: ویرایش‌گر مورد ترجیح
+        languages: زبان‌های ترجیحی
+        preferred_editor: ویرایشگر ترجیحی
         pass_crypt: رمز عبور
         pass_crypt_confirmation: تأیید رمز عبور
     help:
@@ -1727,6 +1728,7 @@ fa:
     basic_preferences:
       show:
         title: ترجیحات من
+        preferred_language: زبان ترجیحی
         save: ذخیره‌کردن ترجیحات
   profiles:
     profile_sections:

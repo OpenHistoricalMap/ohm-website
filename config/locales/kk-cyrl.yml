@@ -13,7 +13,7 @@ kk-cyrl:
       brief: '%{year}'
       brief_bce: б.з.д. %{year}
       brief_ce: б.з. %{year}
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
       range: '%{start} – %{end}'
   time:
     formats:

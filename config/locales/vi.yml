@@ -37,7 +37,7 @@ vi:
     formats:
       brief_bce: '%{year} TCN'
       brief_ce: '%{year} CN'
-      heatmap: '%-d tháng %-m'
+      contribution_calendar: '%-d tháng %-m'
   time:
     formats:
       friendly: '%e tháng %-m năm %Y lúc %H:%M'
@@ -3612,7 +3612,7 @@ vi:
     home:
       marker_title: Vị trí nhà ở của tôi
       not_set: Tài khoản của bạn chưa đặt vị trí nhà ở
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Không đóng góp vào %{date}
         contributions:

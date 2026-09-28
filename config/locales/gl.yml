@@ -27,7 +27,7 @@ gl:
       brief: '%{year}'
       brief_bce: '%{year} a. e. c.'
       brief_ce: '%{year} e. c.'
-      heatmap: '%-d de %B'
+      contribution_calendar: '%-d de %B'
       range: '%{start} – %{end}'
   time:
     formats:
@@ -3716,9 +3716,9 @@ gl:
     show:
       title: '%{block_on} bloqueado por %{block_by}'
       heading_html: '%{block_on} bloqueado por %{block_by}'
-      created: Creado
+      created: 'Creado:'
       duration: 'Duración:'
-      status: Estado
+      status: 'Estado:'
       edit: Editar
       reason: 'Motivo para o bloqueo:'
       revoker: 'Autor da revogación:'
@@ -4049,7 +4049,7 @@ gl:
     home:
       marker_title: Localización da miña casa
       not_set: A localización da túa casa non está configurada para a túa conta
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Non hai contribucións o %{date}
         contributions:

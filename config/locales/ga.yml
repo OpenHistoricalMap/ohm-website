@@ -14,7 +14,7 @@ ga:
       brief: '%{year}'
       brief_bce: '%{year} RCR'
       brief_ce: '%{year} CR'
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
       range: '%{start} – %{end}'
   time:
     formats:
@@ -904,6 +904,9 @@ ga:
       title: Níor aimsíodh an comhad
       description: Níorbh fhéidir comhad/eolaire/oibríocht API leis an ainm sin a
         aimsiú ar an bhfreastalaí OpenHistoricalMap (HTTP 404)
+  export:
+    show:
+      title: OpenHistoricalMap Leabaithe
   follows:
     show:
       follow:
@@ -1829,6 +1832,7 @@ ga:
       download: Íoslódáil an bealach mar GeoJSON
       filename: bealach
       directions_courtesy_html: Treoracha le caoinchead %{link}
+      check_demo_html: Tuilleadh sonraí ó %{link}
   issues:
     index:
       title: Fadhbanna
@@ -1915,6 +1919,9 @@ ga:
       other_issues_against_this_user: Fadhbanna eile i leith an úsáideora seo
       no_other_issues: Níl aon fhadhb eile i leith an úsáideora seo.
       comments_on_this_issue: Nótaí tráchta faoin bhfadhb
+      comment_from_html: Trácht ó %{user_link} ar %{comment_created_at}
+      reassign_to_moderators: Athshann an Cheist do Mhodhnóirí
+      reassign_to_administrators: Athshann an Fhadhb do Riarthóirí
   issue_comments:
     create:
       comment_created: Cruthaíodh do thrácht go rathúil
@@ -1954,9 +1961,127 @@ ga:
     create:
       successful_report: Cláraíodh an tuairisc uait
       provide_details: Tabhair na sonraí is gá le do thoil
+  languages_panes:
+    select_language_list:
+      search_language: Cuardaigh...
+      languages:
+        af: Afracáinis
+        gsw: Alemannach
+        frp: Arpitan
+        ast: Astúiris
+        az: Asarbaiseáinis
+        id: Indinéisis
+        ms: Malaeis
+        bcl: Lár Bikol
+        bs: Boisnis
+        br: Briotáinis
+        ca: Catalóinis
+        cs: Seiceach
+        cy: Breatnais
+        da: Danmhairgis
+        de: Gearmáinis
+        dsb: Sorbais Íochtarach
+        et: Eastóinis
+        en: Béarla
+        en-GB: Béarla (RA)
+        es: Spáinnis
+        eo: Esperanto
+        eu: Bascais
+        fr: Fraincis
+        fy: An Fhreaslainnis Thiar
+        fur: Friúilis
+        ga: Gaeilge
+        gd: Gaeilge na hAlban
+        gl: Gailíseach
+        aln: Gheg Albanian
+        hsb: Uachtarach-Shórbaí
+        hr: Cróitis
+        ia: Interlingua
+        is: Íoslainnis
+        it: Iodáilis
+        kw: Cornais
+        gcf: Creole Guadalúip
+        ku-Latn: Cúirdís (Laidin)
+        lv: Laitvis
+        lb: Lucsambuirgéiseach
+        lkt: Lakota
+        lt: Liotuáinis
+        hu: Ungáiris
+        fit: Tornedalen Fionlainnis
+        nl: Ollainnis
+        nb: Ioruais Bokmål
+        nn: Nua-Ioruais
+        oc: Ocsaítneis
+        nds: Íseal-Gearmáinis
+        pl: Polainnis
+        pt-PT: Portaingéilis
+        pt: Portaingéilis (an Bhrasaíl)
+        ksh: Kölnais
+        ro: Rómáinis
+        sc: Sairdínis
+        sco: Albanaigh
+        sq: Albáinis
+        scn: Sicileach
+        sk: Slóvaicis
+        sl: Slóivéinis
+        sr-Latn: Seirbis (Laidin)
+        sh: Seirbea-Chróitis (Laidin)
+        fi: Fionlainnis
+        sv: Sualainnis
+        tl: Tagálaigis
+        kab: Cabile
+        vi: Vítneamach
+        tr: Tuircis
+        yo: Iarúba
+        diq: Dimli
+        el: Gréigis
+        ba: Baiscír
+        be: Bealarúisis
+        be-Tarask: Bealarúisis (Tarašk.)
+        bg: Bulgáiris
+        mk: Macadóinis
+        mo: Moldóvach
+        ce: Seisnis
+        ru: Rúisis
+        sr: Seirbis (Coireallach)
+        tt: Tatairis (Coireallach)
+        uk: Úcránach
+        kk-cyrl: Casacstáinis (Coireallach)
+        yi: Giúdais
+        he: Eabhrais
+        ar: Araibis
+        skr-arab: Saraiki
+        fa: Peirsis
+        arz: Araibis Éigipteach
+        pnb: Punjabi Thiar
+        ps: Paistis
+        nqo: N’Ko
+        ne: Neipeálach
+        mr: Maraitis
+        hi: Hiondúis
+        bn: Beangáilis
+        pa: Punjabi
+        gu: Gúisearáitis
+        ta: Tamailis
+        te: Teileagúis
+        kn: Cannadais
+        th: Téalainnis
+        my: Burmais
+        shn: Shan
+        xmf: Mingrelian
+        ka: Seoirseach
+        km: Ciméireach
+        sat: Santalí
+        zh-CN: Sínis (Simplithe)
+        zh-TW: Sínis (Traidisiúnta)
+        zh-HK: Sínis (Hong Cong)
+        ja: Seapáinis
+        ko: Cóiréach
   layouts:
     logo:
       alt_text: Lógó OpenHistoricalMap
+    main_navigation: Príomh
+    layer_info: Eolas Sraithe
     home: Gabh chuig an Suíomh Baile
     logout: Logáil Amach
     log_in: Logáil isteach
@@ -1982,6 +2107,9 @@ ga:
     partners_greeninfo: Líonra GreenInfo
     partners_osmf: Fondúireacht OpenStreetMap
     partners_osmus: OpenStreetMap SAM
+    welcome_tou_notice_html: Trí úsáid a bhaint as an suíomh gréasáin seo nó as bonneagar
+      eile arna sholáthar ag Fondúireacht OpenStreetMap, aontaíonn tú leis na %{terms_link}.
+    terms_of_use: Téarmaí Úsáide
     tou: Téarmaí Úsáide
     nothing_to_preview: Níl aon rud le réamhamharc.
     help: Cabhair
@@ -1991,7 +2119,26 @@ ga:
     learn_more: Tuilleadh Eolais
     more: Tuilleadh
     header:
+      about: Maidir
+      communities: Pobail
+      copyright: Cóipcheart
+      donate: Tabhair Síntiús
+      edit: Eagar
+      edit_with: Cuir in eagar le %{editor}
+      export: Easpórtáil
+      gps_traces: Rianta GPS
+      help: Cabhair
+      history: Stair
+      home: Téigh go dtí an Suíomh Baile
+      issues: Saincheisteanna
+      log_out: Logáil Amach
+      log_in: Logáil Isteach
+      more: Tuilleadh
       select_language: Roghnaigh Teanga
+      sign_up: Cláraigh
+      user_diaries: Dialann Úsáideoirí
+    meta:
+      openstreetmap_search: OpenHistoricalMap Cuardach
     select_language_button:
       title: Roghnaigh Teanga
     offline_flash:
@@ -2323,6 +2470,7 @@ ga:
         message: Nuashonraíodh na roghanna.
       navigation:
         preferences: Roghanna
+        notification_preferences: Fógraí
         advanced_preferences: Roghanna Ardleibhéil
     basic_preferences:
       show:
@@ -2338,7 +2486,25 @@ ga:
           auto: Uath
           light: Solas
           dark: Dorcha
+        preferred_editor_color_scheme: Scéim Dathanna an Eagarthóra is Fearr
+        editor_color_schemes:
+          auto: Mar an gcéanna leis an suíomh Gréasáin
+          light: Solas
+          dark: Dorcha
         save: Nuashonraigh Roghanna
+    notification_preferences:
+      show:
+        title: Roghanna Fógra
+        changeset_comment: Tráchtanna ar an athrú
+        diary_comment: Tráchtanna dialainne
+        direct_message: Teachtaireachtaí díreacha
+        gpx_import_failure: 'Allmhairiú rian GPS: teip'
+        gpx_import_success: 'Allmhairiú rian GPX: rathúil'
+        new_follower: Leantóirí nua
+        note_comment: Nótaí tráchta
+        save: Nuashonraigh Roghanna
+        delivery_mechanisms:
+          email: Ríomhphost
     advanced_preferences:
       show:
         title: Mo Roghanna Ardleibhéil
@@ -2351,6 +2517,7 @@ ga:
         image: Íomhá
         company: Comhlacht
         location: Suíomh
+        contribution_calendar: Féilire Ranníocaíochta
     descriptions:
       show:
         title: Cuir Próifíl in Eagar
@@ -2410,6 +2577,16 @@ ga:
       update:
         success: Suíomh an phróifíle nuashonraithe.
         failure: Níorbh fhéidir suíomh an phróifíle a nuashonrú.
+    heatmaps:
+      show:
+        title: Cumraigh Féilire Ranníocaíochta
+        show_contribution_calendar_in_public: Taispeáin an féilire ranníocaíochta
+          ar do leathanach próifíle
+        save: Nuashonraigh Cumraíocht Féilire Ranníocaíochtaí
+        cancel: Cealaigh
+      update:
+        success: Féilire ranníocaíochta nuashonraithe.
+        failure: Níorbh fhéidir an féilire ranníocaíochta a nuashonrú.
   sessions:
     new:
       tab_title: Logáil Isteach
@@ -2428,6 +2605,8 @@ ga:
       login_button: Logáil isteach
       with external: nó logáil isteach le tríú páirtí
       or: nó
+      reset_to_login: Ár leithscéal, tá do phasfhocal imithe in éag. Athshocraigh
+        do phasfhocal le logáil isteach.
       auth failure: Ár leithscéil, níorbh fhéidir logáil isteach leis na sonraí sin.
     destroy:
       title: Logáil amach
@@ -2552,6 +2731,7 @@ ga:
       legal_1_aup_url: https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy
       legal_1_privacy_policy: Polasaí Príobháideachais
       legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
+      legal_1_1_terms_of_use_url: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
       legal_2_html: Le do thoil, %{contact_team_link} a úsáid le haon cheisteanna
         ceadúnaithe, cóipchirt nó dlíthiúla eile.
       legal_2_contact_team: déan teagmháil leis an bhfoireann OpenHistoricalMap
@@ -2739,6 +2919,13 @@ ga:
           url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse
       export_button: Easportáil
       export_download: Ag íoslódáil...
+      confirmation:
+        header: Íoslódáil Sonraí XML
+        body: Ar mhaith leat sonraí léarscáile don cheantar seo a íoslódáil i bhformáid
+          XML? Tabhair faoi deara go bhféadfadh roinnt ama a thógáil chun limistéir
+          mhóra a íoslódáil.
+        cancel: Cealaigh
+        download: Íoslódáil
     fixthemap:
       title: Fadhb a thuairisciú / An léarscáil a dheisiú
       how_to_help:
@@ -3050,6 +3237,16 @@ ga:
         x %{height}
       download: Íoslódáil
       downloading: Ag íoslódáil...
+  webgl_error_panes:
+    show:
+      compact_message: Tá WebGL ag teastáil don léarscáil seo.
+      description_html: Tá brón orainn, ach is cosúil nach dtacaíonn %{your_browser_does_not_support_webgl},
+        teicneolaíocht chun grafaicí 3T a rindreáil ar an ngréasán.
+      your_browser_does_not_support_webgl: Ní thacaíonn do bhrabhsálaí le WebGL
+      webgl_is_required_for_this_map: Tá WebGL ag teastáil chun an léarscáil seo a
+        thaispeáint.
+      read_more_about_webgl: Léigh tuilleadh
+      read_more_about_webgl_url: https://wiki.openstreetmap.org/wiki/This_map_requires_WebGL
   traces:
     visibility:
       private: Príobháideacha (ní chomhroinnfear é ach mar phointí gan ainm, gan ord)
@@ -3352,6 +3549,10 @@ ga:
           le haghaidh tuilleadh eolais.
       or: nó
       use external auth: nó cláraigh le tríú páirtí
+      verify_human: Fíoraigh gur duine thú
+    create:
+      not_human: Ar an drochuair, ní féidir linn a dhearbhú gur duine thú. Tá sé seo
+        riachtanach chun cuntais nua a chruthú.
     no_such_user:
       title: Níl an t-úsáideoir sin ann
       heading: Níl an t-úsáideoir %{user} ann
@@ -3399,6 +3600,7 @@ ga:
       activate_user: Gníomhachtaigh an tÚsáideoir seo
       confirm_user: Deimhnigh an tÚsáideoir seo
       unconfirm_user: Dídheimhnigh an tÚsáideoir seo
+      suspend_user: Cuir an t-úsáideoir seo ar fionraí
       unsuspend_user: Dífhionraí an Úsáideora seo
       hide_user: Cuir an tÚsáideoir seo i bhfolach
       unhide_user: Taispeáin an tÚsáideoir seo
@@ -3411,12 +3613,29 @@ ga:
       change_image: Athraigh Íomhá
       edit_company: Cuir Comhlacht in Eagar
       edit_location: Cuir Suíomh in Eagar
+      edit_contribution_calendar: Cumraigh Féilire Ranníocaíochta
       contributions:
         one: '%{count} ranníocaíocht sa bhliain seo caite '
         two: '{count} ranníocaíochtaí sa bhliain seo caite'
         few: '%{count} ranníocaíochtaí sa bhliain seo caite'
         many: '%{count} ranníocaíochtaí sa bhliain seo caite'
         other: '%{count} ranníocaíochtaí sa bhliain seo caite'
+      title:
+        administrator: Is riarthóir an t-úsáideoir seo
+        moderator: Is modhnóir é an t-úsáideoir seo
+        importer: Is allmhaireoir an t-úsáideoir seo
+      grant:
+        administrator: Deonaigh rochtain riarthóra
+        moderator: Deonaigh rochtain don mhodhnóir
+        importer: Deonaigh rochtain d'allmhaireoir
+        are_you_sure: An bhfuil tú cinnte gur mian leat an ról '%{role}' a bhronnadh
+          ar an úsáideoir '%{name}'?
+      revoke:
+        administrator: Cealaigh rochtain riarthóra
+        moderator: Cealaigh rochtain an mhodhnóra
+        importer: Cealaigh rochtain an allmhaireora
+        are_you_sure: An bhfuil tú cinnte gur mian leat an ról '%{role}' a chúlghairm
+          ón úsáideoir '%{name}'?
     sidebar_section:
       home_location: Suíomh baile
       company: Comhlacht
@@ -3473,6 +3692,7 @@ ga:
           many: '%{count} úsáideoirí aimsithe'
           other: '%{count} úsáideoirí aimsithe'
         confirm: Deimhnigh Úsáideoirí Roghnaithe
+        suspend: Cuir Úsáideoirí Roghnaithe ar Fionraí
         empty: Ní bhfuarthas aon úsáideoirí comhoiriúnacha
       user:
         summary_html: '%{name} cruthaithe ó %{ip_address} ar %{date}'
@@ -3788,6 +4008,24 @@ ga:
       tooltip: Eochair na Léarscáile
       tooltip_disabled: Níl Eochair Léarscáile ar fáil don tsraith seo
     map:
+      navigation_control:
+        zoom_in: Zúmáil Isteach
+        zoom_out: Zúmáil Amach
+      geolocate_control:
+        find_my_location: Taispeáin Mo Shuíomh
+        location_not_available: Níl an suíomh ar fáil
+        metersPopup:
+          one: Tá tú laistigh de %{count} méadar ón bpointe seo
+          two: Tá tú laistigh de %{count} méadar ón bpointe seo
+          few: Tá tú laistigh de %{count} méadar ón bpointe seo
+          many: Tá tú laistigh de %{count} méadar ón bpointe seo
+          other: Tá tú laistigh de %{count} méadar ón bpointe seo
+        feetPopup:
+          one: Tá tú laistigh de %{count} troigh ón bpointe seo
+          two: Tá tú laistigh de %{count} troigh ón bpointe seo
+          few: Tá tú laistigh de %{count} troigh ón bpointe seo
+          many: Tá tú laistigh de %{count} troigh ón bpointe seo
+          other: Tá tú laistigh de %{count} troigh ón bpointe seo
       zoom:
         in: Zúmáil isteach
         out: Zúmáil amach
@@ -3965,7 +4203,7 @@ ga:
     home:
       marker_title: Mo shuíomh baile
       not_set: Níl suíomh baile socraithe do do chuntas
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Gan aon ranníocaíochtaí ar %{date}
         contributions:

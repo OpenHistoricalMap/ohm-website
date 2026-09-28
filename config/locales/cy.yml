@@ -11,9 +11,14 @@
 # Author: Robin Owain
 ---
 cy:
+  date:
+    formats:
+      contribution_calendar: '%B %-d'
   time:
     formats:
       friendly: '%e %B %Y am %H:%M'
+  count:
+    at_least_pattern: '%{count}+'
   helpers:
     file:
       prompt: Dewiswch ffeil
@@ -45,6 +50,9 @@ cy:
         display_name_is_user_n: ni all fod yn user_n oni bai mai n yw eich rhif defnyddiwr
       models:
         user_mute:
+          attributes:
+            subject:
+              format: '%{message}'
           is_already_muted: wedi anwybyddu yn barod
     models:
       acl: Rhestr Rheoli Mynediad
@@ -59,7 +67,7 @@ cy:
       message: Neges
       node: Nod
       node_tag: Tag Nod
-      note: nod
+      note: Nodyn
       old_node: Hen Nod
       old_node_tag: Tag Hen Nod
       old_relation: Hen Berthynas
@@ -143,8 +151,10 @@ cy:
         active: Gweithredol
         display_name: Enw defnyddiwr
         description: Disgrifiad proffil
+        company: Cwmni
         home_lat: Lledred
         home_lon: Hydred
+        home_location_name: Enw Lleoliad Cartref
         languages: Ieithoedd a Ffefrir
         preferred_editor: Golygydd a Ffefrir
         pass_crypt: Cyfrinair
@@ -268,6 +278,7 @@ cy:
       microsoft: Microsoft
       github: GitHub
       wikipedia: Wicipedia
+      openstreetmap: OpenStreetMap
   api:
     notes:
       comment:
@@ -295,6 +306,7 @@ cy:
   accounts:
     show:
       title: Golygu cyfrif
+      my_account: Fy Nghyfrif
       current email address: Cyfeiriad e-bost cyfredol
       external auth: Dilysu Allanol
       contributor_terms:

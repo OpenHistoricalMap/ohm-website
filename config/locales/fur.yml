@@ -14,7 +14,7 @@ fur:
     formats:
       brief_bce: '%{year} pdC'
       brief_ce: '%{year} ddC'
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
   time:
     formats:
       friendly: '%e di %B %Y a lis %H:%M'

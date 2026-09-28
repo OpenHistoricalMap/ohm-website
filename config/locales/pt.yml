@@ -16,7 +16,7 @@ pt:
       brief: '%{year}'
       brief_bce: '%{year} a. C.'
       brief_ce: '%{year} d. C.'
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
       range: '%{start} – %{end}'
   time:
     formats:

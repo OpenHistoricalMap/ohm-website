@@ -137,7 +137,7 @@ fr:
       brief: '%{year}'
       brief_bce: '%{year} AEC'
       brief_ce: '%{year} EC'
-      heatmap: '%-d %B'
+      contribution_calendar: '%-d %B'
       range: '%{start} – %{end}'
   time:
     formats:
@@ -3639,7 +3639,7 @@ fr:
       subscribe: S’abonner
       unsubscribe: Se désabonner
       hide: Masquer
-      resolve: Marquer comme résolue
+      resolve: C'est résolu
       reactivate: Réactiver
       comment_and_resolve: Commenter et marquer comme résolue
       comment: Commenter
@@ -3859,7 +3859,7 @@ fr:
     home:
       marker_title: Emplacement de mon domicile
       not_set: L’emplacement du domicile n’est pas défini pour votre compte
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: Pas de contributions le %{date}
         contributions:

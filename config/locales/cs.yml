@@ -374,7 +374,7 @@ cs:
         veřejní uživatelé.
       find_out_why_html: (%{link}).
       find_out_why: zjistěte proč
-      find_out_why_url: https://wiki.openstreetmap.org/wiki/Anonymous_edits
+      find_out_why_url: https://wiki.openstreetmap.org/wiki/Anonymous_edits?uselang=cs
       email_not_revealed: Vaše e-mailová adresa nebude zveřejněna.
       not_reversible: Tuto akci nelze vrátit zpět a všichni noví uživatelé jsou nyní
         ve výchozím nastavení veřejní.

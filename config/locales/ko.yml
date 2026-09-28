@@ -65,7 +65,7 @@ ko:
       brief: '%{year}년'
       brief_bce: 기원전 %{year}년
       brief_ce: 기원후 %{year}년
-      heatmap: '%B %-d'
+      contribution_calendar: '%B %-d'
       range: '%{start} – %{end}'
   time:
     formats:
@@ -2472,7 +2472,7 @@ ko:
         oldest: 과거 GPS 궤적
         newest: 최신 GPS 궤적
       user_blocks:
-        older: 옛 차단내역
+        older: 이전 차단내역
         newer: 최근 차단내역
         oldest: 과거 차단내역
         newest: 최신 차단내역
@@ -3799,7 +3799,7 @@ ko:
     home:
       marker_title: 내 집 위치
       not_set: 본 계정에 집 위치가 설정되어 있지 않습니다.
-    heatmap:
+    contribution_calendar:
       tooltip:
         no_contributions: '%{date}에는 기여가 없습니다'
         contributions:

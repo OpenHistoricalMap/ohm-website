@@ -9,6 +9,7 @@
 # Author: ArlandGa
 # Author: Atriwidada
 # Author: Bayahiu
+# Author: Bennylin
 # Author: Bloomingfungi
 # Author: C5st4wr6ch
 # Author: DARMAS BUDI SANTOSO
@@ -49,9 +50,16 @@
 # Author: 아라
 ---
 id:
+  date:
+    formats:
+      brief_bce: '%{year} SM'
+      brief_ce: '%{year} M'
+      contribution_calendar: '%B %-d'
   time:
     formats:
       friendly: '%e %B %Y pada %H:%M'
+  count:
+    at_least_pattern: '%{count}+'
   helpers:
     file:
       prompt: Pilih berkas
@@ -84,7 +92,14 @@ id:
           Anda
       models:
         user_mute:
+          attributes:
+            subject:
+              format: '%{message}'
           is_already_muted: sudah dibisukan
+        social_link:
+          attributes:
+            url:
+              http_parse_error: Url harus dimulai dengan http:// atau https://
     models:
       acl: Daftar Kontrol Akses
       changeset: Set Perubahan
@@ -98,7 +113,7 @@ id:
       message: Pesan
       node: Simpul
       node_tag: Tanda Simpul
-      note: catatan
+      note: Catatan
       old_node: Simpul Lama
       old_node_tag: Tanda Simpul Lama
       old_relation: Relasi Lama
@@ -129,8 +144,9 @@ id:
         support_url: URL Dukungan
         allow_read_prefs: Baca pengaturan mereka sebagai pengguna.
         allow_write_prefs: memodifikasi pengaturan mereka sebagai pengguna
-        allow_write_diary: membuat entri buku harian, komentar dan berteman
+        allow_write_diary: membuat entri buku harian dan komentar
         allow_write_api: modifikasi peta
+        allow_write_changeset_comments: Komentar perubahan
         allow_read_gpx: baca jejak GPS pribadi mereka
         allow_write_gpx: unggah jejak GPS
         allow_write_notes: memodifikasi catatan
@@ -182,8 +198,10 @@ id:
         active: Aktif
         display_name: Nama Tampilan
         description: Deskripsi Profil
+        company: Perusahaan
         home_lat: Garis Lintang
         home_lon: Garis Bujur
+        home_location_name: Nama Lokasi Rumah
         languages: Bahasa yang Dipilih
         preferred_editor: Penyunting yang Dipilih
         pass_crypt: Kata Sandi
@@ -230,6 +248,9 @@ id:
         other: '%{count} bulan yang lalu'
       x_years:
         other: '%{count} tahun yang lalu'
+  printable_name:
+    version: '%{version}'
+    current_and_old_links_html: '%{current_link}, %{old_link}'
   editor:
     default: Tetapan (saat ini %{name})
     id:
@@ -247,6 +268,7 @@ id:
       microsoft: Microsoft
       github: GitHub
       wikipedia: Wikipedia
+      openstreetmap: OpenStreetMap
   api:
     notes:
       comment:
@@ -274,17 +296,28 @@ id:
   accounts:
     show:
       title: Sunting akun
+      my_account: Akun Saya
       current email address: Alamat surel saat ini
       external auth: Autentikasi Eksternal
       contributor_terms:
         heading: Syarat-syarat Kontributor
-        agreed: Anda telah menyetujui Persyaratan Kontributor yang baru.
+        agreed: Anda menyetujui Persyaratan Kontributor pada %{date}.
+        not_agreed: Anda belum menyetujui Persyaratan Kontributor.
         agreed_with_pd: Anda juga telah menyatakan bahwa Anda mempertimbangkan suntingan
           Anda berada dalam Domain publik.
-        link: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
+        link: https://osmfoundation.org/wiki/Licence/Contributor_Terms
         link text: Apa ini?
+        not_agreed_with_pd: Anda belum menyatakan bahwa Anda mempertimbangkan suntingan
+          Anda berada dalam Domain Publik.
+        review: Tinjau Syarat dan Ketentuan
+        review_and_accept: Tinjau dan setujui Syarat dan Ketentuan
+        consider_pd: Pertimbangkan Domain Publik
       terms_of_use:
         heading: Ketentuan Penggunaan
+        agreed: Anda menyetujui Ketentuan Penggunaan pada %{date}.
+        not_agreed: Anda belum menyetujui Ketentuan Penggunaan.
+        review: Tinjau Syarat dan Ketentuan
+        review_and_accept: Tinjau dan setujui Syarat dan Ketentuan
       save changes button: Simpan Perubahan
       delete_account: Hapus Akun...
     go_public:
@@ -295,7 +328,9 @@ id:
         di bawah.
       only_public_can_edit: Sejak peralihan API 0.6, hanya pengguna terbuka yang boleh
         menyunting data peta.
+      find_out_why_html: (%{link}).
       find_out_why: cari tahu alasannya
+      find_out_why_url: https://wiki.openstreetmap.org/wiki/Anonymous_edits
       email_not_revealed: Alamat surel Anda tetap tersembunyi meski aktivitas Anda
         terbuka.
       not_reversible: Tindakan ini tidak dapat dibatalkan dan semua pengguna baru
@@ -313,10 +348,14 @@ id:
         warning: Peringatan! Penghapusan akun berlaku secara permanen dan tidak dapat
           dikembalikan.
         delete_account: Menghapus Akun
+        delete_introduction: 'Anda dapat menghapus akun OpenHistoricalMap Anda menggunakan
+          tombol di bawah ini. Harap perhatikan detail berikut:'
         delete_profile: Informasi profil Anda, termasuk avatar, deskripsi, dan letak
           rumah Anda akan dihapus.
         delete_display_name: Tampilan nama Anda akan dihapus dan dapat digunakan oleh
           akun lain.
+        retain_caveats: 'Namun, beberapa informasi tentang Anda akan tetap tersimpan
+          di OpenHistoricalMap, bahkan setelah akun Anda dihapus:'
         retain_edits: Suntingan Anda ke database peta tidak akan dihapus.
         retain_traces: Jejak GPS yang Anda unggah akan disimpan.
         retain_diary_entries: Artikel dan komentar artikel Anda tidak akan dihapus,
@@ -342,12 +381,15 @@ id:
         read_ct: Saya telah membaca dan menyetujui ketentuan kontributor di atas
         tou_explain:
           html: '%{tou_link} ini mengatur penggunaan situs web dan infrastruktur lainnya
-            yang disediakan oleh OSMF. Tolong tekan tautannya, baca dan setujui teksnya.'
+            yang disediakan oleh OpenHistoricalMap. Tolong tekan tautannya, baca dan
+            setujui teksnya.'
+          tou: Ketentuan Penggunaan
         read_tou: Saya telah membaca dan menyetujui Ketentuan Penggunaan
         guidance_info_html: 'Informasi untuk membantu Anda memahami ketentuan ini:
           %{readable_summary_link} dan %{informal_translations_link}'
         readable_summary: ringkasan dasar
         informal_translations: terjemahan tidak resmi
+        continue: Lanjutkan
         cancel: Batal
         you need to accept or decline: Silahkan baca dan setujui atau tolak Persyaratan
           Kontributor yang baru untuk melanjutkan.
@@ -363,6 +405,20 @@ id:
           baru. Untuk informasi lebih lanjut, silakan lihat %{terms_declined_link}.
         terms_declined_link: halaman wiki ini
         terms_declined_url: https://wiki.openstreetmap.org/wiki/Contributor_Terms_Declined
+    pd_declarations:
+      show:
+        title: Anggap kontribusi saya berada dalam Domain Publik
+        consider_pd: Saya menganggap kontribusi saya berada pada Domain Publik
+        consider_pd_why: Mengapa saya mau kontribusi saya berada dalam Domain Publik?
+        consider_pd_why_url: https://osmfoundation.org/wiki/Licence_and_Legal_FAQ/Why_would_I_want_my_contributions_to_be_public_domain
+        confirm: Konfirmasi
+      create:
+        successfully_declared: Anda telah menyatakan bahwa Anda menganggap suntingan
+          Anda berada dalam Domain Publik.
+        already_declared: Anda juga telah menyatakan bahwa Anda menganggap suntingan
+          Anda berada dalam Domain publik.
+        did_not_confirm: Anda tidak mengonfirmasi bahwa Anda menganggap suntingan
+          Anda berada dalam Domain Publik.
   browse:
     deleted_ago_by_html: Dihapus %{time_ago} oleh %{user}
     edited_ago_by_html: Disunting %{time_ago} oleh %{user}
@@ -1451,17 +1507,95 @@ id:
           weir: Tanggul Sungai
           "yes": Jalur Air
       admin_levels:
-        level2: Batas Negara
-        level3: Batas Wilayah
-        level4: Batas Negara Bagian
-        level5: Batas Wilayah
-        level6: Batas Provinsi
-        level7: Batas Munisipalitas
-        level8: Batas Kota/Kabupaten
-        level9: Batas Desa
-        level10: Batas kota pinggiran
-        level11: Batas RT
+        level2: Batas Internasional
+        level3: Batas Administratif (Level 3)
+        level4: Batas Administratif (Level 4)
+        level5: Batas Administratif (Level 5)
+        level6: Batas Administratif (Level 6)
+        level7: Batas Administratif (Level 7)
+        level8: Batas Administratif (Level 8)
+        level9: Batas Administratif (Level 9)
+        level10: Batas Administratif (Level 10)
+        level11: Batas Administratif (Level 11)
+      border_types:
+        archdiocese: Batas Keuskupan Agung
+        arrondissement: Batas Arondisemen
+        audiencia: Batas Audiencia
+        borough: Batas Borough
+        caliphate: Batas Kekhalifahan
+        canton: Batas Kanton
+        captaincy_general: Batas Kekaptenan Umum
+        census_area: Batas Wilayah Sensus
+        cercle: Batas Cercle
+        chiefdom: Batas Kesukuan
+        city: Batas Kota
+        city-state: Batas Negara Kota
+        colony: Batas Kolonial
+        comarca: Batas Comarca
+        commonwealth: Batas Persemakmuran
+        commune: Batas Komunal
+        condominium: Batas Kondominium
+        confederation: Batas Konfederasi
+        county: Batas County
+        departement: Batas Departemen
+        department: Batas Departemen
+        diocese: Batas Keuskupan
+        district: Batas Distrik
+        distrito: Batas Distrik
+        dominion: Batas Dominion
+        emirate: Batas Keamiran
+        empire: Batas Kekaisaran
+        eyalet: Batas Eyalet
+        federal_district: Batas Distrik Federal
+        federation: Batas Federasi
+        freguesia: Batas Freguesia
+        ghetto: Batas Ghetto
+        governorate: Batas Kegubernuran
+        intendancy: Batas Intendansi
+        kingdom: Batas Kerajaan
+        local_authority: Batas Otoritas Lokal
+        major_division: Batas Divisi Utama
+        markaz: Batas Markaz
+        municipality: Batas Munisipal
+        municipi: Batas Munisipal
+        município: Batas Munisipal
+        nation: Batas Internasional
+        national: Batas Internasional
+        neighbourhood: Batas Lingkungan
+        oblast: Batas Oblast
+        occupation: Batas Pendudukan
+        parish: Batas Paroki
+        planning_region: Batas Wilayah Perencanaan
+        possession: Batas Kepemilikan
+        prefecture: Batas Prefektur
+        prefecture_apostolic: Batas Prefektur Apostolik
+        principate: Batas Kepangeranan
+        protectorate: Batas Protektorat
+        province: Batas Provinsi
+        rancho: Batas Rancho
+        região: Batas Kawasan
+        region: Batas Kawasan
+        reichsgau: Batas Reichsgau
+        republic: Batas Republik
+        sanjak: Batas Sanjak
+        state: Batas Negara Bagian
+        subdistrict: Batas Subdistrik
+        sultanate: Batas Kesultanan
+        territory: Batas Wilayah
+        territorial_prelature: Batas Wilayah Keuskupan
+        town: Batas Kota Kecil
+        township: Batas Kotapraja
+        vicariate_apostolic: Batas Vikariat Apostolik
+        viceroyalty: Batas Kewizuraian
+        village: Batas Desa
+        viyalet: Batas Vilayet
+        voivodeship: Batas Voivodat
   searches:
+    show:
+      title:
+        latlon: Internal
+        nominatim: Nominatim
+        nominatim_reverse: Nominatim
     queries:
       create:
         no_results: Tidak ada hasil yang ditemukan
@@ -1473,13 +1607,22 @@ id:
       time: Waktu tempuh
       ascend: Naik
       descend: Turun
+      kilometers: kilometer
+      miles_feet: mil, kaki
+      miles_yards: mil, yard
+      distance_units_settings: Pengaturan Satuan Jarak
+      download: Unduh rute dalam format GeoJSON
+      filename: rute
       directions_courtesy_html: Petunjuk arah disediakan oleh %{link}
+      check_demo_html: Informasi lebih lanjut di %{link}
   issues:
     index:
-      title: Isu
+      title: Masalah
       select_status: Pilih Status
       select_type: Pilih Jenis
+      select_last_managed_by: Pilih Terakhir Ditangani Oleh
       reported_user: Pengguna yang Dilaporkan
+      not_managed: Tidak Ditangani
       search: Cari
       search_guidance: 'Cari Isu:'
       states:
@@ -1489,12 +1632,19 @@ id:
     page:
       user_not_found: Pengguna tidak ada
       issues_not_found: Isu tidak ditemukan
+      reported_user: Pengguna yang Dilaporkan
       status: Status
       reports: Laporan
       last_updated: Terakhir Diperbarui
+      last_managed: Terakhir Ditangani
+      reporting_users: Melaporkan Pengguna
       reports_count:
         other: '%{count} Laporan'
       reported_item: Butir dilaporkan
+      states:
+        ignored: Diabaikan
+        open: Terbuka
+        resolved: Selesai
     resolve:
       resolved: Status isu telah diset ke 'Selesai'
     ignore:
@@ -1565,9 +1715,14 @@ id:
     create:
       successful_report: Laporan Anda telah berhasil terdaftar
       provide_details: Tolong berikan rincian yang diperlukan
+  languages_panes:
+    select_language_list:
+      search_language: Cari...
   layouts:
     logo:
       alt_text: logo OpenHistoricalMap
+    main_navigation: Utama
+    layer_info: Informasi Lapisan
     home: Menuju ke Halaman Utama
     logout: Keluar Log
     log_in: Masuk Log
@@ -1586,6 +1741,11 @@ id:
       dibuat oleh orang-orang seperti Anda dan didedikasikan untuk domain publik.
     intro_2_create_account: Buat Akun
     partners_title: mitra
+    partners_osmf: Yayasan OpenStreetMap
+    partners_osmus: OpenStreetMap AS
+    welcome_tou_notice_html: Dengan menggunakan situs ini atau sarana lain yang disediakan
+      oleh Yayasan OpenStreetMap, Anda setuju dengan %{terms_link}.
+    terms_of_use: Ketentuan Penggunaan
     tou: Ketentuan Penggunaan
     help: Bantuan
     about: Tentang
@@ -1593,8 +1753,39 @@ id:
     communities: Komunitas
     learn_more: Pelajari Lagi
     more: Selanjutnya
+    header:
+      about: Tentang
+      communities: Komunitas
+      copyright: Hak Cipta
+      donate: Menyumbang
+      edit: Sunting
+      edit_with: Sunting dengan %{editor}
+      export: Ekspor
+      gps_traces: Jejak GPS
+      help: Bantuan
+      history: Riwayat
+      home: Menuju ke Halaman Utama
+      issues: Masalah
+      log_out: Keluar Log
+      log_in: Masuk Log
+      more: Selengkapnya
+      select_language: Pilih Bahasa
+      sign_up: Mendaftar
+      user_diaries: Catatan Harian Pengguna
+    meta:
+      openstreetmap_search: Pencarian OpenHistoricalMap
+    select_language_button:
+      title: Pilih Bahasa
+    offline_flash:
+      osm_offline: Pangkalan data OpenHistoricalMap saat ini dimatikan karena pemeliharaan
+        penting masih berlangsung.
+      osm_read_only: Pangkalan data OpenHistoricalMap saat ini berada dalam mode baca
+        saja karena pemeliharaan penting masih berlangsung.
+      expected_restore_html: Layanan akan dipulihkan kembali kira-kira %{time} lagi.
+      announcement: Silakan baca pengumumannya di sini.
   user_mailer:
     diary_comment_notification:
+      description: 'Entri Harian OpenHistoricalMap #%{id}'
       subject: '[OpenHistoricalMap] %{user} mengomentari sebuah entri catatan harian'
       hi: Halo %{to_user},
       header: '%{from_user} telah mengomentari entri catatan harian OpenHistoricalMap
@@ -1620,24 +1811,41 @@ id:
         %{replyurl}
     follow_notification:
       hi: Halo %{to_user},
-      see_their_profile: Anda dapat melihat profilnya pada %{userurl}.
+      subject: '[OpenHistoricalMap] %{user} mengikuti Anda'
+      followed_you: '%{user} sekarang mengikuti Anda di OpenHistoricalMap.'
+      see_their_profile: Anda dapat melihat profil mereka di %{userurl}.
       see_their_profile_html: Anda dapat melihat profil mereka di %{userurl}.
+      follow_them: Anda juga bisa mengikuti balik di %{followurl}
+      follow_them_html: Anda juga bisa mengikuti balik di %{followurl}
+    gpx_details:
+      details: 'Informasi berkas Anda:'
+      filename: Nama berkas
+      url: URL
+      description: Deskripsi
+      tags: Tanda
+      total_points: Total titik
+      imported_points: Jumlah titik impor
     gpx_failure:
       hi: Halo %{to_user},
-      failed_to_import: 'gagal melakukan impor. Berikut ini adalah kesalahannya:'
+      failed_to_import: Sepertinya berkas Anda gagal diimpor sebagai jejak GPS.
+      verify: 'Pastikan berkas Anda merupakan berkas GPX yang valid atau arsip berkas
+        GPX dalam format yang didukung (.tar.gz, .tar.bz2, .tar, .zip, .gpx.gz, .gpx.bz2).
+        Apakah berkas Anda memiliki masalah format atau sintaks? Ini masalahnya:'
       more_info: Informasi lebih lanjut tentang kegagalan impor GPX dan cara menghindarinya
-        bisa ditemukan di %{url}.
+        bisa ditemukan di %{url}
       more_info_html: Informasi lebih lanjut tentang kegagalan impor GPX dan cara
         menghindarinya bisa ditemukan di %{url}.
       import_failures_url: https://wiki.openstreetmap.org/wiki/GPX_Import_Failures
-      subject: '[OpenHistoricalMap] gagal impor GPX'
+      subject: '[OpenHistoricalMap] Impor GPX gagal'
     gpx_success:
       hi: Halo %{to_user},
+      imported_successfully: Tampaknya berkas Anda berhasil diimpor dalam bentuk jejak
+        GPS.
       all_your_traces: Semua jejak GPX Anda yang berhasil diunggah dapat ditemukan
-        di %{url}.
+        di %{url}
       all_your_traces_html: Semua jejak GPX Anda yang berhasil diunggah dapat ditemukan
         di %{url}.
-      subject: '[OpenHistoricalMap] berhasil impor GPX'
+      subject: '[OpenHistoricalMap] Impor GPX berhasil'
     signup_confirm:
       subject: '[OpenHistoricalMap] Selamat datang di OpenHistoricalMap'
       greeting: Halo!
@@ -1704,10 +1912,10 @@ id:
           yang Anda komentari. Catatan ini dekat %{place}.'
         commented_note_html: '%{commenter} telah menyalakan kembali salah satu catatan
           peta yang Anda komentari. Catatannya terletak di dekat %{place}.'
-      details: Rincian lebih lanjut mengenai catatan dapat ditemukan di %{url}.
-      details_html: Rincian lebih lanjut mengenai catatan dapat ditemukan di %{url}.
+      details: Balas atau pelajari lebih lanjut tentang catatan di %{url}.
+      details_html: Balas atau pelajari lebih lanjut tentang catatan di %{url}.
     changeset_comment_notification:
-      description: 'Perangkat perubahan OpenHistoricalMap #%{id}'
+      description: 'Set Perubahan OpenHistoricalMap #%{id}'
       hi: Halo %{to_user},
       commented:
         subject_own: '[OpenHistoricalMap] %{commenter} telah mengomentari salah satu
@@ -1725,9 +1933,8 @@ id:
         partial_changeset_with_comment: dengan komentar '%{changeset_comment}'
         partial_changeset_with_comment_html: dengan komentar '%{changeset_comment}'
         partial_changeset_without_comment: tanpa komentar
-      details: Rincian lebuh lanjut soal perubahan ini dapat dilihat di %{url}.
-      details_html: Rincian lebih lanjut tentang set perubahan ini dapat dilihat di
-        %{url}.
+      details: Balas atau pelajari lebih lanjut tentang set perubahan di %{url}.
+      details_html: Balas atau pelajari lebih lanjut tentang set perubahan di %{url}.
       unsubscribe: Anda dapat berhenti berlangganan pembaruan set perubahan ini di
         %{url}.
       unsubscribe_html: Anda dapat berhenti berlangganan pembaruan set perubahan ini
@@ -1744,12 +1951,14 @@ id:
       success: Akun Anda telah dikonfirmasi, terima kasih telah mendaftar!
       already active: Akun ini telah dikonfirmasi.
       unknown token: Kode konfirmasi telah kedaluwarsa atau tidak ada.
+      if_need_resend: Bila Anda perlu surel konfirmasi lagi, klik tombol di bawah.
+      resend_button: Kirim ulang surel konfirmasi
     confirm_resend:
       failure: Pengguna %{name} tidak ditemukan.
     confirm_email:
-      heading: Konfirmasi perubahan alamat email
+      heading: Konfirmasi perubahan alamat surel
       press confirm button: Tekan tombol konfirmasi di bawah ini untuk melakukan konfirmasi
-        alamat email baru Anda.
+        alamat surel baru Anda.
       button: Konfirmasi
       success: Perubahan alamat email Anda telah dikonfirmasi!
       failure: Sebuah alamat email telah dikonfirmasikan dengan token ini.
@@ -1804,6 +2013,7 @@ id:
         from: Dari
         to: Kepada
         subject: Subyek
+        date: Tanggal
         actions: Tindakan
       message:
         unread_button: Tandai belum dibaca
@@ -1872,14 +2082,56 @@ id:
         failure: Tidak dapat memperbarui preferensi.
       update_success_flash:
         message: Preferensi telah diperbarui.
+      navigation:
+        preferences: Preferensi
+        notification_preferences: Pemberitahuan
+        advanced_preferences: Preferensi Lanjutan
     basic_preferences:
       show:
         title: Preferensi Saya
+        preferred_language: Bahasa Utama
+        preferred_site_color_scheme: Skema Warna Situs Utama
+        site_color_schemes:
+          auto: Otomatis
+          light: Terang
+          dark: Gelap
+        preferred_map_color_scheme: Skema Warna Peta Utama
+        map_color_schemes:
+          auto: Otomatis
+          light: Terang
+          dark: Gelap
+        preferred_editor_color_scheme: Skema Warna Penyunting Utama
+        editor_color_schemes:
+          auto: Sama Seperti Situs
+          light: Terang
+          dark: Gelap
+        save: Perbarui Preferensi
+    notification_preferences:
+      show:
+        title: Pengaturan Pemberitahuan
+        changeset_comment: Komentar perubahan
+        diary_comment: Komentar harian
+        direct_message: Pesan langsung
+        gpx_import_failure: 'Impor jejak GPS: gagal'
+        gpx_import_success: 'Impor jejak GPX: berhasil'
+        new_follower: Pengikut baru
+        note_comment: Komentar catatan
+        save: Perbarui Preferensi
+        delivery_mechanisms:
+          email: Surel
+    advanced_preferences:
+      show:
+        title: Pengaturan Lanjutan Saya
         save: Perbarui Preferensi
   profiles:
     profile_sections:
       navigation:
+        description: Deskripsi
+        links: Tautan
         image: Gambar
+        company: Perusahaan
+        location: Lokasi
+        contribution_calendar: Kalender Kontribusi
     descriptions:
       show:
         title: Sunting Profil
@@ -1920,9 +2172,9 @@ id:
       with external: 'Atau, gunakan pihak ketiga untuk masuk:'
       auth failure: Maaf, tidak bisa login dengan rincian tersebut.
     destroy:
-      title: Logout
+      title: Keluar log
       heading: Keluar log dari OpenHistoricalMap
-      logout_button: Logout
+      logout_button: Keluar log
     suspended_flash:
       suspended: Maaf, akun Anda ditangguhkan karena aktivitasnya mencurigakan.
       contact_support_html: Hubungi %{support_link} bila ingin menindaklanjutinya.
@@ -2105,7 +2357,7 @@ id:
         description: Bantuan untuk perusahaan dan organisasi yang beralih ke peta
           dan layanan lain berbasis OpenStreetMap.
       welcomemat:
-        title: Untuk Lembaga-lembaga
+        title: Selamat datang di OHM
       slack:
         title: IRC
       wiki:
