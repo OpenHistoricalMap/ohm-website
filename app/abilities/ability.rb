@@ -9,8 +9,8 @@ class Ability
     can :read, [RelationMember, OldRelationMember]
     can [:show, :create], Note
     can :read, :directions
-    can [:index, :permalink, :edit, :help, :fixthemap, :offline, :export, :about, :communities, :preview, :copyright, :id], :site
-    can [:create, :show], :export
+    can [:index, :permalink, :edit, :help, :fixthemap, :offline, :export, :about, :preview, :copyright, :key, :id, :ohm_privacy_policy], :site
+    can [:create, :show, :embed], :export
     can [:create, :read], :search
     can [:create, :show], :auth_deletion
 

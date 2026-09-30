@@ -12,7 +12,7 @@ atom_feed(:language => I18n.locale, :schema_date => 2009,
   feed.logo image_url("osm_logo_100.png")
 
   feed.rights :type => "xhtml" do |xhtml|
-    xhtml.a "Open Data Commons Open Database License", :href => "https://opendatacommons.org/licenses/odbl/"
+    xhtml.a t(".feed.cc0"), :href => t(".feed.cc0_url")
   end
 
   @changesets.items.each do |changeset|

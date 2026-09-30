@@ -1,0 +1,28 @@
+# Messages for Gujarati (ગુજરાતી)
+# Exported from translatewiki.net
+# Author: CptViraj
+# Author: Erictheise
+# Author: KartikMistry
+# Author: Minh Nguyen
+# Author: Mitulverma13
+# Author: Sushant savla
+# Do not edit by hand.
+gu:
+  layouts:
+    logo:
+      alt_text: OpenHistoricalMapનો લોગો
+  site:
+    about_section:
+      legal_1_privacy_policy: ગોપનિયતા નીતિ
+    help:
+      welcome:
+        title: OpenHistoricalMapમાં સ્વાગત છે
+      wiki:
+        title: વિકિ
+  user_mailer:
+    message_notification:
+      subject: "[OpenHistoricalMap] %{message_title}"
+  users:
+    new:
+      about:
+        welcome: OpenHistoricalMapમાં સ્વાગત છે

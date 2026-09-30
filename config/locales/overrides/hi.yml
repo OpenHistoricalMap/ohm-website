@@ -1,0 +1,37 @@
+# Messages for Hindi (हिन्दी)
+# Exported from translatewiki.net
+# Author: Abijeet Patro
+# Author: Abijeet Patro - Normal
+# Author: Ansumang
+# Author: AnupamM
+# Author: Bhatakati aatma
+# Author: Charu
+# Author: Contrapunctus
+# Author: Danieldegroot2
+# Author: Erictheise
+# Author: Innocentbunny
+# Author: McDutchie
+# Author: Minh Nguyen
+# Author: Nitin1485
+# Author: Prong$31
+# Author: Rajatkatiyar10
+# Author: Saurmandal
+# Author: Sfic
+# Author: Shubhamkanodia
+# Author: Siddhartha Ghai
+# Author: Suyash.dwivedi
+# Author: ThisIsACreeper0101
+# Author: Vdhatterwal
+# Author: पदाति
+# Author: संजीव कुमार
+# Do not edit by hand.
+hi:
+  site:
+    about_section:
+      legal_1_privacy_policy: गोपनीयता नीति
+    help:
+      wiki:
+        title: विकि
+  user_mailer:
+    diary_comment_notification:
+      subject: "[OpenHistoricalMap] %{user} ने एक दैनिकी पर प्रतिक्रिया दी"

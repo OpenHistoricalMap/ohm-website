@@ -262,6 +262,8 @@ export default function (map) {
     sidebarLoaded().then(enableListeners);
 
     map.setSidebarOverlaid(!endpoints[0].latlng || !endpoints[1].latlng);
+
+    addOpenHistoricalMapTimeSlider(map);
   };
 
   page.unload = function () {

@@ -400,8 +400,8 @@ module Api
       assert_equal third_user, subscription.user
       assert_equal note_with_comments_by_users, subscription.note
 
-      assert_email_received first_user.email, "[OpenStreetMap] #{third_user.display_name} has commented on one of your notes"
-      assert_email_received second_user.email, "[OpenStreetMap] #{third_user.display_name} has commented on a note you are interested in"
+      assert_email_received first_user.email, "[OpenHistoricalMap] #{third_user.display_name} has commented on one of your notes"
+      assert_email_received second_user.email, "[OpenHistoricalMap] #{third_user.display_name} has commented on a note you are interested in"
 
       get api_note_path(note_with_comments_by_users, :format => "json")
       assert_response :success

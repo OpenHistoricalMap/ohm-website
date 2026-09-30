@@ -9,7 +9,9 @@ class NoteLayerTest < ApplicationSystemTestCase
       create(:note_comment, :note => note, :body => "Note description", :event => "opened")
     end
 
-    visit root_path(:anchor => "map=18/1.1/1.1&layers=N")
+    # OHM variant: test is designed to work with OSM's Standard/Mapnik style
+    #   so we prepend "M" to the `layers` argument.
+    visit root_path(:anchor => "map=18/1.1/1.1&layers=MN")
     all ".leaflet-marker-icon", :count => 1 do |marker|
       assert_equal "Note description", marker["title"]
     end
@@ -22,7 +24,9 @@ class NoteLayerTest < ApplicationSystemTestCase
       create(:note_comment, :note => note, :body => "Note comment visible")
     end
 
-    visit root_path(:anchor => "map=18/1.1/1.1&layers=N")
+    # OHM variant: test is designed to work with OSM's Standard/Mapnik style
+    #   so we prepend "M" to the `layers` argument.
+    visit root_path(:anchor => "map=18/1.1/1.1&layers=MN")
     all ".leaflet-marker-icon", :count => 1 do |marker|
       assert_equal "", marker["title"]
     end
@@ -34,7 +38,9 @@ class NoteLayerTest < ApplicationSystemTestCase
       create(:note_comment, :note => note, :body => "Note description is hidden", :event => "opened", :visible => false)
     end
 
-    visit root_path(:anchor => "map=18/1.1/1.1&layers=N")
+    # OHM variant: test is designed to work with OSM's Standard/Mapnik style
+    #   so we prepend "M" to the `layers` argument.
+    visit root_path(:anchor => "map=18/1.1/1.1&layers=MN")
     all ".leaflet-marker-icon", :count => 1 do |marker|
       assert_equal "", marker["title"]
     end

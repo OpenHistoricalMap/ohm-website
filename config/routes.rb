@@ -197,7 +197,6 @@ OpenStreetMap::Application.routes.draw do
   get "/help" => "site#help"
   get "/about/:about_locale" => "site#about"
   get "/about" => "site#about"
-  get "/communities" => "site#communities"
   get "/history" => "changesets#index"
   get "/history/feed" => "changesets#feed", :defaults => { :format => :atom }
   scope "/history" do
@@ -233,6 +232,9 @@ OpenStreetMap::Application.routes.draw do
   get "/index.html", :to => redirect(:path => "/")
   get "/create-account.html", :to => redirect(:path => "/user/new")
   get "/forgot-password.html", :to => redirect(:path => "/user/forgot-password")
+
+  # ohm
+  get "/privacy-policy" => "site#ohm_privacy_policy"
 
   # omniauth
   scope "/auth", :as => :auth do

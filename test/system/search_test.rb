@@ -76,6 +76,9 @@ class SearchTest < ApplicationSystemTestCase
 
     within_sidebar do
       assert_link "Nominatim", :href => /&viewbox=/
+
+      # Wait for the results to load so no request is in flight when WebMock resets.
+      assert_no_css ".loader"
     end
   end
 
@@ -87,6 +90,10 @@ class SearchTest < ApplicationSystemTestCase
 
     within_sidebar do
       assert_link "Nominatim", :href => /&zoom=7/
+
+      # Wait for the result sections to finish loading, so the stubbed
+      # Nominatim request is not still in flight when WebMock resets.
+      assert_no_css ".loader"
     end
   end
 end

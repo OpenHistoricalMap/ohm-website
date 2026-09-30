@@ -1,0 +1,34 @@
+# Messages for Serbian (Latin script) (srpski (latinica))
+# Exported from translatewiki.net
+# Author: Erictheise
+# Author: Macofe
+# Author: McDutchie
+# Author: Milicevic01
+# Author: Minh Nguyen
+# Author: Nemo bis
+# Author: Rancher
+# Author: Сербијана
+# Do not edit by hand.
+sr-Latn:
+  layouts:
+    project_name:
+      title: OpenHistoricalMap
+  site:
+    copyright:
+      legal_babble:
+        contributors_footer_2_html: Uključivanje podataka u Openstritmap ne podrazumeva da izvorni vlasnik podataka prihvata Openstritmap, obezbeđuje bilo kakvu garanciju ili prihvata odgovornost.
+        credit_title_html: Kako da imenujete OpenHistoricalMap
+        more_title_html: Saznajte više
+  user_mailer:
+    diary_comment_notification:
+      subject: "[OpenHistoricalMap] %{user} prokomentarisa vaš unos u dnevniku"
+    email_confirm:
+      subject: "[OpenHistoricalMap] Potvrdite vašu e-adresu"
+    gpx_failure:
+      subject: "[OpenHistoricalMap] GPX uvoz nije uspeo"
+    gpx_success:
+      subject: "[OpenHistoricalMap] GPX uvoz je uspeo"
+    lost_password:
+      subject: "[OpenHistoricalMap] Zahtev za poništavanje lozinke"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] Potvrdite vašu e-adresu"

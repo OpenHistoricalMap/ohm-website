@@ -1,0 +1,35 @@
+# Messages for Pashto (پښتو)
+# Exported from translatewiki.net
+# Author: Af420
+# Author: Ahmed-Najib-Biabani-Ibrahimkhel
+# Author: Ajeje Brazorf
+# Author: Amjad Khan
+# Author: شاه زمان پټان
+# Do not edit by hand.
+ps:
+  auth:
+    providers:
+      openstreetmap: پرانېستې‌کوڅې‌نخچه
+  date:
+    formats:
+      brief: "%{year}"
+      brief_bce: "%{year} مخزېږديز"
+      brief_ce: "%{year} زېږديز"
+      range: "%{start} – %{end}"
+  geocoder:
+    search_osm_nominatim:
+      suffix_format: "[%{dates}]"
+  site:
+    copyright:
+      legal_babble:
+        credit_1_html: موږ غواړو چې تاسو کریډیټ وکاروي لپاره &ldquo;&copy; د اوفن سټریټ ميپ مرسته کوونکی&rdquo;.
+  time:
+    formats:
+      friendly: "%B %e, %Y په %H:%M"
+  traces:
+    show:
+      edit: سمول
+      edit_trace: دا څارنه سمول
+    trace:
+      edit_map: نخشه سمول
+      view_map: نخشه کتل

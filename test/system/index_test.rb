@@ -42,13 +42,18 @@ class IndexTest < ApplicationSystemTestCase
   end
 
   test "should not add overlay when not closing right menu popup" do
+    # OHM variant: these tests assume the map has what OSM calls a "Legend" and what
+    #   we call a "Map Key". Our layers do not presently have one so we force
+    #   the Mapnik/Standard style.
+    visit "/#layers=M"
+
     node = create(:node)
 
     visit node_path(node)
 
     within "#map" do
       click_on "Share"
-      click_on "Legend"
+      click_on "Map Key"
     end
 
     assert_no_selector "#content.overlay-right-sidebar"
@@ -60,13 +65,13 @@ class IndexTest < ApplicationSystemTestCase
     assert_no_selector "#content.overlay-right-sidebar"
 
     within "#map" do
-      click_on "Legend"
+      click_on "Map Key"
     end
 
     assert_no_selector "#content.overlay-right-sidebar"
 
     within "#map" do
-      click_on "Legend"
+      click_on "Map Key"
     end
 
     assert_selector "#content.overlay-right-sidebar"

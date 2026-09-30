@@ -340,7 +340,7 @@ describe("OSM", function () {
       $("body").append("<div id='map'>");
       const map = new L.OSM.Map("map", { center: [57.6247, -3.6845], zoom: 9 });
       map.updateLayers("");
-      expect(OSM.locationCookie(map)).to.eq("-3.685|57.625|9|M");
+      expect(OSM.locationCookie(map)).to.eq("-3.685|57.625|9|O");
       $("#map").remove();
     });
 
@@ -348,11 +348,11 @@ describe("OSM", function () {
       $("body").append("<div id='map'>");
       const map = new L.OSM.Map("map", { center: [57.6247, -3.6845], zoom: 9 });
       map.updateLayers("");
-      expect(OSM.locationCookie(map)).to.eq("-3.685|57.625|9|M");
+      expect(OSM.locationCookie(map)).to.eq("-3.685|57.625|9|O");
       // map.setZoom() doesn't update the zoom level for some reason
       // using map._zoom here to update the zoom level manually
       map._zoom = 5;
-      expect(OSM.locationCookie(map)).to.eq("-3.68|57.62|5|M");
+      expect(OSM.locationCookie(map)).to.eq("-3.68|57.62|5|O");
       $("#map").remove();
     });
   });

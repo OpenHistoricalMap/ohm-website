@@ -7,13 +7,13 @@
 //= link_tree ../opensearch .xml
 //= link_directory ../stylesheets .css
 
-//= link_tree ../../../node_modules/@openstreetmap/id/dist/img
-//= link_directory ../../../node_modules/@openstreetmap/id/dist/data .json
-//= link_directory ../../../node_modules/@openstreetmap/id/dist/locales .json
-//= link_directory ../../../node_modules/@openstreetmap/id/dist/mapillary-js .css
-//= link_directory ../../../node_modules/@openstreetmap/id/dist/mapillary-js .js
-//= link_directory ../../../node_modules/@openstreetmap/id/dist/pannellum .js
-//= link_directory ../../../node_modules/@openstreetmap/id/dist/pannellum .css
+//= link_tree ../../../node_modules/@openhistoricalmap/id/dist/img
+//= link_directory ../../../node_modules/@openhistoricalmap/id/dist/data .json
+//= link_directory ../../../node_modules/@openhistoricalmap/id/dist/locales .json
+//= link_directory ../../../node_modules/@openhistoricalmap/id/dist/mapillary-js .css
+//= link_directory ../../../node_modules/@openhistoricalmap/id/dist/mapillary-js .js
+//= link_directory ../../../node_modules/@openhistoricalmap/id/dist/pannellum .js
+//= link_directory ../../../node_modules/@openhistoricalmap/id/dist/pannellum .css
 
 //= link_tree ../../../vendor/assets/leaflet .png
 

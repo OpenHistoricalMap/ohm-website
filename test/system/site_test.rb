@@ -6,7 +6,7 @@ class SiteTest < ApplicationSystemTestCase
   test "visiting the index" do
     visit "/"
 
-    assert_selector "h1", :text => "OpenStreetMap"
+    assert_selector "h1", :text => "OpenHistoricalMap"
   end
 
   test "tooltip shows for Layers button" do
@@ -18,25 +18,29 @@ class SiteTest < ApplicationSystemTestCase
     assert_selector ".tooltip", :text => "Layers"
   end
 
-  test "tooltip shows for Legend button on Standard layer" do
-    visit "/"
+  # OHM Variant: for OSM, its Standard layer, Mapnik, appears at "/"; we
+  #   preserve this test for OHM but must add "#layers=M" to the visit path
+  #   For some reason we also use the string "Map Key" instead of "Legend"
+  test "tooltip shows for Map Key button on Standard layer" do
+    visit "/#layers=M"
 
     assert_no_selector ".tooltip"
     button = find ".control-legend .control-button"
     button.hover
     tooltip = find ".tooltip"
-    tooltip.assert_text "Legend"
+    tooltip.assert_text "Map Key"
     tooltip.assert_no_text "not available"
   end
 
-  test "tooltip shows for Legend button on a layer without a legend provided" do
-    visit "/#layers=H" # assumes that HOT layer has no legend
+  # OHM Variant: as with the previous test we use the string "Map Key" instead of "Legend"
+  test "tooltip shows for Map Key button on a layer without a map key provided" do
+    visit "/#layers=H" # assumes that HOT layer has no map key
 
     assert_no_selector ".tooltip"
     button = find ".control-legend .control-button"
     button.hover
     tooltip = find ".tooltip"
-    tooltip.assert_text "Legend"
+    tooltip.assert_text "Map Key"
     tooltip.assert_text "not available"
   end
 

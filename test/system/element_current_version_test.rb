@@ -301,7 +301,9 @@ class ElementCurrentVersionTest < ApplicationSystemTestCase
       click_on "Share"
     end
 
-    share_url = find_by_id("long_input").value
-    assert_match %r{map=\d+/59\.\d+/29\.\d+}, share_url
+    # The share link updates on moveend. With OHM's vector base layer the map
+    # centers on the node later than with raster tiles, so use a retrying
+    # matcher instead of a one-shot read of the input value.
+    assert_field "long_input", :with => %r{map=\d+/59\.\d+/29\.\d+}
   end
 end

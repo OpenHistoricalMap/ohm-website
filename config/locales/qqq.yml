@@ -1,0 +1,251 @@
+# Messages for Message documentation (Message documentation)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Albergarri788
+# Author: Amire80
+# Author: Erictheise
+# Author: Kizule
+# Author: McDutchie
+# Author: Minh Nguyen
+# Author: PiefPafPier
+# Author: Robby
+# Author: Verdy p
+---
+qqq:
+  html:
+    dir: |-
+      {{Optional}}
+      This message defines the directionality to be used for the given language.
+      The only two possible values are:
+      * rtl: for right-to-left scripts (Arabic, Hebrew, etc.)
+      * ltr: for left-to-right scripts (unnecessary, as it is inherited from English)
+  date:
+    formats:
+      brief: '{{Optional|Only translate if the date format for a year must include
+        a prefix or suffix.}}'
+      range: '{{Optional|Only translate if the format for a date range uses different
+        punctuation or spacing.}}'
+  helpers:
+    submit:
+      diary_comment:
+        create: '{{identical|Save}}'
+      diary_entry:
+        create: '{{identical|Publish}}'
+        update: '{{identical|Update}}'
+      trace:
+        create: '{{identical|Upload}}'
+  activerecord:
+    models:
+      country: '{{identical|Country}}'
+    attributes:
+      trace:
+        description: '{{identical|Description}}'
+  printable_name:
+    with_date_html: '{{Optional|Only translate if the conventional format for indicating
+      the dates associated with something would different punctuation or non-ASCII
+      punctuation, or if the dates would be prepended.}}'
+  editor:
+    id:
+      name: |-
+        The term '''iD''' (with a lowercase initial and a capital second letter) is the actual name of an online map editor for OpenStreepMap or similar map editing projects.
+        : ''It is '''not''' meaning or abbreviating "identifier".'' Do not change it!
+      description: |-
+        The term '''iD''' (with a lowercase initial and a capital second letter) is the actual name of an online map editor for OpenStreepMap or similar map editing projects.
+        : ''It is '''not''' meaning or abbreviating "identifier".'' Do not change it!
+  auth:
+    providers:
+      apple: |-
+        {{Optional}}
+        {{doc-important|This is the name of Apple the computer company, not a literal apple.}}
+  api:
+    notes:
+      entry:
+        comment: Used as heading. Translate as a noun.
+  accounts:
+    deletions:
+      show:
+        cancel: '{{identical|Cancel}}'
+  changesets:
+    index:
+      feed:
+        cc0: '{{Optional}}'
+        cc0_url: '{{Optional}}'
+  geocoder:
+    search:
+      title:
+        latlon_url: '{{optional}}'
+        osm_nominatim_url: '{{optional}}'
+        osm_nominatim_reverse_url: '{{optional}}'
+    search_osm_nominatim:
+      suffix_format: |-
+        {{Optional|Only translate if the conventional format for indicating the dates associated with something would different punctuation or non-ASCII punctuation.}}
+
+        {{Identical|Date suffix format}}
+      prefix:
+        highway:
+          trunk: '[[:w:Trunk road|Trunk roads]] are planned and managed at the national
+            level, distinguishing them from non-trunk roads which are managed by local
+            authorities.'
+          trunk_link: '[[:w:Trunk road|Trunk roads]] are planned and managed at the
+            national level, distinguishing them from non-trunk roads which are managed
+            by local authorities.'
+        lock:
+          "yes": Refers to a [[:w:en:Lock (water navigation)|lock for ships]], not
+            a lock for closing doors.
+      border_types:
+        occupation: The boundary of a region occupied by an occupying force, not a
+          professional occupation.
+        possession: The boundary of a territorial possession.
+        ward: '[[:w:Ward (electoral subdivision)]]'
+  layouts:
+    project_name:
+      title: |-
+        {{Optional}}
+        {{Identical|OpenHistoricalMap}}
+      h1: |-
+        {{Optional}}
+        {{Identical|OpenHistoricalMap}}
+    partners_devseed: See https://developmentseed.org/
+    partners_greeninfo: See https://www.greeninfo.org/
+    tou: '{{Identical|Requestaccount-page}}'
+  user_mailer:
+    message_notification:
+      hi: '{{Identical|Hi}}'
+    follow_notification:
+      hi: '{{Identical|Hi}}'
+    gpx_failure:
+      hi: '{{Identical|Hi}}'
+    gpx_success:
+      hi: '{{Identical|Hi}}'
+  shared:
+    markdown_help:
+      kramdown: See https://kramdown.gettalong.org/
+  site:
+    about_section:
+      contribute_1_ohm_html: |-
+        See also:
+        * {{msg-ohm|ohm-site.about.contribute_1_wiki}}
+        * {{msg-ohm|ohm-site.about.contribute_1_wiki_url}}
+        * {{msg-ohm|ohm-site.about.contribute_1_forum}}
+        * {{msg-ohm|ohm-site.about.contribute_1_user_diaries}}
+        * {{msg-ohm|ohm-site.about.contribute_1_mastodon}}
+        * {{msg-ohm|ohm-site.about.contribute_1_bluesky}}
+      contribute_1_bluesky: '{{Optional}}'
+      contribute_1_mastodon: '{{Optional}}'
+      contribute_1_wiki_url: '{{Optional}}'
+      contribute_2_html: |-
+        See also:
+        * {{msg-ohm|ohm-site.about.contribute_2_create_account}}
+        * {{msg-ohm|ohm-site.about.contribute_2_donations}}
+        * {{msg-ohm|ohm-site.about.contribute_2_osmus}}
+      contribute_2_create_account: This message is the parameter %{create_account_link}
+        in {{msg-ohm|Ohm-site.about.contribute 2 html}}.
+      contribute_2_donations: This message is the parameter %{donations_link} in {{msg-ohm|Ohm-site.about.contribute
+        2 html}}.
+      contribute_2_osmus: This message is the parameter %{osmus_link} in {{msg-ohm|Ohm-site.about.contribute
+        2 html}}.
+      open_data_1_1_html: |-
+        See also:
+        * {{msg-ohm|ohm-site.about.open_data_1_1_reuse}}
+        * {{msg-ohm|ohm-site.about.open_data_1_1_reuse_url}}
+      open_data_1_1_reuse: This message is the link text for the parameter %{reuse_link}
+        in {{msg-ohm|Ohm-site.about.open data 1 1 html}}.
+      open_data_1_1_reuse_url: '{{Optional}}'
+      open_data_2_html: |-
+        See also:
+        * {{msg-ohm|ohm-site.about.open_data_2_copyright_license}}
+      legal_1_group_url: '{{Optional}}'
+      legal_3_html: |-
+        See also:
+        * {{msg-ohm|ohm-site.about.legal_3_osmf_trademarks}}
+        * {{msg-ohm|ohm-site.about.legal_3_osmf_trademarks_url}}
+      legal_3_osmf_trademarks: This message is the link text for the parameter %{osmf_trademarks_link}
+        in {{msg-ohm|Ohm-site.about.legal 3 html}}.
+    copyright:
+      legal_babble:
+        credit_3_project: |-
+          {{optional}}
+          {{Identical|OpenHistoricalMap}}
+        more_1_ohm_html: The variable %{wiki_link} will be replaced by the text of
+          the message {{msg-ohm|Ohm-site.copyright.legal babble.more 1 wiki}}.
+        contributors_anr_communes_project: '{{Optional}}'
+        contributors_anr_communes_campop_url: '{{Optional}}'
+        contributors_newberry: '[[w:Newberry Library]]'
+        contributors_natural_earth: '[[w:Natural Earth]]'
+        contributors_more_sources_html: '%{sources_link} is {{msg-ohm|Ohm-site.copyright.legal
+          babble.contributors more sources page}}'
+        contributors_more_sources_page: This message is the parameter %{sources_link}
+          in {{msg-ohm|Ohm-site.copyright.legal babble.contributors more sources html}}
+        infringement_2_ohm_html: The variable %{contact_team_link} is replaced by
+          the text of {{msg-ohm|Ohm-site.copyright.legal babble.infringement 2 ohm
+          contact team}}.
+        infringement_2_ohm_contact_team: This message is the variable %{contact_team_link}
+          in {{msg-ohm|Ohm-site.copyright.legal babble.infringement 2 ohm html}}.
+        trademarks_1_ohm_html: The variable %{contact_team_link} is replaced by the
+          text of {{msg-ohm|Ohm-site.copyright.legal babble.trademarks 1 ohm contact
+          team}}.
+        trademarks_1_ohm_contact_team: This message is the variable %{contact_team_link}
+          in {{msg-ohm|Ohm-site.copyright.legal babble.trademarks 1 ohm html}}.
+    fixthemap:
+      other_concerns:
+        contact_url: '{{Optional}}'
+    help:
+      community:
+        url: '{{Optional}}'
+      welcomemat:
+        url: '{{optional}}'
+      discord:
+        url: '{{optional}}'
+        title: |-
+          {{optional}}
+          Name of the [[:w:en:Discord|Discord]] platform.
+      github:
+        url: '{{Optional}}'
+    potlatch:
+      download_url: '{{Optional}}'
+    any_questions:
+      welcome_mat_url: '{{optional}}'
+    search:
+      providers:
+        fossgis_osrm: '{{Optional}}'
+        graphhopper: '{{Optional}}'
+        fossgis_valhalla: '{{Optional}}'
+    welcome:
+      whats_on_the_map:
+        on_the_map_ohm_html: The variable %{past_and_present} is replaced by {{msg-ohm|ohm-site.welcome.whats
+          on the map.past and present}}.
+        off_the_map_html: The variable %{doesnt} is replaced by the text of {{msg-ohm|Ohm-site.welcome.whats
+          on the map.doesnt}}.
+        doesnt: This message is the variable %{doesnt} in the message {{msg-ohm|Ohm-site.welcome.whats
+          on the map.off the map html}}.
+  notes:
+    new:
+      counter_warning_forum_link:
+        url: '{{Optional}}'
+  javascripts:
+    close: '{{identical|Close}}'
+    map:
+      base:
+        woodblock: Name for a map style layer simulating [[w:Woodblock printing|(wood)block
+          printing]] technique / ancient woodblock maps.
+        cyclosm: '{{optional}}'
+        shortbread: '{{Optional}}'
+        openmaptiles_osm: '{{Optional}}'
+      copyright_text: '{{optional}}'
+      cyclosm_name: '{{optional}}'
+      tracestrack: This is the name of a company. See https://wiki.openstreetmap.org/wiki/Tracestrack
+      openmaptiles_name: '{{Optional}}'
+      maptiler_name: '{{Optional}}'
+    query:
+      suffix_format: |-
+        {{Optional|Only translate if the customary format for indicating the date range associated with something uses different punctuation.}}
+
+        {{Identical|Date suffix format}}
+    element:
+      wikipedia: '{{Optional}}'
+    edit:
+      id_not_configured:
+        title: |-
+          The term '''iD''' (with a lowercase initial and a capital second letter) is the actual name of an online map editor for OpenStreepMap or similar map editing projects.
+          : ''It is '''not''' meaning or abbreviating "identifier".'' Do not change it!
+...

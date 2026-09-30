@@ -1,0 +1,20 @@
+# Messages for Western Punjabi (پنجابی)
+# Exported from translatewiki.net
+# Author: Ajeje Brazorf
+# Author: Bgo eiu
+# Author: Erictheise
+# Author: Minh Nguyen
+# Do not edit by hand.
+pnb:
+  layouts:
+    project_name:
+      title: اوپن ہسٹورکل میپ
+  site:
+    copyright:
+      legal_babble:
+        more_title_html: ہور جاݨکاری لبھݨ واستے
+    help:
+      slack:
+        title: آئی آر سی
+      wiki:
+        title: وِکی

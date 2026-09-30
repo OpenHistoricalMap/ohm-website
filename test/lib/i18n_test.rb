@@ -4,6 +4,9 @@ require "test_helper"
 
 class I18nTest < ActiveSupport::TestCase
   I18n.available_locales.each do |locale|
+    # OHM variant: upstream does not use the 'qqq' dummy language for documenting messages
+    next if locale.to_s == "qqq"
+
     test locale.to_s do
       without_i18n_exceptions do
         # plural_keys = plural_keys(locale)
@@ -72,6 +75,9 @@ class I18nTest < ActiveSupport::TestCase
         check_values_for_mediawiki_magic(yml)
       end
     end
+
+    # OHM variant: upstream does not use the 'qqq' dummy language for documenting messages
+    next if code == "qqq"
 
     test "#{code} present once in ui_languages.yml" do
       assert_equal(1, AVAILABLE_LANGUAGES.count { |language| language[:code] == code })

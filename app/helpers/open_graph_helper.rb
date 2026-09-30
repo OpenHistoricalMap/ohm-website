@@ -6,6 +6,8 @@ module OpenGraphHelper
       "og:site_name" => t("layouts.project_name.title"),
       "og:title" => properties["og:title"] || title || t("layouts.project_name.title"),
       "og:type" => "website",
+      "og:image" => image_url("ohm_logo_256.png", :protocol => "http"),
+      "og:image:secure_url" => image_url("ohm_logo_256.png", :protocol => "https"),
       "og:url" => url_for(:only_path => false),
       "og:description" => properties["og:description"] || t("layouts.intro_text")
     }.merge(

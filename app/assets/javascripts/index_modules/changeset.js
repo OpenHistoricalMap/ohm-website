@@ -29,6 +29,8 @@ export default function (map) {
       }
     });
     $(".numbered_pagination").trigger("numbered_pagination:enable");
+
+    addOpenHistoricalMapTimeSlider(map);
   };
 
   function updateChangeset(method, url, include_data) {

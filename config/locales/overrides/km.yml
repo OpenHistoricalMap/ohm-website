@@ -1,0 +1,24 @@
+# Messages for Khmer (ភាសាខ្មែរ)
+# Exported from translatewiki.net
+# Author: Gravitystorm
+# Author: MeahNunh
+# Author: Minh Nguyen
+# Author: Sovichet
+# Author: គីមស៊្រុន
+# Author: វ័ណថារិទ្ធ
+# Do not edit by hand.
+km:
+  date:
+    formats:
+      brief_bce: "%{year} មុនគ.ស."
+      brief_ce: "%{year} នៃគ.ស."
+  site:
+    export:
+      too_large:
+        planet:
+          title: Planet OHM
+  user_mailer:
+    email_confirm:
+      subject: "[OpenHistoricalMap] បញ្ជាក់​អាសយដ្ឋាន​អ៊ីមែលរបស់អ្នក​"
+    signup_confirm:
+      subject: "[OpenHistoricalMap] សូមស្វាគមន៍មកកាន់ OpenHistoricalMap"

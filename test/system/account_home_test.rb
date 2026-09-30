@@ -16,7 +16,7 @@ class AccountHomeTest < ApplicationSystemTestCase
       assert_equal "My home location", marker["title"]
     end
 
-    click_on "OpenStreetMap logo"
+    click_on "OpenHistoricalMap logo"
     assert_no_selector ".leaflet-marker-icon"
   end
 
@@ -33,7 +33,7 @@ class AccountHomeTest < ApplicationSystemTestCase
       assert_equal "My home location", marker["title"]
     end
 
-    click_on "OpenStreetMap logo"
+    click_on "OpenHistoricalMap logo"
     assert_no_selector ".leaflet-marker-icon"
   end
 

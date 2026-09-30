@@ -1,6 +1,8 @@
 # The server protocol and host
 server_protocol: "http"
 server_url: "openstreetmap.example.com"
+embed_server_url: "https://embed.openhistoricalmap.org/"
+
 # Publisher
 #publisher_url: ""
 # The generator
@@ -8,8 +10,10 @@ generator: "OpenStreetMap server"
 copyright_owner: "OpenStreetMap and contributors"
 attribution_url: "http://www.openstreetmap.org/copyright"
 license_url: "http://opendatacommons.org/licenses/odbl/1-0/"
+# Legal email address
+legal_email: "legal@openhistoricalmap.org"
 # Support email address
-support_email: "openstreetmap@example.com"
+support_email: "dev@openhistoricalmap.org"
 # Sender addresses for emails
 email_from: "OpenStreetMap <openstreetmap@example.com>"
 email_return_path: "openstreetmap@example.com"
@@ -132,7 +136,7 @@ default_editor: "id"
 # Imagery to return in capabilities as blacklisted
 imagery_blacklist: []
 # URL of Overpass instance to use for feature queries
-overpass_url: "https://overpass-api.de/api/interpreter"
+overpass_url: "https://overpass-api.openhistoricalmap.org/api/interpreter"
 overpass_credentials: false
 # Routing endpoints
 graphhopper_url: "https://graphhopper.com/api/1/route"
@@ -142,7 +146,7 @@ fossgis_valhalla_url: "https://valhalla1.openstreetmap.de/route"
 wikidata_api_url: "https://www.wikidata.org/w/api.php"
 wikimedia_commons_url: "https://commons.wikimedia.org/wiki/"
 # URL to donation form
-donation_url: "https://supporting.openstreetmap.org/donate/"
+donation_url: "https://openstreetmap.app.neoncrm.com/forms/ohm"
 # Linkification rules
 linkify:
   detection_rules:
@@ -213,6 +217,15 @@ linkify:
 #apple_team_id: ""
 #apple_key_id: ""
 #apple_private_key: ""
+
+# Settings to use osm.org production as identity provider
+# Requires confidential OAuth2 app on osm.org with scope "openid"
+# and callback http(s)://{other site}/auth/openstreetmap/callback
+#openstreetmap_auth_id: ""
+#openstreetmap_auth_secret: ""
+# Define additional scopes (openid scope is included by default)
+#openstreetmap_auth_scopes: ["read_email", "skip_authorization"]
+
 # Thunderforest authentication details
 #thunderforest_key: ""
 # Tracestrack authentication details

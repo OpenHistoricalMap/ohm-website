@@ -14,8 +14,12 @@ class SelectLanguageTest < ApplicationSystemTestCase
     click_on "Select Language"
 
     assert_content "English"
-    find_by_id("language_search").set("fra").send_keys(:tab)
-    assert_not_includes find_by_id("select_language_list").text, "English"
+    # Wait for the list frame to load (it focuses the input) before typing.
+    find_by_id("language_search", :focused => true).set("fra").send_keys(:tab)
+
+    within "#select_language_list" do
+      assert_no_text "English"
+    end
 
     click_on "français"
 
@@ -40,8 +44,12 @@ class SelectLanguageTest < ApplicationSystemTestCase
     click_on "Select Language"
 
     assert_content "English"
-    find_by_id("language_search").set("fra").send_keys(:tab)
-    assert_not_includes find_by_id("select_language_list").text, "English"
+    # Same wait as in the logged out test above.
+    find_by_id("language_search", :focused => true).set("fra").send_keys(:tab)
+
+    within "#select_language_list" do
+      assert_no_text "English"
+    end
 
     click_on "français"
 

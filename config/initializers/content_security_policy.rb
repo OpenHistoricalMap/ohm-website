@@ -7,10 +7,12 @@
 # https://guides.rubyonrails.org/security.html#content-security-policy-header
 
 Rails.application.configure do
-  connect_src = [:self, "tile.openstreetmap.org", "api.thunderforest.com", "tile.tracestrack.com", "*.openstreetmap.fr", "vector.openstreetmap.org", "api.maptiler.com"]
-  img_src = [:self, :data, "www.gravatar.com", "*.wp.com", "tile.openstreetmap.org", "gps.tile.openstreetmap.org", "api.thunderforest.com", "tile.tracestrack.com", "*.openstreetmap.fr"]
-  script_src = [:self]
-
+  tile_src = ["tile.openstreetmap.org", "gps.tile.openstreetmap.org", "api.thunderforest.com", "tile.tracestrack.com", "*.openstreetmap.fr"]
+  connect_src = [:self, "*.openhistoricalmap.org", "openhistoricalmap.github.io", "*.amazonaws.com", *tile_src]
+  img_src = [:self, :data, "www.gravatar.com", "*.wp.com", *tile_src]
+  script_src = [:self, "openhistoricalmap.github.io"]
+  style_src = [:self, "openhistoricalmap.github.io"]
+  worker_src = [:self, :blob, "0.0.0.0:3000"]
   connect_src << Settings.matomo["location"] if defined?(Settings.matomo)
   img_src << Settings.matomo["location"] if defined?(Settings.matomo)
   script_src << Settings.matomo["location"] if defined?(Settings.matomo)
@@ -32,8 +34,8 @@ Rails.application.configure do
     policy.object_src(:none)
     policy.plugin_types
     policy.script_src(*script_src)
-    policy.style_src(:self)
-    policy.worker_src(:blob)
+    policy.style_src(*style_src)
+    policy.worker_src(*worker_src)
     policy.manifest_src(:self)
     policy.report_uri(Settings.csp_report_url) if Settings.key?(:csp_report_url)
   end

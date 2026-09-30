@@ -11,6 +11,9 @@ export default function (map) {
     if (params.has("query")) {
       $("#sidebar .search_form input[name=query]").value(params.get("query"));
     }
+
+    addOpenHistoricalMapTimeSlider(map);
+
     return map.getState();
   };
 

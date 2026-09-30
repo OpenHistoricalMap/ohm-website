@@ -45,6 +45,9 @@ export function mappedElement(type) {
           });
         }
       });
+
+      addOpenHistoricalMapTimeSlider(map);
+      addOpenHistoricalMapInspector();
     };
 
     page._removeObject = function () {
@@ -163,4 +166,20 @@ function renderWikidataResponse({ icon, label, article, description }, $link) {
     }
   }
   return $("<tr>").append(cell);
+}
+
+// add the enhanced inspector (class comes from the external ohm-inspector
+// script loaded in layouts/_head.html.erb)
+function addOpenHistoricalMapInspector() {
+  const inspector = new openhistoricalmap.OpenHistoricaMapInspector({
+    debug: true,
+    onFeatureFail: function (type, id) {
+      console.log(["failed to load feature", type, id]);
+    },
+    onFeatureLoaded: function (type, id, xmldoc) {
+      console.log(["loaded feature", type, id, xmldoc]);
+    },
+    apiBaseUrl: "/api" // no trailing /
+  });
+  inspector.selectFeatureFromUrl();
 }

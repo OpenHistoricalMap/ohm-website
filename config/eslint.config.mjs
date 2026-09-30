@@ -27,12 +27,16 @@ export default [
         Cookies: "readonly",
         I18n: "readonly",
         L: "readonly",
+        MapboxLanguage: "readonly",
         Matomo: "readonly",
         OSM: "writable",
         Popper: "readonly",
         Turbo: "readonly",
+        addOpenHistoricalMapTimeSlider: "readonly",
         bootstrap: "readonly",
         maplibregl: "readonly",
+        ohmVectorStyles: "readonly",
+        openhistoricalmap: "readonly",
         polyline: "readonly",
         updateLinks: "readonly"
       }

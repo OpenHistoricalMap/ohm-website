@@ -114,6 +114,9 @@ export default function (map) {
     });
 
     update();
+
+    addOpenHistoricalMapTimeSlider(map);
+
     return map.getState();
   };
 

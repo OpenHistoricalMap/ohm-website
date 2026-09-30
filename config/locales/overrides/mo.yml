@@ -1,0 +1,16 @@
+# Messages for Moldovan (молдовеняскэ)
+# Exported from translatewiki.net
+# Author: Cybernenea11
+# Author: Erictheise
+# Author: Minh Nguyen
+# Author: TheChampionMan1234
+# Do not edit by hand.
+mo:
+  layouts:
+    intro_header: Бине аць венит ла OpenHistoricalMap!
+    intro_text: OpenHistoricalMap есте о хартэ а лумий, креатэ де оамень ка ши думнявоастрэ, ши поате фи утилизатэ ын мод либер суб о личенцэ дескисэ.
+    logo:
+      alt_text: Логотипул OpenHistoricalMap
+  sessions:
+    destroy:
+      heading: Ешире дин OpenHistoricalMap

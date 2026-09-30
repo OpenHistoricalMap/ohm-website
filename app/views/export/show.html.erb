@@ -8,7 +8,9 @@
   </head>
   <body>
     <div id="map">
-      <%= render :partial => "layouts/markers", :locals => { :types => %w[dot] } %>
+      <% if params[:marker].present? %>
+        <%= render :partial => "layouts/markers", :locals => { :types => %w[dot] } %>
+      <% end %>
     </div>
   </body>
 </html>

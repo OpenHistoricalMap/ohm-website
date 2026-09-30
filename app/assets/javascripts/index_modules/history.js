@@ -297,6 +297,8 @@ export default function (map) {
     map.on("moveend", moveEndListener);
     map.on("zoomend", zoomEndListener);
     loadFirstChangesets();
+
+    addOpenHistoricalMapTimeSlider(map);
   };
 
   page.unload = function () {
