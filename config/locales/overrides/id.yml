@@ -50,9 +50,15 @@
 # Do not edit by hand.
 id:
   accounts:
+    deletions:
+      show:
+        delete_introduction: 'Anda dapat menghapus akun OpenHistoricalMap Anda menggunakan tombol di bawah ini. Harap perhatikan detail berikut:'
+        retain_caveats: 'Namun, beberapa informasi tentang Anda akan tetap tersimpan di OpenHistoricalMap, bahkan setelah akun Anda dihapus:'
     terms:
       show:
         read and accept with tou: Tolong baca persetujuan kontributor dan ketentuan penggunaan, centang kedua kotak centang ketika selesai lalu tekan tombol lanjutkan.
+        tou_explain:
+          html: "%{tou_link} ini mengatur penggunaan situs web dan infrastruktur lainnya yang disediakan oleh OpenHistoricalMap. Tolong tekan tautannya, baca dan setujui teksnya."
   api:
     notes:
       rss:
@@ -60,11 +66,18 @@ id:
   application:
     setup_user_auth:
       blocked_zero_hour: Anda mendapat pesan penting di situs web OpenHistoricalMap. Anda perlu membaca pesan tersebut sebelum Anda bisa menyimpan suntingan Anda.
+  auth:
+    providers:
+      openstreetmap: OpenStreetMap
   changeset_comments:
     feeds:
       show:
         title_all: Diskusi set perubahan OpenHistoricalMap
         title_particular: 'Diskusi set perubahan OpenHistoricalMap #%{changeset_id}'
+  date:
+    formats:
+      brief_bce: "%{year} SM"
+      brief_ce: "%{year} M"
   diary_entries:
     feed:
       all:
@@ -87,6 +100,53 @@ id:
       description: Gagal menemukan operasi berkas/direktori/API dengan nama itu di peladen OpenHistoricalMap (HTTP 404)
   geocoder:
     search_osm_nominatim:
+      border_types:
+        archdiocese: Batas Keuskupan Agung
+        audiencia: Batas Audiencia
+        caliphate: Batas Kekhalifahan
+        canton: Batas Kanton
+        captaincy_general: Batas Kekaptenan Umum
+        census_area: Batas Wilayah Sensus
+        chiefdom: Batas Kesukuan
+        city-state: Batas Negara Kota
+        colony: Batas Kolonial
+        commonwealth: Batas Persemakmuran
+        commune: Batas Komunal
+        condominium: Batas Kondominium
+        confederation: Batas Konfederasi
+        diocese: Batas Keuskupan
+        dominion: Batas Dominion
+        emirate: Batas Keamiran
+        empire: Batas Kekaisaran
+        eyalet: Batas Eyalet
+        federal_district: Batas Distrik Federal
+        federation: Batas Federasi
+        ghetto: Batas Ghetto
+        governorate: Batas Kegubernuran
+        intendancy: Batas Intendansi
+        kingdom: Batas Kerajaan
+        major_division: Batas Divisi Utama
+        markaz: Batas Markaz
+        oblast: Batas Oblast
+        occupation: Batas Pendudukan
+        planning_region: Batas Wilayah Perencanaan
+        possession: Batas Kepemilikan
+        prefecture: Batas Prefektur
+        prefecture_apostolic: Batas Prefektur Apostolik
+        principate: Batas Kepangeranan
+        protectorate: Batas Protektorat
+        rancho: Batas Rancho
+        reichsgau: Batas Reichsgau
+        republic: Batas Republik
+        sanjak: Batas Sanjak
+        subdistrict: Batas Subdistrik
+        sultanate: Batas Kesultanan
+        territorial_prelature: Batas Wilayah Keuskupan
+        territory: Batas Wilayah
+        vicariate_apostolic: Batas Vikariat Apostolik
+        viceroyalty: Batas Kewizuraian
+        viyalet: Batas Vilayet
+        voivodeship: Batas Voivodat
       prefix:
         leisure:
           track: Trek Lari
@@ -105,9 +165,25 @@ id:
     intro_text: OpenHistoricalMap adalah peta interaktif dunia sepanjang sejarah, dibuat oleh orang-orang seperti Anda dan didedikasikan untuk domain publik.
     logo:
       alt_text: logo OpenHistoricalMap
+    meta:
+      openstreetmap_search: Pencarian OpenHistoricalMap
+    offline_flash:
+      osm_offline: Pangkalan data OpenHistoricalMap saat ini dimatikan karena pemeliharaan penting masih berlangsung.
+      osm_read_only: Pangkalan data OpenHistoricalMap saat ini berada dalam mode baca saja karena pemeliharaan penting masih berlangsung.
+    partners_osmf: Yayasan OpenStreetMap
+    partners_osmus: OpenStreetMap AS
   oauth:
     scopes:
       openid: Daftar masuk menggunakan OpenHistoricalMap
+  preferences:
+    basic_preferences:
+      show:
+        map_color_schemes:
+          auto: Otomatis
+    preferences:
+      navigation:
+        advanced_preferences: Preferensi Lanjutan
+        preferences: Preferensi
   sessions:
     destroy:
       heading: Keluar log dari OpenHistoricalMap
@@ -149,10 +225,10 @@ id:
       welcome:
         description: Mulai dengan panduan cepat meliputi dasar-dasar OpenHistoricalMap.
         title: Selamat datang di OpenHistoricalMap
-      wiki:
-        description: Petunjuk yang dikelola komunitas untuk menggunakan OHM dan pedoman untuk bersumbangsih ke pada proyek.
       welcomemat:
         title: Selamat datang di OHM
+      wiki:
+        description: Petunjuk yang dikelola komunitas untuk menggunakan OHM dan pedoman untuk bersumbangsih ke pada proyek.
     index:
       js_2: OpenHistoricalMap menggunakan JavaScript untuk peta selipnya.
     potlatch:
@@ -181,17 +257,21 @@ id:
       commented:
         subject_other: "[OpenHistoricalMap] %{commenter} telah mengomentari sebuah perangkat perubahan yang Anda minati"
         subject_own: "[OpenHistoricalMap] %{commenter} telah mengomentari salah satu perangkat perubahan Anda"
-      description: 'Perangkat perubahan OpenHistoricalMap #%{id}'
+      description: 'Set Perubahan OpenHistoricalMap #%{id}'
     diary_comment_notification:
+      description: 'Entri Harian OpenHistoricalMap #%{id}'
       header: "%{from_user} telah mengomentari entri catatan harian OpenHistoricalMap dengan subjek %{subject}:"
       header_html: "%{from_user} mengomentari entri catatan harian OpenHistoricalMap dengan subjek %{subject}:"
       subject: "[OpenHistoricalMap] %{user} mengomentari sebuah entri catatan harian"
     email_confirm:
       subject: "[OpenHistoricalMap] Konfirmasi alamat email Anda"
+    follow_notification:
+      followed_you: "%{user} sekarang mengikuti Anda di OpenHistoricalMap."
+      subject: "[OpenHistoricalMap] %{user} mengikuti Anda"
     gpx_failure:
-      subject: "[OpenHistoricalMap] gagal impor GPX"
+      subject: "[OpenHistoricalMap] Impor GPX gagal"
     gpx_success:
-      subject: "[OpenHistoricalMap] berhasil impor GPX"
+      subject: "[OpenHistoricalMap] Impor GPX berhasil"
     lost_password:
       hopefully_you: Seseorang (kemungkinan Anda) telah meminta untuk mengatur ulang kata sandi pada alamat surel dari akun openhistoricalmap.org ini.
       subject: "[OpenHistoricalMap] Permintaan atur ulang sandi"
