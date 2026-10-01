@@ -1,5 +1,6 @@
 # Messages for Punjabi (ਪੰਜਾਬੀ)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Aalam
 # Author: Babanwalia
 # Author: Bgo eiu
@@ -10,24 +11,52 @@
 # Author: Minh Nguyen
 # Author: Satnam S Virdi
 # Author: Tow
-# Do not edit by hand.
+---
 pa:
+  accounts:
+    terms:
+      show:
+        read and accept with tou: ਕਿਰਪਾ ਕਰਕੇ ਯੋਗਦਾਨ ਪਾਉਣ ਵਾਲੇ ਸਮਝੌਤੇ ਅਤੇ ਵਰਤੋਂ ਦੀਆਂ
+          ਸ਼ਰਤਾਂ ਨੂੰ ਪਡ਼੍ਹੋ, ਜਦੋਂ ਪੂਰਾ ਹੋ ਜਾਵੇ ਤਾਂ ਦੋਵੇਂ ਡੱਬੀਆਂ ਤੇ ਨਿਸ਼ਾਨ ਲਾਵੋ ਅਤੇ
+          ਫਿਰ ਜਾਰੀ ਰੱਖੋ ਬਟਨ ਨੂੰ ਦਬਾਓ।
+  api:
+    notes:
+      rss:
+        title: ਖੁੱਲ੍ਹਾ-ਗਲੀ-ਨਕਸ਼ਾ ਦੇ ਨੋਟ
   diary_entries:
     feed:
       all:
         description: OpenHistoricalMap ਦੇ ਵਰਤੋਂਕਾਰ ਤੋਂ ਹਾਲੀਆ ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ
         title: OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ
       language:
-        description: "%{language_name} ਵਿੱਚ OpenHistoricalMap ਦੇ ਵਰਤੋਂਕਾਰ ਤੋਂ ਹਾਲੀਆ ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ"
-        title: "%{language_name} ਵਿੱਚ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ"
+        description: '%{language_name} ਵਿੱਚ OpenHistoricalMap ਦੇ ਵਰਤੋਂਕਾਰ ਤੋਂ ਹਾਲੀਆ
+          ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ'
+        title: '%{language_name} ਵਿੱਚ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ'
       user:
-        description: "%{user} ਤੋਂ ਤਾਜ਼ਾ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ"
-        title: "%{user} ਲਈ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ"
+        description: '%{user} ਤੋਂ ਤਾਜ਼ਾ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ'
+        title: '%{user} ਲਈ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ'
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: ਕਲਾ ਕੇਂਦਰ
+        leisure:
+          horse_riding: ਘੋੜ ਸਵਾਰੀ ਕੇਂਦਰ
+          track: ਭੱਜਣ ਲਈ ਟਰੈਕ
+  javascripts:
+    legend:
+      title: ਨਕਸ਼ੇ ਦਾ ਟੀਕਾ
+      tooltip: ਨਕਸ਼ੇ ਦਾ ਟੀਕਾ
   layouts:
     intro_header: OpenHistoricalMap 'ਤੇ ਜੀ ਆਇਆਂ ਨੂੰ
+    logo:
+      alt_text: ਖੁੱਲ੍ਹਾ-ਗਲੀ-ਨਕਸ਼ਾ ਮਾਰਕਾ
   oauth:
     scopes:
       openid: OpenHistoricalMap ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਦਾਖਲ ਹੋਵੋ
+  sessions:
+    destroy:
+      heading: ਖੁੱਲ੍ਹਾ-ਗਲੀ-ਨਕਸ਼ਾ ਤੋਂ ਬਾਹਰ ਆਓ
   site:
     about_section:
       contribute_1_user_diaries: ਵਰਤੋਂਕਾਰਾਂ ਦੇ ਰੋਜ਼ਨਾਮਚੇ
@@ -39,6 +68,8 @@ pa:
       legal_babble:
         contributors_more_sources_page: ਵਾਧੂ ਸਰੋਤ ਅਤੇ ਯੋਗਦਾਨ ਪਾਉਣ ਵਾਲੇ
         contributors_title_html: ਪ੍ਰਵਾਨਗੀਆਂ
+        credit_1_html: 'ਜਿੱਥੇ ਤੁਸੀਂ ਖੁੱਲ੍ਹਾ-ਗਲੀ-ਨਕਸ਼ਾ ਡੇਟਾ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋ, ਤੁਹਾਨੂੰ
+          ਹੇਠ ਲਿਖੀਆਂ ਦੋ ਚੀਜ਼ਾਂ ਕਰਨ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ:'
         credit_2_home: ਸਾਡਾ ਮੁੱਢਲਾ ਵਰਕਾ
         credit_2_this_copyright_page: ਇਹ ਨਕਲ-ਹੱਕ ਸਫ਼ਾ
         credit_title_html: ਖੁੱਲ੍ਹਾ-ਗਲੀ-ਨਕਸ਼ੇ ਨੂੰ ਕਿਵੇਂ ਸੇਹਰਾ ਦੇਣਾ ਐ
@@ -50,17 +81,45 @@ pa:
     help:
       slack:
         title: ਆਈ.ਆਰ.ਸੀ
+      welcome:
+        title: ਖੁੱਲ੍ਹਾ-ਗਲੀ-ਨਕਸ਼ਾ ਉੱਤੇ ਜੀ ਆਇਆਂ ਨੂੰ
+      welcomemat:
+        title: ਸੰਸਥਾਵਾਂ ਲਈ
       wiki:
         title: ਵਿਕੀ
   time:
     formats:
-      friendly: "%e %B %Y at %H:%M"
+      friendly: '%e %B %Y at %H:%M'
   traces:
     feeds:
       show:
         title: OpenHistoricalMap GPS ਖੁਰਾ-ਖੋਜ
+    show:
+      edit: ਸੋਧੋ
+      edit_trace: ਇਹ ਖੁਰ-ਖੋਜ ਸੋਧੋ
+      map: ਨਕਸ਼ਾ
+    trace:
+      edit_map: ਨਕਸ਼ਾ ਸੋਧੋ
+      view_map: ਨਕਸ਼ਾ ਵੇਖੋ
   user_mailer:
     email_confirm:
-      subject: "[ਖੁੱਲ੍ਹਾ-ਇਤਿਹਾਸੀ-ਨਕਸ਼ਾ] ਆਪਣੇ ਈਮੇਲ ਪਤੇ ਦੀ ਤਸਦੀਕ ਕਰੋ"
+      subject: '[ਖੁੱਲ੍ਹਾ-ਇਤਿਹਾਸੀ-ਨਕਸ਼ਾ] ਆਪਣੇ ਈਮੇਲ ਪਤੇ ਦੀ ਤਸਦੀਕ ਕਰੋ'
+    gpx_failure:
+      subject: '[ਖੁੱਲ੍ਹਾ-ਗਲੀ-ਨਕਸ਼ਾ] GPX ਦਰਾਮਦ ਅਸਫਲਤਾ'
+    gpx_success:
+      subject: '[ਖੁੱਲ੍ਹਾ-ਗਲੀ-ਨਕਸ਼ਾ] GPX ਦਰਾਮਦ ਸਫਲਤਾ'
+    message_notification:
+      header: '%{from_user} ਨੇ ਤੁਹਾਨੂੰ ਖੁੱਲ੍ਹਾ-ਗਲੀ-ਨਕਸ਼ਾ ਰਾਹੀਂ %{subject}: ਵਿਸ਼ੇ ਨਾਲ
+        ਸੁਨੇਹਾ ਭੇਜਿਆ ਹੈ।'
+      header_html: '%{from_user} ਨੇ ਤੁਹਾਨੂੰ %{subject} ਵਿਸ਼ੇ ਦੇ ਨਾਲ ਖੁੱਲ੍ਹਾ-ਗਲੀ-ਨਕਸ਼ਾ
+        ਰਾਹੀਂ ਇੱਕ ਸੁਨੇਹਾ ਭੇਜਿਆ ਹੈ:'
+      subject: '[ਖੁੱਲ੍ਹਾ-ਗਲੀ-ਨਕਸ਼ਾ] %{message_title}'
     signup_confirm:
-      subject: "[OpenHistoricalMap] OpenHistoricalMap ਉੱਤੇ ਜੀ ਆਈਆਂ ਨੂੰ"
+      subject: '[OpenHistoricalMap] OpenHistoricalMap ਉੱਤੇ ਜੀ ਆਈਆਂ ਨੂੰ'
+  users:
+    new:
+      about:
+        welcome: ਖੁੱਲ੍ਹਾ-ਗਲੀ-ਨਕਸ਼ਾ ਉੱਤੇ ਜੀ ਆਇਆਂ ਨੂੰ
+      please_contact_support_html: ਕਿਰਪਾ ਕਰਕੇ ਖਾਤਾ ਬਣਾਉਣ ਦਾ ਪ੍ਰਬੰਧ ਕਰਨ ਲਈ %{support_link}
+        ਨਾਲ ਸੰਪਰਕ ਕਰੋ-ਅਸੀਂ ਜਿੰਨੀ ਜਲਦੀ ਹੋ ਸਕੇ ਬੇਨਤੀ ਨਾਲ ਨਜਿੱਠਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਾਂਗੇ।
+...

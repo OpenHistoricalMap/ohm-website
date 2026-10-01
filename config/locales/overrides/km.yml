@@ -1,24 +1,50 @@
 # Messages for Khmer (ភាសាខ្មែរ)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Gravitystorm
 # Author: MeahNunh
 # Author: Minh Nguyen
 # Author: Sovichet
 # Author: គីមស៊្រុន
 # Author: វ័ណថារិទ្ធ
-# Do not edit by hand.
+---
 km:
   date:
     formats:
-      brief_bce: "%{year} មុនគ.ស."
-      brief_ce: "%{year} នៃគ.ស."
+      brief_bce: '%{year} មុនគ.ស.'
+      brief_ce: '%{year} នៃគ.ស.'
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: មជ្ឍមណ្ឌលសិល្បៈ
+        leisure:
+          horse_riding: មជ្ឈមណ្ឌលជិះសេះ
+        shop:
+          seafood: ហាងគ្រឿងសមុទ្រ
+  javascripts:
+    legend:
+      title: កំណត់សម្គាល់
+      tooltip: កំណត់សម្គាល់
+      tooltip_disabled: ស្រទាប់នេះគ្មានកំណត់សម្គាល់ទេ
   site:
     export:
       too_large:
         planet:
           title: Planet OHM
+  time:
+    formats:
+      friendly: ថ្ងៃ%e ខែ%B ឆ្នាំ%Y នៅម៉ោង %H:%M
+  traces:
+    show:
+      edit: កែប្រែ​
+      map: ផែនទី​
+    trace:
+      edit_map: កែប្រែផែនទី​
+      view_map: មើលផែនទី​
   user_mailer:
     email_confirm:
-      subject: "[OpenHistoricalMap] បញ្ជាក់​អាសយដ្ឋាន​អ៊ីមែលរបស់អ្នក​"
+      subject: '[OpenHistoricalMap] បញ្ជាក់​អាសយដ្ឋាន​អ៊ីមែលរបស់អ្នក​'
     signup_confirm:
-      subject: "[OpenHistoricalMap] សូមស្វាគមន៍មកកាន់ OpenHistoricalMap"
+      subject: '[OpenHistoricalMap] សូមស្វាគមន៍មកកាន់ OpenHistoricalMap'
+...

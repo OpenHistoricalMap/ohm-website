@@ -1,5 +1,6 @@
 # Messages for Bosnian (bosanski)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Alenmahovic
 # Author: CERminator
 # Author: DzWiki
@@ -16,7 +17,7 @@
 # Author: Srdjan m
 # Author: Srđan
 # Author: Сербијана
-# Do not edit by hand.
+---
 bs:
   diary_entries:
     feed:
@@ -24,14 +25,27 @@ bs:
         description: Nedavni unosi u dnevnik OpenHistoricalMap korisnika
         title: Unosi u OpenHistoricalMap dnevniku
       language:
-        description: 'Nedavni unosi u dnevnik OpenHistoricalMap korisnika na jeziku: %{language_name}'
+        description: 'Nedavni unosi u dnevnik OpenHistoricalMap korisnika na jeziku:
+          %{language_name}'
         title: 'Unosi u OpenHistoricalMap dnevnik na jeziku: %{language_name}'
       user:
         description: Nedavni unosi u OpenHistoricalMap dnevnik od %{user}
         title: Unosi u OpenHistoricalMap dnevnik za korisnika %{user}
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: Centar umjetnosti
+        leisure:
+          track: Staza za trčanje
+  javascripts:
+    legend:
+      title: Legenda
+      tooltip_disabled: Legenda nije dostupna za ovaj sloj
   layouts:
     intro_header: Dobordošli na OpenHistoricalMap stranicu!
-    intro_text: OpenHistoricalMap predstavlja mapu svijeta, kreiranu od strane ljudi kao što ste vi i može se besplatno koristiti.
+    intro_text: OpenHistoricalMap predstavlja mapu svijeta, kreiranu od strane ljudi
+      kao što ste vi i može se besplatno koristiti.
     logo:
       alt_text: OpenHistoricalMap logotip
   sessions:
@@ -40,37 +54,65 @@ bs:
   site:
     copyright:
       legal_babble:
-        contributors_footer_2_html: Uvrštenje podataka u OpenHistoricalMap ne podrazumjeva da se izvorni davatelj podataka podržava OpenHistoricalMap, pruža bilo kakvu garanciju, ili prihvata bilo kakve obaveze.
+        attribution_example:
+          title: Primjer navođenja zasluge
+        contributors_footer_2_html: Uvrštenje podataka u OpenHistoricalMap ne podrazumjeva
+          da se izvorni davatelj podataka podržava OpenHistoricalMap, pruža bilo kakvu
+          garanciju, ili prihvata bilo kakve obaveze.
+        contributors_intro_html: 'Naši doprinosioci su hiljade osoba. Mi takođe uključujemo
+          podatke sa otvorenom dozvolom iz nacionalnih kartografskih agencija i drugih
+          izvora, među njima:'
+        contributors_title_html: Naši korisnici - doprinosioci
         credit_1_html: |-
           Tražimo da koristite navedete zasluge &ldquo;&copy; OpenHistoricalMap
           contributors&rdquo;.
         credit_title_html: Kako navesti zasluge OpenHistoricalMap projekta kao izvora
-        infringement_1_html: OHM doprinosioci se podsjećaju da nikada ne dodaju podatke sa bilo kojeg izvora koji zadržava autorska prava (npr. Google Maps ili printane karte) bez eksplicitne dozvole od strane autora.
+        infringement_1_html: OHM doprinosioci se podsjećaju da nikada ne dodaju podatke
+          sa bilo kojeg izvora koji zadržava autorska prava (npr. Google Maps ili
+          printane karte) bez eksplicitne dozvole od strane autora.
         more_title_html: Više o
+      title: Autorska prava i dozvola
     export:
       too_large:
-        body: Ovo područje je preveliko da bi se izvezlo kao OpenHistoricalMap XML podaci. Molimo povećajte (zoom) ili odaberite manje područje ili koristite jedan od izvora navedenih ispod za masovno preuzimanje podataka.
+        body: Ovo područje je preveliko da bi se izvezlo kao OpenHistoricalMap XML
+          podaci. Molimo povećajte (zoom) ili odaberite manje područje ili koristite
+          jedan od izvora navedenih ispod za masovno preuzimanje podataka.
     help:
       slack:
         title: IRC
     index:
       js_2: OpenHistoricalMap koristi JavaScript za slippy kartu.
+  time:
+    formats:
+      friendly: '%e %B %Y u %H:%M'
+  traces:
+    show:
+      edit: urediti
+      edit_trace: Uredite ovu trasu
+      map: karta
+    trace:
+      edit_map: Urediti kartu
+      view_map: Pogledati kartu
   user_mailer:
     diary_comment_notification:
-      header: "%{from_user} je komentirao tvoj nedavni OpenHistoricalMap unos u dnevnik sa predmetom %{subject}:"
-      subject: "[OpenHistoricalMap] %{user} je komentirao tvoj unos u dnevnik"
+      header: '%{from_user} je komentirao tvoj nedavni OpenHistoricalMap unos u dnevnik
+        sa predmetom %{subject}:'
+      subject: '[OpenHistoricalMap] %{user} je komentirao tvoj unos u dnevnik'
     email_confirm:
-      subject: "[OpenHistoricalMap] Potvrdite Vašu e-mail adresu"
+      subject: '[OpenHistoricalMap] Potvrdite Vašu e-mail adresu'
     gpx_failure:
-      subject: "[OpenHistoricalMap] GPX Import nije uspio"
+      subject: '[OpenHistoricalMap] GPX Import nije uspio'
     gpx_success:
-      subject: "[OpenHistoricalMap] GPX Import uspješan"
+      subject: '[OpenHistoricalMap] GPX Import uspješan'
     lost_password:
-      subject: "[OpenHistoricalMap] Zahtjev za ponovnim postavljanjem lozinke"
+      subject: '[OpenHistoricalMap] Zahtjev za ponovnim postavljanjem lozinke'
     message_notification:
-      header: "%{from_user} Vam je poslao poruku preko OpenHistoricalMap sa predmetom %{subject}:"
+      header: '%{from_user} Vam je poslao poruku preko OpenHistoricalMap sa predmetom
+        %{subject}:'
     note_comment_notification:
       commented:
-        subject_own: "[OpenHistoricalMap] %{commenter} je dao komentar na jednu od tvojih bilješki."
+        subject_own: '[OpenHistoricalMap] %{commenter} je dao komentar na jednu od
+          tvojih bilješki.'
     signup_confirm:
-      subject: "[OpenHistoricalMap] Dobrodošli na OpenHistoricalMap"
+      subject: '[OpenHistoricalMap] Dobrodošli na OpenHistoricalMap'
+...

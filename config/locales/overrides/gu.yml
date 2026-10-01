@@ -1,13 +1,19 @@
 # Messages for Gujarati (ગુજરાતી)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: CptViraj
 # Author: Erictheise
 # Author: KartikMistry
 # Author: Minh Nguyen
 # Author: Mitulverma13
 # Author: Sushant savla
-# Do not edit by hand.
+---
 gu:
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: કલા કેન્દ્ર
   layouts:
     logo:
       alt_text: OpenHistoricalMapનો લોગો
@@ -17,12 +23,15 @@ gu:
     help:
       welcome:
         title: OpenHistoricalMapમાં સ્વાગત છે
+      welcomemat:
+        title: સંસ્થાઓ માટે
       wiki:
         title: વિકિ
   user_mailer:
     message_notification:
-      subject: "[OpenHistoricalMap] %{message_title}"
+      subject: '[OpenHistoricalMap] %{message_title}'
   users:
     new:
       about:
         welcome: OpenHistoricalMapમાં સ્વાગત છે
+...

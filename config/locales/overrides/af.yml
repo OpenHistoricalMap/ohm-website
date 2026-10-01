@@ -1,5 +1,6 @@
 # Messages for Afrikaans (Afrikaans)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Arnobarnard
 # Author: Biggs ZA
 # Author: Danieldegroot2
@@ -11,7 +12,7 @@
 # Author: Minh Nguyen
 # Author: Naudefj
 # Author: Nroets
-# Do not edit by hand.
+---
 af:
   api:
     notes:
@@ -28,14 +29,30 @@ af:
         description: Onlangse dagboekinskrywings van OpenHistoricalMap-gebruikers
         title: OpenHistoricalMap-dagboekinskrywings
       language:
-        description: Onlangse dagboekinskrywings van OpenHistoricalMap-gebruikers in %{language_name}
+        description: Onlangse dagboekinskrywings van OpenHistoricalMap-gebruikers
+          in %{language_name}
         title: OpenHistoricalMap dagboekinskrywings in %{language_name}
       user:
         description: Onlangse OpenHistoricalMap-dagboekinskrywings van %{user}
         title: OpenHistoricalMap-dagboekinskrywings vir %{user}
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: Kunssentrum
+        leisure:
+          horse_riding: Perdry
+          track: Atletiekbaan
+        shop:
+          seafood: Seekos
+  javascripts:
+    legend:
+      title: Kaartsleutel
+      tooltip: Kaartsleutel
   layouts:
     intro_header: Welkom by OpenHistoricalMap!
-    intro_text: OpenHistoricalMap is wêreldkaart deur gewone mense geskep. Die gebruik daarvan is gratis en val onder 'n oop-lisensie.
+    intro_text: OpenHistoricalMap is wêreldkaart deur gewone mense geskep. Die gebruik
+      daarvan is gratis en val onder 'n oop-lisensie.
     logo:
       alt_text: OpenHistoricalMap-embleem
   sessions:
@@ -44,9 +61,14 @@ af:
   site:
     copyright:
       legal_babble:
+        contributors_title_html: Ons bydraers
         credit_title_html: Hoe om na OpenHistoricalMap te verwys
+      title: Kopiereg en lisensie
     export:
       too_large:
+        body: Hierdie gebied is te groot om as OpenStreenMap XML-data uitgevoer te
+          word. Zoem in of kies 'n kleiner gebied. Wend andersins een van die bronne
+          hieronder aan om massas data af te laai.
         planet:
           title: Planeet OHM
     help:
@@ -56,16 +78,31 @@ af:
         title: Welkom by OpenHistoricalMap
     welcome:
       basic_terms:
-        paragraph_1: OpenHistoricalMap bevat 'n gedeelte van ons eie vakbegrippe. Hier is 'n paar wat handig te pas sal kom.
+        paragraph_1: OpenHistoricalMap bevat 'n gedeelte van ons eie vakbegrippe.
+          Hier is 'n paar wat handig te pas sal kom.
+  time:
+    formats:
+      friendly: '%e %B %Y om %H:%M'
+  traces:
+    show:
+      edit: redigeer
+      edit_trace: Wysig hierdie spoor
+      map: kaart
+    trace:
+      edit_map: Redigeer kaart
+      view_map: Wys kaart
   user_mailer:
     diary_comment_notification:
-      header: "%{from_user} het kommentaar op die OpenHistoricalMap-dagboekinskrywing met die tema %{subject} gelewer:"
-      subject: "[OpenHistoricalMap] %{user} het kommentaar op 'n dagboekinskrywing gelewer"
+      header: '%{from_user} het kommentaar op die OpenHistoricalMap-dagboekinskrywing
+        met die tema %{subject} gelewer:'
+      subject: '[OpenHistoricalMap] %{user} het kommentaar op ''n dagboekinskrywing
+        gelewer'
     email_confirm:
-      subject: "[OpenHistoricalMap] Bevestig u e-posadres"
+      subject: '[OpenHistoricalMap] Bevestig u e-posadres'
     lost_password:
-      subject: "[OpenHistoricalMap] Versoek om wagwoord te herstel"
+      subject: '[OpenHistoricalMap] Versoek om wagwoord te herstel'
     message_notification:
-      subject: "[OpenHistoricalMap] %{message_title}"
+      subject: '[OpenHistoricalMap] %{message_title}'
     signup_confirm:
-      subject: "[OpenHistoricalMap] Welkom by OpenHistoricalMap"
+      subject: '[OpenHistoricalMap] Welkom by OpenHistoricalMap'
+...

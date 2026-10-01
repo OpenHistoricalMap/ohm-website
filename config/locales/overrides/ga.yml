@@ -1,23 +1,31 @@
 # Messages for Irish (Gaeilge)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Aindriu80
 # Author: Cliste
 # Author: Danieldegroot2
 # Author: Erictheise
 # Author: Minh Nguyen
 # Author: Tem
-# Do not edit by hand.
+---
 ga:
   accounts:
     deletions:
       show:
-        delete_introduction: 'Is féidir leat do chuntas OpenHistoricalMap a scriosadh trí úsáid a bhaint as an gcnaipe thíos. Tabhair faoi deara na sonraí seo a leanas le do thoil:'
-        retain_caveats: 'Mar sin féin, coinneofar roinnt faisnéise fút ar OpenHistoricalMap, fiú tar éis do chuntas a scriosadh:'
+        delete_introduction: 'Is féidir leat do chuntas OpenHistoricalMap a scriosadh
+          trí úsáid a bhaint as an gcnaipe thíos. Tabhair faoi deara na sonraí seo
+          a leanas le do thoil:'
+        retain_caveats: 'Mar sin féin, coinneofar roinnt faisnéise fút ar OpenHistoricalMap,
+          fiú tar éis do chuntas a scriosadh:'
     terms:
       show:
-        read and accept with tou: Léigh an comhaontú rannpháirtí agus na téarmaí úsáide le do thoil, seiceáil an dá bhosca seiceála nuair a bheidh tú críochnaithe agus ansin brúigh an cnaipe lean ar aghaidh.
+        read and accept with tou: Léigh an comhaontú rannpháirtí agus na téarmaí úsáide
+          le do thoil, seiceáil an dá bhosca seiceála nuair a bheidh tú críochnaithe
+          agus ansin brúigh an cnaipe lean ar aghaidh.
         tou_explain:
-          html: Rialaíonn na %{tou_link} seo úsáid an tsuímh ghréasáin agus bonneagair eile a sholáthraíonn OpenHistoricalMap. Cliceáil ar an nasc, léigh an téacs agus aontaigh leis.
+          html: Rialaíonn na %{tou_link} seo úsáid an tsuímh ghréasáin agus bonneagair
+            eile a sholáthraíonn OpenHistoricalMap. Cliceáil ar an nasc, léigh an
+            téacs agus aontaigh leis.
   api:
     notes:
       rss:
@@ -28,7 +36,9 @@ ga:
         alt: Lógó OpenStreetMap
         title: Logáil isteach le OpenStreetMap
     setup_user_auth:
-      blocked_zero_hour: Tá teachtaireacht phráinneach againn duit ar shuíomh gréasáin OpenHistoricalMap. Ní mór duit an teachtaireacht a léamh sula mbeidh tú in ann do chuid athruithe a shábháil.
+      blocked_zero_hour: Tá teachtaireacht phráinneach againn duit ar shuíomh gréasáin
+        OpenHistoricalMap. Ní mór duit an teachtaireacht a léamh sula mbeidh tú in
+        ann do chuid athruithe a shábháil.
   auth:
     providers:
       openstreetmap: OpenStreetMap
@@ -39,33 +49,43 @@ ga:
         title_particular: Plé ar thacar athruithe %{changeset_id} de chuid OpenHistoricalMap
   date:
     formats:
-      brief: "%{year}"
-      brief_bce: "%{year} RCR"
-      brief_ce: "%{year} CR"
-      range: "%{start} – %{end}"
+      brief: '%{year}'
+      brief_bce: '%{year} RCR'
+      brief_ce: '%{year} CR'
+      range: '%{start} – %{end}'
   diary_entries:
     feed:
       all:
         description: Iontrálacha dialainne le déanaí ó úsáideoirí OpenHistoricalMap
         title: Iontrálacha dialainne OpenHistoricalMap
       language:
-        description: 'Iontrálacha dialainne a rinne úsáideoirí OpenHistoricalMap le déanaí sa teanga seo: %{language_name}'
+        description: 'Iontrálacha dialainne a rinne úsáideoirí OpenHistoricalMap le
+          déanaí sa teanga seo: %{language_name}'
         title: 'Iontrálacha dialainne OpenHistoricalMap sa teanga seo: %{language_name}'
       user:
         description: Iontrálacha dialainne OpenHistoricalMap le déanaí de chuid %{user}
         title: Iontrálacha dialainne OpenHistoricalMap le haghaidh %{user}
   errors:
     bad_request:
-      description: Níl an oibríocht a d'iarr tú ar an bhfreastalaí OpenHistoricalMap bailí (HTTP 400)
+      description: Níl an oibríocht a d'iarr tú ar an bhfreastalaí OpenHistoricalMap
+        bailí (HTTP 400)
     contact:
-      contact_the_community_html: Ná bíodh drogall ort %{contact_link} a dhéanamh le pobal OpenHistoricalMap má aimsíonn tú nasc/fabairt briste. Déan nóta den URL cruinn a bhaineann le d’iarratas.
+      contact_the_community_html: Ná bíodh drogall ort %{contact_link} a dhéanamh
+        le pobal OpenHistoricalMap má aimsíonn tú nasc/fabairt briste. Déan nóta den
+        URL cruinn a bhaineann le d’iarratas.
       contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
     forbidden:
-      description: Níl an oibríocht a d'iarr tú ar an bhfreastalaí OpenHistoricalMap ar fáil ach do riarthóirí (HTTP 403)
+      description: Níl an oibríocht a d'iarr tú ar an bhfreastalaí OpenHistoricalMap
+        ar fáil ach do riarthóirí (HTTP 403)
     internal_server_error:
-      description: Tháinig riocht gan choinne ar fhreastalaí OpenHistoricalMap a chuir cosc ​​air an iarratas a chomhlíonadh (HTTP 500)
+      description: Tháinig riocht gan choinne ar fhreastalaí OpenHistoricalMap a chuir
+        cosc ​​air an iarratas a chomhlíonadh (HTTP 500)
     not_found:
-      description: Níorbh fhéidir comhad/eolaire/oibríocht API leis an ainm sin a aimsiú ar an bhfreastalaí OpenHistoricalMap (HTTP 404)
+      description: Níorbh fhéidir comhad/eolaire/oibríocht API leis an ainm sin a
+        aimsiú ar an bhfreastalaí OpenHistoricalMap (HTTP 404)
+  export:
+    show:
+      title: OpenHistoricalMap Leabaithe
   geocoder:
     search_osm_nominatim:
       border_types:
@@ -126,11 +146,14 @@ ga:
         ward: Teorainn na Barda
         zone: Teorainn Chriosach
       prefix:
+        amenity:
+          arts_centre: Ionad Ealaíon
         leisure:
+          horse_riding: Ionad Marcaíochta Capall
           track: Raon Reatha
         shop:
           seafood: Bia mara
-      suffix_format: "[%{dates}]"
+      suffix_format: '[%{dates}]'
   javascripts:
     legend:
       title: Eochair na Léarscáile
@@ -142,27 +165,35 @@ ga:
         japanesescroll: Scrolla Seapánach
         railway: Iarnród
         woodblock: Bloc adhmaid
-      cc0_text: "%{copyright_link}"
+      cc0_text: '%{copyright_link}'
       openhistoricalmap_contributors: OHM
     query:
-      suffix_format: "[%{dates}]"
+      suffix_format: '[%{dates}]'
   layouts:
     intro_header: Fáilte go OpenHistoricalMap!
-    intro_text: Is léarscáil den domhan é OpenHistoricalMap, a chruthaigh daoine cosúil leatsa agus atá saor in aisce le húsáid faoi cheadúnas oscailte.
+    intro_text: Is léarscáil den domhan é OpenHistoricalMap, a chruthaigh daoine cosúil
+      leatsa agus atá saor in aisce le húsáid faoi cheadúnas oscailte.
     logo:
       alt_text: Lógó OpenHistoricalMap
+    meta:
+      openstreetmap_search: OpenHistoricalMap Cuardach
     offline_flash:
-      osm_offline: Tá bunachar sonraí OpenHistoricalMap as líne faoi láthair agus obair chothabhála riachtanach ar siúl.
-      osm_read_only: Tá bunachar sonraí OpenHistoricalMap i mód léite amháin faoi láthair agus obair chothabhála riachtanach ar siúl.
+      osm_offline: Tá bunachar sonraí OpenHistoricalMap as líne faoi láthair agus
+        obair chothabhála riachtanach ar siúl.
+      osm_read_only: Tá bunachar sonraí OpenHistoricalMap i mód léite amháin faoi
+        láthair agus obair chothabhála riachtanach ar siúl.
     partners_devseed: Síol Forbartha
     partners_greeninfo: Líonra GreenInfo
     partners_osmf: Fondúireacht OpenStreetMap
     partners_osmus: OpenStreetMap SAM
-    meta:
-      openstreetmap_search: OpenHistoricalMap Cuardach
   notes:
+    new:
+      advice: Tá do nóta poiblí agus féadfar í a úsáid chun an léarscáil a nuashonrú,
+        mar sin ná cuir isteach faisnéis phearsanta, ná faisnéis ó léarscáileanna
+        cóipchirtithe ná ó liostaí eolaire.
     new_readonly:
-      warning: Ní féidir nótaí nua a chruthú mar go bhfuil OpenHistoricalMap API i mód léite amháin faoi láthair.
+      warning: Ní féidir nótaí nua a chruthú mar go bhfuil OpenHistoricalMap API i
+        mód léite amháin faoi láthair.
   oauth:
     scopes:
       openid: Sínigh isteach ag baint úsáide as OpenHistoricalMap
@@ -176,15 +207,18 @@ ga:
         advanced_preferences: Roghanna Ardleibhéil
         preferences: Roghanna
   printable_name:
-    with_date_html: "%{name} [%{dates}]"
+    with_date_html: '%{name} [%{dates}]'
   sessions:
     destroy:
       heading: Logáil amach as OpenHistoricalMap
     new:
-      login_to_authorize_html: Logáil isteach in OpenHistoricalMap chun rochtain a fháil ar %{client_app_name}.
+      login_to_authorize_html: Logáil isteach in OpenHistoricalMap chun rochtain a
+        fháil ar %{client_app_name}.
   site:
     about:
-      lede_text: Is tionscadal uaillmhianach, faoi stiúir an phobail é OpenHistoricalMap chun athruithe ar an tíreolaíocht nádúrtha agus dhaonna ar fud an domhain… tríd na haoiseanna a mhapáil.
+      lede_text: Is tionscadal uaillmhianach, faoi stiúir an phobail é OpenHistoricalMap
+        chun athruithe ar an tíreolaíocht nádúrtha agus dhaonna ar fud an domhain…
+        tríd na haoiseanna a mhapáil.
       used_by_html: Taiscéal an domhan in aon tréimhse ama le %{name}.
     about_section:
       contribute_1_bluesky: Bluesky
@@ -205,6 +239,7 @@ ga:
         Rachaidh do shíntiús flaithiúil go díreach i dtreo OpenHistoricalMap a choinneáil ag rith go réidh do gach duine.
       contribute_2_osmus: OpenStreetMap SAM
       contribute_title: Is Féidir Leat Cabhrú
+      legal_1_1_terms_of_use_url: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
       legal_1_aup: Polasaithe Úsáide Inghlactha
       legal_1_aup_url: https://wiki.openstreetmap.org/wiki/Acceptable_Use_Policy
       legal_1_group: grúpa neamhfhoirmiúil
@@ -217,7 +252,8 @@ ga:
       legal_1_terms_of_use: Téarmaí Úsáide
       legal_1_terms_of_use_url: https://osmfoundation.org/wiki/Terms_of_Use
       legal_2_contact_team: déan teagmháil leis an bhfoireann OpenHistoricalMap
-      legal_2_html: Le do thoil, %{contact_team_link} a úsáid le haon cheisteanna ceadúnaithe, cóipchirt nó dlíthiúla eile.
+      legal_2_html: Le do thoil, %{contact_team_link} a úsáid le haon cheisteanna
+        ceadúnaithe, cóipchirt nó dlíthiúla eile.
       legal_3_html: |-
         Is trádmharc cláraithe é OpenHistoricalMap® (Uimhir Chláraithe SAM 90,019,364).
         Is le %{osmf_trademarks_link} OpenStreetMap agus lógó an ghloine formhéadúcháin.
@@ -240,21 +276,38 @@ ga:
         Agus cuimhníonn tú ar an gcuma a bhíodh ar do chomharsanacht.
         Baineann sé ar fad le OpenHistoricalMap.
       scope_title: Mór agus Beag, Ansin agus Anois
-      legal_1_1_terms_of_use_url: https://wiki.osmfoundation.org/wiki/Licence/Contributor_Terms
+    add_a_note:
+      para_1: Mura bhfuil tú ag iarraidh ach go ndéanfaí rud beag a cheartú agus gan
+        an t-am agat clárú agus foghlaim conas eagarthóireacht a dhéanamh, tá sé an-éasca
+        nóta a scríobh.
+    any_questions:
+      ohm_paragraph_1_html: Tá roinnt acmhainní ag OpenHistoricalMap chun foghlaim
+        faoin tionscadal, ceisteanna a chur agus a fhreagairt, agus ábhair mapála
+        a phlé agus a dhoiciméadú go comhoibríoch. %{help_link}
     copyright:
       legal_babble:
         attribution_example:
-          alt: Nasc lipéadaithe OHM sa chúinne íochtarach ar dheis de leathanach gréasáin, faoi shleamhnán ama.
+          alt: Nasc lipéadaithe OHM sa chúinne íochtarach ar dheis de leathanach gréasáin,
+            faoi shleamhnán ama.
           title: Sampla de conas OpenHistoricalMap a chur i leith leathanach gréasáin
-        contributors_2_ohm_html: 'Tá sonraí OpenHistoricalMap agus na foinsí seo a leanas sna stíleanna léarscáile atá le feiceáil ar an leathanach baile:'
-        contributors_anr_communes_campop: Grúpa Cambridge um Stair an Daonra agus na Struchtúr Sóisialta
-        contributors_anr_communes_html: Sonraí cruthaithe ag an tionscadal %{anr_communes_link} i gcomhar le %{campop_link}.
+        contributors_2_ohm_html: 'Tá sonraí OpenHistoricalMap agus na foinsí seo a
+          leanas sna stíleanna léarscáile atá le feiceáil ar an leathanach baile:'
+        contributors_anr_communes_campop: Grúpa Cambridge um Stair an Daonra agus
+          na Struchtúr Sóisialta
+        contributors_anr_communes_html: Sonraí cruthaithe ag an tionscadal %{anr_communes_link}
+          i gcomhar le %{campop_link}.
         contributors_anr_communes_project: ANR COMMUNES
-        contributors_footer_2_html: Ní hionann sonraí a áireamh in OpenHistoricalMap agus a rá go dtacaíonn an soláthraí sonraí bunaidh le OpenHistoricalMap, go soláthraíonn sé aon bharántas, nó go nglacann sé le haon dliteanas.
+        contributors_footer_2_html: Ní hionann sonraí a áireamh in OpenHistoricalMap
+          agus a rá go dtacaíonn an soláthraí sonraí bunaidh le OpenHistoricalMap,
+          go soláthraíonn sé aon bharántas, nó go nglacann sé le haon dliteanas.
         contributors_globcover: GlobCover
-        contributors_globcover_html: Clúdach talún ó %{globcover_link}, © ESA 2010 agus UCLouvain, ar fáil lena athúsáid chun críocha oideachais agus/nó eolaíochta le haitheantas.
+        contributors_globcover_html: Clúdach talún ó %{globcover_link}, © ESA 2010
+          agus UCLouvain, ar fáil lena athúsáid chun críocha oideachais agus/nó eolaíochta
+          le haitheantas.
         contributors_gmted: Sonraí airde tír-raoin ilréitigh dhomhanda 2010
-        contributors_gmted_html: 'Sonraí airde tír-raoin ó Danielson, J.J., agus Gesch, D.B., 2011, %{gmted_link} (GMTED2010): Tuarascáil Chomhaid Oscailte Suirbhéireacht Gheolaíochta na SA 2011–1073, 26 lch. Fearann ​​poiblí.'
+        contributors_gmted_html: 'Sonraí airde tír-raoin ó Danielson, J.J., agus Gesch,
+          D.B., 2011, %{gmted_link} (GMTED2010): Tuarascáil Chomhaid Oscailte Suirbhéireacht
+          Gheolaíochta na SA 2011–1073, 26 lch. Fearann ​​poiblí.'
         contributors_intro_html: |-
           Is comhoibriú idir na mílte duine aonair agus eagraíocht é OpenHistoricalMap, a bhaineann leas as corp mór scoláireachta, iriseoireachta agus coimeád taifead.
           Ár bhfoinsí agus ár rannpháirtithe is suntasaí tá:
@@ -262,31 +315,44 @@ ga:
         contributors_more_sources_page: Foinsí agus rannpháirtithe breise
         contributors_more_sources_page_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Sources
         contributors_natural_earth: Domhan Nádúrtha
-        contributors_natural_earth_html: Tacair sonraí %{natural_earth_link} sa réimse poiblí.
+        contributors_natural_earth_html: Tacair sonraí %{natural_earth_link} sa réimse
+          poiblí.
         contributors_newberry: Leabharlann Newberry
         contributors_newberry_ahcb: Atlas de Theorainneacha Stairiúla Contae
-        contributors_newberry_ahcb_html: Sonraí ón %{ahcb_link}, tionscadal de chuid Ionad William M. Scholl um Stair agus Cultúr Mheiriceá ag %{newberry_link}, atá ar fáil lena athúsáid gan srian.
+        contributors_newberry_ahcb_html: Sonraí ón %{ahcb_link}, tionscadal de chuid
+          Ionad William M. Scholl um Stair agus Cultúr Mheiriceá ag %{newberry_link},
+          atá ar fáil lena athúsáid gan srian.
         contributors_osm: Rannpháirtithe OpenStreetMap
         contributors_osm_cc_by_sa: CC BY-SA 2.0
         contributors_osm_cc_by_sa_url: https://creativecommons.org/licenses/by-sa/2.0/
-        contributors_osm_html: Sonraí faoi chóstaí, uiscebhealaí, agus srutháin © %{osm_link}, %{cc_by_sa_link}.
+        contributors_osm_html: Sonraí faoi chóstaí, uiscebhealaí, agus srutháin ©
+          %{osm_link}, %{cc_by_sa_link}.
         contributors_title_html: Buíochas
-        credit_1_html: Ceanglaímid ort an lua &ldquo;&copy;Rannchuiditheoirí OpenHistoricalMap&rdquo; a úsáid.
+        credit_1_html: Ceanglaímid ort an lua &ldquo;&copy;Rannchuiditheoirí OpenHistoricalMap&rdquo;
+          a úsáid.
         credit_2_home: ár leathanach baile
         credit_2_ohm_html: |-
           Féadfaidh tú an admháil seo a chur i láthair ar aon bhealach réasúnta.
           Mar shampla, ar léarscáil dhigiteach, is féidir leat OpenHistoricalMap a lua i gcló beag sa chúinne, ag nascadh le %{this_copyright_page_link} nó %{home_link}:
         credit_2_this_copyright_page: an leathanach cóipchirt seo
-        credit_3_credit_html: Sonraí léarscáile le caoinchead an tionscadail %{project_link}, sa réimse poiblí mura luaitear a mhalairt.
-        credit_3_ohm_html: 'Nó is féidir leat aitheantas níos soiléire a chur ar leathanach creidmheasanna ar leithligh inar féidir leat creidiúint a thabhairt d’fhoinsí eile:'
+        credit_3_credit_html: Sonraí léarscáile le caoinchead an tionscadail %{project_link},
+          sa réimse poiblí mura luaitear a mhalairt.
+        credit_3_ohm_html: 'Nó is féidir leat aitheantas níos soiléire a chur ar leathanach
+          creidmheasanna ar leithligh inar féidir leat creidiúint a thabhairt d’fhoinsí
+          eile:'
         credit_4_ohm_html: |-
           Ar léarscáil chlóite, is féidir leat an admháil a chur san finscéal.
           I leabhar, is féidir leat cur síos a dhéanamh ar d’úsáid de OpenHistoricalMap i bhfonóta, i mbibleagrafaíocht, nó i gcolofon.
           I bpáipéar acadúil, is féidir leat sinn a lua ar bhealaí éagsúla ag brath ar a n-úsáid tú.
         credit_title_html: Conas creidiúint a thabhairt do OpenHistoricalMap
-        infringement_1_html: Meabhraítear do rannchuiditheoirí OHM gan sonraí ó aon fhoinse atá faoi chóipcheart (m.sh. Google Maps nó léarscáileanna clóite) a chur leis riamh gan cead a fháil go sainráite ó na sealbhóirí cóipchirt.
-        infringement_2_ohm_contact_team: déan teagmháil leis an bhfoireann OpenHistoricalMap agus "TAKEDOWN REQUEST" mar ábhar an ábhair.
-        infringement_2_ohm_html: Má chreideann tú gur cuireadh ábhar cóipchirt leis an mbunachar sonraí OpenHistoricalMap nó leis an suíomh seo go míchuí, déan teagmháil %{contact_team_link} le do thoil.
+        infringement_1_html: Meabhraítear do rannchuiditheoirí OHM gan sonraí ó aon
+          fhoinse atá faoi chóipcheart (m.sh. Google Maps nó léarscáileanna clóite)
+          a chur leis riamh gan cead a fháil go sainráite ó na sealbhóirí cóipchirt.
+        infringement_2_ohm_contact_team: déan teagmháil leis an bhfoireann OpenHistoricalMap
+          agus "TAKEDOWN REQUEST" mar ábhar an ábhair.
+        infringement_2_ohm_html: Má chreideann tú gur cuireadh ábhar cóipchirt leis
+          an mbunachar sonraí OpenHistoricalMap nó leis an suíomh seo go míchuí, déan
+          teagmháil %{contact_team_link} le do thoil.
         introduction_1_cc0: Creative Commons CC0
         introduction_1_cc0_url: https://creativecommons.org/publicdomain/zero/1.0/
         introduction_1_ohm_html: |-
@@ -302,58 +368,82 @@ ga:
           Tá roinnt gnéithe léarscáile aonair faoi chóipcheart ionchorpraithe sa bhunachar sonraí OpenHistoricalMap.
           Tá na gnéithe seo ar fáil faoi cheadúnas oscailte, amhail %{cc_by_link} (CC&nbsp;BY) nó %{cc_by_sa_link} (CC&nbsp;BY-SA), mar a luaitear sna clibeanna %{license_key_link} ar eilimintí aonair.
           A mhéid a úsáideann tú aon chuid shuntasach den bhunachar sonraí atá clúdaithe ag ceadúnas “roinn go comhionann”, ba cheart duit téarmaí an cheadúnais seo a urramú i do chuid oiriúnaithe féin.
-        introduction_3_ohm_html: Tá na stíleanna léarscáile atá le feiceáil ar ár leathanach baile tiomnaithe don fhearann ​​poiblí faoi thiomantas CC0. Tá cead agat iad a chóipeáil, a dháileadh, a tharchur agus a oiriúnú chun aon chríche, gan aon srianta.
+        introduction_3_ohm_html: Tá na stíleanna léarscáile atá le feiceáil ar ár
+          leathanach baile tiomnaithe don fhearann ​​poiblí faoi thiomantas CC0. Tá
+          cead agat iad a chóipeáil, a dháileadh, a tharchur agus a oiriúnú chun aon
+          chríche, gan aon srianta.
         introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
         introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/
-        introduction_4_ohm_html: Tá ár ndoiciméadacht ceadúnaithe faoin gceadúnas %{creative_commons_link} (CC BY-SA 2.0).
-        more_1_ohm_html: Faigh tuilleadh eolais faoi na cúinsí dlíthiúla agus ár sonraí á n-úsáid, agus conas creidiúint a thabhairt dúinn, %{wiki_link}.
+        introduction_4_ohm_html: Tá ár ndoiciméadacht ceadúnaithe faoin gceadúnas
+          %{creative_commons_link} (CC BY-SA 2.0).
+        more_1_ohm_html: Faigh tuilleadh eolais faoi na cúinsí dlíthiúla agus ár sonraí
+          á n-úsáid, agus conas creidiúint a thabhairt dúinn, %{wiki_link}.
         more_1_wiki: ar an Vicí OpenStreetMap
         more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
         more_title_html: Tuilleadh eolais
         trademarks_1_ohm_contact_team: déan teagmháil leis an bhfoireann OpenHistoricalMap
-        trademarks_1_ohm_html: Má tá ceisteanna agat faoi d'úsáid den ainm OpenHistoricalMap, déan teagmháil %{contact_team_link} le do thoil.
+        trademarks_1_ohm_html: Má tá ceisteanna agat faoi d'úsáid den ainm OpenHistoricalMap,
+          déan teagmháil %{contact_team_link} le do thoil.
       title: Cóipcheart agus Admhálacha
     export:
       cc0: Creative Commons CC0
       cc0_url: https://creativecommons.org/publicdomain/zero/1.0/
       copyright_page: Cóipcheart agus Admhálacha
-      licence_details_ohm_html: Ach amháin mar a luaitear a mhalairt, tá sonraí OpenHistoricalMap tiomnaithe don fhearann ​​poiblí faoi thiomantas %{cc0_link}. Féach ar an leathanach %{copyright_page_link} le haghaidh sonraí.
+      licence_details_ohm_html: Ach amháin mar a luaitear a mhalairt, tá sonraí OpenHistoricalMap
+        tiomnaithe don fhearann ​​poiblí faoi thiomantas %{cc0_link}. Féach ar an
+        leathanach %{copyright_page_link} le haghaidh sonraí.
       too_large:
-        body: Tá an limistéar seo rómhór le heaspórtáil mar Sonraí XML OpenHistoricalMap. Zúmáil isteach nó roghnaigh limistéar níos lú, nó bain triail as ceann de na foinsí atá sa liosta thíos chun bulc-íoslódálacha sonraí a dhéanamh.
+        body: Tá an limistéar seo rómhór le heaspórtáil mar Sonraí XML OpenHistoricalMap.
+          Zúmáil isteach nó roghnaigh limistéar níos lú, nó bain triail as ceann de
+          na foinsí atá sa liosta thíos chun bulc-íoslódálacha sonraí a dhéanamh.
         other:
           url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Reuse
         overpass:
-          description: Íoslódáil an bosca teorainn seo ó scáthán den bhunachar sonraí OpenHistoricalMap
+          description: Íoslódáil an bosca teorainn seo ó scáthán den bhunachar sonraí
+            OpenHistoricalMap
         planet:
-          description: Cóipeanna a dhéantar a nuashonrú go rialta de bhunachar sonraí iomlán OpenHistoricalMap
+          description: Cóipeanna a dhéantar a nuashonrú go rialta de bhunachar sonraí
+            iomlán OpenHistoricalMap
           title: Planet OHM
     fixthemap:
       how_to_help:
         join_the_community:
-          explanation_html: Má thug tú faoi deara fadhb lenár sonraí léarscáile, mar shampla má tá bóthar ar iarraidh nó má tá do sheoladh ar iarraidh, is é an bealach is fearr le dul ar aghaidh ná dul isteach i bpobal OpenHistoricalMap agus na sonraí a chur leis nó a dheisiú tú féin.
+          explanation_html: Má thug tú faoi deara fadhb lenár sonraí léarscáile, mar
+            shampla má tá bóthar ar iarraidh nó má tá do sheoladh ar iarraidh, is
+            é an bealach is fearr le dul ar aghaidh ná dul isteach i bpobal OpenHistoricalMap
+            agus na sonraí a chur leis nó a dheisiú tú féin.
       other_concerns:
-        concerns_ohm_html: Má tá imní ort faoin gcaoi a bhfuil ár sonraí á n-úsáid nó faoin ábhar atá iontu, féach ar ár %{copyright_link} le haghaidh tuilleadh eolais dhlíthiúil, nó %{contact_link}.
+        concerns_ohm_html: Má tá imní ort faoin gcaoi a bhfuil ár sonraí á n-úsáid
+          nó faoin ábhar atá iontu, féach ar ár %{copyright_link} le haghaidh tuilleadh
+          eolais dhlíthiúil, nó %{contact_link}.
         contact: déan teagmháil linn
         contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
     help:
       discord:
-        description: 'Bí linn ar fhreastalaí Discord OpenStreetMap World agus faigh cabhair sa chainéal #openhistoricalmap.'
+        description: 'Bí linn ar fhreastalaí Discord OpenStreetMap World agus faigh
+          cabhair sa chainéal #openhistoricalmap.'
         title: Discord
       forum:
-        description: Glac páirt i ndíospóireachtaí níos faide agus i seomraí comhrá neamhfhoirmiúla ag baint úsáide as do chuntas OHM.
+        description: Glac páirt i ndíospóireachtaí níos faide agus i seomraí comhrá
+          neamhfhoirmiúla ag baint úsáide as do chuntas OHM.
         title: Fóram
       github:
-        description: Cuir fadhb in iúl inár stórtha GitHub chun fabht a thuairisciú nó gné nua a iarraidh.
+        description: Cuir fadhb in iúl inár stórtha GitHub chun fabht a thuairisciú
+          nó gné nua a iarraidh.
         title: Iarratais ar Ghnéithe & Fabhtanna
-      introduction: Tá roinnt acmhainní ag OpenHistoricalMap chun foghlaim faoin tionscadal, ceisteanna a chur agus a fhreagairt, agus ábhair mapála a phlé agus a dhoiciméadú go comhoibríoch.
+      introduction: Tá roinnt acmhainní ag OpenHistoricalMap chun foghlaim faoin tionscadal,
+        ceisteanna a chur agus a fhreagairt, agus ábhair mapála a phlé agus a dhoiciméadú
+        go comhoibríoch.
       mailing_list:
         description: Liostáil lenár liosta poist ísealtoirte.
         title: Liosta Poist
       slack:
-        description: 'Tabhair cuireadh duit féin chuig spás oibre OpenStreetMap U.S. Slack agus bí páirteach sa chainéal #openhistoricalmap.'
+        description: 'Tabhair cuireadh duit féin chuig spás oibre OpenStreetMap U.S.
+          Slack agus bí páirteach sa chainéal #openhistoricalmap.'
         title: IRC
       welcome:
-        description: Tosaigh leis an treoir thapa seo a chlúdaíonn gnéithe bunúsacha OpenHistoricalMap.
+        description: Tosaigh leis an treoir thapa seo a chlúdaíonn gnéithe bunúsacha
+          OpenHistoricalMap.
         title: Fáilte go dtí OpenHistoricalMap
       welcomemat:
         description: Tosaigh leis an treoir thapa seo a chlúdaíonn bunghnéithe OpenHistoricalMap.
@@ -362,24 +452,43 @@ ga:
         description: Brabhsáil an vicí le haghaidh doiciméadú mionsonraithe OHM.
         title: Vicí
     index:
-      js_2: Baineann OpenHistoricalMap úsáid as JavaScript dá léarscáil 'slippy' (léarscáil ghréasáin bunaithe ar thíleanna).
+      js_2: Baineann OpenHistoricalMap úsáid as JavaScript dá léarscáil 'slippy' (léarscáil
+        ghréasáin bunaithe ar thíleanna).
       license:
-        copyright: Tá OpenHistoricalMap tiomnaithe don fhearann ​​poiblí mura luaitear a mhalairt.
+        copyright: Tá OpenHistoricalMap tiomnaithe don fhearann ​​poiblí mura luaitear
+          a mhalairt.
     potlatch:
-      removed: Is é Potlatch an t-eagarthóir réamhshocraithe OpenHistoricalMap atá socraithe agat. Ós rud é gur tarraingíodh siar Adobe Flash Player, níl Potlatch ar fáil a thuilleadh le húsáid i mbrabhsálaí gréasáin.
+      removed: Is é Potlatch an t-eagarthóir réamhshocraithe OpenHistoricalMap atá
+        socraithe agat. Ós rud é gur tarraingíodh siar Adobe Flash Player, níl Potlatch
+        ar fáil a thuilleadh le húsáid i mbrabhsálaí gréasáin.
     welcome:
       basic_terms:
-        a_tag_html: Is píosa sonraí faoi nód nó bealach é %{tag}, amhail ainm bialainne nó an bhliain a tógadh droichead.
-        paragraph_1: Tá roinnt béarlagair dá chuid féin ag baint le OpenHistoricalMap. Seo roinnt den na focail is tábhachtaí a bheidh úsáideach duit.
-      introduction: Fáilte go OpenHistoricalMap, léarscáil den Domhan atá saor in aisce agus ar féidir eagarthóireacht a dhéanamh uirthi. Anois agus tú cláraithe, tá tú réidh chun léarscáiliú a dhéanamh. Seo treoir tosaigh leis an mbuneolas a bheidh ag teastáil uait.
+        a_tag_html: Is píosa sonraí faoi nód nó bealach é %{tag}, amhail ainm bialainne
+          nó an bhliain a tógadh droichead.
+        paragraph_1: Tá roinnt béarlagair dá chuid féin ag baint le OpenHistoricalMap.
+          Seo roinnt den na focail is tábhachtaí a bheidh úsáideach duit.
+      introduction: Fáilte go OpenHistoricalMap, léarscáil den Domhan atá saor in
+        aisce agus ar féidir eagarthóireacht a dhéanamh uirthi. Anois agus tú cláraithe,
+        tá tú réidh chun léarscáiliú a dhéanamh. Seo treoir tosaigh leis an mbuneolas
+        a bheidh ag teastáil uait.
       rules:
-        para_1_html: Is beag riail fhoirmiúil atá ag OpenHistoricalMap ach bímid ag súil leis go mbeidh rannpháirtithe ag comhoibriú leis an bpobal agus go rachaidh siad i mbun cumarsáide leis. Má tá tú ag smaoineamh ar aon ghníomhaíocht eile a dhéanamh seachas eagarthóireacht a dhéanamh de láimh, léigh agus lean na treoirlínte maidir le h%{imports_link} agus %{automated_edits_link}.
+        para_1_html: Is beag riail fhoirmiúil atá ag OpenHistoricalMap ach bímid ag
+          súil leis go mbeidh rannpháirtithe ag comhoibriú leis an bpobal agus go
+          rachaidh siad i mbun cumarsáide leis. Má tá tú ag smaoineamh ar aon ghníomhaíocht
+          eile a dhéanamh seachas eagarthóireacht a dhéanamh de láimh, léigh agus
+          lean na treoirlínte maidir le h%{imports_link} agus %{automated_edits_link}.
       whats_on_the_map:
-        off_the_map_html: I measc na rudaí %{doesnt} bhfuil ann tá sonraí bunaithe ar thuairimí cosúil le rátálacha, gnéithe stairiúla nó teoiriciúla, agus sonraí ó fhoinsí faoi chóipcheart. Mura bhfuil cead speisialta agat, ná cóipeáil as léarscáileanna ar líne nó páipéir.
+        off_the_map_html: I measc na rudaí %{doesnt} bhfuil ann tá sonraí bunaithe
+          ar thuairimí cosúil le rátálacha, gnéithe stairiúla nó teoiriciúla, agus
+          sonraí ó fhoinsí faoi chóipcheart. Mura bhfuil cead speisialta agat, ná
+          cóipeáil as léarscáileanna ar líne nó páipéir.
         on_the_map_ohm_html: |-
           Rianaíonn OpenHistoricalMap athruithe ar gheografaíocht nádúrtha agus dhaonna ar fud an domhain.
           Tá na milliúin iontrálacha againn ó %{past_and_present}, ó impireachtaí agus oighearshruthanna go tithe agus bialanna. Is féidir leat cibé gnéithe den saol fíor a bhfuil suim agat iontu a mhapáil.
         past_and_present: an am atá thart agus an lá inniu araon
+  time:
+    formats:
+      friendly: '%e %B %Y ag %H:%M'
   traces:
     feeds:
       show:
@@ -394,55 +503,75 @@ ga:
   user_mailer:
     changeset_comment_notification:
       commented:
-        subject_other: "[OpenHistoricalMap] D'fhág %{commenter} nóta tráchta ar thacar athruithe a bhfuil suim agat ann"
-        subject_own: "[OpenHistoricalMap] D'fhág %{commenter} nóta tráchta ar cheann de na tacair athruithe atá agat"
+        subject_other: '[OpenHistoricalMap] D''fhág %{commenter} nóta tráchta ar thacar
+          athruithe a bhfuil suim agat ann'
+        subject_own: '[OpenHistoricalMap] D''fhág %{commenter} nóta tráchta ar cheann
+          de na tacair athruithe atá agat'
       description: 'OpenHistoricalMap Tacar athruithe #%{id}'
     diary_comment_notification:
       description: 'Iontráil Dialainne OpenHistoricalMap #%{id}'
-      header: 'Rinne %{from_user} nóta tráchta faoin iontráil dialainne OpenHistoricalMap a bhfuil %{subject} mar ábhar aige:'
-      header_html: 'Tá trácht déanta ag %{from_user} ar an iontráil dialainne OpenHistoricalMap leis an ábhar %{subject}:'
-      subject: "[OpenHistoricalMap] Rinne %{user} nóta tráchta faoi iontráil dialainne"
+      header: 'Rinne %{from_user} nóta tráchta faoin iontráil dialainne OpenHistoricalMap
+        a bhfuil %{subject} mar ábhar aige:'
+      header_html: 'Tá trácht déanta ag %{from_user} ar an iontráil dialainne OpenHistoricalMap
+        leis an ábhar %{subject}:'
+      subject: '[OpenHistoricalMap] Rinne %{user} nóta tráchta faoi iontráil dialainne'
     email_confirm:
-      subject: "[OpenHistoricalMap] Do sheoladh ríomhphoist a dheimhniú"
+      subject: '[OpenHistoricalMap] Do sheoladh ríomhphoist a dheimhniú'
     follow_notification:
       followed_you: Tá %{user} ag leanúint thú ar OpenHistoricalMap anois.
       subject: Lean %{user} thú [OpenHistoricalMap]
     gpx_failure:
-      subject: "[OpenHistoricalMap] Theip ar Iompórtáil GPX"
+      subject: '[OpenHistoricalMap] Theip ar Iompórtáil GPX'
     gpx_success:
-      subject: "[OpenHistoricalMap] Iompórtáladh an GPX"
+      subject: '[OpenHistoricalMap] Iompórtáladh an GPX'
     lost_password:
-      hopefully_you: D'iarr duine éigin (tusa, b'fhéidir) go ndéanfaí an pasfhocal a athshocrú ar an gcuntas openhistoricalmap.org atá ceangailte leis an seoladh ríomhphoist seo.
-      subject: "[OpenHistoricalMap] Iarratas ar athshocrú pasfhocail"
+      hopefully_you: D'iarr duine éigin (tusa, b'fhéidir) go ndéanfaí an pasfhocal
+        a athshocrú ar an gcuntas openhistoricalmap.org atá ceangailte leis an seoladh
+        ríomhphoist seo.
+      subject: '[OpenHistoricalMap] Iarratas ar athshocrú pasfhocail'
     message_notification:
-      header: 'Sheol %{from_user} teachtaireacht chugat trí OpenHistoricalMap leis an ábhar %{subject}:'
-      header_html: 'Sheol %{from_user} teachtaireacht chugat trí OpenHistoricalMap leis an ábhar %{subject}:'
-      subject: "[OpenHistoricalMap] %{message_title}"
+      header: 'Sheol %{from_user} teachtaireacht chugat trí OpenHistoricalMap leis
+        an ábhar %{subject}:'
+      header_html: 'Sheol %{from_user} teachtaireacht chugat trí OpenHistoricalMap
+        leis an ábhar %{subject}:'
+      subject: '[OpenHistoricalMap] %{message_title}'
     note_comment_notification:
       closed:
-        subject_other: "[OpenHistoricalMap] Réitigh %{commenter} nóta a bhfuil suim agat ann"
-        subject_own: "[OpenHistoricalMap] Réitigh %{commenter} ceann de do chuid nótaí"
+        subject_other: '[OpenHistoricalMap] Réitigh %{commenter} nóta a bhfuil suim
+          agat ann'
+        subject_own: '[OpenHistoricalMap] Réitigh %{commenter} ceann de do chuid nótaí'
       commented:
-        subject_other: "[OpenHistoricalMap] D'fhág %{commenter} nóta tráchta ar nóta a bhfuil suim agat ann"
-        subject_own: "[OpenHistoricalMap] D'fhág %{commenter} nóta tráchta ar cheann de na nótaí atá agat"
+        subject_other: '[OpenHistoricalMap] D''fhág %{commenter} nóta tráchta ar nóta
+          a bhfuil suim agat ann'
+        subject_own: '[OpenHistoricalMap] D''fhág %{commenter} nóta tráchta ar cheann
+          de na nótaí atá agat'
       description: 'Nóta #%{id} de chuid OpenHistoricalMap'
       reopened:
-        subject_other: "[OpenHistoricalMap] D'athoscail %{commenter} nóta a bhfuil suim agat ann"
-        subject_own: "[OpenHistoricalMap] D'athoscail %{commenter} ceann de do chuid nótaí"
+        subject_other: '[OpenHistoricalMap] D''athoscail %{commenter} nóta a bhfuil
+          suim agat ann'
+        subject_own: '[OpenHistoricalMap] D''athoscail %{commenter} ceann de do chuid
+          nótaí'
     signup_confirm:
-      subject: "[OpenHistoricalMap] Fáilte go OpenHistoricalMap"
+      subject: '[OpenHistoricalMap] Fáilte go OpenHistoricalMap'
   users:
     auth_association:
       heading: Níl d’aitheantas bainteach le cuntas OpenHistoricalMap go fóill.
-      option_1: Más duine nua thú le OpenHistoricalMap, cruthaigh cuntas nua le do thoil ag baint úsáide as an bhfoirm thíos.
+      option_1: Más duine nua thú le OpenHistoricalMap, cruthaigh cuntas nua le do
+        thoil ag baint úsáide as an bhfoirm thíos.
     new:
       about:
-        paragraph_1: Murab ionann agus léarscáileanna eile, cruthaítear OpenHistoricalMap go hiomlán ag daoine cosúil leatsa, agus tá sé saor in aisce d'aon duine é a dheisiú, a nuashonrú, a íoslódáil agus a úsáid.
-        paragraph_2: Cláraigh le tosú ag cur leis. Seolfaimid ríomhphost chugat chun do chuntas a dheimhniú.
+        paragraph_1: Murab ionann agus léarscáileanna eile, cruthaítear OpenHistoricalMap
+          go hiomlán ag daoine cosúil leatsa, agus tá sé saor in aisce d'aon duine
+          é a dheisiú, a nuashonrú, a íoslódáil agus a úsáid.
+        paragraph_2: Cláraigh le tosú ag cur leis. Seolfaimid ríomhphost chugat chun
+          do chuntas a dheimhniú.
         welcome: Fáilte go dtí OpenHistoricalMap
-      duplicate_social_email: Má tá cuntas OpenHistoricalMap agat cheana féin agus más mian leat soláthraí aitheantais tríú páirtí a úsáid, logáil isteach le do phasfhocal agus athraigh socruithe do chuntais.
-      please_contact_support_html: Téigh i dteagmháil le %{support_link} le socrú a dhéanamh cuntas a chruthú - déanfaimid iarracht déileáil leis an iarratas chomh luath agus is féidir.
-      signup_to_authorize_html: Cláraigh le OpenHistoricalMap chun rochtain a fháil ar %{client_app_name}.
-  export:
-    show:
-      title: OpenHistoricalMap Leabaithe
+      duplicate_social_email: Má tá cuntas OpenHistoricalMap agat cheana féin agus
+        más mian leat soláthraí aitheantais tríú páirtí a úsáid, logáil isteach le
+        do phasfhocal agus athraigh socruithe do chuntais.
+      please_contact_support_html: Téigh i dteagmháil le %{support_link} le socrú
+        a dhéanamh cuntas a chruthú - déanfaimid iarracht déileáil leis an iarratas
+        chomh luath agus is féidir.
+      signup_to_authorize_html: Cláraigh le OpenHistoricalMap chun rochtain a fháil
+        ar %{client_app_name}.
+...

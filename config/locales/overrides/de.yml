@@ -1,5 +1,6 @@
 # Messages for German (Deutsch)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: 1u
 # Author: 21 little ducks
 # Author: Abcdefg
@@ -122,22 +123,30 @@
 # Author: Woodpeck
 # Author: Wuzzy
 # Author: Zauberzunge2000
-# Do not edit by hand.
+---
 de:
   accounts:
     deletions:
       show:
-        delete_introduction: 'Du kannst dein OpenHistoricalMap-Konto über den untenstehenden Button löschen. Bitte beachte dabei die folgenden Hinweise:'
+        delete_introduction: 'Du kannst dein OpenHistoricalMap-Konto über den untenstehenden
+          Button löschen. Bitte beachte dabei die folgenden Hinweise:'
     terms:
       show:
-        read and accept with tou: Lies bitte die Bedingungen für Mitwirkende und die Nutzungsbedingungen, bestätige dies jeweils mit einem Häkchen und klicke dann auf den "Weiter"-Knopf.
+        read and accept with tou: Lies bitte die Bedingungen für Mitwirkende und die
+          Nutzungsbedingungen, bestätige dies jeweils mit einem Häkchen und klicke
+          dann auf den "Weiter"-Knopf.
+        tou_explain:
+          html: Die %{tou_link} regeln die Benutzung der Webseite und anderer Infrastruktur,
+            die von der OSMF zur Verfügung gestellt wird. Klicke bitte auf den Link,
+            lies den Text und stimme dann zu.
   api:
     notes:
       rss:
         title: OpenHistoricalMap-Hinweise
   application:
     setup_user_auth:
-      blocked_zero_hour: Du hast eine dringende Nachricht auf der OpenHistoricalMap-Webseite. Du musst sie zuerst lesen, bevor du deine Bearbeitungen speichern kannst.
+      blocked_zero_hour: Du hast eine dringende Nachricht auf der OpenHistoricalMap-Webseite.
+        Du musst sie zuerst lesen, bevor du deine Bearbeitungen speichern kannst.
   changeset_comments:
     feeds:
       show:
@@ -156,21 +165,37 @@ de:
         title: OpenHistoricalMap Blogeinträge von %{user}
   errors:
     bad_request:
-      description: Die angeforderte Operation auf dem OpenHistoricalMap-Server ist ungültig (HTTP 400).
+      description: Die angeforderte Operation auf dem OpenHistoricalMap-Server ist
+        ungültig (HTTP 400).
     contact:
-      contact_the_community_html: Bitte nimm %{contact_link} mit der OpenHistoricalMap-Community auf, wenn du einen defekten Link / Fehler gefunden hast. Notiere dir die genaue URL deiner Anfrage.
+      contact_the_community_html: Bitte nimm %{contact_link} mit der OpenHistoricalMap-Community
+        auf, wenn du einen defekten Link / Fehler gefunden hast. Notiere dir die genaue
+        URL deiner Anfrage.
+      contact_url: https://wiki.openstreetmap.org/wiki/DE:Kommunikationskan%C3%A4le
     forbidden:
-      description: Die von dir angeforderte Aktion auf dem OpenHistoricalMap-Server ist nur für Administratoren verfügbar (HTTP 403)
+      description: Die von dir angeforderte Aktion auf dem OpenHistoricalMap-Server
+        ist nur für Administratoren verfügbar (HTTP 403)
     internal_server_error:
-      description: Der OpenHistoricalMap-Server ist auf eine unerwartete Bedingung gestoßen, die ihn daran gehindert hat, die Anfrage zu erfüllen (HTTP 500)
+      description: Der OpenHistoricalMap-Server ist auf eine unerwartete Bedingung
+        gestoßen, die ihn daran gehindert hat, die Anfrage zu erfüllen (HTTP 500)
     not_found:
-      description: Konnte keine Datei-/Verzeichnis-/API-Operation mit diesem Namen auf dem OpenHistoricalMap-Server finden (HTTP 404)
+      description: Konnte keine Datei-/Verzeichnis-/API-Operation mit diesem Namen
+        auf dem OpenHistoricalMap-Server finden (HTTP 404)
   geocoder:
     search_osm_nominatim:
       prefix:
+        amenity:
+          arts_centre: Kunstzentrum
         leisure:
+          horse_riding: Reitanlage
           track: Laufbahn
+        shop:
+          seafood: Meeresfrüchte
   javascripts:
+    legend:
+      title: Legende
+      tooltip: Legende
+      tooltip_disabled: Die Legende ist nicht für diese Ebene verfügbar
     map:
       base:
         historical: Historisch
@@ -179,13 +204,20 @@ de:
         woodblock: Holzblock
   layouts:
     intro_header: Willkommen bei OpenHistoricalMap!
-    intro_text: OpenHistoricalMap ist eine Karte der Welt, erstellt von Menschen wie dir und frei verwendbar unter einer offenen Lizenz.
+    intro_text: OpenHistoricalMap ist eine Karte der Welt, erstellt von Menschen wie
+      dir und frei verwendbar unter einer offenen Lizenz.
     logo:
       alt_text: OpenHistoricalMap Logo
     offline_flash:
-      osm_offline: Die OpenHistoricalMap-Datenbank ist derzeit offline, da wichtige Wartungsarbeiten durchgeführt werden.
+      osm_offline: Die OpenHistoricalMap-Datenbank ist derzeit offline, da wichtige
+        Wartungsarbeiten durchgeführt werden.
     project_name:
       title: OpenHistoricalMap
+  notes:
+    new:
+      advice: Deine Meldung ist öffentlich und kann zur Aktualisierung der Karte verwendet
+        werden. Gib deshalb keine persönlichen oder urheberrechtlich geschützten Informationen
+        von anderen Karten oder Verzeichnislisten an.
   oauth:
     scopes:
       openid: Melde Dich mit OpenHistoricalMap an
@@ -202,12 +234,15 @@ de:
     destroy:
       heading: Von OpenHistoricalMap abmelden
     new:
-      login_to_authorize_html: Melden Sie sich bei OpenHistoricalMap an, um auf %{client_app_name} zuzugreifen.
+      login_to_authorize_html: Melden Sie sich bei OpenHistoricalMap an, um auf %{client_app_name}
+        zuzugreifen.
   site:
     about:
       lede_text: |-
         OpenHistoricalMap wird von einer Vielzahl von Mappern erstellt, die Daten zu
         Wegen, Gebäuden und allerlei Weiterem weltweit erfassen und pflegen.
+      used_by_html: '%{name} stellt Kartendaten für tausende von Webseiten, Apps und
+        andere Geräte zur Verfügung'
     about_section:
       contribute_1_user_diaries: Benutzertagebücher
       legal_1_aup: Richtlinien für die akzeptable Nutzung
@@ -218,21 +253,49 @@ de:
         unseren %{terms_of_use_link}, %{aup_link} und unserer %{privacy_policy_link}.
       legal_1_privacy_policy: Datenschutzrichtlinie
       legal_1_terms_of_use: Nutzungsbedingungen
-      legal_2_html: Bitte kontaktiere %{contact_team_link}, wenn du Lizenz-, Urheberrechts- oder andere rechtliche Fragen hast.
+      legal_2_html: Bitte kontaktiere %{contact_team_link}, wenn du Lizenz-, Urheberrechts-
+        oder andere rechtliche Fragen hast.
+    add_a_note:
+      para_1: Falls du nur eine Kleinigkeit korrigieren möchtest und dir die Zeit
+        fehlt, dich einzuarbeiten, wie man in OSM Daten editiert, so gib einfach einen
+        Hinweis/melde einen Fehler, dann kann sich ein anderer Mapper darum kümmern.
+    any_questions:
+      ohm_paragraph_1_html: 'OpenHistoricalMap bietet verschiedene Ressourcen, um
+        mehr über das Projekt zu erfahren, Fragen zu stellen und zu beantworten sowie
+        gemeinsam Themen rund um das Kartieren zu diskutieren und zu dokumentieren.
+        Schau mal hier: %{help_link}.'
     copyright:
       legal_babble:
-        contributors_footer_2_html: Die Einbeziehung von Daten bei OpenHistoricalMap bedeutet nicht, dass der ursprüngliche Datenlieferant OpenHistoricalMap unterstützt, Gewährleistung dafür gibt oder die Haftung dafür übernimmt.
-        credit_1_html: 'Wenn du OpenHistoricalMap-Daten verwendest, musst du die folgenden zwei Bedingungen erfüllen:'
+        attribution_example:
+          title: Namensnennung-Beispiel
+        contributors_footer_2_html: Die Einbeziehung von Daten bei OpenHistoricalMap
+          bedeutet nicht, dass der ursprüngliche Datenlieferant OpenHistoricalMap
+          unterstützt, Gewährleistung dafür gibt oder die Haftung dafür übernimmt.
+        contributors_intro_html: 'Unsere Mitwirkenden sind tausende einzelne Menschen.
+          Wir beziehen auch offen lizenzierte Daten von nationalen Kartenagenturen
+          und anderen Quellen ein, darunter:'
+        contributors_title_html: Unsere Mitwirkenden
+        credit_1_html: 'Wenn du OpenHistoricalMap-Daten verwendest, musst du die folgenden
+          zwei Bedingungen erfüllen:'
         credit_2_this_copyright_page: diese Copyright-Seite
-        credit_title_html: Wie auf die Urheberschaft von OpenHistoricalMap hinzuweisen ist
-        infringement_1_html: Die Mitwirkenden von OHM weisen wir darauf hin, dass keinesfalls Daten aus urheberrechtlich geschützten Quellen verwendet werden dürfen (z. B. Google Maps oder gedruckte Kartenwerke), ohne vorher die ausdrückliche Erlaubnis des Rechteinhabers erhalten zu haben.
-        introduction_4_creative_commons: Creative Commons Namensnennung – Weitergabe unter gleichen Bedingungen 2.0
+        credit_title_html: Wie auf die Urheberschaft von OpenHistoricalMap hinzuweisen
+          ist
+        infringement_1_html: Die Mitwirkenden von OHM weisen wir darauf hin, dass
+          keinesfalls Daten aus urheberrechtlich geschützten Quellen verwendet werden
+          dürfen (z. B. Google Maps oder gedruckte Kartenwerke), ohne vorher die ausdrückliche
+          Erlaubnis des Rechteinhabers erhalten zu haben.
+        introduction_4_creative_commons: Creative Commons Namensnennung – Weitergabe
+          unter gleichen Bedingungen 2.0
         more_title_html: Weitere Informationen
+      title: Urheberrecht und Lizenz
     export:
       too_large:
-        body: Dieser Bereich ist zu groß, um als OpenHistoricalMap-XML-Daten exportiert zu werden. Bitte heranzoomen, einen kleineren Bereich wählen oder eine der folgenden Quellen für Massendatendownloads nutzen.
+        body: Dieser Bereich ist zu groß, um als OpenHistoricalMap-XML-Daten exportiert
+          zu werden. Bitte heranzoomen, einen kleineren Bereich wählen oder eine der
+          folgenden Quellen für Massendatendownloads nutzen.
         overpass:
-          description: Diese Bounding Box von einem Mirror der OpenHistoricalMap-Datenbank herunterladen
+          description: Diese Bounding Box von einem Mirror der OpenHistoricalMap-Datenbank
+            herunterladen
         planet:
           description: Regelmäßig aktualisierte Kopien der kompletten OpenHistoricalMap-Datenbank
           title: Planet OHM
@@ -244,9 +307,11 @@ de:
             ist der beste Weg zum Weitermachen der Beitritt zur OpenHistoricalMap-Gemeinschaft und das Beheben der Daten durch dich selbst.
     help:
       discord:
-        description: 'Tritt dem OpenStreetMap-World-Discord-Server bei und erhalte Hilfe im #openhistoricalmap-Kanal.'
+        description: 'Tritt dem OpenStreetMap-World-Discord-Server bei und erhalte
+          Hilfe im #openhistoricalmap-Kanal.'
       forum:
-        description: Nimm mit deinem OHM-Konto an längeren Diskussionen und informellen Chatrooms teil.
+        description: Nimm mit deinem OHM-Konto an längeren Diskussionen und informellen
+          Chatrooms teil.
         title: Forum
       introduction: |-
         OpenHistoricalMap hat mehrere Quellen zum Lernen, Stellen und Beantworten von Fragen über das Projekt
@@ -255,31 +320,51 @@ de:
         description: Abonniere unsere Mailingliste mit geringem Aufkommen.
         title: Mailingliste
       slack:
-        description: 'Lade dich selbst zum OpenStreetMap US-Slack-Arbeitsbereich ein und tritt dem Kanal #openhistoricalmap bei.'
+        description: 'Lade dich selbst zum OpenStreetMap US-Slack-Arbeitsbereich ein
+          und tritt dem Kanal #openhistoricalmap bei.'
         title: IRC
       welcome:
         description: Beginne mit dieser Kurzanleitung zu den Grundlagen von OpenHistoricalMap.
         title: Willkommen bei OpenHistoricalMap
+      welcomemat:
+        title: Für Organisationen
       wiki:
         description: Durchsuche das Wiki für eine ausführliche OHM-Dokumentation.
     index:
       js_2: OpenHistoricalMap nutzt JavaScript für die Kartendarstellung.
     potlatch:
-      removed: Ihr Standard-OpenHistoricalMap-Editor ist Potlatch. Da Adobe Flash Player zurückgezogen wurde, ist Potlatch nicht mehr für die Verwendung in Webbrowsern verfügbar.
+      removed: Ihr Standard-OpenHistoricalMap-Editor ist Potlatch. Da Adobe Flash
+        Player zurückgezogen wurde, ist Potlatch nicht mehr für die Verwendung in
+        Webbrowsern verfügbar.
     welcome:
       basic_terms:
-        paragraph_1: OpenHistoricalMap nutzt ein paar spezifische Begriffe. Hier sind ein paar davon, die nützlich sein dürften.
+        a_tag_html: Ein %{tag} ist ein Datenstück über einen Knoten oder Weg, etwa
+          der Name eines Restaurants oder die Geschwindigkeitsbegrenzung einer Straße.
+        paragraph_1: OpenHistoricalMap nutzt ein paar spezifische Begriffe. Hier sind
+          ein paar davon, die nützlich sein dürften.
       introduction: |-
         Willkommen bei OpenHistoricalMap, der weltweiten freien und editierbaren Karte. Mit deiner Anmeldung ist alles so weit, dass du anfangen kannst die Karte zu bearbeiten.
         Hier sind noch eine paar nützliche zusätzliche Informationen.
       rules:
-        para_1_html: OpenHistoricalMap hat nur wenige formale Regeln, wir erwarten jedoch von allen Teilnehmern, dass sie mit der Community zusammenarbeiten und kommunizieren. Wenn Sie andere Aktivitäten als die manuelle Bearbeitung in Erwägung ziehen, lesen und befolgen Sie bitte die Richtlinien zu %{imports_link} und %{automated_edits_link}.
+        para_1_html: OpenHistoricalMap hat nur wenige formale Regeln, wir erwarten
+          jedoch von allen Teilnehmern, dass sie mit der Community zusammenarbeiten
+          und kommunizieren. Wenn Sie andere Aktivitäten als die manuelle Bearbeitung
+          in Erwägung ziehen, lesen und befolgen Sie bitte die Richtlinien zu %{imports_link}
+          und %{automated_edits_link}.
       whats_on_the_map:
+        off_the_map_html: Was es %{doesnt} enthält, sind Meinungsdaten wie Bewertungen,
+          historische oder hypothetische Merkmale und Daten aus urheberrechtlich geschützten
+          Quellen. Kopiere nicht von Online- oder Papierkarten, es sei denn, du hast
+          eine Sondergenehmigung.
         on_the_map_ohm_html: |-
           OpenHistoricalMap verfolgt Veränderungen der natürlichen und menschlichen Geographie auf der ganzen Welt.
           Wir haben Millionen von Einträgen aus %{past_and_present}, von Imperien und Gletschern bis hin zu Häusern und Restaurants.
           Du kannst alle realen Merkmale kartieren, die dich interessieren.
         past_and_present: sowohl die Vergangenheit als auch die Gegenwart
+  time:
+    formats:
+      blog: '%e. %B %Y'
+      friendly: '%e. %B %Y um %H:%M Uhr'
   traces:
     feeds:
       show:
@@ -294,48 +379,69 @@ de:
   user_mailer:
     changeset_comment_notification:
       commented:
-        subject_other: "[OpenHistoricalMap] %{commenter} hat zu einem Änderungssatz kommentiert, an dem du interessiert bist"
-        subject_own: "[OpenHistoricalMap] %{commenter} hat einen deiner Änderungssätze diskutiert"
+        subject_other: '[OpenHistoricalMap] %{commenter} hat zu einem Änderungssatz
+          kommentiert, an dem du interessiert bist'
+        subject_own: '[OpenHistoricalMap] %{commenter} hat einen deiner Änderungssätze
+          diskutiert'
       description: 'OpenHistoricalMap-Änderungssatz #%{id}'
     diary_comment_notification:
       description: 'OpenHistorialMap-Tagebucheintrag #%{id}'
-      header: "%{from_user} hat zu dem OpenHistoricalMap-Blogeintrag mit dem Thema %{subject} kommentiert:"
-      header_html: "%{from_user} hat zu dem OpenHistoricalMap-Blogeintrag mit dem Thema %{subject} kommentiert:"
-      subject: "[OpenHistoricalMap] %{user} hat zu einem Blogeintrag kommentiert"
+      header: '%{from_user} hat zu dem OpenHistoricalMap-Blogeintrag mit dem Thema
+        %{subject} kommentiert:'
+      header_html: '%{from_user} hat zu dem OpenHistoricalMap-Blogeintrag mit dem
+        Thema %{subject} kommentiert:'
+      subject: '[OpenHistoricalMap] %{user} hat zu einem Blogeintrag kommentiert'
     email_confirm:
-      subject: "[OpenHistoricalMap] Deine E-Mail-Adresse bestätigen"
+      subject: '[OpenHistoricalMap] Deine E-Mail-Adresse bestätigen'
     gpx_failure:
-      subject: "[OpenHistoricalMap] GPX-Import Fehler"
+      subject: '[OpenHistoricalMap] GPX-Import Fehler'
     gpx_success:
-      subject: "[OpenHistoricalMap] GPX-Import erfolgreich"
+      subject: '[OpenHistoricalMap] GPX-Import erfolgreich'
     lost_password:
-      hopefully_you: Jemand (wahrscheinlich du) hat eine Zurücksetzung des Passworts für das openhistoricalmap.org-Konto an diese E-Mail-Adresse angefordert.
-      subject: "[OpenHistoricalMap]-Anfrage zum Passwort zurücksetzen"
+      hopefully_you: Jemand (wahrscheinlich du) hat eine Zurücksetzung des Passworts
+        für das openhistoricalmap.org-Konto an diese E-Mail-Adresse angefordert.
+      subject: '[OpenHistoricalMap]-Anfrage zum Passwort zurücksetzen'
     message_notification:
-      header: "%{from_user} hat dir eine Nachricht über OpenHistoricalMap mit dem Betreff %{subject} gesendet:"
-      header_html: "%{from_user} hat dir eine Nachricht über OpenHistoricalMap mit dem Betreff %{subject} gesendet:"
-      subject: "[OpenHistoricalMap] %{message_title}"
+      header: '%{from_user} hat dir eine Nachricht über OpenHistoricalMap mit dem
+        Betreff %{subject} gesendet:'
+      header_html: '%{from_user} hat dir eine Nachricht über OpenHistoricalMap mit
+        dem Betreff %{subject} gesendet:'
+      subject: '[OpenHistoricalMap] %{message_title}'
     note_comment_notification:
       closed:
-        subject_other: "[OpenHistoricalMap] %{commenter} hat ein gemeldetes Problem gelöst, an dem du interessiert bist"
-        subject_own: "[OpenHistoricalMap] %{commenter} hat ein von dir gemeldetes Problem gelöst"
+        subject_other: '[OpenHistoricalMap] %{commenter} hat ein gemeldetes Problem
+          gelöst, an dem du interessiert bist'
+        subject_own: '[OpenHistoricalMap] %{commenter} hat ein von dir gemeldetes
+          Problem gelöst'
       commented:
-        subject_other: "[OpenHistoricalMap] %{commenter} hat einen Hinweis kommentiert, an dem du interessiert bist"
-        subject_own: "[OpenHistoricalMap] %{commenter} hat einen von dir gemeldeten Hinweis kommentiert"
+        subject_other: '[OpenHistoricalMap] %{commenter} hat einen Hinweis kommentiert,
+          an dem du interessiert bist'
+        subject_own: '[OpenHistoricalMap] %{commenter} hat einen von dir gemeldeten
+          Hinweis kommentiert'
       description: OpenHistoricalMap-Notiz Nr. %{id}
       reopened:
-        subject_other: "[OpenHistoricalMap] %{commenter} hat einen Hinweis, an dem du interessiert bist, reaktiviert"
-        subject_own: "[OpenHistoricalMap] %{commenter} hat einen Hinweis von dir reaktiviert"
+        subject_other: '[OpenHistoricalMap] %{commenter} hat einen Hinweis, an dem
+          du interessiert bist, reaktiviert'
+        subject_own: '[OpenHistoricalMap] %{commenter} hat einen Hinweis von dir reaktiviert'
     signup_confirm:
-      subject: "[OpenHistoricalMap] Willkommen bei OpenHistoricalMap"
+      subject: '[OpenHistoricalMap] Willkommen bei OpenHistoricalMap'
   users:
     auth_association:
       heading: Deine ID ist noch nicht mit einem OpenHistoricalMap-Konto verknüpft.
-      option_1: Falls du neu auf OpenHistoricalMap bist, erstelle bitte mithilfe des unten stehenden Formulars ein neues Benutzerkonto.
+      option_1: Falls du neu auf OpenHistoricalMap bist, erstelle bitte mithilfe des
+        unten stehenden Formulars ein neues Benutzerkonto.
     new:
       about:
-        paragraph_1: Im Gegensatz zu anderen Karten wird OpenHistoricalMap vollständig von Leuten wie dir erstellt und kann von jedem kostenlos repariert, aktualisiert, heruntergeladen und verwendet werden.
+        paragraph_1: Im Gegensatz zu anderen Karten wird OpenHistoricalMap vollständig
+          von Leuten wie dir erstellt und kann von jedem kostenlos repariert, aktualisiert,
+          heruntergeladen und verwendet werden.
+        paragraph_2: Registriere dich, um mit deinem Beitrag zu beginnen.
         welcome: Willkommen bei OpenHistoricalMap
-      duplicate_social_email: Wenn du bereits ein OpenHistoricalMap-Konto hast und einen Identitätsanbieter eines Drittanbieters verwenden möchtest, melde dich bitte mit deinem Passwort an und ändere die Einstellungen deines Kontos.
-      please_contact_support_html: Bitte kontaktiere %{support_link} um einen Account erstellen zu lassen - wir werden die Anfrage möglichst schnell bearbeiten.
-      signup_to_authorize_html: Melde dich bei OpenHistoricalMap an, um auf %{client_app_name} zuzugreifen.
+      duplicate_social_email: Wenn du bereits ein OpenHistoricalMap-Konto hast und
+        einen Identitätsanbieter eines Drittanbieters verwenden möchtest, melde dich
+        bitte mit deinem Passwort an und ändere die Einstellungen deines Kontos.
+      please_contact_support_html: Bitte kontaktiere %{support_link} um einen Account
+        erstellen zu lassen - wir werden die Anfrage möglichst schnell bearbeiten.
+      signup_to_authorize_html: Melde dich bei OpenHistoricalMap an, um auf %{client_app_name}
+        zuzugreifen.
+...

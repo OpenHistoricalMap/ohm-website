@@ -1,5 +1,6 @@
 # Messages for Hebrew (עברית)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Amire80
 # Author: Aude
 # Author: Avma
@@ -40,15 +41,24 @@
 # Author: נדב ס
 # Author: ערן
 # Author: תומר ט
-# Do not edit by hand.
+---
 he:
+  accounts:
+    terms:
+      show:
+        read and accept with tou: נא לקרוא את הסכם המתנדבים ואת תנאי השימוש, יש לסמן
+          את שתי התיבות עם הסיום ואז ללחוץ על כפתור ההמשך.
+        tou_explain:
+          html: '%{tou_link} האלה מאגדים את תנאי השימוש באתר ובתשתית נוספת שמסופקת
+            על־ידי ה־OSMF. נא ללחוץ על הקישור, לקרוא ולהסכים לטקסט.'
   api:
     notes:
       rss:
         title: הערות של OpenHistoricalMap
   application:
     setup_user_auth:
-      blocked_zero_hour: יש לך מסר דחוף באתר OpenHistoricalMap. עליך לקרוא את ההודעה לפני שמירת העריכות שלך.
+      blocked_zero_hour: יש לך מסר דחוף באתר OpenHistoricalMap. עליך לקרוא את ההודעה
+        לפני שמירת העריכות שלך.
   changeset_comments:
     feeds:
       show:
@@ -56,8 +66,8 @@ he:
         title_particular: דיון בערכת שינויים מס׳ %{changeset_id} של OpenHistoricalMap
   date:
     formats:
-      brief_bce: "%{year} לפנה״ס"
-      brief_ce: "%{year} לספירה"
+      brief_bce: '%{year} לפנה״ס'
+      brief_ce: '%{year} לספירה'
   diary_entries:
     feed:
       all:
@@ -73,18 +83,27 @@ he:
     bad_request:
       description: הפעולה שביקשת בשרת OpenHistoricalMap אינה תקינה (HTTP 400)
     contact:
-      contact_the_community_html: אפשר %{contact_link} עם קהילת OpenHistoricalMap אם מצאת קישור פגום / תקלה. יש לתעד את הכתובת המדויקת של הבקשה שלך.
+      contact_the_community_html: אפשר %{contact_link} עם קהילת OpenHistoricalMap
+        אם מצאת קישור פגום / תקלה. יש לתעד את הכתובת המדויקת של הבקשה שלך.
     forbidden:
-      description: הפעולה שביקשת לבצע מול שרת OpenHistoricalMap זמינה למנהלים בלבד (HTTP 403)
+      description: הפעולה שביקשת לבצע מול שרת OpenHistoricalMap זמינה למנהלים בלבד
+        (HTTP 403)
     internal_server_error:
-      description: השרת של OpenHistoricalMap נתקל במצב בלתי־צפוי שמנע ממנו למלא את הבקשה (HTTP 500)
+      description: השרת של OpenHistoricalMap נתקל במצב בלתי־צפוי שמנע ממנו למלא את
+        הבקשה (HTTP 500)
     not_found:
-      description: איתור קובץ/תיקייה/פעולת API בשם הזה בשרת של OpenHistoricalMap לא הצליח (HTTP 404)
+      description: איתור קובץ/תיקייה/פעולת API בשם הזה בשרת של OpenHistoricalMap לא
+        הצליח (HTTP 404)
   geocoder:
     search_osm_nominatim:
       prefix:
+        amenity:
+          arts_centre: מרכז אמנויות
         leisure:
+          horse_riding: מרכז רכיבה על סוסים
           track: מסלול ריצה
+        shop:
+          seafood: מאכלי ים
   javascripts:
     legend:
       title: מפתח מפה
@@ -97,11 +116,16 @@ he:
         woodblock: חתיכת עץ
   layouts:
     intro_header: ברוך בואך ל־OpenHistoricalMap!
-    intro_text: OpenHistoricalMap היא מפה הידודית של העולם לאורך ההיסטוריה, שנוצרה על־ידי אנשים כמוך ומוקדשת לנחלת הכלל.
+    intro_text: OpenHistoricalMap היא מפה הידודית של העולם לאורך ההיסטוריה, שנוצרה
+      על־ידי אנשים כמוך ומוקדשת לנחלת הכלל.
     logo:
       alt_text: סמל OpenHistoricalMap
     partners_greeninfo: רשת GreenInfo
     partners_osmf: קרן OpenStreetMap
+  notes:
+    new:
+      advice: ההערה שלך ציבורית ועשויה לשמש לעדכון המפה, אז אין להזין מידע אישי, או
+        מידע ממפות המוגנות בזכויות יוצרים או רשימות מדריכים.
   oauth:
     scopes:
       openid: כניסה עם OpenHistoricalMap
@@ -121,25 +145,47 @@ he:
       login_to_authorize_html: נא להיכנס ל־OpenHistoricalMap כדי לגשת ליישום %{client_app_name}.
   site:
     about:
-      lede_text: OpenHistoricalMap הוא מיזם שאפתני, בהובלת הקהילה, למיפוי שינויים בגאוגרפיה הטבעית והאנושית ברחבי העולם... לאורך הדורות.
+      lede_text: OpenHistoricalMap הוא מיזם שאפתני, בהובלת הקהילה, למיפוי שינויים
+        בגאוגרפיה הטבעית והאנושית ברחבי העולם... לאורך הדורות.
+      used_by_html: '%{name} מספקת נתוני מפות לאלפי אתרי אינטרנט, יישומים ומכשירים
+        שונים'
     about_section:
       contribute_1_bluesky: בלוסקיי
       contribute_1_mastodon: מסטודון
       contribute_1_user_diaries: יומני משתמשים
       legal_1_aup: מדיניות שימוש מקובל
-      legal_1_html: האתר הזה ושירותים רבים אחרים מופעלים על־ידי %{group_link}&rlm; בשם הקהילה. השימוש בכל השירותים שמפעילה OSMF כפוף ל%{terms_of_use_link}, ל%{aup_link}, ול%{privacy_policy_link}
+      legal_1_html: האתר הזה ושירותים רבים אחרים מופעלים על־ידי %{group_link}&rlm;
+        בשם הקהילה. השימוש בכל השירותים שמפעילה OSMF כפוף ל%{terms_of_use_link}, ל%{aup_link},
+        ול%{privacy_policy_link}
       legal_1_privacy_policy: מדיניות פרטיות
       legal_1_terms_of_use: תנאי שימוש
       legal_2_html: |-
         נא %{contact_team_link}
         אם יש לך שאלות על רישוי, זכויות יוצרים או נושאים משפטיים אחרים.
+    add_a_note:
+      para_1: אם רק רצית לתקן משהו קטן ואין לך זמן להירשם וללמוד איך לערוך, קל להוסיף
+        הערה.
+    any_questions:
+      ohm_paragraph_1_html: |-
+        ל־OpenHistoricalMap יש כמה משאבים ללימוד על הפרויקט, לשאלות ותשובות, ולדיון ותיעוד משותפים של נושאי מיפוי.
+        %{help_link}.
     copyright:
       legal_babble:
+        attribution_example:
+          title: דוגמה לייחוס
         contributors_footer_2_html: |-
           הכללה של נתונים ב־OpenHistoricalMap אינה אומרת שהספק המקורי
           של הנתונים תומך ב־OpenHistoricalMap, לוקח על עצמו אחריות כלשהי, או
           מקבל חבות כלשהי.
-        credit_1_html: אף שחוק זכויות היוצרים אינו מגביל או מציב תנאים כלשהם לשימוש שלך בתוכן שנמצא בנחלת הכלל, אנו מעריכים מאוד כל קרדיט שיש לך אפשרות לתת ל־OpenHistoricalMap בעת שימוש חוזר, התאמה או שימוש אחר במפות או בנתונים שלנו.
+        contributors_intro_html: |-
+          התורמים שלנו הם אלפי אנשים. אנו גם כוללים
+          נתונים ברישיון פתוח מסוכנויות מיפוי לאומות
+          וממקורות אחרים, בהם:
+        contributors_title_html: התורמים שלנו
+        credit_1_html: אף שחוק זכויות היוצרים אינו מגביל או מציב תנאים כלשהם לשימוש
+          שלך בתוכן שנמצא בנחלת הכלל, אנו מעריכים מאוד כל קרדיט שיש לך אפשרות לתת
+          ל־OpenHistoricalMap בעת שימוש חוזר, התאמה או שימוש אחר במפות או בנתונים
+          שלנו.
         credit_2_this_copyright_page: דף זכויות היוצרים הזה
         credit_title_html: איך לתת ייחוס ל־OpenHistoricalMap
         infringement_1_html: |-
@@ -149,9 +195,12 @@ he:
         introduction_4_creative_commons: קריאייטיב קומונז–ייחוס–שיתוף זהה 2.0
         introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/deed.he
         more_title_html: איך למצוא מידע נוסף
+      title: זכויות יוצרים ורישיון
     export:
       too_large:
-        body: 'האזור גדול מכדי שאפשר יהיה לייצא אותו בתור נתוני XML של OpenHistoricalMap. נא להתקרב או לבחור אזור קטן יותר, או להשתמש במקורות הבאים בשביל הורדות נתונים גדולות:'
+        body: 'האזור גדול מכדי שאפשר יהיה לייצא אותו בתור נתוני XML של OpenHistoricalMap.
+          נא להתקרב או לבחור אזור קטן יותר, או להשתמש במקורות הבאים בשביל הורדות נתונים
+          גדולות:'
         overpass:
           description: הורדת התיבה התוחמת הזאת מאתר מראה של מסד הנתונים של OpenHistoricalMap
         planet:
@@ -176,17 +225,25 @@ he:
       welcome:
         description: תחילת היכרות בעזרת מדריך מהיר שסוקר את היסודות של OpenHistoricalMap.
         title: ברוך בואך ל־OpenHistoricalMap
+      welcomemat:
+        title: לארגונים
       wiki:
         description: הוראות הפעלה לשימוש ב־OHM שהקהילה מתחזקת והנחיות לתרומה למיזם.
         title: ויקי
     index:
       js_2: אתר OpenHistoricalMap משתמש ב־JavaScript למפה המחליקה.
     potlatch:
-      removed: עורך OpenHistoricalMap ברירת המחדל שלך מוגדר כ־Potlatch. בגלל שנגן הפלאש של אדובי כבר לא נתמך, Potlatch כבר לא זמין בדפדפן.
+      removed: עורך OpenHistoricalMap ברירת המחדל שלך מוגדר כ־Potlatch. בגלל שנגן
+        הפלאש של אדובי כבר לא נתמך, Potlatch כבר לא זמין בדפדפן.
     welcome:
       basic_terms:
-        paragraph_1: למיזם OpenHistoricalMap יש עגה משלו. הינה כמה מילות מפתח שיהיו שימושיות.
-      introduction: ברוך בואך ל־OpenHistoricalMap, מפה חופשית שאפשר לערוך של ההיסטוריה של העולם. עכשיו שנרשמת, הכול מוכן ואפשר להתחיל לצייר מפות. הינה מדריך קצת שייתן לך את הדברים החשובים שכדאי לך לדעת.
+        a_tag_html: '%{tag} הוא חלקיק של מידע על נקודה או דרך, כגון שם של מסעדה או
+          מגבלת מהירות בכביש.'
+        paragraph_1: למיזם OpenHistoricalMap יש עגה משלו. הינה כמה מילות מפתח שיהיו
+          שימושיות.
+      introduction: ברוך בואך ל־OpenHistoricalMap, מפה חופשית שאפשר לערוך של ההיסטוריה
+        של העולם. עכשיו שנרשמת, הכול מוכן ואפשר להתחיל לצייר מפות. הינה מדריך קצת
+        שייתן לך את הדברים החשובים שכדאי לך לדעת.
       rules:
         para_1_html: |-
           ל־OpenHistoricalMap יש מעט כללים רשמיים אך אנו מצפים לכך שכל המשתתפים יעבדו
@@ -198,6 +255,10 @@ he:
           מה ש%{doesnt} ב־OpenHistoricalMap הוא היסטוריות חלופיות בדיוניות,
           שגיאות ידועות ממפות עתיקות ונתונים ממקורות שמגובלים בזכויות יוצרים. אלא אם יש לך אישור מיוחד,
           אין להעתיק ממפות מודרניות של העבר שמצאת באינטרנט או בדפוס.
+  time:
+    formats:
+      blog: '%e ב%B %Y'
+      friendly: '%e ב%B %Y בשעה %H:%M'
   traces:
     feeds:
       show:
@@ -212,48 +273,61 @@ he:
   user_mailer:
     changeset_comment_notification:
       commented:
-        subject_other: "[OpenHistoricalMap] המשתמש %{commenter} העיר על אחת מערכות השינויים שהתעניינת בהן"
-        subject_own: "‫[OpenHistoricalMap] קיבלת הערה מאת %{commenter} על אחת מערכות השינויים שלך"
+        subject_other: '[OpenHistoricalMap] המשתמש %{commenter} העיר על אחת מערכות
+          השינויים שהתעניינת בהן'
+        subject_own: ‫[OpenHistoricalMap] קיבלת הערה מאת %{commenter} על אחת מערכות
+          השינויים שלך
       description: ערכת שינויים של OpenHistoricalMap מס׳ %{id}
     diary_comment_notification:
       description: רשומת יומן OpenHistoricalMap מס׳ %{id}
-      header: "%{from_user} הגיב לרשומת היומן ב־ OpenHistoricalMap עם הנושא %{subject}:"
-      header_html: "%{from_user} הגיב לרשומת היומן ב־ OpenHistoricalMap עם הנושא %{subject}:"
-      subject: "[OpenHistoricalMap] תגובה מאת %{user} נוספה לרשומת יומן"
+      header: '%{from_user} הגיב לרשומת היומן ב־ OpenHistoricalMap עם הנושא %{subject}:'
+      header_html: '%{from_user} הגיב לרשומת היומן ב־ OpenHistoricalMap עם הנושא %{subject}:'
+      subject: '[OpenHistoricalMap] תגובה מאת %{user} נוספה לרשומת יומן'
     email_confirm:
-      subject: "[אופן סטריט מאפ OpenHistoricalMap] נא לאמת את כתובת הדוא״ל שלך"
+      subject: '[אופן סטריט מאפ OpenHistoricalMap] נא לאמת את כתובת הדוא״ל שלך'
     gpx_failure:
-      subject: "[OpenHistoricalMap] שגיאה בייבוא GPX"
+      subject: '[OpenHistoricalMap] שגיאה בייבוא GPX'
     gpx_success:
-      subject: "[OpenHistoricalMap] ייבוא GPX הצליח"
+      subject: '[OpenHistoricalMap] ייבוא GPX הצליח'
     lost_password:
-      hopefully_you: מישהו (אולי את או אתה) ביקש שהסיסמה המשויכת לחשבון המזוהה עם כתובת הדוא"ל הזאת באתר openhistoricalmap.org.
-      subject: "[אופן סטריט מאפ OpenHistoricalMap] בקשת איפוס סיסמה"
+      hopefully_you: מישהו (אולי את או אתה) ביקש שהסיסמה המשויכת לחשבון המזוהה עם
+        כתובת הדוא"ל הזאת באתר openhistoricalmap.org.
+      subject: '[אופן סטריט מאפ OpenHistoricalMap] בקשת איפוס סיסמה'
     message_notification:
       header: 'לתיבתך ב־OpenHistoricalMap הגיעה הודעה מאת %{from_user} עם הנושא %{subject}:'
-      header_html: "%{from_user} שלח לך הודעה דרך OpenHistoricalMap על הנושא %{subject}:"
-      subject: "[OpenHistoricalMap] %{message_title}"
+      header_html: '%{from_user} שלח לך הודעה דרך OpenHistoricalMap על הנושא %{subject}:'
+      subject: '[OpenHistoricalMap] %{message_title}'
     note_comment_notification:
       closed:
-        subject_other: "[OpenHistoricalMap] הערה שהתעניינת בה נפתרה על־ידי %{commenter}"
-        subject_own: "‫[OpenHistoricalMap] אחת מההערות שלך נפתרה על־ידי %{commenter}"
+        subject_other: '[OpenHistoricalMap] הערה שהתעניינת בה נפתרה על־ידי %{commenter}'
+        subject_own: ‫[OpenHistoricalMap] אחת מההערות שלך נפתרה על־ידי %{commenter}
       commented:
-        subject_other: "[OpenHistoricalMap] התקבלה תגובה מאת %{commenter} על הערה שהתעניינת בה"
-        subject_own: "[OpenHistoricalMap] התקבלה תגובה מאת %{commenter} על אחת מההערות שלך"
+        subject_other: '[OpenHistoricalMap] התקבלה תגובה מאת %{commenter} על הערה
+          שהתעניינת בה'
+        subject_own: '[OpenHistoricalMap] התקבלה תגובה מאת %{commenter} על אחת מההערות
+          שלך'
       description: הערת OpenHistoricalMap מס׳ %{id}
       reopened:
-        subject_other: "[OpenHistoricalMap] הערה שמעניינת אותך הופעלה מחדש על־ידי %{commenter}"
-        subject_own: "‫[OpenHistoricalMap] אחת ההערות שלך הופעלה מחדש על־ידי %{commenter}"
+        subject_other: '[OpenHistoricalMap] הערה שמעניינת אותך הופעלה מחדש על־ידי
+          %{commenter}'
+        subject_own: ‫[OpenHistoricalMap] אחת ההערות שלך הופעלה מחדש על־ידי %{commenter}
     signup_confirm:
-      subject: "[אופן היסטוריקל מאפ OpenHistoricalMap] ברוך בואך לאופן היסטוריקל מאפ"
+      subject: '[אופן היסטוריקל מאפ OpenHistoricalMap] ברוך בואך לאופן היסטוריקל מאפ'
   users:
     auth_association:
       heading: המזהה שלך עדיין אינו משויך לחשבון OpenHistoricalMap.
-      option_1: אם התחלת רק עכשיו עם OpenHistoricalMap, נא ליצור חשבון חדש באמצעות הטופס להלן.
+      option_1: אם התחלת רק עכשיו עם OpenHistoricalMap, נא ליצור חשבון חדש באמצעות
+        הטופס להלן.
     new:
       about:
-        paragraph_1: בניגוד למפות אחרות, OpenHistoricalMap נוצרה לחלוטין על־ידי אנשים כמוך והיא חופשית לתיקונים, עדכונים, הורדה ושימוש של כל מי שחפץ.
+        paragraph_1: בניגוד למפות אחרות, OpenHistoricalMap נוצרה לחלוטין על־ידי אנשים
+          כמוך והיא חופשית לתיקונים, עדכונים, הורדה ושימוש של כל מי שחפץ.
+        paragraph_2: אפשר להירשם כדי להתחיל לתרום.
         welcome: ברוך בואך ל־OpenHistoricalMap
-      duplicate_social_email: אם כבר יש לך חשבון OpenHistoricalMap וברצונך להשתמש בספק זהות של צד שלישי, נא להתחבר באמצעות הסיסמה שלך ולשנות את הגדרות החשבון שלך.
-      please_contact_support_html: נא ליצור קשר עם %{support_link} כדי לארגן יצירת חשבון - נשתדל לטפל בבקשה במהירות האפשרית.
+      duplicate_social_email: אם כבר יש לך חשבון OpenHistoricalMap וברצונך להשתמש
+        בספק זהות של צד שלישי, נא להתחבר באמצעות הסיסמה שלך ולשנות את הגדרות החשבון
+        שלך.
+      please_contact_support_html: נא ליצור קשר עם %{support_link} כדי לארגן יצירת
+        חשבון - נשתדל לטפל בבקשה במהירות האפשרית.
       signup_to_authorize_html: נא להירשם עם OpenHistoricalMap כדי לגשת ליישום %{client_app_name}.
+...

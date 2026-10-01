@@ -1,5 +1,6 @@
 # Messages for Simplified Chinese (中文（简体）)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: )8
 # Author: 500000000006城
 # Author: A Chinese Wikipedian
@@ -91,11 +92,12 @@
 # Author: 阿pp
 # Author: 魔琴
 # Author: 아라
-# Do not edit by hand.
+---
 zh-CN:
   accounts:
     deletions:
       show:
+        delete_introduction: 您可以通过下方的按钮删除您的OpenStreetMap账户。请注意如下细节：
         retain_caveats: 然而，即使在您的账户被删除后，部分关于您的信息仍将被保留在OpenStreetMap里：
     terms:
       show:
@@ -119,10 +121,10 @@ zh-CN:
         title_particular: 'OpenHistoricalMap 变更集 #%{changeset_id} 讨论'
   date:
     formats:
-      brief: "%{year}"
+      brief: '%{year}'
       brief_bce: 公元前%{year}
       brief_ce: 公元%{year}
-      range: "%{start} – %{end}"
+      range: '%{start} – %{end}'
   diary_entries:
     feed:
       all:
@@ -132,13 +134,14 @@ zh-CN:
         description: 最近的以 %{language_name} 书写的 OpenHistoricalMap 用户日记文章
         title: 以 %{language_name} 书写的 OpenHistoricalMap 日记文章
       user:
-        description: "%{user} 最近的 OpenHistoricalMap 日记文章"
-        title: "%{user} 的 OpenHistoricalMap 日记文章"
+        description: '%{user} 最近的 OpenHistoricalMap 日记文章'
+        title: '%{user} 的 OpenHistoricalMap 日记文章'
   errors:
     bad_request:
       description: 您在 OpenHistoricalMap 服务器上请求的操作无效 (HTTP 400)
     contact:
-      contact_the_community_html: 如果您发现有损坏的链接/错误，请随时%{contact_link} OpenHistoricalMap 社区。并记下您请求的确切 URL。
+      contact_the_community_html: 如果您发现有损坏的链接/错误，请随时%{contact_link} OpenHistoricalMap
+        社区。并记下您请求的确切 URL。
       contact_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/Communication
     forbidden:
       description: 您在 OpenHistoricalMap 服务器上请求的操作仅限管理员使用（HTTP 403）
@@ -205,9 +208,18 @@ zh-CN:
         ward: 选区边界
         zone: 区域边界
       prefix:
+        amenity:
+          arts_centre: 艺术中心
         leisure:
+          horse_riding: 骑马中心
           track: 跑道
+        shop:
+          seafood: 海鲜
   javascripts:
+    legend:
+      title: 图例
+      tooltip: 图例
+      tooltip_disabled: 图例不可用于此图层
     map:
       base:
         japanesescroll: 日本挂轴
@@ -219,11 +231,14 @@ zh-CN:
       alt_text: OpenHistoricalMap 标志
     project_name:
       title: OpenHistoricalMap 开放史图
+  notes:
+    new:
+      advice: 您的注释会公开，并可能用于更新地图，所以不要输入个人信息，或是来自版权保护地图的信息或目录列表。
   oauth:
     scopes:
       openid: 使用 OpenHistoricalMap 登录
   printable_name:
-    with_date_html: "%{name} [%{dates}]"
+    with_date_html: '%{name} [%{dates}]'
   sessions:
     destroy:
       heading: 退出登录OpenHistoricalMap
@@ -232,6 +247,7 @@ zh-CN:
   site:
     about:
       lede_text: OpenHistoricalMap 是一个由地图制作爱好者组成的社区。这些爱好者提供并维护世界各地关于道路、小道、咖啡馆、铁路车站等各种各样的数据。
+      used_by_html: '%{name} 为数以千计的网站、移动应用以及硬件设备提供地图数据'
     about_section:
       contribute_1_user_diaries: 用户日记
       legal_1_aup: 可接受的使用政策
@@ -241,15 +257,24 @@ zh-CN:
       legal_2_html: |-
         若您有许可证、著作权或其他法律上的问题，请%{contact_team_link}
         。
+    add_a_note:
+      para_1: 如果您这是想做一些微小改动而没有时间登录来学习如何编辑，那添加注记是非常容易的。
+    any_questions:
+      ohm_paragraph_1_html: 有多种资源可用于了解该项目、提出和回答与 OpenHistoricalMap 有关的问题，并且协作讨论和记录地图主题。%{help_link}。
     copyright:
       legal_babble:
+        attribution_example:
+          title: 署名示例
         contributors_footer_2_html: OpenHistoricalMap 纳入数据并不意味着原始数据提供者认可 OpenHistoricalMap、提供任何担保或担负任何法律责任。
+        contributors_intro_html: 我们的数据来源于成千上万人的贡献。但我们也从国家测绘机构等处获取公共版权的数据，其中包括：
+        contributors_title_html: 我们的贡献者
         credit_1_html: 当您使用 OpenHistoricalMap 的数据，您会被要求遵循两件事：
         credit_2_this_copyright_page: 该版权页
         credit_title_html: 如何表明作者是 OpenHistoricalMap
         infringement_1_html: OHM 的贡献者会被提醒，绝不要在没有著作权人的明确许可时添加来自任何有著作权的来源的数据(如谷歌地图或印刷地图)。
         introduction_4_creative_commons: 知识共享署名-相同方式共享 2.0
         more_title_html: 了解更多
+      title: 著作权与许可
     export:
       too_large:
         body: 该区域过大，不能导出为 OpenHistoricalMap XML 数据。请放大地图或选择一个更小的区域，或使用以下大量数据下载来源之一：
@@ -261,7 +286,8 @@ zh-CN:
     fixthemap:
       how_to_help:
         join_the_community:
-          explanation_html: 如果您发现我们的地图数据有问题，例如缺少某条道路或者您的地址，最好的处理方法就是加入 OpenHistoricalMap 社区，然后您自己添加或者改进数据。
+          explanation_html: 如果您发现我们的地图数据有问题，例如缺少某条道路或者您的地址，最好的处理方法就是加入 OpenHistoricalMap
+            社区，然后您自己添加或者改进数据。
     help:
       introduction: OpenHistoricalMap 有若干资源用于学习该项目，提问和回答问题，以及讨论与制作地图相关的话题并且撰写相关文档。
       slack:
@@ -269,6 +295,8 @@ zh-CN:
       welcome:
         description: 本快速指南涵盖了快速入门 OpenHistoricalMap 的基本知识。
         title: 欢迎访问OpenHistoricalMap
+      welcomemat:
+        title: 对于组织
       wiki:
         description: 浏览 wiki 深入了解 OHM 文档。
     index:
@@ -277,6 +305,7 @@ zh-CN:
       removed: 您的默认OpenHistoricalMap编辑器设置为Potlatch。由于Adobe Flash Player已停止支持，因此Potlatch不再可在Web浏览器中使用。
     welcome:
       basic_terms:
+        a_tag_html: '%{tag}是关于节点或路径的数据，例如餐厅名称或者道路限速。'
         paragraph_1: OpenHistoricalMap 有一些自己的术语。这里是一些常用的关键词。
       introduction: 欢迎访问 OpenHistoricalMap，自由且可编辑的世界地图。您已经登录，可以开始绘制地图。这里是含有您需要知道的最重要的信息的快速指南。
       rules:
@@ -286,10 +315,12 @@ zh-CN:
           %{imports_link} 和 %{automated_edits_link} 上的指南。
       whats_on_the_map:
         off_the_map_html: OpenHistoricalMap %{doesnt} 包含虚构的架空历史、古代地图上的已知错误以及来自受版权保护来源的数据。除非获得特别许可，否则请勿复制您在网上或印刷品中找到的现代古代地图。
-        on_the_map_ohm_html: OpenHistoricalMap 追踪世界各地自然和人文地理的变化。我们拥有来自 %{past_and_present} 的数百万条来自过去和现在的记录，涵盖帝国、冰川、房屋和餐馆等各个方面。您可以绘制任何您感兴趣的现实世界特征。
+        on_the_map_ohm_html: OpenHistoricalMap 追踪世界各地自然和人文地理的变化。我们拥有来自 %{past_and_present}
+          的数百万条来自过去和现在的记录，涵盖帝国、冰川、房屋和餐馆等各个方面。您可以绘制任何您感兴趣的现实世界特征。
   time:
     formats:
-      friendly: "%Y年%B%e日 %H:%M"
+      blog: '%Y年%B%e日'
+      friendly: '%Y年%B%e日 %H:%M'
   traces:
     feeds:
       show:
@@ -304,40 +335,40 @@ zh-CN:
   user_mailer:
     changeset_comment_notification:
       commented:
-        subject_other: "[OpenHistoricalMap] %{commenter} 评论了您感兴趣的一个变更集"
-        subject_own: "[OpenHistoricalMap] %{commenter}评论了您的一个变更集"
+        subject_other: '[OpenHistoricalMap] %{commenter} 评论了您感兴趣的一个变更集'
+        subject_own: '[OpenHistoricalMap] %{commenter}评论了您的一个变更集'
       description: 'OpenHistoricalMap 变更集 #%{id}'
     diary_comment_notification:
       description: 'OpenHistoricalMap 日记 #%{id}'
-      header: "%{from_user} 评论了主题为 %{subject} 的 OpenHistoricalMap 日记文章："
-      header_html: "%{from_user} 评论了主题为 %{subject} 的 OpenHistoricalMap 日记文章："
-      subject: "[OpenHistoricalMap] %{user} 在日记篇目留下了评论"
+      header: '%{from_user} 评论了主题为 %{subject} 的 OpenHistoricalMap 日记文章：'
+      header_html: '%{from_user} 评论了主题为 %{subject} 的 OpenHistoricalMap 日记文章：'
+      subject: '[OpenHistoricalMap] %{user} 在日记篇目留下了评论'
     email_confirm:
-      subject: "[OpenHistoricalMap] 确认您的电子邮件地址"
+      subject: '[OpenHistoricalMap] 确认您的电子邮件地址'
     gpx_failure:
-      subject: "[OpenHistoricalMap] GPX 导入失败"
+      subject: '[OpenHistoricalMap] GPX 导入失败'
     gpx_success:
-      subject: "[OpenHistoricalMap] GPX 导入成功"
+      subject: '[OpenHistoricalMap] GPX 导入成功'
     lost_password:
       hopefully_you: 某人(可能是您)已要求重置该电子邮件地址上的 openhistoricalmap.org 帐户密码。
-      subject: "[OpenHistoricalMap] 密码重置请求"
+      subject: '[OpenHistoricalMap] 密码重置请求'
     message_notification:
-      header: "%{from_user} 已经通过 OpenHistoricalMap 给您发送了一条主题为 %{subject} 的私信："
-      header_html: "%{from_user} 已经通过 OpenHistoricalMap 给您发送了一条主题为 %{subject} 的信息："
-      subject: "[OpenHistoricalMap] %{message_title}"
+      header: '%{from_user} 已经通过 OpenHistoricalMap 给您发送了一条主题为 %{subject} 的私信：'
+      header_html: '%{from_user} 已经通过 OpenHistoricalMap 给您发送了一条主题为 %{subject} 的信息：'
+      subject: '[OpenHistoricalMap] %{message_title}'
     note_comment_notification:
       closed:
-        subject_other: "[OpenHistoricalMap] %{commenter} 已经解决了一个您感兴趣的注记"
-        subject_own: "[OpenHistoricalMap] %{commenter} 解决了您的一个注记"
+        subject_other: '[OpenHistoricalMap] %{commenter} 已经解决了一个您感兴趣的注记'
+        subject_own: '[OpenHistoricalMap] %{commenter} 解决了您的一个注记'
       commented:
-        subject_other: "[OpenHistoricalMap] %{commenter} 评论了您感兴趣的一个注记"
-        subject_own: "[OpenHistoricalMap] %{commenter} 评论了您的一个注记"
+        subject_other: '[OpenHistoricalMap] %{commenter} 评论了您感兴趣的一个注记'
+        subject_own: '[OpenHistoricalMap] %{commenter} 评论了您的一个注记'
       description: 'OpenHistoricalMap 注记 #%{id}'
       reopened:
-        subject_other: "[OpenHistoricalMap] %{commenter} 重新激活了您感兴趣的一个注记"
-        subject_own: "[OpenHistoricalMap] %{commenter} 重新激活了您的一个注记"
+        subject_other: '[OpenHistoricalMap] %{commenter} 重新激活了您感兴趣的一个注记'
+        subject_own: '[OpenHistoricalMap] %{commenter} 重新激活了您的一个注记'
     signup_confirm:
-      subject: "[OpenHistoricalMap] 欢迎加入 OpenHistoricalMap"
+      subject: '[OpenHistoricalMap] 欢迎加入 OpenHistoricalMap'
   users:
     auth_association:
       heading: 您的ID尚未与OpenHistoricalMap账户相关联。
@@ -345,7 +376,9 @@ zh-CN:
     new:
       about:
         paragraph_1: 与其他地图不同，OpenHistoricalMap 完全由像您这样的人创建，任何人都可以免费修复、更新、下载和使用。
+        paragraph_2: 注册以开始贡献。
         welcome: 欢迎来到OpenHistoricalMap
       duplicate_social_email: 如果您已经拥有OpenHistoricalMap账户并希望使用第三方提供的身份标识，请使用密码登录并修改您的账户设置。
       please_contact_support_html: 请联系 %{support_link} 以安排创建帐户 - 我们会尽快处理该请求。
       signup_to_authorize_html: 注册 OpenHistoricalMap 以访问 %{client_app_name}
+...

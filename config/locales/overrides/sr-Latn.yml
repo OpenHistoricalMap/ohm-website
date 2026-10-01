@@ -1,5 +1,6 @@
 # Messages for Serbian (Latin script) (srpski (latinica))
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Erictheise
 # Author: Macofe
 # Author: McDutchie
@@ -8,27 +9,90 @@
 # Author: Nemo bis
 # Author: Rancher
 # Author: Сербијана
-# Do not edit by hand.
+---
 sr-Latn:
+  diary_entries:
+    feed:
+      all:
+        description: Skorašnji unosi u dnevniku od korisnika Openstritmapa
+        title: Unosi u dnevniku Openstritmapa
+      language:
+        description: Skorašnji unosi u dnevniku od korisnika na %{language_name}
+        title: Unosi u dnevniku na %{language_name}
+      user:
+        description: Skorašnji unosi u dnevniku od korisnika %{user}
+        title: Unosi u dnevniku za korisnika %{user}
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: Umetnički centar
+        leisure:
+          track: Staza za trčanje
   layouts:
+    logo:
+      alt_text: Logotip Openstritmapa
     project_name:
       title: OpenHistoricalMap
+  sessions:
+    destroy:
+      heading: Odjava
   site:
     copyright:
       legal_babble:
-        contributors_footer_2_html: Uključivanje podataka u Openstritmap ne podrazumeva da izvorni vlasnik podataka prihvata Openstritmap, obezbeđuje bilo kakvu garanciju ili prihvata odgovornost.
+        contributors_footer_2_html: Uključivanje podataka u Openstritmap ne podrazumeva
+          da izvorni vlasnik podataka prihvata Openstritmap, obezbeđuje bilo kakvu
+          garanciju ili prihvata odgovornost.
+        contributors_intro_html: |2-
+            Naša licenca CC BY-SA zahteva od vas da &ldquo;morate
+            navesti ime izvornog autora ili davaoca licence&rdquo;.
+            Pojedinačni kartografi ne zahtevaju isticanje zasluga osim
+            &ldquo;Openstritmap doprinosioca&rdquo;, ali kada podaci
+            pripadaju nacionalnoj geografskoj agenciji ili drugom
+            većem izvoru koji je uključen u Openstritmap, razumno je
+            navesti izvor ili ostaviti hipervezu do njega.
+        contributors_title_html: Naši saradnici
+        credit_1_html: |2-
+            Ako koristite naše slike mapa, tražimo da zasluge sadrže
+            bar &ldquo;&copy; Doprinosioci
+            Openstritmapa, CC BY-SA&rdquo;. Ako koristite samo podatke mapa,
+            navedite &ldquo;Kartografski podaci &copy; Doprinosioci Openstritmapa,
+            CC BY-SA&rdquo;.
         credit_title_html: Kako da imenujete OpenHistoricalMap
         more_title_html: Saznajte više
+      title: Autorska prava i licenca
+    export:
+      too_large:
+        body: Ovo područje je preveliko da bi bilo izvezeno u formatu XML. Uvećajte
+          prikaz ili izaberite manju površinu.
+    index:
+      js_2: Openstritmap koristi javaskript za prikazivanje mapa.
+  time:
+    formats:
+      friendly: '%e %B %Y u %H:%M'
+  traces:
+    show:
+      edit: uredi
+      edit_trace: Uredi ovaj trag
+      map: mapa
+    trace:
+      edit_map: Uredi mapu
+      view_map: Pogledaj kartu
   user_mailer:
     diary_comment_notification:
-      subject: "[OpenHistoricalMap] %{user} prokomentarisa vaš unos u dnevniku"
+      header: '%{from_user} prokomentarisa vaš skorašnji unos u dnevniku pod naslovom
+        %{subject}:'
+      subject: '[OpenHistoricalMap] %{user} prokomentarisa vaš unos u dnevniku'
     email_confirm:
-      subject: "[OpenHistoricalMap] Potvrdite vašu e-adresu"
+      subject: '[OpenHistoricalMap] Potvrdite vašu e-adresu'
     gpx_failure:
-      subject: "[OpenHistoricalMap] GPX uvoz nije uspeo"
+      subject: '[OpenHistoricalMap] GPX uvoz nije uspeo'
     gpx_success:
-      subject: "[OpenHistoricalMap] GPX uvoz je uspeo"
+      subject: '[OpenHistoricalMap] GPX uvoz je uspeo'
     lost_password:
-      subject: "[OpenHistoricalMap] Zahtev za poništavanje lozinke"
+      subject: '[OpenHistoricalMap] Zahtev za poništavanje lozinke'
+    message_notification:
+      header: '%{from_user} vam posla poruku preko Openstritmapa pod naslovom %{subject}:'
     signup_confirm:
-      subject: "[OpenHistoricalMap] Potvrdite vašu e-adresu"
+      subject: '[OpenHistoricalMap] Potvrdite vašu e-adresu'
+...

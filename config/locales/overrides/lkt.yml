@@ -1,11 +1,124 @@
 # Messages for Lakota (Lakȟótiyapi)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Minh Nguyen
 # Author: Tuwewanzi
-# Do not edit by hand.
+---
 lkt:
+  accounts:
+    deletions:
+      show:
+        delete_introduction: 'Čheškíkȟaŋ kiŋ le ogná OpenStreetMap čhažé-oyáŋke iháŋgyakiya
+          oyákihi. Wíhoši kiŋ lená iyúkčaŋ yo/ye:'
+  api:
+    notes:
+      rss:
+        title: OpenStreetMap Wówapi čístila
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenStreetMap wóyutȟokča-opȟáȟte akhíyapi
+        title_particular: OpenStreetMap wóyutȟokča-opȟáȟte %{changeset_id} akhíyapi
+  diary_entries:
+    feed:
+      all:
+        description: Lečhála tuwá OpenStreetMap uŋ kiŋ tȟaáŋpel'okigwapi wówapi káǧapi
+          kiŋ
+        title: OpenStreetMap aŋpél'okigwapi wówapi
+      language:
+        description: Lečhála tuwá OpenStreetMap uŋ kiŋ tȟaáŋpel'okigwapi wówapi %{language_name}
+          ogná káǧapi kiŋ
+        title: OpenStreetMap %{language_name} aŋpél'okigwapi wówapi
+      user:
+        description: Lečhála %{user} OpenStreetMap tȟaáŋpel'okigwapi wówapi káǧe kiŋ
+        title: '%{user} OpenStreetMap tȟaáŋpel''okigwapi wówapi káǧe kiŋ'
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: Wičhítowa-owápazo
+        leisure:
+          horse_riding: Šuŋg'ákaŋyaŋkápi Oyáŋke
+          track: Okhíiŋyaŋke
+        shop:
+          seafood: Mniwáŋča-wóyute
+  layouts:
+    intro_header: Taŋyáŋ OpenStreetMap Ektá Yahí!
+    logo:
+      alt_text: OpenStreetMap wíyačhiŋ
+    meta:
+      openstreetmap_search: OpenStreetMap Olé
+  oauth:
+    scopes:
+      openid: OpenStreetMap ogná Čhaž'óigwa yo/ye
+  preferences:
+    basic_preferences:
+      show:
+        map_color_schemes:
+          auto: Otȟáwokaške Ákhilečheča
+    preferences:
+      navigation:
+        advanced_preferences: Ektáwapȟaya
+        preferences: Otȟáwokaške
+  sessions:
+    destroy:
+      heading: OpenStreetMap etáŋhaŋ haž’óigwa-ayúštaŋ yo/ye
   site:
+    about:
+      used_by_html: '%{name} otȟáwokaške, omás’apȟela-wíkhičhaŋye na maswíkhičhaŋye
+        khektópawiŋǧe ektá makȟówapi-ihóši kiŋ kpamni.'
+    copyright:
+      legal_babble:
+        attribution_example:
+          title: Ohútkȟaŋ wóiwaƞyaƞke
+        contributors_title_html: Tuwá kíč'uŋpi kiŋ
+      title: Wayúota-wóiyowiƞkhiye na Wóopȟe-wóiyowiƞkhiye
     export:
       too_large:
         planet:
           title: Planet OSM
+    help:
+      welcome:
+        title: Taŋyáŋ OpenStreetMap Ektá Yahí
+      wiki:
+        title: OpenStreetMap Wiki
+    welcome:
+      basic_terms:
+        a_tag_html: '%{tag} waŋ makȟá-owáŋka naíŋš makȟá-kazópi mahél wíhoši haŋke
+          héčha. Owóte-thípi tȟačháže naíŋš čȟaŋkú wóluzahe wóopȟe ešá wóiwaŋyaŋke
+          waštéšte.'
+        paragraph_1: OpenStreetMap kiŋ wičhóiye tȟéča glúhe. Lená wičhóiye uŋphíča
+          tóna héčha.
+      introduction: OpenStreetMap ektá taƞyáƞ yahi! Waƞná čhažé-oyáŋke yakáǧa, na
+        makȟóyawa oyákihi. Léčhiya ináȟni-wóuŋspe waŋ yaŋke. Lena wóslolye waŋkátuya.
+      whats_on_the_map:
+        off_the_map_html: |-
+          Táku uŋ šni kiŋ yukȟé %{doesnt} - táku wayúota-wóiyowiƞkhiye yuha naíŋš táku íŋše nitȟáwačhiŋ.
+          Wóiyowiƞkhiye luhá šni eháŋtaŋš, makȟówapi uŋmá etáŋhaŋ yuóta šni yo/ye.
+  time:
+    formats:
+      friendly: '%e %B %Y %H:%M hé eháŋ'
+  traces:
+    show:
+      edit: mas'yútȟokeča ogná yuǧáƞ
+      edit_trace: Waóye-ihóši yutȟókeča yo/ye
+      map: makȟówapi ogná owáŋka waŋyáŋka
+    trace:
+      edit_map: Mas'yútȟokeča ogná yuǧáƞ
+      view_map: Makȟówapi ogná owáŋka waŋyáŋka yo/ye
+  user_mailer:
+    changeset_comment_notification:
+      description: OpenStreetMap Wóyutȟokča-opȟáȟte %{id}
+    email_confirm:
+      subject: '[OpenStreetMap] Wakȟáƞgli wóyakapi makȟóčhažeyate glasúta yo/ye'
+    lost_password:
+      hopefully_you: Openstreetmap.org el, wakȟáƞgli wóyakapi makȟóčhažeyate tȟačháže-oyáŋke
+        ogná tuwá (he niyé he?) iyówiƞkhiya-wičhóiye uŋyúthečapi kiŋ uŋkílapi.
+      subject: '[OpenStreetMap] Iyówiƞkhiya-wičhóiye glutȟéča wówala kiŋ'
+    message_notification:
+      subject: '[OpenStreetMap] %{message_title}'
+    note_comment_notification:
+      description: 'OpenStreetMap Wówapi-čístila #%{id}'
+    signup_confirm:
+      subject: '[OpenStreetMap] Taŋyáŋ OpenStreetMap Ektá Yahí'
+...

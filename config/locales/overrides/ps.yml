@@ -1,35 +1,43 @@
 # Messages for Pashto (پښتو)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Af420
 # Author: Ahmed-Najib-Biabani-Ibrahimkhel
 # Author: Ajeje Brazorf
 # Author: Amjad Khan
 # Author: شاه زمان پټان
-# Do not edit by hand.
+---
 ps:
   auth:
     providers:
       openstreetmap: پرانېستې‌کوڅې‌نخچه
   date:
     formats:
-      brief: "%{year}"
-      brief_bce: "%{year} مخزېږديز"
-      brief_ce: "%{year} زېږديز"
-      range: "%{start} – %{end}"
+      brief: '%{year}'
+      brief_bce: '%{year} مخزېږديز'
+      brief_ce: '%{year} زېږديز'
+      range: '%{start} – %{end}'
   geocoder:
     search_osm_nominatim:
-      suffix_format: "[%{dates}]"
+      suffix_format: '[%{dates}]'
+  preferences:
+    preferences:
+      navigation:
+        preferences: غوره‌توبونه
   site:
     copyright:
       legal_babble:
-        credit_1_html: موږ غواړو چې تاسو کریډیټ وکاروي لپاره &ldquo;&copy; د اوفن سټریټ ميپ مرسته کوونکی&rdquo;.
+        credit_1_html: موږ غواړو چې تاسو کریډیټ وکاروي لپاره &ldquo;&copy; د اوفن
+          سټریټ ميپ مرسته کوونکی&rdquo;.
   time:
     formats:
-      friendly: "%B %e, %Y په %H:%M"
+      friendly: '%B %e, %Y په %H:%M'
   traces:
     show:
       edit: سمول
       edit_trace: دا څارنه سمول
+      map: نخشه
     trace:
       edit_map: نخشه سمول
       view_map: نخشه کتل
+...

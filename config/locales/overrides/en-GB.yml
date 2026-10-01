@@ -1,5 +1,6 @@
 # Messages for British English (British English)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Abijeet Patro
 # Author: Alefar
 # Author: AmazingJus
@@ -40,21 +41,25 @@
 # Author: TomH
 # Author: Wehwei
 # Author: ديفيد
-# Do not edit by hand.
+---
 en-GB:
   accounts:
     terms:
       show:
-        read and accept with tou: Please read the contributor agreement and the terms of use, check both checkboxes when done and then press the continue button.
+        read and accept with tou: Please read the contributor agreement and the terms
+          of use, check both checkboxes when done and then press the continue button.
         tou_explain:
-          html: These %{tou_link} govern the use of the website and other infrastructure provided by the OSMF. Please click on the link, read and agree to the text.
+          html: These %{tou_link} govern the use of the website and other infrastructure
+            provided by the OSMF. Please click on the link, read and agree to the
+            text.
   api:
     notes:
       rss:
         title: OpenHistoricalMap Notes
   application:
     setup_user_auth:
-      blocked_zero_hour: You have an urgent message on the OpenHistoricalMap website. You need to read the message before you will be able to save your edits.
+      blocked_zero_hour: You have an urgent message on the OpenHistoricalMap website.
+        You need to read the message before you will be able to save your edits.
   changeset_comments:
     feeds:
       show:
@@ -71,6 +76,16 @@ en-GB:
       user:
         description: Recent OpenHistoricalMap diary entries from %{user}
         title: OpenHistoricalMap diary entries for %{user}
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: Arts Centre
+        leisure:
+          horse_riding: Horse Riding Centre
+          track: Running Track
+        shop:
+          seafood: Seafood
   javascripts:
     legend:
       title: Map Key
@@ -82,32 +97,53 @@ en-GB:
         woodblock: Woodblock
   layouts:
     intro_header: Welcome to OpenHistoricalMap!
-    intro_text: OpenHistoricalMap is a map of the world, created by people like you and free to use under an open licence.
+    intro_text: OpenHistoricalMap is a map of the world, created by people like you
+      and free to use under an open licence.
     logo:
       alt_text: OpenHistoricalMap logo
     project_name:
       title: OpenHistoricalMap
+  notes:
+    new:
+      advice: Your note is public and may be used to update the map, so don't enter
+        personal information or information from copyrighted maps or directory listings.
   sessions:
     destroy:
       heading: Logout of OpenHistoricalMap
   site:
     about:
-      lede_text: OpenHistoricalMap is built by a community of mappers that contribute and maintain data about roads, trails, cafés, railway stations and much more, all over the world.
+      lede_text: OpenHistoricalMap is built by a community of mappers that contribute
+        and maintain data about roads, trails, cafés, railway stations and much more,
+        all over the world.
     copyright:
       legal_babble:
-        contributors_footer_2_html: Inclusion of data in OpenHistoricalMap does not imply that the original data provider endorses OpenHistoricalMap, provides any warranty, or accepts any liability.
+        attribution_example:
+          title: Attribution example
+        contributors_footer_2_html: Inclusion of data in OpenHistoricalMap does not
+          imply that the original data provider endorses OpenHistoricalMap, provides
+          any warranty, or accepts any liability.
+        contributors_intro_html: |-
+          Our contributors are thousands of individuals. We also include
+          openly-licenced data from national mapping agencies
+          and other sources, among them:
+        contributors_title_html: Our contributors
         credit_title_html: How to credit OpenHistoricalMap
         more_title_html: Finding out more
       title: Copyright and License
     export:
       too_large:
-        body: This area is too large to be exported as OpenHistoricalMap XML Data. Please zoom in or select a smaller area, or use one of the sources listed below for bulk data downloads.
+        body: This area is too large to be exported as OpenHistoricalMap XML Data.
+          Please zoom in or select a smaller area, or use one of the sources listed
+          below for bulk data downloads.
         overpass:
-          description: Download this bounding box from a mirror of the OpenHistoricalMap database
+          description: Download this bounding box from a mirror of the OpenHistoricalMap
+            database
         planet:
           title: Planet OHM
     help:
-      introduction: OpenHistoricalMap has several resources for learning about the project, asking and answering questions, and collaboratively discussing and documenting mapping topics.
+      introduction: OpenHistoricalMap has several resources for learning about the
+        project, asking and answering questions, and collaboratively discussing and
+        documenting mapping topics.
       slack:
         title: Slack
       welcome:
@@ -124,42 +160,65 @@ en-GB:
           with, and communicate with, the community with courtesy and respect.
   time:
     formats:
-      blog: "%e %B %Y"
+      blog: '%e %B %Y'
+      friendly: '%e %B %Y at %H:%M'
+  traces:
+    show:
+      edit: edit
+      edit_trace: Edit this trace
+      map: map
+    trace:
+      edit_map: Edit Map
+      view_map: View Map
   user_mailer:
     changeset_comment_notification:
       commented:
-        subject_other: "[OpenHistoricalMap] %{commenter} has commented on a changeset you are interested in"
-        subject_own: "[OpenHistoricalMap] %{commenter} has commented on one of your changesets"
+        subject_other: '[OpenHistoricalMap] %{commenter} has commented on a changeset
+          you are interested in'
+        subject_own: '[OpenHistoricalMap] %{commenter} has commented on one of your
+          changesets'
     diary_comment_notification:
-      header: "%{from_user} has commented on the OpenHistoricalMap diary entry with the subject %{subject}:"
-      header_html: "%{from_user} has commented on the OpenHistoricalMap diary entry with the subject %{subject}:"
-      subject: "[OpenHistoricalMap] %{user} commented on a diary entry"
+      header: '%{from_user} has commented on the OpenHistoricalMap diary entry with
+        the subject %{subject}:'
+      header_html: '%{from_user} has commented on the OpenHistoricalMap diary entry
+        with the subject %{subject}:'
+      subject: '[OpenHistoricalMap] %{user} commented on a diary entry'
     email_confirm:
-      subject: "[OpenHistoricalMap] Confirm your e-mail address"
+      subject: '[OpenHistoricalMap] Confirm your e-mail address'
     gpx_failure:
-      subject: "[OpenHistoricalMap] GPX Import failure"
+      subject: '[OpenHistoricalMap] GPX Import failure'
     gpx_success:
-      subject: "[OpenHistoricalMap] GPX Import success"
+      subject: '[OpenHistoricalMap] GPX Import success'
     lost_password:
-      hopefully_you: Someone (possibly you) has asked for the password to be reset on this email address's openhistoricalmap.org account.
-      subject: "[OpenHistoricalMap] Password reset request"
+      hopefully_you: Someone (possibly you) has asked for the password to be reset
+        on this email address's openhistoricalmap.org account.
+      subject: '[OpenHistoricalMap] Password reset request'
     message_notification:
-      header: "%{from_user} has sent you a message through OpenHistoricalMap with the subject %{subject}:"
-      header_html: "%{from_user} has sent you a message through OpenHistoricalMap with the subject %{subject}:"
-      subject: "[OpenHistoricalMap] %{message_title}"
+      header: '%{from_user} has sent you a message through OpenHistoricalMap with
+        the subject %{subject}:'
+      header_html: '%{from_user} has sent you a message through OpenHistoricalMap
+        with the subject %{subject}:'
+      subject: '[OpenHistoricalMap] %{message_title}'
     note_comment_notification:
       closed:
-        subject_other: "[OpenHistoricalMap] %{commenter} has resolved a note that you are interested in"
-        subject_own: "[OpenHistoricalMap] %{commenter} has resolved one of your notes"
+        subject_other: '[OpenHistoricalMap] %{commenter} has resolved a note that
+          you are interested in'
+        subject_own: '[OpenHistoricalMap] %{commenter} has resolved one of your notes'
       commented:
-        subject_other: "[OpenHistoricalMap] %{commenter} has commented on a note that you are interested in"
-        subject_own: "[OpenHistoricalMap] %{commenter} has commented on one of your notes"
+        subject_other: '[OpenHistoricalMap] %{commenter} has commented on a note that
+          you are interested in'
+        subject_own: '[OpenHistoricalMap] %{commenter} has commented on one of your
+          notes'
       reopened:
-        subject_other: "[OpenHistoricalMap] %{commenter} has reactivated a note that you are interested in"
-        subject_own: "[OpenHistoricalMap] %{commenter} has reactivated one of your notes"
+        subject_other: '[OpenHistoricalMap] %{commenter} has reactivated a note that
+          you are interested in'
+        subject_own: '[OpenHistoricalMap] %{commenter} has reactivated one of your
+          notes'
     signup_confirm:
-      subject: "[OpenHistoricalMap] Welcome to OpenHistoricalMap"
+      subject: '[OpenHistoricalMap] Welcome to OpenHistoricalMap'
   users:
     auth_association:
       heading: Your ID is not associated with a OpenHistoricalMap account yet.
-      option_1: If you are new to OpenHistoricalMap, please create a new account using the form below.
+      option_1: If you are new to OpenHistoricalMap, please create a new account using
+        the form below.
+...
