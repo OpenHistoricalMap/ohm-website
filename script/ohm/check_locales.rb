@@ -8,7 +8,7 @@
 # is also where stale text piles up: upstream renames a key, drops a model or
 # rewrites a sentence, and our copy stays behind saying nothing to nobody.
 #
-# Four checks, all fatal:
+# Five checks, all fatal:
 #
 #   1. upstream says OpenStreetMap, the site shows it, and we have no override.
 #      Someone reads OpenStreetMap on an OHM page.                      (fails)
@@ -23,13 +23,18 @@
 #      left over from a page or model that went away, or upstream renamed
 #      the key and our override no longer applies.                       (fails)
 #
+#   5. a locale override repeats the upstream translation word for word.
+#      Upstream translated the OpenStreetMap text, not ours, and the copy
+#      stops the locale from falling back to OHM English.               (fails)
+#
 # Some keys are built at runtime, as in t("...border_types.#{value}"), and no
 # scan can see those. Their scopes are listed in DYNAMIC_SCOPES so check 4
 # skips them.
 #
-# Scope: English only. The other override files come from Translatewiki, and
-# OHM forked many views under new key names, so keys nothing renders are left
-# alone rather than guessed at.
+# Scope: checks 1 to 4 are English only. The other override files come from
+# Translatewiki, and OHM forked many views under new key names, so keys nothing
+# renders are left alone rather than guessed at. Check 5 reads those files, but
+# only compares them with upstream's file for the same locale.
 
 require "set"
 require "yaml"
@@ -37,6 +42,22 @@ require "yaml"
 ROOT = File.expand_path("../..", __dir__)
 UPSTREAM = File.join(ROOT, "config", "locales", "en.yml")
 OVERRIDES = File.join(ROOT, "config", "locales", "overrides", "en.yml")
+
+# Keys where our English differs from upstream only in spelling or format, so a
+# translator can end up with the same text as upstream. Check 5 skips them. Add
+# one only when both English texts mean the same.
+# e.g: ..amenity.arts_centre -> osm: Arts Centre │ ohm: Arts Center
+UPSTREAM_TRANSLATION_OK = [
+  "geocoder.search_osm_nominatim.prefix.amenity.arts_centre", # Center for Centre
+  "geocoder.search_osm_nominatim.prefix.leisure.horse_riding", # Center for Centre
+  "geocoder.search_osm_nominatim.prefix.shop.seafood", # Sea Food for Seafood
+  "javascripts.legend.title", # Map Key for Legend
+  "javascripts.legend.tooltip",
+  "javascripts.legend.tooltip_disabled",
+  "site.add_a_note.para_1", # same sentence, different line breaks
+  "time.formats.blog", # US date order, each locale has its own
+  "time.formats.friendly"
+].freeze
 
 # \bOSM\b is upper case and word bounded, so it skips OSMF, osm_id and .osm.
 # The URL pattern wants "//", so it skips the wiki and community subdomains.
@@ -195,6 +216,28 @@ if unused.any?
   puts "Delete them from config/locales/overrides/*.yml, or move the override to the"
   puts "key upstream uses now. If a key is built at runtime, add its scope to"
   puts "DYNAMIC_SCOPES in this script instead."
+  problems = true
+end
+
+# Locale override is the upstream translation, copied. key => locales.
+copied = Hash.new { |hash, key| hash[key] = [] }
+Dir.glob(File.join(ROOT, "config", "locales", "overrides", "*.yml")).each do |file|
+  locale = File.basename(file, ".yml")
+  theirs = File.join(ROOT, "config", "locales", "#{locale}.yml")
+  # qqq holds notes for translators, not a translation, so the same note is fine.
+  next if %w[en qqq].include?(locale) || !File.exist?(theirs)
+
+  translated = read(theirs)
+  read(file).each do |key, text|
+    copied[key] << locale if translated[key] == text && !UPSTREAM_TRANSLATION_OK.include?(key)
+  end
+end
+
+if copied.any?
+  show("#{copied.values.sum(&:length)} locale override(s) repeat the upstream translation word for word",
+       copied.sort.map { |key, locales| "  #{key}\n      #{locales.sort.join(' ')}" })
+  puts "Upstream already has these translations. Delete them from"
+  puts "config/locales/overrides/*.yml so the OHM overrides stay small."
   problems = true
 end
 
