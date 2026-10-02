@@ -1,5 +1,6 @@
 # Messages for Turkish (Türkçe)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Agaafd
 # Author: Ahmetlii
 # Author: Alerque
@@ -59,21 +60,26 @@
 # Author: Zeugma
 # Author: İsimsizman
 # Author: 아라
-# Do not edit by hand.
+---
 tr:
   accounts:
     terms:
       show:
-        read and accept with tou: Lütfen katılımcı sözleşmesini ve kullanım koşullarını okuyun, bittiğinde her iki onay kutusunu işaretleyin ve ardından devam düğmesine basın.
+        read and accept with tou: Lütfen katılımcı sözleşmesini ve kullanım koşullarını
+          okuyun, bittiğinde her iki onay kutusunu işaretleyin ve ardından devam düğmesine
+          basın.
         tou_explain:
-          html: Bu %{tou_link}, OpenHistoricalMap tarafından sağlanan web sitesinin ve diğer altyapıların kullanımını yönetmektedir. Lütfen bağlantıya tıklayın, metni okuyun ve kabul edin.
+          html: Bu %{tou_link}, OpenHistoricalMap tarafından sağlanan web sitesinin
+            ve diğer altyapıların kullanımını yönetmektedir. Lütfen bağlantıya tıklayın,
+            metni okuyun ve kabul edin.
   api:
     notes:
       rss:
         title: OpenHistoricalMap Notları
   application:
     setup_user_auth:
-      blocked_zero_hour: OpenHistoricalMap web sitesinde önemli bir mesajınız var. Düzenlemelerinizi kaydetmeden önce mesajı okumanız gerekiyor.
+      blocked_zero_hour: OpenHistoricalMap web sitesinde önemli bir mesajınız var.
+        Düzenlemelerinizi kaydetmeden önce mesajı okumanız gerekiyor.
   changeset_comments:
     feeds:
       show:
@@ -81,37 +87,51 @@ tr:
         title_particular: 'OpenHistoricalMap #%{changeset_id} değişiklik kaydı tartışması'
   date:
     formats:
-      brief: "%{year}"
-      brief_bce: "%{year} MÖ"
+      brief: '%{year}'
+      brief_bce: '%{year} MÖ'
   diary_entries:
     feed:
       all:
         description: OpenHistoricalMap kullanıcıların en son günlük girdileri
         title: OpenHistoricalMap günlük girdileri
       language:
-        description: OpenHistoricalMap kullanıcılarının en son %{language_name} günlük girdileri
-        title: "%{language_name} OpenHistoricalMap günlük girdileri"
+        description: OpenHistoricalMap kullanıcılarının en son %{language_name} günlük
+          girdileri
+        title: '%{language_name} OpenHistoricalMap günlük girdileri'
       user:
-        description: "%{user} kullanıcısının en son OpenHistoricalMap günlük girdileri"
-        title: "%{user} için OpenHistoricalMap günlük girdileri"
+        description: '%{user} kullanıcısının en son OpenHistoricalMap günlük girdileri'
+        title: '%{user} için OpenHistoricalMap günlük girdileri'
   errors:
     bad_request:
-      description: OpenHistoricalMap sunucusunda talep ettiğiniz işlem geçerli değil (HTTP 400)
+      description: OpenHistoricalMap sunucusunda talep ettiğiniz işlem geçerli değil
+        (HTTP 400)
     contact:
-      contact_the_community_html: Bozuk bir bağlantı/hata bulduysanız OpenHistoricalMap topluluğuna %{contact_link} bağlantısıyla iletmekten çekinmeyin. İsteğinizin tam URL'sini not edin.
+      contact_the_community_html: Bozuk bir bağlantı/hata bulduysanız OpenHistoricalMap
+        topluluğuna %{contact_link} bağlantısıyla iletmekten çekinmeyin. İsteğinizin
+        tam URL'sini not edin.
     forbidden:
-      description: OpenHistoricalMap sunucusunda talep ettiğiniz işlem yalnızca yöneticilere açıktır (HTTP 403)
+      description: OpenHistoricalMap sunucusunda talep ettiğiniz işlem yalnızca yöneticilere
+        açıktır (HTTP 403)
     internal_server_error:
-      description: OpenHistoricalMap sunucusu, isteği yerine getirmesini engelleyen beklenmeyen bir durumla karşılaştı (HTTP 500)
+      description: OpenHistoricalMap sunucusu, isteği yerine getirmesini engelleyen
+        beklenmeyen bir durumla karşılaştı (HTTP 500)
     not_found:
-      description: OpenHistoricalMap sunucusunda (HTTP 404) bu ada sahip bir dosya/dizin/API işlemi bulunamadı
+      description: OpenHistoricalMap sunucusunda (HTTP 404) bu ada sahip bir dosya/dizin/API
+        işlemi bulunamadı
   geocoder:
     search_osm_nominatim:
       prefix:
+        amenity:
+          arts_centre: Sanat Merkezi
         leisure:
+          horse_riding: Binicilik Merkezi
           track: Koşuş yolu
+        shop:
+          seafood: Deniz Ürünleri
   javascripts:
     legend:
+      title: Lejant
+      tooltip: Lejant
       tooltip_disabled: Harita Anahtarı bu katman için kullanılamıyor
     map:
       base:
@@ -120,7 +140,8 @@ tr:
         woodblock: Ahşap blok
   layouts:
     intro_header: OpenHistoricalMap'e hoş geldiniz!
-    intro_text: OpenHistoricalMap, sizler tarafından oluşturulan ve açık lisans altında ücretsiz olarak kullanılabilen bir dünya haritasıdır.
+    intro_text: OpenHistoricalMap, sizler tarafından oluşturulan ve açık lisans altında
+      ücretsiz olarak kullanılabilen bir dünya haritasıdır.
     logo:
       alt_text: OpenHistoricalMap logosu
     partners_greeninfo: GreenInfo Ağı
@@ -128,6 +149,11 @@ tr:
     partners_osmus: OpenStreetMap ABD
     project_name:
       title: OpenHistoricalMap
+  notes:
+    new:
+      advice: Notunuz herkese açıktır ve haritayı güncellemek için kullanılabilir,
+        bu nedenle kişisel bilgilerinizi veya telif hakkıyla korunan haritalar veya
+        dizin listelerinden bilgi girmeyin.
   oauth:
     scopes:
       openid: OpenHistoricalMap'i kullanarak oturum açın
@@ -135,25 +161,42 @@ tr:
     destroy:
       heading: OpenHistoricalMap'den çıkış
     new:
-      login_to_authorize_html: "%{client_app_name} uygulamasına erişmek için OpenHistoricalMap'te oturum açın."
+      login_to_authorize_html: '%{client_app_name} uygulamasına erişmek için OpenHistoricalMap''te
+        oturum açın.'
   site:
     about:
-      lede_text: OpenHistoricalMap; tüm dünyada yollar, patikalar, kafeler, tren istasyonları ve çok daha fazlası hakkında veri sağlayan ve bunları koruyan bir haritacılar topluluğu tarafından oluşturulmuştur.
-      used_by_html: "%{name} ile dünyayı herhangi bir zaman diliminde keşfedin."
+      lede_text: OpenHistoricalMap; tüm dünyada yollar, patikalar, kafeler, tren istasyonları
+        ve çok daha fazlası hakkında veri sağlayan ve bunları koruyan bir haritacılar
+        topluluğu tarafından oluşturulmuştur.
+      used_by_html: '%{name} ile dünyayı herhangi bir zaman diliminde keşfedin.'
     about_section:
       contribute_1_user_diaries: kullanıcı günlükleri
       contribute_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap
       legal_1_aup: Kabul Edilebilir Kullanım Politikaları
-      legal_1_html: Bu site ve diğer birçok ilgili hizmet, topluluk adına %{group_link} tarafından resmî olarak işletilmektedir. OSMF tarafından işletilen tüm hizmetlerin kullanımı %{terms_of_use_link}, %{aup_link} ve %{privacy_policy_link}na tabidir.
+      legal_1_html: Bu site ve diğer birçok ilgili hizmet, topluluk adına %{group_link}
+        tarafından resmî olarak işletilmektedir. OSMF tarafından işletilen tüm hizmetlerin
+        kullanımı %{terms_of_use_link}, %{aup_link} ve %{privacy_policy_link}na tabidir.
       legal_1_privacy_policy: Gizlilik Politikası
       legal_1_terms_of_use: Kullanım Şartları
-      legal_2_html: Lisanslama, telif hakkı veya diğer yasal sorularınız varsa lütfen %{contact_team_link}
+      legal_2_html: Lisanslama, telif hakkı veya diğer yasal sorularınız varsa lütfen
+        %{contact_team_link}
       legal_3_osmf_trademarks_url: https://osmfoundation.org/wiki/Trademark_Policy
+    add_a_note:
+      para_1: |-
+        Küçük bir değişikliğin sabit kalmasını istiyor fakat üye olacak ve
+        nasıl düzenleneceğini öğrenecek zamanınız yoksa
+        not eklemeniz yeterlidir.
+    any_questions:
+      ohm_paragraph_1_html: OpenHistoricalMap'in; proje hakkında bilgi edinmek, soru
+        sormak ve yanıtlamak ve haritalama konularını iş birliği içinde tartışmak
+        ve belgelemek için çeşitli kaynakları vardır. %{help_link}.
     copyright:
       legal_babble:
         attribution_example:
-          alt: Bir web sayfasının sağ alt köşesinde, zaman kaydırıcısının altında OHM etiketli bir bağlantı.
-          title: Bir web sayfasında OpenHistoricalMap'in nasıl nitelendirileceğine dair örnek
+          alt: Bir web sayfasının sağ alt köşesinde, zaman kaydırıcısının altında
+            OHM etiketli bir bağlantı.
+          title: Bir web sayfasında OpenHistoricalMap'in nasıl nitelendirileceğine
+            dair örnek
         contributors_footer_2_html: |-
           Verilerin OpenHistoricalMap'e dahil edilmesi, orijinal veri sağlayıcının OpenHistoricalMap'i onayladığını, herhangi bir garanti verdiğini ya da
           herhangi bir yükümlülüğü kabul ettiğini ima etmez.
@@ -163,11 +206,14 @@ tr:
           birikiminden yararlanmaktadır.
           En önemli kaynaklarımız ve katkıda bulunanlarımız şunlardır:
         contributors_title_html: Onaylamalar
-        credit_1_html: 'OpenHistoricalMap verilerini kullandığınız yerde aşağıdaki iki şeyi yapmanız gerekiyor:'
+        credit_1_html: 'OpenHistoricalMap verilerini kullandığınız yerde aşağıdaki
+          iki şeyi yapmanız gerekiyor:'
         credit_2_home: ana sayfamız
         credit_2_this_copyright_page: bu telif hakkı sayfası
         credit_title_html: OpenHistoricalMap'e nasıl atıfta bulunulur
-        infringement_1_html: OHM'ye katkıda bulunanların telif hakkı sahiplerinin açık izni olmadan telif hakkıyla korunan kaynaklardan (ör. Google Haritalar veya basılı haritalar) hiçbir zaman veri eklememeleri hatırlatılır.
+        infringement_1_html: OHM'ye katkıda bulunanların telif hakkı sahiplerinin
+          açık izni olmadan telif hakkıyla korunan kaynaklardan (ör. Google Haritalar
+          veya basılı haritalar) hiçbir zaman veri eklememeleri hatırlatılır.
         introduction_2_cc_by_url: https://creativecommons.org/licenses/by/4.0/
         introduction_4_creative_commons: Creative Commons Attribution-ShareAlike 2.0
         more_1_wiki_url: https://wiki.openstreetmap.org/wiki/OpenHistoricalMap/License
@@ -175,9 +221,12 @@ tr:
       title: Telif Hakkı ve Onaylar
     export:
       too_large:
-        body: Bu alan, OpenHistoricalMap XML verisi olarak dışa aktarılamayacak kadar büyük. Lütfen alanı yakınlaştırın veya daha küçük bir alan seçin ya da toplu veri indirmeleri için aşağıda listelenen kaynaklardan birini kullanın.
+        body: Bu alan, OpenHistoricalMap XML verisi olarak dışa aktarılamayacak kadar
+          büyük. Lütfen alanı yakınlaştırın veya daha küçük bir alan seçin ya da toplu
+          veri indirmeleri için aşağıda listelenen kaynaklardan birini kullanın.
         overpass:
-          description: Bu karakter kutusunu OpenHistoricalMap veritabanının alternatif bir bağlantısını kullanarak indirin
+          description: Bu karakter kutusunu OpenHistoricalMap veritabanının alternatif
+            bir bağlantısını kullanarak indirin
         planet:
           description: Tam OpenHistoricalMap veritabanının düzenli güncellenen kopyası
           title: OHM Gezegeni
@@ -195,8 +244,11 @@ tr:
       slack:
         title: IRC
       welcome:
-        description: OpenHistoricalMap temellerini öğrenmek için kısa bir kılavuz ile başla.
+        description: OpenHistoricalMap temellerini öğrenmek için kısa bir kılavuz
+          ile başla.
         title: OpenHistoricalMap'e hoş geldiniz!
+      welcomemat:
+        title: Organizasyonlar için
       wiki:
         description: Ayrıntılı OHM belgeleri için wiki'ye göz atın.
         title: Viki
@@ -205,16 +257,24 @@ tr:
       license:
         copyright: OpenHistoricalMap, aksi belirtilmedikçe kamu malı olmaya adanmıştır.
     potlatch:
-      removed: Varsayılan OpenHistoricalMapdüzenleyiciniz Potlatch olarak ayarlanmıştır. Adobe Flash Player geri çekildiğinden, Potlatch artık bir web tarayıcısında kullanılamaz.
+      removed: Varsayılan OpenHistoricalMapdüzenleyiciniz Potlatch olarak ayarlanmıştır.
+        Adobe Flash Player geri çekildiğinden, Potlatch artık bir web tarayıcısında
+        kullanılamaz.
     welcome:
       basic_terms:
         a_tag_html: |-
           %{tag} bir düğüm veya yol hakkında veri parçasıdır, örneğin bir
           restoranın adı veya bir köprünün inşa edildiği yıl gibi.
-        paragraph_1: OpenHistoricalMap'in kendine ait bazı argoları vardır. İşte kullanışlı gelecek birkaç anahtar kelime.
-      introduction: Dünyanın düzenlenebilir ve ücretsiz haritası OpenHistoricalMap'e hoş geldiniz. Şu an kaydoldunuz ve bütün haritalama işlemlerine başlamanız için her şey hazır. İşte bilmeniz gereken en önemli şeylerin hızlı bir kılavuzu.
+        paragraph_1: OpenHistoricalMap'in kendine ait bazı argoları vardır. İşte kullanışlı
+          gelecek birkaç anahtar kelime.
+      introduction: Dünyanın düzenlenebilir ve ücretsiz haritası OpenHistoricalMap'e
+        hoş geldiniz. Şu an kaydoldunuz ve bütün haritalama işlemlerine başlamanız
+        için her şey hazır. İşte bilmeniz gereken en önemli şeylerin hızlı bir kılavuzu.
       rules:
-        para_1_html: OpenHistoricalMap'in birkaç resmî kuralı olmasına rağmen tüm katılımcıların toplulukla iş birliği yapmasını ve iletişim kurmasını bekliyoruz. Elle düzenleme dışında herhangi bir işlem yapmayı düşünüyorsanız lütfen%{imports_link} ve %{automated_edits_link} kılavuzlarını okuyup uygulayın.
+        para_1_html: OpenHistoricalMap'in birkaç resmî kuralı olmasına rağmen tüm
+          katılımcıların toplulukla iş birliği yapmasını ve iletişim kurmasını bekliyoruz.
+          Elle düzenleme dışında herhangi bir işlem yapmayı düşünüyorsanız lütfen%{imports_link}
+          ve %{automated_edits_link} kılavuzlarını okuyup uygulayın.
       whats_on_the_map:
         off_the_map_html: |-
           OpenHistoricalMap, kurgusal alternatif tarihler, antik haritalardaki
@@ -223,8 +283,8 @@ tr:
           bulduğunuz geçmişe ait modern haritalardan kopyalamayın.
   time:
     formats:
-      blog: "%e %B %Y"
-      friendly: "%e %B %Y saat %H.%M"
+      blog: '%e %B %Y'
+      friendly: '%e %B %Y saat %H.%M'
   traces:
     feeds:
       show:
@@ -239,48 +299,69 @@ tr:
   user_mailer:
     changeset_comment_notification:
       commented:
-        subject_other: "[OpenHistoricalMap] %{commenter}, ilgilendiğiniz bir değişiklik hakkında yorum yaptı."
-        subject_own: "[OpenHistoricalMap] %{commenter}, sizin değişiklik kayıtlarınızdan birine yorum yaptı."
+        subject_other: '[OpenHistoricalMap] %{commenter}, ilgilendiğiniz bir değişiklik
+          hakkında yorum yaptı.'
+        subject_own: '[OpenHistoricalMap] %{commenter}, sizin değişiklik kayıtlarınızdan
+          birine yorum yaptı.'
       description: 'OpenHistoricalMap Değişiklik Kaydı #%{id}'
     diary_comment_notification:
       description: 'OpenHistoricalMap Günlük Girdisi #%{id}'
-      header: "%{from_user}, %{subject} konulu OpenHistoricalMap günlük girdisi hakkında yorum yaptı."
-      header_html: "%{from_user}, %{subject} konulu OpenHistoricalMap günlük girdisi hakkında yorum yaptı:"
-      subject: "[OpenHistoricalMap] %{user}, bir günlük girdisi hakkında yorum yaptı."
+      header: '%{from_user}, %{subject} konulu OpenHistoricalMap günlük girdisi hakkında
+        yorum yaptı.'
+      header_html: '%{from_user}, %{subject} konulu OpenHistoricalMap günlük girdisi
+        hakkında yorum yaptı:'
+      subject: '[OpenHistoricalMap] %{user}, bir günlük girdisi hakkında yorum yaptı.'
     email_confirm:
-      subject: "[OpenHistoricalMap] E-posta adresi onaylama mesajı"
+      subject: '[OpenHistoricalMap] E-posta adresi onaylama mesajı'
     gpx_failure:
-      subject: "[OpenHistoricalMap] GPX dosyası maalesef alınamadı"
+      subject: '[OpenHistoricalMap] GPX dosyası maalesef alınamadı'
     gpx_success:
-      subject: "[OpenHistoricalMap] GPX dosyası başarıyla alındı"
+      subject: '[OpenHistoricalMap] GPX dosyası başarıyla alındı'
     lost_password:
-      hopefully_you: Birisi (muhtemelen siz) bu e-posta adresinin openhistoricalmap.org hesabındaki şifresinin sıfırlanmasını istedi.
-      subject: "[OpenHistoricalMap] Parola sıfırlama isteği"
+      hopefully_you: Birisi (muhtemelen siz) bu e-posta adresinin openhistoricalmap.org
+        hesabındaki şifresinin sıfırlanmasını istedi.
+      subject: '[OpenHistoricalMap] Parola sıfırlama isteği'
     message_notification:
-      header: 'OpenHistoricalMap kullanıcı %{from_user} sana %{subject} konulu bir mesaj gönderdi:'
-      header_html: "%{from_user}, size OpenHistoricalMap üzerinden %{subject} konulu bir mesaj gönderdi:"
-      subject: "[OpenHistoricalMap] %{message_title}"
+      header: 'OpenHistoricalMap kullanıcı %{from_user} sana %{subject} konulu bir
+        mesaj gönderdi:'
+      header_html: '%{from_user}, size OpenHistoricalMap üzerinden %{subject} konulu
+        bir mesaj gönderdi:'
+      subject: '[OpenHistoricalMap] %{message_title}'
     note_comment_notification:
       closed:
-        subject_other: "[OpenHistoricalMap] %{commenter}, ilgilendiğiniz notlardan birini çözdü"
-        subject_own: "[OpenHistoricalMap] %{commenter}, notlarınızdan birini çözdü."
+        subject_other: '[OpenHistoricalMap] %{commenter}, ilgilendiğiniz notlardan
+          birini çözdü'
+        subject_own: '[OpenHistoricalMap] %{commenter}, notlarınızdan birini çözdü.'
       commented:
-        subject_other: "[OpenHistoricalMap] %{commenter}, ilgilendiğiniz bir not üzerinde yorum yaptı."
-        subject_own: "[OpenHistoricalMap] notlarından birisini %{commenter} tarafından yorumlandı"
+        subject_other: '[OpenHistoricalMap] %{commenter}, ilgilendiğiniz bir not üzerinde
+          yorum yaptı.'
+        subject_own: '[OpenHistoricalMap] notlarından birisini %{commenter} tarafından
+          yorumlandı'
       description: 'OpenHistoricalMap Notu #%{id}'
       reopened:
-        subject_other: "[OpenHistoricalMap] %{commenter}, ilgilendiğiniz bir notu yeniden etkinleştirdi"
-        subject_own: "[OpenHistoricalMap] %{commenter}, notlarınızdan birini yeniden etkinleştirdi."
+        subject_other: '[OpenHistoricalMap] %{commenter}, ilgilendiğiniz bir notu
+          yeniden etkinleştirdi'
+        subject_own: '[OpenHistoricalMap] %{commenter}, notlarınızdan birini yeniden
+          etkinleştirdi.'
     signup_confirm:
-      subject: "[OpenHistoricalMap] OpenHistoricalMap'e Hoş Geldiniz"
+      subject: '[OpenHistoricalMap] OpenHistoricalMap''e Hoş Geldiniz'
   users:
     auth_association:
       heading: Kimliğiniz henüz bir OpenHistoricalMap hesabıyla ilişkili değil.
-      option_1: OpenHistoricalMap'te yeniyseniz, lütfen aşağıdaki formu kullanarak yeni bir hesap açın.
+      option_1: OpenHistoricalMap'te yeniyseniz, lütfen aşağıdaki formu kullanarak
+        yeni bir hesap açın.
     new:
       about:
-        paragraph_1: Diğer haritaların aksine tamamen sizler tarafından oluşturulan OpenHistoricalMap'i herkesin düzeltmesi, güncellemesi, indirmesi ve kullanması ücretsizdir.
+        paragraph_1: Diğer haritaların aksine tamamen sizler tarafından oluşturulan
+          OpenHistoricalMap'i herkesin düzeltmesi, güncellemesi, indirmesi ve kullanması
+          ücretsizdir.
+        paragraph_2: Katkıda bulunmaya başlamak için kaydolun.
         welcome: OpenHistoricalMap'e hoş geldiniz
-      duplicate_social_email: Zaten bir OpenHistoricalMap hesabınız varsa ve 3. parti bir kimlik sağlayıcı kullanmak istiyorsanız lütfen şifrenizi kullanarak giriş yapın ve hesabınızın ayarlarını değiştirin.
-      please_contact_support_html: Oluşturulacak bir hesap ayarlamak için lütfen %{support_link} ile iletişime geçin - isteğinizi en kısa sürede çözmeye çalışacağız.
-      signup_to_authorize_html: "%{client_app_name} uygulamasına erişmek için OpenHistoricalMap'e kaydolun."
+      duplicate_social_email: Zaten bir OpenHistoricalMap hesabınız varsa ve 3. parti
+        bir kimlik sağlayıcı kullanmak istiyorsanız lütfen şifrenizi kullanarak giriş
+        yapın ve hesabınızın ayarlarını değiştirin.
+      please_contact_support_html: Oluşturulacak bir hesap ayarlamak için lütfen %{support_link}
+        ile iletişime geçin - isteğinizi en kısa sürede çözmeye çalışacağız.
+      signup_to_authorize_html: '%{client_app_name} uygulamasına erişmek için OpenHistoricalMap''e
+        kaydolun.'
+...

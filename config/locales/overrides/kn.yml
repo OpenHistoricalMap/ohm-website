@@ -1,5 +1,6 @@
 # Messages for Kannada (ಕನ್ನಡ)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: AKJ GOWDA
 # Author: Ananth subray
 # Author: Anzx
@@ -15,11 +16,44 @@
 # Author: Yogesh
 # Author: ~aanzx
 # Author: ಮಲ್ನಾಡಾಚ್ ಕೊಂಕ್ಣೊ
-# Do not edit by hand.
+---
 kn:
+  api:
+    notes:
+      rss:
+        title: ಓಪನ್ ಸ್ಟ್ರೀಟ್ ಮ್ಯಾಪ್ ಟಿಪ್ಪಣಿಗಳು
+  changeset_comments:
+    feeds:
+      show:
+        title_all: ಓಪನ್ ಸ್ಟ್ತ್ರೀಟ್ ಮ್ಯಾಪ್ ಬದಲಾವಣೆಗಳ ಚರ್ಚೆ
+        title_particular: ಓಪನ್ ಸ್ಟ್ರೀಟ್ ಮ್ಯಾಪ್ ಬದಲಾವಣಾ ಸಂಖ್ಯೆ %{changeset_id} ಯ ಚರ್ಚೆ
+  diary_entries:
+    feed:
+      language:
+        title: '%{language_name} ಭಾಷೆಯಲ್ಲಿ ಓಪನ್‍ಸ್ಟ್ರೀಟ್‍ಮ್ಯಾಪ್‍ನ ದಿನಚರಿ ದಾಖಲಾತಿಗಳು'
+      user:
+        description: ಓಪನ್‍ಸ್ಟ್ರೀಟ್‍ಮ್ಯಾಪ್ ನಲ್ಲಿ %{user} ಅವರ ಇತ್ತೀಚಿನ ದಿನಚರಿ ದಾಖಲಾತಿಗಳು
+        title: ಓಪನ್ ಸ್ಟ್ರೀಟ್ ಮ್ಯಾಪ್ ನಲ್ಲಿ %{user} ಅವರ ದಿನಚರಿ ದಾಖಲಾತಿಗಳು
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: ಕಲಾ ಕೇಂದ್ರ
+        leisure:
+          horse_riding: ಕುದುರೆ ಸವಾರಿ
+  layouts:
+    intro_header: ಒಪನ್ ಸ್ಟ್ರೀಟ್ ಮ್ಯಾಪ್ ಗೆ  ಸುಸ್ವಾಗತ!
   site:
+    copyright:
+      title: ಕೃತಿಸ್ವಾಮ್ಯ ಮತ್ತು ಪರವಾನಗಿ
     help:
       slack:
         title: ಐ ಆರ್ ಸಿ
+      welcome:
+        title: ಒಪನ್ ಸ್ಟ್ರೀಟ್ ಮ್ಯಾಪ್ ಗೆ  ಸುಸ್ವಾಗತ
       wiki:
         title: ವಿಕಿ
+  time:
+    formats:
+      friendly: '%H:%M ರಲ್ಲಿ %e %B %Y'
+...

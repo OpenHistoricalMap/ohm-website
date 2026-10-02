@@ -1,10 +1,11 @@
 # Messages for Serbo-Croatian (Latin script) (srpskohrvatski (latinica))
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Aca
 # Author: Erictheise
 # Author: Minh Nguyen
 # Author: Vlad5250
-# Do not edit by hand.
+---
 sh:
   api:
     notes:
@@ -14,39 +15,81 @@ sh:
     feed:
       all:
         description: Nedavni zapisi u dnevnik korisnika OpenHistoricalMapa
+        title: Zapisi u dnevniku
       language:
-        description: 'Nedavni zapisi u dnevniku OpenHistoricalMap korisnika na jeziku: %{language_name}'
+        description: 'Nedavni zapisi u dnevniku OpenHistoricalMap korisnika na jeziku:
+          %{language_name}'
+        title: 'Zapisi u dnevniku na jeziku: %{language_name}'
+      user:
+        description: Nedavni zapisi dnevnika od %{user}
+        title: Zapisi dnevnika od korisnika %{user}
   errors:
     forbidden:
-      description: Operacija koju ste tražili na serveru OpenHistoricalMap dostupna je samo administratorima (HTTP 403)
+      description: Operacija koju ste tražili na serveru OpenHistoricalMap dostupna
+        je samo administratorima (HTTP 403)
     internal_server_error:
-      description: Server OpenHistoricalMap naišao je na neočekivano stanje koje ga je spriječilo da ispuni zahtjev (HTTP 500)
+      description: Server OpenHistoricalMap naišao je na neočekivano stanje koje ga
+        je spriječilo da ispuni zahtjev (HTTP 500)
     not_found:
-      description: Nije moguće pronaći operaciju za datoteku/direktorij/priložnik pod tim imenom na serveru OpenHistoricalMap (HTTP 404)
+      description: Nije moguće pronaći operaciju za datoteku/direktorij/priložnik
+        pod tim imenom na serveru OpenHistoricalMap (HTTP 404)
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: Umjetnički centar
   layouts:
     intro_header: Dobrodošao/la na OpenHistoricalMap!
-    intro_text: OpenHistoricalMap je karta svijeta stvorena od strane ljudi kao što ste vi i može se slobodno koristiti pod licencom otvorenog koda.
+    intro_text: OpenHistoricalMap je karta svijeta stvorena od strane ljudi kao što
+      ste vi i može se slobodno koristiti pod licencom otvorenog koda.
   site:
     about:
-      lede_text: OpenHistoricalMap je izgradila zajednica kartografa koji donose i održavaju podatke o cestama, stazama, kafićima, željezničkim postajama i još mnogo čemu drugom diljem cijelog svijeta.
+      lede_text: OpenHistoricalMap je izgradila zajednica kartografa koji donose i
+        održavaju podatke o cestama, stazama, kafićima, željezničkim postajama i još
+        mnogo čemu drugom diljem cijelog svijeta.
+      used_by_html: '%{name} snabdijeva geografskim podacima tisuće internetskih stranica,
+        mobilnih priloga i uređaja'
     about_section:
       legal_1_privacy_policy: Politika privatnosti
       legal_1_terms_of_use: Uslovi korištenja
     copyright:
       legal_babble:
-        contributors_footer_2_html: Uvrštavanje podataka u OpenHistoricalMap ne podrazumijeva da se izvorni davatelj podataka prihvata ili reklamira OpenHistoricalMap, pruža bilo kakvu garanciju, ili prihvata bilo kakve obaveze.
+        contributors_footer_2_html: Uvrštavanje podataka u OpenHistoricalMap ne podrazumijeva
+          da se izvorni davatelj podataka prihvata ili reklamira OpenHistoricalMap,
+          pruža bilo kakvu garanciju, ili prihvata bilo kakve obaveze.
+        contributors_intro_html: |-
+          Naši suradnici su hiljade pojedinaca. Koristimo također
+          podatke s otvorenom licencom od nacionalnih kartografskih agencija
+          i drugih izvora, među kojima su:
+        contributors_title_html: Naši suradnici
         infringement_1_html: |-
           Suradnike OHM-a podsjećamo da nikada ne staju
           podatke s izvora zaštićenih autorskim pravima (npr. Google karte ili tiskane karte) bez
           izričitog ovlaštenja nositelja.
+    export:
+      too_large:
+        body: 'Područje je preveliko da bi se izvezlo kao XML-podaci. Molimo povećajte
+          prikaz ili izaberite manju površinu. Možete koristiti jedan od izvora navedenih
+          ispod za masovno preuzimanje:'
     index:
       js_2: OpenHistoricalMap koristi JavaScript za slippy kartu.
     welcome:
-      introduction: Dobrodošli u OpenHistoricalMap — slobodnu i uredljivu kartu svijeta. Sada kada ste se prijavili, spremni ste za početak rada. Evo kratkog vodiča s najvažnijim stvarima koje je potrebno znati.
+      introduction: Dobrodošli u OpenHistoricalMap — slobodnu i uredljivu kartu svijeta.
+        Sada kada ste se prijavili, spremni ste za početak rada. Evo kratkog vodiča
+        s najvažnijim stvarima koje je potrebno znati.
+      whats_on_the_map:
+        off_the_map_html: Ono što ovdje %{doesnt} uključuje su prosudbe i procjene,
+          povijesne (više ne postojeće) značajke, nagađanja i podaci iz izvora zaštićenih
+          autorskim pravima. Nemojte kopirati i crtati s internetskih karata ili karata
+          iz knjiga i atlasa, osim ako nemate posebno ovlaštenje.
+  time:
+    formats:
+      friendly: '%e %B %Y u %H:%M'
   user_mailer:
     diary_comment_notification:
-      subject: "[OpenHistoricalMap] %{user} je komentirao vaš unos u dnevniku"
+      subject: '[OpenHistoricalMap] %{user} je komentirao vaš unos u dnevniku'
     gpx_success:
-      subject: "[OpenHistoricalMap] Uspješan uvoz GPX-datoteke"
+      subject: '[OpenHistoricalMap] Uspješan uvoz GPX-datoteke'
     signup_confirm:
-      subject: "[OpenHistoricalMap] Dobro došli na OpenHistoricalMap"
+      subject: '[OpenHistoricalMap] Dobro došli na OpenHistoricalMap'
+...
