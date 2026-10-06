@@ -83,58 +83,6 @@
         id: "osm_france"
         href: "https://openstreetmap.fr/"
 
-- leafletOsmId: "CycleMap"
-  code: "C"
-  layerId: "cyclemap"
-  nameId: "cycle_map"
-  wiki: "https://wiki.openstreetmap.org/wiki/OpenCycleMap"
-  apiKeyId: "thunderforest_key"
-  canEmbed: true
-  canDownloadImage: true
-  maxZoom: 21
-  tileUrl: "https://api.thunderforest.com/cycle/{z}/{x}/{y}{ratio}.png?apikey={apikey}"
-  credit:
-    id: "thunderforest_credit"
-    children:
-      thunderforest_link:
-        id: "andy_allan"
-        href: "https://www.thunderforest.com/"
-
-- leafletOsmId: "TransportMapVector"
-  leafletOsmDarkId: "TransportDarkMapVector"
-  code: "T"
-  layerId: "transportmap"
-  nameId: "transport_map"
-  wiki: "https://wiki.openstreetmap.org/wiki/Transport_Map"
-  apiKeyId: "thunderforest_key"
-  canEmbed: true
-  canDownloadImage: true
-  maxZoom: 23
-  isVectorStyle: true
-  styleUrl: "https://api.thunderforest.com/styles/transport/style.json?apikey={apikey}"
-  styleUrlDark: "https://api.thunderforest.com/styles/transport-dark/style.json?apikey={apikey}"
-  credit:
-    id: "thunderforest_credit"
-    children:
-      thunderforest_link:
-        id: "andy_allan"
-        href: "https://www.thunderforest.com/"
-
-- leafletOsmId: "TracestrackTopo"
-  code: "P"
-  layerId: "tracestracktopo"
-  nameId: "tracestracktop_topo"
-  wiki: "https://wiki.openstreetmap.org/wiki/Tracestrack"
-  apiKeyId: "tracestrack_key"
-  maxZoom: 19
-  tileUrl: "https://tile.tracestrack.com/topo__/{z}/{x}/{y}.webp?key={apikey}"
-  credit:
-    id: "tracestrack_credit"
-    children:
-      tracestrack_link:
-        id: "tracestrack"
-        href: "https://www.tracestrack.com/"
-
 - leafletOsmId: "HOT"
   code: "H"
   layerId: "hot"
