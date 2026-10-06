@@ -115,22 +115,3 @@
 #     id: "make_a_donation"
 #     href: "https://supporting.openstreetmap.org"
 #     donate: true
-
-- leafletOsmId: "OpenMapTiles"
-  code: "V"
-  layerId: "openmaptiles_osm"
-  nameId: "openmaptiles_osm"
-  wiki: "https://wiki.openstreetmap.org/wiki/MapTiler"
-  apiKeyId: "maptiler_key"
-  maxZoom: 23
-  isVectorStyle: true
-  styleUrl: "https://api.maptiler.com/maps/openstreetmap/style.json?key={apikey}"
-  credit:
-    id: "openmaptiles_credit"
-    children:
-      openmaptiles_link:
-        id: "openmaptiles_name"
-        href: "https://openmaptiles.org/"
-      maptiler_link:
-        id: "maptiler_name"
-        href: "https://www.maptiler.com/"
