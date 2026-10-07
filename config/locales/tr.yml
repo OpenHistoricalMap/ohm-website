@@ -760,6 +760,8 @@ tr:
       nearby_changesets: yakınlarındaki kullanıcıların bütün değişiklik kayıtları
       nearby_diaries: yakınlarındaki kullanıcıların günlük girdileri
   notifications:
+    missing_record:
+      body: Maalesef bu, artık mevcut değil.
     index:
       title: Bildirimler
       no_notifications: Şu anda bildirim yok.
@@ -3912,9 +3914,12 @@ tr:
         url: https://wiki.openstreetmap.org/wiki/Tr:Beginners%27_guide
       counter_warning_forum_link:
         text: topluluk size yardımcı olabilir
-      advice: Notunuz herkese açıktır ve haritayı güncellemek için kullanılabilir,
-        bu nedenle kişisel bilgilerinizi veya telif hakkıyla korunan haritalar veya
-        dizin listelerinden bilgi girmeyin.
+      advice: OpenStreetMap üyeliği olmayanlar da notları görebilir.
+      advice_good_note: İyi bir not; telif hakkıyla korunan haritalardan ya da dizin
+        listelerinden alınan içeriklerle kişisel bilgileri içermeden olabildiğince
+        ayrıntılı olmalıdır.
+      advice_conduct: Topluluk üyeleriyle iletişim kurarken lütfen nazik, sabırlı
+        ve saygılı olun.
       add: Not Ekle
       error: Not oluşturulurken bir hata oluştu.
     new_readonly:
@@ -3942,26 +3947,26 @@ tr:
       tooltip: Lejant
       tooltip_disabled: Bu katman için lejant kullanılamıyor
     map:
-      map:
-        title: Harita
-        marker:
-          title: Harita imleci
-      popup:
-        close: Kapat
-      navigation_control:
-        zoom_in: Yakınlaştır
-        zoom_out: Uzaklaştır
-      geolocate_control:
-        find_my_location: Konumumu göster
-        location_not_available: Konum bilgisi mevcut değil
+      Map:
+        Title: Harita
+      Marker:
+        Title: Harita imleci
+      Popup:
+        Close: Kapat
+      NavigationControl:
+        ZoomIn: Yakınlaştır
+        ZoomOut: Uzaklaştır
+      GeolocateControl:
+        FindMyLocation: Konumumu göster
+        LocationNotAvailable: Konum bilgisi mevcut değil
         metersPopup:
           one: Bu noktanın %{count} metresindesiniz
           other: Bu noktanın %{count} metresindesiniz
         feetPopup:
           one: Bu noktanın %{count} adım içindesiniz
           other: Bu noktanın %{count} adım içindesiniz
-      attribution_control:
-        toggle_attribution: Atıf Anahtarı
+      AttributionControl:
+        ToggleAttribution: Atıf Anahtarı
       base:
         standard: Standart
         cycle_map: Bisiklet Haritası
@@ -4190,6 +4195,7 @@ tr:
     trailing_whitespace: sonda boşluk var
     invalid_characters: geçersiz karakterler içeriyor
     url_characters: özel URL karakterleri içerir (%{characters})
+    email_characters: Geçersiz karakterler içeriyor (%{characters})
   moderation_zones:
     navigation:
       new_title: Yeni bir denetim bölgesi tanımlayın

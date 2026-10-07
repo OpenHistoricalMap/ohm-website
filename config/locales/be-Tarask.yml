@@ -99,6 +99,7 @@ be-Tarask:
       acl:
         address: Адрас
         domain: Дамэн
+        mx: MX сэрвэр
         k: Ключ
         v: Значэньне
       diary_comment:
@@ -2863,8 +2864,8 @@ be-Tarask:
       rules:
         title: Правілы!
         para_1_html: OpenStreetMap мае колькі фармальных правілаў, але мы чакаем,
-          што ўсе ўдзельнікі будуць супрацоўнічаць і камунікаваць з супольнасьцю.
-          Калі акрамя ручных правак, ёсьць жаданьне на іншыя рухі, калі ласка, кіруйцеся
+          што ўсе ўдзельнікі будуць супрацаваць і камунікаваць з супольнасьцю. Калі
+          акрамя ручных правак, ёсьць жаданьне на іншыя рухі, калі ласка, кіруйцеся
           паводле ґайдаў пра %{imports_link} ды %{automated_edits_link}.
         imports: Імпарты
         automated_edits: Аўтаматызаваныя рэдагаваньні
@@ -3119,9 +3120,18 @@ be-Tarask:
     legacy_visibilities:
       edit:
         filter:
+          visibility: Бягучая відомасьць
+          any: Прыватны і публічны
+          from: Дасланае ад
+          to: Дасланае да
           apply: Фільтар
+        new_visibility: Новая відомасьць
         confirmation:
+          header: Пацьвердзіць зьмену відомасьці
           cancel: Скасаваць
+          confirm: Зьмяніць відомасьць
+      update:
+        invalid_visibility: Абраць відомасьць, каб зьмяніць.
     offline_warning:
       message: Сыстэма прыёму GPX-файлаў у цяперашні момант недаступная
     offline:
@@ -3760,8 +3770,8 @@ be-Tarask:
         text: пачаць мапіць самастойна
       counter_warning_forum_link:
         text: супольнасьць заўжды можа дапамагчы
-      advice: Гэта публічная заўвага ствараецца для абнаўленьня мапы, таму ня варта
-        пісаць асабістыя зьвесткі, ці зьвесткі абароненыя аўтарскімі правамі.
+      advice: Кожны чалавек у інтэрнэце можа бачыць гэтую заўвагу, нават калі ў яго
+        няма рахунку OpenStreetMap!
       add: Дадаць заўвагу
       error: Адбылася памылка пры стварэньні заўвагі
     new_readonly:
@@ -3789,26 +3799,26 @@ be-Tarask:
       tooltip: Леґенда
       tooltip_disabled: Няма леґенды на гэты пласт мапы
     map:
-      map:
-        title: Мапа
-        marker:
-          title: Маркер мапы
-      popup:
-        close: Закрыць
-      navigation_control:
-        zoom_in: Бліжэй
-        zoom_out: Далей
-      geolocate_control:
-        find_my_location: Знайсьці мяне
-        location_not_available: Лякацыя недаступная
+      Map:
+        Title: Мапа
+      Marker:
+        Title: Маркер мапы
+      Popup:
+        Close: Закрыць
+      NavigationControl:
+        ZoomIn: Бліжэй
+        ZoomOut: Далей
+      GeolocateControl:
+        FindMyLocation: Знайсьці мяне
+        LocationNotAvailable: Лякацыя недаступная
         metersPopup:
           one: вы ў межах %{count} мэтру ад гэтага пункту
           other: вы ў межах %{count} мэтраў ад гэтага пункту
         feetPopup:
           one: вы ў межах %{count} футу ад гэтага пункту
           other: вы ў межах %{count} футаў ад гэтага пункту
-      attribution_control:
-        toggle_attribution: Перамыкнуць атрыбуцыю
+      AttributionControl:
+        ToggleAttribution: Перамыкнуць атрыбуцыю
       base:
         standard: Звычайная мапа
         cycle_map: Роварная мапа
@@ -3997,6 +4007,7 @@ be-Tarask:
       error: Памылка зьнішчэньня гэтай рэдакцыі.
   acls:
     page:
+      address: Адрас
       domain: Дамэн
       k: Ключ
       actions: Дзеі
