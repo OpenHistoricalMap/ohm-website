@@ -92,22 +92,15 @@
     "@eslint/core" "^1.2.1"
     levn "^0.4.1"
 
-<<<<<<< HEAD
 "@esri/wayback-core@^1.0.10":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@esri/wayback-core/-/wayback-core-1.1.0.tgz#292baa42a20f79f858981cbaf1706b4a40b002e3"
   integrity sha512-+VtsL7n/tqa8aYpdmOdvL7r1/R45r4YVXxE5bmDeXcENIfrZIg2cK0pH9bo8MIcQng7p6jhByQotMX7NVPxIcA==
 
-"@herb-tools/config@0.10.3":
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/@herb-tools/config/-/config-0.10.3.tgz#d6fbb2bb71d1c1679ed196f027378555b52e1979"
-  integrity sha512-cSaOwuWnij1wiB4Xh9Zfx/s+lhis7cN/+PXssanT/mXQLSRU2QeYasivyCQ1tRnpIVdGGOC/rqHVJQeNmj4pqg==
-=======
 "@herb-tools/analysis@0.11.0":
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/@herb-tools/analysis/-/analysis-0.11.0.tgz#96656bad050713ace6dcac8cfd12dba28605512a"
   integrity sha512-4Ypn7dRh/V52vuw25gtOySq/6o0eSK/RKLB88qHDR7/oVjl3FFCGVCi7ikhbbnucBUxLy2GQ/aaQVinfIYW7aQ==
->>>>>>> upstream-tip
   dependencies:
     "@herb-tools/core" "0.11.0"
     picomatch "^4.0.7"
@@ -791,17 +784,15 @@ cross-spawn@^7.0.6:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-<<<<<<< HEAD
 csscolorparser@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/csscolorparser/-/csscolorparser-1.0.3.tgz#b34f391eea4da8f3e98231e2ccd8df9c041f171b"
   integrity sha512-umPSgYwZkdFoUrH5hIq5kf0wPSXiro51nPw0j2K/c83KflkPSTBGMz6NJvMB+07VlL0y7VPo6QJcDjcgKTTm3w==
-=======
+
 cssesc@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
   integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
->>>>>>> upstream-tip
 
 debug@^4.3.1, debug@^4.3.2:
   version "4.4.3"
@@ -1756,7 +1747,6 @@ polyclip-ts@~0.16.8:
     bignumber.js "^9.1.0"
     splaytree-ts "^1.0.2"
 
-<<<<<<< HEAD
 polygon-clipping@~0.15.7:
   version "0.15.7"
   resolved "https://registry.yarnpkg.com/polygon-clipping/-/polygon-clipping-0.15.7.tgz#3823ca1e372566f350795ce9dd9a7b19e97bdaad"
@@ -1765,16 +1755,10 @@ polygon-clipping@~0.15.7:
     robust-predicates "^3.0.2"
     splaytree "^3.1.0"
 
-postcss-import@^16.1.1:
-  version "16.1.1"
-  resolved "https://registry.yarnpkg.com/postcss-import/-/postcss-import-16.1.1.tgz#cfbe79e6c9232b0dbbe1c18f35308825cfe8ff2a"
-  integrity sha512-2xVS1NCZAfjtVdvXiyegxzJ447GyqCeEI5V7ApgQVOWnros1p5lGNovJNapwPpMombyFBfqDwt7AD3n2l0KOfQ==
-=======
 postcss-import@^17.0.0:
   version "17.0.0"
   resolved "https://registry.yarnpkg.com/postcss-import/-/postcss-import-17.0.0.tgz#b545e9c4cfd48791e7090b3ff232b7b93d075139"
   integrity sha512-qzVMJhcq39KweT7Fp0HcjE5YxL5yI854Q3CtufxDuZKO9HLQUp2rptB9+U0MIj3pT1ZEVXoqnpeC1mSkfYuz4Q==
->>>>>>> upstream-tip
   dependencies:
     postcss-value-parser "^4.0.0"
     read-cache "^1.0.0"
