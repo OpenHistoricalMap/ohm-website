@@ -1,0 +1,167 @@
+name: OHM Upstream Sync
+
+# Opens a pull request that brings the latest openstreetmap-website commits
+# into staging. Run it from the Actions tab ("Run workflow").
+#
+# It creates a branch from staging, merges upstream into it and opens a pull
+# request. If the merge has conflicts, they are committed with their conflict
+# markers and the pull request is opened as a draft: check out the branch, fix
+# the marked files and push.
+#
+# Needs the UPSTREAM_SYNC_TOKEN secret: a token with write access to Contents,
+# Pull requests and Workflows. The default GITHUB_TOKEN cannot push upstream
+# commits that change workflow files, and a pull request it opens does not
+# start the other checks.
+
+on:
+  workflow_dispatch:
+    inputs:
+      upstream_ref:
+        description: Branch or tag of openstreetmap/openstreetmap-website to bring in
+        required: true
+        default: master
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    name: Open upstream sync pull request
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ secrets.UPSTREAM_SYNC_TOKEN }}
+      UPSTREAM_REPO: https://github.com/openstreetmap/openstreetmap-website.git
+      UPSTREAM_REF: ${{ inputs.upstream_ref }}
+      BASE: staging
+    steps:
+    - name: Check the token
+      run: |
+        if [ -z "$GH_TOKEN" ]; then
+          echo "::error::The UPSTREAM_SYNC_TOKEN secret is not set."
+          exit 1
+        fi
+    - name: Checkout source
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      with:
+        ref: staging
+        fetch-depth: 0
+        token: ${{ secrets.UPSTREAM_SYNC_TOKEN }}
+    - name: Fetch upstream
+      run: |
+        git fetch --no-tags "$UPSTREAM_REPO" "$UPSTREAM_REF"
+        git branch -f upstream-tip FETCH_HEAD
+    - name: Check if there is something to sync
+      id: check
+      run: |
+        behind=$(git rev-list --count "origin/$BASE..upstream-tip")
+        echo "behind=$behind" >> "$GITHUB_OUTPUT"
+        if [ "$behind" -eq 0 ]; then
+          echo "::notice::$BASE already has every commit of upstream $UPSTREAM_REF."
+          echo "skip=true" >> "$GITHUB_OUTPUT"
+          exit 0
+        fi
+        open=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --base "$BASE" --json number,headRefName \
+          --jq '.[] | select(.headRefName | startswith("upstream-sync-")) | "#\(.number) (\(.headRefName))"')
+        if [ -n "$open" ]; then
+          echo "::notice::An upstream sync pull request is already open: $open. Merge or close it first."
+          echo "skip=true" >> "$GITHUB_OUTPUT"
+          exit 0
+        fi
+        echo "skip=false" >> "$GITHUB_OUTPUT"
+    - name: Merge upstream into a sync branch
+      id: merge
+      if: steps.check.outputs.skip == 'false'
+      run: |
+        branch="upstream-sync-$(date -u +%F)"
+        upstream_sha=$(git rev-parse --short upstream-tip)
+        message="Merge openstreetmap-website $UPSTREAM_REF ($upstream_sha) into $BASE"
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git checkout -b "$branch" "origin/$BASE"
+
+        if git merge --no-ff -m "$message" upstream-tip; then
+          : > /tmp/conflicts.txt
+        else
+          git diff --name-only --diff-filter=U > /tmp/conflicts.txt
+          if [ ! -s /tmp/conflicts.txt ]; then
+            echo "::error::The merge failed, and not because of conflicts."
+            exit 1
+          fi
+          # Keep the conflict markers in the files, so the branch shows what
+          # has to be fixed.
+          git add -A
+          git commit --no-verify -m "$message" -m "Has conflict markers. Fix these files before merging:" -m "$(cat /tmp/conflicts.txt)"
+        fi
+
+        git push origin "$branch"
+        echo "name=$branch" >> "$GITHUB_OUTPUT"
+        echo "upstream_sha=$upstream_sha" >> "$GITHUB_OUTPUT"
+    - name: Open the pull request
+      if: steps.check.outputs.skip == 'false'
+      env:
+        BRANCH: ${{ steps.merge.outputs.name }}
+        UPSTREAM_SHA: ${{ steps.merge.outputs.upstream_sha }}
+        BEHIND: ${{ steps.check.outputs.behind }}
+      run: |
+        if [ -s /tmp/conflicts.txt ]; then
+          draft="--draft"
+          status="**This branch has conflict markers. Do not merge it until the files below are fixed.**"
+          conflict_list=$(sed 's/^/- `/; s/$/`/' /tmp/conflicts.txt)
+        else
+          draft=""
+          status="The merge had no conflicts. This can be merged once the checks pass."
+          conflict_list="None."
+        fi
+
+        cat > /tmp/body.md <<EOF
+        Brings $BEHIND commits from openstreetmap-website \`$UPSTREAM_REF\` (\`$UPSTREAM_SHA\`) into \`$BASE\`.
+
+        $status
+
+        **Merge with "Create a merge commit". Never squash or rebase this pull request.** A squash drops the upstream history, and the next sync would conflict on every file again.
+
+        ### Files in conflict
+
+        $conflict_list
+
+        ### How to fix the conflicts
+
+        \`\`\`bash
+        git fetch origin
+        git checkout $BRANCH
+        git grep -n '^<<<<<<< '    # every conflict left to fix
+        # fix the files, then:
+        git add -A
+        git commit -m "Fix upstream merge conflicts"
+        git push origin $BRANCH
+        \`\`\`
+
+        In each conflict, the part after \`<<<<<<< HEAD\` is OHM (\`$BASE\`) and the part after \`=======\` is upstream.
+
+        For \`yarn.lock\`, do not fix the markers by hand. Take the OHM file and let yarn rebuild it:
+
+        \`\`\`bash
+        git checkout origin/$BASE -- yarn.lock
+        yarn install
+        git add yarn.lock
+        \`\`\`
+
+        ### After merging
+
+        - New upstream text can make the "Check OHM Locales" check fail until the OHM overrides are added.
+        - In ohm-deploy, set \`OPENHISTORICALMAP_WEBSITE_GITSHA\` to the merge commit on \`$BASE\`, not to a commit of this branch.
+        EOF
+
+        # This repository is a fork: without --repo, gh could open the pull
+        # request on openstreetmap/openstreetmap-website.
+        gh pr create $draft \
+          --repo "$GITHUB_REPOSITORY" \
+          --base "$BASE" \
+          --head "$BRANCH" \
+          --title "Sync with upstream ($(date -u +%F))" \
+          --body-file /tmp/body.md
