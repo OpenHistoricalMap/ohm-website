@@ -1,5 +1,6 @@
 # Messages for Bangla (বাংলা)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Aftabuzzaman
 # Author: Aishik Rehman
 # Author: Al Riaz Uddin Ripon
@@ -33,33 +34,93 @@
 # Author: আফতাবুজ্জামান
 # Author: এম আবু সাঈদ
 # Author: জয়শ্রীরাম সরকার
-# Do not edit by hand.
+---
 bn:
+  accounts:
+    terms:
+      show:
+        read and accept with tou: অনুগ্রহ করে অবদানকারী চুক্তি এবং ব্যবহারের শর্তাবলী
+          পড়ুন, হয়ে গেলে উভয় চেকবক্সে টিক চিহ্ন দিন এবং তারপর চালিয়ে যান বোতাম
+          টিপুন।
+  api:
+    notes:
+      rss:
+        title: ওপেনস্ট্রিটম্যাপ টীকা
   auth:
     providers:
       openstreetmap: ওপেনস্ট্রিটম্যাপ
-  changesets:
-    index:
-      feed:
-        cc0_url: https://creativecommons.org/publicdomain/zero/1.0/deed.bn
+  changeset_comments:
+    feeds:
+      show:
+        title_all: ওপেনস্ট্রিটম্যাপ পরিবর্তনধার্যের আলোচনা
+        title_particular: 'ওপেনস্ট্রিটম্যাপ পরিবর্তনধার্য #%{changeset_id} আলোচনা'
+  diary_entries:
+    feed:
+      all:
+        description: ওপেনস্ট্রিটম্যাপ ব্যবহারকারীগণ কর্তৃক সাম্প্রতিক দিনলিপির ভুক্তি
+        title: ওপেনস্ট্রিটম্যাপ দিনলিপির ভুক্তি
+      language:
+        description: ওপেনস্ট্রিটম্যাপ ব্যবহারকারীগণ কর্তৃক %{language_name} ভাষায়
+          সাম্প্রতিক দিনলিপির ভুক্তি
+        title: ওপেনস্ট্রিটম্যাপে %{language_name} ভাষায় দিনলিপির ভুক্তি
+      user:
+        description: ওপেনস্ট্রিটম্যাপে %{user}-এর সাম্প্রতিক দিনলিপির ভুক্তি
+        title: ওপেনস্ট্রিটম্যাপে %{user}-এর দিনলিপির ভুক্তি
+  errors:
+    internal_server_error:
+      description: ওপেনস্ট্রিটম্যাপ সার্ভার কোনো অপ্রত্যাশিত অবস্থার সম্মুখীন হয়েছে
+        যার ফলে অনুরোধ পূরণ করা যাচ্ছে না (HTTP ৫০০)
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: শিল্পকলা কেন্দ্র
+        leisure:
+          horse_riding: অশ্বারোহণ কেন্দ্র
+        shop:
+          seafood: সামুদ্রিক খাবার
   javascripts:
     map:
       base:
         railway: রেলপথ
   layouts:
+    intro_header: ওপেনস্ট্রিটম্যাপে স্বাগতম!
+    intro_text: ওপেনস্ট্রিটম্যাপ বিশ্বের একটি মানচিত্র; যা আপনার মতো মানুষের দ্বারা
+      নির্মিত এবং এটি মুক্ত লাইসেন্সের অধীনে বিনামূল্যে ব্যবহারযোগ্য।
+    logo:
+      alt_text: ওপেনস্ট্রিটম্যাপ লোগো
     project_name:
       title: OpenHistoricalMap
   oauth:
     scopes:
       openid: ওপেনস্ট্রিটম্যাপ ব্যবহার করে সাইন-ইন করুন
+  sessions:
+    destroy:
+      heading: ওপেনস্ট্রিটম্যাপ থেকে লগআউট করুন
   site:
+    about:
+      lede_text: ওপেনস্ট্রিটম্যাপ মানচিত্রাঙ্কনকারীদের একটি সম্প্রদায় দ্বারা নির্মিত
+        যা সারা বিশ্বের রাস্তা, গমনপথ, ক্যাফে, রেলস্টেশন এবং আরও অনেক কিছু সম্পর্কিত
+        উপাত্ত যোগ ও রক্ষণাবেক্ষণ করে।
+      used_by_html: '%{name} হাজার হাজার ওয়েবসাইট, মোবাইল অ্যাপ্লিকেশন এবং হার্ডওয়্যার
+        ডিভাইসের জন্য মানচিত্রের উপাত্ত সরবরাহ করে'
     about_section:
       contribute_1_mastodon: মাস্টোডন
       legal_1_privacy_policy: গোপনীয়তার নীতি
       legal_1_terms_of_use: ব্যবহারের শর্তাবলী
     copyright:
       legal_babble:
+        attribution_example:
+          title: আরোপণ উদাহরণ
+        contributors_title_html: আমাদের অবদানকারীগণ
+        credit_title_html: ওপেনস্ট্রিটম্যাপকে কীভাবে কৃতিত্ব দিবেন
         more_title_html: আরও খুঁজা হচ্ছে
+      title: কপিরাইট ও লাইসেন্স
+    export:
+      too_large:
+        planet:
+          description: সম্পূর্ণ ওপেনস্ট্রিটম্যাপ ডাটাবেসের নিয়মিত হালনাগাদের অনুলিপি
+          title: ওএসএম জগৎ
     help:
       forum:
         title: ফোরাম
@@ -67,23 +128,41 @@ bn:
         title: মেইলিং তালিকা
       slack:
         title: আইআরসি
+      welcome:
+        title: ওপেনস্ট্রিটম্যাপে স্বাগতম
+      welcomemat:
+        title: সংস্থার জন্য
       wiki:
         title: উইকি
+  time:
+    formats:
+      friendly: '%e %B %Y %H:%M-এ'
   traces:
     show:
+      edit: সম্পাদনা
       edit_trace: এই অনুসরণটি সম্পাদনা করুন
       map: মানচিত্র
     trace:
+      edit_map: মানচিত্র সম্পাদনা
       view_map: মানচিত্র দেখুন
   user_mailer:
     diary_comment_notification:
-      subject: "[OpenHistoricalMap] %{user} একটি দিনলিপির ভুক্তিতে মন্তব্য করেছেন"
+      subject: '[OpenHistoricalMap] %{user} একটি দিনলিপির ভুক্তিতে মন্তব্য করেছেন'
     email_confirm:
-      subject: "[OpenHistoricalMap] আপনার ইমেইল ঠিকানা নিশ্চিত করুন"
+      subject: '[OpenHistoricalMap] আপনার ইমেইল ঠিকানা নিশ্চিত করুন'
     lost_password:
-      hopefully_you: কোনো একজন (সম্ভবত আপনি) এই ইমেইল ঠিকানার সাথে যুক্ত openhistoricalmap.org অ্যাকাউন্টের পাসওয়ার্ড পরিবর্তনের অনুরোধ করেছেন।
+      hopefully_you: কোনো একজন (সম্ভবত আপনি) এই ইমেইল ঠিকানার সাথে যুক্ত openhistoricalmap.org
+        অ্যাকাউন্টের পাসওয়ার্ড পরিবর্তনের অনুরোধ করেছেন।
+      subject: '[ওপেনস্ট্রিটম্যাপ] পাসওয়ার্ড পুনঃধার্য করার অনুরোধ'
+    message_notification:
+      header: '%{from_user} ওপেনস্ট্রিটম্যাপের মাধ্যমে আপনাকে একটি বার্তা পাঠিয়েছেন
+        যার বিষয় হল %{subject}:'
     signup_confirm:
-      subject: "[OpenHistoricalMap] ওপেনস্ট্রিটম্যাপে স্বাগতম"
+      subject: '[OpenHistoricalMap] ওপেনস্ট্রিটম্যাপে স্বাগতম'
   users:
     auth_association:
-      heading: আপনার আইডি এখনও কোনও ওপেনহিস্টোরিকস্ট্রিটম্যাপ অ্যাকাউন্টের সাথে যুক্ত নয়।
+      heading: আপনার আইডি এখনও কোনও ওপেনহিস্টোরিকস্ট্রিটম্যাপ অ্যাকাউন্টের সাথে যুক্ত
+        নয়।
+      option_1: আপনি যদি ওপেনস্ট্রিটম্যাপে নতুন হন, তাহলে অনুগ্রহ করে নিচের ফর্মটি
+        ব্যবহার করে একটি নতুন অ্যাকাউন্ট তৈরি করুন!
+...

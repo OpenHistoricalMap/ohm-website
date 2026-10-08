@@ -1,12 +1,39 @@
 # Messages for Burmese (မြန်မာဘာသာ)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Dr Lotus Black
 # Author: Minh Nguyen
 # Author: Ninjastrikers
 # Author: Zyh333222
 # Author: ခွန်ပညာႏ(တောင်ႏကီꩻ)
 # Author: သူထွန်း
-# Do not edit by hand.
+---
 my:
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        shop:
+          seafood: ပင်လယ်စာ
   layouts:
     intro_header: OpenHistoricalMap မှ ကြိုဆိုပါ၏
+  site:
+    copyright:
+      legal_babble:
+        contributors_title_html: မိမိတို့၏ ပံ့ပို့ပေးသူများ
+      title: မူပိုင်ခွင့်နှင့် လိုင်စင်
+    help:
+      welcomemat:
+        title: အဖွဲ့အစည်းများအတွက်
+  time:
+    formats:
+      friendly: |-
+        %e %B %Y
+         at %H:%M
+  traces:
+    show:
+      edit: ပြင်ဆင်
+      map: မြေပုံ
+    trace:
+      edit_map: မြေပုံကို တည်းဖြတ်ရန်
+      view_map: မြေပုံကို ကြည့်ရန်
+...

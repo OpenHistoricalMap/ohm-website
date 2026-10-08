@@ -1,5 +1,6 @@
 # Messages for Friulian (furlan)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Danieldegroot2
 # Author: Davio
 # Author: Erictheise
@@ -7,7 +8,7 @@
 # Author: Macofe
 # Author: Minh Nguyen
 # Author: Tocaibon
-# Do not edit by hand.
+---
 fur:
   api:
     notes:
@@ -17,11 +18,12 @@ fur:
     feeds:
       show:
         title_all: Discussion sul grup di cambiaments di OpenHistoricalMap
-        title_particular: 'Discussion sul grup di cambiaments #%{changeset_id} di OpenHistoricalMap'
+        title_particular: 'Discussion sul grup di cambiaments #%{changeset_id} di
+          OpenHistoricalMap'
   date:
     formats:
-      brief_bce: "%{year} pdC"
-      brief_ce: "%{year} ddC"
+      brief_bce: '%{year} pdC'
+      brief_ce: '%{year} ddC'
   diary_entries:
     feed:
       all:
@@ -36,13 +38,26 @@ fur:
   geocoder:
     search_osm_nominatim:
       prefix:
+        amenity:
+          arts_centre: Centri pes arts
         leisure:
           track: Piste pe corse
+  javascripts:
+    legend:
+      title: Leiende
+      tooltip: Leiende
+      tooltip_disabled: La leiende no je disponibile par chest nivel
   layouts:
     intro_header: Benvignût in OpenHistoricalMap!
-    intro_text: OpenHistoricalMap e je une mape dal mont, creade di int come te e di ûs libar sot di une licence vierte.
+    intro_text: OpenHistoricalMap e je une mape dal mont, creade di int come te e
+      di ûs libar sot di une licence vierte.
     logo:
       alt_text: Logo di OpenHistoricalMap
+  notes:
+    new:
+      advice: La tô note e je publiche e e pues jessi doprade par inzornâ la mape,
+        par cui no sta zontâ informazions personâls o di mapis cuviertis dal copyright
+        o listis.
   sessions:
     destroy:
       heading: Va fûr di OpenHistoricalMap
@@ -51,18 +66,28 @@ fur:
       contribute_1_user_diaries: diaris dai utents
     copyright:
       legal_babble:
+        attribution_example:
+          title: Esempli di atribuzion
+        contributors_title_html: Nestris colaboradôrs
         more_title_html: Par savênt di plui
       title: Copyright e ricognossiments
     export:
       too_large:
-        body: Cheste aree e je masse grande par espuartâle come dâts XML di OpenHistoricalMap. Par plasê incrès il zoom, sielç une aree plui piçule o dopre une des sorzints ca sot par discjamâ un grum di dâts.
+        body: Cheste aree e je masse grande par espuartâle come dâts XML di OpenHistoricalMap.
+          Par plasê incrès il zoom, sielç une aree plui piçule o dopre une des sorzints
+          ca sot par discjamâ un grum di dâts.
     help:
       slack:
         title: IRC
       welcome:
         title: Benvignûts in OpenHistoricalMap
+      welcomemat:
+        title: Pe organizazions
     index:
       js_2: OpenHistoricalMap al dopre JavaScript par mostrâ la sô mape.
+  time:
+    formats:
+      friendly: '%e di %B %Y a lis %H:%M'
   traces:
     feeds:
       show:
@@ -76,14 +101,17 @@ fur:
       view_map: Viôt mape
   user_mailer:
     diary_comment_notification:
-      header: "%{from_user} al à zontât un coment ae tô vôs dal diari di OpenHistoricalMap cun sogjet %{subject}:"
-      subject: "[OpenHistoricalMap] %{user} al à zontât un coment ae tô vôs dal diari"
+      header: '%{from_user} al à zontât un coment ae tô vôs dal diari di OpenHistoricalMap
+        cun sogjet %{subject}:'
+      subject: '[OpenHistoricalMap] %{user} al à zontât un coment ae tô vôs dal diari'
     email_confirm:
-      subject: "[OpenHistoricalMap] Conferme la tô direzion di pueste eletroniche"
+      subject: '[OpenHistoricalMap] Conferme la tô direzion di pueste eletroniche'
     gpx_success:
-      subject: "[OpenHistoricalMap] Impuartazion GPX completade cun sucès"
+      subject: '[OpenHistoricalMap] Impuartazion GPX completade cun sucès'
     message_notification:
-      header: "%{from_user} ti à mandât un messaç su OpenHistoricalMap cun sogjet %{subject}:"
-      subject: "[OpenHistoricalMap] %{message_title}"
+      header: '%{from_user} ti à mandât un messaç su OpenHistoricalMap cun sogjet
+        %{subject}:'
+      subject: '[OpenHistoricalMap] %{message_title}'
     signup_confirm:
-      subject: "[OpenHistoricalMap] Benvignût in OpenHistoricalMap"
+      subject: '[OpenHistoricalMap] Benvignût in OpenHistoricalMap'
+...

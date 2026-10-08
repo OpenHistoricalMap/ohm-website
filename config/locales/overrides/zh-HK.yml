@@ -1,5 +1,6 @@
 # Messages for Chinese (Hong Kong) (中文（香港）)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: C933103
 # Author: Erictheise
 # Author: Hkjacksonhk
@@ -8,7 +9,7 @@
 # Author: Minh Nguyen
 # Author: StarrySky
 # Author: 捍粵者
-# Do not edit by hand.
+---
 zh-HK:
   api:
     notes:
@@ -22,12 +23,17 @@ zh-HK:
         description: 近期以%{language_name}撰寫的OpenHistoricalMap用戶日記文章
       user:
         description: 近期由%{user}所寫的OpenHistoricalMap日記文章
-        title: "%{user}的OpenHistoricalMap日記文章"
+        title: '%{user}的OpenHistoricalMap日記文章'
   geocoder:
     search_osm_nominatim:
       prefix:
+        amenity:
+          arts_centre: 藝術中心
         leisure:
           horse_riding: 馬場
+          track: 跑道
+        shop:
+          seafood: 海鮮店
   layouts:
     intro_header: 歡迎來到 OpenHistoricalMap！
     logo:
@@ -42,9 +48,13 @@ zh-HK:
       introduction: 歡迎來到OpenHistoricalMap，自由而可以編輯的世界地圖。現在您已經注冊完成，繪製地圖所需要的準備已經就緒。以下是一份快速指南，裡面包含着您所需要知道的最重要事項。
       rules:
         para_1_html: OpenHistoricalMap沒多少正式規則，但我們期望所有參與者都會與社群合作，也會和社群溝通。如果你想用任何不只是純人手編輯的方式做任何事的話，請先閱讀並遵循%{imports_link}以及%{automated_edits_link}規範。
+  time:
+    formats:
+      friendly: '%Y年%-m月%-d日%H:%M'
   user_mailer:
     diary_comment_notification:
-      subject: "[OpenHistoricalMap] %{user}在日記中留下了評論"
+      subject: '[OpenHistoricalMap] %{user}在日記中留下了評論'
     lost_password:
       hopefully_you: 有人 (或許是您) 要求將以此電子郵件地址註冊的openhistoricalmap.org帳號的密碼重設。
-      subject: "[OpenHistoricalMap] 密碼重設請求"
+      subject: '[OpenHistoricalMap] 密碼重設請求'
+...

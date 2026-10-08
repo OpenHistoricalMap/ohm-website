@@ -1,20 +1,139 @@
 # Messages for Western Punjabi (پنجابی)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Ajeje Brazorf
 # Author: Bgo eiu
 # Author: Erictheise
 # Author: Minh Nguyen
-# Do not edit by hand.
+---
 pnb:
+  api:
+    notes:
+      rss:
+        title: نوٹ دی فیڈ
+  changeset_comments:
+    feeds:
+      show:
+        title_all: تبدیلیاں تے گل بات
+        title_particular: تبدیلیاں نمبر %{changeset_id} تے گل بات
+  diary_entries:
+    feed:
+      all:
+        description: حالیہ نقشے بارے وچ روزنامچے دے لیکھ
+        title: نقشے بارے وچ روزنامچے دے لیکھ
+      language:
+        description: حالیہ %{language_name} وچ روزنامچے دے لیکھ
+        title: اِتھے %{language_name} وچ روزنامچے دے لیکھ
+      user:
+        description: حالیہ %{user} روزنامچے دے لیکھ
+        title: ایہہ «%{user}» روزنامچے دے لیکھ
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: کلا کیندر
+        leisure:
+          horse_riding: گھوڑے دی سواری
+          track: بھجّݨ لئی ٹریک
+  javascripts:
+    legend:
+      title: نقشے دا ٹیکا
+      tooltip: نقشے دا ٹیکا
   layouts:
+    intro_header: اوپن سٹریٹ میپ تے سواگت اے!
+    logo:
+      alt_text: اوپن سٹریٹ میپ دا لوگو
     project_name:
       title: اوپن ہسٹورکل میپ
+  sessions:
+    destroy:
+      heading: اِتھے لوگ‌آوٹ کرو
   site:
+    about:
+      lede_text: اِتھے سڑک، پِنڈ، شہر، نگر تے ہور نشان لئی نقشے والے نقش پاؤندے گیئے
+      used_by_html: ویب سائیٹ، اَیپ تے ہارڈویر لئی %{name} توں نقشے دے ڈیٹا دیندے
+        اے۔
     copyright:
       legal_babble:
+        attribution_example:
+          title: حوالے لئی مثال
+        contributors_title_html: ساڈی یوگدانی
+        credit_1_html: 'ڈیٹا ورتݨ دے قواعد:'
+        credit_title_html: ایہہ نقشے لئی حوالے
+        infringement_1_html: نقشے والے نا آزاد سروت، مثلاً گوگل، ورت نہیں سکدے اے۔
+          ایہہ لئی پہلے لیکھک کہݨ‌گیئے چاہیدے سی۔
         more_title_html: ہور جاݨکاری لبھݨ واستے
+      title: نکل حق تے لائیسنس
+    export:
+      too_large:
+        body: برامد نہیں بݨایا، کھیتر بہت وڈا ہندا سی۔ نقشے تے وڈا کریو یا ڈاؤن‌لوڈ
+          کرن لئی ایہہ ہور سروت ورتیو۔
+        overpass:
+          description: ہور نقشے دے ڈیٹا نال ویب سائیٹ توں ڈاؤن‌لوڈ کریو
+        planet:
+          description: نقشے دے سارے ڈیٹا واری واری کاپی کیتے
+          title: پلینٹ دی فائل
     help:
+      introduction: اِتھے صفحے تے کڑیاں نال سکھ سکیو، سوال تے جواب ویکھ سکیو تے نقشے
+        دی جاݨکاری ویکھ سکیو
       slack:
         title: آئی آر سی
+      welcome:
+        description: 'نقشے تے شروع کرنے:'
+        title: اوپن سٹریٹ میپ تے سواگت اے!
       wiki:
         title: وِکی
+    index:
+      js_2: ایس ویب‌سائیٹ دا نقشہ جاواسکرپٹ ورتدا۔
+  time:
+    formats:
+      blog: ؜%e؍؜%B ؜%Yء‬
+      friendly: ؜%e؍؜%B ؜%Yء ‪%H:%M‬
+  traces:
+    feeds:
+      show:
+        title: کھرے کھوجاں
+    show:
+      edit: سودھو
+      edit_trace: ایہہ کھرا سودھو
+      map: نقشہ
+    trace:
+      edit_map: نقشہ سودھو
+      view_map: نقشہ ویکھو
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: '[⁠اوایس‌ایم⁠] کجھ تبدیلیاں تے «⁠%{commenter}⁠» ٹپݨی چھڈیاں
+          گاں'
+        subject_own: '[⁠اوایس‌ایم⁠] تہاڈیاں تبدیلیاں تے «⁠%{commenter}⁠» ٹپݨی چھڈ‌یاں
+          گیاں'
+    diary_comment_notification:
+      header: ایہہ لیکھ اُتے سرلیکھ %{subject} نال %{from_user} ٹپݨی کیتا
+      header_html: ایہہ لیکھ اُتے سرلیکھ %{subject} نال %{from_user} ٹپݨی کیتا
+      subject: '[⁠اوایس‌ایم⁠] روزنامچے تے «⁠%{user}⁠» ٹپݨی کیتے'
+    email_confirm:
+      subject: '[⁠اوایس‌ایم⁠] ای‌میل پکا کریو'
+    gpx_failure:
+      subject: '[⁠اوایس‌ایم⁠] کھرا اِمپورٹ کر نہیں سکیا'
+    gpx_success:
+      subject: "[اپون سٹریٹ میپ] کھرا اِمپورٹ کیتا \U0001F44D\U0001F44D"
+    lost_password:
+      subject: '[⁠اوایس‌ایم⁠] پاس‌ورڈ فیر بݨاؤݨ'
+    message_notification:
+      subject: '[⁠اوایس‌ایم⁠] %{message_title}'
+    note_comment_notification:
+      closed:
+        subject_other: '[⁠اوایس‌ایم⁠] «⁠%{commenter}⁠» نوٹ حل کھنڈھیا گیا'
+        subject_own: '[⁠اوایس‌ایم⁠] «⁠%{commenter}⁠» ٹہاڈے نوٹ حال کھنڈھیئے گیئے'
+      commented:
+        subject_other: '[⁠اوایس‌ایم⁠] «⁠%{commenter}⁠» اِک نوٹ تے ٹپݨی چھڈی گئی'
+        subject_own: '[⁠اوایس‌ایم⁠] «⁠%{commenter}⁠» ٹہاڈے نوٹ تے ٹپݨی چھڈیاں گیاں'
+      reopened:
+        subject_other: '[⁠اوایس‌ایم⁠] «⁠%{commenter}⁠» نوٹ کھُلھیا'
+        subject_own: '[⁠اوایس‌ایم⁠] «⁠%{commenter}⁠» تسیں نوٹ کلھا'
+    signup_confirm:
+      subject: '[⁠اوایس‌ایم⁠] نقشے تے سواگت اے'
+  users:
+    auth_association:
+      heading: حالاں تہاڈے شناختی نال کجھ کھاتہ نہیں جوڑدے اے۔
+...

@@ -1,5 +1,6 @@
 # Messages for Marathi (मराठी)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Erictheise
 # Author: Minh Nguyen
 # Author: Singleton
@@ -9,36 +10,108 @@
 # Author: Vibhavari
 # Author: अभय नातू
 # Author: गराडे
-# Do not edit by hand.
+---
 mr:
+  diary_entries:
+    feed:
+      all:
+        description: ओपनस्ट्रीटमॅप सदस्यांकडून अलीकडील अनुदिनी-नोंदी
+        title: ओपनस्ट्रीटमॅप अनुदिनीतील नोंदी
+      language:
+        description: ओपनस्ट्रीटमॅप सदस्यांकडून %{language_name} भाषेतील अलीकडील अनुदिनी-नोंदी
+        title: '%{language_name} भाषेतील ओपनस्ट्रीटमॅप अनुदिनीतील नोंदी'
+      user:
+        description: '%{user}कडून अलीकडील ओपनस्ट्रीटमॅप रोजनिशी-नोंदी'
+        title: '%{user}कडून ओपनस्ट्रीटमॅप रोजनिशी-नोंदी'
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: कलाकेंद्र
+        leisure:
+          track: धाव मार्ग
+  layouts:
+    intro_header: ओपनस्ट्रीटमॅपवर स्वागत आहे!
+    intro_text: ओपनस्ट्रीटमॅप हा जगाचा नकाशा आहे, जो आपल्यासारख्या लोकांनी तयार केला
+      आहे, व जो खुल्या परवान्यांतर्गत वापरास मुक्त आहे.
+    logo:
+      alt_text: ओपनस्ट्रीटमॅप संकेतचित्र
   site:
     about:
-      lede_text: OpenHistoricalMap हा मानचित्रकारांनी उभारलेला एक प्रकल्प आहे ज्यात जगभरातील रस्ते, पायवाट, कॅफे, रेल्वे स्थानक व इतर बऱ्याच गोष्टींचा डेटा योगदानातून तयार व व्यवस्थापित केला जातो.
+      lede_text: OpenHistoricalMap हा मानचित्रकारांनी उभारलेला एक प्रकल्प आहे ज्यात
+        जगभरातील रस्ते, पायवाट, कॅफे, रेल्वे स्थानक व इतर बऱ्याच गोष्टींचा डेटा योगदानातून
+        तयार व व्यवस्थापित केला जातो.
+      used_by_html: '%{name} हजारो संकेतस्थळे, मोबाइल अॅप्स आणि हार्डवेअर उपकरणांसाठी
+        नकाशा डेटा प्रदान करते'
+    add_a_note:
+      para_1: |-
+        जर आपणास काही छोटेसेच ठिक करुन हवे आहे व आपल्यापाशी प्रवेशाचा व संपादन शिकण्यास वेळ नाही
+
+        तर एक टिप्पणी जोडणे सोपे आहे.
     copyright:
       legal_babble:
+        contributors_intro_html: 'आमचे योगदानकर्ते हे हजारोंच्या संख्येतील व्यक्ति
+          आहेत.आम्ही मुक्त परवान्यांतर्गत असलेला डाटा हा राष्ट्रीय नकाशा संस्थेंकडून
+          व त्यातील इतर स्रोतांतून घेऊन त्याचा अंतर्भाव करतो:'
+        contributors_title_html: आमचे योगदाते
         credit_1_html: |-
           &ldquo;&copy; OpenHistoricalMap
           contributors&rdquo; असे श्रेय तुम्हाला दर्शवणे आवश्यक आहे.
-        infringement_1_html: OHM योगदानकर्त्यांना कोणत्याही प्रतीलीपी अधिकार राखवलेल्या (उदा. Google नकाशे किंवा मुद्रित नकाशे अश्या) स्त्रोतांमधून कोणतीही माहिती प्रतीलिपी अधिकार धारकांच्या स्पष्ट परवानगीशिवाय जोडू नये याची आठवण करून दिली जाते.
+        credit_title_html: ओपनस्ट्रीटमॅपला श्रेय कसे द्यावे
+        infringement_1_html: OHM योगदानकर्त्यांना कोणत्याही प्रतीलीपी अधिकार राखवलेल्या
+          (उदा. Google नकाशे किंवा मुद्रित नकाशे अश्या) स्त्रोतांमधून कोणतीही माहिती
+          प्रतीलिपी अधिकार धारकांच्या स्पष्ट परवानगीशिवाय जोडू नये याची आठवण करून
+          दिली जाते.
         more_title_html: अधिक शोध
+      title: प्रताधिकार व परवाना
     export:
       too_large:
-        body: हे क्षेत्र OpenHistoricalMap XML Data म्हणून निर्यात करण्यास खूपच मोठे आहे.कृपया लहान करा किंवा लहान क्षेत्र निवडा किंवा मोठ्या प्रमाणात डाटाचे अधिभारणासाठी खालील यादी केलेल्या स्रोतांपैकी एकाचा वापर करा.
+        body: हे क्षेत्र OpenHistoricalMap XML Data म्हणून निर्यात करण्यास खूपच मोठे
+          आहे.कृपया लहान करा किंवा लहान क्षेत्र निवडा किंवा मोठ्या प्रमाणात डाटाचे
+          अधिभारणासाठी खालील यादी केलेल्या स्रोतांपैकी एकाचा वापर करा.
+        overpass:
+          description: ओपनस्ट्रीटमॅप प्रतिमा डाटाबेसमधून  बंधनपेटीचे(बाउंडिंग बॉक्स)
+            अधिभारण करा
         planet:
+          description: संपूर्ण ओपनस्ट्रीटमॅप डाटाबेसच्या नियमित अद्यतन केलेल्या प्रती
           title: प्लॅनेट OHM
     help:
+      welcome:
+        title: ओएसएम वर स्वागत आहे
       wiki:
         description: सखोल OHM प्रलेखनासाठी विकी वाचा.
+    index:
+      js_2: ओपनस्ट्रीटमॅप सरकत्या नकाशासाठी जावास्क्रीप्टचा वापर करते.
+    welcome:
+      basic_terms:
+        a_tag_html: '%{tag} हा गाठ किंवा मार्गाविषयीचा थोडासा डेटा आहे, जसे की रेस्टॉरंटचे
+          नाव किंवा रस्त्याची गती मर्यादा.'
+        paragraph_1: ओपनस्ट्रीटमॅपची स्वतःची एक बोली आहे. हे काही प्रमुख शब्द आहेत
+          जे कामी येतील.
+  time:
+    formats:
+      friendly: '%e %B %Y, %H:%M ला'
   traces:
     feeds:
       show:
         title: OpenHistoricalMap GPS अनुरेखा
+    show:
+      edit: संपादन
+      edit_trace: हा अनुरेख संपादा
+      map: नकाशा
+    trace:
+      edit_map: नकाशा संपादा
+      view_map: नकाशा पहा
   user_mailer:
     diary_comment_notification:
-      subject: "[OpenHistoricalMap] %{user}ने एका अनुदिनीतील नोंदीवर अभिप्राय दिला"
+      subject: '[OpenHistoricalMap] %{user}ने एका अनुदिनीतील नोंदीवर अभिप्राय दिला'
     email_confirm:
-      subject: "[OpenHistoricalMap] तुमच्या ईमेल पत्त्याची पुष्टी करा"
+      subject: '[OpenHistoricalMap] तुमच्या ईमेल पत्त्याची पुष्टी करा'
     gpx_success:
-      subject: "[OpenHistoricalMap] GPX आयात यशस्वी"
+      subject: '[OpenHistoricalMap] GPX आयात यशस्वी'
     lost_password:
-      subject: "[OpenHistoricalMap] परवलीचा शब्द पुनर्स्थापन विनंती"
+      subject: '[OpenHistoricalMap] परवलीचा शब्द पुनर्स्थापन विनंती'
+    message_notification:
+      header: '%{from_user}ने ओपनस्ट्रीटमॅपद्वारे आपल्याला %{subject} अशा विषयाचा
+        संदेश पाठविला'
+...

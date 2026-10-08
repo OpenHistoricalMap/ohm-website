@@ -1,5 +1,6 @@
 # Messages for Hindi (हिन्दी)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Abijeet Patro
 # Author: Abijeet Patro - Normal
 # Author: Ansumang
@@ -24,14 +25,55 @@
 # Author: Vdhatterwal
 # Author: पदाति
 # Author: संजीव कुमार
-# Do not edit by hand.
+---
 hi:
+  api:
+    notes:
+      rss:
+        title: ओपनस्ट्रीटमैप नोट
+  changeset_comments:
+    feeds:
+      show:
+        title_all: ओपनस्ट्रीटमैप चेंजसेट चर्चा
+        title_particular: ओपनस्ट्रीटमैप चेंजसेट %{changeset_id} चर्चा
+  diary_entries:
+    feed:
+      all:
+        description: ओपनस्ट्रीटमैप के सदस्यों से नई डायरी एंट्रियाँ
+        title: ओपनस्ट्रीटमैप डायरी एंट्री
+      language:
+        description: '%{language_name} में नई ओपनस्ट्रीटमैप डायरी एंट्री'
+        title: '%{language_name} में ओपनस्ट्रीटमैप डायरी एंट्री'
+      user:
+        description: '%{user} से नई ओपनस्ट्रीटमैप डायरी एंट्री'
+        title: '%{user} के लिए ओपनस्ट्रीटमैप डायरी एंट्री'
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: कला केन्द्र
+        leisure:
+          horse_riding: घुड़सवारी
+        shop:
+          seafood: समुद्री खाद्य
+  notes:
+    new:
+      advice: आपका नोट सार्वजनिक है और मानचित्र को अपडेट करने के लिए उपयोग किया जा
+        सकता है, इसलिए निजी जानकारी दर्ज न करें या कॉपीराइट वाले नक्शे या निर्देशिका
+        सूची से जानकारी न दें।
   site:
     about_section:
       legal_1_privacy_policy: गोपनीयता नीति
+    copyright:
+      legal_babble:
+        contributors_title_html: हमारे योगदानकर्ता
     help:
       wiki:
         title: विकि
+  time:
+    formats:
+      friendly: '%e %B %Y को %H:%M पर'
   user_mailer:
     diary_comment_notification:
-      subject: "[OpenHistoricalMap] %{user} ने एक दैनिकी पर प्रतिक्रिया दी"
+      subject: '[OpenHistoricalMap] %{user} ने एक दैनिकी पर प्रतिक्रिया दी'
+...
