@@ -1,21 +1,35 @@
 # Messages for Shan (တႆး)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Saimawnkham
 # Author: Saosukham
-# Do not edit by hand.
+---
 shn:
   accounts:
     deletions:
       show:
-        delete_introduction: ၸႂ်ႉတိုဝ်း ၼဵၼ် ဢၼ်မီးပႃႈတႂ်ႈၼႆႉသေ မွတ်ႇပႅတ်ႈ ဢၵွင်ႉ OpenHistoricalMap ၸဝ်ႈၵဝ်ႇလႆႈယူႇ။ ၶႅၼ်းတေႃႈမၢႆတွင်း ၶေႃႈမုၼ်းပႃႈတႂ်ႈၼႆႉၶႃႈ-
-        retain_caveats: ၵူၺ်းၵႃႈ ၶေႃႈမုၼ်း ဢၼ်ၵဵဝ်ႇလူၺ်ႈ ၸဝ်ႈၵဝ်ႇ ၵမ်ႈၽွင်ႈ တေသိမ်းဝႆႉ တီႈၼႂ်း OpenHistoricalMap ၼၼ်ႉ ပႅၵ်ႉသမ်ႉဝႃႈ ဢၵွင်ႉၸဝ်ႈၵဝ်ႇ လႆႈမွတ်ႇပႅတ်ႈယဝ်ႉၵေႃႈ -
+        delete_introduction: ၸႂ်ႉတိုဝ်း ၼဵၼ် ဢၼ်မီးပႃႈတႂ်ႈၼႆႉသေ မွတ်ႇပႅတ်ႈ ဢၵွင်ႉ
+          OpenHistoricalMap ၸဝ်ႈၵဝ်ႇလႆႈယူႇ။ ၶႅၼ်းတေႃႈမၢႆတွင်း ၶေႃႈမုၼ်းပႃႈတႂ်ႈၼႆႉၶႃႈ-
+        retain_caveats: ၵူၺ်းၵႃႈ ၶေႃႈမုၼ်း ဢၼ်ၵဵဝ်ႇလူၺ်ႈ ၸဝ်ႈၵဝ်ႇ ၵမ်ႈၽွင်ႈ တေသိမ်းဝႆႉ
+          တီႈၼႂ်း OpenHistoricalMap ၼၼ်ႉ ပႅၵ်ႉသမ်ႉဝႃႈ ဢၵွင်ႉၸဝ်ႈၵဝ်ႇ လႆႈမွတ်ႇပႅတ်ႈယဝ်ႉၵေႃႈ
+          -
+    terms:
+      show:
+        read and accept with tou: ၸွႆႈလူပၼ် ၶေႃႈတူၵ်းလူင်း ၽူႈၶဝ်ႈႁူမ်ႈသၢင်ႈ လႄႈ ၶေႃႈတူၵ်းလူင်း
+          လွင်ႈၸႂ်ႉတိုဝ်း၊ ပေႃးလူယဝ်ႉယဝ်ႉၼႆ မၢႆပၼ်ၼႂ်းလွၵ်းမၢႆ တင်းသွင်ဢၼ်၊ ယဝ်ႉၵေႃႈ
+          ၼဵဵၵ်းပၼ် "သိုပ်ႇၵႂႃႇ" ၶႃႈ။
+        tou_explain:
+          html: '%{tou_link} ၸိူဝ်းၼႆႉ မၼ်းၵုမ်းၵမ် လွင်ႈၸႂ်ႉတိုဝ်း ဝႅပ်ႉသၢႆႉ လႄႈ
+            ၶူဝ်းၶွင် ဢၼ် OSMF ပၼ်ဝႆႉၼၼ်ႉယဝ်ႉ။ ၼဵၵ်းတီႈလိင်ႉၶ်ၼၼ်ႉသေ ဢၢၼ်ႇတူၺ်း လႄႈ
+            ၽွမ်ႉၸႂ်ၸွမ်း လိၵ်ႈၼၼ်ႉၶႃႈ။'
   api:
     notes:
       rss:
         title: ၶေႃႈမၢႆတွင်း OpenHistoricalMap
   application:
     setup_user_auth:
-      blocked_zero_hour: ၸဝ်ႈၵဝ်ႇမီးၶေႃႈၵႂၢမ်းၶိုၵ်ႉၶၵ်ႉ တီႈၼႂ်းဝႅပ်ႉသၢႆႉ OpenHistoricalMap ၼၼ်ႉ။ လူဝ်ႇလႆႈဢၢၼ်ႇတူၺ်း လိၵ်ႈၼၼ်ႉ ၵွၼ်ႇၸင်ႇတေၸၢင်ႈသိမ်းဝႆႉ ၶေႃႈမႄးထတ်း ၸဝ်ႈၵဝ်ႇလႆႈ။
+      blocked_zero_hour: ၸဝ်ႈၵဝ်ႇမီးၶေႃႈၵႂၢမ်းၶိုၵ်ႉၶၵ်ႉ တီႈၼႂ်းဝႅပ်ႉသၢႆႉ OpenHistoricalMap
+        ၼၼ်ႉ။ လူဝ်ႇလႆႈဢၢၼ်ႇတူၺ်း လိၵ်ႈၼၼ်ႉ ၵွၼ်ႇၸင်ႇတေၸၢင်ႈသိမ်းဝႆႉ ၶေႃႈမႄးထတ်း ၸဝ်ႈၵဝ်ႇလႆႈ။
   changeset_comments:
     feeds:
       show:
@@ -24,77 +38,134 @@ shn:
   diary_entries:
     feed:
       all:
-        description: ၶေႃႈမုၼ်း တၢႆႇယႃႇရီႇ လႃႈသုတ်း ဢၼ်ၽူႈၸႂ်ႉတိုဝ်း OpenHistoricalMap ၶဝ် တႅမ်ႈဝႆႉ
+        description: ၶေႃႈမုၼ်း တၢႆႇယႃႇရီႇ လႃႈသုတ်း ဢၼ်ၽူႈၸႂ်ႉတိုဝ်း OpenHistoricalMap
+          ၶဝ် တႅမ်ႈဝႆႉ
         title: ၶေႃႈမုၼ်းတၢႆႇယႃႇရီႇ OpenHistoricalMap
       language:
-        description: ၶေႃႈမုၼ်း တၢႆႇယႃႇရီႇ လႃႈသုတ်း ဢၼ်လုၵ်ႉတီႈ ၽူႈၸႂ်ႉတိုဝ်း OpenHistoricalMap ၼင်ႇ %{language_name}
+        description: ၶေႃႈမုၼ်း တၢႆႇယႃႇရီႇ လႃႈသုတ်း ဢၼ်လုၵ်ႉတီႈ ၽူႈၸႂ်ႉတိုဝ်း OpenHistoricalMap
+          ၼင်ႇ %{language_name}
         title: ၶေႃႈမုၼ်းတၢႆႇယႃႇရီႇ OpenHistoricalMap ၼႂ်း %{language_name}
       user:
         description: ၶေႃႈမုၼ်းတၢႆႇယႃႇရီႇ OpenHistoricalMap လႃႈသုတ်း ဢၼ်မႃးတီႈ %{user}
         title: ၶေႃႈမုၼ်းတၢႆႇယႃႇရီႇ OpenHistoricalMap တွၼ်ႈတႃႇ %{user}
   errors:
     bad_request:
-      description: လွင်ႈႁဵတ်းသၢင်ႈ ဢၼ်ၸဝ်ႈၵဝ်ႇယွၼ်းဝႆႉ တီႈၼိူဝ် သႃႇဝႃႇ OpenHistoricalMap ၼၼ်ႉ ဢမ်ႇၸႂ်ႉလႆႈ (HTTP 400)
+      description: လွင်ႈႁဵတ်းသၢင်ႈ ဢၼ်ၸဝ်ႈၵဝ်ႇယွၼ်းဝႆႉ တီႈၼိူဝ် သႃႇဝႃႇ OpenHistoricalMap
+        ၼၼ်ႉ ဢမ်ႇၸႂ်ႉလႆႈ (HTTP 400)
     contact:
-      contact_the_community_html: သင်ဝႃႈ ၸဝ်ႈၵဝ်ႇ ႁၼ် လိင်ႉၶ် / လွင်ႈၽိတ်းပိူင်ႈ ဢၼ်လူႉလႅဝ်ၵႂႃႇၼႆၸိုင် ၵပ်းသိုပ်ႇ %{contact_link} တီႈ တူင်ႇဝူင်း OpenHistoricalMap လႆႈယူႇ။ ႁဵတ်းပၼ်မၢႆတွင်း URL တႅတ်ႈတေႃး ဢၼ်ၸဝ်ႈၵဝ်ႇတုၵ်းယွၼ်းၼၼ်ႉ။
+      contact_the_community_html: သင်ဝႃႈ ၸဝ်ႈၵဝ်ႇ ႁၼ် လိင်ႉၶ် / လွင်ႈၽိတ်းပိူင်ႈ ဢၼ်လူႉလႅဝ်ၵႂႃႇၼႆၸိုင်
+        ၵပ်းသိုပ်ႇ %{contact_link} တီႈ တူင်ႇဝူင်း OpenHistoricalMap လႆႈယူႇ။ ႁဵတ်းပၼ်မၢႆတွင်း
+        URL တႅတ်ႈတေႃး ဢၼ်ၸဝ်ႈၵဝ်ႇတုၵ်းယွၼ်းၼၼ်ႉ။
     forbidden:
-      description: ၵၢၼ်ႁဵတ်းသၢင်ႈ ဢၼ်ၸဝ်ႈၵဝ်ႇယွၼ်းဝႆႉ တီႈၼိူဝ် သႃႇဝႃႇ OpenHistoricalMap ၼၼ်ႉ တေၸႂ်ႉတိုဝ်းလႆႈ တွၼ်ႈတႃႇ ၽူႈၸတ်းၵၢၼ်ၶဝ်ၵွႆး ၶဝ်ၵူၺ်း (HTTP 403)
+      description: ၵၢၼ်ႁဵတ်းသၢင်ႈ ဢၼ်ၸဝ်ႈၵဝ်ႇယွၼ်းဝႆႉ တီႈၼိူဝ် သႃႇဝႃႇ OpenHistoricalMap
+        ၼၼ်ႉ တေၸႂ်ႉတိုဝ်းလႆႈ တွၼ်ႈတႃႇ ၽူႈၸတ်းၵၢၼ်ၶဝ်ၵွႆး ၶဝ်ၵူၺ်း (HTTP 403)
     internal_server_error:
-      description: သႃႇဝႃႇ OpenHistoricalMap ၼႆႉ လႆႈထူပ်းၺႃး လွင်ႈတၢင်း ဢၼ်ဢမ်ႇထၢင်ႇသေ ႁဵတ်းႁႂ်ႈ မၼ်းဢမ်ႇၸၢင်ႈႁဵတ်းၸွမ်း ၶေႃႈယွၼ်း (HTTP 500) ၼၼ်ႉယဝ်ႉ။
+      description: သႃႇဝႃႇ OpenHistoricalMap ၼႆႉ လႆႈထူပ်းၺႃး လွင်ႈတၢင်း ဢၼ်ဢမ်ႇထၢင်ႇသေ
+        ႁဵတ်းႁႂ်ႈ မၼ်းဢမ်ႇၸၢင်ႈႁဵတ်းၸွမ်း ၶေႃႈယွၼ်း (HTTP 500) ၼၼ်ႉယဝ်ႉ။
     not_found:
-      description: ဢမ်ႇႁၼ် ၵၢၼ်ႁဵတ်းသၢင်ႈ ၾၢႆႇ/ၽိုၼ်လိၵ်ႈ/API ဢၼ်မီးၸိုဝ်ႈၼၼ်ႉ တီႈၼိူဝ် သႃႇဝႃႇ OpenHistoricalMap (HTTP 404)
+      description: ဢမ်ႇႁၼ် ၵၢၼ်ႁဵတ်းသၢင်ႈ ၾၢႆႇ/ၽိုၼ်လိၵ်ႈ/API ဢၼ်မီးၸိုဝ်ႈၼၼ်ႉ တီႈၼိူဝ်
+        သႃႇဝႃႇ OpenHistoricalMap (HTTP 404)
   export:
     show:
       title: OpenHistoricalMap ဢၼ်ၽင်ဝႆႉ
   geocoder:
     search_osm_nominatim:
       prefix:
+        amenity:
+          arts_centre: သုၼ်ၵၢၼ်ပၢႆးမွၼ်း
         leisure:
+          horse_riding: တီႈၽိုၵ်းၶီႇမႃႉ
           track: သဵၼ်ႈတၢင်းလႅၼ်ႈ
+        shop:
+          seafood: တၢင်းၵိၼ်ပၢင်ႇလၢႆႇ
+  javascripts:
+    legend:
+      title: ဢသိူၵ်ႈ
+      tooltip: ဢသိူၵ်ႈ
+      tooltip_disabled: ဢသိူၵ်ႈ ဢမ်ႇၸႂ်ႉလႆႈ တွၼ်ႈတႃႇလေႇယႃႇၼႆႉ
   layouts:
     intro_header: ႁူမ်ၸူမ်းႁပ်ႉတွၼ်ႈထိုင် OpenHistoricalMap ယူႇ
-    intro_text: OpenHistoricalMap ၼႆႉ ပဵၼ်ၽႅၼ်ႇလိၼ် လုမ်ႈၾႃႉ ဢၼ်ၵူၼ်းမိူၼ်ၸဝ်ႈၵဝ်ႇ ႁဵတ်းဢွၵ်ႇမႃးသေ ၸႂ်ႉတိုဝ်းလႆႈ လူၺ်ႈ ဝႂ်ၶႂၢင်ႉ ဢၼ်လွတ်ႈလႅဝ်းထၢင်ႇႁၢင်ႈၼၼ်ႉ လူၺ်ႈဢမ်ႇလႆႈသဵင်ႈငိုၼ်းသင်။
+    intro_text: OpenHistoricalMap ၼႆႉ ပဵၼ်ၽႅၼ်ႇလိၼ် လုမ်ႈၾႃႉ ဢၼ်ၵူၼ်းမိူၼ်ၸဝ်ႈၵဝ်ႇ
+      ႁဵတ်းဢွၵ်ႇမႃးသေ ၸႂ်ႉတိုဝ်းလႆႈ လူၺ်ႈ ဝႂ်ၶႂၢင်ႉ ဢၼ်လွတ်ႈလႅဝ်းထၢင်ႇႁၢင်ႈၼၼ်ႉ လူၺ်ႈဢမ်ႇလႆႈသဵင်ႈငိုၼ်းသင်။
     logo:
       alt_text: မိၵ်ႈမၢႆ OpenHistoricalMap
     meta:
       openstreetmap_search: ၶူၼ်ႉႁႃ OpenHistoricalMap
     offline_flash:
-      osm_offline: ယၢမ်းလဵဝ် ၶေႃႈမုၼ်း OpenHistoricalMap ၼႆႉ ဢမ်ႇလႆႈႁဵတ်းၵၢၼ်၊ ပဵၼ်ၽွင်းမိူဝ်ႈ တိုၵ်ႉႁဵတ်းၵၢၼ်မႄးၵုမ်းလုမ်းလႃး ဢၼ်လမ်ႇလွင်ႈၼၼ်ႉယူႇ။
-      osm_read_only: ယၢမ်းလဵဝ် ၶေႃႈမုၼ်း OpenHistoricalMap ၼႆႉ ပဵၼ်ဝႆႉ ၼႂ်းပိူင် ဢၼ်လူဢၢၼ်ႇလႆႈ ၵူၺ်း ၽွင်းမိူဝ်ႈ တိုၵ်ႉႁဵတ်းၵၢၼ်မႄးၵုမ်းလုမ်းလႃး ဢၼ်လမ်ႇလွင်ႈ ၼၼ်ႉယူႇ။
+      osm_offline: ယၢမ်းလဵဝ် ၶေႃႈမုၼ်း OpenHistoricalMap ၼႆႉ ဢမ်ႇလႆႈႁဵတ်းၵၢၼ်၊ ပဵၼ်ၽွင်းမိူဝ်ႈ
+        တိုၵ်ႉႁဵတ်းၵၢၼ်မႄးၵုမ်းလုမ်းလႃး ဢၼ်လမ်ႇလွင်ႈၼၼ်ႉယူႇ။
+      osm_read_only: ယၢမ်းလဵဝ် ၶေႃႈမုၼ်း OpenHistoricalMap ၼႆႉ ပဵၼ်ဝႆႉ ၼႂ်းပိူင် ဢၼ်လူဢၢၼ်ႇလႆႈ
+        ၵူၺ်း ၽွင်းမိူဝ်ႈ တိုၵ်ႉႁဵတ်းၵၢၼ်မႄးၵုမ်းလုမ်းလႃး ဢၼ်လမ်ႇလွင်ႈ ၼၼ်ႉယူႇ။
     partners_devseed: Development Seed
     partners_greeninfo: GreenInfo Network
     partners_osmf: OpenStreetMap Foundation
     partners_osmus: OpenStreetMap U.S.
   notes:
+    new:
+      advice: ၶေႃႈမၢႆတွင်း ၸဝ်ႈၵဝ်ႇၼႆႉ ပဵၼ်တႃႇၵူၼ်းတင်းၼမ်လႄႈ တေၸၢင်ႈၸႂ်ႉတိုဝ်း တႃႇႁဵတ်းႁႂ်ႈ
+        ၽႅၼ်ႇလိၼ် ၶိုၼ်ႈယႂ်ႇမႂ်ႇသုင် ၼႆလႄႈ ယႃႇပေသႂ်ႇ ၶေႃႈမုၼ်းသုၼ်ႇတူဝ် ဢမ်ႇၼၼ် ၶေႃႈမုၼ်း
+        ဢၼ်လုၵ်ႉတီႈ ၽႅၼ်ႇလိၼ် ဢၼ်မီးသုၼ်ႇၶွင် ဢမ်ႇၼၼ် သဵၼ်ႈမၢႆ ၶေႃႈမုၼ်း ၼၼ်ႉ။
     new_readonly:
-      warning: ၶေႃႈမၢႆတွင်းမႂ်ႇ ဢမ်ႇၸၢင်ႈႁဵတ်းလႆႈ ယွၼ်ႉဝႃႈ ယၢမ်းလဵဝ် OpenHistoricalMap API ၼႆႉ မၼ်းမီးဝႆႉ ၼႂ်းၾၢင်ႁၢင်ႈ ဢၼ်လူဢၢၼ်ႇလႆႈၵူၺ်း။
+      warning: ၶေႃႈမၢႆတွင်းမႂ်ႇ ဢမ်ႇၸၢင်ႈႁဵတ်းလႆႈ ယွၼ်ႉဝႃႈ ယၢမ်းလဵဝ် OpenHistoricalMap
+        API ၼႆႉ မၼ်းမီးဝႆႉ ၼႂ်းၾၢင်ႁၢင်ႈ ဢၼ်လူဢၢၼ်ႇလႆႈၵူၺ်း။
   oauth:
     scopes:
       openid: လွၵ်ႉၶဝ်ႈ လွင်ႈၸႂ်ႉတိုဝ်း OpenHistoricalMap
+  preferences:
+    basic_preferences:
+      show:
+        map_color_schemes:
+          auto: မိူၼ်ၼင်ႇဝႅပ်ႉသၢႆႉ
+    preferences:
+      navigation:
+        advanced_preferences: ၸၼ်ႉသုင်
+        preferences: ၼႃႈၵွင်ႉသၢၼ်
   sessions:
     destroy:
       heading: လွၵ်ႉဢွၵ်ႇ တီႈ OpenHistoricalMap
     new:
-      login_to_authorize_html: လွၵ်ႉၶဝ်ႈ တီႈ OpenHistoricalMap သေ ၶဝ်ႈတူၺ်း %{client_app_name} တႃႉ။
+      login_to_authorize_html: လွၵ်ႉၶဝ်ႈ တီႈ OpenHistoricalMap သေ ၶဝ်ႈတူၺ်း %{client_app_name}
+        တႃႉ။
   site:
     about:
-      lede_text: OpenHistoricalMap ၼႆႉ ပဵၼ်ၸုမ်းၽူႈႁဵတ်းၽႅၼ်ႇလိၼ် ဢၼ်ၸွႆႈထႅမ် လႄႈ ထိင်းသိမ်း ၶေႃႈမုၼ်း ၵဵဝ်ႇလူၺ်ႈ သဵၼ်ႈတၢင်း၊ တၢင်း၊ ၵၾႄး၊ တႃႈလူတ်ႉလဵၼ်း၊ လႄႈ ထႅင်ႈတင်းၼမ်၊ တီႈၼႂ်း ၵမ်ႇၽႃႇပတ်ႉပိုၼ်ႉ။
+      lede_text: OpenHistoricalMap ၼႆႉ ပဵၼ်ၸုမ်းၽူႈႁဵတ်းၽႅၼ်ႇလိၼ် ဢၼ်ၸွႆႈထႅမ် လႄႈ
+        ထိင်းသိမ်း ၶေႃႈမုၼ်း ၵဵဝ်ႇလူၺ်ႈ သဵၼ်ႈတၢင်း၊ တၢင်း၊ ၵၾႄး၊ တႃႈလူတ်ႉလဵၼ်း၊ လႄႈ
+        ထႅင်ႈတင်းၼမ်၊ တီႈၼႂ်း ၵမ်ႇၽႃႇပတ်ႉပိုၼ်ႉ။
+      used_by_html: '%{name} ပၼ်ၶေႃႈမုၼ်းၽႅၼ်ႇလိၼ် တွၼ်ႈတႃႇ ဝႅပ်ႉသၢႆႉ၊ ဢႅပ်ႉမိုဝ်းထိုဝ်
+        လႄႈ ၶိူင်ႈႁၢတ်ႉဝႄး ၼပ်ႉႁူဝ်ႁဵင်'
+    add_a_note:
+      para_1: သင်ဝႃႈ ၸဝ်ႈၵဝ်ႇၶႂ်ႈလႆႈ လွင်ႈလဵၵ်ႉၼွႆႉ ဢၼ်မႄးဝႆႉၵူၺ်းသေ ဢမ်ႇမီးၶၢဝ်းယၢမ်း
+        တႃႇတေလူင်းသဵၼ်ႈမၢႆ လႄႈ လဵပ်ႈႁဵၼ်း လၢႆးမႄးထတ်းၼႆၸိုင် တႃႇတေသႂ်ႇ ၶေႃႈမၢႆတွင်းၼၼ်ႉ
+        မၼ်းငၢႆႈငၢႆႈဢွၼ်ႇၵူၺ်း။
+    any_questions:
+      ohm_paragraph_1_html: OpenHistoricalMap ၼႆႉ မီးဝႆႉ ၶူဝ်းၶွင်လၢႆလၢႆဢၼ် တႃႇလဵပ်ႈႁဵၼ်း
+        လွင်ႈၶူင်းၵၢၼ်၊ %{ၸွႆႈထႅမ်_ၵွင်ႉသၢၼ်}။ %{help_link}။
     copyright:
       legal_babble:
         attribution_example:
           alt: တူဝ်ယၢင်ႇ လၢႆးပၼ်ၶေႃႈမုၼ်း OHM တီႈၼိူဝ်ၼႃႈလိၵ်ႈဝႅပ်ႉသၢႆႉ
+          title: တူဝ်ယၢင်ႇ လွင်ႈမၵ်းမၼ်ႈ
         contributors_footer_2_html: |-
           လွင်ႈဢဝ်ၶေႃႈမုၼ်း သႂ်ႇၼႂ်း OpenHistoricalMap ၼၼ်ႉ ဢမ်ႇလႆႈမၢႆထိုင်ဝႃႈ ၽူႈပၼ်ၶေႃႈမုၼ်း
            ဢၼ်ပဵၼ် ငဝ်ႈငႃႇမၼ်းၼၼ်ႉ ပၼ်ၶေႃႈမၵ်းမၼ်ႈ OpenHistoricalMap၊ ၵမ်ႉထႅမ်ပၼ် လွင်ႈမၼ်ႈၸႂ် သေဢၼ်ဢၼ်၊ ဢမ်ႇၼၼ် ႁပ်ႉႁွင်းပၼ် လွင်ႈဢဝ်ပုၼ်ႈၽွၼ်းသင်သေဢမ်ႇဝႃႈ။
-        credit_1_html: တီႈဢၼ်ၸႂ်ႉတိုဝ်းၶေႃႈမုၼ်း OpenHistoricalMap ၼၼ်ႉ တေလႆႈႁဵတ်းၸွမ်း သွင်လွင်ႈ ၼင်ႇပႃႈတႂ်ႈၼႆႉ-
+        contributors_intro_html: |-
+          ၽူႈႁူမ်ႈသၢင်ႈႁဝ်းၶႃႈ မီးၵူၼ်းၼပ်ႉႁူဝ်ႁဵင်။ ႁဝ်းၶႃႈၵေႃႈပႃး
+          ၶေႃႈမုၼ်းဢၼ်လႆႈၶႂၢင်ႉပိုတ်ႇၽုၺ်ႇတီႈ ႁွင်ႈၵၢၼ်ႁဵတ်းၽႅၼ်ႇလိၼ်ၸိုင်ႈမိူင်း လႄႈ ၶေႃႈမုၼ်းတၢင်ႇၸိူဝ်း ၼႂ်းၼၼ်ႉ -
+        contributors_title_html: ၽူႈႁူမ်ႈသၢင်ႈႁဝ်းၶႃႈ
+        credit_1_html: တီႈဢၼ်ၸႂ်ႉတိုဝ်းၶေႃႈမုၼ်း OpenHistoricalMap ၼၼ်ႉ တေလႆႈႁဵတ်းၸွမ်း
+          သွင်လွင်ႈ ၼင်ႇပႃႈတႂ်ႈၼႆႉ-
         credit_title_html: လၢႆးပၼ် ၶရႅတ်ႉတိတ်ႉ OpenHistoricalMap
         infringement_1_html: |-
           ၽူႈၸွႆႈထႅမ် OHM ၶဝ် လႆႈထုၵ်ႇၾၢင်ႉတိုၼ်ႇဝႃႈ ယႃႇပေဢဝ်သႂ်ႇ ၶေႃႈမုၼ်း တီႈလႂ်သေဢမ်ႇဝႃႈ ၸိူဝ်းပဵၼ်
           ၶေႃႈမုၼ်းဢၼ်မီးသုၼ်ႇၶွင်ၽူႈတႅမ်ႈလိၵ်ႈ (တူဝ်ယၢင်ႇ ၽႅၼ်ႇလိၼ် Google ဢမ်ႇၼၼ် ၽႅၼ်ႇလိၼ်ဢၼ်ဢိတ်ႇဢွၵ်ႇ) ဢၼ်ဢမ်ႇပႃး
           လႆႈၶႂၢင်ႉၸႅင်ႈလႅင်း တီႈၽူႈမီးသုၼ်ႇၶွင်။
+      title: သုၼ်ႇၶွင် လႄႈ ဝႂ်
     export:
       too_large:
-        body: တႃႇဢဝ် ၽိုၼ်တီႈၼႆႉ သူင်ႇဢွၵ်ႇၼင်ႇ ၶေႃႈမုၼ်း XML ၶွင် OpenHistoricalMap ၼႆႉ မၼ်းယႂ်ႇႁႅင်းၼႃႇဢႃးလႃး။ ၶႅၼ်းတေႃႈ ၸုမ်းၶဝ်း ဢမ်ႇၼၼ် လိူၵ်ႈပၼ် ၽိုၼ်တီႈ ဢၼ်တိူဝ်း လဵၵ်ႉလိူဝ် ဢမ်ႇၼၼ် တွၼ်ႈတႃႇ လူတ်ႇလူင်း ၶေႃႈမုၼ်း ပဵၼ်သွႆႉ ၸႂ်ႉပၼ် ငဝ်ႈငႃႇ ဢၼ်မီးဝႆႉၼင်ႇ သဵၼ်ႈမၢႆႇၽၢႆႇတႂ်ႈ။
+        body: တႃႇဢဝ် ၽိုၼ်တီႈၼႆႉ သူင်ႇဢွၵ်ႇၼင်ႇ ၶေႃႈမုၼ်း XML ၶွင် OpenHistoricalMap
+          ၼႆႉ မၼ်းယႂ်ႇႁႅင်းၼႃႇဢႃးလႃး။ ၶႅၼ်းတေႃႈ ၸုမ်းၶဝ်း ဢမ်ႇၼၼ် လိူၵ်ႈပၼ် ၽိုၼ်တီႈ
+          ဢၼ်တိူဝ်း လဵၵ်ႉလိူဝ် ဢမ်ႇၼၼ် တွၼ်ႈတႃႇ လူတ်ႇလူင်း ၶေႃႈမုၼ်း ပဵၼ်သွႆႉ ၸႂ်ႉပၼ်
+          ငဝ်ႈငႃႇ ဢၼ်မီးဝႆႉၼင်ႇ သဵၼ်ႈမၢႆႇၽၢႆႇတႂ်ႈ။
         overpass:
           description: လူတ်ႇလူင်း ၶွပ်ႇမၵ်းၶႅၼ်ႈၼႆႉ ၵႃႈတီႈငဝ်းၶေႃႈမုၼ်း OpenHistoricalMap
         planet:
@@ -111,10 +182,13 @@ shn:
         OpenHistoricalMap ၼႆႉ မီးဝႆႉ ငိူၼ်ႈတိုၼ်းလၢႆလၢႆဢၼ် တႃႇလဵပ်ႈႁဵၼ်း လွင်ႈၶူင်းၵၢၼ်၊ လွင်ႈတွင်ႈထၢမ် လႄႈ လွင်ႈတွပ်ႇၶေႃႈထၢမ်
         လႄႈ ႁူမ်ႈၵၼ်ဢုပ်ႇၵုမ် လႄႈ တႅမ်ႈမၢႆဝႆႉ ႁူဝ်ၶေႃႈ ၵၢၼ်ႁဵတ်းၽႅၼ်ႇလိၼ်။
       welcome:
-        description: တႄႇဢဝ် ၶေႃႈၼႄတၢင်း ဢၼ်လႅတ်းသႅဝ်း ဢၼ်ႁူမ်ႇငမ်း ပိုၼ်ႉထၢၼ် OpenHistoricalMap ၼႆႉတႃႉ။
+        description: တႄႇဢဝ် ၶေႃႈၼႄတၢင်း ဢၼ်လႅတ်းသႅဝ်း ဢၼ်ႁူမ်ႇငမ်း ပိုၼ်ႉထၢၼ် OpenHistoricalMap
+          ၼႆႉတႃႉ။
         title: ႁူမ်ၸူမ်းႁပ်ႉတွၼ်ႈထိုင် OpenHistoricalMap ယူႇ
       welcomemat:
-        description: လူၺ်ႈၸုမ်းဢၼ်ႁဵတ်းၽႅၼ်ၵၢၼ် တႃႇ OpenHistoricalMap ၼၼ်ႉႁိုဝ်? ႁႃတူၺ်း ဢၼ်လူဝ်ႇႁူႉ တီႈၼႂ်း ၽႅၼ်ႇႁပ်ႉတွၼ်ႈ ၼၼ်ႉတႃႉ။
+        description: လူၺ်ႈၸုမ်းဢၼ်ႁဵတ်းၽႅၼ်ၵၢၼ် တႃႇ OpenHistoricalMap ၼၼ်ႉႁိုဝ်? ႁႃတူၺ်း
+          ဢၼ်လူဝ်ႇႁူႉ တီႈၼႂ်း ၽႅၼ်ႇႁပ်ႉတွၼ်ႈ ၼၼ်ႉတႃႉ။
+        title: တွၼ်ႈတႃႇမုၵ်ႉၸုမ်း
       wiki:
         description: တူၺ်းတီႈ ဝီႇၶီႇ တႃႇႁႃ ၽိုၼ်လိၵ်ႈ OHM ဢၼ်လိုၵ်ႉလမ်ႇ။
         title: ဝီႇၶီ
@@ -123,11 +197,20 @@ shn:
       license:
         copyright: သုၼ်ႇၶွင် OpenHistoricalMap လႄႈ ၽူႈႁူမ်ႈသၢင်ႈၶဝ် မီးၽၢႆႇတႂ်ႈ ဝႂ်လွတ်ႈလႅဝ်းထၢင်ႇႁၢင်ႈ
     potlatch:
-      removed: ၽူႈတတ်းတေႃႇ OpenHistoricalMap ဢၼ်ပဵၼ် ပိူင်ၵႅဝ်ႈ ၸဝ်ႈၵဝ်ႇၼၼ်ႉ လႆႈတမ်းဝၢင်းဝႆႉ ပဵၼ် Potlatch ယဝ်ႉ။ ယွၼ်ႉဝႃႈ Adobe Flash Player ၼႆႉ လႆႈထွၼ်ဢွၵ်ႇပႅတ်ႈယဝ်ႉလႄႈ Potlatch ၼႆႉ ဢမ်ႇၸႂ်ႉလႆႈၼႂ်း ပရၢဝ်ႇသႃႇဝႅပ်ႉ ယဝ်ႉ။
+      removed: ၽူႈတတ်းတေႃႇ OpenHistoricalMap ဢၼ်ပဵၼ် ပိူင်ၵႅဝ်ႈ ၸဝ်ႈၵဝ်ႇၼၼ်ႉ လႆႈတမ်းဝၢင်းဝႆႉ
+        ပဵၼ် Potlatch ယဝ်ႉ။ ယွၼ်ႉဝႃႈ Adobe Flash Player ၼႆႉ လႆႈထွၼ်ဢွၵ်ႇပႅတ်ႈယဝ်ႉလႄႈ
+        Potlatch ၼႆႉ ဢမ်ႇၸႂ်ႉလႆႈၼႂ်း ပရၢဝ်ႇသႃႇဝႅပ်ႉ ယဝ်ႉ။
     welcome:
       basic_terms:
-        paragraph_1: OpenHistoricalMap ၼႆႉ မၼ်းမီးဝႆႉ ၽႃႇသႃႇႁင်းမၼ်း ၵမ်ႈၽွင်ႈ။ ၶေႃႈၵႂၢမ်းလမ်ႇလွင်ႈ ဢၼ်တေၸွႆႈထႅမ်လႆႈ ၵမ်ႈၽွင်ႈ။
-      introduction: ႁူမ်ၸူမ်းႁပ်ႉတွၼ်ႈထိုင် OpenHistoricalMap ဢၼ်ပဵၼ်ၽႅၼ်ႇလိၼ်လုမ်ႈၾႃႉ ဢၼ်ဢမ်ႇလႆႈသဵင်ႈငိုၼ်းသင်သေ မႄးလႆႈၼၼ်ႉယူႇ။ ယၢမ်းလဵဝ် ၸဝ်ႈၵဝ်ႇ လႆႈလူင်းသဵၼ်ႈမၢႆဝႆႉယဝ်ႉလႄႈ ၸဝ်ႈၵဝ်ႇ တႄႇႁဵတ်းလႆႈ ၽႅၼ်ႇလိၼ် တင်းမူတ်းယဝ်ႉ။ ၼႆႉပဵၼ် ၶေႃႈၼႄတၢင်း ဢၼ်လမ်ႇလွင်ႈသေပိူၼ်ႈ ဢၼ်လူဝ်ႇႁူႉ။
+        a_tag_html: '%{tag} ၼႆႉ ပဵၼ်ၶေႃႈမုၼ်း ဢိတ်းဢွတ်း ဢၼ်ၵဵဝ်ႇလူၺ်ႈ ၼူတ်ႉ ဢမ်ႇၼၼ်
+          သဵၼ်ႈတၢင်း မိူၼ်ၼင်ႇ ၸိုဝ်ႈႁူင်းၵိၼ်ယႅမ်ႉ ဢမ်ႇၼၼ် လွင်ႈမၵ်းၶၼ်ႈ တၢင်းဝႆး
+          သဵၼ်ႈတၢင်းၼၼ်ႉယဝ်ႉ။'
+        paragraph_1: OpenHistoricalMap ၼႆႉ မၼ်းမီးဝႆႉ ၽႃႇသႃႇႁင်းမၼ်း ၵမ်ႈၽွင်ႈ။ ၶေႃႈၵႂၢမ်းလမ်ႇလွင်ႈ
+          ဢၼ်တေၸွႆႈထႅမ်လႆႈ ၵမ်ႈၽွင်ႈ။
+      introduction: ႁူမ်ၸူမ်းႁပ်ႉတွၼ်ႈထိုင် OpenHistoricalMap ဢၼ်ပဵၼ်ၽႅၼ်ႇလိၼ်လုမ်ႈၾႃႉ
+        ဢၼ်ဢမ်ႇလႆႈသဵင်ႈငိုၼ်းသင်သေ မႄးလႆႈၼၼ်ႉယူႇ။ ယၢမ်းလဵဝ် ၸဝ်ႈၵဝ်ႇ လႆႈလူင်းသဵၼ်ႈမၢႆဝႆႉယဝ်ႉလႄႈ
+        ၸဝ်ႈၵဝ်ႇ တႄႇႁဵတ်းလႆႈ ၽႅၼ်ႇလိၼ် တင်းမူတ်းယဝ်ႉ။ ၼႆႉပဵၼ် ၶေႃႈၼႄတၢင်း ဢၼ်လမ်ႇလွင်ႈသေပိူၼ်ႈ
+        ဢၼ်လူဝ်ႇႁူႉ။
       rules:
         para_1_html: |-
           OpenHistoricalMap ၼႆႉ မၼ်းမီးပၵ်းပိူင် ဢၼ်ပဵၼ်တၢင်းၵၢၼ် ဢိတ်းဢွတ်းၵူၺ်းသေတႃႉ ႁဝ်းၶႃႈ မုင်ႈမွင်းဝႃႈ ၽူႈၶဝ်ႈႁူမ်ႈ တင်းသဵင်ႈ တေလႆႈႁူမ်ႈမိုဝ်းၸွမ်းၵၼ် လႄႈ ၵပ်းသိုပ်ႇၵၼ် တင်း တူင်ႇဝူင်းၵူၼ်း ၼႆယဝ်ႉ။ သင်ၸိူဝ်ႉဝႃႈ ၸဝ်ႈၵဝ်ႇ ဝူၼ်ႉတႃႇ
@@ -138,55 +221,73 @@ shn:
           ဢၼ်မၼ်း %{doesnt} ၼၼ်ႉ ပဵၼ်ၶေႃႈမုၼ်း ဢၼ်ၶေႃႈႁၼ် မိူၼ်ၼင်ႇ လွင်ႈပၼ်ၸၼ်ႉထၢၼ်ႈ၊ ၽၢင်ႁၢင်ႈပိုၼ်း ဢမ်ႇၼၼ်
           ၶေႃႈႁၼ် လႄႈ ၶေႃႈမုၼ်း ဢၼ်လုၵ်ႉတီႈ ၶေႃႈမုၼ်း ဢၼ်မီးသုၼ်ႇၶွင်ၽူႈတႅမ်ႈလိၵ်ႈၼၼ်ႉယဝ်ႉ။ သင်ဝႃႈ ဢမ်ႇမီးၶႂၢင်ႉ
           ၶိုၵ်ႉတွၼ်းၼႆၸိုင် ယႃႇပေထုတ်ႇဢဝ် ၽႅၼ်ႇလိၼ် ဢၼ်မီးၼိူဝ်ဢွၼ်ႇလၢႆး ဢမ်ႇၼၼ် ၽႅၼ်ႇလိၼ် ဢၼ်ပဵၼ်ၽိုၼ်လိၵ်ႈၼၼ်ႉ။
+  time:
+    formats:
+      friendly: '%e %B %Y တီႈ %H:%M'
   traces:
     feeds:
       show:
         title: ထႅဝ်ႁွႆး GPS ၶွင် OpenHistoricalMap
     show:
+      edit: ပိုတ်ႇၼႂ်းၶိူင်ႈမႄးထတ်း
       edit_trace: မႄးထတ်းႁွႆးတၢင်းၼႆႉ
+      map: တူၺ်းတီႈယူႇ ၼိူဝ်ၽႅၼ်ႇလိၼ်
     trace:
       edit_map: မႄးထတ်း ၽႅၼ်ႇလိၼ်
       view_map: တူၺ်းၽႅၼ်ႇလိၼ်
   user_mailer:
     changeset_comment_notification:
       commented:
-        subject_other: "[OpenHistoricalMap] %{commenter} ပၼ်ၶေႃႈႁၼ်ဝႆႉ ၼိူဝ် လွင်ႈလႅၵ်ႈလၢႆႈ ဢၼ်ၸဝ်ႈၵဝ်ႇ သူၼ်ၸႂ်ၼၼ်ႉ"
-        subject_own: "[OpenHistoricalMap] %{commenter} ပၼ်ၶေႃႈႁၼ် ၼိူဝ်လွင်ႈလႅၵ်ႈလၢႆႈ ၸဝ်ႈၵဝ်ႇဢၼ်ၼိုင်ႈ"
+        subject_other: '[OpenHistoricalMap] %{commenter} ပၼ်ၶေႃႈႁၼ်ဝႆႉ ၼိူဝ် လွင်ႈလႅၵ်ႈလၢႆႈ
+          ဢၼ်ၸဝ်ႈၵဝ်ႇ သူၼ်ၸႂ်ၼၼ်ႉ'
+        subject_own: '[OpenHistoricalMap] %{commenter} ပၼ်ၶေႃႈႁၼ် ၼိူဝ်လွင်ႈလႅၵ်ႈလၢႆႈ
+          ၸဝ်ႈၵဝ်ႇဢၼ်ၼိုင်ႈ'
       description: 'လွင်ႈလႅၵ်ႈလၢႆႈ OpenHistoricalMap #%{id}'
     diary_comment_notification:
       description: 'ၶေႃႈမုၼ်း တၢႆႇယႃႇရီႇ OpenHistoricalMap #%{id}'
-      header: "%{from_user} ပၼ်ၶေႃႈႁၼ် ၼိူဝ် ၶေႃႈမုၼ်း ၼႂ်းပပ်ႉမၢႆတွင်း OpenHistoricalMap ဢၼ်ပႃး ႁူဝ်ၶေႃႈ %{subject}:"
-      header_html: "%{from_user} ပၼ်ၶေႃႈႁၼ် ၼိူဝ် ၶေႃႈမုၼ်း ၼႂ်းတၢႆႇယႃႇရီႇ OpenHistoricalMap ဢၼ်ပႃး ႁူဝ်ၶေႃႈ %{subject}:"
-      subject: "[OpenHistoricalMap] %{user} ပၼ်ၶေႃႈႁၼ်ၼိူဝ် ၶေႃႈမုၼ်းၼႂ်းတၢႆႇယႃႇရီႇ"
+      header: '%{from_user} ပၼ်ၶေႃႈႁၼ် ၼိူဝ် ၶေႃႈမုၼ်း ၼႂ်းပပ်ႉမၢႆတွင်း OpenHistoricalMap
+        ဢၼ်ပႃး ႁူဝ်ၶေႃႈ %{subject}:'
+      header_html: '%{from_user} ပၼ်ၶေႃႈႁၼ် ၼိူဝ် ၶေႃႈမုၼ်း ၼႂ်းတၢႆႇယႃႇရီႇ OpenHistoricalMap
+        ဢၼ်ပႃး ႁူဝ်ၶေႃႈ %{subject}:'
+      subject: '[OpenHistoricalMap] %{user} ပၼ်ၶေႃႈႁၼ်ၼိူဝ် ၶေႃႈမုၼ်းၼႂ်းတၢႆႇယႃႇရီႇ'
     email_confirm:
-      subject: "[OpenHistoricalMap] ယိုၼ်ယၼ်ပၼ် ဢီးမေးလ် ၸဝ်ႈၵဝ်ႇ"
+      subject: '[OpenHistoricalMap] ယိုၼ်ယၼ်ပၼ် ဢီးမေးလ် ၸဝ်ႈၵဝ်ႇ'
     follow_notification:
-      followed_you: ယၢမ်းလဵဝ် %{user} ၼႆႉ တိတ်းတၢမ်း ၸဝ်ႈၵဝ်ႇဝႆႉ တီႈၼိူဝ် OpenHistoricalMap ယူႇ။
-      subject: "[OpenHistoricalMap] %{user} တိတ်းတၢမ်းမႂ်း"
+      followed_you: ယၢမ်းလဵဝ် %{user} ၼႆႉ တိတ်းတၢမ်း ၸဝ်ႈၵဝ်ႇဝႆႉ တီႈၼိူဝ် OpenHistoricalMap
+        ယူႇ။
+      subject: '[OpenHistoricalMap] %{user} တိတ်းတၢမ်းမႂ်း'
     gpx_failure:
-      subject: "[OpenHistoricalMap] လွင်ႈဢဝ် GPX ၶဝ်ႈမႃးဢမ်ႇဢွင်ႇမၢၼ်"
+      subject: '[OpenHistoricalMap] လွင်ႈဢဝ် GPX ၶဝ်ႈမႃးဢမ်ႇဢွင်ႇမၢၼ်'
     gpx_success:
-      subject: "[OpenHistoricalMap] လွင်ႈဢဝ် GPX ၶဝ်ႈမႃး ဢွင်ႇမၢၼ်ယဝ်ႉ"
+      subject: '[OpenHistoricalMap] လွင်ႈဢဝ် GPX ၶဝ်ႈမႃး ဢွင်ႇမၢၼ်ယဝ်ႉ'
     lost_password:
-      hopefully_you: မီးၵူၼ်းၵေႃႉၼိုင်ႈ (ၸၢင်ႈပဵၼ်ၸဝ်ႈၵဝ်ႇ) ယွၼ်းႁႂ်ႈမႄးၶိုၼ်း ၶေႃႈလပ်ႉ တီႈၼႂ်းဢီးမေးလ် ဢၵွင်ႉ openhistoricalmap.org ၼႆႉ။
-      subject: "[OpenHistoricalMap] ယွၼ်းၶိုၼ်းမၢႆလပ်ႉ"
+      hopefully_you: မီးၵူၼ်းၵေႃႉၼိုင်ႈ (ၸၢင်ႈပဵၼ်ၸဝ်ႈၵဝ်ႇ) ယွၼ်းႁႂ်ႈမႄးၶိုၼ်း ၶေႃႈလပ်ႉ
+        တီႈၼႂ်းဢီးမေးလ် ဢၵွင်ႉ openhistoricalmap.org ၼႆႉ။
+      subject: '[OpenHistoricalMap] ယွၼ်းၶိုၼ်းမၢႆလပ်ႉ'
     message_notification:
-      header: "%{from_user} သူင်ႇလိၵ်ႈၸူးသူ လူၺ်ႈ OpenHistoricalMap ဢၼ်မီးႁူဝ်ၶေႃႈ %{subject}:"
-      header_html: "%{from_user} သူင်ႇလိၵ်ႈၸူးသူ လူၺ်ႈ OpenHistoricalMap ဢၼ်မီးႁူဝ်ၶေႃႈ %{subject}:"
-      subject: "[OpenHistoricalMap] %{message_title}"
+      header: '%{from_user} သူင်ႇလိၵ်ႈၸူးသူ လူၺ်ႈ OpenHistoricalMap ဢၼ်မီးႁူဝ်ၶေႃႈ
+        %{subject}:'
+      header_html: '%{from_user} သူင်ႇလိၵ်ႈၸူးသူ လူၺ်ႈ OpenHistoricalMap ဢၼ်မီးႁူဝ်ၶေႃႈ
+        %{subject}:'
+      subject: '[OpenHistoricalMap] %{message_title}'
     note_comment_notification:
       closed:
-        subject_other: "[OpenHistoricalMap] %{commenter} လႆႈၵႄႈလိတ်ႈပၼ် ၶေႃႈမၢႆတွင်း ဢၼ်ၸဝ်ႈၵဝ်ႇသူၼ်ၸႂ်"
-        subject_own: "[OpenHistoricalMap] %{commenter} ၵႄႈလိတ်ႈပၼ် ၶေႃႈမၢႆတွင်းၸဝ်ႈၵဝ်ႇ ဢၼ်ၼိုင်ႈယဝ်ႉ"
+        subject_other: '[OpenHistoricalMap] %{commenter} လႆႈၵႄႈလိတ်ႈပၼ် ၶေႃႈမၢႆတွင်း
+          ဢၼ်ၸဝ်ႈၵဝ်ႇသူၼ်ၸႂ်'
+        subject_own: '[OpenHistoricalMap] %{commenter} ၵႄႈလိတ်ႈပၼ် ၶေႃႈမၢႆတွင်းၸဝ်ႈၵဝ်ႇ
+          ဢၼ်ၼိုင်ႈယဝ်ႉ'
       commented:
-        subject_other: "[OpenHistoricalMap] %{commenter} ပၼ်ၶေႃႈႁၼ် ၼိူဝ်ၶေႃႈမၢႆတွင်း ဢၼ်ၸဝ်ႈၵဝ်ႇသူၼ်ၸႂ်"
-        subject_own: "[OpenHistoricalMap] %{commenter} ပၼ်ၶေႃႈႁၼ် တီႈၶေႃႈမၢႆတွင်းၸဝ်ႈၵဝ်ႇဢၼ်ၼိုင်ႈ"
+        subject_other: '[OpenHistoricalMap] %{commenter} ပၼ်ၶေႃႈႁၼ် ၼိူဝ်ၶေႃႈမၢႆတွင်း
+          ဢၼ်ၸဝ်ႈၵဝ်ႇသူၼ်ၸႂ်'
+        subject_own: '[OpenHistoricalMap] %{commenter} ပၼ်ၶေႃႈႁၼ် တီႈၶေႃႈမၢႆတွင်းၸဝ်ႈၵဝ်ႇဢၼ်ၼိုင်ႈ'
       description: 'ၶေႃႈမၢႆတွင်း OpenHistoricalMap #%{id}'
       reopened:
-        subject_other: "[OpenHistoricalMap] %{commenter} လႆႈၶိုၼ်းႁဵတ်းႁႂ်ႈ ၶေႃႈမၢႆတွင်း ဢၼ်ၸဝ်ႈၵဝ်ႇ သူၼ်ၸႂ်ၼၼ်ႉ ႁဵတ်းၵၢၼ်ၶိုၼ်း"
-        subject_own: "[OpenHistoricalMap] %{commenter} လႆႈၶိုၼ်းႁဵတ်းႁႂ်ႈ ၶေႃႈမၢႆတွင်းၸဝ်ႈၵဝ်ႇ ဢၼ်ၼိုင်ႈ ႁဵတ်းၵၢၼ်ၶိုၼ်း"
+        subject_other: '[OpenHistoricalMap] %{commenter} လႆႈၶိုၼ်းႁဵတ်းႁႂ်ႈ ၶေႃႈမၢႆတွင်း
+          ဢၼ်ၸဝ်ႈၵဝ်ႇ သူၼ်ၸႂ်ၼၼ်ႉ ႁဵတ်းၵၢၼ်ၶိုၼ်း'
+        subject_own: '[OpenHistoricalMap] %{commenter} လႆႈၶိုၼ်းႁဵတ်းႁႂ်ႈ ၶေႃႈမၢႆတွင်းၸဝ်ႈၵဝ်ႇ
+          ဢၼ်ၼိုင်ႈ ႁဵတ်းၵၢၼ်ၶိုၼ်း'
     signup_confirm:
-      subject: "[OpenHistoricalMap] ႁပ်ႉတွၼ်ႈထိုင် OpenHistoricalMap ယူႇ"
+      subject: '[OpenHistoricalMap] ႁပ်ႉတွၼ်ႈထိုင် OpenHistoricalMap ယူႇ'
   users:
     auth_association:
       heading: ID ၸဝ်ႈၵဝ်ႇ ဢမ်ႇပႆႇၵွင်ႉၵၢႆႇၵၼ်တင်း ဢၵွင်ႉ OpenHistoricalMap ။
@@ -195,8 +296,16 @@ shn:
         ၸႂ်ႉတိုဝ်း ၽိုၼ်လိၵ်ႈ ဢၼ်မီးပႃႈတႂ်ႈၼႆႉတႃႉ။
     new:
       about:
-        paragraph_1: ဢမ်ႇမိူၼ်ၼင်ႇ ၽႅၼ်ႇလိၼ်တၢင်ႇဢၼ်၊ ဢၼ်ပဵၼ် OpenHistoricalMap ၼႆႉ ပဵၼ်ၵူၼ်းမိူၼ်ၸဝ်ႈၵဝ်ႇ ႁဵတ်းဢွၵ်ႇမႃး တဵမ်ထူၼ်ႈသေ တႃႇၽႂ်သေဢမ်ႇဝႃႈ မႄးလႆႈ၊ ဢၢပ်ႉတဵတ်ႉလႆႈ၊ လူတ်ႇလူင်း လႄႈ ၸႂ်ႉလႆႈ ၾရီး။
+        paragraph_1: ဢမ်ႇမိူၼ်ၼင်ႇ ၽႅၼ်ႇလိၼ်တၢင်ႇဢၼ်၊ ဢၼ်ပဵၼ် OpenHistoricalMap ၼႆႉ
+          ပဵၼ်ၵူၼ်းမိူၼ်ၸဝ်ႈၵဝ်ႇ ႁဵတ်းဢွၵ်ႇမႃး တဵမ်ထူၼ်ႈသေ တႃႇၽႂ်သေဢမ်ႇဝႃႈ မႄးလႆႈ၊
+          ဢၢပ်ႉတဵတ်ႉလႆႈ၊ လူတ်ႇလူင်း လႄႈ ၸႂ်ႉလႆႈ ၾရီး။
+        paragraph_2: လူင်းသဵၼ်ႈမၢႆ တႃႇတႄႇၸွႆႈထႅမ်။
         welcome: ႁူမ်ၸူမ်းႁပ်ႉတွၼ်ႈထိုင် OpenHistoricalMap ယူႇ
-      duplicate_social_email: သင်ဝႃႈ ၸဝ်ႈၵဝ်ႇ မီးဝႆႉ ဢၵွင်ႉ OpenHistoricalMap ယဝ်ႉသေ ၶႂ်ႈၸႂ်ႉတိုဝ်း ၽူႈၵမ်ႉထႅမ် ၶေႃႈမုၼ်း ၽၢႆႇ 3 ၼႆၸိုင် ၸႂ်ႉတိုဝ်း ၶေႃႈလပ်ႉ ၸဝ်ႈၵဝ်ႇသေ ၶဝ်ႈၵႂႃႇသေ မူၼ်ႉမႄး လွင်ႈလိူၵ်ႈၶၼ် ဢၵွင်ႉ ၸဝ်ႈၵဝ်ႇၼၼ်ႉလႄႈ။
-      please_contact_support_html: ၶႅၼ်းတေႃႈ ၵပ်းသိုပ်ႇ %{support_link} သေ ၶပ်ႉၶိုင် တႃႇတေႁဵတ်း ဢၵွင်ႉ - ႁဝ်းၶႃႈ တေၶတ်းၸႂ် ၵႄႈလိတ်ႈ လွင်ႈတုၵ်းယွၼ်းၼၼ်ႉ ႁႂ်ႈဝႆးဝႆး။
-      signup_to_authorize_html: လူင်းသဵၼ်ႈမၢႆ တီႈ OpenHistoricalMap တႃႇၶဝ်ႈတူၺ်း %{client_app_name} ။
+      duplicate_social_email: သင်ဝႃႈ ၸဝ်ႈၵဝ်ႇ မီးဝႆႉ ဢၵွင်ႉ OpenHistoricalMap ယဝ်ႉသေ
+        ၶႂ်ႈၸႂ်ႉတိုဝ်း ၽူႈၵမ်ႉထႅမ် ၶေႃႈမုၼ်း ၽၢႆႇ 3 ၼႆၸိုင် ၸႂ်ႉတိုဝ်း ၶေႃႈလပ်ႉ ၸဝ်ႈၵဝ်ႇသေ
+        ၶဝ်ႈၵႂႃႇသေ မူၼ်ႉမႄး လွင်ႈလိူၵ်ႈၶၼ် ဢၵွင်ႉ ၸဝ်ႈၵဝ်ႇၼၼ်ႉလႄႈ။
+      please_contact_support_html: ၶႅၼ်းတေႃႈ ၵပ်းသိုပ်ႇ %{support_link} သေ ၶပ်ႉၶိုင်
+        တႃႇတေႁဵတ်း ဢၵွင်ႉ - ႁဝ်းၶႃႈ တေၶတ်းၸႂ် ၵႄႈလိတ်ႈ လွင်ႈတုၵ်းယွၼ်းၼၼ်ႉ ႁႂ်ႈဝႆးဝႆး။
+      signup_to_authorize_html: လူင်းသဵၼ်ႈမၢႆ တီႈ OpenHistoricalMap တႃႇၶဝ်ႈတူၺ်း %{client_app_name}
+        ။
+...

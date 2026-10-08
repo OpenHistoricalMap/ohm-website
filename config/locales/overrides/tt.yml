@@ -1,5 +1,6 @@
 # Messages for Tatar (Cyrillic script) (татарча)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Blackisnewyellow
 # Author: Erictheise
 # Author: KhayR
@@ -8,7 +9,7 @@
 # Author: Ерней
 # Author: З. ӘЙЛЕ
 # Author: Ильгиз
-# Do not edit by hand.
+---
 tt:
   api:
     notes:
@@ -16,15 +17,29 @@ tt:
         title: OpenHistoricalMap искәрмәләре
   errors:
     contact:
-      contact_the_community_html: Әгәр дә сез эшләми торган сылтама / баш тапсагыз, бернинди шиксез OpenHistoricalMap җәмгыятенә %{contact_link} итегез. Соравыгызга туры килгән URL турында искәрмә ясагыз.
+      contact_the_community_html: Әгәр дә сез эшләми торган сылтама / баш тапсагыз,
+        бернинди шиксез OpenHistoricalMap җәмгыятенә %{contact_link} итегез. Соравыгызга
+        туры килгән URL турында искәрмә ясагыз.
     forbidden:
-      description: Сез OpenHistoricalMap серверыннан сораган гамәл идарәчеләргә генә рөхсәт ителә (HTTP 403)
+      description: Сез OpenHistoricalMap серверыннан сораган гамәл идарәчеләргә генә
+        рөхсәт ителә (HTTP 403)
     internal_server_error:
-      description: OpenHistoricalMap серверы көтелмәгән шарт белән очрашты, бу вакыйга сорауга җавап бирергә комачаулады (HTTP 500)
+      description: OpenHistoricalMap серверы көтелмәгән шарт белән очрашты, бу вакыйга
+        сорауга җавап бирергә комачаулады (HTTP 500)
     not_found:
-      description: Шушы исем буенча OpenHistoricalMap серверыннан файл/директория/API гамәл табып булмый
+      description: Шушы исем буенча OpenHistoricalMap серверыннан файл/директория/API
+        гамәл табып булмый
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: Сәнгать йорты
   site:
     export:
       too_large:
         planet:
           title: OHM планетасы
+  time:
+    formats:
+      friendly: '%e %B %Y сәгать %H:%M'
+...

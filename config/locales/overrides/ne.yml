@@ -1,5 +1,6 @@
 # Messages for Nepali (नेपाली)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Bada Kaji
 # Author: Danieldegroot2
 # Author: Drjpoudel
@@ -17,8 +18,12 @@
 # Author: राम प्रसाद जोशी
 # Author: सरोज कुमार ढकाल
 # Author: हिमाल सुबेदी
-# Do not edit by hand.
+---
 ne:
+  api:
+    notes:
+      rss:
+        title: ओपनस्ट्रिटम्याप टिप्पणीहरू
   changeset_comments:
     feeds:
       show:
@@ -30,33 +35,66 @@ ne:
         description: OpenHistoricalMap प्रयोगकर्ताहरूका हालैका डायरी प्रविष्टीहरू
         title: OpenHistoricalMap डायरी प्रविष्टीहरू
       language:
-        description: "%{language_name} भाषामा OpenHistoricalMap प्रयोगकर्ताहरूका हालैका डायरी"
-        title: "%{language_name} भाषामा OpenHistoricalMap दैनिकी"
+        description: '%{language_name} भाषामा OpenHistoricalMap प्रयोगकर्ताहरूका हालैका
+          डायरी'
+        title: '%{language_name} भाषामा OpenHistoricalMap दैनिकी'
       user:
-        description: "%{user}को लागि हालैका OpenHistoricalMap डायरी"
-        title: "%{user}को लागि OpenHistoricalMap डायरी"
+        description: '%{user}को लागि हालैका OpenHistoricalMap डायरी'
+        title: '%{user}को लागि OpenHistoricalMap डायरी'
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: कला केन्द्र
+        leisure:
+          horse_riding: घोडसवार केन्द्र
+          track: दौडिने बाटो
   layouts:
+    intro_header: ओपन स्ट्रिट म्यापमा स्वागत छ!
     logo:
       alt_text: OpenHistoricalMap लोगो
     project_name:
       title: OpenHistoricalMap
+  sessions:
+    destroy:
+      heading: ओपनस्ट्रिटम्यापबाट निर्गमन गर्नुहोस्
   site:
     about_section:
       legal_1_privacy_policy: गोपनीयता नीति
     copyright:
       legal_babble:
+        contributors_title_html: हाम्रा योगदान कर्ताहरू
         more_title_html: थप जान्नको लागि
     export:
       too_large:
+        body: यो क्षेत्र ओपनस्ट्रीटम्याप एक्स् एम् एल जानकारीको रूपमा निर्यात गर्नको
+          लागि निकै ठूलो छ । कृपया सानो क्षेत्र छान्नुहोस् वा तल देखाइएका स्रोतहरूबाट
+          ठूलो सङ्ख्यामा जानकारी डाउनलोड गर्नुहोस् ।
         overpass:
-          description: OpenHistoricalMap तथ्याङ्कको अर्को स्रोतबाट यो सिमारेखा प्राप्त गर्नुहोस्
+          description: OpenHistoricalMap तथ्याङ्कको अर्को स्रोतबाट यो सिमारेखा प्राप्त
+            गर्नुहोस्
+        planet:
+          description: नियमित रूपमा अपडेट गरिएका ओपनस्ट्रीटम्याप तथ्याङ्कका प्रतिहरू
+          title: ओएस्एम ग्रह
     help:
       discord:
         title: डिस्कर्ड
       slack:
         title: आईआरसि
+      welcome:
+        title: ओपन स्ट्रिट म्यापमा स्वागत छ!
       wiki:
         title: विकि
   time:
     formats:
-      blog: "%B %e, %Y"
+      blog: '%B %e, %Y'
+      friendly: '%e %B %Y मा %H:%M'
+  traces:
+    show:
+      edit: सम्पादन
+      edit_trace: यो ट्रेस सम्पादन गर्ने
+      map: नक्सा
+    trace:
+      edit_map: नक्सा सम्पादन गर्ने
+      view_map: नक्सा हेर्ने
+...

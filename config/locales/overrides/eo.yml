@@ -1,5 +1,6 @@
 # Messages for Esperanto (Esperanto)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Airon90
 # Author: Alefar
 # Author: Bwildenhain.BO
@@ -29,25 +30,31 @@
 # Author: Yekrats
 # Author: YvesNevelsteen
 # Author: Ziko
-# Do not edit by hand.
+---
 eo:
   accounts:
     terms:
       show:
-        read and accept with tou: Bonvolu legi la interkonsenton pri kontribuado kaj la uzkondiĉoj, marki ambaŭ markbutonojn kiam vi estas leginta, kaj alklaku la butonon Daŭrigi.
+        read and accept with tou: Bonvolu legi la interkonsenton pri kontribuado kaj
+          la uzkondiĉoj, marki ambaŭ markbutonojn kiam vi estas leginta, kaj alklaku
+          la butonon Daŭrigi.
         tou_explain:
-          html: Ĉi tiuj %{tou_link} regas la uzadon de la retejo kaj alia infrastrukturo provizata de la Fondaĵo OSM. Bonvolu alklaki la ligilon, legi, kaj konsenti la tekston.
+          html: Ĉi tiuj %{tou_link} regas la uzadon de la retejo kaj alia infrastrukturo
+            provizata de la Fondaĵo OSM. Bonvolu alklaki la ligilon, legi, kaj konsenti
+            la tekston.
   api:
     notes:
       rss:
         title: OpenHistoricalMap-rimarkoj
   application:
     setup_user_auth:
-      blocked_zero_hour: Vi havas urĝan mesaĝon en la retejo OpenHistoricalMap. Vi devas legi la mesaĝon antaŭ ol vi povos konservi viajn redaktojn.
+      blocked_zero_hour: Vi havas urĝan mesaĝon en la retejo OpenHistoricalMap. Vi
+        devas legi la mesaĝon antaŭ ol vi povos konservi viajn redaktojn.
   changeset_comments:
     feeds:
       show:
         title_all: Diskuto pri OpenHistoricalMap-ŝanĝaro
+        title_particular: 'Diskuto pri ŝanĝaro #%{changeset_id}'
   diary_entries:
     feed:
       all:
@@ -61,23 +68,47 @@ eo:
         title: OpenHistoricalMap taglibraj afiŝoj de %{user}
   errors:
     bad_request:
-      description: La ago – pri kiu vi petis la servilon OpenHistoricalMap – ne estas valida (HTTP 400)
+      description: La ago – pri kiu vi petis la servilon OpenHistoricalMap – ne estas
+        valida (HTTP 400)
     contact:
-      contact_the_community_html: "%{contact_link} kun la OpenHistoricalMap-komunumo, se vi trovis misligilon aŭ alian eraron. Skribu la detalan retadreson de via peto."
+      contact_the_community_html: '%{contact_link} kun la OpenHistoricalMap-komunumo,
+        se vi trovis misligilon aŭ alian eraron. Skribu la detalan retadreson de via
+        peto.'
     forbidden:
-      description: La ago, pri kiu vi petis la OpenHistoricalMap-servilon estas disponebla nur por administrantoj (HTTP 403).
+      description: La ago, pri kiu vi petis la OpenHistoricalMap-servilon estas disponebla
+        nur por administrantoj (HTTP 403).
     internal_server_error:
-      description: La OpenHistoricalMap-servilo renkontis neatenditan kondiĉon, kiu malebligis al ĝi plenumi la peton (HTTP 500).
+      description: La OpenHistoricalMap-servilo renkontis neatenditan kondiĉon, kiu
+        malebligis al ĝi plenumi la peton (HTTP 500).
     not_found:
-      description: Ne povis trovi dosieron/dosierujon/API-peton kun tiu ĉi nomo ĉe la OpenHistoricalMap-servilo (HTTP 404).
+      description: Ne povis trovi dosieron/dosierujon/API-peton kun tiu ĉi nomo ĉe
+        la OpenHistoricalMap-servilo (HTTP 404).
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: Belart-centro
+        leisure:
+          horse_riding: Rajdadejo
+          track: Kurejo
+        shop:
+          seafood: Marfrukt-vendejo
   javascripts:
     legend:
+      title: Mapklarigo
+      tooltip: Mapklarigo
       tooltip_disabled: Mapklarigo ne disponeblas por tiu ĉi tavolo
   layouts:
     intro_header: Bonvenon al OpenHistoricalMap!
-    intro_text: OpenHistoricalMap estas mapo de la mondo, kreata de homoj kiel vi, kaj libere uzebla laŭ malferma permesilo.
+    intro_text: OpenHistoricalMap estas mapo de la mondo, kreata de homoj kiel vi,
+      kaj libere uzebla laŭ malferma permesilo.
     logo:
       alt_text: Emblemo de OpenHistoricalMap
+  notes:
+    new:
+      advice: Via rimarko estas publika kaj povas esti uzita por ĝisdatigi la mapon,
+        do ne enmetu privatajn informojn kaj informojn el kopirajtaj mapoj aŭ aliaj
+        datumbazoj.
   oauth:
     scopes:
       openid: ensaluti uzante OpenHistoricalMap
@@ -88,27 +119,54 @@ eo:
       login_to_authorize_html: Ensalutu al OpenHistoricalMap por aliri %{client_app_name}.
   site:
     about:
-      lede_text: OpenHistoricalMap estas kreata de komunumo de mapigistoj kiuj aldonas kaj prizorgas datumojn pri vojoj, kursoj, kafejoj, stacidomoj kaj pli da aliaj, en la tuta mondo.
+      lede_text: OpenHistoricalMap estas kreata de komunumo de mapigistoj kiuj aldonas
+        kaj prizorgas datumojn pri vojoj, kursoj, kafejoj, stacidomoj kaj pli da aliaj,
+        en la tuta mondo.
+      used_by_html: '%{name} liveras map-datumojn por miloj da retejoj, poŝtelefonaj
+        aplikaĵoj kaj aparatoj'
     about_section:
       contribute_1_user_diaries: taglibrojn de uzantoj
       legal_1_aup: politiko de akceptata uzado
-      legal_1_html: Tiu ĉi retejo kaj aliaj servoj estas formale administrataj de la %{group_link} komisie de la komunumo. Uzado de ĉiuj OSMF‑servoj estas regulata per niaj %{terms_of_use_link}, %{aup_link} kaj %{privacy_policy_link}.
+      legal_1_html: Tiu ĉi retejo kaj aliaj servoj estas formale administrataj de
+        la %{group_link} komisie de la komunumo. Uzado de ĉiuj OSMF‑servoj estas regulata
+        per niaj %{terms_of_use_link}, %{aup_link} kaj %{privacy_policy_link}.
       legal_1_privacy_policy: privateca politiko
       legal_1_terms_of_use: kondiĉoj de uzado
-      legal_2_html: Se vi havas demandojn pri permesiloj, aŭtorrajtoj aŭ aliaj leĝaj problemoj; %{contact_team_link}.
+      legal_2_html: Se vi havas demandojn pri permesiloj, aŭtorrajtoj aŭ aliaj leĝaj
+        problemoj; %{contact_team_link}.
+    add_a_note:
+      para_1: Se vi volas nur korekti iun etan kaj vi ne havas tempon por registriĝi
+        kaj lerni redaktadon, vi povas facile aldoni rimarkon.
+    any_questions:
+      ohm_paragraph_1_html: OpenHistoricalMap havas plurajn rimedojn por lerni pri
+        la projekto, demandi kaj respondi kaj por kunlabore pridiskuti kaj dokumenti
+        mapajn temojn. Piaj informoj troviĝas %{help_link}.
     copyright:
       legal_babble:
-        contributors_footer_2_html: Inkludo de datumoj en OpenHistoricalMap ne indikas, ke la provizanto de datumoj apogas OpenHistoricalMap, garantias por iu aŭ respondumas por iu.
-        credit_1_html: 'Kiam vi uzas OpenHistoricalMap-datumojn, vi devas fari la jenajn du agojn:'
+        attribution_example:
+          title: Ekzemplo de aŭtorec-atribuado
+        contributors_footer_2_html: Inkludo de datumoj en OpenHistoricalMap ne indikas,
+          ke la provizanto de datumoj apogas OpenHistoricalMap, garantias por iu aŭ
+          respondumas por iu.
+        contributors_intro_html: 'Niaj kunlaborantoj estas miloj da homoj. Ni ankaŭ
+          inkludas datumoj laŭ malferma permesilo el landaj kartografiaj organizaĵoj
+          kaj el aliaj fontoj, inter ili:'
+        contributors_title_html: Kunlaborantoj
+        credit_1_html: 'Kiam vi uzas OpenHistoricalMap-datumojn, vi devas fari la
+          jenajn du agojn:'
         credit_2_this_copyright_page: tiu ĉi paĝo de aŭtorrajtoj
-        infringement_1_html: OHM-kunlaborantoj memoru, por ke neniam aldonu datumojn el iuj ajn fontoj protektataj de aŭtorrajtoj (ekz. Google Maps aŭ paperaj mapoj) sen klara permeso de posedanto de aŭtorrajtoj.
-        introduction_2_cc_by_url: https://creativecommons.org/licenses/by/4.0/deed.eo
+        credit_title_html: Kiel atribui aŭtorecon
+        infringement_1_html: OHM-kunlaborantoj memoru, por ke neniam aldonu datumojn
+          el iuj ajn fontoj protektataj de aŭtorrajtoj (ekz. Google Maps aŭ paperaj
+          mapoj) sen klara permeso de posedanto de aŭtorrajtoj.
         introduction_4_creative_commons: Krea Komunaĵo Atribuite-Samkondiĉe 2.0
-        introduction_4_creative_commons_url: https://creativecommons.org/licenses/by-sa/2.0/deed.eo
         more_title_html: Pliaj informoj
+      title: Aŭtorrajto kaj permesilo
     export:
       too_large:
-        body: La elektita areo estas tro granda por esti elportita kiel XML-datumojn de OpenHistoricalMap. Bonvolu pligrandigi aŭ elekti malpli grandan areon, aŭ uzi unu el sekvaj fontoj por amasa datum-elportado.
+        body: La elektita areo estas tro granda por esti elportita kiel XML-datumojn
+          de OpenHistoricalMap. Bonvolu pligrandigi aŭ elekti malpli grandan areon,
+          aŭ uzi unu el sekvaj fontoj por amasa datum-elportado.
         overpass:
           description: Elŝutas ĉi tiun areon de spegulkopio de OpenHistoricalMap datumbazo
         planet:
@@ -117,27 +175,50 @@ eo:
     fixthemap:
       how_to_help:
         join_the_community:
-          explanation_html: Se vi rimarkis iun problemon kun niaj map-datumoj, ekzemple strato aŭ adreso mankas, la plej bona rimedo estas aniĝi OpenHistoricalMap-komunumo kaj redakti kaj ripari datumojn mem.
+          explanation_html: Se vi rimarkis iun problemon kun niaj map-datumoj, ekzemple
+            strato aŭ adreso mankas, la plej bona rimedo estas aniĝi OpenHistoricalMap-komunumo
+            kaj redakti kaj ripari datumojn mem.
     help:
-      introduction: OpenHistoricalMap havas kelkajn ejojn por lerni pri la projekto, por demandi pri ion ajn kaj kune diskuti kaj dokumenti pri mapigado.
+      introduction: OpenHistoricalMap havas kelkajn ejojn por lerni pri la projekto,
+        por demandi pri ion ajn kaj kune diskuti kaj dokumenti pri mapigado.
       slack:
         title: IRC
       welcome:
         description: Komencu ekde ĉi tiu manlibreto ampleksanta fundamentojn de OpenHistoricalMap.
         title: Bonvenon al OpenHistoricalMap
+      welcomemat:
+        title: Por organizaĵoj
       wiki:
         description: Esploru la vikion por akiri detalan dokumentaron pri OHM.
         title: Vikio
     index:
       js_2: OpensStreetMap uzas Ĝavoskripton por montri ŝoveblan mapon.
     potlatch:
-      removed: Via implicita OpenHistoricalMap‑reaktilo estas Potlatch. Pro la fakto, ke Adobe Flash Player estis eksigita, la redaktilo Potlatch ne estas plu uzebla per retfoliumilo.
+      removed: Via implicita OpenHistoricalMap‑reaktilo estas Potlatch. Pro la fakto,
+        ke Adobe Flash Player estis eksigita, la redaktilo Potlatch ne estas plu uzebla
+        per retfoliumilo.
     welcome:
       basic_terms:
-        paragraph_1: OpenHistoricalMap havas sian propran ĵargonon. Jen estas kelkaj utilaj terminoj.
-      introduction: Bonvenon al OpenHistoricalMap, la libera kaj redaktebla mapo de la mondo. Nun kiam vi registriĝis, vi povas ekigi mapigadon. Jen estas mallonga manlibreto kun la plej gravaj aĵoj kiuj vi povas scii.
+        a_tag_html: '%{tag} estas kolekto de datumoj priskribanta nodon aŭ linion,
+          kiel nomo de restoracio aŭ rapidlimo de vojo.'
+        paragraph_1: OpenHistoricalMap havas sian propran ĵargonon. Jen estas kelkaj
+          utilaj terminoj.
+      introduction: Bonvenon al OpenHistoricalMap, la libera kaj redaktebla mapo de
+        la mondo. Nun kiam vi registriĝis, vi povas ekigi mapigadon. Jen estas mallonga
+        manlibreto kun la plej gravaj aĵoj kiuj vi povas scii.
       rules:
-        para_1_html: OpenHistoricalMap havas kelkajn formalajn regulojn, sed ni esperas, ke ĉiuj partoprenantoj kunlaboru kune kaj komunikiĝu ene la komunumo. Se vi konsideras kontribuon alian ol permana redakto, legu regulojn pri %{imports_link} kaj %{automated_edits_link}.
+        para_1_html: OpenHistoricalMap havas kelkajn formalajn regulojn, sed ni esperas,
+          ke ĉiuj partoprenantoj kunlaboru kune kaj komunikiĝu ene la komunumo. Se
+          vi konsideras kontribuon alian ol permana redakto, legu regulojn pri %{imports_link}
+          kaj %{automated_edits_link}.
+      whats_on_the_map:
+        off_the_map_html: Estas %{doesnt} aldoni al la mapo personajn taksojn, eksajn
+          aŭ malcertajn objektojn kaj datumojn el fontoj protektataj de aŭtorrajto.
+          Escepte se vi estas permesita, ne kopiu datumojn el aliaj interretaj aŭ
+          paperaj mapoj.
+  time:
+    formats:
+      friendly: '%e %B %Y je %H:%M'
   traces:
     feeds:
       show:
@@ -152,48 +233,64 @@ eo:
   user_mailer:
     changeset_comment_notification:
       commented:
-        subject_other: "[OpenHistoricalMap] %{commenter} komentis ŝanĝaron pri kiu vi interesiĝas"
-        subject_own: "[OpenHistoricalMap] %{commenter} komentis vian ŝanĝaron"
+        subject_other: '[OpenHistoricalMap] %{commenter} komentis ŝanĝaron pri kiu
+          vi interesiĝas'
+        subject_own: '[OpenHistoricalMap] %{commenter} komentis vian ŝanĝaron'
       description: 'OpenHistoricalMap: ŝanĝaro %{id}'
     diary_comment_notification:
       description: 'OpenHistoricalMap: taglibra afiŝo %{id}'
-      header: "%{from_user} komentis pri la OpenHistoricalMap-taglibra afiŝo kun la temo %{subject}:"
-      header_html: "%{from_user} komentis pri la OpenHistoricalMap-taglibra afiŝo kun la temo %{subject}:"
-      subject: "[OpenHistoricalMap] %{user} komentis pri taglibra afiŝo"
+      header: '%{from_user} komentis pri la OpenHistoricalMap-taglibra afiŝo kun la
+        temo %{subject}:'
+      header_html: '%{from_user} komentis pri la OpenHistoricalMap-taglibra afiŝo
+        kun la temo %{subject}:'
+      subject: '[OpenHistoricalMap] %{user} komentis pri taglibra afiŝo'
     email_confirm:
-      subject: "[OpenHistoricalMap] Konfirmado de retpoŝtadreso"
+      subject: '[OpenHistoricalMap] Konfirmado de retpoŝtadreso'
     gpx_failure:
-      subject: "[OpenHistoricalMap] Eraro dum enportado de GPX-dosiero"
+      subject: '[OpenHistoricalMap] Eraro dum enportado de GPX-dosiero'
     gpx_success:
-      subject: "[OpenHistoricalMap] GPX-dosiero enportita sukcese"
+      subject: '[OpenHistoricalMap] GPX-dosiero enportita sukcese'
     lost_password:
-      hopefully_you: Iu (espereble vi) volas restarigi la pasvorton por konto je openhistoricalmap.org por tiu ĉi retpoŝtadreso.
-      subject: "[OpenHistoricalMap] Peto pri restarigo de pasvorto"
+      hopefully_you: Iu (espereble vi) volas restarigi la pasvorton por konto je openhistoricalmap.org
+        por tiu ĉi retpoŝtadreso.
+      subject: '[OpenHistoricalMap] Peto pri restarigo de pasvorto'
     message_notification:
-      header: "%{from_user} sendis al vi mesaĝon tra OpenHistoricalMap kun la temo %{subject}:"
-      header_html: "%{from_user} Sendis al vi mesaĝon per OpenHistoricalMap kun la temo %{subject}"
-      subject: "[OpenHistoricalMap] %{message_title}"
+      header: '%{from_user} sendis al vi mesaĝon tra OpenHistoricalMap kun la temo
+        %{subject}:'
+      header_html: '%{from_user} Sendis al vi mesaĝon per OpenHistoricalMap kun la
+        temo %{subject}'
+      subject: '[OpenHistoricalMap] %{message_title}'
     note_comment_notification:
       closed:
-        subject_other: "[OpenHistoricalMap] %{commenter} solvis rimarkon pri kiu vi interesiĝas"
-        subject_own: "[OpenHistoricalMap] %{commenter} solvis vian rimarkon"
+        subject_other: '[OpenHistoricalMap] %{commenter} solvis rimarkon pri kiu vi
+          interesiĝas'
+        subject_own: '[OpenHistoricalMap] %{commenter} solvis vian rimarkon'
       commented:
-        subject_other: "[OpenHistoricalMap] %{commenter} komentis rimarkon pri kiu vi interesiĝas"
-        subject_own: "[OpenHistoricalMap] %{commenter} komentis vian rimarkon"
+        subject_other: '[OpenHistoricalMap] %{commenter} komentis rimarkon pri kiu
+          vi interesiĝas'
+        subject_own: '[OpenHistoricalMap] %{commenter} komentis vian rimarkon'
       description: 'OpenHistoricalMap: rimarko %{id}'
       reopened:
-        subject_other: "[OpenHistoricalMap] %{commenter} remalfermis rimarkon pri kiu vi interesiĝis"
-        subject_own: "[OpenHistoricalMap] %{commenter} remalfermis vian rimarkon"
+        subject_other: '[OpenHistoricalMap] %{commenter} remalfermis rimarkon pri
+          kiu vi interesiĝis'
+        subject_own: '[OpenHistoricalMap] %{commenter} remalfermis vian rimarkon'
     signup_confirm:
-      subject: "[OpenHistoricalMap] Bonvenon al OpenHistoricalMap"
+      subject: '[OpenHistoricalMap] Bonvenon al OpenHistoricalMap'
   users:
     auth_association:
       heading: Via identigilo ne estas ankoraŭ kunligita kun OpenHistoricalMap-konto.
-      option_1: Se vi estas unuafoje je OpenHistoricalMap, bonvolu krei novan konton per la jena formularo.
+      option_1: Se vi estas unuafoje je OpenHistoricalMap, bonvolu krei novan konton
+        per la jena formularo.
     new:
       about:
-        paragraph_1: Malkiel aliaj mapoj, OpenHistoricalMap estas tute kreata de homoj kiel vi kaj ĉiu povas libere korekti, aktualigi, elŝuti kaj uzi ĝin.
+        paragraph_1: Malkiel aliaj mapoj, OpenHistoricalMap estas tute kreata de homoj
+          kiel vi kaj ĉiu povas libere korekti, aktualigi, elŝuti kaj uzi ĝin.
+        paragraph_2: Registriĝu por komenci kontribui al la projekto.
         welcome: Bonvenon al OpenHistoricalMap
-      duplicate_social_email: Se vi jam havas konton OpenHistoricalMap kaj volas uzi aŭtentokontrolon de ekstera liveranto, ensalutu uzante vian pasvorton kaj modifu agordojn de via konto.
-      please_contact_support_html: Kontaktu la %{support_link} por renkonti por krei konton – ni provos kiel eble plej rapide respondi vian peton.
+      duplicate_social_email: Se vi jam havas konton OpenHistoricalMap kaj volas uzi
+        aŭtentokontrolon de ekstera liveranto, ensalutu uzante vian pasvorton kaj
+        modifu agordojn de via konto.
+      please_contact_support_html: Kontaktu la %{support_link} por renkonti por krei
+        konton – ni provos kiel eble plej rapide respondi vian peton.
       signup_to_authorize_html: Registriĝu al OpenHistoricalMap por aliri %{client_app_name}.
+...

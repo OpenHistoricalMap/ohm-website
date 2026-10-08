@@ -1,35 +1,89 @@
 # Messages for Pashto (پښتو)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Af420
 # Author: Ahmed-Najib-Biabani-Ibrahimkhel
 # Author: Ajeje Brazorf
 # Author: Amjad Khan
+# Author: Wadan.ss
+# Author: باران
 # Author: شاه زمان پټان
-# Do not edit by hand.
+---
 ps:
+  accounts:
+    auth_deletions:
+      show:
+        body: د %{provider} پېژند  %{id} لپاره اومتوکي په %{time} لرې شول او د اړوند
+          OpenHistoricalMap گڼون څخه جلا شول.
+    deletions:
+      show:
+        delete_introduction: 'تاسو کولی شئ د لاندې تڼۍ کارولو سره خپل د OpenHistoricalMap
+          گڼون ړنگ کړئ. مهرباني وکړئ لاندې سپيناوی پام کې ونيسئ:'
+        retain_caveats: 'په هرصورت، ستاسو اړوند ځينې مالومات به په OpenHistoricalMap
+          کې ستاسو له گڼون ړنگولو وروسته هم پاتې شي:'
+    terms:
+      show:
+        read and accept with tou: مهرباني وکړئ د ونډه‌اخیستونکي تړون او د کارولو منښتونه
+          ولولئ، له بشپړېدو وروسته دواړه چک‌بکسونه وټاکئ او بیا د دوام تڼۍ کېکاږئ.
+        tou_explain:
+          html: دا %{tou_link} د OpenHistoricalMap له خوا چمتو شوې وېبپاڼې او نورو
+            زیربناوو کارول تنظیموي. مهرباني وکړئ تړونی کېکاږئ، ليک ولولئ او ورسره
+            همغږي وښاياست.
+  api:
+    notes:
+      rss:
+        title: د OpenHistoricalMap یادښتونه
+  application:
+    auth_providers:
+      openstreetmap:
+        alt: د پرانېستې‌کوڅې‌نخشې نښان
+        title: د پرانېستې‌کوڅې‌نخشې سره ننوتل
+    setup_user_auth:
+      blocked_zero_hour: تاسو د OpenHistoricalMap په وېبپاڼه کې یو بېړنی پیغام لرئ.
+        مخکې له دې چې خپلې سمونونه خوندي کړئ، باید دا پیغام ولولئ.
   auth:
     providers:
       openstreetmap: پرانېستې‌کوڅې‌نخچه
+  changeset_comments:
+    feeds:
+      show:
+        title_all: د OpenHistoricalMap د بدلون‌ټولگې شننه
+        title_particular: 'د OpenHistoricalMap بدلون‌ټولگې #%{changeset_id} شننه'
   date:
     formats:
-      brief: "%{year}"
-      brief_bce: "%{year} مخزېږديز"
-      brief_ce: "%{year} زېږديز"
-      range: "%{start} – %{end}"
+      brief: '%{year}'
+      brief_bce: '%{year} مخزېږديز'
+      brief_ce: '%{year} زېږديز'
+      range: '%{start} – %{end}'
+  diary_entries:
+    feed:
+      all:
+        description: د OpenHistoricalMap د کارنانو ورځنۍ وروستۍ ننوتنې
+        title: د OpenHistoricalMap ورځنۍ ننوتنې
+      language:
+        description: په %{language_name} ژبه کې د OpenHistoricalMap د کارنانو ورځنۍ
+          وروستۍ ننوتنې
   geocoder:
     search_osm_nominatim:
-      suffix_format: "[%{dates}]"
+      suffix_format: '[%{dates}]'
+  preferences:
+    preferences:
+      navigation:
+        preferences: غوره‌توبونه
   site:
     copyright:
       legal_babble:
-        credit_1_html: موږ غواړو چې تاسو کریډیټ وکاروي لپاره &ldquo;&copy; د اوفن سټریټ ميپ مرسته کوونکی&rdquo;.
+        credit_1_html: موږ غواړو چې تاسو کریډیټ وکاروي لپاره &ldquo;&copy; د اوفن
+          سټریټ ميپ مرسته کوونکی&rdquo;.
   time:
     formats:
-      friendly: "%B %e, %Y په %H:%M"
+      friendly: '%B %e, %Y په %H:%M'
   traces:
     show:
       edit: سمول
       edit_trace: دا څارنه سمول
+      map: نخشه
     trace:
       edit_map: نخشه سمول
       view_map: نخشه کتل
+...

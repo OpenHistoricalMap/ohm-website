@@ -1,14 +1,60 @@
 # Messages for Egyptian Arabic (مصرى)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Ajeje Brazorf
 # Author: Meno25
 # Author: علاء
-# Do not edit by hand.
+---
 arz:
+  diary_entries:
+    feed:
+      all:
+        description: المدخلات الحديثه فى يوميه مستخدمى خريطه الشارع المفتوحة
+        title: مدخلات اليوميه فى خريطه الشارع المفتوحة
+      language:
+        description: المدخلات الحديثه فى يوميه مستخدمى خريطه الشارع المفتوحه باللغه
+          %{language_name}
+        title: مدخلات يوميه خريطه الشارع المفتوحه باللغه %{language_name}
+      user:
+        description: المدخلات الحديثه فى يوميه خريطه الشارع المفتوحه بواسطه المستخدم
+          %{user}
+        title: مدخلات يوميه خريطه الشارع المفتوحه للمستخدم %{user}
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: مركز فني/ثقافي
+        leisure:
+          track: مضمار سباق
+  layouts:
+    logo:
+      alt_text: شعار خريطه الشارع المفتوحة
+  site:
+    index:
+      js_2: خريطه الشارع المفتوحه تستخدم جافا سكريبت لخريطتها المنزلقه.
+  traces:
+    show:
+      edit: عدّل
+      edit_trace: عدّل هذا الأثر
+      map: خريطة
+    trace:
+      edit_map: عدّل الخريطة
+      view_map: اعرض الخريطة
   user_mailer:
+    diary_comment_notification:
+      header: '%{from_user} علّق على مدخلتك اليوميه الحديثه فى خريطه الشارع المفتوحه
+        بالعنوان %{subject}:'
+      subject: '[خريطه الشارع المفتوحة] %{user} أضاف تعليقًا على مدخلتك فى اليومية'
     email_confirm:
-      subject: "[OpenHistoricalMap] أكد عنوان البريد الإلكتروني الخاص بك"
+      subject: '[OpenHistoricalMap] أكد عنوان البريد الإلكتروني الخاص بك'
+    gpx_failure:
+      subject: '[خريطه الشارع المفتوحة] فشل استيراد جى بى إكس'
+    gpx_success:
+      subject: '[خريطه الشارع المفتوحة] نجاح استيراد جى بى إكس'
     lost_password:
-      subject: "[OpenHistoricalMap] طلب إعادة تعيين كلمة المرور"
+      subject: '[OpenHistoricalMap] طلب إعادة تعيين كلمة المرور'
     message_notification:
-      header: "%{from_user} بعث لك رسالة من خلال OpenHistoricalMap مع الموضوع %{subject}:"
+      header: '%{from_user} بعث لك رسالة من خلال OpenHistoricalMap مع الموضوع %{subject}:'
+    signup_confirm:
+      subject: '[خريطه الشارع المفتوحه] اهلا بيك فى اوبن ستريت ماب'
+...

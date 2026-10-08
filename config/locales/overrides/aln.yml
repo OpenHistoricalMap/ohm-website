@@ -1,5 +1,6 @@
 # Messages for Gheg Albanian (Gegë)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Albiona
 # Author: Alket
 # Author: Ardian
@@ -16,7 +17,7 @@
 # Author: Minh Nguyen
 # Author: Nemo bis
 # Author: 아라
-# Do not edit by hand.
+---
 aln:
   diary_entries:
     feed:
@@ -24,11 +25,19 @@ aln:
         description: Shënimet mat fundit të ditarit nga anëtarët e OpenHistoricalMap
         title: hyra OpenHistoricalMap ditar
       language:
-        description: shënimeve ditar nga përdoruesit e fundit të OpenHistoricalMap në %{language_name}
+        description: shënimeve ditar nga përdoruesit e fundit të OpenHistoricalMap
+          në %{language_name}
         title: shënimet në ditar OpenHistoricalMap në %{language_name}
       user:
         description: shënimet e fundit OpenHistoricalMap ditar nga %{user}
         title: hyra OpenHistoricalMap ditar për %{user}
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: Art Qendra
+        leisure:
+          track: traka e vrapimit
   layouts:
     logo:
       alt_text: logo e OpenHistoricalMap
@@ -38,8 +47,17 @@ aln:
   site:
     copyright:
       legal_babble:
-        contributors_footer_2_html: Përfshirja e të dhënave në OpenHistoricalMap nuk do të thotë që origjinal dhënave miraton ofrues OpenHistoricalMap, ofron çdo garanci ose pranon ndonjë përgjegjësi.
-        contributors_intro_html: licencë CC BY-SA jonë kërkon që ju të "japin origjinal Author kredi të arsyeshme për të mesëm ose të thotë Ti je shfrytëzuar". Individuale mappers OHM nuk kërkojnë një kreditit mbi dhe më lart që të "OpenHistoricalMap kontribuesit ", por kur të dhënat nga një hartës kombëtare agjenci ose burim kryesor ka qenë i përfshirë në  OpenHistoricalMap, ai mund të jetë e arsyeshme për kredi nga ana e tyre direkt riprodhimin e kreditit e tyre apo duke i lidhur me të në këtë faqe.
+        contributors_footer_2_html: Përfshirja e të dhënave në OpenHistoricalMap nuk
+          do të thotë që origjinal dhënave miraton ofrues OpenHistoricalMap, ofron
+          çdo garanci ose pranon ndonjë përgjegjësi.
+        contributors_intro_html: licencë CC BY-SA jonë kërkon që ju të "japin origjinal
+          Author kredi të arsyeshme për të mesëm ose të thotë Ti je shfrytëzuar".
+          Individuale mappers OHM nuk kërkojnë një kreditit mbi dhe më lart që të
+          "OpenHistoricalMap kontribuesit ", por kur të dhënat nga një hartës kombëtare
+          agjenci ose burim kryesor ka qenë i përfshirë në  OpenHistoricalMap, ai
+          mund të jetë e arsyeshme për kredi nga ana e tyre direkt riprodhimin e kreditit
+          e tyre apo duke i lidhur me të në këtë faqe.
+        contributors_title_html: kontribuesit tona
         credit_1_html: |-
           Nëse jeni duke përdorur harta imazhe OpenHistoricalMap, ne kërkojmë që
             kreditit tuaj lexon të paktën "© OpenHistoricalMap
@@ -48,24 +66,40 @@ aln:
             CC BY-SA ".
         credit_title_html: Si të kreditit OpenHistoricalMap
         more_title_html: Gjetja më shumë
+      title: Copyright
     export:
       too_large:
-        body: Kjo zonë është shum e madhe që të eksportohet si XML në OpenHistoricalMap. Të lutna afroje ma ngat ose mere një zonë ma të vogel.
+        body: Kjo zonë është shum e madhe që të eksportohet si XML në OpenHistoricalMap.
+          Të lutna afroje ma ngat ose mere një zonë ma të vogel.
     index:
       js_2: OpenHistoricalMap përdor Java skriptet për planet e saj të rrëshqitshëm.
+  time:
+    formats:
+      friendly: '%e %B %Y te %H:%M'
+  traces:
+    show:
+      edit: ndrysho
+      edit_trace: Ndrysho kët gjurm
+      map: harta
+    trace:
+      edit_map: Ndryshoje Harten
+      view_map: Kshyre Hartën
   user_mailer:
     diary_comment_notification:
-      header: "%{from_user} ka komentu në shënimin tond të fundit në ditar tek OpenHistoricalMap me titullin %{subject}:"
-      subject: "[OpenHistoricalMap] %{user} ka komentu në shënimin tond të ditarit"
+      header: '%{from_user} ka komentu në shënimin tond të fundit në ditar tek OpenHistoricalMap
+        me titullin %{subject}:'
+      subject: '[OpenHistoricalMap] %{user} ka komentu në shënimin tond të ditarit'
     email_confirm:
-      subject: "[OpenHistoricalMap] Konfirmoje email adresën tonde"
+      subject: '[OpenHistoricalMap] Konfirmoje email adresën tonde'
     gpx_failure:
-      subject: "[OpenHistoricalMap] te re dështimit Import"
+      subject: '[OpenHistoricalMap] te re dështimit Import'
     gpx_success:
-      subject: "[OpenHistoricalMap] Import sukses te re"
+      subject: '[OpenHistoricalMap] Import sukses te re'
     lost_password:
-      subject: "[OpenHistoricalMap] kërkesës Password reset"
+      subject: '[OpenHistoricalMap] kërkesës Password reset'
     message_notification:
-      header: "%{from_user} ju ka dërgu një mesazh përmes OpenHistoricalMap me titullin %{subject}:"
+      header: '%{from_user} ju ka dërgu një mesazh përmes OpenHistoricalMap me titullin
+        %{subject}:'
     signup_confirm:
-      subject: "[OpenHistoricalMap] Konfirmoje email adresën tonde"
+      subject: '[OpenHistoricalMap] Konfirmoje email adresën tonde'
+...
