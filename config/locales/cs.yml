@@ -110,7 +110,7 @@ cs:
             visibility:
               cannot_change_to_legacy: nelze nastavit zpět na zastaralou hodnotu
     models:
-      acl: Seznam přístupových práv
+      acl: ACL
       changeset: Sada změn
       changeset_tag: Tag sady změn
       country: Země
@@ -146,6 +146,12 @@ cs:
       way_node: Uzel cesty
       way_tag: Tag cesty
     attributes:
+      acl:
+        address: Adresa
+        domain: Doména
+        mx: MX server
+        k: Klíč
+        v: Hodnota
       diary_comment:
         body: Text
       diary_entry:
@@ -208,6 +214,13 @@ cs:
         pass_crypt: Heslo
         pass_crypt_confirmation: Potvrdit heslo
     help:
+      acl:
+        address: IP adresa nebo CIDR síť, např. 192.0.2.0/24
+        domain: E-mailová doména; porovnávají se i subdomény
+        mx: Název hostitele pro MX serveru e-mailové domény
+        k: 'Jedno z: no_account_creation, allow_account_creation, no_note_comment,
+          no_trace_download'
+        v: Nepovinná poznámka, např. zdůvodnění tohoto záznamu
       doorkeeper/application:
         confidential: Aplikace bude používána takovým způsobem, že bude možno uchovat
           důvěrnost tajemství klienta (nativní mobilní aplikace a single-page aplikace
@@ -811,6 +824,8 @@ cs:
       nearby_changesets: sady změn uživatelů poblíž
       nearby_diaries: záznamy v denících uživatelů poblíž
   notifications:
+    missing_record:
+      body: Tohle už bohužel není dostupné
     index:
       title: Upozornění
       no_notifications: Momentálně nemáte žádná upozornění
@@ -1232,7 +1247,7 @@ cs:
         craft:
           beekeeper: Včelař
           blacksmith: Kovář
-          brewery: Pivovar
+          brewery: Minipivovar
           carpenter: Tesařství
           caterer: Kuchař
           confectionery: Cukrovinky
@@ -1353,7 +1368,7 @@ cs:
           tomb: Náhrobek
           tower: Věž
           wayside_chapel: Kaplička u cesty
-          wayside_cross: Boží muka
+          wayside_cross: Kříž u cesty
           wayside_shrine: Boží muka
           wreck: Vrak
           "yes": Historické místo
@@ -3410,6 +3425,11 @@ cs:
       help: Nápověda
     pagination:
       label: Stránkovací navigace
+      acls:
+        older: Starší ACL
+        newer: Novější ACL
+        oldest: Nejstarší ACL
+        newest: Nejnovější ACL
       changeset_comments:
         older: Starší komentáře
         newer: Novější komentáře
@@ -3985,18 +4005,18 @@ cs:
       tooltip: Legenda
       tooltip_disabled: Pro tuto vrstvu není legenda dostupná
     map:
-      map:
-        title: Mapa
-        marker:
-          title: Značka na mapě
-      popup:
-        close: Zavřít
-      navigation_control:
-        zoom_in: Přiblížit
-        zoom_out: Oddálit
-      geolocate_control:
-        find_my_location: Ukázat moji polohu
-        location_not_available: Poloha není k dispozici
+      Map:
+        Title: Mapa
+      Marker:
+        Title: Značka na mapě
+      Popup:
+        Close: Zavřít
+      NavigationControl:
+        ZoomIn: Přiblížit
+        ZoomOut: Oddálit
+      GeolocateControl:
+        FindMyLocation: Ukázat moji polohu
+        LocationNotAvailable: Poloha není k dispozici
         metersPopup:
           one: Od tohoto bodu jste méně než %{count} metr
           few: Od tohoto bodu jste méně než %{count} metry
@@ -4007,8 +4027,8 @@ cs:
           few: Od tohoto bodu jste méně než %{count} stopy
           many: Od tohoto bodu jste méně než %{count} stopy
           other: Od tohoto bodu jste méně než %{count} stop
-      attribution_control:
-        toggle_attribution: Přepnout uvedení zdroje
+      AttributionControl:
+        ToggleAttribution: Přepnout uvedení zdroje
       base:
         standard: Standardní
         cycle_map: Cyklomapa
@@ -4199,11 +4219,43 @@ cs:
         verzí patřících do této redakce.
       flash: Redakce zničena.
       error: Došlo k chybě při ničení této redakce.
+  acls:
+    navigation:
+      new_title: Přidat nový ACL
+      new: Nový ACL
+      actions: Akce s ACL
+    index:
+      title: ACL
+      empty: Žádné ACL k zobrazení.
+    page:
+      address: Adresa
+      domain: Doména
+      mx: MX server
+      k: Klíč
+      v: Hodnota
+      actions: Akce
+    acl:
+      edit_button: Upravit
+      destroy_button: Smazat
+      confirm: Jste si jisti?
+    form:
+      cancel: Storno
+    new:
+      title: Nový ACL
+    create:
+      success: ACL vytvořen.
+    edit:
+      title: Úprava ACL
+    update:
+      success: ACL upraveno.
+    destroy:
+      success: ACL smazáno.
   validations:
     leading_whitespace: začíná bílými znaky
     trailing_whitespace: končí bílými znaky
     invalid_characters: obsahuje neplatné znaky
     url_characters: obsahuje zvláštní znaky pro URL (%{characters})
+    email_characters: obsahuje neplatné znaky (%{characters})
   moderation_zones:
     navigation:
       new_title: Definovat novou moderační zónu
