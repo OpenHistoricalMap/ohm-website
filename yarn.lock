@@ -388,9 +388,9 @@
     which-polygon "2.2.1"
 
 "@openhistoricalmap/map-styles@^0.9.19":
-  version "0.9.20"
-  resolved "https://registry.yarnpkg.com/@openhistoricalmap/map-styles/-/map-styles-0.9.20.tgz#fdae9f19eb360d3ded263dffe723faeb1d160215"
-  integrity sha512-EeemLzb9p1UUHWbg6XwLN6ZF6477A9zfOFB6yljeiWIzb4z9TOXrPXImgHfngyINUJ4Z2KFyj00KJvpMePCNrw==
+  version "0.9.21"
+  resolved "https://registry.yarnpkg.com/@openhistoricalmap/map-styles/-/map-styles-0.9.21.tgz#2debbde32336b22256a83c9e687d824710af27d3"
+  integrity sha512-XZmekdh8JF4e5BL/JpwrUsN2cma0fokUKdPXEutHkpkDnvq+dpoin3FsqQqmll7NUAbgsI+i0xJvBAJ5l9fP5A==
   dependencies:
     camelcase "^9.0.0"
     fs-extra "^11.3.4"
