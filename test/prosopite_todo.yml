@@ -1,0 +1,26 @@
+# Files with known N+1 queries, which prosopite allows in tests when any of
+# these files is in the call stack.
+#
+# Please don't add to this list - instead fix any N+1 queries by using
+# `includes` or `preload`. Remove files from the list once they are fixed.
+
+- app/controllers/issues_controller.rb
+- app/helpers/user_helper.rb
+- app/models/node.rb
+- app/models/old_node.rb
+- app/models/old_relation.rb
+- app/models/old_way.rb
+- app/models/relation.rb
+- app/models/user_block.rb
+- app/models/user_notification_preferences.rb
+- app/models/user.rb
+- app/models/way.rb
+- app/views/api/users/_user.json.jbuilder
+- app/views/api/users/_user.xml.builder
+- app/views/diary_entries/_diary_entry.html.erb
+- app/views/diary_entries/_profile_diaries.html.erb
+- app/views/notes/index.html.erb
+- app/views/notifications/_notification.html.erb
+- app/views/oauth2_authorized_applications/_application.html.erb
+- app/views/users/diary_comments/_page.html.erb
+- lib/diff_reader.rb

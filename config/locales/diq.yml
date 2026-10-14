@@ -979,6 +979,10 @@ diq:
       public_traces: Pêron rê akerde rêçê GPS
       public_traces_from: '%{user} ra pêron rê akerde rêçê GPS'
       tagged_with: '%{tags} ya etiketyayo'
+    legacy_visibilities:
+      edit:
+        confirmation:
+          cancel: Bıtexelne
   application:
     share:
       share:
@@ -1108,9 +1112,9 @@ diq:
     share:
       title: Vıla ke
     map:
-      navigation_control:
-        zoom_in: Nêzdi ke
-        zoom_out: Dûri fiye
+      NavigationControl:
+        ZoomIn: Nêzdi ke
+        ZoomOut: Dûri fiye
       base:
         standard: Standard
         cycle_map: Xeritay Topoğrafiki
@@ -1125,4 +1129,7 @@ diq:
       description: 'Şınasnayış:'
       user: Vıraştoğ
       confirm: Şıma bêgumanê?
+  acls:
+    form:
+      cancel: Bıtexelne
 ...

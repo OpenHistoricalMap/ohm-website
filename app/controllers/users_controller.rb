@@ -51,68 +51,69 @@ class UsersController < ApplicationController
     elsif params.key?(:auth_provider) && params.key?(:auth_uid)
       @email_hmac = params[:email_hmac]
 
-      self.current_user = User.new(:email => params[:email],
-                                   :display_name => params[:nickname],
-                                   :auth_provider => params[:auth_provider],
-                                   :auth_uid => params[:auth_uid])
+      @user = User.new(
+        :email => params[:email],
+        :display_name => params[:nickname],
+        :auth_provider => params[:auth_provider],
+        :auth_uid => params[:auth_uid]
+      )
 
-      if current_user.valid? || current_user.errors[:email].empty?
+      if @user.valid? || @user.errors[:email].empty?
         flash.now[:notice] = render_to_string :partial => "auth_association"
       else
         flash.now[:warning] = t ".duplicate_social_email"
       end
     elsif check_signup_allowed?
-      self.current_user = User.new
+      @user = User.new
     else
       render :action => "blocked"
     end
   end
 
   def create
-    self.current_user = User.new(user_params)
+    @user = User.new(user_params)
 
-    if check_signup_allowed?(current_user.email)
-      if current_user.auth_uid.present?
-        # We are creating an account with external authentication and
-        # no password was specified so create a random one
-        current_user.pass_crypt = SecureRandom.base64(16)
-        current_user.pass_crypt_confirmation = current_user.pass_crypt
-      end
+    if @user.auth_uid.present?
+      # We are creating an account with external authentication and
+      # no password was specified so create a random one
+      @user.pass_crypt = SecureRandom.base64(16)
+      @user.pass_crypt_confirmation = @user.pass_crypt
+    end
 
-      if current_user.invalid?
-        # Something is wrong with a new user, so rerender the form
-        render :action => "new"
-      elsif Settings.turnstile_site_key && !valid_turnstile_response?(params["cf-turnstile-response"])
-        # Invalid turnstile response, so rerender the form
-        flash.now[:error] = t ".not_human"
-        render :action => "new"
-      else
-        # Save the user record
-        if save_new_user params[:email_hmac]
-          SIGNUP_IP_LIMITER&.update(request.remote_ip)
-          SIGNUP_EMAIL_LIMITER&.update(canonical_email(current_user.email))
-
-          flash[:matomo_goal] = Settings.matomo["goals"]["signup"] if defined?(Settings.matomo)
-
-          referer = welcome_path(welcome_options(params[:referer]))
-
-          if current_user.status == "active"
-            successful_login(current_user, referer)
-          else
-            session[:pending_user] = current_user.id
-            UserMailer.with(
-              :user => current_user,
-              :token => current_user.generate_token_for(:new_user),
-              :referer => referer
-            ).signup_confirm.deliver_later
-            redirect_to :controller => :confirmations, :action => :confirm, :display_name => current_user.display_name
-          end
-        else
-          render :action => "new", :referer => params[:referer]
-        end
-      end
-    else
+    if @user.invalid?
+      # Something is wrong with a new user, so rerender the form
+      render :action => "new"
+    elsif Settings.turnstile_site_key && !valid_turnstile_response?(params["cf-turnstile-response"])
+      # Invalid turnstile response, so rerender the form
+      flash.now[:error] = t ".not_human"
+      render :action => "new"
+    elsif !check_signup_allowed?(@user.email)
+      # Email is blocked
       render :action => "blocked"
+    else
+      # Save the user record
+      if save_new_user(@user, params[:email_hmac])
+        RateLimiter.signup_ip_limiter.update(request.remote_ip)
+        RateLimiter.signup_email_limiter.update(canonical_email(@user.email))
+
+        flash[:matomo_goal] = Settings.matomo["goals"]["signup"] if defined?(Settings.matomo)
+
+        referer = welcome_path(welcome_options(params[:referer]))
+
+        if @user.status == "active"
+          successful_login(@user, referer)
+        else
+          session[:pending_user] = @user.id
+          UserMailer.with(
+            :user => @user,
+            :token => @user.generate_token_for(:new_user),
+            :referer => referer
+          ).signup_confirm.deliver_later
+          redirect_to :controller => :confirmations, :action => :confirm, :display_name => @user.display_name
+        end
+      else
+        render :action => "new", :referer => params[:referer]
+      end
     end
   end
 
@@ -199,27 +200,28 @@ class UsersController < ApplicationController
 
   private
 
-  def save_new_user(email_hmac)
-    current_user.data_public = true
-    current_user.description = "" if current_user.description.nil?
-    current_user.creation_address = request.remote_ip
-    current_user.languages = if request.cookies["_osm_locale"]
-                               Locale.list(request.cookies["_osm_locale"])
-                             else
-                               http_accept_language.user_preferred_languages
-                             end
-    current_user.terms_agreed = Time.now.utc
-    current_user.tou_agreed = Time.now.utc
-    current_user.terms_seen = true
+  def save_new_user(user, email_hmac)
+    user.data_public = true
+    user.description = "" if user.description.nil?
+    user.creation_address = request.remote_ip
+    user.languages =
+      if request.cookies["_osm_locale"]
+        Locale.list(request.cookies["_osm_locale"])
+      else
+        http_accept_language.user_preferred_languages
+      end
+    user.terms_agreed = Time.now.utc
+    user.tou_agreed = Time.now.utc
+    user.terms_seen = true
 
-    if current_user.auth_uid.blank?
-      current_user.auth_provider = nil
-      current_user.auth_uid = nil
-    elsif email_hmac && ActiveSupport::SecurityUtils.secure_compare(email_hmac, UsersController.message_hmac(current_user.email))
-      current_user.activate
+    if user.auth_uid.blank?
+      user.auth_provider = nil
+      user.auth_uid = nil
+    elsif email_hmac && ActiveSupport::SecurityUtils.secure_compare(email_hmac, UsersController.message_hmac(user.email))
+      user.activate
     end
 
-    current_user.save
+    user.save
   end
 
   def welcome_options(referer = nil)
@@ -264,9 +266,9 @@ class UsersController < ApplicationController
 
     blocked = Acl.no_account_creation?(request.remote_ip, :domain => domain, :mx => mx_servers)
 
-    blocked ||= SIGNUP_IP_LIMITER && !SIGNUP_IP_LIMITER.allow?(request.remote_ip)
+    blocked ||= !RateLimiter.signup_ip_limiter.allow?(request.remote_ip)
 
-    blocked ||= email && SIGNUP_EMAIL_LIMITER && !SIGNUP_EMAIL_LIMITER.allow?(canonical_email(email))
+    blocked ||= email && !RateLimiter.signup_email_limiter.allow?(canonical_email(email))
 
     logger.info "Blocked signup from #{request.remote_ip} for #{email}" if blocked
 
