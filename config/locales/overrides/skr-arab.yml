@@ -1,21 +1,32 @@
 # Messages for Saraiki (Arabic script) (سرائیکی)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Ajeje Brazorf
 # Author: Saraiki
 # Author: Sayam Asjad
 # Author: Umar Shahid
-# Do not edit by hand.
+---
 skr-arab:
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: آرٹس سنٹر
+        leisure:
+          horse_riding: گھڑ سواری مرکز
   site:
     about_section:
       legal_1_privacy_policy: رازداری پالیسی
-      legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
     help:
       slack:
         title: آئی آر سی
+  time:
+    formats:
+      friendly: '%e %B %Yتے %H:%M'
   traces:
     show:
       edit: تبدیلی کرو
       map: نقشہ
     trace:
       view_map: نقشہ ݙیکھو
+...

@@ -1,5 +1,6 @@
 # Messages for Dimli (Zazaki)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: 1917 Ekim Devrimi
 # Author: Asmen
 # Author: Erdemaslancan
@@ -13,8 +14,15 @@
 # Author: Minh Nguyen
 # Author: Mirzali
 # Author: Orbot707
-# Do not edit by hand.
+---
 diq:
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: Merkeze Zagoni
+        leisure:
+          horse_riding: Bergir cınayış
   sessions:
     destroy:
       heading: OpenHistoricalMap ra vıcyayış
@@ -23,3 +31,7 @@ diq:
       too_large:
         planet:
           title: Geyrenıka OHM
+  time:
+    formats:
+      friendly: '%e %B %Y seate %H:%M'
+...
