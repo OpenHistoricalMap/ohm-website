@@ -69,6 +69,12 @@ GEM
       rails-html-sanitizer (~> 1.6)
     active_record_union (1.4.0)
       activerecord (>= 6.0)
+    active_storage_validations (4.1.1)
+      activejob (>= 7.0.1)
+      activemodel (>= 7.0.1)
+      activestorage (>= 7.0.1)
+      activesupport (>= 7.0.1)
+      marcel (>= 1.0.3)
     activejob (8.1.4)
       activesupport (= 8.1.4)
       globalid (>= 0.3.6)
@@ -119,10 +125,10 @@ GEM
     attr_required (1.0.2)
     auth-sanitizer (0.2.3)
       version_gem (~> 1.1, >= 1.1.14)
-    autoprefixer-rails (10.4.21.0)
+    autoprefixer-rails (10.6.1.0)
       execjs (~> 2)
     aws-eventstream (1.4.0)
-    aws-partitions (1.1291.0)
+    aws-partitions (1.1296.0)
     aws-sdk-core (3.257.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
@@ -135,7 +141,7 @@ GEM
     aws-sdk-kms (1.132.0)
       aws-sdk-core (~> 3, >= 3.256.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.232.2)
+    aws-sdk-s3 (1.233.2)
       aws-sdk-core (~> 3, >= 3.256.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
@@ -165,7 +171,7 @@ GEM
     bootstrap_form (5.6.1)
       actionpack (>= 7.2)
       activemodel (>= 7.2)
-    brakeman (8.0.6)
+    brakeman (8.1.0)
       racc
     brotli (0.8.0)
     builder (3.3.0)
@@ -201,7 +207,7 @@ GEM
       bigdecimal
       rexml
     crass (1.0.7)
-    dalli (5.1.1)
+    dalli (5.2.2)
       logger
     danger (9.6.1)
       base64 (~> 0.2)
@@ -221,17 +227,15 @@ GEM
       danger-plugin-api (~> 1.0)
     danger-plugin-api (1.0.0)
       danger (> 2.0)
-    dartsass-ruby (3.0.2)
-      sass-embedded (~> 1.54, < 1.67)
-    dartsass-sprockets (3.0.0)
-      dartsass-ruby (~> 3.0)
+    dartsass-sprockets (3.2.1)
       railties (>= 4.0.0)
+      sassc-embedded (~> 1.80.1)
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    database_consistency (3.0.13)
+    database_consistency (3.0.15)
       activerecord (>= 3.2)
-    date (3.5.1)
+    date (3.6.0)
     debug (1.11.1)
       irb (~> 1.10)
       reline (>= 0.3.8)
@@ -244,7 +248,7 @@ GEM
     delayed_job_active_record (4.1.11)
       activerecord (>= 3.0, < 9.0)
       delayed_job (>= 3.0, < 5)
-    digest (3.2.1)
+    digest (3.3.0)
     doorkeeper (5.9.9)
       railties (>= 5)
     doorkeeper-i18n (5.2.9)
@@ -333,9 +337,11 @@ GEM
     glob (0.5.0)
     globalid (1.4.0)
       activesupport (>= 6.1)
-    google-protobuf (3.25.8)
-    googleapis-common-protos-types (1.20.0)
-      google-protobuf (>= 3.18, < 5.a)
+    google-protobuf (4.36.2)
+      bigdecimal
+      rake (~> 13.3)
+    googleapis-common-protos-types (1.23.0)
+      google-protobuf (~> 4.26)
     hashdiff (1.2.1)
     hashie (5.1.0)
       logger
@@ -371,7 +377,7 @@ GEM
       image_optim (~> 0.24)
       railties
       sprockets
-    image_processing (2.1.0)
+    image_processing (2.2.0)
     image_size (3.6.0)
     in_threads (1.6.0)
     iniparse (1.5.0)
@@ -392,7 +398,7 @@ GEM
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
-    json (3.0.2)
+    json (3.1.0)
     json-jwt (1.17.2)
       activesupport (>= 4.2)
       aes_key_wrap
@@ -410,7 +416,7 @@ GEM
     libv8-node (24.12.0.1)
     libxml-ruby (6.0.0)
     lint_roller (1.1.0)
-    listen (3.10.0)
+    listen (3.10.1)
       logger
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -441,7 +447,8 @@ GEM
     multi_xml (0.9.1)
       bigdecimal (>= 3.1, < 5)
     nap (1.1.0)
-    net-http (0.9.1)
+    net-http (0.10.0)
+      net-protocol (>= 0.3.0)
       uri (>= 0.11.1)
     net-imap (0.6.7)
       date
@@ -456,8 +463,8 @@ GEM
     nokogiri (1.19.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    noticed (3.0.0)
-      rails (>= 6.1.0)
+    noticed (3.1.0)
+      rails (>= 7.1.0)
     oauth (1.1.8)
       anonymous_loader (~> 0.1, >= 0.1.3)
       auth-sanitizer (~> 0.2, >= 0.2.3)
@@ -518,10 +525,14 @@ GEM
     omniauth-rails_csrf_protection (2.0.1)
       actionpack (>= 4.2)
       omniauth (~> 2.0)
+<<<<<<< HEAD
     omniauth_openid_connect (0.8.0)
       omniauth (>= 1.9, < 3)
       openid_connect (~> 2.2)
     open3 (0.2.1)
+=======
+    open3 (0.3.0)
+>>>>>>> upstream-tip
     open4 (1.3.4)
     openid_connect (2.5.0)
       activemodel
@@ -538,26 +549,27 @@ GEM
     openstreetmap-deadlock_retry (1.3.1)
     opentelemetry-api (1.11.1)
       logger
-    opentelemetry-common (0.25.1)
+    opentelemetry-common (0.25.2)
       opentelemetry-api (~> 1.0)
-    opentelemetry-exporter-otlp (0.36.0)
+    opentelemetry-exporter-otlp (0.37.0)
       google-protobuf (>= 3.18)
       googleapis-common-protos-types (~> 1.3)
       opentelemetry-api (~> 1.1)
       opentelemetry-common (~> 0.20)
-      opentelemetry-exporter-otlp-common
+      opentelemetry-exporter-otlp-common (~> 0.2)
       opentelemetry-sdk (~> 1.10)
       opentelemetry-semantic_conventions
-    opentelemetry-exporter-otlp-common (0.2.0)
+    opentelemetry-exporter-otlp-common (0.3.0)
       google-protobuf (>= 3.18)
       googleapis-common-protos-types (~> 1.3)
       opentelemetry-api (~> 1.1)
+      opentelemetry-common (~> 0.20)
     opentelemetry-helpers-mysql (0.6.0)
       opentelemetry-api (~> 1.7)
       opentelemetry-common (~> 0.21)
     opentelemetry-helpers-sql (0.4.0)
       opentelemetry-api (~> 1.7)
-    opentelemetry-helpers-sql-processor (0.5.0)
+    opentelemetry-helpers-sql-processor (0.5.1)
       opentelemetry-api (~> 1.0)
       opentelemetry-common (~> 0.21)
     opentelemetry-instrumentation-action_mailer (0.8.1)
@@ -576,7 +588,7 @@ GEM
       opentelemetry-instrumentation-active_support (~> 0.10)
     opentelemetry-instrumentation-active_support (0.12.1)
       opentelemetry-instrumentation-base (~> 0.25)
-    opentelemetry-instrumentation-all (0.96.0)
+    opentelemetry-instrumentation-all (0.98.0)
       opentelemetry-instrumentation-active_model_serializers (~> 0.25.0)
       opentelemetry-instrumentation-anthropic (~> 0.5.0)
       opentelemetry-instrumentation-aws_lambda (~> 0.7.0)
@@ -596,10 +608,11 @@ GEM
       opentelemetry-instrumentation-http_client (~> 0.29.0)
       opentelemetry-instrumentation-httpx (~> 0.8.0)
       opentelemetry-instrumentation-koala (~> 0.24.0)
-      opentelemetry-instrumentation-lmdb (~> 0.26.0)
+      opentelemetry-instrumentation-lmdb (~> 0.27.0)
       opentelemetry-instrumentation-mongo (~> 0.26.0)
       opentelemetry-instrumentation-mysql2 (~> 0.34.0)
       opentelemetry-instrumentation-net_http (~> 0.29.0)
+      opentelemetry-instrumentation-openai (~> 0.1.0)
       opentelemetry-instrumentation-pg (~> 0.37.0)
       opentelemetry-instrumentation-que (~> 0.13.0)
       opentelemetry-instrumentation-racecar (~> 0.7.0)
@@ -616,13 +629,15 @@ GEM
       opentelemetry-instrumentation-trilogy (~> 0.69.0)
     opentelemetry-instrumentation-anthropic (0.5.0)
       opentelemetry-instrumentation-base (~> 0.25)
-    opentelemetry-instrumentation-aws_lambda (0.7.0)
+    opentelemetry-instrumentation-aws_lambda (0.7.1)
       opentelemetry-instrumentation-base (~> 0.25)
     opentelemetry-instrumentation-aws_sdk (0.13.0)
       opentelemetry-instrumentation-base (~> 0.25)
-    opentelemetry-instrumentation-base (0.26.1)
+    opentelemetry-instrumentation-base (0.27.0)
       opentelemetry-api (~> 1.7)
       opentelemetry-common (~> 0.21)
+      opentelemetry-logs-api (~> 0.6)
+      opentelemetry-metrics-api (~> 0.9)
       opentelemetry-registry (~> 0.1)
     opentelemetry-instrumentation-bunny (0.25.0)
       opentelemetry-instrumentation-base (~> 0.25)
@@ -638,7 +653,7 @@ GEM
       opentelemetry-instrumentation-base (~> 0.25)
     opentelemetry-instrumentation-faraday (0.33.0)
       opentelemetry-instrumentation-base (~> 0.25)
-    opentelemetry-instrumentation-grape (0.7.1)
+    opentelemetry-instrumentation-grape (0.7.2)
       opentelemetry-instrumentation-rack (~> 0.29)
     opentelemetry-instrumentation-graphql (0.32.0)
       opentelemetry-instrumentation-base (~> 0.25)
@@ -654,26 +669,28 @@ GEM
       opentelemetry-instrumentation-base (~> 0.25)
     opentelemetry-instrumentation-koala (0.24.0)
       opentelemetry-instrumentation-base (~> 0.25)
-    opentelemetry-instrumentation-lmdb (0.26.1)
+    opentelemetry-instrumentation-lmdb (0.27.0)
       opentelemetry-instrumentation-base (~> 0.25)
     opentelemetry-instrumentation-mongo (0.26.0)
       opentelemetry-instrumentation-base (~> 0.25)
-    opentelemetry-instrumentation-mysql2 (0.34.0)
+    opentelemetry-instrumentation-mysql2 (0.34.1)
       opentelemetry-helpers-mysql
       opentelemetry-helpers-sql
-      opentelemetry-helpers-sql-processor
+      opentelemetry-helpers-sql-processor (>= 0.5.1, < 1.0)
       opentelemetry-instrumentation-base (~> 0.25)
-    opentelemetry-instrumentation-net_http (0.29.1)
+    opentelemetry-instrumentation-net_http (0.29.2)
       opentelemetry-instrumentation-base (~> 0.25)
-    opentelemetry-instrumentation-pg (0.37.0)
+    opentelemetry-instrumentation-openai (0.1.0)
+      opentelemetry-instrumentation-base (~> 0.27)
+    opentelemetry-instrumentation-pg (0.37.1)
       opentelemetry-helpers-sql
-      opentelemetry-helpers-sql-processor
+      opentelemetry-helpers-sql-processor (>= 0.5.1, < 1.0)
       opentelemetry-instrumentation-base (~> 0.25)
     opentelemetry-instrumentation-que (0.13.0)
       opentelemetry-instrumentation-base (~> 0.25)
     opentelemetry-instrumentation-racecar (0.7.0)
       opentelemetry-instrumentation-base (~> 0.25)
-    opentelemetry-instrumentation-rack (0.31.1)
+    opentelemetry-instrumentation-rack (0.31.2)
       opentelemetry-instrumentation-base (~> 0.25)
     opentelemetry-instrumentation-rails (0.42.0)
       opentelemetry-instrumentation-action_mailer (~> 0.7)
@@ -698,14 +715,18 @@ GEM
       opentelemetry-instrumentation-base (~> 0.25)
     opentelemetry-instrumentation-sidekiq (0.29.0)
       opentelemetry-instrumentation-base (~> 0.25)
-    opentelemetry-instrumentation-sinatra (0.30.0)
+    opentelemetry-instrumentation-sinatra (0.30.1)
       opentelemetry-instrumentation-rack (~> 0.29)
-    opentelemetry-instrumentation-trilogy (0.69.0)
+    opentelemetry-instrumentation-trilogy (0.69.1)
       opentelemetry-helpers-mysql
       opentelemetry-helpers-sql
-      opentelemetry-helpers-sql-processor
+      opentelemetry-helpers-sql-processor (>= 0.5.1, < 1.0)
       opentelemetry-instrumentation-base (~> 0.25)
       opentelemetry-semantic_conventions (>= 1.8.0)
+    opentelemetry-logs-api (0.7.0)
+      opentelemetry-api (~> 1.0)
+    opentelemetry-metrics-api (0.10.0)
+      opentelemetry-api (~> 1.0)
     opentelemetry-registry (0.6.3)
       opentelemetry-api (~> 1.1)
     opentelemetry-sdk (1.13.1)
@@ -721,17 +742,17 @@ GEM
       childprocess (>= 0.6.3, < 6)
       iniparse (~> 1.4)
       rexml (>= 3.4.2)
-    parallel (2.2.0)
+    parallel (2.3.0)
     parser (3.3.12.0)
       ast (~> 2.4.1)
       racc
-    pg (1.6.3)
-    pg_query (6.2.2)
-      google-protobuf (>= 3.25.3)
+    pg (1.7.0)
+    pg_query (6.2.5)
+      google-protobuf (>= 4.34.0)
     popper_js (2.11.8)
     pp (0.6.4)
       prettyprint
-    prettyprint (0.2.0)
+    prettyprint (0.2.1)
     prism (1.9.0)
     process_executer (4.1.1)
       track_open_instances (~> 0.1)
@@ -821,7 +842,7 @@ GEM
       prism (>= 1.6.0)
       rbs (>= 4.0.0)
       tsort
-    regexp_parser (2.13.0)
+    regexp_parser (2.13.1)
     reline (0.7.0)
       io-console (~> 0.5)
     rexml (3.4.4)
@@ -835,14 +856,14 @@ GEM
       strscan (~> 3.1)
     rtlcss (0.2.1)
       mini_racer (>= 0.6.3)
-    rubocop (1.91.0)
+    rubocop (1.92.0)
       json (>= 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
       parallel (>= 1.10)
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 2.9.3, < 3.0)
+      regexp_parser (>= 2.11.3, < 3.0)
       rubocop-ast (>= 1.49.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
@@ -855,9 +876,9 @@ GEM
     rubocop-factory_bot (2.28.0)
       lint_roller (~> 1.1)
       rubocop (~> 1.72, >= 1.72.1)
-    rubocop-minitest (0.40.0)
+    rubocop-minitest (0.41.0)
       lint_roller (~> 1.1)
-      rubocop (>= 1.75.0, < 2.0)
+      rubocop (>= 1.89.0, < 2.0)
       rubocop-ast (>= 1.38.0, < 2.0)
     rubocop-performance (1.27.0)
       lint_roller (~> 1.1)
@@ -880,26 +901,27 @@ GEM
     sanitize (7.0.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.16.8)
-    sass-embedded (1.64.2)
-      google-protobuf (~> 3.23)
-      rake (>= 13.0.0)
+    sass-embedded (1.105.1)
+      google-protobuf (~> 4.31)
+      rake (~> 13.3)
+    sassc-embedded (1.80.10)
+      sass-embedded (~> 1.80)
     sawyer (0.9.3)
       addressable (>= 2.3.5)
       faraday (>= 0.17.3, < 3)
     securerandom (0.4.1)
-    selenium-webdriver (4.49.0)
+    selenium-webdriver (4.51.0)
       base64 (~> 0.2)
       logger (~> 1.4)
-      rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
-    sentry-delayed_job (7.0.0)
+    sentry-delayed_job (7.1.0)
       delayed_job (>= 4.0)
-      sentry-ruby (~> 7.0.0)
-    sentry-rails (7.0.0)
+      sentry-ruby (~> 7.1.0)
+    sentry-rails (7.1.0)
       railties (>= 5.2.0)
-      sentry-ruby (~> 7.0.0)
-    sentry-ruby (7.0.0)
+      sentry-ruby (~> 7.1.0)
+    sentry-ruby (7.1.0)
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
       logger
@@ -950,7 +972,7 @@ GEM
     unicode-display_width (3.3.0)
       unicode-emoji (~> 4.3)
     unicode-emoji (4.3.0)
-    uri (0.13.3)
+    uri (1.1.2)
     useragent (0.16.11)
     validate_url (1.0.15)
       activemodel (>= 3.0.0)
@@ -960,11 +982,15 @@ GEM
       simpleidn
     vendorer (0.2.0)
     version_gem (1.1.15)
+<<<<<<< HEAD
     webfinger (2.1.3)
       activesupport
       faraday (~> 2.0)
       faraday-follow_redirects
     webmock (3.26.4)
+=======
+    webmock (3.29.0)
+>>>>>>> upstream-tip
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -985,6 +1011,7 @@ DEPENDENCIES
   aasm
   actionpack-page_caching
   active_record_union
+  active_storage_validations
   activerecord-import
   activerecord-postgis
   addressable
@@ -1086,7 +1113,7 @@ DEPENDENCIES
   rubocop-rake
   ruby-vips
   sanitize
-  sass-embedded (~> 1.64.0)
+  sass-embedded (< 3.0.0)
   selenium-webdriver
   sentry-delayed_job
   sentry-rails
@@ -1101,11 +1128,10 @@ DEPENDENCIES
   timeout
   turbo-rails
   unicode-display_width
-  uri (< 1.0.0)
   validates_email_format_of
   vendorer
   webmock
   webrick
 
 BUNDLED WITH
-  4.0.3
+  4.0.20
