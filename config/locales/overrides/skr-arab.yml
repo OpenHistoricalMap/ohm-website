@@ -1,21 +1,525 @@
 # Messages for Saraiki (Arabic script) (سرائیکی)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Ajeje Brazorf
 # Author: Saraiki
 # Author: Sayam Asjad
+# Author: Tauqeerkhansurani
 # Author: Umar Shahid
-# Do not edit by hand.
+---
 skr-arab:
+  accounts:
+    auth_deletions:
+      show:
+        body: '%{provider} ID %{id} دا ڈیٹا %{time} ویلے مٹا ݙتا ڳیا تے ایہ متعلقہ
+          OpenHistoricalMap کھاتے کنوں منقطع کر ݙتا ڳیا'
+    deletions:
+      show:
+        delete_introduction: 'تساں ہیٹھ ݙتا ڳیا بٹن ورت کے تہاݙا OpenHistoricalMap
+          کھاتہ مٹا سگدے وے۔ مہربانی کر کے ہیٹھلیاں تفصیلاں دا دھیان رکھو:'
+        retain_caveats: 'بھانویں تہاݙا کھاتہ مٹا ݙتا ونجے، تہاݙی کُجھ معلومات OpenHistoricalMap
+          تے ول وی محفوظ رہسن:'
+    terms:
+      show:
+        read and accept with tou: مہربانی کر کے شراکت دار معاہدہ تے استعمال دیاں شرطاں
+          پڑھو، ایہ کم مکاوݨ تے ݙوہیں چیک باکساں تے نشان لاؤ تے ول جاری رکھݨ دا بٹن
+          دباؤ۔
+        tou_explain:
+          html: ایہ %{tou_link} OpenHistoricalMap دی طرفوں مہیا کیتی ڳئی ویب سائٹ
+            تے ٻئے بنیادی ڈھانچے دے استعمال دے اصول ہن۔ مہربانی کر کے لنک تے کلک کرو،
+            متن پڑھو تے ایندے نال اتفاق کرو۔
+  api:
+    notes:
+      rss:
+        title: OpenHistoricalMap نوٹس
+  application:
+    auth_providers:
+      openstreetmap:
+        alt: OpenStreetMap لوگو
+        title: OpenStreetMap نال لاگ اِن کرو
+    setup_user_auth:
+      blocked_zero_hour: تہاݙے کول OpenHistoricalMap ویب سائٹ تے ہک ضروری پیغام ہے۔
+        اپݨیاں تبدیلیاں محفوظ کرݨ کنوں پہلے تہاکوں ایہ پیغام پڑھݨا پوسی۔
+  changeset_comments:
+    feeds:
+      show:
+        title_all: OpenHistoricalMap تبدیلی سیٹ مباحثہ
+        title_particular: 'OpenHistoricalMap تبدیلی سیٹ #%{changeset_id} مباحثہ'
+  diary_entries:
+    feed:
+      all:
+        description: OpenHistoricalMap دے ورتݨ آلیاں دیاں تازہ ڈائری انٹریاں
+        title: OpenHistoricalMap ڈائری انٹریاں
+      language:
+        description: OpenHistoricalMap دے ورتݨ آلیاں دیاں %{language_name} وچ تازہ
+          ڈائری انٹریاں
+        title: '%{language_name} وچ OpenHistoricalMap ڈائری انٹریاں'
+      user:
+        description: '%{user} دیاں OpenHistoricalMap تازہ ڈائری انٹریاں'
+        title: '%{user} دیاں OpenHistoricalMap ڈائری انٹریاں'
+  errors:
+    bad_request:
+      description: OpenHistoricalMap سرور تے تساں جہڑا کم منگیا ہے، او درست نئیں ہے
+        (HTTP 400)
+    contact:
+      contact_the_community_html: اگر تہاکوں کوئی خراب لنک یا بگ ملیا ہے تاں بے جھجک
+        OpenHistoricalMap کمیونٹی نال %{contact_link} کرو۔ اپݨی درخواست دا بالکل صحیح
+        یو آر ایل لکھ گھنو۔
+    forbidden:
+      description: OpenHistoricalMap سرور تے تساں جہڑا کم منگیا ہے، او صرف منتظمین
+        کیتے دستیاب ہے (HTTP 403)
+    internal_server_error:
+      description: OpenHistoricalMap سرور کوں ہک غیر متوقع صورتحال پیش آئی جیہڑی اونکوں
+        درخواست پوری کرݨ کنوں روکیندی ہے (HTTP 500)
+    not_found:
+      description: OpenHistoricalMap سرور تے ایں ناں دی کوئی فائل/ڈائریکٹری/اے پی
+        آئی کارروائی نئیں لبی (HTTP 404)
+  export:
+    show:
+      title: OpenHistoricalMap ایمبیڈڈ
+  geocoder:
+    search_osm_nominatim:
+      border_types:
+        archdiocese: آرچڈائوسس دی حد
+        audiencia: آڈینسیا دی حد
+        caliphate: خلافت دی حد
+        canton: کینٹن دی حد
+        captaincy_general: کیپٹنسی جنرل دی حد
+        census_area: مردم شماری علاقے دی حد
+        chiefdom: سرداری دی حد
+        city-state: شہر ریاست دی حد
+        colony: نوآبادیاتی حد
+        commonwealth: دولت مشترکہ دی حد
+        commune: فرقہ وارانہ حد
+        condominium: کنڈومینیم دی حد
+        confederation: کنفیڈریشن دی حد
+        diocese: ڈائوسس دی حد
+        dominion: ڈومینین دی حد
+        emirate: امارت دی حد
+        empire: شاہی حد
+        eyalet: ایالت دی حد
+        federal_district: وفاقی ضلعے دی حد
+        federation: وفاق دی حد
+        ghetto: گھیٹو دی حد
+        governorate: گورنریٹ دی حد
+        hundred: ہنڈرڈ دی حد
+        intendancy: انٹینڈنسی دی حد
+        kingdom: بادشاہت دی حد
+        major_division: وݙے ڈویژن دی حد
+        markaz: مرکز دی حد
+        oblast: اوبلاسٹ دی حد
+        occupation: قبضے دی حد
+        overseas_collectivity: سمندر پار کلیکٹیویٹی دی حد
+        overseas_department: سمندر پار محکمے دی حد
+        overseas_territory: سمندر پار علاقے دی حد
+        planning_region: منصوبہ بندی علاقے دی حد
+        possession: ملکیت دی حد
+        prefecture: پریفیکچر دی حد
+        prefecture_apostolic: پریفیکچر اپوسٹولک دی حد
+        principate: شہزادگی دی حد
+        protectorate: پروٹیکٹوریٹ دی حد
+        rancho: رینچو دی حد
+        realm: مملکت دی حد
+        reichsgau: رائخسگاؤ دی حد
+        republic: جمہوری حد
+        rode: روڈ دی حد
+        sanjak: سنجاق دی حد
+        sector: شعبہ جاتی حد
+        shire: شائر دی حد
+        subdistrict: ذیلی ضلعے دی حد
+        sultanate: سلطنت دی حد
+        territorial_prelature: علاقائی پریلیچر دی حد
+        territory: علاقائی حد
+        vicariate_apostolic: وکریٹ اپوسٹولک دی حد
+        viceroyalty: وائسرائے دی حد
+        viyalet: ویالیت دی حد
+        voivodeship: وویوڈشپ دی حد
+        ward: وارڈ دی حد
+        zone: زون دی حد
+      prefix:
+        amenity:
+          arts_centre: آرٹس سنٹر
+        leisure:
+          horse_riding: گھڑ سواری مرکز
+          track: دوڑݨ آلی پٹی
+        shop:
+          seafood: سمندری خوراک
+  javascripts:
+    legend:
+      title: نقشہ کلید
+      tooltip: نقشہ کلید
+      tooltip_disabled: ایں تہہ کیتے نقشہ کلید دستیاب نئیں ہے
+    map:
+      base:
+        historical: تاریخی
+        japanesescroll: جاپانی اسکرول
+        railway: ریلوے
+        woodblock: وُڈ بلاک
+  layouts:
+    ohm_affiliation_html: OpenHistoricalMap %{osmus} دا ہک چارٹر پروجیکٹ ہے، جہڑا
+      ہک 501(c)(3) غیر منافع بخش تنظیم ہے تے %{osmf} نال منسلک ہے۔
+    ohm_early_supporters_html: ابتدائی تکنیکی ترقی دی حمایت %{greeninfo} تے %{devseed}
+      کیتی۔
+    intro_header: OpenHistoricalMap وچ خوش آمدید!
+    intro_text: OpenHistoricalMap پوری تاریخ وچ دنیا دا ہک انٹرایکٹو نقشہ ہے، جیکوں
+      تہاݙے ورڳے لوکاں بݨایا ہے تے جیہڑا پبلک ڈومین کیتے وقف ہے۔
+    logo:
+      alt_text: OpenHistoricalMap لوگو
+    meta:
+      openstreetmap_search: OpenHistoricalMap تلاش
+    offline_flash:
+      osm_offline: OpenHistoricalMap دا ڈیٹا بیس فی الحال آف لائن ہے، جڈاں ضروری مرمت
+        دا کم جاری ہے۔
+      osm_read_only: OpenHistoricalMap دا ڈیٹا بیس فی الحال صرف پڑھݨ دے موڈ وچ ہے،
+        جڈاں ضروری مرمت دا کم جاری ہے۔
+  notes:
+    new:
+      advice: عوام وچوں ہر کوئی ہک نوٹ ݙیکھ سڳدے، چاہے اوندے کول OpenHistoricalMap
+        دا کھاتہ نہ ہووے!
+    new_readonly:
+      warning: نویں نوٹ نئیں بݨائے ونج سڳدے کیوں جو OpenHistoricalMap دا اے پی آئی
+        فی الحال صرف پڑھݨ دے موڈ وچ ہے۔
+  oauth:
+    scopes:
+      openid: OpenHistoricalMap نال سائن ان کرو
+  preferences:
+    basic_preferences:
+      show:
+        map_color_schemes:
+          auto: خودکار
+    preferences:
+      navigation:
+        advanced_preferences: اعلیٰ ترجیحات
+        preferences: ترجیحات
+  sessions:
+    destroy:
+      heading: OpenHistoricalMap کنوں لاگ آؤٹ کرو
+    new:
+      login_to_authorize_html: '%{client_app_name} تک رسائی حاصل کرݨ کیتے OpenHistoricalMap
+        تے لاگ ان کرو۔'
   site:
+    about:
+      lede_text: OpenHistoricalMap ہک بلند ہمتی، کمیونٹی دی اڳواݨی آلا منصوبہ ہے جیہڑا
+        دنیا بھر وچ زمانیاں دے دوران قدرتی تے انسانی جغرافیے دیاں تبدیلیاں دا نقشہ
+        بݨیندا ہے۔
+      used_by_html: '%{name} نال کہیں وی زمانے دی دنیا کھولو۔'
     about_section:
+      contribute_1_forum: ساݙا مباحثہ فورم
+      contribute_1_ohm_html: ساݙی وڌدی ہوئی رضاکار شراکت داراں دی کمیونٹی وچ شوقیہ
+        تے پیشہ ور مورخ، OpenStreetMap تے Wikipedia دے شراکت دار، GIS دے ماہر تے اپنے
+        آس پاس بارے جانݨ آلا عام لوک شامل ہن۔ اساں دنیا دی دستاویز بندی تے حقیقی دنیا
+        دیاں کمیونٹیاں کوں انہاں دیاں کہانیاں سݨاوݨ وچ مدد کرݨ وچ پرجوش ہائیں۔ کمیونٹی
+        بارے ٻیا جانݨ کیتے %{wiki_link} ݙیکھو، %{forum_link} تے ونجو، %{user_diaries_link}
+        پڑھو تے ساݙا %{mastodon_link} یا %{bluesky_link} کھاتہ فالو کرو۔
+      contribute_1_user_diaries: صارف ڈائریاں
+      contribute_1_wiki: ساݙی وݙی وکی دستاویزات
+      contribute_2_create_account: مفت کھاتہ بݨاوݨ
+      contribute_2_donations: خیراتی عطیات قبول کرو
+      contribute_2_html: تساں اج توں %{create_account_link} نال نقشے وچ حصہ ݙیوݨ شروع
+        کر سڳدے او۔ اساں %{donations_link} وی قبول کریندے ہائیں، %{osmus_link} دے
+        ذریعے، جہڑا ہک 501(c)(3) غیر منافع بخش تنظیم ہے جیندے کول ٹیکس توں چھٹ ہے۔
+        تہاݙا سخی عطیہ سڌی طرحاں OpenHistoricalMap کوں ہر کہیں کیتے ٹھیک ٹھاک چلدے
+        رکھݨ تے خرچ تھیسی۔
+      contribute_title: تساں مدد کر سڳدے او
+      legal_1_aup: قابل قبول استعمال دیاں پالیسیاں
+      legal_1_group: ہک غیر رسمی گروہ
+      legal_1_html: ایں سائٹ تے متعلقہ خدمات %{group_link} دی طرفوں چلائیاں ویندیاں
+        ہن، جہڑا کمیونٹی دی طرفوں OpenStreetMap U.S. نال وابستہ ہے۔ OpenHistoricalMap
+        دیاں ساریاں خدمات دا استعمال ساݙے %{terms_of_use_link}، %{aup_link}، تے %{privacy_policy_link}
+        دے تابع ہے۔
       legal_1_privacy_policy: رازداری پالیسی
-      legal_1_privacy_policy_url: https://osmfoundation.org/wiki/Privacy_Policy
+      legal_1_terms_of_use: استعمال دیاں شرطاں
+      legal_2_contact_team: OpenHistoricalMap دی ٹیم نال رابطہ کرو
+      legal_2_html: لائسنسنگ، کاپی رائٹ، یا ٻئے قانونی سوالاں کیتے %{contact_team_link}
+        نال رابطہ کرو۔
+      legal_3_html: OpenHistoricalMap® ہک رجسٹرڈ ٹریڈ مارک ہے (U.S. Reg. No. 90,019,364)۔
+        OpenStreetMap تے میگنفائینگ گلاس لوگو %{osmf_trademarks_link} ہن۔
+      legal_3_osmf_trademarks: OpenStreetMap فاؤنڈیشن دے رجسٹرڈ ٹریڈ مارک
+      open_data_1_1_html: ساݙے ہوم پیج آلا نقشہ صرف ہک طریقہ ہے تاریخی معلومات دا
+        تجربہ کرݨ دا، جہڑیاں اساں اکٹھیاں کیتیاں ہن۔ بنیادی ڈیٹا %{reuse_link} ہے،
+        ڈاؤن لوڈ دے طور تے یا مختلف مفت اے پی آئیز دے ذریعے جہڑیاں اوپن سورس سافٹ
+        ویئر نال مطابقت رکھدیاں ہن۔
+      open_data_1_1_reuse: دوبارہ استعمال کیتے دستیاب
+      open_data_2_copyright_license: کاپی رائٹ تے اعترافات
+      open_data_2_html: ڈیٹا پبلک ڈومین وچ ہے جڈاں تائیں ٻیا کجھ نہ لکھیا ہووے۔ تساں
+        ایندے کوں کہیں وی مقصد کیتے، کہیں وی پابندی دے بغیر، استعمال کرݨ کیتے آزاد
+        او۔ اس دے باوجود، اساں OpenHistoricalMap کوں تساں دی طرفوں ݙتے ڳئے ہر کریڈٹ
+        یا حوالے دی ٻہوں قدر کریندے ہائیں۔ ٻیا تفصیل تے اعترافات کیتے %{copyright_license_link}
+        ݙیکھو۔
+      scope_html: سلطنتاں ابھردیاں ہن تے ڈھہ ویندیاں ہن۔ گلیشیئر غائب تھی ویندن۔ زباناں
+        تے مذہب ہک خطے توں ٻئے خطے تائیں پھیلدن۔ سادے مٹی دے رستے مصروف شاہراہواں
+        تے ریلوے بݨ ویندن۔ معمولی عمارتاں بلند عمارتاں کوں جاہ ݙے ݙیندیاں ہن۔ تے تساں
+        یاد کریندے او کہ تہاݙا محلہ پہلے کیہوجیاں ݙسدا ہا۔ ایہ سبھ کجھ OpenHistoricalMap
+        تے ہے۔
+      scope_title: وݙا تے نِکا، ماضی تے حال
+    add_a_note:
+      para_1: اگر تساں صرف کوئی نکی جہیں شئے ٹھیک کراؤݨ چاہندے او تے تساں کول سائن
+        اپ کرݨ تے ایڈیٹ کرݨ سکھݨ دا ویلا کائنی، تاں ہک نوٹ شامل کرݨ ٻہوں آسان ہے۔
+    any_questions:
+      ohm_paragraph_1_html: OpenHistoricalMap کول پروجیکٹ دے بارے سکھݨ، سوال پچھݨ
+        تے جواب ݙیوݨ، تے نقشہ سازی دے موضوعات تے رل کے ڳالھ مہاڑ کرݨ تے انہاں دی دستاویز
+        بݨاؤݨ کیتے کئی وسائل ہن۔ %{help_link}۔
+    copyright:
+      legal_babble:
+        attribution_example:
+          alt: ٹائم سلائیڈر دے تھلے، ویب پیج دے سجے تھلے والے کونے وچ OHM دے لیبل
+            آلا ہک لنک۔
+          title: ویب پیج تے OpenHistoricalMap کوں کریڈٹ ݙیوݨ دی مثال
+        contributors_2_ohm_html: 'ہوم پیج تے نمایاں نقشے دے اندازاں وچ OpenHistoricalMap
+          دا ڈیٹا تے درج ذیل ذرائع شامل ہن:'
+        contributors_anr_communes_html: ڈیٹا %{anr_communes_link} پروجیکٹ دی طرفوں
+          %{campop_link} نال مل کے بݨایا ڳیا۔
+        contributors_footer_2_html: OpenHistoricalMap وچ ڈیٹا دے شامل تھیوݨ دا ایہ
+          مطلب کائنی جو اصلی ڈیٹا فراہم کرݨ آلا OpenHistoricalMap دی حمایت کریندا
+          ہے، کوئی ضمانت ݙیندا ہے، یا کوئی ذمہ داری قبول کریندا ہے۔
+        contributors_globcover_html: زمین دے احاطے دا ڈیٹا %{globcover_link} توں ہے،
+          © ESA 2010 تے UCLouvain، جہڑا کریڈٹ دے نال تعلیمی تے/یا سائنسی مقصداں کیتے
+          دوبارہ استعمال کیتے دستیاب ہے۔
+        contributors_gmted_html: 'زمین دی بلندی دا ڈیٹا Danielson, J.J., تے Gesch,
+          D.B., 2011, %{gmted_link} (GMTED2010) توں: U.S. Geological Survey Open-File
+          Report 2011–1073، 26 صفحے۔ پبلک ڈومین۔'
+        contributors_intro_html: 'OpenHistoricalMap ہزاراں افراد تے تنظیماں دی مشترکہ
+          کوشش ہے، جہڑے وݙے پیمانے تے تحقیقی کم، صحافت، تے ریکارڈ رکھݨ دے مواد توں
+          فائدہ چیندن۔ ساݙے سبھ توں اہم ذرائع تے شراکت دار درج ذیل ہن:'
+        contributors_more_sources_html: '%{sources_link} OpenStreetMap Wiki تے دستیاب
+          ہن۔'
+        contributors_more_sources_page: اضافی ذرائع تے شراکت دار
+        contributors_natural_earth_html: '%{natural_earth_link} دے ڈیٹاسیٹ پبلک ڈومین
+          وچ ہن۔'
+        contributors_newberry_ahcb_html: ڈیٹا %{ahcb_link} توں ہے، جہڑا William M.
+          Scholl Center for American History and Culture دا %{newberry_link} وچ ہک
+          پروجیکٹ ہے، جہڑا کہیں وی پابندی دے بغیر دوبارہ استعمال کیتے دستیاب ہے۔
+        contributors_osm: OpenStreetMap دے شراکت دار
+        contributors_osm_html: ساحلی پٹیاں، پاݨی دے ذخیرے تے نالیاں دا ڈیٹا © %{osm_link}،
+          %{cc_by_sa_link}۔
+        contributors_title_html: اعترافات
+        credit_1_html: حالانکہ کاپی رائٹ دا قانون تہاݙے پبلک ڈومین مواد دے استعمال
+          تے کوئی پابندی یا شرط نئیں لڳیندا، پر اساں تہاݙے ہر کریڈٹ دی وݙی قدر کریندے
+          ہن جہڑا تساں ساݙے نقشے یا ڈیٹا کوں دوبارہ استعمال، ڈھالݨ یا ٻئے طریقے نال
+          ورتݨ ویلے OpenHistoricalMap کوں ݙیندے او۔
+        credit_2_home: ساݙا ہوم پیج
+        credit_2_ohm_html: 'تساں ایہ اعتراف کہیں وی مناسب طریقے نال پیش کر سڳدے او۔
+          مثلاً، ڈیجیٹل نقشے تے تساں کونے وچ نِکی لکھائی وچ OpenHistoricalMap دا ذکر
+          کر سڳدے او، %{this_copyright_page_link} یا %{home_link} نال لنک کر کے:'
+        credit_2_this_copyright_page: ایہ کاپی رائٹ صفحہ
+        credit_3_credit_html: نقشے دا ڈیٹا %{project_link} پروجیکٹ دی مہربانی نال
+          ہے، پبلک ڈومین وچ ہے جڈاں تائیں ٻیا کجھ نہ لکھیا ہووے۔
+        credit_3_ohm_html: 'یا تساں الگ کریڈٹ صفحے تے ودھ واضح اعتراف شامل کر سڳدے
+          او، جتھاں تساں ٻئے ذرائع کوں کریڈٹ ݙیندے او:'
+        credit_4_ohm_html: چھپے ہوئے نقشے تے تساں اعتراف کوں لیجنڈ وچ ݙے سڳدے او۔
+          کتاب وچ تساں OpenHistoricalMap دے استعمال دا حوالہ، ببلیوگرافی یا کولوفون
+          وچ ݙے سڳدے او۔ تعلیمی مقالے وچ تساں اساݙا حوالہ کئی طریقیاں نال ݙے سڳدے
+          او، ایں ڳالھ تے منحصر ہے جو تساں کیا ورتیا ہے۔
+        credit_title_html: OpenHistoricalMap کوں کریڈٹ کیویں ݙیو
+        infringement_1_html: OHM دے شراکت داراں کوں یاد ݙوایا ویندا ہے جو کاپی رائٹ
+          ہولڈرز دی واضح اجازت دے بغیر کہیں وی کاپی رائٹ آلیاں ذرائع (مثلاً Google
+          Maps یا چھپے ہوئے نقشے) توں ڈیٹا کݙائیں نہ شامل کرو۔
+        infringement_2_ohm_contact_team: سبجیکٹ لائن وچ "TAKEDOWN REQUEST" لکھ کے
+          OpenHistoricalMap دی ٹیم نال رابطہ کرو
+        infringement_2_ohm_html: اگر تہاکوں لڳدے ہے جو کاپی رائٹ آلا مواد OpenHistoricalMap
+          دے ڈیٹابیس یا ایں سائٹ وچ نامناسب طور تے شامل کیتا ڳیا ہے تاں برائے مہربانی
+          %{contact_team_link}۔
+        introduction_1_ohm_html: OpenHistoricalMap کھلے جغرافیائی ڈیٹا دا ہک مجموعہ
+          ہے۔ جتھاں ٻیا کجھ نہ لکھیا ہووے، OpenHistoricalMap دا ڈیٹا %{cc0_link} وقفے
+          دے تحت پبلک ڈومین کیتے وقف ہے۔ جتھاں تائیں جو تساں ورتیندے او پبلک ڈومین
+          وچ ہے، تساں کہیں وی مقصد کیتے ایں دی نقل، تقسیم، ترسیل تے ڈھالݨ کیتے آزاد
+          او، بغیر کہیں پابندی دے۔
+        introduction_2_ohm_html: OpenHistoricalMap دا ڈیٹابیس کاپی رائٹ دے تحت کجھ
+          انفرادی نقشے دیاں خصوصیات شامل کریندا ہے۔ ایہ خصوصیات ہک کھلے لائسنس دے
+          تحت دستیاب ہن، جیویں %{cc_by_link} (CC&nbsp;BY) یا %{cc_by_sa_link} (CC&nbsp;BY-SA)،
+          جیویں جو انفرادی عناصر تے %{license_key_link} ٹیگز وچ درج ہے۔ جتھاں تائیں
+          تساں ڈیٹابیس دے کہیں وی اہم حصے کوں ورتیندے او جہڑا "share alike" لائسنس
+          دے تحت آندے، تہاکوں آپݨی ڈھالݨ وچ ایں لائسنس دیاں شرطاں دی عزت کرݨی چاہیدی
+          ہے۔
+        introduction_3_ohm_html: ساݙے ہوم پیج تے پیش کیتے ڳئے نقشے دے انداز CC0 وقفے
+          دے تحت پبلک ڈومین کیتے وقف ہن۔ تساں کہیں وی مقصد کیتے انہاں دی نقل، تقسیم،
+          ترسیل تے ڈھالݨ کیتے آزاد او، بغیر کہیں پابندی دے۔
+        introduction_4_ohm_html: ساݙی دستاویزات %{creative_commons_link} لائسنس (CC
+          BY-SA 2.0) دے تحت ہے۔
+        more_1_ohm_html: ساݙا ڈیٹا ورتݨ ویلے قانونی لحاظ نال غور کرݨ والیاں ڳالھاں
+          تے اساکوں کریڈٹ ݙیوݨ دے بارے وچ ودھ ڄاݨو، %{wiki_link}۔
+        more_1_wiki: OpenStreetMap وکی تے
+        more_title_html: ودھ ڄاݨو
+        trademarks_1_ohm_contact_team: OpenHistoricalMap دی ٹیم نال رابطہ کرو
+        trademarks_1_ohm_html: اگر تہاکوں OpenHistoricalMap دے ناں دے استعمال دے بارے
+          وچ سوال ہن تاں برائے مہربانی %{contact_team_link}۔
+      title: کاپی رائٹ تے اعترافات
+    export:
+      copyright_page: کاپی رائٹ تے اعترافات
+      licence_details_ohm_html: جتھاں ٻیا کجھ نہ لکھیا ہووے، OpenHistoricalMap دا
+        ڈیٹا %{cc0_link} وقفے دے تحت پبلک ڈومین کیتے وقف ہے۔ تفصیل کیتے %{copyright_page_link}
+        صفحہ ݙیکھو۔
+      too_large:
+        body: ایہ علاقہ OpenHistoricalMap XML ڈیٹا دے طور تے ایکسپورٹ کرݨ کیتے بہوں
+          وݙا ہے۔ برائے مہربانی زوم ان کرو یا کوئی چھوٹا علاقہ چݨو، یا بلک ڈیٹا ڈاؤن
+          لوڈ کیتے تھلے ݙتے ڳئے ذرائع وچوں کوئی ہک ورتو۔
+        overpass:
+          description: ایں باؤنڈنگ باکس کوں OpenHistoricalMap دے ڈیٹابیس دے آئینے
+            توں ڈاؤن لوڈ کرو۔
+        planet:
+          description: مکمل OpenHistoricalMap ڈیٹابیس دیاں باقاعدگی نال اپ ڈیٹ کیتیاں
+            ویندیاں کاپیاں۔
+    fixthemap:
+      how_to_help:
+        join_the_community:
+          explanation_html: اگر تساں ساݙے نقشے دے ڈیٹا وچ کوئی مسئلہ ݙٹھا ہے، مثال
+            دے طور تے کوئی سڑک غائب ہے یا تہاݙا پتہ، تاں بہترین طریقہ ایہ ہے جو OpenHistoricalMap
+            کمیونٹی وچ شامل تھیوو تے ڈیٹا خود شامل کرو یا مرمت کرو۔
+      other_concerns:
+        concerns_ohm_html: اگر تہاکوں ایں بارے وچ خدشے ہن جو ساݙا ڈیٹا کینویں ورتیا
+          ویندا پئے یا مواد دے بارے وچ، تاں ودھ قانونی معلومات کیتے ساݙے %{copyright_link}
+          نال مشورہ کرو، یا %{contact_link}۔
+        contact: ساکوں ملو
     help:
+      discord:
+        description: 'OpenStreetMap World دے Discord سرور نال جڑو تے #openhistoricalmap
+          چینل وچ مدد گھنو۔'
+      forum:
+        description: آپݨے OHM کھاتے نال لمبیاں بحثاں تے غیر رسمی چیٹ رومز وچ حصہ گھنو۔
+        title: فورم
+      github:
+        description: بگ رپورٹ کرݨ یا نویں فیچر دی درخواست کرݨ کیتے ساݙے GitHub ریپازٹریز
+          وچ ایشو داخل کرو۔
+        title: فیچر دیاں درخواستاں تے بگز
+      introduction: OpenHistoricalMap کول پروجیکٹ دے بارے سکھݨ، سوال پچھݨ تے جواب
+        ݙیوݨ، تے نقشہ سازی دے موضوعات تے رل کے بحث کرݨ تے دستاویزات بݨاوݨ کیتے کئی
+        وسائل ہن۔
+      mailing_list:
+        description: ساݙی گھٹ پیغام آلی میلنگ لسٹ دی رکنیت حاصل کرو۔
+        title: میلنگ لسٹ
       slack:
+        description: 'آپݨے آپ کوں OpenStreetMap U.S. دے Slack ورک سپیس وچ شامل کرو
+          تے #openhistoricalmap چینل نال جڑو۔'
         title: آئی آر سی
+      welcome:
+        description: OpenHistoricalMap دیاں بنیادی گالھیں تے مبنی ایں مختصر رہنما
+          نال شروع کرو۔
+        title: OpenHistoricalMap وچ خوش آمدید
+      welcomemat:
+        description: OpenHistoricalMap دیاں بنیادی گالھیں تے مبنی ایں مختصر رہنما
+          نال شروع کرو۔
+        title: OHM وچ خوش آمدید
+      wiki:
+        description: OHM دے استعمال کیتے کمیونٹی دی طرفوں سنبھالاں گیاں ہدایات تے
+          پروجیکٹ وچ حصہ ݙیوݨ دے رہنما اصول۔
+        title: ویکی
+    index:
+      js_2: OpenHistoricalMap آپݨے سلپی نقشے کیتے JavaScript استعمال کریندا ہے۔
+      license:
+        copyright: OpenHistoricalMap جتھاں ٻیا کجھ نہ لکھیا ہووے، پبلک ڈومین کیتے
+          وقف ہے۔
+    welcome:
+      basic_terms:
+        a_tag_html: '%{tag} نوڈ یا وے دے بارے وچ ڈیٹا دا ہک ٹکڑا ہے، جیویں کہ کہیں
+          ریستوران دا ناں یا کہیں پل دے بݨݨ دا سال۔'
+        paragraph_1: OpenHistoricalMap دیاں آپݨیاں کجھ اصطلاحواں ہن۔ اتھاں کجھ اہم
+          الفاظ ݙتے ڳئے ہن جہڑے تہاݙے کم آؤݨ گے۔
+      introduction: OpenHistoricalMap وچ خوش آمدید، عالمی تاریخ دا مفت تے قابلِ تدوین
+        نقشہ۔ جیویں تساں سائن اپ کیتے او، ہݨ تساں نقشہ بݨاوݨ شروع کرݨ کیتے تیار او۔
+        اتھاں ہک مختصر رہنما ہے جیندے وچ او اہم ترین گالھیں ہن جنہاں دا تہاکوں پتہ
+        ہوݨا چاہیدا ہے۔
+      rules:
+        para_1_html: OpenHistoricalMap دے تھوڑے رسمی اصول ہن، پر اساں تمام شرکاء توں
+          ایہ توقع کریندے ہاں جو او کمیونٹی نال مل کے کم کرن تے گل بات کرن۔ اگر تساں
+          ہتھ نال تدوین توں علاوہ کوئی ٻیا کم کرݨ دے بارے وچ سوچدے پئے او تاں برائے
+          مہربانی %{imports_link} تے %{automated_edits_link} تے ݙتیاں گیاں ہدایاں
+          پڑھو تے انہاں تے عمل کرو۔
+      whats_on_the_map:
+        off_the_map_html: OpenHistoricalMap %{doesnt} وچ فرضی متبادل تاریخاں، پرانے
+          نقشیاں دیاں مشہور غلطیاں، تے کاپی رائٹ شدہ ذرائع توں ڈیٹا شامل ہن۔ جے تک
+          تہاکوں خصوصی اجازت نہ ہووے، جدید دور دے تاریخی نقشیاں توں نقل نہ کرو جہڑے
+          تہاکوں آن لائن یا پرنٹ وچ ملدے ہن۔
+        on_the_map_ohm_html: OpenHistoricalMap پوری دنیا وچ قدرتی تے انسانی جغرافیے
+          دیاں تبدیلیاں دا حساب رکھدا ہے۔ ساݙے کول %{past_and_present} دیاں لکھاں
+          انٹریاں ہن، سلطنتاں تے گلیشیئراں توں لے کے گھراں تے ریستوراں تک۔ تساں جہڑے
+          وی اصلی دنیا دے فیچر تہاکوں دلچسپ لڳدے ہن، انہاں دا نقشہ بݨا سڳدے او۔
+        past_and_present: ماضی تے حال ݙوہیں
+  time:
+    formats:
+      friendly: '%e %B %Yتے %H:%M'
   traces:
+    feeds:
+      show:
+        title: OpenHistoricalMap GPS ٹریسز
     show:
       edit: تبدیلی کرو
+      edit_trace: ایں ٹریس کوں تدوین کرو
       map: نقشہ
     trace:
+      edit_map: نقشے دی تدوین کرو
       view_map: نقشہ ݙیکھو
+  user_mailer:
+    changeset_comment_notification:
+      commented:
+        subject_other: '[OpenHistoricalMap] %{commenter} نے ہک تبدیلی سیٹ تے تبصرہ
+          کیتا ہے جیندے وچ تساں دلچسپی رکھدے او'
+        subject_own: '[OpenHistoricalMap] %{commenter} نے تہاݙے ہک تبدیلی سیٹ تے تبصرہ
+          کیتا ہے'
+      description: 'OpenHistoricalMap تبدیلی سیٹ #%{id}'
+    diary_comment_notification:
+      description: 'OpenHistoricalMap ڈائری انٹری #%{id}'
+      header: '%{from_user} نے OpenHistoricalMap دی ڈائری انٹری تے تبصرہ کیتا ہے جیندے
+        موضوع %{subject} ہے:'
+      header_html: '%{from_user} نے OpenHistoricalMap دی ڈائری انٹری تے تبصرہ کیتا
+        ہے جیندے موضوع %{subject} ہے:'
+      subject: '[OpenHistoricalMap] %{user} نے ہک ڈائری انٹری تے تبصرہ کیتا'
+    email_confirm:
+      subject: '[OpenHistoricalMap] آپݨا ای میل ایڈریس کنفرم کرو'
+    follow_notification:
+      followed_you: '%{user} ہݨ OpenHistoricalMap تے تہاکوں فالو کریندا پئے۔'
+      subject: '[OpenHistoricalMap] %{user} نے تہاکوں فالو کیتا'
+    gpx_failure:
+      subject: '[OpenHistoricalMap] GPX درآمد ناکام تھئی'
+    gpx_success:
+      subject: '[OpenHistoricalMap] GPX درآمد کامیاب تھئی'
+    lost_password:
+      hopefully_you: کِسے بندے (تھی سڳدا ہے جو تساں) ایں ای میل ایڈریس دے openhistoricalmap.org
+        کھاتے دا پاسورڈ ریسیٹ کرݨ کیتے آکھیا ہے۔
+      subject: '[OpenHistoricalMap] پاسورڈ ریسیٹ دی درخواست'
+    message_notification:
+      header: '%{from_user} نے تہاکوں OpenHistoricalMap دے ذریعے ہک پیغام بھیجا ہے
+        جیندے موضوع %{subject} ہے:'
+      header_html: '%{from_user} نے تہاکوں OpenHistoricalMap دے ذریعے ہک پیغام بھیجا
+        ہے جیندے موضوع %{subject} ہے:'
+      subject: '[OpenHistoricalMap] %{message_title}'
+    note_comment_notification:
+      closed:
+        subject_other: '[OpenHistoricalMap] %{commenter} نے ہک نوٹ حل کر ݙتا ہے جیندے
+          وچ تساں دلچسپی رکھدے او'
+        subject_own: '[OpenHistoricalMap] %{commenter} نے تہاݙے ہک نوٹ کوں حل کر ݙتا
+          ہے'
+      commented:
+        subject_other: '[OpenHistoricalMap] %{commenter} نے ہک نوٹ تے تبصرہ کیتا ہے
+          جیندے وچ تساں دلچسپی رکھدے او'
+        subject_own: '[OpenHistoricalMap] %{commenter} نے تہاݙے ہک نوٹ تے تبصرہ کیتا
+          ہے'
+      description: 'OpenHistoricalMap نوٹ #%{id}'
+      reopened:
+        subject_other: '[OpenHistoricalMap] %{commenter} نے ہک نوٹ ولدا فعال کر ݙتا
+          ہے جیندے وچ تساں دلچسپی رکھدے او'
+        subject_own: '[OpenHistoricalMap] %{commenter} نے تہاݙے ہک نوٹ کوں ولدا فعال
+          کر ݙتا ہے'
+    signup_confirm:
+      subject: '[OpenHistoricalMap] OpenHistoricalMap وچ خوش آمدید'
+  users:
+    auth_association:
+      heading: تہاݙی آئی ڈی ہݨ تئیں OpenHistoricalMap کھاتے نال جڑی ہوئی کائنی۔
+      option_1: اگر تساں OpenHistoricalMap تے نویں او تاں برائے مہربانی تھلے ݙتے ڳئے
+        فارم نال ہک نواں کھاتہ بݨاؤ۔
+    new:
+      about:
+        paragraph_1: ٻئے نقشیاں توں ہٹ کے، OpenHistoricalMap مکمل طور تے تہاݙے جہیں
+          لوکیں ولوں بݨایا ڳیا ہے، تے ایہ ہر کہیں کیتے مفت ہے جو ایندے وچ درستی کرے،
+          اپڈیٹ کرے، ڈاؤن لوڈ کرے تے استعمال کرے۔
+        paragraph_2: حصہ ݙیوݨ شروع کرݨ کیتے سائن اپ کرو۔ اساں تہاݙے کھاتے دی تصدیق
+          کیتے ہک ای میل بھیجسوں۔
+        welcome: OpenHistoricalMap وچ خوش آمدید
+      duplicate_social_email: اگر تہاݙے کول پہلے توں OpenHistoricalMap دا کھاتہ ہے
+        تے تساں تریجھے فریق دے شناختی فراہم کرݨ آلے کوں استعمال کرݨ چاہندے او تاں
+        برائے مہربانی آپݨے پاسورڈ نال لاگ ان کرو تے آپݨے کھاتے دیاں سیٹنگز تبدیل کرو۔
+      please_contact_support_html: کھاتہ بݨواوݨ دا بندوبست کرݨ کیتے برائے مہربانی
+        %{support_link} نال رابطہ کرو - اساں تہاݙی درخواست کوں جلدی توں جلدی حل کرݨ
+        دی کوشش کریسوں۔
+      signup_to_authorize_html: '%{client_app_name} تک رسائی حاصل کرݨ کیتے OpenHistoricalMap
+        نال سائن اپ کرو۔'
+...
