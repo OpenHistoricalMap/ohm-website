@@ -13,7 +13,9 @@ export default function (map) {
   const routeOutput = RouteOutput(map);
 
   const endpointDragCallback = function (dragging) {
-    if (!routeOutput.isVisible()) return;
+    // Also retry after a "no route" error, the route line is gone then
+    const routeFailed = $("#directions_error:not([hidden])").length > 0;
+    if (!routeOutput.isVisible() && !routeFailed) return;
     if (dragging && !chosenEngine.draggable) return;
     if (dragging && controller) return;
 
