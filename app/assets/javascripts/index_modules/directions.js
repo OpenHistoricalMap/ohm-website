@@ -12,10 +12,13 @@ export default function (map) {
 
   const routeOutput = RouteOutput(map);
 
+  // True when a route or a "no route" error is showing
+  const hasRouteResult = function () {
+    return routeOutput.isVisible() || $("#directions_error:not([hidden])").length > 0;
+  };
+
   const endpointDragCallback = function (dragging) {
-    // Also retry after a "no route" error, the route line is gone then
-    const routeFailed = $("#directions_error:not([hidden])").length > 0;
-    if (!routeOutput.isVisible() && !routeFailed) return;
+    if (!hasRouteResult()) return;
     if (dragging && !chosenEngine.draggable) return;
     if (dragging && controller) return;
 
@@ -214,6 +217,16 @@ export default function (map) {
     endpoints[1].setValue(params.get("to") || route[1] || "");
   }
 
+  // Route again for the new date, after the slider stops moving
+  let dateChangeTimeout;
+
+  function dateChangeListener() {
+    clearTimeout(dateChangeTimeout);
+    dateChangeTimeout = setTimeout(function () {
+      if (hasRouteResult()) getRoute(false);
+    }, 300);
+  }
+
   function enableListeners() {
     $("#sidebar .sidebar-close-controls button").on("click", closeButtonListener);
 
@@ -238,6 +251,7 @@ export default function (map) {
     });
 
     map.on("locationfound", sendStartingLocation);
+    map.on("timesliderdatechange", dateChangeListener);
 
     endpoints[0].enableListeners();
     endpoints[1].enableListeners();
@@ -276,6 +290,7 @@ export default function (map) {
     $("#sidebar .sidebar-close-controls button").off("click", closeButtonListener);
     $("#map").off("dragend dragover drop");
     map.off("locationfound", sendStartingLocation);
+    map.off("timesliderdatechange", dateChangeListener);
 
     endpoints[0].disableListeners();
     endpoints[1].disableListeners();
