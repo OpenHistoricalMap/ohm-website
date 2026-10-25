@@ -47,20 +47,24 @@
       provider: "graphhopper",
       draggable: false,
 
-      getRoute: function (points, signal) {
+      getRoute: function (points, signal, year) {
         // GraphHopper Directions API documentation https://docs.graphhopper.com
-        const query = new URLSearchParams({
+        const query = {
           profile: vehicleType,
           locale: OSM.i18n.locale,
-          key: "7cb4eb19-e0f4-40a3-a5e0-f2c039366f32",
           elevation: false,
-          instructions: true
-        });
+          instructions: true,
+          points: points.map(({ lat, lng }) => [lng, lat])
+        };
         const demoQuery = new URLSearchParams({ profile });
 
         for (const { lat, lng } of points) {
-          query.append("point", [lat, lng]);
           demoQuery.append("point", [lat, lng]);
+        }
+
+        // Skip ways that did not exist on the timeslider date
+        if (typeof year === "number") {
+          query.custom_model = { priority: [{ "if": `ohm_start > ${year} || ohm_end < ${year}`, "multiply_by": "0" }] };
         }
 
         const meta = {
@@ -69,7 +73,7 @@
           demolink: "https://graphhopper.com/maps/?" + demoQuery
         };
 
-        return fetch(OSM.GRAPHHOPPER_URL + "?" + query, { signal })
+        return fetch(OSM.GRAPHHOPPER_URL, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(query), signal })
           .then(response => response.json())
           .then(({ paths }) => {
             if (!paths || paths.length === 0) throw new Error();

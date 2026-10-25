@@ -112,7 +112,7 @@ export default function (map) {
     $("#directions_route").prop("hidden", true);
     map.setSidebarOverlaid(false);
     controller = new AbortController();
-    chosenEngine.getRoute(points, controller.signal).then(async function (route) {
+    chosenEngine.getRoute(points, controller.signal, map.timeslider?.getDate(true)).then(async function (route) {
       await sidebarLoaded();
       $("#directions_route").prop("hidden", false);
       routeOutput.write(route);
@@ -144,7 +144,7 @@ export default function (map) {
     map.setSidebarOverlaid(true);
   }
 
-  setEngine("fossgis_osrm_car");
+  setEngine("graphhopper_car");
   setEngine(OSM.cookies.get("_osm_directions_engine"));
 
   modeGroup.on("change", "input[name='modes']", function (e) {
