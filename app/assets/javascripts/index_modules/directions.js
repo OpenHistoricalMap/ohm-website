@@ -256,6 +256,9 @@ export default function (map) {
   }
 
   page.load = page.init = function () {
+    // Add the slider first, the route from the URL needs its date
+    addOpenHistoricalMapTimeSlider(map);
+
     initializeFromParams();
 
     $(".search_form").hide();
@@ -264,8 +267,6 @@ export default function (map) {
     sidebarLoaded().then(enableListeners);
 
     map.setSidebarOverlaid(!endpoints[0].latlng || !endpoints[1].latlng);
-
-    addOpenHistoricalMapTimeSlider(map);
   };
 
   page.unload = function () {
