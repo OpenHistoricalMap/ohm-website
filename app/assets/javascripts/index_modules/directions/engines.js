@@ -1,5 +1,5 @@
 //= require_self
-//= require_tree ./engines
+//= require ./engines/graphhopper
 
 OSM.directionsEngines = [];
 
