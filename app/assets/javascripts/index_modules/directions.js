@@ -117,7 +117,7 @@ export default function (map) {
     $("#directions_route").prop("hidden", true);
     map.setSidebarOverlaid(false);
     controller = new AbortController();
-    chosenEngine.getRoute(points, controller.signal, map.timeslider?.getDate(true)).then(async function (route) {
+    chosenEngine.getRoute(points, controller.signal, map.timeslider?.getDate(true), map.timeslider?.getDate()).then(async function (route) {
       await sidebarLoaded();
       $("#directions_route").prop("hidden", false);
       routeOutput.write(route);
