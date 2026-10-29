@@ -28,10 +28,14 @@
     <div class="d-flex flex-column gap-2">
       <div class="d-flex gap-2 align-items-center">
         <div class="btn-group routing_modes" role="group">
-          <% { "car" => "car-front-fill", "bicycle" => "bicycle", "foot" => "person-walking" }.each do |mode, icon| %>
+          <% { "car" => "car-front-fill", "bicycle" => "bicycle", "foot" => "person-walking", "horse" => "horse.svg", "carriage" => "carriage.svg" }.each do |mode, icon| %>
             <%= radio_button_tag "modes", mode, false, { :class => "btn-check", :autocomplete => "off", :disabled => true } %>
             <%= label_tag "modes_#{mode}",
-                          tag.i(:class => "bi bi-#{icon} fs-6", :aria => { :hidden => "true" }),
+                          if icon.end_with?(".svg")
+                            inline_svg_tag(icon, :class => "fs-6", :width => "1em", :height => "1em", :aria_hidden => true)
+                          else
+                            tag.i(:class => "bi bi-#{icon} fs-6", :aria => { :hidden => "true" })
+                          end,
                           :class => "btn btn-outline-secondary px-2 py-1",
                           :title => t("site.search.modes.#{mode}") %>
           <% end %>

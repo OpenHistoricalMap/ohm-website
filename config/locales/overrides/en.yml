@@ -439,6 +439,10 @@ en:
         copyright: OpenHistoricalMap is dedicated to the public domain except where otherwise noted.
         license_url: https://www.openhistoricalmap.org/copyright
         project_url: https://www.openhistoricalmap.org
+    search:
+      modes:
+        carriage: Carriage
+        horse: Horse
     potlatch:
       removed: Your default OpenHistoricalMap editor is set as Potlatch. Because Adobe Flash Player has been withdrawn, Potlatch is no longer available to use in a web browser.
     welcome:
