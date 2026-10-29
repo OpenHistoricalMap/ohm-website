@@ -9,7 +9,7 @@
     "@mapbox/polyline": "*",
     "@maplibre/maplibre-gl-leaflet": "*",
     "@maptiler/maplibre-gl-omt-language": "*",
-    "@openhistoricalmap/id": "2.39.5-ohm.3",
+    "@openhistoricalmap/id": "2.42.2-ohm.1",
     "@openhistoricalmap/map-styles": "^0.9.19",
     "@openhistoricalmap/maplibre-gl-language": "^0.1.0",
     "bootstrap-icons": "*",
