@@ -48,6 +48,11 @@ export function mappedElement(type) {
 
       addOpenHistoricalMapTimeSlider(map);
       addOpenHistoricalMapInspector();
+      if (!version) {
+        import(OSM.MODULE_PATHS.ohm_events)
+          .then(({ mountOhmWebsite }) => mountOhmWebsite({ map, type, id: parseInt(id, 10) }))
+          .catch(error => console.error("ohm-events", error));
+      }
     };
 
     page._removeObject = function () {

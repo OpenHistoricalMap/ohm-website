@@ -39,7 +39,8 @@ OSM = {
       .each_with_object({}) { |module_name, hash| hash[:"index_#{module_name}"] = "index_modules/#{module_name}" }
       .merge(
         :mapbox_rtl_text => "@mapbox/mapbox-gl-rtl-text/dist/mapbox-gl-rtl-text.js",
-        :make_plural_cardinals => "make-plural/cardinals.js"
+        :make_plural_cardinals => "make-plural/cardinals.js",
+        :ohm_events => "@openhistoricalmap/events/dist/ohm-events.js"
       )
       .transform_values { |path| javascript_path(path) }
       .to_json %>,
