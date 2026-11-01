@@ -1,5 +1,5 @@
 ARG RUBY_VERSION=3.3
-FROM ruby:$RUBY_VERSION-bookworm
+FROM ruby:$RUBY_VERSION-trixie
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -35,17 +35,6 @@ RUN apt-get update \
     libgl1-mesa-dri \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* # Replace with `apt-get dist-clean` after upgrading to Debian 13 (Trixie)
-
-# OHM: the dev database container runs Postgres 17, but Debian ships client 15
-# and pg_dump refuses newer servers. Install a matching client from
-# apt.postgresql.org, the same source OSM production uses.
-RUN apt-get update \
-  && apt-get install --no-install-recommends -y postgresql-common \
-  && /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -y \
-  && apt-get update \
-  && apt-get install --no-install-recommends -y postgresql-client-17 \
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists/*
 
 # Install yarn globally
 RUN npm install --global yarn
