@@ -10,7 +10,7 @@
     "@maplibre/maplibre-gl-leaflet": "*",
     "@maptiler/maplibre-gl-omt-language": "*",
     "@openhistoricalmap/id": "2.42.2-ohm.1",
-    "@openhistoricalmap/map-styles": "^0.9.19",
+    "@openhistoricalmap/map-styles": "^0.9.22",
     "@openhistoricalmap/maplibre-gl-language": "^0.1.0",
     "bootstrap-icons": "*",
     "bs-custom-file-input": "^1.3.4",
