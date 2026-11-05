@@ -1,5 +1,6 @@
 # Messages for Hindi (हिन्दी)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Abijeet Patro
 # Author: Abijeet Patro - Normal
 # Author: Ansumang
@@ -24,14 +25,27 @@
 # Author: Vdhatterwal
 # Author: पदाति
 # Author: संजीव कुमार
-# Do not edit by hand.
+---
 hi:
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: कला केन्द्र
+        leisure:
+          horse_riding: घुड़सवारी
+        shop:
+          seafood: समुद्री खाद्य
   site:
     about_section:
       legal_1_privacy_policy: गोपनीयता नीति
     help:
       wiki:
         title: विकि
+  time:
+    formats:
+      friendly: '%e %B %Y को %H:%M पर'
   user_mailer:
     diary_comment_notification:
-      subject: "[OpenHistoricalMap] %{user} ने एक दैनिकी पर प्रतिक्रिया दी"
+      subject: '[OpenHistoricalMap] %{user} ने एक दैनिकी पर प्रतिक्रिया दी'
+...

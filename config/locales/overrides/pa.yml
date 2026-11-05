@@ -1,5 +1,6 @@
 # Messages for Punjabi (ਪੰਜਾਬੀ)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Aalam
 # Author: Babanwalia
 # Author: Bgo eiu
@@ -10,7 +11,7 @@
 # Author: Minh Nguyen
 # Author: Satnam S Virdi
 # Author: Tow
-# Do not edit by hand.
+---
 pa:
   diary_entries:
     feed:
@@ -18,11 +19,23 @@ pa:
         description: OpenHistoricalMap ਦੇ ਵਰਤੋਂਕਾਰ ਤੋਂ ਹਾਲੀਆ ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ
         title: OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ
       language:
-        description: "%{language_name} ਵਿੱਚ OpenHistoricalMap ਦੇ ਵਰਤੋਂਕਾਰ ਤੋਂ ਹਾਲੀਆ ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ"
-        title: "%{language_name} ਵਿੱਚ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ"
+        description: '%{language_name} ਵਿੱਚ OpenHistoricalMap ਦੇ ਵਰਤੋਂਕਾਰ ਤੋਂ ਹਾਲੀਆ
+          ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ'
+        title: '%{language_name} ਵਿੱਚ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ'
       user:
-        description: "%{user} ਤੋਂ ਤਾਜ਼ਾ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ"
-        title: "%{user} ਲਈ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ"
+        description: '%{user} ਤੋਂ ਤਾਜ਼ਾ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ'
+        title: '%{user} ਲਈ OpenHistoricalMap ਰੋਜ਼ਨਾਮਚਾ ਇੰਦਰਾਜ'
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: ਕਲਾ ਕੇਂਦਰ
+        leisure:
+          horse_riding: ਘੋੜ ਸਵਾਰੀ ਕੇਂਦਰ
+  javascripts:
+    legend:
+      title: ਨਕਸ਼ੇ ਦਾ ਟੀਕਾ
+      tooltip: ਨਕਸ਼ੇ ਦਾ ਟੀਕਾ
   layouts:
     intro_header: OpenHistoricalMap 'ਤੇ ਜੀ ਆਇਆਂ ਨੂੰ
   oauth:
@@ -54,13 +67,14 @@ pa:
         title: ਵਿਕੀ
   time:
     formats:
-      friendly: "%e %B %Y at %H:%M"
+      friendly: '%e %B %Y at %H:%M'
   traces:
     feeds:
       show:
         title: OpenHistoricalMap GPS ਖੁਰਾ-ਖੋਜ
   user_mailer:
     email_confirm:
-      subject: "[ਖੁੱਲ੍ਹਾ-ਇਤਿਹਾਸੀ-ਨਕਸ਼ਾ] ਆਪਣੇ ਈਮੇਲ ਪਤੇ ਦੀ ਤਸਦੀਕ ਕਰੋ"
+      subject: '[ਖੁੱਲ੍ਹਾ-ਇਤਿਹਾਸੀ-ਨਕਸ਼ਾ] ਆਪਣੇ ਈਮੇਲ ਪਤੇ ਦੀ ਤਸਦੀਕ ਕਰੋ'
     signup_confirm:
-      subject: "[OpenHistoricalMap] OpenHistoricalMap ਉੱਤੇ ਜੀ ਆਈਆਂ ਨੂੰ"
+      subject: '[OpenHistoricalMap] OpenHistoricalMap ਉੱਤੇ ਜੀ ਆਈਆਂ ਨੂੰ'
+...
