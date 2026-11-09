@@ -412,10 +412,10 @@
     rbush "4.0.1"
     which-polygon "2.2.1"
 
-"@openhistoricalmap/map-styles@^0.9.22":
-  version "0.9.22"
-  resolved "https://registry.yarnpkg.com/@openhistoricalmap/map-styles/-/map-styles-0.9.22.tgz#aeb866396988a4dd861f217d175853c15b573459"
-  integrity sha512-Gk25R1Nu/Dvxley0uIndF8wFl2XHnt/Qd+VYzmjA6EAyd722DjdN8EOI6xZOf6XnbO5EMoCDQt01J5SeSdoU8Q==
+"@openhistoricalmap/map-styles@^0.9.23":
+  version "0.9.23"
+  resolved "https://registry.yarnpkg.com/@openhistoricalmap/map-styles/-/map-styles-0.9.23.tgz#b82a08478e3ced46f4d8a55752a80ebb4fd71ef4"
+  integrity sha512-3Fkk5q/R1dvhHLUXAgU+4N7bf+FH0fjVA9MrofKoAe/1y0p9MFUpuGfoBpTQAiZ9fhO6DM/aGe0ldFxKxOQ0uA==
   dependencies:
     camelcase "^9.0.0"
     fs-extra "^11.3.4"
