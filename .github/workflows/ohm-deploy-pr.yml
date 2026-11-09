@@ -1,0 +1,58 @@
+name: Open ohm-deploy PR
+# On each push to staging, update OPENHISTORICALMAP_WEBSITE_GITSHA in ohm-deploy.
+# It keeps one open PR (fixed branch) and refreshes it with the latest SHA.
+on:
+  push:
+    branches:
+      - staging
+  workflow_dispatch:
+
+concurrency:
+  group: ohm-deploy-pr
+  cancel-in-progress: true
+
+jobs:
+  ohm-deploy-pr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # Token from the OHM GitHub App, so the PR is opened by the bot, not a person
+      - uses: actions/create-github-app-token@v1
+        id: app
+        with:
+          app-id: ${{ secrets.OHM_APP_ID }}
+          private-key: ${{ secrets.OHM_APP_PRIVATE_KEY }}
+          repositories: ohm-deploy
+
+      - name: Get bot user id
+        id: bot
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+        run: echo "id=$(gh api "/users/${{ steps.app.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        with:
+          repository: OpenHistoricalMap/ohm-deploy
+          ref: staging
+          token: ${{ steps.app.outputs.token }}
+
+      - name: Update website SHA
+        run: |
+          sed -i "s/^ENV OPENHISTORICALMAP_WEBSITE_GITSHA=.*/ENV OPENHISTORICALMAP_WEBSITE_GITSHA=${GITHUB_SHA}/" images/web/Dockerfile
+          grep -n "OPENHISTORICALMAP_WEBSITE_GITSHA=" images/web/Dockerfile
+          echo "SHORT_SHA=${GITHUB_SHA::7}" >> "$GITHUB_ENV"
+
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ steps.app.outputs.token }}
+          base: staging
+          author: ${{ steps.app.outputs.app-slug }}[bot] <${{ steps.bot.outputs.id }}+${{ steps.app.outputs.app-slug }}[bot]@users.noreply.github.com>
+          committer: ${{ steps.app.outputs.app-slug }}[bot] <${{ steps.bot.outputs.id }}+${{ steps.app.outputs.app-slug }}[bot]@users.noreply.github.com>
+          branch: ohm-website-staging
+          add-paths: images/web/Dockerfile
+          commit-message: Update ohm-website to ${{ env.SHORT_SHA }}
+          title: Update ohm-website
+          body: |
+            Update `OPENHISTORICALMAP_WEBSITE_GITSHA` to ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}.
+
+            This PR is refreshed on each push to ohm-website `staging`.
