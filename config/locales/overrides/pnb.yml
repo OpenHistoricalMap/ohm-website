@@ -1,11 +1,23 @@
 # Messages for Western Punjabi (پنجابی)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Ajeje Brazorf
 # Author: Bgo eiu
 # Author: Erictheise
 # Author: Minh Nguyen
-# Do not edit by hand.
+---
 pnb:
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: کلا کیندر
+        leisure:
+          horse_riding: گھوڑے دی سواری
+  javascripts:
+    legend:
+      title: نقشے دا ٹیکا
+      tooltip: نقشے دا ٹیکا
   layouts:
     project_name:
       title: اوپن ہسٹورکل میپ
@@ -18,3 +30,8 @@ pnb:
         title: آئی آر سی
       wiki:
         title: وِکی
+  time:
+    formats:
+      blog: ؜%e؍؜%B ؜%Yء‬
+      friendly: ؜%e؍؜%B ؜%Yء ‪%H:%M‬
+...
