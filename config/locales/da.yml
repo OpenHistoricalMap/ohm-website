@@ -166,6 +166,7 @@ da:
         reason: Begrundelse
         zone: Zone
         period: Periode
+        ends_at: Udløbsdato og -tidspunkt
       message:
         sender: Afsender
         title: Emne
@@ -195,6 +196,10 @@ da:
         pass_crypt_confirmation: Bekræft adgangskode
     help:
       acl:
+        address: En IP-adresse eller et CIDR-netværk, f.eks. 192.0.2.0/24
+        domain: Et e-maildomæne; underdomæner matches også
+        mx: Værtsnavnet på en MX-server for e-mail-domænet
+        k: 'En af: no_account_creation, allow_account_creation, no_note_comment, no_trace_download'
         v: Valgfri bemærkning, f.eks. årsagen til denne tilføjelse
       doorkeeper/application:
         confidential: Applikation vil blive anvendt hvor klient-hemmeligheden kan
@@ -741,6 +746,8 @@ da:
       nearby_changesets: ændringssæt af brugere i nærheden
       nearby_diaries: blogindlæg af brugere i nærheden
   notifications:
+    missing_record:
+      body: Dette er desværre ikke tilgængeligt længere
     index:
       title: Notifikationer
       no_notifications: Du har ingen notifikationer i øjeblikket
@@ -3183,6 +3190,9 @@ da:
       scheduled_for_deletion: Spor planlagt til at blive slettet
     legacy_visibilities:
       edit:
+        description: Dette er dine spor, der stadig bruger den gamle private eller
+          offentlige synlighed. Du kan ændre dem her til sporbare eller identificerbare.
+          Planlagte forbedringer af GPS-spor vil kun dække sporbare og identificerbare.
         filter:
           visibility: Nuværende synlighed
           any: Privat og offentlig
@@ -4049,6 +4059,10 @@ da:
       id_not_configured:
         title: iD er ikke blevet konfigureret
         body: Se CONFIGURE.md for yderligere oplysninger
+    traces:
+      tagstring:
+        comma_delimited: 'kommasepareret:'
+        space_delimited: 'separeret med mellemrum:'
   redactions:
     edit:
       heading: Rediger omarbejdelse
@@ -4097,6 +4111,7 @@ da:
     trailing_whitespace: har afsluttende blanktegn
     invalid_characters: indholder ugyldige tegn
     url_characters: indeholder specielle URL-karakterer (%{characters})
+    email_characters: indeholder ugyldige tegn (%{characters})
   moderation_zones:
     navigation:
       new_title: Definer en ny moderationszone
@@ -4135,4 +4150,11 @@ da:
         ended: ophørt
         active: aktiv
         revoked_html: ophævet af %{name}
+    form:
+      expiration: Udløb
+      relative_expiration: I en periode
+      absolute_expiration: Indtil en bestemt dato og tidspunkt
+      period:
+        options:
+          revoke: Tilbagekald modereringszone
 ...

@@ -202,6 +202,7 @@ it:
         reason: Motivo
         zone: Zona
         period: Periodo
+        ends_at: Data e ora di scadenza
       message:
         sender: Mittente
         title: Oggetto
@@ -790,6 +791,8 @@ it:
       nearby_changesets: gruppi di modifiche da parte degli utenti nelle vicinanze
       nearby_diaries: note dei diari degli utenti nelle vicinanze
   notifications:
+    missing_record:
+      body: Purtroppo ciò non è più disponibile
     index:
       title: Notifiche
       no_notifications: Al momento non hai notifiche
@@ -1637,7 +1640,7 @@ it:
           carpet: Tappeti
           charity: Negozio solidale
           cheese: Negozio di formaggi
-          chemist: Farmacia
+          chemist: Drogheria
           chocolate: Cioccolato
           clothes: Negozio di abbigliamento
           coffee: Negozio di caffè
@@ -4244,4 +4247,8 @@ it:
         ended: terminato
         active: attivo
         revoked_html: revocato da %{name}
+    form:
+      expiration: Scadenza
+      relative_expiration: Per una durata
+      absolute_expiration: Fino a una data e ora specificate
 ...

@@ -1,4 +1,5 @@
 export default function (map) {
+<<<<<<< HEAD
   const content = $("#sidebar_content"),
         page = {};
 
@@ -15,6 +16,9 @@ export default function (map) {
     initialize(path, id);
     addOpenHistoricalMapTimeSlider(map);
   };
+=======
+  const content = $("#sidebar_content");
+>>>>>>> upstream-tip
 
   function initialize(path, id, skipMoveToNote) {
     content.find("button[name]").on("click", function (e) {
@@ -92,9 +96,22 @@ export default function (map) {
     }
   }
 
-  page.unload = function () {
-    map.removeObject();
-  };
+  return {
+    load(path, id) {
+      OSM.loadSidebarContent(path).then(function () {
+        const data = $(".details").data();
+        if (!data) return;
+        const [lat, lng] = data.coordinates.split(",").map(parseFloat);
+        initialize(path, id, map.getBounds().contains({ lat, lng }));
+      });
+    },
 
-  return page;
+    init(path, id) {
+      initialize(path, id);
+    },
+
+    unload() {
+      map.removeObject();
+    }
+  };
 }

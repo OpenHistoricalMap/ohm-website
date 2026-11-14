@@ -3,6 +3,8 @@
 require "application_system_test_case"
 
 class ManageModerationZones < ApplicationSystemTestCase
+  driven_by_selenium "default", :preferences => { "ui.prefersReducedMotion" => 1 }
+
   test "Create a moderation zone and fail to put an anonymous note within it" do
     sign_in_as(create(:moderator_user))
 
@@ -30,6 +32,26 @@ class ManageModerationZones < ApplicationSystemTestCase
       click_on "Add Note"
 
       assert_content "There was an error when creating the note"
+      find(".new-note-error summary").click
+      assert_text "You don't have permissions to make changes here. Please either sign in or create an OpenStreetMap account"
     end
+  end
+
+  test "Revoke a moderation zone" do
+    user = create(:moderator_user)
+    zone = create(:moderation_zone, :creator => user)
+
+    sign_in_as(user)
+    visit edit_moderation_zone_path(zone)
+
+    # Editing defaults to the absolute-expiry panel, which hides/disables
+    # the period select used below.
+    choose "For a duration"
+    select "Revoke moderation zone", :from => :moderation_zone_period
+    click_on "Update Moderation zone"
+    assert_content "Moderation zone updated"
+
+    zone.reload
+    assert_equal user, zone.revoker
   end
 end

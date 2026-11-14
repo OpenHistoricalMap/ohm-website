@@ -164,6 +164,8 @@ be-Tarask:
         pass_crypt: Пароль
         pass_crypt_confirmation: Пацьверджаньне паролю
     help:
+      acl:
+        address: IP-адрас ці сетка CIDR, напрыклад, 192.0.2.0/24
       doorkeeper/application:
         confidential: Праґрама будзе выкарыстоўвацца там, дзе кліенцкі сакрэтны ключ
           можа захоўвацца канфідэнцыйна (родныя мабільныя і аднастаронкавыя праґрамы
@@ -825,7 +827,7 @@ be-Tarask:
     flash:
       applications:
         create:
-          notice: Запыт зарэгістраваны.
+          notice: Запыт зарэґістраваны.
     openid_connect:
       errors:
         messages:
@@ -1862,7 +1864,7 @@ be-Tarask:
           abusive_label: Гэтая заўвага абразьлівая
           other_label: Іншае
     create:
-      successful_report: Скарга зарэгістравана
+      successful_report: Скарга зарэґістравана
       provide_details: Калі ласка, падайце неабходныя зьвесткі
   languages_panes:
     select_language_list:
@@ -2448,7 +2450,7 @@ be-Tarask:
       visit_referring_page: Перайсьці да мэтавай старонкі
       email or username: Адрас электроннай пошты ці імя карыстальніка
       password: Пароль
-      remember: Запомніць мяне
+      remember: Памятаць мяне
       lost password link: Забылі пароль?
       login_button: Увайсьці
       with external: альбо вайсьці праз вонкавы сэрвіс
@@ -2726,20 +2728,16 @@ be-Tarask:
           ласка, зьменшыце маштаб, выберыце меншы абшар, ці паспрабуйце адну з наступных
           крыніцаў, каб сьцягнуць буйную колькасьць зьвестак:'
         planet:
-          url: https://planet.openstreetmap.org/
           title: Плянэта OSM
           description: Рэґулярна абнаўляльныя копіі поўнай базы зьвестак OpenStreetMap
         overpass:
-          url: https://overpass-api.de/api/map
           title: Overpass API
           description: Сьцягнуць вылучаную зону мапы зь люстэрка базы зьвестак OpenStreetMap
         geofabrik:
-          url: https://download.geofabrik.de/
           title: Сьцягнутае Geofabrik
           description: Рэґулярна абнаўляльныя выцяжкі кантынэнтаў, краінаў і выбраных
             гарадоў
         other:
-          url: https://wiki.openstreetmap.org/wiki/Downloading_data
           title: Іншыя крыніцы
           description: Дадатковы сьпіс крыніцаў на OpenStreetMap Wiki
       export_button: Экспартаваць
@@ -3115,10 +3113,12 @@ be-Tarask:
       my_traces: Мае трэкі
       traces_from_html: Публічныя трэкі %{user}
       remove_tag_filter: Выдаліць фільтар тэґаў
+      legacy_traces: Мае састарэлыя трэкі
     destroy:
       scheduled_for_deletion: Трэк заплянаваны на выдаленьне
     legacy_visibilities:
       edit:
+        title: Мае састарэлыя GPS трэкі
         filter:
           visibility: Бягучая відомасьць
           any: Прыватны і публічны
@@ -3126,6 +3126,7 @@ be-Tarask:
           to: Дасланае да
           apply: Фільтар
         new_visibility: Новая відомасьць
+        no_undo: Гэтую зьмену нельга скасаваць.
         confirmation:
           header: Пацьвердзіць зьмену відомасьці
           cancel: Скасаваць
@@ -3211,8 +3212,6 @@ be-Tarask:
         alt: X значок
     markdown_help:
       heading_html: Разабрана з %{kramdown_link}
-      kramdown_url: https://kramdown.gettalong.org/quickref.html
-      kramdown: kramdown
       headings: Загалоўкі
       heading: Загаловак
       subheading: Падзагаловак
@@ -3297,7 +3296,7 @@ be-Tarask:
     index:
       title: Мае кліенцкія праґрамы
       no_applications_html: Жадаеце падключыць праґраму праз %{oauth2}? Спачатку мусіце
-        зарэгістраваць гэтую праґраму, а потым яна зможа прымаць OAuth запыты.
+        зарэґістраваць гэтую праґраму, а потым яна зможа прымаць OAuth запыты.
       new: Рэґістрацыя новай праґрамы
       name: Назва
       permissions: Дазволы
@@ -4021,6 +4020,7 @@ be-Tarask:
     trailing_whitespace: ёсьць прабел у канцы
     invalid_characters: месьціць няслушныя сымбалі
     url_characters: месьціць спэцыяльныя URL сымбалі (%{characters})
+    email_characters: месьціць няслушныя сымбалі (%{characters})
   moderation_zones:
     navigation:
       new_title: Вызначыць новую зону мадэрацыі

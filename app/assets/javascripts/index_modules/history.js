@@ -2,8 +2,6 @@
 /* global ChangesetsLayer */
 
 export default function (map) {
-  const page = {};
-
   $("#sidebar_content")
     .on("click", ".changeset_more a", loadMoreChangesets)
     .on("mouseover", "[data-changeset]", function () {
@@ -287,11 +285,13 @@ export default function (map) {
     }
   }
 
-  page.load = function (path) {
-    OSM.loadSidebarContent(path)
-      .then(page.init);
-  };
+  return {
+    load(path) {
+      OSM.loadSidebarContent(path)
+        .then(this.init);
+    },
 
+<<<<<<< HEAD
   page.init = function () {
     map.addLayer(changesetsLayer);
     map.on("moveend", moveEndListener);
@@ -300,13 +300,20 @@ export default function (map) {
 
     addOpenHistoricalMapTimeSlider(map);
   };
+=======
+    init() {
+      map.addLayer(changesetsLayer);
+      map.on("moveend", moveEndListener);
+      map.on("zoomend", zoomEndListener);
+      loadFirstChangesets();
+    },
+>>>>>>> upstream-tip
 
-  page.unload = function () {
-    map.removeLayer(changesetsLayer);
-    map.off("moveend", moveEndListener);
-    map.off("zoomend", zoomEndListener);
-    disableChangesetIntersectionObserver();
+    unload() {
+      map.removeLayer(changesetsLayer);
+      map.off("moveend", moveEndListener);
+      map.off("zoomend", zoomEndListener);
+      disableChangesetIntersectionObserver();
+    }
   };
-
-  return page;
 }

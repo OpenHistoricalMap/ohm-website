@@ -257,8 +257,6 @@ export default function (map) {
     endpoints[1].enableListeners();
   }
 
-  const page = {};
-
   function sidebarLoaded() {
     if ($("#directions_route").length) {
       sidebarReadyPromise = null;
@@ -269,19 +267,48 @@ export default function (map) {
     return sidebarReadyPromise ??= OSM.loadSidebarContent("/directions");
   }
 
+<<<<<<< HEAD
   page.load = page.init = function () {
     // Add the slider first, the route from the URL needs its date
     addOpenHistoricalMapTimeSlider(map);
 
     initializeFromParams();
+=======
+  return {
+    load() { this.init(); },
+>>>>>>> upstream-tip
 
-    $(".search_form").hide();
-    $(".directions_form").show();
+    init() {
+      initializeFromParams();
 
-    sidebarLoaded().then(enableListeners);
+      $(".search_form").hide();
+      $(".directions_form").show();
 
-    map.setSidebarOverlaid(!endpoints[0].latlng || !endpoints[1].latlng);
+      sidebarLoaded().then(enableListeners);
+
+      map.setSidebarOverlaid(!endpoints[0].latlng || !endpoints[1].latlng);
+    },
+
+    unload() {
+      $(".search_form").show();
+      $(".directions_form").hide();
+
+      $("#sidebar .sidebar-close-controls button").off("click", closeButtonListener);
+      $("#map").off("dragend dragover drop");
+      map.off("locationfound", sendStartingLocation);
+
+      endpoints[0].disableListeners();
+      endpoints[1].disableListeners();
+
+      endpoints[0].clearValue();
+      endpoints[1].clearValue();
+
+      routeOutput.remove();
+
+      sidebarReadyPromise = null;
+    }
   };
+<<<<<<< HEAD
 
   page.unload = function () {
     $(".search_form").show();
@@ -304,4 +331,6 @@ export default function (map) {
   };
 
   return page;
+=======
+>>>>>>> upstream-tip
 }

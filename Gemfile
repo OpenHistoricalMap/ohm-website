@@ -12,10 +12,8 @@ gem "pg"
 
 # Use SCSS for stylesheets
 gem "dartsass-sprockets"
-# Pin the dependent sass-embedded to avoid deprecation warnings in bootstrap
-gem "sass-embedded", "~> 1.64.0"
-# Pin uri to avoid errors in dartsass-ruby
-gem "uri", "< 1.0.0"
+# Don't allow upgrade to 3.0.0 as some deprecations will become errors
+gem "sass-embedded", "< 3.0.0"
 
 # Use Terser as compressor for JavaScript assets
 gem "terser"
@@ -53,6 +51,7 @@ gem "benchmark"
 gem "actionpack-page_caching"
 gem "activerecord-import"
 gem "active_record_union"
+gem "active_storage_validations"
 gem "bootstrap"
 gem "bootstrap_form"
 gem "cancancan"
