@@ -21,7 +21,7 @@ class CreateNoteTest < ApplicationSystemTestCase
 
     within_sidebar do
       assert_button "Add Note", :disabled => true
-      assert_text "Anyone in the public can see a note, even without an OpenStreetMap account!"
+      assert_text "Anyone in the public can see a note, even without an OpenHistoricalMap account!"
       assert_includes find_field("text")[:placeholder], "A good note is as descriptive as possible"
       assert_includes find_field("text")[:placeholder], "Please be kind, patient and respectful"
 
