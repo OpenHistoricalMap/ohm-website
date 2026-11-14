@@ -315,23 +315,14 @@ export default function (map) {
       }
 
       queryOverpass([params.get("lat"), params.get("lon")]);
+
+      addOpenHistoricalMapTimeSlider(map);
     },
 
-<<<<<<< HEAD
-    queryOverpass([params.get("lat"), params.get("lon")]);
-
-    addOpenHistoricalMapTimeSlider(map);
-  };
-
-  page.unload = function (sameController) {
-    if (!sameController) {
-      $("#sidebar_content .query-results a.selected").each(hideResultGeometry);
-=======
     unload(sameController) {
       if (!sameController) {
         $("#sidebar_content .query-results a.selected").each(hideResultGeometry);
       }
->>>>>>> upstream-tip
     }
   };
 }

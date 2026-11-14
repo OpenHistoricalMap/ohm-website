@@ -291,23 +291,14 @@ export default function (map) {
         .then(this.init);
     },
 
-<<<<<<< HEAD
-  page.init = function () {
-    map.addLayer(changesetsLayer);
-    map.on("moveend", moveEndListener);
-    map.on("zoomend", zoomEndListener);
-    loadFirstChangesets();
-
-    addOpenHistoricalMapTimeSlider(map);
-  };
-=======
     init() {
       map.addLayer(changesetsLayer);
       map.on("moveend", moveEndListener);
       map.on("zoomend", zoomEndListener);
       loadFirstChangesets();
+
+      addOpenHistoricalMapTimeSlider(map);
     },
->>>>>>> upstream-tip
 
     unload() {
       map.removeLayer(changesetsLayer);

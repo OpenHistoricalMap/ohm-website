@@ -9,13 +9,9 @@
     "@mapbox/polyline": "*",
     "@maplibre/maplibre-gl-leaflet": "*",
     "@maptiler/maplibre-gl-omt-language": "*",
-<<<<<<< HEAD
     "@openhistoricalmap/id": "2.42.2-ohm.1",
     "@openhistoricalmap/map-styles": "^0.9.23",
     "@openhistoricalmap/maplibre-gl-language": "^0.1.0",
-=======
-    "@openstreetmap/id": "2.42.3",
->>>>>>> upstream-tip
     "bootstrap-icons": "*",
     "bs-custom-file-input": "^1.3.4",
     "i18n-js": "*",

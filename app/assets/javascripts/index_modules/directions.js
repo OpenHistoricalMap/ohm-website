@@ -267,18 +267,13 @@ export default function (map) {
     return sidebarReadyPromise ??= OSM.loadSidebarContent("/directions");
   }
 
-<<<<<<< HEAD
-  page.load = page.init = function () {
-    // Add the slider first, the route from the URL needs its date
-    addOpenHistoricalMapTimeSlider(map);
-
-    initializeFromParams();
-=======
   return {
     load() { this.init(); },
->>>>>>> upstream-tip
 
     init() {
+      // Add the slider first, the route from the URL needs its date
+      addOpenHistoricalMapTimeSlider(map);
+
       initializeFromParams();
 
       $(".search_form").hide();
@@ -296,6 +291,7 @@ export default function (map) {
       $("#sidebar .sidebar-close-controls button").off("click", closeButtonListener);
       $("#map").off("dragend dragover drop");
       map.off("locationfound", sendStartingLocation);
+      map.off("timesliderdatechange", dateChangeListener);
 
       endpoints[0].disableListeners();
       endpoints[1].disableListeners();
@@ -308,29 +304,4 @@ export default function (map) {
       sidebarReadyPromise = null;
     }
   };
-<<<<<<< HEAD
-
-  page.unload = function () {
-    $(".search_form").show();
-    $(".directions_form").hide();
-
-    $("#sidebar .sidebar-close-controls button").off("click", closeButtonListener);
-    $("#map").off("dragend dragover drop");
-    map.off("locationfound", sendStartingLocation);
-    map.off("timesliderdatechange", dateChangeListener);
-
-    endpoints[0].disableListeners();
-    endpoints[1].disableListeners();
-
-    endpoints[0].clearValue();
-    endpoints[1].clearValue();
-
-    routeOutput.remove();
-
-    sidebarReadyPromise = null;
-  };
-
-  return page;
-=======
->>>>>>> upstream-tip
 }

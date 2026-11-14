@@ -1,24 +1,5 @@
 export default function (map) {
-<<<<<<< HEAD
-  const content = $("#sidebar_content"),
-        page = {};
-
-  page.load = function (path, id) {
-    OSM.loadSidebarContent(path).then(function () {
-      const data = $(".details").data();
-      if (!data) return;
-      const [lat, lng] = data.coordinates.split(",").map(parseFloat);
-      initialize(path, id, map.getBounds().contains({ lat, lng }));
-    });
-  };
-
-  page.init = function (path, id) {
-    initialize(path, id);
-    addOpenHistoricalMapTimeSlider(map);
-  };
-=======
   const content = $("#sidebar_content");
->>>>>>> upstream-tip
 
   function initialize(path, id, skipMoveToNote) {
     content.find("button[name]").on("click", function (e) {
@@ -108,6 +89,7 @@ export default function (map) {
 
     init(path, id) {
       initialize(path, id);
+      addOpenHistoricalMapTimeSlider(map);
     },
 
     unload() {

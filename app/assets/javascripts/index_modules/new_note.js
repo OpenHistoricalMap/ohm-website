@@ -163,6 +163,8 @@ export default function (map) {
       addNoteButton.on("disabled enabled", updateControls);
       updateControls();
 
+      addOpenHistoricalMapTimeSlider(map);
+
       return map.getState();
     },
 
@@ -172,58 +174,5 @@ export default function (map) {
       removeNewNoteMarker();
       control.removeClass("active");
     }
-<<<<<<< HEAD
-
-    map.panInside(markerLatlng, {
-      padding: [50, 50]
-    });
-
-    addNewNoteMarker(markerLatlng);
-
-    content.find("textarea")
-      .on("input", updateControls)
-      .attr("readonly", "readonly") // avoid virtual keyboard popping up on focus
-      .trigger("focus")
-      .removeAttr("readonly");
-
-    content.find("input[type=submit]").on("click", function (e) {
-      const location = newNoteMarker.getLatLng().wrap();
-      const text = content.find("textarea").val();
-
-      errorPanel = content.find(".new-note-error");
-      errorPanel.addClass("d-none");
-      errorPanelDetail = errorPanel.find(".new-note-error-detail");
-
-      e.preventDefault();
-      $(this).prop("disabled", true);
-      newNoteMarker.options.draggable = false;
-      newNoteMarker.dragging.disable();
-
-      createNote(location, text)
-        .then(feature => {
-          if (typeof OSM.user === "undefined") {
-            const anonymousNotesCount = Number(OSM.cookies.get("_osm_anonymous_notes_count")) || 0;
-            OSM.cookies.set("_osm_anonymous_notes_count", anonymousNotesCount + 1, { expires: 14 });
-          }
-          content.find("textarea").val("");
-          addCreatedNoteMarker(feature);
-          OSM.router.route("/note/" + feature.properties.id);
-        })
-        .catch(err => {
-          errorPanel.removeClass("d-none");
-          errorPanelDetail.text(err.message || err);
-          updateControls();
-        });
-    });
-
-    map.on("click", moveNewNoteMarkerToClick);
-    addNoteButton.on("disabled enabled", updateControls);
-    updateControls();
-
-    addOpenHistoricalMapTimeSlider(map);
-
-    return map.getState();
-=======
->>>>>>> upstream-tip
   };
 }

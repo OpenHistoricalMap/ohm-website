@@ -19,27 +19,11 @@ export default function (map) {
       const changesetData = content.find("[data-changeset]").data("changeset");
       changesetData.type = "changeset";
 
-<<<<<<< HEAD
-    const hashParams = OSM.parseHash();
-    initialize();
-    map.addObject(changesetData, function (bounds) {
-      if (!hashParams.center && bounds.isValid()) {
-        OSM.router.withoutMoveListener(function () {
-          map.fitBounds(bounds);
-        });
-      }
-    });
-    $(".numbered_pagination").trigger("numbered_pagination:enable");
-
-    addOpenHistoricalMapTimeSlider(map);
-  };
-=======
       const hashParams = OSM.parseHash();
       content.find("button[data-method][data-url]").on("click", e => {
         e.preventDefault();
         const { method, url } = $(e.target).data();
         const data = new URLSearchParams();
->>>>>>> upstream-tip
 
         content.find("#comment-error").prop("hidden", true);
         content.find("button[data-method][data-url]").prop("disabled", true);
@@ -85,6 +69,8 @@ export default function (map) {
         }
       });
       $(".numbered_pagination").trigger("numbered_pagination:enable");
+
+      addOpenHistoricalMapTimeSlider(map);
     },
 
     unload() {

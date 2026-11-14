@@ -34,21 +34,6 @@ export function mappedElement(type) {
     return {
       ...element(type)(map),
 
-<<<<<<< HEAD
-    page._addObject = function (type, id, version, keepViewport) {
-      const hashParams = OSM.parseHash();
-      map.addObject({ type: type, id: parseInt(id, 10), version: version && parseInt(version, 10) }, function (bounds) {
-        if (!hashParams.center && bounds.isValid() &&
-            (!keepViewport || !map.getBounds().contains(bounds))) {
-          OSM.router.withoutMoveListener(function () {
-            map.fitBounds(bounds);
-          });
-        }
-      });
-
-      addOpenHistoricalMapTimeSlider(map);
-      addOpenHistoricalMapInspector();
-=======
       _addObject(type, id, version, keepViewport) {
         const hashParams = OSM.parseHash();
         map.addObject({ type: type, id: parseInt(id, 10), version: version && parseInt(version, 10) }, function (bounds) {
@@ -59,12 +44,14 @@ export function mappedElement(type) {
             });
           }
         });
+
+        addOpenHistoricalMapTimeSlider(map);
+        addOpenHistoricalMapInspector();
       },
 
       _removeObject() {
         map.removeObject();
       }
->>>>>>> upstream-tip
     };
   };
 };
@@ -182,22 +169,6 @@ function renderWikidataResponse({ icon, label, article, description }, $link, fe
   return $("<tr>").append(cell);
 }
 
-<<<<<<< HEAD
-// add the enhanced inspector (class comes from the external ohm-inspector
-// script loaded in layouts/_head.html.erb)
-function addOpenHistoricalMapInspector() {
-  const inspector = new openhistoricalmap.OpenHistoricaMapInspector({
-    debug: true,
-    onFeatureFail: function (type, id) {
-      console.log(["failed to load feature", type, id]);
-    },
-    onFeatureLoaded: function (type, id, xmldoc) {
-      console.log(["loaded feature", type, id, xmldoc]);
-    },
-    apiBaseUrl: "/api" // no trailing /
-  });
-  inspector.selectFeatureFromUrl();
-=======
 function fetchCommonsThumbnail(filename, fetchOptions) {
   const isVectorImage = filename.toLowerCase().endsWith(".svg");
   return fetch(OSM.WIKIMEDIA_COMMONS_URL + "/w/api.php?" + new URLSearchParams({
@@ -228,5 +199,20 @@ function fetchCommonsThumbnail(filename, fetchOptions) {
       }
       return imageAttributes;
     });
->>>>>>> upstream-tip
+}
+
+// add the enhanced inspector (class comes from the external ohm-inspector
+// script loaded in layouts/_head.html.erb)
+function addOpenHistoricalMapInspector() {
+  const inspector = new openhistoricalmap.OpenHistoricaMapInspector({
+    debug: true,
+    onFeatureFail: function (type, id) {
+      console.log(["failed to load feature", type, id]);
+    },
+    onFeatureLoaded: function (type, id, xmldoc) {
+      console.log(["loaded feature", type, id, xmldoc]);
+    },
+    apiBaseUrl: "/api" // no trailing /
+  });
+  inspector.selectFeatureFromUrl();
 }

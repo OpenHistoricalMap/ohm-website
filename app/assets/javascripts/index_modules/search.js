@@ -111,11 +111,8 @@ export default function (map) {
           });
       });
 
-<<<<<<< HEAD
-    addOpenHistoricalMapTimeSlider(map);
+      addOpenHistoricalMapTimeSlider(map);
 
-    return map.getState();
-=======
       return map.getState();
     },
 
@@ -123,6 +120,5 @@ export default function (map) {
       markers.clearLayers();
       processedResults = 0;
     }
->>>>>>> upstream-tip
   };
 }

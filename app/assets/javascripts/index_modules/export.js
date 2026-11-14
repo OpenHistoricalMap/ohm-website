@@ -113,21 +113,16 @@ export default function (map) {
       });
 
       update();
+
+      addOpenHistoricalMapTimeSlider(map);
+
       return map.getState();
     },
 
-<<<<<<< HEAD
-    update();
-
-    addOpenHistoricalMapTimeSlider(map);
-
-    return map.getState();
-=======
     unload() {
       map
         .removeLayer(locationFilter)
         .off("moveend", update);
     }
->>>>>>> upstream-tip
   };
 }
