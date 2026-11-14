@@ -762,6 +762,8 @@ el:
       nearby_changesets: σύνολα αλλαγών από κοντινούς χρήστες
       nearby_diaries: καταχωρίσεις ημερολογίου από κοντινούς χρήστες
   notifications:
+    missing_record:
+      body: Δυστυχώς η ειδοποίηση δεν είναι πλέον διαθέσιμη
     index:
       title: Ειδοποιήσεις
       no_notifications: Δεν έχετε ειδοποιήσεις αυτήν τη στιγμή
@@ -3975,26 +3977,26 @@ el:
       tooltip: Υπόμνημα
       tooltip_disabled: Το υπόμνημα δεν είναι διαθέσιμο σε αυτό το επίπεδο
     map:
-      map:
-        title: Χάρτης
-        marker:
-          title: Δείκτης χάρτη
-      popup:
-        close: Κλείσιμο
-      navigation_control:
-        zoom_in: Μεγέθυνση
-        zoom_out: Σμίκρυνση
-      geolocate_control:
-        find_my_location: Προβολή της τοποθεσίας μου
-        location_not_available: Η τοποθεσία δεν είναι διαθέσιμη
+      Map:
+        Title: Χάρτης
+      Marker:
+        Title: Δείκτης χάρτη
+      Popup:
+        Close: Κλείσιμο
+      NavigationControl:
+        ZoomIn: Μεγέθυνση
+        ZoomOut: Σμίκρυνση
+      GeolocateControl:
+        FindMyLocation: Προβολή της τοποθεσίας μου
+        LocationNotAvailable: Η τοποθεσία δεν είναι διαθέσιμη
         metersPopup:
           one: Είστε εντός %{count} μέτρου από το σημείο
           other: Είστε εντός %{count} μέτρων από το σημείο
         feetPopup:
           one: Είστε εντός %{count} ποδός από το σημείο
           other: Είστε εντός %{count} ποδιών από το σημείο
-      attribution_control:
-        toggle_attribution: Εναλλαγή αναφοράς δημιουργού
+      AttributionControl:
+        ToggleAttribution: Εναλλαγή αναφοράς δημιουργού
       base:
         standard: Κανονικό
         cyclosm: CyclOSM ποδηλασία
@@ -4224,6 +4226,7 @@ el:
     trailing_whitespace: περιέχει κενό διάστημα στο τέλος
     invalid_characters: περιέχει μη έγκυρους χαρακτήρες
     url_characters: περιέχει ειδικούς χαρακτήρες URL (%{characters})
+    email_characters: περιέχει μη έγκυρους χαρακτήρες (%{characters})
   moderation_zones:
     navigation:
       new_title: Ορισμός νέας ζώνης συντονισμού

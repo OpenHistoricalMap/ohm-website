@@ -8,7 +8,7 @@
   styleUrl: "/map-styles/historical/historical.json"
   credit:
     id: 'make_a_donation'
-    href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
+    href: 'https://donate.openhistoricalmap.org/'
     donate: true
 
 - leafletOsmId: "Railway"
@@ -21,7 +21,7 @@
   styleUrl: "/map-styles/railway/railway.json"
   credit:
     id: 'make_a_donation'
-    href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
+    href: 'https://donate.openhistoricalmap.org/'
     donate: true
 
 - leafletOsmId: "Woodblock"
@@ -34,7 +34,7 @@
   styleUrl: "/map-styles/woodblock/woodblock.json"
   credit:
     id: 'make_a_donation'
-    href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
+    href: 'https://donate.openhistoricalmap.org/'
     donate: true
 
 - leafletOsmId: "JapaneseScroll"
@@ -47,7 +47,7 @@
   styleUrl: "/map-styles/japanese_scroll/japanese_scroll.json"
   credit:
     id: 'make_a_donation'
-    href: 'https://openstreetmap.app.neoncrm.com/forms/ohm'
+    href: 'https://donate.openhistoricalmap.org/'
     donate: true
 
 - leafletOsmId: "Mapnik"

@@ -733,6 +733,8 @@ gl:
         de ti
       nearby_diaries: entradas de diario dos usuarios de lugares preto de ti
   notifications:
+    missing_record:
+      body: Desafortunadamente, isto xa non está dispoñible
     index:
       title: Notificacións
       no_notifications: Non tes notificacións neste momento
@@ -3922,26 +3924,26 @@ gl:
       tooltip: Lenda
       tooltip_disabled: Non está dispoñíbel a lenda para esta capa
     map:
-      map:
-        title: Mapa
-        marker:
-          title: Marcador de mapa
-      popup:
-        close: Pechar
-      navigation_control:
-        zoom_in: Achegar
-        zoom_out: Afastar
-      geolocate_control:
-        find_my_location: Amosar a miña localización
-        location_not_available: A localización non está dispoñible
+      Map:
+        Title: Mapa
+      Marker:
+        Title: Marcador de mapa
+      Popup:
+        Close: Pechar
+      NavigationControl:
+        ZoomIn: Achegar
+        ZoomOut: Afastar
+      GeolocateControl:
+        FindMyLocation: Amosar a miña localización
+        LocationNotAvailable: A localización non está dispoñible
         metersPopup:
           one: Estás a menos dun metro deste punto
           other: Estás a menos de %{count} metros deste punto
         feetPopup:
           one: Estás a menos dun pé deste punto
           other: Estás a menos de %{count} pés deste punto
-      attribution_control:
-        toggle_attribution: Activar/Desactivar o recoñecemento
+      AttributionControl:
+        ToggleAttribution: Activar/Desactivar o recoñecemento
       base:
         standard: Estándar
         cyclosm: CyclOSM
@@ -4169,6 +4171,7 @@ gl:
     trailing_whitespace: ten espazos ó final
     invalid_characters: contén caracteres non válidos
     url_characters: contén caracteres especiais de URL (%{characters})
+    email_characters: contén caracteres non válidos (%{characters})
   moderation_zones:
     navigation:
       new_title: Definir unha zona de moderación nova

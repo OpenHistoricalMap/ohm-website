@@ -124,6 +124,12 @@ sk:
       way_node: Uzol cesty
       way_tag: Značka cesty
     attributes:
+      acl:
+        address: Adresa
+        domain: Doména
+        mx: MX server
+        k: Kľúč
+        v: Hodnota
       diary_comment:
         body: Text
       diary_entry:
@@ -186,6 +192,13 @@ sk:
         pass_crypt: Heslo
         pass_crypt_confirmation: Potvrdenie hesla (ešte raz)
     help:
+      acl:
+        address: IP adresa alebo sieť CIDR, napr. 192.0.2.0/24
+        domain: E-mailová doména; porovnávajú sa aj subdomény
+        mx: Názov hostiteľa MX servera pre e-mailovú doménu
+        k: 'Jedno z: no_account_creation, allow_account_creation, no_note_comment,
+          no_trace_download'
+        v: Voliteľná poznámka, napr. dôvod tohto záznamu
       doorkeeper/application:
         confidential: Aplikácia bude použitá tam, kde je možné zachovať dôvernosť
           tajomstva klienta (mobilné aplikácie a jednostránkové aplikácie nie sú dôveryhodné).
@@ -800,6 +813,8 @@ sk:
       nearby_changesets: Prechádzať všetky sady zmien používateľov v okolí
       nearby_diaries: Prechádzať všetky denníkové záznamy používateľov v okolí
   notifications:
+    missing_record:
+      body: Žiaľ, toto už nie je dostupné
     index:
       title: Oznámenia
       no_notifications: Momentálne nemáte žiadne oznámenia
@@ -1223,7 +1238,7 @@ sk:
         craft:
           beekeeper: Včelár
           blacksmith: Kováč
-          brewery: Pivovar
+          brewery: Minipivovar
           carpenter: Tesár
           caterer: Catering
           confectionery: Cukrovinky
@@ -1344,7 +1359,7 @@ sk:
           tomb: Náhrobok
           tower: Veža
           wayside_chapel: Kaplnka pri ceste
-          wayside_cross: Božie muky
+          wayside_cross: Prícestný kríž
           wayside_shrine: Malá kaplnka pri ceste
           wreck: Zrúcanina
           "yes": Historické miesto
@@ -2068,6 +2083,7 @@ sk:
         be-Tarask: Bieloruština (tarašk.)
         bg: bulharčina
         mk: macedónčina
+        mt: maltčina
         mo: moldavčina
         ce: čečenčina
         ru: ruština
@@ -3246,8 +3262,8 @@ sk:
       private: Súkromné (iba zdieľané ako anonymné, neusporiadané body)
       public: Verejné (zobrazené v prehľade stopy, aj ako anonymné, neusporiadané
         body)
-      trackable: Zaznamenávané stopy (zdieľané iba ako anonymné, usporiadané body
-        s časovými značkami)
+      trackable: Sledovateľné (zdieľané iba ako anonymné, usporiadané body s časovými
+        značkami)
       identifiable: Identifikovateľné (zobrazené v zozname stôp, aj ako identifikovateľné,
         usporiadané body s časovou značkou)
     new:
@@ -3316,7 +3332,7 @@ sk:
       public: VEREJNÁ
       identifiable: IDENTIFIKOVATEĽNÁ
       private: SÚKROMNÁ
-      trackable: STOPOVATEĽNÁ
+      trackable: SLEDOVATEĽNÁ
       details_with_tags_html: '%{time_ago} používateľom %{user} v %{tags}'
       details_without_tags_html: '%{time_ago} používateľom %{user}'
     index:
@@ -3337,8 +3353,45 @@ sk:
       my_traces: Moje stopy
       traces_from_html: Verejné stopy od %{user}
       remove_tag_filter: Odstrániť filter značiek
+      legacy_traces: Moje zastaralé stopy
     destroy:
       scheduled_for_deletion: Stopa plánovaná na vymazanie
+    legacy_visibilities:
+      edit:
+        title: Moje zastaralé GPS stopy
+        description: Toto sú vaše stopy, ktoré stále používajú starú súkromnú alebo
+          verejnú viditeľnosť. Môžete ich tu zmeniť na sledovateľné alebo identifikovateľné.
+          Plánované vylepšenia GPS trás sa budú týkať iba sledovateľných a identifikovateľných.
+        filter:
+          visibility: Súčasná viditeľnosť
+          any: Súkromné a verejné
+          from: Odoslané od
+          to: Odoslané do
+          apply: Filter
+        empty: Tomuto filtru nezodpovedajú žiadne zastaralé stopy.
+        new_visibility: Nová viditeľnosť
+        no_undo: Túto zmenu nie je možné vrátiť späť.
+        button:
+          one: Zmeniť %{count} stopu
+          few: Zmeniť %{count} stopy
+          many: Zmeniť %{count} stôp
+          other: Zmeniť %{count} stôp
+        confirmation:
+          header: Potvrdiť zmenu viditeľnosti
+          body:
+            one: Zmeniť viditeľnosť %{count} stopy
+            few: Zmeniť viditeľnosť %{count} stôp
+            many: Zmeniť viditeľnosť %{count} stôp
+            other: Zmeniť viditeľnosť %{count} stôp
+          cancel: Zrušiť
+          confirm: Zmeniť viditeľnosť
+      update:
+        updated:
+          one: Zmenená viditeľnosť %{count} stopy
+          few: Zmenená viditeľnosť %{count} stôp
+          many: Zmenená viditeľnosť %{count} stôp
+          other: Zmenená viditeľnosť %{count} stôp
+        invalid_visibility: Prosím zvoľte viditeľnosť, na ktorú chcete zmeniť.
     offline_warning:
       message: Nahrávanie GPX súborov je momentálne nedostupné
     offline:
@@ -3998,9 +4051,11 @@ sk:
       counter_warning_forum_link:
         text: komunita vám môže pomôcť
         url: https://community.openstreetmap.org/
-      advice: Vaša poznámka je verejná a môže slúžiť na úpravu mapy, preto nevkladajte
-        žiadne osobné údaje ani informácie z máp alebo databáz chránených autorskými
-        právami.
+      advice: Vaša poznámka je verejná a môže ju vidieť ktokoľvek aj bez účtu OpenStreetMap!
+      advice_good_note: Dobrá poznámka je čo najvýstižnejšia a zároveň sa vyhýba osobným
+        informáciám alebo obsahu z máp alebo zoznamov chránených autorskými právami.
+      advice_conduct: Pri komunikácii s členmi komunity buďte, prosím, láskaví, trpezliví
+        a úctiví.
       add: Pridať poznámku
       error: Pri vytváraní poznámky sa vyskytla chyba
     new_readonly:
@@ -4028,18 +4083,18 @@ sk:
       tooltip: Legenda
       tooltip_disabled: Legenda nie je dostupná pre túto vrstvu
     map:
-      map:
-        title: Mapa
-        marker:
-          title: Značka na mape
-      popup:
-        close: Zatvoriť
-      navigation_control:
-        zoom_in: Priblížiť
-        zoom_out: Oddialiť
-      geolocate_control:
-        find_my_location: Zobraziť moju polohu
-        location_not_available: Poloha nie je k dispozícii
+      Map:
+        Title: Mapa
+      Marker:
+        Title: Značka na mape
+      Popup:
+        Close: Zatvoriť
+      NavigationControl:
+        ZoomIn: Priblížiť
+        ZoomOut: Oddialiť
+      GeolocateControl:
+        FindMyLocation: Zobraziť moju polohu
+        LocationNotAvailable: Poloha nie je k dispozícii
         metersPopup:
           one: Ste menej než %{count} meter od tohto bodu
           few: Ste menej než %{count} metre od tohto bodu
@@ -4050,8 +4105,8 @@ sk:
           few: Ste menej než %{count} stopy od tohto bodu
           many: Ste menej než %{count} stôp od tohto bodu
           other: Ste menej než %{count} stôp od tohto bodu
-      attribution_control:
-        toggle_attribution: Prepnúť uvádzanie pôvodu
+      AttributionControl:
+        ToggleAttribution: Prepnúť uvádzanie pôvodu
       base:
         standard: Štandardná
         cyclosm: CyclOSM
@@ -4249,11 +4304,26 @@ sk:
         všetkých verzií patriacich do tejto revízie.
       flash: Revízia zrušená.
       error: Pri zrušení revízie sa vyskytla chyba.
+  acls:
+    page:
+      address: Adresa
+      domain: Doména
+      mx: MX server
+      k: Kľúč
+      v: Hodnota
+      actions: Akcie
+    acl:
+      edit_button: Upraviť
+      destroy_button: Odstrániť
+      confirm: Ste si istí?
+    form:
+      cancel: Zrušiť
   validations:
     leading_whitespace: obsahuje medzery na začiatku
     trailing_whitespace: obsahuje medzery na konci
     invalid_characters: obsahuje nepovolené znaky
     url_characters: obsahuje špeciálne znaky adresy URL (%{characters})
+    email_characters: obsahuje neplatné znaky (%{characters})
   moderation_zones:
     navigation:
       new_title: Definujte novú moderátorskú zónu

@@ -14,10 +14,10 @@ class DirectionsSystemTest < ApplicationSystemTestCase
       assert_content "Start popup text (car)"
     end
 
-    choose :option => "bicycle", :allow_label_click => true
+    choose :option => "foot", :allow_label_click => true
 
     within "#sidebar" do
-      assert_content "Start popup text (bicycle)"
+      assert_content "Start popup text (foot)"
     end
   end
 

@@ -276,7 +276,7 @@ eu:
       description: Urrutiko agintea (JOSM, Potlatch, Merkaartor)
   auth:
     providers:
-      none: Ezer
+      none: Bat ere ez
       google: Google
       apple: Apple
       facebook: Facebook
@@ -2421,7 +2421,7 @@ eu:
       owner: 'Jabea:'
       description: 'Deskribapena:'
       tags: 'Etiketak:'
-      none: Ezer
+      none: Bat ere ez
       edit_trace: Aztarna hau aldatu
       delete_trace: Aztarna hau ezabatu
       trace_not_found: Ez da aztarnarik aurkitu!
@@ -2845,11 +2845,11 @@ eu:
       tooltip: Maparen gakoa
       tooltip_disabled: Maparen gakoa ez dago eskuragarri geruza honetarako
     map:
-      navigation_control:
-        zoom_in: Handiagotu
-        zoom_out: Txikiagotu
-      geolocate_control:
-        find_my_location: Erakutsi nire kokapena
+      NavigationControl:
+        ZoomIn: Handiagotu
+        ZoomOut: Txikiagotu
+      GeolocateControl:
+        FindMyLocation: Erakutsi nire kokapena
         metersPopup:
           one: Puntu honetatik gehienez metro batera zaude
           other: Puntu honetatik %{count} metrora zaude

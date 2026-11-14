@@ -21,6 +21,7 @@ window.addOpenHistoricalMapTimeSlider = function (map) {
     onDateChange: function () {
       OSM.router.updateHash();
       Cookies.set("_ohm_timeslider_date", map.timeslider.getDate(), dateCookieOptions);
+      map.fire("timesliderdatechange");
     },
     onRangeChange: function () {
       OSM.router.updateHash();

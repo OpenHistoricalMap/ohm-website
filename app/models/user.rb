@@ -41,7 +41,7 @@
 #
 # Indexes
 #
-#  index_users_on_creation_address   (creation_address) USING gist
+#  index_users_on_creation_address   (creation_address inet_ops) USING gist
 #  users_auth_idx                    (auth_provider,auth_uid) UNIQUE
 #  users_display_name_canonical_idx  (lower(NORMALIZE(display_name, NFKC)))
 #  users_display_name_idx            (display_name) UNIQUE
@@ -111,11 +111,12 @@ class User < ApplicationRecord
                            :whitespace => { :leading => false, :trailing => false },
                            :width => { :minimum => 3 }
   validate :display_name_cannot_be_user_id_with_other_id, :if => proc { |u| u.display_name_changed? }
-  validates :email, :presence => true, :characters => true
+  validates :email, :presence => true, :characters => { :email_safe => true }
   validates :email, :if => proc { |u| u.email_changed? },
                     :uniqueness => { :case_sensitive => false }
   validates :email, :if => proc { |u| u.email_changed? },
                     :whitespace => { :leading => false, :trailing => false }
+  validates :new_email, :characters => { :email_safe => true }
   validates :pass_crypt, :confirmation => true, :length => 8..255
   validates :home_lat, :allow_nil => true, :numericality => true, :inclusion => { :in => -90..90 }
   validates :home_lon, :allow_nil => true, :numericality => true, :inclusion => { :in => -180..180 }
