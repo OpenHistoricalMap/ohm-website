@@ -9,6 +9,10 @@ class ContextMenuTest < ApplicationSystemTestCase
 
     visit "/#map=15/51.76320/-0.00760"
 
+    # OHM: the time slider covers the map centre on short screens
+    assert_selector ".leaflet-ohm-timeslider"
+    execute_script("document.querySelector('.leaflet-ohm-timeslider')?.remove()")
+
     find_by_id("map").right_click
 
     within "#map-context-menu" do
