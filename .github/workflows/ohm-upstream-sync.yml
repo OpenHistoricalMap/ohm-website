@@ -8,10 +8,12 @@ name: OHM Upstream Sync
 # markers and the pull request is opened as a draft: check out the branch, fix
 # the marked files and push.
 #
-# Needs the UPSTREAM_SYNC_TOKEN secret: a token with write access to Contents,
-# Pull requests and Workflows. The default GITHUB_TOKEN cannot push upstream
-# commits that change workflow files, and a pull request it opens does not
-# start the other checks.
+# Runs as the openhistoricalmap-bot GitHub App, so the branch, commit and pull
+# request belong to the bot and not to the person who ran the workflow. Needs the
+# OHM_APP_ID and OHM_APP_PRIVATE_KEY organization secrets, and the App needs
+# write access to Contents, Pull requests and Workflows. The default GITHUB_TOKEN
+# cannot push upstream commits that change workflow files, and a pull request it
+# opens does not start the other checks.
 
 on:
   workflow_dispatch:
@@ -34,29 +36,30 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
-      GH_TOKEN: ${{ secrets.UPSTREAM_SYNC_TOKEN }}
       UPSTREAM_REPO: https://github.com/openstreetmap/openstreetmap-website.git
       UPSTREAM_REF: ${{ inputs.upstream_ref }}
       BASE: staging
     steps:
-    - name: Check the token
-      run: |
-        if [ -z "$GH_TOKEN" ]; then
-          echo "::error::The UPSTREAM_SYNC_TOKEN secret is not set."
-          exit 1
-        fi
+    - name: Create app token
+      id: app-token
+      uses: actions/create-github-app-token@v1
+      with:
+        app-id: ${{ secrets.OHM_APP_ID }}
+        private-key: ${{ secrets.OHM_APP_PRIVATE_KEY }}
     - name: Checkout source
       uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       with:
         ref: staging
         fetch-depth: 0
-        token: ${{ secrets.UPSTREAM_SYNC_TOKEN }}
+        token: ${{ steps.app-token.outputs.token }}
     - name: Fetch upstream
       run: |
         git fetch --no-tags "$UPSTREAM_REPO" "$UPSTREAM_REF"
         git branch -f upstream-tip FETCH_HEAD
     - name: Check if there is something to sync
       id: check
+      env:
+        GH_TOKEN: ${{ steps.app-token.outputs.token }}
       run: |
         behind=$(git rev-list --count "origin/$BASE..upstream-tip")
         echo "behind=$behind" >> "$GITHUB_OUTPUT"
@@ -76,12 +79,16 @@ jobs:
     - name: Merge upstream into a sync branch
       id: merge
       if: steps.check.outputs.skip == 'false'
+      env:
+        GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        APP_SLUG: ${{ steps.app-token.outputs.app-slug }}
       run: |
         branch="upstream-sync-$(date -u +%F)"
         upstream_sha=$(git rev-parse --short upstream-tip)
         message="Merge openstreetmap-website $UPSTREAM_REF ($upstream_sha) into $BASE"
-        git config user.name "github-actions[bot]"
-        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        bot_id=$(gh api "/users/${APP_SLUG}[bot]" --jq .id)
+        git config user.name "${APP_SLUG}[bot]"
+        git config user.email "${bot_id}+${APP_SLUG}[bot]@users.noreply.github.com"
         git checkout -b "$branch" "origin/$BASE"
 
         if git merge --no-ff -m "$message" upstream-tip; then
@@ -104,6 +111,7 @@ jobs:
     - name: Open the pull request
       if: steps.check.outputs.skip == 'false'
       env:
+        GH_TOKEN: ${{ steps.app-token.outputs.token }}
         BRANCH: ${{ steps.merge.outputs.name }}
         UPSTREAM_SHA: ${{ steps.merge.outputs.upstream_sha }}
         BEHIND: ${{ steps.check.outputs.behind }}
