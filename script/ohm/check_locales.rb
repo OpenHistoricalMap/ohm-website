@@ -54,6 +54,8 @@ UPSTREAM_TRANSLATION_OK = [
   "javascripts.legend.title", # Map Key for Legend
   "javascripts.legend.tooltip",
   "javascripts.legend.tooltip_disabled",
+  "preferences.preferences.navigation.advanced_preferences", # Advanced Preferences for Advanced
+  "preferences.preferences.navigation.preferences", # Preferences for Interface
   "site.add_a_note.para_1", # same sentence, different line breaks
   "time.formats.blog", # US date order, each locale has its own
   "time.formats.friendly"
