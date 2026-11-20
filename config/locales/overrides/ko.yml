@@ -222,10 +222,6 @@ ko:
       show:
         map_color_schemes:
           auto: 자동
-    preferences:
-      navigation:
-        advanced_preferences: 고급 환경 설정
-        preferences: 환경 설정
   sessions:
     destroy:
       heading: 오픈히스토리컬맵에서 로그아웃

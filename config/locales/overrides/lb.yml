@@ -74,10 +74,6 @@ lb:
     partners_greeninfo: GreenInfo Netzwierk
     partners_osmf: OpenStreetMap Foundation
   preferences:
-    preferences:
-      navigation:
-        advanced_preferences: Erweidert Astellungen
-        preferences: Astellungen
   sessions:
     destroy:
       heading: Vun OpenHistoricalMap ofmellen

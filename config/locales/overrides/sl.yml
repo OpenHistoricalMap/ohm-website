@@ -173,10 +173,6 @@ sl:
       show:
         map_color_schemes:
           auto: Samodejno
-    preferences:
-      navigation:
-        advanced_preferences: Napredne nastavitve
-        preferences: Nastavitve
   printable_name:
     with_date_html: "%{name} [%{dates}]"
   sessions:

@@ -166,10 +166,6 @@ ia:
       show:
         map_color_schemes:
           auto: Automatic
-    preferences:
-      navigation:
-        advanced_preferences: Preferentias avantiate
-        preferences: Preferentias
   printable_name:
     with_date_html: "%{name} [%{dates}]"
   sessions:

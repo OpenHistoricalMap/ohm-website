@@ -66,10 +66,6 @@ sr:
     partners_osmf: OpenStreetMap фондација
     project_name:
       title: OpenHistoricalMap
-  preferences:
-    preferences:
-      navigation:
-        preferences: Подешавања
   site:
     about:
       lede_text: OpenHistoricalMap је направила амбициозна заједница картографа и историчара који доприносе и одржавају податке о природној и људској географији света кроз време.
