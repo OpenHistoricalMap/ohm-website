@@ -148,6 +148,7 @@ gl:
         reason: Motivo
         zone: Zona
         period: Período
+        ends_at: Data e hora de caducidade
       message:
         sender: Remitente
         title: Asunto
@@ -2828,21 +2829,17 @@ gl:
           Achega a zona, escolle unha área menor ou emprega unha das seguintes fontes
           para as baixadas masivas de datos:'
         planet:
-          url: https://planet.openstreetmap.org/
           title: Planeta OSM
           description: Copias actualizadas de xeito regular da base de datos do OpenStreetMap
             ó completo
         overpass:
-          url: https://overpass-api.de/api/map
           title: Pasarela da API
           description: Baixar esta caixa dende un espello da base de datos do OpenStreetMap
         geofabrik:
-          url: https://download.geofabrik.de/
           title: Baixadas do Geofabrik
           description: Extraccións actualizadas de xeito regular dalgúns continentes,
             países e cidades seleccionados
         other:
-          url: https://wiki.openstreetmap.org/wiki/Downloading_data
           title: Outras fontes
           description: Fontes adicionais listadas no wiki do OpenStreetMap
       export_button: Exportar
@@ -3338,8 +3335,6 @@ gl:
         alt: Icona de X
     markdown_help:
       heading_html: Analizado con %{kramdown_link}
-      kramdown_url: https://kramdown.gettalong.org/quickref.html
-      kramdown: kramdown
       headings: Cabeceiras
       heading: Cabeceira
       subheading: Subcabeceira
@@ -4106,6 +4101,10 @@ gl:
       id_not_configured:
         title: O iD non está configurado
         body: Consulta CONFIGURE.md para obter máis información
+    traces:
+      tagstring:
+        comma_delimited: 'separadas por comas:'
+        space_delimited: 'separadas por espazos:'
   redactions:
     edit:
       heading: Editar a censura
@@ -4210,4 +4209,11 @@ gl:
         ended: finalizada
         active: activa
         revoked_html: revogada por %{name}
+    form:
+      expiration: Caducidade
+      relative_expiration: Durante unha duración
+      absolute_expiration: Ata unha data e hora específicas
+      period:
+        options:
+          revoke: Revogar a zona de moderación
 ...

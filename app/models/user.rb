@@ -102,7 +102,7 @@ class User < ApplicationRecord
 
   has_one_attached :avatar, :service => Settings.avatar_storage
 
-  validates :display_name, :presence => true, :length => 3..255,
+  validates :display_name, :presence => true, :length => { :maximum => 255 },
                            :exclusion => %w[new terms save confirm confirm-email go_public reset-password forgot-password suspended]
   validates :display_name, :if => proc { |u| u.display_name_changed? },
                            :normalized_uniqueness => { :case_sensitive => false }
@@ -111,12 +111,12 @@ class User < ApplicationRecord
                            :whitespace => { :leading => false, :trailing => false },
                            :width => { :minimum => 3 }
   validate :display_name_cannot_be_user_id_with_other_id, :if => proc { |u| u.display_name_changed? }
-  validates :email, :presence => true, :characters => { :email_safe => true }
+  validates :email, :presence => true, :characters => true
   validates :email, :if => proc { |u| u.email_changed? },
                     :uniqueness => { :case_sensitive => false }
   validates :email, :if => proc { |u| u.email_changed? },
                     :whitespace => { :leading => false, :trailing => false }
-  validates :new_email, :characters => { :email_safe => true }
+  validates :new_email, :characters => true
   validates :pass_crypt, :confirmation => true, :length => 8..255
   validates :home_lat, :allow_nil => true, :numericality => true, :inclusion => { :in => -90..90 }
   validates :home_lon, :allow_nil => true, :numericality => true, :inclusion => { :in => -180..180 }
@@ -124,12 +124,12 @@ class User < ApplicationRecord
   validates :preferred_editor, :inclusion => Editors::ALL_EDITORS, :allow_nil => true
   validates :auth_uid, :unless => proc { |u| u.auth_provider.nil? },
                        :uniqueness => { :scope => :auth_provider }
-  validates :avatar, :if => proc { |u| u.attachment_changes["avatar"] },
-                     :image => true
+  validates :avatar, :image => { :if => proc { |u| u.attachment_changes["avatar"] } },
+                     :processable_file => true
   validates :description, :length => 0..65536
 
-  validates_email_format_of :email, :if => proc { |u| u.email_changed? }
-  validates_email_format_of :new_email, :allow_blank => true, :if => proc { |u| u.new_email_changed? }
+  validates :email, :deliverable_email => true, :if => proc { |u| u.email_changed? }
+  validates :new_email, :deliverable_email => true, :allow_blank => true, :if => proc { |u| u.new_email_changed? }
 
   alias_attribute :created_at, :creation_time
 
@@ -142,7 +142,7 @@ class User < ApplicationRecord
   end
 
   generates_token_for :new_email, :expires_in => 1.week do
-    fingerprint
+    fingerprint(new_email)
   end
 
   generates_token_for :password_reset, :expires_in => 1.week do
@@ -160,10 +160,12 @@ class User < ApplicationRecord
   end
 
   def self.lookup(username)
-    user = find_by("email = ? OR display_name = ?", username.strip, username)
+    username.strip!
+
+    user = find_by("email = ? OR display_name = ?", username, username)
 
     if user.nil?
-      users = where("LOWER(email) = LOWER(?) OR LOWER(NORMALIZE(display_name, NFKC)) = LOWER(NORMALIZE(?, NFKC))", username.strip, username)
+      users = where("LOWER(email) = LOWER(?) OR LOWER(NORMALIZE(display_name, NFKC)) = LOWER(NORMALIZE(?, NFKC))", username, username)
 
       user = users.first if users.one?
     end
@@ -441,10 +443,11 @@ class User < ApplicationRecord
     )
   end
 
-  def fingerprint
+  def fingerprint(*extra)
     digest = Digest::SHA256.new
     digest.update(email)
     digest.update(pass_crypt)
+    extra.each { |value| digest.update(value.to_s) }
     digest.hexdigest
   end
 

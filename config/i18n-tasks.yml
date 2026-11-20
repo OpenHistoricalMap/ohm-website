@@ -129,6 +129,8 @@ ignore_missing:
   - 'confirmations.gravatar_status_message.*'
   - 'messages.read_marks.*'
   - 'profiles.profile_sections.update.*'
+  # Lazy keys in helpers resolve to the view that calls the helper, not the helper name.
+  - '*_helper.*'
   # Rails ships these in active_support.
   - 'date.abbr_month_names'
   - 'date.abbr_day_names'

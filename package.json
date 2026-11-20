@@ -5,7 +5,7 @@
     "postinstall": "mkdir -p public && ln -sfn ../node_modules/@openhistoricalmap/map-styles/dist public/map-styles"
   },
   "dependencies": {
-    "@mapbox/mapbox-gl-rtl-text": "*",
+    "@mapbox/mapbox-gl-rtl-text": "< 1.0.0",
     "@mapbox/polyline": "*",
     "@maplibre/maplibre-gl-leaflet": "*",
     "@maptiler/maplibre-gl-omt-language": "*",

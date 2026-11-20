@@ -6,9 +6,9 @@
 
 - app/controllers/issues_controller.rb
 - app/helpers/user_helper.rb
+- app/jobs/trace_importer_job.rb
 - app/models/node.rb
 - app/models/old_node.rb
-- app/models/old_relation.rb
 - app/models/old_way.rb
 - app/models/relation.rb
 - app/models/user_block.rb
@@ -22,5 +22,4 @@
 - app/views/notes/index.html.erb
 - app/views/notifications/_notification.html.erb
 - app/views/oauth2_authorized_applications/_application.html.erb
-- app/views/users/diary_comments/_page.html.erb
 - lib/diff_reader.rb

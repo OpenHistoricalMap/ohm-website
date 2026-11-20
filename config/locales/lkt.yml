@@ -48,6 +48,10 @@ lkt:
           attributes:
             url:
               http_parse_error: Takómni URL http:// naíŋš https:// tȟokáheya uŋ
+        trace:
+          attributes:
+            visibility:
+              cannot_change_to_legacy: hektákiya yutȟókečapi okíhipi šni
     models:
       acl: ACL
       changeset: Wóyutȟokča-opȟáȟte
@@ -85,6 +89,10 @@ lkt:
       way_node: Makȟá-kazópi Tȟaówaŋka
       way_tag: Makȟá-kazópi Ihóši
     attributes:
+      acl:
+        address: Makȟóčhažeyate
+        k: Iyúšloke
+        v: Wóiglawa
       diary_comment:
         body: Tȟaŋčháŋ
       diary_entry:
@@ -117,6 +125,7 @@ lkt:
       moderation_zone:
         name: Čhažé
         reason: Tákuwe
+        zone: Wóitȟaŋčhaŋ-Makȟóčhe
       message:
         sender: Tuwá yeyá kiŋ
         title: Wóiwoglake
@@ -226,6 +235,8 @@ lkt:
         opened_at_by_html: '%{when} he eháŋ %{user} káǧe'
         commented_at_html: '%{when} he eháŋ tuwá yutȟókeča'
         commented_at_by_html: '%{when} he eháŋ %{user} yutȟókeča'
+        closed_at_html: '%{when} hé eháŋ yukpípi'
+        closed_at_by_html: '%{when} hé eháŋ %{user} yukpí'
       rss:
         title: OpenStreetMap Wówapi čístila
         description_all: Wówapi čístila el iglépi, iwóglakapi, naíŋš ečhél iyéyapi
@@ -265,6 +276,7 @@ lkt:
       delete_account: Čhažé-oyáŋke Iháŋgya yo/ye...
     go_public:
       heading: Owíčhotaya yutȟókečapi
+      find_out_why: tákuwe uŋspéič’iya
       make_edits_public_button: Wóyutȟokča owíčhotaya kpazó yo/ye
     destroy:
       success: Čhažé-oyáŋke iháŋgyaye.
@@ -278,7 +290,18 @@ lkt:
           oyákihi. Wíhoši kiŋ lená iyúkčaŋ yo/ye:'
         delete_profile: Oníwowapi-ihóši iháŋgyakiye kté. Nakúŋ, makȟóčhažeyate, wóyakapi
           na itówapi iháŋgyakiye kte.
+        delete_display_name: Ničháže yuȟéyab ičúpi kte. Tȟokátakiya, čȟaže-oyáŋke
+          uŋmá kiŋ úŋpi okíhipi kte.
+        retain_caveats: 'K’éyaš, čhažé-oyáŋke iháŋgyaye ohákab, wíhoši nitȟáwa uŋǧé
+          OpenStreetMap lel yaŋke kte:'
+        retain_edits: Táku makȟówapi ektá lutȟókeča kiŋ égnake kte.
         retain_traces: Waóye waŋkál oyékšu kiŋ égnake kte.
+        retain_diary_entries: Aŋpél'okigwapi wówapi na wóeye yakáǧa héči, hena égnake
+          kte, tkȟa hena naȟmápi kte.
+        retain_notes: Makȟowapi ogná wówapi čístila naíŋš wóeye yakáǧa héči, hena
+          égnake kte, tkȟa hena naȟmápi kte.
+        retain_changeset_discussions: Wóyutȟokča-opȟáȟte akhíyapi yakáǧa héči, hena
+          égnake kte.
         retain_email: Wakȟáƞgli wóyakapi makȟóčhažeyate nitȟáwa égnake kte.
         recent_editing_html: Leháŋl čhažé-oyáŋke yaglutȟókeča, he uŋ he iháŋgyakiya
           oyákihi šni. %{time} kiŋháŋ, he iháŋgyakiya oyákihi kte.
@@ -329,6 +352,7 @@ lkt:
     deleted_ago_by_html: '%{time_ago} he eháŋ %{user} iháŋgye'
     edited_ago_by_html: '%{time_ago} he eháŋ %{user} yutȟókeča'
     version: Wótokheča
+    redacted_version: Wótokheča Anáȟmapi
     in_changeset: Wóyutȟokča-opȟáȟte
     anonymous: čhažé-waníča
     no_comment: (wóeye waníča)
@@ -363,6 +387,7 @@ lkt:
     not_found:
       title: Le Iyéwaye Šni
     timeout:
+      title: 'Wóglušna: Aháš Tȟéhaŋ'
       sorry: Eháš tȟéhaŋ ID %{id} %{type} ihóši kiŋ oyále. He iyáču oyákihi šni.
       type:
         node: makȟá-owáŋka
@@ -383,6 +408,8 @@ lkt:
       loading: Waŋná Iwácu...
     tag_details:
       tags: Ihóši
+      wiki_link:
+        tag: '%{key}=%{value} oyákapi wiki oyúblaye kiŋ'
       wikidata_link: Wikidata ektá %{page} táku waŋží kiŋ
       wikidata_preview:
         other: Wikidata táku kiŋ hená owáŋyaŋke-íȟaŋhaŋ
@@ -392,6 +419,9 @@ lkt:
       colour_preview: Wíyuƞpi %{colour_value} owáŋyaŋke-íȟaŋhaŋ
       email_link: Wakȟáƞgli wóyakapi %{email}
     versions_navigation:
+      node_versions: Makȟa-owáŋka wótokheča
+      way_versions: Makȟá-kazópi wótokheča
+      relation_versions: Makȟá-oúŋčhaǧe wótokheča
       node: Makȟá-owáŋka
       way: Makȟá-kazópi
       relation: Makȟá-oúŋčhaǧe
@@ -402,10 +432,13 @@ lkt:
     index:
       node:
         title_html: 'Makȟá-owáŋka Eháŋni-wóyakapi: %{name}'
+        actions: Makȟá-owáŋka oȟ’áŋ kiŋ
       way:
         title_html: 'Makȟá-kazópi Eháŋni-wóyakapi: %{name}'
+        actions: Makȟá-kazópi oȟ’áŋ kiŋ
       relation:
         title_html: 'Makȟá-oúŋčhaǧe Eháŋni-wóyakapi: %{name}'
+        actions: Makȟá-oúŋčhaǧe oȟ’áŋ kiŋ
       older_versions: Wótokheča Isáƞm Káƞ
       newer_versions: Wótokheča Isáƞm Théča
     actions:
@@ -505,6 +538,8 @@ lkt:
       closed_ago_by_html: '%{time_ago} he eháŋ %{user} ečhél iyéye'
       discussion: Wóakhiye
       join_discussion: Wóakhiye óyapȟa yačhiŋ eháŋtaŋš, čhaž'óigwa yo/ye
+      still_open: H́ečhena wóyutȟokča-opȟáȟte kiŋ yuǧáŋpi - he ečhél iyéyapi kiŋháŋ,
+        wóakhiye kiŋ yuǧáŋpi kte.
       subscribe: Le otȟápȟa yo/ye
       unsubscribe: Le otȟápȟa-ayúštaƞ yo/ye
       comment_by_html: '%{time_ago} he eháŋ, %{user} wóeye waƞ káǧe'
@@ -546,6 +581,7 @@ lkt:
       latest_edit_html: Wóyutȟokča iyótaŋ théča (%{ago})
       no_edits: (wóyutȟokča waníča)
       view_changeset_details: Wóyutȟokča-opȟáȟte wíhoši-sáŋpȟa waŋyáŋka yo/ye
+      actions: Tuwá uŋ kiŋ le tȟaóȟ’aŋ
     popup:
       your location: Tuktél yauŋ
       nearby mapper: Tuwá nikhíyela makȟówa kiŋ
@@ -576,6 +612,7 @@ lkt:
     gpx_details:
       filename: Wópȟaȟta-čhažé
       description: Wahóši aú kiƞ ihóši
+      tags: Ihóši
     gpx_import_failure:
       error_message: Wóglušna Wónaȟ’uŋ
     new_follower:
@@ -586,11 +623,19 @@ lkt:
     note_comment:
       headline:
         commented: Wówapi čístila wóeye
+        closed: Wówapi čístila kiŋ yukpípi
+        reopened: Wówapi čístila kiŋ yukínipi
       description:
         commented_html: Tuwá uŋ kíŋ %{commenter_name_with_link} wówapi-čístila %{note_id_with_link}
           kíŋ wóeye ogná iwóglake ("%{note_text}")
+        closed_html: Tuwá uŋ kíŋ %{commenter_name_with_link} wówapi-čístila %{note_id_with_link}
+          kíŋ yukpí ("%{note_text}")
+        reopened_html: Tuwá uŋ kíŋ %{commenter_name_with_link} wówapi-čístila %{note_id_with_link}
+          kíŋ yukíni ("%{note_text}")
     diary_comment:
       headline: Aŋpél'okigwapi wóeye
+      description_html: Tuwá uŋ kíŋ %{commenter_name_with_link} aŋpél'okigwapi wówapi
+        "%{diary_entry_title_with_link}" kíŋ wóeye ogná iwóglake
   diary_entries:
     new:
       title: Aŋpél'okigwapi Wówapi Théča
@@ -620,7 +665,14 @@ lkt:
       login: čhaž'óigwa
     no_such_entry:
       title: Aŋpél'okigwapi wówapi kiŋ le waníča
+      heading: Aŋpél'okigwapi wówapi %{id} waníča
+      body: Aŋpél'okigwapi wówapi naíŋš wóeye %{id} waníča. Ókini čhažé ečhélya oyáwa
+        šni, naíŋš wóičhikȟoyake kiŋ ečhélya káǧapi šni.
     diary_entry:
+      posted_by_html: '%{created} he eháŋ, %{link_user} le %{language_link} ogná káǧe.'
+      updated_at_html: '%{updated} he eháŋ yutȟókeča.'
+      full_entry: Aŋpél'okigwapi wówapi kiŋ le yutȟáŋka
+      actions: Aŋpél'okigwapi wówapi tȟawóečhuŋ
       comment_link: Aŋpél'okigwapi wówapi kiŋ le akáŋn wóeye owá yo/ye
       reply_link: Tuwá owá kiŋ ektá wónaȟ’uŋ yeyá yo/ye
       comment_count:
@@ -713,6 +765,9 @@ lkt:
     search_osm_nominatim:
       prefix:
         aeroway:
+          aerodrome: Kiŋyékhiyapi-oíŋyaŋke
+          airstrip: Kiŋyékhiyapi-oíŋyaŋke Čístila
+          apron: Kiŋyékhiyapi-Oínažiŋ
           gate: Wátakiŋyaŋ Oíyayapi
           hangar: Kiŋyékhiyapi Othí
           helipad: Máza-thuswéčha-oínažiŋ
@@ -722,6 +777,7 @@ lkt:
           terminal: Kiƞyékhiyapi-thípi
           windsock: Tȟaté-wíslolye
         amenity:
+          animal_boarding: Iháktapila Oȟpáye-Thípi
           arts_centre: Wičhítowa-owápazo
           atm: Mázaska-ináslulye
           bank: Mázaska-thípi
@@ -730,12 +786,15 @@ lkt:
           bench: Čhaƞákaƞyaƞkapi
           bicycle_parking: Nagmíyaƞpi-oínažiƞ
           bicycle_rental: Nagmíyaƞpi Olól-thípi
+          bicycle_repair_station: Nagmíyaƞpi-Aphíyapi Oyáŋke
           biergarten: Mnipíǧa Owóžu
           blood_bank: We Iwómnaye
           boat_rental: Wáta Olól-thípi
+          bureau_de_change: Mázaska-Yutȟókečapi
           bus_station: Itȟókšu-oínažiŋ
           cafe: Owóte-thípi
           car_rental: Iyéčhiƞyaƞka Olól-thípi
+          car_sharing: Iyéčhiƞyaƞka Okíčhič’upi Oyáŋke
           car_wash: Iyéčhiƞyaƞka-onažaža
           casino: Okȟáƞsukhute
           charging_station: Wakȟáŋgli Okšúpi Owáŋka
@@ -753,7 +812,9 @@ lkt:
           drinking_water: Mniówe
           driving_school: Kaȟáb-owáyawa
           embassy: Kȟowákataŋhaŋ Yešípi Othí
+          fast_food: Owóte-Thípi Lúzahaŋ
           fire_station: Pȟéta-oínažiŋ
+          food_court: Owóte-Thípi Oyáŋke
           fountain: Omnínasli
           fuel: Wígli-oínažiƞ
           gambling: kȟaƞsúkhutepi
@@ -762,15 +823,20 @@ lkt:
           hospital: Okhúže-thípi
           ice_cream: Čhaȟsníyaŋ
           internet_cafe: Tȟawókaške Owóte-thípi
+          kindergarten: Wakȟáŋheža Čístila Tȟaówayawa
           language_school: Iyápi-owáyawa
           library: Wówapi-thípi
+          loading_dock: Wókšupi-Owáŋka
           marketplace: Owíyopȟeye
           monastery: Wakȟáŋ-wičháša Othí
+          money_transfer: Mázaska-yutȟókečapi Othí
           motorcycle_parking: Napȟóphopela-oínažiŋ
           music_school: Olówaŋ-owáuŋspe
           nursing_home: Wakáŋka-othí
           parking: Iyéčhiƞkiƞyaƞka-onážiƞ
+          parking_entrance: Iyéčhiƞkiƞyaƞka-Onážiƞ Thiyópa
           parking_space: Iyéčhiƞkiƞyaƞka-onážiƞ Okó
+          payment_terminal: Mázaska-Iyópȟeya
           pharmacy: pȟežúta-othí
           place_of_worship: Thípi Wakȟáƞ
           police: Wawóyuspa-oínažiŋ
@@ -780,10 +846,11 @@ lkt:
           pub: Owáyatke-thípi
           public_bath: Wóiglužaža owíčhotaya uƞ kiŋ
           public_bookcase: Wówapi-ognáke Owíčhotaya Uƞ
-          public_building: Thiháŋska Owíčhotaya Uƞ
+          public_building: Thiháŋska Oyáte Iyúha Yuhápi
           ranger_station: Wamákȟaškaŋ-Awaŋyaŋke Othí
           recycling: Phiyá Wóilagyapi Othí
           restaurant: Owóte-thípi
+          sanitary_dump_station: Čheslí Owáiȟpeye
           school: Owáyawa
           shelter: Wókheya
           shower: Oíglužaža
@@ -796,25 +863,40 @@ lkt:
           townhall: Otȟúƞwahe Omníciye-thípi
           training: Wókauŋspe Othí
           university: Wóuƞspe-waƞkátuya
+          vehicle_inspection: Iyéčhiŋyaŋka Iwáŋyaŋkapi
           vending_machine: Mas'ówiyopȟeye
           veterinary: Wamákȟaškaŋ aphíwičhaye
           village_hall: Otȟúƞwahe Omníciye-thípi
           waste_basket: Owáiȟpeye
+          waste_disposal: Owáiȟpeye
           waste_dump_site: Owáiȟpeye
+          watering_place: Wamakȟáškaŋ Mniówe
+          water_point: Mniówe
+          weighbridge: Iwátȟokšu Wítke-iyútȟe
         boundary:
           aboriginal_lands: Owákpamni-oyáŋke
+          low_emission_zone: Makȟóčhe Šabyápi-šni
+          timezone: Oápȟe-Makȟópašpe
           "yes": Oíčaǧo
         bridge:
+          suspension: Čheyágtȟuƞpi Otké
           "yes": Čheyágtȟuƞpi
         building:
           apartment: Thípiuŋšpa-othí
           apartments: Thípiuŋšpa-othí
           barn: Pteóthi
+          bungalow: Thípila
+          cabin: Thípila
           chapel: Thípi wakȟáŋ
           church: Owáčhekiye
+          civic: Thiháŋska Oyáte Iyúha Yuhápi
+          college: Owáyawa-Waŋkáŋtuya Thiháŋska
+          commercial: Yumázaskayapi Thiháŋska
+          construction: Thikáǧapi Oyáŋke
           cowshed: Pteónažiŋ
           dormitory: Wayáwa Othí
           farm: Wóžuthi
+          farm_auxiliary: Wóžuthi Ičínuŋpa
           garage: Iyéčhiŋkyaŋka-Wókheya
           garages: Iyéčhiŋkyaŋka-Wókheya tóna
           greenhouse: Watȟótȟo othí
@@ -824,13 +906,24 @@ lkt:
           house: Thípi
           houseboat: Thípi wáta
           hut: Wókheya
-          industrial: Wayúsolayapi Othí
+          industrial: Owákaǧe Thiháŋska
+          kindergarten: Wakȟáŋheža Čístila Tȟaówayawa Thiháŋska
+          manufacture: Owákaǧe Thiháŋska
           office: Omníȟuha-owá
+          public: Thiháŋska Oyáte Iyúha Yuhápi
+          residential: Oúŋyaŋpi Thiháŋska
+          retail: Wawíyopȟeyapi Thiháŋska
           roof: Thičhé
-          school: Owáyawa
+          ruins: Thiháŋska Našíča
+          school: Owáyawa Thiháŋska
           shed: Thikáitepa
           stable: Šuŋg'ónažiŋ
+          static_caravan: Thiyúslohaŋpi
           sty: Khukhúše-othí
+          temple: Owáčhekiye Thiháŋska
+          terrace: Thiháŋska Ipáȟlalya
+          train_station: Mázačhaƞku-Oínažiƞ Thiháŋska
+          university: Owáyawa-Waŋkáŋtuya Thiháŋska
           warehouse: Wógnaka Thípi Tȟáŋka
           "yes": Thiháŋska
         club:
@@ -844,32 +937,51 @@ lkt:
           dressmaker: Wakáǧeǧepi Wičhaša/Wíƞyaƞ
           electrician: Wakȟáŋgli yuhá
           gardener: Wóžupi Wičhaša/Wíƞyaƞ
+          glaziery: Žaŋžáŋ Okáǧe
+          metal_construction: Máza Okáǧe
           painter: Thiwíyuŋ-wičháša
+          photographer: Itówapi Káǧapi Wičhaša/Wíƞyaƞ
+          plumber: Máza Oȟlogiča Aphíye
           roofer: Thičhé Káǧapi Wičhaša/Wíƞyaƞ
           sawmill: Očháƞnaslelye
           shoemaker: Háƞpa Káǧapi Wičhaša/Wíƞyaƞ
-          tailor: Hayápi káǧe
+          tailor: Hayápi Okáǧe
+          window_construction: Ožáŋžaŋglepi Okáǧe
+          winery: Mnišá Okáǧe
         emergency:
           ambulance_station: Khuš'íwatȟokšu Oínažiŋ
           fire_extinguisher: Pȟéta-kasni Wíkhičhaƞye
         highway:
+          bridleway: Šúŋkawakȟaŋ Tȟačháŋku
           bus_stop: Itȟókšu-oínažiŋ
+          cycleway: Nagmíyaŋpi Čhaŋkúla
           elevator: Thiwáŋkata iwátȟokšu
+          footway: Čhaŋkúla
           ford: Oíyuweǧe
           platform: Owáhe
+          primary: Čhaƞkú Tȟokáheya
+          primary_link: Čhaƞkú Tȟokáheya
           raceway: Okhíiŋyaŋke
+          residential: Oúŋyaŋpi-Čhaŋkú
           rest_area: Oózikiye
           road: Čhaƞkú
+          secondary: Čhaƞkú Ičínuŋpa
+          secondary_link: Čhaƞkú Ičínuŋpa
           steps: Oáli
           stop: Čhaŋkú Inažiŋpi Wasábglepi
           street_lamp: Čhaŋkú-pȟetížaŋžaŋ
+          tertiary: Čhaƞkú Ičíyamni
+          tertiary_link: Čhaƞkú Ičíyamni
           "yes": Čhaƞkú
         historic:
           aircraft: Eháƞna Kiƞyékhiyapi
           archaeological_site: Watȟáŋni Wóuŋspe Owáŋka
           battlefield: Okíčhize-owáƞka
+          boundary_stone: Oíčaǧo-Íŋyaŋ
+          building: Eháŋna Thiháŋska
           cannon: Eháŋna mázawakȟaŋ-tȟáŋka
           castle: Akíčhita-čhúŋkaške
+          charcoal_pile: Eháŋna Čhaȟlí Apáha
           church: Owáčhekiye
           city_gate: Otȟúŋwahe Thiyópa
           citywalls: Otȟúŋwahe Thihépiya
@@ -879,8 +991,12 @@ lkt:
           manor: Thípi tȟáƞka
           memorial: Wókiksuye
           mine: Mas’ók’e
+          mine_shaft: Mas’ók’e Oȟlóka
+          monastery: Eháŋna Wakȟáŋ-wičháša Othí
           monument: Wókiksuya
+          railway: Eháŋna Ȟemáni-oyáŋke
           roman_road: Roma Oyáte Tȟačháŋku
+          rune_stone: Rune-Oówa Íŋyaŋ
           stone: Íƞyaƞ
           tomb: Owíčhaȟapi
           tower: Thiípasotka
@@ -892,19 +1008,26 @@ lkt:
           allotments: Makȟáoiyutȟe
           basin: Blé-oškókpa
           cemetery: Owíčhaȟapi
+          commercial: Yumázaskayapi Oyáŋke
           construction: Thikáǧa Othí
           farmland: Wóžupi-makȟóčhe
           farmyard: Wóžupi-makȟóčhe
           forest: Čhúƞwaƞča
+          garages: Iyéčhiŋkyaŋka-Wókheya
           grass: Peží
+          industrial: Owákaǧe Oyáŋke
           meadow: Obláye
           military: Akíčhita Oyáŋke
           mine: Mas’ók’e
           orchard: Waskúyeča-ožú
           plant_nursery: Owáičhaȟya
           quarry: Oók’e
+          railway: Ȟemáni-oyáŋke
           recreation_ground: Owóškate
+          religious: Owáčhekiye Oyáŋke
           reservoir: Mninátȟakapi
+          residential: Oúŋyaŋpi Oyáŋke
+          retail: Wawíyopȟeyapi Oyáŋke
           vineyard: Čhuŋwíyapehe ožúpi
         leisure:
           bleachers: Waŋkátuya Oyáŋke
@@ -915,14 +1038,19 @@ lkt:
           firepit: Očhéthi
           fishing: Ohókȟuwa
           fitness_centre: Tȟaŋglúškehaŋ-othí
+          fitness_station: Tȟaŋglúškehaŋ Oyáŋke
           garden: Owóžu
+          golf_course: Tȟápa Čístila Máza Uŋ Apȟápi Oyáŋke
           horse_riding: Šuŋg'ákaŋyaŋkápi Oyáŋke
+          miniature_golf: Tȟápa Čístilaȟča Máza Uŋ Apȟápi Oyáŋkela
           park: Oškál makȟóčhe
+          pitch: Tȟabškatapi Máǧa
           playground: Wakȟáŋheža-oškátA
           sauna: Čháŋ-oínikaǧe
           sports_centre: Tȟabškatapi Thípi
           swimming_pool: Onúƞwe
           track: Okhíiŋyaŋke
+          water_park: Mni Oškál-makȟóčhe
         lock:
           "yes": Oóyutkuǧe
         man_made:
@@ -937,6 +1065,7 @@ lkt:
           cross: Waíčhipaweǧa
           flagpole: Čhaŋpáslatapi
           gasometer: Wígli Kȟoká Máza
+          groyne: Čhasmú-anáptapi
           lighthouse: Ižáŋžaŋ thípi
           mine: Mas’ók’e
           petroleum_well: Makȟá-wíglič’api
@@ -946,6 +1075,7 @@ lkt:
           telescope: Mas'íwaŋyaŋke-háŋska
           tower: Thiípasotka
           utility_pole: Omás'apȟa-čhaŋpáslatapi
+          wastewater_plant: Mni-oyúžaža Othí
           watermill: Onákpaŋ
           water_tower: Mniípasotka
           water_well: Mniówe
@@ -975,6 +1105,7 @@ lkt:
           island: Wíta
           land: Makȟá
           marsh: Pteǧá
+          moor: Obláye
           mud: Makȟá ȟliȟlíla
           peak: Ȟeípȟa
           peninsula: Makȟóčhe-ipúš'iŋ
@@ -982,11 +1113,13 @@ lkt:
           ridge: Pahá-alíya
           rock: Íƞyaƞ
           sand: Čhasmú
+          shingle: Iȟ’é Óhuta
           spring: Mniówe
           stone: Íƞyaƞ
           strait: Ókhiyute
           tree: Čhaŋ
           tree_row: Čhaŋ Óhiye
+          tundra: Obláye-osní
           valley: Makȟókhignake
           volcano: Ȟeíle
           water: Mni
@@ -998,6 +1131,10 @@ lkt:
           architect: Tikáȟ-wíyukčaƞ
           company: Wówaši-ošpáye
           diplomatic: Akásaŋpȟa Kíčiyapi Othí
+          financial: Mázaska-Okhíčhaŋye Omníȟuha-Owá
+          government: Wókičhuŋze Omníȟuha-Owá
+          insurance: Atákunipi Kte Šni Uŋwókažužu Omníȟuha-Owá
+          it: Wisdódya-Aphíye Omníȟuha-Owá
           lawyer: Wákhiya Wičháša/Wíƞyaƞ
           newspaper: Wótȟaŋiŋ-Wówapi
           "yes": Omníȟuha-owá
@@ -1006,12 +1143,14 @@ lkt:
           archipelago: Wítaoptaye
           city: Otȟúƞwahe-tȟáƞka
           country: Makȟóčhe
+          county: Makȟóyušpe
           farm: Wóžupi-makȟóčhe
           hamlet: Wičhóthi Čístila
           house: Thípi
           houses: Thípi
           island: Wíta
           islet: Wíta
+          isolated_dwelling: Thípi Išnála
           neighbourhood: Wičhóthila
           region: Makȟáowašpe
           sea: Mniwáƞča
@@ -1022,9 +1161,13 @@ lkt:
         railway:
           abandoned: Mázačhaŋku Íȟpeyapi
           construction: Mázačhaŋku leháŋl Káǧapi
+          disused: Mázačhaŋku Iȟpéyapi
           halt: Mázačhaƞku-oínažiƞ
+          junction: Mázačhaŋku-Okhížata
           light_rail: Mázačhaŋkula
+          miniature: Mázačhaŋku-Čístila
           rail: Mázačhaƞku
+          spur: Mázačhaŋku-Alétka
           station: Mázačhaƞku-oínažiƞ
           stop: Mázačhaƞku-oínažiƞ
           subway: Makȟámahel-mázačhaŋku
@@ -1034,10 +1177,13 @@ lkt:
           alcohol: Mnišíča-mas'óphiye
           antiques: Watȟáŋni-mas'óphiye
           appliance: Wíkhičhaŋye-mas'óphiye
-          bag: Wózuha-mas'óphiye
+          bag: Wózuha-Mas'óphiye
           bakery: Aǧúyapi-okáǧe
           beauty: Pȟehíŋ yuȟópa-othí
-          bed: Owíŋža-mas'óphiye
+          bed: Owíŋža-Mas'óphiye
+          beverages: Wóyatke-Mas'óphiye
+          bicycle: Nagmíyaŋpi Mas'ophiye
+          bookmaker: Wówapi-káǧapi Mas’óphiye
           books: Wówapi-mas'ophiye
           boutique: Hayápi-mas'óphiye
           car: Iyéčhiŋkyaŋka-owíyopȟeye
@@ -1046,15 +1192,17 @@ lkt:
           cheese: Asáŋpisuta-mas'óphiye
           chemist: Pȟežúta-othí
           chocolate: Čhaŋmháŋska-ǧí
-          clothes: Hayápi-mas'óphiye
+          clothes: Hayápi-Mas'óphiye
           coffee: Wakȟályab-othí
           computer: Wóuƞspe-omnáye-mas'óphiye
           confectionery: Čhaŋháŋpi-mas'óphiye
-          cosmetics: Ité-išáye-mas'óphiye
+          copyshop: Wówapi-yuóta Mas’óphiye
+          cosmetics: Ité-išáye-Mas'óphiye
           curtain: Ózaŋ-mas'óphiye
           dairy: Asaŋpi-mas'óphiye
           electronics: Wakȟáŋgli-mas'óphiye
           fabric: Mniȟúha-mas'óphiye
+          farm: Wóžupi Mas’óphiye
           florist: Wanáȟča-mas'óphiye
           food: Wóyute-mas'óphiye
           frame: Itówapi-ognáke Mas'óphiye
@@ -1134,8 +1282,11 @@ lkt:
         level11: Oíčaǧo (Wóali 11)
       border_types:
         city: Otȟúƞwahe Tȟáƞka Oíčaǧo
+        county: Makȟóyušpe Oíčaǧo
         district: Okašpé Oíčaǧo
         distrito: Okašpé Oíčaǧo
+        freguesia: Freguesia Oíčaǧo
+        local_authority: Léčhiya-Wóitȟaŋčhaŋ Oíčaǧo
         municipality: Otȟúŋwahe-okašpé Oíčaǧo
         municipi: Otȟúŋwahe-okašpé Oíčaǧo
         município: Otȟúŋwahe-okašpé Oíčaǧo
@@ -1148,6 +1299,10 @@ lkt:
         town: Otȟúƞwahe Oíčaǧo
         village: Otȟúƞwahe Oíčaǧo
   searches:
+    show:
+      title:
+        nominatim: Nominatim
+        nominatim_reverse: Nominatim
     queries:
       create:
         no_results: Tákuni iyéyapi šni
@@ -1234,6 +1389,7 @@ lkt:
         ia: Interlingua Iyápi
         is: Icelandic Iyápi
         it: Italian Iyápi
+        kw: Cornwall Makȟóčhe Iyápi
         gcf: Guadeloupean Creole Iyápi
         ku-Latn: Kurdish Iyápi (Latin oówa)
         lv: Latvian Iyápi
@@ -1274,6 +1430,7 @@ lkt:
         be-Tarask: Belarusian Iyápi (Tarašk. oówa)
         bg: Bulgarian Iyápi
         mk: Macedonian Iyápi
+        mt: Málta Wíta Iyápi
         mo: Moldovan Iyápi
         ce: Chechen Iyápi
         ru: Russian Iyápi
@@ -1504,6 +1661,7 @@ lkt:
         failure: Wóigluštaŋ lutȟókeča oyákihi šni.
       navigation:
         preferences: Otȟáwokaške
+        notification_preferences: Wahóši Aú Kiƞ
         advanced_preferences: Ektáwapȟaya
     basic_preferences:
       show:
@@ -1632,7 +1790,7 @@ lkt:
       logout_button: Čhaž’óigwa-ayúštaŋ yo/ye
   site:
     about:
-      heading_html: '%{copyright}OpenStreetMap %{br} tuwá kíč''uŋ kiŋ'
+      heading_html: '%{copyright}OpenStreetMap %{br} tuwá kič''úŋpi kiŋ'
       used_by_html: '%{name} otȟáwokaške, omás’apȟela-wíkhičhaŋye na maswíkhičhaŋye
         khektópawiŋǧe ektá makȟówapi-ihóši kiŋ kpamni.'
       lede_text: 'OpenStreetMap tȟawíčhothi makȟá-íhoši awáŋyaŋkapi na kíč''uŋpi.
@@ -1647,19 +1805,40 @@ lkt:
       community_driven_1_html: "OpenStreetMap tȟawíčhothi wičhótȟokeča yuhápi, blihélya
         škéhaŋpi, na aŋpétu iyóhi iglúotapi. Wičhótȟi égna makȟówapi-káǧapi, GIS-wíyukčaŋ,
         OSM wóuƞspe-omnáye awaŋyaŋkapi kiŋ, tuwá wóakhipȟa el ówičhakiyapi kiŋ, na
-        tuwa uŋma óta. \nOpenStreetMap tȟawíčhothi uŋspénič'iya yačhíŋ, %{osm_blog_link},
+        tuwa uŋma óta. \nOpenStreetMap tȟawíčhothi uŋspénič'iya yačhíŋ kiŋháŋ, %{osm_blog_link},
         %{user_diaries_link}, %{community_blogs_link}, na %{osm_foundation_link} otȟáwokaške
         yawá yo/ye."
       community_driven_osm_blog: OpenStreetMap wótȟaƞiƞ-wówapi
       community_driven_user_diaries: aŋpél'okigwapi
       community_driven_community_blogs: wičhothi wótȟaƞiƞ-wówapi
       community_driven_osm_foundation: OSM Okȟólakičhiye
+      open_data_title: Wihóši Oyúškeya Uŋ
+      open_data_1_html: 'OpenStreetMap tȟawíhoši %{open_data}: OpenStreetMap na tuwá
+        kič’úŋpi kiŋ owíčhayečiyake háŋtaŋš, hená wičhóȟ’aŋ iyúha ogná yaúŋpi oyákihi.
+        Wíhoši k’uŋ lutȟáŋka naíŋš lutȟókeča háŋtaŋš,  wayúota-wóiyowiƞkhiye tȟáwa
+        ečéla ogná táku yakáǧe kiŋ yakpámni oyákihi kte. Uŋspénič’ičhiya yačhíŋ háŋtaŋš,
+        %{copyright_license_link} yawá yo/ye.'
+      open_data_open_data: oyuškeya uƞ
       open_data_copyright_license: Wayúota-wóiyowiƞkhiye na Wóopȟe-wóiyowiƞkhiye oyúblaye
       legal_title: Wóopȟe Kiƞ
+      legal_1_1_html: '%{openstreetmap_foundation_link} kiŋ (OSMF) otȟáwokaške kiŋ
+        le íŋyaŋkhiyapi. Wičhóthi iyúha ečháwičhakičičuŋpi. Takómni tuwá táku OSMF
+        kmamnípi úŋpi čhíŋpi %{terms_of_use_link}, %{aup_link} na %{privacy_policy_link}
+        kiŋ óhiŋniyaŋ ohólapi kte.'
       legal_1_1_openstreetmap_foundation: OpenStreetMap Okȟólakičhiye
-      legal_1_1_terms_of_use: Úƞpi-wóopȟe
-      legal_1_1_privacy_policy: Waúŋyutȟaŋiŋpi-šni
+      legal_1_1_terms_of_use: Úƞpi-Wóopȟe kiŋ
+      legal_1_1_aup: Wíhoši-Wóahopȟe kiŋ
+      legal_1_1_privacy_policy: Waúŋyutȟaŋiŋpi-šni Wóopȟe kiŋ
+      legal_1_2_html: OpenStreetMap makȟówapi naíŋš wíhoši yaúŋpi yačhíŋpi háŋtaŋš,
+        takomni OpenStreetMap oyečiyakiŋ kte - ihóši sáŋpȟa uŋspénič’ičhiya yačhíŋ
+        háŋtaŋš, %{attribution_guidelines_link} yawá yo/ye.
+      legal_attribution_guidelines_title: Okíčiyake-Wóahopȟe kiŋ
       legal_attribution_guidelines_url: https://osmfoundation.org/wiki/Licence/Attribution_Guidelines
+      legal_1_3_html: OpenStreetMap kiŋ oyuškeya uƞ; he uŋ, OpenStreetMap wíslolye
+        uŋ itóyawa yačhíŋ eháŋtaŋš (ičhíŋ wówapi, wanáškaƞškaƞyaƞpi naíŋš wópazo waŋ
+        yakáǧe) wóiyowiŋkhiye uŋyákilapi kte šni. %{attribution_guidelines_link} yawá
+        yo/ye. Nakúŋ, %{attribution_example_film} naíŋš %{attribution_example_tv}
+        wóiwaŋyaŋke kiŋ waŋyáŋka yo/ye.
       legal_attribution_example_film_title: Wanáškaƞškaƞyaƞpi
       legal_attribution_example_film_url: https://wiki.openstreetmap.org/wiki/Films
       legal_attribution_example_tv_title: Wičhítenaškaŋškaŋ
@@ -1740,20 +1919,16 @@ lkt:
         advice: 'Yutȟáŋkal iyáču oyákihi šni eháŋtaŋš, ohútkȟaŋ kiŋ lená uŋ-wáčhiŋ
           yo/ye:'
         planet:
-          url: https://planet.openstreetmap.org/
           title: OSM Makȟá
           description: Átaya OpenStreetMap tȟawíhoši owógnake kiŋ etaŋhaŋ yuótapi-šna
         overpass:
-          url: https://overpass-api.de/api/map
           title: Overpass API
           description: OpenStreetMap tȟawíhoši owógnake kiŋ etáŋhaŋ oíčaǧo kiŋ le
             khulwókšu wo/we
         geofabrik:
-          url: https://download.geofabrik.de/
           title: Geofabrik Khulókšupi Kiŋ
           description: Makȟáwita, makȟóčhe na otȟúŋwahe óta yutȟáŋkal ičúpi-šna
         other:
-          url: https://wiki.openstreetmap.org/wiki/Downloading_data
           title: Ohútkȟaŋ Uŋmá kiƞ
           description: OpenStreetMap Wiki héčhiya ohútkȟaŋ uŋmá kiƞ čhažéyatapi
       export_button: Yutȟáŋkal ičú wo/we
@@ -1777,14 +1952,16 @@ lkt:
         url: /welcome
         title: Taŋyáŋ OpenStreetMap Ektá Yahí
       beginners_guide:
-        title: Lečhá-Uŋspeič’ičhiyapi Wówapi
-        description: Wičhóta kiŋ wówapi kiŋ le ogná lečhá-uŋspeič’ičhiyapi kiŋ wahókuŋwičhakhiyapi.
+        title: Tȟéča-Uŋspeič’ičhiyapi Wówapi
+        description: Wičhóta kiŋ wówapi kiŋ le ogná tȟéča-uŋspeič’ičhiyapi kiŋ wahókuŋwičhakhiyapi.
       irc:
         title: IRC
       switch2osm:
         title: switch2osm
       wiki:
         title: OpenStreetMap Wiki
+        description: OpenStreetMap-ihóši háŋska uŋspénič’iya yačhíŋ, wiki kiŋ lawá
+          oyakihi.
     potlatch:
       desktop_application_html: Héčhena, %{download_link} uŋ Potlatch yaúŋ oyákihi.
       change_preferences: Lečhél wóigluštaŋ hdutȟókeča yo/ye
@@ -1863,13 +2040,19 @@ lkt:
   legend_panes:
     show:
       entries:
-        cycleway: Nagmíyaŋpi Čhaŋku
+        bridleway: Šúŋkawakȟaŋ Tȟačháŋku
+        cycleway: Nagmíyaŋpi Čhaŋkú
         local_bike_route: Wičháša-itȟókšu
+        footway: Čhaŋkúla
+        rail: Ȟemáni-oyáŋke
         train: Mázačhaƞku
         subway: Makȟámahel-mázačhaŋku
         light_rail: Mázačhaŋkula
         bus: Wičháša-itȟókšu
         runway: Kiŋyékhiyapi-oíŋyaŋke
+        taxiway: Kiƞyékhiyapi-čhaƞkú
+        apron: Kiŋyékhiyapi-Oínažiŋ
+        admin: Waíŋyaŋgkhiyapi Oíčaǧo
         capital: Pȟayá-otȟúŋwahe
         city: Otȟúƞwahe-tȟáƞka
         orchard: Waskúyeča-ožú
@@ -1881,7 +2064,13 @@ lkt:
         meadow: Obláye
         bare_rock: Íŋyaŋ
         sand: Čhasmú
+        golf: Tȟab-Ičápsiča Oškáte oyáŋke
         park: Oškál makȟóčhe
+        built_up: Thiégna oyáŋke
+        resident: Oúŋyaŋpi oyáŋke
+        retail: Wawíyopȟeyapi oyáŋke
+        industrial: Owákaǧe oyáŋke
+        commercial: Yumázaskayapi oyáŋke
         lake: Ble
         reservoir: Mninátȟakapi
         glacier: Čhaȟ’ówaŋča
@@ -1889,12 +2078,16 @@ lkt:
         farm: Wóžupi-makȟóčhe
         cemetery: Owíčhaȟapi
         allotments: Makȟáoiyutȟe
+        pitch: Tȟabškatapi Máǧa
+        centre: Tȟabškatapi Thípi
         beach: Mnióhuta
+        military: Akíčhita Oyáŋke
         school: Owáyawa
         university: Wóuƞspe-waƞkátuya
         hospital: Okhúže-thípi
         building: Thiháŋska Waŋkátuya
         station: Mázačhaƞku-oínažiƞ
+        railway_halt: Ȟemáni oíhuŋni
         summit: Ipȟá
         peak: Ipȟá
         private: Owíčhotaya uƞpȟíča šni
@@ -1961,7 +2154,9 @@ lkt:
       view_map: Makȟówapi ogná owáŋka waŋyáŋka yo/ye
       edit_map: Mas'yútȟokeča ogná yuǧáƞ
       public: OWÍČHOTAYA UŊ
+      identifiable: IYÉKIYE-PHIČA
       private: OWÍČHOTAYA UŊ ŠNI
+      trackable: OTȞÁB-PHIČA
       details_with_tags_html: '%{time_ago} he eháŋ, %{user} ečhúŋ, %{tags} mahél'
       details_without_tags_html: '%{time_ago} he eháŋ, %{user} ečhúŋ'
     index:
@@ -1969,7 +2164,9 @@ lkt:
       my_gps_traces: GPS Waóye Mitȟáwa
       public_traces_from: '%{user} etáŋhaŋ GPS Waóye Owíčhotaya Káǧe'
       description: Lečhála GPS waóye waŋkál okšúpi kiŋ waŋyáŋka yo/ye
+      actions: Waóye-čhašówapi tȟawóečhuŋ
       tagged_with: '%{tags} ogná oyákapi'
+      empty_title: Léčhiya tákuni uŋ šni
       empty_upload_html: '%{upload_link} naíŋš %{wiki_link} ogná GPS waóye káǧapi
         kiŋ uŋspéič''ičhiya yo/ye.'
       upload_new: Waóye tȟéča waŋkál okšú
@@ -1978,6 +2175,12 @@ lkt:
       all_traces: Waóye Iyúha
       my_traces: Waóye Mitȟáwa
       traces_from_html: '%{user} etáŋhaŋ Waóye Owíčhotaya Káǧe'
+    legacy_visibilities:
+      edit:
+        filter:
+          apply: Nazékiya
+        confirmation:
+          cancel: Yužúžu
     feeds:
       description:
         description_without_count: '%{user} etáŋhaŋ GPX wópȟaȟta'
@@ -2034,25 +2237,50 @@ lkt:
       image: Itówapi
       url: URL
     richtext_field:
+      edit: Yutȟókeča
       preview: Owáŋyaŋke-íȟaŋhaŋ
+      help: Wóokiye
     pagination:
+      acls:
+        older: ACL Isáŋm Kaŋ
+        newer: ACL Isáŋm Tȟéča
+        oldest: ACL Iyótaŋ Kaŋ
+        newest: ACL Iyótaŋ Tȟéča
       changeset_comments:
+        older: Wóeye Isáŋm Kaŋ
+        newer: Wóeye Isáŋm Tȟéča
+        oldest: Wóeye Iyótaŋ Kaŋ
         newest: Wóeye Iyótaŋ Tȟéča
       diary_comments:
         older: Wóeye Isáŋm Kaŋ
+        newer: Wóeye Isáŋm Tȟéča
         oldest: Wóeye Iyótaŋ Kaŋ
         newest: Wóeye Iyótaŋ Tȟéča
       diary_entries:
+        older: Wówapi Isáŋm Kaŋ
         newer: Wówapi Isáŋm Tȟéča
         oldest: Wówapi Iyótaŋ Kaŋ
         newest: Wówapi Iyótaŋ Tȟéča
+      notifications:
+        older: Wahóši Aú Kiƞ Isáŋm Kaŋ
+        newer: Wahóši Aú Kiƞ Isáŋm Tȟéča
+        oldest: Wahóši Aú Kiƞ Iyótaŋ Kaŋ
+        newest: Wahóši Aú Kiƞ Iyótaŋ Tȟéča
+      issues:
+        older: Wóičaǧi Isáŋm Kaŋ
+        newer: Wóičaǧi Isáŋm Tȟéča
+        oldest: Wóičaǧi Iyótaŋ Kaŋ
+        newest: Wóičaǧi Iyótaŋ Tȟéča
       traces:
-        newer: Waóye Isáŋm Théča
+        older: Waóye Isáŋm Kaŋ
+        newer: Waóye Isáŋm Tȟéča
         oldest: Waóye Iyótaŋ Kaŋ
-        newest: Waóye Iyótaŋ Théča
+        newest: Waóye Iyótaŋ Tȟéča
       user_blocks:
+        older: Wóanapte Isáŋm Kaŋ
         newer: Wóanapte Isáŋm Tȟéča
         oldest: Wóanapte Iyótaŋ Káŋ
+        newest: Wóanapte Iyótaŋ Tȟéča
       users:
         older: Tuwá Uŋ Kiŋ Isáŋm Kaŋ
         newer: Tuwá Uŋ Kiŋ Isáŋm Tȟéča
@@ -2096,27 +2324,34 @@ lkt:
       heading: Tuwá uŋ kiŋ %{user} waníča
       deleted: iháŋgyapi
     show:
+      actions: Oȟ’áƞ kiƞ
       my diary: Aŋpél'okigwapi Mitȟáwa
       my edits: Wóyutȟokča Mitȟáwa
       my traces: Waóye Mitȟáwa
-      my notes: Wówapi čístila mitȟáwa
-      my messages: Wónaȟ’uŋ mitȟáwa
+      my notes: Wówapi čístila Mitȟáwa
+      my messages: Wónaȟ’uŋ Mitȟáwa
+      my_notifications: Wahóši Aú Kiƞ Mitȟáwa
       my profile: Oníwowapi Mitȟáwa
-      my_account: Čhažé-oyáŋke mitȟáwa
-      my comments: Wóeye mitȟáwa
-      my_preferences: Wóigluštaŋ mitȟáwa
+      my_account: Čhažé-oyáŋke Mitȟáwa
+      my comments: Wóeye Mitȟáwa
+      my_preferences: Wóigluštaŋ Mitȟáwa
       create_mute: Tuwá uŋ kiŋ le Yuínila yo/ye
+      destroy_mute: Tuwá uŋ kiŋ le Yuínila-ayúštaŋ yo/ye
       send message: Wónaȟ’uŋ yeyá yo/ye
       diary: Aŋpél'okigwapi
       edits: Wóyutȟokča
       traces: Waóye
       notes: Makȟówapi Wóeye
+      unfollow: Otȟápȟa-ayúštaŋ yo/ye
       follow: Otȟápȟa yo/ye
+      last map edit: 'Wóyutȟokeča iyótaŋ tȟéča:'
+      no activity yet: Tákuni ečhúŋ šni
       uid: 'Tuwa uŋ kiŋ ID:'
       email address: 'Wakȟáƞgli-Wóyakapi Makȟóčhažeyate:'
       comments: Wóeye
       create_block: Tuwá uŋ kiŋ le Anápta yo/ye
       confirm_user: Tuwá uŋ kiŋ le Yusúta
+      unconfirm_user: Tuwá uŋ kiŋ le Yusúta-ayúštaŋ
       undelete_user: Tuwá uŋ kiŋ Yukíni yo/ye
       confirm: Yusúta
       report: Tuwá uŋ kiŋ le El Iglé yo/ye
@@ -2143,6 +2378,7 @@ lkt:
         title: Tuwá uŋ kiŋ
         heading: Tuwá uŋ kiŋ
         states:
+          active: Škéhaŋ Uŋ
           deleted: Iháŋgyapi
         name_or_email: Čhažé naíŋš Wakȟáƞgli Wóyakapi
         ip_address: IP Makȟóčhažeyate
@@ -2173,6 +2409,8 @@ lkt:
     edit:
       title: Waŋna %{name} akáŋn wóanapte kiŋ lutȟókeča
       heading_html: Waŋna %{name} akáŋn wóanapte kiŋ lutȟókeča
+    filter:
+      block_period: Anáyapta eháŋtaŋš, takómni táku léčhiya waŋ yakáȟniǧe kte.
     create:
       flash: '%{name} akáŋn wóanapte kiŋ yakáǧe.'
     helper:
@@ -2216,11 +2454,17 @@ lkt:
       title: Tuwá Wičáluinila Kiŋ
       my_muted_users: Tuwá wičábluinila kiŋ
       table:
+        thead:
+          actions: Oȟ’áƞ kiƞ
         tbody:
+          unmute: Yuínila-ayúštaƞ
           send_message: Wónaȟ’uŋ yeyá yo/ye
     create:
       notice: '%{name} luínila.'
       error: '%{name} luínila oyákihi šni. %{full_message}'
+    destroy:
+      notice: '%{name} yuínila-alúštaƞ.'
+      error: Tuwá uŋ kiŋ le yuínila-ayúštaƞ oyákihi šni. Akȟé héčhuŋ-wačhiŋ.
   notes:
     index:
       heading: '%{user} Tȟawówapi-čístila'
@@ -2267,6 +2511,9 @@ lkt:
       title: Ok’u wo/we
       export_failed_title: Makȟówapi oyák'u oyákihi šni
       filename: makȟówapi
+    legend:
+      title: Makȟówapi-Iyúšloke
+      tooltip: Makȟówapi-Iyúšloke
     map:
       Map:
         Title: Makȟówapi
@@ -2355,4 +2602,61 @@ lkt:
         wótokheča iyúha yuátȟaƞiƞ yo/ye.
       flash: Wóanaȟma kiŋ iháŋgyaye.
       error: Wóanaȟma kiŋ iháŋgyaya oyákihi šni. Wóglušna waŋ luhé.
+  acls:
+    navigation:
+      new_title: ACL théča káǧa
+      new: ACL Théča
+    index:
+      title: ACL kiŋ
+    page:
+      k: Iyúšloke
+      v: Wóiglawa
+    acl:
+      edit_button: Yutȟókeča
+      destroy_button: Iháƞgya
+      confirm: Lečh́anuŋ yačhíŋ he?
+    form:
+      cancel: Yužúžu
+    new:
+      title: ACL Théča
+    create:
+      success: ACL waŋ yakáǧe.
+    edit:
+      title: Waŋná ACL kiŋ lutȟókeča
+    update:
+      success: ACL lutȟéča.
+    destroy:
+      success: ACL iháŋgyaye.
+  moderation_zones:
+    navigation:
+      new_title: Wóitȟaŋčhaŋ-Makȟóčhe théča waŋ káǧa
+      new: Wóitȟaŋčhaŋ-Makȟóčhe Théča
+      actions: Wóitȟaŋčhaŋ-Makȟóčhe oȟ’áŋ kiŋ
+    index:
+      title: Wóitȟaŋčhaŋ-Makȟóčhe Kiŋ
+      heading: Wóitȟaŋčhaŋ-Makȟóčhe Kiŋ
+      name: Čhažé
+      reason: Tákuwe
+      creator: Tuwá le káǧe
+      end: Owíhaŋke
+    row:
+      edit: Yutȟókeča
+    new:
+      title: Wóitȟaŋčhaŋ-Makȟóčhe Théča
+      heading: Wóitȟaŋčhaŋ-Makȟóčhe Théča
+    create:
+      success: Wóitȟaŋčhaŋ-Makȟóčhe waŋ yakáǧe.
+    edit:
+      title: Waŋná wóitȟaŋčhaŋ-makȟóčhe %{name} lutȟókeča
+      heading: Waŋná wóitȟaŋčhaŋ-makȟóčhe %{name} lutȟókeča
+    update:
+      success: Wóitȟaŋčhaŋ-makȟóčhe kiŋ luth́éča.
+      only_creator_can_edit: Oítȟaƞčhaƞ wóitȟaŋčhaŋ-makȟóčhe kiŋ le káǧe kiŋ ečéla
+        yutȟókeča okihi.
+      only_creator_can_edit_without_revoking: Wóitȟaŋčhaŋ-makȟóčhe kiŋ le khigléya
+        šni haŋtáŋš, oítȟaƞčhaƞ le káǧe kiŋ ečéla yutȟókeča okihi.
+      only_creator_or_revoker_can_edit: Oítȟaƞčhaƞ wóitȟaŋčhaŋ-makȟóčhe kiŋ le káǧe
+        (naíŋš khigléya) kiŋ ečéla yutȟókeča okihi.
+      no_reactivation: Wóitȟaŋčhaŋ-makȟóčhe kiŋ le škaŋškáŋ šni, na yuškáŋškaŋpi okíhipi
+        šni.
 ...

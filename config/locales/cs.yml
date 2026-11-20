@@ -186,6 +186,7 @@ cs:
         reason: Důvod
         zone: Zóna
         period: Období
+        ends_at: Datum a čas vypršení platnosti
       message:
         sender: Odesílatel
         title: Předmět
@@ -2886,15 +2887,12 @@ cs:
           Přejděte na větší měřítko, zvolte menší oblast, nebo použijte jeden z následujících
           zdrojů pro stahování velkého množství dat:'
         planet:
-          url: https://planet.openstreetmap.org/
           title: Planeta OSM
           description: Pravidelně aktualizované kopie kompletní databáze OpenStreetMap
         overpass:
-          url: https://overpass-api.de/api/map
           title: Overpass API
           description: Stažení této oblasti z databázového zrcadla OpenStreetMap
         geofabrik:
-          url: https://download.geofabrik.de/
           title: Soubory Geofabrik
           description: Pravidelně aktualizované extrakty kontinentů zemí a vybraných
             měst
@@ -4190,6 +4188,10 @@ cs:
       id_not_configured:
         title: iD nebyl nakonfigurován
         body: Více informací naleznete v souboru CONFIGURE.md.
+    traces:
+      tagstring:
+        comma_delimited: 'oddělené čárkou:'
+        space_delimited: 'oddělené mezerou:'
   redactions:
     edit:
       heading: Upravit redakci
@@ -4294,4 +4296,11 @@ cs:
         ended: skončila
         active: aktivní
         revoked_html: zrušeno uživatelem %{name}
+    form:
+      expiration: Čas vypršení
+      relative_expiration: Na uvedenou dobu
+      absolute_expiration: Do uvedeného data a času
+      period:
+        options:
+          revoke: Zrušit moderační zónu
 ...

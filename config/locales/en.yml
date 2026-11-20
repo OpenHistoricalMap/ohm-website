@@ -133,6 +133,7 @@ en:
         reason: Reason
         zone: Zone
         period: Period
+        ends_at: Expiration date and time
       message:
         sender: "Sender"
         title: "Subject"
@@ -3936,6 +3937,10 @@ en:
       id_not_configured:
         title: "iD has not been configured"
         body: "Please see CONFIGURE.md for more information"
+    traces:
+      tagstring:
+        comma_delimited: "comma delimited:"
+        space_delimited: "space delimited:"
   redactions:
     edit:
       heading: "Edit Redaction"
@@ -4036,3 +4041,10 @@ en:
         ended: "ended"
         active: "active"
         revoked_html: "revoked by %{name}"
+    form:
+      expiration: Expiration
+      relative_expiration: For a duration
+      absolute_expiration: Until a specific date and time
+      period:
+        options:
+          revoke: "Revoke moderation zone"

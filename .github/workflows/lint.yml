@@ -19,7 +19,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
     - name: Setup ruby
-      uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
+      uses: ruby/setup-ruby@b3aaceaef7e0ee231b499e7b5f49c03fc1d32199 # v1.338.0
       with:
         ruby-version: ${{ env.ruby }}
         bundler-cache: true
@@ -33,7 +33,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
     - name: Setup ruby
-      uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
+      uses: ruby/setup-ruby@b3aaceaef7e0ee231b499e7b5f49c03fc1d32199 # v1.338.0
       with:
         ruby-version: ${{ env.ruby }}
         bundler-cache: true
@@ -47,14 +47,14 @@ jobs:
     - name: Check out code
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
     - name: Setup ruby
-      uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
+      uses: ruby/setup-ruby@b3aaceaef7e0ee231b499e7b5f49c03fc1d32199 # v1.338.0
       with:
         ruby-version: ${{ env.ruby }}
         bundler-cache: true
     - name: Run herb parser
       run: bundle exec herb analyze app/
     - name: Cache node modules
-      uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
       with:
         cache: yarn
     - name: Install node modules
@@ -71,12 +71,12 @@ jobs:
     - name: Check out code
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
     - name: Setup ruby
-      uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
+      uses: ruby/setup-ruby@b3aaceaef7e0ee231b499e7b5f49c03fc1d32199 # v1.338.0
       with:
         ruby-version: ${{ env.ruby }}
         bundler-cache: true
     - name: Cache node modules
-      uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
       with:
         cache: yarn
     - name: Install node modules
@@ -84,7 +84,7 @@ jobs:
     - name: Install packages
       run: |
         sudo apt-get -yqq update
-        sudo apt-get -yqq install libvips-dev
+        sudo apt-get -yqq install --no-install-recommends libvips42t64
     - name: Create dummy database configuration
       run: cp config/example.database.yml config/database.yml
     - name: Run eslint
@@ -97,7 +97,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
     - name: Setup ruby
-      uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
+      uses: ruby/setup-ruby@b3aaceaef7e0ee231b499e7b5f49c03fc1d32199 # v1.338.0
       with:
         ruby-version: ${{ env.ruby }}
         bundler-cache: true
@@ -113,7 +113,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
     - name: Setup ruby
-      uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
+      uses: ruby/setup-ruby@b3aaceaef7e0ee231b499e7b5f49c03fc1d32199 # v1.338.0
       with:
         ruby-version: ${{ env.ruby }}
         bundler-cache: true
@@ -122,7 +122,7 @@ jobs:
         cp config/github.database.yml config/database.yml
         cp config/example.storage.yml config/storage.yml
     - name: Cache node modules
-      uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
       with:
         cache: yarn
     - name: Install node modules
@@ -130,7 +130,7 @@ jobs:
     - name: Install packages
       run: |
         sudo apt-get -yqq update
-        sudo apt-get -yqq install postgresql-postgis libvips-dev
+        sudo apt-get -yqq install --no-install-recommends postgresql-postgis libvips42t64
     - name: Setup database
       run: |
         sudo systemctl start postgresql
@@ -151,7 +151,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
     - name: Setup ruby
-      uses: ruby/setup-ruby@14594264cd68ce8a2345dd349bc3d138a4ef85c8 # v1.327.0
+      uses: ruby/setup-ruby@b3aaceaef7e0ee231b499e7b5f49c03fc1d32199 # v1.338.0
       with:
         ruby-version: ${{ env.ruby }}
         bundler-cache: true
@@ -160,7 +160,7 @@ jobs:
         cp config/github.database.yml config/database.yml
         cp config/example.storage.yml config/storage.yml
     - name: Cache node modules
-      uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
       with:
         cache: yarn
     - name: Install node modules
@@ -168,7 +168,7 @@ jobs:
     - name: Install packages
       run: |
         sudo apt-get -yqq update
-        sudo apt-get -yqq install postgresql-postgis libvips-dev
+        sudo apt-get -yqq install --no-install-recommends postgresql-postgis libvips42t64
     - name: Setup database
       run: |
         sudo systemctl start postgresql
