@@ -1,10 +1,11 @@
 # Messages for Mingrelian (მარგალური)
 # Exported from translatewiki.net
+# Export driver: phpyaml
 # Author: Erictheise
 # Author: Minh Nguyen
 # Author: Narazeni
 # Author: Silovan
-# Do not edit by hand.
+---
 xmf:
   api:
     notes:
@@ -27,5 +28,17 @@ xmf:
         title: OpenHistoricalMap დღარიშ დინნაჭარეფი გეჸვენჯი ნინაშა %{language_name}
       user:
         title: OpenHistoricalMap დღარიშ დინნაჭარეფი მახვარებუშო %{user}
+  geocoder:
+    search_osm_nominatim:
+      prefix:
+        amenity:
+          arts_centre: ხელუანაფაშ ცენტრი
+        shop:
+          seafood: ზუღაშ პროდუქტეფი
   layouts:
     intro_header: მოზოჯით OpenHistoricalMap-შა!
+  time:
+    formats:
+      blog: '%e %B %Y'
+      friendly: '%დ %თ %წ at %ს:%წ'
+...
