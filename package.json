@@ -9,6 +9,7 @@
     "@mapbox/polyline": "*",
     "@maplibre/maplibre-gl-leaflet": "*",
     "@maptiler/maplibre-gl-omt-language": "*",
+    "@openhistoricalmap/events": "github:Rub21/ohm-events#main",
     "@openhistoricalmap/id": "2.42.2-ohm.1",
     "@openhistoricalmap/map-styles": "^0.9.23",
     "@openhistoricalmap/maplibre-gl-language": "^0.1.0",
