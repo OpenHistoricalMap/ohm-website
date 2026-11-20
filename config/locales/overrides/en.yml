@@ -186,10 +186,6 @@ en:
       show:
         map_color_schemes:
           auto: Auto
-    preferences:
-      navigation:
-        advanced_preferences: Advanced Preferences
-        preferences: Preferences
   printable_name:
     with_date_html: "%{name} [%{dates}]"
   sessions:

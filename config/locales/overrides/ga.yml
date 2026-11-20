@@ -171,10 +171,6 @@ ga:
       show:
         map_color_schemes:
           auto: Uath
-    preferences:
-      navigation:
-        advanced_preferences: Roghanna Ardleibhéil
-        preferences: Roghanna
   printable_name:
     with_date_html: "%{name} [%{dates}]"
   sessions:

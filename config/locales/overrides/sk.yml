@@ -203,10 +203,6 @@ sk:
       show:
         map_color_schemes:
           auto: Automaticky
-    preferences:
-      navigation:
-        advanced_preferences: Pokročilé nastavenia
-        preferences: Nastavenia
   printable_name:
     with_date_html: "%{name} [%{dates}]"
   sessions:

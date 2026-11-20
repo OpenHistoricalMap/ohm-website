@@ -137,10 +137,6 @@ frp:
       show:
         map_color_schemes:
           auto: Ôtô
-    preferences:
-      navigation:
-        advanced_preferences: Prèferences avanciêes
-        preferences: Prèferences
   sessions:
     destroy:
       heading: Dè dèbranchiér d'OpenHistoricalMap

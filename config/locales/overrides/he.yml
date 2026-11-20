@@ -110,10 +110,6 @@ he:
       show:
         map_color_schemes:
           auto: אוטו׳
-    preferences:
-      navigation:
-        advanced_preferences: העדפות מתקדמות
-        preferences: העדפות
   sessions:
     destroy:
       heading: יציאה מ־OpenHistoricalMap
