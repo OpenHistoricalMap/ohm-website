@@ -5,56 +5,54 @@ const isOfExpectedLanguage = ({ language }) => languagesToRequest[0].startsWith(
 
 export function element(type) {
   return function () {
-    const page = {};
+    return {
+      load(path, id, version) {
+        OSM.loadSidebarContent(path)
+          .then(() => this.init(path, id, version, true));
+      },
 
-    page.load = function (path, id, version) {
-      OSM.loadSidebarContent(path)
-        .then(() => page.init(path, id, version, true));
+      init(path, id, version, keepViewport) {
+        this._addObject(type, id, version, keepViewport);
+        $(".numbered_pagination").trigger("numbered_pagination:enable");
+        abortController = new AbortController();
+      },
+
+      unload() {
+        this._removeObject();
+        $(".numbered_pagination").trigger("numbered_pagination:disable");
+        abortController?.abort();
+      },
+
+      _addObject() {},
+      _removeObject() {}
     };
-
-    page.init = function (path, id, version, keepViewport) {
-      page._addObject(type, id, version, keepViewport);
-      $(".numbered_pagination").trigger("numbered_pagination:enable");
-      abortController = new AbortController();
-    };
-
-    page.unload = function () {
-      page._removeObject();
-      $(".numbered_pagination").trigger("numbered_pagination:disable");
-      abortController?.abort();
-    };
-
-    page._addObject = function () {};
-    page._removeObject = function () {};
-
-    return page;
   };
 };
 
 export function mappedElement(type) {
   return function (map) {
-    const page = element(type)(map);
+    return {
+      ...element(type)(map),
 
-    page._addObject = function (type, id, version, keepViewport) {
-      const hashParams = OSM.parseHash();
-      map.addObject({ type: type, id: parseInt(id, 10), version: version && parseInt(version, 10) }, function (bounds) {
-        if (!hashParams.center && bounds.isValid() &&
-            (!keepViewport || !map.getBounds().contains(bounds))) {
-          OSM.router.withoutMoveListener(function () {
-            map.fitBounds(bounds);
-          });
-        }
-      });
+      _addObject(type, id, version, keepViewport) {
+        const hashParams = OSM.parseHash();
+        map.addObject({ type: type, id: parseInt(id, 10), version: version && parseInt(version, 10) }, function (bounds) {
+          if (!hashParams.center && bounds.isValid() &&
+              (!keepViewport || !map.getBounds().contains(bounds))) {
+            OSM.router.withoutMoveListener(function () {
+              map.fitBounds(bounds);
+            });
+          }
+        });
 
-      addOpenHistoricalMapTimeSlider(map);
-      addOpenHistoricalMapInspector();
+        addOpenHistoricalMapTimeSlider(map);
+        addOpenHistoricalMapInspector();
+      },
+
+      _removeObject() {
+        map.removeObject();
+      }
     };
-
-    page._removeObject = function () {
-      map.removeObject();
-    };
-
-    return page;
   };
 };
 
@@ -65,6 +63,10 @@ function previewWikidataValue($btn) {
   const items = $btn.data("qids");
   if (!items?.length) return;
   $btn.prop("disabled", true);
+  const fetchOptions = {
+    headers: { "Api-User-Agent": "OSM-TagPreview (https://github.com/openstreetmap/openstreetmap-website)" },
+    signal: abortController?.signal
+  };
   fetch(OSM.WIKIDATA_API_URL + "?" + new URLSearchParams({
     action: "wbgetentities",
     format: "json",
@@ -74,10 +76,7 @@ function previewWikidataValue($btn) {
     languages: languagesToRequest.join("|"),
     languagefallback: 1,
     sitefilter: wikisToRequest.join("|")
-  }), {
-    headers: { "Api-User-Agent": "OSM-TagPreview (https://github.com/openstreetmap/openstreetmap-website)" },
-    signal: abortController?.signal
-  })
+  }), fetchOptions)
     .then(response => response.ok ? response.json() : Promise.reject(response))
     .then(({ entities }) => {
       if (!entities) return Promise.reject(entities);
@@ -88,7 +87,7 @@ function previewWikidataValue($btn) {
             .filter(qid => entities[qid])
             .map(qid => getLocalizedResponse(entities[qid]))
             .filter(data => data.label || data.icon || data.description || data.article)
-            .map(data => renderWikidataResponse(data, $btn.siblings(`a[href*="wikidata.org/entity/${data.qid}"]`)))
+            .map(data => renderWikidataResponse(data, $btn.siblings(`a[href*="wikidata.org/entity/${data.qid}"]`), fetchOptions))
         );
     })
     .catch(() => $btn.prop("disabled", false));
@@ -115,20 +114,22 @@ function getLocalizedResponse(entity) {
   return data;
 }
 
-function renderWikidataResponse({ icon, label, article, description }, $link) {
+function renderWikidataResponse({ icon, label, article, description }, $link, fetchOptions) {
   const localeName = new Intl.DisplayNames(OSM.preferred_languages, { type: "language" });
   const cell = $("<td>")
     .attr("colspan", 2)
     .addClass("bg-body-tertiary");
 
   if (icon && OSM.WIKIMEDIA_COMMONS_URL) {
-    let src = OSM.WIKIMEDIA_COMMONS_URL + "Special:Redirect/file/" + encodeURIComponent(icon) + "?mobileaction=toggle_view_desktop";
-    if (!icon.endsWith(".svg")) src += "&width=128";
-    $("<a>")
-      .attr("href", OSM.WIKIMEDIA_COMMONS_URL + "File:" + encodeURIComponent(icon) + `?uselang=${OSM.i18n.locale}`)
-      .append($("<img>").attr({ src, height: "32" }))
-      .addClass("float-end mb-1 ms-2")
-      .appendTo(cell);
+    fetchCommonsThumbnail(icon, fetchOptions)
+      .then(imageAttributes => {
+        $("<a>")
+          .attr("href", OSM.WIKIMEDIA_COMMONS_URL + "/wiki/File:" + encodeURIComponent(icon) + `?uselang=${OSM.i18n.locale}`)
+          .append($("<img>").attr(imageAttributes))
+          .addClass("float-end mb-1 ms-2")
+          .prependTo(cell);
+      })
+      .catch(() => {});
   }
   if (label) {
     const link = $link.clone()
@@ -166,6 +167,38 @@ function renderWikidataResponse({ icon, label, article, description }, $link) {
     }
   }
   return $("<tr>").append(cell);
+}
+
+function fetchCommonsThumbnail(filename, fetchOptions) {
+  const isVectorImage = filename.toLowerCase().endsWith(".svg");
+  return fetch(OSM.WIKIMEDIA_COMMONS_URL + "/w/api.php?" + new URLSearchParams({
+    action: "query",
+    format: "json",
+    origin: "*",
+    prop: "imageinfo",
+    titles: "File:" + filename,
+    iiprop: "url|thumburls",
+    iiurlheight: "32"
+  }), fetchOptions)
+    .then(response => response.ok ? response.json() : Promise.reject(response))
+    .then(({ query }) => {
+      const page = Object.values(query.pages)[0];
+      const imageInfo = page.imageinfo?.[0];
+      const imageUrl = isVectorImage ? imageInfo?.url : imageInfo?.thumburl;
+      if (!imageUrl) return Promise.reject(page);
+
+      const imageAttributes = { src: imageUrl, height: "32", alt: filename };
+      if (!isVectorImage) {
+        const thumbUrls = Object.entries(imageInfo.thumburls ?? {});
+        if (thumbUrls.length) {
+          imageAttributes.srcset = thumbUrls
+            .map(([width, thumbnail]) => `${thumbnail.url} ${width}w`)
+            .join(", ");
+          imageAttributes.sizes = `${imageInfo.thumbwidth}px`;
+        }
+      }
+      return imageAttributes;
+    });
 }
 
 // add the enhanced inspector (class comes from the external ohm-inspector

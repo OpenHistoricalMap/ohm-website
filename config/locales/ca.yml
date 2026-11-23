@@ -1177,7 +1177,7 @@ ca:
           motorway_link: Calçada d'autopista
           passing_place: Apartador
           path: Corriol - Sender
-          pedestrian: Via de vianants
+          pedestrian: Carrer per a vianants
           platform: Andana per a transport públic
           primary: Carretera primària
           primary_link: Carretera primària
@@ -2943,7 +2943,7 @@ ca:
         primary: Carretera principal
         secondary: Carretera secundària
         unclassified: Carretera sense classificar
-        pedestrian: Via per a vianants
+        pedestrian: Carrer per a vianants
         track: Pista - Camí
         bridleway: Camí de ferradura
         cycleway: Carril bici
@@ -3787,7 +3787,7 @@ ca:
         text: contribueix vós mateix
       counter_warning_forum_link:
         text: la comunitat us pot ajudar
-      advice: Qualsevol pot veure una nota, fins i tot si no té un compte d'OpenStreet!
+      advice: Qualsevol pot veure una nota, fins i tot si no té un compte d'OpenStreetMap!
       advice_good_note: Una bona nota és el més descriptiva possible, evitant alhora
         informació personal o contingut de mapes o directoris amb drets d'autor.
       advice_conduct: Per favor, sigueu amables, pacients i respectuosos quan vos

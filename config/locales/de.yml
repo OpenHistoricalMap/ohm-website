@@ -255,6 +255,7 @@ de:
         reason: Grund
         zone: Zone
         period: Zeitraum
+        ends_at: Ablaufzeitpunkt
       message:
         sender: Absender
         title: Betreff
@@ -850,6 +851,8 @@ de:
       nearby_changesets: Änderungssätze von Benutzern in der Nähe
       nearby_diaries: Blogs von Benutzern in der Nähe
   notifications:
+    missing_record:
+      body: Leider ist dies nicht mehr verfügbar
     index:
       title: Benachrichtigungen
       no_notifications: Du hast momentan keine Benachrichtigungen
@@ -4247,6 +4250,10 @@ de:
       id_not_configured:
         title: iD wurde nicht konfiguriert
         body: Siehe CONFIGURE.md für weitere Informationen
+    traces:
+      tagstring:
+        comma_delimited: 'durch Komma getrennt:'
+        space_delimited: 'durch Leerzeichen getrennt:'
   redactions:
     edit:
       heading: Redaction bearbeiten
@@ -4295,6 +4302,7 @@ de:
     trailing_whitespace: hat anhängendes Leerzeichen
     invalid_characters: enthält ungültige Zeichen
     url_characters: enthält besondere URL-Zeichen (%{characters})
+    email_characters: enthält ungültige Zeichen (%{characters})
   moderation_zones:
     navigation:
       new_title: Definiere eine neue Moderationszone
@@ -4334,4 +4342,11 @@ de:
         ended: geendet
         active: Aktiv
         revoked_html: von %{name} aufgehoben
+    form:
+      expiration: Ablauf
+      relative_expiration: Für eine Dauer
+      absolute_expiration: Bis zu einem bestimmten Zeitpunkt
+      period:
+        options:
+          revoke: Moderationszone aufheben
 ...

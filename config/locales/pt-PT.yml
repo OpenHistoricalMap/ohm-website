@@ -160,9 +160,9 @@ pt-PT:
         scopes: Permissões
       friend:
         user: Utilizador
-        friend: Amigo
+        friend: Amigo(a)
       trace:
-        user: Utilizador
+        user: Utilizador(a)
         visible: Visível
         name: Nome do ficheiro
         size: Tamanho
@@ -178,6 +178,7 @@ pt-PT:
         reason: Razão
         zone: Zona
         period: Período
+        ends_at: Data e hora de validade
       message:
         sender: Remetente
         title: Assunto
@@ -340,7 +341,7 @@ pt-PT:
           área [(%{min_lat}|%{min_lon}) -- (%{max_lat}|%{max_lon})]
         description_item: Um feed RSS para a nota %{id} reportada
         opened: nova nota (perto de %{place})
-        commented: Novo comentário (perto de %{place})
+        commented: novo comentário (perto de %{place})
         closed: nota encerrada (perto de %{place})
         reopened: nota reativada (perto de %{place})
       entry:
@@ -362,10 +363,10 @@ pt-PT:
           ao domínio público.
         review: Rever os Termos
         review_and_accept: Rever e aceitar os Termos
-        consider_pd: Considerar o domínio público
+        consider_pd: Considerar o Domínio Público
       terms_of_use:
         heading: Termos de Utilização
-        agreed: Aceitou os 'Termos de Utilização' em %{date}.
+        agreed: Aceitaste os Termos de Utilização em %{date}.
         not_agreed: Ainda não aceitaste os Termos de Utilização.
         review: Rever os Termos
         review_and_accept: Rever e aceitar os Termos
@@ -410,14 +411,14 @@ pt-PT:
           serão mantidas.
         retain_traces: Se existirem, as rotas que enviaste serão mantidas.
         retain_diary_entries: Se existirem, os teus tópicos e comentários no diário
-          serão mantidos.
+          serão mantidos, mas não ficarão visíveis.
         retain_notes: Se existirem, as tuas notas e comentários a notas no mapa serão
           mantidas, mas não ficarão visíveis.
         retain_changeset_discussions: Se existirem, as tuas discussões nos conjuntos
           de edições serão mantidas.
         retain_email: O teu endereço eletrónico será mantido.
         recent_editing_html: Como fizeste edições no mapa recentemente, a tua conta
-          não pode ser excluída imediatamente. A exclusão só será possível em %{time}.
+          não pode ser apagada imediatamente. Só poderá ser apagada em %{time}.
         confirm_delete: Tens a certeza?
         cancel: Cancelar
     terms:
@@ -480,7 +481,7 @@ pt-PT:
     deleted_ago_by_html: Eliminado %{time_ago} por %{user}
     edited_ago_by_html: Editado %{time_ago} por %{user}
     version: Versão
-    redacted_version: Versão reduzida
+    redacted_version: Versão censurada
     in_changeset: Conjunto de alterações
     anonymous: anónimo
     no_comment: (sem comentário)
@@ -766,6 +767,8 @@ pt-PT:
       nearby_changesets: conjuntos de alterações de mapeadores próximos
       nearby_diaries: publicações no diário de mapeadores próximos
   notifications:
+    missing_record:
+      body: Infelizmente, isto já não está disponível.
     index:
       title: Notificações
       no_notifications: De momento, não tens notificações
@@ -1249,7 +1252,7 @@ pt-PT:
           motorway_link: Ligação a autoestrada
           passing_place: Lugar de passagem
           path: Trilho
-          pedestrian: Passeio
+          pedestrian: Rua Pedonal
           platform: Plataforma
           primary: Estrada primária
           primary_link: Estrada primária
@@ -2842,17 +2845,14 @@ pt-PT:
           Por favor, amplia a vista ou seleciona uma área mais pequena. Para transferir
           dados em massa, usa uma das seguintes fontes.
         planet:
-          url: https://planet.openstreetmap.org/
           title: Planeta OSM
           description: Cópias atualizadas regularmente da base de dados completa do
             OpenStreetMap
         overpass:
-          url: https://overpass-api.de/api/map
           title: API do Overpass
           description: Transferir dados desta caixa delimitadora através de um espelho
             da base de dados do OpenStreetMap
         geofabrik:
-          url: https://download.geofabrik.de/
           title: Transferências do Geofabrik
           description: Extrações atualizadas regularmente de continentes, países e
             cidades selecionados
@@ -3144,7 +3144,7 @@ pt-PT:
       custom_dimensions: Definir dimensões
       image_dimensions_html: A imagem mostrará a camada %{layer} com %{width} x %{height}
       download: Transferir
-      downloading: A descarregar...
+      downloading: A transferir...
   webgl_error_panes:
     show:
       compact_message: Este mapa requer WebGL.
@@ -3358,8 +3358,6 @@ pt-PT:
         alt: Ícone do X
     markdown_help:
       heading_html: Processado com %{kramdown_link}
-      kramdown_url: https://kramdown.gettalong.org/quickref.html
-      kramdown: kramdown
       headings: Títulos
       heading: Cabeçalho
       subheading: Subtítulo
@@ -3920,9 +3918,12 @@ pt-PT:
         url: https://wiki.openstreetmap.org/wiki/Pt:Beginners%27_guide
       counter_warning_forum_link:
         text: a comunidade pode ajudar-te
-      advice: 'Lembra-te: a tua nota é pública e poderá ser usada para atualizar o
-        mapa, portanto, não introduzas informações pessoais, dados de mapas ou catálogos
-        protegidos por direitos de autor.'
+      advice: Qualquer pessoa pode ver uma nota, mesmo que não tenha uma conta OpenStreetMap!
+      advice_good_note: Uma boa nota deve ser o mais descritiva possível, evitando
+        informações pessoais e conteúdo de mapas ou listagens protegidas por direitos
+        de autor.
+      advice_conduct: Por favor, mostra gentileza, paciência e respeito quando comunicares
+        com os membros da comunidade.
       add: Adicionar nota
       error: Houve um erro ao criar a nota
     new_readonly:
@@ -4196,6 +4197,7 @@ pt-PT:
     trailing_whitespace: tem espaços no fim
     invalid_characters: contém caracteres inválidos
     url_characters: contém caracteres especiais dos URL (%{characters})
+    email_characters: contém caracteres inválidos (%{characters})
   moderation_zones:
     navigation:
       new_title: Definir uma nova zona de moderação
@@ -4234,4 +4236,11 @@ pt-PT:
         ended: terminou
         active: ativa
         revoked_html: revogada por %{name}
+    form:
+      expiration: Validade
+      relative_expiration: Por um período de tempo
+      absolute_expiration: Até uma data e hora específicas
+      period:
+        options:
+          revoke: Revogar zona de moderação
 ...

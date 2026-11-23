@@ -150,6 +150,7 @@ hr:
         reason: Razlog
         zone: Zona (područje)
         period: Razdoblje
+        ends_at: Datum i vrijeme isteka
       message:
         sender: Pošiljatelj
         title: Naslov
@@ -748,6 +749,8 @@ hr:
       nearby_changesets: skupovi promjena korisnika u blizini
       nearby_diaries: dnevnički zapisi korisnika u blizini
   notifications:
+    missing_record:
+      body: Nažalost, ovo više nije dostupno
     index:
       title: Obavijesti
       no_notifications: Trenutno nemate obavijesti
@@ -1375,7 +1378,7 @@ hr:
           water_park: Vodeni park
           "yes": Slobodno vrijeme
         lock:
-          "yes": Ustava
+          "yes": Brodska prevodnica
         man_made:
           adit: Vodoravni ulaz u rudnik
           advertising: Oglašavanje
@@ -1728,7 +1731,7 @@ hr:
           wastewater: Otpadne vode
           oxbow: Mrtvi rukavac
           stream_pool: Riječni bazen
-          lock: Ustava
+          lock: Brodska prevodnica
         waterway:
           artificial: Umjetni vodeni put
           boatyard: Brodogradilište
@@ -1738,15 +1741,15 @@ hr:
           ditch: Jarak
           dock: Dok
           drain: Odvod
-          lock: Ustava
-          lock_gate: Ustava
+          lock: Brodska prevodnica
+          lock_gate: Vrata brodske prevodnice
           mooring: Sidrište
           rapids: Brzaci
           river: Rijeka
           stream: Potok
           wadi: Suho korito rijeke
           waterfall: Vodopad
-          weir: Brana
+          weir: Ustava
           "yes": Vodotok
       admin_levels:
         level2: Međunarodna granica
@@ -2801,7 +2804,7 @@ hr:
           Molim približite prikaz ili odaberite manje područje ili odaberite jedan
           od izvora navedenih ispod za preuzimanje velike količine podataka.
         planet:
-          url: https://help.openstreetmap.org/
+          url: https://planet.openstreetmap.org/
           title: Planet OSM
           description: Redovno ažurirane kopije kompletne baze podataka OpenStreetMap-a
         overpass:
@@ -4091,6 +4094,10 @@ hr:
       id_not_configured:
         title: iD nije konfiguriran
         body: Za više informacija molim pogledajte CONFIGURE.md
+    traces:
+      tagstring:
+        comma_delimited: odijeljeno zarezom
+        space_delimited: odijeljeno razmakom
   redactions:
     edit:
       heading: Uredite redakciju
@@ -4156,6 +4163,7 @@ hr:
     trailing_whitespace: ima prateći razmak
     invalid_characters: sadrži nevažeće znakove
     url_characters: sadrži posebne URL znakove (%{characters})
+    email_characters: sadrži nevažeće znakove (%{characters})
   moderation_zones:
     navigation:
       new_title: Definiraj novu zonu moderiranja
@@ -4194,4 +4202,11 @@ hr:
         ended: završena
         active: aktivna
         revoked_html: opozvao %{name}
+    form:
+      expiration: Protek roka trajanja
+      relative_expiration: U trajanju
+      absolute_expiration: Do određenog datuma i vremena
+      period:
+        options:
+          revoke: Opoziv zone moderiranja
 ...

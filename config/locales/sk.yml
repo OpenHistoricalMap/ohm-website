@@ -88,7 +88,7 @@ sk:
             visibility:
               cannot_change_to_legacy: nedá sa zmeniť späť na starú hodnotu
     models:
-      acl: Zoznam prístupových práv
+      acl: ACL
       changeset: Sada zmien
       changeset_tag: Značka sady zmien
       country: Krajina
@@ -2938,7 +2938,7 @@ sk:
         body: Táto oblasť je príliš veľká pre export OpenStreetMap XML dát. Priblížte
           prosím mapu, alebo vyberte menšiu oblasť.
         planet:
-          url: https://planet.openstreetmap.org
+          url: https://planet.openstreetmap.org/
           title: Planéta OSM
           description: Pravidelne aktualizované kópie kompletnej databázy OpenStreetMap
         overpass:
@@ -3492,6 +3492,11 @@ sk:
       help: Pomocník
     pagination:
       label: Navigácia na stránke
+      acls:
+        older: Staršie ACL
+        newer: Novšie ACL
+        oldest: Najstaršie ACL
+        newest: Najnovšie ACL
       changeset_comments:
         older: Staršie komentáre
         newer: Novšie komentáre
@@ -4305,6 +4310,13 @@ sk:
       flash: Revízia zrušená.
       error: Pri zrušení revízie sa vyskytla chyba.
   acls:
+    navigation:
+      new_title: Pridať nové ACL
+      new: Nové ACL
+      actions: Akcie ACL
+    index:
+      title: ACL
+      empty: Žiadne ACL na zobrazenie.
     page:
       address: Adresa
       domain: Doména
@@ -4318,6 +4330,16 @@ sk:
       confirm: Ste si istí?
     form:
       cancel: Zrušiť
+    new:
+      title: Nové ACL
+    create:
+      success: ACL bolo vytvorené.
+    edit:
+      title: Úprava ACL
+    update:
+      success: ACL bolo aktualizované.
+    destroy:
+      success: ACL bolo zmazané.
   validations:
     leading_whitespace: obsahuje medzery na začiatku
     trailing_whitespace: obsahuje medzery na konci
