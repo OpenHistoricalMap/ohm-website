@@ -184,10 +184,6 @@ el:
       show:
         map_color_schemes:
           auto: Αυτόματο
-    preferences:
-      navigation:
-        advanced_preferences: Προηγμένες προτιμήσεις
-        preferences: Προτιμήσεις
   sessions:
     destroy:
       heading: Αποσύνδεση από το OpenHistoricalMap

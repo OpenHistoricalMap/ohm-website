@@ -180,10 +180,6 @@ id:
       show:
         map_color_schemes:
           auto: Otomatis
-    preferences:
-      navigation:
-        advanced_preferences: Preferensi Lanjutan
-        preferences: Preferensi
   sessions:
     destroy:
       heading: Keluar log dari OpenHistoricalMap

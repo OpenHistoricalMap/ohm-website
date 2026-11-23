@@ -231,10 +231,6 @@ nl:
       show:
         map_color_schemes:
           auto: Automatisch
-    preferences:
-      navigation:
-        advanced_preferences: Geavanceerde voorkeuren
-        preferences: Voorkeuren
   printable_name:
     with_date_html: "%{name} [%{dates}]"
   sessions:

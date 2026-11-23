@@ -215,10 +215,6 @@ zh-TW:
       show:
         map_color_schemes:
           auto: 自動
-    preferences:
-      navigation:
-        advanced_preferences: 進階偏好設定
-        preferences: 偏好設定
   printable_name:
     with_date_html: "%{name} [%{dates}]"
   sessions:

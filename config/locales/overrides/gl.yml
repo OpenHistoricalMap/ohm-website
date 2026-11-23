@@ -191,10 +191,6 @@ gl:
       show:
         map_color_schemes:
           auto: Automático
-    preferences:
-      navigation:
-        advanced_preferences: Preferencias avanzadas
-        preferences: Preferencias
   printable_name:
     with_date_html: "%{name} [%{dates}]"
   sessions:

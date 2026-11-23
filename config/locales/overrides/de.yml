@@ -194,10 +194,6 @@ de:
       show:
         map_color_schemes:
           auto: Auto
-    preferences:
-      navigation:
-        advanced_preferences: Erweiterte Einstellungen
-        preferences: Benutzereinstellungen
   sessions:
     destroy:
       heading: Von OpenHistoricalMap abmelden

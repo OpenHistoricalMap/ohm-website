@@ -203,10 +203,6 @@ es:
       show:
         map_color_schemes:
           auto: Automático
-    preferences:
-      navigation:
-        advanced_preferences: Preferencias avanzadas
-        preferences: Preferencias
   sessions:
     destroy:
       heading: Cerrar sesión en OpenHistoricalMap
