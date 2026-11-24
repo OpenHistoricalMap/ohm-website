@@ -73,7 +73,6 @@ lb:
       alt_text: OpenHistoricalMap-Logo
     partners_greeninfo: GreenInfo Netzwierk
     partners_osmf: OpenStreetMap Foundation
-  preferences:
   sessions:
     destroy:
       heading: Vun OpenHistoricalMap ofmellen
