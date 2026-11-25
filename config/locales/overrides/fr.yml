@@ -285,10 +285,6 @@ fr:
       show:
         map_color_schemes:
           auto: Auto
-    preferences:
-      navigation:
-        advanced_preferences: Préférences avancées
-        preferences: Préférences
   printable_name:
     with_date_html: '%{name} [%{dates}]'
   sessions:
