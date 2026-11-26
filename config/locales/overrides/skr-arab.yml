@@ -187,10 +187,6 @@ skr-arab:
       show:
         map_color_schemes:
           auto: خودکار
-    preferences:
-      navigation:
-        advanced_preferences: اعلیٰ ترجیحات
-        preferences: ترجیحات
   sessions:
     destroy:
       heading: OpenHistoricalMap کنوں لاگ آؤٹ کرو

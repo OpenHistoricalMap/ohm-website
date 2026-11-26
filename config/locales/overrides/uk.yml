@@ -136,10 +136,6 @@ uk:
   oauth:
     scopes:
       openid: Вхід за допомогою OpenHistoricalMap
-  preferences:
-    preferences:
-      navigation:
-        preferences: Налаштування
   sessions:
     destroy:
       heading: Вийти з OpenHistoricalMap

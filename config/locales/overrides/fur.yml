@@ -58,10 +58,6 @@ fur:
       di ûs libar sot di une licence vierte.
     logo:
       alt_text: Logo di OpenHistoricalMap
-  preferences:
-    preferences:
-      navigation:
-        preferences: Preferencis
   sessions:
     destroy:
       heading: Va fûr di OpenHistoricalMap
