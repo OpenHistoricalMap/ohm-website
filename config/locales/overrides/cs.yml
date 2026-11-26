@@ -163,10 +163,6 @@ cs:
   oauth:
     scopes:
       openid: Přihlaste se pomocí OpenHistoricalMap
-  preferences:
-    preferences:
-      navigation:
-        preferences: Předvolby
   sessions:
     destroy:
       heading: Odhlášení z OpenHistoricalMap

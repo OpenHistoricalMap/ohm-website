@@ -183,10 +183,6 @@ tr:
       show:
         map_color_schemes:
           auto: Otomatik
-    preferences:
-      navigation:
-        advanced_preferences: Gelişmiş Tercihler
-        preferences: Tercihler
   sessions:
     destroy:
       heading: OpenHistoricalMap'den çıkış
