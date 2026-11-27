@@ -719,7 +719,8 @@ L.Control.OHMTimeSlider = L.Control.extend({
         // here in _applyDateFilterToLayers() we add a second part to that, for features with a start_date and end_date fitting our date
         // the new date filtering expression is:
         // numerical start date either absent (beginning/end of time) or else within range, and same for numerical end date
-        const deccurrent = this.getDate(true);
+        // round to 5 places to match tiler start_decdate/end_decdate (DateFunctions-plpgsql)
+        const deccurrent = parseFloat(this.getDate(true).toFixed(5));
         const datesubfilter = [
             'all',
             [
